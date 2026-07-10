@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/org_group
+// https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/org_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface OrgGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the org group. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/org_group#name OrgGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/org_group#name OrgGroup#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/org_group datadog_org_group}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/org_group datadog_org_group}
 */
 export class OrgGroup extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class OrgGroup extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a OrgGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrgGroup to import
-  * @param importFromId The id of the existing OrgGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/org_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OrgGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/org_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrgGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class OrgGroup extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/org_group datadog_org_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/org_group datadog_org_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class OrgGroup extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_org_group',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.13.0',
+        providerVersion: '4.15.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

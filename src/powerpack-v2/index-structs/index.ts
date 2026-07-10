@@ -21,3 +21,4 @@ export * from './structs5600';
 export * from './structs6000';
 export * from './structs6400';
 export * from './structs6800';
+export * from './structs7200';

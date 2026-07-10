@@ -1,3 +1,3 @@
 # `data_datadog_incident_notification_template`
 
-Refer to the Terraform Registry for docs: [`data_datadog_incident_notification_template`](https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/incident_notification_template).
+Refer to the Terraform Registry for docs: [`data_datadog_incident_notification_template`](https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/incident_notification_template).

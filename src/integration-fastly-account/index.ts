@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_fastly_account
+// https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/integration_fastly_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface IntegrationFastlyAccountConfig extends cdktn.TerraformMetaArgum
   /**
   * The API key for the Fastly account. Exactly one of `api_key` or `api_key_wo` must be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_fastly_account#api_key IntegrationFastlyAccount#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/integration_fastly_account#api_key IntegrationFastlyAccount#api_key}
   */
   readonly apiKey?: string;
   /**
   * Write-only API key for the Fastly account. Exactly one of `api_key` or `api_key_wo` must be set. Must be used with `api_key_wo_version`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_fastly_account#api_key_wo IntegrationFastlyAccount#api_key_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/integration_fastly_account#api_key_wo IntegrationFastlyAccount#api_key_wo}
   */
   readonly apiKeyWo?: string;
   /**
   * Version for `api_key_wo` rotation. Changing this triggers an update. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_fastly_account#api_key_wo_version IntegrationFastlyAccount#api_key_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/integration_fastly_account#api_key_wo_version IntegrationFastlyAccount#api_key_wo_version}
   */
   readonly apiKeyWoVersion?: string;
   /**
   * The name of the Fastly account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_fastly_account#name IntegrationFastlyAccount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/integration_fastly_account#name IntegrationFastlyAccount#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_fastly_account datadog_integration_fastly_account}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/integration_fastly_account datadog_integration_fastly_account}
 */
 export class IntegrationFastlyAccount extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class IntegrationFastlyAccount extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a IntegrationFastlyAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationFastlyAccount to import
-  * @param importFromId The id of the existing IntegrationFastlyAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_fastly_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationFastlyAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/integration_fastly_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationFastlyAccount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class IntegrationFastlyAccount extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_fastly_account datadog_integration_fastly_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/integration_fastly_account datadog_integration_fastly_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class IntegrationFastlyAccount extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_integration_fastly_account',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.13.0',
+        providerVersion: '4.15.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_critical_asset
+// https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,39 +13,45 @@ import * as cdktn from 'cdktn';
 
 export interface SecurityMonitoringCriticalAssetConfig extends cdktn.TerraformMetaArguments {
   /**
+  * A description of the critical asset.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset#description SecurityMonitoringCriticalAsset#description}
+  */
+  readonly description?: string;
+  /**
   * Whether the critical asset is enabled. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_critical_asset#enabled SecurityMonitoringCriticalAsset#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset#enabled SecurityMonitoringCriticalAsset#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The query used to match a critical asset and the associated signals. Uses the same syntax as the search bar in the Security Signals Explorer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_critical_asset#query SecurityMonitoringCriticalAsset#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset#query SecurityMonitoringCriticalAsset#query}
   */
   readonly query: string;
   /**
   * The rule query to filter which detection rules this critical asset applies to. Uses the same syntax as the search bar for detection rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_critical_asset#rule_query SecurityMonitoringCriticalAsset#rule_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset#rule_query SecurityMonitoringCriticalAsset#rule_query}
   */
   readonly ruleQuery: string;
   /**
   * The severity change applied to signals matching this critical asset. Valid values are `critical`, `high`, `medium`, `low`, `info`, `no-op`, `increase`, `decrease`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_critical_asset#severity SecurityMonitoringCriticalAsset#severity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset#severity SecurityMonitoringCriticalAsset#severity}
   */
   readonly severity: string;
   /**
   * A list of tags associated with the critical asset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_critical_asset#tags SecurityMonitoringCriticalAsset#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset#tags SecurityMonitoringCriticalAsset#tags}
   */
   readonly tags?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_critical_asset datadog_security_monitoring_critical_asset}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset datadog_security_monitoring_critical_asset}
 */
 export class SecurityMonitoringCriticalAsset extends cdktn.TerraformResource {
 
@@ -61,7 +67,7 @@ export class SecurityMonitoringCriticalAsset extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SecurityMonitoringCriticalAsset resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecurityMonitoringCriticalAsset to import
-  * @param importFromId The id of the existing SecurityMonitoringCriticalAsset that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_critical_asset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecurityMonitoringCriticalAsset that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecurityMonitoringCriticalAsset to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +79,7 @@ export class SecurityMonitoringCriticalAsset extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_critical_asset datadog_security_monitoring_critical_asset} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset datadog_security_monitoring_critical_asset} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +90,7 @@ export class SecurityMonitoringCriticalAsset extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_security_monitoring_critical_asset',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.13.0',
+        providerVersion: '4.15.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -95,6 +101,7 @@ export class SecurityMonitoringCriticalAsset extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._description = config.description;
     this._enabled = config.enabled;
     this._query = config.query;
     this._ruleQuery = config.ruleQuery;
@@ -105,6 +112,22 @@ export class SecurityMonitoringCriticalAsset extends cdktn.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
 
   // enabled - computed: true, optional: true, required: false
   private _enabled?: boolean | cdktn.IResolvable; 
@@ -188,6 +211,7 @@ export class SecurityMonitoringCriticalAsset extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      description: cdktn.stringToTerraform(this._description),
       enabled: cdktn.booleanToTerraform(this._enabled),
       query: cdktn.stringToTerraform(this._query),
       rule_query: cdktn.stringToTerraform(this._ruleQuery),
@@ -198,6 +222,12 @@ export class SecurityMonitoringCriticalAsset extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      description: {
+        value: cdktn.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       enabled: {
         value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,

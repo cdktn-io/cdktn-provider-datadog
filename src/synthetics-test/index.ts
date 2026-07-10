@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test
+// https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface SyntheticsTestConfig extends cdktn.TerraformMetaArguments {
   /**
   * Initial application arguments for the mobile test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#config_initial_application_arguments SyntheticsTest#config_initial_application_arguments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#config_initial_application_arguments SyntheticsTest#config_initial_application_arguments}
   */
   readonly configInitialApplicationArguments?: { [key: string]: string };
   /**
   * Required if `type = "browser"`. Array with the different device IDs used to run the test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#device_ids SyntheticsTest#device_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#device_ids SyntheticsTest#device_ids}
   */
   readonly deviceIds?: string[];
   /**
   * A boolean indicating whether this synthetics test can be deleted even if it's referenced by other resources (for example, SLOs and composite monitors).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#force_delete_dependencies SyntheticsTest#force_delete_dependencies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#force_delete_dependencies SyntheticsTest#force_delete_dependencies}
   */
   readonly forceDeleteDependencies?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#id SyntheticsTest#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#id SyntheticsTest#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,151 +40,151 @@ export interface SyntheticsTestConfig extends cdktn.TerraformMetaArguments {
   /**
   * Array of locations used to run the test. Refer to [the Datadog Synthetics location data source](https://registry.terraform.io/providers/DataDog/datadog/latest/docs/data-sources/synthetics_locations) to retrieve the list of locations or find the possible values listed in [this API response](https://app.datadoghq.com/api/v1/synthetics/locations?only_public=true).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#locations SyntheticsTest#locations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#locations SyntheticsTest#locations}
   */
   readonly locations: string[];
   /**
   * A message to include with notifications for this synthetics test. Email notifications can be sent to specific users by using the same `@username` notation as events. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#message SyntheticsTest#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#message SyntheticsTest#message}
   */
   readonly message?: string;
   /**
   * Name of Datadog synthetics test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#name SyntheticsTest#name}
   */
   readonly name: string;
   /**
   * Header name and value map.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#request_headers SyntheticsTest#request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#request_headers SyntheticsTest#request_headers}
   */
   readonly requestHeaders?: { [key: string]: string };
   /**
   * Metadata to include when performing the gRPC request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#request_metadata SyntheticsTest#request_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#request_metadata SyntheticsTest#request_metadata}
   */
   readonly requestMetadata?: { [key: string]: string };
   /**
   * Query arguments name and value map.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#request_query SyntheticsTest#request_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#request_query SyntheticsTest#request_query}
   */
   readonly requestQuery?: { [key: string]: string };
   /**
   * Cookies to be used for a browser test request, using the [Set-Cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie) syntax.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#set_cookie SyntheticsTest#set_cookie}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#set_cookie SyntheticsTest#set_cookie}
   */
   readonly setCookie?: string;
   /**
   * Define whether you want to start (`live`) or pause (`paused`) a Synthetic test. Valid values are `live`, `paused`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#status SyntheticsTest#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#status SyntheticsTest#status}
   */
   readonly status: string;
   /**
   * The subtype for API or Network Path tests. For API tests, defaults to `http`. For Network Path tests, only `tcp`, `udp`, `icmp` are available. Valid values are `http`, `ssl`, `tcp`, `dns`, `multi`, `icmp`, `udp`, `websocket`, `grpc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#subtype SyntheticsTest#subtype}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#subtype SyntheticsTest#subtype}
   */
   readonly subtype?: string;
   /**
   * A list of tags to associate with your synthetics test. This can help you categorize and filter tests in the manage synthetics page of the UI. Default is an empty list (`[]`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#tags SyntheticsTest#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#tags SyntheticsTest#tags}
   */
   readonly tags?: string[];
   /**
   * The type of Synthetics test. Valid values are `api`, `browser`, `mobile`, `network`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type: string;
   /**
   * Variables defined from JavaScript code for API HTTP tests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#variables_from_script SyntheticsTest#variables_from_script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#variables_from_script SyntheticsTest#variables_from_script}
   */
   readonly variablesFromScript?: string;
   /**
   * api_step block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#api_step SyntheticsTest#api_step}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#api_step SyntheticsTest#api_step}
   */
   readonly apiStep?: SyntheticsTestApiStep[] | cdktn.IResolvable;
   /**
   * assertion block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#assertion SyntheticsTest#assertion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#assertion SyntheticsTest#assertion}
   */
   readonly assertion?: SyntheticsTestAssertion[] | cdktn.IResolvable;
   /**
   * browser_step block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#browser_step SyntheticsTest#browser_step}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#browser_step SyntheticsTest#browser_step}
   */
   readonly browserStep?: SyntheticsTestBrowserStep[] | cdktn.IResolvable;
   /**
   * browser_variable block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#browser_variable SyntheticsTest#browser_variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#browser_variable SyntheticsTest#browser_variable}
   */
   readonly browserVariable?: SyntheticsTestBrowserVariable[] | cdktn.IResolvable;
   /**
   * config_variable block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#config_variable SyntheticsTest#config_variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#config_variable SyntheticsTest#config_variable}
   */
   readonly configVariable?: SyntheticsTestConfigVariable[] | cdktn.IResolvable;
   /**
   * mobile_options_list block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#mobile_options_list SyntheticsTest#mobile_options_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#mobile_options_list SyntheticsTest#mobile_options_list}
   */
   readonly mobileOptionsList?: SyntheticsTestMobileOptionsListStruct;
   /**
   * mobile_step block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#mobile_step SyntheticsTest#mobile_step}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#mobile_step SyntheticsTest#mobile_step}
   */
   readonly mobileStep?: SyntheticsTestMobileStep[] | cdktn.IResolvable;
   /**
   * options_list block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#options_list SyntheticsTest#options_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#options_list SyntheticsTest#options_list}
   */
   readonly optionsList?: SyntheticsTestOptionsListStruct;
   /**
   * request_basicauth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#request_basicauth SyntheticsTest#request_basicauth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#request_basicauth SyntheticsTest#request_basicauth}
   */
   readonly requestBasicauth?: SyntheticsTestRequestBasicauth;
   /**
   * request_client_certificate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#request_client_certificate SyntheticsTest#request_client_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#request_client_certificate SyntheticsTest#request_client_certificate}
   */
   readonly requestClientCertificate?: SyntheticsTestRequestClientCertificate;
   /**
   * request_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#request_definition SyntheticsTest#request_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#request_definition SyntheticsTest#request_definition}
   */
   readonly requestDefinition?: SyntheticsTestRequestDefinition;
   /**
   * request_file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#request_file SyntheticsTest#request_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#request_file SyntheticsTest#request_file}
   */
   readonly requestFile?: SyntheticsTestRequestFile[] | cdktn.IResolvable;
   /**
   * request_proxy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#request_proxy SyntheticsTest#request_proxy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#request_proxy SyntheticsTest#request_proxy}
   */
   readonly requestProxy?: SyntheticsTestRequestProxy;
 }
@@ -192,7 +192,7 @@ export interface SyntheticsTestApiStepAssertionTargetMcpCapabilities {
   /**
   * List of MCP server capabilities to assert against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#capabilities SyntheticsTest#capabilities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#capabilities SyntheticsTest#capabilities}
   */
   readonly capabilities: string[];
 }
@@ -275,25 +275,25 @@ export interface SyntheticsTestApiStepAssertionTargetjsonpath {
   /**
   * The element from the list of results to assert on. Select from `firstElementMatches` (the first element in the list), `everyElementMatches` (every element in the list), `atLeastOneElementMatches` (at least one element in the list), or `serializationMatches` (the serialized value of the list). Defaults to `"firstElementMatches"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#elementsoperator SyntheticsTest#elementsoperator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#elementsoperator SyntheticsTest#elementsoperator}
   */
   readonly elementsoperator?: string;
   /**
   * The JSON path to assert.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#jsonpath SyntheticsTest#jsonpath}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#jsonpath SyntheticsTest#jsonpath}
   */
   readonly jsonpath: string;
   /**
   * The specific operator to use on the path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
   */
   readonly operator: string;
   /**
   * Expected matching value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
   */
   readonly targetvalue?: string;
 }
@@ -460,13 +460,13 @@ export interface SyntheticsTestApiStepAssertionTargetjsonschema {
   /**
   * The JSON Schema to validate the body against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#jsonschema SyntheticsTest#jsonschema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#jsonschema SyntheticsTest#jsonschema}
   */
   readonly jsonschema: string;
   /**
   * The meta schema to use for the JSON Schema. Defaults to `"draft-07"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#metaschema SyntheticsTest#metaschema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#metaschema SyntheticsTest#metaschema}
   */
   readonly metaschema?: string;
 }
@@ -578,19 +578,19 @@ export interface SyntheticsTestApiStepAssertionTargetxpath {
   /**
   * The specific operator to use on the path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
   */
   readonly operator: string;
   /**
   * Expected matching value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
   */
   readonly targetvalue?: string;
   /**
   * The xpath to assert.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#xpath SyntheticsTest#xpath}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#xpath SyntheticsTest#xpath}
   */
   readonly xpath: string;
 }
@@ -728,61 +728,61 @@ export interface SyntheticsTestApiStepAssertion {
   /**
   * If assertion type is `javascript`, this is the JavaScript code that performs the assertions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#code SyntheticsTest#code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#code SyntheticsTest#code}
   */
   readonly code?: string;
   /**
   * Assertion operator. **Note:** Only some combinations of `type` and `operator` are valid. Refer to `config.assertions` in the [Datadog API reference](https://docs.datadoghq.com/api/latest/synthetics/#create-an-api-test). Valid values are `contains`, `doesNotContain`, `is`, `isNot`, `lessThan`, `lessThanOrEqual`, `moreThan`, `moreThanOrEqual`, `matches`, `doesNotMatch`, `validates`, `isInMoreThan`, `isInLessThan`, `doesNotExist`, `isUndefined`, `validatesJSONPath`, `validatesJSONSchema`, `validatesXPath`, `md5`, `sha1`, `sha256`, `is`, `isNot`, `lessThan`, `lessThanOrEqual`, `moreThan`, `moreThanOrEqual`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
   */
   readonly operator?: string;
   /**
   * If assertion type is `header` or `grpcMetadata`, this is the header name. For other assertion types, this is an aggregation property: `avg`, `min`, `max`, or `stddev`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#property SyntheticsTest#property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#property SyntheticsTest#property}
   */
   readonly property?: string;
   /**
   * Expected value. **Note:** Depends on the assertion type. Refer to `config.assertions` in the [Datadog API reference](https://docs.datadoghq.com/api/latest/synthetics/#create-an-api-test).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#target SyntheticsTest#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#target SyntheticsTest#target}
   */
   readonly target?: string;
   /**
   * Timings scope for response time assertions. Valid values are `all`, `withoutDNS`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#timings_scope SyntheticsTest#timings_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#timings_scope SyntheticsTest#timings_scope}
   */
   readonly timingsScope?: string;
   /**
   * Type of assertion. **Note:** Only some combinations of `type` and `operator` are valid. For API tests, refer to `config.assertions` in the [Datadog API reference](https://docs.datadoghq.com/api/latest/synthetics/#create-an-api-test). For Network Path tests, refer to `config.assertions` in the [Datadog API reference](https://docs.datadoghq.com/api/latest/synthetics/#create-a-network-path-test). Valid values are `body`, `header`, `statusCode`, `certificate`, `responseTime`, `property`, `recordEvery`, `recordSome`, `tlsVersion`, `minTlsVersion`, `latency`, `packetLossPercentage`, `packetsReceived`, `networkHop`, `receivedMessage`, `grpcHealthcheckStatus`, `grpcMetadata`, `grpcProto`, `connection`, `multiNetworkHop`, `jitter`, `mcpToolNameLength`, `mcpToolCount`, `bodyHash`, `javascript`, `mcpRespectsSpecification`, `mcpServerCapabilities`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type: string;
   /**
   * target_mcp_capabilities block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#target_mcp_capabilities SyntheticsTest#target_mcp_capabilities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#target_mcp_capabilities SyntheticsTest#target_mcp_capabilities}
   */
   readonly targetMcpCapabilities?: SyntheticsTestApiStepAssertionTargetMcpCapabilities;
   /**
   * targetjsonpath block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#targetjsonpath SyntheticsTest#targetjsonpath}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#targetjsonpath SyntheticsTest#targetjsonpath}
   */
   readonly targetjsonpath?: SyntheticsTestApiStepAssertionTargetjsonpath;
   /**
   * targetjsonschema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#targetjsonschema SyntheticsTest#targetjsonschema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#targetjsonschema SyntheticsTest#targetjsonschema}
   */
   readonly targetjsonschema?: SyntheticsTestApiStepAssertionTargetjsonschema;
   /**
   * targetxpath block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#targetxpath SyntheticsTest#targetxpath}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#targetxpath SyntheticsTest#targetxpath}
   */
   readonly targetxpath?: SyntheticsTestApiStepAssertionTargetxpath;
 }
@@ -1158,13 +1158,13 @@ export interface SyntheticsTestApiStepExtractedValueParser {
   /**
   * Type of parser for a Synthetics global variable from a synthetics test. Valid values are `raw`, `json_path`, `regex`, `x_path`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type: string;
   /**
   * Regex or JSON path used for the parser. Not used with type `raw`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#value SyntheticsTest#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#value SyntheticsTest#value}
   */
   readonly value?: string;
 }
@@ -1276,29 +1276,29 @@ export interface SyntheticsTestApiStepExtractedValue {
   /**
   * When type is `http_header` or `grpc_metadata`, name of the header or metadatum to extract.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#field SyntheticsTest#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#field SyntheticsTest#field}
   */
   readonly field?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#name SyntheticsTest#name}
   */
   readonly name: string;
   /**
   * Determines whether or not the extracted value will be obfuscated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
   */
   readonly secure?: boolean | cdktn.IResolvable;
   /**
   * Property of the Synthetics Test Response to use for the variable. Valid values are `grpc_message`, `grpc_metadata`, `http_body`, `http_header`, `http_status_code`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type: string;
   /**
   * parser block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#parser SyntheticsTest#parser}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#parser SyntheticsTest#parser}
   */
   readonly parser: SyntheticsTestApiStepExtractedValueParser;
 }
@@ -1523,103 +1523,103 @@ export interface SyntheticsTestApiStepRequestBasicauth {
   /**
   * Access key for `SIGV4` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#access_key SyntheticsTest#access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#access_key SyntheticsTest#access_key}
   */
   readonly accessKey?: string;
   /**
   * Access token url for `oauth-client` or `oauth-rop` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#access_token_url SyntheticsTest#access_token_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#access_token_url SyntheticsTest#access_token_url}
   */
   readonly accessTokenUrl?: string;
   /**
   * Audience for `oauth-client` or `oauth-rop` authentication. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#audience SyntheticsTest#audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#audience SyntheticsTest#audience}
   */
   readonly audience?: string;
   /**
   * Client ID for `oauth-client` or `oauth-rop` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#client_id SyntheticsTest#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#client_id SyntheticsTest#client_id}
   */
   readonly clientId?: string;
   /**
   * Client secret for `oauth-client` or `oauth-rop` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#client_secret SyntheticsTest#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#client_secret SyntheticsTest#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * Domain for `ntlm` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#domain SyntheticsTest#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#domain SyntheticsTest#domain}
   */
   readonly domain?: string;
   /**
   * Password for authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#password SyntheticsTest#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#password SyntheticsTest#password}
   */
   readonly password?: string;
   /**
   * Region for `SIGV4` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#region SyntheticsTest#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#region SyntheticsTest#region}
   */
   readonly region?: string;
   /**
   * Resource for `oauth-client` or `oauth-rop` authentication. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#resource SyntheticsTest#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#resource SyntheticsTest#resource}
   */
   readonly resource?: string;
   /**
   * Scope for `oauth-client` or `oauth-rop` authentication. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#scope SyntheticsTest#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#scope SyntheticsTest#scope}
   */
   readonly scope?: string;
   /**
   * Secret key for `SIGV4` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#secret_key SyntheticsTest#secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#secret_key SyntheticsTest#secret_key}
   */
   readonly secretKey?: string;
   /**
   * Service name for `SIGV4` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#service_name SyntheticsTest#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#service_name SyntheticsTest#service_name}
   */
   readonly serviceName?: string;
   /**
   * Session token for `SIGV4` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#session_token SyntheticsTest#session_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#session_token SyntheticsTest#session_token}
   */
   readonly sessionToken?: string;
   /**
   * Token API Authentication for `oauth-client` or `oauth-rop` authentication. Valid values are `header`, `body`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#token_api_authentication SyntheticsTest#token_api_authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#token_api_authentication SyntheticsTest#token_api_authentication}
   */
   readonly tokenApiAuthentication?: string;
   /**
   * Type of basic authentication to use when performing the test. Defaults to `"web"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type?: string;
   /**
   * Username for authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#username SyntheticsTest#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#username SyntheticsTest#username}
   */
   readonly username?: string;
   /**
   * Workstation for `ntlm` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#workstation SyntheticsTest#workstation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#workstation SyntheticsTest#workstation}
   */
   readonly workstation?: string;
 }
@@ -2169,13 +2169,13 @@ export interface SyntheticsTestApiStepRequestClientCertificateCert {
   /**
   * Content of the certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#content SyntheticsTest#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#content SyntheticsTest#content}
   */
   readonly content?: string;
   /**
   * File name for the certificate. Defaults to `"Provided in Terraform config"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
   */
   readonly filename?: string;
 }
@@ -2290,13 +2290,13 @@ export interface SyntheticsTestApiStepRequestClientCertificateKey {
   /**
   * Content of the certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#content SyntheticsTest#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#content SyntheticsTest#content}
   */
   readonly content?: string;
   /**
   * File name for the certificate. Defaults to `"Provided in Terraform config"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
   */
   readonly filename?: string;
 }
@@ -2411,13 +2411,13 @@ export interface SyntheticsTestApiStepRequestClientCertificate {
   /**
   * cert block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#cert SyntheticsTest#cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#cert SyntheticsTest#cert}
   */
   readonly cert: SyntheticsTestApiStepRequestClientCertificateCert;
   /**
   * key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#key SyntheticsTest#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#key SyntheticsTest#key}
   */
   readonly key: SyntheticsTestApiStepRequestClientCertificateKey;
 }
@@ -2526,223 +2526,223 @@ export interface SyntheticsTestApiStepRequestDefinition {
   /**
   * For SSL tests, whether or not the test should allow self signed certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#accept_self_signed SyntheticsTest#accept_self_signed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#accept_self_signed SyntheticsTest#accept_self_signed}
   */
   readonly acceptSelfSigned?: boolean | cdktn.IResolvable;
   /**
   * Allows loading insecure content for a request in an API test or in a multistep API test step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#allow_insecure SyntheticsTest#allow_insecure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#allow_insecure SyntheticsTest#allow_insecure}
   */
   readonly allowInsecure?: boolean | cdktn.IResolvable;
   /**
   * The request body.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#body SyntheticsTest#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#body SyntheticsTest#body}
   */
   readonly body?: string;
   /**
   * Type of the request body. Valid values are `text/plain`, `application/json`, `text/xml`, `text/html`, `application/x-www-form-urlencoded`, `graphql`, `application/octet-stream`, `multipart/form-data`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#body_type SyntheticsTest#body_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#body_type SyntheticsTest#body_type}
   */
   readonly bodyType?: string;
   /**
   * The type of gRPC call to perform, or the MCP step call (`init`, `tool_list`, `tool_call`). Valid values are `healthcheck`, `unary`, `init`, `tool_list`, `tool_call`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#call_type SyntheticsTest#call_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#call_type SyntheticsTest#call_type}
   */
   readonly callType?: string;
   /**
   * By default, the client certificate is applied on the domain of the starting URL for browser tests. If you want your client certificate to be applied on other domains instead, add them in `certificate_domains`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#certificate_domains SyntheticsTest#certificate_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#certificate_domains SyntheticsTest#certificate_domains}
   */
   readonly certificateDomains?: string[];
   /**
   * For SSL tests, whether or not the test should fail on revoked certificate in stapled OCSP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#check_certificate_revocation SyntheticsTest#check_certificate_revocation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#check_certificate_revocation SyntheticsTest#check_certificate_revocation}
   */
   readonly checkCertificateRevocation?: boolean | cdktn.IResolvable;
   /**
   * For Network Path tests, an optional label displayed for the destination host in the Network Path visualization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#destination_service SyntheticsTest#destination_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#destination_service SyntheticsTest#destination_service}
   */
   readonly destinationService?: string;
   /**
   * For SSL tests, whether or not the test should disable fetching intermediate certificates from AIA
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#disable_aia_intermediate_fetching SyntheticsTest#disable_aia_intermediate_fetching}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#disable_aia_intermediate_fetching SyntheticsTest#disable_aia_intermediate_fetching}
   */
   readonly disableAiaIntermediateFetching?: boolean | cdktn.IResolvable;
   /**
   * DNS server to use for DNS tests (`subtype = "dns"`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#dns_server SyntheticsTest#dns_server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#dns_server SyntheticsTest#dns_server}
   */
   readonly dnsServer?: string;
   /**
   * DNS server port to use for DNS tests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#dns_server_port SyntheticsTest#dns_server_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#dns_server_port SyntheticsTest#dns_server_port}
   */
   readonly dnsServerPort?: string;
   /**
   * For Network Path tests, the number of packets sent to probe the destination to measure packet loss, latency, and jitter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#e2e_queries SyntheticsTest#e2e_queries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#e2e_queries SyntheticsTest#e2e_queries}
   */
   readonly e2EQueries?: number;
   /**
   * Determines whether or not the API HTTP test should follow redirects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#follow_redirects SyntheticsTest#follow_redirects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#follow_redirects SyntheticsTest#follow_redirects}
   */
   readonly followRedirects?: boolean | cdktn.IResolvable;
   /**
   * Form data to be sent when `body_type` is `multipart/form-data`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#form SyntheticsTest#form}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#form SyntheticsTest#form}
   */
   readonly form?: { [key: string]: string };
   /**
   * Host name to perform the test with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#host SyntheticsTest#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#host SyntheticsTest#host}
   */
   readonly host?: string;
   /**
   * HTTP version to use for an HTTP request in an API test or step. Valid values are `http1`, `http2`, `any`. Defaults to `"any"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
   */
   readonly httpVersion?: string;
   /**
   * For Websocket tests, whether the message is treated as a base64-encoded string in the server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#is_message_base64_encoded SyntheticsTest#is_message_base64_encoded}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#is_message_base64_encoded SyntheticsTest#is_message_base64_encoded}
   */
   readonly isMessageBase64Encoded?: boolean | cdktn.IResolvable;
   /**
   * For Network Path tests, the maximum time-to-live (max number of hops) used in outgoing probe packets.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#max_ttl SyntheticsTest#max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#max_ttl SyntheticsTest#max_ttl}
   */
   readonly maxTtl?: number;
   /**
   * For MCP API steps, the MCP protocol version used by the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#mcp_protocol_version SyntheticsTest#mcp_protocol_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#mcp_protocol_version SyntheticsTest#mcp_protocol_version}
   */
   readonly mcpProtocolVersion?: string;
   /**
   * For gRPC, UDP, and Websocket tests, message to send with the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#message SyntheticsTest#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#message SyntheticsTest#message}
   */
   readonly message?: string;
   /**
   * Either the HTTP method/verb to use or a gRPC method available on the service set in the `service` field. Required if `subtype` is `HTTP` or if `subtype` is `grpc` and `callType` is `unary`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#method SyntheticsTest#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#method SyntheticsTest#method}
   */
   readonly method?: string;
   /**
   * Determines whether or not to save the response body.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#no_saving_response_body SyntheticsTest#no_saving_response_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#no_saving_response_body SyntheticsTest#no_saving_response_body}
   */
   readonly noSavingResponseBody?: boolean | cdktn.IResolvable;
   /**
   * Number of pings to use per test for ICMP tests (`subtype = "icmp"`) between 0 and 10.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#number_of_packets SyntheticsTest#number_of_packets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#number_of_packets SyntheticsTest#number_of_packets}
   */
   readonly numberOfPackets?: number;
   /**
   * Persist cookies across redirects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#persist_cookies SyntheticsTest#persist_cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#persist_cookies SyntheticsTest#persist_cookies}
   */
   readonly persistCookies?: boolean | cdktn.IResolvable;
   /**
   * The content of a proto file as a string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#plain_proto_file SyntheticsTest#plain_proto_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#plain_proto_file SyntheticsTest#plain_proto_file}
   */
   readonly plainProtoFile?: string;
   /**
   * Port to use when performing the test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#port SyntheticsTest#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#port SyntheticsTest#port}
   */
   readonly port?: string;
   /**
   * A protobuf JSON descriptor. **Deprecated.** Use `plain_proto_file` instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#proto_json_descriptor SyntheticsTest#proto_json_descriptor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#proto_json_descriptor SyntheticsTest#proto_json_descriptor}
   */
   readonly protoJsonDescriptor?: string;
   /**
   * For SSL tests, it specifies on which server you want to initiate the TLS handshake, allowing the server to present one of multiple possible certificates on the same IP address and TCP port number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#servername SyntheticsTest#servername}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#servername SyntheticsTest#servername}
   */
   readonly servername?: string;
   /**
   * The gRPC service on which you want to perform the gRPC call.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#service SyntheticsTest#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#service SyntheticsTest#service}
   */
   readonly service?: string;
   /**
   * This will turn on a traceroute probe to discover all gateways along the path to the host destination. For ICMP tests (`subtype = "icmp"`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#should_track_hops SyntheticsTest#should_track_hops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#should_track_hops SyntheticsTest#should_track_hops}
   */
   readonly shouldTrackHops?: boolean | cdktn.IResolvable;
   /**
   * For Network Path tests, an optional label displayed for the source host in the Network Path visualization
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#source_service SyntheticsTest#source_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#source_service SyntheticsTest#source_service}
   */
   readonly sourceService?: string;
   /**
   * For TCP Network Path tests, the TCP traceroute strategy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#tcp_method SyntheticsTest#tcp_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#tcp_method SyntheticsTest#tcp_method}
   */
   readonly tcpMethod?: string;
   /**
   * Timeout in seconds for the test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
   */
   readonly timeout?: number;
   /**
   * For MCP API steps, the JSON-encoded arguments to pass to the tool when `call_type` is `tool_call`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#tool_args SyntheticsTest#tool_args}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#tool_args SyntheticsTest#tool_args}
   */
   readonly toolArgs?: string;
   /**
   * For MCP API steps, the name of the tool to call. Required when `call_type` is `tool_call`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#tool_name SyntheticsTest#tool_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#tool_name SyntheticsTest#tool_name}
   */
   readonly toolName?: string;
   /**
   * For Network Path tests, the number of traceroute path tracings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#traceroute_queries SyntheticsTest#traceroute_queries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#traceroute_queries SyntheticsTest#traceroute_queries}
   */
   readonly tracerouteQueries?: number;
   /**
   * The URL to send the request to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#url SyntheticsTest#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#url SyntheticsTest#url}
   */
   readonly url?: string;
 }
@@ -3872,37 +3872,37 @@ export interface SyntheticsTestApiStepRequestFile {
   /**
   * Content of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#content SyntheticsTest#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#content SyntheticsTest#content}
   */
   readonly content?: string;
   /**
   * Encoding of the file content. Must be `base64` when content contains base64-encoded data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#encoding SyntheticsTest#encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#encoding SyntheticsTest#encoding}
   */
   readonly encoding?: string;
   /**
   * Name of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#name SyntheticsTest#name}
   */
   readonly name: string;
   /**
   * Original name of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#original_file_name SyntheticsTest#original_file_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#original_file_name SyntheticsTest#original_file_name}
   */
   readonly originalFileName?: string;
   /**
   * Size of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#size SyntheticsTest#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#size SyntheticsTest#size}
   */
   readonly size: number;
   /**
   * Type of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type: string;
 }
@@ -4161,13 +4161,13 @@ export interface SyntheticsTestApiStepRequestProxy {
   /**
   * Header name and value map.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#headers SyntheticsTest#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#headers SyntheticsTest#headers}
   */
   readonly headers?: { [key: string]: string };
   /**
   * URL of the proxy to perform the test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#url SyntheticsTest#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#url SyntheticsTest#url}
   */
   readonly url: string;
 }
@@ -4279,13 +4279,13 @@ export interface SyntheticsTestApiStepRetry {
   /**
   * Number of retries needed to consider a location as failed before sending a notification alert. Maximum value: `3` for `api` tests, `2` for `browser` and `mobile` tests. Defaults to `0`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#count SyntheticsTest#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#count SyntheticsTest#count}
   */
   readonly count?: number;
   /**
   * Interval between a failed test and the next retry in milliseconds. Maximum value: `5000`. Defaults to `300`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
   */
   readonly interval?: number;
 }
@@ -4400,115 +4400,115 @@ export interface SyntheticsTestApiStep {
   /**
   * Determines whether or not to continue with test if this step fails.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#allow_failure SyntheticsTest#allow_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#allow_failure SyntheticsTest#allow_failure}
   */
   readonly allowFailure?: boolean | cdktn.IResolvable;
   /**
   * Determines whether or not to exit the test if the step succeeds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#exit_if_succeed SyntheticsTest#exit_if_succeed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#exit_if_succeed SyntheticsTest#exit_if_succeed}
   */
   readonly exitIfSucceed?: boolean | cdktn.IResolvable;
   /**
   * Generate variables using JavaScript.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#extracted_values_from_script SyntheticsTest#extracted_values_from_script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#extracted_values_from_script SyntheticsTest#extracted_values_from_script}
   */
   readonly extractedValuesFromScript?: string;
   /**
   * Determines whether or not to consider the entire test as failed if this step fails. Can be used only if `allow_failure` is `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#is_critical SyntheticsTest#is_critical}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#is_critical SyntheticsTest#is_critical}
   */
   readonly isCritical?: boolean | cdktn.IResolvable;
   /**
   * The name of the step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#name SyntheticsTest#name}
   */
   readonly name: string;
   /**
   * Header name and value map.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#request_headers SyntheticsTest#request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#request_headers SyntheticsTest#request_headers}
   */
   readonly requestHeaders?: { [key: string]: string };
   /**
   * Metadata to include when performing the gRPC request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#request_metadata SyntheticsTest#request_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#request_metadata SyntheticsTest#request_metadata}
   */
   readonly requestMetadata?: { [key: string]: string };
   /**
   * Query arguments name and value map.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#request_query SyntheticsTest#request_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#request_query SyntheticsTest#request_query}
   */
   readonly requestQuery?: { [key: string]: string };
   /**
   * Public ID of the test to be played as part of a `playSubTest` step type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#subtest_public_id SyntheticsTest#subtest_public_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#subtest_public_id SyntheticsTest#subtest_public_id}
   */
   readonly subtestPublicId?: string;
   /**
   * The subtype of the Synthetic multistep API test step. Valid values are `http`, `grpc`, `ssl`, `dns`, `tcp`, `udp`, `icmp`, `websocket`, `mcp`, `wait`, `playSubTest`. Defaults to `"http"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#subtype SyntheticsTest#subtype}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#subtype SyntheticsTest#subtype}
   */
   readonly subtype?: string;
   /**
   * The time to wait in seconds. Minimum value: 0. Maximum value: 180.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#value SyntheticsTest#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#value SyntheticsTest#value}
   */
   readonly value?: number;
   /**
   * assertion block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#assertion SyntheticsTest#assertion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#assertion SyntheticsTest#assertion}
   */
   readonly assertion?: SyntheticsTestApiStepAssertion[] | cdktn.IResolvable;
   /**
   * extracted_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#extracted_value SyntheticsTest#extracted_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#extracted_value SyntheticsTest#extracted_value}
   */
   readonly extractedValue?: SyntheticsTestApiStepExtractedValue[] | cdktn.IResolvable;
   /**
   * request_basicauth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#request_basicauth SyntheticsTest#request_basicauth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#request_basicauth SyntheticsTest#request_basicauth}
   */
   readonly requestBasicauth?: SyntheticsTestApiStepRequestBasicauth;
   /**
   * request_client_certificate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#request_client_certificate SyntheticsTest#request_client_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#request_client_certificate SyntheticsTest#request_client_certificate}
   */
   readonly requestClientCertificate?: SyntheticsTestApiStepRequestClientCertificate;
   /**
   * request_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#request_definition SyntheticsTest#request_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#request_definition SyntheticsTest#request_definition}
   */
   readonly requestDefinition?: SyntheticsTestApiStepRequestDefinition;
   /**
   * request_file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#request_file SyntheticsTest#request_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#request_file SyntheticsTest#request_file}
   */
   readonly requestFile?: SyntheticsTestApiStepRequestFile[] | cdktn.IResolvable;
   /**
   * request_proxy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#request_proxy SyntheticsTest#request_proxy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#request_proxy SyntheticsTest#request_proxy}
   */
   readonly requestProxy?: SyntheticsTestApiStepRequestProxy;
   /**
   * retry block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#retry SyntheticsTest#retry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#retry SyntheticsTest#retry}
   */
   readonly retry?: SyntheticsTestApiStepRetry;
 }
@@ -5150,7 +5150,7 @@ export interface SyntheticsTestAssertionTargetMcpCapabilities {
   /**
   * List of MCP server capabilities to assert against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#capabilities SyntheticsTest#capabilities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#capabilities SyntheticsTest#capabilities}
   */
   readonly capabilities: string[];
 }
@@ -5233,25 +5233,25 @@ export interface SyntheticsTestAssertionTargetjsonpath {
   /**
   * The element from the list of results to assert on. Select from `firstElementMatches` (the first element in the list), `everyElementMatches` (every element in the list), `atLeastOneElementMatches` (at least one element in the list), or `serializationMatches` (the serialized value of the list). Defaults to `"firstElementMatches"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#elementsoperator SyntheticsTest#elementsoperator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#elementsoperator SyntheticsTest#elementsoperator}
   */
   readonly elementsoperator?: string;
   /**
   * The JSON path to assert.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#jsonpath SyntheticsTest#jsonpath}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#jsonpath SyntheticsTest#jsonpath}
   */
   readonly jsonpath: string;
   /**
   * The specific operator to use on the path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
   */
   readonly operator: string;
   /**
   * Expected matching value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
   */
   readonly targetvalue?: string;
 }
@@ -5418,13 +5418,13 @@ export interface SyntheticsTestAssertionTargetjsonschema {
   /**
   * The JSON Schema to validate the body against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#jsonschema SyntheticsTest#jsonschema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#jsonschema SyntheticsTest#jsonschema}
   */
   readonly jsonschema: string;
   /**
   * The meta schema to use for the JSON Schema. Defaults to `"draft-07"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#metaschema SyntheticsTest#metaschema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#metaschema SyntheticsTest#metaschema}
   */
   readonly metaschema?: string;
 }
@@ -5536,19 +5536,19 @@ export interface SyntheticsTestAssertionTargetxpath {
   /**
   * The specific operator to use on the path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
   */
   readonly operator: string;
   /**
   * Expected matching value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
   */
   readonly targetvalue?: string;
   /**
   * The xpath to assert.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#xpath SyntheticsTest#xpath}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#xpath SyntheticsTest#xpath}
   */
   readonly xpath: string;
 }
@@ -5686,61 +5686,61 @@ export interface SyntheticsTestAssertion {
   /**
   * If assertion type is `javascript`, this is the JavaScript code that performs the assertions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#code SyntheticsTest#code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#code SyntheticsTest#code}
   */
   readonly code?: string;
   /**
   * Assertion operator. **Note:** Only some combinations of `type` and `operator` are valid. Refer to `config.assertions` in the [Datadog API reference](https://docs.datadoghq.com/api/latest/synthetics/#create-an-api-test). Valid values are `contains`, `doesNotContain`, `is`, `isNot`, `lessThan`, `lessThanOrEqual`, `moreThan`, `moreThanOrEqual`, `matches`, `doesNotMatch`, `validates`, `isInMoreThan`, `isInLessThan`, `doesNotExist`, `isUndefined`, `validatesJSONPath`, `validatesJSONSchema`, `validatesXPath`, `md5`, `sha1`, `sha256`, `is`, `isNot`, `lessThan`, `lessThanOrEqual`, `moreThan`, `moreThanOrEqual`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
   */
   readonly operator?: string;
   /**
   * If assertion type is `header` or `grpcMetadata`, this is the header name. For other assertion types, this is an aggregation property: `avg`, `min`, `max`, or `stddev`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#property SyntheticsTest#property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#property SyntheticsTest#property}
   */
   readonly property?: string;
   /**
   * Expected value. **Note:** Depends on the assertion type. Refer to `config.assertions` in the [Datadog API reference](https://docs.datadoghq.com/api/latest/synthetics/#create-an-api-test).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#target SyntheticsTest#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#target SyntheticsTest#target}
   */
   readonly target?: string;
   /**
   * Timings scope for response time assertions. Valid values are `all`, `withoutDNS`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#timings_scope SyntheticsTest#timings_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#timings_scope SyntheticsTest#timings_scope}
   */
   readonly timingsScope?: string;
   /**
   * Type of assertion. **Note:** Only some combinations of `type` and `operator` are valid. For API tests, refer to `config.assertions` in the [Datadog API reference](https://docs.datadoghq.com/api/latest/synthetics/#create-an-api-test). For Network Path tests, refer to `config.assertions` in the [Datadog API reference](https://docs.datadoghq.com/api/latest/synthetics/#create-a-network-path-test). Valid values are `body`, `header`, `statusCode`, `certificate`, `responseTime`, `property`, `recordEvery`, `recordSome`, `tlsVersion`, `minTlsVersion`, `latency`, `packetLossPercentage`, `packetsReceived`, `networkHop`, `receivedMessage`, `grpcHealthcheckStatus`, `grpcMetadata`, `grpcProto`, `connection`, `multiNetworkHop`, `jitter`, `mcpToolNameLength`, `mcpToolCount`, `bodyHash`, `javascript`, `mcpRespectsSpecification`, `mcpServerCapabilities`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type: string;
   /**
   * target_mcp_capabilities block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#target_mcp_capabilities SyntheticsTest#target_mcp_capabilities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#target_mcp_capabilities SyntheticsTest#target_mcp_capabilities}
   */
   readonly targetMcpCapabilities?: SyntheticsTestAssertionTargetMcpCapabilities;
   /**
   * targetjsonpath block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#targetjsonpath SyntheticsTest#targetjsonpath}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#targetjsonpath SyntheticsTest#targetjsonpath}
   */
   readonly targetjsonpath?: SyntheticsTestAssertionTargetjsonpath;
   /**
   * targetjsonschema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#targetjsonschema SyntheticsTest#targetjsonschema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#targetjsonschema SyntheticsTest#targetjsonschema}
   */
   readonly targetjsonschema?: SyntheticsTestAssertionTargetjsonschema;
   /**
   * targetxpath block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#targetxpath SyntheticsTest#targetxpath}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#targetxpath SyntheticsTest#targetxpath}
   */
   readonly targetxpath?: SyntheticsTestAssertionTargetxpath;
 }
@@ -6116,13 +6116,13 @@ export interface SyntheticsTestBrowserStepParamsDragDropOptionsOffset {
   /**
   * Horizontal offset in pixels.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#x SyntheticsTest#x}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#x SyntheticsTest#x}
   */
   readonly x?: number;
   /**
   * Vertical offset in pixels.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#y SyntheticsTest#y}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#y SyntheticsTest#y}
   */
   readonly y?: number;
 }
@@ -6237,13 +6237,13 @@ export interface SyntheticsTestBrowserStepParamsDragDropOptions {
   /**
   * Delay in milliseconds before performing the action (0–9999).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#delay SyntheticsTest#delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#delay SyntheticsTest#delay}
   */
   readonly delay?: number;
   /**
   * offset block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#offset SyntheticsTest#offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#offset SyntheticsTest#offset}
   */
   readonly offset?: SyntheticsTestBrowserStepParamsDragDropOptionsOffset;
 }
@@ -6358,11 +6358,11 @@ export interface SyntheticsTestBrowserStepParamsElementUserLocatorValue {
   /**
   * Defaults to `"css"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#value SyntheticsTest#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#value SyntheticsTest#value}
   */
   readonly value: string;
 }
@@ -6474,13 +6474,13 @@ export interface SyntheticsTestBrowserStepParamsElementUserLocator {
   /**
   * Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}
   */
   readonly failTestOnCannotLocate?: boolean | cdktn.IResolvable;
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#value SyntheticsTest#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#value SyntheticsTest#value}
   */
   readonly value: SyntheticsTestBrowserStepParamsElementUserLocatorValue;
 }
@@ -6592,13 +6592,13 @@ export interface SyntheticsTestBrowserStepParamsPattern {
   /**
   * Type of pattern to use for the step. Valid values are `regex`, `x_path`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type?: string;
   /**
   * Pattern to use for the step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#value SyntheticsTest#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#value SyntheticsTest#value}
   */
   readonly value?: string;
 }
@@ -6713,19 +6713,19 @@ export interface SyntheticsTestBrowserStepParamsVariable {
   /**
   * Example of the extracted variable. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#example SyntheticsTest#example}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#example SyntheticsTest#example}
   */
   readonly example?: string;
   /**
   * Name of the extracted variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#name SyntheticsTest#name}
   */
   readonly name?: string;
   /**
   * Whether the value of this variable will be obfuscated in test results. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
   */
   readonly secure?: boolean | cdktn.IResolvable;
 }
@@ -6869,145 +6869,145 @@ export interface SyntheticsTestBrowserStepParams {
   /**
   * Whether to append the `value` to existing text input content for a "typeText" step. By default, content is cleared before text input.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#append_to_content SyntheticsTest#append_to_content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#append_to_content SyntheticsTest#append_to_content}
   */
   readonly appendToContent?: boolean | cdktn.IResolvable;
   /**
   * Name of the attribute to use for an "assert attribute" step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#attribute SyntheticsTest#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#attribute SyntheticsTest#attribute}
   */
   readonly attribute?: string;
   /**
   * Check type to use for an assertion step. Valid values are `equals`, `notEquals`, `contains`, `notContains`, `startsWith`, `notStartsWith`, `greater`, `lower`, `greaterEquals`, `lowerEquals`, `matchRegex`, `between`, `isEmpty`, `notIsEmpty`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#check SyntheticsTest#check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#check SyntheticsTest#check}
   */
   readonly check?: string;
   /**
   * Type of click to use for a "click" step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#click_type SyntheticsTest#click_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#click_type SyntheticsTest#click_type}
   */
   readonly clickType?: string;
   /**
   * Whether to use `element.click()` for a "click" step. This is a more reliable way to interact with elements but does not emulate a real user interaction.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#click_with_javascript SyntheticsTest#click_with_javascript}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#click_with_javascript SyntheticsTest#click_with_javascript}
   */
   readonly clickWithJavascript?: boolean | cdktn.IResolvable;
   /**
   * Javascript code to use for the step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#code SyntheticsTest#code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#code SyntheticsTest#code}
   */
   readonly code?: string;
   /**
   * Delay between each key stroke for a "type test" step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#delay SyntheticsTest#delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#delay SyntheticsTest#delay}
   */
   readonly delay?: number;
   /**
   * Element to use for the step, JSON encoded string. Refer to the examples for a usage example showing the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#element SyntheticsTest#element}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#element SyntheticsTest#element}
   */
   readonly element?: string;
   /**
   * Details of the email for an "assert email" step, JSON encoded string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#email SyntheticsTest#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#email SyntheticsTest#email}
   */
   readonly email?: string;
   /**
   * JSON encoded string used for an "assert download" step. Refer to the examples for a usage example showing the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#file SyntheticsTest#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#file SyntheticsTest#file}
   */
   readonly file?: string;
   /**
   * Details of the files for an "upload files" step, JSON encoded string. Refer to the examples for a usage example showing the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#files SyntheticsTest#files}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#files SyntheticsTest#files}
   */
   readonly files?: string;
   /**
   * Modifier to use for a "press key" step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#modifiers SyntheticsTest#modifiers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#modifiers SyntheticsTest#modifiers}
   */
   readonly modifiers?: string[];
   /**
   * ID of the tab to play the subtest.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#playing_tab_id SyntheticsTest#playing_tab_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#playing_tab_id SyntheticsTest#playing_tab_id}
   */
   readonly playingTabId?: string;
   /**
   * Request for an API step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#request SyntheticsTest#request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#request SyntheticsTest#request}
   */
   readonly request?: string;
   /**
   * Details of the requests for an "assert request" step, JSON encoded string. Refer to the examples for a usage example showing the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#requests SyntheticsTest#requests}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#requests SyntheticsTest#requests}
   */
   readonly requests?: string;
   /**
   * ID of the Synthetics test to use as subtest.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#subtest_public_id SyntheticsTest#subtest_public_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#subtest_public_id SyntheticsTest#subtest_public_id}
   */
   readonly subtestPublicId?: string;
   /**
   * Value of the step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#value SyntheticsTest#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#value SyntheticsTest#value}
   */
   readonly value?: string;
   /**
   * For "file upload" steps.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#with_click SyntheticsTest#with_click}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#with_click SyntheticsTest#with_click}
   */
   readonly withClick?: boolean | cdktn.IResolvable;
   /**
   * X coordinates for a "scroll step".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#x SyntheticsTest#x}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#x SyntheticsTest#x}
   */
   readonly x?: number;
   /**
   * Y coordinates for a "scroll step".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#y SyntheticsTest#y}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#y SyntheticsTest#y}
   */
   readonly y?: number;
   /**
   * drag_drop_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#drag_drop_options SyntheticsTest#drag_drop_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#drag_drop_options SyntheticsTest#drag_drop_options}
   */
   readonly dragDropOptions?: SyntheticsTestBrowserStepParamsDragDropOptions;
   /**
   * element_user_locator block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#element_user_locator SyntheticsTest#element_user_locator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#element_user_locator SyntheticsTest#element_user_locator}
   */
   readonly elementUserLocator?: SyntheticsTestBrowserStepParamsElementUserLocator;
   /**
   * pattern block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#pattern SyntheticsTest#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#pattern SyntheticsTest#pattern}
   */
   readonly pattern?: SyntheticsTestBrowserStepParamsPattern;
   /**
   * variable block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#variable SyntheticsTest#variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#variable SyntheticsTest#variable}
   */
   readonly variable?: SyntheticsTestBrowserStepParamsVariable;
 }
@@ -7760,67 +7760,67 @@ export interface SyntheticsTestBrowserStep {
   /**
   * Determines if the step should be allowed to fail.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#allow_failure SyntheticsTest#allow_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#allow_failure SyntheticsTest#allow_failure}
   */
   readonly allowFailure?: boolean | cdktn.IResolvable;
   /**
   * Determines whether or not to always execute this step even if the previous step failed or was skipped.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#always_execute SyntheticsTest#always_execute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#always_execute SyntheticsTest#always_execute}
   */
   readonly alwaysExecute?: boolean | cdktn.IResolvable;
   /**
   * Determines whether or not to exit the test if the step succeeds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#exit_if_succeed SyntheticsTest#exit_if_succeed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#exit_if_succeed SyntheticsTest#exit_if_succeed}
   */
   readonly exitIfSucceed?: boolean | cdktn.IResolvable;
   /**
   * Force update of the "element" parameter for the step
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#force_element_update SyntheticsTest#force_element_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#force_element_update SyntheticsTest#force_element_update}
   */
   readonly forceElementUpdate?: boolean | cdktn.IResolvable;
   /**
   * Determines whether or not to consider the entire test as failed if this step fails. Can be used only if `allow_failure` is `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#is_critical SyntheticsTest#is_critical}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#is_critical SyntheticsTest#is_critical}
   */
   readonly isCritical?: boolean | cdktn.IResolvable;
   /**
   * A unique identifier used to track steps after reordering.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#local_key SyntheticsTest#local_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#local_key SyntheticsTest#local_key}
   */
   readonly localKey?: string;
   /**
   * Name of the step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#name SyntheticsTest#name}
   */
   readonly name: string;
   /**
   * Prevents saving screenshots of the step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
   */
   readonly noScreenshot?: boolean | cdktn.IResolvable;
   /**
   * Used to override the default timeout of a step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
   */
   readonly timeout?: number;
   /**
   * Type of the step. Valid values are `assertCurrentUrl`, `assertElementAttribute`, `assertElementContent`, `assertElementPresent`, `assertEmail`, `assertFileDownload`, `assertFromJavascript`, `assertPageContains`, `assertPageLacks`, `assertRequests`, `click`, `drag`, `drop`, `extractFromJavascript`, `extractFromEmailBody`, `extractVariable`, `goToEmailLink`, `goToUrl`, `goToUrlAndMeasureTti`, `hover`, `playSubTest`, `pressKey`, `refresh`, `runApiTest`, `scroll`, `selectOption`, `typeText`, `uploadFiles`, `wait`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type: string;
   /**
   * params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#params SyntheticsTest#params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#params SyntheticsTest#params}
   */
   readonly params: SyntheticsTestBrowserStepParams;
 }
@@ -8224,13 +8224,13 @@ export interface SyntheticsTestBrowserVariable {
   /**
   * Example for the variable. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#example SyntheticsTest#example}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#example SyntheticsTest#example}
   */
   readonly example?: string;
   /**
   * ID of the global variable to use. This is actually only used (and required) in the case of using a variable of type `global`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#id SyntheticsTest#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#id SyntheticsTest#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -8239,25 +8239,25 @@ export interface SyntheticsTestBrowserVariable {
   /**
   * Name of the variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#name SyntheticsTest#name}
   */
   readonly name: string;
   /**
   * Pattern of the variable. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#pattern SyntheticsTest#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#pattern SyntheticsTest#pattern}
   */
   readonly pattern?: string;
   /**
   * Determines whether or not the browser test variable is obfuscated. Can only be used with a browser variable of type `text`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
   */
   readonly secure?: boolean | cdktn.IResolvable;
   /**
   * Type of browser test variable. Valid values are `element`, `email`, `global`, `text`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type: string;
 }
@@ -8514,13 +8514,13 @@ export interface SyntheticsTestConfigVariable {
   /**
   * Example for the variable. This value is not returned by the API when `secure = true`. Avoid drift by only making updates to this value from within Terraform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#example SyntheticsTest#example}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#example SyntheticsTest#example}
   */
   readonly example?: string;
   /**
   * When type = `global`, ID of the global variable to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#id SyntheticsTest#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#id SyntheticsTest#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -8529,25 +8529,25 @@ export interface SyntheticsTestConfigVariable {
   /**
   * Name of the variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#name SyntheticsTest#name}
   */
   readonly name: string;
   /**
   * Pattern of the variable. This value is not returned by the API when `secure = true`. Avoid drift by only making updates to this value from within Terraform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#pattern SyntheticsTest#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#pattern SyntheticsTest#pattern}
   */
   readonly pattern?: string;
   /**
   * Whether the value of this variable will be obfuscated in test results. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
   */
   readonly secure?: boolean | cdktn.IResolvable;
   /**
   * Type of test configuration variable. Valid values are `global`, `text`, `email`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type: string;
 }
@@ -8802,13 +8802,13 @@ export class SyntheticsTestConfigVariableList extends cdktn.ComplexList {
 }
 export interface SyntheticsTestMobileOptionsListBindings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#principals SyntheticsTest#principals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#principals SyntheticsTest#principals}
   */
   readonly principals?: string[];
   /**
   * Valid values are `editor`, `viewer`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#relation SyntheticsTest#relation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#relation SyntheticsTest#relation}
   */
   readonly relation?: string;
 }
@@ -8955,7 +8955,7 @@ export interface SyntheticsTestMobileOptionsListCi {
   /**
   * Execution rule for a Synthetics test. Valid values are `blocking`, `non_blocking`, `skipped`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#execution_rule SyntheticsTest#execution_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#execution_rule SyntheticsTest#execution_rule}
   */
   readonly executionRule: string;
 }
@@ -9036,17 +9036,17 @@ export class SyntheticsTestMobileOptionsListCiOutputReference extends cdktn.Comp
 }
 export interface SyntheticsTestMobileOptionsListMobileApplication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#application_id SyntheticsTest#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#application_id SyntheticsTest#application_id}
   */
   readonly applicationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#reference_id SyntheticsTest#reference_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#reference_id SyntheticsTest#reference_id}
   */
   readonly referenceId: string;
   /**
   * Valid values are `latest`, `version`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#reference_type SyntheticsTest#reference_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#reference_type SyntheticsTest#reference_type}
   */
   readonly referenceType: string;
 }
@@ -9181,25 +9181,25 @@ export interface SyntheticsTestMobileOptionsListMonitorOptions {
   /**
   * A message to include with a re-notification.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#escalation_message SyntheticsTest#escalation_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#escalation_message SyntheticsTest#escalation_message}
   */
   readonly escalationMessage?: string;
   /**
   * The name of the preset for the notification for the monitor. Valid values are `show_all`, `hide_all`, `hide_query`, `hide_handles`, `hide_query_and_handles`, `show_only_snapshot`, `hide_handles_and_footer`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#notification_preset_name SyntheticsTest#notification_preset_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#notification_preset_name SyntheticsTest#notification_preset_name}
   */
   readonly notificationPresetName?: string;
   /**
   * Specify a renotification frequency in minutes. Values available by default are `0`, `10`, `20`, `30`, `40`, `50`, `60`, `90`, `120`, `180`, `240`, `300`, `360`, `720`, `1440`. Defaults to `0`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#renotify_interval SyntheticsTest#renotify_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#renotify_interval SyntheticsTest#renotify_interval}
   */
   readonly renotifyInterval?: number;
   /**
   * The number of times a monitor renotifies. It can only be set if `renotify_interval` is set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#renotify_occurrences SyntheticsTest#renotify_occurrences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#renotify_occurrences SyntheticsTest#renotify_occurrences}
   */
   readonly renotifyOccurrences?: number;
 }
@@ -9372,13 +9372,13 @@ export interface SyntheticsTestMobileOptionsListRetry {
   /**
   * Number of retries needed to consider a location as failed before sending a notification alert. Maximum value: `3` for `api` tests, `2` for `browser` and `mobile` tests. Defaults to `0`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#count SyntheticsTest#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#count SyntheticsTest#count}
   */
   readonly count?: number;
   /**
   * Interval between a failed test and the next retry in milliseconds. Maximum value: `5000`. Defaults to `300`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
   */
   readonly interval?: number;
 }
@@ -9493,19 +9493,19 @@ export interface SyntheticsTestMobileOptionsListSchedulingTimeframes {
   /**
   * Number representing the day of the week
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#day SyntheticsTest#day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#day SyntheticsTest#day}
   */
   readonly day: number;
   /**
   * The hour of the day on which scheduling starts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#from SyntheticsTest#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#from SyntheticsTest#from}
   */
   readonly from: string;
   /**
   * The hour of the day on which scheduling ends.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#to SyntheticsTest#to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#to SyntheticsTest#to}
   */
   readonly to: string;
 }
@@ -9672,13 +9672,13 @@ export interface SyntheticsTestMobileOptionsListScheduling {
   /**
   * Timezone in which the timeframe is based.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#timezone SyntheticsTest#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#timezone SyntheticsTest#timezone}
   */
   readonly timezone: string;
   /**
   * timeframes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#timeframes SyntheticsTest#timeframes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#timeframes SyntheticsTest#timeframes}
   */
   readonly timeframes: SyntheticsTestMobileOptionsListSchedulingTimeframes[] | cdktn.IResolvable;
 }
@@ -9785,93 +9785,93 @@ export class SyntheticsTestMobileOptionsListSchedulingOutputReference extends cd
 }
 export interface SyntheticsTestMobileOptionsListStruct {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#allow_application_crash SyntheticsTest#allow_application_crash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#allow_application_crash SyntheticsTest#allow_application_crash}
   */
   readonly allowApplicationCrash?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#default_step_timeout SyntheticsTest#default_step_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#default_step_timeout SyntheticsTest#default_step_timeout}
   */
   readonly defaultStepTimeout?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#device_ids SyntheticsTest#device_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#device_ids SyntheticsTest#device_ids}
   */
   readonly deviceIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#disable_auto_accept_alert SyntheticsTest#disable_auto_accept_alert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#disable_auto_accept_alert SyntheticsTest#disable_auto_accept_alert}
   */
   readonly disableAutoAcceptAlert?: boolean | cdktn.IResolvable;
   /**
   * Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#min_failure_duration SyntheticsTest#min_failure_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#min_failure_duration SyntheticsTest#min_failure_duration}
   */
   readonly minFailureDuration?: number;
   /**
   * The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#monitor_name SyntheticsTest#monitor_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#monitor_name SyntheticsTest#monitor_name}
   */
   readonly monitorName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}
   */
   readonly monitorPriority?: number;
   /**
   * Prevents saving screenshots of the steps.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
   */
   readonly noScreenshot?: boolean | cdktn.IResolvable;
   /**
   * A list of role identifiers pulled from the Roles API to restrict read and write access. **Deprecated.** This field is no longer supported by the Datadog API. Please use `datadog_restriction_policy` instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#restricted_roles SyntheticsTest#restricted_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#restricted_roles SyntheticsTest#restricted_roles}
   */
   readonly restrictedRoles?: string[];
   /**
   * How often the test should run (in seconds). Valid range is `300-604800` for mobile tests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#tick_every SyntheticsTest#tick_every}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#tick_every SyntheticsTest#tick_every}
   */
   readonly tickEvery: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#verbosity SyntheticsTest#verbosity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#verbosity SyntheticsTest#verbosity}
   */
   readonly verbosity?: number;
   /**
   * bindings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#bindings SyntheticsTest#bindings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#bindings SyntheticsTest#bindings}
   */
   readonly bindings?: SyntheticsTestMobileOptionsListBindings[] | cdktn.IResolvable;
   /**
   * ci block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#ci SyntheticsTest#ci}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#ci SyntheticsTest#ci}
   */
   readonly ci?: SyntheticsTestMobileOptionsListCi;
   /**
   * mobile_application block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#mobile_application SyntheticsTest#mobile_application}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#mobile_application SyntheticsTest#mobile_application}
   */
   readonly mobileApplication: SyntheticsTestMobileOptionsListMobileApplication;
   /**
   * monitor_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#monitor_options SyntheticsTest#monitor_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#monitor_options SyntheticsTest#monitor_options}
   */
   readonly monitorOptions?: SyntheticsTestMobileOptionsListMonitorOptions;
   /**
   * retry block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#retry SyntheticsTest#retry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#retry SyntheticsTest#retry}
   */
   readonly retry?: SyntheticsTestMobileOptionsListRetry;
   /**
   * scheduling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#scheduling SyntheticsTest#scheduling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#scheduling SyntheticsTest#scheduling}
   */
   readonly scheduling?: SyntheticsTestMobileOptionsListScheduling;
 }
@@ -10410,11 +10410,11 @@ export class SyntheticsTestMobileOptionsListStructOutputReference extends cdktn.
 }
 export interface SyntheticsTestMobileStepParamsElementRelativePosition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#x SyntheticsTest#x}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#x SyntheticsTest#x}
   */
   readonly x?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#y SyntheticsTest#y}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#y SyntheticsTest#y}
   */
   readonly y?: number;
 }
@@ -10529,11 +10529,11 @@ export interface SyntheticsTestMobileStepParamsElementUserLocatorValues {
   /**
   * Valid values are `accessibility-id`, `id`, `ios-predicate-string`, `ios-class-chain`, `xpath`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#value SyntheticsTest#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#value SyntheticsTest#value}
   */
   readonly value?: string;
 }
@@ -10678,13 +10678,13 @@ export class SyntheticsTestMobileStepParamsElementUserLocatorValuesList extends 
 }
 export interface SyntheticsTestMobileStepParamsElementUserLocator {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}
   */
   readonly failTestOnCannotLocate?: boolean | cdktn.IResolvable;
   /**
   * values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#values SyntheticsTest#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#values SyntheticsTest#values}
   */
   readonly values?: SyntheticsTestMobileStepParamsElementUserLocatorValues[] | cdktn.IResolvable;
 }
@@ -10797,41 +10797,41 @@ export class SyntheticsTestMobileStepParamsElementUserLocatorOutputReference ext
 }
 export interface SyntheticsTestMobileStepParamsElement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#context SyntheticsTest#context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#context SyntheticsTest#context}
   */
   readonly context?: string;
   /**
   * Valid values are `native`, `web`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#context_type SyntheticsTest#context_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#context_type SyntheticsTest#context_type}
   */
   readonly contextType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#element_description SyntheticsTest#element_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#element_description SyntheticsTest#element_description}
   */
   readonly elementDescription?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#multi_locator SyntheticsTest#multi_locator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#multi_locator SyntheticsTest#multi_locator}
   */
   readonly multiLocator?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#text_content SyntheticsTest#text_content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#text_content SyntheticsTest#text_content}
   */
   readonly textContent?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#view_name SyntheticsTest#view_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#view_name SyntheticsTest#view_name}
   */
   readonly viewName?: string;
   /**
   * relative_position block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#relative_position SyntheticsTest#relative_position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#relative_position SyntheticsTest#relative_position}
   */
   readonly relativePosition?: SyntheticsTestMobileStepParamsElementRelativePosition;
   /**
   * user_locator block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#user_locator SyntheticsTest#user_locator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#user_locator SyntheticsTest#user_locator}
   */
   readonly userLocator?: SyntheticsTestMobileStepParamsElementUserLocator;
 }
@@ -11118,11 +11118,11 @@ export class SyntheticsTestMobileStepParamsElementOutputReference extends cdktn.
 }
 export interface SyntheticsTestMobileStepParamsPositions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#x SyntheticsTest#x}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#x SyntheticsTest#x}
   */
   readonly x?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#y SyntheticsTest#y}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#y SyntheticsTest#y}
   */
   readonly y?: number;
 }
@@ -11269,13 +11269,13 @@ export interface SyntheticsTestMobileStepParamsVariable {
   /**
   * Example of the extracted variable. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#example SyntheticsTest#example}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#example SyntheticsTest#example}
   */
   readonly example?: string;
   /**
   * Name of the extracted variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#name SyntheticsTest#name}
   */
   readonly name: string;
 }
@@ -11387,73 +11387,73 @@ export interface SyntheticsTestMobileStepParams {
   /**
   * Check type to use for an assertion step. Valid values are `equals`, `notEquals`, `contains`, `notContains`, `startsWith`, `notStartsWith`, `greater`, `lower`, `greaterEquals`, `lowerEquals`, `matchRegex`, `between`, `isEmpty`, `notIsEmpty`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#check SyntheticsTest#check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#check SyntheticsTest#check}
   */
   readonly check?: string;
   /**
   * Delay between each key stroke for a "type test" step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#delay SyntheticsTest#delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#delay SyntheticsTest#delay}
   */
   readonly delay?: number;
   /**
   * Valid values are `up`, `down`, `left`, `right`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#direction SyntheticsTest#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#direction SyntheticsTest#direction}
   */
   readonly direction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#enable SyntheticsTest#enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#enable SyntheticsTest#enable}
   */
   readonly enable?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#max_scrolls SyntheticsTest#max_scrolls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#max_scrolls SyntheticsTest#max_scrolls}
   */
   readonly maxScrolls?: number;
   /**
   * ID of the Synthetics test to use as subtest.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#subtest_public_id SyntheticsTest#subtest_public_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#subtest_public_id SyntheticsTest#subtest_public_id}
   */
   readonly subtestPublicId?: string;
   /**
   * Value of the step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#value SyntheticsTest#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#value SyntheticsTest#value}
   */
   readonly value?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#with_enter SyntheticsTest#with_enter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#with_enter SyntheticsTest#with_enter}
   */
   readonly withEnter?: boolean | cdktn.IResolvable;
   /**
   * X coordinates for a "scroll step".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#x SyntheticsTest#x}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#x SyntheticsTest#x}
   */
   readonly x?: number;
   /**
   * Y coordinates for a "scroll step".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#y SyntheticsTest#y}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#y SyntheticsTest#y}
   */
   readonly y?: number;
   /**
   * element block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#element SyntheticsTest#element}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#element SyntheticsTest#element}
   */
   readonly element?: SyntheticsTestMobileStepParamsElement;
   /**
   * positions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#positions SyntheticsTest#positions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#positions SyntheticsTest#positions}
   */
   readonly positions?: SyntheticsTestMobileStepParamsPositions[] | cdktn.IResolvable;
   /**
   * variable block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#variable SyntheticsTest#variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#variable SyntheticsTest#variable}
   */
   readonly variable?: SyntheticsTestMobileStepParamsVariable;
 }
@@ -11887,55 +11887,55 @@ export interface SyntheticsTestMobileStep {
   /**
   * A boolean set to allow this step to fail.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#allow_failure SyntheticsTest#allow_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#allow_failure SyntheticsTest#allow_failure}
   */
   readonly allowFailure?: boolean | cdktn.IResolvable;
   /**
   * A boolean set to determine if the step has a new step element.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#has_new_step_element SyntheticsTest#has_new_step_element}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#has_new_step_element SyntheticsTest#has_new_step_element}
   */
   readonly hasNewStepElement?: boolean | cdktn.IResolvable;
   /**
   * A boolean to use in addition to `allowFailure` to determine if the test should be marked as failed when the step fails.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#is_critical SyntheticsTest#is_critical}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#is_critical SyntheticsTest#is_critical}
   */
   readonly isCritical?: boolean | cdktn.IResolvable;
   /**
   * The name of the step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#name SyntheticsTest#name}
   */
   readonly name: string;
   /**
   * A boolean set to not take a screenshot for the step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
   */
   readonly noScreenshot?: boolean | cdktn.IResolvable;
   /**
   * The public ID of the step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#public_id SyntheticsTest#public_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#public_id SyntheticsTest#public_id}
   */
   readonly publicId?: string;
   /**
   * The time before declaring a step failed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
   */
   readonly timeout?: number;
   /**
   * The type of the step. Valid values are `assertElementContent`, `assertScreenContains`, `assertScreenLacks`, `doubleTap`, `extractVariable`, `flick`, `openDeeplink`, `playSubTest`, `pressBack`, `restartApplication`, `rotate`, `scroll`, `scrollToElement`, `tap`, `toggleWiFi`, `typeText`, `wait`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type: string;
   /**
   * params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#params SyntheticsTest#params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#params SyntheticsTest#params}
   */
   readonly params: SyntheticsTestMobileStepParams;
 }
@@ -12276,7 +12276,7 @@ export interface SyntheticsTestOptionsListCi {
   /**
   * Execution rule for a Synthetics test. Valid values are `blocking`, `non_blocking`, `skipped`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#execution_rule SyntheticsTest#execution_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#execution_rule SyntheticsTest#execution_rule}
   */
   readonly executionRule?: string;
 }
@@ -12362,25 +12362,25 @@ export interface SyntheticsTestOptionsListMonitorOptions {
   /**
   * A message to include with a re-notification.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#escalation_message SyntheticsTest#escalation_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#escalation_message SyntheticsTest#escalation_message}
   */
   readonly escalationMessage?: string;
   /**
   * The name of the preset for the notification for the monitor. Valid values are `show_all`, `hide_all`, `hide_query`, `hide_handles`, `hide_query_and_handles`, `show_only_snapshot`, `hide_handles_and_footer`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#notification_preset_name SyntheticsTest#notification_preset_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#notification_preset_name SyntheticsTest#notification_preset_name}
   */
   readonly notificationPresetName?: string;
   /**
   * Specify a renotification frequency in minutes. Values available by default are `0`, `10`, `20`, `30`, `40`, `50`, `60`, `90`, `120`, `180`, `240`, `300`, `360`, `720`, `1440`. Defaults to `0`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#renotify_interval SyntheticsTest#renotify_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#renotify_interval SyntheticsTest#renotify_interval}
   */
   readonly renotifyInterval?: number;
   /**
   * The number of times a monitor renotifies. It can only be set if `renotify_interval` is set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#renotify_occurrences SyntheticsTest#renotify_occurrences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#renotify_occurrences SyntheticsTest#renotify_occurrences}
   */
   readonly renotifyOccurrences?: number;
 }
@@ -12553,13 +12553,13 @@ export interface SyntheticsTestOptionsListRetry {
   /**
   * Number of retries needed to consider a location as failed before sending a notification alert. Maximum value: `3` for `api` tests, `2` for `browser` and `mobile` tests. Defaults to `0`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#count SyntheticsTest#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#count SyntheticsTest#count}
   */
   readonly count?: number;
   /**
   * Interval between a failed test and the next retry in milliseconds. Maximum value: `5000`. Defaults to `300`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
   */
   readonly interval?: number;
 }
@@ -12674,19 +12674,19 @@ export interface SyntheticsTestOptionsListRumSettings {
   /**
   * RUM application ID used to collect RUM data for the browser test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#application_id SyntheticsTest#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#application_id SyntheticsTest#application_id}
   */
   readonly applicationId?: string;
   /**
   * RUM application API key ID used to collect RUM data for the browser test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#client_token_id SyntheticsTest#client_token_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#client_token_id SyntheticsTest#client_token_id}
   */
   readonly clientTokenId?: number;
   /**
   * Determines whether RUM data is collected during test runs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#is_enabled SyntheticsTest#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#is_enabled SyntheticsTest#is_enabled}
   */
   readonly isEnabled: boolean | cdktn.IResolvable;
 }
@@ -12827,19 +12827,19 @@ export interface SyntheticsTestOptionsListSchedulingTimeframes {
   /**
   * Number representing the day of the week
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#day SyntheticsTest#day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#day SyntheticsTest#day}
   */
   readonly day: number;
   /**
   * The hour of the day on which scheduling starts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#from SyntheticsTest#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#from SyntheticsTest#from}
   */
   readonly from: string;
   /**
   * The hour of the day on which scheduling ends.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#to SyntheticsTest#to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#to SyntheticsTest#to}
   */
   readonly to: string;
 }
@@ -13006,13 +13006,13 @@ export interface SyntheticsTestOptionsListScheduling {
   /**
   * Timezone in which the timeframe is based.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#timezone SyntheticsTest#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#timezone SyntheticsTest#timezone}
   */
   readonly timezone: string;
   /**
   * timeframes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#timeframes SyntheticsTest#timeframes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#timeframes SyntheticsTest#timeframes}
   */
   readonly timeframes: SyntheticsTestOptionsListSchedulingTimeframes[] | cdktn.IResolvable;
 }
@@ -13121,137 +13121,143 @@ export interface SyntheticsTestOptionsListStruct {
   /**
   * For SSL tests, whether or not the test should allow self signed certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#accept_self_signed SyntheticsTest#accept_self_signed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#accept_self_signed SyntheticsTest#accept_self_signed}
   */
   readonly acceptSelfSigned?: boolean | cdktn.IResolvable;
   /**
   * Allows loading insecure content for a request in an API test or in a multistep API test step.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#allow_insecure SyntheticsTest#allow_insecure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#allow_insecure SyntheticsTest#allow_insecure}
   */
   readonly allowInsecure?: boolean | cdktn.IResolvable;
   /**
   * Blocked URL patterns. Requests made to URLs matching any of the patterns listed here will be blocked.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#blocked_request_patterns SyntheticsTest#blocked_request_patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#blocked_request_patterns SyntheticsTest#blocked_request_patterns}
   */
   readonly blockedRequestPatterns?: string[];
   /**
+  * Capture HTTP request/response headers and bodies for Fetch/XHR calls made during browser tests.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#capture_network_payloads SyntheticsTest#capture_network_payloads}
+  */
+  readonly captureNetworkPayloads?: boolean | cdktn.IResolvable;
+  /**
   * For SSL tests, whether or not the test should fail on revoked certificate in stapled OCSP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#check_certificate_revocation SyntheticsTest#check_certificate_revocation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#check_certificate_revocation SyntheticsTest#check_certificate_revocation}
   */
   readonly checkCertificateRevocation?: boolean | cdktn.IResolvable;
   /**
   * For SSL tests, whether or not the test should disable fetching intermediate certificates from AIA
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#disable_aia_intermediate_fetching SyntheticsTest#disable_aia_intermediate_fetching}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#disable_aia_intermediate_fetching SyntheticsTest#disable_aia_intermediate_fetching}
   */
   readonly disableAiaIntermediateFetching?: boolean | cdktn.IResolvable;
   /**
   * Disable Cross-Origin Resource Sharing for browser tests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#disable_cors SyntheticsTest#disable_cors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#disable_cors SyntheticsTest#disable_cors}
   */
   readonly disableCors?: boolean | cdktn.IResolvable;
   /**
   * Disable Content Security Policy for browser tests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#disable_csp SyntheticsTest#disable_csp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#disable_csp SyntheticsTest#disable_csp}
   */
   readonly disableCsp?: boolean | cdktn.IResolvable;
   /**
   * Determines whether or not the API HTTP test should follow redirects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#follow_redirects SyntheticsTest#follow_redirects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#follow_redirects SyntheticsTest#follow_redirects}
   */
   readonly followRedirects?: boolean | cdktn.IResolvable;
   /**
   * HTTP version to use for an HTTP request in an API test or step. Valid values are `http1`, `http2`, `any`. Defaults to `"any"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
   */
   readonly httpVersion?: string;
   /**
   * Ignore server certificate error for browser tests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#ignore_server_certificate_error SyntheticsTest#ignore_server_certificate_error}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#ignore_server_certificate_error SyntheticsTest#ignore_server_certificate_error}
   */
   readonly ignoreServerCertificateError?: boolean | cdktn.IResolvable;
   /**
   * Timeout before declaring the initial step as failed (in seconds) for browser tests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#initial_navigation_timeout SyntheticsTest#initial_navigation_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#initial_navigation_timeout SyntheticsTest#initial_navigation_timeout}
   */
   readonly initialNavigationTimeout?: number;
   /**
   * Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#min_failure_duration SyntheticsTest#min_failure_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#min_failure_duration SyntheticsTest#min_failure_duration}
   */
   readonly minFailureDuration?: number;
   /**
   * Minimum number of locations in failure required to trigger an alert. Defaults to `1`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#min_location_failed SyntheticsTest#min_location_failed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#min_location_failed SyntheticsTest#min_location_failed}
   */
   readonly minLocationFailed?: number;
   /**
   * The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#monitor_name SyntheticsTest#monitor_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#monitor_name SyntheticsTest#monitor_name}
   */
   readonly monitorName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}
   */
   readonly monitorPriority?: number;
   /**
   * Prevents saving screenshots of the steps.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
   */
   readonly noScreenshot?: boolean | cdktn.IResolvable;
   /**
   * A list of role identifiers pulled from the Roles API to restrict read and write access. **Deprecated.** This field is no longer supported by the Datadog API. Please use `datadog_restriction_policy` instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#restricted_roles SyntheticsTest#restricted_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#restricted_roles SyntheticsTest#restricted_roles}
   */
   readonly restrictedRoles?: string[];
   /**
   * How often the test should run (in seconds). Valid range is `30-604800` for API tests and `60-604800` for browser tests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#tick_every SyntheticsTest#tick_every}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#tick_every SyntheticsTest#tick_every}
   */
   readonly tickEvery: number;
   /**
   * ci block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#ci SyntheticsTest#ci}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#ci SyntheticsTest#ci}
   */
   readonly ci?: SyntheticsTestOptionsListCi;
   /**
   * monitor_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#monitor_options SyntheticsTest#monitor_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#monitor_options SyntheticsTest#monitor_options}
   */
   readonly monitorOptions?: SyntheticsTestOptionsListMonitorOptions;
   /**
   * retry block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#retry SyntheticsTest#retry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#retry SyntheticsTest#retry}
   */
   readonly retry?: SyntheticsTestOptionsListRetry;
   /**
   * rum_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#rum_settings SyntheticsTest#rum_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#rum_settings SyntheticsTest#rum_settings}
   */
   readonly rumSettings?: SyntheticsTestOptionsListRumSettings;
   /**
   * scheduling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#scheduling SyntheticsTest#scheduling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#scheduling SyntheticsTest#scheduling}
   */
   readonly scheduling?: SyntheticsTestOptionsListScheduling;
 }
@@ -13265,6 +13271,7 @@ export function syntheticsTestOptionsListStructToTerraform(struct?: SyntheticsTe
     accept_self_signed: cdktn.booleanToTerraform(struct!.acceptSelfSigned),
     allow_insecure: cdktn.booleanToTerraform(struct!.allowInsecure),
     blocked_request_patterns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.blockedRequestPatterns),
+    capture_network_payloads: cdktn.booleanToTerraform(struct!.captureNetworkPayloads),
     check_certificate_revocation: cdktn.booleanToTerraform(struct!.checkCertificateRevocation),
     disable_aia_intermediate_fetching: cdktn.booleanToTerraform(struct!.disableAiaIntermediateFetching),
     disable_cors: cdktn.booleanToTerraform(struct!.disableCors),
@@ -13312,6 +13319,12 @@ export function syntheticsTestOptionsListStructToHclTerraform(struct?: Synthetic
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
+    },
+    capture_network_payloads: {
+      value: cdktn.booleanToHclTerraform(struct!.captureNetworkPayloads),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
     check_certificate_revocation: {
       value: cdktn.booleanToHclTerraform(struct!.checkCertificateRevocation),
@@ -13465,6 +13478,10 @@ export class SyntheticsTestOptionsListStructOutputReference extends cdktn.Comple
       hasAnyValues = true;
       internalValueResult.blockedRequestPatterns = this._blockedRequestPatterns;
     }
+    if (this._captureNetworkPayloads !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.captureNetworkPayloads = this._captureNetworkPayloads;
+    }
     if (this._checkCertificateRevocation !== undefined) {
       hasAnyValues = true;
       internalValueResult.checkCertificateRevocation = this._checkCertificateRevocation;
@@ -13554,6 +13571,7 @@ export class SyntheticsTestOptionsListStructOutputReference extends cdktn.Comple
       this._acceptSelfSigned = undefined;
       this._allowInsecure = undefined;
       this._blockedRequestPatterns = undefined;
+      this._captureNetworkPayloads = undefined;
       this._checkCertificateRevocation = undefined;
       this._disableAiaIntermediateFetching = undefined;
       this._disableCors = undefined;
@@ -13580,6 +13598,7 @@ export class SyntheticsTestOptionsListStructOutputReference extends cdktn.Comple
       this._acceptSelfSigned = value.acceptSelfSigned;
       this._allowInsecure = value.allowInsecure;
       this._blockedRequestPatterns = value.blockedRequestPatterns;
+      this._captureNetworkPayloads = value.captureNetworkPayloads;
       this._checkCertificateRevocation = value.checkCertificateRevocation;
       this._disableAiaIntermediateFetching = value.disableAiaIntermediateFetching;
       this._disableCors = value.disableCors;
@@ -13649,6 +13668,22 @@ export class SyntheticsTestOptionsListStructOutputReference extends cdktn.Comple
   // Temporarily expose input value. Use with caution.
   public get blockedRequestPatternsInput() {
     return this._blockedRequestPatterns;
+  }
+
+  // capture_network_payloads - computed: false, optional: true, required: false
+  private _captureNetworkPayloads?: boolean | cdktn.IResolvable; 
+  public get captureNetworkPayloads() {
+    return this.getBooleanAttribute('capture_network_payloads');
+  }
+  public set captureNetworkPayloads(value: boolean | cdktn.IResolvable) {
+    this._captureNetworkPayloads = value;
+  }
+  public resetCaptureNetworkPayloads() {
+    this._captureNetworkPayloads = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get captureNetworkPayloadsInput() {
+    return this._captureNetworkPayloads;
   }
 
   // check_certificate_revocation - computed: false, optional: true, required: false
@@ -13972,103 +14007,103 @@ export interface SyntheticsTestRequestBasicauth {
   /**
   * Access key for `SIGV4` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#access_key SyntheticsTest#access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#access_key SyntheticsTest#access_key}
   */
   readonly accessKey?: string;
   /**
   * Access token url for `oauth-client` or `oauth-rop` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#access_token_url SyntheticsTest#access_token_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#access_token_url SyntheticsTest#access_token_url}
   */
   readonly accessTokenUrl?: string;
   /**
   * Audience for `oauth-client` or `oauth-rop` authentication. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#audience SyntheticsTest#audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#audience SyntheticsTest#audience}
   */
   readonly audience?: string;
   /**
   * Client ID for `oauth-client` or `oauth-rop` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#client_id SyntheticsTest#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#client_id SyntheticsTest#client_id}
   */
   readonly clientId?: string;
   /**
   * Client secret for `oauth-client` or `oauth-rop` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#client_secret SyntheticsTest#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#client_secret SyntheticsTest#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * Domain for `ntlm` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#domain SyntheticsTest#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#domain SyntheticsTest#domain}
   */
   readonly domain?: string;
   /**
   * Password for authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#password SyntheticsTest#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#password SyntheticsTest#password}
   */
   readonly password?: string;
   /**
   * Region for `SIGV4` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#region SyntheticsTest#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#region SyntheticsTest#region}
   */
   readonly region?: string;
   /**
   * Resource for `oauth-client` or `oauth-rop` authentication. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#resource SyntheticsTest#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#resource SyntheticsTest#resource}
   */
   readonly resource?: string;
   /**
   * Scope for `oauth-client` or `oauth-rop` authentication. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#scope SyntheticsTest#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#scope SyntheticsTest#scope}
   */
   readonly scope?: string;
   /**
   * Secret key for `SIGV4` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#secret_key SyntheticsTest#secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#secret_key SyntheticsTest#secret_key}
   */
   readonly secretKey?: string;
   /**
   * Service name for `SIGV4` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#service_name SyntheticsTest#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#service_name SyntheticsTest#service_name}
   */
   readonly serviceName?: string;
   /**
   * Session token for `SIGV4` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#session_token SyntheticsTest#session_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#session_token SyntheticsTest#session_token}
   */
   readonly sessionToken?: string;
   /**
   * Token API Authentication for `oauth-client` or `oauth-rop` authentication. Valid values are `header`, `body`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#token_api_authentication SyntheticsTest#token_api_authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#token_api_authentication SyntheticsTest#token_api_authentication}
   */
   readonly tokenApiAuthentication?: string;
   /**
   * Type of basic authentication to use when performing the test. Defaults to `"web"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type?: string;
   /**
   * Username for authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#username SyntheticsTest#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#username SyntheticsTest#username}
   */
   readonly username?: string;
   /**
   * Workstation for `ntlm` authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#workstation SyntheticsTest#workstation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#workstation SyntheticsTest#workstation}
   */
   readonly workstation?: string;
 }
@@ -14618,13 +14653,13 @@ export interface SyntheticsTestRequestClientCertificateCert {
   /**
   * Content of the certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#content SyntheticsTest#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#content SyntheticsTest#content}
   */
   readonly content?: string;
   /**
   * File name for the certificate. Defaults to `"Provided in Terraform config"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
   */
   readonly filename?: string;
 }
@@ -14739,13 +14774,13 @@ export interface SyntheticsTestRequestClientCertificateKey {
   /**
   * Content of the certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#content SyntheticsTest#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#content SyntheticsTest#content}
   */
   readonly content?: string;
   /**
   * File name for the certificate. Defaults to `"Provided in Terraform config"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
   */
   readonly filename?: string;
 }
@@ -14860,13 +14895,13 @@ export interface SyntheticsTestRequestClientCertificate {
   /**
   * cert block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#cert SyntheticsTest#cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#cert SyntheticsTest#cert}
   */
   readonly cert: SyntheticsTestRequestClientCertificateCert;
   /**
   * key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#key SyntheticsTest#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#key SyntheticsTest#key}
   */
   readonly key: SyntheticsTestRequestClientCertificateKey;
 }
@@ -14975,193 +15010,193 @@ export interface SyntheticsTestRequestDefinition {
   /**
   * The request body.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#body SyntheticsTest#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#body SyntheticsTest#body}
   */
   readonly body?: string;
   /**
   * Type of the request body. Valid values are `text/plain`, `application/json`, `text/xml`, `text/html`, `application/x-www-form-urlencoded`, `graphql`, `application/octet-stream`, `multipart/form-data`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#body_type SyntheticsTest#body_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#body_type SyntheticsTest#body_type}
   */
   readonly bodyType?: string;
   /**
   * The type of gRPC call to perform, or the MCP step call (`init`, `tool_list`, `tool_call`). Valid values are `healthcheck`, `unary`, `init`, `tool_list`, `tool_call`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#call_type SyntheticsTest#call_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#call_type SyntheticsTest#call_type}
   */
   readonly callType?: string;
   /**
   * By default, the client certificate is applied on the domain of the starting URL for browser tests. If you want your client certificate to be applied on other domains instead, add them in `certificate_domains`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#certificate_domains SyntheticsTest#certificate_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#certificate_domains SyntheticsTest#certificate_domains}
   */
   readonly certificateDomains?: string[];
   /**
   * For Network Path tests, an optional label displayed for the destination host in the Network Path visualization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#destination_service SyntheticsTest#destination_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#destination_service SyntheticsTest#destination_service}
   */
   readonly destinationService?: string;
   /**
   * DNS server to use for DNS tests (`subtype = "dns"`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#dns_server SyntheticsTest#dns_server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#dns_server SyntheticsTest#dns_server}
   */
   readonly dnsServer?: string;
   /**
   * DNS server port to use for DNS tests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#dns_server_port SyntheticsTest#dns_server_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#dns_server_port SyntheticsTest#dns_server_port}
   */
   readonly dnsServerPort?: string;
   /**
   * For Network Path tests, the number of packets sent to probe the destination to measure packet loss, latency, and jitter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#e2e_queries SyntheticsTest#e2e_queries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#e2e_queries SyntheticsTest#e2e_queries}
   */
   readonly e2EQueries?: number;
   /**
   * Form data to be sent when `body_type` is `multipart/form-data`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#form SyntheticsTest#form}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#form SyntheticsTest#form}
   */
   readonly form?: { [key: string]: string };
   /**
   * Host name to perform the test with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#host SyntheticsTest#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#host SyntheticsTest#host}
   */
   readonly host?: string;
   /**
   * HTTP version to use for an HTTP request in an API test or step. **Deprecated.** Use `http_version` in the `options_list` field instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
   */
   readonly httpVersion?: string;
   /**
   * For Websocket tests, whether the message is treated as a base64-encoded string in the server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#is_message_base64_encoded SyntheticsTest#is_message_base64_encoded}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#is_message_base64_encoded SyntheticsTest#is_message_base64_encoded}
   */
   readonly isMessageBase64Encoded?: boolean | cdktn.IResolvable;
   /**
   * For Network Path tests, the maximum time-to-live (max number of hops) used in outgoing probe packets.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#max_ttl SyntheticsTest#max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#max_ttl SyntheticsTest#max_ttl}
   */
   readonly maxTtl?: number;
   /**
   * For MCP API steps, the MCP protocol version used by the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#mcp_protocol_version SyntheticsTest#mcp_protocol_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#mcp_protocol_version SyntheticsTest#mcp_protocol_version}
   */
   readonly mcpProtocolVersion?: string;
   /**
   * For gRPC, UDP, and Websocket tests, message to send with the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#message SyntheticsTest#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#message SyntheticsTest#message}
   */
   readonly message?: string;
   /**
   * Either the HTTP method/verb to use or a gRPC method available on the service set in the `service` field. Required if `subtype` is `HTTP` or if `subtype` is `grpc` and `callType` is `unary`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#method SyntheticsTest#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#method SyntheticsTest#method}
   */
   readonly method?: string;
   /**
   * Determines whether or not to save the response body.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#no_saving_response_body SyntheticsTest#no_saving_response_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#no_saving_response_body SyntheticsTest#no_saving_response_body}
   */
   readonly noSavingResponseBody?: boolean | cdktn.IResolvable;
   /**
   * Number of pings to use per test for ICMP tests (`subtype = "icmp"`) between 0 and 10.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#number_of_packets SyntheticsTest#number_of_packets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#number_of_packets SyntheticsTest#number_of_packets}
   */
   readonly numberOfPackets?: number;
   /**
   * Persist cookies across redirects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#persist_cookies SyntheticsTest#persist_cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#persist_cookies SyntheticsTest#persist_cookies}
   */
   readonly persistCookies?: boolean | cdktn.IResolvable;
   /**
   * The content of a proto file as a string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#plain_proto_file SyntheticsTest#plain_proto_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#plain_proto_file SyntheticsTest#plain_proto_file}
   */
   readonly plainProtoFile?: string;
   /**
   * Port to use when performing the test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#port SyntheticsTest#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#port SyntheticsTest#port}
   */
   readonly port?: string;
   /**
   * A protobuf JSON descriptor. **Deprecated.** Use `plain_proto_file` instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#proto_json_descriptor SyntheticsTest#proto_json_descriptor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#proto_json_descriptor SyntheticsTest#proto_json_descriptor}
   */
   readonly protoJsonDescriptor?: string;
   /**
   * For SSL tests, it specifies on which server you want to initiate the TLS handshake, allowing the server to present one of multiple possible certificates on the same IP address and TCP port number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#servername SyntheticsTest#servername}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#servername SyntheticsTest#servername}
   */
   readonly servername?: string;
   /**
   * The gRPC service on which you want to perform the gRPC call.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#service SyntheticsTest#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#service SyntheticsTest#service}
   */
   readonly service?: string;
   /**
   * This will turn on a traceroute probe to discover all gateways along the path to the host destination. For ICMP tests (`subtype = "icmp"`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#should_track_hops SyntheticsTest#should_track_hops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#should_track_hops SyntheticsTest#should_track_hops}
   */
   readonly shouldTrackHops?: boolean | cdktn.IResolvable;
   /**
   * For Network Path tests, an optional label displayed for the source host in the Network Path visualization
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#source_service SyntheticsTest#source_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#source_service SyntheticsTest#source_service}
   */
   readonly sourceService?: string;
   /**
   * For TCP Network Path tests, the TCP traceroute strategy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#tcp_method SyntheticsTest#tcp_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#tcp_method SyntheticsTest#tcp_method}
   */
   readonly tcpMethod?: string;
   /**
   * Timeout in seconds for the test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
   */
   readonly timeout?: number;
   /**
   * For MCP API steps, the JSON-encoded arguments to pass to the tool when `call_type` is `tool_call`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#tool_args SyntheticsTest#tool_args}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#tool_args SyntheticsTest#tool_args}
   */
   readonly toolArgs?: string;
   /**
   * For MCP API steps, the name of the tool to call. Required when `call_type` is `tool_call`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#tool_name SyntheticsTest#tool_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#tool_name SyntheticsTest#tool_name}
   */
   readonly toolName?: string;
   /**
   * For Network Path tests, the number of traceroute path tracings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#traceroute_queries SyntheticsTest#traceroute_queries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#traceroute_queries SyntheticsTest#traceroute_queries}
   */
   readonly tracerouteQueries?: number;
   /**
   * The URL to send the request to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#url SyntheticsTest#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#url SyntheticsTest#url}
   */
   readonly url?: string;
 }
@@ -16146,37 +16181,37 @@ export interface SyntheticsTestRequestFile {
   /**
   * Content of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#content SyntheticsTest#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#content SyntheticsTest#content}
   */
   readonly content?: string;
   /**
   * Encoding of the file content. Must be `base64` when content contains base64-encoded data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#encoding SyntheticsTest#encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#encoding SyntheticsTest#encoding}
   */
   readonly encoding?: string;
   /**
   * Name of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#name SyntheticsTest#name}
   */
   readonly name: string;
   /**
   * Original name of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#original_file_name SyntheticsTest#original_file_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#original_file_name SyntheticsTest#original_file_name}
   */
   readonly originalFileName?: string;
   /**
   * Size of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#size SyntheticsTest#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#size SyntheticsTest#size}
   */
   readonly size: number;
   /**
   * Type of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#type SyntheticsTest#type}
   */
   readonly type: string;
 }
@@ -16435,13 +16470,13 @@ export interface SyntheticsTestRequestProxy {
   /**
   * Header name and value map.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#headers SyntheticsTest#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#headers SyntheticsTest#headers}
   */
   readonly headers?: { [key: string]: string };
   /**
   * URL of the proxy to perform the test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#url SyntheticsTest#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#url SyntheticsTest#url}
   */
   readonly url: string;
 }
@@ -16551,7 +16586,7 @@ export class SyntheticsTestRequestProxyOutputReference extends cdktn.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test datadog_synthetics_test}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test datadog_synthetics_test}
 */
 export class SyntheticsTest extends cdktn.TerraformResource {
 
@@ -16567,7 +16602,7 @@ export class SyntheticsTest extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SyntheticsTest resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SyntheticsTest to import
-  * @param importFromId The id of the existing SyntheticsTest that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SyntheticsTest that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SyntheticsTest to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -16579,7 +16614,7 @@ export class SyntheticsTest extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_test datadog_synthetics_test} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/synthetics_test datadog_synthetics_test} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -16590,7 +16625,7 @@ export class SyntheticsTest extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_synthetics_test',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.13.0',
+        providerVersion: '4.15.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

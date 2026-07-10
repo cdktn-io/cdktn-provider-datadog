@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_user_notification_channel
+// https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_user_notification_channel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface OnCallUserNotificationChannelConfig extends cdktn.TerraformMeta
   /**
   * ID of the user to associate the notification channel with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_user_notification_channel#user_id OnCallUserNotificationChannel#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_user_notification_channel#user_id OnCallUserNotificationChannel#user_id}
   */
   readonly userId: string;
   /**
   * email block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_user_notification_channel#email OnCallUserNotificationChannel#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_user_notification_channel#email OnCallUserNotificationChannel#email}
   */
   readonly email?: OnCallUserNotificationChannelEmail;
   /**
   * phone block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_user_notification_channel#phone OnCallUserNotificationChannel#phone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_user_notification_channel#phone OnCallUserNotificationChannel#phone}
   */
   readonly phone?: OnCallUserNotificationChannelPhone;
 }
@@ -35,13 +35,13 @@ export interface OnCallUserNotificationChannelEmail {
   /**
   * The e-mail address to be notified
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_user_notification_channel#address OnCallUserNotificationChannel#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_user_notification_channel#address OnCallUserNotificationChannel#address}
   */
   readonly address?: string;
   /**
   * Preferred content formats for notifications
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_user_notification_channel#formats OnCallUserNotificationChannel#formats}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_user_notification_channel#formats OnCallUserNotificationChannel#formats}
   */
   readonly formats?: string[];
 }
@@ -166,7 +166,7 @@ export interface OnCallUserNotificationChannelPhone {
   /**
   * The E-164 formatted phone number (for example, +3371234567)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_user_notification_channel#number OnCallUserNotificationChannel#number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_user_notification_channel#number OnCallUserNotificationChannel#number}
   */
   readonly number?: string;
 }
@@ -260,7 +260,7 @@ export class OnCallUserNotificationChannelPhoneOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_user_notification_channel datadog_on_call_user_notification_channel}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_user_notification_channel datadog_on_call_user_notification_channel}
 */
 export class OnCallUserNotificationChannel extends cdktn.TerraformResource {
 
@@ -276,7 +276,7 @@ export class OnCallUserNotificationChannel extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a OnCallUserNotificationChannel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OnCallUserNotificationChannel to import
-  * @param importFromId The id of the existing OnCallUserNotificationChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_user_notification_channel#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OnCallUserNotificationChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_user_notification_channel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OnCallUserNotificationChannel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -288,7 +288,7 @@ export class OnCallUserNotificationChannel extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_user_notification_channel datadog_on_call_user_notification_channel} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_user_notification_channel datadog_on_call_user_notification_channel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -299,7 +299,7 @@ export class OnCallUserNotificationChannel extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_on_call_user_notification_channel',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.13.0',
+        providerVersion: '4.15.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
