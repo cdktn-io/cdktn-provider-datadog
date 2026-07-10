@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_notification_rule
+// https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_notification_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface TeamNotificationRuleConfig extends cdktn.TerraformMetaArguments
   /**
   * The ID of the team that this notification rule belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_notification_rule#team_id TeamNotificationRule#team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_notification_rule#team_id TeamNotificationRule#team_id}
   */
   readonly teamId: string;
   /**
   * email block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_notification_rule#email TeamNotificationRule#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_notification_rule#email TeamNotificationRule#email}
   */
   readonly email?: TeamNotificationRuleEmail;
   /**
   * ms_teams block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_notification_rule#ms_teams TeamNotificationRule#ms_teams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_notification_rule#ms_teams TeamNotificationRule#ms_teams}
   */
   readonly msTeams?: TeamNotificationRuleMsTeams;
   /**
   * pagerduty block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_notification_rule#pagerduty TeamNotificationRule#pagerduty}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_notification_rule#pagerduty TeamNotificationRule#pagerduty}
   */
   readonly pagerduty?: TeamNotificationRulePagerduty;
   /**
   * slack block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_notification_rule#slack TeamNotificationRule#slack}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_notification_rule#slack TeamNotificationRule#slack}
   */
   readonly slack?: TeamNotificationRuleSlack;
 }
@@ -47,7 +47,7 @@ export interface TeamNotificationRuleEmail {
   /**
   * Whether to send email notifications to team members when alerts are triggered.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_notification_rule#enabled TeamNotificationRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_notification_rule#enabled TeamNotificationRule#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -143,7 +143,7 @@ export interface TeamNotificationRuleMsTeams {
   /**
   * MS Teams connector name used to route notifications to the appropriate channel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_notification_rule#connector_name TeamNotificationRule#connector_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_notification_rule#connector_name TeamNotificationRule#connector_name}
   */
   readonly connectorName?: string;
 }
@@ -239,7 +239,7 @@ export interface TeamNotificationRulePagerduty {
   /**
   * PagerDuty service name to send incident notifications to. The service name can be found in your PagerDuty service settings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_notification_rule#service_name TeamNotificationRule#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_notification_rule#service_name TeamNotificationRule#service_name}
   */
   readonly serviceName?: string;
 }
@@ -335,13 +335,13 @@ export interface TeamNotificationRuleSlack {
   /**
   * Slack channel name for notifications, without a leading '#'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_notification_rule#channel TeamNotificationRule#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_notification_rule#channel TeamNotificationRule#channel}
   */
   readonly channel?: string;
   /**
   * Slack workspace name where the channel is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_notification_rule#workspace TeamNotificationRule#workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_notification_rule#workspace TeamNotificationRule#workspace}
   */
   readonly workspace?: string;
 }
@@ -464,7 +464,7 @@ export class TeamNotificationRuleSlackOutputReference extends cdktn.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_notification_rule datadog_team_notification_rule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_notification_rule datadog_team_notification_rule}
 */
 export class TeamNotificationRule extends cdktn.TerraformResource {
 
@@ -480,7 +480,7 @@ export class TeamNotificationRule extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a TeamNotificationRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TeamNotificationRule to import
-  * @param importFromId The id of the existing TeamNotificationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_notification_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TeamNotificationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_notification_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TeamNotificationRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -492,7 +492,7 @@ export class TeamNotificationRule extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_notification_rule datadog_team_notification_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_notification_rule datadog_team_notification_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -503,7 +503,7 @@ export class TeamNotificationRule extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_team_notification_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.13.0',
+        providerVersion: '4.15.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

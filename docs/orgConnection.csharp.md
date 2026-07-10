@@ -4,7 +4,7 @@
 
 ### OrgConnection <a name="OrgConnection" id="@cdktn/provider-datadog.orgConnection.OrgConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/org_connection datadog_org_connection}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/org_connection datadog_org_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.orgConnection.OrgConnection.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the OrgConnection to import.
 
 The id of the existing OrgConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/org_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/org_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -910,7 +910,7 @@ public string[] ConnectionTypes { get; set; }
 
 Set of connection types to enable for this connection (., metrics, logs).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/org_connection#connection_types OrgConnection#connection_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/org_connection#connection_types OrgConnection#connection_types}
 
 ---
 
@@ -924,7 +924,7 @@ public string SinkOrgId { get; set; }
 
 UUID of the sink (destination) organization. Must be a valid UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/org_connection#sink_org_id OrgConnection#sink_org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/org_connection#sink_org_id OrgConnection#sink_org_id}
 
 ---
 

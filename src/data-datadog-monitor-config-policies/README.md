@@ -1,3 +1,3 @@
 # `data_datadog_monitor_config_policies`
 
-Refer to the Terraform Registry for docs: [`data_datadog_monitor_config_policies`](https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/monitor_config_policies).
+Refer to the Terraform Registry for docs: [`data_datadog_monitor_config_policies`](https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/monitor_config_policies).

@@ -1,3 +1,3 @@
 # `data_datadog_integration_aws_logs_services`
 
-Refer to the Terraform Registry for docs: [`data_datadog_integration_aws_logs_services`](https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/integration_aws_logs_services).
+Refer to the Terraform Registry for docs: [`data_datadog_integration_aws_logs_services`](https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/integration_aws_logs_services).

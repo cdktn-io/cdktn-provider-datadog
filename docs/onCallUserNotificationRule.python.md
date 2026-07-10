@@ -4,7 +4,7 @@
 
 ### OnCallUserNotificationRule <a name="OnCallUserNotificationRule" id="@cdktn/provider-datadog.onCallUserNotificationRule.OnCallUserNotificationRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_user_notification_rule datadog_on_call_user_notification_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_user_notification_rule datadog_on_call_user_notification_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallUserNotificationRule.OnCallUserNotificationRule.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Notification category to associate the rule with. Valid values are `high_urgency`, `low_urgency`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_user_notification_rule#category OnCallUserNotificationRule#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_user_notification_rule#category OnCallUserNotificationRule#category}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ID of the notification channel to associate the notification rule with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_user_notification_rule#channel_id OnCallUserNotificationRule#channel_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_user_notification_rule#channel_id OnCallUserNotificationRule#channel_id}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Number of minutes to elapse before this rule is evaluated.  `0` indicates immediate evaluation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_user_notification_rule#delay_minutes OnCallUserNotificationRule#delay_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_user_notification_rule#delay_minutes OnCallUserNotificationRule#delay_minutes}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ID of the user to associate the notification rule with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_user_notification_rule#user_id OnCallUserNotificationRule#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_user_notification_rule#user_id OnCallUserNotificationRule#user_id}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 phone block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_user_notification_rule#phone OnCallUserNotificationRule#phone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_user_notification_rule#phone OnCallUserNotificationRule#phone}
 
 ---
 
@@ -553,7 +553,7 @@ def put_phone(
 
 Specifies the method in which a phone is used in a notification rule. Valid values are `sms`, `voice`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_user_notification_rule#method OnCallUserNotificationRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_user_notification_rule#method OnCallUserNotificationRule#method}
 
 ---
 
@@ -677,7 +677,7 @@ The construct id used in the generated config for the OnCallUserNotificationRule
 
 The id of the existing OnCallUserNotificationRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_user_notification_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_user_notification_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1115,7 +1115,7 @@ category: str
 
 Notification category to associate the rule with. Valid values are `high_urgency`, `low_urgency`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_user_notification_rule#category OnCallUserNotificationRule#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_user_notification_rule#category OnCallUserNotificationRule#category}
 
 ---
 
@@ -1129,7 +1129,7 @@ channel_id: str
 
 ID of the notification channel to associate the notification rule with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_user_notification_rule#channel_id OnCallUserNotificationRule#channel_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_user_notification_rule#channel_id OnCallUserNotificationRule#channel_id}
 
 ---
 
@@ -1143,7 +1143,7 @@ delay_minutes: typing.Union[int, float]
 
 Number of minutes to elapse before this rule is evaluated.  `0` indicates immediate evaluation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_user_notification_rule#delay_minutes OnCallUserNotificationRule#delay_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_user_notification_rule#delay_minutes OnCallUserNotificationRule#delay_minutes}
 
 ---
 
@@ -1157,7 +1157,7 @@ user_id: str
 
 ID of the user to associate the notification rule with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_user_notification_rule#user_id OnCallUserNotificationRule#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_user_notification_rule#user_id OnCallUserNotificationRule#user_id}
 
 ---
 
@@ -1171,7 +1171,7 @@ phone: OnCallUserNotificationRulePhone
 
 phone block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_user_notification_rule#phone OnCallUserNotificationRule#phone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_user_notification_rule#phone OnCallUserNotificationRule#phone}
 
 ---
 
@@ -1205,7 +1205,7 @@ method: str
 
 Specifies the method in which a phone is used in a notification rule. Valid values are `sms`, `voice`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_user_notification_rule#method OnCallUserNotificationRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_user_notification_rule#method OnCallUserNotificationRule#method}
 
 ---
 

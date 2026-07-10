@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_sync
+// https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_sync
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface TeamSyncConfig extends cdktn.TerraformMetaArguments {
   /**
   * How often the sync process should run. Valid values are `once`, `continuously`, `paused`. Defaults to `"once"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_sync#frequency TeamSync#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_sync#frequency TeamSync#frequency}
   */
   readonly frequency?: string;
   /**
   * The external source platform for team synchronization. Valid values are `github`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_sync#source TeamSync#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_sync#source TeamSync#source}
   */
   readonly source: string;
   /**
   * Whether to sync members from the external team to the Datadog team. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_sync#sync_membership TeamSync#sync_membership}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_sync#sync_membership TeamSync#sync_membership}
   */
   readonly syncMembership?: boolean | cdktn.IResolvable;
   /**
   * The type of synchronization operation. `link` connects teams by matching names. `provision` creates new teams when no match is found. Valid values are `link`, `provision`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_sync#type TeamSync#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_sync#type TeamSync#type}
   */
   readonly type: string;
   /**
   * selection_state block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_sync#selection_state TeamSync#selection_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_sync#selection_state TeamSync#selection_state}
   */
   readonly selectionState?: TeamSyncSelectionState[] | cdktn.IResolvable;
 }
@@ -47,13 +47,13 @@ export interface TeamSyncSelectionStateExternalId {
   /**
   * The type of external identifier. Valid values are `team`, `organization`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_sync#type TeamSync#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_sync#type TeamSync#type}
   */
   readonly type: string;
   /**
   * The external identifier value from the source platform (e.g. a GitHub organization ID or team ID).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_sync#value TeamSync#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_sync#value TeamSync#value}
   */
   readonly value: string;
 }
@@ -172,19 +172,19 @@ export interface TeamSyncSelectionState {
   /**
   * The operation to perform on the selected hierarchy. Valid values are `include`. Defaults to `"include"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_sync#operation TeamSync#operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_sync#operation TeamSync#operation}
   */
   readonly operation?: string;
   /**
   * The scope of the selection. Valid values are `subtree`. Defaults to `"subtree"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_sync#scope TeamSync#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_sync#scope TeamSync#scope}
   */
   readonly scope?: string;
   /**
   * external_id block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_sync#external_id TeamSync#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_sync#external_id TeamSync#external_id}
   */
   readonly externalId: TeamSyncSelectionStateExternalId;
 }
@@ -355,7 +355,7 @@ export class TeamSyncSelectionStateList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_sync datadog_team_sync}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_sync datadog_team_sync}
 */
 export class TeamSync extends cdktn.TerraformResource {
 
@@ -371,7 +371,7 @@ export class TeamSync extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a TeamSync resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TeamSync to import
-  * @param importFromId The id of the existing TeamSync that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_sync#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TeamSync that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_sync#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TeamSync to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -383,7 +383,7 @@ export class TeamSync extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_sync datadog_team_sync} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/team_sync datadog_team_sync} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -394,7 +394,7 @@ export class TeamSync extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_team_sync',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.13.0',
+        providerVersion: '4.15.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

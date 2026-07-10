@@ -1,3 +1,3 @@
 # `datadog_user`
 
-Refer to the Terraform Registry for docs: [`datadog_user`](https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/user).
+Refer to the Terraform Registry for docs: [`datadog_user`](https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/user).

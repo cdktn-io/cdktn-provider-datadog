@@ -4,7 +4,7 @@
 
 ### RumRetentionFiltersOrder <a name="RumRetentionFiltersOrder" id="@cdktn/provider-datadog.rumRetentionFiltersOrder.RumRetentionFiltersOrder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/rum_retention_filters_order datadog_rum_retention_filters_order}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/rum_retention_filters_order datadog_rum_retention_filters_order}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.rumRetentionFiltersOrder.RumRetentionFiltersOrder.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 RUM application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/rum_retention_filters_order#application_id RumRetentionFiltersOrder#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/rum_retention_filters_order#application_id RumRetentionFiltersOrder#application_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 RUM retention filter ID list. The order of IDs in this attribute defines the order of RUM retention filters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/rum_retention_filters_order#retention_filter_ids RumRetentionFiltersOrder#retention_filter_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/rum_retention_filters_order#retention_filter_ids RumRetentionFiltersOrder#retention_filter_ids}
 
 ---
 
@@ -615,7 +615,7 @@ The construct id used in the generated config for the RumRetentionFiltersOrder t
 
 The id of the existing RumRetentionFiltersOrder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/rum_retention_filters_order#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/rum_retention_filters_order#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -981,7 +981,7 @@ application_id: str
 
 RUM application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/rum_retention_filters_order#application_id RumRetentionFiltersOrder#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/rum_retention_filters_order#application_id RumRetentionFiltersOrder#application_id}
 
 ---
 
@@ -995,7 +995,7 @@ retention_filter_ids: typing.List[str]
 
 RUM retention filter ID list. The order of IDs in this attribute defines the order of RUM retention filters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/rum_retention_filters_order#retention_filter_ids RumRetentionFiltersOrder#retention_filter_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/rum_retention_filters_order#retention_filter_ids RumRetentionFiltersOrder#retention_filter_ids}
 
 ---
 

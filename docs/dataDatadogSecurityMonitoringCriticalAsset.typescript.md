@@ -4,7 +4,7 @@
 
 ### DataDatadogSecurityMonitoringCriticalAsset <a name="DataDatadogSecurityMonitoringCriticalAsset" id="@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAsset.DataDatadogSecurityMonitoringCriticalAsset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/security_monitoring_critical_asset datadog_security_monitoring_critical_asset}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/security_monitoring_critical_asset datadog_security_monitoring_critical_asset}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAsset.DataDatadogSecurityMonitoringCriticalAsset.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatadogSecurityMonitor
 
 The id of the existing DataDatadogSecurityMonitoringCriticalAsset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/security_monitoring_critical_asset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/security_monitoring_critical_asset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -415,6 +415,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAsset.DataDatadogSecurityMonitoringCriticalAsset.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAsset.DataDatadogSecurityMonitoringCriticalAsset.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAsset.DataDatadogSecurityMonitoringCriticalAsset.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAsset.DataDatadogSecurityMonitoringCriticalAsset.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAsset.DataDatadogSecurityMonitoringCriticalAsset.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAsset.DataDatadogSecurityMonitoringCriticalAsset.property.query">query</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAsset.DataDatadogSecurityMonitoringCriticalAsset.property.ruleQuery">ruleQuery</a></code> | <code>string</code> | *No description.* |
@@ -544,6 +545,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktn.TerraformProvider
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAsset.DataDatadogSecurityMonitoringCriticalAsset.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -742,7 +753,7 @@ public readonly id: string;
 
 The ID of the critical asset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/security_monitoring_critical_asset#id DataDatadogSecurityMonitoringCriticalAsset#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/security_monitoring_critical_asset#id DataDatadogSecurityMonitoringCriticalAsset#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
