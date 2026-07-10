@@ -4,7 +4,7 @@
 
 ### OnCallTeamRoutingRules <a name="OnCallTeamRoutingRules" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules datadog_on_call_team_routing_rules}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules datadog_on_call_team_routing_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRules.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 ID of the team to associate the routing rules with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#id OnCallTeamRoutingRules#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#id OnCallTeamRoutingRules#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -119,7 +119,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#rule OnCallTeamRoutingRules#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#rule OnCallTeamRoutingRules#rule}
 
 ---
 
@@ -588,7 +588,7 @@ The construct id used in the generated config for the OnCallTeamRoutingRules to 
 
 The id of the existing OnCallTeamRoutingRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -943,7 +943,7 @@ public java.lang.String getId();
 
 ID of the team to associate the routing rules with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#id OnCallTeamRoutingRules#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#id OnCallTeamRoutingRules#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -960,7 +960,7 @@ public IResolvable|java.util.List<OnCallTeamRoutingRulesRule> getRule();
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#rule OnCallTeamRoutingRules#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#rule OnCallTeamRoutingRules#rule}
 
 ---
 
@@ -1002,7 +1002,7 @@ public IResolvable|java.util.List<OnCallTeamRoutingRulesRuleAction> getAction();
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#action OnCallTeamRoutingRules#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#action OnCallTeamRoutingRules#action}
 
 ---
 
@@ -1016,7 +1016,7 @@ public java.lang.String getEscalationPolicy();
 
 ID of the policy to be applied when this routing rule matches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#escalation_policy OnCallTeamRoutingRules#escalation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#escalation_policy OnCallTeamRoutingRules#escalation_policy}
 
 ---
 
@@ -1030,7 +1030,7 @@ public java.lang.String getQuery();
 
 Defines the query or condition that triggers this routing rule. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#query OnCallTeamRoutingRules#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#query OnCallTeamRoutingRules#query}
 
 ---
 
@@ -1044,7 +1044,7 @@ public OnCallTeamRoutingRulesRuleTimeRestrictions getTimeRestrictions();
 
 time_restrictions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#time_restrictions OnCallTeamRoutingRules#time_restrictions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#time_restrictions OnCallTeamRoutingRules#time_restrictions}
 
 ---
 
@@ -1060,7 +1060,7 @@ Defines the urgency for pages created via this rule.
 
 Only valid if `escalation_policy` is set. Valid values are `high`, `low`, `dynamic`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#urgency OnCallTeamRoutingRules#urgency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#urgency OnCallTeamRoutingRules#urgency}
 
 ---
 
@@ -1100,7 +1100,7 @@ public OnCallTeamRoutingRulesRuleActionEscalationPolicy getEscalationPolicy();
 
 escalation_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#escalation_policy OnCallTeamRoutingRules#escalation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#escalation_policy OnCallTeamRoutingRules#escalation_policy}
 
 ---
 
@@ -1114,7 +1114,7 @@ public OnCallTeamRoutingRulesRuleActionSendSlackMessage getSendSlackMessage();
 
 send_slack_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#send_slack_message OnCallTeamRoutingRules#send_slack_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#send_slack_message OnCallTeamRoutingRules#send_slack_message}
 
 ---
 
@@ -1128,7 +1128,7 @@ public OnCallTeamRoutingRulesRuleActionSendTeamsMessage getSendTeamsMessage();
 
 send_teams_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#send_teams_message OnCallTeamRoutingRules#send_teams_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#send_teams_message OnCallTeamRoutingRules#send_teams_message}
 
 ---
 
@@ -1142,7 +1142,7 @@ public OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation getTriggerWorkf
 
 trigger_workflow_automation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#trigger_workflow_automation OnCallTeamRoutingRules#trigger_workflow_automation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#trigger_workflow_automation OnCallTeamRoutingRules#trigger_workflow_automation}
 
 ---
 
@@ -1182,7 +1182,7 @@ public java.lang.Number getAckTimeoutMinutes();
 
 Number of minutes before an acknowledged page is re-triggered. Value must be between 30 and 4320.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#ack_timeout_minutes OnCallTeamRoutingRules#ack_timeout_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#ack_timeout_minutes OnCallTeamRoutingRules#ack_timeout_minutes}
 
 ---
 
@@ -1196,7 +1196,7 @@ public java.lang.String getPolicyId();
 
 Escalation policy ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#policy_id OnCallTeamRoutingRules#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#policy_id OnCallTeamRoutingRules#policy_id}
 
 ---
 
@@ -1210,7 +1210,7 @@ public OnCallTeamRoutingRulesRuleActionEscalationPolicySupportHours getSupportHo
 
 support_hours block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#support_hours OnCallTeamRoutingRules#support_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#support_hours OnCallTeamRoutingRules#support_hours}
 
 ---
 
@@ -1224,7 +1224,7 @@ public java.lang.String getUrgency();
 
 Urgency for pages created via this action. Valid values are `high`, `low`, `dynamic`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#urgency OnCallTeamRoutingRules#urgency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#urgency OnCallTeamRoutingRules#urgency}
 
 ---
 
@@ -1260,7 +1260,7 @@ public IResolvable|java.util.List<OnCallTeamRoutingRulesRuleActionEscalationPoli
 
 restriction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#restriction OnCallTeamRoutingRules#restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#restriction OnCallTeamRoutingRules#restriction}
 
 ---
 
@@ -1274,7 +1274,7 @@ public java.lang.String getTimeZone();
 
 Specifies the time zone applicable to the restrictions, e.g. `America/New_York`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#time_zone OnCallTeamRoutingRules#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#time_zone OnCallTeamRoutingRules#time_zone}
 
 ---
 
@@ -1314,7 +1314,7 @@ public java.lang.String getEndDay();
 
 The weekday when the restriction period ends. Valid values are `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#end_day OnCallTeamRoutingRules#end_day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#end_day OnCallTeamRoutingRules#end_day}
 
 ---
 
@@ -1328,7 +1328,7 @@ public java.lang.String getEndTime();
 
 The time of day when the restriction ends (hh:mm:ss).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#end_time OnCallTeamRoutingRules#end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#end_time OnCallTeamRoutingRules#end_time}
 
 ---
 
@@ -1342,7 +1342,7 @@ public java.lang.String getStartDay();
 
 The weekday when the restriction period starts. Valid values are `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#start_day OnCallTeamRoutingRules#start_day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#start_day OnCallTeamRoutingRules#start_day}
 
 ---
 
@@ -1356,7 +1356,7 @@ public java.lang.String getStartTime();
 
 The time of day when the restriction begins (hh:mm:ss).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#start_time OnCallTeamRoutingRules#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#start_time OnCallTeamRoutingRules#start_time}
 
 ---
 
@@ -1392,7 +1392,7 @@ public java.lang.String getChannel();
 
 Slack channel ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#channel OnCallTeamRoutingRules#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#channel OnCallTeamRoutingRules#channel}
 
 ---
 
@@ -1406,7 +1406,7 @@ public java.lang.String getWorkspace();
 
 Slack workspace ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#workspace OnCallTeamRoutingRules#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#workspace OnCallTeamRoutingRules#workspace}
 
 ---
 
@@ -1444,7 +1444,7 @@ public java.lang.String getChannel();
 
 Teams channel ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#channel OnCallTeamRoutingRules#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#channel OnCallTeamRoutingRules#channel}
 
 ---
 
@@ -1458,7 +1458,7 @@ public java.lang.String getTeam();
 
 Teams team ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#team OnCallTeamRoutingRules#team}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#team OnCallTeamRoutingRules#team}
 
 ---
 
@@ -1472,7 +1472,7 @@ public java.lang.String getTenant();
 
 Teams tenant ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#tenant OnCallTeamRoutingRules#tenant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#tenant OnCallTeamRoutingRules#tenant}
 
 ---
 
@@ -1506,7 +1506,7 @@ public java.lang.String getHandle();
 
 The handle of the Workflow Automation to trigger.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#handle OnCallTeamRoutingRules#handle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#handle OnCallTeamRoutingRules#handle}
 
 ---
 
@@ -1542,7 +1542,7 @@ public IResolvable|java.util.List<OnCallTeamRoutingRulesRuleTimeRestrictionsRest
 
 restriction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#restriction OnCallTeamRoutingRules#restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#restriction OnCallTeamRoutingRules#restriction}
 
 ---
 
@@ -1556,7 +1556,7 @@ public java.lang.String getTimeZone();
 
 Specifies the time zone applicable to the restrictions, e.g. `America/New_York`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#time_zone OnCallTeamRoutingRules#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#time_zone OnCallTeamRoutingRules#time_zone}
 
 ---
 
@@ -1596,7 +1596,7 @@ public java.lang.String getEndDay();
 
 The weekday when the restriction period ends. Valid values are `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#end_day OnCallTeamRoutingRules#end_day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#end_day OnCallTeamRoutingRules#end_day}
 
 ---
 
@@ -1610,7 +1610,7 @@ public java.lang.String getEndTime();
 
 The time of day when the restriction ends (hh:mm:ss).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#end_time OnCallTeamRoutingRules#end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#end_time OnCallTeamRoutingRules#end_time}
 
 ---
 
@@ -1624,7 +1624,7 @@ public java.lang.String getStartDay();
 
 The weekday when the restriction period starts. Valid values are `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#start_day OnCallTeamRoutingRules#start_day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#start_day OnCallTeamRoutingRules#start_day}
 
 ---
 
@@ -1638,7 +1638,7 @@ public java.lang.String getStartTime();
 
 The time of day when the restriction begins (hh:mm:ss).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/on_call_team_routing_rules#start_time OnCallTeamRoutingRules#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/on_call_team_routing_rules#start_time OnCallTeamRoutingRules#start_time}
 
 ---
 

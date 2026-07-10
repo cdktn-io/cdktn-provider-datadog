@@ -4,7 +4,7 @@
 
 ### DatadogProvider <a name="DatadogProvider" id="@cdktn/provider-datadog.provider.DatadogProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs datadog}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs datadog}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.provider.DatadogProvider.Initializer"></a>
 
@@ -30,6 +30,7 @@ provider.DatadogProvider(
   http_client_retry_enabled: str = None,
   http_client_retry_max_retries: typing.Union[int, float] = None,
   http_client_retry_timeout: typing.Union[int, float] = None,
+  ignore_tag_keys: typing.List[str] = None,
   org_uuid: str = None,
   validate: str = None
 )
@@ -55,7 +56,8 @@ provider.DatadogProvider(
 | <code><a href="#@cdktn/provider-datadog.provider.DatadogProvider.Initializer.parameter.httpClientRetryEnabled">http_client_retry_enabled</a></code> | <code>str</code> | Enables request retries on HTTP status codes 429 and 5xx. Valid values are [`true`, `false`]. Defaults to `true`. |
 | <code><a href="#@cdktn/provider-datadog.provider.DatadogProvider.Initializer.parameter.httpClientRetryMaxRetries">http_client_retry_max_retries</a></code> | <code>typing.Union[int, float]</code> | The HTTP request maximum retry number. Defaults to 3. |
 | <code><a href="#@cdktn/provider-datadog.provider.DatadogProvider.Initializer.parameter.httpClientRetryTimeout">http_client_retry_timeout</a></code> | <code>typing.Union[int, float]</code> | The HTTP request retry timeout period. Defaults to 60 seconds. |
-| <code><a href="#@cdktn/provider-datadog.provider.DatadogProvider.Initializer.parameter.orgUuid">org_uuid</a></code> | <code>str</code> | The organization UUID; used for cloud-provider-based authentication. See the [Datadog API documentation](https://docs.datadoghq.com/api/v1/organizations/) for more information. |
+| <code><a href="#@cdktn/provider-datadog.provider.DatadogProvider.Initializer.parameter.ignoreTagKeys">ignore_tag_keys</a></code> | <code>typing.List[str]</code> | [Experimental - Monitors and Service Level Objectives only] Tag keys whose drift Terraform should ignore across all resources that support `ignore_tag_keys`. |
+| <code><a href="#@cdktn/provider-datadog.provider.DatadogProvider.Initializer.parameter.orgUuid">org_uuid</a></code> | <code>str</code> | The organization UUID; |
 | <code><a href="#@cdktn/provider-datadog.provider.DatadogProvider.Initializer.parameter.validate">validate</a></code> | <code>str</code> | Enables validation of the provided API key during provider initialization. |
 
 ---
@@ -84,7 +86,7 @@ Must be unique amongst siblings in the same scope
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#alias DatadogProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#alias DatadogProvider#alias}
 
 ---
 
@@ -94,7 +96,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 (Required unless validate is false) Datadog API key. This can also be set via the DD_API_KEY environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#api_key DatadogProvider#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#api_key DatadogProvider#api_key}
 
 ---
 
@@ -106,7 +108,7 @@ The API URL.
 
 This can also be set via the DD_HOST environment variable, and defaults to `https://api.datadoghq.com`. Note that this URL must not end with the `/api/` path. For example, `https://api.datadoghq.com/` is a correct value, while `https://api.datadoghq.com/api/` is not. And if you're working with "EU" version of Datadog, use `https://api.datadoghq.eu/`. Other Datadog region examples: `https://api.us5.datadoghq.com/`, `https://api.us3.datadoghq.com/` and `https://api.ddog-gov.com/`. See https://docs.datadoghq.com/getting_started/site/ for all available regions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#api_url DatadogProvider#api_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#api_url DatadogProvider#api_url}
 
 ---
 
@@ -116,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 (Required unless validate is false) Datadog APP key. This can also be set via the DD_APP_KEY environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#app_key DatadogProvider#app_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#app_key DatadogProvider#app_key}
 
 ---
 
@@ -128,7 +130,7 @@ The AWS access key ID;
 
 used for cloud-provider-based authentication. This can also be set using the `AWS_ACCESS_KEY_ID` environment variable. Required when using `cloud_provider_type` set to `aws`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#aws_access_key_id DatadogProvider#aws_access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#aws_access_key_id DatadogProvider#aws_access_key_id}
 
 ---
 
@@ -140,7 +142,7 @@ The AWS secret access key;
 
 used for cloud-provider-based authentication. This can also be set using the `AWS_SECRET_ACCESS_KEY` environment variable. Required when using `cloud_provider_type` set to `aws`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#aws_secret_access_key DatadogProvider#aws_secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#aws_secret_access_key DatadogProvider#aws_secret_access_key}
 
 ---
 
@@ -152,7 +154,7 @@ The AWS session token;
 
 used for cloud-provider-based authentication. This can also be set using the `AWS_SESSION_TOKEN` environment variable. Required when using `cloud_provider_type` set to `aws` and using temporary credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#aws_session_token DatadogProvider#aws_session_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#aws_session_token DatadogProvider#aws_session_token}
 
 ---
 
@@ -164,7 +166,7 @@ Datadog credential sent in the `Authorization: Bearer <token>` header.
 
 Accepts personal access tokens (`ddpat_*`) and service-account access tokens (`ddsat_*`). When set, the provider authenticates with `Authorization: Bearer <token>` instead of the `DD-API-KEY` / `DD-APPLICATION-KEY` headers. This can also be set via the `DD_BEARER_TOKEN` or `DATADOG_BEARER_TOKEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#bearer_token DatadogProvider#bearer_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#bearer_token DatadogProvider#bearer_token}
 
 ---
 
@@ -174,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The cloud provider region specifier; used for cloud-provider-based authentication. For example, `us-east-1` for AWS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#cloud_provider_region DatadogProvider#cloud_provider_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#cloud_provider_region DatadogProvider#cloud_provider_region}
 
 ---
 
@@ -184,9 +186,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Specifies the cloud provider used for cloud-provider-based authentication, enabling keyless access without API or app keys.
 
-Only [`aws`] is supported. This feature is in Preview. If you'd like to enable it for your organization, contact [support](https://docs.datadoghq.com/help/).
+Only [`aws`] is supported. This can also be set using the `DD_CLOUD_PROVIDER_TYPE` environment variable. This feature is in Preview. If you'd like to enable it for your organization, contact [support](https://docs.datadoghq.com/help/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#cloud_provider_type DatadogProvider#cloud_provider_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#cloud_provider_type DatadogProvider#cloud_provider_type}
 
 ---
 
@@ -196,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 default_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#default_tags DatadogProvider#default_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#default_tags DatadogProvider#default_tags}
 
 ---
 
@@ -206,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The HTTP request retry back off base. Defaults to 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#http_client_retry_backoff_base DatadogProvider#http_client_retry_backoff_base}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#http_client_retry_backoff_base DatadogProvider#http_client_retry_backoff_base}
 
 ---
 
@@ -216,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The HTTP request retry back off multiplier. Defaults to 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#http_client_retry_backoff_multiplier DatadogProvider#http_client_retry_backoff_multiplier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#http_client_retry_backoff_multiplier DatadogProvider#http_client_retry_backoff_multiplier}
 
 ---
 
@@ -226,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Enables request retries on HTTP status codes 429 and 5xx. Valid values are [`true`, `false`]. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#http_client_retry_enabled DatadogProvider#http_client_retry_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#http_client_retry_enabled DatadogProvider#http_client_retry_enabled}
 
 ---
 
@@ -236,7 +238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The HTTP request maximum retry number. Defaults to 3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#http_client_retry_max_retries DatadogProvider#http_client_retry_max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#http_client_retry_max_retries DatadogProvider#http_client_retry_max_retries}
 
 ---
 
@@ -246,7 +248,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The HTTP request retry timeout period. Defaults to 60 seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#http_client_retry_timeout DatadogProvider#http_client_retry_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#http_client_retry_timeout DatadogProvider#http_client_retry_timeout}
+
+---
+
+##### `ignore_tag_keys`<sup>Optional</sup> <a name="ignore_tag_keys" id="@cdktn/provider-datadog.provider.DatadogProvider.Initializer.parameter.ignoreTagKeys"></a>
+
+- *Type:* typing.List[str]
+
+[Experimental - Monitors and Service Level Objectives only] Tag keys whose drift Terraform should ignore across all resources that support `ignore_tag_keys`.
+
+A resource's own `ignore_tag_keys` is merged with this list for that resource. Any `:value` suffix is ignored.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#ignore_tag_keys DatadogProvider#ignore_tag_keys}
 
 ---
 
@@ -254,9 +268,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-The organization UUID; used for cloud-provider-based authentication. See the [Datadog API documentation](https://docs.datadoghq.com/api/v1/organizations/) for more information.
+The organization UUID;
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#org_uuid DatadogProvider#org_uuid}
+used for cloud-provider-based authentication. This can also be set using the `DD_ORG_UUID` environment variable. See the [Datadog API documentation](https://docs.datadoghq.com/api/v1/organizations/) for more information.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#org_uuid DatadogProvider#org_uuid}
 
 ---
 
@@ -268,7 +284,7 @@ Enables validation of the provided API key during provider initialization.
 
 Valid values are [`true`, `false`]. Default is true. When false, api_key won't be checked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#validate DatadogProvider#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#validate DatadogProvider#validate}
 
 ---
 
@@ -300,6 +316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktn/provider-datadog.provider.DatadogProvider.resetHttpClientRetryEnabled">reset_http_client_retry_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.provider.DatadogProvider.resetHttpClientRetryMaxRetries">reset_http_client_retry_max_retries</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.provider.DatadogProvider.resetHttpClientRetryTimeout">reset_http_client_retry_timeout</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.provider.DatadogProvider.resetIgnoreTagKeys">reset_ignore_tag_keys</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.provider.DatadogProvider.resetOrgUuid">reset_org_uuid</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.provider.DatadogProvider.resetValidate">reset_validate</a></code> | *No description.* |
 
@@ -499,6 +516,12 @@ def reset_http_client_retry_max_retries() -> None
 def reset_http_client_retry_timeout() -> None
 ```
 
+##### `reset_ignore_tag_keys` <a name="reset_ignore_tag_keys" id="@cdktn/provider-datadog.provider.DatadogProvider.resetIgnoreTagKeys"></a>
+
+```python
+def reset_ignore_tag_keys() -> None
+```
+
 ##### `reset_org_uuid` <a name="reset_org_uuid" id="@cdktn/provider-datadog.provider.DatadogProvider.resetOrgUuid"></a>
 
 ```python
@@ -625,7 +648,7 @@ The construct id used in the generated config for the DatadogProvider to import.
 
 The id of the existing DatadogProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -666,6 +689,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13
 | <code><a href="#@cdktn/provider-datadog.provider.DatadogProvider.property.httpClientRetryEnabledInput">http_client_retry_enabled_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.provider.DatadogProvider.property.httpClientRetryMaxRetriesInput">http_client_retry_max_retries_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.provider.DatadogProvider.property.httpClientRetryTimeoutInput">http_client_retry_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.provider.DatadogProvider.property.ignoreTagKeysInput">ignore_tag_keys_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.provider.DatadogProvider.property.orgUuidInput">org_uuid_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.provider.DatadogProvider.property.validateInput">validate_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.provider.DatadogProvider.property.apiKey">api_key</a></code> | <code>str</code> | *No description.* |
@@ -683,6 +707,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13
 | <code><a href="#@cdktn/provider-datadog.provider.DatadogProvider.property.httpClientRetryEnabled">http_client_retry_enabled</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.provider.DatadogProvider.property.httpClientRetryMaxRetries">http_client_retry_max_retries</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.provider.DatadogProvider.property.httpClientRetryTimeout">http_client_retry_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.provider.DatadogProvider.property.ignoreTagKeys">ignore_tag_keys</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.provider.DatadogProvider.property.orgUuid">org_uuid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.provider.DatadogProvider.property.validate">validate</a></code> | <code>str</code> | *No description.* |
 
@@ -940,6 +965,16 @@ http_client_retry_timeout_input: typing.Union[int, float]
 
 ---
 
+##### `ignore_tag_keys_input`<sup>Optional</sup> <a name="ignore_tag_keys_input" id="@cdktn/provider-datadog.provider.DatadogProvider.property.ignoreTagKeysInput"></a>
+
+```python
+ignore_tag_keys_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `org_uuid_input`<sup>Optional</sup> <a name="org_uuid_input" id="@cdktn/provider-datadog.provider.DatadogProvider.property.orgUuidInput"></a>
 
 ```python
@@ -1110,6 +1145,16 @@ http_client_retry_timeout: typing.Union[int, float]
 
 ---
 
+##### `ignore_tag_keys`<sup>Optional</sup> <a name="ignore_tag_keys" id="@cdktn/provider-datadog.provider.DatadogProvider.property.ignoreTagKeys"></a>
+
+```python
+ignore_tag_keys: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `org_uuid`<sup>Optional</sup> <a name="org_uuid" id="@cdktn/provider-datadog.provider.DatadogProvider.property.orgUuid"></a>
 
 ```python
@@ -1174,6 +1219,7 @@ provider.DatadogProviderConfig(
   http_client_retry_enabled: str = None,
   http_client_retry_max_retries: typing.Union[int, float] = None,
   http_client_retry_timeout: typing.Union[int, float] = None,
+  ignore_tag_keys: typing.List[str] = None,
   org_uuid: str = None,
   validate: str = None
 )
@@ -1199,7 +1245,8 @@ provider.DatadogProviderConfig(
 | <code><a href="#@cdktn/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryEnabled">http_client_retry_enabled</a></code> | <code>str</code> | Enables request retries on HTTP status codes 429 and 5xx. Valid values are [`true`, `false`]. Defaults to `true`. |
 | <code><a href="#@cdktn/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryMaxRetries">http_client_retry_max_retries</a></code> | <code>typing.Union[int, float]</code> | The HTTP request maximum retry number. Defaults to 3. |
 | <code><a href="#@cdktn/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryTimeout">http_client_retry_timeout</a></code> | <code>typing.Union[int, float]</code> | The HTTP request retry timeout period. Defaults to 60 seconds. |
-| <code><a href="#@cdktn/provider-datadog.provider.DatadogProviderConfig.property.orgUuid">org_uuid</a></code> | <code>str</code> | The organization UUID; used for cloud-provider-based authentication. See the [Datadog API documentation](https://docs.datadoghq.com/api/v1/organizations/) for more information. |
+| <code><a href="#@cdktn/provider-datadog.provider.DatadogProviderConfig.property.ignoreTagKeys">ignore_tag_keys</a></code> | <code>typing.List[str]</code> | [Experimental - Monitors and Service Level Objectives only] Tag keys whose drift Terraform should ignore across all resources that support `ignore_tag_keys`. |
+| <code><a href="#@cdktn/provider-datadog.provider.DatadogProviderConfig.property.orgUuid">org_uuid</a></code> | <code>str</code> | The organization UUID; |
 | <code><a href="#@cdktn/provider-datadog.provider.DatadogProviderConfig.property.validate">validate</a></code> | <code>str</code> | Enables validation of the provided API key during provider initialization. |
 
 ---
@@ -1214,7 +1261,7 @@ alias: str
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#alias DatadogProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#alias DatadogProvider#alias}
 
 ---
 
@@ -1228,7 +1275,7 @@ api_key: str
 
 (Required unless validate is false) Datadog API key. This can also be set via the DD_API_KEY environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#api_key DatadogProvider#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#api_key DatadogProvider#api_key}
 
 ---
 
@@ -1244,7 +1291,7 @@ The API URL.
 
 This can also be set via the DD_HOST environment variable, and defaults to `https://api.datadoghq.com`. Note that this URL must not end with the `/api/` path. For example, `https://api.datadoghq.com/` is a correct value, while `https://api.datadoghq.com/api/` is not. And if you're working with "EU" version of Datadog, use `https://api.datadoghq.eu/`. Other Datadog region examples: `https://api.us5.datadoghq.com/`, `https://api.us3.datadoghq.com/` and `https://api.ddog-gov.com/`. See https://docs.datadoghq.com/getting_started/site/ for all available regions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#api_url DatadogProvider#api_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#api_url DatadogProvider#api_url}
 
 ---
 
@@ -1258,7 +1305,7 @@ app_key: str
 
 (Required unless validate is false) Datadog APP key. This can also be set via the DD_APP_KEY environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#app_key DatadogProvider#app_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#app_key DatadogProvider#app_key}
 
 ---
 
@@ -1274,7 +1321,7 @@ The AWS access key ID;
 
 used for cloud-provider-based authentication. This can also be set using the `AWS_ACCESS_KEY_ID` environment variable. Required when using `cloud_provider_type` set to `aws`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#aws_access_key_id DatadogProvider#aws_access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#aws_access_key_id DatadogProvider#aws_access_key_id}
 
 ---
 
@@ -1290,7 +1337,7 @@ The AWS secret access key;
 
 used for cloud-provider-based authentication. This can also be set using the `AWS_SECRET_ACCESS_KEY` environment variable. Required when using `cloud_provider_type` set to `aws`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#aws_secret_access_key DatadogProvider#aws_secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#aws_secret_access_key DatadogProvider#aws_secret_access_key}
 
 ---
 
@@ -1306,7 +1353,7 @@ The AWS session token;
 
 used for cloud-provider-based authentication. This can also be set using the `AWS_SESSION_TOKEN` environment variable. Required when using `cloud_provider_type` set to `aws` and using temporary credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#aws_session_token DatadogProvider#aws_session_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#aws_session_token DatadogProvider#aws_session_token}
 
 ---
 
@@ -1322,7 +1369,7 @@ Datadog credential sent in the `Authorization: Bearer <token>` header.
 
 Accepts personal access tokens (`ddpat_*`) and service-account access tokens (`ddsat_*`). When set, the provider authenticates with `Authorization: Bearer <token>` instead of the `DD-API-KEY` / `DD-APPLICATION-KEY` headers. This can also be set via the `DD_BEARER_TOKEN` or `DATADOG_BEARER_TOKEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#bearer_token DatadogProvider#bearer_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#bearer_token DatadogProvider#bearer_token}
 
 ---
 
@@ -1336,7 +1383,7 @@ cloud_provider_region: str
 
 The cloud provider region specifier; used for cloud-provider-based authentication. For example, `us-east-1` for AWS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#cloud_provider_region DatadogProvider#cloud_provider_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#cloud_provider_region DatadogProvider#cloud_provider_region}
 
 ---
 
@@ -1350,9 +1397,9 @@ cloud_provider_type: str
 
 Specifies the cloud provider used for cloud-provider-based authentication, enabling keyless access without API or app keys.
 
-Only [`aws`] is supported. This feature is in Preview. If you'd like to enable it for your organization, contact [support](https://docs.datadoghq.com/help/).
+Only [`aws`] is supported. This can also be set using the `DD_CLOUD_PROVIDER_TYPE` environment variable. This feature is in Preview. If you'd like to enable it for your organization, contact [support](https://docs.datadoghq.com/help/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#cloud_provider_type DatadogProvider#cloud_provider_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#cloud_provider_type DatadogProvider#cloud_provider_type}
 
 ---
 
@@ -1366,7 +1413,7 @@ default_tags: DatadogProviderDefaultTags
 
 default_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#default_tags DatadogProvider#default_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#default_tags DatadogProvider#default_tags}
 
 ---
 
@@ -1380,7 +1427,7 @@ http_client_retry_backoff_base: typing.Union[int, float]
 
 The HTTP request retry back off base. Defaults to 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#http_client_retry_backoff_base DatadogProvider#http_client_retry_backoff_base}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#http_client_retry_backoff_base DatadogProvider#http_client_retry_backoff_base}
 
 ---
 
@@ -1394,7 +1441,7 @@ http_client_retry_backoff_multiplier: typing.Union[int, float]
 
 The HTTP request retry back off multiplier. Defaults to 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#http_client_retry_backoff_multiplier DatadogProvider#http_client_retry_backoff_multiplier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#http_client_retry_backoff_multiplier DatadogProvider#http_client_retry_backoff_multiplier}
 
 ---
 
@@ -1408,7 +1455,7 @@ http_client_retry_enabled: str
 
 Enables request retries on HTTP status codes 429 and 5xx. Valid values are [`true`, `false`]. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#http_client_retry_enabled DatadogProvider#http_client_retry_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#http_client_retry_enabled DatadogProvider#http_client_retry_enabled}
 
 ---
 
@@ -1422,7 +1469,7 @@ http_client_retry_max_retries: typing.Union[int, float]
 
 The HTTP request maximum retry number. Defaults to 3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#http_client_retry_max_retries DatadogProvider#http_client_retry_max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#http_client_retry_max_retries DatadogProvider#http_client_retry_max_retries}
 
 ---
 
@@ -1436,7 +1483,23 @@ http_client_retry_timeout: typing.Union[int, float]
 
 The HTTP request retry timeout period. Defaults to 60 seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#http_client_retry_timeout DatadogProvider#http_client_retry_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#http_client_retry_timeout DatadogProvider#http_client_retry_timeout}
+
+---
+
+##### `ignore_tag_keys`<sup>Optional</sup> <a name="ignore_tag_keys" id="@cdktn/provider-datadog.provider.DatadogProviderConfig.property.ignoreTagKeys"></a>
+
+```python
+ignore_tag_keys: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+[Experimental - Monitors and Service Level Objectives only] Tag keys whose drift Terraform should ignore across all resources that support `ignore_tag_keys`.
+
+A resource's own `ignore_tag_keys` is merged with this list for that resource. Any `:value` suffix is ignored.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#ignore_tag_keys DatadogProvider#ignore_tag_keys}
 
 ---
 
@@ -1448,9 +1511,11 @@ org_uuid: str
 
 - *Type:* str
 
-The organization UUID; used for cloud-provider-based authentication. See the [Datadog API documentation](https://docs.datadoghq.com/api/v1/organizations/) for more information.
+The organization UUID;
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#org_uuid DatadogProvider#org_uuid}
+used for cloud-provider-based authentication. This can also be set using the `DD_ORG_UUID` environment variable. See the [Datadog API documentation](https://docs.datadoghq.com/api/v1/organizations/) for more information.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#org_uuid DatadogProvider#org_uuid}
 
 ---
 
@@ -1466,7 +1531,7 @@ Enables validation of the provided API key during provider initialization.
 
 Valid values are [`true`, `false`]. Default is true. When false, api_key won't be checked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#validate DatadogProvider#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#validate DatadogProvider#validate}
 
 ---
 
@@ -1500,7 +1565,7 @@ tags: typing.Mapping[str]
 
 [Experimental - Logs Indexes, Logs Pipelines, Monitors Security Monitoring Rules, and Service Level Objectives only] Resource tags to be applied by default across all resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs#tags DatadogProvider#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs#tags DatadogProvider#tags}
 
 ---
 

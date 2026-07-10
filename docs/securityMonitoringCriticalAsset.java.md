@@ -4,7 +4,7 @@
 
 ### SecurityMonitoringCriticalAsset <a name="SecurityMonitoringCriticalAsset" id="@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_critical_asset datadog_security_monitoring_critical_asset}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset datadog_security_monitoring_critical_asset}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.Initializer"></a>
 
@@ -22,6 +22,7 @@ SecurityMonitoringCriticalAsset.Builder.create(Construct scope, java.lang.String
     .query(java.lang.String)
     .ruleQuery(java.lang.String)
     .severity(java.lang.String)
+//  .description(java.lang.String)
 //  .enabled(java.lang.Boolean|IResolvable)
 //  .tags(java.util.List<java.lang.String>)
     .build();
@@ -41,6 +42,7 @@ SecurityMonitoringCriticalAsset.Builder.create(Construct scope, java.lang.String
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.Initializer.parameter.query">query</a></code> | <code>java.lang.String</code> | The query used to match a critical asset and the associated signals. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.Initializer.parameter.ruleQuery">ruleQuery</a></code> | <code>java.lang.String</code> | The rule query to filter which detection rules this critical asset applies to. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.Initializer.parameter.severity">severity</a></code> | <code>java.lang.String</code> | The severity change applied to signals matching this critical asset. |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A description of the critical asset. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether the critical asset is enabled. Defaults to `true`. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.Initializer.parameter.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | A list of tags associated with the critical asset. |
 
@@ -114,7 +116,7 @@ The query used to match a critical asset and the associated signals.
 
 Uses the same syntax as the search bar in the Security Signals Explorer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_critical_asset#query SecurityMonitoringCriticalAsset#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset#query SecurityMonitoringCriticalAsset#query}
 
 ---
 
@@ -126,7 +128,7 @@ The rule query to filter which detection rules this critical asset applies to.
 
 Uses the same syntax as the search bar for detection rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_critical_asset#rule_query SecurityMonitoringCriticalAsset#rule_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset#rule_query SecurityMonitoringCriticalAsset#rule_query}
 
 ---
 
@@ -138,7 +140,17 @@ The severity change applied to signals matching this critical asset.
 
 Valid values are `critical`, `high`, `medium`, `low`, `info`, `no-op`, `increase`, `decrease`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_critical_asset#severity SecurityMonitoringCriticalAsset#severity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset#severity SecurityMonitoringCriticalAsset#severity}
+
+---
+
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.Initializer.parameter.description"></a>
+
+- *Type:* java.lang.String
+
+A description of the critical asset.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset#description SecurityMonitoringCriticalAsset#description}
 
 ---
 
@@ -148,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Whether the critical asset is enabled. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_critical_asset#enabled SecurityMonitoringCriticalAsset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset#enabled SecurityMonitoringCriticalAsset#enabled}
 
 ---
 
@@ -158,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A list of tags associated with the critical asset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_critical_asset#tags SecurityMonitoringCriticalAsset#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset#tags SecurityMonitoringCriticalAsset#tags}
 
 ---
 
@@ -190,6 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.resetEnabled">resetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.resetTags">resetTags</a></code> | *No description.* |
 
@@ -506,6 +519,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.resetDescription"></a>
+
+```java
+public void resetDescription()
+```
+
 ##### `resetEnabled` <a name="resetEnabled" id="@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.resetEnabled"></a>
 
 ```java
@@ -621,7 +640,7 @@ The construct id used in the generated config for the SecurityMonitoringCritical
 
 The id of the existing SecurityMonitoringCriticalAsset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_critical_asset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -652,11 +671,13 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.property.queryInput">queryInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.property.ruleQueryInput">ruleQueryInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.property.severityInput">severityInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.property.tagsInput">tagsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.property.query">query</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.property.ruleQuery">ruleQuery</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -817,6 +838,16 @@ public java.lang.String getId();
 
 ---
 
+##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.property.descriptionInput"></a>
+
+```java
+public java.lang.String getDescriptionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.property.enabledInput"></a>
 
 ```java
@@ -864,6 +895,16 @@ public java.util.List<java.lang.String> getTagsInput();
 ```
 
 - *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.property.description"></a>
+
+```java
+public java.lang.String getDescription();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -955,6 +996,7 @@ SecurityMonitoringCriticalAssetConfig.builder()
     .query(java.lang.String)
     .ruleQuery(java.lang.String)
     .severity(java.lang.String)
+//  .description(java.lang.String)
 //  .enabled(java.lang.Boolean|IResolvable)
 //  .tags(java.util.List<java.lang.String>)
     .build();
@@ -974,6 +1016,7 @@ SecurityMonitoringCriticalAssetConfig.builder()
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAssetConfig.property.query">query</a></code> | <code>java.lang.String</code> | The query used to match a critical asset and the associated signals. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAssetConfig.property.ruleQuery">ruleQuery</a></code> | <code>java.lang.String</code> | The rule query to filter which detection rules this critical asset applies to. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAssetConfig.property.severity">severity</a></code> | <code>java.lang.String</code> | The severity change applied to signals matching this critical asset. |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAssetConfig.property.description">description</a></code> | <code>java.lang.String</code> | A description of the critical asset. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAssetConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether the critical asset is enabled. Defaults to `true`. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAssetConfig.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | A list of tags associated with the critical asset. |
 
@@ -1061,7 +1104,7 @@ The query used to match a critical asset and the associated signals.
 
 Uses the same syntax as the search bar in the Security Signals Explorer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_critical_asset#query SecurityMonitoringCriticalAsset#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset#query SecurityMonitoringCriticalAsset#query}
 
 ---
 
@@ -1077,7 +1120,7 @@ The rule query to filter which detection rules this critical asset applies to.
 
 Uses the same syntax as the search bar for detection rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_critical_asset#rule_query SecurityMonitoringCriticalAsset#rule_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset#rule_query SecurityMonitoringCriticalAsset#rule_query}
 
 ---
 
@@ -1093,7 +1136,21 @@ The severity change applied to signals matching this critical asset.
 
 Valid values are `critical`, `high`, `medium`, `low`, `info`, `no-op`, `increase`, `decrease`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_critical_asset#severity SecurityMonitoringCriticalAsset#severity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset#severity SecurityMonitoringCriticalAsset#severity}
+
+---
+
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAssetConfig.property.description"></a>
+
+```java
+public java.lang.String getDescription();
+```
+
+- *Type:* java.lang.String
+
+A description of the critical asset.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset#description SecurityMonitoringCriticalAsset#description}
 
 ---
 
@@ -1107,7 +1164,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether the critical asset is enabled. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_critical_asset#enabled SecurityMonitoringCriticalAsset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset#enabled SecurityMonitoringCriticalAsset#enabled}
 
 ---
 
@@ -1121,7 +1178,7 @@ public java.util.List<java.lang.String> getTags();
 
 A list of tags associated with the critical asset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_critical_asset#tags SecurityMonitoringCriticalAsset#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset#tags SecurityMonitoringCriticalAsset#tags}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### LogsCustomPipeline <a name="LogsCustomPipeline" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer"></a>
 
@@ -41,12 +41,12 @@ LogsCustomPipeline.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.filter">filter</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilter">LogsCustomPipelineFilter</a>></code> | filter block. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.isEnabled">isEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.isEnabled">isEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.processor">processor</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor">LogsCustomPipelineProcessor</a>></code> | processor block. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -151,7 +151,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}.
 
 ---
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}.
 
 ---
 
@@ -679,7 +679,7 @@ The construct id used in the generated config for the LogsCustomPipeline to impo
 
 The id of the existing LogsCustomPipeline that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1065,12 +1065,12 @@ LogsCustomPipelineConfig.builder()
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.filter">filter</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilter">LogsCustomPipelineFilter</a>></code> | filter block. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.isEnabled">isEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.isEnabled">isEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.processor">processor</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor">LogsCustomPipelineProcessor</a>></code> | processor block. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}. |
 
 ---
 
@@ -1154,7 +1154,7 @@ public IResolvable|java.util.List<LogsCustomPipelineFilter> getFilter();
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 
 ---
 
@@ -1166,7 +1166,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
 
 ---
 
@@ -1178,7 +1178,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}.
 
 ---
 
@@ -1190,7 +1190,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1205,7 +1205,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}.
 
 ---
 
@@ -1219,7 +1219,7 @@ public IResolvable|java.util.List<LogsCustomPipelineProcessor> getProcessor();
 
 processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
 
 ---
 
@@ -1231,7 +1231,7 @@ public java.util.List<java.lang.String> getTags();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}.
 
 ---
 
@@ -1265,7 +1265,7 @@ public java.lang.String getQuery();
 
 Filter criteria of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
 
 ---
 
@@ -1278,6 +1278,7 @@ import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcess
 
 LogsCustomPipelineProcessor.builder()
 //  .arithmeticProcessor(LogsCustomPipelineProcessorArithmeticProcessor)
+//  .arrayMapProcessor(LogsCustomPipelineProcessorArrayMapProcessor)
 //  .arrayProcessor(LogsCustomPipelineProcessorArrayProcessor)
 //  .attributeRemapper(LogsCustomPipelineProcessorAttributeRemapper)
 //  .categoryProcessor(LogsCustomPipelineProcessorCategoryProcessor)
@@ -1305,6 +1306,7 @@ LogsCustomPipelineProcessor.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor.property.arithmeticProcessor">arithmeticProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArithmeticProcessor">LogsCustomPipelineProcessorArithmeticProcessor</a></code> | arithmetic_processor block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor.property.arrayMapProcessor">arrayMapProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor">LogsCustomPipelineProcessorArrayMapProcessor</a></code> | array_map_processor block. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor.property.arrayProcessor">arrayProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayProcessor">LogsCustomPipelineProcessorArrayProcessor</a></code> | array_processor block. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor.property.attributeRemapper">attributeRemapper</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorAttributeRemapper">LogsCustomPipelineProcessorAttributeRemapper</a></code> | attribute_remapper block. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor.property.categoryProcessor">categoryProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessor">LogsCustomPipelineProcessorCategoryProcessor</a></code> | category_processor block. |
@@ -1337,7 +1339,21 @@ public LogsCustomPipelineProcessorArithmeticProcessor getArithmeticProcessor();
 
 arithmetic_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#arithmetic_processor LogsCustomPipeline#arithmetic_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#arithmetic_processor LogsCustomPipeline#arithmetic_processor}
+
+---
+
+##### `arrayMapProcessor`<sup>Optional</sup> <a name="arrayMapProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor.property.arrayMapProcessor"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessor getArrayMapProcessor();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor">LogsCustomPipelineProcessorArrayMapProcessor</a>
+
+array_map_processor block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#array_map_processor LogsCustomPipeline#array_map_processor}
 
 ---
 
@@ -1351,7 +1367,7 @@ public LogsCustomPipelineProcessorArrayProcessor getArrayProcessor();
 
 array_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#array_processor LogsCustomPipeline#array_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#array_processor LogsCustomPipeline#array_processor}
 
 ---
 
@@ -1365,7 +1381,7 @@ public LogsCustomPipelineProcessorAttributeRemapper getAttributeRemapper();
 
 attribute_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#attribute_remapper LogsCustomPipeline#attribute_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#attribute_remapper LogsCustomPipeline#attribute_remapper}
 
 ---
 
@@ -1379,7 +1395,7 @@ public LogsCustomPipelineProcessorCategoryProcessor getCategoryProcessor();
 
 category_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#category_processor LogsCustomPipeline#category_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#category_processor LogsCustomPipeline#category_processor}
 
 ---
 
@@ -1393,7 +1409,7 @@ public LogsCustomPipelineProcessorDateRemapper getDateRemapper();
 
 date_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#date_remapper LogsCustomPipeline#date_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#date_remapper LogsCustomPipeline#date_remapper}
 
 ---
 
@@ -1407,7 +1423,7 @@ public LogsCustomPipelineProcessorDecoderProcessor getDecoderProcessor();
 
 decoder_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#decoder_processor LogsCustomPipeline#decoder_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#decoder_processor LogsCustomPipeline#decoder_processor}
 
 ---
 
@@ -1421,7 +1437,7 @@ public LogsCustomPipelineProcessorGeoIpParser getGeoIpParser();
 
 geo_ip_parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#geo_ip_parser LogsCustomPipeline#geo_ip_parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#geo_ip_parser LogsCustomPipeline#geo_ip_parser}
 
 ---
 
@@ -1435,7 +1451,7 @@ public LogsCustomPipelineProcessorGrokParser getGrokParser();
 
 grok_parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#grok_parser LogsCustomPipeline#grok_parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#grok_parser LogsCustomPipeline#grok_parser}
 
 ---
 
@@ -1449,7 +1465,7 @@ public LogsCustomPipelineProcessorLookupProcessor getLookupProcessor();
 
 lookup_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#lookup_processor LogsCustomPipeline#lookup_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#lookup_processor LogsCustomPipeline#lookup_processor}
 
 ---
 
@@ -1463,7 +1479,7 @@ public LogsCustomPipelineProcessorMessageRemapper getMessageRemapper();
 
 message_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#message_remapper LogsCustomPipeline#message_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#message_remapper LogsCustomPipeline#message_remapper}
 
 ---
 
@@ -1477,7 +1493,7 @@ public LogsCustomPipelineProcessorPipeline getPipeline();
 
 pipeline block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#pipeline LogsCustomPipeline#pipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#pipeline LogsCustomPipeline#pipeline}
 
 ---
 
@@ -1491,7 +1507,7 @@ public LogsCustomPipelineProcessorReferenceTableLookupProcessor getReferenceTabl
 
 reference_table_lookup_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#reference_table_lookup_processor LogsCustomPipeline#reference_table_lookup_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#reference_table_lookup_processor LogsCustomPipeline#reference_table_lookup_processor}
 
 ---
 
@@ -1505,7 +1521,7 @@ public LogsCustomPipelineProcessorSchemaProcessor getSchemaProcessor();
 
 schema_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema_processor LogsCustomPipeline#schema_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#schema_processor LogsCustomPipeline#schema_processor}
 
 ---
 
@@ -1519,7 +1535,7 @@ public LogsCustomPipelineProcessorServiceRemapper getServiceRemapper();
 
 service_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#service_remapper LogsCustomPipeline#service_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#service_remapper LogsCustomPipeline#service_remapper}
 
 ---
 
@@ -1533,7 +1549,7 @@ public LogsCustomPipelineProcessorSpanIdRemapper getSpanIdRemapper();
 
 span_id_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#span_id_remapper LogsCustomPipeline#span_id_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#span_id_remapper LogsCustomPipeline#span_id_remapper}
 
 ---
 
@@ -1547,7 +1563,7 @@ public LogsCustomPipelineProcessorStatusRemapper getStatusRemapper();
 
 status_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#status_remapper LogsCustomPipeline#status_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#status_remapper LogsCustomPipeline#status_remapper}
 
 ---
 
@@ -1561,7 +1577,7 @@ public LogsCustomPipelineProcessorStringBuilderProcessor getStringBuilderProcess
 
 string_builder_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#string_builder_processor LogsCustomPipeline#string_builder_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#string_builder_processor LogsCustomPipeline#string_builder_processor}
 
 ---
 
@@ -1575,7 +1591,7 @@ public LogsCustomPipelineProcessorTraceIdRemapper getTraceIdRemapper();
 
 trace_id_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#trace_id_remapper LogsCustomPipeline#trace_id_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#trace_id_remapper LogsCustomPipeline#trace_id_remapper}
 
 ---
 
@@ -1589,7 +1605,7 @@ public LogsCustomPipelineProcessorUrlParser getUrlParser();
 
 url_parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#url_parser LogsCustomPipeline#url_parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#url_parser LogsCustomPipeline#url_parser}
 
 ---
 
@@ -1603,7 +1619,7 @@ public LogsCustomPipelineProcessorUserAgentParser getUserAgentParser();
 
 user_agent_parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#user_agent_parser LogsCustomPipeline#user_agent_parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#user_agent_parser LogsCustomPipeline#user_agent_parser}
 
 ---
 
@@ -1645,7 +1661,7 @@ public java.lang.String getExpression();
 
 Arithmetic operation between one or more log attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
 
 ---
 
@@ -1659,7 +1675,7 @@ public java.lang.String getTarget();
 
 Name of the attribute that contains the result of the arithmetic operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -1673,7 +1689,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 Boolean value to enable your pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -1687,7 +1703,7 @@ public java.lang.Boolean|IResolvable getIsReplaceMissing();
 
 If true, it replaces all missing attributes of expression by 0, false skips the operation if an attribute is missing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
 
 ---
 
@@ -1701,7 +1717,631 @@ public java.lang.String getName();
 
 Your pipeline name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+### LogsCustomPipelineProcessorArrayMapProcessor <a name="LogsCustomPipelineProcessorArrayMapProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorArrayMapProcessor;
+
+LogsCustomPipelineProcessorArrayMapProcessor.builder()
+    .processors(IResolvable|java.util.List<LogsCustomPipelineProcessorArrayMapProcessorProcessors>)
+    .source(java.lang.String)
+    .target(java.lang.String)
+//  .isEnabled(java.lang.Boolean|IResolvable)
+//  .name(java.lang.String)
+//  .preserveSource(java.lang.Boolean|IResolvable)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor.property.processors">processors</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorArrayMapProcessorProcessors</a>></code> | processors block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor.property.source">source</a></code> | <code>java.lang.String</code> | Attribute path of the source array. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor.property.target">target</a></code> | <code>java.lang.String</code> | Attribute path of the output array. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor.property.isEnabled">isEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If the processor is enabled. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor.property.name">name</a></code> | <code>java.lang.String</code> | Name of the processor. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor.property.preserveSource">preserveSource</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Remove or preserve the source array after processing. Defaults to `true`. |
+
+---
+
+##### `processors`<sup>Required</sup> <a name="processors" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor.property.processors"></a>
+
+```java
+public IResolvable|java.util.List<LogsCustomPipelineProcessorArrayMapProcessorProcessors> getProcessors();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorArrayMapProcessorProcessors</a>>
+
+processors block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#processors LogsCustomPipeline#processors}
+
+---
+
+##### `source`<sup>Required</sup> <a name="source" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor.property.source"></a>
+
+```java
+public java.lang.String getSource();
+```
+
+- *Type:* java.lang.String
+
+Attribute path of the source array.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor.property.target"></a>
+
+```java
+public java.lang.String getTarget();
+```
+
+- *Type:* java.lang.String
+
+Attribute path of the output array.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+##### `isEnabled`<sup>Optional</sup> <a name="isEnabled" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor.property.isEnabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIsEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+If the processor is enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+Name of the processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+##### `preserveSource`<sup>Optional</sup> <a name="preserveSource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor.property.preserveSource"></a>
+
+```java
+public java.lang.Boolean|IResolvable getPreserveSource();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Remove or preserve the source array after processing. Defaults to `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+
+---
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessors <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessors" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors;
+
+LogsCustomPipelineProcessorArrayMapProcessorProcessors.builder()
+//  .arithmeticProcessor(LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor)
+//  .attributeRemapper(LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper)
+//  .categoryProcessor(LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor)
+//  .stringBuilderProcessor(LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors.property.arithmeticProcessor">arithmeticProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor</a></code> | arithmetic_processor block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors.property.attributeRemapper">attributeRemapper</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper">LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper</a></code> | attribute_remapper block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors.property.categoryProcessor">categoryProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor</a></code> | category_processor block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors.property.stringBuilderProcessor">stringBuilderProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor</a></code> | string_builder_processor block. |
+
+---
+
+##### `arithmeticProcessor`<sup>Optional</sup> <a name="arithmeticProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors.property.arithmeticProcessor"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor getArithmeticProcessor();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor</a>
+
+arithmetic_processor block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#arithmetic_processor LogsCustomPipeline#arithmetic_processor}
+
+---
+
+##### `attributeRemapper`<sup>Optional</sup> <a name="attributeRemapper" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors.property.attributeRemapper"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper getAttributeRemapper();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper">LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper</a>
+
+attribute_remapper block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#attribute_remapper LogsCustomPipeline#attribute_remapper}
+
+---
+
+##### `categoryProcessor`<sup>Optional</sup> <a name="categoryProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors.property.categoryProcessor"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor getCategoryProcessor();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor</a>
+
+category_processor block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#category_processor LogsCustomPipeline#category_processor}
+
+---
+
+##### `stringBuilderProcessor`<sup>Optional</sup> <a name="stringBuilderProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors.property.stringBuilderProcessor"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor getStringBuilderProcessor();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor</a>
+
+string_builder_processor block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#string_builder_processor LogsCustomPipeline#string_builder_processor}
+
+---
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor;
+
+LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.builder()
+    .expression(java.lang.String)
+    .target(java.lang.String)
+//  .isReplaceMissing(java.lang.Boolean|IResolvable)
+//  .name(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.expression">expression</a></code> | <code>java.lang.String</code> | Arithmetic formula. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.target">target</a></code> | <code>java.lang.String</code> | Target attribute path for the result. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.isReplaceMissing">isReplaceMissing</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Replace missing attributes with `0`. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.name">name</a></code> | <code>java.lang.String</code> | Name of the sub-processor. |
+
+---
+
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.expression"></a>
+
+```java
+public java.lang.String getExpression();
+```
+
+- *Type:* java.lang.String
+
+Arithmetic formula.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.target"></a>
+
+```java
+public java.lang.String getTarget();
+```
+
+- *Type:* java.lang.String
+
+Target attribute path for the result.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+##### `isReplaceMissing`<sup>Optional</sup> <a name="isReplaceMissing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.isReplaceMissing"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIsReplaceMissing();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Replace missing attributes with `0`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+Name of the sub-processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper;
+
+LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.builder()
+    .sources(java.util.List<java.lang.String>)
+    .target(java.lang.String)
+//  .name(java.lang.String)
+//  .overrideOnConflict(java.lang.Boolean|IResolvable)
+//  .preserveSource(java.lang.Boolean|IResolvable)
+//  .targetFormat(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.sources">sources</a></code> | <code>java.util.List<java.lang.String></code> | List of source attributes. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.target">target</a></code> | <code>java.lang.String</code> | Target attribute path. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.name">name</a></code> | <code>java.lang.String</code> | Name of the sub-processor. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.overrideOnConflict">overrideOnConflict</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Override the target element if already set. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.preserveSource">preserveSource</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Remove or preserve the remapped source element. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.targetFormat">targetFormat</a></code> | <code>java.lang.String</code> | If the target type is an attribute, cast the value to a new type (auto, string, integer, double). |
+
+---
+
+##### `sources`<sup>Required</sup> <a name="sources" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.sources"></a>
+
+```java
+public java.util.List<java.lang.String> getSources();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+List of source attributes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.target"></a>
+
+```java
+public java.lang.String getTarget();
+```
+
+- *Type:* java.lang.String
+
+Target attribute path.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+Name of the sub-processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+##### `overrideOnConflict`<sup>Optional</sup> <a name="overrideOnConflict" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.overrideOnConflict"></a>
+
+```java
+public java.lang.Boolean|IResolvable getOverrideOnConflict();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Override the target element if already set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
+
+---
+
+##### `preserveSource`<sup>Optional</sup> <a name="preserveSource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.preserveSource"></a>
+
+```java
+public java.lang.Boolean|IResolvable getPreserveSource();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Remove or preserve the remapped source element. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+
+---
+
+##### `targetFormat`<sup>Optional</sup> <a name="targetFormat" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.targetFormat"></a>
+
+```java
+public java.lang.String getTargetFormat();
+```
+
+- *Type:* java.lang.String
+
+If the target type is an attribute, cast the value to a new type (auto, string, integer, double).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
+
+---
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor;
+
+LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.builder()
+    .category(IResolvable|java.util.List<LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory>)
+    .target(java.lang.String)
+//  .name(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.property.category">category</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>></code> | category block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.property.target">target</a></code> | <code>java.lang.String</code> | Target attribute path for the category value. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.property.name">name</a></code> | <code>java.lang.String</code> | Name of the sub-processor. |
+
+---
+
+##### `category`<sup>Required</sup> <a name="category" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.property.category"></a>
+
+```java
+public IResolvable|java.util.List<LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory> getCategory();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>>
+
+category block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.property.target"></a>
+
+```java
+public java.lang.String getTarget();
+```
+
+- *Type:* java.lang.String
+
+Target attribute path for the category value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+Name of the sub-processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory;
+
+LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory.builder()
+    .filter(LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter)
+    .name(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter</a></code> | filter block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory.property.name">name</a></code> | <code>java.lang.String</code> | Name of the category. |
+
+---
+
+##### `filter`<sup>Required</sup> <a name="filter" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory.property.filter"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter getFilter();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter</a>
+
+filter block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+Name of the category.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter;
+
+LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter.builder()
+    .query(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter.property.query">query</a></code> | <code>java.lang.String</code> | Filter criteria of the category. |
+
+---
+
+##### `query`<sup>Required</sup> <a name="query" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter.property.query"></a>
+
+```java
+public java.lang.String getQuery();
+```
+
+- *Type:* java.lang.String
+
+Filter criteria of the category.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+
+---
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor;
+
+LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.builder()
+    .target(java.lang.String)
+    .template(java.lang.String)
+//  .isReplaceMissing(java.lang.Boolean|IResolvable)
+//  .name(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.target">target</a></code> | <code>java.lang.String</code> | Target attribute path for the result. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.template">template</a></code> | <code>java.lang.String</code> | Formula with one or more attributes and raw text. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.isReplaceMissing">isReplaceMissing</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Replace missing attributes with an empty string. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.name">name</a></code> | <code>java.lang.String</code> | Name of the sub-processor. |
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.target"></a>
+
+```java
+public java.lang.String getTarget();
+```
+
+- *Type:* java.lang.String
+
+Target attribute path for the result.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+##### `template`<sup>Required</sup> <a name="template" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.template"></a>
+
+```java
+public java.lang.String getTemplate();
+```
+
+- *Type:* java.lang.String
+
+Formula with one or more attributes and raw text.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
+
+---
+
+##### `isReplaceMissing`<sup>Optional</sup> <a name="isReplaceMissing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.isReplaceMissing"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIsReplaceMissing();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Replace missing attributes with an empty string.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+Name of the sub-processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -1739,7 +2379,7 @@ public LogsCustomPipelineProcessorArrayProcessorOperation getOperation();
 
 operation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#operation LogsCustomPipeline#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#operation LogsCustomPipeline#operation}
 
 ---
 
@@ -1753,7 +2393,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 Boolean value to enable your processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -1767,7 +2407,7 @@ public java.lang.String getName();
 
 Your processor name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -1805,7 +2445,7 @@ public LogsCustomPipelineProcessorArrayProcessorOperationAppend getAppend();
 
 append block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#append LogsCustomPipeline#append}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#append LogsCustomPipeline#append}
 
 ---
 
@@ -1819,7 +2459,7 @@ public LogsCustomPipelineProcessorArrayProcessorOperationLength getLength();
 
 length block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#length LogsCustomPipeline#length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#length LogsCustomPipeline#length}
 
 ---
 
@@ -1833,7 +2473,7 @@ public LogsCustomPipelineProcessorArrayProcessorOperationSelect getSelect();
 
 select block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#select LogsCustomPipeline#select}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#select LogsCustomPipeline#select}
 
 ---
 
@@ -1871,7 +2511,7 @@ public java.lang.String getSource();
 
 Attribute path containing the value to append.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -1885,7 +2525,7 @@ public java.lang.String getTarget();
 
 Attribute path of the array to append to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -1899,7 +2539,7 @@ public java.lang.Boolean|IResolvable getPreserveSource();
 
 Remove or preserve the remapped source element. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
 
 ---
 
@@ -1935,7 +2575,7 @@ public java.lang.String getSource();
 
 Attribute path of the array to compute the length of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -1949,7 +2589,7 @@ public java.lang.String getTarget();
 
 Attribute that receives the computed length.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -1989,7 +2629,7 @@ public java.lang.String getFilter();
 
 Filter expression (e.g. key1:value1 OR key2:value2) used to find the matching element.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 
 ---
 
@@ -2003,7 +2643,7 @@ public java.lang.String getSource();
 
 Attribute path of the array to search into.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -2017,7 +2657,7 @@ public java.lang.String getTarget();
 
 Attribute that receives the extracted value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -2031,7 +2671,7 @@ public java.lang.String getValueToExtract();
 
 Attribute key from the matching object that should be extracted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#value_to_extract LogsCustomPipeline#value_to_extract}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#value_to_extract LogsCustomPipeline#value_to_extract}
 
 ---
 
@@ -2081,7 +2721,7 @@ public java.util.List<java.lang.String> getSources();
 
 List of source attributes or tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -2095,7 +2735,7 @@ public java.lang.String getSourceType();
 
 Defines where the sources are from (log `attribute` or `tag`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source_type LogsCustomPipeline#source_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source_type LogsCustomPipeline#source_type}
 
 ---
 
@@ -2109,7 +2749,7 @@ public java.lang.String getTarget();
 
 Final attribute or tag name to remap the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -2123,7 +2763,7 @@ public java.lang.String getTargetType();
 
 Defines if the target is a log `attribute` or `tag`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target_type LogsCustomPipeline#target_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target_type LogsCustomPipeline#target_type}
 
 ---
 
@@ -2137,7 +2777,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -2151,7 +2791,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -2165,7 +2805,7 @@ public java.lang.Boolean|IResolvable getOverrideOnConflict();
 
 Override the target element if already set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
 
 ---
 
@@ -2179,7 +2819,7 @@ public java.lang.Boolean|IResolvable getPreserveSource();
 
 Remove or preserve the remapped source element.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
 
 ---
 
@@ -2195,7 +2835,7 @@ If the `target_type` of the remapper is `attribute`, try to cast the value to a 
 
 If the cast is not possible, the original type is kept. `string`, `integer`, or `double` are the possible types. If the `target_type` is `tag`, this parameter may not be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
 
 ---
 
@@ -2235,7 +2875,7 @@ public IResolvable|java.util.List<LogsCustomPipelineProcessorCategoryProcessorCa
 
 category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
 
 ---
 
@@ -2249,7 +2889,7 @@ public java.lang.String getTarget();
 
 Name of the target attribute whose value is defined by the matching category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -2263,7 +2903,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -2277,7 +2917,7 @@ public java.lang.String getName();
 
 Name of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -2299,7 +2939,7 @@ LogsCustomPipelineProcessorCategoryProcessorCategory.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategory.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorCategoryProcessorCategoryFilter</a></code> | filter block. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategory.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategory.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
 
 ---
 
@@ -2313,7 +2953,7 @@ public LogsCustomPipelineProcessorCategoryProcessorCategoryFilter getFilter();
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 
 ---
 
@@ -2325,7 +2965,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
 
 ---
 
@@ -2359,7 +2999,7 @@ public java.lang.String getQuery();
 
 Filter criteria of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
 
 ---
 
@@ -2397,7 +3037,7 @@ public java.util.List<java.lang.String> getSources();
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -2411,7 +3051,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -2425,7 +3065,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -2469,7 +3109,7 @@ public java.lang.String getBinaryToTextEncoding();
 
 Encoding type: base64 or base16.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#binary_to_text_encoding LogsCustomPipeline#binary_to_text_encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#binary_to_text_encoding LogsCustomPipeline#binary_to_text_encoding}
 
 ---
 
@@ -2483,7 +3123,7 @@ public java.lang.String getInputRepresentation();
 
 Input representation: utf-8 or integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#input_representation LogsCustomPipeline#input_representation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#input_representation LogsCustomPipeline#input_representation}
 
 ---
 
@@ -2497,7 +3137,7 @@ public java.lang.String getSource();
 
 Encoded message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -2511,7 +3151,7 @@ public java.lang.String getTarget();
 
 Decoded message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -2525,7 +3165,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -2539,7 +3179,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -2579,7 +3219,7 @@ public java.util.List<java.lang.String> getSources();
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -2593,7 +3233,7 @@ public java.lang.String getTarget();
 
 Name of the parent attribute that contains all the extracted details from the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -2607,7 +3247,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -2621,7 +3261,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -2663,7 +3303,7 @@ public LogsCustomPipelineProcessorGrokParserGrok getGrok();
 
 grok block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#grok LogsCustomPipeline#grok}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#grok LogsCustomPipeline#grok}
 
 ---
 
@@ -2677,7 +3317,7 @@ public java.lang.String getSource();
 
 Name of the log attribute to parse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -2691,7 +3331,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -2705,7 +3345,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -2721,7 +3361,7 @@ List of sample logs for this parser.
 
 It can save up to 5 samples. Each sample takes up to 5000 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#samples LogsCustomPipeline#samples}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#samples LogsCustomPipeline#samples}
 
 ---
 
@@ -2757,7 +3397,7 @@ public java.lang.String getMatchRules();
 
 Match rules for your grok parser.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#match_rules LogsCustomPipeline#match_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#match_rules LogsCustomPipeline#match_rules}
 
 ---
 
@@ -2771,7 +3411,7 @@ public java.lang.String getSupportRules();
 
 Support rules for your grok parser.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#support_rules LogsCustomPipeline#support_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#support_rules LogsCustomPipeline#support_rules}
 
 ---
 
@@ -2815,7 +3455,7 @@ public java.util.List<java.lang.String> getLookupTable();
 
 List of entries of the lookup table using `key,value` format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#lookup_table LogsCustomPipeline#lookup_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#lookup_table LogsCustomPipeline#lookup_table}
 
 ---
 
@@ -2829,7 +3469,7 @@ public java.lang.String getSource();
 
 Name of the source attribute used to do the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -2843,7 +3483,7 @@ public java.lang.String getTarget();
 
 Name of the attribute that contains the result of the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -2857,7 +3497,7 @@ public java.lang.String getDefaultLookup();
 
 Default lookup value to use if there is no entry in the lookup table for the value of the source attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#default_lookup LogsCustomPipeline#default_lookup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#default_lookup LogsCustomPipeline#default_lookup}
 
 ---
 
@@ -2871,7 +3511,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -2885,7 +3525,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -2923,7 +3563,7 @@ public java.util.List<java.lang.String> getSources();
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -2937,7 +3577,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -2951,7 +3591,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -2977,11 +3617,11 @@ LogsCustomPipelineProcessorPipeline.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.property.filter">filter</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineFilter">LogsCustomPipelineProcessorPipelineFilter</a>></code> | filter block. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.property.isEnabled">isEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.property.isEnabled">isEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.property.processor">processor</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor">LogsCustomPipelineProcessorPipelineProcessor</a>></code> | processor block. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}. |
 
 ---
 
@@ -2995,7 +3635,7 @@ public IResolvable|java.util.List<LogsCustomPipelineProcessorPipelineFilter> get
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 
 ---
 
@@ -3007,7 +3647,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
 
 ---
 
@@ -3019,7 +3659,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}.
 
 ---
 
@@ -3031,7 +3671,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}.
 
 ---
 
@@ -3045,7 +3685,7 @@ public IResolvable|java.util.List<LogsCustomPipelineProcessorPipelineProcessor> 
 
 processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
 
 ---
 
@@ -3057,7 +3697,7 @@ public java.util.List<java.lang.String> getTags();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}.
 
 ---
 
@@ -3091,7 +3731,7 @@ public java.lang.String getQuery();
 
 Filter criteria of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
 
 ---
 
@@ -3104,6 +3744,7 @@ import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcess
 
 LogsCustomPipelineProcessorPipelineProcessor.builder()
 //  .arithmeticProcessor(LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor)
+//  .arrayMapProcessor(LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor)
 //  .arrayProcessor(LogsCustomPipelineProcessorPipelineProcessorArrayProcessor)
 //  .attributeRemapper(LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper)
 //  .categoryProcessor(LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor)
@@ -3130,6 +3771,7 @@ LogsCustomPipelineProcessorPipelineProcessor.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor.property.arithmeticProcessor">arithmeticProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor">LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor</a></code> | arithmetic_processor block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor.property.arrayMapProcessor">arrayMapProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor</a></code> | array_map_processor block. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor.property.arrayProcessor">arrayProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayProcessor</a></code> | array_processor block. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor.property.attributeRemapper">attributeRemapper</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper">LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper</a></code> | attribute_remapper block. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor.property.categoryProcessor">categoryProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor">LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor</a></code> | category_processor block. |
@@ -3161,7 +3803,21 @@ public LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor getArithm
 
 arithmetic_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#arithmetic_processor LogsCustomPipeline#arithmetic_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#arithmetic_processor LogsCustomPipeline#arithmetic_processor}
+
+---
+
+##### `arrayMapProcessor`<sup>Optional</sup> <a name="arrayMapProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor.property.arrayMapProcessor"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor getArrayMapProcessor();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor</a>
+
+array_map_processor block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#array_map_processor LogsCustomPipeline#array_map_processor}
 
 ---
 
@@ -3175,7 +3831,7 @@ public LogsCustomPipelineProcessorPipelineProcessorArrayProcessor getArrayProces
 
 array_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#array_processor LogsCustomPipeline#array_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#array_processor LogsCustomPipeline#array_processor}
 
 ---
 
@@ -3189,7 +3845,7 @@ public LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper getAttribut
 
 attribute_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#attribute_remapper LogsCustomPipeline#attribute_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#attribute_remapper LogsCustomPipeline#attribute_remapper}
 
 ---
 
@@ -3203,7 +3859,7 @@ public LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor getCategory
 
 category_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#category_processor LogsCustomPipeline#category_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#category_processor LogsCustomPipeline#category_processor}
 
 ---
 
@@ -3217,7 +3873,7 @@ public LogsCustomPipelineProcessorPipelineProcessorDateRemapper getDateRemapper(
 
 date_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#date_remapper LogsCustomPipeline#date_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#date_remapper LogsCustomPipeline#date_remapper}
 
 ---
 
@@ -3231,7 +3887,7 @@ public LogsCustomPipelineProcessorPipelineProcessorDecoderProcessor getDecoderPr
 
 decoder_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#decoder_processor LogsCustomPipeline#decoder_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#decoder_processor LogsCustomPipeline#decoder_processor}
 
 ---
 
@@ -3245,7 +3901,7 @@ public LogsCustomPipelineProcessorPipelineProcessorGeoIpParser getGeoIpParser();
 
 geo_ip_parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#geo_ip_parser LogsCustomPipeline#geo_ip_parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#geo_ip_parser LogsCustomPipeline#geo_ip_parser}
 
 ---
 
@@ -3259,7 +3915,7 @@ public LogsCustomPipelineProcessorPipelineProcessorGrokParser getGrokParser();
 
 grok_parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#grok_parser LogsCustomPipeline#grok_parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#grok_parser LogsCustomPipeline#grok_parser}
 
 ---
 
@@ -3273,7 +3929,7 @@ public LogsCustomPipelineProcessorPipelineProcessorLookupProcessor getLookupProc
 
 lookup_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#lookup_processor LogsCustomPipeline#lookup_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#lookup_processor LogsCustomPipeline#lookup_processor}
 
 ---
 
@@ -3287,7 +3943,7 @@ public LogsCustomPipelineProcessorPipelineProcessorMessageRemapper getMessageRem
 
 message_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#message_remapper LogsCustomPipeline#message_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#message_remapper LogsCustomPipeline#message_remapper}
 
 ---
 
@@ -3301,7 +3957,7 @@ public LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor
 
 reference_table_lookup_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#reference_table_lookup_processor LogsCustomPipeline#reference_table_lookup_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#reference_table_lookup_processor LogsCustomPipeline#reference_table_lookup_processor}
 
 ---
 
@@ -3315,7 +3971,7 @@ public LogsCustomPipelineProcessorPipelineProcessorSchemaProcessor getSchemaProc
 
 schema_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema_processor LogsCustomPipeline#schema_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#schema_processor LogsCustomPipeline#schema_processor}
 
 ---
 
@@ -3329,7 +3985,7 @@ public LogsCustomPipelineProcessorPipelineProcessorServiceRemapper getServiceRem
 
 service_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#service_remapper LogsCustomPipeline#service_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#service_remapper LogsCustomPipeline#service_remapper}
 
 ---
 
@@ -3343,7 +3999,7 @@ public LogsCustomPipelineProcessorPipelineProcessorSpanIdRemapper getSpanIdRemap
 
 span_id_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#span_id_remapper LogsCustomPipeline#span_id_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#span_id_remapper LogsCustomPipeline#span_id_remapper}
 
 ---
 
@@ -3357,7 +4013,7 @@ public LogsCustomPipelineProcessorPipelineProcessorStatusRemapper getStatusRemap
 
 status_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#status_remapper LogsCustomPipeline#status_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#status_remapper LogsCustomPipeline#status_remapper}
 
 ---
 
@@ -3371,7 +4027,7 @@ public LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor getStr
 
 string_builder_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#string_builder_processor LogsCustomPipeline#string_builder_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#string_builder_processor LogsCustomPipeline#string_builder_processor}
 
 ---
 
@@ -3385,7 +4041,7 @@ public LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper getTraceIdRem
 
 trace_id_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#trace_id_remapper LogsCustomPipeline#trace_id_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#trace_id_remapper LogsCustomPipeline#trace_id_remapper}
 
 ---
 
@@ -3399,7 +4055,7 @@ public LogsCustomPipelineProcessorPipelineProcessorUrlParser getUrlParser();
 
 url_parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#url_parser LogsCustomPipeline#url_parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#url_parser LogsCustomPipeline#url_parser}
 
 ---
 
@@ -3413,7 +4069,7 @@ public LogsCustomPipelineProcessorPipelineProcessorUserAgentParser getUserAgentP
 
 user_agent_parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#user_agent_parser LogsCustomPipeline#user_agent_parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#user_agent_parser LogsCustomPipeline#user_agent_parser}
 
 ---
 
@@ -3455,7 +4111,7 @@ public java.lang.String getExpression();
 
 Arithmetic operation between one or more log attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
 
 ---
 
@@ -3469,7 +4125,7 @@ public java.lang.String getTarget();
 
 Name of the attribute that contains the result of the arithmetic operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -3483,7 +4139,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 Boolean value to enable your pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -3497,7 +4153,7 @@ public java.lang.Boolean|IResolvable getIsReplaceMissing();
 
 If true, it replaces all missing attributes of expression by 0, false skips the operation if an attribute is missing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
 
 ---
 
@@ -3511,7 +4167,631 @@ public java.lang.String getName();
 
 Your pipeline name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor;
+
+LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.builder()
+    .processors(IResolvable|java.util.List<LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors>)
+    .source(java.lang.String)
+    .target(java.lang.String)
+//  .isEnabled(java.lang.Boolean|IResolvable)
+//  .name(java.lang.String)
+//  .preserveSource(java.lang.Boolean|IResolvable)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.property.processors">processors</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors</a>></code> | processors block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.property.source">source</a></code> | <code>java.lang.String</code> | Attribute path of the source array. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.property.target">target</a></code> | <code>java.lang.String</code> | Attribute path of the output array. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.property.isEnabled">isEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If the processor is enabled. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.property.name">name</a></code> | <code>java.lang.String</code> | Name of the processor. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.property.preserveSource">preserveSource</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Remove or preserve the source array after processing. Defaults to `true`. |
+
+---
+
+##### `processors`<sup>Required</sup> <a name="processors" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.property.processors"></a>
+
+```java
+public IResolvable|java.util.List<LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors> getProcessors();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors</a>>
+
+processors block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#processors LogsCustomPipeline#processors}
+
+---
+
+##### `source`<sup>Required</sup> <a name="source" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.property.source"></a>
+
+```java
+public java.lang.String getSource();
+```
+
+- *Type:* java.lang.String
+
+Attribute path of the source array.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.property.target"></a>
+
+```java
+public java.lang.String getTarget();
+```
+
+- *Type:* java.lang.String
+
+Attribute path of the output array.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+##### `isEnabled`<sup>Optional</sup> <a name="isEnabled" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.property.isEnabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIsEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+If the processor is enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+Name of the processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+##### `preserveSource`<sup>Optional</sup> <a name="preserveSource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.property.preserveSource"></a>
+
+```java
+public java.lang.Boolean|IResolvable getPreserveSource();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Remove or preserve the source array after processing. Defaults to `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+
+---
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors;
+
+LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors.builder()
+//  .arithmeticProcessor(LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor)
+//  .attributeRemapper(LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper)
+//  .categoryProcessor(LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor)
+//  .stringBuilderProcessor(LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors.property.arithmeticProcessor">arithmeticProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor</a></code> | arithmetic_processor block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors.property.attributeRemapper">attributeRemapper</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper</a></code> | attribute_remapper block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors.property.categoryProcessor">categoryProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor</a></code> | category_processor block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors.property.stringBuilderProcessor">stringBuilderProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor</a></code> | string_builder_processor block. |
+
+---
+
+##### `arithmeticProcessor`<sup>Optional</sup> <a name="arithmeticProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors.property.arithmeticProcessor"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor getArithmeticProcessor();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor</a>
+
+arithmetic_processor block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#arithmetic_processor LogsCustomPipeline#arithmetic_processor}
+
+---
+
+##### `attributeRemapper`<sup>Optional</sup> <a name="attributeRemapper" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors.property.attributeRemapper"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper getAttributeRemapper();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper</a>
+
+attribute_remapper block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#attribute_remapper LogsCustomPipeline#attribute_remapper}
+
+---
+
+##### `categoryProcessor`<sup>Optional</sup> <a name="categoryProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors.property.categoryProcessor"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor getCategoryProcessor();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor</a>
+
+category_processor block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#category_processor LogsCustomPipeline#category_processor}
+
+---
+
+##### `stringBuilderProcessor`<sup>Optional</sup> <a name="stringBuilderProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors.property.stringBuilderProcessor"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor getStringBuilderProcessor();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor</a>
+
+string_builder_processor block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#string_builder_processor LogsCustomPipeline#string_builder_processor}
+
+---
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor;
+
+LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.builder()
+    .expression(java.lang.String)
+    .target(java.lang.String)
+//  .isReplaceMissing(java.lang.Boolean|IResolvable)
+//  .name(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.expression">expression</a></code> | <code>java.lang.String</code> | Arithmetic formula. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.target">target</a></code> | <code>java.lang.String</code> | Target attribute path for the result. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.isReplaceMissing">isReplaceMissing</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Replace missing attributes with `0`. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.name">name</a></code> | <code>java.lang.String</code> | Name of the sub-processor. |
+
+---
+
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.expression"></a>
+
+```java
+public java.lang.String getExpression();
+```
+
+- *Type:* java.lang.String
+
+Arithmetic formula.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.target"></a>
+
+```java
+public java.lang.String getTarget();
+```
+
+- *Type:* java.lang.String
+
+Target attribute path for the result.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+##### `isReplaceMissing`<sup>Optional</sup> <a name="isReplaceMissing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.isReplaceMissing"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIsReplaceMissing();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Replace missing attributes with `0`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+Name of the sub-processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper;
+
+LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.builder()
+    .sources(java.util.List<java.lang.String>)
+    .target(java.lang.String)
+//  .name(java.lang.String)
+//  .overrideOnConflict(java.lang.Boolean|IResolvable)
+//  .preserveSource(java.lang.Boolean|IResolvable)
+//  .targetFormat(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.sources">sources</a></code> | <code>java.util.List<java.lang.String></code> | List of source attributes. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.target">target</a></code> | <code>java.lang.String</code> | Target attribute path. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.name">name</a></code> | <code>java.lang.String</code> | Name of the sub-processor. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.overrideOnConflict">overrideOnConflict</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Override the target element if already set. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.preserveSource">preserveSource</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Remove or preserve the remapped source element. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.targetFormat">targetFormat</a></code> | <code>java.lang.String</code> | If the target type is an attribute, cast the value to a new type (auto, string, integer, double). |
+
+---
+
+##### `sources`<sup>Required</sup> <a name="sources" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.sources"></a>
+
+```java
+public java.util.List<java.lang.String> getSources();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+List of source attributes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.target"></a>
+
+```java
+public java.lang.String getTarget();
+```
+
+- *Type:* java.lang.String
+
+Target attribute path.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+Name of the sub-processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+##### `overrideOnConflict`<sup>Optional</sup> <a name="overrideOnConflict" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.overrideOnConflict"></a>
+
+```java
+public java.lang.Boolean|IResolvable getOverrideOnConflict();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Override the target element if already set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
+
+---
+
+##### `preserveSource`<sup>Optional</sup> <a name="preserveSource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.preserveSource"></a>
+
+```java
+public java.lang.Boolean|IResolvable getPreserveSource();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Remove or preserve the remapped source element. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+
+---
+
+##### `targetFormat`<sup>Optional</sup> <a name="targetFormat" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.targetFormat"></a>
+
+```java
+public java.lang.String getTargetFormat();
+```
+
+- *Type:* java.lang.String
+
+If the target type is an attribute, cast the value to a new type (auto, string, integer, double).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
+
+---
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor;
+
+LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.builder()
+    .category(IResolvable|java.util.List<LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory>)
+    .target(java.lang.String)
+//  .name(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.property.category">category</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>></code> | category block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.property.target">target</a></code> | <code>java.lang.String</code> | Target attribute path for the category value. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.property.name">name</a></code> | <code>java.lang.String</code> | Name of the sub-processor. |
+
+---
+
+##### `category`<sup>Required</sup> <a name="category" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.property.category"></a>
+
+```java
+public IResolvable|java.util.List<LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory> getCategory();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>>
+
+category block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.property.target"></a>
+
+```java
+public java.lang.String getTarget();
+```
+
+- *Type:* java.lang.String
+
+Target attribute path for the category value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+Name of the sub-processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory;
+
+LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory.builder()
+    .filter(LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter)
+    .name(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter</a></code> | filter block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory.property.name">name</a></code> | <code>java.lang.String</code> | Name of the category. |
+
+---
+
+##### `filter`<sup>Required</sup> <a name="filter" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory.property.filter"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter getFilter();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter</a>
+
+filter block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+Name of the category.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter;
+
+LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter.builder()
+    .query(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter.property.query">query</a></code> | <code>java.lang.String</code> | Filter criteria of the category. |
+
+---
+
+##### `query`<sup>Required</sup> <a name="query" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter.property.query"></a>
+
+```java
+public java.lang.String getQuery();
+```
+
+- *Type:* java.lang.String
+
+Filter criteria of the category.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+
+---
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor;
+
+LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.builder()
+    .target(java.lang.String)
+    .template(java.lang.String)
+//  .isReplaceMissing(java.lang.Boolean|IResolvable)
+//  .name(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.target">target</a></code> | <code>java.lang.String</code> | Target attribute path for the result. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.template">template</a></code> | <code>java.lang.String</code> | Formula with one or more attributes and raw text. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.isReplaceMissing">isReplaceMissing</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Replace missing attributes with an empty string. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.name">name</a></code> | <code>java.lang.String</code> | Name of the sub-processor. |
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.target"></a>
+
+```java
+public java.lang.String getTarget();
+```
+
+- *Type:* java.lang.String
+
+Target attribute path for the result.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+##### `template`<sup>Required</sup> <a name="template" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.template"></a>
+
+```java
+public java.lang.String getTemplate();
+```
+
+- *Type:* java.lang.String
+
+Formula with one or more attributes and raw text.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
+
+---
+
+##### `isReplaceMissing`<sup>Optional</sup> <a name="isReplaceMissing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.isReplaceMissing"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIsReplaceMissing();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Replace missing attributes with an empty string.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+Name of the sub-processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -3549,7 +4829,7 @@ public LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperation getOp
 
 operation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#operation LogsCustomPipeline#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#operation LogsCustomPipeline#operation}
 
 ---
 
@@ -3563,7 +4843,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 Boolean value to enable your processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -3577,7 +4857,7 @@ public java.lang.String getName();
 
 Your processor name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -3615,7 +4895,7 @@ public LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationAppend
 
 append block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#append LogsCustomPipeline#append}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#append LogsCustomPipeline#append}
 
 ---
 
@@ -3629,7 +4909,7 @@ public LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationLength
 
 length block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#length LogsCustomPipeline#length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#length LogsCustomPipeline#length}
 
 ---
 
@@ -3643,7 +4923,7 @@ public LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationSelect
 
 select block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#select LogsCustomPipeline#select}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#select LogsCustomPipeline#select}
 
 ---
 
@@ -3681,7 +4961,7 @@ public java.lang.String getSource();
 
 Attribute path containing the value to append.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -3695,7 +4975,7 @@ public java.lang.String getTarget();
 
 Attribute path of the array to append to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -3709,7 +4989,7 @@ public java.lang.Boolean|IResolvable getPreserveSource();
 
 Remove or preserve the remapped source element. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
 
 ---
 
@@ -3745,7 +5025,7 @@ public java.lang.String getSource();
 
 Attribute path of the array to compute the length of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -3759,7 +5039,7 @@ public java.lang.String getTarget();
 
 Attribute that receives the computed length.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -3799,7 +5079,7 @@ public java.lang.String getFilter();
 
 Filter expression (e.g. key1:value1 OR key2:value2) used to find the matching element.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 
 ---
 
@@ -3813,7 +5093,7 @@ public java.lang.String getSource();
 
 Attribute path of the array to search into.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -3827,7 +5107,7 @@ public java.lang.String getTarget();
 
 Attribute that receives the extracted value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -3841,7 +5121,7 @@ public java.lang.String getValueToExtract();
 
 Attribute key from the matching object that should be extracted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#value_to_extract LogsCustomPipeline#value_to_extract}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#value_to_extract LogsCustomPipeline#value_to_extract}
 
 ---
 
@@ -3891,7 +5171,7 @@ public java.util.List<java.lang.String> getSources();
 
 List of source attributes or tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -3905,7 +5185,7 @@ public java.lang.String getSourceType();
 
 Defines where the sources are from (log `attribute` or `tag`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source_type LogsCustomPipeline#source_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source_type LogsCustomPipeline#source_type}
 
 ---
 
@@ -3919,7 +5199,7 @@ public java.lang.String getTarget();
 
 Final attribute or tag name to remap the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -3933,7 +5213,7 @@ public java.lang.String getTargetType();
 
 Defines if the target is a log `attribute` or `tag`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target_type LogsCustomPipeline#target_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target_type LogsCustomPipeline#target_type}
 
 ---
 
@@ -3947,7 +5227,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -3961,7 +5241,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -3975,7 +5255,7 @@ public java.lang.Boolean|IResolvable getOverrideOnConflict();
 
 Override the target element if already set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
 
 ---
 
@@ -3989,7 +5269,7 @@ public java.lang.Boolean|IResolvable getPreserveSource();
 
 Remove or preserve the remapped source element.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
 
 ---
 
@@ -4005,7 +5285,7 @@ If the `target_type` of the remapper is `attribute`, try to cast the value to a 
 
 If the cast is not possible, the original type is kept. `string`, `integer`, or `double` are the possible types. If the `target_type` is `tag`, this parameter may not be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
 
 ---
 
@@ -4045,7 +5325,7 @@ public IResolvable|java.util.List<LogsCustomPipelineProcessorPipelineProcessorCa
 
 category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
 
 ---
 
@@ -4059,7 +5339,7 @@ public java.lang.String getTarget();
 
 Name of the target attribute whose value is defined by the matching category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -4073,7 +5353,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -4087,7 +5367,7 @@ public java.lang.String getName();
 
 Name of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -4109,7 +5389,7 @@ LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter</a></code> | filter block. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
 
 ---
 
@@ -4123,7 +5403,7 @@ public LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilt
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 
 ---
 
@@ -4135,7 +5415,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
 
 ---
 
@@ -4169,7 +5449,7 @@ public java.lang.String getQuery();
 
 Filter criteria of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
 
 ---
 
@@ -4207,7 +5487,7 @@ public java.util.List<java.lang.String> getSources();
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -4221,7 +5501,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -4235,7 +5515,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -4279,7 +5559,7 @@ public java.lang.String getBinaryToTextEncoding();
 
 Encoding type: base64 or base16.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#binary_to_text_encoding LogsCustomPipeline#binary_to_text_encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#binary_to_text_encoding LogsCustomPipeline#binary_to_text_encoding}
 
 ---
 
@@ -4293,7 +5573,7 @@ public java.lang.String getInputRepresentation();
 
 Input representation: utf-8 or integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#input_representation LogsCustomPipeline#input_representation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#input_representation LogsCustomPipeline#input_representation}
 
 ---
 
@@ -4307,7 +5587,7 @@ public java.lang.String getSource();
 
 Encoded message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -4321,7 +5601,7 @@ public java.lang.String getTarget();
 
 Decoded message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -4335,7 +5615,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -4349,7 +5629,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -4389,7 +5669,7 @@ public java.util.List<java.lang.String> getSources();
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -4403,7 +5683,7 @@ public java.lang.String getTarget();
 
 Name of the parent attribute that contains all the extracted details from the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -4417,7 +5697,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -4431,7 +5711,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -4473,7 +5753,7 @@ public LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok getGrok();
 
 grok block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#grok LogsCustomPipeline#grok}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#grok LogsCustomPipeline#grok}
 
 ---
 
@@ -4487,7 +5767,7 @@ public java.lang.String getSource();
 
 Name of the log attribute to parse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -4501,7 +5781,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -4515,7 +5795,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -4531,7 +5811,7 @@ List of sample logs for this parser.
 
 It can save up to 5 samples. Each sample takes up to 5000 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#samples LogsCustomPipeline#samples}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#samples LogsCustomPipeline#samples}
 
 ---
 
@@ -4567,7 +5847,7 @@ public java.lang.String getMatchRules();
 
 Match rules for your grok parser.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#match_rules LogsCustomPipeline#match_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#match_rules LogsCustomPipeline#match_rules}
 
 ---
 
@@ -4581,7 +5861,7 @@ public java.lang.String getSupportRules();
 
 Support rules for your grok parser.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#support_rules LogsCustomPipeline#support_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#support_rules LogsCustomPipeline#support_rules}
 
 ---
 
@@ -4625,7 +5905,7 @@ public java.util.List<java.lang.String> getLookupTable();
 
 List of entries of the lookup table using `key,value` format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#lookup_table LogsCustomPipeline#lookup_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#lookup_table LogsCustomPipeline#lookup_table}
 
 ---
 
@@ -4639,7 +5919,7 @@ public java.lang.String getSource();
 
 Name of the source attribute used to do the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -4653,7 +5933,7 @@ public java.lang.String getTarget();
 
 Name of the attribute that contains the result of the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -4667,7 +5947,7 @@ public java.lang.String getDefaultLookup();
 
 Default lookup value to use if there is no entry in the lookup table for the value of the source attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#default_lookup LogsCustomPipeline#default_lookup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#default_lookup LogsCustomPipeline#default_lookup}
 
 ---
 
@@ -4681,7 +5961,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -4695,7 +5975,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -4733,7 +6013,7 @@ public java.util.List<java.lang.String> getSources();
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -4747,7 +6027,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -4761,7 +6041,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -4803,7 +6083,7 @@ public java.lang.String getLookupEnrichmentTable();
 
 Name of the Reference Table for the source attribute and their associated target attribute values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
 
 ---
 
@@ -4817,7 +6097,7 @@ public java.lang.String getSource();
 
 Name of the source attribute used to do the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -4831,7 +6111,7 @@ public java.lang.String getTarget();
 
 Name of the attribute that contains the result of the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -4845,7 +6125,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -4859,7 +6139,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -4899,7 +6179,7 @@ public IResolvable|java.util.List<LogsCustomPipelineProcessorPipelineProcessorSc
 
 mappers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#mappers LogsCustomPipeline#mappers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#mappers LogsCustomPipeline#mappers}
 
 ---
 
@@ -4913,7 +6193,7 @@ public LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorSchema getSche
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema LogsCustomPipeline#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#schema LogsCustomPipeline#schema}
 
 ---
 
@@ -4927,7 +6207,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -4941,7 +6221,7 @@ public java.lang.String getName();
 
 The name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -4977,7 +6257,7 @@ public IResolvable|java.util.List<LogsCustomPipelineProcessorPipelineProcessorSc
 
 schema_category_mapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema_category_mapper LogsCustomPipeline#schema_category_mapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#schema_category_mapper LogsCustomPipeline#schema_category_mapper}
 
 ---
 
@@ -4991,7 +6271,7 @@ public IResolvable|java.util.List<LogsCustomPipelineProcessorPipelineProcessorSc
 
 schema_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema_remapper LogsCustomPipeline#schema_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#schema_remapper LogsCustomPipeline#schema_remapper}
 
 ---
 
@@ -5031,7 +6311,7 @@ public IResolvable|java.util.List<LogsCustomPipelineProcessorPipelineProcessorSc
 
 categories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#categories LogsCustomPipeline#categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#categories LogsCustomPipeline#categories}
 
 ---
 
@@ -5045,7 +6325,7 @@ public java.lang.String getName();
 
 Name of the logs schema category mapper.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -5059,7 +6339,7 @@ public LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaC
 
 targets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#targets LogsCustomPipeline#targets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#targets LogsCustomPipeline#targets}
 
 ---
 
@@ -5073,7 +6353,7 @@ public LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaC
 
 fallback block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#fallback LogsCustomPipeline#fallback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#fallback LogsCustomPipeline#fallback}
 
 ---
 
@@ -5111,7 +6391,7 @@ public LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaC
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 
 ---
 
@@ -5125,7 +6405,7 @@ public java.lang.Number getId();
 
 ID to inject into the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5142,7 +6422,7 @@ public java.lang.String getName();
 
 Value to assign to target schema field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -5176,7 +6456,7 @@ public java.lang.String getQuery();
 
 Filter criteria of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
 
 ---
 
@@ -5212,7 +6492,7 @@ public java.util.Map<java.lang.String, java.lang.String> getSources();
 
 Fallback sources used to populate value of field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -5226,7 +6506,7 @@ public java.util.Map<java.lang.String, java.lang.String> getValues();
 
 Values that define when the fallback is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#values LogsCustomPipeline#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#values LogsCustomPipeline#values}
 
 ---
 
@@ -5262,7 +6542,7 @@ public java.lang.String getId();
 
 ID of the field to map log attributes to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5279,7 +6559,7 @@ public java.lang.String getName();
 
 Name of the field to map log attributes to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -5323,7 +6603,7 @@ public java.lang.String getName();
 
 Name of the logs schema remapper.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -5337,7 +6617,7 @@ public java.util.List<java.lang.String> getSources();
 
 Array of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -5351,7 +6631,7 @@ public java.lang.String getTarget();
 
 Target field to map log source field to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -5365,7 +6645,7 @@ public java.lang.Boolean|IResolvable getOverrideOnConflict();
 
 Override or not the target element if already set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
 
 ---
 
@@ -5379,7 +6659,7 @@ public java.lang.Boolean|IResolvable getPreserveSource();
 
 Remove or preserve the remapped source element.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
 
 ---
 
@@ -5395,7 +6675,7 @@ If the `target_type` of the remapper is `attribute`, try to cast the value to a 
 
 If the cast is not possible, the original type is kept. `string`, `integer`, or `double` are the possible types. If the `target_type` is `tag`, this parameter may not be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
 
 ---
 
@@ -5439,7 +6719,7 @@ public java.lang.String getClassName();
 
 Class name of the schema to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#class_name LogsCustomPipeline#class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#class_name LogsCustomPipeline#class_name}
 
 ---
 
@@ -5453,7 +6733,7 @@ public java.lang.Number getClassUid();
 
 Class UID of the schema to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#class_uid LogsCustomPipeline#class_uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#class_uid LogsCustomPipeline#class_uid}
 
 ---
 
@@ -5467,7 +6747,7 @@ public java.lang.String getSchemaType();
 
 Type of schema to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema_type LogsCustomPipeline#schema_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#schema_type LogsCustomPipeline#schema_type}
 
 ---
 
@@ -5481,7 +6761,7 @@ public java.lang.String getVersion();
 
 Version of the schema to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#version LogsCustomPipeline#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#version LogsCustomPipeline#version}
 
 ---
 
@@ -5495,7 +6775,7 @@ public java.util.List<java.lang.String> getExtensions();
 
 Optional list of extensions to modify the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#extensions LogsCustomPipeline#extensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#extensions LogsCustomPipeline#extensions}
 
 ---
 
@@ -5509,7 +6789,7 @@ public java.util.List<java.lang.String> getProfiles();
 
 Optional list of profiles to modify the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#profiles LogsCustomPipeline#profiles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#profiles LogsCustomPipeline#profiles}
 
 ---
 
@@ -5547,7 +6827,7 @@ public java.util.List<java.lang.String> getSources();
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -5561,7 +6841,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -5575,7 +6855,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -5613,7 +6893,7 @@ public java.util.List<java.lang.String> getSources();
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -5627,7 +6907,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -5641,7 +6921,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -5679,7 +6959,7 @@ public java.util.List<java.lang.String> getSources();
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -5693,7 +6973,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -5707,7 +6987,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -5749,7 +7029,7 @@ public java.lang.String getTarget();
 
 The name of the attribute that contains the result of the template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -5763,7 +7043,7 @@ public java.lang.String getTemplate();
 
 The formula with one or more attributes and raw text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
 
 ---
 
@@ -5777,7 +7057,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -5791,7 +7071,7 @@ public java.lang.Boolean|IResolvable getIsReplaceMissing();
 
 If it replaces all missing attributes of template by an empty string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
 
 ---
 
@@ -5805,7 +7085,7 @@ public java.lang.String getName();
 
 The name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -5843,7 +7123,7 @@ public java.util.List<java.lang.String> getSources();
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -5857,7 +7137,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -5871,7 +7151,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -5913,7 +7193,7 @@ public java.util.List<java.lang.String> getSources();
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -5927,7 +7207,7 @@ public java.lang.String getTarget();
 
 Name of the parent attribute that contains all the extracted details from the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -5941,7 +7221,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -5955,7 +7235,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -5969,7 +7249,7 @@ public java.lang.Boolean|IResolvable getNormalizeEndingSlashes();
 
 Normalize the ending slashes or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#normalize_ending_slashes LogsCustomPipeline#normalize_ending_slashes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#normalize_ending_slashes LogsCustomPipeline#normalize_ending_slashes}
 
 ---
 
@@ -6011,7 +7291,7 @@ public java.util.List<java.lang.String> getSources();
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -6025,7 +7305,7 @@ public java.lang.String getTarget();
 
 Name of the parent attribute that contains all the extracted details from the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -6039,7 +7319,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -6053,7 +7333,7 @@ public java.lang.Boolean|IResolvable getIsEncoded();
 
 If the source attribute is URL encoded or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_encoded LogsCustomPipeline#is_encoded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_encoded LogsCustomPipeline#is_encoded}
 
 ---
 
@@ -6067,7 +7347,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -6109,7 +7389,7 @@ public java.lang.String getLookupEnrichmentTable();
 
 Name of the Reference Table for the source attribute and their associated target attribute values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
 
 ---
 
@@ -6123,7 +7403,7 @@ public java.lang.String getSource();
 
 Name of the source attribute used to do the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -6137,7 +7417,7 @@ public java.lang.String getTarget();
 
 Name of the attribute that contains the result of the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -6151,7 +7431,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -6165,7 +7445,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -6205,7 +7485,7 @@ public IResolvable|java.util.List<LogsCustomPipelineProcessorSchemaProcessorMapp
 
 mappers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#mappers LogsCustomPipeline#mappers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#mappers LogsCustomPipeline#mappers}
 
 ---
 
@@ -6219,7 +7499,7 @@ public LogsCustomPipelineProcessorSchemaProcessorSchema getSchema();
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema LogsCustomPipeline#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#schema LogsCustomPipeline#schema}
 
 ---
 
@@ -6233,7 +7513,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -6247,7 +7527,7 @@ public java.lang.String getName();
 
 The name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -6283,7 +7563,7 @@ public IResolvable|java.util.List<LogsCustomPipelineProcessorSchemaProcessorMapp
 
 schema_category_mapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema_category_mapper LogsCustomPipeline#schema_category_mapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#schema_category_mapper LogsCustomPipeline#schema_category_mapper}
 
 ---
 
@@ -6297,7 +7577,7 @@ public IResolvable|java.util.List<LogsCustomPipelineProcessorSchemaProcessorMapp
 
 schema_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema_remapper LogsCustomPipeline#schema_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#schema_remapper LogsCustomPipeline#schema_remapper}
 
 ---
 
@@ -6337,7 +7617,7 @@ public IResolvable|java.util.List<LogsCustomPipelineProcessorSchemaProcessorMapp
 
 categories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#categories LogsCustomPipeline#categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#categories LogsCustomPipeline#categories}
 
 ---
 
@@ -6351,7 +7631,7 @@ public java.lang.String getName();
 
 Name of the logs schema category mapper.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -6365,7 +7645,7 @@ public LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTarg
 
 targets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#targets LogsCustomPipeline#targets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#targets LogsCustomPipeline#targets}
 
 ---
 
@@ -6379,7 +7659,7 @@ public LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFall
 
 fallback block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#fallback LogsCustomPipeline#fallback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#fallback LogsCustomPipeline#fallback}
 
 ---
 
@@ -6417,7 +7697,7 @@ public LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCate
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 
 ---
 
@@ -6431,7 +7711,7 @@ public java.lang.Number getId();
 
 ID to inject into the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -6448,7 +7728,7 @@ public java.lang.String getName();
 
 Value to assign to target schema field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -6482,7 +7762,7 @@ public java.lang.String getQuery();
 
 Filter criteria of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
 
 ---
 
@@ -6518,7 +7798,7 @@ public java.util.Map<java.lang.String, java.lang.String> getSources();
 
 Fallback sources used to populate value of field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -6532,7 +7812,7 @@ public java.util.Map<java.lang.String, java.lang.String> getValues();
 
 Values that define when the fallback is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#values LogsCustomPipeline#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#values LogsCustomPipeline#values}
 
 ---
 
@@ -6568,7 +7848,7 @@ public java.lang.String getId();
 
 ID of the field to map log attributes to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -6585,7 +7865,7 @@ public java.lang.String getName();
 
 Name of the field to map log attributes to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -6629,7 +7909,7 @@ public java.lang.String getName();
 
 Name of the logs schema remapper.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -6643,7 +7923,7 @@ public java.util.List<java.lang.String> getSources();
 
 Array of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -6657,7 +7937,7 @@ public java.lang.String getTarget();
 
 Target field to map log source field to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -6671,7 +7951,7 @@ public java.lang.Boolean|IResolvable getOverrideOnConflict();
 
 Override or not the target element if already set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
 
 ---
 
@@ -6685,7 +7965,7 @@ public java.lang.Boolean|IResolvable getPreserveSource();
 
 Remove or preserve the remapped source element.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
 
 ---
 
@@ -6701,7 +7981,7 @@ If the `target_type` of the remapper is `attribute`, try to cast the value to a 
 
 If the cast is not possible, the original type is kept. `string`, `integer`, or `double` are the possible types. If the `target_type` is `tag`, this parameter may not be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
 
 ---
 
@@ -6745,7 +8025,7 @@ public java.lang.String getClassName();
 
 Class name of the schema to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#class_name LogsCustomPipeline#class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#class_name LogsCustomPipeline#class_name}
 
 ---
 
@@ -6759,7 +8039,7 @@ public java.lang.Number getClassUid();
 
 Class UID of the schema to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#class_uid LogsCustomPipeline#class_uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#class_uid LogsCustomPipeline#class_uid}
 
 ---
 
@@ -6773,7 +8053,7 @@ public java.lang.String getSchemaType();
 
 Type of schema to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema_type LogsCustomPipeline#schema_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#schema_type LogsCustomPipeline#schema_type}
 
 ---
 
@@ -6787,7 +8067,7 @@ public java.lang.String getVersion();
 
 Version of the schema to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#version LogsCustomPipeline#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#version LogsCustomPipeline#version}
 
 ---
 
@@ -6801,7 +8081,7 @@ public java.util.List<java.lang.String> getExtensions();
 
 Optional list of extensions to modify the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#extensions LogsCustomPipeline#extensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#extensions LogsCustomPipeline#extensions}
 
 ---
 
@@ -6815,7 +8095,7 @@ public java.util.List<java.lang.String> getProfiles();
 
 Optional list of profiles to modify the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#profiles LogsCustomPipeline#profiles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#profiles LogsCustomPipeline#profiles}
 
 ---
 
@@ -6853,7 +8133,7 @@ public java.util.List<java.lang.String> getSources();
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -6867,7 +8147,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -6881,7 +8161,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -6919,7 +8199,7 @@ public java.util.List<java.lang.String> getSources();
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -6933,7 +8213,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -6947,7 +8227,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -6985,7 +8265,7 @@ public java.util.List<java.lang.String> getSources();
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -6999,7 +8279,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -7013,7 +8293,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -7055,7 +8335,7 @@ public java.lang.String getTarget();
 
 The name of the attribute that contains the result of the template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -7069,7 +8349,7 @@ public java.lang.String getTemplate();
 
 The formula with one or more attributes and raw text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
 
 ---
 
@@ -7083,7 +8363,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -7097,7 +8377,7 @@ public java.lang.Boolean|IResolvable getIsReplaceMissing();
 
 If it replaces all missing attributes of template by an empty string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
 
 ---
 
@@ -7111,7 +8391,7 @@ public java.lang.String getName();
 
 The name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -7149,7 +8429,7 @@ public java.util.List<java.lang.String> getSources();
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -7163,7 +8443,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -7177,7 +8457,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -7219,7 +8499,7 @@ public java.util.List<java.lang.String> getSources();
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -7233,7 +8513,7 @@ public java.lang.String getTarget();
 
 Name of the parent attribute that contains all the extracted details from the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -7247,7 +8527,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -7261,7 +8541,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -7275,7 +8555,7 @@ public java.lang.Boolean|IResolvable getNormalizeEndingSlashes();
 
 Normalize the ending slashes or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#normalize_ending_slashes LogsCustomPipeline#normalize_ending_slashes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#normalize_ending_slashes LogsCustomPipeline#normalize_ending_slashes}
 
 ---
 
@@ -7317,7 +8597,7 @@ public java.util.List<java.lang.String> getSources();
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -7331,7 +8611,7 @@ public java.lang.String getTarget();
 
 Name of the parent attribute that contains all the extracted details from the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -7345,7 +8625,7 @@ public java.lang.Boolean|IResolvable getIsEnabled();
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -7359,7 +8639,7 @@ public java.lang.Boolean|IResolvable getIsEncoded();
 
 If the source attribute is URL encoded or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_encoded LogsCustomPipeline#is_encoded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_encoded LogsCustomPipeline#is_encoded}
 
 ---
 
@@ -7373,7 +8653,7 @@ public java.lang.String getName();
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -8204,6 +9484,3217 @@ public LogsCustomPipelineProcessorArithmeticProcessor getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArithmeticProcessor">LogsCustomPipelineProcessorArithmeticProcessor</a>
+
+---
+
+
+### LogsCustomPipelineProcessorArrayMapProcessorOutputReference <a name="LogsCustomPipelineProcessorArrayMapProcessorOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference;
+
+new LogsCustomPipelineProcessorArrayMapProcessorOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.putProcessors">putProcessors</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.resetIsEnabled">resetIsEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.resetName">resetName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.resetPreserveSource">resetPreserveSource</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putProcessors` <a name="putProcessors" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.putProcessors"></a>
+
+```java
+public void putProcessors(IResolvable|java.util.List<LogsCustomPipelineProcessorArrayMapProcessorProcessors> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.putProcessors.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorArrayMapProcessorProcessors</a>>
+
+---
+
+##### `resetIsEnabled` <a name="resetIsEnabled" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.resetIsEnabled"></a>
+
+```java
+public void resetIsEnabled()
+```
+
+##### `resetName` <a name="resetName" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.resetName"></a>
+
+```java
+public void resetName()
+```
+
+##### `resetPreserveSource` <a name="resetPreserveSource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.resetPreserveSource"></a>
+
+```java
+public void resetPreserveSource()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.processors">processors</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList">LogsCustomPipelineProcessorArrayMapProcessorProcessorsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.isEnabledInput">isEnabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.preserveSourceInput">preserveSourceInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.processorsInput">processorsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorArrayMapProcessorProcessors</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.sourceInput">sourceInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.targetInput">targetInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.isEnabled">isEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.preserveSource">preserveSource</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.source">source</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.target">target</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor">LogsCustomPipelineProcessorArrayMapProcessor</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `processors`<sup>Required</sup> <a name="processors" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.processors"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessorProcessorsList getProcessors();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList">LogsCustomPipelineProcessorArrayMapProcessorProcessorsList</a>
+
+---
+
+##### `isEnabledInput`<sup>Optional</sup> <a name="isEnabledInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.isEnabledInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIsEnabledInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `preserveSourceInput`<sup>Optional</sup> <a name="preserveSourceInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.preserveSourceInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getPreserveSourceInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `processorsInput`<sup>Optional</sup> <a name="processorsInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.processorsInput"></a>
+
+```java
+public IResolvable|java.util.List<LogsCustomPipelineProcessorArrayMapProcessorProcessors> getProcessorsInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorArrayMapProcessorProcessors</a>>
+
+---
+
+##### `sourceInput`<sup>Optional</sup> <a name="sourceInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.sourceInput"></a>
+
+```java
+public java.lang.String getSourceInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `targetInput`<sup>Optional</sup> <a name="targetInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.targetInput"></a>
+
+```java
+public java.lang.String getTargetInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `isEnabled`<sup>Required</sup> <a name="isEnabled" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.isEnabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIsEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `preserveSource`<sup>Required</sup> <a name="preserveSource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.preserveSource"></a>
+
+```java
+public java.lang.Boolean|IResolvable getPreserveSource();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `source`<sup>Required</sup> <a name="source" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.source"></a>
+
+```java
+public java.lang.String getSource();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.target"></a>
+
+```java
+public java.lang.String getTarget();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.internalValue"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessor getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor">LogsCustomPipelineProcessorArrayMapProcessor</a>
+
+---
+
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference;
+
+new LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resetIsReplaceMissing">resetIsReplaceMissing</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resetName">resetName</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetIsReplaceMissing` <a name="resetIsReplaceMissing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resetIsReplaceMissing"></a>
+
+```java
+public void resetIsReplaceMissing()
+```
+
+##### `resetName` <a name="resetName" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resetName"></a>
+
+```java
+public void resetName()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.expressionInput">expressionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.isReplaceMissingInput">isReplaceMissingInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.targetInput">targetInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.expression">expression</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.isReplaceMissing">isReplaceMissing</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.target">target</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `expressionInput`<sup>Optional</sup> <a name="expressionInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.expressionInput"></a>
+
+```java
+public java.lang.String getExpressionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `isReplaceMissingInput`<sup>Optional</sup> <a name="isReplaceMissingInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.isReplaceMissingInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIsReplaceMissingInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `targetInput`<sup>Optional</sup> <a name="targetInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.targetInput"></a>
+
+```java
+public java.lang.String getTargetInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.expression"></a>
+
+```java
+public java.lang.String getExpression();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `isReplaceMissing`<sup>Required</sup> <a name="isReplaceMissing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.isReplaceMissing"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIsReplaceMissing();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.target"></a>
+
+```java
+public java.lang.String getTarget();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.internalValue"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor</a>
+
+---
+
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference;
+
+new LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetName">resetName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetOverrideOnConflict">resetOverrideOnConflict</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetPreserveSource">resetPreserveSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetTargetFormat">resetTargetFormat</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetName` <a name="resetName" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetName"></a>
+
+```java
+public void resetName()
+```
+
+##### `resetOverrideOnConflict` <a name="resetOverrideOnConflict" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetOverrideOnConflict"></a>
+
+```java
+public void resetOverrideOnConflict()
+```
+
+##### `resetPreserveSource` <a name="resetPreserveSource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetPreserveSource"></a>
+
+```java
+public void resetPreserveSource()
+```
+
+##### `resetTargetFormat` <a name="resetTargetFormat" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetTargetFormat"></a>
+
+```java
+public void resetTargetFormat()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.overrideOnConflictInput">overrideOnConflictInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.preserveSourceInput">preserveSourceInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.sourcesInput">sourcesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.targetFormatInput">targetFormatInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.targetInput">targetInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.overrideOnConflict">overrideOnConflict</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.preserveSource">preserveSource</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.sources">sources</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.target">target</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.targetFormat">targetFormat</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper">LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `overrideOnConflictInput`<sup>Optional</sup> <a name="overrideOnConflictInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.overrideOnConflictInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getOverrideOnConflictInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `preserveSourceInput`<sup>Optional</sup> <a name="preserveSourceInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.preserveSourceInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getPreserveSourceInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `sourcesInput`<sup>Optional</sup> <a name="sourcesInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.sourcesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getSourcesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `targetFormatInput`<sup>Optional</sup> <a name="targetFormatInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.targetFormatInput"></a>
+
+```java
+public java.lang.String getTargetFormatInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `targetInput`<sup>Optional</sup> <a name="targetInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.targetInput"></a>
+
+```java
+public java.lang.String getTargetInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `overrideOnConflict`<sup>Required</sup> <a name="overrideOnConflict" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.overrideOnConflict"></a>
+
+```java
+public java.lang.Boolean|IResolvable getOverrideOnConflict();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `preserveSource`<sup>Required</sup> <a name="preserveSource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.preserveSource"></a>
+
+```java
+public java.lang.Boolean|IResolvable getPreserveSource();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `sources`<sup>Required</sup> <a name="sources" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.sources"></a>
+
+```java
+public java.util.List<java.lang.String> getSources();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.target"></a>
+
+```java
+public java.lang.String getTarget();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `targetFormat`<sup>Required</sup> <a name="targetFormat" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.targetFormat"></a>
+
+```java
+public java.lang.String getTargetFormat();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.internalValue"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper">LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper</a>
+
+---
+
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference;
+
+new LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.queryInput">queryInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.query">query</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `queryInput`<sup>Optional</sup> <a name="queryInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.queryInput"></a>
+
+```java
+public java.lang.String getQueryInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `query`<sup>Required</sup> <a name="query" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.query"></a>
+
+```java
+public java.lang.String getQuery();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.internalValue"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter</a>
+
+---
+
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList;
+
+new LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.get"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>>
+
+---
+
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference;
+
+new LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.putFilter">putFilter</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putFilter` <a name="putFilter" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.putFilter"></a>
+
+```java
+public void putFilter(LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.putFilter.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter</a>
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.filterInput">filterInput</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `filter`<sup>Required</sup> <a name="filter" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.filter"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference getFilter();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference</a>
+
+---
+
+##### `filterInput`<sup>Optional</sup> <a name="filterInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.filterInput"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter getFilterInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter</a>
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>
+
+---
+
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference;
+
+new LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.putCategory">putCategory</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.resetName">resetName</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putCategory` <a name="putCategory" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.putCategory"></a>
+
+```java
+public void putCategory(IResolvable|java.util.List<LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.putCategory.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>>
+
+---
+
+##### `resetName` <a name="resetName" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.resetName"></a>
+
+```java
+public void resetName()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.category">category</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.categoryInput">categoryInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.targetInput">targetInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.target">target</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `category`<sup>Required</sup> <a name="category" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.category"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList getCategory();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList</a>
+
+---
+
+##### `categoryInput`<sup>Optional</sup> <a name="categoryInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.categoryInput"></a>
+
+```java
+public IResolvable|java.util.List<LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory> getCategoryInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>>
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `targetInput`<sup>Optional</sup> <a name="targetInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.targetInput"></a>
+
+```java
+public java.lang.String getTargetInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.target"></a>
+
+```java
+public java.lang.String getTarget();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.internalValue"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor</a>
+
+---
+
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsList <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsList" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList;
+
+new LogsCustomPipelineProcessorArrayMapProcessorProcessorsList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.get"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorArrayMapProcessorProcessors</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<LogsCustomPipelineProcessorArrayMapProcessorProcessors> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorArrayMapProcessorProcessors</a>>
+
+---
+
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference;
+
+new LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putArithmeticProcessor">putArithmeticProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putAttributeRemapper">putAttributeRemapper</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putCategoryProcessor">putCategoryProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putStringBuilderProcessor">putStringBuilderProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetArithmeticProcessor">resetArithmeticProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetAttributeRemapper">resetAttributeRemapper</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetCategoryProcessor">resetCategoryProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetStringBuilderProcessor">resetStringBuilderProcessor</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putArithmeticProcessor` <a name="putArithmeticProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putArithmeticProcessor"></a>
+
+```java
+public void putArithmeticProcessor(LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putArithmeticProcessor.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor</a>
+
+---
+
+##### `putAttributeRemapper` <a name="putAttributeRemapper" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putAttributeRemapper"></a>
+
+```java
+public void putAttributeRemapper(LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putAttributeRemapper.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper">LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper</a>
+
+---
+
+##### `putCategoryProcessor` <a name="putCategoryProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putCategoryProcessor"></a>
+
+```java
+public void putCategoryProcessor(LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putCategoryProcessor.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor</a>
+
+---
+
+##### `putStringBuilderProcessor` <a name="putStringBuilderProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putStringBuilderProcessor"></a>
+
+```java
+public void putStringBuilderProcessor(LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putStringBuilderProcessor.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor</a>
+
+---
+
+##### `resetArithmeticProcessor` <a name="resetArithmeticProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetArithmeticProcessor"></a>
+
+```java
+public void resetArithmeticProcessor()
+```
+
+##### `resetAttributeRemapper` <a name="resetAttributeRemapper" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetAttributeRemapper"></a>
+
+```java
+public void resetAttributeRemapper()
+```
+
+##### `resetCategoryProcessor` <a name="resetCategoryProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetCategoryProcessor"></a>
+
+```java
+public void resetCategoryProcessor()
+```
+
+##### `resetStringBuilderProcessor` <a name="resetStringBuilderProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetStringBuilderProcessor"></a>
+
+```java
+public void resetStringBuilderProcessor()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.arithmeticProcessor">arithmeticProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference">LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.attributeRemapper">attributeRemapper</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference">LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.categoryProcessor">categoryProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.stringBuilderProcessor">stringBuilderProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference">LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.arithmeticProcessorInput">arithmeticProcessorInput</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.attributeRemapperInput">attributeRemapperInput</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper">LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.categoryProcessorInput">categoryProcessorInput</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.stringBuilderProcessorInput">stringBuilderProcessorInput</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorArrayMapProcessorProcessors</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `arithmeticProcessor`<sup>Required</sup> <a name="arithmeticProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.arithmeticProcessor"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference getArithmeticProcessor();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference">LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference</a>
+
+---
+
+##### `attributeRemapper`<sup>Required</sup> <a name="attributeRemapper" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.attributeRemapper"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference getAttributeRemapper();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference">LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference</a>
+
+---
+
+##### `categoryProcessor`<sup>Required</sup> <a name="categoryProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.categoryProcessor"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference getCategoryProcessor();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference</a>
+
+---
+
+##### `stringBuilderProcessor`<sup>Required</sup> <a name="stringBuilderProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.stringBuilderProcessor"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference getStringBuilderProcessor();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference">LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference</a>
+
+---
+
+##### `arithmeticProcessorInput`<sup>Optional</sup> <a name="arithmeticProcessorInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.arithmeticProcessorInput"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor getArithmeticProcessorInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor</a>
+
+---
+
+##### `attributeRemapperInput`<sup>Optional</sup> <a name="attributeRemapperInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.attributeRemapperInput"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper getAttributeRemapperInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper">LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper</a>
+
+---
+
+##### `categoryProcessorInput`<sup>Optional</sup> <a name="categoryProcessorInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.categoryProcessorInput"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor getCategoryProcessorInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor</a>
+
+---
+
+##### `stringBuilderProcessorInput`<sup>Optional</sup> <a name="stringBuilderProcessorInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.stringBuilderProcessorInput"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor getStringBuilderProcessorInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|LogsCustomPipelineProcessorArrayMapProcessorProcessors getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorArrayMapProcessorProcessors</a>
+
+---
+
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference;
+
+new LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resetIsReplaceMissing">resetIsReplaceMissing</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resetName">resetName</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetIsReplaceMissing` <a name="resetIsReplaceMissing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resetIsReplaceMissing"></a>
+
+```java
+public void resetIsReplaceMissing()
+```
+
+##### `resetName` <a name="resetName" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resetName"></a>
+
+```java
+public void resetName()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.isReplaceMissingInput">isReplaceMissingInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.targetInput">targetInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.templateInput">templateInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.isReplaceMissing">isReplaceMissing</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.target">target</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.template">template</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `isReplaceMissingInput`<sup>Optional</sup> <a name="isReplaceMissingInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.isReplaceMissingInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIsReplaceMissingInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `targetInput`<sup>Optional</sup> <a name="targetInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.targetInput"></a>
+
+```java
+public java.lang.String getTargetInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `templateInput`<sup>Optional</sup> <a name="templateInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.templateInput"></a>
+
+```java
+public java.lang.String getTemplateInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `isReplaceMissing`<sup>Required</sup> <a name="isReplaceMissing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.isReplaceMissing"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIsReplaceMissing();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.target"></a>
+
+```java
+public java.lang.String getTarget();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `template`<sup>Required</sup> <a name="template" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.template"></a>
+
+```java
+public java.lang.String getTemplate();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.internalValue"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor</a>
 
 ---
 
@@ -14199,6 +18690,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putArithmeticProcessor">putArithmeticProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putArrayMapProcessor">putArrayMapProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putArrayProcessor">putArrayProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putAttributeRemapper">putAttributeRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putCategoryProcessor">putCategoryProcessor</a></code> | *No description.* |
@@ -14219,6 +18711,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putUrlParser">putUrlParser</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putUserAgentParser">putUserAgentParser</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.resetArithmeticProcessor">resetArithmeticProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.resetArrayMapProcessor">resetArrayMapProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.resetArrayProcessor">resetArrayProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.resetAttributeRemapper">resetAttributeRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.resetCategoryProcessor">resetCategoryProcessor</a></code> | *No description.* |
@@ -14400,6 +18893,18 @@ public void putArithmeticProcessor(LogsCustomPipelineProcessorArithmeticProcesso
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putArithmeticProcessor.parameter.value"></a>
 
 - *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArithmeticProcessor">LogsCustomPipelineProcessorArithmeticProcessor</a>
+
+---
+
+##### `putArrayMapProcessor` <a name="putArrayMapProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putArrayMapProcessor"></a>
+
+```java
+public void putArrayMapProcessor(LogsCustomPipelineProcessorArrayMapProcessor value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putArrayMapProcessor.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor">LogsCustomPipelineProcessorArrayMapProcessor</a>
 
 ---
 
@@ -14637,6 +19142,12 @@ public void putUserAgentParser(LogsCustomPipelineProcessorUserAgentParser value)
 public void resetArithmeticProcessor()
 ```
 
+##### `resetArrayMapProcessor` <a name="resetArrayMapProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.resetArrayMapProcessor"></a>
+
+```java
+public void resetArrayMapProcessor()
+```
+
 ##### `resetArrayProcessor` <a name="resetArrayProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.resetArrayProcessor"></a>
 
 ```java
@@ -14759,6 +19270,7 @@ public void resetUserAgentParser()
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.arithmeticProcessor">arithmeticProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArithmeticProcessorOutputReference">LogsCustomPipelineProcessorArithmeticProcessorOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.arrayMapProcessor">arrayMapProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference">LogsCustomPipelineProcessorArrayMapProcessorOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.arrayProcessor">arrayProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayProcessorOutputReference">LogsCustomPipelineProcessorArrayProcessorOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.attributeRemapper">attributeRemapper</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorAttributeRemapperOutputReference">LogsCustomPipelineProcessorAttributeRemapperOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.categoryProcessor">categoryProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorOutputReference">LogsCustomPipelineProcessorCategoryProcessorOutputReference</a></code> | *No description.* |
@@ -14779,6 +19291,7 @@ public void resetUserAgentParser()
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.urlParser">urlParser</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorUrlParserOutputReference">LogsCustomPipelineProcessorUrlParserOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.userAgentParser">userAgentParser</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorUserAgentParserOutputReference">LogsCustomPipelineProcessorUserAgentParserOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.arithmeticProcessorInput">arithmeticProcessorInput</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArithmeticProcessor">LogsCustomPipelineProcessorArithmeticProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.arrayMapProcessorInput">arrayMapProcessorInput</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor">LogsCustomPipelineProcessorArrayMapProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.arrayProcessorInput">arrayProcessorInput</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayProcessor">LogsCustomPipelineProcessorArrayProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.attributeRemapperInput">attributeRemapperInput</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorAttributeRemapper">LogsCustomPipelineProcessorAttributeRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.categoryProcessorInput">categoryProcessorInput</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessor">LogsCustomPipelineProcessorCategoryProcessor</a></code> | *No description.* |
@@ -14833,6 +19346,16 @@ public LogsCustomPipelineProcessorArithmeticProcessorOutputReference getArithmet
 ```
 
 - *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArithmeticProcessorOutputReference">LogsCustomPipelineProcessorArithmeticProcessorOutputReference</a>
+
+---
+
+##### `arrayMapProcessor`<sup>Required</sup> <a name="arrayMapProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.arrayMapProcessor"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessorOutputReference getArrayMapProcessor();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference">LogsCustomPipelineProcessorArrayMapProcessorOutputReference</a>
 
 ---
 
@@ -15033,6 +19556,16 @@ public LogsCustomPipelineProcessorArithmeticProcessor getArithmeticProcessorInpu
 ```
 
 - *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArithmeticProcessor">LogsCustomPipelineProcessorArithmeticProcessor</a>
+
+---
+
+##### `arrayMapProcessorInput`<sup>Optional</sup> <a name="arrayMapProcessorInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.arrayMapProcessorInput"></a>
+
+```java
+public LogsCustomPipelineProcessorArrayMapProcessor getArrayMapProcessorInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor">LogsCustomPipelineProcessorArrayMapProcessor</a>
 
 ---
 
@@ -16497,6 +21030,3217 @@ public LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor getIntern
 ```
 
 - *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor">LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor</a>
+
+---
+
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference;
+
+new LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.putProcessors">putProcessors</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.resetIsEnabled">resetIsEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.resetName">resetName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.resetPreserveSource">resetPreserveSource</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putProcessors` <a name="putProcessors" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.putProcessors"></a>
+
+```java
+public void putProcessors(IResolvable|java.util.List<LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.putProcessors.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors</a>>
+
+---
+
+##### `resetIsEnabled` <a name="resetIsEnabled" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.resetIsEnabled"></a>
+
+```java
+public void resetIsEnabled()
+```
+
+##### `resetName` <a name="resetName" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.resetName"></a>
+
+```java
+public void resetName()
+```
+
+##### `resetPreserveSource` <a name="resetPreserveSource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.resetPreserveSource"></a>
+
+```java
+public void resetPreserveSource()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.processors">processors</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.isEnabledInput">isEnabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.preserveSourceInput">preserveSourceInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.processorsInput">processorsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.sourceInput">sourceInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.targetInput">targetInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.isEnabled">isEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.preserveSource">preserveSource</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.source">source</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.target">target</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `processors`<sup>Required</sup> <a name="processors" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.processors"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList getProcessors();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList</a>
+
+---
+
+##### `isEnabledInput`<sup>Optional</sup> <a name="isEnabledInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.isEnabledInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIsEnabledInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `preserveSourceInput`<sup>Optional</sup> <a name="preserveSourceInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.preserveSourceInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getPreserveSourceInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `processorsInput`<sup>Optional</sup> <a name="processorsInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.processorsInput"></a>
+
+```java
+public IResolvable|java.util.List<LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors> getProcessorsInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors</a>>
+
+---
+
+##### `sourceInput`<sup>Optional</sup> <a name="sourceInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.sourceInput"></a>
+
+```java
+public java.lang.String getSourceInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `targetInput`<sup>Optional</sup> <a name="targetInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.targetInput"></a>
+
+```java
+public java.lang.String getTargetInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `isEnabled`<sup>Required</sup> <a name="isEnabled" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.isEnabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIsEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `preserveSource`<sup>Required</sup> <a name="preserveSource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.preserveSource"></a>
+
+```java
+public java.lang.Boolean|IResolvable getPreserveSource();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `source`<sup>Required</sup> <a name="source" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.source"></a>
+
+```java
+public java.lang.String getSource();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.target"></a>
+
+```java
+public java.lang.String getTarget();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.internalValue"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor</a>
+
+---
+
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference;
+
+new LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resetIsReplaceMissing">resetIsReplaceMissing</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resetName">resetName</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetIsReplaceMissing` <a name="resetIsReplaceMissing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resetIsReplaceMissing"></a>
+
+```java
+public void resetIsReplaceMissing()
+```
+
+##### `resetName` <a name="resetName" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resetName"></a>
+
+```java
+public void resetName()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.expressionInput">expressionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.isReplaceMissingInput">isReplaceMissingInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.targetInput">targetInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.expression">expression</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.isReplaceMissing">isReplaceMissing</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.target">target</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `expressionInput`<sup>Optional</sup> <a name="expressionInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.expressionInput"></a>
+
+```java
+public java.lang.String getExpressionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `isReplaceMissingInput`<sup>Optional</sup> <a name="isReplaceMissingInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.isReplaceMissingInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIsReplaceMissingInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `targetInput`<sup>Optional</sup> <a name="targetInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.targetInput"></a>
+
+```java
+public java.lang.String getTargetInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.expression"></a>
+
+```java
+public java.lang.String getExpression();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `isReplaceMissing`<sup>Required</sup> <a name="isReplaceMissing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.isReplaceMissing"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIsReplaceMissing();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.target"></a>
+
+```java
+public java.lang.String getTarget();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.internalValue"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor</a>
+
+---
+
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference;
+
+new LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetName">resetName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetOverrideOnConflict">resetOverrideOnConflict</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetPreserveSource">resetPreserveSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetTargetFormat">resetTargetFormat</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetName` <a name="resetName" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetName"></a>
+
+```java
+public void resetName()
+```
+
+##### `resetOverrideOnConflict` <a name="resetOverrideOnConflict" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetOverrideOnConflict"></a>
+
+```java
+public void resetOverrideOnConflict()
+```
+
+##### `resetPreserveSource` <a name="resetPreserveSource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetPreserveSource"></a>
+
+```java
+public void resetPreserveSource()
+```
+
+##### `resetTargetFormat` <a name="resetTargetFormat" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetTargetFormat"></a>
+
+```java
+public void resetTargetFormat()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.overrideOnConflictInput">overrideOnConflictInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.preserveSourceInput">preserveSourceInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.sourcesInput">sourcesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.targetFormatInput">targetFormatInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.targetInput">targetInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.overrideOnConflict">overrideOnConflict</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.preserveSource">preserveSource</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.sources">sources</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.target">target</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.targetFormat">targetFormat</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `overrideOnConflictInput`<sup>Optional</sup> <a name="overrideOnConflictInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.overrideOnConflictInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getOverrideOnConflictInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `preserveSourceInput`<sup>Optional</sup> <a name="preserveSourceInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.preserveSourceInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getPreserveSourceInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `sourcesInput`<sup>Optional</sup> <a name="sourcesInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.sourcesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getSourcesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `targetFormatInput`<sup>Optional</sup> <a name="targetFormatInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.targetFormatInput"></a>
+
+```java
+public java.lang.String getTargetFormatInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `targetInput`<sup>Optional</sup> <a name="targetInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.targetInput"></a>
+
+```java
+public java.lang.String getTargetInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `overrideOnConflict`<sup>Required</sup> <a name="overrideOnConflict" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.overrideOnConflict"></a>
+
+```java
+public java.lang.Boolean|IResolvable getOverrideOnConflict();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `preserveSource`<sup>Required</sup> <a name="preserveSource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.preserveSource"></a>
+
+```java
+public java.lang.Boolean|IResolvable getPreserveSource();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `sources`<sup>Required</sup> <a name="sources" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.sources"></a>
+
+```java
+public java.util.List<java.lang.String> getSources();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.target"></a>
+
+```java
+public java.lang.String getTarget();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `targetFormat`<sup>Required</sup> <a name="targetFormat" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.targetFormat"></a>
+
+```java
+public java.lang.String getTargetFormat();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.internalValue"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper</a>
+
+---
+
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference;
+
+new LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.queryInput">queryInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.query">query</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `queryInput`<sup>Optional</sup> <a name="queryInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.queryInput"></a>
+
+```java
+public java.lang.String getQueryInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `query`<sup>Required</sup> <a name="query" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.query"></a>
+
+```java
+public java.lang.String getQuery();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.internalValue"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter</a>
+
+---
+
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList;
+
+new LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.get"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>>
+
+---
+
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference;
+
+new LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.putFilter">putFilter</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putFilter` <a name="putFilter" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.putFilter"></a>
+
+```java
+public void putFilter(LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.putFilter.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter</a>
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.filterInput">filterInput</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `filter`<sup>Required</sup> <a name="filter" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.filter"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference getFilter();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference</a>
+
+---
+
+##### `filterInput`<sup>Optional</sup> <a name="filterInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.filterInput"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter getFilterInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter</a>
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>
+
+---
+
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference;
+
+new LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.putCategory">putCategory</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.resetName">resetName</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putCategory` <a name="putCategory" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.putCategory"></a>
+
+```java
+public void putCategory(IResolvable|java.util.List<LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.putCategory.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>>
+
+---
+
+##### `resetName` <a name="resetName" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.resetName"></a>
+
+```java
+public void resetName()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.category">category</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.categoryInput">categoryInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.targetInput">targetInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.target">target</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `category`<sup>Required</sup> <a name="category" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.category"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList getCategory();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList</a>
+
+---
+
+##### `categoryInput`<sup>Optional</sup> <a name="categoryInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.categoryInput"></a>
+
+```java
+public IResolvable|java.util.List<LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory> getCategoryInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>>
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `targetInput`<sup>Optional</sup> <a name="targetInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.targetInput"></a>
+
+```java
+public java.lang.String getTargetInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.target"></a>
+
+```java
+public java.lang.String getTarget();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.internalValue"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor</a>
+
+---
+
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList;
+
+new LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.get"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors</a>>
+
+---
+
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference;
+
+new LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putArithmeticProcessor">putArithmeticProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putAttributeRemapper">putAttributeRemapper</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putCategoryProcessor">putCategoryProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putStringBuilderProcessor">putStringBuilderProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetArithmeticProcessor">resetArithmeticProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetAttributeRemapper">resetAttributeRemapper</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetCategoryProcessor">resetCategoryProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetStringBuilderProcessor">resetStringBuilderProcessor</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putArithmeticProcessor` <a name="putArithmeticProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putArithmeticProcessor"></a>
+
+```java
+public void putArithmeticProcessor(LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putArithmeticProcessor.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor</a>
+
+---
+
+##### `putAttributeRemapper` <a name="putAttributeRemapper" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putAttributeRemapper"></a>
+
+```java
+public void putAttributeRemapper(LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putAttributeRemapper.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper</a>
+
+---
+
+##### `putCategoryProcessor` <a name="putCategoryProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putCategoryProcessor"></a>
+
+```java
+public void putCategoryProcessor(LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putCategoryProcessor.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor</a>
+
+---
+
+##### `putStringBuilderProcessor` <a name="putStringBuilderProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putStringBuilderProcessor"></a>
+
+```java
+public void putStringBuilderProcessor(LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putStringBuilderProcessor.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor</a>
+
+---
+
+##### `resetArithmeticProcessor` <a name="resetArithmeticProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetArithmeticProcessor"></a>
+
+```java
+public void resetArithmeticProcessor()
+```
+
+##### `resetAttributeRemapper` <a name="resetAttributeRemapper" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetAttributeRemapper"></a>
+
+```java
+public void resetAttributeRemapper()
+```
+
+##### `resetCategoryProcessor` <a name="resetCategoryProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetCategoryProcessor"></a>
+
+```java
+public void resetCategoryProcessor()
+```
+
+##### `resetStringBuilderProcessor` <a name="resetStringBuilderProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetStringBuilderProcessor"></a>
+
+```java
+public void resetStringBuilderProcessor()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.arithmeticProcessor">arithmeticProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.attributeRemapper">attributeRemapper</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.categoryProcessor">categoryProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.stringBuilderProcessor">stringBuilderProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.arithmeticProcessorInput">arithmeticProcessorInput</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.attributeRemapperInput">attributeRemapperInput</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.categoryProcessorInput">categoryProcessorInput</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.stringBuilderProcessorInput">stringBuilderProcessorInput</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `arithmeticProcessor`<sup>Required</sup> <a name="arithmeticProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.arithmeticProcessor"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference getArithmeticProcessor();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference</a>
+
+---
+
+##### `attributeRemapper`<sup>Required</sup> <a name="attributeRemapper" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.attributeRemapper"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference getAttributeRemapper();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference</a>
+
+---
+
+##### `categoryProcessor`<sup>Required</sup> <a name="categoryProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.categoryProcessor"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference getCategoryProcessor();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference</a>
+
+---
+
+##### `stringBuilderProcessor`<sup>Required</sup> <a name="stringBuilderProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.stringBuilderProcessor"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference getStringBuilderProcessor();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference</a>
+
+---
+
+##### `arithmeticProcessorInput`<sup>Optional</sup> <a name="arithmeticProcessorInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.arithmeticProcessorInput"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor getArithmeticProcessorInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor</a>
+
+---
+
+##### `attributeRemapperInput`<sup>Optional</sup> <a name="attributeRemapperInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.attributeRemapperInput"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper getAttributeRemapperInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper</a>
+
+---
+
+##### `categoryProcessorInput`<sup>Optional</sup> <a name="categoryProcessorInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.categoryProcessorInput"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor getCategoryProcessorInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor</a>
+
+---
+
+##### `stringBuilderProcessorInput`<sup>Optional</sup> <a name="stringBuilderProcessorInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.stringBuilderProcessorInput"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor getStringBuilderProcessorInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors</a>
+
+---
+
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.logs_custom_pipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference;
+
+new LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resetIsReplaceMissing">resetIsReplaceMissing</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resetName">resetName</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetIsReplaceMissing` <a name="resetIsReplaceMissing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resetIsReplaceMissing"></a>
+
+```java
+public void resetIsReplaceMissing()
+```
+
+##### `resetName` <a name="resetName" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resetName"></a>
+
+```java
+public void resetName()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.isReplaceMissingInput">isReplaceMissingInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.targetInput">targetInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.templateInput">templateInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.isReplaceMissing">isReplaceMissing</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.target">target</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.template">template</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `isReplaceMissingInput`<sup>Optional</sup> <a name="isReplaceMissingInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.isReplaceMissingInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIsReplaceMissingInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `targetInput`<sup>Optional</sup> <a name="targetInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.targetInput"></a>
+
+```java
+public java.lang.String getTargetInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `templateInput`<sup>Optional</sup> <a name="templateInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.templateInput"></a>
+
+```java
+public java.lang.String getTemplateInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `isReplaceMissing`<sup>Required</sup> <a name="isReplaceMissing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.isReplaceMissing"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIsReplaceMissing();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.target"></a>
+
+```java
+public java.lang.String getTarget();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `template`<sup>Required</sup> <a name="template" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.template"></a>
+
+```java
+public java.lang.String getTemplate();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.internalValue"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor</a>
 
 ---
 
@@ -22492,6 +30236,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putArithmeticProcessor">putArithmeticProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putArrayMapProcessor">putArrayMapProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putArrayProcessor">putArrayProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putAttributeRemapper">putAttributeRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putCategoryProcessor">putCategoryProcessor</a></code> | *No description.* |
@@ -22511,6 +30256,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putUrlParser">putUrlParser</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putUserAgentParser">putUserAgentParser</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.resetArithmeticProcessor">resetArithmeticProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.resetArrayMapProcessor">resetArrayMapProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.resetArrayProcessor">resetArrayProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.resetAttributeRemapper">resetAttributeRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.resetCategoryProcessor">resetCategoryProcessor</a></code> | *No description.* |
@@ -22691,6 +30437,18 @@ public void putArithmeticProcessor(LogsCustomPipelineProcessorPipelineProcessorA
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putArithmeticProcessor.parameter.value"></a>
 
 - *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor">LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor</a>
+
+---
+
+##### `putArrayMapProcessor` <a name="putArrayMapProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putArrayMapProcessor"></a>
+
+```java
+public void putArrayMapProcessor(LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putArrayMapProcessor.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor</a>
 
 ---
 
@@ -22916,6 +30674,12 @@ public void putUserAgentParser(LogsCustomPipelineProcessorPipelineProcessorUserA
 public void resetArithmeticProcessor()
 ```
 
+##### `resetArrayMapProcessor` <a name="resetArrayMapProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.resetArrayMapProcessor"></a>
+
+```java
+public void resetArrayMapProcessor()
+```
+
 ##### `resetArrayProcessor` <a name="resetArrayProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.resetArrayProcessor"></a>
 
 ```java
@@ -23032,6 +30796,7 @@ public void resetUserAgentParser()
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.arithmeticProcessor">arithmeticProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.arrayMapProcessor">arrayMapProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.arrayProcessor">arrayProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.attributeRemapper">attributeRemapper</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutputReference">LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.categoryProcessor">categoryProcessor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutputReference</a></code> | *No description.* |
@@ -23051,6 +30816,7 @@ public void resetUserAgentParser()
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.urlParser">urlParser</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReference">LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.userAgentParser">userAgentParser</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputReference">LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.arithmeticProcessorInput">arithmeticProcessorInput</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor">LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.arrayMapProcessorInput">arrayMapProcessorInput</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.arrayProcessorInput">arrayProcessorInput</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.attributeRemapperInput">attributeRemapperInput</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper">LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.categoryProcessorInput">categoryProcessorInput</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor">LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor</a></code> | *No description.* |
@@ -23104,6 +30870,16 @@ public LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputRefe
 ```
 
 - *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference</a>
+
+---
+
+##### `arrayMapProcessor`<sup>Required</sup> <a name="arrayMapProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.arrayMapProcessor"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference getArrayMapProcessor();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference</a>
 
 ---
 
@@ -23294,6 +31070,16 @@ public LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor getArithm
 ```
 
 - *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor">LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor</a>
+
+---
+
+##### `arrayMapProcessorInput`<sup>Optional</sup> <a name="arrayMapProcessorInput" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.arrayMapProcessorInput"></a>
+
+```java
+public LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor getArrayMapProcessorInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor</a>
 
 ---
 

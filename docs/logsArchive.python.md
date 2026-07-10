@@ -4,7 +4,7 @@
 
 ### LogsArchive <a name="LogsArchive" id="@cdktn/provider-datadog.logsArchive.LogsArchive"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive datadog_logs_archive}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive datadog_logs_archive}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsArchive.LogsArchive.Initializer"></a>
 
@@ -52,7 +52,7 @@ logsArchive.LogsArchive(
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchive.Initializer.parameter.azureArchive">azure_archive</a></code> | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveAzureArchive">LogsArchiveAzureArchive</a></code> | azure_archive block. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchive.Initializer.parameter.compressionMethod">compression_method</a></code> | <code>str</code> | The compression method for the archive. Valid values are `GZIP`, `ZSTD`. Defaults to `"GZIP"`. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchive.Initializer.parameter.gcsArchive">gcs_archive</a></code> | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveGcsArchive">LogsArchiveGcsArchive</a></code> | gcs_archive block. |
-| <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchive.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#id LogsArchive#id}. |
+| <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchive.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#id LogsArchive#id}. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchive.Initializer.parameter.includeTags">include_tags</a></code> | <code>bool \| cdktn.IResolvable</code> | To store the tags in the archive, set the value `true`. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchive.Initializer.parameter.lookupAttributes">lookup_attributes</a></code> | <code>typing.List[str]</code> | An array of attributes to use as lookup keys for the archive. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchive.Initializer.parameter.partitioningAttributes">partitioning_attributes</a></code> | <code>typing.List[str]</code> | An array of attributes to use as partition keys for the archive. |
@@ -128,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 Your archive name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#name LogsArchive#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#name LogsArchive#name}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The archive query/filter. Logs matching this query are included in the archive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#query LogsArchive#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#query LogsArchive#query}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 azure_archive block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#azure_archive LogsArchive#azure_archive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#azure_archive LogsArchive#azure_archive}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The compression method for the archive. Valid values are `GZIP`, `ZSTD`. Defaults to `"GZIP"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#compression_method LogsArchive#compression_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#compression_method LogsArchive#compression_method}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 gcs_archive block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#gcs_archive LogsArchive#gcs_archive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#gcs_archive LogsArchive#gcs_archive}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#id LogsArchive#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#id LogsArchive#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -191,7 +191,7 @@ To store the tags in the archive, set the value `true`.
 
 If it is set to `false`, the tags will be dropped when the logs are sent to the archive. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#include_tags LogsArchive#include_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#include_tags LogsArchive#include_tags}
 
 ---
 
@@ -201,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 An array of attributes to use as lookup keys for the archive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#lookup_attributes LogsArchive#lookup_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#lookup_attributes LogsArchive#lookup_attributes}
 
 ---
 
@@ -213,7 +213,7 @@ An array of attributes to use as partition keys for the archive.
 
 The attribute used most frequently for querying should be first.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#partitioning_attributes LogsArchive#partitioning_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#partitioning_attributes LogsArchive#partitioning_attributes}
 
 ---
 
@@ -223,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 To limit the rehydration scan size for the archive, set a value in GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#rehydration_max_scan_size_in_gb LogsArchive#rehydration_max_scan_size_in_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#rehydration_max_scan_size_in_gb LogsArchive#rehydration_max_scan_size_in_gb}
 
 ---
 
@@ -233,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 An array of tags to add to rehydrated logs from an archive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#rehydration_tags LogsArchive#rehydration_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#rehydration_tags LogsArchive#rehydration_tags}
 
 ---
 
@@ -243,7 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 s3_archive block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#s3_archive LogsArchive#s3_archive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#s3_archive LogsArchive#s3_archive}
 
 ---
 
@@ -657,7 +657,7 @@ def put_azure_archive(
 
 Your client id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#client_id LogsArchive#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#client_id LogsArchive#client_id}
 
 ---
 
@@ -667,7 +667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The container where the archive is stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#container LogsArchive#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#container LogsArchive#container}
 
 ---
 
@@ -677,7 +677,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The associated storage account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#storage_account LogsArchive#storage_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#storage_account LogsArchive#storage_account}
 
 ---
 
@@ -687,7 +687,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Your tenant id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#tenant_id LogsArchive#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#tenant_id LogsArchive#tenant_id}
 
 ---
 
@@ -697,7 +697,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The path where the archive is stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#path LogsArchive#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#path LogsArchive#path}
 
 ---
 
@@ -718,7 +718,7 @@ def put_gcs_archive(
 
 Name of your GCS bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#bucket LogsArchive#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#bucket LogsArchive#bucket}
 
 ---
 
@@ -728,7 +728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Your client email.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#client_email LogsArchive#client_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#client_email LogsArchive#client_email}
 
 ---
 
@@ -738,7 +738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path where the archive is stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#path LogsArchive#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#path LogsArchive#path}
 
 ---
 
@@ -748,7 +748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Your project id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#project_id LogsArchive#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#project_id LogsArchive#project_id}
 
 ---
 
@@ -756,25 +756,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ```python
 def put_s3_archive(
-  account_id: str,
   bucket: str,
-  role_name: str,
+  access_key_id: str = None,
+  account_id: str = None,
   encryption_key: str = None,
   encryption_type: str = None,
   path: str = None,
+  role_name: str = None,
   storage_class: str = None
 ) -> None
 ```
-
-###### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-datadog.logsArchive.LogsArchive.putS3Archive.parameter.accountId"></a>
-
-- *Type:* str
-
-Your AWS account id.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#account_id LogsArchive#account_id}
-
----
 
 ###### `bucket`<sup>Required</sup> <a name="bucket" id="@cdktn/provider-datadog.logsArchive.LogsArchive.putS3Archive.parameter.bucket"></a>
 
@@ -782,17 +773,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of your s3 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#bucket LogsArchive#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#bucket LogsArchive#bucket}
 
 ---
 
-###### `role_name`<sup>Required</sup> <a name="role_name" id="@cdktn/provider-datadog.logsArchive.LogsArchive.putS3Archive.parameter.roleName"></a>
+###### `access_key_id`<sup>Optional</sup> <a name="access_key_id" id="@cdktn/provider-datadog.logsArchive.LogsArchive.putS3Archive.parameter.accessKeyId"></a>
 
 - *Type:* str
 
-Your AWS role name.
+Your AWS access key id, used as an alternative to `account_id`/`role_name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#role_name LogsArchive#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#access_key_id LogsArchive#access_key_id}
+
+---
+
+###### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-datadog.logsArchive.LogsArchive.putS3Archive.parameter.accountId"></a>
+
+- *Type:* str
+
+Your AWS account id. Required with `role_name`; mutually exclusive with `access_key_id`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#account_id LogsArchive#account_id}
 
 ---
 
@@ -802,7 +803,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The AWS KMS encryption key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#encryption_key LogsArchive#encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#encryption_key LogsArchive#encryption_key}
 
 ---
 
@@ -812,7 +813,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The type of encryption on your archive. Valid values are `NO_OVERRIDE`, `SSE_S3`, `SSE_KMS`. Defaults to `"NO_OVERRIDE"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#encryption_type LogsArchive#encryption_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#encryption_type LogsArchive#encryption_type}
 
 ---
 
@@ -822,7 +823,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path where the archive is stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#path LogsArchive#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#path LogsArchive#path}
+
+---
+
+###### `role_name`<sup>Optional</sup> <a name="role_name" id="@cdktn/provider-datadog.logsArchive.LogsArchive.putS3Archive.parameter.roleName"></a>
+
+- *Type:* str
+
+Your AWS role name. Required with `account_id`; mutually exclusive with `access_key_id`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#role_name LogsArchive#role_name}
 
 ---
 
@@ -834,7 +845,7 @@ The AWS S3 storage class used to upload the logs.
 
 Valid values are `STANDARD`, `STANDARD_IA`, `ONEZONE_IA`, `INTELLIGENT_TIERING`, `GLACIER_IR`. Defaults to `"STANDARD"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#storage_class LogsArchive#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#storage_class LogsArchive#storage_class}
 
 ---
 
@@ -1012,7 +1023,7 @@ The construct id used in the generated config for the LogsArchive to import.
 
 The id of the existing LogsArchive that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1509,7 +1520,7 @@ client_id: str
 
 Your client id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#client_id LogsArchive#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#client_id LogsArchive#client_id}
 
 ---
 
@@ -1523,7 +1534,7 @@ container: str
 
 The container where the archive is stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#container LogsArchive#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#container LogsArchive#container}
 
 ---
 
@@ -1537,7 +1548,7 @@ storage_account: str
 
 The associated storage account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#storage_account LogsArchive#storage_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#storage_account LogsArchive#storage_account}
 
 ---
 
@@ -1551,7 +1562,7 @@ tenant_id: str
 
 Your tenant id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#tenant_id LogsArchive#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#tenant_id LogsArchive#tenant_id}
 
 ---
 
@@ -1565,7 +1576,7 @@ path: str
 
 The path where the archive is stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#path LogsArchive#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#path LogsArchive#path}
 
 ---
 
@@ -1615,7 +1626,7 @@ logsArchive.LogsArchiveConfig(
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveConfig.property.azureArchive">azure_archive</a></code> | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveAzureArchive">LogsArchiveAzureArchive</a></code> | azure_archive block. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveConfig.property.compressionMethod">compression_method</a></code> | <code>str</code> | The compression method for the archive. Valid values are `GZIP`, `ZSTD`. Defaults to `"GZIP"`. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveConfig.property.gcsArchive">gcs_archive</a></code> | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveGcsArchive">LogsArchiveGcsArchive</a></code> | gcs_archive block. |
-| <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#id LogsArchive#id}. |
+| <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#id LogsArchive#id}. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveConfig.property.includeTags">include_tags</a></code> | <code>bool \| cdktn.IResolvable</code> | To store the tags in the archive, set the value `true`. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveConfig.property.lookupAttributes">lookup_attributes</a></code> | <code>typing.List[str]</code> | An array of attributes to use as lookup keys for the archive. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveConfig.property.partitioningAttributes">partitioning_attributes</a></code> | <code>typing.List[str]</code> | An array of attributes to use as partition keys for the archive. |
@@ -1705,7 +1716,7 @@ name: str
 
 Your archive name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#name LogsArchive#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#name LogsArchive#name}
 
 ---
 
@@ -1719,7 +1730,7 @@ query: str
 
 The archive query/filter. Logs matching this query are included in the archive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#query LogsArchive#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#query LogsArchive#query}
 
 ---
 
@@ -1733,7 +1744,7 @@ azure_archive: LogsArchiveAzureArchive
 
 azure_archive block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#azure_archive LogsArchive#azure_archive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#azure_archive LogsArchive#azure_archive}
 
 ---
 
@@ -1747,7 +1758,7 @@ compression_method: str
 
 The compression method for the archive. Valid values are `GZIP`, `ZSTD`. Defaults to `"GZIP"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#compression_method LogsArchive#compression_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#compression_method LogsArchive#compression_method}
 
 ---
 
@@ -1761,7 +1772,7 @@ gcs_archive: LogsArchiveGcsArchive
 
 gcs_archive block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#gcs_archive LogsArchive#gcs_archive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#gcs_archive LogsArchive#gcs_archive}
 
 ---
 
@@ -1773,7 +1784,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#id LogsArchive#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#id LogsArchive#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1792,7 +1803,7 @@ To store the tags in the archive, set the value `true`.
 
 If it is set to `false`, the tags will be dropped when the logs are sent to the archive. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#include_tags LogsArchive#include_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#include_tags LogsArchive#include_tags}
 
 ---
 
@@ -1806,7 +1817,7 @@ lookup_attributes: typing.List[str]
 
 An array of attributes to use as lookup keys for the archive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#lookup_attributes LogsArchive#lookup_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#lookup_attributes LogsArchive#lookup_attributes}
 
 ---
 
@@ -1822,7 +1833,7 @@ An array of attributes to use as partition keys for the archive.
 
 The attribute used most frequently for querying should be first.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#partitioning_attributes LogsArchive#partitioning_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#partitioning_attributes LogsArchive#partitioning_attributes}
 
 ---
 
@@ -1836,7 +1847,7 @@ rehydration_max_scan_size_in_gb: typing.Union[int, float]
 
 To limit the rehydration scan size for the archive, set a value in GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#rehydration_max_scan_size_in_gb LogsArchive#rehydration_max_scan_size_in_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#rehydration_max_scan_size_in_gb LogsArchive#rehydration_max_scan_size_in_gb}
 
 ---
 
@@ -1850,7 +1861,7 @@ rehydration_tags: typing.List[str]
 
 An array of tags to add to rehydrated logs from an archive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#rehydration_tags LogsArchive#rehydration_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#rehydration_tags LogsArchive#rehydration_tags}
 
 ---
 
@@ -1864,7 +1875,7 @@ s3_archive: LogsArchiveS3Archive
 
 s3_archive block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#s3_archive LogsArchive#s3_archive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#s3_archive LogsArchive#s3_archive}
 
 ---
 
@@ -1904,7 +1915,7 @@ bucket: str
 
 Name of your GCS bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#bucket LogsArchive#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#bucket LogsArchive#bucket}
 
 ---
 
@@ -1918,7 +1929,7 @@ client_email: str
 
 Your client email.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#client_email LogsArchive#client_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#client_email LogsArchive#client_email}
 
 ---
 
@@ -1932,7 +1943,7 @@ path: str
 
 Path where the archive is stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#path LogsArchive#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#path LogsArchive#path}
 
 ---
 
@@ -1946,7 +1957,7 @@ project_id: str
 
 Your project id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#project_id LogsArchive#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#project_id LogsArchive#project_id}
 
 ---
 
@@ -1958,12 +1969,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 from cdktn_provider_datadog import logs_archive
 
 logsArchive.LogsArchiveS3Archive(
-  account_id: str,
   bucket: str,
-  role_name: str,
+  access_key_id: str = None,
+  account_id: str = None,
   encryption_key: str = None,
   encryption_type: str = None,
   path: str = None,
+  role_name: str = None,
   storage_class: str = None
 )
 ```
@@ -1972,27 +1984,14 @@ logsArchive.LogsArchiveS3Archive(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.accountId">account_id</a></code> | <code>str</code> | Your AWS account id. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.bucket">bucket</a></code> | <code>str</code> | Name of your s3 bucket. |
-| <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.roleName">role_name</a></code> | <code>str</code> | Your AWS role name. |
+| <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.accessKeyId">access_key_id</a></code> | <code>str</code> | Your AWS access key id, used as an alternative to `account_id`/`role_name`. |
+| <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.accountId">account_id</a></code> | <code>str</code> | Your AWS account id. Required with `role_name`; mutually exclusive with `access_key_id`. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.encryptionKey">encryption_key</a></code> | <code>str</code> | The AWS KMS encryption key. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.encryptionType">encryption_type</a></code> | <code>str</code> | The type of encryption on your archive. Valid values are `NO_OVERRIDE`, `SSE_S3`, `SSE_KMS`. Defaults to `"NO_OVERRIDE"`. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.path">path</a></code> | <code>str</code> | Path where the archive is stored. |
+| <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.roleName">role_name</a></code> | <code>str</code> | Your AWS role name. Required with `account_id`; mutually exclusive with `access_key_id`. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.storageClass">storage_class</a></code> | <code>str</code> | The AWS S3 storage class used to upload the logs. |
-
----
-
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.accountId"></a>
-
-```python
-account_id: str
-```
-
-- *Type:* str
-
-Your AWS account id.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#account_id LogsArchive#account_id}
 
 ---
 
@@ -2006,21 +2005,35 @@ bucket: str
 
 Name of your s3 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#bucket LogsArchive#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#bucket LogsArchive#bucket}
 
 ---
 
-##### `role_name`<sup>Required</sup> <a name="role_name" id="@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.roleName"></a>
+##### `access_key_id`<sup>Optional</sup> <a name="access_key_id" id="@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.accessKeyId"></a>
 
 ```python
-role_name: str
+access_key_id: str
 ```
 
 - *Type:* str
 
-Your AWS role name.
+Your AWS access key id, used as an alternative to `account_id`/`role_name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#role_name LogsArchive#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#access_key_id LogsArchive#access_key_id}
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.accountId"></a>
+
+```python
+account_id: str
+```
+
+- *Type:* str
+
+Your AWS account id. Required with `role_name`; mutually exclusive with `access_key_id`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#account_id LogsArchive#account_id}
 
 ---
 
@@ -2034,7 +2047,7 @@ encryption_key: str
 
 The AWS KMS encryption key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#encryption_key LogsArchive#encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#encryption_key LogsArchive#encryption_key}
 
 ---
 
@@ -2048,7 +2061,7 @@ encryption_type: str
 
 The type of encryption on your archive. Valid values are `NO_OVERRIDE`, `SSE_S3`, `SSE_KMS`. Defaults to `"NO_OVERRIDE"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#encryption_type LogsArchive#encryption_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#encryption_type LogsArchive#encryption_type}
 
 ---
 
@@ -2062,7 +2075,21 @@ path: str
 
 Path where the archive is stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#path LogsArchive#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#path LogsArchive#path}
+
+---
+
+##### `role_name`<sup>Optional</sup> <a name="role_name" id="@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.roleName"></a>
+
+```python
+role_name: str
+```
+
+- *Type:* str
+
+Your AWS role name. Required with `account_id`; mutually exclusive with `access_key_id`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#role_name LogsArchive#role_name}
 
 ---
 
@@ -2078,7 +2105,7 @@ The AWS S3 storage class used to upload the logs.
 
 Valid values are `STANDARD`, `STANDARD_IA`, `ONEZONE_IA`, `INTELLIGENT_TIERING`, `GLACIER_IR`. Defaults to `"STANDARD"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#storage_class LogsArchive#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#storage_class LogsArchive#storage_class}
 
 ---
 
@@ -2904,9 +2931,12 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.resetAccessKeyId">reset_access_key_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.resetAccountId">reset_account_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.resetEncryptionKey">reset_encryption_key</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.resetEncryptionType">reset_encryption_type</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.resetPath">reset_path</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.resetRoleName">reset_role_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.resetStorageClass">reset_storage_class</a></code> | *No description.* |
 
 ---
@@ -3083,6 +3113,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `reset_access_key_id` <a name="reset_access_key_id" id="@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.resetAccessKeyId"></a>
+
+```python
+def reset_access_key_id() -> None
+```
+
+##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.resetAccountId"></a>
+
+```python
+def reset_account_id() -> None
+```
+
 ##### `reset_encryption_key` <a name="reset_encryption_key" id="@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.resetEncryptionKey"></a>
 
 ```python
@@ -3101,6 +3143,12 @@ def reset_encryption_type() -> None
 def reset_path() -> None
 ```
 
+##### `reset_role_name` <a name="reset_role_name" id="@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.resetRoleName"></a>
+
+```python
+def reset_role_name() -> None
+```
+
 ##### `reset_storage_class` <a name="reset_storage_class" id="@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.resetStorageClass"></a>
 
 ```python
@@ -3114,6 +3162,7 @@ def reset_storage_class() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.accessKeyIdInput">access_key_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.bucketInput">bucket_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.encryptionKeyInput">encryption_key_input</a></code> | <code>str</code> | *No description.* |
@@ -3121,6 +3170,7 @@ def reset_storage_class() -> None
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.roleNameInput">role_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.storageClassInput">storage_class_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.accessKeyId">access_key_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.bucket">bucket</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.encryptionKey">encryption_key</a></code> | <code>str</code> | *No description.* |
@@ -3150,6 +3200,16 @@ If this returns an empty array the stack will not be attached.
 
 ```python
 fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `access_key_id_input`<sup>Optional</sup> <a name="access_key_id_input" id="@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.accessKeyIdInput"></a>
+
+```python
+access_key_id_input: str
 ```
 
 - *Type:* str
@@ -3220,6 +3280,16 @@ role_name_input: str
 
 ```python
 storage_class_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `access_key_id`<sup>Required</sup> <a name="access_key_id" id="@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.accessKeyId"></a>
+
+```python
+access_key_id: str
 ```
 
 - *Type:* str

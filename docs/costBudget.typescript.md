@@ -4,7 +4,7 @@
 
 ### CostBudget <a name="CostBudget" id="@cdktn/provider-datadog.costBudget.CostBudget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget datadog_cost_budget}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget datadog_cost_budget}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.costBudget.CostBudget.Initializer"></a>
 
@@ -536,7 +536,7 @@ The construct id used in the generated config for the CostBudget to import.
 
 The id of the existing CostBudget that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -927,7 +927,7 @@ public readonly amounts: {[ key: string ]: number};
 
 Map of month (YYYYMM) to budget amount. Example: {"202601": 1000.0, "202602": 1200.0}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#amounts CostBudget#amounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#amounts CostBudget#amounts}
 
 ---
 
@@ -941,7 +941,7 @@ public readonly childTagFilters: IResolvable | CostBudgetBudgetLineChildTagFilte
 
 child_tag_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#child_tag_filters CostBudget#child_tag_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#child_tag_filters CostBudget#child_tag_filters}
 
 ---
 
@@ -955,7 +955,7 @@ public readonly parentTagFilters: IResolvable | CostBudgetBudgetLineParentTagFil
 
 parent_tag_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#parent_tag_filters CostBudget#parent_tag_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#parent_tag_filters CostBudget#parent_tag_filters}
 
 ---
 
@@ -969,7 +969,7 @@ public readonly tagFilters: IResolvable | CostBudgetBudgetLineTagFilters[];
 
 tag_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#tag_filters CostBudget#tag_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#tag_filters CostBudget#tag_filters}
 
 ---
 
@@ -988,7 +988,7 @@ const costBudgetBudgetLineChildTagFilters: costBudget.CostBudgetBudgetLineChildT
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.costBudget.CostBudgetBudgetLineChildTagFilters.property.tagKey">tagKey</a></code> | <code>string</code> | Must be one of the tags from the `metrics_query`. |
-| <code><a href="#@cdktn/provider-datadog.costBudget.CostBudgetBudgetLineChildTagFilters.property.tagValue">tagValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#tag_value CostBudget#tag_value}. |
+| <code><a href="#@cdktn/provider-datadog.costBudget.CostBudgetBudgetLineChildTagFilters.property.tagValue">tagValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#tag_value CostBudget#tag_value}. |
 
 ---
 
@@ -1002,7 +1002,7 @@ public readonly tagKey: string;
 
 Must be one of the tags from the `metrics_query`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#tag_key CostBudget#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#tag_key CostBudget#tag_key}
 
 ---
 
@@ -1014,7 +1014,7 @@ public readonly tagValue: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#tag_value CostBudget#tag_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#tag_value CostBudget#tag_value}.
 
 ---
 
@@ -1033,7 +1033,7 @@ const costBudgetBudgetLineParentTagFilters: costBudget.CostBudgetBudgetLineParen
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.costBudget.CostBudgetBudgetLineParentTagFilters.property.tagKey">tagKey</a></code> | <code>string</code> | Must be one of the tags from the `metrics_query`. |
-| <code><a href="#@cdktn/provider-datadog.costBudget.CostBudgetBudgetLineParentTagFilters.property.tagValue">tagValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#tag_value CostBudget#tag_value}. |
+| <code><a href="#@cdktn/provider-datadog.costBudget.CostBudgetBudgetLineParentTagFilters.property.tagValue">tagValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#tag_value CostBudget#tag_value}. |
 
 ---
 
@@ -1047,7 +1047,7 @@ public readonly tagKey: string;
 
 Must be one of the tags from the `metrics_query`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#tag_key CostBudget#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#tag_key CostBudget#tag_key}
 
 ---
 
@@ -1059,7 +1059,7 @@ public readonly tagValue: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#tag_value CostBudget#tag_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#tag_value CostBudget#tag_value}.
 
 ---
 
@@ -1078,7 +1078,7 @@ const costBudgetBudgetLineTagFilters: costBudget.CostBudgetBudgetLineTagFilters 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.costBudget.CostBudgetBudgetLineTagFilters.property.tagKey">tagKey</a></code> | <code>string</code> | Must be one of the tags from the `metrics_query`. |
-| <code><a href="#@cdktn/provider-datadog.costBudget.CostBudgetBudgetLineTagFilters.property.tagValue">tagValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#tag_value CostBudget#tag_value}. |
+| <code><a href="#@cdktn/provider-datadog.costBudget.CostBudgetBudgetLineTagFilters.property.tagValue">tagValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#tag_value CostBudget#tag_value}. |
 
 ---
 
@@ -1092,7 +1092,7 @@ public readonly tagKey: string;
 
 Must be one of the tags from the `metrics_query`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#tag_key CostBudget#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#tag_key CostBudget#tag_key}
 
 ---
 
@@ -1104,7 +1104,7 @@ public readonly tagValue: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#tag_value CostBudget#tag_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#tag_value CostBudget#tag_value}.
 
 ---
 
@@ -1219,7 +1219,7 @@ public readonly endMonth: number;
 
 The month when the budget ends (YYYYMM).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#end_month CostBudget#end_month}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#end_month CostBudget#end_month}
 
 ---
 
@@ -1235,7 +1235,7 @@ The cost query used to track against the budget.
 
 **Note:** For hierarchical budgets using `by {tag1,tag2}`, the order of tags determines the UI hierarchy (parent, child).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#metrics_query CostBudget#metrics_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#metrics_query CostBudget#metrics_query}
 
 ---
 
@@ -1249,7 +1249,7 @@ public readonly name: string;
 
 The name of the budget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#name CostBudget#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#name CostBudget#name}
 
 ---
 
@@ -1263,7 +1263,7 @@ public readonly startMonth: number;
 
 The month when the budget starts (YYYYMM).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#start_month CostBudget#start_month}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#start_month CostBudget#start_month}
 
 ---
 
@@ -1277,7 +1277,7 @@ public readonly budgetLine: IResolvable | CostBudgetBudgetLine[];
 
 budget_line block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#budget_line CostBudget#budget_line}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#budget_line CostBudget#budget_line}
 
 ---
 
@@ -1291,7 +1291,7 @@ public readonly entries: IResolvable | CostBudgetEntries[];
 
 entries block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#entries CostBudget#entries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#entries CostBudget#entries}
 
 ---
 
@@ -1305,7 +1305,7 @@ public readonly id: string;
 
 The ID of the budget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#id CostBudget#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#id CostBudget#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1326,8 +1326,8 @@ const costBudgetEntries: costBudget.CostBudgetEntries = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.costBudget.CostBudgetEntries.property.amount">amount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#amount CostBudget#amount}. |
-| <code><a href="#@cdktn/provider-datadog.costBudget.CostBudgetEntries.property.month">month</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#month CostBudget#month}. |
+| <code><a href="#@cdktn/provider-datadog.costBudget.CostBudgetEntries.property.amount">amount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#amount CostBudget#amount}. |
+| <code><a href="#@cdktn/provider-datadog.costBudget.CostBudgetEntries.property.month">month</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#month CostBudget#month}. |
 | <code><a href="#@cdktn/provider-datadog.costBudget.CostBudgetEntries.property.tagFilters">tagFilters</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.costBudget.CostBudgetEntriesTagFilters">CostBudgetEntriesTagFilters</a>[]</code> | tag_filters block. |
 
 ---
@@ -1340,7 +1340,7 @@ public readonly amount: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#amount CostBudget#amount}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#amount CostBudget#amount}.
 
 ---
 
@@ -1352,7 +1352,7 @@ public readonly month: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#month CostBudget#month}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#month CostBudget#month}.
 
 ---
 
@@ -1366,7 +1366,7 @@ public readonly tagFilters: IResolvable | CostBudgetEntriesTagFilters[];
 
 tag_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#tag_filters CostBudget#tag_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#tag_filters CostBudget#tag_filters}
 
 ---
 
@@ -1385,7 +1385,7 @@ const costBudgetEntriesTagFilters: costBudget.CostBudgetEntriesTagFilters = { ..
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.costBudget.CostBudgetEntriesTagFilters.property.tagKey">tagKey</a></code> | <code>string</code> | **Note:** Must be one of the tags from the `metrics_query`. |
-| <code><a href="#@cdktn/provider-datadog.costBudget.CostBudgetEntriesTagFilters.property.tagValue">tagValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#tag_value CostBudget#tag_value}. |
+| <code><a href="#@cdktn/provider-datadog.costBudget.CostBudgetEntriesTagFilters.property.tagValue">tagValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#tag_value CostBudget#tag_value}. |
 
 ---
 
@@ -1399,7 +1399,7 @@ public readonly tagKey: string;
 
 **Note:** Must be one of the tags from the `metrics_query`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#tag_key CostBudget#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#tag_key CostBudget#tag_key}
 
 ---
 
@@ -1411,7 +1411,7 @@ public readonly tagValue: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cost_budget#tag_value CostBudget#tag_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cost_budget#tag_value CostBudget#tag_value}.
 
 ---
 

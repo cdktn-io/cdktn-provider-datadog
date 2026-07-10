@@ -4,7 +4,7 @@
 
 ### LogsArchive <a name="LogsArchive" id="@cdktn/provider-datadog.logsArchive.LogsArchive"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive datadog_logs_archive}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive datadog_logs_archive}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsArchive.LogsArchive.Initializer"></a>
 
@@ -598,7 +598,7 @@ The construct id used in the generated config for the LogsArchive to import.
 
 The id of the existing LogsArchive that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1089,7 +1089,7 @@ public readonly clientId: string;
 
 Your client id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#client_id LogsArchive#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#client_id LogsArchive#client_id}
 
 ---
 
@@ -1103,7 +1103,7 @@ public readonly container: string;
 
 The container where the archive is stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#container LogsArchive#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#container LogsArchive#container}
 
 ---
 
@@ -1117,7 +1117,7 @@ public readonly storageAccount: string;
 
 The associated storage account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#storage_account LogsArchive#storage_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#storage_account LogsArchive#storage_account}
 
 ---
 
@@ -1131,7 +1131,7 @@ public readonly tenantId: string;
 
 Your tenant id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#tenant_id LogsArchive#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#tenant_id LogsArchive#tenant_id}
 
 ---
 
@@ -1145,7 +1145,7 @@ public readonly path: string;
 
 The path where the archive is stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#path LogsArchive#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#path LogsArchive#path}
 
 ---
 
@@ -1175,7 +1175,7 @@ const logsArchiveConfig: logsArchive.LogsArchiveConfig = { ... }
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveConfig.property.azureArchive">azureArchive</a></code> | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveAzureArchive">LogsArchiveAzureArchive</a></code> | azure_archive block. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveConfig.property.compressionMethod">compressionMethod</a></code> | <code>string</code> | The compression method for the archive. Valid values are `GZIP`, `ZSTD`. Defaults to `"GZIP"`. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveConfig.property.gcsArchive">gcsArchive</a></code> | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveGcsArchive">LogsArchiveGcsArchive</a></code> | gcs_archive block. |
-| <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#id LogsArchive#id}. |
+| <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#id LogsArchive#id}. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveConfig.property.includeTags">includeTags</a></code> | <code>boolean \| cdktn.IResolvable</code> | To store the tags in the archive, set the value `true`. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveConfig.property.lookupAttributes">lookupAttributes</a></code> | <code>string[]</code> | An array of attributes to use as lookup keys for the archive. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveConfig.property.partitioningAttributes">partitioningAttributes</a></code> | <code>string[]</code> | An array of attributes to use as partition keys for the archive. |
@@ -1265,7 +1265,7 @@ public readonly name: string;
 
 Your archive name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#name LogsArchive#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#name LogsArchive#name}
 
 ---
 
@@ -1279,7 +1279,7 @@ public readonly query: string;
 
 The archive query/filter. Logs matching this query are included in the archive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#query LogsArchive#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#query LogsArchive#query}
 
 ---
 
@@ -1293,7 +1293,7 @@ public readonly azureArchive: LogsArchiveAzureArchive;
 
 azure_archive block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#azure_archive LogsArchive#azure_archive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#azure_archive LogsArchive#azure_archive}
 
 ---
 
@@ -1307,7 +1307,7 @@ public readonly compressionMethod: string;
 
 The compression method for the archive. Valid values are `GZIP`, `ZSTD`. Defaults to `"GZIP"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#compression_method LogsArchive#compression_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#compression_method LogsArchive#compression_method}
 
 ---
 
@@ -1321,7 +1321,7 @@ public readonly gcsArchive: LogsArchiveGcsArchive;
 
 gcs_archive block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#gcs_archive LogsArchive#gcs_archive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#gcs_archive LogsArchive#gcs_archive}
 
 ---
 
@@ -1333,7 +1333,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#id LogsArchive#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#id LogsArchive#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1352,7 +1352,7 @@ To store the tags in the archive, set the value `true`.
 
 If it is set to `false`, the tags will be dropped when the logs are sent to the archive. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#include_tags LogsArchive#include_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#include_tags LogsArchive#include_tags}
 
 ---
 
@@ -1366,7 +1366,7 @@ public readonly lookupAttributes: string[];
 
 An array of attributes to use as lookup keys for the archive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#lookup_attributes LogsArchive#lookup_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#lookup_attributes LogsArchive#lookup_attributes}
 
 ---
 
@@ -1382,7 +1382,7 @@ An array of attributes to use as partition keys for the archive.
 
 The attribute used most frequently for querying should be first.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#partitioning_attributes LogsArchive#partitioning_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#partitioning_attributes LogsArchive#partitioning_attributes}
 
 ---
 
@@ -1396,7 +1396,7 @@ public readonly rehydrationMaxScanSizeInGb: number;
 
 To limit the rehydration scan size for the archive, set a value in GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#rehydration_max_scan_size_in_gb LogsArchive#rehydration_max_scan_size_in_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#rehydration_max_scan_size_in_gb LogsArchive#rehydration_max_scan_size_in_gb}
 
 ---
 
@@ -1410,7 +1410,7 @@ public readonly rehydrationTags: string[];
 
 An array of tags to add to rehydrated logs from an archive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#rehydration_tags LogsArchive#rehydration_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#rehydration_tags LogsArchive#rehydration_tags}
 
 ---
 
@@ -1424,7 +1424,7 @@ public readonly s3Archive: LogsArchiveS3Archive;
 
 s3_archive block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#s3_archive LogsArchive#s3_archive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#s3_archive LogsArchive#s3_archive}
 
 ---
 
@@ -1459,7 +1459,7 @@ public readonly bucket: string;
 
 Name of your GCS bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#bucket LogsArchive#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#bucket LogsArchive#bucket}
 
 ---
 
@@ -1473,7 +1473,7 @@ public readonly clientEmail: string;
 
 Your client email.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#client_email LogsArchive#client_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#client_email LogsArchive#client_email}
 
 ---
 
@@ -1487,7 +1487,7 @@ public readonly path: string;
 
 Path where the archive is stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#path LogsArchive#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#path LogsArchive#path}
 
 ---
 
@@ -1501,7 +1501,7 @@ public readonly projectId: string;
 
 Your project id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#project_id LogsArchive#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#project_id LogsArchive#project_id}
 
 ---
 
@@ -1519,27 +1519,14 @@ const logsArchiveS3Archive: logsArchive.LogsArchiveS3Archive = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.accountId">accountId</a></code> | <code>string</code> | Your AWS account id. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.bucket">bucket</a></code> | <code>string</code> | Name of your s3 bucket. |
-| <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.roleName">roleName</a></code> | <code>string</code> | Your AWS role name. |
+| <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.accessKeyId">accessKeyId</a></code> | <code>string</code> | Your AWS access key id, used as an alternative to `account_id`/`role_name`. |
+| <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.accountId">accountId</a></code> | <code>string</code> | Your AWS account id. Required with `role_name`; mutually exclusive with `access_key_id`. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.encryptionKey">encryptionKey</a></code> | <code>string</code> | The AWS KMS encryption key. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.encryptionType">encryptionType</a></code> | <code>string</code> | The type of encryption on your archive. Valid values are `NO_OVERRIDE`, `SSE_S3`, `SSE_KMS`. Defaults to `"NO_OVERRIDE"`. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.path">path</a></code> | <code>string</code> | Path where the archive is stored. |
+| <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.roleName">roleName</a></code> | <code>string</code> | Your AWS role name. Required with `account_id`; mutually exclusive with `access_key_id`. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.storageClass">storageClass</a></code> | <code>string</code> | The AWS S3 storage class used to upload the logs. |
-
----
-
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.accountId"></a>
-
-```typescript
-public readonly accountId: string;
-```
-
-- *Type:* string
-
-Your AWS account id.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#account_id LogsArchive#account_id}
 
 ---
 
@@ -1553,21 +1540,35 @@ public readonly bucket: string;
 
 Name of your s3 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#bucket LogsArchive#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#bucket LogsArchive#bucket}
 
 ---
 
-##### `roleName`<sup>Required</sup> <a name="roleName" id="@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.roleName"></a>
+##### `accessKeyId`<sup>Optional</sup> <a name="accessKeyId" id="@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.accessKeyId"></a>
 
 ```typescript
-public readonly roleName: string;
+public readonly accessKeyId: string;
 ```
 
 - *Type:* string
 
-Your AWS role name.
+Your AWS access key id, used as an alternative to `account_id`/`role_name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#role_name LogsArchive#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#access_key_id LogsArchive#access_key_id}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
+```
+
+- *Type:* string
+
+Your AWS account id. Required with `role_name`; mutually exclusive with `access_key_id`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#account_id LogsArchive#account_id}
 
 ---
 
@@ -1581,7 +1582,7 @@ public readonly encryptionKey: string;
 
 The AWS KMS encryption key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#encryption_key LogsArchive#encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#encryption_key LogsArchive#encryption_key}
 
 ---
 
@@ -1595,7 +1596,7 @@ public readonly encryptionType: string;
 
 The type of encryption on your archive. Valid values are `NO_OVERRIDE`, `SSE_S3`, `SSE_KMS`. Defaults to `"NO_OVERRIDE"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#encryption_type LogsArchive#encryption_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#encryption_type LogsArchive#encryption_type}
 
 ---
 
@@ -1609,7 +1610,21 @@ public readonly path: string;
 
 Path where the archive is stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#path LogsArchive#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#path LogsArchive#path}
+
+---
+
+##### `roleName`<sup>Optional</sup> <a name="roleName" id="@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.property.roleName"></a>
+
+```typescript
+public readonly roleName: string;
+```
+
+- *Type:* string
+
+Your AWS role name. Required with `account_id`; mutually exclusive with `access_key_id`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#role_name LogsArchive#role_name}
 
 ---
 
@@ -1625,7 +1640,7 @@ The AWS S3 storage class used to upload the logs.
 
 Valid values are `STANDARD`, `STANDARD_IA`, `ONEZONE_IA`, `INTELLIGENT_TIERING`, `GLACIER_IR`. Defaults to `"STANDARD"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive#storage_class LogsArchive#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_archive#storage_class LogsArchive#storage_class}
 
 ---
 
@@ -2398,9 +2413,12 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.resetAccessKeyId">resetAccessKeyId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.resetEncryptionKey">resetEncryptionKey</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.resetEncryptionType">resetEncryptionType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.resetPath">resetPath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.resetRoleName">resetRoleName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.resetStorageClass">resetStorageClass</a></code> | *No description.* |
 
 ---
@@ -2555,6 +2573,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetAccessKeyId` <a name="resetAccessKeyId" id="@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.resetAccessKeyId"></a>
+
+```typescript
+public resetAccessKeyId(): void
+```
+
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 ##### `resetEncryptionKey` <a name="resetEncryptionKey" id="@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.resetEncryptionKey"></a>
 
 ```typescript
@@ -2573,6 +2603,12 @@ public resetEncryptionType(): void
 public resetPath(): void
 ```
 
+##### `resetRoleName` <a name="resetRoleName" id="@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.resetRoleName"></a>
+
+```typescript
+public resetRoleName(): void
+```
+
 ##### `resetStorageClass` <a name="resetStorageClass" id="@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.resetStorageClass"></a>
 
 ```typescript
@@ -2586,6 +2622,7 @@ public resetStorageClass(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.accessKeyIdInput">accessKeyIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.accountIdInput">accountIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.bucketInput">bucketInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.encryptionKeyInput">encryptionKeyInput</a></code> | <code>string</code> | *No description.* |
@@ -2593,6 +2630,7 @@ public resetStorageClass(): void
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.pathInput">pathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.roleNameInput">roleNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.storageClassInput">storageClassInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.accessKeyId">accessKeyId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.bucket">bucket</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.encryptionKey">encryptionKey</a></code> | <code>string</code> | *No description.* |
@@ -2622,6 +2660,16 @@ If this returns an empty array the stack will not be attached.
 
 ```typescript
 public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `accessKeyIdInput`<sup>Optional</sup> <a name="accessKeyIdInput" id="@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.accessKeyIdInput"></a>
+
+```typescript
+public readonly accessKeyIdInput: string;
 ```
 
 - *Type:* string
@@ -2692,6 +2740,16 @@ public readonly roleNameInput: string;
 
 ```typescript
 public readonly storageClassInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `accessKeyId`<sup>Required</sup> <a name="accessKeyId" id="@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.property.accessKeyId"></a>
+
+```typescript
+public readonly accessKeyId: string;
 ```
 
 - *Type:* string

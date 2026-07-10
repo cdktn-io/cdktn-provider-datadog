@@ -4,7 +4,7 @@
 
 ### LogsCustomPipeline <a name="LogsCustomPipeline" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer"></a>
 
@@ -43,12 +43,12 @@ logsCustomPipeline.LogsCustomPipeline(
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.filter">filter</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilter">LogsCustomPipelineFilter</a>]</code> | filter block. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.isEnabled">is_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.isEnabled">is_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.processor">processor</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor">LogsCustomPipelineProcessor</a>]</code> | processor block. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}. |
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -153,7 +153,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}.
 
 ---
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
 
 ---
 
@@ -171,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}.
 
 ---
 
@@ -733,7 +733,7 @@ The construct id used in the generated config for the LogsCustomPipeline to impo
 
 The id of the existing LogsCustomPipeline that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1119,12 +1119,12 @@ logsCustomPipeline.LogsCustomPipelineConfig(
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.filter">filter</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilter">LogsCustomPipelineFilter</a>]</code> | filter block. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.isEnabled">is_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.isEnabled">is_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.processor">processor</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor">LogsCustomPipelineProcessor</a>]</code> | processor block. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}. |
 
 ---
 
@@ -1208,7 +1208,7 @@ filter: IResolvable | typing.List[LogsCustomPipelineFilter]
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 
 ---
 
@@ -1220,7 +1220,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
 
 ---
 
@@ -1232,7 +1232,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}.
 
 ---
 
@@ -1244,7 +1244,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1259,7 +1259,7 @@ is_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}.
 
 ---
 
@@ -1273,7 +1273,7 @@ processor: IResolvable | typing.List[LogsCustomPipelineProcessor]
 
 processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
 
 ---
 
@@ -1285,7 +1285,7 @@ tags: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}.
 
 ---
 
@@ -1319,7 +1319,7 @@ query: str
 
 Filter criteria of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
 
 ---
 
@@ -1332,6 +1332,7 @@ from cdktn_provider_datadog import logs_custom_pipeline
 
 logsCustomPipeline.LogsCustomPipelineProcessor(
   arithmetic_processor: LogsCustomPipelineProcessorArithmeticProcessor = None,
+  array_map_processor: LogsCustomPipelineProcessorArrayMapProcessor = None,
   array_processor: LogsCustomPipelineProcessorArrayProcessor = None,
   attribute_remapper: LogsCustomPipelineProcessorAttributeRemapper = None,
   category_processor: LogsCustomPipelineProcessorCategoryProcessor = None,
@@ -1359,6 +1360,7 @@ logsCustomPipeline.LogsCustomPipelineProcessor(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor.property.arithmeticProcessor">arithmetic_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArithmeticProcessor">LogsCustomPipelineProcessorArithmeticProcessor</a></code> | arithmetic_processor block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor.property.arrayMapProcessor">array_map_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor">LogsCustomPipelineProcessorArrayMapProcessor</a></code> | array_map_processor block. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor.property.arrayProcessor">array_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayProcessor">LogsCustomPipelineProcessorArrayProcessor</a></code> | array_processor block. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor.property.attributeRemapper">attribute_remapper</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorAttributeRemapper">LogsCustomPipelineProcessorAttributeRemapper</a></code> | attribute_remapper block. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor.property.categoryProcessor">category_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessor">LogsCustomPipelineProcessorCategoryProcessor</a></code> | category_processor block. |
@@ -1391,7 +1393,21 @@ arithmetic_processor: LogsCustomPipelineProcessorArithmeticProcessor
 
 arithmetic_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#arithmetic_processor LogsCustomPipeline#arithmetic_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#arithmetic_processor LogsCustomPipeline#arithmetic_processor}
+
+---
+
+##### `array_map_processor`<sup>Optional</sup> <a name="array_map_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor.property.arrayMapProcessor"></a>
+
+```python
+array_map_processor: LogsCustomPipelineProcessorArrayMapProcessor
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor">LogsCustomPipelineProcessorArrayMapProcessor</a>
+
+array_map_processor block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#array_map_processor LogsCustomPipeline#array_map_processor}
 
 ---
 
@@ -1405,7 +1421,7 @@ array_processor: LogsCustomPipelineProcessorArrayProcessor
 
 array_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#array_processor LogsCustomPipeline#array_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#array_processor LogsCustomPipeline#array_processor}
 
 ---
 
@@ -1419,7 +1435,7 @@ attribute_remapper: LogsCustomPipelineProcessorAttributeRemapper
 
 attribute_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#attribute_remapper LogsCustomPipeline#attribute_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#attribute_remapper LogsCustomPipeline#attribute_remapper}
 
 ---
 
@@ -1433,7 +1449,7 @@ category_processor: LogsCustomPipelineProcessorCategoryProcessor
 
 category_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#category_processor LogsCustomPipeline#category_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#category_processor LogsCustomPipeline#category_processor}
 
 ---
 
@@ -1447,7 +1463,7 @@ date_remapper: LogsCustomPipelineProcessorDateRemapper
 
 date_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#date_remapper LogsCustomPipeline#date_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#date_remapper LogsCustomPipeline#date_remapper}
 
 ---
 
@@ -1461,7 +1477,7 @@ decoder_processor: LogsCustomPipelineProcessorDecoderProcessor
 
 decoder_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#decoder_processor LogsCustomPipeline#decoder_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#decoder_processor LogsCustomPipeline#decoder_processor}
 
 ---
 
@@ -1475,7 +1491,7 @@ geo_ip_parser: LogsCustomPipelineProcessorGeoIpParser
 
 geo_ip_parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#geo_ip_parser LogsCustomPipeline#geo_ip_parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#geo_ip_parser LogsCustomPipeline#geo_ip_parser}
 
 ---
 
@@ -1489,7 +1505,7 @@ grok_parser: LogsCustomPipelineProcessorGrokParser
 
 grok_parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#grok_parser LogsCustomPipeline#grok_parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#grok_parser LogsCustomPipeline#grok_parser}
 
 ---
 
@@ -1503,7 +1519,7 @@ lookup_processor: LogsCustomPipelineProcessorLookupProcessor
 
 lookup_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#lookup_processor LogsCustomPipeline#lookup_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#lookup_processor LogsCustomPipeline#lookup_processor}
 
 ---
 
@@ -1517,7 +1533,7 @@ message_remapper: LogsCustomPipelineProcessorMessageRemapper
 
 message_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#message_remapper LogsCustomPipeline#message_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#message_remapper LogsCustomPipeline#message_remapper}
 
 ---
 
@@ -1531,7 +1547,7 @@ pipeline: LogsCustomPipelineProcessorPipeline
 
 pipeline block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#pipeline LogsCustomPipeline#pipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#pipeline LogsCustomPipeline#pipeline}
 
 ---
 
@@ -1545,7 +1561,7 @@ reference_table_lookup_processor: LogsCustomPipelineProcessorReferenceTableLooku
 
 reference_table_lookup_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#reference_table_lookup_processor LogsCustomPipeline#reference_table_lookup_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#reference_table_lookup_processor LogsCustomPipeline#reference_table_lookup_processor}
 
 ---
 
@@ -1559,7 +1575,7 @@ schema_processor: LogsCustomPipelineProcessorSchemaProcessor
 
 schema_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema_processor LogsCustomPipeline#schema_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#schema_processor LogsCustomPipeline#schema_processor}
 
 ---
 
@@ -1573,7 +1589,7 @@ service_remapper: LogsCustomPipelineProcessorServiceRemapper
 
 service_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#service_remapper LogsCustomPipeline#service_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#service_remapper LogsCustomPipeline#service_remapper}
 
 ---
 
@@ -1587,7 +1603,7 @@ span_id_remapper: LogsCustomPipelineProcessorSpanIdRemapper
 
 span_id_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#span_id_remapper LogsCustomPipeline#span_id_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#span_id_remapper LogsCustomPipeline#span_id_remapper}
 
 ---
 
@@ -1601,7 +1617,7 @@ status_remapper: LogsCustomPipelineProcessorStatusRemapper
 
 status_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#status_remapper LogsCustomPipeline#status_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#status_remapper LogsCustomPipeline#status_remapper}
 
 ---
 
@@ -1615,7 +1631,7 @@ string_builder_processor: LogsCustomPipelineProcessorStringBuilderProcessor
 
 string_builder_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#string_builder_processor LogsCustomPipeline#string_builder_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#string_builder_processor LogsCustomPipeline#string_builder_processor}
 
 ---
 
@@ -1629,7 +1645,7 @@ trace_id_remapper: LogsCustomPipelineProcessorTraceIdRemapper
 
 trace_id_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#trace_id_remapper LogsCustomPipeline#trace_id_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#trace_id_remapper LogsCustomPipeline#trace_id_remapper}
 
 ---
 
@@ -1643,7 +1659,7 @@ url_parser: LogsCustomPipelineProcessorUrlParser
 
 url_parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#url_parser LogsCustomPipeline#url_parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#url_parser LogsCustomPipeline#url_parser}
 
 ---
 
@@ -1657,7 +1673,7 @@ user_agent_parser: LogsCustomPipelineProcessorUserAgentParser
 
 user_agent_parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#user_agent_parser LogsCustomPipeline#user_agent_parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#user_agent_parser LogsCustomPipeline#user_agent_parser}
 
 ---
 
@@ -1699,7 +1715,7 @@ expression: str
 
 Arithmetic operation between one or more log attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
 
 ---
 
@@ -1713,7 +1729,7 @@ target: str
 
 Name of the attribute that contains the result of the arithmetic operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -1727,7 +1743,7 @@ is_enabled: bool | IResolvable
 
 Boolean value to enable your pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -1741,7 +1757,7 @@ is_replace_missing: bool | IResolvable
 
 If true, it replaces all missing attributes of expression by 0, false skips the operation if an attribute is missing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
 
 ---
 
@@ -1755,7 +1771,631 @@ name: str
 
 Your pipeline name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+### LogsCustomPipelineProcessorArrayMapProcessor <a name="LogsCustomPipelineProcessorArrayMapProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor(
+  processors: IResolvable | typing.List[LogsCustomPipelineProcessorArrayMapProcessorProcessors],
+  source: str,
+  target: str,
+  is_enabled: bool | IResolvable = None,
+  name: str = None,
+  preserve_source: bool | IResolvable = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor.property.processors">processors</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorArrayMapProcessorProcessors</a>]</code> | processors block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor.property.source">source</a></code> | <code>str</code> | Attribute path of the source array. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor.property.target">target</a></code> | <code>str</code> | Attribute path of the output array. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor.property.isEnabled">is_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | If the processor is enabled. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor.property.name">name</a></code> | <code>str</code> | Name of the processor. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor.property.preserveSource">preserve_source</a></code> | <code>bool \| cdktn.IResolvable</code> | Remove or preserve the source array after processing. Defaults to `true`. |
+
+---
+
+##### `processors`<sup>Required</sup> <a name="processors" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor.property.processors"></a>
+
+```python
+processors: IResolvable | typing.List[LogsCustomPipelineProcessorArrayMapProcessorProcessors]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorArrayMapProcessorProcessors</a>]
+
+processors block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#processors LogsCustomPipeline#processors}
+
+---
+
+##### `source`<sup>Required</sup> <a name="source" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor.property.source"></a>
+
+```python
+source: str
+```
+
+- *Type:* str
+
+Attribute path of the source array.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor.property.target"></a>
+
+```python
+target: str
+```
+
+- *Type:* str
+
+Attribute path of the output array.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+##### `is_enabled`<sup>Optional</sup> <a name="is_enabled" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor.property.isEnabled"></a>
+
+```python
+is_enabled: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+If the processor is enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+Name of the processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+##### `preserve_source`<sup>Optional</sup> <a name="preserve_source" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor.property.preserveSource"></a>
+
+```python
+preserve_source: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Remove or preserve the source array after processing. Defaults to `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+
+---
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessors <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessors" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors(
+  arithmetic_processor: LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor = None,
+  attribute_remapper: LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper = None,
+  category_processor: LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor = None,
+  string_builder_processor: LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors.property.arithmeticProcessor">arithmetic_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor</a></code> | arithmetic_processor block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors.property.attributeRemapper">attribute_remapper</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper">LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper</a></code> | attribute_remapper block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors.property.categoryProcessor">category_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor</a></code> | category_processor block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors.property.stringBuilderProcessor">string_builder_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor</a></code> | string_builder_processor block. |
+
+---
+
+##### `arithmetic_processor`<sup>Optional</sup> <a name="arithmetic_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors.property.arithmeticProcessor"></a>
+
+```python
+arithmetic_processor: LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor</a>
+
+arithmetic_processor block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#arithmetic_processor LogsCustomPipeline#arithmetic_processor}
+
+---
+
+##### `attribute_remapper`<sup>Optional</sup> <a name="attribute_remapper" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors.property.attributeRemapper"></a>
+
+```python
+attribute_remapper: LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper">LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper</a>
+
+attribute_remapper block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#attribute_remapper LogsCustomPipeline#attribute_remapper}
+
+---
+
+##### `category_processor`<sup>Optional</sup> <a name="category_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors.property.categoryProcessor"></a>
+
+```python
+category_processor: LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor</a>
+
+category_processor block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#category_processor LogsCustomPipeline#category_processor}
+
+---
+
+##### `string_builder_processor`<sup>Optional</sup> <a name="string_builder_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors.property.stringBuilderProcessor"></a>
+
+```python
+string_builder_processor: LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor</a>
+
+string_builder_processor block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#string_builder_processor LogsCustomPipeline#string_builder_processor}
+
+---
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor(
+  expression: str,
+  target: str,
+  is_replace_missing: bool | IResolvable = None,
+  name: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.expression">expression</a></code> | <code>str</code> | Arithmetic formula. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.target">target</a></code> | <code>str</code> | Target attribute path for the result. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.isReplaceMissing">is_replace_missing</a></code> | <code>bool \| cdktn.IResolvable</code> | Replace missing attributes with `0`. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.name">name</a></code> | <code>str</code> | Name of the sub-processor. |
+
+---
+
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.expression"></a>
+
+```python
+expression: str
+```
+
+- *Type:* str
+
+Arithmetic formula.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.target"></a>
+
+```python
+target: str
+```
+
+- *Type:* str
+
+Target attribute path for the result.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+##### `is_replace_missing`<sup>Optional</sup> <a name="is_replace_missing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.isReplaceMissing"></a>
+
+```python
+is_replace_missing: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Replace missing attributes with `0`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+Name of the sub-processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper(
+  sources: typing.List[str],
+  target: str,
+  name: str = None,
+  override_on_conflict: bool | IResolvable = None,
+  preserve_source: bool | IResolvable = None,
+  target_format: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.sources">sources</a></code> | <code>typing.List[str]</code> | List of source attributes. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.target">target</a></code> | <code>str</code> | Target attribute path. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.name">name</a></code> | <code>str</code> | Name of the sub-processor. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.overrideOnConflict">override_on_conflict</a></code> | <code>bool \| cdktn.IResolvable</code> | Override the target element if already set. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.preserveSource">preserve_source</a></code> | <code>bool \| cdktn.IResolvable</code> | Remove or preserve the remapped source element. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.targetFormat">target_format</a></code> | <code>str</code> | If the target type is an attribute, cast the value to a new type (auto, string, integer, double). |
+
+---
+
+##### `sources`<sup>Required</sup> <a name="sources" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.sources"></a>
+
+```python
+sources: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+List of source attributes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.target"></a>
+
+```python
+target: str
+```
+
+- *Type:* str
+
+Target attribute path.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+Name of the sub-processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+##### `override_on_conflict`<sup>Optional</sup> <a name="override_on_conflict" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.overrideOnConflict"></a>
+
+```python
+override_on_conflict: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Override the target element if already set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
+
+---
+
+##### `preserve_source`<sup>Optional</sup> <a name="preserve_source" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.preserveSource"></a>
+
+```python
+preserve_source: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Remove or preserve the remapped source element. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+
+---
+
+##### `target_format`<sup>Optional</sup> <a name="target_format" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.targetFormat"></a>
+
+```python
+target_format: str
+```
+
+- *Type:* str
+
+If the target type is an attribute, cast the value to a new type (auto, string, integer, double).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
+
+---
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor(
+  category: IResolvable | typing.List[LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory],
+  target: str,
+  name: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.property.category">category</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>]</code> | category block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.property.target">target</a></code> | <code>str</code> | Target attribute path for the category value. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.property.name">name</a></code> | <code>str</code> | Name of the sub-processor. |
+
+---
+
+##### `category`<sup>Required</sup> <a name="category" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.property.category"></a>
+
+```python
+category: IResolvable | typing.List[LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>]
+
+category block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.property.target"></a>
+
+```python
+target: str
+```
+
+- *Type:* str
+
+Target attribute path for the category value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+Name of the sub-processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory(
+  filter: LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter,
+  name: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter</a></code> | filter block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory.property.name">name</a></code> | <code>str</code> | Name of the category. |
+
+---
+
+##### `filter`<sup>Required</sup> <a name="filter" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory.property.filter"></a>
+
+```python
+filter: LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter</a>
+
+filter block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+Name of the category.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter(
+  query: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter.property.query">query</a></code> | <code>str</code> | Filter criteria of the category. |
+
+---
+
+##### `query`<sup>Required</sup> <a name="query" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter.property.query"></a>
+
+```python
+query: str
+```
+
+- *Type:* str
+
+Filter criteria of the category.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+
+---
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor(
+  target: str,
+  template: str,
+  is_replace_missing: bool | IResolvable = None,
+  name: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.target">target</a></code> | <code>str</code> | Target attribute path for the result. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.template">template</a></code> | <code>str</code> | Formula with one or more attributes and raw text. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.isReplaceMissing">is_replace_missing</a></code> | <code>bool \| cdktn.IResolvable</code> | Replace missing attributes with an empty string. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.name">name</a></code> | <code>str</code> | Name of the sub-processor. |
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.target"></a>
+
+```python
+target: str
+```
+
+- *Type:* str
+
+Target attribute path for the result.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+##### `template`<sup>Required</sup> <a name="template" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.template"></a>
+
+```python
+template: str
+```
+
+- *Type:* str
+
+Formula with one or more attributes and raw text.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
+
+---
+
+##### `is_replace_missing`<sup>Optional</sup> <a name="is_replace_missing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.isReplaceMissing"></a>
+
+```python
+is_replace_missing: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Replace missing attributes with an empty string.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+Name of the sub-processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -1793,7 +2433,7 @@ operation: LogsCustomPipelineProcessorArrayProcessorOperation
 
 operation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#operation LogsCustomPipeline#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#operation LogsCustomPipeline#operation}
 
 ---
 
@@ -1807,7 +2447,7 @@ is_enabled: bool | IResolvable
 
 Boolean value to enable your processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -1821,7 +2461,7 @@ name: str
 
 Your processor name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -1859,7 +2499,7 @@ append: LogsCustomPipelineProcessorArrayProcessorOperationAppend
 
 append block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#append LogsCustomPipeline#append}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#append LogsCustomPipeline#append}
 
 ---
 
@@ -1873,7 +2513,7 @@ length: LogsCustomPipelineProcessorArrayProcessorOperationLength
 
 length block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#length LogsCustomPipeline#length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#length LogsCustomPipeline#length}
 
 ---
 
@@ -1887,7 +2527,7 @@ select: LogsCustomPipelineProcessorArrayProcessorOperationSelect
 
 select block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#select LogsCustomPipeline#select}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#select LogsCustomPipeline#select}
 
 ---
 
@@ -1925,7 +2565,7 @@ source: str
 
 Attribute path containing the value to append.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -1939,7 +2579,7 @@ target: str
 
 Attribute path of the array to append to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -1953,7 +2593,7 @@ preserve_source: bool | IResolvable
 
 Remove or preserve the remapped source element. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
 
 ---
 
@@ -1989,7 +2629,7 @@ source: str
 
 Attribute path of the array to compute the length of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -2003,7 +2643,7 @@ target: str
 
 Attribute that receives the computed length.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -2043,7 +2683,7 @@ filter: str
 
 Filter expression (e.g. key1:value1 OR key2:value2) used to find the matching element.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 
 ---
 
@@ -2057,7 +2697,7 @@ source: str
 
 Attribute path of the array to search into.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -2071,7 +2711,7 @@ target: str
 
 Attribute that receives the extracted value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -2085,7 +2725,7 @@ value_to_extract: str
 
 Attribute key from the matching object that should be extracted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#value_to_extract LogsCustomPipeline#value_to_extract}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#value_to_extract LogsCustomPipeline#value_to_extract}
 
 ---
 
@@ -2135,7 +2775,7 @@ sources: typing.List[str]
 
 List of source attributes or tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -2149,7 +2789,7 @@ source_type: str
 
 Defines where the sources are from (log `attribute` or `tag`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source_type LogsCustomPipeline#source_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source_type LogsCustomPipeline#source_type}
 
 ---
 
@@ -2163,7 +2803,7 @@ target: str
 
 Final attribute or tag name to remap the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -2177,7 +2817,7 @@ target_type: str
 
 Defines if the target is a log `attribute` or `tag`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target_type LogsCustomPipeline#target_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target_type LogsCustomPipeline#target_type}
 
 ---
 
@@ -2191,7 +2831,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -2205,7 +2845,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -2219,7 +2859,7 @@ override_on_conflict: bool | IResolvable
 
 Override the target element if already set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
 
 ---
 
@@ -2233,7 +2873,7 @@ preserve_source: bool | IResolvable
 
 Remove or preserve the remapped source element.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
 
 ---
 
@@ -2249,7 +2889,7 @@ If the `target_type` of the remapper is `attribute`, try to cast the value to a 
 
 If the cast is not possible, the original type is kept. `string`, `integer`, or `double` are the possible types. If the `target_type` is `tag`, this parameter may not be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
 
 ---
 
@@ -2289,7 +2929,7 @@ category: IResolvable | typing.List[LogsCustomPipelineProcessorCategoryProcessor
 
 category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
 
 ---
 
@@ -2303,7 +2943,7 @@ target: str
 
 Name of the target attribute whose value is defined by the matching category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -2317,7 +2957,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -2331,7 +2971,7 @@ name: str
 
 Name of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -2353,7 +2993,7 @@ logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategory(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategory.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorCategoryProcessorCategoryFilter</a></code> | filter block. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategory.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategory.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
 
 ---
 
@@ -2367,7 +3007,7 @@ filter: LogsCustomPipelineProcessorCategoryProcessorCategoryFilter
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 
 ---
 
@@ -2379,7 +3019,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
 
 ---
 
@@ -2413,7 +3053,7 @@ query: str
 
 Filter criteria of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
 
 ---
 
@@ -2451,7 +3091,7 @@ sources: typing.List[str]
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -2465,7 +3105,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -2479,7 +3119,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -2523,7 +3163,7 @@ binary_to_text_encoding: str
 
 Encoding type: base64 or base16.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#binary_to_text_encoding LogsCustomPipeline#binary_to_text_encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#binary_to_text_encoding LogsCustomPipeline#binary_to_text_encoding}
 
 ---
 
@@ -2537,7 +3177,7 @@ input_representation: str
 
 Input representation: utf-8 or integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#input_representation LogsCustomPipeline#input_representation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#input_representation LogsCustomPipeline#input_representation}
 
 ---
 
@@ -2551,7 +3191,7 @@ source: str
 
 Encoded message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -2565,7 +3205,7 @@ target: str
 
 Decoded message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -2579,7 +3219,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -2593,7 +3233,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -2633,7 +3273,7 @@ sources: typing.List[str]
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -2647,7 +3287,7 @@ target: str
 
 Name of the parent attribute that contains all the extracted details from the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -2661,7 +3301,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -2675,7 +3315,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -2717,7 +3357,7 @@ grok: LogsCustomPipelineProcessorGrokParserGrok
 
 grok block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#grok LogsCustomPipeline#grok}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#grok LogsCustomPipeline#grok}
 
 ---
 
@@ -2731,7 +3371,7 @@ source: str
 
 Name of the log attribute to parse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -2745,7 +3385,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -2759,7 +3399,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -2775,7 +3415,7 @@ List of sample logs for this parser.
 
 It can save up to 5 samples. Each sample takes up to 5000 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#samples LogsCustomPipeline#samples}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#samples LogsCustomPipeline#samples}
 
 ---
 
@@ -2811,7 +3451,7 @@ match_rules: str
 
 Match rules for your grok parser.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#match_rules LogsCustomPipeline#match_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#match_rules LogsCustomPipeline#match_rules}
 
 ---
 
@@ -2825,7 +3465,7 @@ support_rules: str
 
 Support rules for your grok parser.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#support_rules LogsCustomPipeline#support_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#support_rules LogsCustomPipeline#support_rules}
 
 ---
 
@@ -2869,7 +3509,7 @@ lookup_table: typing.List[str]
 
 List of entries of the lookup table using `key,value` format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#lookup_table LogsCustomPipeline#lookup_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#lookup_table LogsCustomPipeline#lookup_table}
 
 ---
 
@@ -2883,7 +3523,7 @@ source: str
 
 Name of the source attribute used to do the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -2897,7 +3537,7 @@ target: str
 
 Name of the attribute that contains the result of the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -2911,7 +3551,7 @@ default_lookup: str
 
 Default lookup value to use if there is no entry in the lookup table for the value of the source attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#default_lookup LogsCustomPipeline#default_lookup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#default_lookup LogsCustomPipeline#default_lookup}
 
 ---
 
@@ -2925,7 +3565,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -2939,7 +3579,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -2977,7 +3617,7 @@ sources: typing.List[str]
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -2991,7 +3631,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -3005,7 +3645,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -3031,11 +3671,11 @@ logsCustomPipeline.LogsCustomPipelineProcessorPipeline(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.property.filter">filter</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineFilter">LogsCustomPipelineProcessorPipelineFilter</a>]</code> | filter block. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.property.isEnabled">is_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.property.isEnabled">is_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.property.processor">processor</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor">LogsCustomPipelineProcessorPipelineProcessor</a>]</code> | processor block. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.property.tags">tags</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.property.tags">tags</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}. |
 
 ---
 
@@ -3049,7 +3689,7 @@ filter: IResolvable | typing.List[LogsCustomPipelineProcessorPipelineFilter]
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 
 ---
 
@@ -3061,7 +3701,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
 
 ---
 
@@ -3073,7 +3713,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}.
 
 ---
 
@@ -3085,7 +3725,7 @@ is_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}.
 
 ---
 
@@ -3099,7 +3739,7 @@ processor: IResolvable | typing.List[LogsCustomPipelineProcessorPipelineProcesso
 
 processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
 
 ---
 
@@ -3111,7 +3751,7 @@ tags: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}.
 
 ---
 
@@ -3145,7 +3785,7 @@ query: str
 
 Filter criteria of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
 
 ---
 
@@ -3158,6 +3798,7 @@ from cdktn_provider_datadog import logs_custom_pipeline
 
 logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor(
   arithmetic_processor: LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor = None,
+  array_map_processor: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor = None,
   array_processor: LogsCustomPipelineProcessorPipelineProcessorArrayProcessor = None,
   attribute_remapper: LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper = None,
   category_processor: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor = None,
@@ -3184,6 +3825,7 @@ logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor.property.arithmeticProcessor">arithmetic_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor">LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor</a></code> | arithmetic_processor block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor.property.arrayMapProcessor">array_map_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor</a></code> | array_map_processor block. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor.property.arrayProcessor">array_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayProcessor</a></code> | array_processor block. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor.property.attributeRemapper">attribute_remapper</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper">LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper</a></code> | attribute_remapper block. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor.property.categoryProcessor">category_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor">LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor</a></code> | category_processor block. |
@@ -3215,7 +3857,21 @@ arithmetic_processor: LogsCustomPipelineProcessorPipelineProcessorArithmeticProc
 
 arithmetic_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#arithmetic_processor LogsCustomPipeline#arithmetic_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#arithmetic_processor LogsCustomPipeline#arithmetic_processor}
+
+---
+
+##### `array_map_processor`<sup>Optional</sup> <a name="array_map_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor.property.arrayMapProcessor"></a>
+
+```python
+array_map_processor: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor</a>
+
+array_map_processor block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#array_map_processor LogsCustomPipeline#array_map_processor}
 
 ---
 
@@ -3229,7 +3885,7 @@ array_processor: LogsCustomPipelineProcessorPipelineProcessorArrayProcessor
 
 array_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#array_processor LogsCustomPipeline#array_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#array_processor LogsCustomPipeline#array_processor}
 
 ---
 
@@ -3243,7 +3899,7 @@ attribute_remapper: LogsCustomPipelineProcessorPipelineProcessorAttributeRemappe
 
 attribute_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#attribute_remapper LogsCustomPipeline#attribute_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#attribute_remapper LogsCustomPipeline#attribute_remapper}
 
 ---
 
@@ -3257,7 +3913,7 @@ category_processor: LogsCustomPipelineProcessorPipelineProcessorCategoryProcesso
 
 category_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#category_processor LogsCustomPipeline#category_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#category_processor LogsCustomPipeline#category_processor}
 
 ---
 
@@ -3271,7 +3927,7 @@ date_remapper: LogsCustomPipelineProcessorPipelineProcessorDateRemapper
 
 date_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#date_remapper LogsCustomPipeline#date_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#date_remapper LogsCustomPipeline#date_remapper}
 
 ---
 
@@ -3285,7 +3941,7 @@ decoder_processor: LogsCustomPipelineProcessorPipelineProcessorDecoderProcessor
 
 decoder_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#decoder_processor LogsCustomPipeline#decoder_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#decoder_processor LogsCustomPipeline#decoder_processor}
 
 ---
 
@@ -3299,7 +3955,7 @@ geo_ip_parser: LogsCustomPipelineProcessorPipelineProcessorGeoIpParser
 
 geo_ip_parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#geo_ip_parser LogsCustomPipeline#geo_ip_parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#geo_ip_parser LogsCustomPipeline#geo_ip_parser}
 
 ---
 
@@ -3313,7 +3969,7 @@ grok_parser: LogsCustomPipelineProcessorPipelineProcessorGrokParser
 
 grok_parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#grok_parser LogsCustomPipeline#grok_parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#grok_parser LogsCustomPipeline#grok_parser}
 
 ---
 
@@ -3327,7 +3983,7 @@ lookup_processor: LogsCustomPipelineProcessorPipelineProcessorLookupProcessor
 
 lookup_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#lookup_processor LogsCustomPipeline#lookup_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#lookup_processor LogsCustomPipeline#lookup_processor}
 
 ---
 
@@ -3341,7 +3997,7 @@ message_remapper: LogsCustomPipelineProcessorPipelineProcessorMessageRemapper
 
 message_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#message_remapper LogsCustomPipeline#message_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#message_remapper LogsCustomPipeline#message_remapper}
 
 ---
 
@@ -3355,7 +4011,7 @@ reference_table_lookup_processor: LogsCustomPipelineProcessorPipelineProcessorRe
 
 reference_table_lookup_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#reference_table_lookup_processor LogsCustomPipeline#reference_table_lookup_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#reference_table_lookup_processor LogsCustomPipeline#reference_table_lookup_processor}
 
 ---
 
@@ -3369,7 +4025,7 @@ schema_processor: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessor
 
 schema_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema_processor LogsCustomPipeline#schema_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#schema_processor LogsCustomPipeline#schema_processor}
 
 ---
 
@@ -3383,7 +4039,7 @@ service_remapper: LogsCustomPipelineProcessorPipelineProcessorServiceRemapper
 
 service_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#service_remapper LogsCustomPipeline#service_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#service_remapper LogsCustomPipeline#service_remapper}
 
 ---
 
@@ -3397,7 +4053,7 @@ span_id_remapper: LogsCustomPipelineProcessorPipelineProcessorSpanIdRemapper
 
 span_id_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#span_id_remapper LogsCustomPipeline#span_id_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#span_id_remapper LogsCustomPipeline#span_id_remapper}
 
 ---
 
@@ -3411,7 +4067,7 @@ status_remapper: LogsCustomPipelineProcessorPipelineProcessorStatusRemapper
 
 status_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#status_remapper LogsCustomPipeline#status_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#status_remapper LogsCustomPipeline#status_remapper}
 
 ---
 
@@ -3425,7 +4081,7 @@ string_builder_processor: LogsCustomPipelineProcessorPipelineProcessorStringBuil
 
 string_builder_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#string_builder_processor LogsCustomPipeline#string_builder_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#string_builder_processor LogsCustomPipeline#string_builder_processor}
 
 ---
 
@@ -3439,7 +4095,7 @@ trace_id_remapper: LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper
 
 trace_id_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#trace_id_remapper LogsCustomPipeline#trace_id_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#trace_id_remapper LogsCustomPipeline#trace_id_remapper}
 
 ---
 
@@ -3453,7 +4109,7 @@ url_parser: LogsCustomPipelineProcessorPipelineProcessorUrlParser
 
 url_parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#url_parser LogsCustomPipeline#url_parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#url_parser LogsCustomPipeline#url_parser}
 
 ---
 
@@ -3467,7 +4123,7 @@ user_agent_parser: LogsCustomPipelineProcessorPipelineProcessorUserAgentParser
 
 user_agent_parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#user_agent_parser LogsCustomPipeline#user_agent_parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#user_agent_parser LogsCustomPipeline#user_agent_parser}
 
 ---
 
@@ -3509,7 +4165,7 @@ expression: str
 
 Arithmetic operation between one or more log attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
 
 ---
 
@@ -3523,7 +4179,7 @@ target: str
 
 Name of the attribute that contains the result of the arithmetic operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -3537,7 +4193,7 @@ is_enabled: bool | IResolvable
 
 Boolean value to enable your pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -3551,7 +4207,7 @@ is_replace_missing: bool | IResolvable
 
 If true, it replaces all missing attributes of expression by 0, false skips the operation if an attribute is missing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
 
 ---
 
@@ -3565,7 +4221,631 @@ name: str
 
 Your pipeline name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor(
+  processors: IResolvable | typing.List[LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors],
+  source: str,
+  target: str,
+  is_enabled: bool | IResolvable = None,
+  name: str = None,
+  preserve_source: bool | IResolvable = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.property.processors">processors</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors</a>]</code> | processors block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.property.source">source</a></code> | <code>str</code> | Attribute path of the source array. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.property.target">target</a></code> | <code>str</code> | Attribute path of the output array. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.property.isEnabled">is_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | If the processor is enabled. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.property.name">name</a></code> | <code>str</code> | Name of the processor. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.property.preserveSource">preserve_source</a></code> | <code>bool \| cdktn.IResolvable</code> | Remove or preserve the source array after processing. Defaults to `true`. |
+
+---
+
+##### `processors`<sup>Required</sup> <a name="processors" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.property.processors"></a>
+
+```python
+processors: IResolvable | typing.List[LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors</a>]
+
+processors block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#processors LogsCustomPipeline#processors}
+
+---
+
+##### `source`<sup>Required</sup> <a name="source" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.property.source"></a>
+
+```python
+source: str
+```
+
+- *Type:* str
+
+Attribute path of the source array.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.property.target"></a>
+
+```python
+target: str
+```
+
+- *Type:* str
+
+Attribute path of the output array.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+##### `is_enabled`<sup>Optional</sup> <a name="is_enabled" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.property.isEnabled"></a>
+
+```python
+is_enabled: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+If the processor is enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+Name of the processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+##### `preserve_source`<sup>Optional</sup> <a name="preserve_source" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor.property.preserveSource"></a>
+
+```python
+preserve_source: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Remove or preserve the source array after processing. Defaults to `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+
+---
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors(
+  arithmetic_processor: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor = None,
+  attribute_remapper: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper = None,
+  category_processor: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor = None,
+  string_builder_processor: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors.property.arithmeticProcessor">arithmetic_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor</a></code> | arithmetic_processor block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors.property.attributeRemapper">attribute_remapper</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper</a></code> | attribute_remapper block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors.property.categoryProcessor">category_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor</a></code> | category_processor block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors.property.stringBuilderProcessor">string_builder_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor</a></code> | string_builder_processor block. |
+
+---
+
+##### `arithmetic_processor`<sup>Optional</sup> <a name="arithmetic_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors.property.arithmeticProcessor"></a>
+
+```python
+arithmetic_processor: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor</a>
+
+arithmetic_processor block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#arithmetic_processor LogsCustomPipeline#arithmetic_processor}
+
+---
+
+##### `attribute_remapper`<sup>Optional</sup> <a name="attribute_remapper" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors.property.attributeRemapper"></a>
+
+```python
+attribute_remapper: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper</a>
+
+attribute_remapper block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#attribute_remapper LogsCustomPipeline#attribute_remapper}
+
+---
+
+##### `category_processor`<sup>Optional</sup> <a name="category_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors.property.categoryProcessor"></a>
+
+```python
+category_processor: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor</a>
+
+category_processor block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#category_processor LogsCustomPipeline#category_processor}
+
+---
+
+##### `string_builder_processor`<sup>Optional</sup> <a name="string_builder_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors.property.stringBuilderProcessor"></a>
+
+```python
+string_builder_processor: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor</a>
+
+string_builder_processor block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#string_builder_processor LogsCustomPipeline#string_builder_processor}
+
+---
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor(
+  expression: str,
+  target: str,
+  is_replace_missing: bool | IResolvable = None,
+  name: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.expression">expression</a></code> | <code>str</code> | Arithmetic formula. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.target">target</a></code> | <code>str</code> | Target attribute path for the result. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.isReplaceMissing">is_replace_missing</a></code> | <code>bool \| cdktn.IResolvable</code> | Replace missing attributes with `0`. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.name">name</a></code> | <code>str</code> | Name of the sub-processor. |
+
+---
+
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.expression"></a>
+
+```python
+expression: str
+```
+
+- *Type:* str
+
+Arithmetic formula.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.target"></a>
+
+```python
+target: str
+```
+
+- *Type:* str
+
+Target attribute path for the result.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+##### `is_replace_missing`<sup>Optional</sup> <a name="is_replace_missing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.isReplaceMissing"></a>
+
+```python
+is_replace_missing: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Replace missing attributes with `0`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+Name of the sub-processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper(
+  sources: typing.List[str],
+  target: str,
+  name: str = None,
+  override_on_conflict: bool | IResolvable = None,
+  preserve_source: bool | IResolvable = None,
+  target_format: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.sources">sources</a></code> | <code>typing.List[str]</code> | List of source attributes. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.target">target</a></code> | <code>str</code> | Target attribute path. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.name">name</a></code> | <code>str</code> | Name of the sub-processor. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.overrideOnConflict">override_on_conflict</a></code> | <code>bool \| cdktn.IResolvable</code> | Override the target element if already set. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.preserveSource">preserve_source</a></code> | <code>bool \| cdktn.IResolvable</code> | Remove or preserve the remapped source element. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.targetFormat">target_format</a></code> | <code>str</code> | If the target type is an attribute, cast the value to a new type (auto, string, integer, double). |
+
+---
+
+##### `sources`<sup>Required</sup> <a name="sources" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.sources"></a>
+
+```python
+sources: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+List of source attributes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.target"></a>
+
+```python
+target: str
+```
+
+- *Type:* str
+
+Target attribute path.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+Name of the sub-processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+##### `override_on_conflict`<sup>Optional</sup> <a name="override_on_conflict" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.overrideOnConflict"></a>
+
+```python
+override_on_conflict: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Override the target element if already set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
+
+---
+
+##### `preserve_source`<sup>Optional</sup> <a name="preserve_source" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.preserveSource"></a>
+
+```python
+preserve_source: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Remove or preserve the remapped source element. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+
+---
+
+##### `target_format`<sup>Optional</sup> <a name="target_format" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper.property.targetFormat"></a>
+
+```python
+target_format: str
+```
+
+- *Type:* str
+
+If the target type is an attribute, cast the value to a new type (auto, string, integer, double).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
+
+---
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor(
+  category: IResolvable | typing.List[LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory],
+  target: str,
+  name: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.property.category">category</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>]</code> | category block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.property.target">target</a></code> | <code>str</code> | Target attribute path for the category value. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.property.name">name</a></code> | <code>str</code> | Name of the sub-processor. |
+
+---
+
+##### `category`<sup>Required</sup> <a name="category" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.property.category"></a>
+
+```python
+category: IResolvable | typing.List[LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>]
+
+category block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.property.target"></a>
+
+```python
+target: str
+```
+
+- *Type:* str
+
+Target attribute path for the category value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+Name of the sub-processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory(
+  filter: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter,
+  name: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter</a></code> | filter block. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory.property.name">name</a></code> | <code>str</code> | Name of the category. |
+
+---
+
+##### `filter`<sup>Required</sup> <a name="filter" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory.property.filter"></a>
+
+```python
+filter: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter</a>
+
+filter block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+Name of the category.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter(
+  query: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter.property.query">query</a></code> | <code>str</code> | Filter criteria of the category. |
+
+---
+
+##### `query`<sup>Required</sup> <a name="query" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter.property.query"></a>
+
+```python
+query: str
+```
+
+- *Type:* str
+
+Filter criteria of the category.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+
+---
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor(
+  target: str,
+  template: str,
+  is_replace_missing: bool | IResolvable = None,
+  name: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.target">target</a></code> | <code>str</code> | Target attribute path for the result. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.template">template</a></code> | <code>str</code> | Formula with one or more attributes and raw text. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.isReplaceMissing">is_replace_missing</a></code> | <code>bool \| cdktn.IResolvable</code> | Replace missing attributes with an empty string. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.name">name</a></code> | <code>str</code> | Name of the sub-processor. |
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.target"></a>
+
+```python
+target: str
+```
+
+- *Type:* str
+
+Target attribute path for the result.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+##### `template`<sup>Required</sup> <a name="template" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.template"></a>
+
+```python
+template: str
+```
+
+- *Type:* str
+
+Formula with one or more attributes and raw text.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
+
+---
+
+##### `is_replace_missing`<sup>Optional</sup> <a name="is_replace_missing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.isReplaceMissing"></a>
+
+```python
+is_replace_missing: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Replace missing attributes with an empty string.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+Name of the sub-processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -3603,7 +4883,7 @@ operation: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperation
 
 operation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#operation LogsCustomPipeline#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#operation LogsCustomPipeline#operation}
 
 ---
 
@@ -3617,7 +4897,7 @@ is_enabled: bool | IResolvable
 
 Boolean value to enable your processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -3631,7 +4911,7 @@ name: str
 
 Your processor name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -3669,7 +4949,7 @@ append: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationAppen
 
 append block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#append LogsCustomPipeline#append}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#append LogsCustomPipeline#append}
 
 ---
 
@@ -3683,7 +4963,7 @@ length: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationLengt
 
 length block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#length LogsCustomPipeline#length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#length LogsCustomPipeline#length}
 
 ---
 
@@ -3697,7 +4977,7 @@ select: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationSelec
 
 select block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#select LogsCustomPipeline#select}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#select LogsCustomPipeline#select}
 
 ---
 
@@ -3735,7 +5015,7 @@ source: str
 
 Attribute path containing the value to append.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -3749,7 +5029,7 @@ target: str
 
 Attribute path of the array to append to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -3763,7 +5043,7 @@ preserve_source: bool | IResolvable
 
 Remove or preserve the remapped source element. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
 
 ---
 
@@ -3799,7 +5079,7 @@ source: str
 
 Attribute path of the array to compute the length of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -3813,7 +5093,7 @@ target: str
 
 Attribute that receives the computed length.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -3853,7 +5133,7 @@ filter: str
 
 Filter expression (e.g. key1:value1 OR key2:value2) used to find the matching element.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 
 ---
 
@@ -3867,7 +5147,7 @@ source: str
 
 Attribute path of the array to search into.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -3881,7 +5161,7 @@ target: str
 
 Attribute that receives the extracted value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -3895,7 +5175,7 @@ value_to_extract: str
 
 Attribute key from the matching object that should be extracted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#value_to_extract LogsCustomPipeline#value_to_extract}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#value_to_extract LogsCustomPipeline#value_to_extract}
 
 ---
 
@@ -3945,7 +5225,7 @@ sources: typing.List[str]
 
 List of source attributes or tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -3959,7 +5239,7 @@ source_type: str
 
 Defines where the sources are from (log `attribute` or `tag`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source_type LogsCustomPipeline#source_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source_type LogsCustomPipeline#source_type}
 
 ---
 
@@ -3973,7 +5253,7 @@ target: str
 
 Final attribute or tag name to remap the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -3987,7 +5267,7 @@ target_type: str
 
 Defines if the target is a log `attribute` or `tag`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target_type LogsCustomPipeline#target_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target_type LogsCustomPipeline#target_type}
 
 ---
 
@@ -4001,7 +5281,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -4015,7 +5295,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -4029,7 +5309,7 @@ override_on_conflict: bool | IResolvable
 
 Override the target element if already set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
 
 ---
 
@@ -4043,7 +5323,7 @@ preserve_source: bool | IResolvable
 
 Remove or preserve the remapped source element.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
 
 ---
 
@@ -4059,7 +5339,7 @@ If the `target_type` of the remapper is `attribute`, try to cast the value to a 
 
 If the cast is not possible, the original type is kept. `string`, `integer`, or `double` are the possible types. If the `target_type` is `tag`, this parameter may not be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
 
 ---
 
@@ -4099,7 +5379,7 @@ category: IResolvable | typing.List[LogsCustomPipelineProcessorPipelineProcessor
 
 category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
 
 ---
 
@@ -4113,7 +5393,7 @@ target: str
 
 Name of the target attribute whose value is defined by the matching category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -4127,7 +5407,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -4141,7 +5421,7 @@ name: str
 
 Name of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -4163,7 +5443,7 @@ logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter</a></code> | filter block. |
-| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}. |
 
 ---
 
@@ -4177,7 +5457,7 @@ filter: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFil
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 
 ---
 
@@ -4189,7 +5469,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
 
 ---
 
@@ -4223,7 +5503,7 @@ query: str
 
 Filter criteria of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
 
 ---
 
@@ -4261,7 +5541,7 @@ sources: typing.List[str]
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -4275,7 +5555,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -4289,7 +5569,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -4333,7 +5613,7 @@ binary_to_text_encoding: str
 
 Encoding type: base64 or base16.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#binary_to_text_encoding LogsCustomPipeline#binary_to_text_encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#binary_to_text_encoding LogsCustomPipeline#binary_to_text_encoding}
 
 ---
 
@@ -4347,7 +5627,7 @@ input_representation: str
 
 Input representation: utf-8 or integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#input_representation LogsCustomPipeline#input_representation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#input_representation LogsCustomPipeline#input_representation}
 
 ---
 
@@ -4361,7 +5641,7 @@ source: str
 
 Encoded message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -4375,7 +5655,7 @@ target: str
 
 Decoded message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -4389,7 +5669,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -4403,7 +5683,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -4443,7 +5723,7 @@ sources: typing.List[str]
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -4457,7 +5737,7 @@ target: str
 
 Name of the parent attribute that contains all the extracted details from the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -4471,7 +5751,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -4485,7 +5765,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -4527,7 +5807,7 @@ grok: LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok
 
 grok block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#grok LogsCustomPipeline#grok}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#grok LogsCustomPipeline#grok}
 
 ---
 
@@ -4541,7 +5821,7 @@ source: str
 
 Name of the log attribute to parse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -4555,7 +5835,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -4569,7 +5849,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -4585,7 +5865,7 @@ List of sample logs for this parser.
 
 It can save up to 5 samples. Each sample takes up to 5000 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#samples LogsCustomPipeline#samples}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#samples LogsCustomPipeline#samples}
 
 ---
 
@@ -4621,7 +5901,7 @@ match_rules: str
 
 Match rules for your grok parser.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#match_rules LogsCustomPipeline#match_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#match_rules LogsCustomPipeline#match_rules}
 
 ---
 
@@ -4635,7 +5915,7 @@ support_rules: str
 
 Support rules for your grok parser.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#support_rules LogsCustomPipeline#support_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#support_rules LogsCustomPipeline#support_rules}
 
 ---
 
@@ -4679,7 +5959,7 @@ lookup_table: typing.List[str]
 
 List of entries of the lookup table using `key,value` format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#lookup_table LogsCustomPipeline#lookup_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#lookup_table LogsCustomPipeline#lookup_table}
 
 ---
 
@@ -4693,7 +5973,7 @@ source: str
 
 Name of the source attribute used to do the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -4707,7 +5987,7 @@ target: str
 
 Name of the attribute that contains the result of the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -4721,7 +6001,7 @@ default_lookup: str
 
 Default lookup value to use if there is no entry in the lookup table for the value of the source attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#default_lookup LogsCustomPipeline#default_lookup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#default_lookup LogsCustomPipeline#default_lookup}
 
 ---
 
@@ -4735,7 +6015,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -4749,7 +6029,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -4787,7 +6067,7 @@ sources: typing.List[str]
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -4801,7 +6081,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -4815,7 +6095,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -4857,7 +6137,7 @@ lookup_enrichment_table: str
 
 Name of the Reference Table for the source attribute and their associated target attribute values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
 
 ---
 
@@ -4871,7 +6151,7 @@ source: str
 
 Name of the source attribute used to do the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -4885,7 +6165,7 @@ target: str
 
 Name of the attribute that contains the result of the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -4899,7 +6179,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -4913,7 +6193,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -4953,7 +6233,7 @@ mappers: IResolvable | typing.List[LogsCustomPipelineProcessorPipelineProcessorS
 
 mappers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#mappers LogsCustomPipeline#mappers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#mappers LogsCustomPipeline#mappers}
 
 ---
 
@@ -4967,7 +6247,7 @@ schema: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorSchema
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema LogsCustomPipeline#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#schema LogsCustomPipeline#schema}
 
 ---
 
@@ -4981,7 +6261,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -4995,7 +6275,7 @@ name: str
 
 The name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -5031,7 +6311,7 @@ schema_category_mapper: IResolvable | typing.List[LogsCustomPipelineProcessorPip
 
 schema_category_mapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema_category_mapper LogsCustomPipeline#schema_category_mapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#schema_category_mapper LogsCustomPipeline#schema_category_mapper}
 
 ---
 
@@ -5045,7 +6325,7 @@ schema_remapper: IResolvable | typing.List[LogsCustomPipelineProcessorPipelinePr
 
 schema_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema_remapper LogsCustomPipeline#schema_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#schema_remapper LogsCustomPipeline#schema_remapper}
 
 ---
 
@@ -5085,7 +6365,7 @@ categories: IResolvable | typing.List[LogsCustomPipelineProcessorPipelineProcess
 
 categories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#categories LogsCustomPipeline#categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#categories LogsCustomPipeline#categories}
 
 ---
 
@@ -5099,7 +6379,7 @@ name: str
 
 Name of the logs schema category mapper.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -5113,7 +6393,7 @@ targets: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchem
 
 targets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#targets LogsCustomPipeline#targets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#targets LogsCustomPipeline#targets}
 
 ---
 
@@ -5127,7 +6407,7 @@ fallback: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSche
 
 fallback block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#fallback LogsCustomPipeline#fallback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#fallback LogsCustomPipeline#fallback}
 
 ---
 
@@ -5165,7 +6445,7 @@ filter: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchema
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 
 ---
 
@@ -5179,7 +6459,7 @@ id: typing.Union[int, float]
 
 ID to inject into the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5196,7 +6476,7 @@ name: str
 
 Value to assign to target schema field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -5230,7 +6510,7 @@ query: str
 
 Filter criteria of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
 
 ---
 
@@ -5266,7 +6546,7 @@ sources: typing.Mapping[str]
 
 Fallback sources used to populate value of field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -5280,7 +6560,7 @@ values: typing.Mapping[str]
 
 Values that define when the fallback is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#values LogsCustomPipeline#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#values LogsCustomPipeline#values}
 
 ---
 
@@ -5316,7 +6596,7 @@ id: str
 
 ID of the field to map log attributes to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5333,7 +6613,7 @@ name: str
 
 Name of the field to map log attributes to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -5377,7 +6657,7 @@ name: str
 
 Name of the logs schema remapper.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -5391,7 +6671,7 @@ sources: typing.List[str]
 
 Array of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -5405,7 +6685,7 @@ target: str
 
 Target field to map log source field to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -5419,7 +6699,7 @@ override_on_conflict: bool | IResolvable
 
 Override or not the target element if already set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
 
 ---
 
@@ -5433,7 +6713,7 @@ preserve_source: bool | IResolvable
 
 Remove or preserve the remapped source element.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
 
 ---
 
@@ -5449,7 +6729,7 @@ If the `target_type` of the remapper is `attribute`, try to cast the value to a 
 
 If the cast is not possible, the original type is kept. `string`, `integer`, or `double` are the possible types. If the `target_type` is `tag`, this parameter may not be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
 
 ---
 
@@ -5493,7 +6773,7 @@ class_name: str
 
 Class name of the schema to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#class_name LogsCustomPipeline#class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#class_name LogsCustomPipeline#class_name}
 
 ---
 
@@ -5507,7 +6787,7 @@ class_uid: typing.Union[int, float]
 
 Class UID of the schema to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#class_uid LogsCustomPipeline#class_uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#class_uid LogsCustomPipeline#class_uid}
 
 ---
 
@@ -5521,7 +6801,7 @@ schema_type: str
 
 Type of schema to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema_type LogsCustomPipeline#schema_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#schema_type LogsCustomPipeline#schema_type}
 
 ---
 
@@ -5535,7 +6815,7 @@ version: str
 
 Version of the schema to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#version LogsCustomPipeline#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#version LogsCustomPipeline#version}
 
 ---
 
@@ -5549,7 +6829,7 @@ extensions: typing.List[str]
 
 Optional list of extensions to modify the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#extensions LogsCustomPipeline#extensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#extensions LogsCustomPipeline#extensions}
 
 ---
 
@@ -5563,7 +6843,7 @@ profiles: typing.List[str]
 
 Optional list of profiles to modify the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#profiles LogsCustomPipeline#profiles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#profiles LogsCustomPipeline#profiles}
 
 ---
 
@@ -5601,7 +6881,7 @@ sources: typing.List[str]
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -5615,7 +6895,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -5629,7 +6909,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -5667,7 +6947,7 @@ sources: typing.List[str]
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -5681,7 +6961,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -5695,7 +6975,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -5733,7 +7013,7 @@ sources: typing.List[str]
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -5747,7 +7027,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -5761,7 +7041,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -5803,7 +7083,7 @@ target: str
 
 The name of the attribute that contains the result of the template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -5817,7 +7097,7 @@ template: str
 
 The formula with one or more attributes and raw text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
 
 ---
 
@@ -5831,7 +7111,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -5845,7 +7125,7 @@ is_replace_missing: bool | IResolvable
 
 If it replaces all missing attributes of template by an empty string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
 
 ---
 
@@ -5859,7 +7139,7 @@ name: str
 
 The name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -5897,7 +7177,7 @@ sources: typing.List[str]
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -5911,7 +7191,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -5925,7 +7205,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -5967,7 +7247,7 @@ sources: typing.List[str]
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -5981,7 +7261,7 @@ target: str
 
 Name of the parent attribute that contains all the extracted details from the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -5995,7 +7275,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -6009,7 +7289,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -6023,7 +7303,7 @@ normalize_ending_slashes: bool | IResolvable
 
 Normalize the ending slashes or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#normalize_ending_slashes LogsCustomPipeline#normalize_ending_slashes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#normalize_ending_slashes LogsCustomPipeline#normalize_ending_slashes}
 
 ---
 
@@ -6065,7 +7345,7 @@ sources: typing.List[str]
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -6079,7 +7359,7 @@ target: str
 
 Name of the parent attribute that contains all the extracted details from the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -6093,7 +7373,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -6107,7 +7387,7 @@ is_encoded: bool | IResolvable
 
 If the source attribute is URL encoded or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_encoded LogsCustomPipeline#is_encoded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_encoded LogsCustomPipeline#is_encoded}
 
 ---
 
@@ -6121,7 +7401,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -6163,7 +7443,7 @@ lookup_enrichment_table: str
 
 Name of the Reference Table for the source attribute and their associated target attribute values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
 
 ---
 
@@ -6177,7 +7457,7 @@ source: str
 
 Name of the source attribute used to do the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -6191,7 +7471,7 @@ target: str
 
 Name of the attribute that contains the result of the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -6205,7 +7485,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -6219,7 +7499,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -6259,7 +7539,7 @@ mappers: IResolvable | typing.List[LogsCustomPipelineProcessorSchemaProcessorMap
 
 mappers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#mappers LogsCustomPipeline#mappers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#mappers LogsCustomPipeline#mappers}
 
 ---
 
@@ -6273,7 +7553,7 @@ schema: LogsCustomPipelineProcessorSchemaProcessorSchema
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema LogsCustomPipeline#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#schema LogsCustomPipeline#schema}
 
 ---
 
@@ -6287,7 +7567,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -6301,7 +7581,7 @@ name: str
 
 The name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -6337,7 +7617,7 @@ schema_category_mapper: IResolvable | typing.List[LogsCustomPipelineProcessorSch
 
 schema_category_mapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema_category_mapper LogsCustomPipeline#schema_category_mapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#schema_category_mapper LogsCustomPipeline#schema_category_mapper}
 
 ---
 
@@ -6351,7 +7631,7 @@ schema_remapper: IResolvable | typing.List[LogsCustomPipelineProcessorSchemaProc
 
 schema_remapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema_remapper LogsCustomPipeline#schema_remapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#schema_remapper LogsCustomPipeline#schema_remapper}
 
 ---
 
@@ -6391,7 +7671,7 @@ categories: IResolvable | typing.List[LogsCustomPipelineProcessorSchemaProcessor
 
 categories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#categories LogsCustomPipeline#categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#categories LogsCustomPipeline#categories}
 
 ---
 
@@ -6405,7 +7685,7 @@ name: str
 
 Name of the logs schema category mapper.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -6419,7 +7699,7 @@ targets: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTa
 
 targets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#targets LogsCustomPipeline#targets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#targets LogsCustomPipeline#targets}
 
 ---
 
@@ -6433,7 +7713,7 @@ fallback: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperF
 
 fallback block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#fallback LogsCustomPipeline#fallback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#fallback LogsCustomPipeline#fallback}
 
 ---
 
@@ -6471,7 +7751,7 @@ filter: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCat
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 
 ---
 
@@ -6485,7 +7765,7 @@ id: typing.Union[int, float]
 
 ID to inject into the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -6502,7 +7782,7 @@ name: str
 
 Value to assign to target schema field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -6536,7 +7816,7 @@ query: str
 
 Filter criteria of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
 
 ---
 
@@ -6572,7 +7852,7 @@ sources: typing.Mapping[str]
 
 Fallback sources used to populate value of field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -6586,7 +7866,7 @@ values: typing.Mapping[str]
 
 Values that define when the fallback is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#values LogsCustomPipeline#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#values LogsCustomPipeline#values}
 
 ---
 
@@ -6622,7 +7902,7 @@ id: str
 
 ID of the field to map log attributes to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -6639,7 +7919,7 @@ name: str
 
 Name of the field to map log attributes to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -6683,7 +7963,7 @@ name: str
 
 Name of the logs schema remapper.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -6697,7 +7977,7 @@ sources: typing.List[str]
 
 Array of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -6711,7 +7991,7 @@ target: str
 
 Target field to map log source field to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -6725,7 +8005,7 @@ override_on_conflict: bool | IResolvable
 
 Override or not the target element if already set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
 
 ---
 
@@ -6739,7 +8019,7 @@ preserve_source: bool | IResolvable
 
 Remove or preserve the remapped source element.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
 
 ---
 
@@ -6755,7 +8035,7 @@ If the `target_type` of the remapper is `attribute`, try to cast the value to a 
 
 If the cast is not possible, the original type is kept. `string`, `integer`, or `double` are the possible types. If the `target_type` is `tag`, this parameter may not be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
 
 ---
 
@@ -6799,7 +8079,7 @@ class_name: str
 
 Class name of the schema to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#class_name LogsCustomPipeline#class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#class_name LogsCustomPipeline#class_name}
 
 ---
 
@@ -6813,7 +8093,7 @@ class_uid: typing.Union[int, float]
 
 Class UID of the schema to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#class_uid LogsCustomPipeline#class_uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#class_uid LogsCustomPipeline#class_uid}
 
 ---
 
@@ -6827,7 +8107,7 @@ schema_type: str
 
 Type of schema to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema_type LogsCustomPipeline#schema_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#schema_type LogsCustomPipeline#schema_type}
 
 ---
 
@@ -6841,7 +8121,7 @@ version: str
 
 Version of the schema to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#version LogsCustomPipeline#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#version LogsCustomPipeline#version}
 
 ---
 
@@ -6855,7 +8135,7 @@ extensions: typing.List[str]
 
 Optional list of extensions to modify the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#extensions LogsCustomPipeline#extensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#extensions LogsCustomPipeline#extensions}
 
 ---
 
@@ -6869,7 +8149,7 @@ profiles: typing.List[str]
 
 Optional list of profiles to modify the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#profiles LogsCustomPipeline#profiles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#profiles LogsCustomPipeline#profiles}
 
 ---
 
@@ -6907,7 +8187,7 @@ sources: typing.List[str]
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -6921,7 +8201,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -6935,7 +8215,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -6973,7 +8253,7 @@ sources: typing.List[str]
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -6987,7 +8267,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -7001,7 +8281,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -7039,7 +8319,7 @@ sources: typing.List[str]
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -7053,7 +8333,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -7067,7 +8347,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -7109,7 +8389,7 @@ target: str
 
 The name of the attribute that contains the result of the template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -7123,7 +8403,7 @@ template: str
 
 The formula with one or more attributes and raw text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
 
 ---
 
@@ -7137,7 +8417,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -7151,7 +8431,7 @@ is_replace_missing: bool | IResolvable
 
 If it replaces all missing attributes of template by an empty string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
 
 ---
 
@@ -7165,7 +8445,7 @@ name: str
 
 The name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -7203,7 +8483,7 @@ sources: typing.List[str]
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -7217,7 +8497,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -7231,7 +8511,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -7273,7 +8553,7 @@ sources: typing.List[str]
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -7287,7 +8567,7 @@ target: str
 
 Name of the parent attribute that contains all the extracted details from the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -7301,7 +8581,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -7315,7 +8595,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -7329,7 +8609,7 @@ normalize_ending_slashes: bool | IResolvable
 
 Normalize the ending slashes or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#normalize_ending_slashes LogsCustomPipeline#normalize_ending_slashes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#normalize_ending_slashes LogsCustomPipeline#normalize_ending_slashes}
 
 ---
 
@@ -7371,7 +8651,7 @@ sources: typing.List[str]
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -7385,7 +8665,7 @@ target: str
 
 Name of the parent attribute that contains all the extracted details from the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -7399,7 +8679,7 @@ is_enabled: bool | IResolvable
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -7413,7 +8693,7 @@ is_encoded: bool | IResolvable
 
 If the source attribute is URL encoded or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_encoded LogsCustomPipeline#is_encoded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_encoded LogsCustomPipeline#is_encoded}
 
 ---
 
@@ -7427,7 +8707,7 @@ name: str
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -8320,6 +9600,3618 @@ internal_value: LogsCustomPipelineProcessorArithmeticProcessor
 ```
 
 - *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArithmeticProcessor">LogsCustomPipelineProcessorArithmeticProcessor</a>
+
+---
+
+
+### LogsCustomPipelineProcessorArrayMapProcessorOutputReference <a name="LogsCustomPipelineProcessorArrayMapProcessorOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.putProcessors">put_processors</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.resetIsEnabled">reset_is_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.resetName">reset_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.resetPreserveSource">reset_preserve_source</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_processors` <a name="put_processors" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.putProcessors"></a>
+
+```python
+def put_processors(
+  value: IResolvable | typing.List[LogsCustomPipelineProcessorArrayMapProcessorProcessors]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.putProcessors.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorArrayMapProcessorProcessors</a>]
+
+---
+
+##### `reset_is_enabled` <a name="reset_is_enabled" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.resetIsEnabled"></a>
+
+```python
+def reset_is_enabled() -> None
+```
+
+##### `reset_name` <a name="reset_name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.resetName"></a>
+
+```python
+def reset_name() -> None
+```
+
+##### `reset_preserve_source` <a name="reset_preserve_source" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.resetPreserveSource"></a>
+
+```python
+def reset_preserve_source() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.processors">processors</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList">LogsCustomPipelineProcessorArrayMapProcessorProcessorsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.isEnabledInput">is_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.preserveSourceInput">preserve_source_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.processorsInput">processors_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorArrayMapProcessorProcessors</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.sourceInput">source_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.targetInput">target_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.isEnabled">is_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.preserveSource">preserve_source</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.source">source</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.target">target</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor">LogsCustomPipelineProcessorArrayMapProcessor</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `processors`<sup>Required</sup> <a name="processors" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.processors"></a>
+
+```python
+processors: LogsCustomPipelineProcessorArrayMapProcessorProcessorsList
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList">LogsCustomPipelineProcessorArrayMapProcessorProcessorsList</a>
+
+---
+
+##### `is_enabled_input`<sup>Optional</sup> <a name="is_enabled_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.isEnabledInput"></a>
+
+```python
+is_enabled_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `preserve_source_input`<sup>Optional</sup> <a name="preserve_source_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.preserveSourceInput"></a>
+
+```python
+preserve_source_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `processors_input`<sup>Optional</sup> <a name="processors_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.processorsInput"></a>
+
+```python
+processors_input: IResolvable | typing.List[LogsCustomPipelineProcessorArrayMapProcessorProcessors]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorArrayMapProcessorProcessors</a>]
+
+---
+
+##### `source_input`<sup>Optional</sup> <a name="source_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.sourceInput"></a>
+
+```python
+source_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `target_input`<sup>Optional</sup> <a name="target_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.targetInput"></a>
+
+```python
+target_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `is_enabled`<sup>Required</sup> <a name="is_enabled" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.isEnabled"></a>
+
+```python
+is_enabled: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `preserve_source`<sup>Required</sup> <a name="preserve_source" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.preserveSource"></a>
+
+```python
+preserve_source: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `source`<sup>Required</sup> <a name="source" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.source"></a>
+
+```python
+source: str
+```
+
+- *Type:* str
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.target"></a>
+
+```python
+target: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference.property.internalValue"></a>
+
+```python
+internal_value: LogsCustomPipelineProcessorArrayMapProcessor
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor">LogsCustomPipelineProcessorArrayMapProcessor</a>
+
+---
+
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resetIsReplaceMissing">reset_is_replace_missing</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resetName">reset_name</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_is_replace_missing` <a name="reset_is_replace_missing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resetIsReplaceMissing"></a>
+
+```python
+def reset_is_replace_missing() -> None
+```
+
+##### `reset_name` <a name="reset_name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resetName"></a>
+
+```python
+def reset_name() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.expressionInput">expression_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.isReplaceMissingInput">is_replace_missing_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.targetInput">target_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.expression">expression</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.isReplaceMissing">is_replace_missing</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.target">target</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `expression_input`<sup>Optional</sup> <a name="expression_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.expressionInput"></a>
+
+```python
+expression_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `is_replace_missing_input`<sup>Optional</sup> <a name="is_replace_missing_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.isReplaceMissingInput"></a>
+
+```python
+is_replace_missing_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `target_input`<sup>Optional</sup> <a name="target_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.targetInput"></a>
+
+```python
+target_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.expression"></a>
+
+```python
+expression: str
+```
+
+- *Type:* str
+
+---
+
+##### `is_replace_missing`<sup>Required</sup> <a name="is_replace_missing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.isReplaceMissing"></a>
+
+```python
+is_replace_missing: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.target"></a>
+
+```python
+target: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.internalValue"></a>
+
+```python
+internal_value: LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor</a>
+
+---
+
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetName">reset_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetOverrideOnConflict">reset_override_on_conflict</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetPreserveSource">reset_preserve_source</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetTargetFormat">reset_target_format</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_name` <a name="reset_name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetName"></a>
+
+```python
+def reset_name() -> None
+```
+
+##### `reset_override_on_conflict` <a name="reset_override_on_conflict" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetOverrideOnConflict"></a>
+
+```python
+def reset_override_on_conflict() -> None
+```
+
+##### `reset_preserve_source` <a name="reset_preserve_source" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetPreserveSource"></a>
+
+```python
+def reset_preserve_source() -> None
+```
+
+##### `reset_target_format` <a name="reset_target_format" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetTargetFormat"></a>
+
+```python
+def reset_target_format() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.overrideOnConflictInput">override_on_conflict_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.preserveSourceInput">preserve_source_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.sourcesInput">sources_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.targetFormatInput">target_format_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.targetInput">target_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.overrideOnConflict">override_on_conflict</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.preserveSource">preserve_source</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.sources">sources</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.target">target</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.targetFormat">target_format</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper">LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `override_on_conflict_input`<sup>Optional</sup> <a name="override_on_conflict_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.overrideOnConflictInput"></a>
+
+```python
+override_on_conflict_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `preserve_source_input`<sup>Optional</sup> <a name="preserve_source_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.preserveSourceInput"></a>
+
+```python
+preserve_source_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `sources_input`<sup>Optional</sup> <a name="sources_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.sourcesInput"></a>
+
+```python
+sources_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `target_format_input`<sup>Optional</sup> <a name="target_format_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.targetFormatInput"></a>
+
+```python
+target_format_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `target_input`<sup>Optional</sup> <a name="target_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.targetInput"></a>
+
+```python
+target_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `override_on_conflict`<sup>Required</sup> <a name="override_on_conflict" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.overrideOnConflict"></a>
+
+```python
+override_on_conflict: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `preserve_source`<sup>Required</sup> <a name="preserve_source" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.preserveSource"></a>
+
+```python
+preserve_source: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `sources`<sup>Required</sup> <a name="sources" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.sources"></a>
+
+```python
+sources: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.target"></a>
+
+```python
+target: str
+```
+
+- *Type:* str
+
+---
+
+##### `target_format`<sup>Required</sup> <a name="target_format" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.targetFormat"></a>
+
+```python
+target_format: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.internalValue"></a>
+
+```python
+internal_value: LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper">LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper</a>
+
+---
+
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `query_input`<sup>Optional</sup> <a name="query_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.queryInput"></a>
+
+```python
+query_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `query`<sup>Required</sup> <a name="query" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.query"></a>
+
+```python
+query: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.internalValue"></a>
+
+```python
+internal_value: LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter</a>
+
+---
+
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>]
+
+---
+
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.putFilter">put_filter</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_filter` <a name="put_filter" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.putFilter"></a>
+
+```python
+def put_filter(
+  query: str
+) -> None
+```
+
+###### `query`<sup>Required</sup> <a name="query" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.putFilter.parameter.query"></a>
+
+- *Type:* str
+
+Filter criteria of the category.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.filterInput">filter_input</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `filter`<sup>Required</sup> <a name="filter" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.filter"></a>
+
+```python
+filter: LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference</a>
+
+---
+
+##### `filter_input`<sup>Optional</sup> <a name="filter_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.filterInput"></a>
+
+```python
+filter_input: LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter</a>
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>
+
+---
+
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.putCategory">put_category</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.resetName">reset_name</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_category` <a name="put_category" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.putCategory"></a>
+
+```python
+def put_category(
+  value: IResolvable | typing.List[LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.putCategory.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>]
+
+---
+
+##### `reset_name` <a name="reset_name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.resetName"></a>
+
+```python
+def reset_name() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.category">category</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.categoryInput">category_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.targetInput">target_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.target">target</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `category`<sup>Required</sup> <a name="category" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.category"></a>
+
+```python
+category: LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList</a>
+
+---
+
+##### `category_input`<sup>Optional</sup> <a name="category_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.categoryInput"></a>
+
+```python
+category_input: IResolvable | typing.List[LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>]
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `target_input`<sup>Optional</sup> <a name="target_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.targetInput"></a>
+
+```python
+target_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.target"></a>
+
+```python
+target: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.internalValue"></a>
+
+```python
+internal_value: LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor</a>
+
+---
+
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsList <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsList" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorArrayMapProcessorProcessors</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[LogsCustomPipelineProcessorArrayMapProcessorProcessors]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorArrayMapProcessorProcessors</a>]
+
+---
+
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putArithmeticProcessor">put_arithmetic_processor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putAttributeRemapper">put_attribute_remapper</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putCategoryProcessor">put_category_processor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putStringBuilderProcessor">put_string_builder_processor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetArithmeticProcessor">reset_arithmetic_processor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetAttributeRemapper">reset_attribute_remapper</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetCategoryProcessor">reset_category_processor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetStringBuilderProcessor">reset_string_builder_processor</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_arithmetic_processor` <a name="put_arithmetic_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putArithmeticProcessor"></a>
+
+```python
+def put_arithmetic_processor(
+  expression: str,
+  target: str,
+  is_replace_missing: bool | IResolvable = None,
+  name: str = None
+) -> None
+```
+
+###### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putArithmeticProcessor.parameter.expression"></a>
+
+- *Type:* str
+
+Arithmetic formula.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
+
+---
+
+###### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putArithmeticProcessor.parameter.target"></a>
+
+- *Type:* str
+
+Target attribute path for the result.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+###### `is_replace_missing`<sup>Optional</sup> <a name="is_replace_missing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putArithmeticProcessor.parameter.isReplaceMissing"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Replace missing attributes with `0`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+
+---
+
+###### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putArithmeticProcessor.parameter.name"></a>
+
+- *Type:* str
+
+Name of the sub-processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+##### `put_attribute_remapper` <a name="put_attribute_remapper" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putAttributeRemapper"></a>
+
+```python
+def put_attribute_remapper(
+  sources: typing.List[str],
+  target: str,
+  name: str = None,
+  override_on_conflict: bool | IResolvable = None,
+  preserve_source: bool | IResolvable = None,
+  target_format: str = None
+) -> None
+```
+
+###### `sources`<sup>Required</sup> <a name="sources" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putAttributeRemapper.parameter.sources"></a>
+
+- *Type:* typing.List[str]
+
+List of source attributes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+
+---
+
+###### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putAttributeRemapper.parameter.target"></a>
+
+- *Type:* str
+
+Target attribute path.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+###### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putAttributeRemapper.parameter.name"></a>
+
+- *Type:* str
+
+Name of the sub-processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+###### `override_on_conflict`<sup>Optional</sup> <a name="override_on_conflict" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putAttributeRemapper.parameter.overrideOnConflict"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Override the target element if already set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
+
+---
+
+###### `preserve_source`<sup>Optional</sup> <a name="preserve_source" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putAttributeRemapper.parameter.preserveSource"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Remove or preserve the remapped source element. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+
+---
+
+###### `target_format`<sup>Optional</sup> <a name="target_format" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putAttributeRemapper.parameter.targetFormat"></a>
+
+- *Type:* str
+
+If the target type is an attribute, cast the value to a new type (auto, string, integer, double).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
+
+---
+
+##### `put_category_processor` <a name="put_category_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putCategoryProcessor"></a>
+
+```python
+def put_category_processor(
+  category: IResolvable | typing.List[LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory],
+  target: str,
+  name: str = None
+) -> None
+```
+
+###### `category`<sup>Required</sup> <a name="category" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putCategoryProcessor.parameter.category"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>]
+
+category block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
+
+---
+
+###### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putCategoryProcessor.parameter.target"></a>
+
+- *Type:* str
+
+Target attribute path for the category value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+###### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putCategoryProcessor.parameter.name"></a>
+
+- *Type:* str
+
+Name of the sub-processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+##### `put_string_builder_processor` <a name="put_string_builder_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putStringBuilderProcessor"></a>
+
+```python
+def put_string_builder_processor(
+  target: str,
+  template: str,
+  is_replace_missing: bool | IResolvable = None,
+  name: str = None
+) -> None
+```
+
+###### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putStringBuilderProcessor.parameter.target"></a>
+
+- *Type:* str
+
+Target attribute path for the result.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+###### `template`<sup>Required</sup> <a name="template" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putStringBuilderProcessor.parameter.template"></a>
+
+- *Type:* str
+
+Formula with one or more attributes and raw text.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
+
+---
+
+###### `is_replace_missing`<sup>Optional</sup> <a name="is_replace_missing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putStringBuilderProcessor.parameter.isReplaceMissing"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Replace missing attributes with an empty string.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+
+---
+
+###### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.putStringBuilderProcessor.parameter.name"></a>
+
+- *Type:* str
+
+Name of the sub-processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+##### `reset_arithmetic_processor` <a name="reset_arithmetic_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetArithmeticProcessor"></a>
+
+```python
+def reset_arithmetic_processor() -> None
+```
+
+##### `reset_attribute_remapper` <a name="reset_attribute_remapper" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetAttributeRemapper"></a>
+
+```python
+def reset_attribute_remapper() -> None
+```
+
+##### `reset_category_processor` <a name="reset_category_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetCategoryProcessor"></a>
+
+```python
+def reset_category_processor() -> None
+```
+
+##### `reset_string_builder_processor` <a name="reset_string_builder_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetStringBuilderProcessor"></a>
+
+```python
+def reset_string_builder_processor() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.arithmeticProcessor">arithmetic_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference">LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.attributeRemapper">attribute_remapper</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference">LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.categoryProcessor">category_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.stringBuilderProcessor">string_builder_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference">LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.arithmeticProcessorInput">arithmetic_processor_input</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.attributeRemapperInput">attribute_remapper_input</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper">LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.categoryProcessorInput">category_processor_input</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.stringBuilderProcessorInput">string_builder_processor_input</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorArrayMapProcessorProcessors</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `arithmetic_processor`<sup>Required</sup> <a name="arithmetic_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.arithmeticProcessor"></a>
+
+```python
+arithmetic_processor: LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference">LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference</a>
+
+---
+
+##### `attribute_remapper`<sup>Required</sup> <a name="attribute_remapper" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.attributeRemapper"></a>
+
+```python
+attribute_remapper: LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference">LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference</a>
+
+---
+
+##### `category_processor`<sup>Required</sup> <a name="category_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.categoryProcessor"></a>
+
+```python
+category_processor: LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference</a>
+
+---
+
+##### `string_builder_processor`<sup>Required</sup> <a name="string_builder_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.stringBuilderProcessor"></a>
+
+```python
+string_builder_processor: LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference">LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference</a>
+
+---
+
+##### `arithmetic_processor_input`<sup>Optional</sup> <a name="arithmetic_processor_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.arithmeticProcessorInput"></a>
+
+```python
+arithmetic_processor_input: LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor</a>
+
+---
+
+##### `attribute_remapper_input`<sup>Optional</sup> <a name="attribute_remapper_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.attributeRemapperInput"></a>
+
+```python
+attribute_remapper_input: LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper">LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper</a>
+
+---
+
+##### `category_processor_input`<sup>Optional</sup> <a name="category_processor_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.categoryProcessorInput"></a>
+
+```python
+category_processor_input: LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor</a>
+
+---
+
+##### `string_builder_processor_input`<sup>Optional</sup> <a name="string_builder_processor_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.stringBuilderProcessorInput"></a>
+
+```python
+string_builder_processor_input: LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | LogsCustomPipelineProcessorArrayMapProcessorProcessors
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorArrayMapProcessorProcessors</a>
+
+---
+
+
+### LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference <a name="LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resetIsReplaceMissing">reset_is_replace_missing</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resetName">reset_name</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_is_replace_missing` <a name="reset_is_replace_missing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resetIsReplaceMissing"></a>
+
+```python
+def reset_is_replace_missing() -> None
+```
+
+##### `reset_name` <a name="reset_name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resetName"></a>
+
+```python
+def reset_name() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.isReplaceMissingInput">is_replace_missing_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.targetInput">target_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.templateInput">template_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.isReplaceMissing">is_replace_missing</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.target">target</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.template">template</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `is_replace_missing_input`<sup>Optional</sup> <a name="is_replace_missing_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.isReplaceMissingInput"></a>
+
+```python
+is_replace_missing_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `target_input`<sup>Optional</sup> <a name="target_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.targetInput"></a>
+
+```python
+target_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `template_input`<sup>Optional</sup> <a name="template_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.templateInput"></a>
+
+```python
+template_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `is_replace_missing`<sup>Required</sup> <a name="is_replace_missing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.isReplaceMissing"></a>
+
+```python
+is_replace_missing: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.target"></a>
+
+```python
+target: str
+```
+
+- *Type:* str
+
+---
+
+##### `template`<sup>Required</sup> <a name="template" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.template"></a>
+
+```python
+template: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.internalValue"></a>
+
+```python
+internal_value: LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor">LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor</a>
 
 ---
 
@@ -9239,7 +14131,7 @@ def put_append(
 
 Attribute path containing the value to append.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -9249,7 +14141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Attribute path of the array to append to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -9259,7 +14151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Remove or preserve the remapped source element. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
 
 ---
 
@@ -9278,7 +14170,7 @@ def put_length(
 
 Attribute path of the array to compute the length of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -9288,7 +14180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Attribute that receives the computed length.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -9309,7 +14201,7 @@ def put_select(
 
 Filter expression (e.g. key1:value1 OR key2:value2) used to find the matching element.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 
 ---
 
@@ -9319,7 +14211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Attribute path of the array to search into.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -9329,7 +14221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Attribute that receives the extracted value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -9339,7 +14231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Attribute key from the matching object that should be extracted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#value_to_extract LogsCustomPipeline#value_to_extract}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#value_to_extract LogsCustomPipeline#value_to_extract}
 
 ---
 
@@ -10082,7 +14974,7 @@ def put_operation(
 
 append block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#append LogsCustomPipeline#append}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#append LogsCustomPipeline#append}
 
 ---
 
@@ -10092,7 +14984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 length block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#length LogsCustomPipeline#length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#length LogsCustomPipeline#length}
 
 ---
 
@@ -10102,7 +14994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 select block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#select LogsCustomPipeline#select}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#select LogsCustomPipeline#select}
 
 ---
 
@@ -11466,7 +16358,7 @@ def put_filter(
 
 Filter criteria of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
 
 ---
 
@@ -13666,7 +18558,7 @@ def put_grok(
 
 Match rules for your grok parser.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#match_rules LogsCustomPipeline#match_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#match_rules LogsCustomPipeline#match_rules}
 
 ---
 
@@ -13676,7 +18568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Support rules for your grok parser.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#support_rules LogsCustomPipeline#support_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#support_rules LogsCustomPipeline#support_rules}
 
 ---
 
@@ -14879,6 +19771,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putArithmeticProcessor">put_arithmetic_processor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putArrayMapProcessor">put_array_map_processor</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putArrayProcessor">put_array_processor</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putAttributeRemapper">put_attribute_remapper</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putCategoryProcessor">put_category_processor</a></code> | *No description.* |
@@ -14899,6 +19792,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putUrlParser">put_url_parser</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putUserAgentParser">put_user_agent_parser</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.resetArithmeticProcessor">reset_arithmetic_processor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.resetArrayMapProcessor">reset_array_map_processor</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.resetArrayProcessor">reset_array_processor</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.resetAttributeRemapper">reset_attribute_remapper</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.resetCategoryProcessor">reset_category_processor</a></code> | *No description.* |
@@ -15111,7 +20005,7 @@ def put_arithmetic_processor(
 
 Arithmetic operation between one or more log attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
 
 ---
 
@@ -15121,7 +20015,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the attribute that contains the result of the arithmetic operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -15131,7 +20025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Boolean value to enable your pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -15141,7 +20035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If true, it replaces all missing attributes of expression by 0, false skips the operation if an attribute is missing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
 
 ---
 
@@ -15151,7 +20045,80 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Your pipeline name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+##### `put_array_map_processor` <a name="put_array_map_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putArrayMapProcessor"></a>
+
+```python
+def put_array_map_processor(
+  processors: IResolvable | typing.List[LogsCustomPipelineProcessorArrayMapProcessorProcessors],
+  source: str,
+  target: str,
+  is_enabled: bool | IResolvable = None,
+  name: str = None,
+  preserve_source: bool | IResolvable = None
+) -> None
+```
+
+###### `processors`<sup>Required</sup> <a name="processors" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putArrayMapProcessor.parameter.processors"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorArrayMapProcessorProcessors</a>]
+
+processors block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#processors LogsCustomPipeline#processors}
+
+---
+
+###### `source`<sup>Required</sup> <a name="source" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putArrayMapProcessor.parameter.source"></a>
+
+- *Type:* str
+
+Attribute path of the source array.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+
+---
+
+###### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putArrayMapProcessor.parameter.target"></a>
+
+- *Type:* str
+
+Attribute path of the output array.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+###### `is_enabled`<sup>Optional</sup> <a name="is_enabled" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putArrayMapProcessor.parameter.isEnabled"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+If the processor is enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+
+---
+
+###### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putArrayMapProcessor.parameter.name"></a>
+
+- *Type:* str
+
+Name of the processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+###### `preserve_source`<sup>Optional</sup> <a name="preserve_source" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putArrayMapProcessor.parameter.preserveSource"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Remove or preserve the source array after processing. Defaults to `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
 
 ---
 
@@ -15171,7 +20138,7 @@ def put_array_processor(
 
 operation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#operation LogsCustomPipeline#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#operation LogsCustomPipeline#operation}
 
 ---
 
@@ -15181,7 +20148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Boolean value to enable your processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -15191,7 +20158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Your processor name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -15217,7 +20184,7 @@ def put_attribute_remapper(
 
 List of source attributes or tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -15227,7 +20194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Defines where the sources are from (log `attribute` or `tag`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source_type LogsCustomPipeline#source_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source_type LogsCustomPipeline#source_type}
 
 ---
 
@@ -15237,7 +20204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Final attribute or tag name to remap the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -15247,7 +20214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Defines if the target is a log `attribute` or `tag`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target_type LogsCustomPipeline#target_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target_type LogsCustomPipeline#target_type}
 
 ---
 
@@ -15257,7 +20224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -15267,7 +20234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -15277,7 +20244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Override the target element if already set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
 
 ---
 
@@ -15287,7 +20254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Remove or preserve the remapped source element.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
 
 ---
 
@@ -15299,7 +20266,7 @@ If the `target_type` of the remapper is `attribute`, try to cast the value to a 
 
 If the cast is not possible, the original type is kept. `string`, `integer`, or `double` are the possible types. If the `target_type` is `tag`, this parameter may not be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
 
 ---
 
@@ -15320,7 +20287,7 @@ def put_category_processor(
 
 category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
 
 ---
 
@@ -15330,7 +20297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the target attribute whose value is defined by the matching category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -15340,7 +20307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -15350,7 +20317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -15370,7 +20337,7 @@ def put_date_remapper(
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -15380,7 +20347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -15390,7 +20357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -15413,7 +20380,7 @@ def put_decoder_processor(
 
 Encoding type: base64 or base16.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#binary_to_text_encoding LogsCustomPipeline#binary_to_text_encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#binary_to_text_encoding LogsCustomPipeline#binary_to_text_encoding}
 
 ---
 
@@ -15423,7 +20390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Input representation: utf-8 or integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#input_representation LogsCustomPipeline#input_representation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#input_representation LogsCustomPipeline#input_representation}
 
 ---
 
@@ -15433,7 +20400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Encoded message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -15443,7 +20410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Decoded message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -15453,7 +20420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -15463,7 +20430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -15484,7 +20451,7 @@ def put_geo_ip_parser(
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -15494,7 +20461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the parent attribute that contains all the extracted details from the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -15504,7 +20471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -15514,7 +20481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -15536,7 +20503,7 @@ def put_grok_parser(
 
 grok block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#grok LogsCustomPipeline#grok}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#grok LogsCustomPipeline#grok}
 
 ---
 
@@ -15546,7 +20513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the log attribute to parse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -15556,7 +20523,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -15566,7 +20533,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -15578,7 +20545,7 @@ List of sample logs for this parser.
 
 It can save up to 5 samples. Each sample takes up to 5000 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#samples LogsCustomPipeline#samples}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#samples LogsCustomPipeline#samples}
 
 ---
 
@@ -15601,7 +20568,7 @@ def put_lookup_processor(
 
 List of entries of the lookup table using `key,value` format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#lookup_table LogsCustomPipeline#lookup_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#lookup_table LogsCustomPipeline#lookup_table}
 
 ---
 
@@ -15611,7 +20578,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the source attribute used to do the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -15621,7 +20588,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the attribute that contains the result of the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -15631,7 +20598,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Default lookup value to use if there is no entry in the lookup table for the value of the source attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#default_lookup LogsCustomPipeline#default_lookup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#default_lookup LogsCustomPipeline#default_lookup}
 
 ---
 
@@ -15641,7 +20608,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -15651,7 +20618,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -15671,7 +20638,7 @@ def put_message_remapper(
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -15681,7 +20648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -15691,7 +20658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -15714,7 +20681,7 @@ def put_pipeline(
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 
 ---
 
@@ -15722,7 +20689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
 
 ---
 
@@ -15730,7 +20697,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}.
 
 ---
 
@@ -15738,7 +20705,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}.
 
 ---
 
@@ -15748,7 +20715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
 
 ---
 
@@ -15756,7 +20723,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}.
 
 ---
 
@@ -15778,7 +20745,7 @@ def put_reference_table_lookup_processor(
 
 Name of the Reference Table for the source attribute and their associated target attribute values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
 
 ---
 
@@ -15788,7 +20755,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the source attribute used to do the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -15798,7 +20765,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the attribute that contains the result of the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -15808,7 +20775,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -15818,7 +20785,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -15839,7 +20806,7 @@ def put_schema_processor(
 
 mappers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#mappers LogsCustomPipeline#mappers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#mappers LogsCustomPipeline#mappers}
 
 ---
 
@@ -15849,7 +20816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema LogsCustomPipeline#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#schema LogsCustomPipeline#schema}
 
 ---
 
@@ -15859,7 +20826,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -15869,7 +20836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -15889,7 +20856,7 @@ def put_service_remapper(
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -15899,7 +20866,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -15909,7 +20876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -15929,7 +20896,7 @@ def put_span_id_remapper(
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -15939,7 +20906,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -15949,7 +20916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -15969,7 +20936,7 @@ def put_status_remapper(
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -15979,7 +20946,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -15989,7 +20956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -16011,7 +20978,7 @@ def put_string_builder_processor(
 
 The name of the attribute that contains the result of the template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -16021,7 +20988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The formula with one or more attributes and raw text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
 
 ---
 
@@ -16031,7 +20998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -16041,7 +21008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If it replaces all missing attributes of template by an empty string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
 
 ---
 
@@ -16051,7 +21018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -16071,7 +21038,7 @@ def put_trace_id_remapper(
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -16081,7 +21048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -16091,7 +21058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -16113,7 +21080,7 @@ def put_url_parser(
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -16123,7 +21090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the parent attribute that contains all the extracted details from the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -16133,7 +21100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -16143,7 +21110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -16153,7 +21120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Normalize the ending slashes or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#normalize_ending_slashes LogsCustomPipeline#normalize_ending_slashes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#normalize_ending_slashes LogsCustomPipeline#normalize_ending_slashes}
 
 ---
 
@@ -16175,7 +21142,7 @@ def put_user_agent_parser(
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -16185,7 +21152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the parent attribute that contains all the extracted details from the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -16195,7 +21162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -16205,7 +21172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the source attribute is URL encoded or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_encoded LogsCustomPipeline#is_encoded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_encoded LogsCustomPipeline#is_encoded}
 
 ---
 
@@ -16215,7 +21182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -16223,6 +21190,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ```python
 def reset_arithmetic_processor() -> None
+```
+
+##### `reset_array_map_processor` <a name="reset_array_map_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.resetArrayMapProcessor"></a>
+
+```python
+def reset_array_map_processor() -> None
 ```
 
 ##### `reset_array_processor` <a name="reset_array_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.resetArrayProcessor"></a>
@@ -16347,6 +21320,7 @@ def reset_user_agent_parser() -> None
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.arithmeticProcessor">arithmetic_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArithmeticProcessorOutputReference">LogsCustomPipelineProcessorArithmeticProcessorOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.arrayMapProcessor">array_map_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference">LogsCustomPipelineProcessorArrayMapProcessorOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.arrayProcessor">array_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayProcessorOutputReference">LogsCustomPipelineProcessorArrayProcessorOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.attributeRemapper">attribute_remapper</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorAttributeRemapperOutputReference">LogsCustomPipelineProcessorAttributeRemapperOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.categoryProcessor">category_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorOutputReference">LogsCustomPipelineProcessorCategoryProcessorOutputReference</a></code> | *No description.* |
@@ -16367,6 +21341,7 @@ def reset_user_agent_parser() -> None
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.urlParser">url_parser</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorUrlParserOutputReference">LogsCustomPipelineProcessorUrlParserOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.userAgentParser">user_agent_parser</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorUserAgentParserOutputReference">LogsCustomPipelineProcessorUserAgentParserOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.arithmeticProcessorInput">arithmetic_processor_input</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArithmeticProcessor">LogsCustomPipelineProcessorArithmeticProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.arrayMapProcessorInput">array_map_processor_input</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor">LogsCustomPipelineProcessorArrayMapProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.arrayProcessorInput">array_processor_input</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayProcessor">LogsCustomPipelineProcessorArrayProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.attributeRemapperInput">attribute_remapper_input</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorAttributeRemapper">LogsCustomPipelineProcessorAttributeRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.categoryProcessorInput">category_processor_input</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessor">LogsCustomPipelineProcessorCategoryProcessor</a></code> | *No description.* |
@@ -16421,6 +21396,16 @@ arithmetic_processor: LogsCustomPipelineProcessorArithmeticProcessorOutputRefere
 ```
 
 - *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArithmeticProcessorOutputReference">LogsCustomPipelineProcessorArithmeticProcessorOutputReference</a>
+
+---
+
+##### `array_map_processor`<sup>Required</sup> <a name="array_map_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.arrayMapProcessor"></a>
+
+```python
+array_map_processor: LogsCustomPipelineProcessorArrayMapProcessorOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessorOutputReference">LogsCustomPipelineProcessorArrayMapProcessorOutputReference</a>
 
 ---
 
@@ -16621,6 +21606,16 @@ arithmetic_processor_input: LogsCustomPipelineProcessorArithmeticProcessor
 ```
 
 - *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArithmeticProcessor">LogsCustomPipelineProcessorArithmeticProcessor</a>
+
+---
+
+##### `array_map_processor_input`<sup>Optional</sup> <a name="array_map_processor_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.arrayMapProcessorInput"></a>
+
+```python
+array_map_processor_input: LogsCustomPipelineProcessorArrayMapProcessor
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayMapProcessor">LogsCustomPipelineProcessorArrayMapProcessor</a>
 
 ---
 
@@ -18180,6 +23175,3618 @@ internal_value: LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor
 ---
 
 
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.putProcessors">put_processors</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.resetIsEnabled">reset_is_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.resetName">reset_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.resetPreserveSource">reset_preserve_source</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_processors` <a name="put_processors" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.putProcessors"></a>
+
+```python
+def put_processors(
+  value: IResolvable | typing.List[LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.putProcessors.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors</a>]
+
+---
+
+##### `reset_is_enabled` <a name="reset_is_enabled" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.resetIsEnabled"></a>
+
+```python
+def reset_is_enabled() -> None
+```
+
+##### `reset_name` <a name="reset_name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.resetName"></a>
+
+```python
+def reset_name() -> None
+```
+
+##### `reset_preserve_source` <a name="reset_preserve_source" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.resetPreserveSource"></a>
+
+```python
+def reset_preserve_source() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.processors">processors</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.isEnabledInput">is_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.preserveSourceInput">preserve_source_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.processorsInput">processors_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.sourceInput">source_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.targetInput">target_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.isEnabled">is_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.preserveSource">preserve_source</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.source">source</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.target">target</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `processors`<sup>Required</sup> <a name="processors" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.processors"></a>
+
+```python
+processors: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList</a>
+
+---
+
+##### `is_enabled_input`<sup>Optional</sup> <a name="is_enabled_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.isEnabledInput"></a>
+
+```python
+is_enabled_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `preserve_source_input`<sup>Optional</sup> <a name="preserve_source_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.preserveSourceInput"></a>
+
+```python
+preserve_source_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `processors_input`<sup>Optional</sup> <a name="processors_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.processorsInput"></a>
+
+```python
+processors_input: IResolvable | typing.List[LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors</a>]
+
+---
+
+##### `source_input`<sup>Optional</sup> <a name="source_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.sourceInput"></a>
+
+```python
+source_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `target_input`<sup>Optional</sup> <a name="target_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.targetInput"></a>
+
+```python
+target_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `is_enabled`<sup>Required</sup> <a name="is_enabled" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.isEnabled"></a>
+
+```python
+is_enabled: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `preserve_source`<sup>Required</sup> <a name="preserve_source" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.preserveSource"></a>
+
+```python
+preserve_source: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `source`<sup>Required</sup> <a name="source" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.source"></a>
+
+```python
+source: str
+```
+
+- *Type:* str
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.target"></a>
+
+```python
+target: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference.property.internalValue"></a>
+
+```python
+internal_value: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor</a>
+
+---
+
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resetIsReplaceMissing">reset_is_replace_missing</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resetName">reset_name</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_is_replace_missing` <a name="reset_is_replace_missing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resetIsReplaceMissing"></a>
+
+```python
+def reset_is_replace_missing() -> None
+```
+
+##### `reset_name` <a name="reset_name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.resetName"></a>
+
+```python
+def reset_name() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.expressionInput">expression_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.isReplaceMissingInput">is_replace_missing_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.targetInput">target_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.expression">expression</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.isReplaceMissing">is_replace_missing</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.target">target</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `expression_input`<sup>Optional</sup> <a name="expression_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.expressionInput"></a>
+
+```python
+expression_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `is_replace_missing_input`<sup>Optional</sup> <a name="is_replace_missing_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.isReplaceMissingInput"></a>
+
+```python
+is_replace_missing_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `target_input`<sup>Optional</sup> <a name="target_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.targetInput"></a>
+
+```python
+target_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.expression"></a>
+
+```python
+expression: str
+```
+
+- *Type:* str
+
+---
+
+##### `is_replace_missing`<sup>Required</sup> <a name="is_replace_missing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.isReplaceMissing"></a>
+
+```python
+is_replace_missing: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.target"></a>
+
+```python
+target: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference.property.internalValue"></a>
+
+```python
+internal_value: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor</a>
+
+---
+
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetName">reset_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetOverrideOnConflict">reset_override_on_conflict</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetPreserveSource">reset_preserve_source</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetTargetFormat">reset_target_format</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_name` <a name="reset_name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetName"></a>
+
+```python
+def reset_name() -> None
+```
+
+##### `reset_override_on_conflict` <a name="reset_override_on_conflict" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetOverrideOnConflict"></a>
+
+```python
+def reset_override_on_conflict() -> None
+```
+
+##### `reset_preserve_source` <a name="reset_preserve_source" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetPreserveSource"></a>
+
+```python
+def reset_preserve_source() -> None
+```
+
+##### `reset_target_format` <a name="reset_target_format" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.resetTargetFormat"></a>
+
+```python
+def reset_target_format() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.overrideOnConflictInput">override_on_conflict_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.preserveSourceInput">preserve_source_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.sourcesInput">sources_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.targetFormatInput">target_format_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.targetInput">target_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.overrideOnConflict">override_on_conflict</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.preserveSource">preserve_source</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.sources">sources</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.target">target</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.targetFormat">target_format</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `override_on_conflict_input`<sup>Optional</sup> <a name="override_on_conflict_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.overrideOnConflictInput"></a>
+
+```python
+override_on_conflict_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `preserve_source_input`<sup>Optional</sup> <a name="preserve_source_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.preserveSourceInput"></a>
+
+```python
+preserve_source_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `sources_input`<sup>Optional</sup> <a name="sources_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.sourcesInput"></a>
+
+```python
+sources_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `target_format_input`<sup>Optional</sup> <a name="target_format_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.targetFormatInput"></a>
+
+```python
+target_format_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `target_input`<sup>Optional</sup> <a name="target_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.targetInput"></a>
+
+```python
+target_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `override_on_conflict`<sup>Required</sup> <a name="override_on_conflict" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.overrideOnConflict"></a>
+
+```python
+override_on_conflict: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `preserve_source`<sup>Required</sup> <a name="preserve_source" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.preserveSource"></a>
+
+```python
+preserve_source: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `sources`<sup>Required</sup> <a name="sources" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.sources"></a>
+
+```python
+sources: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.target"></a>
+
+```python
+target: str
+```
+
+- *Type:* str
+
+---
+
+##### `target_format`<sup>Required</sup> <a name="target_format" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.targetFormat"></a>
+
+```python
+target_format: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference.property.internalValue"></a>
+
+```python
+internal_value: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper</a>
+
+---
+
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `query_input`<sup>Optional</sup> <a name="query_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.queryInput"></a>
+
+```python
+query_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `query`<sup>Required</sup> <a name="query" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.query"></a>
+
+```python
+query: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference.property.internalValue"></a>
+
+```python
+internal_value: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter</a>
+
+---
+
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>]
+
+---
+
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.putFilter">put_filter</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_filter` <a name="put_filter" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.putFilter"></a>
+
+```python
+def put_filter(
+  query: str
+) -> None
+```
+
+###### `query`<sup>Required</sup> <a name="query" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.putFilter.parameter.query"></a>
+
+- *Type:* str
+
+Filter criteria of the category.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.filterInput">filter_input</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `filter`<sup>Required</sup> <a name="filter" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.filter"></a>
+
+```python
+filter: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference</a>
+
+---
+
+##### `filter_input`<sup>Optional</sup> <a name="filter_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.filterInput"></a>
+
+```python
+filter_input: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter</a>
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>
+
+---
+
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.putCategory">put_category</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.resetName">reset_name</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_category` <a name="put_category" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.putCategory"></a>
+
+```python
+def put_category(
+  value: IResolvable | typing.List[LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.putCategory.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>]
+
+---
+
+##### `reset_name` <a name="reset_name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.resetName"></a>
+
+```python
+def reset_name() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.category">category</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.categoryInput">category_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.targetInput">target_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.target">target</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `category`<sup>Required</sup> <a name="category" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.category"></a>
+
+```python
+category: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryList</a>
+
+---
+
+##### `category_input`<sup>Optional</sup> <a name="category_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.categoryInput"></a>
+
+```python
+category_input: IResolvable | typing.List[LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>]
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `target_input`<sup>Optional</sup> <a name="target_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.targetInput"></a>
+
+```python
+target_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.target"></a>
+
+```python
+target: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference.property.internalValue"></a>
+
+```python
+internal_value: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor</a>
+
+---
+
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors</a>]
+
+---
+
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putArithmeticProcessor">put_arithmetic_processor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putAttributeRemapper">put_attribute_remapper</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putCategoryProcessor">put_category_processor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putStringBuilderProcessor">put_string_builder_processor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetArithmeticProcessor">reset_arithmetic_processor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetAttributeRemapper">reset_attribute_remapper</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetCategoryProcessor">reset_category_processor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetStringBuilderProcessor">reset_string_builder_processor</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_arithmetic_processor` <a name="put_arithmetic_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putArithmeticProcessor"></a>
+
+```python
+def put_arithmetic_processor(
+  expression: str,
+  target: str,
+  is_replace_missing: bool | IResolvable = None,
+  name: str = None
+) -> None
+```
+
+###### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putArithmeticProcessor.parameter.expression"></a>
+
+- *Type:* str
+
+Arithmetic formula.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
+
+---
+
+###### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putArithmeticProcessor.parameter.target"></a>
+
+- *Type:* str
+
+Target attribute path for the result.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+###### `is_replace_missing`<sup>Optional</sup> <a name="is_replace_missing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putArithmeticProcessor.parameter.isReplaceMissing"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Replace missing attributes with `0`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+
+---
+
+###### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putArithmeticProcessor.parameter.name"></a>
+
+- *Type:* str
+
+Name of the sub-processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+##### `put_attribute_remapper` <a name="put_attribute_remapper" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putAttributeRemapper"></a>
+
+```python
+def put_attribute_remapper(
+  sources: typing.List[str],
+  target: str,
+  name: str = None,
+  override_on_conflict: bool | IResolvable = None,
+  preserve_source: bool | IResolvable = None,
+  target_format: str = None
+) -> None
+```
+
+###### `sources`<sup>Required</sup> <a name="sources" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putAttributeRemapper.parameter.sources"></a>
+
+- *Type:* typing.List[str]
+
+List of source attributes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+
+---
+
+###### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putAttributeRemapper.parameter.target"></a>
+
+- *Type:* str
+
+Target attribute path.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+###### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putAttributeRemapper.parameter.name"></a>
+
+- *Type:* str
+
+Name of the sub-processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+###### `override_on_conflict`<sup>Optional</sup> <a name="override_on_conflict" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putAttributeRemapper.parameter.overrideOnConflict"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Override the target element if already set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
+
+---
+
+###### `preserve_source`<sup>Optional</sup> <a name="preserve_source" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putAttributeRemapper.parameter.preserveSource"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Remove or preserve the remapped source element. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+
+---
+
+###### `target_format`<sup>Optional</sup> <a name="target_format" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putAttributeRemapper.parameter.targetFormat"></a>
+
+- *Type:* str
+
+If the target type is an attribute, cast the value to a new type (auto, string, integer, double).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
+
+---
+
+##### `put_category_processor` <a name="put_category_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putCategoryProcessor"></a>
+
+```python
+def put_category_processor(
+  category: IResolvable | typing.List[LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory],
+  target: str,
+  name: str = None
+) -> None
+```
+
+###### `category`<sup>Required</sup> <a name="category" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putCategoryProcessor.parameter.category"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategory</a>]
+
+category block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
+
+---
+
+###### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putCategoryProcessor.parameter.target"></a>
+
+- *Type:* str
+
+Target attribute path for the category value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+###### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putCategoryProcessor.parameter.name"></a>
+
+- *Type:* str
+
+Name of the sub-processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+##### `put_string_builder_processor` <a name="put_string_builder_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putStringBuilderProcessor"></a>
+
+```python
+def put_string_builder_processor(
+  target: str,
+  template: str,
+  is_replace_missing: bool | IResolvable = None,
+  name: str = None
+) -> None
+```
+
+###### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putStringBuilderProcessor.parameter.target"></a>
+
+- *Type:* str
+
+Target attribute path for the result.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+###### `template`<sup>Required</sup> <a name="template" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putStringBuilderProcessor.parameter.template"></a>
+
+- *Type:* str
+
+Formula with one or more attributes and raw text.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
+
+---
+
+###### `is_replace_missing`<sup>Optional</sup> <a name="is_replace_missing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putStringBuilderProcessor.parameter.isReplaceMissing"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Replace missing attributes with an empty string.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+
+---
+
+###### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.putStringBuilderProcessor.parameter.name"></a>
+
+- *Type:* str
+
+Name of the sub-processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+##### `reset_arithmetic_processor` <a name="reset_arithmetic_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetArithmeticProcessor"></a>
+
+```python
+def reset_arithmetic_processor() -> None
+```
+
+##### `reset_attribute_remapper` <a name="reset_attribute_remapper" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetAttributeRemapper"></a>
+
+```python
+def reset_attribute_remapper() -> None
+```
+
+##### `reset_category_processor` <a name="reset_category_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetCategoryProcessor"></a>
+
+```python
+def reset_category_processor() -> None
+```
+
+##### `reset_string_builder_processor` <a name="reset_string_builder_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.resetStringBuilderProcessor"></a>
+
+```python
+def reset_string_builder_processor() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.arithmeticProcessor">arithmetic_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.attributeRemapper">attribute_remapper</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.categoryProcessor">category_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.stringBuilderProcessor">string_builder_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.arithmeticProcessorInput">arithmetic_processor_input</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.attributeRemapperInput">attribute_remapper_input</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.categoryProcessorInput">category_processor_input</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.stringBuilderProcessorInput">string_builder_processor_input</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `arithmetic_processor`<sup>Required</sup> <a name="arithmetic_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.arithmeticProcessor"></a>
+
+```python
+arithmetic_processor: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessorOutputReference</a>
+
+---
+
+##### `attribute_remapper`<sup>Required</sup> <a name="attribute_remapper" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.attributeRemapper"></a>
+
+```python
+attribute_remapper: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapperOutputReference</a>
+
+---
+
+##### `category_processor`<sup>Required</sup> <a name="category_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.categoryProcessor"></a>
+
+```python
+category_processor: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorOutputReference</a>
+
+---
+
+##### `string_builder_processor`<sup>Required</sup> <a name="string_builder_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.stringBuilderProcessor"></a>
+
+```python
+string_builder_processor: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference</a>
+
+---
+
+##### `arithmetic_processor_input`<sup>Optional</sup> <a name="arithmetic_processor_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.arithmeticProcessorInput"></a>
+
+```python
+arithmetic_processor_input: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor</a>
+
+---
+
+##### `attribute_remapper_input`<sup>Optional</sup> <a name="attribute_remapper_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.attributeRemapperInput"></a>
+
+```python
+attribute_remapper_input: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper</a>
+
+---
+
+##### `category_processor_input`<sup>Optional</sup> <a name="category_processor_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.categoryProcessorInput"></a>
+
+```python
+category_processor_input: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor</a>
+
+---
+
+##### `string_builder_processor_input`<sup>Optional</sup> <a name="string_builder_processor_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.stringBuilderProcessorInput"></a>
+
+```python
+string_builder_processor_input: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors</a>
+
+---
+
+
+### LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference <a name="LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import logs_custom_pipeline
+
+logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resetIsReplaceMissing">reset_is_replace_missing</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resetName">reset_name</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_is_replace_missing` <a name="reset_is_replace_missing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resetIsReplaceMissing"></a>
+
+```python
+def reset_is_replace_missing() -> None
+```
+
+##### `reset_name` <a name="reset_name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.resetName"></a>
+
+```python
+def reset_name() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.isReplaceMissingInput">is_replace_missing_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.targetInput">target_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.templateInput">template_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.isReplaceMissing">is_replace_missing</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.target">target</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.template">template</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `is_replace_missing_input`<sup>Optional</sup> <a name="is_replace_missing_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.isReplaceMissingInput"></a>
+
+```python
+is_replace_missing_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `target_input`<sup>Optional</sup> <a name="target_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.targetInput"></a>
+
+```python
+target_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `template_input`<sup>Optional</sup> <a name="template_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.templateInput"></a>
+
+```python
+template_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `is_replace_missing`<sup>Required</sup> <a name="is_replace_missing" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.isReplaceMissing"></a>
+
+```python
+is_replace_missing: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.target"></a>
+
+```python
+target: str
+```
+
+- *Type:* str
+
+---
+
+##### `template`<sup>Required</sup> <a name="template" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.template"></a>
+
+```python
+template: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessorOutputReference.property.internalValue"></a>
+
+```python
+internal_value: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor</a>
+
+---
+
+
 ### LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationAppendOutputReference <a name="LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationAppendOutputReference" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationAppendOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationAppendOutputReference.Initializer"></a>
@@ -19095,7 +27702,7 @@ def put_append(
 
 Attribute path containing the value to append.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -19105,7 +27712,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Attribute path of the array to append to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -19115,7 +27722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Remove or preserve the remapped source element. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
 
 ---
 
@@ -19134,7 +27741,7 @@ def put_length(
 
 Attribute path of the array to compute the length of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -19144,7 +27751,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Attribute that receives the computed length.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -19165,7 +27772,7 @@ def put_select(
 
 Filter expression (e.g. key1:value1 OR key2:value2) used to find the matching element.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 
 ---
 
@@ -19175,7 +27782,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Attribute path of the array to search into.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -19185,7 +27792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Attribute that receives the extracted value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -19195,7 +27802,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Attribute key from the matching object that should be extracted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#value_to_extract LogsCustomPipeline#value_to_extract}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#value_to_extract LogsCustomPipeline#value_to_extract}
 
 ---
 
@@ -19938,7 +28545,7 @@ def put_operation(
 
 append block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#append LogsCustomPipeline#append}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#append LogsCustomPipeline#append}
 
 ---
 
@@ -19948,7 +28555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 length block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#length LogsCustomPipeline#length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#length LogsCustomPipeline#length}
 
 ---
 
@@ -19958,7 +28565,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 select block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#select LogsCustomPipeline#select}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#select LogsCustomPipeline#select}
 
 ---
 
@@ -21322,7 +29929,7 @@ def put_filter(
 
 Filter criteria of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
 
 ---
 
@@ -23522,7 +32129,7 @@ def put_grok(
 
 Match rules for your grok parser.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#match_rules LogsCustomPipeline#match_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#match_rules LogsCustomPipeline#match_rules}
 
 ---
 
@@ -23532,7 +32139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Support rules for your grok parser.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#support_rules LogsCustomPipeline#support_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#support_rules LogsCustomPipeline#support_rules}
 
 ---
 
@@ -24735,6 +33342,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putArithmeticProcessor">put_arithmetic_processor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putArrayMapProcessor">put_array_map_processor</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putArrayProcessor">put_array_processor</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putAttributeRemapper">put_attribute_remapper</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putCategoryProcessor">put_category_processor</a></code> | *No description.* |
@@ -24754,6 +33362,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putUrlParser">put_url_parser</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putUserAgentParser">put_user_agent_parser</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.resetArithmeticProcessor">reset_arithmetic_processor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.resetArrayMapProcessor">reset_array_map_processor</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.resetArrayProcessor">reset_array_processor</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.resetAttributeRemapper">reset_attribute_remapper</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.resetCategoryProcessor">reset_category_processor</a></code> | *No description.* |
@@ -24965,7 +33574,7 @@ def put_arithmetic_processor(
 
 Arithmetic operation between one or more log attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
 
 ---
 
@@ -24975,7 +33584,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the attribute that contains the result of the arithmetic operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -24985,7 +33594,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Boolean value to enable your pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -24995,7 +33604,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If true, it replaces all missing attributes of expression by 0, false skips the operation if an attribute is missing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
 
 ---
 
@@ -25005,7 +33614,80 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Your pipeline name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+##### `put_array_map_processor` <a name="put_array_map_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putArrayMapProcessor"></a>
+
+```python
+def put_array_map_processor(
+  processors: IResolvable | typing.List[LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors],
+  source: str,
+  target: str,
+  is_enabled: bool | IResolvable = None,
+  name: str = None,
+  preserve_source: bool | IResolvable = None
+) -> None
+```
+
+###### `processors`<sup>Required</sup> <a name="processors" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putArrayMapProcessor.parameter.processors"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessors</a>]
+
+processors block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#processors LogsCustomPipeline#processors}
+
+---
+
+###### `source`<sup>Required</sup> <a name="source" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putArrayMapProcessor.parameter.source"></a>
+
+- *Type:* str
+
+Attribute path of the source array.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+
+---
+
+###### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putArrayMapProcessor.parameter.target"></a>
+
+- *Type:* str
+
+Attribute path of the output array.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+###### `is_enabled`<sup>Optional</sup> <a name="is_enabled" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putArrayMapProcessor.parameter.isEnabled"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+If the processor is enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+
+---
+
+###### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putArrayMapProcessor.parameter.name"></a>
+
+- *Type:* str
+
+Name of the processor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+###### `preserve_source`<sup>Optional</sup> <a name="preserve_source" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putArrayMapProcessor.parameter.preserveSource"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Remove or preserve the source array after processing. Defaults to `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
 
 ---
 
@@ -25025,7 +33707,7 @@ def put_array_processor(
 
 operation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#operation LogsCustomPipeline#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#operation LogsCustomPipeline#operation}
 
 ---
 
@@ -25035,7 +33717,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Boolean value to enable your processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -25045,7 +33727,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Your processor name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -25071,7 +33753,7 @@ def put_attribute_remapper(
 
 List of source attributes or tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -25081,7 +33763,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Defines where the sources are from (log `attribute` or `tag`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source_type LogsCustomPipeline#source_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source_type LogsCustomPipeline#source_type}
 
 ---
 
@@ -25091,7 +33773,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Final attribute or tag name to remap the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -25101,7 +33783,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Defines if the target is a log `attribute` or `tag`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target_type LogsCustomPipeline#target_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target_type LogsCustomPipeline#target_type}
 
 ---
 
@@ -25111,7 +33793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -25121,7 +33803,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -25131,7 +33813,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Override the target element if already set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
 
 ---
 
@@ -25141,7 +33823,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Remove or preserve the remapped source element.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
 
 ---
 
@@ -25153,7 +33835,7 @@ If the `target_type` of the remapper is `attribute`, try to cast the value to a 
 
 If the cast is not possible, the original type is kept. `string`, `integer`, or `double` are the possible types. If the `target_type` is `tag`, this parameter may not be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
 
 ---
 
@@ -25174,7 +33856,7 @@ def put_category_processor(
 
 category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
 
 ---
 
@@ -25184,7 +33866,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the target attribute whose value is defined by the matching category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -25194,7 +33876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -25204,7 +33886,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -25224,7 +33906,7 @@ def put_date_remapper(
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -25234,7 +33916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -25244,7 +33926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -25267,7 +33949,7 @@ def put_decoder_processor(
 
 Encoding type: base64 or base16.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#binary_to_text_encoding LogsCustomPipeline#binary_to_text_encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#binary_to_text_encoding LogsCustomPipeline#binary_to_text_encoding}
 
 ---
 
@@ -25277,7 +33959,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Input representation: utf-8 or integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#input_representation LogsCustomPipeline#input_representation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#input_representation LogsCustomPipeline#input_representation}
 
 ---
 
@@ -25287,7 +33969,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Encoded message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -25297,7 +33979,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Decoded message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -25307,7 +33989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -25317,7 +33999,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -25338,7 +34020,7 @@ def put_geo_ip_parser(
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -25348,7 +34030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the parent attribute that contains all the extracted details from the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -25358,7 +34040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -25368,7 +34050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -25390,7 +34072,7 @@ def put_grok_parser(
 
 grok block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#grok LogsCustomPipeline#grok}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#grok LogsCustomPipeline#grok}
 
 ---
 
@@ -25400,7 +34082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the log attribute to parse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -25410,7 +34092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -25420,7 +34102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -25432,7 +34114,7 @@ List of sample logs for this parser.
 
 It can save up to 5 samples. Each sample takes up to 5000 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#samples LogsCustomPipeline#samples}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#samples LogsCustomPipeline#samples}
 
 ---
 
@@ -25455,7 +34137,7 @@ def put_lookup_processor(
 
 List of entries of the lookup table using `key,value` format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#lookup_table LogsCustomPipeline#lookup_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#lookup_table LogsCustomPipeline#lookup_table}
 
 ---
 
@@ -25465,7 +34147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the source attribute used to do the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -25475,7 +34157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the attribute that contains the result of the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -25485,7 +34167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Default lookup value to use if there is no entry in the lookup table for the value of the source attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#default_lookup LogsCustomPipeline#default_lookup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#default_lookup LogsCustomPipeline#default_lookup}
 
 ---
 
@@ -25495,7 +34177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -25505,7 +34187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -25525,7 +34207,7 @@ def put_message_remapper(
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -25535,7 +34217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -25545,7 +34227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -25567,7 +34249,7 @@ def put_reference_table_lookup_processor(
 
 Name of the Reference Table for the source attribute and their associated target attribute values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
 
 ---
 
@@ -25577,7 +34259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the source attribute used to do the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
 
 ---
 
@@ -25587,7 +34269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the attribute that contains the result of the lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -25597,7 +34279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -25607,7 +34289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -25628,7 +34310,7 @@ def put_schema_processor(
 
 mappers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#mappers LogsCustomPipeline#mappers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#mappers LogsCustomPipeline#mappers}
 
 ---
 
@@ -25638,7 +34320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema LogsCustomPipeline#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#schema LogsCustomPipeline#schema}
 
 ---
 
@@ -25648,7 +34330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -25658,7 +34340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -25678,7 +34360,7 @@ def put_service_remapper(
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -25688,7 +34370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -25698,7 +34380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -25718,7 +34400,7 @@ def put_span_id_remapper(
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -25728,7 +34410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -25738,7 +34420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -25758,7 +34440,7 @@ def put_status_remapper(
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -25768,7 +34450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -25778,7 +34460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -25800,7 +34482,7 @@ def put_string_builder_processor(
 
 The name of the attribute that contains the result of the template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -25810,7 +34492,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The formula with one or more attributes and raw text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
 
 ---
 
@@ -25820,7 +34502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -25830,7 +34512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If it replaces all missing attributes of template by an empty string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
 
 ---
 
@@ -25840,7 +34522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -25860,7 +34542,7 @@ def put_trace_id_remapper(
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -25870,7 +34552,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -25880,7 +34562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -25902,7 +34584,7 @@ def put_url_parser(
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -25912,7 +34594,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the parent attribute that contains all the extracted details from the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -25922,7 +34604,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -25932,7 +34614,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -25942,7 +34624,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Normalize the ending slashes or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#normalize_ending_slashes LogsCustomPipeline#normalize_ending_slashes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#normalize_ending_slashes LogsCustomPipeline#normalize_ending_slashes}
 
 ---
 
@@ -25964,7 +34646,7 @@ def put_user_agent_parser(
 
 List of source attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -25974,7 +34656,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the parent attribute that contains all the extracted details from the sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 
 ---
 
@@ -25984,7 +34666,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the processor is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
 
 ---
 
@@ -25994,7 +34676,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If the source attribute is URL encoded or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_encoded LogsCustomPipeline#is_encoded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#is_encoded LogsCustomPipeline#is_encoded}
 
 ---
 
@@ -26004,7 +34686,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -26012,6 +34694,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ```python
 def reset_arithmetic_processor() -> None
+```
+
+##### `reset_array_map_processor` <a name="reset_array_map_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.resetArrayMapProcessor"></a>
+
+```python
+def reset_array_map_processor() -> None
 ```
 
 ##### `reset_array_processor` <a name="reset_array_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.resetArrayProcessor"></a>
@@ -26130,6 +34818,7 @@ def reset_user_agent_parser() -> None
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.arithmeticProcessor">arithmetic_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.arrayMapProcessor">array_map_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.arrayProcessor">array_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.attributeRemapper">attribute_remapper</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutputReference">LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.categoryProcessor">category_processor</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutputReference</a></code> | *No description.* |
@@ -26149,6 +34838,7 @@ def reset_user_agent_parser() -> None
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.urlParser">url_parser</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReference">LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.userAgentParser">user_agent_parser</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputReference">LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.arithmeticProcessorInput">arithmetic_processor_input</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor">LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.arrayMapProcessorInput">array_map_processor_input</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.arrayProcessorInput">array_processor_input</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.attributeRemapperInput">attribute_remapper_input</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper">LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.categoryProcessorInput">category_processor_input</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor">LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor</a></code> | *No description.* |
@@ -26202,6 +34892,16 @@ arithmetic_processor: LogsCustomPipelineProcessorPipelineProcessorArithmeticProc
 ```
 
 - *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference</a>
+
+---
+
+##### `array_map_processor`<sup>Required</sup> <a name="array_map_processor" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.arrayMapProcessor"></a>
+
+```python
+array_map_processor: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorOutputReference</a>
 
 ---
 
@@ -26392,6 +35092,16 @@ arithmetic_processor_input: LogsCustomPipelineProcessorPipelineProcessorArithmet
 ```
 
 - *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor">LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor</a>
+
+---
+
+##### `array_map_processor_input`<sup>Optional</sup> <a name="array_map_processor_input" id="@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.arrayMapProcessorInput"></a>
+
+```python
+array_map_processor_input: LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor">LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessor</a>
 
 ---
 
@@ -28265,7 +36975,7 @@ def put_filter(
 
 Filter criteria of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
 
 ---
 
@@ -29164,7 +37874,7 @@ def put_fallback(
 
 Fallback sources used to populate value of field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -29174,7 +37884,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Values that define when the fallback is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#values LogsCustomPipeline#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#values LogsCustomPipeline#values}
 
 ---
 
@@ -29193,7 +37903,7 @@ def put_targets(
 
 ID of the field to map log attributes to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29206,7 +37916,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Name of the field to map log attributes to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -30564,7 +39274,7 @@ def put_schema(
 
 Class name of the schema to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#class_name LogsCustomPipeline#class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#class_name LogsCustomPipeline#class_name}
 
 ---
 
@@ -30574,7 +39284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Class UID of the schema to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#class_uid LogsCustomPipeline#class_uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#class_uid LogsCustomPipeline#class_uid}
 
 ---
 
@@ -30584,7 +39294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Type of schema to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema_type LogsCustomPipeline#schema_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#schema_type LogsCustomPipeline#schema_type}
 
 ---
 
@@ -30594,7 +39304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Version of the schema to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#version LogsCustomPipeline#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#version LogsCustomPipeline#version}
 
 ---
 
@@ -30604,7 +39314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Optional list of extensions to modify the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#extensions LogsCustomPipeline#extensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#extensions LogsCustomPipeline#extensions}
 
 ---
 
@@ -30614,7 +39324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Optional list of profiles to modify the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#profiles LogsCustomPipeline#profiles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#profiles LogsCustomPipeline#profiles}
 
 ---
 
@@ -35494,7 +44204,7 @@ def put_filter(
 
 Filter criteria of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
 
 ---
 
@@ -36393,7 +45103,7 @@ def put_fallback(
 
 Fallback sources used to populate value of field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 
 ---
 
@@ -36403,7 +45113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Values that define when the fallback is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#values LogsCustomPipeline#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#values LogsCustomPipeline#values}
 
 ---
 
@@ -36422,7 +45132,7 @@ def put_targets(
 
 ID of the field to map log attributes to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -36435,7 +45145,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Name of the field to map log attributes to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 
 ---
 
@@ -37793,7 +46503,7 @@ def put_schema(
 
 Class name of the schema to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#class_name LogsCustomPipeline#class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#class_name LogsCustomPipeline#class_name}
 
 ---
 
@@ -37803,7 +46513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Class UID of the schema to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#class_uid LogsCustomPipeline#class_uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#class_uid LogsCustomPipeline#class_uid}
 
 ---
 
@@ -37813,7 +46523,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Type of schema to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema_type LogsCustomPipeline#schema_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#schema_type LogsCustomPipeline#schema_type}
 
 ---
 
@@ -37823,7 +46533,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Version of the schema to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#version LogsCustomPipeline#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#version LogsCustomPipeline#version}
 
 ---
 
@@ -37833,7 +46543,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Optional list of extensions to modify the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#extensions LogsCustomPipeline#extensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#extensions LogsCustomPipeline#extensions}
 
 ---
 
@@ -37843,7 +46553,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Optional list of profiles to modify the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#profiles LogsCustomPipeline#profiles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#profiles LogsCustomPipeline#profiles}
 
 ---
 

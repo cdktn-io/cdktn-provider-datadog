@@ -4,7 +4,7 @@
 
 ### DataDatadogTeams <a name="DataDatadogTeams" id="@cdktn/provider-datadog.dataDatadogTeams.DataDatadogTeams"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/teams datadog_teams}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/teams datadog_teams}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogTeams.DataDatadogTeams.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Search query. Can be team name, team handle, or email of team member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/teams#filter_keyword DataDatadogTeams#filter_keyword}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/teams#filter_keyword DataDatadogTeams#filter_keyword}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 When true, only returns teams the current user belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/teams#filter_me DataDatadogTeams#filter_me}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/teams#filter_me DataDatadogTeams#filter_me}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 teams block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/teams#teams DataDatadogTeams#teams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/teams#teams DataDatadogTeams#teams}
 
 ---
 
@@ -507,7 +507,7 @@ The construct id used in the generated config for the DataDatadogTeams to import
 
 The id of the existing DataDatadogTeams that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/teams#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/teams#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -875,7 +875,7 @@ public java.lang.String getFilterKeyword();
 
 Search query. Can be team name, team handle, or email of team member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/teams#filter_keyword DataDatadogTeams#filter_keyword}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/teams#filter_keyword DataDatadogTeams#filter_keyword}
 
 ---
 
@@ -889,7 +889,7 @@ public java.lang.Boolean|IResolvable getFilterMe();
 
 When true, only returns teams the current user belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/teams#filter_me DataDatadogTeams#filter_me}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/teams#filter_me DataDatadogTeams#filter_me}
 
 ---
 
@@ -903,7 +903,7 @@ public IResolvable|java.util.List<DataDatadogTeamsTeams> getTeams();
 
 teams block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/teams#teams DataDatadogTeams#teams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/teams#teams DataDatadogTeams#teams}
 
 ---
 
