@@ -4,7 +4,7 @@
 
 ### ApmRetentionFilterOrder <a name="ApmRetentionFilterOrder" id="@cdktn/provider-datadog.apmRetentionFilterOrder.ApmRetentionFilterOrder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/apm_retention_filter_order datadog_apm_retention_filter_order}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/apm_retention_filter_order datadog_apm_retention_filter_order}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.apmRetentionFilterOrder.ApmRetentionFilterOrder.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the ApmRetentionFilterOrder to
 
 The id of the existing ApmRetentionFilterOrder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/apm_retention_filter_order#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/apm_retention_filter_order#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -831,7 +831,7 @@ FilterIds *[]*string
 
 The filter IDs list. The order of filters IDs in this attribute defines the overall APM retention filters order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/apm_retention_filter_order#filter_ids ApmRetentionFilterOrder#filter_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/apm_retention_filter_order#filter_ids ApmRetentionFilterOrder#filter_ids}
 
 ---
 

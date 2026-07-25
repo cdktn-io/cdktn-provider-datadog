@@ -4,7 +4,7 @@
 
 ### DataDatadogSoftwareCatalog <a name="DataDatadogSoftwareCatalog" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/software_catalog datadog_software_catalog}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/software_catalog datadog_software_catalog}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.Initializer"></a>
 
@@ -26,6 +26,7 @@ DataDatadogSoftwareCatalog.Builder.create(Construct scope, java.lang.String id)
 //  .filterOwner(java.lang.String)
 //  .filterRef(java.lang.String)
 //  .filterRelationType(java.lang.String)
+//  .includeDiscovered(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -47,6 +48,7 @@ DataDatadogSoftwareCatalog.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.Initializer.parameter.filterOwner">filterOwner</a></code> | <code>java.lang.String</code> | Filter entities by owner. |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.Initializer.parameter.filterRef">filterRef</a></code> | <code>java.lang.String</code> | Filter entities by reference. |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.Initializer.parameter.filterRelationType">filterRelationType</a></code> | <code>java.lang.String</code> | Filter entities by relation type. Valid values are `RelationTypeOwns`, `RelationTypeOwnedBy`, `RelationTypeDependsOn`, `RelationTypeDependencyOf`, `RelationTypePartsOf`, `RelationTypeHasPart`, `RelationTypeOtherOwns`, `RelationTypeOtherOwnedBy`, `RelationTypeImplementedBy`, `RelationTypeImplements`. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.Initializer.parameter.includeDiscovered">includeDiscovered</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Include entities that have been discovered but not yet enriched. |
 
 ---
 
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 Filter entities by excluding snapshotted entities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/software_catalog#filter_exclude_snapshot DataDatadogSoftwareCatalog#filter_exclude_snapshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/software_catalog#filter_exclude_snapshot DataDatadogSoftwareCatalog#filter_exclude_snapshot}
 
 ---
 
@@ -126,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Filter entities by UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/software_catalog#filter_id DataDatadogSoftwareCatalog#filter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/software_catalog#filter_id DataDatadogSoftwareCatalog#filter_id}
 
 ---
 
@@ -136,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Filter entities by kind.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/software_catalog#filter_kind DataDatadogSoftwareCatalog#filter_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/software_catalog#filter_kind DataDatadogSoftwareCatalog#filter_kind}
 
 ---
 
@@ -146,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Filter entities by name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/software_catalog#filter_name DataDatadogSoftwareCatalog#filter_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/software_catalog#filter_name DataDatadogSoftwareCatalog#filter_name}
 
 ---
 
@@ -156,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Filter entities by owner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/software_catalog#filter_owner DataDatadogSoftwareCatalog#filter_owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/software_catalog#filter_owner DataDatadogSoftwareCatalog#filter_owner}
 
 ---
 
@@ -166,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Filter entities by reference.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/software_catalog#filter_ref DataDatadogSoftwareCatalog#filter_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/software_catalog#filter_ref DataDatadogSoftwareCatalog#filter_ref}
 
 ---
 
@@ -176,7 +178,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Filter entities by relation type. Valid values are `RelationTypeOwns`, `RelationTypeOwnedBy`, `RelationTypeDependsOn`, `RelationTypeDependencyOf`, `RelationTypePartsOf`, `RelationTypeHasPart`, `RelationTypeOtherOwns`, `RelationTypeOtherOwnedBy`, `RelationTypeImplementedBy`, `RelationTypeImplements`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/software_catalog#filter_relation_type DataDatadogSoftwareCatalog#filter_relation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/software_catalog#filter_relation_type DataDatadogSoftwareCatalog#filter_relation_type}
+
+---
+
+##### `includeDiscovered`<sup>Optional</sup> <a name="includeDiscovered" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.Initializer.parameter.includeDiscovered"></a>
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Include entities that have been discovered but not yet enriched.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/software_catalog#include_discovered DataDatadogSoftwareCatalog#include_discovered}
 
 ---
 
@@ -209,6 +221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.resetFilterOwner">resetFilterOwner</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.resetFilterRef">resetFilterRef</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.resetFilterRelationType">resetFilterRelationType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.resetIncludeDiscovered">resetIncludeDiscovered</a></code> | *No description.* |
 
 ---
 
@@ -467,6 +480,12 @@ public void resetFilterRef()
 public void resetFilterRelationType()
 ```
 
+##### `resetIncludeDiscovered` <a name="resetIncludeDiscovered" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.resetIncludeDiscovered"></a>
+
+```java
+public void resetIncludeDiscovered()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -570,7 +589,7 @@ The construct id used in the generated config for the DataDatadogSoftwareCatalog
 
 The id of the existing DataDatadogSoftwareCatalog that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/software_catalog#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/software_catalog#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -607,6 +626,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.property.filterOwnerInput">filterOwnerInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.property.filterRefInput">filterRefInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.property.filterRelationTypeInput">filterRelationTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.property.includeDiscoveredInput">includeDiscoveredInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.property.filterExcludeSnapshot">filterExcludeSnapshot</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.property.filterId">filterId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.property.filterKind">filterKind</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -614,6 +634,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.property.filterOwner">filterOwner</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.property.filterRef">filterRef</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.property.filterRelationType">filterRelationType</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.property.includeDiscovered">includeDiscovered</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 
 ---
 
@@ -829,6 +850,16 @@ public java.lang.String getFilterRelationTypeInput();
 
 ---
 
+##### `includeDiscoveredInput`<sup>Optional</sup> <a name="includeDiscoveredInput" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.property.includeDiscoveredInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIncludeDiscoveredInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `filterExcludeSnapshot`<sup>Required</sup> <a name="filterExcludeSnapshot" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.property.filterExcludeSnapshot"></a>
 
 ```java
@@ -899,6 +930,16 @@ public java.lang.String getFilterRelationType();
 
 ---
 
+##### `includeDiscovered`<sup>Required</sup> <a name="includeDiscovered" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.property.includeDiscovered"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIncludeDiscovered();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -941,6 +982,7 @@ DataDatadogSoftwareCatalogConfig.builder()
 //  .filterOwner(java.lang.String)
 //  .filterRef(java.lang.String)
 //  .filterRelationType(java.lang.String)
+//  .includeDiscovered(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -962,6 +1004,7 @@ DataDatadogSoftwareCatalogConfig.builder()
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalogConfig.property.filterOwner">filterOwner</a></code> | <code>java.lang.String</code> | Filter entities by owner. |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalogConfig.property.filterRef">filterRef</a></code> | <code>java.lang.String</code> | Filter entities by reference. |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalogConfig.property.filterRelationType">filterRelationType</a></code> | <code>java.lang.String</code> | Filter entities by relation type. Valid values are `RelationTypeOwns`, `RelationTypeOwnedBy`, `RelationTypeDependsOn`, `RelationTypeDependencyOf`, `RelationTypePartsOf`, `RelationTypeHasPart`, `RelationTypeOtherOwns`, `RelationTypeOtherOwnedBy`, `RelationTypeImplementedBy`, `RelationTypeImplements`. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalogConfig.property.includeDiscovered">includeDiscovered</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Include entities that have been discovered but not yet enriched. |
 
 ---
 
@@ -1045,7 +1088,7 @@ public java.lang.String getFilterExcludeSnapshot();
 
 Filter entities by excluding snapshotted entities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/software_catalog#filter_exclude_snapshot DataDatadogSoftwareCatalog#filter_exclude_snapshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/software_catalog#filter_exclude_snapshot DataDatadogSoftwareCatalog#filter_exclude_snapshot}
 
 ---
 
@@ -1059,7 +1102,7 @@ public java.lang.String getFilterId();
 
 Filter entities by UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/software_catalog#filter_id DataDatadogSoftwareCatalog#filter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/software_catalog#filter_id DataDatadogSoftwareCatalog#filter_id}
 
 ---
 
@@ -1073,7 +1116,7 @@ public java.lang.String getFilterKind();
 
 Filter entities by kind.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/software_catalog#filter_kind DataDatadogSoftwareCatalog#filter_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/software_catalog#filter_kind DataDatadogSoftwareCatalog#filter_kind}
 
 ---
 
@@ -1087,7 +1130,7 @@ public java.lang.String getFilterName();
 
 Filter entities by name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/software_catalog#filter_name DataDatadogSoftwareCatalog#filter_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/software_catalog#filter_name DataDatadogSoftwareCatalog#filter_name}
 
 ---
 
@@ -1101,7 +1144,7 @@ public java.lang.String getFilterOwner();
 
 Filter entities by owner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/software_catalog#filter_owner DataDatadogSoftwareCatalog#filter_owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/software_catalog#filter_owner DataDatadogSoftwareCatalog#filter_owner}
 
 ---
 
@@ -1115,7 +1158,7 @@ public java.lang.String getFilterRef();
 
 Filter entities by reference.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/software_catalog#filter_ref DataDatadogSoftwareCatalog#filter_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/software_catalog#filter_ref DataDatadogSoftwareCatalog#filter_ref}
 
 ---
 
@@ -1129,7 +1172,21 @@ public java.lang.String getFilterRelationType();
 
 Filter entities by relation type. Valid values are `RelationTypeOwns`, `RelationTypeOwnedBy`, `RelationTypeDependsOn`, `RelationTypeDependencyOf`, `RelationTypePartsOf`, `RelationTypeHasPart`, `RelationTypeOtherOwns`, `RelationTypeOtherOwnedBy`, `RelationTypeImplementedBy`, `RelationTypeImplements`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/software_catalog#filter_relation_type DataDatadogSoftwareCatalog#filter_relation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/software_catalog#filter_relation_type DataDatadogSoftwareCatalog#filter_relation_type}
+
+---
+
+##### `includeDiscovered`<sup>Optional</sup> <a name="includeDiscovered" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalogConfig.property.includeDiscovered"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIncludeDiscovered();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Include entities that have been discovered but not yet enriched.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/software_catalog#include_discovered DataDatadogSoftwareCatalog#include_discovered}
 
 ---
 

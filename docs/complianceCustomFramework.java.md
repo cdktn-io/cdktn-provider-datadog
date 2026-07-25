@@ -4,7 +4,7 @@
 
 ### ComplianceCustomFramework <a name="ComplianceCustomFramework" id="@cdktn/provider-datadog.complianceCustomFramework.ComplianceCustomFramework"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/compliance_custom_framework datadog_compliance_custom_framework}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/compliance_custom_framework datadog_compliance_custom_framework}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.complianceCustomFramework.ComplianceCustomFramework.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The framework handle. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/compliance_custom_framework#handle ComplianceCustomFramework#handle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/compliance_custom_framework#handle ComplianceCustomFramework#handle}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The framework name. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The framework version. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/compliance_custom_framework#version ComplianceCustomFramework#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/compliance_custom_framework#version ComplianceCustomFramework#version}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The URL of the icon representing the framework.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/compliance_custom_framework#icon_url ComplianceCustomFramework#icon_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/compliance_custom_framework#icon_url ComplianceCustomFramework#icon_url}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 requirements block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/compliance_custom_framework#requirements ComplianceCustomFramework#requirements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/compliance_custom_framework#requirements ComplianceCustomFramework#requirements}
 
 ---
 
@@ -628,7 +628,7 @@ The construct id used in the generated config for the ComplianceCustomFramework 
 
 The id of the existing ComplianceCustomFramework that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/compliance_custom_framework#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/compliance_custom_framework#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1066,7 +1066,7 @@ public java.lang.String getHandle();
 
 The framework handle. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/compliance_custom_framework#handle ComplianceCustomFramework#handle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/compliance_custom_framework#handle ComplianceCustomFramework#handle}
 
 ---
 
@@ -1080,7 +1080,7 @@ public java.lang.String getName();
 
 The framework name. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
 
 ---
 
@@ -1094,7 +1094,7 @@ public java.lang.String getVersion();
 
 The framework version. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/compliance_custom_framework#version ComplianceCustomFramework#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/compliance_custom_framework#version ComplianceCustomFramework#version}
 
 ---
 
@@ -1108,7 +1108,7 @@ public java.lang.String getIconUrl();
 
 The URL of the icon representing the framework.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/compliance_custom_framework#icon_url ComplianceCustomFramework#icon_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/compliance_custom_framework#icon_url ComplianceCustomFramework#icon_url}
 
 ---
 
@@ -1122,7 +1122,7 @@ public IResolvable|java.util.List<ComplianceCustomFrameworkRequirements> getRequ
 
 requirements block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/compliance_custom_framework#requirements ComplianceCustomFramework#requirements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/compliance_custom_framework#requirements ComplianceCustomFramework#requirements}
 
 ---
 
@@ -1158,7 +1158,7 @@ public java.lang.String getName();
 
 The name of the requirement. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
 
 ---
 
@@ -1172,7 +1172,7 @@ public IResolvable|java.util.List<ComplianceCustomFrameworkRequirementsControls>
 
 controls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/compliance_custom_framework#controls ComplianceCustomFramework#controls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/compliance_custom_framework#controls ComplianceCustomFramework#controls}
 
 ---
 
@@ -1208,7 +1208,7 @@ public java.lang.String getName();
 
 The name of the control. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
 
 ---
 
@@ -1222,7 +1222,7 @@ public java.util.List<java.lang.String> getRulesId();
 
 The set of rules IDs for the control.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/compliance_custom_framework#rules_id ComplianceCustomFramework#rules_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/compliance_custom_framework#rules_id ComplianceCustomFramework#rules_id}
 
 ---
 

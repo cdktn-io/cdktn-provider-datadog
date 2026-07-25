@@ -4,7 +4,7 @@
 
 ### Datastore <a name="Datastore" id="@cdktn/provider-datadog.datastore.Datastore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/datastore datadog_datastore}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/datastore datadog_datastore}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.datastore.Datastore.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The display name for the new datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/datastore#name Datastore#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/datastore#name Datastore#name}
 
 ---
 
@@ -126,7 +126,7 @@ The name of the primary key column for this datastore.
 
 Primary column names:   - Must abide by both [PostgreSQL naming conventions](https://www.postgresql.org/docs/7.0/syntax525.htm)   - Cannot exceed 63 characters
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/datastore#primary_column_name Datastore#primary_column_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/datastore#primary_column_name Datastore#primary_column_name}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A human-readable description about the datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/datastore#description Datastore#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/datastore#description Datastore#description}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The organization access level for the datastore. For example, 'contributor'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/datastore#org_access Datastore#org_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/datastore#org_access Datastore#org_access}
 
 ---
 
@@ -158,7 +158,7 @@ Can be set to `uuid` to automatically generate primary keys when new items are a
 
 Default value is `none`, which requires you to supply a primary key for each new item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/datastore#primary_key_generation_strategy Datastore#primary_key_generation_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/datastore#primary_key_generation_strategy Datastore#primary_key_generation_strategy}
 
 ---
 
@@ -676,7 +676,7 @@ The construct id used in the generated config for the Datastore to import.
 
 The id of the existing Datastore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/datastore#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/datastore#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1169,7 +1169,7 @@ name: str
 
 The display name for the new datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/datastore#name Datastore#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/datastore#name Datastore#name}
 
 ---
 
@@ -1185,7 +1185,7 @@ The name of the primary key column for this datastore.
 
 Primary column names:   - Must abide by both [PostgreSQL naming conventions](https://www.postgresql.org/docs/7.0/syntax525.htm)   - Cannot exceed 63 characters
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/datastore#primary_column_name Datastore#primary_column_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/datastore#primary_column_name Datastore#primary_column_name}
 
 ---
 
@@ -1199,7 +1199,7 @@ description: str
 
 A human-readable description about the datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/datastore#description Datastore#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/datastore#description Datastore#description}
 
 ---
 
@@ -1213,7 +1213,7 @@ org_access: str
 
 The organization access level for the datastore. For example, 'contributor'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/datastore#org_access Datastore#org_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/datastore#org_access Datastore#org_access}
 
 ---
 
@@ -1229,7 +1229,7 @@ Can be set to `uuid` to automatically generate primary keys when new items are a
 
 Default value is `none`, which requires you to supply a primary key for each new item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/datastore#primary_key_generation_strategy Datastore#primary_key_generation_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/datastore#primary_key_generation_strategy Datastore#primary_key_generation_strategy}
 
 ---
 

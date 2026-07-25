@@ -4,7 +4,7 @@
 
 ### IncidentType <a name="IncidentType" id="@cdktn/provider-datadog.incidentType.IncidentType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/incident_type datadog_incident_type}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type datadog_incident_type}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.incidentType.IncidentType.Initializer"></a>
 
@@ -74,6 +74,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.putConfiguration">PutConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.resetConfiguration">ResetConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.resetIsDefault">ResetIsDefault</a></code> | *No description.* |
 
@@ -388,6 +390,24 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `PutConfiguration` <a name="PutConfiguration" id="@cdktn/provider-datadog.incidentType.IncidentType.putConfiguration"></a>
+
+```go
+func PutConfiguration(value IncidentTypeConfiguration)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.incidentType.IncidentType.putConfiguration.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration">IncidentTypeConfiguration</a>
+
+---
+
+##### `ResetConfiguration` <a name="ResetConfiguration" id="@cdktn/provider-datadog.incidentType.IncidentType.resetConfiguration"></a>
+
+```go
+func ResetConfiguration()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-datadog.incidentType.IncidentType.resetDescription"></a>
 
 ```go
@@ -503,7 +523,7 @@ The construct id used in the generated config for the IncidentType to import.
 
 The id of the existing IncidentType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/incident_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -533,7 +553,9 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.property.configuration">Configuration</a></code> | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference">IncidentTypeConfigurationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.property.configurationInput">ConfigurationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.property.isDefaultInput">IsDefaultInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
@@ -685,6 +707,16 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `Configuration`<sup>Required</sup> <a name="Configuration" id="@cdktn/provider-datadog.incidentType.IncidentType.property.configuration"></a>
+
+```go
+func Configuration() IncidentTypeConfigurationOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference">IncidentTypeConfigurationOutputReference</a>
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-datadog.incidentType.IncidentType.property.id"></a>
 
 ```go
@@ -692,6 +724,16 @@ func Id() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `ConfigurationInput`<sup>Optional</sup> <a name="ConfigurationInput" id="@cdktn/provider-datadog.incidentType.IncidentType.property.configurationInput"></a>
+
+```go
+func ConfigurationInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -791,6 +833,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidenttype"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
+	Configuration: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.incidentType.IncidentTypeConfiguration,
 	Description: *string,
 	IsDefault: interface{},
 }
@@ -808,6 +851,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidenttype"
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfig.property.name">Name</a></code> | <code>*string</code> | Name of the incident type. Must be between 1 and 50 characters. |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfig.property.configuration">Configuration</a></code> | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration">IncidentTypeConfiguration</a></code> | The incident type's behavior settings. |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfig.property.description">Description</a></code> | <code>*string</code> | Description of the incident type. The description can have a maximum of 512 characters. |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfig.property.isDefault">IsDefault</a></code> | <code>interface{}</code> | Whether this incident type is the default type. |
 
@@ -893,7 +937,23 @@ Name *string
 
 Name of the incident type. Must be between 1 and 50 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/incident_type#name IncidentType#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#name IncidentType#name}
+
+---
+
+##### `Configuration`<sup>Optional</sup> <a name="Configuration" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfig.property.configuration"></a>
+
+```go
+Configuration IncidentTypeConfiguration
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration">IncidentTypeConfiguration</a>
+
+The incident type's behavior settings.
+
+Any field left unset takes its server-side default. This block is applied in a separate call after the incident type is created.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#configuration IncidentType#configuration}
 
 ---
 
@@ -907,7 +967,7 @@ Description *string
 
 Description of the incident type. The description can have a maximum of 512 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/incident_type#description IncidentType#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#description IncidentType#description}
 
 ---
 
@@ -921,7 +981,637 @@ IsDefault interface{}
 
 Whether this incident type is the default type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/incident_type#is_default IncidentType#is_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#is_default IncidentType#is_default}
+
+---
+
+### IncidentTypeConfiguration <a name="IncidentTypeConfiguration" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidenttype"
+
+&incidenttype.IncidentTypeConfiguration {
+	AllowIncidentDeletion: interface{},
+	AllowWorkflows: interface{},
+	CreateMessage: *string,
+	EditableTimestamps: interface{},
+	PrivateIncidents: interface{},
+	PrivateIncidentsByDefault: interface{},
+	SlugSource: *string,
+	TestIncidents: interface{},
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.allowIncidentDeletion">AllowIncidentDeletion</a></code> | <code>interface{}</code> | Whether incidents of this type can be deleted. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.allowWorkflows">AllowWorkflows</a></code> | <code>interface{}</code> | Whether users can manually run a workflow from an incident of this type. Defaults to `true`. |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.createMessage">CreateMessage</a></code> | <code>*string</code> | An optional message shown to users when they declare an incident of this type. Defaults to an empty string. |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.editableTimestamps">EditableTimestamps</a></code> | <code>interface{}</code> | Whether responders can edit incident timestamps for incidents of this type. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.privateIncidents">PrivateIncidents</a></code> | <code>interface{}</code> | Whether responders can create private incidents of this type. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.privateIncidentsByDefault">PrivateIncidentsByDefault</a></code> | <code>interface{}</code> | Whether the private toggle is enabled by default in the incident creation modal for this type. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.slugSource">SlugSource</a></code> | <code>*string</code> | The source used to derive the incident slug. |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.testIncidents">TestIncidents</a></code> | <code>interface{}</code> | Whether test incidents of this type can be created. Defaults to `true`. |
+
+---
+
+##### `AllowIncidentDeletion`<sup>Optional</sup> <a name="AllowIncidentDeletion" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.allowIncidentDeletion"></a>
+
+```go
+AllowIncidentDeletion interface{}
+```
+
+- *Type:* interface{}
+
+Whether incidents of this type can be deleted. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#allow_incident_deletion IncidentType#allow_incident_deletion}
+
+---
+
+##### `AllowWorkflows`<sup>Optional</sup> <a name="AllowWorkflows" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.allowWorkflows"></a>
+
+```go
+AllowWorkflows interface{}
+```
+
+- *Type:* interface{}
+
+Whether users can manually run a workflow from an incident of this type. Defaults to `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#allow_workflows IncidentType#allow_workflows}
+
+---
+
+##### `CreateMessage`<sup>Optional</sup> <a name="CreateMessage" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.createMessage"></a>
+
+```go
+CreateMessage *string
+```
+
+- *Type:* *string
+
+An optional message shown to users when they declare an incident of this type. Defaults to an empty string.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#create_message IncidentType#create_message}
+
+---
+
+##### `EditableTimestamps`<sup>Optional</sup> <a name="EditableTimestamps" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.editableTimestamps"></a>
+
+```go
+EditableTimestamps interface{}
+```
+
+- *Type:* interface{}
+
+Whether responders can edit incident timestamps for incidents of this type. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#editable_timestamps IncidentType#editable_timestamps}
+
+---
+
+##### `PrivateIncidents`<sup>Optional</sup> <a name="PrivateIncidents" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.privateIncidents"></a>
+
+```go
+PrivateIncidents interface{}
+```
+
+- *Type:* interface{}
+
+Whether responders can create private incidents of this type. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#private_incidents IncidentType#private_incidents}
+
+---
+
+##### `PrivateIncidentsByDefault`<sup>Optional</sup> <a name="PrivateIncidentsByDefault" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.privateIncidentsByDefault"></a>
+
+```go
+PrivateIncidentsByDefault interface{}
+```
+
+- *Type:* interface{}
+
+Whether the private toggle is enabled by default in the incident creation modal for this type. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#private_incidents_by_default IncidentType#private_incidents_by_default}
+
+---
+
+##### `SlugSource`<sup>Optional</sup> <a name="SlugSource" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.slugSource"></a>
+
+```go
+SlugSource *string
+```
+
+- *Type:* *string
+
+The source used to derive the incident slug.
+
+When set to `servicenow`, incidents display the ServiceNow record ID instead of the public ID. If no ServiceNow integration exists, the public ID is displayed. Defaults to `default`. Valid values are `default`, `servicenow`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#slug_source IncidentType#slug_source}
+
+---
+
+##### `TestIncidents`<sup>Optional</sup> <a name="TestIncidents" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.testIncidents"></a>
+
+```go
+TestIncidents interface{}
+```
+
+- *Type:* interface{}
+
+Whether test incidents of this type can be created. Defaults to `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#test_incidents IncidentType#test_incidents}
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### IncidentTypeConfigurationOutputReference <a name="IncidentTypeConfigurationOutputReference" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidenttype"
+
+incidenttype.NewIncidentTypeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IncidentTypeConfigurationOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetAllowIncidentDeletion">ResetAllowIncidentDeletion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetAllowWorkflows">ResetAllowWorkflows</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetCreateMessage">ResetCreateMessage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetEditableTimestamps">ResetEditableTimestamps</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetPrivateIncidents">ResetPrivateIncidents</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetPrivateIncidentsByDefault">ResetPrivateIncidentsByDefault</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetSlugSource">ResetSlugSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetTestIncidents">ResetTestIncidents</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetAllowIncidentDeletion` <a name="ResetAllowIncidentDeletion" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetAllowIncidentDeletion"></a>
+
+```go
+func ResetAllowIncidentDeletion()
+```
+
+##### `ResetAllowWorkflows` <a name="ResetAllowWorkflows" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetAllowWorkflows"></a>
+
+```go
+func ResetAllowWorkflows()
+```
+
+##### `ResetCreateMessage` <a name="ResetCreateMessage" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetCreateMessage"></a>
+
+```go
+func ResetCreateMessage()
+```
+
+##### `ResetEditableTimestamps` <a name="ResetEditableTimestamps" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetEditableTimestamps"></a>
+
+```go
+func ResetEditableTimestamps()
+```
+
+##### `ResetPrivateIncidents` <a name="ResetPrivateIncidents" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetPrivateIncidents"></a>
+
+```go
+func ResetPrivateIncidents()
+```
+
+##### `ResetPrivateIncidentsByDefault` <a name="ResetPrivateIncidentsByDefault" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetPrivateIncidentsByDefault"></a>
+
+```go
+func ResetPrivateIncidentsByDefault()
+```
+
+##### `ResetSlugSource` <a name="ResetSlugSource" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetSlugSource"></a>
+
+```go
+func ResetSlugSource()
+```
+
+##### `ResetTestIncidents` <a name="ResetTestIncidents" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetTestIncidents"></a>
+
+```go
+func ResetTestIncidents()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.allowIncidentDeletionInput">AllowIncidentDeletionInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.allowWorkflowsInput">AllowWorkflowsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.createMessageInput">CreateMessageInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.editableTimestampsInput">EditableTimestampsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.privateIncidentsByDefaultInput">PrivateIncidentsByDefaultInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.privateIncidentsInput">PrivateIncidentsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.slugSourceInput">SlugSourceInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.testIncidentsInput">TestIncidentsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.allowIncidentDeletion">AllowIncidentDeletion</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.allowWorkflows">AllowWorkflows</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.createMessage">CreateMessage</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.editableTimestamps">EditableTimestamps</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.privateIncidents">PrivateIncidents</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.privateIncidentsByDefault">PrivateIncidentsByDefault</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.slugSource">SlugSource</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.testIncidents">TestIncidents</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AllowIncidentDeletionInput`<sup>Optional</sup> <a name="AllowIncidentDeletionInput" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.allowIncidentDeletionInput"></a>
+
+```go
+func AllowIncidentDeletionInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `AllowWorkflowsInput`<sup>Optional</sup> <a name="AllowWorkflowsInput" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.allowWorkflowsInput"></a>
+
+```go
+func AllowWorkflowsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `CreateMessageInput`<sup>Optional</sup> <a name="CreateMessageInput" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.createMessageInput"></a>
+
+```go
+func CreateMessageInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `EditableTimestampsInput`<sup>Optional</sup> <a name="EditableTimestampsInput" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.editableTimestampsInput"></a>
+
+```go
+func EditableTimestampsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `PrivateIncidentsByDefaultInput`<sup>Optional</sup> <a name="PrivateIncidentsByDefaultInput" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.privateIncidentsByDefaultInput"></a>
+
+```go
+func PrivateIncidentsByDefaultInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `PrivateIncidentsInput`<sup>Optional</sup> <a name="PrivateIncidentsInput" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.privateIncidentsInput"></a>
+
+```go
+func PrivateIncidentsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `SlugSourceInput`<sup>Optional</sup> <a name="SlugSourceInput" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.slugSourceInput"></a>
+
+```go
+func SlugSourceInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TestIncidentsInput`<sup>Optional</sup> <a name="TestIncidentsInput" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.testIncidentsInput"></a>
+
+```go
+func TestIncidentsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `AllowIncidentDeletion`<sup>Required</sup> <a name="AllowIncidentDeletion" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.allowIncidentDeletion"></a>
+
+```go
+func AllowIncidentDeletion() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `AllowWorkflows`<sup>Required</sup> <a name="AllowWorkflows" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.allowWorkflows"></a>
+
+```go
+func AllowWorkflows() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `CreateMessage`<sup>Required</sup> <a name="CreateMessage" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.createMessage"></a>
+
+```go
+func CreateMessage() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `EditableTimestamps`<sup>Required</sup> <a name="EditableTimestamps" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.editableTimestamps"></a>
+
+```go
+func EditableTimestamps() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `PrivateIncidents`<sup>Required</sup> <a name="PrivateIncidents" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.privateIncidents"></a>
+
+```go
+func PrivateIncidents() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `PrivateIncidentsByDefault`<sup>Required</sup> <a name="PrivateIncidentsByDefault" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.privateIncidentsByDefault"></a>
+
+```go
+func PrivateIncidentsByDefault() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `SlugSource`<sup>Required</sup> <a name="SlugSource" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.slugSource"></a>
+
+```go
+func SlugSource() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TestIncidents`<sup>Required</sup> <a name="TestIncidents" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.testIncidents"></a>
+
+```go
+func TestIncidents() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
