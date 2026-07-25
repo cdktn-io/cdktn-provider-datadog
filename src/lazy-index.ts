@@ -26,6 +26,7 @@ Object.defineProperty(exports, 'cloudWorkloadSecurityAgentRule', { get: function
 Object.defineProperty(exports, 'complianceCustomFramework', { get: function () { return require('./compliance-custom-framework'); } });
 Object.defineProperty(exports, 'complianceResourceEvaluationFilter', { get: function () { return require('./compliance-resource-evaluation-filter'); } });
 Object.defineProperty(exports, 'costBudget', { get: function () { return require('./cost-budget'); } });
+Object.defineProperty(exports, 'costCustomForecast', { get: function () { return require('./cost-custom-forecast'); } });
 Object.defineProperty(exports, 'csmThreatsAgentRule', { get: function () { return require('./csm-threats-agent-rule'); } });
 Object.defineProperty(exports, 'csmThreatsPolicy', { get: function () { return require('./csm-threats-policy'); } });
 Object.defineProperty(exports, 'customAllocationRule', { get: function () { return require('./custom-allocation-rule'); } });
@@ -45,6 +46,8 @@ Object.defineProperty(exports, 'gcpUcConfig', { get: function () { return requir
 Object.defineProperty(exports, 'incidentNotificationRule', { get: function () { return require('./incident-notification-rule'); } });
 Object.defineProperty(exports, 'incidentNotificationTemplate', { get: function () { return require('./incident-notification-template'); } });
 Object.defineProperty(exports, 'incidentType', { get: function () { return require('./incident-type'); } });
+Object.defineProperty(exports, 'incidentUserDefinedField', { get: function () { return require('./incident-user-defined-field'); } });
+Object.defineProperty(exports, 'incidentUserDefinedRole', { get: function () { return require('./incident-user-defined-role'); } });
 Object.defineProperty(exports, 'integrationAwsAccount', { get: function () { return require('./integration-aws-account'); } });
 Object.defineProperty(exports, 'integrationAwsAccountCcmConfig', { get: function () { return require('./integration-aws-account-ccm-config'); } });
 Object.defineProperty(exports, 'integrationAwsEventBridge', { get: function () { return require('./integration-aws-event-bridge'); } });
@@ -158,8 +161,10 @@ Object.defineProperty(exports, 'dataDatadogAwsCurConfig', { get: function () { r
 Object.defineProperty(exports, 'dataDatadogAzureUcConfig', { get: function () { return require('./data-datadog-azure-uc-config'); } });
 Object.defineProperty(exports, 'dataDatadogCloudWorkloadSecurityAgentRules', { get: function () { return require('./data-datadog-cloud-workload-security-agent-rules'); } });
 Object.defineProperty(exports, 'dataDatadogCostBudget', { get: function () { return require('./data-datadog-cost-budget'); } });
+Object.defineProperty(exports, 'dataDatadogCostCustomForecast', { get: function () { return require('./data-datadog-cost-custom-forecast'); } });
 Object.defineProperty(exports, 'dataDatadogCsmThreatsAgentRules', { get: function () { return require('./data-datadog-csm-threats-agent-rules'); } });
 Object.defineProperty(exports, 'dataDatadogCsmThreatsPolicies', { get: function () { return require('./data-datadog-csm-threats-policies'); } });
+Object.defineProperty(exports, 'dataDatadogCurrentUser', { get: function () { return require('./data-datadog-current-user'); } });
 Object.defineProperty(exports, 'dataDatadogCustomAllocationRule', { get: function () { return require('./data-datadog-custom-allocation-rule'); } });
 Object.defineProperty(exports, 'dataDatadogDashboard', { get: function () { return require('./data-datadog-dashboard'); } });
 Object.defineProperty(exports, 'dataDatadogDashboardList', { get: function () { return require('./data-datadog-dashboard-list'); } });

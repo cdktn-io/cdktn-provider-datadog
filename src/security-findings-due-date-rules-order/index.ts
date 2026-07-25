@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_findings_due_date_rules_order
+// https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_due_date_rules_order
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface SecurityFindingsDueDateRulesOrderConfig extends cdktn.Terraform
   /**
   * A unique identifier for the order resource. This field has no server-side equivalent; Datadog recommends matching the resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_findings_due_date_rules_order#name SecurityFindingsDueDateRulesOrder#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_due_date_rules_order#name SecurityFindingsDueDateRulesOrder#name}
   */
   readonly name: string;
   /**
   * The ordered list of all due date rule IDs. The order of IDs in this attribute defines the evaluation order of the due date rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_findings_due_date_rules_order#rule_ids SecurityFindingsDueDateRulesOrder#rule_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_due_date_rules_order#rule_ids SecurityFindingsDueDateRulesOrder#rule_ids}
   */
   readonly ruleIds: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_findings_due_date_rules_order datadog_security_findings_due_date_rules_order}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_due_date_rules_order datadog_security_findings_due_date_rules_order}
 */
 export class SecurityFindingsDueDateRulesOrder extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class SecurityFindingsDueDateRulesOrder extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SecurityFindingsDueDateRulesOrder resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecurityFindingsDueDateRulesOrder to import
-  * @param importFromId The id of the existing SecurityFindingsDueDateRulesOrder that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_findings_due_date_rules_order#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecurityFindingsDueDateRulesOrder that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_due_date_rules_order#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecurityFindingsDueDateRulesOrder to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class SecurityFindingsDueDateRulesOrder extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_findings_due_date_rules_order datadog_security_findings_due_date_rules_order} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_due_date_rules_order datadog_security_findings_due_date_rules_order} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class SecurityFindingsDueDateRulesOrder extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_security_findings_due_date_rules_order',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.15.0',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
