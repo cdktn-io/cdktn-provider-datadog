@@ -4,7 +4,7 @@
 
 ### ActionConnection <a name="ActionConnection" id="@cdktn/provider-datadog.actionConnection.ActionConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection datadog_action_connection}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection datadog_action_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer"></a>
 
@@ -74,10 +74,54 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putAnthropic">putAnthropic</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putAsana">putAsana</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putAws">putAws</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putAzure">putAzure</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putCircleCi">putCircleCi</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putClickup">putClickup</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putCloudflare">putCloudflare</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putConfigCat">putConfigCat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putDatadog">putDatadog</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putFastly">putFastly</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putFreshservice">putFreshservice</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putGcp">putGcp</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putGemini">putGemini</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putGitlab">putGitlab</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putGreyNoise">putGreyNoise</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putHttp">putHttp</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putLaunchDarkly">putLaunchDarkly</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putNotion">putNotion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putOkta">putOkta</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putOpenai">putOpenai</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putServiceNow">putServiceNow</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putSplit">putSplit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putStatsig">putStatsig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putVirusTotal">putVirusTotal</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetAnthropic">resetAnthropic</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetAsana">resetAsana</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetAws">resetAws</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetAzure">resetAzure</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetCircleCi">resetCircleCi</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetClickup">resetClickup</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetCloudflare">resetCloudflare</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetConfigCat">resetConfigCat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetDatadog">resetDatadog</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetFastly">resetFastly</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetFreshservice">resetFreshservice</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetGcp">resetGcp</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetGemini">resetGemini</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetGitlab">resetGitlab</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetGreyNoise">resetGreyNoise</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetHttp">resetHttp</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetLaunchDarkly">resetLaunchDarkly</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetNotion">resetNotion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetOkta">resetOkta</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetOpenai">resetOpenai</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetServiceNow">resetServiceNow</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetSplit">resetSplit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetStatsig">resetStatsig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetVirusTotal">resetVirusTotal</a></code> | *No description.* |
 
 ---
 
@@ -390,6 +434,30 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putAnthropic` <a name="putAnthropic" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putAnthropic"></a>
+
+```typescript
+public putAnthropic(value: ActionConnectionAnthropic): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putAnthropic.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropic">ActionConnectionAnthropic</a>
+
+---
+
+##### `putAsana` <a name="putAsana" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putAsana"></a>
+
+```typescript
+public putAsana(value: ActionConnectionAsana): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putAsana.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsana">ActionConnectionAsana</a>
+
+---
+
 ##### `putAws` <a name="putAws" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putAws"></a>
 
 ```typescript
@@ -399,6 +467,150 @@ public putAws(value: ActionConnectionAws): void
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putAws.parameter.value"></a>
 
 - *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAws">ActionConnectionAws</a>
+
+---
+
+##### `putAzure` <a name="putAzure" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putAzure"></a>
+
+```typescript
+public putAzure(value: ActionConnectionAzure): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putAzure.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzure">ActionConnectionAzure</a>
+
+---
+
+##### `putCircleCi` <a name="putCircleCi" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putCircleCi"></a>
+
+```typescript
+public putCircleCi(value: ActionConnectionCircleCi): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putCircleCi.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCi">ActionConnectionCircleCi</a>
+
+---
+
+##### `putClickup` <a name="putClickup" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putClickup"></a>
+
+```typescript
+public putClickup(value: ActionConnectionClickup): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putClickup.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickup">ActionConnectionClickup</a>
+
+---
+
+##### `putCloudflare` <a name="putCloudflare" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putCloudflare"></a>
+
+```typescript
+public putCloudflare(value: ActionConnectionCloudflare): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putCloudflare.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare">ActionConnectionCloudflare</a>
+
+---
+
+##### `putConfigCat` <a name="putConfigCat" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putConfigCat"></a>
+
+```typescript
+public putConfigCat(value: ActionConnectionConfigCat): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putConfigCat.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCat">ActionConnectionConfigCat</a>
+
+---
+
+##### `putDatadog` <a name="putDatadog" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putDatadog"></a>
+
+```typescript
+public putDatadog(value: ActionConnectionDatadog): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putDatadog.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadog">ActionConnectionDatadog</a>
+
+---
+
+##### `putFastly` <a name="putFastly" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putFastly"></a>
+
+```typescript
+public putFastly(value: ActionConnectionFastly): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putFastly.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastly">ActionConnectionFastly</a>
+
+---
+
+##### `putFreshservice` <a name="putFreshservice" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putFreshservice"></a>
+
+```typescript
+public putFreshservice(value: ActionConnectionFreshservice): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putFreshservice.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshservice">ActionConnectionFreshservice</a>
+
+---
+
+##### `putGcp` <a name="putGcp" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putGcp"></a>
+
+```typescript
+public putGcp(value: ActionConnectionGcp): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putGcp.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcp">ActionConnectionGcp</a>
+
+---
+
+##### `putGemini` <a name="putGemini" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putGemini"></a>
+
+```typescript
+public putGemini(value: ActionConnectionGemini): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putGemini.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGemini">ActionConnectionGemini</a>
+
+---
+
+##### `putGitlab` <a name="putGitlab" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putGitlab"></a>
+
+```typescript
+public putGitlab(value: ActionConnectionGitlab): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putGitlab.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlab">ActionConnectionGitlab</a>
+
+---
+
+##### `putGreyNoise` <a name="putGreyNoise" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putGreyNoise"></a>
+
+```typescript
+public putGreyNoise(value: ActionConnectionGreyNoise): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putGreyNoise.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoise">ActionConnectionGreyNoise</a>
 
 ---
 
@@ -414,16 +626,244 @@ public putHttp(value: ActionConnectionHttp): void
 
 ---
 
+##### `putLaunchDarkly` <a name="putLaunchDarkly" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putLaunchDarkly"></a>
+
+```typescript
+public putLaunchDarkly(value: ActionConnectionLaunchDarkly): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putLaunchDarkly.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarkly">ActionConnectionLaunchDarkly</a>
+
+---
+
+##### `putNotion` <a name="putNotion" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putNotion"></a>
+
+```typescript
+public putNotion(value: ActionConnectionNotion): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putNotion.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotion">ActionConnectionNotion</a>
+
+---
+
+##### `putOkta` <a name="putOkta" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putOkta"></a>
+
+```typescript
+public putOkta(value: ActionConnectionOkta): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putOkta.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOkta">ActionConnectionOkta</a>
+
+---
+
+##### `putOpenai` <a name="putOpenai" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putOpenai"></a>
+
+```typescript
+public putOpenai(value: ActionConnectionOpenai): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putOpenai.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenai">ActionConnectionOpenai</a>
+
+---
+
+##### `putServiceNow` <a name="putServiceNow" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putServiceNow"></a>
+
+```typescript
+public putServiceNow(value: ActionConnectionServiceNow): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putServiceNow.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow">ActionConnectionServiceNow</a>
+
+---
+
+##### `putSplit` <a name="putSplit" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putSplit"></a>
+
+```typescript
+public putSplit(value: ActionConnectionSplit): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putSplit.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplit">ActionConnectionSplit</a>
+
+---
+
+##### `putStatsig` <a name="putStatsig" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putStatsig"></a>
+
+```typescript
+public putStatsig(value: ActionConnectionStatsig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putStatsig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig">ActionConnectionStatsig</a>
+
+---
+
+##### `putVirusTotal` <a name="putVirusTotal" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putVirusTotal"></a>
+
+```typescript
+public putVirusTotal(value: ActionConnectionVirusTotal): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putVirusTotal.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal">ActionConnectionVirusTotal</a>
+
+---
+
+##### `resetAnthropic` <a name="resetAnthropic" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetAnthropic"></a>
+
+```typescript
+public resetAnthropic(): void
+```
+
+##### `resetAsana` <a name="resetAsana" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetAsana"></a>
+
+```typescript
+public resetAsana(): void
+```
+
 ##### `resetAws` <a name="resetAws" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetAws"></a>
 
 ```typescript
 public resetAws(): void
 ```
 
+##### `resetAzure` <a name="resetAzure" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetAzure"></a>
+
+```typescript
+public resetAzure(): void
+```
+
+##### `resetCircleCi` <a name="resetCircleCi" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetCircleCi"></a>
+
+```typescript
+public resetCircleCi(): void
+```
+
+##### `resetClickup` <a name="resetClickup" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetClickup"></a>
+
+```typescript
+public resetClickup(): void
+```
+
+##### `resetCloudflare` <a name="resetCloudflare" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetCloudflare"></a>
+
+```typescript
+public resetCloudflare(): void
+```
+
+##### `resetConfigCat` <a name="resetConfigCat" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetConfigCat"></a>
+
+```typescript
+public resetConfigCat(): void
+```
+
+##### `resetDatadog` <a name="resetDatadog" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetDatadog"></a>
+
+```typescript
+public resetDatadog(): void
+```
+
+##### `resetFastly` <a name="resetFastly" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetFastly"></a>
+
+```typescript
+public resetFastly(): void
+```
+
+##### `resetFreshservice` <a name="resetFreshservice" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetFreshservice"></a>
+
+```typescript
+public resetFreshservice(): void
+```
+
+##### `resetGcp` <a name="resetGcp" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetGcp"></a>
+
+```typescript
+public resetGcp(): void
+```
+
+##### `resetGemini` <a name="resetGemini" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetGemini"></a>
+
+```typescript
+public resetGemini(): void
+```
+
+##### `resetGitlab` <a name="resetGitlab" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetGitlab"></a>
+
+```typescript
+public resetGitlab(): void
+```
+
+##### `resetGreyNoise` <a name="resetGreyNoise" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetGreyNoise"></a>
+
+```typescript
+public resetGreyNoise(): void
+```
+
 ##### `resetHttp` <a name="resetHttp" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetHttp"></a>
 
 ```typescript
 public resetHttp(): void
+```
+
+##### `resetLaunchDarkly` <a name="resetLaunchDarkly" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetLaunchDarkly"></a>
+
+```typescript
+public resetLaunchDarkly(): void
+```
+
+##### `resetNotion` <a name="resetNotion" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetNotion"></a>
+
+```typescript
+public resetNotion(): void
+```
+
+##### `resetOkta` <a name="resetOkta" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetOkta"></a>
+
+```typescript
+public resetOkta(): void
+```
+
+##### `resetOpenai` <a name="resetOpenai" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetOpenai"></a>
+
+```typescript
+public resetOpenai(): void
+```
+
+##### `resetServiceNow` <a name="resetServiceNow" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetServiceNow"></a>
+
+```typescript
+public resetServiceNow(): void
+```
+
+##### `resetSplit` <a name="resetSplit" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetSplit"></a>
+
+```typescript
+public resetSplit(): void
+```
+
+##### `resetStatsig` <a name="resetStatsig" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetStatsig"></a>
+
+```typescript
+public resetStatsig(): void
+```
+
+##### `resetVirusTotal` <a name="resetVirusTotal" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetVirusTotal"></a>
+
+```typescript
+public resetVirusTotal(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -529,7 +969,7 @@ The construct id used in the generated config for the ActionConnection to import
 
 The id of the existing ActionConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -559,12 +999,56 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.anthropic">anthropic</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference">ActionConnectionAnthropicOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.asana">asana</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference">ActionConnectionAsanaOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.aws">aws</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsOutputReference">ActionConnectionAwsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.azure">azure</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference">ActionConnectionAzureOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.circleCi">circleCi</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference">ActionConnectionCircleCiOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.clickup">clickup</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference">ActionConnectionClickupOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.cloudflare">cloudflare</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference">ActionConnectionCloudflareOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.configCat">configCat</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference">ActionConnectionConfigCatOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.datadog">datadog</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference">ActionConnectionDatadogOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.fastly">fastly</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference">ActionConnectionFastlyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.freshservice">freshservice</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference">ActionConnectionFreshserviceOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.gcp">gcp</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference">ActionConnectionGcpOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.gemini">gemini</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference">ActionConnectionGeminiOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.gitlab">gitlab</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference">ActionConnectionGitlabOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.greyNoise">greyNoise</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference">ActionConnectionGreyNoiseOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.http">http</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionHttpOutputReference">ActionConnectionHttpOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.launchDarkly">launchDarkly</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference">ActionConnectionLaunchDarklyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.notion">notion</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference">ActionConnectionNotionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.okta">okta</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference">ActionConnectionOktaOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.openai">openai</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference">ActionConnectionOpenaiOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.serviceNow">serviceNow</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference">ActionConnectionServiceNowOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.split">split</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference">ActionConnectionSplitOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.statsig">statsig</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference">ActionConnectionStatsigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.virusTotal">virusTotal</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference">ActionConnectionVirusTotalOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.anthropicInput">anthropicInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropic">ActionConnectionAnthropic</a> \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.asanaInput">asanaInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsana">ActionConnectionAsana</a> \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.awsInput">awsInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAws">ActionConnectionAws</a> \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.azureInput">azureInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzure">ActionConnectionAzure</a> \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.circleCiInput">circleCiInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCi">ActionConnectionCircleCi</a> \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.clickupInput">clickupInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickup">ActionConnectionClickup</a> \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.cloudflareInput">cloudflareInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare">ActionConnectionCloudflare</a> \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.configCatInput">configCatInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCat">ActionConnectionConfigCat</a> \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.datadogInput">datadogInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadog">ActionConnectionDatadog</a> \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.fastlyInput">fastlyInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastly">ActionConnectionFastly</a> \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.freshserviceInput">freshserviceInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshservice">ActionConnectionFreshservice</a> \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.gcpInput">gcpInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcp">ActionConnectionGcp</a> \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.geminiInput">geminiInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGemini">ActionConnectionGemini</a> \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.gitlabInput">gitlabInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlab">ActionConnectionGitlab</a> \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.greyNoiseInput">greyNoiseInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoise">ActionConnectionGreyNoise</a> \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.httpInput">httpInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionHttp">ActionConnectionHttp</a> \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.launchDarklyInput">launchDarklyInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarkly">ActionConnectionLaunchDarkly</a> \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.notionInput">notionInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotion">ActionConnectionNotion</a> \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.oktaInput">oktaInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOkta">ActionConnectionOkta</a> \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.openaiInput">openaiInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenai">ActionConnectionOpenai</a> \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.serviceNowInput">serviceNowInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow">ActionConnectionServiceNow</a> \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.splitInput">splitInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplit">ActionConnectionSplit</a> \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.statsigInput">statsigInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig">ActionConnectionStatsig</a> \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.virusTotalInput">virusTotalInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal">ActionConnectionVirusTotal</a> \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.name">name</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -711,6 +1195,26 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
+##### `anthropic`<sup>Required</sup> <a name="anthropic" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.anthropic"></a>
+
+```typescript
+public readonly anthropic: ActionConnectionAnthropicOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference">ActionConnectionAnthropicOutputReference</a>
+
+---
+
+##### `asana`<sup>Required</sup> <a name="asana" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.asana"></a>
+
+```typescript
+public readonly asana: ActionConnectionAsanaOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference">ActionConnectionAsanaOutputReference</a>
+
+---
+
 ##### `aws`<sup>Required</sup> <a name="aws" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.aws"></a>
 
 ```typescript
@@ -718,6 +1222,126 @@ public readonly aws: ActionConnectionAwsOutputReference;
 ```
 
 - *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsOutputReference">ActionConnectionAwsOutputReference</a>
+
+---
+
+##### `azure`<sup>Required</sup> <a name="azure" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.azure"></a>
+
+```typescript
+public readonly azure: ActionConnectionAzureOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference">ActionConnectionAzureOutputReference</a>
+
+---
+
+##### `circleCi`<sup>Required</sup> <a name="circleCi" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.circleCi"></a>
+
+```typescript
+public readonly circleCi: ActionConnectionCircleCiOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference">ActionConnectionCircleCiOutputReference</a>
+
+---
+
+##### `clickup`<sup>Required</sup> <a name="clickup" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.clickup"></a>
+
+```typescript
+public readonly clickup: ActionConnectionClickupOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference">ActionConnectionClickupOutputReference</a>
+
+---
+
+##### `cloudflare`<sup>Required</sup> <a name="cloudflare" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.cloudflare"></a>
+
+```typescript
+public readonly cloudflare: ActionConnectionCloudflareOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference">ActionConnectionCloudflareOutputReference</a>
+
+---
+
+##### `configCat`<sup>Required</sup> <a name="configCat" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.configCat"></a>
+
+```typescript
+public readonly configCat: ActionConnectionConfigCatOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference">ActionConnectionConfigCatOutputReference</a>
+
+---
+
+##### `datadog`<sup>Required</sup> <a name="datadog" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.datadog"></a>
+
+```typescript
+public readonly datadog: ActionConnectionDatadogOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference">ActionConnectionDatadogOutputReference</a>
+
+---
+
+##### `fastly`<sup>Required</sup> <a name="fastly" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.fastly"></a>
+
+```typescript
+public readonly fastly: ActionConnectionFastlyOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference">ActionConnectionFastlyOutputReference</a>
+
+---
+
+##### `freshservice`<sup>Required</sup> <a name="freshservice" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.freshservice"></a>
+
+```typescript
+public readonly freshservice: ActionConnectionFreshserviceOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference">ActionConnectionFreshserviceOutputReference</a>
+
+---
+
+##### `gcp`<sup>Required</sup> <a name="gcp" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.gcp"></a>
+
+```typescript
+public readonly gcp: ActionConnectionGcpOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference">ActionConnectionGcpOutputReference</a>
+
+---
+
+##### `gemini`<sup>Required</sup> <a name="gemini" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.gemini"></a>
+
+```typescript
+public readonly gemini: ActionConnectionGeminiOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference">ActionConnectionGeminiOutputReference</a>
+
+---
+
+##### `gitlab`<sup>Required</sup> <a name="gitlab" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.gitlab"></a>
+
+```typescript
+public readonly gitlab: ActionConnectionGitlabOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference">ActionConnectionGitlabOutputReference</a>
+
+---
+
+##### `greyNoise`<sup>Required</sup> <a name="greyNoise" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.greyNoise"></a>
+
+```typescript
+public readonly greyNoise: ActionConnectionGreyNoiseOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference">ActionConnectionGreyNoiseOutputReference</a>
 
 ---
 
@@ -741,6 +1365,106 @@ public readonly id: string;
 
 ---
 
+##### `launchDarkly`<sup>Required</sup> <a name="launchDarkly" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.launchDarkly"></a>
+
+```typescript
+public readonly launchDarkly: ActionConnectionLaunchDarklyOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference">ActionConnectionLaunchDarklyOutputReference</a>
+
+---
+
+##### `notion`<sup>Required</sup> <a name="notion" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.notion"></a>
+
+```typescript
+public readonly notion: ActionConnectionNotionOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference">ActionConnectionNotionOutputReference</a>
+
+---
+
+##### `okta`<sup>Required</sup> <a name="okta" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.okta"></a>
+
+```typescript
+public readonly okta: ActionConnectionOktaOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference">ActionConnectionOktaOutputReference</a>
+
+---
+
+##### `openai`<sup>Required</sup> <a name="openai" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.openai"></a>
+
+```typescript
+public readonly openai: ActionConnectionOpenaiOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference">ActionConnectionOpenaiOutputReference</a>
+
+---
+
+##### `serviceNow`<sup>Required</sup> <a name="serviceNow" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.serviceNow"></a>
+
+```typescript
+public readonly serviceNow: ActionConnectionServiceNowOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference">ActionConnectionServiceNowOutputReference</a>
+
+---
+
+##### `split`<sup>Required</sup> <a name="split" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.split"></a>
+
+```typescript
+public readonly split: ActionConnectionSplitOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference">ActionConnectionSplitOutputReference</a>
+
+---
+
+##### `statsig`<sup>Required</sup> <a name="statsig" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.statsig"></a>
+
+```typescript
+public readonly statsig: ActionConnectionStatsigOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference">ActionConnectionStatsigOutputReference</a>
+
+---
+
+##### `virusTotal`<sup>Required</sup> <a name="virusTotal" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.virusTotal"></a>
+
+```typescript
+public readonly virusTotal: ActionConnectionVirusTotalOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference">ActionConnectionVirusTotalOutputReference</a>
+
+---
+
+##### `anthropicInput`<sup>Optional</sup> <a name="anthropicInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.anthropicInput"></a>
+
+```typescript
+public readonly anthropicInput: ActionConnectionAnthropic | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropic">ActionConnectionAnthropic</a> | cdktn.IResolvable
+
+---
+
+##### `asanaInput`<sup>Optional</sup> <a name="asanaInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.asanaInput"></a>
+
+```typescript
+public readonly asanaInput: ActionConnectionAsana | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsana">ActionConnectionAsana</a> | cdktn.IResolvable
+
+---
+
 ##### `awsInput`<sup>Optional</sup> <a name="awsInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.awsInput"></a>
 
 ```typescript
@@ -748,6 +1472,126 @@ public readonly awsInput: ActionConnectionAws | IResolvable;
 ```
 
 - *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAws">ActionConnectionAws</a> | cdktn.IResolvable
+
+---
+
+##### `azureInput`<sup>Optional</sup> <a name="azureInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.azureInput"></a>
+
+```typescript
+public readonly azureInput: ActionConnectionAzure | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzure">ActionConnectionAzure</a> | cdktn.IResolvable
+
+---
+
+##### `circleCiInput`<sup>Optional</sup> <a name="circleCiInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.circleCiInput"></a>
+
+```typescript
+public readonly circleCiInput: ActionConnectionCircleCi | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCi">ActionConnectionCircleCi</a> | cdktn.IResolvable
+
+---
+
+##### `clickupInput`<sup>Optional</sup> <a name="clickupInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.clickupInput"></a>
+
+```typescript
+public readonly clickupInput: ActionConnectionClickup | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickup">ActionConnectionClickup</a> | cdktn.IResolvable
+
+---
+
+##### `cloudflareInput`<sup>Optional</sup> <a name="cloudflareInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.cloudflareInput"></a>
+
+```typescript
+public readonly cloudflareInput: ActionConnectionCloudflare | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare">ActionConnectionCloudflare</a> | cdktn.IResolvable
+
+---
+
+##### `configCatInput`<sup>Optional</sup> <a name="configCatInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.configCatInput"></a>
+
+```typescript
+public readonly configCatInput: ActionConnectionConfigCat | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCat">ActionConnectionConfigCat</a> | cdktn.IResolvable
+
+---
+
+##### `datadogInput`<sup>Optional</sup> <a name="datadogInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.datadogInput"></a>
+
+```typescript
+public readonly datadogInput: ActionConnectionDatadog | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadog">ActionConnectionDatadog</a> | cdktn.IResolvable
+
+---
+
+##### `fastlyInput`<sup>Optional</sup> <a name="fastlyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.fastlyInput"></a>
+
+```typescript
+public readonly fastlyInput: ActionConnectionFastly | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastly">ActionConnectionFastly</a> | cdktn.IResolvable
+
+---
+
+##### `freshserviceInput`<sup>Optional</sup> <a name="freshserviceInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.freshserviceInput"></a>
+
+```typescript
+public readonly freshserviceInput: ActionConnectionFreshservice | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshservice">ActionConnectionFreshservice</a> | cdktn.IResolvable
+
+---
+
+##### `gcpInput`<sup>Optional</sup> <a name="gcpInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.gcpInput"></a>
+
+```typescript
+public readonly gcpInput: ActionConnectionGcp | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcp">ActionConnectionGcp</a> | cdktn.IResolvable
+
+---
+
+##### `geminiInput`<sup>Optional</sup> <a name="geminiInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.geminiInput"></a>
+
+```typescript
+public readonly geminiInput: ActionConnectionGemini | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGemini">ActionConnectionGemini</a> | cdktn.IResolvable
+
+---
+
+##### `gitlabInput`<sup>Optional</sup> <a name="gitlabInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.gitlabInput"></a>
+
+```typescript
+public readonly gitlabInput: ActionConnectionGitlab | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlab">ActionConnectionGitlab</a> | cdktn.IResolvable
+
+---
+
+##### `greyNoiseInput`<sup>Optional</sup> <a name="greyNoiseInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.greyNoiseInput"></a>
+
+```typescript
+public readonly greyNoiseInput: ActionConnectionGreyNoise | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoise">ActionConnectionGreyNoise</a> | cdktn.IResolvable
 
 ---
 
@@ -761,6 +1605,16 @@ public readonly httpInput: ActionConnectionHttp | IResolvable;
 
 ---
 
+##### `launchDarklyInput`<sup>Optional</sup> <a name="launchDarklyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.launchDarklyInput"></a>
+
+```typescript
+public readonly launchDarklyInput: ActionConnectionLaunchDarkly | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarkly">ActionConnectionLaunchDarkly</a> | cdktn.IResolvable
+
+---
+
 ##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.nameInput"></a>
 
 ```typescript
@@ -768,6 +1622,76 @@ public readonly nameInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `notionInput`<sup>Optional</sup> <a name="notionInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.notionInput"></a>
+
+```typescript
+public readonly notionInput: ActionConnectionNotion | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotion">ActionConnectionNotion</a> | cdktn.IResolvable
+
+---
+
+##### `oktaInput`<sup>Optional</sup> <a name="oktaInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.oktaInput"></a>
+
+```typescript
+public readonly oktaInput: ActionConnectionOkta | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOkta">ActionConnectionOkta</a> | cdktn.IResolvable
+
+---
+
+##### `openaiInput`<sup>Optional</sup> <a name="openaiInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.openaiInput"></a>
+
+```typescript
+public readonly openaiInput: ActionConnectionOpenai | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenai">ActionConnectionOpenai</a> | cdktn.IResolvable
+
+---
+
+##### `serviceNowInput`<sup>Optional</sup> <a name="serviceNowInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.serviceNowInput"></a>
+
+```typescript
+public readonly serviceNowInput: ActionConnectionServiceNow | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow">ActionConnectionServiceNow</a> | cdktn.IResolvable
+
+---
+
+##### `splitInput`<sup>Optional</sup> <a name="splitInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.splitInput"></a>
+
+```typescript
+public readonly splitInput: ActionConnectionSplit | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplit">ActionConnectionSplit</a> | cdktn.IResolvable
+
+---
+
+##### `statsigInput`<sup>Optional</sup> <a name="statsigInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.statsigInput"></a>
+
+```typescript
+public readonly statsigInput: ActionConnectionStatsig | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig">ActionConnectionStatsig</a> | cdktn.IResolvable
+
+---
+
+##### `virusTotalInput`<sup>Optional</sup> <a name="virusTotalInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.virusTotalInput"></a>
+
+```typescript
+public readonly virusTotalInput: ActionConnectionVirusTotal | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal">ActionConnectionVirusTotal</a> | cdktn.IResolvable
 
 ---
 
@@ -801,6 +1725,134 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### ActionConnectionAnthropic <a name="ActionConnectionAnthropic" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropic"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropic.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionAnthropic: actionConnection.ActionConnectionAnthropic = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropic.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKey">ActionConnectionAnthropicApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropic.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionAnthropicApiKey;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKey">ActionConnectionAnthropicApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionAnthropicApiKey <a name="ActionConnectionAnthropicApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKey.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionAnthropicApiKey: actionConnection.ActionConnectionAnthropicApiKey = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKey.property.apiToken">apiToken</a></code> | <code>string</code> | Anthropic API token. String length must be at least 1. |
+
+---
+
+##### `apiToken`<sup>Optional</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKey.property.apiToken"></a>
+
+```typescript
+public readonly apiToken: string;
+```
+
+- *Type:* string
+
+Anthropic API token. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+
+---
+
+### ActionConnectionAsana <a name="ActionConnectionAsana" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsana"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsana.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionAsana: actionConnection.ActionConnectionAsana = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsana.property.accessToken">accessToken</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessToken">ActionConnectionAsanaAccessToken</a></code> | access_token block. |
+
+---
+
+##### `accessToken`<sup>Optional</sup> <a name="accessToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsana.property.accessToken"></a>
+
+```typescript
+public readonly accessToken: ActionConnectionAsanaAccessToken;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessToken">ActionConnectionAsanaAccessToken</a>
+
+access_token block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#access_token ActionConnection#access_token}
+
+---
+
+### ActionConnectionAsanaAccessToken <a name="ActionConnectionAsanaAccessToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessToken"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessToken.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionAsanaAccessToken: actionConnection.ActionConnectionAsanaAccessToken = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessToken.property.accessToken">accessToken</a></code> | <code>string</code> | Asana access token. String length must be at least 1. |
+
+---
+
+##### `accessToken`<sup>Optional</sup> <a name="accessToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessToken.property.accessToken"></a>
+
+```typescript
+public readonly accessToken: string;
+```
+
+- *Type:* string
+
+Asana access token. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#access_token ActionConnection#access_token}
+
+---
+
 ### ActionConnectionAws <a name="ActionConnectionAws" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAws"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAws.Initializer"></a>
@@ -829,7 +1881,7 @@ public readonly assumeRole: ActionConnectionAwsAssumeRole;
 
 assume_role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#assume_role ActionConnection#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#assume_role ActionConnection#assume_role}
 
 ---
 
@@ -862,7 +1914,7 @@ public readonly accountId: string;
 
 AWS account that the connection is created for. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#account_id ActionConnection#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#account_id ActionConnection#account_id}
 
 ---
 
@@ -876,7 +1928,370 @@ public readonly role: string;
 
 Role to assume. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#role ActionConnection#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#role ActionConnection#role}
+
+---
+
+### ActionConnectionAzure <a name="ActionConnectionAzure" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzure"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzure.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionAzure: actionConnection.ActionConnectionAzure = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzure.property.tenant">tenant</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant">ActionConnectionAzureTenant</a></code> | tenant block. |
+
+---
+
+##### `tenant`<sup>Optional</sup> <a name="tenant" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzure.property.tenant"></a>
+
+```typescript
+public readonly tenant: ActionConnectionAzureTenant;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant">ActionConnectionAzureTenant</a>
+
+tenant block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#tenant ActionConnection#tenant}
+
+---
+
+### ActionConnectionAzureTenant <a name="ActionConnectionAzureTenant" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionAzureTenant: actionConnection.ActionConnectionAzureTenant = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant.property.appClientId">appClientId</a></code> | <code>string</code> | Azure application client ID. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant.property.clientSecret">clientSecret</a></code> | <code>string</code> | Azure application client secret. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant.property.customScopes">customScopes</a></code> | <code>string</code> | Custom scope requested when acquiring an OAuth 2 access token. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant.property.tenantId">tenantId</a></code> | <code>string</code> | Azure Active Directory tenant ID. String length must be at least 1. |
+
+---
+
+##### `appClientId`<sup>Optional</sup> <a name="appClientId" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant.property.appClientId"></a>
+
+```typescript
+public readonly appClientId: string;
+```
+
+- *Type:* string
+
+Azure application client ID. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#app_client_id ActionConnection#app_client_id}
+
+---
+
+##### `clientSecret`<sup>Optional</sup> <a name="clientSecret" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant.property.clientSecret"></a>
+
+```typescript
+public readonly clientSecret: string;
+```
+
+- *Type:* string
+
+Azure application client secret. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#client_secret ActionConnection#client_secret}
+
+---
+
+##### `customScopes`<sup>Optional</sup> <a name="customScopes" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant.property.customScopes"></a>
+
+```typescript
+public readonly customScopes: string;
+```
+
+- *Type:* string
+
+Custom scope requested when acquiring an OAuth 2 access token. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#custom_scopes ActionConnection#custom_scopes}
+
+---
+
+##### `tenantId`<sup>Optional</sup> <a name="tenantId" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant.property.tenantId"></a>
+
+```typescript
+public readonly tenantId: string;
+```
+
+- *Type:* string
+
+Azure Active Directory tenant ID. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#tenant_id ActionConnection#tenant_id}
+
+---
+
+### ActionConnectionCircleCi <a name="ActionConnectionCircleCi" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCi"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCi.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionCircleCi: actionConnection.ActionConnectionCircleCi = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCi.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKey">ActionConnectionCircleCiApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCi.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionCircleCiApiKey;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKey">ActionConnectionCircleCiApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionCircleCiApiKey <a name="ActionConnectionCircleCiApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKey.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionCircleCiApiKey: actionConnection.ActionConnectionCircleCiApiKey = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKey.property.apiToken">apiToken</a></code> | <code>string</code> | CircleCI API token. String length must be at least 1. |
+
+---
+
+##### `apiToken`<sup>Optional</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKey.property.apiToken"></a>
+
+```typescript
+public readonly apiToken: string;
+```
+
+- *Type:* string
+
+CircleCI API token. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+
+---
+
+### ActionConnectionClickup <a name="ActionConnectionClickup" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickup"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickup.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionClickup: actionConnection.ActionConnectionClickup = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickup.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKey">ActionConnectionClickupApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickup.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionClickupApiKey;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKey">ActionConnectionClickupApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionClickupApiKey <a name="ActionConnectionClickupApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKey.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionClickupApiKey: actionConnection.ActionConnectionClickupApiKey = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKey.property.apiToken">apiToken</a></code> | <code>string</code> | ClickUp API token. String length must be at least 1. |
+
+---
+
+##### `apiToken`<sup>Optional</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKey.property.apiToken"></a>
+
+```typescript
+public readonly apiToken: string;
+```
+
+- *Type:* string
+
+ClickUp API token. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+
+---
+
+### ActionConnectionCloudflare <a name="ActionConnectionCloudflare" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionCloudflare: actionConnection.ActionConnectionCloudflare = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare.property.apiToken">apiToken</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiToken">ActionConnectionCloudflareApiToken</a></code> | api_token block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare.property.globalApiToken">globalApiToken</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiToken">ActionConnectionCloudflareGlobalApiToken</a></code> | global_api_token block. |
+
+---
+
+##### `apiToken`<sup>Optional</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare.property.apiToken"></a>
+
+```typescript
+public readonly apiToken: ActionConnectionCloudflareApiToken;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiToken">ActionConnectionCloudflareApiToken</a>
+
+api_token block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+
+---
+
+##### `globalApiToken`<sup>Optional</sup> <a name="globalApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare.property.globalApiToken"></a>
+
+```typescript
+public readonly globalApiToken: ActionConnectionCloudflareGlobalApiToken;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiToken">ActionConnectionCloudflareGlobalApiToken</a>
+
+global_api_token block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#global_api_token ActionConnection#global_api_token}
+
+---
+
+### ActionConnectionCloudflareApiToken <a name="ActionConnectionCloudflareApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiToken"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiToken.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionCloudflareApiToken: actionConnection.ActionConnectionCloudflareApiToken = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiToken.property.apiToken">apiToken</a></code> | <code>string</code> | Cloudflare API token. String length must be at least 1. |
+
+---
+
+##### `apiToken`<sup>Optional</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiToken.property.apiToken"></a>
+
+```typescript
+public readonly apiToken: string;
+```
+
+- *Type:* string
+
+Cloudflare API token. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+
+---
+
+### ActionConnectionCloudflareGlobalApiToken <a name="ActionConnectionCloudflareGlobalApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiToken"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiToken.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionCloudflareGlobalApiToken: actionConnection.ActionConnectionCloudflareGlobalApiToken = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiToken.property.authEmail">authEmail</a></code> | <code>string</code> | Email address associated with the Cloudflare account. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiToken.property.globalApiKey">globalApiKey</a></code> | <code>string</code> | Cloudflare global API key. String length must be at least 1. |
+
+---
+
+##### `authEmail`<sup>Optional</sup> <a name="authEmail" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiToken.property.authEmail"></a>
+
+```typescript
+public readonly authEmail: string;
+```
+
+- *Type:* string
+
+Email address associated with the Cloudflare account. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#auth_email ActionConnection#auth_email}
+
+---
+
+##### `globalApiKey`<sup>Optional</sup> <a name="globalApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiToken.property.globalApiKey"></a>
+
+```typescript
+public readonly globalApiKey: string;
+```
+
+- *Type:* string
+
+Cloudflare global API key. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#global_api_key ActionConnection#global_api_key}
 
 ---
 
@@ -902,8 +2317,30 @@ const actionConnectionConfig: actionConnection.ActionConnectionConfig = { ... }
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.name">name</a></code> | <code>string</code> | Name of the connection. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.anthropic">anthropic</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropic">ActionConnectionAnthropic</a></code> | anthropic block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.asana">asana</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsana">ActionConnectionAsana</a></code> | asana block. |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.aws">aws</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAws">ActionConnectionAws</a></code> | aws block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.azure">azure</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzure">ActionConnectionAzure</a></code> | azure block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.circleCi">circleCi</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCi">ActionConnectionCircleCi</a></code> | circle_ci block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.clickup">clickup</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickup">ActionConnectionClickup</a></code> | clickup block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.cloudflare">cloudflare</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare">ActionConnectionCloudflare</a></code> | cloudflare block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.configCat">configCat</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCat">ActionConnectionConfigCat</a></code> | config_cat block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.datadog">datadog</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadog">ActionConnectionDatadog</a></code> | datadog block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.fastly">fastly</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastly">ActionConnectionFastly</a></code> | fastly block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.freshservice">freshservice</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshservice">ActionConnectionFreshservice</a></code> | freshservice block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.gcp">gcp</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcp">ActionConnectionGcp</a></code> | gcp block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.gemini">gemini</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGemini">ActionConnectionGemini</a></code> | gemini block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.gitlab">gitlab</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlab">ActionConnectionGitlab</a></code> | gitlab block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.greyNoise">greyNoise</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoise">ActionConnectionGreyNoise</a></code> | grey_noise block. |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.http">http</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionHttp">ActionConnectionHttp</a></code> | http block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.launchDarkly">launchDarkly</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarkly">ActionConnectionLaunchDarkly</a></code> | launch_darkly block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.notion">notion</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotion">ActionConnectionNotion</a></code> | notion block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.okta">okta</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOkta">ActionConnectionOkta</a></code> | okta block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.openai">openai</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenai">ActionConnectionOpenai</a></code> | openai block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.serviceNow">serviceNow</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow">ActionConnectionServiceNow</a></code> | service_now block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.split">split</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplit">ActionConnectionSplit</a></code> | split block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.statsig">statsig</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig">ActionConnectionStatsig</a></code> | statsig block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.virusTotal">virusTotal</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal">ActionConnectionVirusTotal</a></code> | virus_total block. |
 
 ---
 
@@ -987,7 +2424,35 @@ public readonly name: string;
 
 Name of the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#name ActionConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#name ActionConnection#name}
+
+---
+
+##### `anthropic`<sup>Optional</sup> <a name="anthropic" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.anthropic"></a>
+
+```typescript
+public readonly anthropic: ActionConnectionAnthropic;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropic">ActionConnectionAnthropic</a>
+
+anthropic block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#anthropic ActionConnection#anthropic}
+
+---
+
+##### `asana`<sup>Optional</sup> <a name="asana" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.asana"></a>
+
+```typescript
+public readonly asana: ActionConnectionAsana;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsana">ActionConnectionAsana</a>
+
+asana block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#asana ActionConnection#asana}
 
 ---
 
@@ -1001,7 +2466,175 @@ public readonly aws: ActionConnectionAws;
 
 aws block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#aws ActionConnection#aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#aws ActionConnection#aws}
+
+---
+
+##### `azure`<sup>Optional</sup> <a name="azure" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.azure"></a>
+
+```typescript
+public readonly azure: ActionConnectionAzure;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzure">ActionConnectionAzure</a>
+
+azure block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#azure ActionConnection#azure}
+
+---
+
+##### `circleCi`<sup>Optional</sup> <a name="circleCi" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.circleCi"></a>
+
+```typescript
+public readonly circleCi: ActionConnectionCircleCi;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCi">ActionConnectionCircleCi</a>
+
+circle_ci block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#circle_ci ActionConnection#circle_ci}
+
+---
+
+##### `clickup`<sup>Optional</sup> <a name="clickup" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.clickup"></a>
+
+```typescript
+public readonly clickup: ActionConnectionClickup;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickup">ActionConnectionClickup</a>
+
+clickup block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#clickup ActionConnection#clickup}
+
+---
+
+##### `cloudflare`<sup>Optional</sup> <a name="cloudflare" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.cloudflare"></a>
+
+```typescript
+public readonly cloudflare: ActionConnectionCloudflare;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare">ActionConnectionCloudflare</a>
+
+cloudflare block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#cloudflare ActionConnection#cloudflare}
+
+---
+
+##### `configCat`<sup>Optional</sup> <a name="configCat" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.configCat"></a>
+
+```typescript
+public readonly configCat: ActionConnectionConfigCat;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCat">ActionConnectionConfigCat</a>
+
+config_cat block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#config_cat ActionConnection#config_cat}
+
+---
+
+##### `datadog`<sup>Optional</sup> <a name="datadog" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.datadog"></a>
+
+```typescript
+public readonly datadog: ActionConnectionDatadog;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadog">ActionConnectionDatadog</a>
+
+datadog block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#datadog ActionConnection#datadog}
+
+---
+
+##### `fastly`<sup>Optional</sup> <a name="fastly" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.fastly"></a>
+
+```typescript
+public readonly fastly: ActionConnectionFastly;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastly">ActionConnectionFastly</a>
+
+fastly block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#fastly ActionConnection#fastly}
+
+---
+
+##### `freshservice`<sup>Optional</sup> <a name="freshservice" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.freshservice"></a>
+
+```typescript
+public readonly freshservice: ActionConnectionFreshservice;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshservice">ActionConnectionFreshservice</a>
+
+freshservice block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#freshservice ActionConnection#freshservice}
+
+---
+
+##### `gcp`<sup>Optional</sup> <a name="gcp" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.gcp"></a>
+
+```typescript
+public readonly gcp: ActionConnectionGcp;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcp">ActionConnectionGcp</a>
+
+gcp block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#gcp ActionConnection#gcp}
+
+---
+
+##### `gemini`<sup>Optional</sup> <a name="gemini" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.gemini"></a>
+
+```typescript
+public readonly gemini: ActionConnectionGemini;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGemini">ActionConnectionGemini</a>
+
+gemini block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#gemini ActionConnection#gemini}
+
+---
+
+##### `gitlab`<sup>Optional</sup> <a name="gitlab" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.gitlab"></a>
+
+```typescript
+public readonly gitlab: ActionConnectionGitlab;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlab">ActionConnectionGitlab</a>
+
+gitlab block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#gitlab ActionConnection#gitlab}
+
+---
+
+##### `greyNoise`<sup>Optional</sup> <a name="greyNoise" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.greyNoise"></a>
+
+```typescript
+public readonly greyNoise: ActionConnectionGreyNoise;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoise">ActionConnectionGreyNoise</a>
+
+grey_noise block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#grey_noise ActionConnection#grey_noise}
 
 ---
 
@@ -1015,7 +2648,736 @@ public readonly http: ActionConnectionHttp;
 
 http block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#http ActionConnection#http}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#http ActionConnection#http}
+
+---
+
+##### `launchDarkly`<sup>Optional</sup> <a name="launchDarkly" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.launchDarkly"></a>
+
+```typescript
+public readonly launchDarkly: ActionConnectionLaunchDarkly;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarkly">ActionConnectionLaunchDarkly</a>
+
+launch_darkly block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#launch_darkly ActionConnection#launch_darkly}
+
+---
+
+##### `notion`<sup>Optional</sup> <a name="notion" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.notion"></a>
+
+```typescript
+public readonly notion: ActionConnectionNotion;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotion">ActionConnectionNotion</a>
+
+notion block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#notion ActionConnection#notion}
+
+---
+
+##### `okta`<sup>Optional</sup> <a name="okta" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.okta"></a>
+
+```typescript
+public readonly okta: ActionConnectionOkta;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOkta">ActionConnectionOkta</a>
+
+okta block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#okta ActionConnection#okta}
+
+---
+
+##### `openai`<sup>Optional</sup> <a name="openai" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.openai"></a>
+
+```typescript
+public readonly openai: ActionConnectionOpenai;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenai">ActionConnectionOpenai</a>
+
+openai block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#openai ActionConnection#openai}
+
+---
+
+##### `serviceNow`<sup>Optional</sup> <a name="serviceNow" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.serviceNow"></a>
+
+```typescript
+public readonly serviceNow: ActionConnectionServiceNow;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow">ActionConnectionServiceNow</a>
+
+service_now block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#service_now ActionConnection#service_now}
+
+---
+
+##### `split`<sup>Optional</sup> <a name="split" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.split"></a>
+
+```typescript
+public readonly split: ActionConnectionSplit;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplit">ActionConnectionSplit</a>
+
+split block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#split ActionConnection#split}
+
+---
+
+##### `statsig`<sup>Optional</sup> <a name="statsig" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.statsig"></a>
+
+```typescript
+public readonly statsig: ActionConnectionStatsig;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig">ActionConnectionStatsig</a>
+
+statsig block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#statsig ActionConnection#statsig}
+
+---
+
+##### `virusTotal`<sup>Optional</sup> <a name="virusTotal" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.virusTotal"></a>
+
+```typescript
+public readonly virusTotal: ActionConnectionVirusTotal;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal">ActionConnectionVirusTotal</a>
+
+virus_total block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#virus_total ActionConnection#virus_total}
+
+---
+
+### ActionConnectionConfigCat <a name="ActionConnectionConfigCat" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCat"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCat.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionConfigCat: actionConnection.ActionConnectionConfigCat = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCat.property.sdkKey">sdkKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey">ActionConnectionConfigCatSdkKey</a></code> | sdk_key block. |
+
+---
+
+##### `sdkKey`<sup>Optional</sup> <a name="sdkKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCat.property.sdkKey"></a>
+
+```typescript
+public readonly sdkKey: ActionConnectionConfigCatSdkKey;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey">ActionConnectionConfigCatSdkKey</a>
+
+sdk_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#sdk_key ActionConnection#sdk_key}
+
+---
+
+### ActionConnectionConfigCatSdkKey <a name="ActionConnectionConfigCatSdkKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionConfigCatSdkKey: actionConnection.ActionConnectionConfigCatSdkKey = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey.property.apiPassword">apiPassword</a></code> | <code>string</code> | ConfigCat Public Management API password. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey.property.apiUsername">apiUsername</a></code> | <code>string</code> | ConfigCat Public Management API username. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey.property.sdkKey">sdkKey</a></code> | <code>string</code> | ConfigCat SDK key. String length must be at least 1. |
+
+---
+
+##### `apiPassword`<sup>Optional</sup> <a name="apiPassword" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey.property.apiPassword"></a>
+
+```typescript
+public readonly apiPassword: string;
+```
+
+- *Type:* string
+
+ConfigCat Public Management API password. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_password ActionConnection#api_password}
+
+---
+
+##### `apiUsername`<sup>Optional</sup> <a name="apiUsername" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey.property.apiUsername"></a>
+
+```typescript
+public readonly apiUsername: string;
+```
+
+- *Type:* string
+
+ConfigCat Public Management API username. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_username ActionConnection#api_username}
+
+---
+
+##### `sdkKey`<sup>Optional</sup> <a name="sdkKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey.property.sdkKey"></a>
+
+```typescript
+public readonly sdkKey: string;
+```
+
+- *Type:* string
+
+ConfigCat SDK key. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#sdk_key ActionConnection#sdk_key}
+
+---
+
+### ActionConnectionDatadog <a name="ActionConnectionDatadog" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadog"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadog.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionDatadog: actionConnection.ActionConnectionDatadog = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadog.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey">ActionConnectionDatadogApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadog.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionDatadogApiKey;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey">ActionConnectionDatadogApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionDatadogApiKey <a name="ActionConnectionDatadogApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionDatadogApiKey: actionConnection.ActionConnectionDatadogApiKey = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey.property.apiKey">apiKey</a></code> | <code>string</code> | Datadog API key. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey.property.appKey">appKey</a></code> | <code>string</code> | Datadog application key. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey.property.datacenter">datacenter</a></code> | <code>string</code> | Datadog site data center. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey.property.subdomain">subdomain</a></code> | <code>string</code> | Custom subdomain used for URLs generated with this connection. String length must be at least 1. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: string;
+```
+
+- *Type:* string
+
+Datadog API key. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+##### `appKey`<sup>Optional</sup> <a name="appKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey.property.appKey"></a>
+
+```typescript
+public readonly appKey: string;
+```
+
+- *Type:* string
+
+Datadog application key. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#app_key ActionConnection#app_key}
+
+---
+
+##### `datacenter`<sup>Optional</sup> <a name="datacenter" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey.property.datacenter"></a>
+
+```typescript
+public readonly datacenter: string;
+```
+
+- *Type:* string
+
+Datadog site data center. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#datacenter ActionConnection#datacenter}
+
+---
+
+##### `subdomain`<sup>Optional</sup> <a name="subdomain" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey.property.subdomain"></a>
+
+```typescript
+public readonly subdomain: string;
+```
+
+- *Type:* string
+
+Custom subdomain used for URLs generated with this connection. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#subdomain ActionConnection#subdomain}
+
+---
+
+### ActionConnectionFastly <a name="ActionConnectionFastly" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastly"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastly.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionFastly: actionConnection.ActionConnectionFastly = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastly.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKey">ActionConnectionFastlyApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastly.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionFastlyApiKey;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKey">ActionConnectionFastlyApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionFastlyApiKey <a name="ActionConnectionFastlyApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKey.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionFastlyApiKey: actionConnection.ActionConnectionFastlyApiKey = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKey.property.apiKey">apiKey</a></code> | <code>string</code> | Fastly API key. String length must be at least 1. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKey.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: string;
+```
+
+- *Type:* string
+
+Fastly API key. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionFreshservice <a name="ActionConnectionFreshservice" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshservice"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshservice.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionFreshservice: actionConnection.ActionConnectionFreshservice = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshservice.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKey">ActionConnectionFreshserviceApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshservice.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionFreshserviceApiKey;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKey">ActionConnectionFreshserviceApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionFreshserviceApiKey <a name="ActionConnectionFreshserviceApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKey.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionFreshserviceApiKey: actionConnection.ActionConnectionFreshserviceApiKey = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKey.property.apiKey">apiKey</a></code> | <code>string</code> | Freshservice API key. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKey.property.domain">domain</a></code> | <code>string</code> | Freshservice domain. String length must be at least 1. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKey.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: string;
+```
+
+- *Type:* string
+
+Freshservice API key. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+##### `domain`<sup>Optional</sup> <a name="domain" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKey.property.domain"></a>
+
+```typescript
+public readonly domain: string;
+```
+
+- *Type:* string
+
+Freshservice domain. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#domain ActionConnection#domain}
+
+---
+
+### ActionConnectionGcp <a name="ActionConnectionGcp" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcp"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcp.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionGcp: actionConnection.ActionConnectionGcp = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcp.property.serviceAccount">serviceAccount</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccount">ActionConnectionGcpServiceAccount</a></code> | service_account block. |
+
+---
+
+##### `serviceAccount`<sup>Optional</sup> <a name="serviceAccount" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcp.property.serviceAccount"></a>
+
+```typescript
+public readonly serviceAccount: ActionConnectionGcpServiceAccount;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccount">ActionConnectionGcpServiceAccount</a>
+
+service_account block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#service_account ActionConnection#service_account}
+
+---
+
+### ActionConnectionGcpServiceAccount <a name="ActionConnectionGcpServiceAccount" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccount"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccount.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionGcpServiceAccount: actionConnection.ActionConnectionGcpServiceAccount = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccount.property.privateKey">privateKey</a></code> | <code>string</code> | Google Cloud service account private key. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccount.property.serviceAccountEmail">serviceAccountEmail</a></code> | <code>string</code> | Google Cloud service account email. String length must be at least 1. |
+
+---
+
+##### `privateKey`<sup>Optional</sup> <a name="privateKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccount.property.privateKey"></a>
+
+```typescript
+public readonly privateKey: string;
+```
+
+- *Type:* string
+
+Google Cloud service account private key. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#private_key ActionConnection#private_key}
+
+---
+
+##### `serviceAccountEmail`<sup>Optional</sup> <a name="serviceAccountEmail" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccount.property.serviceAccountEmail"></a>
+
+```typescript
+public readonly serviceAccountEmail: string;
+```
+
+- *Type:* string
+
+Google Cloud service account email. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#service_account_email ActionConnection#service_account_email}
+
+---
+
+### ActionConnectionGemini <a name="ActionConnectionGemini" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGemini"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGemini.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionGemini: actionConnection.ActionConnectionGemini = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGemini.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKey">ActionConnectionGeminiApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGemini.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionGeminiApiKey;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKey">ActionConnectionGeminiApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionGeminiApiKey <a name="ActionConnectionGeminiApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKey.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionGeminiApiKey: actionConnection.ActionConnectionGeminiApiKey = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKey.property.apiKey">apiKey</a></code> | <code>string</code> | Gemini API key. String length must be at least 1. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKey.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: string;
+```
+
+- *Type:* string
+
+Gemini API key. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionGitlab <a name="ActionConnectionGitlab" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlab"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlab.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionGitlab: actionConnection.ActionConnectionGitlab = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlab.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKey">ActionConnectionGitlabApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlab.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionGitlabApiKey;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKey">ActionConnectionGitlabApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionGitlabApiKey <a name="ActionConnectionGitlabApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKey.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionGitlabApiKey: actionConnection.ActionConnectionGitlabApiKey = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKey.property.apiToken">apiToken</a></code> | <code>string</code> | GitLab API token. String length must be at least 1. |
+
+---
+
+##### `apiToken`<sup>Optional</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKey.property.apiToken"></a>
+
+```typescript
+public readonly apiToken: string;
+```
+
+- *Type:* string
+
+GitLab API token. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+
+---
+
+### ActionConnectionGreyNoise <a name="ActionConnectionGreyNoise" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoise"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoise.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionGreyNoise: actionConnection.ActionConnectionGreyNoise = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoise.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKey">ActionConnectionGreyNoiseApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoise.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionGreyNoiseApiKey;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKey">ActionConnectionGreyNoiseApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionGreyNoiseApiKey <a name="ActionConnectionGreyNoiseApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKey.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionGreyNoiseApiKey: actionConnection.ActionConnectionGreyNoiseApiKey = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKey.property.apiKey">apiKey</a></code> | <code>string</code> | GreyNoise API key. String length must be at least 1. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKey.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: string;
+```
+
+- *Type:* string
+
+GreyNoise API key. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 
@@ -1048,7 +3410,7 @@ public readonly baseUrl: string;
 
 Base HTTP url for the integration. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#base_url ActionConnection#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#base_url ActionConnection#base_url}
 
 ---
 
@@ -1062,7 +3424,7 @@ public readonly tokenAuth: ActionConnectionHttpTokenAuth;
 
 token_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#token_auth ActionConnection#token_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#token_auth ActionConnection#token_auth}
 
 ---
 
@@ -1097,7 +3459,7 @@ public readonly body: ActionConnectionHttpTokenAuthBody;
 
 body block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#body ActionConnection#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#body ActionConnection#body}
 
 ---
 
@@ -1111,7 +3473,7 @@ public readonly header: IResolvable | ActionConnectionHttpTokenAuthHeader[];
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#header ActionConnection#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#header ActionConnection#header}
 
 ---
 
@@ -1125,7 +3487,7 @@ public readonly token: IResolvable | ActionConnectionHttpTokenAuthToken[];
 
 token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#token ActionConnection#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#token ActionConnection#token}
 
 ---
 
@@ -1139,7 +3501,7 @@ public readonly urlParameter: IResolvable | ActionConnectionHttpTokenAuthUrlPara
 
 url_parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#url_parameter ActionConnection#url_parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#url_parameter ActionConnection#url_parameter}
 
 ---
 
@@ -1172,7 +3534,7 @@ public readonly content: string;
 
 Serialized body content. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#content ActionConnection#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#content ActionConnection#content}
 
 ---
 
@@ -1186,7 +3548,7 @@ public readonly contentType: string;
 
 Content type of the body. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#content_type ActionConnection#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#content_type ActionConnection#content_type}
 
 ---
 
@@ -1219,7 +3581,7 @@ public readonly name: string;
 
 Header name. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#name ActionConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#name ActionConnection#name}
 
 ---
 
@@ -1233,7 +3595,7 @@ public readonly value: string;
 
 String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#value ActionConnection#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#value ActionConnection#value}
 
 ---
 
@@ -1267,7 +3629,7 @@ public readonly name: string;
 
 Token name. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#name ActionConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#name ActionConnection#name}
 
 ---
 
@@ -1281,7 +3643,7 @@ public readonly type: string;
 
 Token type Valid values are `SECRET`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#type ActionConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#type ActionConnection#type}
 
 ---
 
@@ -1295,7 +3657,7 @@ public readonly value: string;
 
 Token value. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#value ActionConnection#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#value ActionConnection#value}
 
 ---
 
@@ -1328,7 +3690,7 @@ public readonly name: string;
 
 URL parameter name. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#name ActionConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#name ActionConnection#name}
 
 ---
 
@@ -1342,11 +3704,1706 @@ public readonly value: string;
 
 URL parameter value. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#value ActionConnection#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#value ActionConnection#value}
+
+---
+
+### ActionConnectionLaunchDarkly <a name="ActionConnectionLaunchDarkly" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarkly"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarkly.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionLaunchDarkly: actionConnection.ActionConnectionLaunchDarkly = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarkly.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKey">ActionConnectionLaunchDarklyApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarkly.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionLaunchDarklyApiKey;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKey">ActionConnectionLaunchDarklyApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionLaunchDarklyApiKey <a name="ActionConnectionLaunchDarklyApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKey.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionLaunchDarklyApiKey: actionConnection.ActionConnectionLaunchDarklyApiKey = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKey.property.apiToken">apiToken</a></code> | <code>string</code> | LaunchDarkly API token. String length must be at least 1. |
+
+---
+
+##### `apiToken`<sup>Optional</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKey.property.apiToken"></a>
+
+```typescript
+public readonly apiToken: string;
+```
+
+- *Type:* string
+
+LaunchDarkly API token. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+
+---
+
+### ActionConnectionNotion <a name="ActionConnectionNotion" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotion"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotion.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionNotion: actionConnection.ActionConnectionNotion = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotion.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKey">ActionConnectionNotionApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotion.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionNotionApiKey;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKey">ActionConnectionNotionApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionNotionApiKey <a name="ActionConnectionNotionApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKey.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionNotionApiKey: actionConnection.ActionConnectionNotionApiKey = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKey.property.apiToken">apiToken</a></code> | <code>string</code> | Notion API token. String length must be at least 1. |
+
+---
+
+##### `apiToken`<sup>Optional</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKey.property.apiToken"></a>
+
+```typescript
+public readonly apiToken: string;
+```
+
+- *Type:* string
+
+Notion API token. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+
+---
+
+### ActionConnectionOkta <a name="ActionConnectionOkta" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOkta"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOkta.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionOkta: actionConnection.ActionConnectionOkta = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOkta.property.apiToken">apiToken</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiToken">ActionConnectionOktaApiToken</a></code> | api_token block. |
+
+---
+
+##### `apiToken`<sup>Optional</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOkta.property.apiToken"></a>
+
+```typescript
+public readonly apiToken: ActionConnectionOktaApiToken;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiToken">ActionConnectionOktaApiToken</a>
+
+api_token block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+
+---
+
+### ActionConnectionOktaApiToken <a name="ActionConnectionOktaApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiToken"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiToken.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionOktaApiToken: actionConnection.ActionConnectionOktaApiToken = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiToken.property.apiToken">apiToken</a></code> | <code>string</code> | Okta API token. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiToken.property.domain">domain</a></code> | <code>string</code> | Okta domain. String length must be at least 1. |
+
+---
+
+##### `apiToken`<sup>Optional</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiToken.property.apiToken"></a>
+
+```typescript
+public readonly apiToken: string;
+```
+
+- *Type:* string
+
+Okta API token. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+
+---
+
+##### `domain`<sup>Optional</sup> <a name="domain" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiToken.property.domain"></a>
+
+```typescript
+public readonly domain: string;
+```
+
+- *Type:* string
+
+Okta domain. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#domain ActionConnection#domain}
+
+---
+
+### ActionConnectionOpenai <a name="ActionConnectionOpenai" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenai"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenai.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionOpenai: actionConnection.ActionConnectionOpenai = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenai.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKey">ActionConnectionOpenaiApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenai.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionOpenaiApiKey;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKey">ActionConnectionOpenaiApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionOpenaiApiKey <a name="ActionConnectionOpenaiApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKey.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionOpenaiApiKey: actionConnection.ActionConnectionOpenaiApiKey = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKey.property.apiToken">apiToken</a></code> | <code>string</code> | OpenAI API token. String length must be at least 1. |
+
+---
+
+##### `apiToken`<sup>Optional</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKey.property.apiToken"></a>
+
+```typescript
+public readonly apiToken: string;
+```
+
+- *Type:* string
+
+OpenAI API token. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+
+---
+
+### ActionConnectionServiceNow <a name="ActionConnectionServiceNow" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionServiceNow: actionConnection.ActionConnectionServiceNow = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow.property.basicAuth">basicAuth</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth">ActionConnectionServiceNowBasicAuth</a></code> | basic_auth block. |
+
+---
+
+##### `basicAuth`<sup>Optional</sup> <a name="basicAuth" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow.property.basicAuth"></a>
+
+```typescript
+public readonly basicAuth: ActionConnectionServiceNowBasicAuth;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth">ActionConnectionServiceNowBasicAuth</a>
+
+basic_auth block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#basic_auth ActionConnection#basic_auth}
+
+---
+
+### ActionConnectionServiceNowBasicAuth <a name="ActionConnectionServiceNowBasicAuth" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionServiceNowBasicAuth: actionConnection.ActionConnectionServiceNowBasicAuth = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth.property.instance">instance</a></code> | <code>string</code> | ServiceNow instance. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth.property.password">password</a></code> | <code>string</code> | ServiceNow password. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth.property.username">username</a></code> | <code>string</code> | ServiceNow username. String length must be at least 1. |
+
+---
+
+##### `instance`<sup>Optional</sup> <a name="instance" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth.property.instance"></a>
+
+```typescript
+public readonly instance: string;
+```
+
+- *Type:* string
+
+ServiceNow instance. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#instance ActionConnection#instance}
+
+---
+
+##### `password`<sup>Optional</sup> <a name="password" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth.property.password"></a>
+
+```typescript
+public readonly password: string;
+```
+
+- *Type:* string
+
+ServiceNow password. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#password ActionConnection#password}
+
+---
+
+##### `username`<sup>Optional</sup> <a name="username" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth.property.username"></a>
+
+```typescript
+public readonly username: string;
+```
+
+- *Type:* string
+
+ServiceNow username. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#username ActionConnection#username}
+
+---
+
+### ActionConnectionSplit <a name="ActionConnectionSplit" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplit"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplit.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionSplit: actionConnection.ActionConnectionSplit = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplit.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKey">ActionConnectionSplitApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplit.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionSplitApiKey;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKey">ActionConnectionSplitApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionSplitApiKey <a name="ActionConnectionSplitApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKey.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionSplitApiKey: actionConnection.ActionConnectionSplitApiKey = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKey.property.apiKey">apiKey</a></code> | <code>string</code> | Split API key. String length must be at least 1. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKey.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: string;
+```
+
+- *Type:* string
+
+Split API key. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionStatsig <a name="ActionConnectionStatsig" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionStatsig: actionConnection.ActionConnectionStatsig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKey">ActionConnectionStatsigApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionStatsigApiKey;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKey">ActionConnectionStatsigApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionStatsigApiKey <a name="ActionConnectionStatsigApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKey.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionStatsigApiKey: actionConnection.ActionConnectionStatsigApiKey = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKey.property.apiKey">apiKey</a></code> | <code>string</code> | Statsig API key. String length must be at least 1. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKey.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: string;
+```
+
+- *Type:* string
+
+Statsig API key. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionVirusTotal <a name="ActionConnectionVirusTotal" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionVirusTotal: actionConnection.ActionConnectionVirusTotal = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKey">ActionConnectionVirusTotalApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionVirusTotalApiKey;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKey">ActionConnectionVirusTotalApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionVirusTotalApiKey <a name="ActionConnectionVirusTotalApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKey.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+const actionConnectionVirusTotalApiKey: actionConnection.ActionConnectionVirusTotalApiKey = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKey.property.apiKey">apiKey</a></code> | <code>string</code> | VirusTotal API key. String length must be at least 1. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKey.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: string;
+```
+
+- *Type:* string
+
+VirusTotal API key. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### ActionConnectionAnthropicApiKeyOutputReference <a name="ActionConnectionAnthropicApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionAnthropicApiKeyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.resetApiToken">resetApiToken</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiToken` <a name="resetApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.resetApiToken"></a>
+
+```typescript
+public resetApiToken(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.property.apiTokenInput">apiTokenInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.property.apiToken">apiToken</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKey">ActionConnectionAnthropicApiKey</a> \| cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiTokenInput`<sup>Optional</sup> <a name="apiTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.property.apiTokenInput"></a>
+
+```typescript
+public readonly apiTokenInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiToken`<sup>Required</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.property.apiToken"></a>
+
+```typescript
+public readonly apiToken: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ActionConnectionAnthropicApiKey | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKey">ActionConnectionAnthropicApiKey</a> | cdktn.IResolvable
+
+---
+
+
+### ActionConnectionAnthropicOutputReference <a name="ActionConnectionAnthropicOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionAnthropicOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.putApiKey"></a>
+
+```typescript
+public putApiKey(value: ActionConnectionAnthropicApiKey): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKey">ActionConnectionAnthropicApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.resetApiKey"></a>
+
+```typescript
+public resetApiKey(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference">ActionConnectionAnthropicApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKey">ActionConnectionAnthropicApiKey</a> \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropic">ActionConnectionAnthropic</a> \| cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionAnthropicApiKeyOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference">ActionConnectionAnthropicApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.property.apiKeyInput"></a>
+
+```typescript
+public readonly apiKeyInput: ActionConnectionAnthropicApiKey | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKey">ActionConnectionAnthropicApiKey</a> | cdktn.IResolvable
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ActionConnectionAnthropic | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropic">ActionConnectionAnthropic</a> | cdktn.IResolvable
+
+---
+
+
+### ActionConnectionAsanaAccessTokenOutputReference <a name="ActionConnectionAsanaAccessTokenOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionAsanaAccessTokenOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.resetAccessToken">resetAccessToken</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetAccessToken` <a name="resetAccessToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.resetAccessToken"></a>
+
+```typescript
+public resetAccessToken(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.property.accessTokenInput">accessTokenInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.property.accessToken">accessToken</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessToken">ActionConnectionAsanaAccessToken</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `accessTokenInput`<sup>Optional</sup> <a name="accessTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.property.accessTokenInput"></a>
+
+```typescript
+public readonly accessTokenInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `accessToken`<sup>Required</sup> <a name="accessToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.property.accessToken"></a>
+
+```typescript
+public readonly accessToken: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ActionConnectionAsanaAccessToken;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessToken">ActionConnectionAsanaAccessToken</a>
+
+---
+
+
+### ActionConnectionAsanaOutputReference <a name="ActionConnectionAsanaOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionAsanaOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.putAccessToken">putAccessToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.resetAccessToken">resetAccessToken</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putAccessToken` <a name="putAccessToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.putAccessToken"></a>
+
+```typescript
+public putAccessToken(value: ActionConnectionAsanaAccessToken): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.putAccessToken.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessToken">ActionConnectionAsanaAccessToken</a>
+
+---
+
+##### `resetAccessToken` <a name="resetAccessToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.resetAccessToken"></a>
+
+```typescript
+public resetAccessToken(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.property.accessToken">accessToken</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference">ActionConnectionAsanaAccessTokenOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.property.accessTokenInput">accessTokenInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessToken">ActionConnectionAsanaAccessToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsana">ActionConnectionAsana</a> \| cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `accessToken`<sup>Required</sup> <a name="accessToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.property.accessToken"></a>
+
+```typescript
+public readonly accessToken: ActionConnectionAsanaAccessTokenOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference">ActionConnectionAsanaAccessTokenOutputReference</a>
+
+---
+
+##### `accessTokenInput`<sup>Optional</sup> <a name="accessTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.property.accessTokenInput"></a>
+
+```typescript
+public readonly accessTokenInput: IResolvable | ActionConnectionAsanaAccessToken;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessToken">ActionConnectionAsanaAccessToken</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ActionConnectionAsana | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsana">ActionConnectionAsana</a> | cdktn.IResolvable
+
+---
+
 
 ### ActionConnectionAwsAssumeRoleOutputReference <a name="ActionConnectionAwsAssumeRoleOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRoleOutputReference"></a>
 
@@ -1578,7 +5635,7 @@ public resetRole(): void
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRoleOutputReference.property.roleInput">roleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRoleOutputReference.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRoleOutputReference.property.role">role</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRoleOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRole">ActionConnectionAwsAssumeRole</a> \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRoleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRole">ActionConnectionAwsAssumeRole</a></code> | *No description.* |
 
 ---
 
@@ -1669,10 +5726,10 @@ public readonly role: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRoleOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ActionConnectionAwsAssumeRole | IResolvable;
+public readonly internalValue: IResolvable | ActionConnectionAwsAssumeRole;
 ```
 
-- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRole">ActionConnectionAwsAssumeRole</a> | cdktn.IResolvable
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRole">ActionConnectionAwsAssumeRole</a>
 
 ---
 
@@ -1908,7 +5965,7 @@ public resetAssumeRole(): void
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsOutputReference.property.assumeRole">assumeRole</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRoleOutputReference">ActionConnectionAwsAssumeRoleOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsOutputReference.property.assumeRoleInput">assumeRoleInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRole">ActionConnectionAwsAssumeRole</a> \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsOutputReference.property.assumeRoleInput">assumeRoleInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRole">ActionConnectionAwsAssumeRole</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAws">ActionConnectionAws</a> \| cdktn.IResolvable</code> | *No description.* |
 
 ---
@@ -1950,10 +6007,10 @@ public readonly assumeRole: ActionConnectionAwsAssumeRoleOutputReference;
 ##### `assumeRoleInput`<sup>Optional</sup> <a name="assumeRoleInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAwsOutputReference.property.assumeRoleInput"></a>
 
 ```typescript
-public readonly assumeRoleInput: ActionConnectionAwsAssumeRole | IResolvable;
+public readonly assumeRoleInput: IResolvable | ActionConnectionAwsAssumeRole;
 ```
 
-- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRole">ActionConnectionAwsAssumeRole</a> | cdktn.IResolvable
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRole">ActionConnectionAwsAssumeRole</a>
 
 ---
 
@@ -1964,6 +6021,7473 @@ public readonly internalValue: ActionConnectionAws | IResolvable;
 ```
 
 - *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAws">ActionConnectionAws</a> | cdktn.IResolvable
+
+---
+
+
+### ActionConnectionAzureOutputReference <a name="ActionConnectionAzureOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionAzureOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.putTenant">putTenant</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.resetTenant">resetTenant</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putTenant` <a name="putTenant" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.putTenant"></a>
+
+```typescript
+public putTenant(value: ActionConnectionAzureTenant): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.putTenant.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant">ActionConnectionAzureTenant</a>
+
+---
+
+##### `resetTenant` <a name="resetTenant" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.resetTenant"></a>
+
+```typescript
+public resetTenant(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.property.tenant">tenant</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference">ActionConnectionAzureTenantOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.property.tenantInput">tenantInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant">ActionConnectionAzureTenant</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzure">ActionConnectionAzure</a> \| cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tenant`<sup>Required</sup> <a name="tenant" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.property.tenant"></a>
+
+```typescript
+public readonly tenant: ActionConnectionAzureTenantOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference">ActionConnectionAzureTenantOutputReference</a>
+
+---
+
+##### `tenantInput`<sup>Optional</sup> <a name="tenantInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.property.tenantInput"></a>
+
+```typescript
+public readonly tenantInput: IResolvable | ActionConnectionAzureTenant;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant">ActionConnectionAzureTenant</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ActionConnectionAzure | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzure">ActionConnectionAzure</a> | cdktn.IResolvable
+
+---
+
+
+### ActionConnectionAzureTenantOutputReference <a name="ActionConnectionAzureTenantOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionAzureTenantOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.resetAppClientId">resetAppClientId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.resetClientSecret">resetClientSecret</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.resetCustomScopes">resetCustomScopes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.resetTenantId">resetTenantId</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetAppClientId` <a name="resetAppClientId" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.resetAppClientId"></a>
+
+```typescript
+public resetAppClientId(): void
+```
+
+##### `resetClientSecret` <a name="resetClientSecret" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.resetClientSecret"></a>
+
+```typescript
+public resetClientSecret(): void
+```
+
+##### `resetCustomScopes` <a name="resetCustomScopes" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.resetCustomScopes"></a>
+
+```typescript
+public resetCustomScopes(): void
+```
+
+##### `resetTenantId` <a name="resetTenantId" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.resetTenantId"></a>
+
+```typescript
+public resetTenantId(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.appClientIdInput">appClientIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.clientSecretInput">clientSecretInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.customScopesInput">customScopesInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.tenantIdInput">tenantIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.appClientId">appClientId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.clientSecret">clientSecret</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.customScopes">customScopes</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.tenantId">tenantId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant">ActionConnectionAzureTenant</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `appClientIdInput`<sup>Optional</sup> <a name="appClientIdInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.appClientIdInput"></a>
+
+```typescript
+public readonly appClientIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `clientSecretInput`<sup>Optional</sup> <a name="clientSecretInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.clientSecretInput"></a>
+
+```typescript
+public readonly clientSecretInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `customScopesInput`<sup>Optional</sup> <a name="customScopesInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.customScopesInput"></a>
+
+```typescript
+public readonly customScopesInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tenantIdInput`<sup>Optional</sup> <a name="tenantIdInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.tenantIdInput"></a>
+
+```typescript
+public readonly tenantIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `appClientId`<sup>Required</sup> <a name="appClientId" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.appClientId"></a>
+
+```typescript
+public readonly appClientId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `clientSecret`<sup>Required</sup> <a name="clientSecret" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.clientSecret"></a>
+
+```typescript
+public readonly clientSecret: string;
+```
+
+- *Type:* string
+
+---
+
+##### `customScopes`<sup>Required</sup> <a name="customScopes" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.customScopes"></a>
+
+```typescript
+public readonly customScopes: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tenantId`<sup>Required</sup> <a name="tenantId" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.tenantId"></a>
+
+```typescript
+public readonly tenantId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ActionConnectionAzureTenant;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant">ActionConnectionAzureTenant</a>
+
+---
+
+
+### ActionConnectionCircleCiApiKeyOutputReference <a name="ActionConnectionCircleCiApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionCircleCiApiKeyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.resetApiToken">resetApiToken</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiToken` <a name="resetApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.resetApiToken"></a>
+
+```typescript
+public resetApiToken(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.property.apiTokenInput">apiTokenInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.property.apiToken">apiToken</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKey">ActionConnectionCircleCiApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiTokenInput`<sup>Optional</sup> <a name="apiTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.property.apiTokenInput"></a>
+
+```typescript
+public readonly apiTokenInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiToken`<sup>Required</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.property.apiToken"></a>
+
+```typescript
+public readonly apiToken: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ActionConnectionCircleCiApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKey">ActionConnectionCircleCiApiKey</a>
+
+---
+
+
+### ActionConnectionCircleCiOutputReference <a name="ActionConnectionCircleCiOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionCircleCiOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.putApiKey"></a>
+
+```typescript
+public putApiKey(value: ActionConnectionCircleCiApiKey): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKey">ActionConnectionCircleCiApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.resetApiKey"></a>
+
+```typescript
+public resetApiKey(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference">ActionConnectionCircleCiApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKey">ActionConnectionCircleCiApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCi">ActionConnectionCircleCi</a> \| cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionCircleCiApiKeyOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference">ActionConnectionCircleCiApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.property.apiKeyInput"></a>
+
+```typescript
+public readonly apiKeyInput: IResolvable | ActionConnectionCircleCiApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKey">ActionConnectionCircleCiApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ActionConnectionCircleCi | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCi">ActionConnectionCircleCi</a> | cdktn.IResolvable
+
+---
+
+
+### ActionConnectionClickupApiKeyOutputReference <a name="ActionConnectionClickupApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionClickupApiKeyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.resetApiToken">resetApiToken</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiToken` <a name="resetApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.resetApiToken"></a>
+
+```typescript
+public resetApiToken(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.property.apiTokenInput">apiTokenInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.property.apiToken">apiToken</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKey">ActionConnectionClickupApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiTokenInput`<sup>Optional</sup> <a name="apiTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.property.apiTokenInput"></a>
+
+```typescript
+public readonly apiTokenInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiToken`<sup>Required</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.property.apiToken"></a>
+
+```typescript
+public readonly apiToken: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ActionConnectionClickupApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKey">ActionConnectionClickupApiKey</a>
+
+---
+
+
+### ActionConnectionClickupOutputReference <a name="ActionConnectionClickupOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionClickupOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.putApiKey"></a>
+
+```typescript
+public putApiKey(value: ActionConnectionClickupApiKey): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKey">ActionConnectionClickupApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.resetApiKey"></a>
+
+```typescript
+public resetApiKey(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference">ActionConnectionClickupApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKey">ActionConnectionClickupApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickup">ActionConnectionClickup</a> \| cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionClickupApiKeyOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference">ActionConnectionClickupApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.property.apiKeyInput"></a>
+
+```typescript
+public readonly apiKeyInput: IResolvable | ActionConnectionClickupApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKey">ActionConnectionClickupApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ActionConnectionClickup | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickup">ActionConnectionClickup</a> | cdktn.IResolvable
+
+---
+
+
+### ActionConnectionCloudflareApiTokenOutputReference <a name="ActionConnectionCloudflareApiTokenOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionCloudflareApiTokenOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.resetApiToken">resetApiToken</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiToken` <a name="resetApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.resetApiToken"></a>
+
+```typescript
+public resetApiToken(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.property.apiTokenInput">apiTokenInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.property.apiToken">apiToken</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiToken">ActionConnectionCloudflareApiToken</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiTokenInput`<sup>Optional</sup> <a name="apiTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.property.apiTokenInput"></a>
+
+```typescript
+public readonly apiTokenInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiToken`<sup>Required</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.property.apiToken"></a>
+
+```typescript
+public readonly apiToken: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ActionConnectionCloudflareApiToken;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiToken">ActionConnectionCloudflareApiToken</a>
+
+---
+
+
+### ActionConnectionCloudflareGlobalApiTokenOutputReference <a name="ActionConnectionCloudflareGlobalApiTokenOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.resetAuthEmail">resetAuthEmail</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.resetGlobalApiKey">resetGlobalApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetAuthEmail` <a name="resetAuthEmail" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.resetAuthEmail"></a>
+
+```typescript
+public resetAuthEmail(): void
+```
+
+##### `resetGlobalApiKey` <a name="resetGlobalApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.resetGlobalApiKey"></a>
+
+```typescript
+public resetGlobalApiKey(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.authEmailInput">authEmailInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.globalApiKeyInput">globalApiKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.authEmail">authEmail</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.globalApiKey">globalApiKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiToken">ActionConnectionCloudflareGlobalApiToken</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `authEmailInput`<sup>Optional</sup> <a name="authEmailInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.authEmailInput"></a>
+
+```typescript
+public readonly authEmailInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `globalApiKeyInput`<sup>Optional</sup> <a name="globalApiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.globalApiKeyInput"></a>
+
+```typescript
+public readonly globalApiKeyInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `authEmail`<sup>Required</sup> <a name="authEmail" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.authEmail"></a>
+
+```typescript
+public readonly authEmail: string;
+```
+
+- *Type:* string
+
+---
+
+##### `globalApiKey`<sup>Required</sup> <a name="globalApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.globalApiKey"></a>
+
+```typescript
+public readonly globalApiKey: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ActionConnectionCloudflareGlobalApiToken;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiToken">ActionConnectionCloudflareGlobalApiToken</a>
+
+---
+
+
+### ActionConnectionCloudflareOutputReference <a name="ActionConnectionCloudflareOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionCloudflareOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.putApiToken">putApiToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.putGlobalApiToken">putGlobalApiToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.resetApiToken">resetApiToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.resetGlobalApiToken">resetGlobalApiToken</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiToken` <a name="putApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.putApiToken"></a>
+
+```typescript
+public putApiToken(value: ActionConnectionCloudflareApiToken): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.putApiToken.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiToken">ActionConnectionCloudflareApiToken</a>
+
+---
+
+##### `putGlobalApiToken` <a name="putGlobalApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.putGlobalApiToken"></a>
+
+```typescript
+public putGlobalApiToken(value: ActionConnectionCloudflareGlobalApiToken): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.putGlobalApiToken.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiToken">ActionConnectionCloudflareGlobalApiToken</a>
+
+---
+
+##### `resetApiToken` <a name="resetApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.resetApiToken"></a>
+
+```typescript
+public resetApiToken(): void
+```
+
+##### `resetGlobalApiToken` <a name="resetGlobalApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.resetGlobalApiToken"></a>
+
+```typescript
+public resetGlobalApiToken(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.apiToken">apiToken</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference">ActionConnectionCloudflareApiTokenOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.globalApiToken">globalApiToken</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference">ActionConnectionCloudflareGlobalApiTokenOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.apiTokenInput">apiTokenInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiToken">ActionConnectionCloudflareApiToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.globalApiTokenInput">globalApiTokenInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiToken">ActionConnectionCloudflareGlobalApiToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare">ActionConnectionCloudflare</a> \| cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiToken`<sup>Required</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.apiToken"></a>
+
+```typescript
+public readonly apiToken: ActionConnectionCloudflareApiTokenOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference">ActionConnectionCloudflareApiTokenOutputReference</a>
+
+---
+
+##### `globalApiToken`<sup>Required</sup> <a name="globalApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.globalApiToken"></a>
+
+```typescript
+public readonly globalApiToken: ActionConnectionCloudflareGlobalApiTokenOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference">ActionConnectionCloudflareGlobalApiTokenOutputReference</a>
+
+---
+
+##### `apiTokenInput`<sup>Optional</sup> <a name="apiTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.apiTokenInput"></a>
+
+```typescript
+public readonly apiTokenInput: IResolvable | ActionConnectionCloudflareApiToken;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiToken">ActionConnectionCloudflareApiToken</a>
+
+---
+
+##### `globalApiTokenInput`<sup>Optional</sup> <a name="globalApiTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.globalApiTokenInput"></a>
+
+```typescript
+public readonly globalApiTokenInput: IResolvable | ActionConnectionCloudflareGlobalApiToken;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiToken">ActionConnectionCloudflareGlobalApiToken</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ActionConnectionCloudflare | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare">ActionConnectionCloudflare</a> | cdktn.IResolvable
+
+---
+
+
+### ActionConnectionConfigCatOutputReference <a name="ActionConnectionConfigCatOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionConfigCatOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.putSdkKey">putSdkKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.resetSdkKey">resetSdkKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putSdkKey` <a name="putSdkKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.putSdkKey"></a>
+
+```typescript
+public putSdkKey(value: ActionConnectionConfigCatSdkKey): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.putSdkKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey">ActionConnectionConfigCatSdkKey</a>
+
+---
+
+##### `resetSdkKey` <a name="resetSdkKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.resetSdkKey"></a>
+
+```typescript
+public resetSdkKey(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.property.sdkKey">sdkKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference">ActionConnectionConfigCatSdkKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.property.sdkKeyInput">sdkKeyInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey">ActionConnectionConfigCatSdkKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCat">ActionConnectionConfigCat</a> \| cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `sdkKey`<sup>Required</sup> <a name="sdkKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.property.sdkKey"></a>
+
+```typescript
+public readonly sdkKey: ActionConnectionConfigCatSdkKeyOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference">ActionConnectionConfigCatSdkKeyOutputReference</a>
+
+---
+
+##### `sdkKeyInput`<sup>Optional</sup> <a name="sdkKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.property.sdkKeyInput"></a>
+
+```typescript
+public readonly sdkKeyInput: IResolvable | ActionConnectionConfigCatSdkKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey">ActionConnectionConfigCatSdkKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ActionConnectionConfigCat | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCat">ActionConnectionConfigCat</a> | cdktn.IResolvable
+
+---
+
+
+### ActionConnectionConfigCatSdkKeyOutputReference <a name="ActionConnectionConfigCatSdkKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionConfigCatSdkKeyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.resetApiPassword">resetApiPassword</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.resetApiUsername">resetApiUsername</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.resetSdkKey">resetSdkKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiPassword` <a name="resetApiPassword" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.resetApiPassword"></a>
+
+```typescript
+public resetApiPassword(): void
+```
+
+##### `resetApiUsername` <a name="resetApiUsername" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.resetApiUsername"></a>
+
+```typescript
+public resetApiUsername(): void
+```
+
+##### `resetSdkKey` <a name="resetSdkKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.resetSdkKey"></a>
+
+```typescript
+public resetSdkKey(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.apiPasswordInput">apiPasswordInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.apiUsernameInput">apiUsernameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.sdkKeyInput">sdkKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.apiPassword">apiPassword</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.apiUsername">apiUsername</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.sdkKey">sdkKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey">ActionConnectionConfigCatSdkKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiPasswordInput`<sup>Optional</sup> <a name="apiPasswordInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.apiPasswordInput"></a>
+
+```typescript
+public readonly apiPasswordInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiUsernameInput`<sup>Optional</sup> <a name="apiUsernameInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.apiUsernameInput"></a>
+
+```typescript
+public readonly apiUsernameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `sdkKeyInput`<sup>Optional</sup> <a name="sdkKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.sdkKeyInput"></a>
+
+```typescript
+public readonly sdkKeyInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiPassword`<sup>Required</sup> <a name="apiPassword" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.apiPassword"></a>
+
+```typescript
+public readonly apiPassword: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiUsername`<sup>Required</sup> <a name="apiUsername" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.apiUsername"></a>
+
+```typescript
+public readonly apiUsername: string;
+```
+
+- *Type:* string
+
+---
+
+##### `sdkKey`<sup>Required</sup> <a name="sdkKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.sdkKey"></a>
+
+```typescript
+public readonly sdkKey: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ActionConnectionConfigCatSdkKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey">ActionConnectionConfigCatSdkKey</a>
+
+---
+
+
+### ActionConnectionDatadogApiKeyOutputReference <a name="ActionConnectionDatadogApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionDatadogApiKeyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.resetAppKey">resetAppKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.resetDatacenter">resetDatacenter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.resetSubdomain">resetSubdomain</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.resetApiKey"></a>
+
+```typescript
+public resetApiKey(): void
+```
+
+##### `resetAppKey` <a name="resetAppKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.resetAppKey"></a>
+
+```typescript
+public resetAppKey(): void
+```
+
+##### `resetDatacenter` <a name="resetDatacenter" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.resetDatacenter"></a>
+
+```typescript
+public resetDatacenter(): void
+```
+
+##### `resetSubdomain` <a name="resetSubdomain" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.resetSubdomain"></a>
+
+```typescript
+public resetSubdomain(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.appKeyInput">appKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.datacenterInput">datacenterInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.subdomainInput">subdomainInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.apiKey">apiKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.appKey">appKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.datacenter">datacenter</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.subdomain">subdomain</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey">ActionConnectionDatadogApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.apiKeyInput"></a>
+
+```typescript
+public readonly apiKeyInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `appKeyInput`<sup>Optional</sup> <a name="appKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.appKeyInput"></a>
+
+```typescript
+public readonly appKeyInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `datacenterInput`<sup>Optional</sup> <a name="datacenterInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.datacenterInput"></a>
+
+```typescript
+public readonly datacenterInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `subdomainInput`<sup>Optional</sup> <a name="subdomainInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.subdomainInput"></a>
+
+```typescript
+public readonly subdomainInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: string;
+```
+
+- *Type:* string
+
+---
+
+##### `appKey`<sup>Required</sup> <a name="appKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.appKey"></a>
+
+```typescript
+public readonly appKey: string;
+```
+
+- *Type:* string
+
+---
+
+##### `datacenter`<sup>Required</sup> <a name="datacenter" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.datacenter"></a>
+
+```typescript
+public readonly datacenter: string;
+```
+
+- *Type:* string
+
+---
+
+##### `subdomain`<sup>Required</sup> <a name="subdomain" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.subdomain"></a>
+
+```typescript
+public readonly subdomain: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ActionConnectionDatadogApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey">ActionConnectionDatadogApiKey</a>
+
+---
+
+
+### ActionConnectionDatadogOutputReference <a name="ActionConnectionDatadogOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionDatadogOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.putApiKey"></a>
+
+```typescript
+public putApiKey(value: ActionConnectionDatadogApiKey): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey">ActionConnectionDatadogApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.resetApiKey"></a>
+
+```typescript
+public resetApiKey(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference">ActionConnectionDatadogApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey">ActionConnectionDatadogApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadog">ActionConnectionDatadog</a> \| cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionDatadogApiKeyOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference">ActionConnectionDatadogApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.property.apiKeyInput"></a>
+
+```typescript
+public readonly apiKeyInput: IResolvable | ActionConnectionDatadogApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey">ActionConnectionDatadogApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ActionConnectionDatadog | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadog">ActionConnectionDatadog</a> | cdktn.IResolvable
+
+---
+
+
+### ActionConnectionFastlyApiKeyOutputReference <a name="ActionConnectionFastlyApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionFastlyApiKeyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.resetApiKey"></a>
+
+```typescript
+public resetApiKey(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.property.apiKey">apiKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKey">ActionConnectionFastlyApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.property.apiKeyInput"></a>
+
+```typescript
+public readonly apiKeyInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ActionConnectionFastlyApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKey">ActionConnectionFastlyApiKey</a>
+
+---
+
+
+### ActionConnectionFastlyOutputReference <a name="ActionConnectionFastlyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionFastlyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.putApiKey"></a>
+
+```typescript
+public putApiKey(value: ActionConnectionFastlyApiKey): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKey">ActionConnectionFastlyApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.resetApiKey"></a>
+
+```typescript
+public resetApiKey(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference">ActionConnectionFastlyApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKey">ActionConnectionFastlyApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastly">ActionConnectionFastly</a> \| cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionFastlyApiKeyOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference">ActionConnectionFastlyApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.property.apiKeyInput"></a>
+
+```typescript
+public readonly apiKeyInput: IResolvable | ActionConnectionFastlyApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKey">ActionConnectionFastlyApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ActionConnectionFastly | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastly">ActionConnectionFastly</a> | cdktn.IResolvable
+
+---
+
+
+### ActionConnectionFreshserviceApiKeyOutputReference <a name="ActionConnectionFreshserviceApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionFreshserviceApiKeyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.resetDomain">resetDomain</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.resetApiKey"></a>
+
+```typescript
+public resetApiKey(): void
+```
+
+##### `resetDomain` <a name="resetDomain" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.resetDomain"></a>
+
+```typescript
+public resetDomain(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.domainInput">domainInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.apiKey">apiKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.domain">domain</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKey">ActionConnectionFreshserviceApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.apiKeyInput"></a>
+
+```typescript
+public readonly apiKeyInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `domainInput`<sup>Optional</sup> <a name="domainInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.domainInput"></a>
+
+```typescript
+public readonly domainInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: string;
+```
+
+- *Type:* string
+
+---
+
+##### `domain`<sup>Required</sup> <a name="domain" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.domain"></a>
+
+```typescript
+public readonly domain: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ActionConnectionFreshserviceApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKey">ActionConnectionFreshserviceApiKey</a>
+
+---
+
+
+### ActionConnectionFreshserviceOutputReference <a name="ActionConnectionFreshserviceOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionFreshserviceOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.putApiKey"></a>
+
+```typescript
+public putApiKey(value: ActionConnectionFreshserviceApiKey): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKey">ActionConnectionFreshserviceApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.resetApiKey"></a>
+
+```typescript
+public resetApiKey(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference">ActionConnectionFreshserviceApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKey">ActionConnectionFreshserviceApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshservice">ActionConnectionFreshservice</a> \| cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionFreshserviceApiKeyOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference">ActionConnectionFreshserviceApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.property.apiKeyInput"></a>
+
+```typescript
+public readonly apiKeyInput: IResolvable | ActionConnectionFreshserviceApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKey">ActionConnectionFreshserviceApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ActionConnectionFreshservice | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshservice">ActionConnectionFreshservice</a> | cdktn.IResolvable
+
+---
+
+
+### ActionConnectionGcpOutputReference <a name="ActionConnectionGcpOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionGcpOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.putServiceAccount">putServiceAccount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.resetServiceAccount">resetServiceAccount</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putServiceAccount` <a name="putServiceAccount" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.putServiceAccount"></a>
+
+```typescript
+public putServiceAccount(value: ActionConnectionGcpServiceAccount): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.putServiceAccount.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccount">ActionConnectionGcpServiceAccount</a>
+
+---
+
+##### `resetServiceAccount` <a name="resetServiceAccount" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.resetServiceAccount"></a>
+
+```typescript
+public resetServiceAccount(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.property.serviceAccount">serviceAccount</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference">ActionConnectionGcpServiceAccountOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.property.serviceAccountInput">serviceAccountInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccount">ActionConnectionGcpServiceAccount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcp">ActionConnectionGcp</a> \| cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `serviceAccount`<sup>Required</sup> <a name="serviceAccount" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.property.serviceAccount"></a>
+
+```typescript
+public readonly serviceAccount: ActionConnectionGcpServiceAccountOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference">ActionConnectionGcpServiceAccountOutputReference</a>
+
+---
+
+##### `serviceAccountInput`<sup>Optional</sup> <a name="serviceAccountInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.property.serviceAccountInput"></a>
+
+```typescript
+public readonly serviceAccountInput: IResolvable | ActionConnectionGcpServiceAccount;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccount">ActionConnectionGcpServiceAccount</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ActionConnectionGcp | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcp">ActionConnectionGcp</a> | cdktn.IResolvable
+
+---
+
+
+### ActionConnectionGcpServiceAccountOutputReference <a name="ActionConnectionGcpServiceAccountOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionGcpServiceAccountOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.resetPrivateKey">resetPrivateKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.resetServiceAccountEmail">resetServiceAccountEmail</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetPrivateKey` <a name="resetPrivateKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.resetPrivateKey"></a>
+
+```typescript
+public resetPrivateKey(): void
+```
+
+##### `resetServiceAccountEmail` <a name="resetServiceAccountEmail" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.resetServiceAccountEmail"></a>
+
+```typescript
+public resetServiceAccountEmail(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.privateKeyInput">privateKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.serviceAccountEmailInput">serviceAccountEmailInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.privateKey">privateKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.serviceAccountEmail">serviceAccountEmail</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccount">ActionConnectionGcpServiceAccount</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `privateKeyInput`<sup>Optional</sup> <a name="privateKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.privateKeyInput"></a>
+
+```typescript
+public readonly privateKeyInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `serviceAccountEmailInput`<sup>Optional</sup> <a name="serviceAccountEmailInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.serviceAccountEmailInput"></a>
+
+```typescript
+public readonly serviceAccountEmailInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `privateKey`<sup>Required</sup> <a name="privateKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.privateKey"></a>
+
+```typescript
+public readonly privateKey: string;
+```
+
+- *Type:* string
+
+---
+
+##### `serviceAccountEmail`<sup>Required</sup> <a name="serviceAccountEmail" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.serviceAccountEmail"></a>
+
+```typescript
+public readonly serviceAccountEmail: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ActionConnectionGcpServiceAccount;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccount">ActionConnectionGcpServiceAccount</a>
+
+---
+
+
+### ActionConnectionGeminiApiKeyOutputReference <a name="ActionConnectionGeminiApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionGeminiApiKeyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.resetApiKey"></a>
+
+```typescript
+public resetApiKey(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.property.apiKey">apiKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKey">ActionConnectionGeminiApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.property.apiKeyInput"></a>
+
+```typescript
+public readonly apiKeyInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ActionConnectionGeminiApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKey">ActionConnectionGeminiApiKey</a>
+
+---
+
+
+### ActionConnectionGeminiOutputReference <a name="ActionConnectionGeminiOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionGeminiOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.putApiKey"></a>
+
+```typescript
+public putApiKey(value: ActionConnectionGeminiApiKey): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKey">ActionConnectionGeminiApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.resetApiKey"></a>
+
+```typescript
+public resetApiKey(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference">ActionConnectionGeminiApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKey">ActionConnectionGeminiApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGemini">ActionConnectionGemini</a> \| cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionGeminiApiKeyOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference">ActionConnectionGeminiApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.property.apiKeyInput"></a>
+
+```typescript
+public readonly apiKeyInput: IResolvable | ActionConnectionGeminiApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKey">ActionConnectionGeminiApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ActionConnectionGemini | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGemini">ActionConnectionGemini</a> | cdktn.IResolvable
+
+---
+
+
+### ActionConnectionGitlabApiKeyOutputReference <a name="ActionConnectionGitlabApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionGitlabApiKeyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.resetApiToken">resetApiToken</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiToken` <a name="resetApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.resetApiToken"></a>
+
+```typescript
+public resetApiToken(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.property.apiTokenInput">apiTokenInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.property.apiToken">apiToken</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKey">ActionConnectionGitlabApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiTokenInput`<sup>Optional</sup> <a name="apiTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.property.apiTokenInput"></a>
+
+```typescript
+public readonly apiTokenInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiToken`<sup>Required</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.property.apiToken"></a>
+
+```typescript
+public readonly apiToken: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ActionConnectionGitlabApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKey">ActionConnectionGitlabApiKey</a>
+
+---
+
+
+### ActionConnectionGitlabOutputReference <a name="ActionConnectionGitlabOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionGitlabOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.putApiKey"></a>
+
+```typescript
+public putApiKey(value: ActionConnectionGitlabApiKey): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKey">ActionConnectionGitlabApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.resetApiKey"></a>
+
+```typescript
+public resetApiKey(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference">ActionConnectionGitlabApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKey">ActionConnectionGitlabApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlab">ActionConnectionGitlab</a> \| cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionGitlabApiKeyOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference">ActionConnectionGitlabApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.property.apiKeyInput"></a>
+
+```typescript
+public readonly apiKeyInput: IResolvable | ActionConnectionGitlabApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKey">ActionConnectionGitlabApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ActionConnectionGitlab | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlab">ActionConnectionGitlab</a> | cdktn.IResolvable
+
+---
+
+
+### ActionConnectionGreyNoiseApiKeyOutputReference <a name="ActionConnectionGreyNoiseApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.resetApiKey"></a>
+
+```typescript
+public resetApiKey(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.property.apiKey">apiKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKey">ActionConnectionGreyNoiseApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.property.apiKeyInput"></a>
+
+```typescript
+public readonly apiKeyInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ActionConnectionGreyNoiseApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKey">ActionConnectionGreyNoiseApiKey</a>
+
+---
+
+
+### ActionConnectionGreyNoiseOutputReference <a name="ActionConnectionGreyNoiseOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionGreyNoiseOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.putApiKey"></a>
+
+```typescript
+public putApiKey(value: ActionConnectionGreyNoiseApiKey): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKey">ActionConnectionGreyNoiseApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.resetApiKey"></a>
+
+```typescript
+public resetApiKey(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference">ActionConnectionGreyNoiseApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKey">ActionConnectionGreyNoiseApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoise">ActionConnectionGreyNoise</a> \| cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionGreyNoiseApiKeyOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference">ActionConnectionGreyNoiseApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.property.apiKeyInput"></a>
+
+```typescript
+public readonly apiKeyInput: IResolvable | ActionConnectionGreyNoiseApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKey">ActionConnectionGreyNoiseApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ActionConnectionGreyNoise | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoise">ActionConnectionGreyNoise</a> | cdktn.IResolvable
 
 ---
 
@@ -4492,6 +16016,4645 @@ public readonly internalValue: IResolvable | ActionConnectionHttpTokenAuthUrlPar
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthUrlParameter">ActionConnectionHttpTokenAuthUrlParameter</a>
+
+---
+
+
+### ActionConnectionLaunchDarklyApiKeyOutputReference <a name="ActionConnectionLaunchDarklyApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.resetApiToken">resetApiToken</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiToken` <a name="resetApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.resetApiToken"></a>
+
+```typescript
+public resetApiToken(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.property.apiTokenInput">apiTokenInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.property.apiToken">apiToken</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKey">ActionConnectionLaunchDarklyApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiTokenInput`<sup>Optional</sup> <a name="apiTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.property.apiTokenInput"></a>
+
+```typescript
+public readonly apiTokenInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiToken`<sup>Required</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.property.apiToken"></a>
+
+```typescript
+public readonly apiToken: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ActionConnectionLaunchDarklyApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKey">ActionConnectionLaunchDarklyApiKey</a>
+
+---
+
+
+### ActionConnectionLaunchDarklyOutputReference <a name="ActionConnectionLaunchDarklyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionLaunchDarklyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.putApiKey"></a>
+
+```typescript
+public putApiKey(value: ActionConnectionLaunchDarklyApiKey): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKey">ActionConnectionLaunchDarklyApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.resetApiKey"></a>
+
+```typescript
+public resetApiKey(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference">ActionConnectionLaunchDarklyApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKey">ActionConnectionLaunchDarklyApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarkly">ActionConnectionLaunchDarkly</a> \| cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionLaunchDarklyApiKeyOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference">ActionConnectionLaunchDarklyApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.property.apiKeyInput"></a>
+
+```typescript
+public readonly apiKeyInput: IResolvable | ActionConnectionLaunchDarklyApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKey">ActionConnectionLaunchDarklyApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ActionConnectionLaunchDarkly | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarkly">ActionConnectionLaunchDarkly</a> | cdktn.IResolvable
+
+---
+
+
+### ActionConnectionNotionApiKeyOutputReference <a name="ActionConnectionNotionApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionNotionApiKeyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.resetApiToken">resetApiToken</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiToken` <a name="resetApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.resetApiToken"></a>
+
+```typescript
+public resetApiToken(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.property.apiTokenInput">apiTokenInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.property.apiToken">apiToken</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKey">ActionConnectionNotionApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiTokenInput`<sup>Optional</sup> <a name="apiTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.property.apiTokenInput"></a>
+
+```typescript
+public readonly apiTokenInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiToken`<sup>Required</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.property.apiToken"></a>
+
+```typescript
+public readonly apiToken: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ActionConnectionNotionApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKey">ActionConnectionNotionApiKey</a>
+
+---
+
+
+### ActionConnectionNotionOutputReference <a name="ActionConnectionNotionOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionNotionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.putApiKey"></a>
+
+```typescript
+public putApiKey(value: ActionConnectionNotionApiKey): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKey">ActionConnectionNotionApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.resetApiKey"></a>
+
+```typescript
+public resetApiKey(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference">ActionConnectionNotionApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKey">ActionConnectionNotionApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotion">ActionConnectionNotion</a> \| cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionNotionApiKeyOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference">ActionConnectionNotionApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.property.apiKeyInput"></a>
+
+```typescript
+public readonly apiKeyInput: IResolvable | ActionConnectionNotionApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKey">ActionConnectionNotionApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ActionConnectionNotion | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotion">ActionConnectionNotion</a> | cdktn.IResolvable
+
+---
+
+
+### ActionConnectionOktaApiTokenOutputReference <a name="ActionConnectionOktaApiTokenOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionOktaApiTokenOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.resetApiToken">resetApiToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.resetDomain">resetDomain</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiToken` <a name="resetApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.resetApiToken"></a>
+
+```typescript
+public resetApiToken(): void
+```
+
+##### `resetDomain` <a name="resetDomain" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.resetDomain"></a>
+
+```typescript
+public resetDomain(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.apiTokenInput">apiTokenInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.domainInput">domainInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.apiToken">apiToken</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.domain">domain</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiToken">ActionConnectionOktaApiToken</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiTokenInput`<sup>Optional</sup> <a name="apiTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.apiTokenInput"></a>
+
+```typescript
+public readonly apiTokenInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `domainInput`<sup>Optional</sup> <a name="domainInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.domainInput"></a>
+
+```typescript
+public readonly domainInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiToken`<sup>Required</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.apiToken"></a>
+
+```typescript
+public readonly apiToken: string;
+```
+
+- *Type:* string
+
+---
+
+##### `domain`<sup>Required</sup> <a name="domain" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.domain"></a>
+
+```typescript
+public readonly domain: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ActionConnectionOktaApiToken;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiToken">ActionConnectionOktaApiToken</a>
+
+---
+
+
+### ActionConnectionOktaOutputReference <a name="ActionConnectionOktaOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionOktaOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.putApiToken">putApiToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.resetApiToken">resetApiToken</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiToken` <a name="putApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.putApiToken"></a>
+
+```typescript
+public putApiToken(value: ActionConnectionOktaApiToken): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.putApiToken.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiToken">ActionConnectionOktaApiToken</a>
+
+---
+
+##### `resetApiToken` <a name="resetApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.resetApiToken"></a>
+
+```typescript
+public resetApiToken(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.property.apiToken">apiToken</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference">ActionConnectionOktaApiTokenOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.property.apiTokenInput">apiTokenInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiToken">ActionConnectionOktaApiToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOkta">ActionConnectionOkta</a> \| cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiToken`<sup>Required</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.property.apiToken"></a>
+
+```typescript
+public readonly apiToken: ActionConnectionOktaApiTokenOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference">ActionConnectionOktaApiTokenOutputReference</a>
+
+---
+
+##### `apiTokenInput`<sup>Optional</sup> <a name="apiTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.property.apiTokenInput"></a>
+
+```typescript
+public readonly apiTokenInput: IResolvable | ActionConnectionOktaApiToken;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiToken">ActionConnectionOktaApiToken</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ActionConnectionOkta | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOkta">ActionConnectionOkta</a> | cdktn.IResolvable
+
+---
+
+
+### ActionConnectionOpenaiApiKeyOutputReference <a name="ActionConnectionOpenaiApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionOpenaiApiKeyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.resetApiToken">resetApiToken</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiToken` <a name="resetApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.resetApiToken"></a>
+
+```typescript
+public resetApiToken(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.property.apiTokenInput">apiTokenInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.property.apiToken">apiToken</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKey">ActionConnectionOpenaiApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiTokenInput`<sup>Optional</sup> <a name="apiTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.property.apiTokenInput"></a>
+
+```typescript
+public readonly apiTokenInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiToken`<sup>Required</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.property.apiToken"></a>
+
+```typescript
+public readonly apiToken: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ActionConnectionOpenaiApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKey">ActionConnectionOpenaiApiKey</a>
+
+---
+
+
+### ActionConnectionOpenaiOutputReference <a name="ActionConnectionOpenaiOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionOpenaiOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.putApiKey"></a>
+
+```typescript
+public putApiKey(value: ActionConnectionOpenaiApiKey): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKey">ActionConnectionOpenaiApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.resetApiKey"></a>
+
+```typescript
+public resetApiKey(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference">ActionConnectionOpenaiApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKey">ActionConnectionOpenaiApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenai">ActionConnectionOpenai</a> \| cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionOpenaiApiKeyOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference">ActionConnectionOpenaiApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.property.apiKeyInput"></a>
+
+```typescript
+public readonly apiKeyInput: IResolvable | ActionConnectionOpenaiApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKey">ActionConnectionOpenaiApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ActionConnectionOpenai | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenai">ActionConnectionOpenai</a> | cdktn.IResolvable
+
+---
+
+
+### ActionConnectionServiceNowBasicAuthOutputReference <a name="ActionConnectionServiceNowBasicAuthOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionServiceNowBasicAuthOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.resetInstance">resetInstance</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.resetPassword">resetPassword</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.resetUsername">resetUsername</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetInstance` <a name="resetInstance" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.resetInstance"></a>
+
+```typescript
+public resetInstance(): void
+```
+
+##### `resetPassword` <a name="resetPassword" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.resetPassword"></a>
+
+```typescript
+public resetPassword(): void
+```
+
+##### `resetUsername` <a name="resetUsername" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.resetUsername"></a>
+
+```typescript
+public resetUsername(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.instanceInput">instanceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.passwordInput">passwordInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.usernameInput">usernameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.instance">instance</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.password">password</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.username">username</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth">ActionConnectionServiceNowBasicAuth</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `instanceInput`<sup>Optional</sup> <a name="instanceInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.instanceInput"></a>
+
+```typescript
+public readonly instanceInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `passwordInput`<sup>Optional</sup> <a name="passwordInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.passwordInput"></a>
+
+```typescript
+public readonly passwordInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `usernameInput`<sup>Optional</sup> <a name="usernameInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.usernameInput"></a>
+
+```typescript
+public readonly usernameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `instance`<sup>Required</sup> <a name="instance" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.instance"></a>
+
+```typescript
+public readonly instance: string;
+```
+
+- *Type:* string
+
+---
+
+##### `password`<sup>Required</sup> <a name="password" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.password"></a>
+
+```typescript
+public readonly password: string;
+```
+
+- *Type:* string
+
+---
+
+##### `username`<sup>Required</sup> <a name="username" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.username"></a>
+
+```typescript
+public readonly username: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ActionConnectionServiceNowBasicAuth;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth">ActionConnectionServiceNowBasicAuth</a>
+
+---
+
+
+### ActionConnectionServiceNowOutputReference <a name="ActionConnectionServiceNowOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionServiceNowOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.putBasicAuth">putBasicAuth</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.resetBasicAuth">resetBasicAuth</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putBasicAuth` <a name="putBasicAuth" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.putBasicAuth"></a>
+
+```typescript
+public putBasicAuth(value: ActionConnectionServiceNowBasicAuth): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.putBasicAuth.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth">ActionConnectionServiceNowBasicAuth</a>
+
+---
+
+##### `resetBasicAuth` <a name="resetBasicAuth" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.resetBasicAuth"></a>
+
+```typescript
+public resetBasicAuth(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.property.basicAuth">basicAuth</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference">ActionConnectionServiceNowBasicAuthOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.property.basicAuthInput">basicAuthInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth">ActionConnectionServiceNowBasicAuth</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow">ActionConnectionServiceNow</a> \| cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `basicAuth`<sup>Required</sup> <a name="basicAuth" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.property.basicAuth"></a>
+
+```typescript
+public readonly basicAuth: ActionConnectionServiceNowBasicAuthOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference">ActionConnectionServiceNowBasicAuthOutputReference</a>
+
+---
+
+##### `basicAuthInput`<sup>Optional</sup> <a name="basicAuthInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.property.basicAuthInput"></a>
+
+```typescript
+public readonly basicAuthInput: IResolvable | ActionConnectionServiceNowBasicAuth;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth">ActionConnectionServiceNowBasicAuth</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ActionConnectionServiceNow | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow">ActionConnectionServiceNow</a> | cdktn.IResolvable
+
+---
+
+
+### ActionConnectionSplitApiKeyOutputReference <a name="ActionConnectionSplitApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionSplitApiKeyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.resetApiKey"></a>
+
+```typescript
+public resetApiKey(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.property.apiKey">apiKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKey">ActionConnectionSplitApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.property.apiKeyInput"></a>
+
+```typescript
+public readonly apiKeyInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ActionConnectionSplitApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKey">ActionConnectionSplitApiKey</a>
+
+---
+
+
+### ActionConnectionSplitOutputReference <a name="ActionConnectionSplitOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionSplitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.putApiKey"></a>
+
+```typescript
+public putApiKey(value: ActionConnectionSplitApiKey): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKey">ActionConnectionSplitApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.resetApiKey"></a>
+
+```typescript
+public resetApiKey(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference">ActionConnectionSplitApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKey">ActionConnectionSplitApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplit">ActionConnectionSplit</a> \| cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionSplitApiKeyOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference">ActionConnectionSplitApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.property.apiKeyInput"></a>
+
+```typescript
+public readonly apiKeyInput: IResolvable | ActionConnectionSplitApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKey">ActionConnectionSplitApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ActionConnectionSplit | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplit">ActionConnectionSplit</a> | cdktn.IResolvable
+
+---
+
+
+### ActionConnectionStatsigApiKeyOutputReference <a name="ActionConnectionStatsigApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionStatsigApiKeyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.resetApiKey"></a>
+
+```typescript
+public resetApiKey(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.property.apiKey">apiKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKey">ActionConnectionStatsigApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.property.apiKeyInput"></a>
+
+```typescript
+public readonly apiKeyInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ActionConnectionStatsigApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKey">ActionConnectionStatsigApiKey</a>
+
+---
+
+
+### ActionConnectionStatsigOutputReference <a name="ActionConnectionStatsigOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionStatsigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.putApiKey"></a>
+
+```typescript
+public putApiKey(value: ActionConnectionStatsigApiKey): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKey">ActionConnectionStatsigApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.resetApiKey"></a>
+
+```typescript
+public resetApiKey(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference">ActionConnectionStatsigApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKey">ActionConnectionStatsigApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig">ActionConnectionStatsig</a> \| cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionStatsigApiKeyOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference">ActionConnectionStatsigApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.property.apiKeyInput"></a>
+
+```typescript
+public readonly apiKeyInput: IResolvable | ActionConnectionStatsigApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKey">ActionConnectionStatsigApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ActionConnectionStatsig | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig">ActionConnectionStatsig</a> | cdktn.IResolvable
+
+---
+
+
+### ActionConnectionVirusTotalApiKeyOutputReference <a name="ActionConnectionVirusTotalApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionVirusTotalApiKeyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.resetApiKey"></a>
+
+```typescript
+public resetApiKey(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.property.apiKey">apiKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKey">ActionConnectionVirusTotalApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.property.apiKeyInput"></a>
+
+```typescript
+public readonly apiKeyInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ActionConnectionVirusTotalApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKey">ActionConnectionVirusTotalApiKey</a>
+
+---
+
+
+### ActionConnectionVirusTotalOutputReference <a name="ActionConnectionVirusTotalOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.Initializer"></a>
+
+```typescript
+import { actionConnection } from '@cdktn/provider-datadog'
+
+new actionConnection.ActionConnectionVirusTotalOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.putApiKey"></a>
+
+```typescript
+public putApiKey(value: ActionConnectionVirusTotalApiKey): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKey">ActionConnectionVirusTotalApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.resetApiKey"></a>
+
+```typescript
+public resetApiKey(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference">ActionConnectionVirusTotalApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKey">ActionConnectionVirusTotalApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal">ActionConnectionVirusTotal</a> \| cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.property.apiKey"></a>
+
+```typescript
+public readonly apiKey: ActionConnectionVirusTotalApiKeyOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference">ActionConnectionVirusTotalApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.property.apiKeyInput"></a>
+
+```typescript
+public readonly apiKeyInput: IResolvable | ActionConnectionVirusTotalApiKey;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKey">ActionConnectionVirusTotalApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ActionConnectionVirusTotal | IResolvable;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal">ActionConnectionVirusTotal</a> | cdktn.IResolvable
 
 ---
 

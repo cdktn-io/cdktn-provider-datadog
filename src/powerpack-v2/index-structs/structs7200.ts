@@ -204,13 +204,13 @@ export interface PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestSortOrd
   /**
   * formula_sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#formula_sort PowerpackV2#formula_sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#formula_sort PowerpackV2#formula_sort}
   */
   readonly formulaSort?: PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestSortOrderByFormulaSort;
   /**
   * group_sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#group_sort PowerpackV2#group_sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#group_sort PowerpackV2#group_sort}
   */
   readonly groupSort?: PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestSortOrderByGroupSort;
 }
@@ -357,13 +357,13 @@ export interface PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestSort {
   /**
   * The number of items to limit the widget to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#count PowerpackV2#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#count PowerpackV2#count}
   */
   readonly count?: number;
   /**
   * order_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#order_by PowerpackV2#order_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#order_by PowerpackV2#order_by}
   */
   readonly orderBy?: PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestSortOrderBy[] | cdktn.IResolvable;
 }
@@ -478,13 +478,13 @@ export interface PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestStyle {
   /**
   * How to order series. Valid values are `tags`, `values`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#order_by PowerpackV2#order_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#order_by PowerpackV2#order_by}
   */
   readonly orderBy?: string;
   /**
   * A color palette to apply to the widget. The available options are available at: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#palette PowerpackV2#palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#palette PowerpackV2#palette}
   */
   readonly palette?: string;
 }
@@ -599,61 +599,61 @@ export interface PowerpackV2WidgetWildcardDefinitionRequestTreemapRequest {
   /**
   * The metric query to use for this widget. **Deprecated.** Use queries and formulas instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#q PowerpackV2#q}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#q PowerpackV2#q}
   */
   readonly q?: string;
   /**
   * apm_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#apm_query PowerpackV2#apm_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#apm_query PowerpackV2#apm_query}
   */
   readonly apmQuery?: PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestApmQuery;
   /**
   * formula block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#formula PowerpackV2#formula}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#formula PowerpackV2#formula}
   */
   readonly formula?: PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestFormula[] | cdktn.IResolvable;
   /**
   * log_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#log_query PowerpackV2#log_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#log_query PowerpackV2#log_query}
   */
   readonly logQuery?: PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestLogQuery;
   /**
   * process_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#process_query PowerpackV2#process_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#process_query PowerpackV2#process_query}
   */
   readonly processQuery?: PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestProcessQuery;
   /**
   * query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#query PowerpackV2#query}
   */
   readonly query?: PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQuery[] | cdktn.IResolvable;
   /**
   * rum_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#rum_query PowerpackV2#rum_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#rum_query PowerpackV2#rum_query}
   */
   readonly rumQuery?: PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestRumQuery;
   /**
   * security_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#security_query PowerpackV2#security_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#security_query PowerpackV2#security_query}
   */
   readonly securityQuery?: PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestSecurityQuery;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#sort PowerpackV2#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#sort PowerpackV2#sort}
   */
   readonly sort?: PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestSort;
   /**
   * style block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#style PowerpackV2#style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#style PowerpackV2#style}
   */
   readonly style?: PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestStyle;
 }
@@ -1000,25 +1000,25 @@ export interface PowerpackV2WidgetWildcardDefinitionRequest {
   /**
   * histogram_request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#histogram_request PowerpackV2#histogram_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#histogram_request PowerpackV2#histogram_request}
   */
   readonly histogramRequest?: PowerpackV2WidgetWildcardDefinitionRequestHistogramRequest;
   /**
   * liststream_request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#liststream_request PowerpackV2#liststream_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#liststream_request PowerpackV2#liststream_request}
   */
   readonly liststreamRequest?: PowerpackV2WidgetWildcardDefinitionRequestListstreamRequest;
   /**
   * timeseries_request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#timeseries_request PowerpackV2#timeseries_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#timeseries_request PowerpackV2#timeseries_request}
   */
   readonly timeseriesRequest?: PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequest;
   /**
   * treemap_request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#treemap_request PowerpackV2#treemap_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#treemap_request PowerpackV2#treemap_request}
   */
   readonly treemapRequest?: PowerpackV2WidgetWildcardDefinitionRequestTreemapRequest;
 }
@@ -1223,13 +1223,13 @@ export interface PowerpackV2WidgetWildcardDefinitionSpecification {
   /**
   * The Vega or Vega-Lite specification as a JSON string. Use `jsonencode()` to encode the specification.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#contents PowerpackV2#contents}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#contents PowerpackV2#contents}
   */
   readonly contents: string;
   /**
   * The type of specification (Vega or Vega-Lite). Valid values are `vega`, `vega-lite`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#type PowerpackV2#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#type PowerpackV2#type}
   */
   readonly type: string;
 }
@@ -1338,13 +1338,13 @@ export interface PowerpackV2WidgetWildcardDefinitionTimeFixed {
   /**
   * Start time in seconds since epoch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#from PowerpackV2#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#from PowerpackV2#from}
   */
   readonly from: number;
   /**
   * End time in seconds since epoch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#to PowerpackV2#to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#to PowerpackV2#to}
   */
   readonly to: number;
 }
@@ -1453,13 +1453,13 @@ export interface PowerpackV2WidgetWildcardDefinitionTimeLive {
   /**
   * Unit of the time span. Valid values are `minute`, `hour`, `day`, `week`, `month`, `year`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#unit PowerpackV2#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#unit PowerpackV2#unit}
   */
   readonly unit: string;
   /**
   * Value of the time span.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#value PowerpackV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#value PowerpackV2#value}
   */
   readonly value: number;
 }
@@ -1568,13 +1568,13 @@ export interface PowerpackV2WidgetWildcardDefinitionTime {
   /**
   * fixed block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#fixed PowerpackV2#fixed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#fixed PowerpackV2#fixed}
   */
   readonly fixed?: PowerpackV2WidgetWildcardDefinitionTimeFixed;
   /**
   * live block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#live PowerpackV2#live}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#live PowerpackV2#live}
   */
   readonly live?: PowerpackV2WidgetWildcardDefinitionTimeLive;
 }
@@ -1689,61 +1689,61 @@ export interface PowerpackV2WidgetWildcardDefinition {
   /**
   * The description of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#description PowerpackV2#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#description PowerpackV2#description}
   */
   readonly description?: string;
   /**
   * Hide any portion of the widget's timeframe that is incomplete due to cost data not being available.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#hide_incomplete_cost_data PowerpackV2#hide_incomplete_cost_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#hide_incomplete_cost_data PowerpackV2#hide_incomplete_cost_data}
   */
   readonly hideIncompleteCostData?: boolean | cdktn.IResolvable;
   /**
   * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `week_to_date`, `month_to_date`, `1y`, `alert`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#live_span PowerpackV2#live_span}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#live_span PowerpackV2#live_span}
   */
   readonly liveSpan?: string;
   /**
   * The title of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#title PowerpackV2#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#title PowerpackV2#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#title_align PowerpackV2#title_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#title_align PowerpackV2#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#title_size PowerpackV2#title_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#title_size PowerpackV2#title_size}
   */
   readonly titleSize?: string;
   /**
   * custom_link block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#custom_link PowerpackV2#custom_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#custom_link PowerpackV2#custom_link}
   */
   readonly customLink?: PowerpackV2WidgetWildcardDefinitionCustomLink[] | cdktn.IResolvable;
   /**
   * request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#request PowerpackV2#request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#request PowerpackV2#request}
   */
   readonly request?: PowerpackV2WidgetWildcardDefinitionRequest[] | cdktn.IResolvable;
   /**
   * specification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#specification PowerpackV2#specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#specification PowerpackV2#specification}
   */
   readonly specification?: PowerpackV2WidgetWildcardDefinitionSpecification;
   /**
   * time block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#time PowerpackV2#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#time PowerpackV2#time}
   */
   readonly time?: PowerpackV2WidgetWildcardDefinitionTime;
 }
@@ -2090,7 +2090,7 @@ export interface PowerpackV2Widget {
   /**
   * The ID of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#id PowerpackV2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#id PowerpackV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2099,223 +2099,223 @@ export interface PowerpackV2Widget {
   /**
   * alert_graph_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#alert_graph_definition PowerpackV2#alert_graph_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#alert_graph_definition PowerpackV2#alert_graph_definition}
   */
   readonly alertGraphDefinition?: PowerpackV2WidgetAlertGraphDefinition;
   /**
   * alert_value_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#alert_value_definition PowerpackV2#alert_value_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#alert_value_definition PowerpackV2#alert_value_definition}
   */
   readonly alertValueDefinition?: PowerpackV2WidgetAlertValueDefinition;
   /**
   * bar_chart_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#bar_chart_definition PowerpackV2#bar_chart_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#bar_chart_definition PowerpackV2#bar_chart_definition}
   */
   readonly barChartDefinition?: PowerpackV2WidgetBarChartDefinition;
   /**
   * change_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#change_definition PowerpackV2#change_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#change_definition PowerpackV2#change_definition}
   */
   readonly changeDefinition?: PowerpackV2WidgetChangeDefinition;
   /**
   * check_status_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#check_status_definition PowerpackV2#check_status_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#check_status_definition PowerpackV2#check_status_definition}
   */
   readonly checkStatusDefinition?: PowerpackV2WidgetCheckStatusDefinition;
   /**
   * distribution_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#distribution_definition PowerpackV2#distribution_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#distribution_definition PowerpackV2#distribution_definition}
   */
   readonly distributionDefinition?: PowerpackV2WidgetDistributionDefinition;
   /**
   * event_stream_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#event_stream_definition PowerpackV2#event_stream_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#event_stream_definition PowerpackV2#event_stream_definition}
   */
   readonly eventStreamDefinition?: PowerpackV2WidgetEventStreamDefinition;
   /**
   * event_timeline_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#event_timeline_definition PowerpackV2#event_timeline_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#event_timeline_definition PowerpackV2#event_timeline_definition}
   */
   readonly eventTimelineDefinition?: PowerpackV2WidgetEventTimelineDefinition;
   /**
   * free_text_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#free_text_definition PowerpackV2#free_text_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#free_text_definition PowerpackV2#free_text_definition}
   */
   readonly freeTextDefinition?: PowerpackV2WidgetFreeTextDefinition;
   /**
   * funnel_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#funnel_definition PowerpackV2#funnel_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#funnel_definition PowerpackV2#funnel_definition}
   */
   readonly funnelDefinition?: PowerpackV2WidgetFunnelDefinition;
   /**
   * geomap_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#geomap_definition PowerpackV2#geomap_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#geomap_definition PowerpackV2#geomap_definition}
   */
   readonly geomapDefinition?: PowerpackV2WidgetGeomapDefinition;
   /**
   * group_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#group_definition PowerpackV2#group_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#group_definition PowerpackV2#group_definition}
   */
   readonly groupDefinition?: PowerpackV2WidgetGroupDefinition;
   /**
   * heatmap_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#heatmap_definition PowerpackV2#heatmap_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#heatmap_definition PowerpackV2#heatmap_definition}
   */
   readonly heatmapDefinition?: PowerpackV2WidgetHeatmapDefinition;
   /**
   * hostmap_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#hostmap_definition PowerpackV2#hostmap_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#hostmap_definition PowerpackV2#hostmap_definition}
   */
   readonly hostmapDefinition?: PowerpackV2WidgetHostmapDefinition;
   /**
   * iframe_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#iframe_definition PowerpackV2#iframe_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#iframe_definition PowerpackV2#iframe_definition}
   */
   readonly iframeDefinition?: PowerpackV2WidgetIframeDefinition;
   /**
   * image_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#image_definition PowerpackV2#image_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#image_definition PowerpackV2#image_definition}
   */
   readonly imageDefinition?: PowerpackV2WidgetImageDefinition;
   /**
   * list_stream_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#list_stream_definition PowerpackV2#list_stream_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#list_stream_definition PowerpackV2#list_stream_definition}
   */
   readonly listStreamDefinition?: PowerpackV2WidgetListStreamDefinition;
   /**
   * log_stream_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#log_stream_definition PowerpackV2#log_stream_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#log_stream_definition PowerpackV2#log_stream_definition}
   */
   readonly logStreamDefinition?: PowerpackV2WidgetLogStreamDefinition;
   /**
   * manage_status_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#manage_status_definition PowerpackV2#manage_status_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#manage_status_definition PowerpackV2#manage_status_definition}
   */
   readonly manageStatusDefinition?: PowerpackV2WidgetManageStatusDefinition;
   /**
   * note_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#note_definition PowerpackV2#note_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#note_definition PowerpackV2#note_definition}
   */
   readonly noteDefinition?: PowerpackV2WidgetNoteDefinition;
   /**
   * point_plot_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#point_plot_definition PowerpackV2#point_plot_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#point_plot_definition PowerpackV2#point_plot_definition}
   */
   readonly pointPlotDefinition?: PowerpackV2WidgetPointPlotDefinition;
   /**
   * query_table_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#query_table_definition PowerpackV2#query_table_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#query_table_definition PowerpackV2#query_table_definition}
   */
   readonly queryTableDefinition?: PowerpackV2WidgetQueryTableDefinition;
   /**
   * query_value_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#query_value_definition PowerpackV2#query_value_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#query_value_definition PowerpackV2#query_value_definition}
   */
   readonly queryValueDefinition?: PowerpackV2WidgetQueryValueDefinition;
   /**
   * run_workflow_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#run_workflow_definition PowerpackV2#run_workflow_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#run_workflow_definition PowerpackV2#run_workflow_definition}
   */
   readonly runWorkflowDefinition?: PowerpackV2WidgetRunWorkflowDefinition;
   /**
   * sankey_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#sankey_definition PowerpackV2#sankey_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#sankey_definition PowerpackV2#sankey_definition}
   */
   readonly sankeyDefinition?: PowerpackV2WidgetSankeyDefinition;
   /**
   * scatterplot_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#scatterplot_definition PowerpackV2#scatterplot_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#scatterplot_definition PowerpackV2#scatterplot_definition}
   */
   readonly scatterplotDefinition?: PowerpackV2WidgetScatterplotDefinition;
   /**
   * service_level_objective_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#service_level_objective_definition PowerpackV2#service_level_objective_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#service_level_objective_definition PowerpackV2#service_level_objective_definition}
   */
   readonly serviceLevelObjectiveDefinition?: PowerpackV2WidgetServiceLevelObjectiveDefinition;
   /**
   * servicemap_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#servicemap_definition PowerpackV2#servicemap_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#servicemap_definition PowerpackV2#servicemap_definition}
   */
   readonly servicemapDefinition?: PowerpackV2WidgetServicemapDefinition;
   /**
   * slo_list_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#slo_list_definition PowerpackV2#slo_list_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#slo_list_definition PowerpackV2#slo_list_definition}
   */
   readonly sloListDefinition?: PowerpackV2WidgetSloListDefinition;
   /**
   * sunburst_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#sunburst_definition PowerpackV2#sunburst_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#sunburst_definition PowerpackV2#sunburst_definition}
   */
   readonly sunburstDefinition?: PowerpackV2WidgetSunburstDefinition;
   /**
   * timeseries_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#timeseries_definition PowerpackV2#timeseries_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#timeseries_definition PowerpackV2#timeseries_definition}
   */
   readonly timeseriesDefinition?: PowerpackV2WidgetTimeseriesDefinition;
   /**
   * toplist_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#toplist_definition PowerpackV2#toplist_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#toplist_definition PowerpackV2#toplist_definition}
   */
   readonly toplistDefinition?: PowerpackV2WidgetToplistDefinition;
   /**
   * topology_map_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#topology_map_definition PowerpackV2#topology_map_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#topology_map_definition PowerpackV2#topology_map_definition}
   */
   readonly topologyMapDefinition?: PowerpackV2WidgetTopologyMapDefinition;
   /**
   * trace_service_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#trace_service_definition PowerpackV2#trace_service_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#trace_service_definition PowerpackV2#trace_service_definition}
   */
   readonly traceServiceDefinition?: PowerpackV2WidgetTraceServiceDefinition;
   /**
   * treemap_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#treemap_definition PowerpackV2#treemap_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#treemap_definition PowerpackV2#treemap_definition}
   */
   readonly treemapDefinition?: PowerpackV2WidgetTreemapDefinition;
   /**
   * widget_layout block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#widget_layout PowerpackV2#widget_layout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#widget_layout PowerpackV2#widget_layout}
   */
   readonly widgetLayout?: PowerpackV2WidgetWidgetLayout;
   /**
   * wildcard_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#wildcard_definition PowerpackV2#wildcard_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#wildcard_definition PowerpackV2#wildcard_definition}
   */
   readonly wildcardDefinition?: PowerpackV2WidgetWildcardDefinition;
 }

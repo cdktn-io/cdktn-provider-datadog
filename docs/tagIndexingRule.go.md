@@ -4,7 +4,7 @@
 
 ### TagIndexingRule <a name="TagIndexingRule" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule datadog_tag_indexing_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule datadog_tag_indexing_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRule.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the TagIndexingRule to import.
 
 The id of the existing TagIndexingRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1047,7 +1047,7 @@ MetricNameMatches *[]*string
 
 Metric name prefixes (glob patterns) this rule applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule#metric_name_matches TagIndexingRule#metric_name_matches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#metric_name_matches TagIndexingRule#metric_name_matches}
 
 ---
 
@@ -1061,7 +1061,7 @@ Name *string
 
 Human-readable name for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule#name TagIndexingRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#name TagIndexingRule#name}
 
 ---
 
@@ -1077,7 +1077,7 @@ When true, the rule excludes the listed tags and indexes all others.
 
 When false (default), the rule includes only the listed tags. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule#exclude_tags_mode TagIndexingRule#exclude_tags_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#exclude_tags_mode TagIndexingRule#exclude_tags_mode}
 
 ---
 
@@ -1091,7 +1091,7 @@ IgnoredMetricNameMatches *[]*string
 
 Metric name prefixes excluded from the rule's scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule#ignored_metric_name_matches TagIndexingRule#ignored_metric_name_matches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#ignored_metric_name_matches TagIndexingRule#ignored_metric_name_matches}
 
 ---
 
@@ -1105,7 +1105,7 @@ Options TagIndexingRuleOptions
 
 Versioned configuration options for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule#options TagIndexingRule#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#options TagIndexingRule#options}
 
 ---
 
@@ -1119,7 +1119,7 @@ Tags *[]*string
 
 Tag keys this rule includes or excludes, depending on exclude_tags_mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule#tags TagIndexingRule#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#tags TagIndexingRule#tags}
 
 ---
 
@@ -1155,7 +1155,7 @@ Data TagIndexingRuleOptionsData
 
 Behavioral options for how the rule applies to metrics, including backfill and override behavior.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule#data TagIndexingRule#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#data TagIndexingRule#data}
 
 ---
 
@@ -1169,7 +1169,7 @@ Version *f64
 
 Options schema version. Only `1` is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule#version TagIndexingRule#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#version TagIndexingRule#version}
 
 ---
 
@@ -1209,7 +1209,7 @@ DynamicTags TagIndexingRuleOptionsDataDynamicTags
 
 Configuration for including dynamically queried tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule#dynamic_tags TagIndexingRule#dynamic_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#dynamic_tags TagIndexingRule#dynamic_tags}
 
 ---
 
@@ -1223,7 +1223,7 @@ ManagePreexistingMetrics interface{}
 
 When true, the rule applies to metrics ingested before the rule was created. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule#manage_preexisting_metrics TagIndexingRule#manage_preexisting_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#manage_preexisting_metrics TagIndexingRule#manage_preexisting_metrics}
 
 ---
 
@@ -1237,7 +1237,7 @@ MetricMatch TagIndexingRuleOptionsDataMetricMatch
 
 Criteria for matching metrics based on query state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule#metric_match TagIndexingRule#metric_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#metric_match TagIndexingRule#metric_match}
 
 ---
 
@@ -1251,7 +1251,7 @@ OverridePreviousRules interface{}
 
 When true, this rule's tag list overrides tags configured by earlier rules for the same metric. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule#override_previous_rules TagIndexingRule#override_previous_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#override_previous_rules TagIndexingRule#override_previous_rules}
 
 ---
 
@@ -1287,7 +1287,7 @@ QueriedTagsWindowSeconds *f64
 
 Lookback window for determining which tags were recently queried.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule#queried_tags_window_seconds TagIndexingRule#queried_tags_window_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#queried_tags_window_seconds TagIndexingRule#queried_tags_window_seconds}
 
 ---
 
@@ -1301,7 +1301,7 @@ RelatedAssetTags interface{}
 
 When true, tags from related assets are included.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule#related_asset_tags TagIndexingRule#related_asset_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#related_asset_tags TagIndexingRule#related_asset_tags}
 
 ---
 
@@ -1343,7 +1343,7 @@ IsQueried interface{}
 
 Match metrics that are being queried.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule#is_queried TagIndexingRule#is_queried}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#is_queried TagIndexingRule#is_queried}
 
 ---
 
@@ -1357,7 +1357,7 @@ NotQueried interface{}
 
 Match metrics that are not being queried.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule#not_queried TagIndexingRule#not_queried}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#not_queried TagIndexingRule#not_queried}
 
 ---
 
@@ -1371,7 +1371,7 @@ NotUsedInAssets interface{}
 
 Match metrics not used in any dashboards or monitors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule#not_used_in_assets TagIndexingRule#not_used_in_assets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#not_used_in_assets TagIndexingRule#not_used_in_assets}
 
 ---
 
@@ -1385,7 +1385,7 @@ QueriedWindowSeconds *f64
 
 Window in seconds for evaluating query state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule#queried_window_seconds TagIndexingRule#queried_window_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#queried_window_seconds TagIndexingRule#queried_window_seconds}
 
 ---
 
@@ -1399,7 +1399,7 @@ UsedInAssets interface{}
 
 Match metrics used in dashboards or monitors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule#used_in_assets TagIndexingRule#used_in_assets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#used_in_assets TagIndexingRule#used_in_assets}
 
 ---
 

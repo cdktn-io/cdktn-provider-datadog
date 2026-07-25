@@ -4,7 +4,7 @@
 
 ### AgentlessScanningGcpScanOptions <a name="AgentlessScanningGcpScanOptions" id="@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/agentless_scanning_gcp_scan_options datadog_agentless_scanning_gcp_scan_options}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/agentless_scanning_gcp_scan_options datadog_agentless_scanning_gcp_scan_options}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.Initializer"></a>
 
@@ -19,6 +19,7 @@ AgentlessScanningGcpScanOptions.Builder.create(Construct scope, java.lang.String
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+    .cloudFunction(java.lang.Boolean|IResolvable)
     .gcpProjectId(java.lang.String)
     .vulnContainersOs(java.lang.Boolean|IResolvable)
     .vulnHostOs(java.lang.Boolean|IResolvable)
@@ -37,6 +38,7 @@ AgentlessScanningGcpScanOptions.Builder.create(Construct scope, java.lang.String
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.Initializer.parameter.cloudFunction">cloudFunction</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Indicates if scanning of Cloud Functions is enabled. |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.Initializer.parameter.gcpProjectId">gcpProjectId</a></code> | <code>java.lang.String</code> | The GCP project ID for which agentless scanning is configured. |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.Initializer.parameter.vulnContainersOs">vulnContainersOs</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Indicates if scanning for vulnerabilities in containers is enabled. |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.Initializer.parameter.vulnHostOs">vulnHostOs</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Indicates if scanning for vulnerabilities in hosts is enabled. |
@@ -104,6 +106,16 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `cloudFunction`<sup>Required</sup> <a name="cloudFunction" id="@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.Initializer.parameter.cloudFunction"></a>
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Indicates if scanning of Cloud Functions is enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/agentless_scanning_gcp_scan_options#cloud_function AgentlessScanningGcpScanOptions#cloud_function}
+
+---
+
 ##### `gcpProjectId`<sup>Required</sup> <a name="gcpProjectId" id="@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.Initializer.parameter.gcpProjectId"></a>
 
 - *Type:* java.lang.String
@@ -112,7 +124,7 @@ The GCP project ID for which agentless scanning is configured.
 
 Must be a valid GCP project ID: 6–30 characters, start with a lowercase letter, and include only lowercase letters, digits, or hyphens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/agentless_scanning_gcp_scan_options#gcp_project_id AgentlessScanningGcpScanOptions#gcp_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/agentless_scanning_gcp_scan_options#gcp_project_id AgentlessScanningGcpScanOptions#gcp_project_id}
 
 ---
 
@@ -122,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Indicates if scanning for vulnerabilities in containers is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/agentless_scanning_gcp_scan_options#vuln_containers_os AgentlessScanningGcpScanOptions#vuln_containers_os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/agentless_scanning_gcp_scan_options#vuln_containers_os AgentlessScanningGcpScanOptions#vuln_containers_os}
 
 ---
 
@@ -132,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Indicates if scanning for vulnerabilities in hosts is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/agentless_scanning_gcp_scan_options#vuln_host_os AgentlessScanningGcpScanOptions#vuln_host_os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/agentless_scanning_gcp_scan_options#vuln_host_os AgentlessScanningGcpScanOptions#vuln_host_os}
 
 ---
 
@@ -142,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Indicates if host compliance scanning is enabled. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/agentless_scanning_gcp_scan_options#compliance_host AgentlessScanningGcpScanOptions#compliance_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/agentless_scanning_gcp_scan_options#compliance_host AgentlessScanningGcpScanOptions#compliance_host}
 
 ---
 
@@ -598,7 +610,7 @@ The construct id used in the generated config for the AgentlessScanningGcpScanOp
 
 The id of the existing AgentlessScanningGcpScanOptions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/agentless_scanning_gcp_scan_options#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/agentless_scanning_gcp_scan_options#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -629,10 +641,12 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.cloudFunctionInput">cloudFunctionInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.complianceHostInput">complianceHostInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.gcpProjectIdInput">gcpProjectIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.vulnContainersOsInput">vulnContainersOsInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.vulnHostOsInput">vulnHostOsInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.cloudFunction">cloudFunction</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.complianceHost">complianceHost</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.gcpProjectId">gcpProjectId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.vulnContainersOs">vulnContainersOs</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
@@ -792,6 +806,16 @@ public java.lang.String getId();
 
 ---
 
+##### `cloudFunctionInput`<sup>Optional</sup> <a name="cloudFunctionInput" id="@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.cloudFunctionInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getCloudFunctionInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `complianceHostInput`<sup>Optional</sup> <a name="complianceHostInput" id="@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.complianceHostInput"></a>
 
 ```java
@@ -826,6 +850,16 @@ public java.lang.Boolean|IResolvable getVulnContainersOsInput();
 
 ```java
 public java.lang.Boolean|IResolvable getVulnHostOsInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `cloudFunction`<sup>Required</sup> <a name="cloudFunction" id="@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.cloudFunction"></a>
+
+```java
+public java.lang.Boolean|IResolvable getCloudFunction();
 ```
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
@@ -907,6 +941,7 @@ AgentlessScanningGcpScanOptionsConfig.builder()
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+    .cloudFunction(java.lang.Boolean|IResolvable)
     .gcpProjectId(java.lang.String)
     .vulnContainersOs(java.lang.Boolean|IResolvable)
     .vulnHostOs(java.lang.Boolean|IResolvable)
@@ -925,6 +960,7 @@ AgentlessScanningGcpScanOptionsConfig.builder()
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptionsConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptionsConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptionsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptionsConfig.property.cloudFunction">cloudFunction</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Indicates if scanning of Cloud Functions is enabled. |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptionsConfig.property.gcpProjectId">gcpProjectId</a></code> | <code>java.lang.String</code> | The GCP project ID for which agentless scanning is configured. |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptionsConfig.property.vulnContainersOs">vulnContainersOs</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Indicates if scanning for vulnerabilities in containers is enabled. |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptionsConfig.property.vulnHostOs">vulnHostOs</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Indicates if scanning for vulnerabilities in hosts is enabled. |
@@ -1002,6 +1038,20 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
+##### `cloudFunction`<sup>Required</sup> <a name="cloudFunction" id="@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptionsConfig.property.cloudFunction"></a>
+
+```java
+public java.lang.Boolean|IResolvable getCloudFunction();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Indicates if scanning of Cloud Functions is enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/agentless_scanning_gcp_scan_options#cloud_function AgentlessScanningGcpScanOptions#cloud_function}
+
+---
+
 ##### `gcpProjectId`<sup>Required</sup> <a name="gcpProjectId" id="@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptionsConfig.property.gcpProjectId"></a>
 
 ```java
@@ -1014,7 +1064,7 @@ The GCP project ID for which agentless scanning is configured.
 
 Must be a valid GCP project ID: 6–30 characters, start with a lowercase letter, and include only lowercase letters, digits, or hyphens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/agentless_scanning_gcp_scan_options#gcp_project_id AgentlessScanningGcpScanOptions#gcp_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/agentless_scanning_gcp_scan_options#gcp_project_id AgentlessScanningGcpScanOptions#gcp_project_id}
 
 ---
 
@@ -1028,7 +1078,7 @@ public java.lang.Boolean|IResolvable getVulnContainersOs();
 
 Indicates if scanning for vulnerabilities in containers is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/agentless_scanning_gcp_scan_options#vuln_containers_os AgentlessScanningGcpScanOptions#vuln_containers_os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/agentless_scanning_gcp_scan_options#vuln_containers_os AgentlessScanningGcpScanOptions#vuln_containers_os}
 
 ---
 
@@ -1042,7 +1092,7 @@ public java.lang.Boolean|IResolvable getVulnHostOs();
 
 Indicates if scanning for vulnerabilities in hosts is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/agentless_scanning_gcp_scan_options#vuln_host_os AgentlessScanningGcpScanOptions#vuln_host_os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/agentless_scanning_gcp_scan_options#vuln_host_os AgentlessScanningGcpScanOptions#vuln_host_os}
 
 ---
 
@@ -1056,7 +1106,7 @@ public java.lang.Boolean|IResolvable getComplianceHost();
 
 Indicates if host compliance scanning is enabled. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/agentless_scanning_gcp_scan_options#compliance_host AgentlessScanningGcpScanOptions#compliance_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/agentless_scanning_gcp_scan_options#compliance_host AgentlessScanningGcpScanOptions#compliance_host}
 
 ---
 

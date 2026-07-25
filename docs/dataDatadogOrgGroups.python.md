@@ -4,7 +4,7 @@
 
 ### DataDatadogOrgGroups <a name="DataDatadogOrgGroups" id="@cdktn/provider-datadog.dataDatadogOrgGroups.DataDatadogOrgGroups"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/org_groups datadog_org_groups}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/org_groups datadog_org_groups}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogOrgGroups.DataDatadogOrgGroups.Initializer"></a>
 
@@ -477,7 +477,7 @@ The construct id used in the generated config for the DataDatadogOrgGroups to im
 
 The id of the existing DataDatadogOrgGroups that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/org_groups#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/org_groups#import import section} in the documentation of this resource for the id to use
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### IntegrationCloudflareAccount <a name="IntegrationCloudflareAccount" id="@cdktn/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The API key (or token) for the Cloudflare account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/integration_cloudflare_account#api_key IntegrationCloudflareAccount#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/integration_cloudflare_account#api_key IntegrationCloudflareAccount#api_key}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The name of the Cloudflare account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/integration_cloudflare_account#name IntegrationCloudflareAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/integration_cloudflare_account#name IntegrationCloudflareAccount#name}
 
 ---
 
@@ -134,7 +134,7 @@ The email associated with the Cloudflare account.
 
 If an API key is provided (and not a token), this field is also required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/integration_cloudflare_account#email IntegrationCloudflareAccount#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/integration_cloudflare_account#email IntegrationCloudflareAccount#email}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 An allowlist of resources to pull metrics for. Includes `web`, `dns`, `lb` (load balancer), and `worker`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/integration_cloudflare_account#resources IntegrationCloudflareAccount#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/integration_cloudflare_account#resources IntegrationCloudflareAccount#resources}
 
 ---
 
@@ -655,7 +655,7 @@ The construct id used in the generated config for the IntegrationCloudflareAccou
 
 The id of the existing IntegrationCloudflareAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/integration_cloudflare_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/integration_cloudflare_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1069,7 +1069,7 @@ api_key: str
 
 The API key (or token) for the Cloudflare account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/integration_cloudflare_account#api_key IntegrationCloudflareAccount#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/integration_cloudflare_account#api_key IntegrationCloudflareAccount#api_key}
 
 ---
 
@@ -1083,7 +1083,7 @@ name: str
 
 The name of the Cloudflare account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/integration_cloudflare_account#name IntegrationCloudflareAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/integration_cloudflare_account#name IntegrationCloudflareAccount#name}
 
 ---
 
@@ -1099,7 +1099,7 @@ The email associated with the Cloudflare account.
 
 If an API key is provided (and not a token), this field is also required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/integration_cloudflare_account#email IntegrationCloudflareAccount#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/integration_cloudflare_account#email IntegrationCloudflareAccount#email}
 
 ---
 
@@ -1113,7 +1113,7 @@ resources: typing.List[str]
 
 An allowlist of resources to pull metrics for. Includes `web`, `dns`, `lb` (load balancer), and `worker`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/integration_cloudflare_account#resources IntegrationCloudflareAccount#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/integration_cloudflare_account#resources IntegrationCloudflareAccount#resources}
 
 ---
 

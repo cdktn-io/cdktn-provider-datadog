@@ -4,7 +4,7 @@
 
 ### IncidentType <a name="IncidentType" id="@cdktn/provider-datadog.incidentType.IncidentType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/incident_type datadog_incident_type}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type datadog_incident_type}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.incidentType.IncidentType.Initializer"></a>
 
@@ -22,6 +22,7 @@ incidentType.IncidentType(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
+  configuration: IncidentTypeConfiguration = None,
   description: str = None,
   is_default: bool | IResolvable = None
 )
@@ -39,6 +40,7 @@ incidentType.IncidentType(
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the incident type. Must be between 1 and 50 characters. |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.Initializer.parameter.configuration">configuration</a></code> | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration">IncidentTypeConfiguration</a></code> | The incident type's behavior settings. |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.Initializer.parameter.description">description</a></code> | <code>str</code> | Description of the incident type. The description can have a maximum of 512 characters. |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.Initializer.parameter.isDefault">is_default</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether this incident type is the default type. |
 
@@ -110,7 +112,19 @@ Must be unique amongst siblings in the same scope
 
 Name of the incident type. Must be between 1 and 50 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/incident_type#name IncidentType#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#name IncidentType#name}
+
+---
+
+##### `configuration`<sup>Optional</sup> <a name="configuration" id="@cdktn/provider-datadog.incidentType.IncidentType.Initializer.parameter.configuration"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration">IncidentTypeConfiguration</a>
+
+The incident type's behavior settings.
+
+Any field left unset takes its server-side default. This block is applied in a separate call after the incident type is created.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#configuration IncidentType#configuration}
 
 ---
 
@@ -120,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Description of the incident type. The description can have a maximum of 512 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/incident_type#description IncidentType#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#description IncidentType#description}
 
 ---
 
@@ -130,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Whether this incident type is the default type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/incident_type#is_default IncidentType#is_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#is_default IncidentType#is_default}
 
 ---
 
@@ -162,6 +176,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.putConfiguration">put_configuration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.resetConfiguration">reset_configuration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.resetIsDefault">reset_is_default</a></code> | *No description.* |
 
@@ -515,6 +531,109 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_configuration` <a name="put_configuration" id="@cdktn/provider-datadog.incidentType.IncidentType.putConfiguration"></a>
+
+```python
+def put_configuration(
+  allow_incident_deletion: bool | IResolvable = None,
+  allow_workflows: bool | IResolvable = None,
+  create_message: str = None,
+  editable_timestamps: bool | IResolvable = None,
+  private_incidents: bool | IResolvable = None,
+  private_incidents_by_default: bool | IResolvable = None,
+  slug_source: str = None,
+  test_incidents: bool | IResolvable = None
+) -> None
+```
+
+###### `allow_incident_deletion`<sup>Optional</sup> <a name="allow_incident_deletion" id="@cdktn/provider-datadog.incidentType.IncidentType.putConfiguration.parameter.allowIncidentDeletion"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether incidents of this type can be deleted. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#allow_incident_deletion IncidentType#allow_incident_deletion}
+
+---
+
+###### `allow_workflows`<sup>Optional</sup> <a name="allow_workflows" id="@cdktn/provider-datadog.incidentType.IncidentType.putConfiguration.parameter.allowWorkflows"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether users can manually run a workflow from an incident of this type. Defaults to `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#allow_workflows IncidentType#allow_workflows}
+
+---
+
+###### `create_message`<sup>Optional</sup> <a name="create_message" id="@cdktn/provider-datadog.incidentType.IncidentType.putConfiguration.parameter.createMessage"></a>
+
+- *Type:* str
+
+An optional message shown to users when they declare an incident of this type. Defaults to an empty string.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#create_message IncidentType#create_message}
+
+---
+
+###### `editable_timestamps`<sup>Optional</sup> <a name="editable_timestamps" id="@cdktn/provider-datadog.incidentType.IncidentType.putConfiguration.parameter.editableTimestamps"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether responders can edit incident timestamps for incidents of this type. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#editable_timestamps IncidentType#editable_timestamps}
+
+---
+
+###### `private_incidents`<sup>Optional</sup> <a name="private_incidents" id="@cdktn/provider-datadog.incidentType.IncidentType.putConfiguration.parameter.privateIncidents"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether responders can create private incidents of this type. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#private_incidents IncidentType#private_incidents}
+
+---
+
+###### `private_incidents_by_default`<sup>Optional</sup> <a name="private_incidents_by_default" id="@cdktn/provider-datadog.incidentType.IncidentType.putConfiguration.parameter.privateIncidentsByDefault"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether the private toggle is enabled by default in the incident creation modal for this type. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#private_incidents_by_default IncidentType#private_incidents_by_default}
+
+---
+
+###### `slug_source`<sup>Optional</sup> <a name="slug_source" id="@cdktn/provider-datadog.incidentType.IncidentType.putConfiguration.parameter.slugSource"></a>
+
+- *Type:* str
+
+The source used to derive the incident slug.
+
+When set to `servicenow`, incidents display the ServiceNow record ID instead of the public ID. If no ServiceNow integration exists, the public ID is displayed. Defaults to `default`. Valid values are `default`, `servicenow`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#slug_source IncidentType#slug_source}
+
+---
+
+###### `test_incidents`<sup>Optional</sup> <a name="test_incidents" id="@cdktn/provider-datadog.incidentType.IncidentType.putConfiguration.parameter.testIncidents"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether test incidents of this type can be created. Defaults to `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#test_incidents IncidentType#test_incidents}
+
+---
+
+##### `reset_configuration` <a name="reset_configuration" id="@cdktn/provider-datadog.incidentType.IncidentType.resetConfiguration"></a>
+
+```python
+def reset_configuration() -> None
+```
+
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-datadog.incidentType.IncidentType.resetDescription"></a>
 
 ```python
@@ -641,7 +760,7 @@ The construct id used in the generated config for the IncidentType to import.
 
 The id of the existing IncidentType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/incident_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -671,7 +790,9 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.property.configuration">configuration</a></code> | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference">IncidentTypeConfigurationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.property.configurationInput">configuration_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration">IncidentTypeConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.property.isDefaultInput">is_default_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentType.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
@@ -823,6 +944,16 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `configuration`<sup>Required</sup> <a name="configuration" id="@cdktn/provider-datadog.incidentType.IncidentType.property.configuration"></a>
+
+```python
+configuration: IncidentTypeConfigurationOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference">IncidentTypeConfigurationOutputReference</a>
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.incidentType.IncidentType.property.id"></a>
 
 ```python
@@ -830,6 +961,16 @@ id: str
 ```
 
 - *Type:* str
+
+---
+
+##### `configuration_input`<sup>Optional</sup> <a name="configuration_input" id="@cdktn/provider-datadog.incidentType.IncidentType.property.configurationInput"></a>
+
+```python
+configuration_input: IResolvable | IncidentTypeConfiguration
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration">IncidentTypeConfiguration</a>
 
 ---
 
@@ -929,6 +1070,7 @@ incidentType.IncidentTypeConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
+  configuration: IncidentTypeConfiguration = None,
   description: str = None,
   is_default: bool | IResolvable = None
 )
@@ -946,6 +1088,7 @@ incidentType.IncidentTypeConfig(
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfig.property.name">name</a></code> | <code>str</code> | Name of the incident type. Must be between 1 and 50 characters. |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfig.property.configuration">configuration</a></code> | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration">IncidentTypeConfiguration</a></code> | The incident type's behavior settings. |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfig.property.description">description</a></code> | <code>str</code> | Description of the incident type. The description can have a maximum of 512 characters. |
 | <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfig.property.isDefault">is_default</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether this incident type is the default type. |
 
@@ -1031,7 +1174,23 @@ name: str
 
 Name of the incident type. Must be between 1 and 50 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/incident_type#name IncidentType#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#name IncidentType#name}
+
+---
+
+##### `configuration`<sup>Optional</sup> <a name="configuration" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfig.property.configuration"></a>
+
+```python
+configuration: IncidentTypeConfiguration
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration">IncidentTypeConfiguration</a>
+
+The incident type's behavior settings.
+
+Any field left unset takes its server-side default. This block is applied in a separate call after the incident type is created.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#configuration IncidentType#configuration}
 
 ---
 
@@ -1045,7 +1204,7 @@ description: str
 
 Description of the incident type. The description can have a maximum of 512 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/incident_type#description IncidentType#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#description IncidentType#description}
 
 ---
 
@@ -1059,7 +1218,662 @@ is_default: bool | IResolvable
 
 Whether this incident type is the default type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/incident_type#is_default IncidentType#is_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#is_default IncidentType#is_default}
+
+---
+
+### IncidentTypeConfiguration <a name="IncidentTypeConfiguration" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import incident_type
+
+incidentType.IncidentTypeConfiguration(
+  allow_incident_deletion: bool | IResolvable = None,
+  allow_workflows: bool | IResolvable = None,
+  create_message: str = None,
+  editable_timestamps: bool | IResolvable = None,
+  private_incidents: bool | IResolvable = None,
+  private_incidents_by_default: bool | IResolvable = None,
+  slug_source: str = None,
+  test_incidents: bool | IResolvable = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.allowIncidentDeletion">allow_incident_deletion</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether incidents of this type can be deleted. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.allowWorkflows">allow_workflows</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether users can manually run a workflow from an incident of this type. Defaults to `true`. |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.createMessage">create_message</a></code> | <code>str</code> | An optional message shown to users when they declare an incident of this type. Defaults to an empty string. |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.editableTimestamps">editable_timestamps</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether responders can edit incident timestamps for incidents of this type. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.privateIncidents">private_incidents</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether responders can create private incidents of this type. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.privateIncidentsByDefault">private_incidents_by_default</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the private toggle is enabled by default in the incident creation modal for this type. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.slugSource">slug_source</a></code> | <code>str</code> | The source used to derive the incident slug. |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.testIncidents">test_incidents</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether test incidents of this type can be created. Defaults to `true`. |
+
+---
+
+##### `allow_incident_deletion`<sup>Optional</sup> <a name="allow_incident_deletion" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.allowIncidentDeletion"></a>
+
+```python
+allow_incident_deletion: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether incidents of this type can be deleted. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#allow_incident_deletion IncidentType#allow_incident_deletion}
+
+---
+
+##### `allow_workflows`<sup>Optional</sup> <a name="allow_workflows" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.allowWorkflows"></a>
+
+```python
+allow_workflows: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether users can manually run a workflow from an incident of this type. Defaults to `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#allow_workflows IncidentType#allow_workflows}
+
+---
+
+##### `create_message`<sup>Optional</sup> <a name="create_message" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.createMessage"></a>
+
+```python
+create_message: str
+```
+
+- *Type:* str
+
+An optional message shown to users when they declare an incident of this type. Defaults to an empty string.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#create_message IncidentType#create_message}
+
+---
+
+##### `editable_timestamps`<sup>Optional</sup> <a name="editable_timestamps" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.editableTimestamps"></a>
+
+```python
+editable_timestamps: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether responders can edit incident timestamps for incidents of this type. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#editable_timestamps IncidentType#editable_timestamps}
+
+---
+
+##### `private_incidents`<sup>Optional</sup> <a name="private_incidents" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.privateIncidents"></a>
+
+```python
+private_incidents: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether responders can create private incidents of this type. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#private_incidents IncidentType#private_incidents}
+
+---
+
+##### `private_incidents_by_default`<sup>Optional</sup> <a name="private_incidents_by_default" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.privateIncidentsByDefault"></a>
+
+```python
+private_incidents_by_default: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether the private toggle is enabled by default in the incident creation modal for this type. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#private_incidents_by_default IncidentType#private_incidents_by_default}
+
+---
+
+##### `slug_source`<sup>Optional</sup> <a name="slug_source" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.slugSource"></a>
+
+```python
+slug_source: str
+```
+
+- *Type:* str
+
+The source used to derive the incident slug.
+
+When set to `servicenow`, incidents display the ServiceNow record ID instead of the public ID. If no ServiceNow integration exists, the public ID is displayed. Defaults to `default`. Valid values are `default`, `servicenow`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#slug_source IncidentType#slug_source}
+
+---
+
+##### `test_incidents`<sup>Optional</sup> <a name="test_incidents" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.property.testIncidents"></a>
+
+```python
+test_incidents: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether test incidents of this type can be created. Defaults to `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#test_incidents IncidentType#test_incidents}
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### IncidentTypeConfigurationOutputReference <a name="IncidentTypeConfigurationOutputReference" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import incident_type
+
+incidentType.IncidentTypeConfigurationOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetAllowIncidentDeletion">reset_allow_incident_deletion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetAllowWorkflows">reset_allow_workflows</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetCreateMessage">reset_create_message</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetEditableTimestamps">reset_editable_timestamps</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetPrivateIncidents">reset_private_incidents</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetPrivateIncidentsByDefault">reset_private_incidents_by_default</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetSlugSource">reset_slug_source</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetTestIncidents">reset_test_incidents</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_allow_incident_deletion` <a name="reset_allow_incident_deletion" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetAllowIncidentDeletion"></a>
+
+```python
+def reset_allow_incident_deletion() -> None
+```
+
+##### `reset_allow_workflows` <a name="reset_allow_workflows" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetAllowWorkflows"></a>
+
+```python
+def reset_allow_workflows() -> None
+```
+
+##### `reset_create_message` <a name="reset_create_message" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetCreateMessage"></a>
+
+```python
+def reset_create_message() -> None
+```
+
+##### `reset_editable_timestamps` <a name="reset_editable_timestamps" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetEditableTimestamps"></a>
+
+```python
+def reset_editable_timestamps() -> None
+```
+
+##### `reset_private_incidents` <a name="reset_private_incidents" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetPrivateIncidents"></a>
+
+```python
+def reset_private_incidents() -> None
+```
+
+##### `reset_private_incidents_by_default` <a name="reset_private_incidents_by_default" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetPrivateIncidentsByDefault"></a>
+
+```python
+def reset_private_incidents_by_default() -> None
+```
+
+##### `reset_slug_source` <a name="reset_slug_source" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetSlugSource"></a>
+
+```python
+def reset_slug_source() -> None
+```
+
+##### `reset_test_incidents` <a name="reset_test_incidents" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.resetTestIncidents"></a>
+
+```python
+def reset_test_incidents() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.allowIncidentDeletionInput">allow_incident_deletion_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.allowWorkflowsInput">allow_workflows_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.createMessageInput">create_message_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.editableTimestampsInput">editable_timestamps_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.privateIncidentsByDefaultInput">private_incidents_by_default_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.privateIncidentsInput">private_incidents_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.slugSourceInput">slug_source_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.testIncidentsInput">test_incidents_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.allowIncidentDeletion">allow_incident_deletion</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.allowWorkflows">allow_workflows</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.createMessage">create_message</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.editableTimestamps">editable_timestamps</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.privateIncidents">private_incidents</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.privateIncidentsByDefault">private_incidents_by_default</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.slugSource">slug_source</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.testIncidents">test_incidents</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration">IncidentTypeConfiguration</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `allow_incident_deletion_input`<sup>Optional</sup> <a name="allow_incident_deletion_input" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.allowIncidentDeletionInput"></a>
+
+```python
+allow_incident_deletion_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `allow_workflows_input`<sup>Optional</sup> <a name="allow_workflows_input" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.allowWorkflowsInput"></a>
+
+```python
+allow_workflows_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `create_message_input`<sup>Optional</sup> <a name="create_message_input" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.createMessageInput"></a>
+
+```python
+create_message_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `editable_timestamps_input`<sup>Optional</sup> <a name="editable_timestamps_input" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.editableTimestampsInput"></a>
+
+```python
+editable_timestamps_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `private_incidents_by_default_input`<sup>Optional</sup> <a name="private_incidents_by_default_input" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.privateIncidentsByDefaultInput"></a>
+
+```python
+private_incidents_by_default_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `private_incidents_input`<sup>Optional</sup> <a name="private_incidents_input" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.privateIncidentsInput"></a>
+
+```python
+private_incidents_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `slug_source_input`<sup>Optional</sup> <a name="slug_source_input" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.slugSourceInput"></a>
+
+```python
+slug_source_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `test_incidents_input`<sup>Optional</sup> <a name="test_incidents_input" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.testIncidentsInput"></a>
+
+```python
+test_incidents_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `allow_incident_deletion`<sup>Required</sup> <a name="allow_incident_deletion" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.allowIncidentDeletion"></a>
+
+```python
+allow_incident_deletion: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `allow_workflows`<sup>Required</sup> <a name="allow_workflows" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.allowWorkflows"></a>
+
+```python
+allow_workflows: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `create_message`<sup>Required</sup> <a name="create_message" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.createMessage"></a>
+
+```python
+create_message: str
+```
+
+- *Type:* str
+
+---
+
+##### `editable_timestamps`<sup>Required</sup> <a name="editable_timestamps" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.editableTimestamps"></a>
+
+```python
+editable_timestamps: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `private_incidents`<sup>Required</sup> <a name="private_incidents" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.privateIncidents"></a>
+
+```python
+private_incidents: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `private_incidents_by_default`<sup>Required</sup> <a name="private_incidents_by_default" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.privateIncidentsByDefault"></a>
+
+```python
+private_incidents_by_default: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `slug_source`<sup>Required</sup> <a name="slug_source" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.slugSource"></a>
+
+```python
+slug_source: str
+```
+
+- *Type:* str
+
+---
+
+##### `test_incidents`<sup>Required</sup> <a name="test_incidents" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.testIncidents"></a>
+
+```python
+test_incidents: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | IncidentTypeConfiguration
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration">IncidentTypeConfiguration</a>
 
 ---
 

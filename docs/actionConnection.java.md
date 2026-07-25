@@ -4,7 +4,7 @@
 
 ### ActionConnection <a name="ActionConnection" id="@cdktn/provider-datadog.actionConnection.ActionConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection datadog_action_connection}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection datadog_action_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer"></a>
 
@@ -20,8 +20,30 @@ ActionConnection.Builder.create(Construct scope, java.lang.String id)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
+//  .anthropic(ActionConnectionAnthropic)
+//  .asana(ActionConnectionAsana)
 //  .aws(ActionConnectionAws)
+//  .azure(ActionConnectionAzure)
+//  .circleCi(ActionConnectionCircleCi)
+//  .clickup(ActionConnectionClickup)
+//  .cloudflare(ActionConnectionCloudflare)
+//  .configCat(ActionConnectionConfigCat)
+//  .datadog(ActionConnectionDatadog)
+//  .fastly(ActionConnectionFastly)
+//  .freshservice(ActionConnectionFreshservice)
+//  .gcp(ActionConnectionGcp)
+//  .gemini(ActionConnectionGemini)
+//  .gitlab(ActionConnectionGitlab)
+//  .greyNoise(ActionConnectionGreyNoise)
 //  .http(ActionConnectionHttp)
+//  .launchDarkly(ActionConnectionLaunchDarkly)
+//  .notion(ActionConnectionNotion)
+//  .okta(ActionConnectionOkta)
+//  .openai(ActionConnectionOpenai)
+//  .serviceNow(ActionConnectionServiceNow)
+//  .split(ActionConnectionSplit)
+//  .statsig(ActionConnectionStatsig)
+//  .virusTotal(ActionConnectionVirusTotal)
     .build();
 ```
 
@@ -37,8 +59,30 @@ ActionConnection.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the connection. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.anthropic">anthropic</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropic">ActionConnectionAnthropic</a></code> | anthropic block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.asana">asana</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsana">ActionConnectionAsana</a></code> | asana block. |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.aws">aws</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAws">ActionConnectionAws</a></code> | aws block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.azure">azure</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzure">ActionConnectionAzure</a></code> | azure block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.circleCi">circleCi</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCi">ActionConnectionCircleCi</a></code> | circle_ci block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.clickup">clickup</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickup">ActionConnectionClickup</a></code> | clickup block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.cloudflare">cloudflare</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare">ActionConnectionCloudflare</a></code> | cloudflare block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.configCat">configCat</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCat">ActionConnectionConfigCat</a></code> | config_cat block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.datadog">datadog</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadog">ActionConnectionDatadog</a></code> | datadog block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.fastly">fastly</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastly">ActionConnectionFastly</a></code> | fastly block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.freshservice">freshservice</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshservice">ActionConnectionFreshservice</a></code> | freshservice block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.gcp">gcp</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcp">ActionConnectionGcp</a></code> | gcp block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.gemini">gemini</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGemini">ActionConnectionGemini</a></code> | gemini block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.gitlab">gitlab</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlab">ActionConnectionGitlab</a></code> | gitlab block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.greyNoise">greyNoise</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoise">ActionConnectionGreyNoise</a></code> | grey_noise block. |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.http">http</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionHttp">ActionConnectionHttp</a></code> | http block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.launchDarkly">launchDarkly</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarkly">ActionConnectionLaunchDarkly</a></code> | launch_darkly block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.notion">notion</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotion">ActionConnectionNotion</a></code> | notion block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.okta">okta</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOkta">ActionConnectionOkta</a></code> | okta block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.openai">openai</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenai">ActionConnectionOpenai</a></code> | openai block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.serviceNow">serviceNow</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow">ActionConnectionServiceNow</a></code> | service_now block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.split">split</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplit">ActionConnectionSplit</a></code> | split block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.statsig">statsig</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig">ActionConnectionStatsig</a></code> | statsig block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.virusTotal">virusTotal</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal">ActionConnectionVirusTotal</a></code> | virus_total block. |
 
 ---
 
@@ -108,7 +152,27 @@ Must be unique amongst siblings in the same scope
 
 Name of the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#name ActionConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#name ActionConnection#name}
+
+---
+
+##### `anthropic`<sup>Optional</sup> <a name="anthropic" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.anthropic"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropic">ActionConnectionAnthropic</a>
+
+anthropic block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#anthropic ActionConnection#anthropic}
+
+---
+
+##### `asana`<sup>Optional</sup> <a name="asana" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.asana"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsana">ActionConnectionAsana</a>
+
+asana block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#asana ActionConnection#asana}
 
 ---
 
@@ -118,7 +182,127 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 aws block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#aws ActionConnection#aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#aws ActionConnection#aws}
+
+---
+
+##### `azure`<sup>Optional</sup> <a name="azure" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.azure"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzure">ActionConnectionAzure</a>
+
+azure block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#azure ActionConnection#azure}
+
+---
+
+##### `circleCi`<sup>Optional</sup> <a name="circleCi" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.circleCi"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCi">ActionConnectionCircleCi</a>
+
+circle_ci block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#circle_ci ActionConnection#circle_ci}
+
+---
+
+##### `clickup`<sup>Optional</sup> <a name="clickup" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.clickup"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickup">ActionConnectionClickup</a>
+
+clickup block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#clickup ActionConnection#clickup}
+
+---
+
+##### `cloudflare`<sup>Optional</sup> <a name="cloudflare" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.cloudflare"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare">ActionConnectionCloudflare</a>
+
+cloudflare block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#cloudflare ActionConnection#cloudflare}
+
+---
+
+##### `configCat`<sup>Optional</sup> <a name="configCat" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.configCat"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCat">ActionConnectionConfigCat</a>
+
+config_cat block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#config_cat ActionConnection#config_cat}
+
+---
+
+##### `datadog`<sup>Optional</sup> <a name="datadog" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.datadog"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadog">ActionConnectionDatadog</a>
+
+datadog block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#datadog ActionConnection#datadog}
+
+---
+
+##### `fastly`<sup>Optional</sup> <a name="fastly" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.fastly"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastly">ActionConnectionFastly</a>
+
+fastly block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#fastly ActionConnection#fastly}
+
+---
+
+##### `freshservice`<sup>Optional</sup> <a name="freshservice" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.freshservice"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshservice">ActionConnectionFreshservice</a>
+
+freshservice block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#freshservice ActionConnection#freshservice}
+
+---
+
+##### `gcp`<sup>Optional</sup> <a name="gcp" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.gcp"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcp">ActionConnectionGcp</a>
+
+gcp block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#gcp ActionConnection#gcp}
+
+---
+
+##### `gemini`<sup>Optional</sup> <a name="gemini" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.gemini"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGemini">ActionConnectionGemini</a>
+
+gemini block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#gemini ActionConnection#gemini}
+
+---
+
+##### `gitlab`<sup>Optional</sup> <a name="gitlab" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.gitlab"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlab">ActionConnectionGitlab</a>
+
+gitlab block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#gitlab ActionConnection#gitlab}
+
+---
+
+##### `greyNoise`<sup>Optional</sup> <a name="greyNoise" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.greyNoise"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoise">ActionConnectionGreyNoise</a>
+
+grey_noise block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#grey_noise ActionConnection#grey_noise}
 
 ---
 
@@ -128,7 +312,87 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 http block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#http ActionConnection#http}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#http ActionConnection#http}
+
+---
+
+##### `launchDarkly`<sup>Optional</sup> <a name="launchDarkly" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.launchDarkly"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarkly">ActionConnectionLaunchDarkly</a>
+
+launch_darkly block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#launch_darkly ActionConnection#launch_darkly}
+
+---
+
+##### `notion`<sup>Optional</sup> <a name="notion" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.notion"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotion">ActionConnectionNotion</a>
+
+notion block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#notion ActionConnection#notion}
+
+---
+
+##### `okta`<sup>Optional</sup> <a name="okta" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.okta"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOkta">ActionConnectionOkta</a>
+
+okta block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#okta ActionConnection#okta}
+
+---
+
+##### `openai`<sup>Optional</sup> <a name="openai" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.openai"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenai">ActionConnectionOpenai</a>
+
+openai block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#openai ActionConnection#openai}
+
+---
+
+##### `serviceNow`<sup>Optional</sup> <a name="serviceNow" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.serviceNow"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow">ActionConnectionServiceNow</a>
+
+service_now block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#service_now ActionConnection#service_now}
+
+---
+
+##### `split`<sup>Optional</sup> <a name="split" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.split"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplit">ActionConnectionSplit</a>
+
+split block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#split ActionConnection#split}
+
+---
+
+##### `statsig`<sup>Optional</sup> <a name="statsig" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.statsig"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig">ActionConnectionStatsig</a>
+
+statsig block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#statsig ActionConnection#statsig}
+
+---
+
+##### `virusTotal`<sup>Optional</sup> <a name="virusTotal" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.virusTotal"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal">ActionConnectionVirusTotal</a>
+
+virus_total block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#virus_total ActionConnection#virus_total}
 
 ---
 
@@ -160,10 +424,54 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putAnthropic">putAnthropic</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putAsana">putAsana</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putAws">putAws</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putAzure">putAzure</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putCircleCi">putCircleCi</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putClickup">putClickup</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putCloudflare">putCloudflare</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putConfigCat">putConfigCat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putDatadog">putDatadog</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putFastly">putFastly</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putFreshservice">putFreshservice</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putGcp">putGcp</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putGemini">putGemini</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putGitlab">putGitlab</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putGreyNoise">putGreyNoise</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putHttp">putHttp</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putLaunchDarkly">putLaunchDarkly</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putNotion">putNotion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putOkta">putOkta</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putOpenai">putOpenai</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putServiceNow">putServiceNow</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putSplit">putSplit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putStatsig">putStatsig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.putVirusTotal">putVirusTotal</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetAnthropic">resetAnthropic</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetAsana">resetAsana</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetAws">resetAws</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetAzure">resetAzure</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetCircleCi">resetCircleCi</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetClickup">resetClickup</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetCloudflare">resetCloudflare</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetConfigCat">resetConfigCat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetDatadog">resetDatadog</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetFastly">resetFastly</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetFreshservice">resetFreshservice</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetGcp">resetGcp</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetGemini">resetGemini</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetGitlab">resetGitlab</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetGreyNoise">resetGreyNoise</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetHttp">resetHttp</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetLaunchDarkly">resetLaunchDarkly</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetNotion">resetNotion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetOkta">resetOkta</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetOpenai">resetOpenai</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetServiceNow">resetServiceNow</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetSplit">resetSplit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetStatsig">resetStatsig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetVirusTotal">resetVirusTotal</a></code> | *No description.* |
 
 ---
 
@@ -478,6 +786,30 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putAnthropic` <a name="putAnthropic" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putAnthropic"></a>
+
+```java
+public void putAnthropic(ActionConnectionAnthropic value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putAnthropic.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropic">ActionConnectionAnthropic</a>
+
+---
+
+##### `putAsana` <a name="putAsana" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putAsana"></a>
+
+```java
+public void putAsana(ActionConnectionAsana value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putAsana.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsana">ActionConnectionAsana</a>
+
+---
+
 ##### `putAws` <a name="putAws" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putAws"></a>
 
 ```java
@@ -487,6 +819,150 @@ public void putAws(ActionConnectionAws value)
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putAws.parameter.value"></a>
 
 - *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAws">ActionConnectionAws</a>
+
+---
+
+##### `putAzure` <a name="putAzure" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putAzure"></a>
+
+```java
+public void putAzure(ActionConnectionAzure value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putAzure.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzure">ActionConnectionAzure</a>
+
+---
+
+##### `putCircleCi` <a name="putCircleCi" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putCircleCi"></a>
+
+```java
+public void putCircleCi(ActionConnectionCircleCi value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putCircleCi.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCi">ActionConnectionCircleCi</a>
+
+---
+
+##### `putClickup` <a name="putClickup" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putClickup"></a>
+
+```java
+public void putClickup(ActionConnectionClickup value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putClickup.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickup">ActionConnectionClickup</a>
+
+---
+
+##### `putCloudflare` <a name="putCloudflare" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putCloudflare"></a>
+
+```java
+public void putCloudflare(ActionConnectionCloudflare value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putCloudflare.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare">ActionConnectionCloudflare</a>
+
+---
+
+##### `putConfigCat` <a name="putConfigCat" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putConfigCat"></a>
+
+```java
+public void putConfigCat(ActionConnectionConfigCat value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putConfigCat.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCat">ActionConnectionConfigCat</a>
+
+---
+
+##### `putDatadog` <a name="putDatadog" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putDatadog"></a>
+
+```java
+public void putDatadog(ActionConnectionDatadog value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putDatadog.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadog">ActionConnectionDatadog</a>
+
+---
+
+##### `putFastly` <a name="putFastly" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putFastly"></a>
+
+```java
+public void putFastly(ActionConnectionFastly value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putFastly.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastly">ActionConnectionFastly</a>
+
+---
+
+##### `putFreshservice` <a name="putFreshservice" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putFreshservice"></a>
+
+```java
+public void putFreshservice(ActionConnectionFreshservice value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putFreshservice.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshservice">ActionConnectionFreshservice</a>
+
+---
+
+##### `putGcp` <a name="putGcp" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putGcp"></a>
+
+```java
+public void putGcp(ActionConnectionGcp value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putGcp.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcp">ActionConnectionGcp</a>
+
+---
+
+##### `putGemini` <a name="putGemini" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putGemini"></a>
+
+```java
+public void putGemini(ActionConnectionGemini value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putGemini.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGemini">ActionConnectionGemini</a>
+
+---
+
+##### `putGitlab` <a name="putGitlab" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putGitlab"></a>
+
+```java
+public void putGitlab(ActionConnectionGitlab value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putGitlab.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlab">ActionConnectionGitlab</a>
+
+---
+
+##### `putGreyNoise` <a name="putGreyNoise" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putGreyNoise"></a>
+
+```java
+public void putGreyNoise(ActionConnectionGreyNoise value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putGreyNoise.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoise">ActionConnectionGreyNoise</a>
 
 ---
 
@@ -502,16 +978,244 @@ public void putHttp(ActionConnectionHttp value)
 
 ---
 
+##### `putLaunchDarkly` <a name="putLaunchDarkly" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putLaunchDarkly"></a>
+
+```java
+public void putLaunchDarkly(ActionConnectionLaunchDarkly value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putLaunchDarkly.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarkly">ActionConnectionLaunchDarkly</a>
+
+---
+
+##### `putNotion` <a name="putNotion" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putNotion"></a>
+
+```java
+public void putNotion(ActionConnectionNotion value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putNotion.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotion">ActionConnectionNotion</a>
+
+---
+
+##### `putOkta` <a name="putOkta" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putOkta"></a>
+
+```java
+public void putOkta(ActionConnectionOkta value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putOkta.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOkta">ActionConnectionOkta</a>
+
+---
+
+##### `putOpenai` <a name="putOpenai" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putOpenai"></a>
+
+```java
+public void putOpenai(ActionConnectionOpenai value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putOpenai.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenai">ActionConnectionOpenai</a>
+
+---
+
+##### `putServiceNow` <a name="putServiceNow" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putServiceNow"></a>
+
+```java
+public void putServiceNow(ActionConnectionServiceNow value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putServiceNow.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow">ActionConnectionServiceNow</a>
+
+---
+
+##### `putSplit` <a name="putSplit" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putSplit"></a>
+
+```java
+public void putSplit(ActionConnectionSplit value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putSplit.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplit">ActionConnectionSplit</a>
+
+---
+
+##### `putStatsig` <a name="putStatsig" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putStatsig"></a>
+
+```java
+public void putStatsig(ActionConnectionStatsig value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putStatsig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig">ActionConnectionStatsig</a>
+
+---
+
+##### `putVirusTotal` <a name="putVirusTotal" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putVirusTotal"></a>
+
+```java
+public void putVirusTotal(ActionConnectionVirusTotal value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnection.putVirusTotal.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal">ActionConnectionVirusTotal</a>
+
+---
+
+##### `resetAnthropic` <a name="resetAnthropic" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetAnthropic"></a>
+
+```java
+public void resetAnthropic()
+```
+
+##### `resetAsana` <a name="resetAsana" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetAsana"></a>
+
+```java
+public void resetAsana()
+```
+
 ##### `resetAws` <a name="resetAws" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetAws"></a>
 
 ```java
 public void resetAws()
 ```
 
+##### `resetAzure` <a name="resetAzure" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetAzure"></a>
+
+```java
+public void resetAzure()
+```
+
+##### `resetCircleCi` <a name="resetCircleCi" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetCircleCi"></a>
+
+```java
+public void resetCircleCi()
+```
+
+##### `resetClickup` <a name="resetClickup" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetClickup"></a>
+
+```java
+public void resetClickup()
+```
+
+##### `resetCloudflare` <a name="resetCloudflare" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetCloudflare"></a>
+
+```java
+public void resetCloudflare()
+```
+
+##### `resetConfigCat` <a name="resetConfigCat" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetConfigCat"></a>
+
+```java
+public void resetConfigCat()
+```
+
+##### `resetDatadog` <a name="resetDatadog" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetDatadog"></a>
+
+```java
+public void resetDatadog()
+```
+
+##### `resetFastly` <a name="resetFastly" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetFastly"></a>
+
+```java
+public void resetFastly()
+```
+
+##### `resetFreshservice` <a name="resetFreshservice" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetFreshservice"></a>
+
+```java
+public void resetFreshservice()
+```
+
+##### `resetGcp` <a name="resetGcp" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetGcp"></a>
+
+```java
+public void resetGcp()
+```
+
+##### `resetGemini` <a name="resetGemini" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetGemini"></a>
+
+```java
+public void resetGemini()
+```
+
+##### `resetGitlab` <a name="resetGitlab" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetGitlab"></a>
+
+```java
+public void resetGitlab()
+```
+
+##### `resetGreyNoise` <a name="resetGreyNoise" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetGreyNoise"></a>
+
+```java
+public void resetGreyNoise()
+```
+
 ##### `resetHttp` <a name="resetHttp" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetHttp"></a>
 
 ```java
 public void resetHttp()
+```
+
+##### `resetLaunchDarkly` <a name="resetLaunchDarkly" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetLaunchDarkly"></a>
+
+```java
+public void resetLaunchDarkly()
+```
+
+##### `resetNotion` <a name="resetNotion" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetNotion"></a>
+
+```java
+public void resetNotion()
+```
+
+##### `resetOkta` <a name="resetOkta" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetOkta"></a>
+
+```java
+public void resetOkta()
+```
+
+##### `resetOpenai` <a name="resetOpenai" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetOpenai"></a>
+
+```java
+public void resetOpenai()
+```
+
+##### `resetServiceNow` <a name="resetServiceNow" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetServiceNow"></a>
+
+```java
+public void resetServiceNow()
+```
+
+##### `resetSplit` <a name="resetSplit" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetSplit"></a>
+
+```java
+public void resetSplit()
+```
+
+##### `resetStatsig` <a name="resetStatsig" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetStatsig"></a>
+
+```java
+public void resetStatsig()
+```
+
+##### `resetVirusTotal` <a name="resetVirusTotal" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetVirusTotal"></a>
+
+```java
+public void resetVirusTotal()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -617,7 +1321,7 @@ The construct id used in the generated config for the ActionConnection to import
 
 The id of the existing ActionConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -647,12 +1351,56 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.anthropic">anthropic</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference">ActionConnectionAnthropicOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.asana">asana</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference">ActionConnectionAsanaOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.aws">aws</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsOutputReference">ActionConnectionAwsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.azure">azure</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference">ActionConnectionAzureOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.circleCi">circleCi</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference">ActionConnectionCircleCiOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.clickup">clickup</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference">ActionConnectionClickupOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.cloudflare">cloudflare</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference">ActionConnectionCloudflareOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.configCat">configCat</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference">ActionConnectionConfigCatOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.datadog">datadog</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference">ActionConnectionDatadogOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.fastly">fastly</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference">ActionConnectionFastlyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.freshservice">freshservice</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference">ActionConnectionFreshserviceOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.gcp">gcp</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference">ActionConnectionGcpOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.gemini">gemini</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference">ActionConnectionGeminiOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.gitlab">gitlab</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference">ActionConnectionGitlabOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.greyNoise">greyNoise</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference">ActionConnectionGreyNoiseOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.http">http</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionHttpOutputReference">ActionConnectionHttpOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.launchDarkly">launchDarkly</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference">ActionConnectionLaunchDarklyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.notion">notion</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference">ActionConnectionNotionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.okta">okta</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference">ActionConnectionOktaOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.openai">openai</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference">ActionConnectionOpenaiOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.serviceNow">serviceNow</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference">ActionConnectionServiceNowOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.split">split</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference">ActionConnectionSplitOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.statsig">statsig</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference">ActionConnectionStatsigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.virusTotal">virusTotal</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference">ActionConnectionVirusTotalOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.anthropicInput">anthropicInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropic">ActionConnectionAnthropic</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.asanaInput">asanaInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsana">ActionConnectionAsana</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.awsInput">awsInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAws">ActionConnectionAws</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.azureInput">azureInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzure">ActionConnectionAzure</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.circleCiInput">circleCiInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCi">ActionConnectionCircleCi</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.clickupInput">clickupInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickup">ActionConnectionClickup</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.cloudflareInput">cloudflareInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare">ActionConnectionCloudflare</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.configCatInput">configCatInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCat">ActionConnectionConfigCat</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.datadogInput">datadogInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadog">ActionConnectionDatadog</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.fastlyInput">fastlyInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastly">ActionConnectionFastly</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.freshserviceInput">freshserviceInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshservice">ActionConnectionFreshservice</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.gcpInput">gcpInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcp">ActionConnectionGcp</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.geminiInput">geminiInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGemini">ActionConnectionGemini</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.gitlabInput">gitlabInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlab">ActionConnectionGitlab</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.greyNoiseInput">greyNoiseInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoise">ActionConnectionGreyNoise</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.httpInput">httpInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionHttp">ActionConnectionHttp</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.launchDarklyInput">launchDarklyInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarkly">ActionConnectionLaunchDarkly</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.notionInput">notionInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotion">ActionConnectionNotion</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.oktaInput">oktaInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOkta">ActionConnectionOkta</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.openaiInput">openaiInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenai">ActionConnectionOpenai</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.serviceNowInput">serviceNowInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow">ActionConnectionServiceNow</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.splitInput">splitInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplit">ActionConnectionSplit</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.statsigInput">statsigInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig">ActionConnectionStatsig</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.virusTotalInput">virusTotalInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal">ActionConnectionVirusTotal</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -799,6 +1547,26 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
+##### `anthropic`<sup>Required</sup> <a name="anthropic" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.anthropic"></a>
+
+```java
+public ActionConnectionAnthropicOutputReference getAnthropic();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference">ActionConnectionAnthropicOutputReference</a>
+
+---
+
+##### `asana`<sup>Required</sup> <a name="asana" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.asana"></a>
+
+```java
+public ActionConnectionAsanaOutputReference getAsana();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference">ActionConnectionAsanaOutputReference</a>
+
+---
+
 ##### `aws`<sup>Required</sup> <a name="aws" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.aws"></a>
 
 ```java
@@ -806,6 +1574,126 @@ public ActionConnectionAwsOutputReference getAws();
 ```
 
 - *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsOutputReference">ActionConnectionAwsOutputReference</a>
+
+---
+
+##### `azure`<sup>Required</sup> <a name="azure" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.azure"></a>
+
+```java
+public ActionConnectionAzureOutputReference getAzure();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference">ActionConnectionAzureOutputReference</a>
+
+---
+
+##### `circleCi`<sup>Required</sup> <a name="circleCi" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.circleCi"></a>
+
+```java
+public ActionConnectionCircleCiOutputReference getCircleCi();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference">ActionConnectionCircleCiOutputReference</a>
+
+---
+
+##### `clickup`<sup>Required</sup> <a name="clickup" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.clickup"></a>
+
+```java
+public ActionConnectionClickupOutputReference getClickup();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference">ActionConnectionClickupOutputReference</a>
+
+---
+
+##### `cloudflare`<sup>Required</sup> <a name="cloudflare" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.cloudflare"></a>
+
+```java
+public ActionConnectionCloudflareOutputReference getCloudflare();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference">ActionConnectionCloudflareOutputReference</a>
+
+---
+
+##### `configCat`<sup>Required</sup> <a name="configCat" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.configCat"></a>
+
+```java
+public ActionConnectionConfigCatOutputReference getConfigCat();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference">ActionConnectionConfigCatOutputReference</a>
+
+---
+
+##### `datadog`<sup>Required</sup> <a name="datadog" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.datadog"></a>
+
+```java
+public ActionConnectionDatadogOutputReference getDatadog();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference">ActionConnectionDatadogOutputReference</a>
+
+---
+
+##### `fastly`<sup>Required</sup> <a name="fastly" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.fastly"></a>
+
+```java
+public ActionConnectionFastlyOutputReference getFastly();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference">ActionConnectionFastlyOutputReference</a>
+
+---
+
+##### `freshservice`<sup>Required</sup> <a name="freshservice" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.freshservice"></a>
+
+```java
+public ActionConnectionFreshserviceOutputReference getFreshservice();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference">ActionConnectionFreshserviceOutputReference</a>
+
+---
+
+##### `gcp`<sup>Required</sup> <a name="gcp" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.gcp"></a>
+
+```java
+public ActionConnectionGcpOutputReference getGcp();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference">ActionConnectionGcpOutputReference</a>
+
+---
+
+##### `gemini`<sup>Required</sup> <a name="gemini" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.gemini"></a>
+
+```java
+public ActionConnectionGeminiOutputReference getGemini();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference">ActionConnectionGeminiOutputReference</a>
+
+---
+
+##### `gitlab`<sup>Required</sup> <a name="gitlab" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.gitlab"></a>
+
+```java
+public ActionConnectionGitlabOutputReference getGitlab();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference">ActionConnectionGitlabOutputReference</a>
+
+---
+
+##### `greyNoise`<sup>Required</sup> <a name="greyNoise" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.greyNoise"></a>
+
+```java
+public ActionConnectionGreyNoiseOutputReference getGreyNoise();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference">ActionConnectionGreyNoiseOutputReference</a>
 
 ---
 
@@ -829,6 +1717,106 @@ public java.lang.String getId();
 
 ---
 
+##### `launchDarkly`<sup>Required</sup> <a name="launchDarkly" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.launchDarkly"></a>
+
+```java
+public ActionConnectionLaunchDarklyOutputReference getLaunchDarkly();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference">ActionConnectionLaunchDarklyOutputReference</a>
+
+---
+
+##### `notion`<sup>Required</sup> <a name="notion" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.notion"></a>
+
+```java
+public ActionConnectionNotionOutputReference getNotion();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference">ActionConnectionNotionOutputReference</a>
+
+---
+
+##### `okta`<sup>Required</sup> <a name="okta" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.okta"></a>
+
+```java
+public ActionConnectionOktaOutputReference getOkta();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference">ActionConnectionOktaOutputReference</a>
+
+---
+
+##### `openai`<sup>Required</sup> <a name="openai" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.openai"></a>
+
+```java
+public ActionConnectionOpenaiOutputReference getOpenai();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference">ActionConnectionOpenaiOutputReference</a>
+
+---
+
+##### `serviceNow`<sup>Required</sup> <a name="serviceNow" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.serviceNow"></a>
+
+```java
+public ActionConnectionServiceNowOutputReference getServiceNow();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference">ActionConnectionServiceNowOutputReference</a>
+
+---
+
+##### `split`<sup>Required</sup> <a name="split" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.split"></a>
+
+```java
+public ActionConnectionSplitOutputReference getSplit();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference">ActionConnectionSplitOutputReference</a>
+
+---
+
+##### `statsig`<sup>Required</sup> <a name="statsig" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.statsig"></a>
+
+```java
+public ActionConnectionStatsigOutputReference getStatsig();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference">ActionConnectionStatsigOutputReference</a>
+
+---
+
+##### `virusTotal`<sup>Required</sup> <a name="virusTotal" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.virusTotal"></a>
+
+```java
+public ActionConnectionVirusTotalOutputReference getVirusTotal();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference">ActionConnectionVirusTotalOutputReference</a>
+
+---
+
+##### `anthropicInput`<sup>Optional</sup> <a name="anthropicInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.anthropicInput"></a>
+
+```java
+public ActionConnectionAnthropic|IResolvable getAnthropicInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropic">ActionConnectionAnthropic</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `asanaInput`<sup>Optional</sup> <a name="asanaInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.asanaInput"></a>
+
+```java
+public ActionConnectionAsana|IResolvable getAsanaInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsana">ActionConnectionAsana</a>|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `awsInput`<sup>Optional</sup> <a name="awsInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.awsInput"></a>
 
 ```java
@@ -836,6 +1824,126 @@ public ActionConnectionAws|IResolvable getAwsInput();
 ```
 
 - *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAws">ActionConnectionAws</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `azureInput`<sup>Optional</sup> <a name="azureInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.azureInput"></a>
+
+```java
+public ActionConnectionAzure|IResolvable getAzureInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzure">ActionConnectionAzure</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `circleCiInput`<sup>Optional</sup> <a name="circleCiInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.circleCiInput"></a>
+
+```java
+public ActionConnectionCircleCi|IResolvable getCircleCiInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCi">ActionConnectionCircleCi</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `clickupInput`<sup>Optional</sup> <a name="clickupInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.clickupInput"></a>
+
+```java
+public ActionConnectionClickup|IResolvable getClickupInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickup">ActionConnectionClickup</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `cloudflareInput`<sup>Optional</sup> <a name="cloudflareInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.cloudflareInput"></a>
+
+```java
+public ActionConnectionCloudflare|IResolvable getCloudflareInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare">ActionConnectionCloudflare</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `configCatInput`<sup>Optional</sup> <a name="configCatInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.configCatInput"></a>
+
+```java
+public ActionConnectionConfigCat|IResolvable getConfigCatInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCat">ActionConnectionConfigCat</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `datadogInput`<sup>Optional</sup> <a name="datadogInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.datadogInput"></a>
+
+```java
+public ActionConnectionDatadog|IResolvable getDatadogInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadog">ActionConnectionDatadog</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `fastlyInput`<sup>Optional</sup> <a name="fastlyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.fastlyInput"></a>
+
+```java
+public ActionConnectionFastly|IResolvable getFastlyInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastly">ActionConnectionFastly</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `freshserviceInput`<sup>Optional</sup> <a name="freshserviceInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.freshserviceInput"></a>
+
+```java
+public ActionConnectionFreshservice|IResolvable getFreshserviceInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshservice">ActionConnectionFreshservice</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `gcpInput`<sup>Optional</sup> <a name="gcpInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.gcpInput"></a>
+
+```java
+public ActionConnectionGcp|IResolvable getGcpInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcp">ActionConnectionGcp</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `geminiInput`<sup>Optional</sup> <a name="geminiInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.geminiInput"></a>
+
+```java
+public ActionConnectionGemini|IResolvable getGeminiInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGemini">ActionConnectionGemini</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `gitlabInput`<sup>Optional</sup> <a name="gitlabInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.gitlabInput"></a>
+
+```java
+public ActionConnectionGitlab|IResolvable getGitlabInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlab">ActionConnectionGitlab</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `greyNoiseInput`<sup>Optional</sup> <a name="greyNoiseInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.greyNoiseInput"></a>
+
+```java
+public ActionConnectionGreyNoise|IResolvable getGreyNoiseInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoise">ActionConnectionGreyNoise</a>|io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -849,6 +1957,16 @@ public ActionConnectionHttp|IResolvable getHttpInput();
 
 ---
 
+##### `launchDarklyInput`<sup>Optional</sup> <a name="launchDarklyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.launchDarklyInput"></a>
+
+```java
+public ActionConnectionLaunchDarkly|IResolvable getLaunchDarklyInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarkly">ActionConnectionLaunchDarkly</a>|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.nameInput"></a>
 
 ```java
@@ -856,6 +1974,76 @@ public java.lang.String getNameInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `notionInput`<sup>Optional</sup> <a name="notionInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.notionInput"></a>
+
+```java
+public ActionConnectionNotion|IResolvable getNotionInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotion">ActionConnectionNotion</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `oktaInput`<sup>Optional</sup> <a name="oktaInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.oktaInput"></a>
+
+```java
+public ActionConnectionOkta|IResolvable getOktaInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOkta">ActionConnectionOkta</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `openaiInput`<sup>Optional</sup> <a name="openaiInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.openaiInput"></a>
+
+```java
+public ActionConnectionOpenai|IResolvable getOpenaiInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenai">ActionConnectionOpenai</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `serviceNowInput`<sup>Optional</sup> <a name="serviceNowInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.serviceNowInput"></a>
+
+```java
+public ActionConnectionServiceNow|IResolvable getServiceNowInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow">ActionConnectionServiceNow</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `splitInput`<sup>Optional</sup> <a name="splitInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.splitInput"></a>
+
+```java
+public ActionConnectionSplit|IResolvable getSplitInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplit">ActionConnectionSplit</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `statsigInput`<sup>Optional</sup> <a name="statsigInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.statsigInput"></a>
+
+```java
+public ActionConnectionStatsig|IResolvable getStatsigInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig">ActionConnectionStatsig</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `virusTotalInput`<sup>Optional</sup> <a name="virusTotalInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.virusTotalInput"></a>
+
+```java
+public ActionConnectionVirusTotal|IResolvable getVirusTotalInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal">ActionConnectionVirusTotal</a>|io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -889,6 +2077,142 @@ public java.lang.String getTfResourceType();
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### ActionConnectionAnthropic <a name="ActionConnectionAnthropic" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropic"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropic.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionAnthropic;
+
+ActionConnectionAnthropic.builder()
+//  .apiKey(ActionConnectionAnthropicApiKey)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropic.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKey">ActionConnectionAnthropicApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropic.property.apiKey"></a>
+
+```java
+public ActionConnectionAnthropicApiKey getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKey">ActionConnectionAnthropicApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionAnthropicApiKey <a name="ActionConnectionAnthropicApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKey.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionAnthropicApiKey;
+
+ActionConnectionAnthropicApiKey.builder()
+//  .apiToken(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKey.property.apiToken">apiToken</a></code> | <code>java.lang.String</code> | Anthropic API token. String length must be at least 1. |
+
+---
+
+##### `apiToken`<sup>Optional</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKey.property.apiToken"></a>
+
+```java
+public java.lang.String getApiToken();
+```
+
+- *Type:* java.lang.String
+
+Anthropic API token. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+
+---
+
+### ActionConnectionAsana <a name="ActionConnectionAsana" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsana"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsana.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionAsana;
+
+ActionConnectionAsana.builder()
+//  .accessToken(ActionConnectionAsanaAccessToken)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsana.property.accessToken">accessToken</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessToken">ActionConnectionAsanaAccessToken</a></code> | access_token block. |
+
+---
+
+##### `accessToken`<sup>Optional</sup> <a name="accessToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsana.property.accessToken"></a>
+
+```java
+public ActionConnectionAsanaAccessToken getAccessToken();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessToken">ActionConnectionAsanaAccessToken</a>
+
+access_token block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#access_token ActionConnection#access_token}
+
+---
+
+### ActionConnectionAsanaAccessToken <a name="ActionConnectionAsanaAccessToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessToken"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessToken.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionAsanaAccessToken;
+
+ActionConnectionAsanaAccessToken.builder()
+//  .accessToken(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessToken.property.accessToken">accessToken</a></code> | <code>java.lang.String</code> | Asana access token. String length must be at least 1. |
+
+---
+
+##### `accessToken`<sup>Optional</sup> <a name="accessToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessToken.property.accessToken"></a>
+
+```java
+public java.lang.String getAccessToken();
+```
+
+- *Type:* java.lang.String
+
+Asana access token. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#access_token ActionConnection#access_token}
+
+---
+
 ### ActionConnectionAws <a name="ActionConnectionAws" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAws"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAws.Initializer"></a>
@@ -919,7 +2243,7 @@ public ActionConnectionAwsAssumeRole getAssumeRole();
 
 assume_role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#assume_role ActionConnection#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#assume_role ActionConnection#assume_role}
 
 ---
 
@@ -955,7 +2279,7 @@ public java.lang.String getAccountId();
 
 AWS account that the connection is created for. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#account_id ActionConnection#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#account_id ActionConnection#account_id}
 
 ---
 
@@ -969,7 +2293,393 @@ public java.lang.String getRole();
 
 Role to assume. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#role ActionConnection#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#role ActionConnection#role}
+
+---
+
+### ActionConnectionAzure <a name="ActionConnectionAzure" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzure"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzure.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionAzure;
+
+ActionConnectionAzure.builder()
+//  .tenant(ActionConnectionAzureTenant)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzure.property.tenant">tenant</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant">ActionConnectionAzureTenant</a></code> | tenant block. |
+
+---
+
+##### `tenant`<sup>Optional</sup> <a name="tenant" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzure.property.tenant"></a>
+
+```java
+public ActionConnectionAzureTenant getTenant();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant">ActionConnectionAzureTenant</a>
+
+tenant block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#tenant ActionConnection#tenant}
+
+---
+
+### ActionConnectionAzureTenant <a name="ActionConnectionAzureTenant" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionAzureTenant;
+
+ActionConnectionAzureTenant.builder()
+//  .appClientId(java.lang.String)
+//  .clientSecret(java.lang.String)
+//  .customScopes(java.lang.String)
+//  .tenantId(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant.property.appClientId">appClientId</a></code> | <code>java.lang.String</code> | Azure application client ID. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant.property.clientSecret">clientSecret</a></code> | <code>java.lang.String</code> | Azure application client secret. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant.property.customScopes">customScopes</a></code> | <code>java.lang.String</code> | Custom scope requested when acquiring an OAuth 2 access token. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant.property.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Azure Active Directory tenant ID. String length must be at least 1. |
+
+---
+
+##### `appClientId`<sup>Optional</sup> <a name="appClientId" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant.property.appClientId"></a>
+
+```java
+public java.lang.String getAppClientId();
+```
+
+- *Type:* java.lang.String
+
+Azure application client ID. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#app_client_id ActionConnection#app_client_id}
+
+---
+
+##### `clientSecret`<sup>Optional</sup> <a name="clientSecret" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant.property.clientSecret"></a>
+
+```java
+public java.lang.String getClientSecret();
+```
+
+- *Type:* java.lang.String
+
+Azure application client secret. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#client_secret ActionConnection#client_secret}
+
+---
+
+##### `customScopes`<sup>Optional</sup> <a name="customScopes" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant.property.customScopes"></a>
+
+```java
+public java.lang.String getCustomScopes();
+```
+
+- *Type:* java.lang.String
+
+Custom scope requested when acquiring an OAuth 2 access token. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#custom_scopes ActionConnection#custom_scopes}
+
+---
+
+##### `tenantId`<sup>Optional</sup> <a name="tenantId" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant.property.tenantId"></a>
+
+```java
+public java.lang.String getTenantId();
+```
+
+- *Type:* java.lang.String
+
+Azure Active Directory tenant ID. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#tenant_id ActionConnection#tenant_id}
+
+---
+
+### ActionConnectionCircleCi <a name="ActionConnectionCircleCi" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCi"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCi.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionCircleCi;
+
+ActionConnectionCircleCi.builder()
+//  .apiKey(ActionConnectionCircleCiApiKey)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCi.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKey">ActionConnectionCircleCiApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCi.property.apiKey"></a>
+
+```java
+public ActionConnectionCircleCiApiKey getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKey">ActionConnectionCircleCiApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionCircleCiApiKey <a name="ActionConnectionCircleCiApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKey.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionCircleCiApiKey;
+
+ActionConnectionCircleCiApiKey.builder()
+//  .apiToken(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKey.property.apiToken">apiToken</a></code> | <code>java.lang.String</code> | CircleCI API token. String length must be at least 1. |
+
+---
+
+##### `apiToken`<sup>Optional</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKey.property.apiToken"></a>
+
+```java
+public java.lang.String getApiToken();
+```
+
+- *Type:* java.lang.String
+
+CircleCI API token. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+
+---
+
+### ActionConnectionClickup <a name="ActionConnectionClickup" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickup"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickup.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionClickup;
+
+ActionConnectionClickup.builder()
+//  .apiKey(ActionConnectionClickupApiKey)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickup.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKey">ActionConnectionClickupApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickup.property.apiKey"></a>
+
+```java
+public ActionConnectionClickupApiKey getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKey">ActionConnectionClickupApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionClickupApiKey <a name="ActionConnectionClickupApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKey.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionClickupApiKey;
+
+ActionConnectionClickupApiKey.builder()
+//  .apiToken(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKey.property.apiToken">apiToken</a></code> | <code>java.lang.String</code> | ClickUp API token. String length must be at least 1. |
+
+---
+
+##### `apiToken`<sup>Optional</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKey.property.apiToken"></a>
+
+```java
+public java.lang.String getApiToken();
+```
+
+- *Type:* java.lang.String
+
+ClickUp API token. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+
+---
+
+### ActionConnectionCloudflare <a name="ActionConnectionCloudflare" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionCloudflare;
+
+ActionConnectionCloudflare.builder()
+//  .apiToken(ActionConnectionCloudflareApiToken)
+//  .globalApiToken(ActionConnectionCloudflareGlobalApiToken)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare.property.apiToken">apiToken</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiToken">ActionConnectionCloudflareApiToken</a></code> | api_token block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare.property.globalApiToken">globalApiToken</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiToken">ActionConnectionCloudflareGlobalApiToken</a></code> | global_api_token block. |
+
+---
+
+##### `apiToken`<sup>Optional</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare.property.apiToken"></a>
+
+```java
+public ActionConnectionCloudflareApiToken getApiToken();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiToken">ActionConnectionCloudflareApiToken</a>
+
+api_token block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+
+---
+
+##### `globalApiToken`<sup>Optional</sup> <a name="globalApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare.property.globalApiToken"></a>
+
+```java
+public ActionConnectionCloudflareGlobalApiToken getGlobalApiToken();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiToken">ActionConnectionCloudflareGlobalApiToken</a>
+
+global_api_token block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#global_api_token ActionConnection#global_api_token}
+
+---
+
+### ActionConnectionCloudflareApiToken <a name="ActionConnectionCloudflareApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiToken"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiToken.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionCloudflareApiToken;
+
+ActionConnectionCloudflareApiToken.builder()
+//  .apiToken(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiToken.property.apiToken">apiToken</a></code> | <code>java.lang.String</code> | Cloudflare API token. String length must be at least 1. |
+
+---
+
+##### `apiToken`<sup>Optional</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiToken.property.apiToken"></a>
+
+```java
+public java.lang.String getApiToken();
+```
+
+- *Type:* java.lang.String
+
+Cloudflare API token. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+
+---
+
+### ActionConnectionCloudflareGlobalApiToken <a name="ActionConnectionCloudflareGlobalApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiToken"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiToken.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionCloudflareGlobalApiToken;
+
+ActionConnectionCloudflareGlobalApiToken.builder()
+//  .authEmail(java.lang.String)
+//  .globalApiKey(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiToken.property.authEmail">authEmail</a></code> | <code>java.lang.String</code> | Email address associated with the Cloudflare account. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiToken.property.globalApiKey">globalApiKey</a></code> | <code>java.lang.String</code> | Cloudflare global API key. String length must be at least 1. |
+
+---
+
+##### `authEmail`<sup>Optional</sup> <a name="authEmail" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiToken.property.authEmail"></a>
+
+```java
+public java.lang.String getAuthEmail();
+```
+
+- *Type:* java.lang.String
+
+Email address associated with the Cloudflare account. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#auth_email ActionConnection#auth_email}
+
+---
+
+##### `globalApiKey`<sup>Optional</sup> <a name="globalApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiToken.property.globalApiKey"></a>
+
+```java
+public java.lang.String getGlobalApiKey();
+```
+
+- *Type:* java.lang.String
+
+Cloudflare global API key. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#global_api_key ActionConnection#global_api_key}
 
 ---
 
@@ -989,8 +2699,30 @@ ActionConnectionConfig.builder()
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
+//  .anthropic(ActionConnectionAnthropic)
+//  .asana(ActionConnectionAsana)
 //  .aws(ActionConnectionAws)
+//  .azure(ActionConnectionAzure)
+//  .circleCi(ActionConnectionCircleCi)
+//  .clickup(ActionConnectionClickup)
+//  .cloudflare(ActionConnectionCloudflare)
+//  .configCat(ActionConnectionConfigCat)
+//  .datadog(ActionConnectionDatadog)
+//  .fastly(ActionConnectionFastly)
+//  .freshservice(ActionConnectionFreshservice)
+//  .gcp(ActionConnectionGcp)
+//  .gemini(ActionConnectionGemini)
+//  .gitlab(ActionConnectionGitlab)
+//  .greyNoise(ActionConnectionGreyNoise)
 //  .http(ActionConnectionHttp)
+//  .launchDarkly(ActionConnectionLaunchDarkly)
+//  .notion(ActionConnectionNotion)
+//  .okta(ActionConnectionOkta)
+//  .openai(ActionConnectionOpenai)
+//  .serviceNow(ActionConnectionServiceNow)
+//  .split(ActionConnectionSplit)
+//  .statsig(ActionConnectionStatsig)
+//  .virusTotal(ActionConnectionVirusTotal)
     .build();
 ```
 
@@ -1006,8 +2738,30 @@ ActionConnectionConfig.builder()
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the connection. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.anthropic">anthropic</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropic">ActionConnectionAnthropic</a></code> | anthropic block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.asana">asana</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsana">ActionConnectionAsana</a></code> | asana block. |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.aws">aws</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAws">ActionConnectionAws</a></code> | aws block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.azure">azure</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzure">ActionConnectionAzure</a></code> | azure block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.circleCi">circleCi</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCi">ActionConnectionCircleCi</a></code> | circle_ci block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.clickup">clickup</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickup">ActionConnectionClickup</a></code> | clickup block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.cloudflare">cloudflare</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare">ActionConnectionCloudflare</a></code> | cloudflare block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.configCat">configCat</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCat">ActionConnectionConfigCat</a></code> | config_cat block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.datadog">datadog</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadog">ActionConnectionDatadog</a></code> | datadog block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.fastly">fastly</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastly">ActionConnectionFastly</a></code> | fastly block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.freshservice">freshservice</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshservice">ActionConnectionFreshservice</a></code> | freshservice block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.gcp">gcp</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcp">ActionConnectionGcp</a></code> | gcp block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.gemini">gemini</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGemini">ActionConnectionGemini</a></code> | gemini block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.gitlab">gitlab</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlab">ActionConnectionGitlab</a></code> | gitlab block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.greyNoise">greyNoise</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoise">ActionConnectionGreyNoise</a></code> | grey_noise block. |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.http">http</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionHttp">ActionConnectionHttp</a></code> | http block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.launchDarkly">launchDarkly</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarkly">ActionConnectionLaunchDarkly</a></code> | launch_darkly block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.notion">notion</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotion">ActionConnectionNotion</a></code> | notion block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.okta">okta</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOkta">ActionConnectionOkta</a></code> | okta block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.openai">openai</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenai">ActionConnectionOpenai</a></code> | openai block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.serviceNow">serviceNow</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow">ActionConnectionServiceNow</a></code> | service_now block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.split">split</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplit">ActionConnectionSplit</a></code> | split block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.statsig">statsig</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig">ActionConnectionStatsig</a></code> | statsig block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.virusTotal">virusTotal</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal">ActionConnectionVirusTotal</a></code> | virus_total block. |
 
 ---
 
@@ -1091,7 +2845,35 @@ public java.lang.String getName();
 
 Name of the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#name ActionConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#name ActionConnection#name}
+
+---
+
+##### `anthropic`<sup>Optional</sup> <a name="anthropic" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.anthropic"></a>
+
+```java
+public ActionConnectionAnthropic getAnthropic();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropic">ActionConnectionAnthropic</a>
+
+anthropic block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#anthropic ActionConnection#anthropic}
+
+---
+
+##### `asana`<sup>Optional</sup> <a name="asana" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.asana"></a>
+
+```java
+public ActionConnectionAsana getAsana();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsana">ActionConnectionAsana</a>
+
+asana block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#asana ActionConnection#asana}
 
 ---
 
@@ -1105,7 +2887,175 @@ public ActionConnectionAws getAws();
 
 aws block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#aws ActionConnection#aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#aws ActionConnection#aws}
+
+---
+
+##### `azure`<sup>Optional</sup> <a name="azure" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.azure"></a>
+
+```java
+public ActionConnectionAzure getAzure();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzure">ActionConnectionAzure</a>
+
+azure block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#azure ActionConnection#azure}
+
+---
+
+##### `circleCi`<sup>Optional</sup> <a name="circleCi" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.circleCi"></a>
+
+```java
+public ActionConnectionCircleCi getCircleCi();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCi">ActionConnectionCircleCi</a>
+
+circle_ci block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#circle_ci ActionConnection#circle_ci}
+
+---
+
+##### `clickup`<sup>Optional</sup> <a name="clickup" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.clickup"></a>
+
+```java
+public ActionConnectionClickup getClickup();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickup">ActionConnectionClickup</a>
+
+clickup block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#clickup ActionConnection#clickup}
+
+---
+
+##### `cloudflare`<sup>Optional</sup> <a name="cloudflare" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.cloudflare"></a>
+
+```java
+public ActionConnectionCloudflare getCloudflare();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare">ActionConnectionCloudflare</a>
+
+cloudflare block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#cloudflare ActionConnection#cloudflare}
+
+---
+
+##### `configCat`<sup>Optional</sup> <a name="configCat" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.configCat"></a>
+
+```java
+public ActionConnectionConfigCat getConfigCat();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCat">ActionConnectionConfigCat</a>
+
+config_cat block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#config_cat ActionConnection#config_cat}
+
+---
+
+##### `datadog`<sup>Optional</sup> <a name="datadog" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.datadog"></a>
+
+```java
+public ActionConnectionDatadog getDatadog();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadog">ActionConnectionDatadog</a>
+
+datadog block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#datadog ActionConnection#datadog}
+
+---
+
+##### `fastly`<sup>Optional</sup> <a name="fastly" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.fastly"></a>
+
+```java
+public ActionConnectionFastly getFastly();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastly">ActionConnectionFastly</a>
+
+fastly block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#fastly ActionConnection#fastly}
+
+---
+
+##### `freshservice`<sup>Optional</sup> <a name="freshservice" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.freshservice"></a>
+
+```java
+public ActionConnectionFreshservice getFreshservice();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshservice">ActionConnectionFreshservice</a>
+
+freshservice block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#freshservice ActionConnection#freshservice}
+
+---
+
+##### `gcp`<sup>Optional</sup> <a name="gcp" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.gcp"></a>
+
+```java
+public ActionConnectionGcp getGcp();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcp">ActionConnectionGcp</a>
+
+gcp block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#gcp ActionConnection#gcp}
+
+---
+
+##### `gemini`<sup>Optional</sup> <a name="gemini" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.gemini"></a>
+
+```java
+public ActionConnectionGemini getGemini();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGemini">ActionConnectionGemini</a>
+
+gemini block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#gemini ActionConnection#gemini}
+
+---
+
+##### `gitlab`<sup>Optional</sup> <a name="gitlab" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.gitlab"></a>
+
+```java
+public ActionConnectionGitlab getGitlab();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlab">ActionConnectionGitlab</a>
+
+gitlab block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#gitlab ActionConnection#gitlab}
+
+---
+
+##### `greyNoise`<sup>Optional</sup> <a name="greyNoise" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.greyNoise"></a>
+
+```java
+public ActionConnectionGreyNoise getGreyNoise();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoise">ActionConnectionGreyNoise</a>
+
+grey_noise block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#grey_noise ActionConnection#grey_noise}
 
 ---
 
@@ -1119,7 +3069,775 @@ public ActionConnectionHttp getHttp();
 
 http block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#http ActionConnection#http}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#http ActionConnection#http}
+
+---
+
+##### `launchDarkly`<sup>Optional</sup> <a name="launchDarkly" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.launchDarkly"></a>
+
+```java
+public ActionConnectionLaunchDarkly getLaunchDarkly();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarkly">ActionConnectionLaunchDarkly</a>
+
+launch_darkly block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#launch_darkly ActionConnection#launch_darkly}
+
+---
+
+##### `notion`<sup>Optional</sup> <a name="notion" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.notion"></a>
+
+```java
+public ActionConnectionNotion getNotion();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotion">ActionConnectionNotion</a>
+
+notion block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#notion ActionConnection#notion}
+
+---
+
+##### `okta`<sup>Optional</sup> <a name="okta" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.okta"></a>
+
+```java
+public ActionConnectionOkta getOkta();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOkta">ActionConnectionOkta</a>
+
+okta block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#okta ActionConnection#okta}
+
+---
+
+##### `openai`<sup>Optional</sup> <a name="openai" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.openai"></a>
+
+```java
+public ActionConnectionOpenai getOpenai();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenai">ActionConnectionOpenai</a>
+
+openai block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#openai ActionConnection#openai}
+
+---
+
+##### `serviceNow`<sup>Optional</sup> <a name="serviceNow" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.serviceNow"></a>
+
+```java
+public ActionConnectionServiceNow getServiceNow();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow">ActionConnectionServiceNow</a>
+
+service_now block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#service_now ActionConnection#service_now}
+
+---
+
+##### `split`<sup>Optional</sup> <a name="split" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.split"></a>
+
+```java
+public ActionConnectionSplit getSplit();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplit">ActionConnectionSplit</a>
+
+split block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#split ActionConnection#split}
+
+---
+
+##### `statsig`<sup>Optional</sup> <a name="statsig" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.statsig"></a>
+
+```java
+public ActionConnectionStatsig getStatsig();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig">ActionConnectionStatsig</a>
+
+statsig block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#statsig ActionConnection#statsig}
+
+---
+
+##### `virusTotal`<sup>Optional</sup> <a name="virusTotal" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.virusTotal"></a>
+
+```java
+public ActionConnectionVirusTotal getVirusTotal();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal">ActionConnectionVirusTotal</a>
+
+virus_total block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#virus_total ActionConnection#virus_total}
+
+---
+
+### ActionConnectionConfigCat <a name="ActionConnectionConfigCat" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCat"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCat.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionConfigCat;
+
+ActionConnectionConfigCat.builder()
+//  .sdkKey(ActionConnectionConfigCatSdkKey)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCat.property.sdkKey">sdkKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey">ActionConnectionConfigCatSdkKey</a></code> | sdk_key block. |
+
+---
+
+##### `sdkKey`<sup>Optional</sup> <a name="sdkKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCat.property.sdkKey"></a>
+
+```java
+public ActionConnectionConfigCatSdkKey getSdkKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey">ActionConnectionConfigCatSdkKey</a>
+
+sdk_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#sdk_key ActionConnection#sdk_key}
+
+---
+
+### ActionConnectionConfigCatSdkKey <a name="ActionConnectionConfigCatSdkKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionConfigCatSdkKey;
+
+ActionConnectionConfigCatSdkKey.builder()
+//  .apiPassword(java.lang.String)
+//  .apiUsername(java.lang.String)
+//  .sdkKey(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey.property.apiPassword">apiPassword</a></code> | <code>java.lang.String</code> | ConfigCat Public Management API password. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey.property.apiUsername">apiUsername</a></code> | <code>java.lang.String</code> | ConfigCat Public Management API username. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey.property.sdkKey">sdkKey</a></code> | <code>java.lang.String</code> | ConfigCat SDK key. String length must be at least 1. |
+
+---
+
+##### `apiPassword`<sup>Optional</sup> <a name="apiPassword" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey.property.apiPassword"></a>
+
+```java
+public java.lang.String getApiPassword();
+```
+
+- *Type:* java.lang.String
+
+ConfigCat Public Management API password. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_password ActionConnection#api_password}
+
+---
+
+##### `apiUsername`<sup>Optional</sup> <a name="apiUsername" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey.property.apiUsername"></a>
+
+```java
+public java.lang.String getApiUsername();
+```
+
+- *Type:* java.lang.String
+
+ConfigCat Public Management API username. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_username ActionConnection#api_username}
+
+---
+
+##### `sdkKey`<sup>Optional</sup> <a name="sdkKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey.property.sdkKey"></a>
+
+```java
+public java.lang.String getSdkKey();
+```
+
+- *Type:* java.lang.String
+
+ConfigCat SDK key. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#sdk_key ActionConnection#sdk_key}
+
+---
+
+### ActionConnectionDatadog <a name="ActionConnectionDatadog" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadog"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadog.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionDatadog;
+
+ActionConnectionDatadog.builder()
+//  .apiKey(ActionConnectionDatadogApiKey)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadog.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey">ActionConnectionDatadogApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadog.property.apiKey"></a>
+
+```java
+public ActionConnectionDatadogApiKey getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey">ActionConnectionDatadogApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionDatadogApiKey <a name="ActionConnectionDatadogApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionDatadogApiKey;
+
+ActionConnectionDatadogApiKey.builder()
+//  .apiKey(java.lang.String)
+//  .appKey(java.lang.String)
+//  .datacenter(java.lang.String)
+//  .subdomain(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | Datadog API key. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey.property.appKey">appKey</a></code> | <code>java.lang.String</code> | Datadog application key. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey.property.datacenter">datacenter</a></code> | <code>java.lang.String</code> | Datadog site data center. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey.property.subdomain">subdomain</a></code> | <code>java.lang.String</code> | Custom subdomain used for URLs generated with this connection. String length must be at least 1. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey.property.apiKey"></a>
+
+```java
+public java.lang.String getApiKey();
+```
+
+- *Type:* java.lang.String
+
+Datadog API key. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+##### `appKey`<sup>Optional</sup> <a name="appKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey.property.appKey"></a>
+
+```java
+public java.lang.String getAppKey();
+```
+
+- *Type:* java.lang.String
+
+Datadog application key. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#app_key ActionConnection#app_key}
+
+---
+
+##### `datacenter`<sup>Optional</sup> <a name="datacenter" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey.property.datacenter"></a>
+
+```java
+public java.lang.String getDatacenter();
+```
+
+- *Type:* java.lang.String
+
+Datadog site data center. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#datacenter ActionConnection#datacenter}
+
+---
+
+##### `subdomain`<sup>Optional</sup> <a name="subdomain" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey.property.subdomain"></a>
+
+```java
+public java.lang.String getSubdomain();
+```
+
+- *Type:* java.lang.String
+
+Custom subdomain used for URLs generated with this connection. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#subdomain ActionConnection#subdomain}
+
+---
+
+### ActionConnectionFastly <a name="ActionConnectionFastly" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastly"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastly.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionFastly;
+
+ActionConnectionFastly.builder()
+//  .apiKey(ActionConnectionFastlyApiKey)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastly.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKey">ActionConnectionFastlyApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastly.property.apiKey"></a>
+
+```java
+public ActionConnectionFastlyApiKey getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKey">ActionConnectionFastlyApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionFastlyApiKey <a name="ActionConnectionFastlyApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKey.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionFastlyApiKey;
+
+ActionConnectionFastlyApiKey.builder()
+//  .apiKey(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKey.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | Fastly API key. String length must be at least 1. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKey.property.apiKey"></a>
+
+```java
+public java.lang.String getApiKey();
+```
+
+- *Type:* java.lang.String
+
+Fastly API key. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionFreshservice <a name="ActionConnectionFreshservice" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshservice"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshservice.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionFreshservice;
+
+ActionConnectionFreshservice.builder()
+//  .apiKey(ActionConnectionFreshserviceApiKey)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshservice.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKey">ActionConnectionFreshserviceApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshservice.property.apiKey"></a>
+
+```java
+public ActionConnectionFreshserviceApiKey getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKey">ActionConnectionFreshserviceApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionFreshserviceApiKey <a name="ActionConnectionFreshserviceApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKey.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionFreshserviceApiKey;
+
+ActionConnectionFreshserviceApiKey.builder()
+//  .apiKey(java.lang.String)
+//  .domain(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKey.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | Freshservice API key. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKey.property.domain">domain</a></code> | <code>java.lang.String</code> | Freshservice domain. String length must be at least 1. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKey.property.apiKey"></a>
+
+```java
+public java.lang.String getApiKey();
+```
+
+- *Type:* java.lang.String
+
+Freshservice API key. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+##### `domain`<sup>Optional</sup> <a name="domain" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKey.property.domain"></a>
+
+```java
+public java.lang.String getDomain();
+```
+
+- *Type:* java.lang.String
+
+Freshservice domain. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#domain ActionConnection#domain}
+
+---
+
+### ActionConnectionGcp <a name="ActionConnectionGcp" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcp"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcp.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionGcp;
+
+ActionConnectionGcp.builder()
+//  .serviceAccount(ActionConnectionGcpServiceAccount)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcp.property.serviceAccount">serviceAccount</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccount">ActionConnectionGcpServiceAccount</a></code> | service_account block. |
+
+---
+
+##### `serviceAccount`<sup>Optional</sup> <a name="serviceAccount" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcp.property.serviceAccount"></a>
+
+```java
+public ActionConnectionGcpServiceAccount getServiceAccount();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccount">ActionConnectionGcpServiceAccount</a>
+
+service_account block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#service_account ActionConnection#service_account}
+
+---
+
+### ActionConnectionGcpServiceAccount <a name="ActionConnectionGcpServiceAccount" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccount"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccount.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionGcpServiceAccount;
+
+ActionConnectionGcpServiceAccount.builder()
+//  .privateKey(java.lang.String)
+//  .serviceAccountEmail(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccount.property.privateKey">privateKey</a></code> | <code>java.lang.String</code> | Google Cloud service account private key. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccount.property.serviceAccountEmail">serviceAccountEmail</a></code> | <code>java.lang.String</code> | Google Cloud service account email. String length must be at least 1. |
+
+---
+
+##### `privateKey`<sup>Optional</sup> <a name="privateKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccount.property.privateKey"></a>
+
+```java
+public java.lang.String getPrivateKey();
+```
+
+- *Type:* java.lang.String
+
+Google Cloud service account private key. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#private_key ActionConnection#private_key}
+
+---
+
+##### `serviceAccountEmail`<sup>Optional</sup> <a name="serviceAccountEmail" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccount.property.serviceAccountEmail"></a>
+
+```java
+public java.lang.String getServiceAccountEmail();
+```
+
+- *Type:* java.lang.String
+
+Google Cloud service account email. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#service_account_email ActionConnection#service_account_email}
+
+---
+
+### ActionConnectionGemini <a name="ActionConnectionGemini" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGemini"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGemini.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionGemini;
+
+ActionConnectionGemini.builder()
+//  .apiKey(ActionConnectionGeminiApiKey)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGemini.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKey">ActionConnectionGeminiApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGemini.property.apiKey"></a>
+
+```java
+public ActionConnectionGeminiApiKey getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKey">ActionConnectionGeminiApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionGeminiApiKey <a name="ActionConnectionGeminiApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKey.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionGeminiApiKey;
+
+ActionConnectionGeminiApiKey.builder()
+//  .apiKey(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKey.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | Gemini API key. String length must be at least 1. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKey.property.apiKey"></a>
+
+```java
+public java.lang.String getApiKey();
+```
+
+- *Type:* java.lang.String
+
+Gemini API key. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionGitlab <a name="ActionConnectionGitlab" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlab"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlab.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionGitlab;
+
+ActionConnectionGitlab.builder()
+//  .apiKey(ActionConnectionGitlabApiKey)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlab.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKey">ActionConnectionGitlabApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlab.property.apiKey"></a>
+
+```java
+public ActionConnectionGitlabApiKey getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKey">ActionConnectionGitlabApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionGitlabApiKey <a name="ActionConnectionGitlabApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKey.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionGitlabApiKey;
+
+ActionConnectionGitlabApiKey.builder()
+//  .apiToken(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKey.property.apiToken">apiToken</a></code> | <code>java.lang.String</code> | GitLab API token. String length must be at least 1. |
+
+---
+
+##### `apiToken`<sup>Optional</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKey.property.apiToken"></a>
+
+```java
+public java.lang.String getApiToken();
+```
+
+- *Type:* java.lang.String
+
+GitLab API token. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+
+---
+
+### ActionConnectionGreyNoise <a name="ActionConnectionGreyNoise" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoise"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoise.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionGreyNoise;
+
+ActionConnectionGreyNoise.builder()
+//  .apiKey(ActionConnectionGreyNoiseApiKey)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoise.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKey">ActionConnectionGreyNoiseApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoise.property.apiKey"></a>
+
+```java
+public ActionConnectionGreyNoiseApiKey getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKey">ActionConnectionGreyNoiseApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionGreyNoiseApiKey <a name="ActionConnectionGreyNoiseApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKey.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionGreyNoiseApiKey;
+
+ActionConnectionGreyNoiseApiKey.builder()
+//  .apiKey(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKey.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | GreyNoise API key. String length must be at least 1. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKey.property.apiKey"></a>
+
+```java
+public java.lang.String getApiKey();
+```
+
+- *Type:* java.lang.String
+
+GreyNoise API key. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 
@@ -1155,7 +3873,7 @@ public java.lang.String getBaseUrl();
 
 Base HTTP url for the integration. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#base_url ActionConnection#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#base_url ActionConnection#base_url}
 
 ---
 
@@ -1169,7 +3887,7 @@ public ActionConnectionHttpTokenAuth getTokenAuth();
 
 token_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#token_auth ActionConnection#token_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#token_auth ActionConnection#token_auth}
 
 ---
 
@@ -1209,7 +3927,7 @@ public ActionConnectionHttpTokenAuthBody getBody();
 
 body block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#body ActionConnection#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#body ActionConnection#body}
 
 ---
 
@@ -1223,7 +3941,7 @@ public IResolvable|java.util.List<ActionConnectionHttpTokenAuthHeader> getHeader
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#header ActionConnection#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#header ActionConnection#header}
 
 ---
 
@@ -1237,7 +3955,7 @@ public IResolvable|java.util.List<ActionConnectionHttpTokenAuthToken> getToken()
 
 token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#token ActionConnection#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#token ActionConnection#token}
 
 ---
 
@@ -1251,7 +3969,7 @@ public IResolvable|java.util.List<ActionConnectionHttpTokenAuthUrlParameter> get
 
 url_parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#url_parameter ActionConnection#url_parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#url_parameter ActionConnection#url_parameter}
 
 ---
 
@@ -1287,7 +4005,7 @@ public java.lang.String getContent();
 
 Serialized body content. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#content ActionConnection#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#content ActionConnection#content}
 
 ---
 
@@ -1301,7 +4019,7 @@ public java.lang.String getContentType();
 
 Content type of the body. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#content_type ActionConnection#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#content_type ActionConnection#content_type}
 
 ---
 
@@ -1337,7 +4055,7 @@ public java.lang.String getName();
 
 Header name. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#name ActionConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#name ActionConnection#name}
 
 ---
 
@@ -1351,7 +4069,7 @@ public java.lang.String getValue();
 
 String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#value ActionConnection#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#value ActionConnection#value}
 
 ---
 
@@ -1389,7 +4107,7 @@ public java.lang.String getName();
 
 Token name. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#name ActionConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#name ActionConnection#name}
 
 ---
 
@@ -1403,7 +4121,7 @@ public java.lang.String getType();
 
 Token type Valid values are `SECRET`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#type ActionConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#type ActionConnection#type}
 
 ---
 
@@ -1417,7 +4135,7 @@ public java.lang.String getValue();
 
 Token value. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#value ActionConnection#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#value ActionConnection#value}
 
 ---
 
@@ -1453,7 +4171,7 @@ public java.lang.String getName();
 
 URL parameter name. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#name ActionConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#name ActionConnection#name}
 
 ---
 
@@ -1467,11 +4185,1741 @@ public java.lang.String getValue();
 
 URL parameter value. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection#value ActionConnection#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#value ActionConnection#value}
+
+---
+
+### ActionConnectionLaunchDarkly <a name="ActionConnectionLaunchDarkly" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarkly"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarkly.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionLaunchDarkly;
+
+ActionConnectionLaunchDarkly.builder()
+//  .apiKey(ActionConnectionLaunchDarklyApiKey)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarkly.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKey">ActionConnectionLaunchDarklyApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarkly.property.apiKey"></a>
+
+```java
+public ActionConnectionLaunchDarklyApiKey getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKey">ActionConnectionLaunchDarklyApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionLaunchDarklyApiKey <a name="ActionConnectionLaunchDarklyApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKey.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionLaunchDarklyApiKey;
+
+ActionConnectionLaunchDarklyApiKey.builder()
+//  .apiToken(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKey.property.apiToken">apiToken</a></code> | <code>java.lang.String</code> | LaunchDarkly API token. String length must be at least 1. |
+
+---
+
+##### `apiToken`<sup>Optional</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKey.property.apiToken"></a>
+
+```java
+public java.lang.String getApiToken();
+```
+
+- *Type:* java.lang.String
+
+LaunchDarkly API token. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+
+---
+
+### ActionConnectionNotion <a name="ActionConnectionNotion" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotion"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotion.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionNotion;
+
+ActionConnectionNotion.builder()
+//  .apiKey(ActionConnectionNotionApiKey)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotion.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKey">ActionConnectionNotionApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotion.property.apiKey"></a>
+
+```java
+public ActionConnectionNotionApiKey getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKey">ActionConnectionNotionApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionNotionApiKey <a name="ActionConnectionNotionApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKey.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionNotionApiKey;
+
+ActionConnectionNotionApiKey.builder()
+//  .apiToken(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKey.property.apiToken">apiToken</a></code> | <code>java.lang.String</code> | Notion API token. String length must be at least 1. |
+
+---
+
+##### `apiToken`<sup>Optional</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKey.property.apiToken"></a>
+
+```java
+public java.lang.String getApiToken();
+```
+
+- *Type:* java.lang.String
+
+Notion API token. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+
+---
+
+### ActionConnectionOkta <a name="ActionConnectionOkta" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOkta"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOkta.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionOkta;
+
+ActionConnectionOkta.builder()
+//  .apiToken(ActionConnectionOktaApiToken)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOkta.property.apiToken">apiToken</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiToken">ActionConnectionOktaApiToken</a></code> | api_token block. |
+
+---
+
+##### `apiToken`<sup>Optional</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOkta.property.apiToken"></a>
+
+```java
+public ActionConnectionOktaApiToken getApiToken();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiToken">ActionConnectionOktaApiToken</a>
+
+api_token block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+
+---
+
+### ActionConnectionOktaApiToken <a name="ActionConnectionOktaApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiToken"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiToken.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionOktaApiToken;
+
+ActionConnectionOktaApiToken.builder()
+//  .apiToken(java.lang.String)
+//  .domain(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiToken.property.apiToken">apiToken</a></code> | <code>java.lang.String</code> | Okta API token. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiToken.property.domain">domain</a></code> | <code>java.lang.String</code> | Okta domain. String length must be at least 1. |
+
+---
+
+##### `apiToken`<sup>Optional</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiToken.property.apiToken"></a>
+
+```java
+public java.lang.String getApiToken();
+```
+
+- *Type:* java.lang.String
+
+Okta API token. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+
+---
+
+##### `domain`<sup>Optional</sup> <a name="domain" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiToken.property.domain"></a>
+
+```java
+public java.lang.String getDomain();
+```
+
+- *Type:* java.lang.String
+
+Okta domain. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#domain ActionConnection#domain}
+
+---
+
+### ActionConnectionOpenai <a name="ActionConnectionOpenai" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenai"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenai.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionOpenai;
+
+ActionConnectionOpenai.builder()
+//  .apiKey(ActionConnectionOpenaiApiKey)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenai.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKey">ActionConnectionOpenaiApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenai.property.apiKey"></a>
+
+```java
+public ActionConnectionOpenaiApiKey getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKey">ActionConnectionOpenaiApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionOpenaiApiKey <a name="ActionConnectionOpenaiApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKey.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionOpenaiApiKey;
+
+ActionConnectionOpenaiApiKey.builder()
+//  .apiToken(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKey.property.apiToken">apiToken</a></code> | <code>java.lang.String</code> | OpenAI API token. String length must be at least 1. |
+
+---
+
+##### `apiToken`<sup>Optional</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKey.property.apiToken"></a>
+
+```java
+public java.lang.String getApiToken();
+```
+
+- *Type:* java.lang.String
+
+OpenAI API token. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+
+---
+
+### ActionConnectionServiceNow <a name="ActionConnectionServiceNow" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionServiceNow;
+
+ActionConnectionServiceNow.builder()
+//  .basicAuth(ActionConnectionServiceNowBasicAuth)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow.property.basicAuth">basicAuth</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth">ActionConnectionServiceNowBasicAuth</a></code> | basic_auth block. |
+
+---
+
+##### `basicAuth`<sup>Optional</sup> <a name="basicAuth" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow.property.basicAuth"></a>
+
+```java
+public ActionConnectionServiceNowBasicAuth getBasicAuth();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth">ActionConnectionServiceNowBasicAuth</a>
+
+basic_auth block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#basic_auth ActionConnection#basic_auth}
+
+---
+
+### ActionConnectionServiceNowBasicAuth <a name="ActionConnectionServiceNowBasicAuth" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionServiceNowBasicAuth;
+
+ActionConnectionServiceNowBasicAuth.builder()
+//  .instance(java.lang.String)
+//  .password(java.lang.String)
+//  .username(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth.property.instance">instance</a></code> | <code>java.lang.String</code> | ServiceNow instance. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth.property.password">password</a></code> | <code>java.lang.String</code> | ServiceNow password. String length must be at least 1. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth.property.username">username</a></code> | <code>java.lang.String</code> | ServiceNow username. String length must be at least 1. |
+
+---
+
+##### `instance`<sup>Optional</sup> <a name="instance" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth.property.instance"></a>
+
+```java
+public java.lang.String getInstance();
+```
+
+- *Type:* java.lang.String
+
+ServiceNow instance. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#instance ActionConnection#instance}
+
+---
+
+##### `password`<sup>Optional</sup> <a name="password" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth.property.password"></a>
+
+```java
+public java.lang.String getPassword();
+```
+
+- *Type:* java.lang.String
+
+ServiceNow password. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#password ActionConnection#password}
+
+---
+
+##### `username`<sup>Optional</sup> <a name="username" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth.property.username"></a>
+
+```java
+public java.lang.String getUsername();
+```
+
+- *Type:* java.lang.String
+
+ServiceNow username. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#username ActionConnection#username}
+
+---
+
+### ActionConnectionSplit <a name="ActionConnectionSplit" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplit"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplit.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionSplit;
+
+ActionConnectionSplit.builder()
+//  .apiKey(ActionConnectionSplitApiKey)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplit.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKey">ActionConnectionSplitApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplit.property.apiKey"></a>
+
+```java
+public ActionConnectionSplitApiKey getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKey">ActionConnectionSplitApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionSplitApiKey <a name="ActionConnectionSplitApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKey.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionSplitApiKey;
+
+ActionConnectionSplitApiKey.builder()
+//  .apiKey(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKey.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | Split API key. String length must be at least 1. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKey.property.apiKey"></a>
+
+```java
+public java.lang.String getApiKey();
+```
+
+- *Type:* java.lang.String
+
+Split API key. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionStatsig <a name="ActionConnectionStatsig" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionStatsig;
+
+ActionConnectionStatsig.builder()
+//  .apiKey(ActionConnectionStatsigApiKey)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKey">ActionConnectionStatsigApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig.property.apiKey"></a>
+
+```java
+public ActionConnectionStatsigApiKey getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKey">ActionConnectionStatsigApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionStatsigApiKey <a name="ActionConnectionStatsigApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKey.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionStatsigApiKey;
+
+ActionConnectionStatsigApiKey.builder()
+//  .apiKey(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKey.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | Statsig API key. String length must be at least 1. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKey.property.apiKey"></a>
+
+```java
+public java.lang.String getApiKey();
+```
+
+- *Type:* java.lang.String
+
+Statsig API key. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionVirusTotal <a name="ActionConnectionVirusTotal" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionVirusTotal;
+
+ActionConnectionVirusTotal.builder()
+//  .apiKey(ActionConnectionVirusTotalApiKey)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKey">ActionConnectionVirusTotalApiKey</a></code> | api_key block. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal.property.apiKey"></a>
+
+```java
+public ActionConnectionVirusTotalApiKey getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKey">ActionConnectionVirusTotalApiKey</a>
+
+api_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+
+---
+
+### ActionConnectionVirusTotalApiKey <a name="ActionConnectionVirusTotalApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKey.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionVirusTotalApiKey;
+
+ActionConnectionVirusTotalApiKey.builder()
+//  .apiKey(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKey.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | VirusTotal API key. String length must be at least 1. |
+
+---
+
+##### `apiKey`<sup>Optional</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKey.property.apiKey"></a>
+
+```java
+public java.lang.String getApiKey();
+```
+
+- *Type:* java.lang.String
+
+VirusTotal API key. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### ActionConnectionAnthropicApiKeyOutputReference <a name="ActionConnectionAnthropicApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionAnthropicApiKeyOutputReference;
+
+new ActionConnectionAnthropicApiKeyOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.resetApiToken">resetApiToken</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiToken` <a name="resetApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.resetApiToken"></a>
+
+```java
+public void resetApiToken()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.property.apiTokenInput">apiTokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.property.apiToken">apiToken</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKey">ActionConnectionAnthropicApiKey</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiTokenInput`<sup>Optional</sup> <a name="apiTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.property.apiTokenInput"></a>
+
+```java
+public java.lang.String getApiTokenInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiToken`<sup>Required</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.property.apiToken"></a>
+
+```java
+public java.lang.String getApiToken();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference.property.internalValue"></a>
+
+```java
+public ActionConnectionAnthropicApiKey|IResolvable getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKey">ActionConnectionAnthropicApiKey</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+
+### ActionConnectionAnthropicOutputReference <a name="ActionConnectionAnthropicOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionAnthropicOutputReference;
+
+new ActionConnectionAnthropicOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.putApiKey"></a>
+
+```java
+public void putApiKey(ActionConnectionAnthropicApiKey value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKey">ActionConnectionAnthropicApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.resetApiKey"></a>
+
+```java
+public void resetApiKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference">ActionConnectionAnthropicApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKey">ActionConnectionAnthropicApiKey</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropic">ActionConnectionAnthropic</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.property.apiKey"></a>
+
+```java
+public ActionConnectionAnthropicApiKeyOutputReference getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKeyOutputReference">ActionConnectionAnthropicApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.property.apiKeyInput"></a>
+
+```java
+public ActionConnectionAnthropicApiKey|IResolvable getApiKeyInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicApiKey">ActionConnectionAnthropicApiKey</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropicOutputReference.property.internalValue"></a>
+
+```java
+public ActionConnectionAnthropic|IResolvable getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAnthropic">ActionConnectionAnthropic</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+
+### ActionConnectionAsanaAccessTokenOutputReference <a name="ActionConnectionAsanaAccessTokenOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionAsanaAccessTokenOutputReference;
+
+new ActionConnectionAsanaAccessTokenOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.resetAccessToken">resetAccessToken</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetAccessToken` <a name="resetAccessToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.resetAccessToken"></a>
+
+```java
+public void resetAccessToken()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.property.accessTokenInput">accessTokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.property.accessToken">accessToken</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessToken">ActionConnectionAsanaAccessToken</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `accessTokenInput`<sup>Optional</sup> <a name="accessTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.property.accessTokenInput"></a>
+
+```java
+public java.lang.String getAccessTokenInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `accessToken`<sup>Required</sup> <a name="accessToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.property.accessToken"></a>
+
+```java
+public java.lang.String getAccessToken();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|ActionConnectionAsanaAccessToken getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessToken">ActionConnectionAsanaAccessToken</a>
+
+---
+
+
+### ActionConnectionAsanaOutputReference <a name="ActionConnectionAsanaOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionAsanaOutputReference;
+
+new ActionConnectionAsanaOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.putAccessToken">putAccessToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.resetAccessToken">resetAccessToken</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putAccessToken` <a name="putAccessToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.putAccessToken"></a>
+
+```java
+public void putAccessToken(ActionConnectionAsanaAccessToken value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.putAccessToken.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessToken">ActionConnectionAsanaAccessToken</a>
+
+---
+
+##### `resetAccessToken` <a name="resetAccessToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.resetAccessToken"></a>
+
+```java
+public void resetAccessToken()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.property.accessToken">accessToken</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference">ActionConnectionAsanaAccessTokenOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.property.accessTokenInput">accessTokenInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessToken">ActionConnectionAsanaAccessToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsana">ActionConnectionAsana</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `accessToken`<sup>Required</sup> <a name="accessToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.property.accessToken"></a>
+
+```java
+public ActionConnectionAsanaAccessTokenOutputReference getAccessToken();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessTokenOutputReference">ActionConnectionAsanaAccessTokenOutputReference</a>
+
+---
+
+##### `accessTokenInput`<sup>Optional</sup> <a name="accessTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.property.accessTokenInput"></a>
+
+```java
+public IResolvable|ActionConnectionAsanaAccessToken getAccessTokenInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaAccessToken">ActionConnectionAsanaAccessToken</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAsanaOutputReference.property.internalValue"></a>
+
+```java
+public ActionConnectionAsana|IResolvable getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAsana">ActionConnectionAsana</a>|io.cdktn.cdktn.IResolvable
+
+---
+
 
 ### ActionConnectionAwsAssumeRoleOutputReference <a name="ActionConnectionAwsAssumeRoleOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRoleOutputReference"></a>
 
@@ -1703,7 +6151,7 @@ public void resetRole()
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRoleOutputReference.property.roleInput">roleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRoleOutputReference.property.accountId">accountId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRoleOutputReference.property.role">role</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRoleOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRole">ActionConnectionAwsAssumeRole</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRoleOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRole">ActionConnectionAwsAssumeRole</a></code> | *No description.* |
 
 ---
 
@@ -1794,10 +6242,10 @@ public java.lang.String getRole();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRoleOutputReference.property.internalValue"></a>
 
 ```java
-public ActionConnectionAwsAssumeRole|IResolvable getInternalValue();
+public IResolvable|ActionConnectionAwsAssumeRole getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRole">ActionConnectionAwsAssumeRole</a>|io.cdktn.cdktn.IResolvable
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRole">ActionConnectionAwsAssumeRole</a>
 
 ---
 
@@ -2033,7 +6481,7 @@ public void resetAssumeRole()
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsOutputReference.property.assumeRole">assumeRole</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRoleOutputReference">ActionConnectionAwsAssumeRoleOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsOutputReference.property.assumeRoleInput">assumeRoleInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRole">ActionConnectionAwsAssumeRole</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsOutputReference.property.assumeRoleInput">assumeRoleInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRole">ActionConnectionAwsAssumeRole</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAws">ActionConnectionAws</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 
 ---
@@ -2075,10 +6523,10 @@ public ActionConnectionAwsAssumeRoleOutputReference getAssumeRole();
 ##### `assumeRoleInput`<sup>Optional</sup> <a name="assumeRoleInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAwsOutputReference.property.assumeRoleInput"></a>
 
 ```java
-public ActionConnectionAwsAssumeRole|IResolvable getAssumeRoleInput();
+public IResolvable|ActionConnectionAwsAssumeRole getAssumeRoleInput();
 ```
 
-- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRole">ActionConnectionAwsAssumeRole</a>|io.cdktn.cdktn.IResolvable
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRole">ActionConnectionAwsAssumeRole</a>
 
 ---
 
@@ -2089,6 +6537,7473 @@ public ActionConnectionAws|IResolvable getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAws">ActionConnectionAws</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+
+### ActionConnectionAzureOutputReference <a name="ActionConnectionAzureOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionAzureOutputReference;
+
+new ActionConnectionAzureOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.putTenant">putTenant</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.resetTenant">resetTenant</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putTenant` <a name="putTenant" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.putTenant"></a>
+
+```java
+public void putTenant(ActionConnectionAzureTenant value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.putTenant.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant">ActionConnectionAzureTenant</a>
+
+---
+
+##### `resetTenant` <a name="resetTenant" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.resetTenant"></a>
+
+```java
+public void resetTenant()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.property.tenant">tenant</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference">ActionConnectionAzureTenantOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.property.tenantInput">tenantInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant">ActionConnectionAzureTenant</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzure">ActionConnectionAzure</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `tenant`<sup>Required</sup> <a name="tenant" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.property.tenant"></a>
+
+```java
+public ActionConnectionAzureTenantOutputReference getTenant();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference">ActionConnectionAzureTenantOutputReference</a>
+
+---
+
+##### `tenantInput`<sup>Optional</sup> <a name="tenantInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.property.tenantInput"></a>
+
+```java
+public IResolvable|ActionConnectionAzureTenant getTenantInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant">ActionConnectionAzureTenant</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureOutputReference.property.internalValue"></a>
+
+```java
+public ActionConnectionAzure|IResolvable getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzure">ActionConnectionAzure</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+
+### ActionConnectionAzureTenantOutputReference <a name="ActionConnectionAzureTenantOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionAzureTenantOutputReference;
+
+new ActionConnectionAzureTenantOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.resetAppClientId">resetAppClientId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.resetClientSecret">resetClientSecret</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.resetCustomScopes">resetCustomScopes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.resetTenantId">resetTenantId</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetAppClientId` <a name="resetAppClientId" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.resetAppClientId"></a>
+
+```java
+public void resetAppClientId()
+```
+
+##### `resetClientSecret` <a name="resetClientSecret" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.resetClientSecret"></a>
+
+```java
+public void resetClientSecret()
+```
+
+##### `resetCustomScopes` <a name="resetCustomScopes" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.resetCustomScopes"></a>
+
+```java
+public void resetCustomScopes()
+```
+
+##### `resetTenantId` <a name="resetTenantId" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.resetTenantId"></a>
+
+```java
+public void resetTenantId()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.appClientIdInput">appClientIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.clientSecretInput">clientSecretInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.customScopesInput">customScopesInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.tenantIdInput">tenantIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.appClientId">appClientId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.clientSecret">clientSecret</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.customScopes">customScopes</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.tenantId">tenantId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant">ActionConnectionAzureTenant</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `appClientIdInput`<sup>Optional</sup> <a name="appClientIdInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.appClientIdInput"></a>
+
+```java
+public java.lang.String getAppClientIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `clientSecretInput`<sup>Optional</sup> <a name="clientSecretInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.clientSecretInput"></a>
+
+```java
+public java.lang.String getClientSecretInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `customScopesInput`<sup>Optional</sup> <a name="customScopesInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.customScopesInput"></a>
+
+```java
+public java.lang.String getCustomScopesInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `tenantIdInput`<sup>Optional</sup> <a name="tenantIdInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.tenantIdInput"></a>
+
+```java
+public java.lang.String getTenantIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `appClientId`<sup>Required</sup> <a name="appClientId" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.appClientId"></a>
+
+```java
+public java.lang.String getAppClientId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `clientSecret`<sup>Required</sup> <a name="clientSecret" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.clientSecret"></a>
+
+```java
+public java.lang.String getClientSecret();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `customScopes`<sup>Required</sup> <a name="customScopes" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.customScopes"></a>
+
+```java
+public java.lang.String getCustomScopes();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `tenantId`<sup>Required</sup> <a name="tenantId" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.tenantId"></a>
+
+```java
+public java.lang.String getTenantId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenantOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|ActionConnectionAzureTenant getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionAzureTenant">ActionConnectionAzureTenant</a>
+
+---
+
+
+### ActionConnectionCircleCiApiKeyOutputReference <a name="ActionConnectionCircleCiApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionCircleCiApiKeyOutputReference;
+
+new ActionConnectionCircleCiApiKeyOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.resetApiToken">resetApiToken</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiToken` <a name="resetApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.resetApiToken"></a>
+
+```java
+public void resetApiToken()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.property.apiTokenInput">apiTokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.property.apiToken">apiToken</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKey">ActionConnectionCircleCiApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiTokenInput`<sup>Optional</sup> <a name="apiTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.property.apiTokenInput"></a>
+
+```java
+public java.lang.String getApiTokenInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiToken`<sup>Required</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.property.apiToken"></a>
+
+```java
+public java.lang.String getApiToken();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|ActionConnectionCircleCiApiKey getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKey">ActionConnectionCircleCiApiKey</a>
+
+---
+
+
+### ActionConnectionCircleCiOutputReference <a name="ActionConnectionCircleCiOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionCircleCiOutputReference;
+
+new ActionConnectionCircleCiOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.putApiKey"></a>
+
+```java
+public void putApiKey(ActionConnectionCircleCiApiKey value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKey">ActionConnectionCircleCiApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.resetApiKey"></a>
+
+```java
+public void resetApiKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference">ActionConnectionCircleCiApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKey">ActionConnectionCircleCiApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCi">ActionConnectionCircleCi</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.property.apiKey"></a>
+
+```java
+public ActionConnectionCircleCiApiKeyOutputReference getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKeyOutputReference">ActionConnectionCircleCiApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.property.apiKeyInput"></a>
+
+```java
+public IResolvable|ActionConnectionCircleCiApiKey getApiKeyInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiApiKey">ActionConnectionCircleCiApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCiOutputReference.property.internalValue"></a>
+
+```java
+public ActionConnectionCircleCi|IResolvable getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCircleCi">ActionConnectionCircleCi</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+
+### ActionConnectionClickupApiKeyOutputReference <a name="ActionConnectionClickupApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionClickupApiKeyOutputReference;
+
+new ActionConnectionClickupApiKeyOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.resetApiToken">resetApiToken</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiToken` <a name="resetApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.resetApiToken"></a>
+
+```java
+public void resetApiToken()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.property.apiTokenInput">apiTokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.property.apiToken">apiToken</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKey">ActionConnectionClickupApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiTokenInput`<sup>Optional</sup> <a name="apiTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.property.apiTokenInput"></a>
+
+```java
+public java.lang.String getApiTokenInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiToken`<sup>Required</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.property.apiToken"></a>
+
+```java
+public java.lang.String getApiToken();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|ActionConnectionClickupApiKey getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKey">ActionConnectionClickupApiKey</a>
+
+---
+
+
+### ActionConnectionClickupOutputReference <a name="ActionConnectionClickupOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionClickupOutputReference;
+
+new ActionConnectionClickupOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.putApiKey"></a>
+
+```java
+public void putApiKey(ActionConnectionClickupApiKey value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKey">ActionConnectionClickupApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.resetApiKey"></a>
+
+```java
+public void resetApiKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference">ActionConnectionClickupApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKey">ActionConnectionClickupApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickup">ActionConnectionClickup</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.property.apiKey"></a>
+
+```java
+public ActionConnectionClickupApiKeyOutputReference getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKeyOutputReference">ActionConnectionClickupApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.property.apiKeyInput"></a>
+
+```java
+public IResolvable|ActionConnectionClickupApiKey getApiKeyInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickupApiKey">ActionConnectionClickupApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionClickupOutputReference.property.internalValue"></a>
+
+```java
+public ActionConnectionClickup|IResolvable getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionClickup">ActionConnectionClickup</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+
+### ActionConnectionCloudflareApiTokenOutputReference <a name="ActionConnectionCloudflareApiTokenOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionCloudflareApiTokenOutputReference;
+
+new ActionConnectionCloudflareApiTokenOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.resetApiToken">resetApiToken</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiToken` <a name="resetApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.resetApiToken"></a>
+
+```java
+public void resetApiToken()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.property.apiTokenInput">apiTokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.property.apiToken">apiToken</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiToken">ActionConnectionCloudflareApiToken</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiTokenInput`<sup>Optional</sup> <a name="apiTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.property.apiTokenInput"></a>
+
+```java
+public java.lang.String getApiTokenInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiToken`<sup>Required</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.property.apiToken"></a>
+
+```java
+public java.lang.String getApiToken();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|ActionConnectionCloudflareApiToken getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiToken">ActionConnectionCloudflareApiToken</a>
+
+---
+
+
+### ActionConnectionCloudflareGlobalApiTokenOutputReference <a name="ActionConnectionCloudflareGlobalApiTokenOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionCloudflareGlobalApiTokenOutputReference;
+
+new ActionConnectionCloudflareGlobalApiTokenOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.resetAuthEmail">resetAuthEmail</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.resetGlobalApiKey">resetGlobalApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetAuthEmail` <a name="resetAuthEmail" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.resetAuthEmail"></a>
+
+```java
+public void resetAuthEmail()
+```
+
+##### `resetGlobalApiKey` <a name="resetGlobalApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.resetGlobalApiKey"></a>
+
+```java
+public void resetGlobalApiKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.authEmailInput">authEmailInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.globalApiKeyInput">globalApiKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.authEmail">authEmail</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.globalApiKey">globalApiKey</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiToken">ActionConnectionCloudflareGlobalApiToken</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `authEmailInput`<sup>Optional</sup> <a name="authEmailInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.authEmailInput"></a>
+
+```java
+public java.lang.String getAuthEmailInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `globalApiKeyInput`<sup>Optional</sup> <a name="globalApiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.globalApiKeyInput"></a>
+
+```java
+public java.lang.String getGlobalApiKeyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `authEmail`<sup>Required</sup> <a name="authEmail" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.authEmail"></a>
+
+```java
+public java.lang.String getAuthEmail();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `globalApiKey`<sup>Required</sup> <a name="globalApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.globalApiKey"></a>
+
+```java
+public java.lang.String getGlobalApiKey();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|ActionConnectionCloudflareGlobalApiToken getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiToken">ActionConnectionCloudflareGlobalApiToken</a>
+
+---
+
+
+### ActionConnectionCloudflareOutputReference <a name="ActionConnectionCloudflareOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionCloudflareOutputReference;
+
+new ActionConnectionCloudflareOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.putApiToken">putApiToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.putGlobalApiToken">putGlobalApiToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.resetApiToken">resetApiToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.resetGlobalApiToken">resetGlobalApiToken</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiToken` <a name="putApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.putApiToken"></a>
+
+```java
+public void putApiToken(ActionConnectionCloudflareApiToken value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.putApiToken.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiToken">ActionConnectionCloudflareApiToken</a>
+
+---
+
+##### `putGlobalApiToken` <a name="putGlobalApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.putGlobalApiToken"></a>
+
+```java
+public void putGlobalApiToken(ActionConnectionCloudflareGlobalApiToken value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.putGlobalApiToken.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiToken">ActionConnectionCloudflareGlobalApiToken</a>
+
+---
+
+##### `resetApiToken` <a name="resetApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.resetApiToken"></a>
+
+```java
+public void resetApiToken()
+```
+
+##### `resetGlobalApiToken` <a name="resetGlobalApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.resetGlobalApiToken"></a>
+
+```java
+public void resetGlobalApiToken()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.apiToken">apiToken</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference">ActionConnectionCloudflareApiTokenOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.globalApiToken">globalApiToken</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference">ActionConnectionCloudflareGlobalApiTokenOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.apiTokenInput">apiTokenInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiToken">ActionConnectionCloudflareApiToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.globalApiTokenInput">globalApiTokenInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiToken">ActionConnectionCloudflareGlobalApiToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare">ActionConnectionCloudflare</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiToken`<sup>Required</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.apiToken"></a>
+
+```java
+public ActionConnectionCloudflareApiTokenOutputReference getApiToken();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiTokenOutputReference">ActionConnectionCloudflareApiTokenOutputReference</a>
+
+---
+
+##### `globalApiToken`<sup>Required</sup> <a name="globalApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.globalApiToken"></a>
+
+```java
+public ActionConnectionCloudflareGlobalApiTokenOutputReference getGlobalApiToken();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiTokenOutputReference">ActionConnectionCloudflareGlobalApiTokenOutputReference</a>
+
+---
+
+##### `apiTokenInput`<sup>Optional</sup> <a name="apiTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.apiTokenInput"></a>
+
+```java
+public IResolvable|ActionConnectionCloudflareApiToken getApiTokenInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareApiToken">ActionConnectionCloudflareApiToken</a>
+
+---
+
+##### `globalApiTokenInput`<sup>Optional</sup> <a name="globalApiTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.globalApiTokenInput"></a>
+
+```java
+public IResolvable|ActionConnectionCloudflareGlobalApiToken getGlobalApiTokenInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareGlobalApiToken">ActionConnectionCloudflareGlobalApiToken</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference.property.internalValue"></a>
+
+```java
+public ActionConnectionCloudflare|IResolvable getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflare">ActionConnectionCloudflare</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+
+### ActionConnectionConfigCatOutputReference <a name="ActionConnectionConfigCatOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionConfigCatOutputReference;
+
+new ActionConnectionConfigCatOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.putSdkKey">putSdkKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.resetSdkKey">resetSdkKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putSdkKey` <a name="putSdkKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.putSdkKey"></a>
+
+```java
+public void putSdkKey(ActionConnectionConfigCatSdkKey value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.putSdkKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey">ActionConnectionConfigCatSdkKey</a>
+
+---
+
+##### `resetSdkKey` <a name="resetSdkKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.resetSdkKey"></a>
+
+```java
+public void resetSdkKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.property.sdkKey">sdkKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference">ActionConnectionConfigCatSdkKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.property.sdkKeyInput">sdkKeyInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey">ActionConnectionConfigCatSdkKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCat">ActionConnectionConfigCat</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `sdkKey`<sup>Required</sup> <a name="sdkKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.property.sdkKey"></a>
+
+```java
+public ActionConnectionConfigCatSdkKeyOutputReference getSdkKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference">ActionConnectionConfigCatSdkKeyOutputReference</a>
+
+---
+
+##### `sdkKeyInput`<sup>Optional</sup> <a name="sdkKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.property.sdkKeyInput"></a>
+
+```java
+public IResolvable|ActionConnectionConfigCatSdkKey getSdkKeyInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey">ActionConnectionConfigCatSdkKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference.property.internalValue"></a>
+
+```java
+public ActionConnectionConfigCat|IResolvable getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCat">ActionConnectionConfigCat</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+
+### ActionConnectionConfigCatSdkKeyOutputReference <a name="ActionConnectionConfigCatSdkKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionConfigCatSdkKeyOutputReference;
+
+new ActionConnectionConfigCatSdkKeyOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.resetApiPassword">resetApiPassword</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.resetApiUsername">resetApiUsername</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.resetSdkKey">resetSdkKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiPassword` <a name="resetApiPassword" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.resetApiPassword"></a>
+
+```java
+public void resetApiPassword()
+```
+
+##### `resetApiUsername` <a name="resetApiUsername" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.resetApiUsername"></a>
+
+```java
+public void resetApiUsername()
+```
+
+##### `resetSdkKey` <a name="resetSdkKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.resetSdkKey"></a>
+
+```java
+public void resetSdkKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.apiPasswordInput">apiPasswordInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.apiUsernameInput">apiUsernameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.sdkKeyInput">sdkKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.apiPassword">apiPassword</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.apiUsername">apiUsername</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.sdkKey">sdkKey</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey">ActionConnectionConfigCatSdkKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiPasswordInput`<sup>Optional</sup> <a name="apiPasswordInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.apiPasswordInput"></a>
+
+```java
+public java.lang.String getApiPasswordInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiUsernameInput`<sup>Optional</sup> <a name="apiUsernameInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.apiUsernameInput"></a>
+
+```java
+public java.lang.String getApiUsernameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `sdkKeyInput`<sup>Optional</sup> <a name="sdkKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.sdkKeyInput"></a>
+
+```java
+public java.lang.String getSdkKeyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiPassword`<sup>Required</sup> <a name="apiPassword" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.apiPassword"></a>
+
+```java
+public java.lang.String getApiPassword();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiUsername`<sup>Required</sup> <a name="apiUsername" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.apiUsername"></a>
+
+```java
+public java.lang.String getApiUsername();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `sdkKey`<sup>Required</sup> <a name="sdkKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.sdkKey"></a>
+
+```java
+public java.lang.String getSdkKey();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKeyOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|ActionConnectionConfigCatSdkKey getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatSdkKey">ActionConnectionConfigCatSdkKey</a>
+
+---
+
+
+### ActionConnectionDatadogApiKeyOutputReference <a name="ActionConnectionDatadogApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionDatadogApiKeyOutputReference;
+
+new ActionConnectionDatadogApiKeyOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.resetAppKey">resetAppKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.resetDatacenter">resetDatacenter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.resetSubdomain">resetSubdomain</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.resetApiKey"></a>
+
+```java
+public void resetApiKey()
+```
+
+##### `resetAppKey` <a name="resetAppKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.resetAppKey"></a>
+
+```java
+public void resetAppKey()
+```
+
+##### `resetDatacenter` <a name="resetDatacenter" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.resetDatacenter"></a>
+
+```java
+public void resetDatacenter()
+```
+
+##### `resetSubdomain` <a name="resetSubdomain" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.resetSubdomain"></a>
+
+```java
+public void resetSubdomain()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.appKeyInput">appKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.datacenterInput">datacenterInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.subdomainInput">subdomainInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.appKey">appKey</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.datacenter">datacenter</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.subdomain">subdomain</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey">ActionConnectionDatadogApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.apiKeyInput"></a>
+
+```java
+public java.lang.String getApiKeyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `appKeyInput`<sup>Optional</sup> <a name="appKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.appKeyInput"></a>
+
+```java
+public java.lang.String getAppKeyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `datacenterInput`<sup>Optional</sup> <a name="datacenterInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.datacenterInput"></a>
+
+```java
+public java.lang.String getDatacenterInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `subdomainInput`<sup>Optional</sup> <a name="subdomainInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.subdomainInput"></a>
+
+```java
+public java.lang.String getSubdomainInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.apiKey"></a>
+
+```java
+public java.lang.String getApiKey();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `appKey`<sup>Required</sup> <a name="appKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.appKey"></a>
+
+```java
+public java.lang.String getAppKey();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `datacenter`<sup>Required</sup> <a name="datacenter" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.datacenter"></a>
+
+```java
+public java.lang.String getDatacenter();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `subdomain`<sup>Required</sup> <a name="subdomain" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.subdomain"></a>
+
+```java
+public java.lang.String getSubdomain();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|ActionConnectionDatadogApiKey getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey">ActionConnectionDatadogApiKey</a>
+
+---
+
+
+### ActionConnectionDatadogOutputReference <a name="ActionConnectionDatadogOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionDatadogOutputReference;
+
+new ActionConnectionDatadogOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.putApiKey"></a>
+
+```java
+public void putApiKey(ActionConnectionDatadogApiKey value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey">ActionConnectionDatadogApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.resetApiKey"></a>
+
+```java
+public void resetApiKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference">ActionConnectionDatadogApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey">ActionConnectionDatadogApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadog">ActionConnectionDatadog</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.property.apiKey"></a>
+
+```java
+public ActionConnectionDatadogApiKeyOutputReference getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKeyOutputReference">ActionConnectionDatadogApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.property.apiKeyInput"></a>
+
+```java
+public IResolvable|ActionConnectionDatadogApiKey getApiKeyInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogApiKey">ActionConnectionDatadogApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference.property.internalValue"></a>
+
+```java
+public ActionConnectionDatadog|IResolvable getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadog">ActionConnectionDatadog</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+
+### ActionConnectionFastlyApiKeyOutputReference <a name="ActionConnectionFastlyApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionFastlyApiKeyOutputReference;
+
+new ActionConnectionFastlyApiKeyOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.resetApiKey"></a>
+
+```java
+public void resetApiKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKey">ActionConnectionFastlyApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.property.apiKeyInput"></a>
+
+```java
+public java.lang.String getApiKeyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.property.apiKey"></a>
+
+```java
+public java.lang.String getApiKey();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|ActionConnectionFastlyApiKey getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKey">ActionConnectionFastlyApiKey</a>
+
+---
+
+
+### ActionConnectionFastlyOutputReference <a name="ActionConnectionFastlyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionFastlyOutputReference;
+
+new ActionConnectionFastlyOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.putApiKey"></a>
+
+```java
+public void putApiKey(ActionConnectionFastlyApiKey value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKey">ActionConnectionFastlyApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.resetApiKey"></a>
+
+```java
+public void resetApiKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference">ActionConnectionFastlyApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKey">ActionConnectionFastlyApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastly">ActionConnectionFastly</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.property.apiKey"></a>
+
+```java
+public ActionConnectionFastlyApiKeyOutputReference getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKeyOutputReference">ActionConnectionFastlyApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.property.apiKeyInput"></a>
+
+```java
+public IResolvable|ActionConnectionFastlyApiKey getApiKeyInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyApiKey">ActionConnectionFastlyApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference.property.internalValue"></a>
+
+```java
+public ActionConnectionFastly|IResolvable getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastly">ActionConnectionFastly</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+
+### ActionConnectionFreshserviceApiKeyOutputReference <a name="ActionConnectionFreshserviceApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionFreshserviceApiKeyOutputReference;
+
+new ActionConnectionFreshserviceApiKeyOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.resetDomain">resetDomain</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.resetApiKey"></a>
+
+```java
+public void resetApiKey()
+```
+
+##### `resetDomain` <a name="resetDomain" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.resetDomain"></a>
+
+```java
+public void resetDomain()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.domainInput">domainInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.domain">domain</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKey">ActionConnectionFreshserviceApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.apiKeyInput"></a>
+
+```java
+public java.lang.String getApiKeyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `domainInput`<sup>Optional</sup> <a name="domainInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.domainInput"></a>
+
+```java
+public java.lang.String getDomainInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.apiKey"></a>
+
+```java
+public java.lang.String getApiKey();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `domain`<sup>Required</sup> <a name="domain" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.domain"></a>
+
+```java
+public java.lang.String getDomain();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|ActionConnectionFreshserviceApiKey getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKey">ActionConnectionFreshserviceApiKey</a>
+
+---
+
+
+### ActionConnectionFreshserviceOutputReference <a name="ActionConnectionFreshserviceOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionFreshserviceOutputReference;
+
+new ActionConnectionFreshserviceOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.putApiKey"></a>
+
+```java
+public void putApiKey(ActionConnectionFreshserviceApiKey value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKey">ActionConnectionFreshserviceApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.resetApiKey"></a>
+
+```java
+public void resetApiKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference">ActionConnectionFreshserviceApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKey">ActionConnectionFreshserviceApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshservice">ActionConnectionFreshservice</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.property.apiKey"></a>
+
+```java
+public ActionConnectionFreshserviceApiKeyOutputReference getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKeyOutputReference">ActionConnectionFreshserviceApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.property.apiKeyInput"></a>
+
+```java
+public IResolvable|ActionConnectionFreshserviceApiKey getApiKeyInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceApiKey">ActionConnectionFreshserviceApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference.property.internalValue"></a>
+
+```java
+public ActionConnectionFreshservice|IResolvable getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshservice">ActionConnectionFreshservice</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+
+### ActionConnectionGcpOutputReference <a name="ActionConnectionGcpOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionGcpOutputReference;
+
+new ActionConnectionGcpOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.putServiceAccount">putServiceAccount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.resetServiceAccount">resetServiceAccount</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putServiceAccount` <a name="putServiceAccount" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.putServiceAccount"></a>
+
+```java
+public void putServiceAccount(ActionConnectionGcpServiceAccount value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.putServiceAccount.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccount">ActionConnectionGcpServiceAccount</a>
+
+---
+
+##### `resetServiceAccount` <a name="resetServiceAccount" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.resetServiceAccount"></a>
+
+```java
+public void resetServiceAccount()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.property.serviceAccount">serviceAccount</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference">ActionConnectionGcpServiceAccountOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.property.serviceAccountInput">serviceAccountInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccount">ActionConnectionGcpServiceAccount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcp">ActionConnectionGcp</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `serviceAccount`<sup>Required</sup> <a name="serviceAccount" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.property.serviceAccount"></a>
+
+```java
+public ActionConnectionGcpServiceAccountOutputReference getServiceAccount();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference">ActionConnectionGcpServiceAccountOutputReference</a>
+
+---
+
+##### `serviceAccountInput`<sup>Optional</sup> <a name="serviceAccountInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.property.serviceAccountInput"></a>
+
+```java
+public IResolvable|ActionConnectionGcpServiceAccount getServiceAccountInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccount">ActionConnectionGcpServiceAccount</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference.property.internalValue"></a>
+
+```java
+public ActionConnectionGcp|IResolvable getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcp">ActionConnectionGcp</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+
+### ActionConnectionGcpServiceAccountOutputReference <a name="ActionConnectionGcpServiceAccountOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionGcpServiceAccountOutputReference;
+
+new ActionConnectionGcpServiceAccountOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.resetPrivateKey">resetPrivateKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.resetServiceAccountEmail">resetServiceAccountEmail</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetPrivateKey` <a name="resetPrivateKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.resetPrivateKey"></a>
+
+```java
+public void resetPrivateKey()
+```
+
+##### `resetServiceAccountEmail` <a name="resetServiceAccountEmail" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.resetServiceAccountEmail"></a>
+
+```java
+public void resetServiceAccountEmail()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.privateKeyInput">privateKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.serviceAccountEmailInput">serviceAccountEmailInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.privateKey">privateKey</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.serviceAccountEmail">serviceAccountEmail</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccount">ActionConnectionGcpServiceAccount</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `privateKeyInput`<sup>Optional</sup> <a name="privateKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.privateKeyInput"></a>
+
+```java
+public java.lang.String getPrivateKeyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `serviceAccountEmailInput`<sup>Optional</sup> <a name="serviceAccountEmailInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.serviceAccountEmailInput"></a>
+
+```java
+public java.lang.String getServiceAccountEmailInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `privateKey`<sup>Required</sup> <a name="privateKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.privateKey"></a>
+
+```java
+public java.lang.String getPrivateKey();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `serviceAccountEmail`<sup>Required</sup> <a name="serviceAccountEmail" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.serviceAccountEmail"></a>
+
+```java
+public java.lang.String getServiceAccountEmail();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccountOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|ActionConnectionGcpServiceAccount getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpServiceAccount">ActionConnectionGcpServiceAccount</a>
+
+---
+
+
+### ActionConnectionGeminiApiKeyOutputReference <a name="ActionConnectionGeminiApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionGeminiApiKeyOutputReference;
+
+new ActionConnectionGeminiApiKeyOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.resetApiKey"></a>
+
+```java
+public void resetApiKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKey">ActionConnectionGeminiApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.property.apiKeyInput"></a>
+
+```java
+public java.lang.String getApiKeyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.property.apiKey"></a>
+
+```java
+public java.lang.String getApiKey();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|ActionConnectionGeminiApiKey getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKey">ActionConnectionGeminiApiKey</a>
+
+---
+
+
+### ActionConnectionGeminiOutputReference <a name="ActionConnectionGeminiOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionGeminiOutputReference;
+
+new ActionConnectionGeminiOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.putApiKey"></a>
+
+```java
+public void putApiKey(ActionConnectionGeminiApiKey value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKey">ActionConnectionGeminiApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.resetApiKey"></a>
+
+```java
+public void resetApiKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference">ActionConnectionGeminiApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKey">ActionConnectionGeminiApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGemini">ActionConnectionGemini</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.property.apiKey"></a>
+
+```java
+public ActionConnectionGeminiApiKeyOutputReference getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKeyOutputReference">ActionConnectionGeminiApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.property.apiKeyInput"></a>
+
+```java
+public IResolvable|ActionConnectionGeminiApiKey getApiKeyInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiApiKey">ActionConnectionGeminiApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGeminiOutputReference.property.internalValue"></a>
+
+```java
+public ActionConnectionGemini|IResolvable getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGemini">ActionConnectionGemini</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+
+### ActionConnectionGitlabApiKeyOutputReference <a name="ActionConnectionGitlabApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionGitlabApiKeyOutputReference;
+
+new ActionConnectionGitlabApiKeyOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.resetApiToken">resetApiToken</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiToken` <a name="resetApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.resetApiToken"></a>
+
+```java
+public void resetApiToken()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.property.apiTokenInput">apiTokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.property.apiToken">apiToken</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKey">ActionConnectionGitlabApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiTokenInput`<sup>Optional</sup> <a name="apiTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.property.apiTokenInput"></a>
+
+```java
+public java.lang.String getApiTokenInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiToken`<sup>Required</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.property.apiToken"></a>
+
+```java
+public java.lang.String getApiToken();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|ActionConnectionGitlabApiKey getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKey">ActionConnectionGitlabApiKey</a>
+
+---
+
+
+### ActionConnectionGitlabOutputReference <a name="ActionConnectionGitlabOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionGitlabOutputReference;
+
+new ActionConnectionGitlabOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.putApiKey"></a>
+
+```java
+public void putApiKey(ActionConnectionGitlabApiKey value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKey">ActionConnectionGitlabApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.resetApiKey"></a>
+
+```java
+public void resetApiKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference">ActionConnectionGitlabApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKey">ActionConnectionGitlabApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlab">ActionConnectionGitlab</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.property.apiKey"></a>
+
+```java
+public ActionConnectionGitlabApiKeyOutputReference getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKeyOutputReference">ActionConnectionGitlabApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.property.apiKeyInput"></a>
+
+```java
+public IResolvable|ActionConnectionGitlabApiKey getApiKeyInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabApiKey">ActionConnectionGitlabApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGitlabOutputReference.property.internalValue"></a>
+
+```java
+public ActionConnectionGitlab|IResolvable getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGitlab">ActionConnectionGitlab</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+
+### ActionConnectionGreyNoiseApiKeyOutputReference <a name="ActionConnectionGreyNoiseApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionGreyNoiseApiKeyOutputReference;
+
+new ActionConnectionGreyNoiseApiKeyOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.resetApiKey"></a>
+
+```java
+public void resetApiKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKey">ActionConnectionGreyNoiseApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.property.apiKeyInput"></a>
+
+```java
+public java.lang.String getApiKeyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.property.apiKey"></a>
+
+```java
+public java.lang.String getApiKey();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|ActionConnectionGreyNoiseApiKey getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKey">ActionConnectionGreyNoiseApiKey</a>
+
+---
+
+
+### ActionConnectionGreyNoiseOutputReference <a name="ActionConnectionGreyNoiseOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionGreyNoiseOutputReference;
+
+new ActionConnectionGreyNoiseOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.putApiKey"></a>
+
+```java
+public void putApiKey(ActionConnectionGreyNoiseApiKey value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKey">ActionConnectionGreyNoiseApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.resetApiKey"></a>
+
+```java
+public void resetApiKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference">ActionConnectionGreyNoiseApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKey">ActionConnectionGreyNoiseApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoise">ActionConnectionGreyNoise</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.property.apiKey"></a>
+
+```java
+public ActionConnectionGreyNoiseApiKeyOutputReference getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKeyOutputReference">ActionConnectionGreyNoiseApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.property.apiKeyInput"></a>
+
+```java
+public IResolvable|ActionConnectionGreyNoiseApiKey getApiKeyInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseApiKey">ActionConnectionGreyNoiseApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoiseOutputReference.property.internalValue"></a>
+
+```java
+public ActionConnectionGreyNoise|IResolvable getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGreyNoise">ActionConnectionGreyNoise</a>|io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -4617,6 +16532,4645 @@ public IResolvable|ActionConnectionHttpTokenAuthUrlParameter getInternalValue();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthUrlParameter">ActionConnectionHttpTokenAuthUrlParameter</a>
+
+---
+
+
+### ActionConnectionLaunchDarklyApiKeyOutputReference <a name="ActionConnectionLaunchDarklyApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionLaunchDarklyApiKeyOutputReference;
+
+new ActionConnectionLaunchDarklyApiKeyOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.resetApiToken">resetApiToken</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiToken` <a name="resetApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.resetApiToken"></a>
+
+```java
+public void resetApiToken()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.property.apiTokenInput">apiTokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.property.apiToken">apiToken</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKey">ActionConnectionLaunchDarklyApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiTokenInput`<sup>Optional</sup> <a name="apiTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.property.apiTokenInput"></a>
+
+```java
+public java.lang.String getApiTokenInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiToken`<sup>Required</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.property.apiToken"></a>
+
+```java
+public java.lang.String getApiToken();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|ActionConnectionLaunchDarklyApiKey getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKey">ActionConnectionLaunchDarklyApiKey</a>
+
+---
+
+
+### ActionConnectionLaunchDarklyOutputReference <a name="ActionConnectionLaunchDarklyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionLaunchDarklyOutputReference;
+
+new ActionConnectionLaunchDarklyOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.putApiKey"></a>
+
+```java
+public void putApiKey(ActionConnectionLaunchDarklyApiKey value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKey">ActionConnectionLaunchDarklyApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.resetApiKey"></a>
+
+```java
+public void resetApiKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference">ActionConnectionLaunchDarklyApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKey">ActionConnectionLaunchDarklyApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarkly">ActionConnectionLaunchDarkly</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.property.apiKey"></a>
+
+```java
+public ActionConnectionLaunchDarklyApiKeyOutputReference getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKeyOutputReference">ActionConnectionLaunchDarklyApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.property.apiKeyInput"></a>
+
+```java
+public IResolvable|ActionConnectionLaunchDarklyApiKey getApiKeyInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyApiKey">ActionConnectionLaunchDarklyApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarklyOutputReference.property.internalValue"></a>
+
+```java
+public ActionConnectionLaunchDarkly|IResolvable getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionLaunchDarkly">ActionConnectionLaunchDarkly</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+
+### ActionConnectionNotionApiKeyOutputReference <a name="ActionConnectionNotionApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionNotionApiKeyOutputReference;
+
+new ActionConnectionNotionApiKeyOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.resetApiToken">resetApiToken</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiToken` <a name="resetApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.resetApiToken"></a>
+
+```java
+public void resetApiToken()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.property.apiTokenInput">apiTokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.property.apiToken">apiToken</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKey">ActionConnectionNotionApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiTokenInput`<sup>Optional</sup> <a name="apiTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.property.apiTokenInput"></a>
+
+```java
+public java.lang.String getApiTokenInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiToken`<sup>Required</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.property.apiToken"></a>
+
+```java
+public java.lang.String getApiToken();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|ActionConnectionNotionApiKey getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKey">ActionConnectionNotionApiKey</a>
+
+---
+
+
+### ActionConnectionNotionOutputReference <a name="ActionConnectionNotionOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionNotionOutputReference;
+
+new ActionConnectionNotionOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.putApiKey"></a>
+
+```java
+public void putApiKey(ActionConnectionNotionApiKey value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKey">ActionConnectionNotionApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.resetApiKey"></a>
+
+```java
+public void resetApiKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference">ActionConnectionNotionApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKey">ActionConnectionNotionApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotion">ActionConnectionNotion</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.property.apiKey"></a>
+
+```java
+public ActionConnectionNotionApiKeyOutputReference getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKeyOutputReference">ActionConnectionNotionApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.property.apiKeyInput"></a>
+
+```java
+public IResolvable|ActionConnectionNotionApiKey getApiKeyInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotionApiKey">ActionConnectionNotionApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionNotionOutputReference.property.internalValue"></a>
+
+```java
+public ActionConnectionNotion|IResolvable getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionNotion">ActionConnectionNotion</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+
+### ActionConnectionOktaApiTokenOutputReference <a name="ActionConnectionOktaApiTokenOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionOktaApiTokenOutputReference;
+
+new ActionConnectionOktaApiTokenOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.resetApiToken">resetApiToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.resetDomain">resetDomain</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiToken` <a name="resetApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.resetApiToken"></a>
+
+```java
+public void resetApiToken()
+```
+
+##### `resetDomain` <a name="resetDomain" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.resetDomain"></a>
+
+```java
+public void resetDomain()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.apiTokenInput">apiTokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.domainInput">domainInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.apiToken">apiToken</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.domain">domain</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiToken">ActionConnectionOktaApiToken</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiTokenInput`<sup>Optional</sup> <a name="apiTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.apiTokenInput"></a>
+
+```java
+public java.lang.String getApiTokenInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `domainInput`<sup>Optional</sup> <a name="domainInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.domainInput"></a>
+
+```java
+public java.lang.String getDomainInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiToken`<sup>Required</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.apiToken"></a>
+
+```java
+public java.lang.String getApiToken();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `domain`<sup>Required</sup> <a name="domain" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.domain"></a>
+
+```java
+public java.lang.String getDomain();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|ActionConnectionOktaApiToken getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiToken">ActionConnectionOktaApiToken</a>
+
+---
+
+
+### ActionConnectionOktaOutputReference <a name="ActionConnectionOktaOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionOktaOutputReference;
+
+new ActionConnectionOktaOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.putApiToken">putApiToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.resetApiToken">resetApiToken</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiToken` <a name="putApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.putApiToken"></a>
+
+```java
+public void putApiToken(ActionConnectionOktaApiToken value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.putApiToken.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiToken">ActionConnectionOktaApiToken</a>
+
+---
+
+##### `resetApiToken` <a name="resetApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.resetApiToken"></a>
+
+```java
+public void resetApiToken()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.property.apiToken">apiToken</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference">ActionConnectionOktaApiTokenOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.property.apiTokenInput">apiTokenInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiToken">ActionConnectionOktaApiToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOkta">ActionConnectionOkta</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiToken`<sup>Required</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.property.apiToken"></a>
+
+```java
+public ActionConnectionOktaApiTokenOutputReference getApiToken();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiTokenOutputReference">ActionConnectionOktaApiTokenOutputReference</a>
+
+---
+
+##### `apiTokenInput`<sup>Optional</sup> <a name="apiTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.property.apiTokenInput"></a>
+
+```java
+public IResolvable|ActionConnectionOktaApiToken getApiTokenInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOktaApiToken">ActionConnectionOktaApiToken</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOktaOutputReference.property.internalValue"></a>
+
+```java
+public ActionConnectionOkta|IResolvable getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOkta">ActionConnectionOkta</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+
+### ActionConnectionOpenaiApiKeyOutputReference <a name="ActionConnectionOpenaiApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionOpenaiApiKeyOutputReference;
+
+new ActionConnectionOpenaiApiKeyOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.resetApiToken">resetApiToken</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiToken` <a name="resetApiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.resetApiToken"></a>
+
+```java
+public void resetApiToken()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.property.apiTokenInput">apiTokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.property.apiToken">apiToken</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKey">ActionConnectionOpenaiApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiTokenInput`<sup>Optional</sup> <a name="apiTokenInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.property.apiTokenInput"></a>
+
+```java
+public java.lang.String getApiTokenInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiToken`<sup>Required</sup> <a name="apiToken" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.property.apiToken"></a>
+
+```java
+public java.lang.String getApiToken();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|ActionConnectionOpenaiApiKey getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKey">ActionConnectionOpenaiApiKey</a>
+
+---
+
+
+### ActionConnectionOpenaiOutputReference <a name="ActionConnectionOpenaiOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionOpenaiOutputReference;
+
+new ActionConnectionOpenaiOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.putApiKey"></a>
+
+```java
+public void putApiKey(ActionConnectionOpenaiApiKey value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKey">ActionConnectionOpenaiApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.resetApiKey"></a>
+
+```java
+public void resetApiKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference">ActionConnectionOpenaiApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKey">ActionConnectionOpenaiApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenai">ActionConnectionOpenai</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.property.apiKey"></a>
+
+```java
+public ActionConnectionOpenaiApiKeyOutputReference getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKeyOutputReference">ActionConnectionOpenaiApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.property.apiKeyInput"></a>
+
+```java
+public IResolvable|ActionConnectionOpenaiApiKey getApiKeyInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiApiKey">ActionConnectionOpenaiApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionOpenaiOutputReference.property.internalValue"></a>
+
+```java
+public ActionConnectionOpenai|IResolvable getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionOpenai">ActionConnectionOpenai</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+
+### ActionConnectionServiceNowBasicAuthOutputReference <a name="ActionConnectionServiceNowBasicAuthOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionServiceNowBasicAuthOutputReference;
+
+new ActionConnectionServiceNowBasicAuthOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.resetInstance">resetInstance</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.resetPassword">resetPassword</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.resetUsername">resetUsername</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetInstance` <a name="resetInstance" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.resetInstance"></a>
+
+```java
+public void resetInstance()
+```
+
+##### `resetPassword` <a name="resetPassword" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.resetPassword"></a>
+
+```java
+public void resetPassword()
+```
+
+##### `resetUsername` <a name="resetUsername" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.resetUsername"></a>
+
+```java
+public void resetUsername()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.instanceInput">instanceInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.passwordInput">passwordInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.usernameInput">usernameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.instance">instance</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.password">password</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth">ActionConnectionServiceNowBasicAuth</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `instanceInput`<sup>Optional</sup> <a name="instanceInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.instanceInput"></a>
+
+```java
+public java.lang.String getInstanceInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `passwordInput`<sup>Optional</sup> <a name="passwordInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.passwordInput"></a>
+
+```java
+public java.lang.String getPasswordInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `usernameInput`<sup>Optional</sup> <a name="usernameInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.usernameInput"></a>
+
+```java
+public java.lang.String getUsernameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `instance`<sup>Required</sup> <a name="instance" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.instance"></a>
+
+```java
+public java.lang.String getInstance();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `password`<sup>Required</sup> <a name="password" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.password"></a>
+
+```java
+public java.lang.String getPassword();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `username`<sup>Required</sup> <a name="username" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.username"></a>
+
+```java
+public java.lang.String getUsername();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|ActionConnectionServiceNowBasicAuth getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth">ActionConnectionServiceNowBasicAuth</a>
+
+---
+
+
+### ActionConnectionServiceNowOutputReference <a name="ActionConnectionServiceNowOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionServiceNowOutputReference;
+
+new ActionConnectionServiceNowOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.putBasicAuth">putBasicAuth</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.resetBasicAuth">resetBasicAuth</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putBasicAuth` <a name="putBasicAuth" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.putBasicAuth"></a>
+
+```java
+public void putBasicAuth(ActionConnectionServiceNowBasicAuth value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.putBasicAuth.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth">ActionConnectionServiceNowBasicAuth</a>
+
+---
+
+##### `resetBasicAuth` <a name="resetBasicAuth" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.resetBasicAuth"></a>
+
+```java
+public void resetBasicAuth()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.property.basicAuth">basicAuth</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference">ActionConnectionServiceNowBasicAuthOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.property.basicAuthInput">basicAuthInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth">ActionConnectionServiceNowBasicAuth</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow">ActionConnectionServiceNow</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `basicAuth`<sup>Required</sup> <a name="basicAuth" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.property.basicAuth"></a>
+
+```java
+public ActionConnectionServiceNowBasicAuthOutputReference getBasicAuth();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuthOutputReference">ActionConnectionServiceNowBasicAuthOutputReference</a>
+
+---
+
+##### `basicAuthInput`<sup>Optional</sup> <a name="basicAuthInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.property.basicAuthInput"></a>
+
+```java
+public IResolvable|ActionConnectionServiceNowBasicAuth getBasicAuthInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowBasicAuth">ActionConnectionServiceNowBasicAuth</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNowOutputReference.property.internalValue"></a>
+
+```java
+public ActionConnectionServiceNow|IResolvable getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow">ActionConnectionServiceNow</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+
+### ActionConnectionSplitApiKeyOutputReference <a name="ActionConnectionSplitApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionSplitApiKeyOutputReference;
+
+new ActionConnectionSplitApiKeyOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.resetApiKey"></a>
+
+```java
+public void resetApiKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKey">ActionConnectionSplitApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.property.apiKeyInput"></a>
+
+```java
+public java.lang.String getApiKeyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.property.apiKey"></a>
+
+```java
+public java.lang.String getApiKey();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|ActionConnectionSplitApiKey getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKey">ActionConnectionSplitApiKey</a>
+
+---
+
+
+### ActionConnectionSplitOutputReference <a name="ActionConnectionSplitOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionSplitOutputReference;
+
+new ActionConnectionSplitOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.putApiKey"></a>
+
+```java
+public void putApiKey(ActionConnectionSplitApiKey value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKey">ActionConnectionSplitApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.resetApiKey"></a>
+
+```java
+public void resetApiKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference">ActionConnectionSplitApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKey">ActionConnectionSplitApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplit">ActionConnectionSplit</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.property.apiKey"></a>
+
+```java
+public ActionConnectionSplitApiKeyOutputReference getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKeyOutputReference">ActionConnectionSplitApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.property.apiKeyInput"></a>
+
+```java
+public IResolvable|ActionConnectionSplitApiKey getApiKeyInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplitApiKey">ActionConnectionSplitApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionSplitOutputReference.property.internalValue"></a>
+
+```java
+public ActionConnectionSplit|IResolvable getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplit">ActionConnectionSplit</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+
+### ActionConnectionStatsigApiKeyOutputReference <a name="ActionConnectionStatsigApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionStatsigApiKeyOutputReference;
+
+new ActionConnectionStatsigApiKeyOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.resetApiKey"></a>
+
+```java
+public void resetApiKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKey">ActionConnectionStatsigApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.property.apiKeyInput"></a>
+
+```java
+public java.lang.String getApiKeyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.property.apiKey"></a>
+
+```java
+public java.lang.String getApiKey();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|ActionConnectionStatsigApiKey getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKey">ActionConnectionStatsigApiKey</a>
+
+---
+
+
+### ActionConnectionStatsigOutputReference <a name="ActionConnectionStatsigOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionStatsigOutputReference;
+
+new ActionConnectionStatsigOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.putApiKey"></a>
+
+```java
+public void putApiKey(ActionConnectionStatsigApiKey value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKey">ActionConnectionStatsigApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.resetApiKey"></a>
+
+```java
+public void resetApiKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference">ActionConnectionStatsigApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKey">ActionConnectionStatsigApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig">ActionConnectionStatsig</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.property.apiKey"></a>
+
+```java
+public ActionConnectionStatsigApiKeyOutputReference getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKeyOutputReference">ActionConnectionStatsigApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.property.apiKeyInput"></a>
+
+```java
+public IResolvable|ActionConnectionStatsigApiKey getApiKeyInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigApiKey">ActionConnectionStatsigApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionStatsigOutputReference.property.internalValue"></a>
+
+```java
+public ActionConnectionStatsig|IResolvable getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig">ActionConnectionStatsig</a>|io.cdktn.cdktn.IResolvable
+
+---
+
+
+### ActionConnectionVirusTotalApiKeyOutputReference <a name="ActionConnectionVirusTotalApiKeyOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionVirusTotalApiKeyOutputReference;
+
+new ActionConnectionVirusTotalApiKeyOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.resetApiKey"></a>
+
+```java
+public void resetApiKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKey">ActionConnectionVirusTotalApiKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.property.apiKeyInput"></a>
+
+```java
+public java.lang.String getApiKeyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.property.apiKey"></a>
+
+```java
+public java.lang.String getApiKey();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|ActionConnectionVirusTotalApiKey getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKey">ActionConnectionVirusTotalApiKey</a>
+
+---
+
+
+### ActionConnectionVirusTotalOutputReference <a name="ActionConnectionVirusTotalOutputReference" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.action_connection.ActionConnectionVirusTotalOutputReference;
+
+new ActionConnectionVirusTotalOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.putApiKey">putApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.resetApiKey">resetApiKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putApiKey` <a name="putApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.putApiKey"></a>
+
+```java
+public void putApiKey(ActionConnectionVirusTotalApiKey value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.putApiKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKey">ActionConnectionVirusTotalApiKey</a>
+
+---
+
+##### `resetApiKey` <a name="resetApiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.resetApiKey"></a>
+
+```java
+public void resetApiKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.property.apiKey">apiKey</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference">ActionConnectionVirusTotalApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.property.apiKeyInput">apiKeyInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKey">ActionConnectionVirusTotalApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal">ActionConnectionVirusTotal</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKey`<sup>Required</sup> <a name="apiKey" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.property.apiKey"></a>
+
+```java
+public ActionConnectionVirusTotalApiKeyOutputReference getApiKey();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKeyOutputReference">ActionConnectionVirusTotalApiKeyOutputReference</a>
+
+---
+
+##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.property.apiKeyInput"></a>
+
+```java
+public IResolvable|ActionConnectionVirusTotalApiKey getApiKeyInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalApiKey">ActionConnectionVirusTotalApiKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotalOutputReference.property.internalValue"></a>
+
+```java
+public ActionConnectionVirusTotal|IResolvable getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal">ActionConnectionVirusTotal</a>|io.cdktn.cdktn.IResolvable
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataDatadogIncidentType <a name="DataDatadogIncidentType" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/incident_type datadog_incident_type}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/incident_type datadog_incident_type}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentType.Initializer"></a>
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the incident type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/incident_type#id DataDatadogIncidentType#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/incident_type#id DataDatadogIncidentType#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -452,7 +452,7 @@ The construct id used in the generated config for the DataDatadogIncidentType to
 
 The id of the existing DataDatadogIncidentType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/incident_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/incident_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -480,6 +480,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15
 | <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentType.property.forEach">forEach</a></code> | <code>io.cdktn.cdktn.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentType.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentType.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentType.property.configuration">configuration</a></code> | <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference">DataDatadogIncidentTypeConfigurationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentType.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentType.property.isDefault">isDefault</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentType.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -607,6 +608,16 @@ public TerraformProvider getProvider();
 ```
 
 - *Type:* io.cdktn.cdktn.TerraformProvider
+
+---
+
+##### `configuration`<sup>Required</sup> <a name="configuration" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentType.property.configuration"></a>
+
+```java
+public DataDatadogIncidentTypeConfigurationOutputReference getConfiguration();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference">DataDatadogIncidentTypeConfigurationOutputReference</a>
 
 ---
 
@@ -794,10 +805,360 @@ public java.lang.String getId();
 
 The ID of the incident type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/incident_type#id DataDatadogIncidentType#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/incident_type#id DataDatadogIncidentType#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+### DataDatadogIncidentTypeConfiguration <a name="DataDatadogIncidentTypeConfiguration" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfiguration"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfiguration.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.data_datadog_incident_type.DataDatadogIncidentTypeConfiguration;
+
+DataDatadogIncidentTypeConfiguration.builder()
+    .build();
+```
+
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### DataDatadogIncidentTypeConfigurationOutputReference <a name="DataDatadogIncidentTypeConfigurationOutputReference" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.data_datadog_incident_type.DataDatadogIncidentTypeConfigurationOutputReference;
+
+new DataDatadogIncidentTypeConfigurationOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.property.allowIncidentDeletion">allowIncidentDeletion</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.property.allowWorkflows">allowWorkflows</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.property.createMessage">createMessage</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.property.editableTimestamps">editableTimestamps</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.property.privateIncidents">privateIncidents</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.property.privateIncidentsByDefault">privateIncidentsByDefault</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.property.slugSource">slugSource</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.property.testIncidents">testIncidents</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfiguration">DataDatadogIncidentTypeConfiguration</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `allowIncidentDeletion`<sup>Required</sup> <a name="allowIncidentDeletion" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.property.allowIncidentDeletion"></a>
+
+```java
+public IResolvable getAllowIncidentDeletion();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable
+
+---
+
+##### `allowWorkflows`<sup>Required</sup> <a name="allowWorkflows" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.property.allowWorkflows"></a>
+
+```java
+public IResolvable getAllowWorkflows();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable
+
+---
+
+##### `createMessage`<sup>Required</sup> <a name="createMessage" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.property.createMessage"></a>
+
+```java
+public java.lang.String getCreateMessage();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `editableTimestamps`<sup>Required</sup> <a name="editableTimestamps" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.property.editableTimestamps"></a>
+
+```java
+public IResolvable getEditableTimestamps();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable
+
+---
+
+##### `privateIncidents`<sup>Required</sup> <a name="privateIncidents" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.property.privateIncidents"></a>
+
+```java
+public IResolvable getPrivateIncidents();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable
+
+---
+
+##### `privateIncidentsByDefault`<sup>Required</sup> <a name="privateIncidentsByDefault" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.property.privateIncidentsByDefault"></a>
+
+```java
+public IResolvable getPrivateIncidentsByDefault();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable
+
+---
+
+##### `slugSource`<sup>Required</sup> <a name="slugSource" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.property.slugSource"></a>
+
+```java
+public java.lang.String getSlugSource();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `testIncidents`<sup>Required</sup> <a name="testIncidents" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.property.testIncidents"></a>
+
+```java
+public IResolvable getTestIncidents();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfigurationOutputReference.property.internalValue"></a>
+
+```java
+public DataDatadogIncidentTypeConfiguration getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfiguration">DataDatadogIncidentTypeConfiguration</a>
 
 ---
 

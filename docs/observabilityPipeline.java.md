@@ -4,7 +4,7 @@
 
 ### ObservabilityPipeline <a name="ObservabilityPipeline" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipeline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline datadog_observability_pipeline}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline datadog_observability_pipeline}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipeline.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 The pipeline name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#config ObservabilityPipeline#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#config ObservabilityPipeline#config}
 
 ---
 
@@ -585,7 +585,7 @@ The construct id used in the generated config for the ObservabilityPipeline to i
 
 The id of the existing ObservabilityPipeline that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -951,7 +951,7 @@ public java.lang.String getName();
 
 The pipeline name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -965,7 +965,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigA> getConfig();
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#config ObservabilityPipeline#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#config ObservabilityPipeline#config}
 
 ---
 
@@ -1007,7 +1007,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestination> getDes
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#destination ObservabilityPipeline#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#destination ObservabilityPipeline#destination}
 
 ---
 
@@ -1021,7 +1021,7 @@ public java.lang.String getPipelineType();
 
 The type of data being ingested. Defaults to `logs` if not specified. Valid values are `logs`, `metrics`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#pipeline_type ObservabilityPipeline#pipeline_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#pipeline_type ObservabilityPipeline#pipeline_type}
 
 ---
 
@@ -1035,7 +1035,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroup> get
 
 processor_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#processor_group ObservabilityPipeline#processor_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#processor_group ObservabilityPipeline#processor_group}
 
 ---
 
@@ -1049,7 +1049,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSource> getSource()
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
 
 ---
 
@@ -1065,7 +1065,7 @@ Set to `true` to continue using the legacy search syntax while migrating filter 
 
 After migrating all queries to the new syntax, set to `false`. The legacy syntax is deprecated and will eventually be removed. Requires Observability Pipelines Worker 2.11 or later. Only applies to `logs` pipelines. This field is ignored for `metrics` pipelines. See https://docs.datadoghq.com/observability_pipelines/guide/upgrade_your_filter_queries_to_the_new_search_syntax/ for more information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#use_legacy_search_syntax ObservabilityPipeline#use_legacy_search_syntax}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#use_legacy_search_syntax ObservabilityPipeline#use_legacy_search_syntax}
 
 ---
 
@@ -1155,7 +1155,7 @@ public java.lang.String getId();
 
 The unique identifier for this destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1172,7 +1172,7 @@ public java.util.List<java.lang.String> getInputs();
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -1186,7 +1186,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAmazonOp
 
 amazon_opensearch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#amazon_opensearch ObservabilityPipeline#amazon_opensearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#amazon_opensearch ObservabilityPipeline#amazon_opensearch}
 
 ---
 
@@ -1200,7 +1200,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAmazonS3
 
 amazon_s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#amazon_s3 ObservabilityPipeline#amazon_s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#amazon_s3 ObservabilityPipeline#amazon_s3}
 
 ---
 
@@ -1214,7 +1214,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAmazonS3
 
 amazon_s3_generic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#amazon_s3_generic ObservabilityPipeline#amazon_s3_generic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#amazon_s3_generic ObservabilityPipeline#amazon_s3_generic}
 
 ---
 
@@ -1228,7 +1228,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAmazonSe
 
 amazon_security_lake block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#amazon_security_lake ObservabilityPipeline#amazon_security_lake}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#amazon_security_lake ObservabilityPipeline#amazon_security_lake}
 
 ---
 
@@ -1242,7 +1242,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAzureSto
 
 azure_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#azure_storage ObservabilityPipeline#azure_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#azure_storage ObservabilityPipeline#azure_storage}
 
 ---
 
@@ -1256,7 +1256,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationClickhou
 
 clickhouse block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#clickhouse ObservabilityPipeline#clickhouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#clickhouse ObservabilityPipeline#clickhouse}
 
 ---
 
@@ -1270,7 +1270,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationCloudPre
 
 cloud_prem block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#cloud_prem ObservabilityPipeline#cloud_prem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#cloud_prem ObservabilityPipeline#cloud_prem}
 
 ---
 
@@ -1284,7 +1284,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationCrowdstr
 
 crowdstrike_next_gen_siem block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crowdstrike_next_gen_siem ObservabilityPipeline#crowdstrike_next_gen_siem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crowdstrike_next_gen_siem ObservabilityPipeline#crowdstrike_next_gen_siem}
 
 ---
 
@@ -1298,7 +1298,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationDatabric
 
 databricks_zerobus block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#databricks_zerobus ObservabilityPipeline#databricks_zerobus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#databricks_zerobus ObservabilityPipeline#databricks_zerobus}
 
 ---
 
@@ -1312,7 +1312,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationDatadogL
 
 datadog_logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#datadog_logs ObservabilityPipeline#datadog_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#datadog_logs ObservabilityPipeline#datadog_logs}
 
 ---
 
@@ -1326,7 +1326,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationDatadogM
 
 datadog_metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#datadog_metrics ObservabilityPipeline#datadog_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#datadog_metrics ObservabilityPipeline#datadog_metrics}
 
 ---
 
@@ -1340,7 +1340,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationElastics
 
 elasticsearch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#elasticsearch ObservabilityPipeline#elasticsearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#elasticsearch ObservabilityPipeline#elasticsearch}
 
 ---
 
@@ -1354,7 +1354,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationGoogleCl
 
 google_cloud_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#google_cloud_storage ObservabilityPipeline#google_cloud_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#google_cloud_storage ObservabilityPipeline#google_cloud_storage}
 
 ---
 
@@ -1368,7 +1368,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationGooglePu
 
 google_pubsub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#google_pubsub ObservabilityPipeline#google_pubsub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#google_pubsub ObservabilityPipeline#google_pubsub}
 
 ---
 
@@ -1382,7 +1382,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationGoogleSe
 
 google_secops block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#google_secops ObservabilityPipeline#google_secops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#google_secops ObservabilityPipeline#google_secops}
 
 ---
 
@@ -1396,7 +1396,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationHttpClie
 
 http_client block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#http_client ObservabilityPipeline#http_client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#http_client ObservabilityPipeline#http_client}
 
 ---
 
@@ -1410,7 +1410,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationKafka> g
 
 kafka block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#kafka ObservabilityPipeline#kafka}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#kafka ObservabilityPipeline#kafka}
 
 ---
 
@@ -1424,7 +1424,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationMicrosof
 
 microsoft_sentinel block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#microsoft_sentinel ObservabilityPipeline#microsoft_sentinel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#microsoft_sentinel ObservabilityPipeline#microsoft_sentinel}
 
 ---
 
@@ -1438,7 +1438,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationNewRelic
 
 new_relic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#new_relic ObservabilityPipeline#new_relic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#new_relic ObservabilityPipeline#new_relic}
 
 ---
 
@@ -1452,7 +1452,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationOpensear
 
 opensearch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#opensearch ObservabilityPipeline#opensearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#opensearch ObservabilityPipeline#opensearch}
 
 ---
 
@@ -1466,7 +1466,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationRsyslog>
 
 rsyslog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#rsyslog ObservabilityPipeline#rsyslog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#rsyslog ObservabilityPipeline#rsyslog}
 
 ---
 
@@ -1480,7 +1480,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSentinel
 
 sentinel_one block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#sentinel_one ObservabilityPipeline#sentinel_one}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#sentinel_one ObservabilityPipeline#sentinel_one}
 
 ---
 
@@ -1494,7 +1494,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSocket> 
 
 socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#socket ObservabilityPipeline#socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#socket ObservabilityPipeline#socket}
 
 ---
 
@@ -1508,7 +1508,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSplunkHe
 
 splunk_hec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#splunk_hec ObservabilityPipeline#splunk_hec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#splunk_hec ObservabilityPipeline#splunk_hec}
 
 ---
 
@@ -1522,7 +1522,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSplunkHe
 
 splunk_hec_metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#splunk_hec_metrics ObservabilityPipeline#splunk_hec_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#splunk_hec_metrics ObservabilityPipeline#splunk_hec_metrics}
 
 ---
 
@@ -1536,7 +1536,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSumoLogi
 
 sumo_logic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#sumo_logic ObservabilityPipeline#sumo_logic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#sumo_logic ObservabilityPipeline#sumo_logic}
 
 ---
 
@@ -1550,7 +1550,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSyslogNg
 
 syslog_ng block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#syslog_ng ObservabilityPipeline#syslog_ng}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#syslog_ng ObservabilityPipeline#syslog_ng}
 
 ---
 
@@ -1588,7 +1588,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAmazonOp
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -1602,7 +1602,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAmazonOp
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -1616,7 +1616,7 @@ public java.lang.String getBulkIndex();
 
 The index or datastream to write logs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
 
 ---
 
@@ -1658,7 +1658,7 @@ public java.lang.String getStrategy();
 
 The authentication strategy to use (e.g. aws or basic).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
 
 ---
 
@@ -1672,7 +1672,7 @@ public java.lang.String getAssumeRole();
 
 ARN of the role to assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
 
 ---
 
@@ -1686,7 +1686,7 @@ public java.lang.String getAwsRegion();
 
 AWS region override (if applicable).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#aws_region ObservabilityPipeline#aws_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#aws_region ObservabilityPipeline#aws_region}
 
 ---
 
@@ -1700,7 +1700,7 @@ public java.lang.String getExternalId();
 
 External ID for assumed role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
 
 ---
 
@@ -1714,7 +1714,7 @@ public java.lang.String getSessionName();
 
 Session name for assumed role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
 
 ---
 
@@ -1750,7 +1750,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAmazonOp
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -1764,7 +1764,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAmazonOp
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -1800,7 +1800,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -1814,7 +1814,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -1852,7 +1852,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -1866,7 +1866,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -1880,7 +1880,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -1924,7 +1924,7 @@ public java.lang.String getBucket();
 
 S3 bucket name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
 
 ---
 
@@ -1938,7 +1938,7 @@ public java.lang.String getKeyPrefix();
 
 Prefix for object keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_prefix ObservabilityPipeline#key_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_prefix ObservabilityPipeline#key_prefix}
 
 ---
 
@@ -1952,7 +1952,7 @@ public java.lang.String getRegion();
 
 AWS region of the S3 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
 
 ---
 
@@ -1966,7 +1966,7 @@ public java.lang.String getStorageClass();
 
 S3 storage class. Valid values are `STANDARD`, `REDUCED_REDUNDANCY`, `INTELLIGENT_TIERING`, `STANDARD_IA`, `EXPRESS_ONEZONE`, `ONEZONE_IA`, `GLACIER`, `GLACIER_IR`, `DEEP_ARCHIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#storage_class ObservabilityPipeline#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#storage_class ObservabilityPipeline#storage_class}
 
 ---
 
@@ -1980,7 +1980,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAmazonS3
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -1994,7 +1994,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAmazonS3
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -2032,7 +2032,7 @@ public java.lang.String getAssumeRole();
 
 The Amazon Resource Name (ARN) of the role to assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
 
 ---
 
@@ -2046,7 +2046,7 @@ public java.lang.String getExternalId();
 
 A unique identifier for cross-account role assumption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
 
 ---
 
@@ -2060,7 +2060,7 @@ public java.lang.String getSessionName();
 
 A session identifier used for logging and tracing the assumed role session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
 
 ---
 
@@ -2096,7 +2096,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAmazonS3
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -2110,7 +2110,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAmazonS3
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -2146,7 +2146,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -2160,7 +2160,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -2198,7 +2198,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -2212,7 +2212,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -2226,7 +2226,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -2247,6 +2247,8 @@ ObservabilityPipelineConfigDestinationAmazonS3Generic.builder()
 //  .compression(IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAmazonS3GenericCompression>)
 //  .encoding(IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding>)
 //  .keyPrefix(java.lang.String)
+//  .serverSideEncryption(java.lang.String)
+//  .ssekmsKeyId(java.lang.String)
     .build();
 ```
 
@@ -2263,6 +2265,8 @@ ObservabilityPipelineConfigDestinationAmazonS3Generic.builder()
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic.property.compression">compression</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompression">ObservabilityPipelineConfigDestinationAmazonS3GenericCompression</a>></code> | compression block. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic.property.encoding">encoding</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding">ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding</a>></code> | encoding block. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic.property.keyPrefix">keyPrefix</a></code> | <code>java.lang.String</code> | Optional prefix for object keys. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic.property.serverSideEncryption">serverSideEncryption</a></code> | <code>java.lang.String</code> | The server-side encryption algorithm used when storing objects in S3. Valid values: `aws:kms`, `AES256`. Valid values are `aws:kms`, `AES256`. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic.property.ssekmsKeyId">ssekmsKeyId</a></code> | <code>java.lang.String</code> | ID of the AWS KMS key to use for SSE-KMS encryption. Only applies when `server_side_encryption` is `aws:kms`. |
 
 ---
 
@@ -2276,7 +2280,7 @@ public java.lang.String getBucket();
 
 S3 bucket name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
 
 ---
 
@@ -2290,7 +2294,7 @@ public java.lang.String getRegion();
 
 AWS region of the S3 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
 
 ---
 
@@ -2304,7 +2308,7 @@ public java.lang.String getStorageClass();
 
 S3 storage class. Valid values are `STANDARD`, `REDUCED_REDUNDANCY`, `INTELLIGENT_TIERING`, `STANDARD_IA`, `EXPRESS_ONEZONE`, `ONEZONE_IA`, `GLACIER`, `GLACIER_IR`, `DEEP_ARCHIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#storage_class ObservabilityPipeline#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#storage_class ObservabilityPipeline#storage_class}
 
 ---
 
@@ -2318,7 +2322,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAmazonS3
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -2332,7 +2336,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAmazonS3
 
 batch_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#batch_settings ObservabilityPipeline#batch_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#batch_settings ObservabilityPipeline#batch_settings}
 
 ---
 
@@ -2346,7 +2350,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAmazonS3
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -2360,7 +2364,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAmazonS3
 
 compression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
 
 ---
 
@@ -2374,7 +2378,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAmazonS3
 
 encoding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -2388,7 +2392,35 @@ public java.lang.String getKeyPrefix();
 
 Optional prefix for object keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_prefix ObservabilityPipeline#key_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_prefix ObservabilityPipeline#key_prefix}
+
+---
+
+##### `serverSideEncryption`<sup>Optional</sup> <a name="serverSideEncryption" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic.property.serverSideEncryption"></a>
+
+```java
+public java.lang.String getServerSideEncryption();
+```
+
+- *Type:* java.lang.String
+
+The server-side encryption algorithm used when storing objects in S3. Valid values: `aws:kms`, `AES256`. Valid values are `aws:kms`, `AES256`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#server_side_encryption ObservabilityPipeline#server_side_encryption}
+
+---
+
+##### `ssekmsKeyId`<sup>Optional</sup> <a name="ssekmsKeyId" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic.property.ssekmsKeyId"></a>
+
+```java
+public java.lang.String getSsekmsKeyId();
+```
+
+- *Type:* java.lang.String
+
+ID of the AWS KMS key to use for SSE-KMS encryption. Only applies when `server_side_encryption` is `aws:kms`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ssekms_key_id ObservabilityPipeline#ssekms_key_id}
 
 ---
 
@@ -2426,7 +2458,7 @@ public java.lang.String getAssumeRole();
 
 The Amazon Resource Name (ARN) of the role to assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
 
 ---
 
@@ -2440,7 +2472,7 @@ public java.lang.String getExternalId();
 
 A unique identifier for cross-account role assumption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
 
 ---
 
@@ -2454,7 +2486,7 @@ public java.lang.String getSessionName();
 
 A session identifier used for logging and tracing the assumed role session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
 
 ---
 
@@ -2490,7 +2522,7 @@ public java.lang.Number getBatchSize();
 
 Maximum batch size in bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#batch_size ObservabilityPipeline#batch_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#batch_size ObservabilityPipeline#batch_size}
 
 ---
 
@@ -2504,7 +2536,7 @@ public java.lang.Number getTimeoutSecs();
 
 Maximum number of seconds to wait before flushing the batch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#timeout_secs ObservabilityPipeline#timeout_secs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#timeout_secs ObservabilityPipeline#timeout_secs}
 
 ---
 
@@ -2540,7 +2572,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAmazonS3
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -2554,7 +2586,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAmazonS3
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -2590,7 +2622,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -2604,7 +2636,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -2642,7 +2674,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -2656,7 +2688,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -2670,7 +2702,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -2706,7 +2738,7 @@ public java.lang.String getAlgorithm();
 
 Compression algorithm. Valid values are `gzip`, `zstd`, `snappy`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
 
 ---
 
@@ -2720,7 +2752,7 @@ public java.lang.Number getLevel();
 
 Compression level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
 
 ---
 
@@ -2754,7 +2786,7 @@ public java.lang.String getType();
 
 The encoding type. Valid values are `json`, `parquet`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#type ObservabilityPipeline#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#type ObservabilityPipeline#type}
 
 ---
 
@@ -2798,7 +2830,7 @@ public java.lang.String getBucket();
 
 Name of the Amazon S3 bucket in Security Lake (3-63 characters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
 
 ---
 
@@ -2812,7 +2844,7 @@ public java.lang.String getCustomSourceName();
 
 Custom source name for the logs in Security Lake.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#custom_source_name ObservabilityPipeline#custom_source_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#custom_source_name ObservabilityPipeline#custom_source_name}
 
 ---
 
@@ -2826,7 +2858,7 @@ public java.lang.String getRegion();
 
 AWS region of the Security Lake bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
 
 ---
 
@@ -2840,7 +2872,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAmazonSe
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -2854,7 +2886,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAmazonSe
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -2868,7 +2900,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAmazonSe
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -2906,7 +2938,7 @@ public java.lang.String getAssumeRole();
 
 The Amazon Resource Name (ARN) of the role to assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
 
 ---
 
@@ -2920,7 +2952,7 @@ public java.lang.String getExternalId();
 
 A unique identifier for cross-account role assumption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
 
 ---
 
@@ -2934,7 +2966,7 @@ public java.lang.String getSessionName();
 
 A session identifier used for logging and tracing the assumed role session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
 
 ---
 
@@ -2970,7 +3002,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAmazonSe
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -2984,7 +3016,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAmazonSe
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -3020,7 +3052,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -3034,7 +3066,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -3072,7 +3104,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -3086,7 +3118,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -3100,7 +3132,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -3140,7 +3172,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -3154,7 +3186,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -3168,7 +3200,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -3182,7 +3214,7 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -3222,7 +3254,7 @@ public java.lang.String getContainerName();
 
 The name of the Azure Blob Storage container to store logs in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#container_name ObservabilityPipeline#container_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#container_name ObservabilityPipeline#container_name}
 
 ---
 
@@ -3236,7 +3268,7 @@ public java.lang.String getBlobPrefix();
 
 Optional prefix for blobs written to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#blob_prefix ObservabilityPipeline#blob_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#blob_prefix ObservabilityPipeline#blob_prefix}
 
 ---
 
@@ -3250,7 +3282,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAzureSto
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -3264,7 +3296,7 @@ public java.lang.String getConnectionStringKey();
 
 Name of the environment variable or secret that holds the Azure Storage connection string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#connection_string_key ObservabilityPipeline#connection_string_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#connection_string_key ObservabilityPipeline#connection_string_key}
 
 ---
 
@@ -3300,7 +3332,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAzureSto
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -3314,7 +3346,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationAzureSto
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -3350,7 +3382,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -3364,7 +3396,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -3402,7 +3434,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -3416,7 +3448,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -3430,7 +3462,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -3486,7 +3518,7 @@ public java.lang.String getTable();
 
 Target ClickHouse table name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#table ObservabilityPipeline#table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#table ObservabilityPipeline#table}
 
 ---
 
@@ -3500,7 +3532,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationClickhou
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -3514,7 +3546,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationClickhou
 
 batch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#batch ObservabilityPipeline#batch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#batch ObservabilityPipeline#batch}
 
 ---
 
@@ -3528,7 +3560,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationClickhou
 
 batch_encoding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#batch_encoding ObservabilityPipeline#batch_encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#batch_encoding ObservabilityPipeline#batch_encoding}
 
 ---
 
@@ -3542,7 +3574,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationClickhou
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -3556,7 +3588,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationClickhou
 
 compression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
 
 ---
 
@@ -3570,7 +3602,7 @@ public java.lang.String getDatabase();
 
 Optional name of the ClickHouse database to write to. When omitted, the user's default database is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#database ObservabilityPipeline#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#database ObservabilityPipeline#database}
 
 ---
 
@@ -3584,7 +3616,7 @@ public java.lang.Boolean|IResolvable getDateTimeBestEffort();
 
 If `true`, enables flexible DateTime parsing on the server side.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#date_time_best_effort ObservabilityPipeline#date_time_best_effort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#date_time_best_effort ObservabilityPipeline#date_time_best_effort}
 
 ---
 
@@ -3598,7 +3630,7 @@ public java.lang.String getEndpointUrlKey();
 
 Name of the environment variable or secret that holds the ClickHouse HTTP endpoint URL. Defaults to `DESTINATION_CLICKHOUSE_ENDPOINT_URL`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
 
 ---
 
@@ -3614,7 +3646,7 @@ Insert format for events.
 
 `json_each_row` maps event fields to columns by name. `json_as_object` and `json_as_string` insert each event into a single JSON or String column. `arrow_stream` batches events with Apache Arrow IPC streaming and requires `batch_encoding`. Valid values are `json_each_row`, `json_as_object`, `json_as_string`, `arrow_stream`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#format ObservabilityPipeline#format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#format ObservabilityPipeline#format}
 
 ---
 
@@ -3630,7 +3662,7 @@ If `true`, fields not present in the target table schema are dropped instead of 
 
 When unset, the ClickHouse server's own `input_format_skip_unknown_fields` setting applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#skip_unknown_fields ObservabilityPipeline#skip_unknown_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#skip_unknown_fields ObservabilityPipeline#skip_unknown_fields}
 
 ---
 
@@ -3644,7 +3676,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationClickhou
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -3682,7 +3714,7 @@ public java.lang.String getStrategy();
 
 Authentication strategy. Must be `basic`. Valid values are `basic`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
 
 ---
 
@@ -3696,7 +3728,7 @@ public java.lang.String getPasswordKey();
 
 Name of the environment variable or secret that holds the ClickHouse password. Defaults to `DESTINATION_CLICKHOUSE_PASSWORD`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
 
 ---
 
@@ -3710,7 +3742,7 @@ public java.lang.String getUsernameKey();
 
 Name of the environment variable or secret that holds the ClickHouse username. Defaults to `DESTINATION_CLICKHOUSE_USERNAME`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
 
 ---
 
@@ -3746,7 +3778,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum number of events per batch. Value must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -3760,7 +3792,7 @@ public java.lang.Number getTimeoutSecs();
 
 Maximum time in seconds before a partial batch is flushed. Value must be between 1 and 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#timeout_secs ObservabilityPipeline#timeout_secs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#timeout_secs ObservabilityPipeline#timeout_secs}
 
 ---
 
@@ -3796,7 +3828,7 @@ public java.lang.String getCodec();
 
 Batch encoding codec. Must be `arrow_stream`. Valid values are `arrow_stream`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#codec ObservabilityPipeline#codec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#codec ObservabilityPipeline#codec}
 
 ---
 
@@ -3810,7 +3842,7 @@ public java.lang.Boolean|IResolvable getAllowNullableFields();
 
 If `true`, allows null values for non-nullable fields in the ClickHouse schema. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#allow_nullable_fields ObservabilityPipeline#allow_nullable_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#allow_nullable_fields ObservabilityPipeline#allow_nullable_fields}
 
 ---
 
@@ -3846,7 +3878,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationClickhou
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -3860,7 +3892,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationClickhou
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -3896,7 +3928,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -3910,7 +3942,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -3948,7 +3980,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -3962,7 +3994,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -3976,7 +4008,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -4012,7 +4044,7 @@ public java.lang.String getAlgorithm();
 
 Compression algorithm. Valid values are `gzip` and `none`. Valid values are `gzip`, `none`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
 
 ---
 
@@ -4026,7 +4058,7 @@ public java.lang.Number getLevel();
 
 Compression level (1–9). Only valid when `algorithm` is `gzip`. Value must be between 1 and 9.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
 
 ---
 
@@ -4066,7 +4098,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -4080,7 +4112,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -4094,7 +4126,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -4108,7 +4140,7 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -4146,7 +4178,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationCloudPre
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -4160,7 +4192,7 @@ public java.lang.String getEndpointUrlKey();
 
 Name of the environment variable or secret that holds the endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
 
 ---
 
@@ -4174,7 +4206,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationCloudPre
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -4210,7 +4242,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationCloudPre
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -4224,7 +4256,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationCloudPre
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -4260,7 +4292,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -4274,7 +4306,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -4312,7 +4344,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -4326,7 +4358,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -4340,7 +4372,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -4356,6 +4388,7 @@ ObservabilityPipelineConfigDestinationCloudPremTls.builder()
 //  .caFile(java.lang.String)
 //  .keyFile(java.lang.String)
 //  .keyPassKey(java.lang.String)
+//  .serverName(java.lang.String)
     .build();
 ```
 
@@ -4367,6 +4400,7 @@ ObservabilityPipelineConfigDestinationCloudPremTls.builder()
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTls.property.caFile">caFile</a></code> | <code>java.lang.String</code> | Path to the Certificate Authority (CA) file used to validate the server's TLS certificate. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTls.property.keyFile">keyFile</a></code> | <code>java.lang.String</code> | Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTls.property.keyPassKey">keyPassKey</a></code> | <code>java.lang.String</code> | Name of the environment variable or secret that holds the passphrase for the private key file. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTls.property.serverName">serverName</a></code> | <code>java.lang.String</code> | Server name to use for Server Name Indication (SNI) and to verify against the certificate presented by the remote host. |
 
 ---
 
@@ -4380,7 +4414,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -4394,7 +4428,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -4408,7 +4442,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -4422,7 +4456,23 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+
+---
+
+##### `serverName`<sup>Optional</sup> <a name="serverName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTls.property.serverName"></a>
+
+```java
+public java.lang.String getServerName();
+```
+
+- *Type:* java.lang.String
+
+Server name to use for Server Name Indication (SNI) and to verify against the certificate presented by the remote host.
+
+Use this when the address you connect to doesn't match the certificate's Common Name or Subject Alternative Name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#server_name ObservabilityPipeline#server_name}
 
 ---
 
@@ -4466,7 +4516,7 @@ public java.lang.String getEncoding();
 
 Encoding format for log events. Valid values are `json`, `raw_message`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -4480,7 +4530,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationCrowdstr
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -4494,7 +4544,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationCrowdstr
 
 compression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
 
 ---
 
@@ -4508,7 +4558,7 @@ public java.lang.String getEndpointUrlKey();
 
 Name of the environment variable or secret that holds the endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
 
 ---
 
@@ -4522,7 +4572,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationCrowdstr
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -4536,7 +4586,7 @@ public java.lang.String getTokenKey();
 
 Name of the environment variable or secret that holds the authentication token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
 
 ---
 
@@ -4572,7 +4622,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationCrowdstr
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -4586,7 +4636,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationCrowdstr
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -4622,7 +4672,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -4636,7 +4686,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -4674,7 +4724,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -4688,7 +4738,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -4702,7 +4752,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -4738,7 +4788,7 @@ public java.lang.String getAlgorithm();
 
 Compression algorithm for log events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
 
 ---
 
@@ -4752,7 +4802,7 @@ public java.lang.Number getLevel();
 
 Compression level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
 
 ---
 
@@ -4792,7 +4842,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -4806,7 +4856,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -4820,7 +4870,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -4834,7 +4884,7 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -4874,7 +4924,7 @@ public java.lang.String getTableName();
 
 The name of the Databricks table to ingest logs into.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#table_name ObservabilityPipeline#table_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#table_name ObservabilityPipeline#table_name}
 
 ---
 
@@ -4888,7 +4938,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationDatabric
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -4902,7 +4952,7 @@ public java.lang.String getIngestionEndpointKey();
 
 The name of the secret or environment variable holding the Databricks Zerobus ingestion endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ingestion_endpoint_key ObservabilityPipeline#ingestion_endpoint_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ingestion_endpoint_key ObservabilityPipeline#ingestion_endpoint_key}
 
 ---
 
@@ -4916,7 +4966,7 @@ public java.lang.String getUnityCatalogEndpointKey();
 
 The name of the secret or environment variable holding the Databricks Unity Catalog endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#unity_catalog_endpoint_key ObservabilityPipeline#unity_catalog_endpoint_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#unity_catalog_endpoint_key ObservabilityPipeline#unity_catalog_endpoint_key}
 
 ---
 
@@ -4952,7 +5002,7 @@ public java.lang.String getClientId();
 
 The OAuth client ID used to authenticate with Databricks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#client_id ObservabilityPipeline#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#client_id ObservabilityPipeline#client_id}
 
 ---
 
@@ -4966,7 +5016,7 @@ public java.lang.String getClientSecretKey();
 
 The name of the secret or environment variable holding the OAuth client secret. Defaults to `DESTINATION_DATABRICKS_ZEROBUS_OAUTH_CLIENT_SECRET`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#client_secret_key ObservabilityPipeline#client_secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#client_secret_key ObservabilityPipeline#client_secret_key}
 
 ---
 
@@ -5002,7 +5052,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationDatadogL
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -5016,7 +5066,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationDatadogL
 
 routes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#routes ObservabilityPipeline#routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#routes ObservabilityPipeline#routes}
 
 ---
 
@@ -5052,7 +5102,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationDatadogL
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -5066,7 +5116,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationDatadogL
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -5102,7 +5152,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -5116,7 +5166,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -5154,7 +5204,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -5168,7 +5218,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -5182,7 +5232,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -5224,7 +5274,7 @@ public java.lang.String getApiKeyKey();
 
 Name of the environment variable or secret that stores the Datadog API key used by this route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#api_key_key ObservabilityPipeline#api_key_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#api_key_key ObservabilityPipeline#api_key_key}
 
 ---
 
@@ -5238,7 +5288,7 @@ public java.lang.String getInclude();
 
 A Datadog search query that determines which logs are forwarded using this route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -5252,7 +5302,7 @@ public java.lang.String getRouteId();
 
 Unique identifier for this route within the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#route_id ObservabilityPipeline#route_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#route_id ObservabilityPipeline#route_id}
 
 ---
 
@@ -5266,7 +5316,7 @@ public java.lang.String getSite();
 
 Datadog site where matching logs are sent (for example, `us1`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#site ObservabilityPipeline#site}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#site ObservabilityPipeline#site}
 
 ---
 
@@ -5280,7 +5330,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationDatadogL
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -5316,7 +5366,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationDatadogL
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -5330,7 +5380,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationDatadogL
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -5366,7 +5416,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -5380,7 +5430,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -5418,7 +5468,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -5432,7 +5482,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -5446,7 +5496,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -5512,7 +5562,7 @@ public java.lang.String getApiVersion();
 
 The Elasticsearch API version to use. Set to `auto` to auto-detect. Valid values are `auto`, `v6`, `v7`, `v8`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#api_version ObservabilityPipeline#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#api_version ObservabilityPipeline#api_version}
 
 ---
 
@@ -5526,7 +5576,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationElastics
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -5540,7 +5590,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationElastics
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -5554,7 +5604,7 @@ public java.lang.String getBulkIndex();
 
 The name of the index to write events to in Elasticsearch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
 
 ---
 
@@ -5568,7 +5618,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationElastics
 
 compression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
 
 ---
 
@@ -5582,7 +5632,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationElastics
 
 data_stream block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#data_stream ObservabilityPipeline#data_stream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#data_stream ObservabilityPipeline#data_stream}
 
 ---
 
@@ -5596,7 +5646,7 @@ public java.lang.String getEndpointUrlKey();
 
 Name of the environment variable or secret that holds the Elasticsearch endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
 
 ---
 
@@ -5610,7 +5660,7 @@ public java.lang.String getIdKey();
 
 The name of the field used as the document ID in Elasticsearch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#id_key ObservabilityPipeline#id_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#id_key ObservabilityPipeline#id_key}
 
 ---
 
@@ -5624,7 +5674,7 @@ public java.lang.String getPipeline();
 
 The name of an Elasticsearch ingest pipeline to apply to events before indexing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#pipeline ObservabilityPipeline#pipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#pipeline ObservabilityPipeline#pipeline}
 
 ---
 
@@ -5638,7 +5688,7 @@ public java.lang.Boolean|IResolvable getRequestRetryPartial();
 
 When `true`, retries failed partial bulk requests when some events in a batch fail while others succeed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#request_retry_partial ObservabilityPipeline#request_retry_partial}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#request_retry_partial ObservabilityPipeline#request_retry_partial}
 
 ---
 
@@ -5652,7 +5702,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationElastics
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -5690,7 +5740,7 @@ public java.lang.String getStrategy();
 
 The authentication strategy to use. Valid values are `basic`, `aws`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
 
 ---
 
@@ -5704,7 +5754,7 @@ public java.lang.String getPasswordKey();
 
 Name of the environment variable or secret that holds the Elasticsearch password (used when `strategy` is `basic`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
 
 ---
 
@@ -5718,7 +5768,7 @@ public java.lang.String getUsernameKey();
 
 Name of the environment variable or secret that holds the Elasticsearch username (used when `strategy` is `basic`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
 
 ---
 
@@ -5754,7 +5804,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationElastics
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -5768,7 +5818,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationElastics
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -5804,7 +5854,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -5818,7 +5868,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -5856,7 +5906,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -5870,7 +5920,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -5884,7 +5934,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -5920,7 +5970,7 @@ public java.lang.String getAlgorithm();
 
 The compression algorithm applied when sending data to Elasticsearch. Valid values are `none`, `gzip`, `zlib`, `zstd`, `snappy`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
 
 ---
 
@@ -5934,7 +5984,7 @@ public java.lang.Number getLevel();
 
 The compression level. Only applicable for `gzip`, `zlib`, and `zstd` algorithms.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
 
 ---
 
@@ -5976,7 +6026,7 @@ public java.lang.Boolean|IResolvable getAutoRouting();
 
 When `true`, automatically routes events to the appropriate data stream based on the event content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#auto_routing ObservabilityPipeline#auto_routing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#auto_routing ObservabilityPipeline#auto_routing}
 
 ---
 
@@ -5990,7 +6040,7 @@ public java.lang.String getDataset();
 
 The data stream dataset. This groups events by their source or application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#dataset ObservabilityPipeline#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#dataset ObservabilityPipeline#dataset}
 
 ---
 
@@ -6004,7 +6054,7 @@ public java.lang.String getDtype();
 
 The data stream type. This determines how events are categorized within the data stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#dtype ObservabilityPipeline#dtype}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#dtype ObservabilityPipeline#dtype}
 
 ---
 
@@ -6018,7 +6068,7 @@ public java.lang.String getNamespace();
 
 The data stream namespace. This separates events into different environments or domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#namespace ObservabilityPipeline#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#namespace ObservabilityPipeline#namespace}
 
 ---
 
@@ -6032,7 +6082,7 @@ public java.lang.Boolean|IResolvable getSyncFields();
 
 When `true`, synchronizes data stream fields with the Elasticsearch index mapping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#sync_fields ObservabilityPipeline#sync_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#sync_fields ObservabilityPipeline#sync_fields}
 
 ---
 
@@ -6072,7 +6122,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -6086,7 +6136,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -6100,7 +6150,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -6114,7 +6164,7 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -6160,7 +6210,7 @@ public java.lang.String getBucket();
 
 Name of the GCS bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
 
 ---
 
@@ -6174,7 +6224,7 @@ public java.lang.String getStorageClass();
 
 Storage class used for objects stored in GCS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#storage_class ObservabilityPipeline#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#storage_class ObservabilityPipeline#storage_class}
 
 ---
 
@@ -6188,7 +6238,7 @@ public java.lang.String getAcl();
 
 Access control list setting for objects written to the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#acl ObservabilityPipeline#acl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#acl ObservabilityPipeline#acl}
 
 ---
 
@@ -6202,7 +6252,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationGoogleCl
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -6216,7 +6266,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationGoogleCl
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -6230,7 +6280,7 @@ public java.lang.String getKeyPrefix();
 
 Optional prefix for object keys within the GCS bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_prefix ObservabilityPipeline#key_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_prefix ObservabilityPipeline#key_prefix}
 
 ---
 
@@ -6244,7 +6294,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationGoogleCl
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#metadata ObservabilityPipeline#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#metadata ObservabilityPipeline#metadata}
 
 ---
 
@@ -6278,7 +6328,7 @@ public java.lang.String getCredentialsFile();
 
 Path to the Google Cloud service account key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
 
 ---
 
@@ -6314,7 +6364,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationGoogleCl
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -6328,7 +6378,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationGoogleCl
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -6364,7 +6414,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -6378,7 +6428,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -6416,7 +6466,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -6430,7 +6480,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -6444,7 +6494,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -6480,7 +6530,7 @@ public java.lang.String getName();
 
 The metadata key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -6494,7 +6544,7 @@ public java.lang.String getValue();
 
 The metadata value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -6540,7 +6590,7 @@ public java.lang.String getEncoding();
 
 Encoding format for log events. Valid values: `json`, `raw_message`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -6554,7 +6604,7 @@ public java.lang.String getProject();
 
 The Google Cloud project ID that owns the Pub/Sub topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#project ObservabilityPipeline#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#project ObservabilityPipeline#project}
 
 ---
 
@@ -6568,7 +6618,7 @@ public java.lang.String getTopic();
 
 The Pub/Sub topic name to publish logs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#topic ObservabilityPipeline#topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#topic ObservabilityPipeline#topic}
 
 ---
 
@@ -6582,7 +6632,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationGooglePu
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -6596,7 +6646,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationGooglePu
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -6610,7 +6660,7 @@ public java.lang.String getEndpointUrlKey();
 
 Name of the environment variable or secret that holds the Google Cloud Pub/Sub endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
 
 ---
 
@@ -6624,7 +6674,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationGooglePu
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -6658,7 +6708,7 @@ public java.lang.String getCredentialsFile();
 
 Path to the Google Cloud service account key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
 
 ---
 
@@ -6694,7 +6744,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationGooglePu
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -6708,7 +6758,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationGooglePu
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -6744,7 +6794,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -6758,7 +6808,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -6796,7 +6846,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -6810,7 +6860,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -6824,7 +6874,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -6864,7 +6914,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -6878,7 +6928,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -6892,7 +6942,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -6906,7 +6956,7 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -6950,7 +7000,7 @@ public java.lang.String getCustomerId();
 
 The Google SecOps customer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#customer_id ObservabilityPipeline#customer_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#customer_id ObservabilityPipeline#customer_id}
 
 ---
 
@@ -6964,7 +7014,7 @@ public java.lang.String getEncoding();
 
 The encoding format for the logs sent to Google SecOps. Valid values are `json`, `raw_message`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -6978,7 +7028,7 @@ public java.lang.String getLogType();
 
 The log type metadata associated with the Google SecOps destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#log_type ObservabilityPipeline#log_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#log_type ObservabilityPipeline#log_type}
 
 ---
 
@@ -6992,7 +7042,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationGoogleSe
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -7006,7 +7056,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationGoogleSe
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -7020,7 +7070,7 @@ public java.lang.String getEndpointUrlKey();
 
 Name of the environment variable or secret that holds the Google Chronicle endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
 
 ---
 
@@ -7054,7 +7104,7 @@ public java.lang.String getCredentialsFile();
 
 Path to the Google Cloud service account key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
 
 ---
 
@@ -7090,7 +7140,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationGoogleSe
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -7104,7 +7154,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationGoogleSe
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -7140,7 +7190,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -7154,7 +7204,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -7192,7 +7242,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -7206,7 +7256,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -7220,7 +7270,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -7270,7 +7320,7 @@ public java.lang.String getEncoding();
 
 Encoding format for events. Valid values are `json`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -7284,7 +7334,7 @@ public java.lang.String getAuthStrategy();
 
 HTTP authentication strategy. Valid values are `none`, `basic`, `bearer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
 
 ---
 
@@ -7298,7 +7348,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationHttpClie
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -7312,7 +7362,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationHttpClie
 
 compression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
 
 ---
 
@@ -7326,7 +7376,7 @@ public java.lang.String getPasswordKey();
 
 Name of the environment variable or secret that holds the password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
 
 ---
 
@@ -7340,7 +7390,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationHttpClie
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -7354,7 +7404,7 @@ public java.lang.String getTokenKey();
 
 Name of the environment variable or secret that holds the authentication token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
 
 ---
 
@@ -7368,7 +7418,7 @@ public java.lang.String getUriKey();
 
 Name of the environment variable or secret that holds the request URI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#uri_key ObservabilityPipeline#uri_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#uri_key ObservabilityPipeline#uri_key}
 
 ---
 
@@ -7382,7 +7432,7 @@ public java.lang.String getUsernameKey();
 
 Name of the environment variable or secret that holds the username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
 
 ---
 
@@ -7418,7 +7468,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationHttpClie
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -7432,7 +7482,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationHttpClie
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -7468,7 +7518,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -7482,7 +7532,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -7520,7 +7570,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -7534,7 +7584,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -7548,7 +7598,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -7582,7 +7632,7 @@ public java.lang.String getAlgorithm();
 
 Compression algorithm. Valid values are `gzip`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
 
 ---
 
@@ -7598,6 +7648,7 @@ ObservabilityPipelineConfigDestinationHttpClientTls.builder()
 //  .caFile(java.lang.String)
 //  .keyFile(java.lang.String)
 //  .keyPassKey(java.lang.String)
+//  .serverName(java.lang.String)
     .build();
 ```
 
@@ -7609,6 +7660,7 @@ ObservabilityPipelineConfigDestinationHttpClientTls.builder()
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTls.property.caFile">caFile</a></code> | <code>java.lang.String</code> | Path to the Certificate Authority (CA) file used to validate the server's TLS certificate. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTls.property.keyFile">keyFile</a></code> | <code>java.lang.String</code> | Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTls.property.keyPassKey">keyPassKey</a></code> | <code>java.lang.String</code> | Name of the environment variable or secret that holds the passphrase for the private key file. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTls.property.serverName">serverName</a></code> | <code>java.lang.String</code> | Server name to use for Server Name Indication (SNI) and to verify against the certificate presented by the remote host. |
 
 ---
 
@@ -7622,7 +7674,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -7636,7 +7688,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -7650,7 +7702,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -7664,7 +7716,23 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+
+---
+
+##### `serverName`<sup>Optional</sup> <a name="serverName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTls.property.serverName"></a>
+
+```java
+public java.lang.String getServerName();
+```
+
+- *Type:* java.lang.String
+
+Server name to use for Server Name Indication (SNI) and to verify against the certificate presented by the remote host.
+
+Use this when the address you connect to doesn't match the certificate's Common Name or Subject Alternative Name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#server_name ObservabilityPipeline#server_name}
 
 ---
 
@@ -7724,7 +7792,7 @@ public java.lang.String getEncoding();
 
 Encoding format for log events. Valid values are `json`, `raw_message`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -7738,7 +7806,7 @@ public java.lang.String getTopic();
 
 The Kafka topic name to publish logs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#topic ObservabilityPipeline#topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#topic ObservabilityPipeline#topic}
 
 ---
 
@@ -7752,7 +7820,7 @@ public java.lang.String getBootstrapServersKey();
 
 Name of the environment variable or secret that holds the Kafka bootstrap servers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#bootstrap_servers_key ObservabilityPipeline#bootstrap_servers_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#bootstrap_servers_key ObservabilityPipeline#bootstrap_servers_key}
 
 ---
 
@@ -7766,7 +7834,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationKafkaBuf
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -7780,7 +7848,7 @@ public java.lang.String getCompression();
 
 Compression codec for Kafka messages. Valid values are `none`, `gzip`, `snappy`, `lz4`, `zstd`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
 
 ---
 
@@ -7794,7 +7862,7 @@ public java.lang.String getHeadersKey();
 
 The field name to use for Kafka message headers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#headers_key ObservabilityPipeline#headers_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#headers_key ObservabilityPipeline#headers_key}
 
 ---
 
@@ -7808,7 +7876,7 @@ public java.lang.String getKeyField();
 
 The field name to use as the Kafka message key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_field ObservabilityPipeline#key_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_field ObservabilityPipeline#key_field}
 
 ---
 
@@ -7822,7 +7890,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationKafkaLib
 
 librdkafka_option block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#librdkafka_option ObservabilityPipeline#librdkafka_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#librdkafka_option ObservabilityPipeline#librdkafka_option}
 
 ---
 
@@ -7836,7 +7904,7 @@ public java.lang.Number getMessageTimeoutMs();
 
 Maximum time in milliseconds to wait for message delivery confirmation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#message_timeout_ms ObservabilityPipeline#message_timeout_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#message_timeout_ms ObservabilityPipeline#message_timeout_ms}
 
 ---
 
@@ -7850,7 +7918,7 @@ public java.lang.Number getRateLimitDurationSecs();
 
 Duration in seconds for the rate limit window.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#rate_limit_duration_secs ObservabilityPipeline#rate_limit_duration_secs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#rate_limit_duration_secs ObservabilityPipeline#rate_limit_duration_secs}
 
 ---
 
@@ -7864,7 +7932,7 @@ public java.lang.Number getRateLimitNum();
 
 Maximum number of messages allowed per rate limit duration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#rate_limit_num ObservabilityPipeline#rate_limit_num}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#rate_limit_num ObservabilityPipeline#rate_limit_num}
 
 ---
 
@@ -7878,7 +7946,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationKafkaSas
 
 sasl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#sasl ObservabilityPipeline#sasl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#sasl ObservabilityPipeline#sasl}
 
 ---
 
@@ -7892,7 +7960,7 @@ public java.lang.Number getSocketTimeoutMs();
 
 Socket timeout in milliseconds for network requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#socket_timeout_ms ObservabilityPipeline#socket_timeout_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#socket_timeout_ms ObservabilityPipeline#socket_timeout_ms}
 
 ---
 
@@ -7906,7 +7974,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationKafkaTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -7942,7 +8010,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationKafkaBuf
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -7956,7 +8024,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationKafkaBuf
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -7992,7 +8060,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -8006,7 +8074,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -8044,7 +8112,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -8058,7 +8126,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -8072,7 +8140,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -8108,7 +8176,7 @@ public java.lang.String getName();
 
 The name of the librdkafka configuration option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -8122,7 +8190,7 @@ public java.lang.String getValue();
 
 The value of the librdkafka configuration option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -8160,7 +8228,7 @@ public java.lang.String getMechanism();
 
 SASL authentication mechanism. Valid values are `PLAIN`, `SCRAM-SHA-256`, `SCRAM-SHA-512`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#mechanism ObservabilityPipeline#mechanism}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#mechanism ObservabilityPipeline#mechanism}
 
 ---
 
@@ -8174,7 +8242,7 @@ public java.lang.String getPasswordKey();
 
 Name of the environment variable or secret that holds the SASL password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
 
 ---
 
@@ -8188,7 +8256,7 @@ public java.lang.String getUsernameKey();
 
 Name of the environment variable or secret that holds the SASL username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
 
 ---
 
@@ -8228,7 +8296,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -8242,7 +8310,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -8256,7 +8324,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -8270,7 +8338,7 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -8316,7 +8384,7 @@ public java.lang.String getClientId();
 
 Azure AD client ID used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#client_id ObservabilityPipeline#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#client_id ObservabilityPipeline#client_id}
 
 ---
 
@@ -8330,7 +8398,7 @@ public java.lang.String getDcrImmutableId();
 
 The immutable ID of the Data Collection Rule (DCR).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#dcr_immutable_id ObservabilityPipeline#dcr_immutable_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#dcr_immutable_id ObservabilityPipeline#dcr_immutable_id}
 
 ---
 
@@ -8344,7 +8412,7 @@ public java.lang.String getTable();
 
 The name of the Log Analytics table where logs will be sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#table ObservabilityPipeline#table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#table ObservabilityPipeline#table}
 
 ---
 
@@ -8358,7 +8426,7 @@ public java.lang.String getTenantId();
 
 Azure AD tenant ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tenant_id ObservabilityPipeline#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tenant_id ObservabilityPipeline#tenant_id}
 
 ---
 
@@ -8372,7 +8440,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationMicrosof
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -8386,7 +8454,7 @@ public java.lang.String getClientSecretKey();
 
 Name of the environment variable or secret that holds the Azure AD client secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#client_secret_key ObservabilityPipeline#client_secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#client_secret_key ObservabilityPipeline#client_secret_key}
 
 ---
 
@@ -8400,7 +8468,7 @@ public java.lang.String getDceUriKey();
 
 Name of the environment variable or secret that holds the Data Collection Endpoint (DCE) URI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#dce_uri_key ObservabilityPipeline#dce_uri_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#dce_uri_key ObservabilityPipeline#dce_uri_key}
 
 ---
 
@@ -8436,7 +8504,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationMicrosof
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -8450,7 +8518,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationMicrosof
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -8486,7 +8554,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -8500,7 +8568,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -8538,7 +8606,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -8552,7 +8620,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -8566,7 +8634,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -8606,7 +8674,7 @@ public java.lang.String getRegion();
 
 The New Relic region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
 
 ---
 
@@ -8620,7 +8688,7 @@ public java.lang.String getAccountIdKey();
 
 Name of the environment variable or secret that holds the New Relic account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#account_id_key ObservabilityPipeline#account_id_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#account_id_key ObservabilityPipeline#account_id_key}
 
 ---
 
@@ -8634,7 +8702,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationNewRelic
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -8648,7 +8716,7 @@ public java.lang.String getLicenseKeyKey();
 
 Name of the environment variable or secret that holds the New Relic license key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#license_key_key ObservabilityPipeline#license_key_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#license_key_key ObservabilityPipeline#license_key_key}
 
 ---
 
@@ -8684,7 +8752,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationNewRelic
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -8698,7 +8766,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationNewRelic
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -8734,7 +8802,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -8748,7 +8816,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -8786,7 +8854,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -8800,7 +8868,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -8814,7 +8882,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -8826,9 +8894,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 import io.cdktn.providers.datadog.observability_pipeline.ObservabilityPipelineConfigDestinationOpensearch;
 
 ObservabilityPipelineConfigDestinationOpensearch.builder()
+//  .auth(IResolvable|java.util.List<ObservabilityPipelineConfigDestinationOpensearchAuth>)
 //  .buffer(IResolvable|java.util.List<ObservabilityPipelineConfigDestinationOpensearchBuffer>)
 //  .bulkIndex(java.lang.String)
 //  .dataStream(IResolvable|java.util.List<ObservabilityPipelineConfigDestinationOpensearchDataStream>)
+//  .endpointUrlKey(java.lang.String)
     .build();
 ```
 
@@ -8836,9 +8906,25 @@ ObservabilityPipelineConfigDestinationOpensearch.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearch.property.auth">auth</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuth">ObservabilityPipelineConfigDestinationOpensearchAuth</a>></code> | auth block. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearch.property.buffer">buffer</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchBuffer">ObservabilityPipelineConfigDestinationOpensearchBuffer</a>></code> | buffer block. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearch.property.bulkIndex">bulkIndex</a></code> | <code>java.lang.String</code> | The index or datastream to write logs to. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearch.property.dataStream">dataStream</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchDataStream">ObservabilityPipelineConfigDestinationOpensearchDataStream</a>></code> | data_stream block. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearch.property.endpointUrlKey">endpointUrlKey</a></code> | <code>java.lang.String</code> | Name of the environment variable or secret that holds the OpenSearch endpoint URL. |
+
+---
+
+##### `auth`<sup>Optional</sup> <a name="auth" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearch.property.auth"></a>
+
+```java
+public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationOpensearchAuth> getAuth();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuth">ObservabilityPipelineConfigDestinationOpensearchAuth</a>>
+
+auth block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -8852,7 +8938,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationOpensear
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -8866,7 +8952,7 @@ public java.lang.String getBulkIndex();
 
 The index or datastream to write logs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
 
 ---
 
@@ -8880,7 +8966,87 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationOpensear
 
 data_stream block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#data_stream ObservabilityPipeline#data_stream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#data_stream ObservabilityPipeline#data_stream}
+
+---
+
+##### `endpointUrlKey`<sup>Optional</sup> <a name="endpointUrlKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearch.property.endpointUrlKey"></a>
+
+```java
+public java.lang.String getEndpointUrlKey();
+```
+
+- *Type:* java.lang.String
+
+Name of the environment variable or secret that holds the OpenSearch endpoint URL.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+
+---
+
+### ObservabilityPipelineConfigDestinationOpensearchAuth <a name="ObservabilityPipelineConfigDestinationOpensearchAuth" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuth"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuth.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.observability_pipeline.ObservabilityPipelineConfigDestinationOpensearchAuth;
+
+ObservabilityPipelineConfigDestinationOpensearchAuth.builder()
+    .strategy(java.lang.String)
+//  .passwordKey(java.lang.String)
+//  .usernameKey(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuth.property.strategy">strategy</a></code> | <code>java.lang.String</code> | The authentication strategy to use. Valid values are `basic`, `aws`. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuth.property.passwordKey">passwordKey</a></code> | <code>java.lang.String</code> | Name of the environment variable or secret that holds the OpenSearch password (used when `strategy` is `basic`). |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuth.property.usernameKey">usernameKey</a></code> | <code>java.lang.String</code> | Name of the environment variable or secret that holds the OpenSearch username (used when `strategy` is `basic`). |
+
+---
+
+##### `strategy`<sup>Required</sup> <a name="strategy" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuth.property.strategy"></a>
+
+```java
+public java.lang.String getStrategy();
+```
+
+- *Type:* java.lang.String
+
+The authentication strategy to use. Valid values are `basic`, `aws`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
+
+---
+
+##### `passwordKey`<sup>Optional</sup> <a name="passwordKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuth.property.passwordKey"></a>
+
+```java
+public java.lang.String getPasswordKey();
+```
+
+- *Type:* java.lang.String
+
+Name of the environment variable or secret that holds the OpenSearch password (used when `strategy` is `basic`).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
+
+---
+
+##### `usernameKey`<sup>Optional</sup> <a name="usernameKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuth.property.usernameKey"></a>
+
+```java
+public java.lang.String getUsernameKey();
+```
+
+- *Type:* java.lang.String
+
+Name of the environment variable or secret that holds the OpenSearch username (used when `strategy` is `basic`).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
 
 ---
 
@@ -8916,7 +9082,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationOpensear
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -8930,7 +9096,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationOpensear
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -8966,7 +9132,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -8980,7 +9146,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -9018,7 +9184,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -9032,7 +9198,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -9046,7 +9212,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -9084,7 +9250,7 @@ public java.lang.String getDataset();
 
 The data stream dataset for your logs. This groups logs by their source or application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#dataset ObservabilityPipeline#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#dataset ObservabilityPipeline#dataset}
 
 ---
 
@@ -9098,7 +9264,7 @@ public java.lang.String getDtype();
 
 The data stream type for your logs. This determines how logs are categorized within the data stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#dtype ObservabilityPipeline#dtype}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#dtype ObservabilityPipeline#dtype}
 
 ---
 
@@ -9112,7 +9278,7 @@ public java.lang.String getNamespace();
 
 The data stream namespace for your logs. This separates logs into different environments or domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#namespace ObservabilityPipeline#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#namespace ObservabilityPipeline#namespace}
 
 ---
 
@@ -9152,7 +9318,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationRsyslogB
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -9166,7 +9332,7 @@ public java.lang.String getEndpointUrlKey();
 
 Name of the environment variable or secret that holds the rsyslog endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
 
 ---
 
@@ -9180,7 +9346,7 @@ public java.lang.Number getKeepalive();
 
 Optional socket keepalive duration in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#keepalive ObservabilityPipeline#keepalive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#keepalive ObservabilityPipeline#keepalive}
 
 ---
 
@@ -9194,7 +9360,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationRsyslogT
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -9230,7 +9396,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationRsyslogB
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -9244,7 +9410,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationRsyslogB
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -9280,7 +9446,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -9294,7 +9460,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -9332,7 +9498,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -9346,7 +9512,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -9360,7 +9526,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -9400,7 +9566,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -9414,7 +9580,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -9428,7 +9594,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -9442,7 +9608,7 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -9480,7 +9646,7 @@ public java.lang.String getRegion();
 
 The SentinelOne region to send logs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
 
 ---
 
@@ -9494,7 +9660,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSentinel
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -9508,7 +9674,7 @@ public java.lang.String getTokenKey();
 
 Name of the environment variable or secret that holds the SentinelOne API token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
 
 ---
 
@@ -9544,7 +9710,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSentinel
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -9558,7 +9724,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSentinel
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -9594,7 +9760,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -9608,7 +9774,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -9646,7 +9812,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -9660,7 +9826,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -9674,7 +9840,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -9718,7 +9884,7 @@ public java.lang.String getEncoding();
 
 Encoding format for log events. Valid values are `json`, `raw_message`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -9732,7 +9898,7 @@ public java.lang.String getMode();
 
 The protocol used to send logs. Valid values are `tcp`, `udp`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -9746,7 +9912,7 @@ public java.lang.String getAddressKey();
 
 Name of the environment variable or secret that holds the socket address (host:port).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 
 ---
 
@@ -9760,7 +9926,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSocketBu
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -9774,7 +9940,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSocketFr
 
 framing block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#framing ObservabilityPipeline#framing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#framing ObservabilityPipeline#framing}
 
 ---
 
@@ -9788,7 +9954,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSocketTl
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -9824,7 +9990,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSocketBu
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -9838,7 +10004,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSocketBu
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -9874,7 +10040,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -9888,7 +10054,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -9926,7 +10092,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -9940,7 +10106,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -9954,7 +10120,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -9990,7 +10156,7 @@ public java.lang.String getMethod();
 
 The framing method. Valid values are `newline_delimited`, `bytes`, `character_delimited`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#method ObservabilityPipeline#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#method ObservabilityPipeline#method}
 
 ---
 
@@ -10004,7 +10170,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSocketFr
 
 character_delimited block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#character_delimited ObservabilityPipeline#character_delimited}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#character_delimited ObservabilityPipeline#character_delimited}
 
 ---
 
@@ -10038,7 +10204,7 @@ public java.lang.String getDelimiter();
 
 A single ASCII character used as a delimiter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
 
 ---
 
@@ -10054,6 +10220,7 @@ ObservabilityPipelineConfigDestinationSocketTls.builder()
 //  .caFile(java.lang.String)
 //  .keyFile(java.lang.String)
 //  .keyPassKey(java.lang.String)
+//  .serverName(java.lang.String)
     .build();
 ```
 
@@ -10065,6 +10232,7 @@ ObservabilityPipelineConfigDestinationSocketTls.builder()
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTls.property.caFile">caFile</a></code> | <code>java.lang.String</code> | Path to the Certificate Authority (CA) file used to validate the server's TLS certificate. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTls.property.keyFile">keyFile</a></code> | <code>java.lang.String</code> | Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTls.property.keyPassKey">keyPassKey</a></code> | <code>java.lang.String</code> | Name of the environment variable or secret that holds the passphrase for the private key file. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTls.property.serverName">serverName</a></code> | <code>java.lang.String</code> | Server name to use for Server Name Indication (SNI) and to verify against the certificate presented by the remote host. |
 
 ---
 
@@ -10078,7 +10246,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -10092,7 +10260,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -10106,7 +10274,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -10120,7 +10288,23 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+
+---
+
+##### `serverName`<sup>Optional</sup> <a name="serverName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTls.property.serverName"></a>
+
+```java
+public java.lang.String getServerName();
+```
+
+- *Type:* java.lang.String
+
+Server name to use for Server Name Indication (SNI) and to verify against the certificate presented by the remote host.
+
+Use this when the address you connect to doesn't match the certificate's Common Name or Subject Alternative Name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#server_name ObservabilityPipeline#server_name}
 
 ---
 
@@ -10170,7 +10354,7 @@ public java.lang.String getEncoding();
 
 Encoding format for log events. Valid values are `json`, `raw_message`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -10184,7 +10368,7 @@ public java.lang.Boolean|IResolvable getAutoExtractTimestamp();
 
 If `true`, Splunk tries to extract timestamps from incoming log events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#auto_extract_timestamp ObservabilityPipeline#auto_extract_timestamp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#auto_extract_timestamp ObservabilityPipeline#auto_extract_timestamp}
 
 ---
 
@@ -10198,7 +10382,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSplunkHe
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -10212,7 +10396,7 @@ public java.lang.String getEndpointUrlKey();
 
 Name of the environment variable or secret that holds the Splunk HEC endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
 
 ---
 
@@ -10226,7 +10410,7 @@ public java.lang.String getIndex();
 
 Optional name of the Splunk index where logs are written.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#index ObservabilityPipeline#index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#index ObservabilityPipeline#index}
 
 ---
 
@@ -10240,7 +10424,7 @@ public java.util.List<java.lang.String> getIndexedFields();
 
 List of log field names to send as indexed fields to Splunk HEC. Available only when `encoding` is `json`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#indexed_fields ObservabilityPipeline#indexed_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#indexed_fields ObservabilityPipeline#indexed_fields}
 
 ---
 
@@ -10254,7 +10438,7 @@ public java.lang.String getSourcetype();
 
 The Splunk sourcetype to assign to log events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#sourcetype ObservabilityPipeline#sourcetype}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#sourcetype ObservabilityPipeline#sourcetype}
 
 ---
 
@@ -10268,7 +10452,7 @@ public java.lang.String getTokenKey();
 
 Name of the environment variable or secret that holds the Splunk HEC token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
 
 ---
 
@@ -10284,7 +10468,7 @@ Controls how the Splunk HEC token is supplied.
 
 Use `custom` to provide a token via `token_key`, or `from_source` to forward the token received from an upstream Splunk HEC source. Valid values are `custom`, `from_source`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#token_strategy ObservabilityPipeline#token_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#token_strategy ObservabilityPipeline#token_strategy}
 
 ---
 
@@ -10320,7 +10504,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSplunkHe
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -10334,7 +10518,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSplunkHe
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -10370,7 +10554,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -10384,7 +10568,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -10422,7 +10606,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -10436,7 +10620,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -10450,7 +10634,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -10500,7 +10684,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSplunkHe
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -10514,7 +10698,7 @@ public java.lang.String getCompression();
 
 Compression algorithm applied when sending metrics to Splunk HEC. Valid values are `none`, `gzip`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
 
 ---
 
@@ -10528,7 +10712,7 @@ public java.lang.String getDefaultNamespace();
 
 Optional default namespace for metrics sent to Splunk HEC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#default_namespace ObservabilityPipeline#default_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#default_namespace ObservabilityPipeline#default_namespace}
 
 ---
 
@@ -10542,7 +10726,7 @@ public java.lang.String getEndpointUrlKey();
 
 Name of the environment variable or secret that holds the Splunk HEC endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
 
 ---
 
@@ -10556,7 +10740,7 @@ public java.lang.String getIndex();
 
 Optional name of the Splunk index where metrics are written.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#index ObservabilityPipeline#index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#index ObservabilityPipeline#index}
 
 ---
 
@@ -10570,7 +10754,7 @@ public java.lang.String getSource();
 
 The Splunk source field value for metric events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
 
 ---
 
@@ -10584,7 +10768,7 @@ public java.lang.String getSourcetype();
 
 The Splunk sourcetype to assign to metric events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#sourcetype ObservabilityPipeline#sourcetype}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#sourcetype ObservabilityPipeline#sourcetype}
 
 ---
 
@@ -10598,7 +10782,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSplunkHe
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -10612,7 +10796,7 @@ public java.lang.String getTokenKey();
 
 Name of the environment variable or secret that holds the Splunk HEC token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
 
 ---
 
@@ -10648,7 +10832,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSplunkHe
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -10662,7 +10846,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSplunkHe
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -10698,7 +10882,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -10712,7 +10896,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -10750,7 +10934,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -10764,7 +10948,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -10778,7 +10962,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -10818,7 +11002,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -10832,7 +11016,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -10846,7 +11030,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -10860,7 +11044,7 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -10906,7 +11090,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSumoLogi
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -10920,7 +11104,7 @@ public java.lang.String getEncoding();
 
 The output encoding format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -10934,7 +11118,7 @@ public java.lang.String getEndpointUrlKey();
 
 Name of the environment variable or secret that holds the Sumo Logic endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
 
 ---
 
@@ -10948,7 +11132,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSumoLogi
 
 header_custom_field block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#header_custom_field ObservabilityPipeline#header_custom_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#header_custom_field ObservabilityPipeline#header_custom_field}
 
 ---
 
@@ -10962,7 +11146,7 @@ public java.lang.String getHeaderHostName();
 
 Optional override for the host name header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#header_host_name ObservabilityPipeline#header_host_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#header_host_name ObservabilityPipeline#header_host_name}
 
 ---
 
@@ -10976,7 +11160,7 @@ public java.lang.String getHeaderSourceCategory();
 
 Optional override for the source category header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#header_source_category ObservabilityPipeline#header_source_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#header_source_category ObservabilityPipeline#header_source_category}
 
 ---
 
@@ -10990,7 +11174,7 @@ public java.lang.String getHeaderSourceName();
 
 Optional override for the source name header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#header_source_name ObservabilityPipeline#header_source_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#header_source_name ObservabilityPipeline#header_source_name}
 
 ---
 
@@ -11026,7 +11210,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSumoLogi
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -11040,7 +11224,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSumoLogi
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -11076,7 +11260,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -11090,7 +11274,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -11128,7 +11312,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -11142,7 +11326,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -11156,7 +11340,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -11192,7 +11376,7 @@ public java.lang.String getName();
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -11206,7 +11390,7 @@ public java.lang.String getValue();
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -11246,7 +11430,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSyslogNg
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -11260,7 +11444,7 @@ public java.lang.String getEndpointUrlKey();
 
 Name of the environment variable or secret that holds the syslog-ng endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
 
 ---
 
@@ -11274,7 +11458,7 @@ public java.lang.Number getKeepalive();
 
 Optional socket keepalive duration in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#keepalive ObservabilityPipeline#keepalive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#keepalive ObservabilityPipeline#keepalive}
 
 ---
 
@@ -11288,7 +11472,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSyslogNg
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -11324,7 +11508,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSyslogNg
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -11338,7 +11522,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationSyslogNg
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -11374,7 +11558,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -11388,7 +11572,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -11426,7 +11610,7 @@ public java.lang.Number getMaxEvents();
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -11440,7 +11624,7 @@ public java.lang.Number getMaxSize();
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -11454,7 +11638,7 @@ public java.lang.String getWhenFull();
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -11470,6 +11654,7 @@ ObservabilityPipelineConfigDestinationSyslogNgTls.builder()
 //  .caFile(java.lang.String)
 //  .keyFile(java.lang.String)
 //  .keyPassKey(java.lang.String)
+//  .serverName(java.lang.String)
     .build();
 ```
 
@@ -11481,6 +11666,7 @@ ObservabilityPipelineConfigDestinationSyslogNgTls.builder()
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTls.property.caFile">caFile</a></code> | <code>java.lang.String</code> | Path to the Certificate Authority (CA) file used to validate the server's TLS certificate. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTls.property.keyFile">keyFile</a></code> | <code>java.lang.String</code> | Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTls.property.keyPassKey">keyPassKey</a></code> | <code>java.lang.String</code> | Name of the environment variable or secret that holds the passphrase for the private key file. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTls.property.serverName">serverName</a></code> | <code>java.lang.String</code> | Server name to use for Server Name Indication (SNI) and to verify against the certificate presented by the remote host. |
 
 ---
 
@@ -11494,7 +11680,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -11508,7 +11694,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -11522,7 +11708,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -11536,7 +11722,23 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+
+---
+
+##### `serverName`<sup>Optional</sup> <a name="serverName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTls.property.serverName"></a>
+
+```java
+public java.lang.String getServerName();
+```
+
+- *Type:* java.lang.String
+
+Server name to use for Server Name Indication (SNI) and to verify against the certificate presented by the remote host.
+
+Use this when the address you connect to doesn't match the certificate's Common Name or Subject Alternative Name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#server_name ObservabilityPipeline#server_name}
 
 ---
 
@@ -11580,7 +11782,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether this processor group is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
 
 ---
 
@@ -11594,7 +11796,7 @@ public java.lang.String getId();
 
 The unique ID of the processor group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -11611,7 +11813,7 @@ public java.lang.String getInclude();
 
 A Datadog search query used to determine which logs this processor group targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -11625,7 +11827,7 @@ public java.util.List<java.lang.String> getInputs();
 
 A list of component IDs whose output is used as the input for this processor group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -11639,7 +11841,7 @@ public java.lang.String getDisplayName();
 
 A human-friendly name of the processor group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#display_name ObservabilityPipeline#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#display_name ObservabilityPipeline#display_name}
 
 ---
 
@@ -11653,7 +11855,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#processor ObservabilityPipeline#processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#processor ObservabilityPipeline#processor}
 
 ---
 
@@ -11747,7 +11949,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether this processor is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
 
 ---
 
@@ -11761,7 +11963,7 @@ public java.lang.String getId();
 
 The unique identifier for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -11778,7 +11980,7 @@ public java.lang.String getInclude();
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -11792,7 +11994,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 add_env_vars block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#add_env_vars ObservabilityPipeline#add_env_vars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#add_env_vars ObservabilityPipeline#add_env_vars}
 
 ---
 
@@ -11806,7 +12008,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 add_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#add_fields ObservabilityPipeline#add_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#add_fields ObservabilityPipeline#add_fields}
 
 ---
 
@@ -11820,7 +12022,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 add_hostname block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#add_hostname ObservabilityPipeline#add_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#add_hostname ObservabilityPipeline#add_hostname}
 
 ---
 
@@ -11834,7 +12036,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 add_metric_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#add_metric_tags ObservabilityPipeline#add_metric_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#add_metric_tags ObservabilityPipeline#add_metric_tags}
 
 ---
 
@@ -11848,7 +12050,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 aggregate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#aggregate ObservabilityPipeline#aggregate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#aggregate ObservabilityPipeline#aggregate}
 
 ---
 
@@ -11862,7 +12064,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 custom_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#custom_processor ObservabilityPipeline#custom_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#custom_processor ObservabilityPipeline#custom_processor}
 
 ---
 
@@ -11876,7 +12078,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 datadog_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#datadog_tags ObservabilityPipeline#datadog_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#datadog_tags ObservabilityPipeline#datadog_tags}
 
 ---
 
@@ -11890,7 +12092,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 dedupe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#dedupe ObservabilityPipeline#dedupe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#dedupe ObservabilityPipeline#dedupe}
 
 ---
 
@@ -11904,7 +12106,7 @@ public java.lang.String getDisplayName();
 
 A human-friendly name for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#display_name ObservabilityPipeline#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#display_name ObservabilityPipeline#display_name}
 
 ---
 
@@ -11918,7 +12120,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 enrichment_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#enrichment_table ObservabilityPipeline#enrichment_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#enrichment_table ObservabilityPipeline#enrichment_table}
 
 ---
 
@@ -11932,7 +12134,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#filter ObservabilityPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#filter ObservabilityPipeline#filter}
 
 ---
 
@@ -11946,7 +12148,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 generate_datadog_metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#generate_datadog_metrics ObservabilityPipeline#generate_datadog_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#generate_datadog_metrics ObservabilityPipeline#generate_datadog_metrics}
 
 ---
 
@@ -11960,7 +12162,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 generate_metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#generate_metrics ObservabilityPipeline#generate_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#generate_metrics ObservabilityPipeline#generate_metrics}
 
 ---
 
@@ -11974,7 +12176,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 metric_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#metric_tags ObservabilityPipeline#metric_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#metric_tags ObservabilityPipeline#metric_tags}
 
 ---
 
@@ -11988,7 +12190,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 ocsf_mapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ocsf_mapper ObservabilityPipeline#ocsf_mapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ocsf_mapper ObservabilityPipeline#ocsf_mapper}
 
 ---
 
@@ -12002,7 +12204,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 parse_grok block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#parse_grok ObservabilityPipeline#parse_grok}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#parse_grok ObservabilityPipeline#parse_grok}
 
 ---
 
@@ -12016,7 +12218,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 parse_json block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#parse_json ObservabilityPipeline#parse_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#parse_json ObservabilityPipeline#parse_json}
 
 ---
 
@@ -12030,7 +12232,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 parse_xml block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#parse_xml ObservabilityPipeline#parse_xml}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#parse_xml ObservabilityPipeline#parse_xml}
 
 ---
 
@@ -12044,7 +12246,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 quota block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#quota ObservabilityPipeline#quota}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#quota ObservabilityPipeline#quota}
 
 ---
 
@@ -12058,7 +12260,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 reduce block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#reduce ObservabilityPipeline#reduce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#reduce ObservabilityPipeline#reduce}
 
 ---
 
@@ -12072,7 +12274,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 remove_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#remove_fields ObservabilityPipeline#remove_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#remove_fields ObservabilityPipeline#remove_fields}
 
 ---
 
@@ -12086,7 +12288,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 rename_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#rename_fields ObservabilityPipeline#rename_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#rename_fields ObservabilityPipeline#rename_fields}
 
 ---
 
@@ -12100,7 +12302,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 rename_metric_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#rename_metric_tags ObservabilityPipeline#rename_metric_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#rename_metric_tags ObservabilityPipeline#rename_metric_tags}
 
 ---
 
@@ -12114,7 +12316,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 sample block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#sample ObservabilityPipeline#sample}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#sample ObservabilityPipeline#sample}
 
 ---
 
@@ -12128,7 +12330,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 sensitive_data_scanner block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#sensitive_data_scanner ObservabilityPipeline#sensitive_data_scanner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#sensitive_data_scanner ObservabilityPipeline#sensitive_data_scanner}
 
 ---
 
@@ -12142,7 +12344,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 split_array block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#split_array ObservabilityPipeline#split_array}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#split_array ObservabilityPipeline#split_array}
 
 ---
 
@@ -12156,7 +12358,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 tag_cardinality_limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tag_cardinality_limit ObservabilityPipeline#tag_cardinality_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tag_cardinality_limit ObservabilityPipeline#tag_cardinality_limit}
 
 ---
 
@@ -12170,7 +12372,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 throttle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#throttle ObservabilityPipeline#throttle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#throttle ObservabilityPipeline#throttle}
 
 ---
 
@@ -12204,7 +12406,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#variable ObservabilityPipeline#variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#variable ObservabilityPipeline#variable}
 
 ---
 
@@ -12240,7 +12442,7 @@ public java.lang.String getField();
 
 The target field in the log event.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -12254,7 +12456,7 @@ public java.lang.String getName();
 
 The name of the environment variable to read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -12288,7 +12490,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 field block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -12324,7 +12526,7 @@ public java.lang.String getName();
 
 The field name to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -12338,7 +12540,7 @@ public java.lang.String getValue();
 
 The value to assign to the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -12384,7 +12586,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tag ObservabilityPipeline#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tag ObservabilityPipeline#tag}
 
 ---
 
@@ -12420,7 +12622,7 @@ public java.lang.String getName();
 
 The tag name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -12434,7 +12636,7 @@ public java.lang.String getValue();
 
 The tag value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -12472,7 +12674,7 @@ The interval, in seconds, over which metrics are aggregated.
 
 Must be between 1 and 60. Value must be between 1 and 60.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#interval_secs ObservabilityPipeline#interval_secs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#interval_secs ObservabilityPipeline#interval_secs}
 
 ---
 
@@ -12488,7 +12690,7 @@ The aggregation mode.
 
 One of `auto`, `sum`, `latest`, `count`, `max`, `min`, `mean`. Valid values are `auto`, `sum`, `latest`, `count`, `max`, `min`, `mean`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -12522,7 +12724,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 remap block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#remap ObservabilityPipeline#remap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#remap ObservabilityPipeline#remap}
 
 ---
 
@@ -12564,7 +12766,7 @@ public java.lang.Boolean|IResolvable getDropOnError();
 
 Whether to drop events that cause errors during transformation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#drop_on_error ObservabilityPipeline#drop_on_error}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#drop_on_error ObservabilityPipeline#drop_on_error}
 
 ---
 
@@ -12578,7 +12780,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether this remap rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
 
 ---
 
@@ -12592,7 +12794,7 @@ public java.lang.String getInclude();
 
 A Datadog search query used to filter events for this specific remap rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -12606,7 +12808,7 @@ public java.lang.String getName();
 
 A descriptive name for this remap rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -12620,7 +12822,7 @@ public java.lang.String getSource();
 
 The VRL script source code that defines the transformation logic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
 
 ---
 
@@ -12643,7 +12845,7 @@ ObservabilityPipelineConfigProcessorGroupProcessorDatadogTags.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorDatadogTags.property.action">action</a></code> | <code>java.lang.String</code> | Valid values are `include`, `exclude`. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorDatadogTags.property.keys">keys</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#keys ObservabilityPipeline#keys}. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorDatadogTags.property.keys">keys</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#keys ObservabilityPipeline#keys}. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorDatadogTags.property.mode">mode</a></code> | <code>java.lang.String</code> | Valid values are `filter`. |
 
 ---
@@ -12658,7 +12860,7 @@ public java.lang.String getAction();
 
 Valid values are `include`, `exclude`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#action ObservabilityPipeline#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#action ObservabilityPipeline#action}
 
 ---
 
@@ -12670,7 +12872,7 @@ public java.util.List<java.lang.String> getKeys();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#keys ObservabilityPipeline#keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#keys ObservabilityPipeline#keys}.
 
 ---
 
@@ -12684,7 +12886,7 @@ public java.lang.String getMode();
 
 Valid values are `filter`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -12720,7 +12922,7 @@ public java.util.List<java.lang.String> getFields();
 
 A list of log field paths to check for duplicates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
 
 ---
 
@@ -12734,7 +12936,7 @@ public java.lang.String getMode();
 
 The deduplication mode to apply to the fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -12774,7 +12976,7 @@ public java.lang.String getTarget();
 
 Path where enrichment results should be stored in the log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#target ObservabilityPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#target ObservabilityPipeline#target}
 
 ---
 
@@ -12788,7 +12990,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#file ObservabilityPipeline#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#file ObservabilityPipeline#file}
 
 ---
 
@@ -12802,7 +13004,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 geoip block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#geoip ObservabilityPipeline#geoip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#geoip ObservabilityPipeline#geoip}
 
 ---
 
@@ -12816,7 +13018,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 reference_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#reference_table ObservabilityPipeline#reference_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#reference_table ObservabilityPipeline#reference_table}
 
 ---
 
@@ -12854,7 +13056,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 encoding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -12868,7 +13070,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key ObservabilityPipeline#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key ObservabilityPipeline#key}
 
 ---
 
@@ -12882,7 +13084,7 @@ public java.lang.String getPath();
 
 Path to the CSV file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
 
 ---
 
@@ -12920,7 +13122,7 @@ public java.lang.String getDelimiter();
 
 The `encoding` `delimiter`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
 
 ---
 
@@ -12934,7 +13136,7 @@ public java.lang.String getType();
 
 File encoding format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#type ObservabilityPipeline#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#type ObservabilityPipeline#type}
 
 ---
 
@@ -12948,7 +13150,7 @@ public java.lang.Boolean|IResolvable getIncludesHeaders();
 
 The `encoding` `includes_headers`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#includes_headers ObservabilityPipeline#includes_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#includes_headers ObservabilityPipeline#includes_headers}
 
 ---
 
@@ -12986,7 +13188,7 @@ public java.lang.String getColumn();
 
 The `items` `column`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#column ObservabilityPipeline#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#column ObservabilityPipeline#column}
 
 ---
 
@@ -13000,7 +13202,7 @@ public java.lang.String getComparison();
 
 The comparison method (e.g. equals).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#comparison ObservabilityPipeline#comparison}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#comparison ObservabilityPipeline#comparison}
 
 ---
 
@@ -13014,7 +13216,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 field block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -13054,7 +13256,7 @@ public java.lang.String getEvent();
 
 The path to the field in the log event to use as the lookup key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#event ObservabilityPipeline#event}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#event ObservabilityPipeline#event}
 
 ---
 
@@ -13068,7 +13270,7 @@ public java.lang.String getSecret();
 
 The name of the secret containing the lookup key value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#secret ObservabilityPipeline#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#secret ObservabilityPipeline#secret}
 
 ---
 
@@ -13082,7 +13284,7 @@ public java.lang.String getStringPath();
 
 A plain field path in the log event (for example, `log.user.id`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#string_path ObservabilityPipeline#string_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#string_path ObservabilityPipeline#string_path}
 
 ---
 
@@ -13096,7 +13298,7 @@ public java.lang.String getVrl();
 
 A VRL expression that returns the value to use as the lookup key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#vrl ObservabilityPipeline#vrl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#vrl ObservabilityPipeline#vrl}
 
 ---
 
@@ -13134,7 +13336,7 @@ public java.lang.String getKeyField();
 
 Path to the IP field in the log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_field ObservabilityPipeline#key_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_field ObservabilityPipeline#key_field}
 
 ---
 
@@ -13148,7 +13350,7 @@ public java.lang.String getLocale();
 
 Locale used to resolve geographical names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#locale ObservabilityPipeline#locale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#locale ObservabilityPipeline#locale}
 
 ---
 
@@ -13162,7 +13364,7 @@ public java.lang.String getPath();
 
 Path to the GeoIP database file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
 
 ---
 
@@ -13202,7 +13404,7 @@ public java.lang.String getKeyField();
 
 Path to the field in the log event to match against the reference table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_field ObservabilityPipeline#key_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_field ObservabilityPipeline#key_field}
 
 ---
 
@@ -13216,7 +13418,7 @@ public java.lang.String getTableId();
 
 The unique identifier of the reference table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#table_id ObservabilityPipeline#table_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#table_id ObservabilityPipeline#table_id}
 
 ---
 
@@ -13230,7 +13432,7 @@ public java.lang.String getAppKeyKey();
 
 Name of the environment variable or secret that holds the Datadog application key for the reference table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#app_key_key ObservabilityPipeline#app_key_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#app_key_key ObservabilityPipeline#app_key_key}
 
 ---
 
@@ -13244,7 +13446,7 @@ public java.util.List<java.lang.String> getColumns();
 
 List of column names to include from the reference table. If not provided, all columns are included.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#columns ObservabilityPipeline#columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#columns ObservabilityPipeline#columns}
 
 ---
 
@@ -13290,7 +13492,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 metric block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#metric ObservabilityPipeline#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#metric ObservabilityPipeline#metric}
 
 ---
 
@@ -13332,7 +13534,7 @@ public java.lang.String getInclude();
 
 Datadog filter query to match logs for metric generation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -13346,7 +13548,7 @@ public java.lang.String getMetricType();
 
 Type of metric to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#metric_type ObservabilityPipeline#metric_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#metric_type ObservabilityPipeline#metric_type}
 
 ---
 
@@ -13360,7 +13562,7 @@ public java.lang.String getName();
 
 Name of the custom metric to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -13374,7 +13576,7 @@ public java.util.List<java.lang.String> getGroupBy();
 
 Optional fields used to group the metric series.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
 
 ---
 
@@ -13388,7 +13590,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -13424,7 +13626,7 @@ public java.lang.String getStrategy();
 
 Metric value strategy: `increment_by_one` or `increment_by_field`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
 
 ---
 
@@ -13438,7 +13640,7 @@ public java.lang.String getField();
 
 Name of the log field containing the numeric value to increment the metric by (used only for `increment_by_field`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -13472,7 +13674,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 metric block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#metric ObservabilityPipeline#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#metric ObservabilityPipeline#metric}
 
 ---
 
@@ -13514,7 +13716,7 @@ public java.lang.String getInclude();
 
 Datadog filter query to match logs for metric generation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -13528,7 +13730,7 @@ public java.lang.String getMetricType();
 
 Type of metric to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#metric_type ObservabilityPipeline#metric_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#metric_type ObservabilityPipeline#metric_type}
 
 ---
 
@@ -13542,7 +13744,7 @@ public java.lang.String getName();
 
 Name of the custom metric to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -13556,7 +13758,7 @@ public java.util.List<java.lang.String> getGroupBy();
 
 Optional fields used to group the metric series.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
 
 ---
 
@@ -13570,7 +13772,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -13606,7 +13808,7 @@ public java.lang.String getStrategy();
 
 Metric value strategy: `increment_by_one` or `increment_by_field`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
 
 ---
 
@@ -13620,7 +13822,7 @@ public java.lang.String getField();
 
 Name of the log field containing the numeric value to increment the metric by (used only for `increment_by_field`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -13654,7 +13856,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
 
 ---
 
@@ -13694,7 +13896,7 @@ public java.lang.String getAction();
 
 The action to take on tags with matching keys. Valid values are `include`, `exclude`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#action ObservabilityPipeline#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#action ObservabilityPipeline#action}
 
 ---
 
@@ -13708,7 +13910,7 @@ public java.lang.String getInclude();
 
 A Datadog search query used to determine which metrics this rule targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -13722,7 +13924,7 @@ public java.util.List<java.lang.String> getKeys();
 
 A list of tag keys to include or exclude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#keys ObservabilityPipeline#keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#keys ObservabilityPipeline#keys}
 
 ---
 
@@ -13736,7 +13938,7 @@ public java.lang.String getMode();
 
 The processing mode for tag filtering. Valid values are `filter`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -13772,7 +13974,7 @@ public java.lang.Boolean|IResolvable getKeepUnmatched();
 
 Whether to keep an event that does not match any of the mapping filters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#keep_unmatched ObservabilityPipeline#keep_unmatched}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#keep_unmatched ObservabilityPipeline#keep_unmatched}
 
 ---
 
@@ -13786,7 +13988,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 mapping block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#mapping ObservabilityPipeline#mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#mapping ObservabilityPipeline#mapping}
 
 ---
 
@@ -13824,7 +14026,7 @@ public java.lang.String getInclude();
 
 Search query for selecting which logs the mapping applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -13838,7 +14040,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 custom_mapping block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#custom_mapping ObservabilityPipeline#custom_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#custom_mapping ObservabilityPipeline#custom_mapping}
 
 ---
 
@@ -13852,7 +14054,7 @@ public java.lang.String getLibraryMapping();
 
 Predefined library mapping for log transformation. Use this or custom_mapping, not both.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#library_mapping ObservabilityPipeline#library_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#library_mapping ObservabilityPipeline#library_mapping}
 
 ---
 
@@ -13890,7 +14092,7 @@ public java.lang.Number getVersion();
 
 The version of the custom mapping configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#version ObservabilityPipeline#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#version ObservabilityPipeline#version}
 
 ---
 
@@ -13904,7 +14106,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 mapping block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#mapping ObservabilityPipeline#mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#mapping ObservabilityPipeline#mapping}
 
 ---
 
@@ -13918,7 +14120,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#metadata ObservabilityPipeline#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#metadata ObservabilityPipeline#metadata}
 
 ---
 
@@ -13962,7 +14164,7 @@ public java.lang.String getDest();
 
 The destination OCSF field path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#dest ObservabilityPipeline#dest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#dest ObservabilityPipeline#dest}
 
 ---
 
@@ -13976,7 +14178,7 @@ public java.lang.String getDefault();
 
 The default value to use if the source field is missing or empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#default ObservabilityPipeline#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#default ObservabilityPipeline#default}
 
 ---
 
@@ -13990,7 +14192,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 lookup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#lookup ObservabilityPipeline#lookup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#lookup ObservabilityPipeline#lookup}
 
 ---
 
@@ -14004,7 +14206,7 @@ public java.lang.String getSource();
 
 The source field path from the log event.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
 
 ---
 
@@ -14018,7 +14220,7 @@ public java.util.List<java.lang.String> getSources();
 
 Multiple source field paths for combined mapping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#sources ObservabilityPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#sources ObservabilityPipeline#sources}
 
 ---
 
@@ -14032,7 +14234,7 @@ public java.lang.String getValue();
 
 A static value to use for the destination field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -14068,7 +14270,7 @@ public java.lang.String getDefault();
 
 The default value to use if no lookup match is found.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#default ObservabilityPipeline#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#default ObservabilityPipeline#default}
 
 ---
 
@@ -14082,7 +14284,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#table ObservabilityPipeline#table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#table ObservabilityPipeline#table}
 
 ---
 
@@ -14126,7 +14328,7 @@ public java.lang.String getContains();
 
 The substring to match in the source value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#contains ObservabilityPipeline#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#contains ObservabilityPipeline#contains}
 
 ---
 
@@ -14140,7 +14342,7 @@ public java.lang.String getEqualsSource();
 
 The source field to match against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#equals_source ObservabilityPipeline#equals_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#equals_source ObservabilityPipeline#equals_source}
 
 ---
 
@@ -14154,7 +14356,7 @@ public java.lang.String getEqualTo();
 
 The exact value to match in the source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#equals ObservabilityPipeline#equals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#equals ObservabilityPipeline#equals}
 
 ---
 
@@ -14168,7 +14370,7 @@ public java.lang.String getMatches();
 
 A regex pattern to match in the source value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#matches ObservabilityPipeline#matches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#matches ObservabilityPipeline#matches}
 
 ---
 
@@ -14182,7 +14384,7 @@ public java.lang.String getNotMatches();
 
 A regex pattern that must not match the source value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#not_matches ObservabilityPipeline#not_matches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#not_matches ObservabilityPipeline#not_matches}
 
 ---
 
@@ -14196,7 +14398,7 @@ public java.lang.String getValue();
 
 The value to use when a match is found.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -14234,7 +14436,7 @@ public java.lang.String getClass();
 
 The OCSF event class name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#class ObservabilityPipeline#class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#class ObservabilityPipeline#class}
 
 ---
 
@@ -14248,7 +14450,7 @@ public java.lang.String getVersion();
 
 The OCSF schema version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#version ObservabilityPipeline#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#version ObservabilityPipeline#version}
 
 ---
 
@@ -14262,7 +14464,7 @@ public java.util.List<java.lang.String> getProfiles();
 
 A list of OCSF profiles to apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#profiles ObservabilityPipeline#profiles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#profiles ObservabilityPipeline#profiles}
 
 ---
 
@@ -14302,7 +14504,7 @@ public java.lang.Boolean|IResolvable getDisableLibraryRules();
 
 If set to `true`, disables the default Grok rules provided by Datadog. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#disable_library_rules ObservabilityPipeline#disable_library_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disable_library_rules ObservabilityPipeline#disable_library_rules}
 
 ---
 
@@ -14316,7 +14518,7 @@ public java.lang.String getField();
 
 The log field to parse with the Grok rules. Defaults to `"message"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -14330,7 +14532,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 include_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#include_rule ObservabilityPipeline#include_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#include_rule ObservabilityPipeline#include_rule}
 
 ---
 
@@ -14344,7 +14546,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
 
 ---
 
@@ -14382,7 +14584,7 @@ public java.lang.String getInclude();
 
 A Datadog search query used to determine which logs this Grok rule targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -14396,7 +14598,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 match_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#match_rule ObservabilityPipeline#match_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#match_rule ObservabilityPipeline#match_rule}
 
 ---
 
@@ -14410,7 +14612,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 support_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#support_rule ObservabilityPipeline#support_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#support_rule ObservabilityPipeline#support_rule}
 
 ---
 
@@ -14446,7 +14648,7 @@ public java.lang.String getName();
 
 The name of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -14460,7 +14662,7 @@ public java.lang.String getRule();
 
 The definition of the Grok rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
 
 ---
 
@@ -14496,7 +14698,7 @@ public java.lang.String getName();
 
 The name of the helper Grok rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -14510,7 +14712,7 @@ public java.lang.String getRule();
 
 The definition of the helper Grok rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
 
 ---
 
@@ -14548,7 +14750,7 @@ public java.lang.String getSource();
 
 The value of the source field in log events which should be processed by the Grok rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
 
 ---
 
@@ -14562,7 +14764,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 match_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#match_rule ObservabilityPipeline#match_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#match_rule ObservabilityPipeline#match_rule}
 
 ---
 
@@ -14576,7 +14778,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 support_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#support_rule ObservabilityPipeline#support_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#support_rule ObservabilityPipeline#support_rule}
 
 ---
 
@@ -14612,7 +14814,7 @@ public java.lang.String getName();
 
 The name of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -14626,7 +14828,7 @@ public java.lang.String getRule();
 
 The definition of the Grok rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
 
 ---
 
@@ -14662,7 +14864,7 @@ public java.lang.String getName();
 
 The name of the helper Grok rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -14676,7 +14878,7 @@ public java.lang.String getRule();
 
 The definition of the helper Grok rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
 
 ---
 
@@ -14710,7 +14912,7 @@ public java.lang.String getField();
 
 The field to parse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -14758,7 +14960,7 @@ public java.lang.String getField();
 
 The path to the log field on which you want to parse XML.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -14772,7 +14974,7 @@ public java.lang.Boolean|IResolvable getAlwaysUseTextKey();
 
 Whether to always store text inside an object using the text key even when no attributes exist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#always_use_text_key ObservabilityPipeline#always_use_text_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#always_use_text_key ObservabilityPipeline#always_use_text_key}
 
 ---
 
@@ -14788,7 +14990,7 @@ The prefix to use for XML attributes in the parsed output.
 
 If the field is left empty, the original attribute key is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#attr_prefix ObservabilityPipeline#attr_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#attr_prefix ObservabilityPipeline#attr_prefix}
 
 ---
 
@@ -14802,7 +15004,7 @@ public java.lang.Boolean|IResolvable getIncludeAttr();
 
 Whether to include XML attributes in the parsed output.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#include_attr ObservabilityPipeline#include_attr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#include_attr ObservabilityPipeline#include_attr}
 
 ---
 
@@ -14816,7 +15018,7 @@ public java.lang.Boolean|IResolvable getParseBool();
 
 Whether to parse boolean values from strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#parse_bool ObservabilityPipeline#parse_bool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#parse_bool ObservabilityPipeline#parse_bool}
 
 ---
 
@@ -14830,7 +15032,7 @@ public java.lang.Boolean|IResolvable getParseNull();
 
 Whether to parse null values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#parse_null ObservabilityPipeline#parse_null}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#parse_null ObservabilityPipeline#parse_null}
 
 ---
 
@@ -14844,7 +15046,7 @@ public java.lang.Boolean|IResolvable getParseNumber();
 
 Whether to parse numeric values from strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#parse_number ObservabilityPipeline#parse_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#parse_number ObservabilityPipeline#parse_number}
 
 ---
 
@@ -14858,7 +15060,7 @@ public java.lang.String getTextKey();
 
 The key name to use for the text node when XML attributes are appended.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#text_key ObservabilityPipeline#text_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#text_key ObservabilityPipeline#text_key}
 
 ---
 
@@ -14906,7 +15108,7 @@ public java.lang.String getName();
 
 The name of the quota.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -14920,7 +15122,7 @@ public java.lang.Boolean|IResolvable getDropEvents();
 
 Whether to drop events exceeding the limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#drop_events ObservabilityPipeline#drop_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#drop_events ObservabilityPipeline#drop_events}
 
 ---
 
@@ -14934,7 +15136,7 @@ public java.lang.Boolean|IResolvable getIgnoreWhenMissingPartitions();
 
 Whether to ignore when partition fields are missing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ignore_when_missing_partitions ObservabilityPipeline#ignore_when_missing_partitions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ignore_when_missing_partitions ObservabilityPipeline#ignore_when_missing_partitions}
 
 ---
 
@@ -14948,7 +15150,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
 
 ---
 
@@ -14962,7 +15164,7 @@ public java.lang.String getOverflowAction();
 
 The action to take when the quota is exceeded: `drop`, `no_action`, or `overflow_routing`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#overflow_action ObservabilityPipeline#overflow_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#overflow_action ObservabilityPipeline#overflow_action}
 
 ---
 
@@ -14976,7 +15178,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 override block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#override ObservabilityPipeline#override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#override ObservabilityPipeline#override}
 
 ---
 
@@ -14990,7 +15192,7 @@ public java.util.List<java.lang.String> getPartitionFields();
 
 List of partition fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#partition_fields ObservabilityPipeline#partition_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#partition_fields ObservabilityPipeline#partition_fields}
 
 ---
 
@@ -15004,7 +15206,7 @@ public java.lang.String getTooManyBucketsAction();
 
 The action to take when the max number of buckets is exceeded: `drop`, `no_action`, or `overflow_routing`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#too_many_buckets_action ObservabilityPipeline#too_many_buckets_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#too_many_buckets_action ObservabilityPipeline#too_many_buckets_action}
 
 ---
 
@@ -15040,7 +15242,7 @@ public java.lang.String getEnforce();
 
 Whether to enforce by 'bytes' or 'events'. Valid values are `bytes`, `events`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
 
 ---
 
@@ -15054,7 +15256,7 @@ public java.lang.Number getLimit();
 
 The daily quota limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
 
 ---
 
@@ -15090,7 +15292,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 field block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -15104,7 +15306,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
 
 ---
 
@@ -15140,7 +15342,7 @@ public java.lang.String getName();
 
 The field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -15154,7 +15356,7 @@ public java.lang.String getValue();
 
 The field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -15190,7 +15392,7 @@ public java.lang.String getEnforce();
 
 Whether to enforce by 'bytes' or 'events'. Valid values are `bytes`, `events`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
 
 ---
 
@@ -15204,7 +15406,7 @@ public java.lang.Number getLimit();
 
 The daily quota limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
 
 ---
 
@@ -15240,7 +15442,7 @@ public java.util.List<java.lang.String> getGroupBy();
 
 A list of fields used to group log events for merging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
 
 ---
 
@@ -15254,7 +15456,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 merge_strategy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#merge_strategy ObservabilityPipeline#merge_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#merge_strategy ObservabilityPipeline#merge_strategy}
 
 ---
 
@@ -15290,7 +15492,7 @@ public java.lang.String getPath();
 
 The field path in the log event.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
 
 ---
 
@@ -15304,7 +15506,7 @@ public java.lang.String getStrategy();
 
 The merge strategy to apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
 
 ---
 
@@ -15338,7 +15540,7 @@ public java.util.List<java.lang.String> getFields();
 
 List of fields to remove from the events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
 
 ---
 
@@ -15372,7 +15574,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 field block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -15410,7 +15612,7 @@ public java.lang.String getDestination();
 
 Destination field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#destination ObservabilityPipeline#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#destination ObservabilityPipeline#destination}
 
 ---
 
@@ -15424,7 +15626,7 @@ public java.lang.Boolean|IResolvable getPreserveSource();
 
 Whether to keep the original field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#preserve_source ObservabilityPipeline#preserve_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#preserve_source ObservabilityPipeline#preserve_source}
 
 ---
 
@@ -15438,7 +15640,7 @@ public java.lang.String getSource();
 
 Source field to rename.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
 
 ---
 
@@ -15472,7 +15674,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tag ObservabilityPipeline#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tag ObservabilityPipeline#tag}
 
 ---
 
@@ -15508,7 +15710,7 @@ public java.lang.String getRenameTo();
 
 The new tag key to assign in place of the original.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#rename_to ObservabilityPipeline#rename_to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#rename_to ObservabilityPipeline#rename_to}
 
 ---
 
@@ -15522,7 +15724,7 @@ public java.lang.String getTag();
 
 The original tag key on the metric event.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tag ObservabilityPipeline#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tag ObservabilityPipeline#tag}
 
 ---
 
@@ -15558,7 +15760,7 @@ public java.lang.Number getPercentage();
 
 The percentage of logs to sample.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#percentage ObservabilityPipeline#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#percentage ObservabilityPipeline#percentage}
 
 ---
 
@@ -15572,7 +15774,7 @@ public java.util.List<java.lang.String> getGroupBy();
 
 Optional list of fields to group events by. Each group is sampled independently.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
 
 ---
 
@@ -15606,7 +15808,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
 
 ---
 
@@ -15650,7 +15852,7 @@ public java.lang.String getName();
 
 A name identifying the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -15664,7 +15866,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 keyword_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#keyword_options ObservabilityPipeline#keyword_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#keyword_options ObservabilityPipeline#keyword_options}
 
 ---
 
@@ -15678,7 +15880,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 on_match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#on_match ObservabilityPipeline#on_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#on_match ObservabilityPipeline#on_match}
 
 ---
 
@@ -15692,7 +15894,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 pattern block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#pattern ObservabilityPipeline#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#pattern ObservabilityPipeline#pattern}
 
 ---
 
@@ -15706,7 +15908,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#scope ObservabilityPipeline#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#scope ObservabilityPipeline#scope}
 
 ---
 
@@ -15720,7 +15922,7 @@ public java.util.List<java.lang.String> getTags();
 
 Tags assigned to this rule for filtering and classification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tags ObservabilityPipeline#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tags ObservabilityPipeline#tags}
 
 ---
 
@@ -15756,7 +15958,7 @@ public java.util.List<java.lang.String> getKeywords();
 
 A list of keywords to match near the sensitive pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#keywords ObservabilityPipeline#keywords}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#keywords ObservabilityPipeline#keywords}
 
 ---
 
@@ -15770,7 +15972,7 @@ public java.lang.Number getProximity();
 
 Maximum number of tokens between a keyword and a sensitive value match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#proximity ObservabilityPipeline#proximity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#proximity ObservabilityPipeline#proximity}
 
 ---
 
@@ -15808,7 +16010,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 hash block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#hash ObservabilityPipeline#hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#hash ObservabilityPipeline#hash}
 
 ---
 
@@ -15822,7 +16024,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 partial_redact block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#partial_redact ObservabilityPipeline#partial_redact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#partial_redact ObservabilityPipeline#partial_redact}
 
 ---
 
@@ -15836,7 +16038,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 redact block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#redact ObservabilityPipeline#redact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#redact ObservabilityPipeline#redact}
 
 ---
 
@@ -15884,7 +16086,7 @@ public java.lang.Number getCharacters();
 
 Number of characters to keep.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#characters ObservabilityPipeline#characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#characters ObservabilityPipeline#characters}
 
 ---
 
@@ -15898,7 +16100,7 @@ public java.lang.String getDirection();
 
 Direction from which to keep characters: `first` or `last`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#direction ObservabilityPipeline#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#direction ObservabilityPipeline#direction}
 
 ---
 
@@ -15932,7 +16134,7 @@ public java.lang.String getReplace();
 
 Replacement string for redacted values (e.g., `***`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#replace ObservabilityPipeline#replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#replace ObservabilityPipeline#replace}
 
 ---
 
@@ -15968,7 +16170,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 custom block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#custom ObservabilityPipeline#custom}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#custom ObservabilityPipeline#custom}
 
 ---
 
@@ -15982,7 +16184,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 library block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#library ObservabilityPipeline#library}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#library ObservabilityPipeline#library}
 
 ---
 
@@ -16018,7 +16220,7 @@ public java.lang.String getDescription();
 
 Human-readable description providing context about a sensitive data scanner rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#description ObservabilityPipeline#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#description ObservabilityPipeline#description}
 
 ---
 
@@ -16032,7 +16234,7 @@ public java.lang.String getRule();
 
 A regular expression used to detect sensitive values. Must be a valid regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
 
 ---
 
@@ -16070,7 +16272,7 @@ public java.lang.String getDescription();
 
 Human-readable description providing context about a sensitive data scanner rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#description ObservabilityPipeline#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#description ObservabilityPipeline#description}
 
 ---
 
@@ -16084,7 +16286,7 @@ public java.lang.String getId();
 
 Identifier for a predefined pattern from the sensitive data scanner pattern library.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -16101,7 +16303,7 @@ public java.lang.Boolean|IResolvable getUseRecommendedKeywords();
 
 Whether to augment the pattern with recommended keywords (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#use_recommended_keywords ObservabilityPipeline#use_recommended_keywords}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#use_recommended_keywords ObservabilityPipeline#use_recommended_keywords}
 
 ---
 
@@ -16139,7 +16341,7 @@ public java.lang.Boolean|IResolvable getAll();
 
 Scan all fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#all ObservabilityPipeline#all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#all ObservabilityPipeline#all}
 
 ---
 
@@ -16153,7 +16355,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 exclude block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#exclude ObservabilityPipeline#exclude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#exclude ObservabilityPipeline#exclude}
 
 ---
 
@@ -16167,7 +16369,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 include block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -16201,7 +16403,7 @@ public java.util.List<java.lang.String> getFields();
 
 The fields to exclude from scanning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
 
 ---
 
@@ -16235,7 +16437,7 @@ public java.util.List<java.lang.String> getFields();
 
 The fields to include in scanning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
 
 ---
 
@@ -16269,7 +16471,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 array block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#array ObservabilityPipeline#array}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#array ObservabilityPipeline#array}
 
 ---
 
@@ -16305,7 +16507,7 @@ public java.lang.String getField();
 
 The path to the array field to split.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -16319,7 +16521,7 @@ public java.lang.String getInclude();
 
 A Datadog search query used to determine which logs this array split operation targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -16334,6 +16536,7 @@ ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimit.builder()
     .limitExceededAction(java.lang.String)
     .valueLimit(java.lang.Number)
 //  .perMetricLimit(IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimit>)
+//  .trackingMode(IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode>)
     .build();
 ```
 
@@ -16344,6 +16547,7 @@ ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimit.builder()
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimit.property.limitExceededAction">limitExceededAction</a></code> | <code>java.lang.String</code> | The default action to take when the cardinality limit is exceeded. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimit.property.valueLimit">valueLimit</a></code> | <code>java.lang.Number</code> | The default maximum number of distinct tag value combinations allowed per metric. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimit.property.perMetricLimit">perMetricLimit</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimit">ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimit</a>></code> | per_metric_limit block. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimit.property.trackingMode">trackingMode</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode">ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode</a>></code> | tracking_mode block. |
 
 ---
 
@@ -16359,7 +16563,7 @@ The default action to take when the cardinality limit is exceeded.
 
 One of `drop_tag`, `drop_event`. Valid values are `drop_tag`, `drop_event`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#limit_exceeded_action ObservabilityPipeline#limit_exceeded_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#limit_exceeded_action ObservabilityPipeline#limit_exceeded_action}
 
 ---
 
@@ -16375,7 +16579,7 @@ The default maximum number of distinct tag value combinations allowed per metric
 
 Between 0 and 1000000. Value must be between 0 and 1000000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#value_limit ObservabilityPipeline#value_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#value_limit ObservabilityPipeline#value_limit}
 
 ---
 
@@ -16389,7 +16593,21 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 per_metric_limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#per_metric_limit ObservabilityPipeline#per_metric_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#per_metric_limit ObservabilityPipeline#per_metric_limit}
+
+---
+
+##### `trackingMode`<sup>Optional</sup> <a name="trackingMode" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimit.property.trackingMode"></a>
+
+```java
+public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode> getTrackingMode();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode">ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode</a>>
+
+tracking_mode block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tracking_mode ObservabilityPipeline#tracking_mode}
 
 ---
 
@@ -16402,7 +16620,7 @@ import io.cdktn.providers.datadog.observability_pipeline.ObservabilityPipelineCo
 
 ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimit.builder()
     .metricName(java.lang.String)
-    .mode(java.lang.String)
+    .overrideType(java.lang.String)
 //  .limitExceededAction(java.lang.String)
 //  .perTagLimit(IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimit>)
 //  .valueLimit(java.lang.Number)
@@ -16414,7 +16632,7 @@ ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLi
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimit.property.metricName">metricName</a></code> | <code>java.lang.String</code> | The metric name this override applies to. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimit.property.mode">mode</a></code> | <code>java.lang.String</code> | How the per-metric override is applied. One of `tracked`, `excluded`. Valid values are `tracked`, `excluded`. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimit.property.overrideType">overrideType</a></code> | <code>java.lang.String</code> | How the per-metric override is applied. One of `limit_override`, `excluded`. Valid values are `limit_override`, `excluded`. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimit.property.limitExceededAction">limitExceededAction</a></code> | <code>java.lang.String</code> | The action to take on this metric when the limit is exceeded. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimit.property.perTagLimit">perTagLimit</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimit">ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimit</a>></code> | per_tag_limit block. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimit.property.valueLimit">valueLimit</a></code> | <code>java.lang.Number</code> | The cardinality cap for this metric. |
@@ -16431,21 +16649,21 @@ public java.lang.String getMetricName();
 
 The metric name this override applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#metric_name ObservabilityPipeline#metric_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#metric_name ObservabilityPipeline#metric_name}
 
 ---
 
-##### `mode`<sup>Required</sup> <a name="mode" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimit.property.mode"></a>
+##### `overrideType`<sup>Required</sup> <a name="overrideType" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimit.property.overrideType"></a>
 
 ```java
-public java.lang.String getMode();
+public java.lang.String getOverrideType();
 ```
 
 - *Type:* java.lang.String
 
-How the per-metric override is applied. One of `tracked`, `excluded`. Valid values are `tracked`, `excluded`.
+How the per-metric override is applied. One of `limit_override`, `excluded`. Valid values are `limit_override`, `excluded`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#override_type ObservabilityPipeline#override_type}
 
 ---
 
@@ -16459,9 +16677,9 @@ public java.lang.String getLimitExceededAction();
 
 The action to take on this metric when the limit is exceeded.
 
-Required when `mode` is `tracked`; must be omitted when `mode` is `excluded`. Valid values are `drop_tag`, `drop_event`.
+Required when `override_type` is `limit_override`; must be omitted when `override_type` is `excluded`. Valid values are `drop_tag`, `drop_event`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#limit_exceeded_action ObservabilityPipeline#limit_exceeded_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#limit_exceeded_action ObservabilityPipeline#limit_exceeded_action}
 
 ---
 
@@ -16475,7 +16693,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 
 per_tag_limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#per_tag_limit ObservabilityPipeline#per_tag_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#per_tag_limit ObservabilityPipeline#per_tag_limit}
 
 ---
 
@@ -16489,9 +16707,9 @@ public java.lang.Number getValueLimit();
 
 The cardinality cap for this metric.
 
-Required when `mode` is `tracked`; must be omitted when `mode` is `excluded`. Value must be between 0 and 1000000.
+Required when `override_type` is `limit_override`; must be omitted when `override_type` is `excluded`. Value must be between 0 and 1000000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#value_limit ObservabilityPipeline#value_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#value_limit ObservabilityPipeline#value_limit}
 
 ---
 
@@ -16503,7 +16721,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 import io.cdktn.providers.datadog.observability_pipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimit;
 
 ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimit.builder()
-    .mode(java.lang.String)
+    .overrideType(java.lang.String)
     .tagKey(java.lang.String)
 //  .valueLimit(java.lang.Number)
     .build();
@@ -16513,23 +16731,23 @@ ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimit.property.mode">mode</a></code> | <code>java.lang.String</code> | How the per-tag override is applied. One of `limit_override`, `excluded`. Valid values are `limit_override`, `excluded`. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimit.property.overrideType">overrideType</a></code> | <code>java.lang.String</code> | How the per-tag override is applied. One of `limit_override`, `excluded`. Valid values are `limit_override`, `excluded`. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimit.property.tagKey">tagKey</a></code> | <code>java.lang.String</code> | The tag key this override applies to. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimit.property.valueLimit">valueLimit</a></code> | <code>java.lang.Number</code> | The cardinality cap for this tag. |
 
 ---
 
-##### `mode`<sup>Required</sup> <a name="mode" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimit.property.mode"></a>
+##### `overrideType`<sup>Required</sup> <a name="overrideType" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimit.property.overrideType"></a>
 
 ```java
-public java.lang.String getMode();
+public java.lang.String getOverrideType();
 ```
 
 - *Type:* java.lang.String
 
 How the per-tag override is applied. One of `limit_override`, `excluded`. Valid values are `limit_override`, `excluded`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#override_type ObservabilityPipeline#override_type}
 
 ---
 
@@ -16543,7 +16761,7 @@ public java.lang.String getTagKey();
 
 The tag key this override applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tag_key ObservabilityPipeline#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tag_key ObservabilityPipeline#tag_key}
 
 ---
 
@@ -16557,9 +16775,43 @@ public java.lang.Number getValueLimit();
 
 The cardinality cap for this tag.
 
-Required when `mode` is `limit_override`; must be omitted when `mode` is `excluded`. Value must be between 0 and 1000000.
+Required when `override_type` is `limit_override`; must be omitted when `override_type` is `excluded`. Value must be between 0 and 1000000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#value_limit ObservabilityPipeline#value_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#value_limit ObservabilityPipeline#value_limit}
+
+---
+
+### ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode <a name="ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.observability_pipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode;
+
+ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode.builder()
+    .mode(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode.property.mode">mode</a></code> | <code>java.lang.String</code> | The cardinality tracking algorithm to use. One of `exact_fingerprint`, `probabilistic`. Valid values are `exact_fingerprint`, `probabilistic`. |
+
+---
+
+##### `mode`<sup>Required</sup> <a name="mode" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode.property.mode"></a>
+
+```java
+public java.lang.String getMode();
+```
+
+- *Type:* java.lang.String
+
+The cardinality tracking algorithm to use. One of `exact_fingerprint`, `probabilistic`. Valid values are `exact_fingerprint`, `probabilistic`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -16597,7 +16849,7 @@ public java.lang.Number getThreshold();
 
 The number of events to allow before throttling is applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#threshold ObservabilityPipeline#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#threshold ObservabilityPipeline#threshold}
 
 ---
 
@@ -16611,7 +16863,7 @@ public java.lang.Number getWindow();
 
 The time window in seconds over which the threshold applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#window ObservabilityPipeline#window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#window ObservabilityPipeline#window}
 
 ---
 
@@ -16625,7 +16877,7 @@ public java.util.List<java.lang.String> getGroupBy();
 
 Optional list of fields used to group events before applying throttling.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
 
 ---
 
@@ -16695,7 +16947,7 @@ public java.lang.String getId();
 
 The unique identifier for this source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -16712,7 +16964,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceAmazonDataFir
 
 amazon_data_firehose block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#amazon_data_firehose ObservabilityPipeline#amazon_data_firehose}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#amazon_data_firehose ObservabilityPipeline#amazon_data_firehose}
 
 ---
 
@@ -16726,7 +16978,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceAmazonS3> get
 
 amazon_s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#amazon_s3 ObservabilityPipeline#amazon_s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#amazon_s3 ObservabilityPipeline#amazon_s3}
 
 ---
 
@@ -16740,7 +16992,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceDatadogAgent>
 
 datadog_agent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#datadog_agent ObservabilityPipeline#datadog_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#datadog_agent ObservabilityPipeline#datadog_agent}
 
 ---
 
@@ -16754,7 +17006,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceFluentBit> ge
 
 fluent_bit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#fluent_bit ObservabilityPipeline#fluent_bit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#fluent_bit ObservabilityPipeline#fluent_bit}
 
 ---
 
@@ -16768,7 +17020,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceFluentd> getF
 
 fluentd block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#fluentd ObservabilityPipeline#fluentd}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#fluentd ObservabilityPipeline#fluentd}
 
 ---
 
@@ -16782,7 +17034,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceGooglePubsub>
 
 google_pubsub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#google_pubsub ObservabilityPipeline#google_pubsub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#google_pubsub ObservabilityPipeline#google_pubsub}
 
 ---
 
@@ -16796,7 +17048,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceHttpClient> g
 
 http_client block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#http_client ObservabilityPipeline#http_client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#http_client ObservabilityPipeline#http_client}
 
 ---
 
@@ -16810,7 +17062,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceHttpServer> g
 
 http_server block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#http_server ObservabilityPipeline#http_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#http_server ObservabilityPipeline#http_server}
 
 ---
 
@@ -16824,7 +17076,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceKafka> getKaf
 
 kafka block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#kafka ObservabilityPipeline#kafka}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#kafka ObservabilityPipeline#kafka}
 
 ---
 
@@ -16838,7 +17090,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceLogstash> get
 
 logstash block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#logstash ObservabilityPipeline#logstash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#logstash ObservabilityPipeline#logstash}
 
 ---
 
@@ -16852,7 +17104,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceOpentelemetry
 
 opentelemetry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#opentelemetry ObservabilityPipeline#opentelemetry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#opentelemetry ObservabilityPipeline#opentelemetry}
 
 ---
 
@@ -16866,7 +17118,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceRsyslog> getR
 
 rsyslog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#rsyslog ObservabilityPipeline#rsyslog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#rsyslog ObservabilityPipeline#rsyslog}
 
 ---
 
@@ -16880,7 +17132,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceSocket> getSo
 
 socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#socket ObservabilityPipeline#socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#socket ObservabilityPipeline#socket}
 
 ---
 
@@ -16894,7 +17146,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceSplunkHec> ge
 
 splunk_hec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#splunk_hec ObservabilityPipeline#splunk_hec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#splunk_hec ObservabilityPipeline#splunk_hec}
 
 ---
 
@@ -16908,7 +17160,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceSplunkTcp> ge
 
 splunk_tcp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#splunk_tcp ObservabilityPipeline#splunk_tcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#splunk_tcp ObservabilityPipeline#splunk_tcp}
 
 ---
 
@@ -16922,7 +17174,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceSumoLogic> ge
 
 sumo_logic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#sumo_logic ObservabilityPipeline#sumo_logic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#sumo_logic ObservabilityPipeline#sumo_logic}
 
 ---
 
@@ -16936,7 +17188,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceSyslogNg> get
 
 syslog_ng block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#syslog_ng ObservabilityPipeline#syslog_ng}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#syslog_ng ObservabilityPipeline#syslog_ng}
 
 ---
 
@@ -16950,7 +17202,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceWebsocket> ge
 
 websocket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#websocket ObservabilityPipeline#websocket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#websocket ObservabilityPipeline#websocket}
 
 ---
 
@@ -16988,7 +17240,7 @@ public java.lang.String getAddressKey();
 
 Name of the environment variable or secret that holds the listen address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 
 ---
 
@@ -17002,7 +17254,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceAmazonDataFir
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -17016,7 +17268,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceAmazonDataFir
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -17054,7 +17306,7 @@ public java.lang.String getAssumeRole();
 
 The Amazon Resource Name (ARN) of the role to assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
 
 ---
 
@@ -17068,7 +17320,7 @@ public java.lang.String getExternalId();
 
 A unique identifier for cross-account role assumption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
 
 ---
 
@@ -17082,7 +17334,7 @@ public java.lang.String getSessionName();
 
 A session identifier used for logging and tracing the assumed role session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
 
 ---
 
@@ -17122,7 +17374,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -17136,7 +17388,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -17150,7 +17402,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -17164,7 +17416,7 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -17206,7 +17458,7 @@ public java.lang.String getRegion();
 
 AWS region where the S3 bucket resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
 
 ---
 
@@ -17220,7 +17472,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceAmazonS3Auth>
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -17236,7 +17488,7 @@ Compression format for objects retrieved from the S3 bucket.
 
 Use `auto` to detect compression from the object's Content-Encoding header or file extension. Valid values are `auto`, `none`, `gzip`, `zstd`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
 
 ---
 
@@ -17250,7 +17502,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceAmazonS3Tls> 
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -17264,7 +17516,7 @@ public java.lang.String getUrlKey();
 
 Name of the environment variable or secret that holds the S3 bucket URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#url_key ObservabilityPipeline#url_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#url_key ObservabilityPipeline#url_key}
 
 ---
 
@@ -17302,7 +17554,7 @@ public java.lang.String getAssumeRole();
 
 The Amazon Resource Name (ARN) of the role to assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
 
 ---
 
@@ -17316,7 +17568,7 @@ public java.lang.String getExternalId();
 
 A unique identifier for cross-account role assumption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
 
 ---
 
@@ -17330,7 +17582,7 @@ public java.lang.String getSessionName();
 
 A session identifier used for logging and tracing the assumed role session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
 
 ---
 
@@ -17370,7 +17622,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -17384,7 +17636,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -17398,7 +17650,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -17412,7 +17664,7 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -17448,7 +17700,7 @@ public java.lang.String getAddressKey();
 
 Name of the environment variable or secret that holds the listen address for the Datadog Agent source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 
 ---
 
@@ -17462,7 +17714,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceDatadogAgentT
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -17502,7 +17754,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -17516,7 +17768,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -17530,7 +17782,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -17544,7 +17796,7 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -17580,7 +17832,7 @@ public java.lang.String getAddressKey();
 
 Name of the environment variable or secret that holds the listen address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 
 ---
 
@@ -17594,7 +17846,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceFluentBitTls>
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -17636,7 +17888,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -17650,7 +17902,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -17664,7 +17916,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS server certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -17678,7 +17930,7 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -17692,7 +17944,7 @@ public java.lang.Boolean|IResolvable getVerifyCertificate();
 
 When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
 
 ---
 
@@ -17728,7 +17980,7 @@ public java.lang.String getAddressKey();
 
 Name of the environment variable or secret that holds the listen address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 
 ---
 
@@ -17742,7 +17994,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceFluentdTls> g
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -17784,7 +18036,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -17798,7 +18050,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -17812,7 +18064,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS server certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -17826,7 +18078,7 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -17840,7 +18092,7 @@ public java.lang.Boolean|IResolvable getVerifyCertificate();
 
 When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
 
 ---
 
@@ -17882,7 +18134,7 @@ public java.lang.String getDecoding();
 
 The decoding format used to interpret incoming logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
 
 ---
 
@@ -17896,7 +18148,7 @@ public java.lang.String getProject();
 
 The Google Cloud project ID that owns the Pub/Sub subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#project ObservabilityPipeline#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#project ObservabilityPipeline#project}
 
 ---
 
@@ -17910,7 +18162,7 @@ public java.lang.String getSubscription();
 
 The Pub/Sub subscription name from which messages are consumed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#subscription ObservabilityPipeline#subscription}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#subscription ObservabilityPipeline#subscription}
 
 ---
 
@@ -17924,7 +18176,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceGooglePubsubA
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -17938,7 +18190,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceGooglePubsubT
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -17972,7 +18224,7 @@ public java.lang.String getCredentialsFile();
 
 Path to the Google Cloud service account key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
 
 ---
 
@@ -18012,7 +18264,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -18026,7 +18278,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -18040,7 +18292,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -18054,7 +18306,7 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -18106,7 +18358,7 @@ public java.lang.String getDecoding();
 
 The decoding format used to interpret incoming logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
 
 ---
 
@@ -18120,7 +18372,7 @@ public java.lang.String getAuthStrategy();
 
 Optional authentication strategy for HTTP requests. Valid values are `none`, `basic`, `bearer`, `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
 
 ---
 
@@ -18134,7 +18386,7 @@ public java.lang.String getCustomKey();
 
 Name of the environment variable or secret that holds a custom header value (used with custom auth strategies).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#custom_key ObservabilityPipeline#custom_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#custom_key ObservabilityPipeline#custom_key}
 
 ---
 
@@ -18148,7 +18400,7 @@ public java.lang.String getEndpointUrlKey();
 
 Name of the environment variable or secret that holds the HTTP endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
 
 ---
 
@@ -18162,7 +18414,7 @@ public java.lang.String getPasswordKey();
 
 Name of the environment variable or secret that holds the password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
 
 ---
 
@@ -18176,7 +18428,7 @@ public java.lang.Number getScrapeIntervalSecs();
 
 The interval (in seconds) between HTTP scrape requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#scrape_interval_secs ObservabilityPipeline#scrape_interval_secs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#scrape_interval_secs ObservabilityPipeline#scrape_interval_secs}
 
 ---
 
@@ -18190,7 +18442,7 @@ public java.lang.Number getScrapeTimeoutSecs();
 
 The timeout (in seconds) for each scrape request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#scrape_timeout_secs ObservabilityPipeline#scrape_timeout_secs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#scrape_timeout_secs ObservabilityPipeline#scrape_timeout_secs}
 
 ---
 
@@ -18204,7 +18456,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceHttpClientTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -18218,7 +18470,7 @@ public java.lang.String getTokenKey();
 
 Name of the environment variable or secret that holds the authentication token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
 
 ---
 
@@ -18232,7 +18484,7 @@ public java.lang.String getUsernameKey();
 
 Name of the environment variable or secret that holds the username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
 
 ---
 
@@ -18248,6 +18500,7 @@ ObservabilityPipelineConfigSourceHttpClientTls.builder()
 //  .caFile(java.lang.String)
 //  .keyFile(java.lang.String)
 //  .keyPassKey(java.lang.String)
+//  .serverName(java.lang.String)
     .build();
 ```
 
@@ -18259,6 +18512,7 @@ ObservabilityPipelineConfigSourceHttpClientTls.builder()
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTls.property.caFile">caFile</a></code> | <code>java.lang.String</code> | Path to the Certificate Authority (CA) file used to validate the server's TLS certificate. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTls.property.keyFile">keyFile</a></code> | <code>java.lang.String</code> | Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTls.property.keyPassKey">keyPassKey</a></code> | <code>java.lang.String</code> | Name of the environment variable or secret that holds the passphrase for the private key file. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTls.property.serverName">serverName</a></code> | <code>java.lang.String</code> | Server name to use for Server Name Indication (SNI) and to verify against the certificate presented by the remote host. |
 
 ---
 
@@ -18272,7 +18526,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -18286,7 +18540,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -18300,7 +18554,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -18314,7 +18568,23 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+
+---
+
+##### `serverName`<sup>Optional</sup> <a name="serverName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTls.property.serverName"></a>
+
+```java
+public java.lang.String getServerName();
+```
+
+- *Type:* java.lang.String
+
+Server name to use for Server Name Indication (SNI) and to verify against the certificate presented by the remote host.
+
+Use this when the address you connect to doesn't match the certificate's Common Name or Subject Alternative Name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#server_name ObservabilityPipeline#server_name}
 
 ---
 
@@ -18360,7 +18630,7 @@ public java.lang.String getAuthStrategy();
 
 HTTP authentication method. Valid values are `none`, `plain`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
 
 ---
 
@@ -18374,7 +18644,7 @@ public java.lang.String getDecoding();
 
 The decoding format used to interpret incoming logs. Valid values are `json`, `gelf`, `syslog`, `bytes`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
 
 ---
 
@@ -18388,7 +18658,7 @@ public java.lang.String getAddressKey();
 
 Name of the environment variable or secret that holds the listen address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 
 ---
 
@@ -18402,7 +18672,7 @@ public java.lang.String getPasswordKey();
 
 Name of the environment variable or secret that holds the password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
 
 ---
 
@@ -18416,7 +18686,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceHttpServerTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -18430,7 +18700,7 @@ public java.lang.String getUsernameKey();
 
 Name of the environment variable or secret that holds the username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
 
 ---
 
@@ -18444,7 +18714,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceHttpServerVal
 
 valid_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#valid_token ObservabilityPipeline#valid_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#valid_token ObservabilityPipeline#valid_token}
 
 ---
 
@@ -18486,7 +18756,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -18500,7 +18770,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -18514,7 +18784,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS server certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -18528,7 +18798,7 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -18542,7 +18812,7 @@ public java.lang.Boolean|IResolvable getVerifyCertificate();
 
 When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
 
 ---
 
@@ -18582,7 +18852,7 @@ public java.lang.String getTokenKey();
 
 Name of the environment variable or secret that holds the expected token value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
 
 ---
 
@@ -18596,7 +18866,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether this token is currently accepted. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
 
 ---
 
@@ -18610,7 +18880,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceHttpServerVal
 
 field_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#field_to_add ObservabilityPipeline#field_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#field_to_add ObservabilityPipeline#field_to_add}
 
 ---
 
@@ -18624,7 +18894,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceHttpServerVal
 
 path_to_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#path_to_token ObservabilityPipeline#path_to_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#path_to_token ObservabilityPipeline#path_to_token}
 
 ---
 
@@ -18660,7 +18930,7 @@ public java.lang.String getKey();
 
 The metadata field name to add to incoming events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key ObservabilityPipeline#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key ObservabilityPipeline#key}
 
 ---
 
@@ -18674,7 +18944,7 @@ public java.lang.String getValue();
 
 The metadata field value to add to incoming events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -18710,7 +18980,7 @@ public java.lang.String getHeader();
 
 The name of the HTTP header that carries the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#header ObservabilityPipeline#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#header ObservabilityPipeline#header}
 
 ---
 
@@ -18724,7 +18994,7 @@ public java.lang.String getLocation();
 
 Built-in token location on the incoming HTTP request. One of `path`, `address`. Valid values are `path`, `address`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#location ObservabilityPipeline#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#location ObservabilityPipeline#location}
 
 ---
 
@@ -18768,7 +19038,7 @@ public java.lang.String getGroupId();
 
 The Kafka consumer group ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#group_id ObservabilityPipeline#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#group_id ObservabilityPipeline#group_id}
 
 ---
 
@@ -18782,7 +19052,7 @@ public java.util.List<java.lang.String> getTopics();
 
 A list of Kafka topic names to subscribe to. The source ingests messages from each topic specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#topics ObservabilityPipeline#topics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#topics ObservabilityPipeline#topics}
 
 ---
 
@@ -18796,7 +19066,7 @@ public java.lang.String getBootstrapServersKey();
 
 Name of the environment variable or secret that holds the Kafka bootstrap servers connection string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#bootstrap_servers_key ObservabilityPipeline#bootstrap_servers_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#bootstrap_servers_key ObservabilityPipeline#bootstrap_servers_key}
 
 ---
 
@@ -18810,7 +19080,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceKafkaLibrdkaf
 
 librdkafka_option block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#librdkafka_option ObservabilityPipeline#librdkafka_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#librdkafka_option ObservabilityPipeline#librdkafka_option}
 
 ---
 
@@ -18824,7 +19094,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceKafkaSasl> ge
 
 sasl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#sasl ObservabilityPipeline#sasl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#sasl ObservabilityPipeline#sasl}
 
 ---
 
@@ -18838,7 +19108,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceKafkaTls> get
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -18874,7 +19144,7 @@ public java.lang.String getName();
 
 The name of the librdkafka option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -18888,7 +19158,7 @@ public java.lang.String getValue();
 
 The value of the librdkafka option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -18926,7 +19196,7 @@ public java.lang.String getMechanism();
 
 SASL mechanism to use (e.g., PLAIN, SCRAM-SHA-256, SCRAM-SHA-512). Valid values are `PLAIN`, `SCRAM-SHA-256`, `SCRAM-SHA-512`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#mechanism ObservabilityPipeline#mechanism}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#mechanism ObservabilityPipeline#mechanism}
 
 ---
 
@@ -18940,7 +19210,7 @@ public java.lang.String getPasswordKey();
 
 Name of the environment variable or secret that holds the SASL password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
 
 ---
 
@@ -18954,7 +19224,7 @@ public java.lang.String getUsernameKey();
 
 Name of the environment variable or secret that holds the SASL username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
 
 ---
 
@@ -18994,7 +19264,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -19008,7 +19278,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -19022,7 +19292,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -19036,7 +19306,7 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -19072,7 +19342,7 @@ public java.lang.String getAddressKey();
 
 Name of the environment variable or secret that holds the listen address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 
 ---
 
@@ -19086,7 +19356,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceLogstashTls> 
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -19128,7 +19398,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -19142,7 +19412,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -19156,7 +19426,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS server certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -19170,7 +19440,7 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -19184,7 +19454,7 @@ public java.lang.Boolean|IResolvable getVerifyCertificate();
 
 When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
 
 ---
 
@@ -19222,7 +19492,7 @@ public java.lang.String getGrpcAddressKey();
 
 Environment variable name containing the gRPC server address for receiving OTLP data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#grpc_address_key ObservabilityPipeline#grpc_address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#grpc_address_key ObservabilityPipeline#grpc_address_key}
 
 ---
 
@@ -19236,7 +19506,7 @@ public java.lang.String getHttpAddressKey();
 
 Environment variable name containing the HTTP server address for receiving OTLP data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#http_address_key ObservabilityPipeline#http_address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#http_address_key ObservabilityPipeline#http_address_key}
 
 ---
 
@@ -19250,7 +19520,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceOpentelemetry
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -19292,7 +19562,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -19306,7 +19576,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -19320,7 +19590,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS server certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -19334,7 +19604,7 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -19348,7 +19618,7 @@ public java.lang.Boolean|IResolvable getVerifyCertificate();
 
 When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
 
 ---
 
@@ -19386,7 +19656,7 @@ public java.lang.String getAddressKey();
 
 Name of the environment variable or secret that holds the listen address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 
 ---
 
@@ -19400,7 +19670,7 @@ public java.lang.String getMode();
 
 Protocol used by the syslog source to receive messages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -19414,7 +19684,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceRsyslogTls> g
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -19456,7 +19726,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -19470,7 +19740,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -19484,7 +19754,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS server certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -19498,7 +19768,7 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -19512,7 +19782,7 @@ public java.lang.Boolean|IResolvable getVerifyCertificate();
 
 When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
 
 ---
 
@@ -19552,7 +19822,7 @@ public java.lang.String getMode();
 
 The protocol used to receive logs. Valid values are `tcp`, `udp`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -19566,7 +19836,7 @@ public java.lang.String getAddressKey();
 
 Name of the environment variable or secret that holds the listen address for the socket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 
 ---
 
@@ -19580,7 +19850,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceSocketFraming
 
 framing block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#framing ObservabilityPipeline#framing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#framing ObservabilityPipeline#framing}
 
 ---
 
@@ -19594,7 +19864,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceSocketTls> ge
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -19630,7 +19900,7 @@ public java.lang.String getMethod();
 
 The framing method. Valid values are `newline_delimited`, `bytes`, `character_delimited`, `octet_counting`, `chunked_gelf`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#method ObservabilityPipeline#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#method ObservabilityPipeline#method}
 
 ---
 
@@ -19644,7 +19914,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceSocketFraming
 
 character_delimited block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#character_delimited ObservabilityPipeline#character_delimited}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#character_delimited ObservabilityPipeline#character_delimited}
 
 ---
 
@@ -19678,7 +19948,7 @@ public java.lang.String getDelimiter();
 
 A single ASCII character used as a delimiter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
 
 ---
 
@@ -19720,7 +19990,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -19734,7 +20004,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -19748,7 +20018,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS server certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -19762,7 +20032,7 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -19776,7 +20046,7 @@ public java.lang.Boolean|IResolvable getVerifyCertificate();
 
 When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
 
 ---
 
@@ -19816,7 +20086,7 @@ public java.lang.String getAddressKey();
 
 Name of the environment variable or secret that holds the listen address for the HEC API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 
 ---
 
@@ -19830,7 +20100,7 @@ public java.lang.Boolean|IResolvable getStoreHecToken();
 
 When `true`, the Splunk HEC token from the incoming request is stored in the event, allowing downstream components to forward it to other Splunk HEC destinations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#store_hec_token ObservabilityPipeline#store_hec_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#store_hec_token ObservabilityPipeline#store_hec_token}
 
 ---
 
@@ -19844,7 +20114,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceSplunkHecTls>
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -19858,7 +20128,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceSplunkHecVali
 
 valid_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#valid_token ObservabilityPipeline#valid_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#valid_token ObservabilityPipeline#valid_token}
 
 ---
 
@@ -19900,7 +20170,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -19914,7 +20184,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -19928,7 +20198,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS server certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -19942,7 +20212,7 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -19956,7 +20226,7 @@ public java.lang.Boolean|IResolvable getVerifyCertificate();
 
 When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
 
 ---
 
@@ -19994,7 +20264,7 @@ public java.lang.String getTokenKey();
 
 Name of the environment variable or secret that holds the expected HEC token value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
 
 ---
 
@@ -20008,7 +20278,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether this token is currently accepted. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
 
 ---
 
@@ -20022,7 +20292,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceSplunkHecVali
 
 field_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#field_to_add ObservabilityPipeline#field_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#field_to_add ObservabilityPipeline#field_to_add}
 
 ---
 
@@ -20058,7 +20328,7 @@ public java.lang.String getKey();
 
 The metadata field name to add to incoming events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key ObservabilityPipeline#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key ObservabilityPipeline#key}
 
 ---
 
@@ -20072,7 +20342,7 @@ public java.lang.String getValue();
 
 The metadata field value to add to incoming events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -20108,7 +20378,7 @@ public java.lang.String getAddressKey();
 
 Name of the environment variable or secret that holds the listen address for the Splunk TCP receiver.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 
 ---
 
@@ -20122,7 +20392,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceSplunkTcpTls>
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -20164,7 +20434,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -20178,7 +20448,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -20192,7 +20462,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS server certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -20206,7 +20476,7 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -20220,7 +20490,7 @@ public java.lang.Boolean|IResolvable getVerifyCertificate();
 
 When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
 
 ---
 
@@ -20254,7 +20524,7 @@ public java.lang.String getAddressKey();
 
 Name of the environment variable or secret that holds the listen address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 
 ---
 
@@ -20292,7 +20562,7 @@ public java.lang.String getAddressKey();
 
 Name of the environment variable or secret that holds the listen address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 
 ---
 
@@ -20306,7 +20576,7 @@ public java.lang.String getMode();
 
 Protocol used by the syslog source to receive messages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -20320,7 +20590,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceSyslogNgTls> 
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -20362,7 +20632,7 @@ public java.lang.String getCrtFile();
 
 Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -20376,7 +20646,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -20390,7 +20660,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the TLS server certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -20404,7 +20674,7 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -20418,7 +20688,7 @@ public java.lang.Boolean|IResolvable getVerifyCertificate();
 
 When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
 
 ---
 
@@ -20466,7 +20736,7 @@ public java.lang.String getAuthStrategy();
 
 The authentication strategy used when connecting to the WebSocket server. Valid values are `none`, `basic`, `bearer`, `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
 
 ---
 
@@ -20480,7 +20750,7 @@ public java.lang.String getDecoding();
 
 The decoding format used to interpret incoming log events. Valid values are `bytes`, `gelf`, `json`, `syslog`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
 
 ---
 
@@ -20494,7 +20764,7 @@ public java.lang.String getCustomKey();
 
 Name of the environment variable or secret that holds a custom header value. Used when `auth_strategy` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#custom_key ObservabilityPipeline#custom_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#custom_key ObservabilityPipeline#custom_key}
 
 ---
 
@@ -20508,7 +20778,7 @@ public java.lang.String getPasswordKey();
 
 Name of the environment variable or secret that holds the password. Used when `auth_strategy` is `basic`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
 
 ---
 
@@ -20522,7 +20792,7 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigSourceWebsocketTls>
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -20536,7 +20806,7 @@ public java.lang.String getTokenKey();
 
 Name of the environment variable or secret that holds the bearer token. Used when `auth_strategy` is `bearer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
 
 ---
 
@@ -20550,7 +20820,7 @@ public java.lang.String getUriKey();
 
 Name of the environment variable or secret that holds the WebSocket URI to connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#uri_key ObservabilityPipeline#uri_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#uri_key ObservabilityPipeline#uri_key}
 
 ---
 
@@ -20564,7 +20834,7 @@ public java.lang.String getUsernameKey();
 
 Name of the environment variable or secret that holds the username. Used when `auth_strategy` is `basic`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
 
 ---
 
@@ -20608,7 +20878,7 @@ The TLS mode.
 
 Use `enabled` for server-only TLS, or `with_client_cert` for mutual TLS with a client certificate. Valid values are `enabled`, `with_client_cert`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -20622,7 +20892,7 @@ public java.lang.String getCaFile();
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -20636,7 +20906,7 @@ public java.lang.String getCrtFile();
 
 Path to the client certificate file. Required when `mode` is `with_client_cert`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -20650,7 +20920,7 @@ public java.lang.String getKeyFile();
 
 Path to the private key file associated with the client certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -20664,7 +20934,7 @@ public java.lang.String getKeyPassKey();
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -29595,6 +29865,8 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.resetCompression">resetCompression</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.resetEncoding">resetEncoding</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.resetKeyPrefix">resetKeyPrefix</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.resetServerSideEncryption">resetServerSideEncryption</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.resetSsekmsKeyId">resetSsekmsKeyId</a></code> | *No description.* |
 
 ---
 
@@ -29844,6 +30116,18 @@ public void resetEncoding()
 public void resetKeyPrefix()
 ```
 
+##### `resetServerSideEncryption` <a name="resetServerSideEncryption" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.resetServerSideEncryption"></a>
+
+```java
+public void resetServerSideEncryption()
+```
+
+##### `resetSsekmsKeyId` <a name="resetSsekmsKeyId" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.resetSsekmsKeyId"></a>
+
+```java
+public void resetSsekmsKeyId()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -29864,10 +30148,14 @@ public void resetKeyPrefix()
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.encodingInput">encodingInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding">ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.keyPrefixInput">keyPrefixInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.serverSideEncryptionInput">serverSideEncryptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.ssekmsKeyIdInput">ssekmsKeyIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.storageClassInput">storageClassInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.bucket">bucket</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.keyPrefix">keyPrefix</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.serverSideEncryption">serverSideEncryption</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.ssekmsKeyId">ssekmsKeyId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.storageClass">storageClass</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic">ObservabilityPipelineConfigDestinationAmazonS3Generic</a></code> | *No description.* |
 
@@ -30027,6 +30315,26 @@ public java.lang.String getRegionInput();
 
 ---
 
+##### `serverSideEncryptionInput`<sup>Optional</sup> <a name="serverSideEncryptionInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.serverSideEncryptionInput"></a>
+
+```java
+public java.lang.String getServerSideEncryptionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `ssekmsKeyIdInput`<sup>Optional</sup> <a name="ssekmsKeyIdInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.ssekmsKeyIdInput"></a>
+
+```java
+public java.lang.String getSsekmsKeyIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `storageClassInput`<sup>Optional</sup> <a name="storageClassInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.storageClassInput"></a>
 
 ```java
@@ -30061,6 +30369,26 @@ public java.lang.String getKeyPrefix();
 
 ```java
 public java.lang.String getRegion();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `serverSideEncryption`<sup>Required</sup> <a name="serverSideEncryption" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.serverSideEncryption"></a>
+
+```java
+public java.lang.String getServerSideEncryption();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `ssekmsKeyId`<sup>Required</sup> <a name="ssekmsKeyId" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.ssekmsKeyId"></a>
+
+```java
+public java.lang.String getSsekmsKeyId();
 ```
 
 - *Type:* java.lang.String
@@ -43046,6 +43374,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference.resetCaFile">resetCaFile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference.resetKeyFile">resetKeyFile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference.resetKeyPassKey">resetKeyPassKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference.resetServerName">resetServerName</a></code> | *No description.* |
 
 ---
 
@@ -43217,6 +43546,12 @@ public void resetKeyFile()
 public void resetKeyPassKey()
 ```
 
+##### `resetServerName` <a name="resetServerName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference.resetServerName"></a>
+
+```java
+public void resetServerName()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -43228,10 +43563,12 @@ public void resetKeyPassKey()
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference.property.crtFileInput">crtFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference.property.keyFileInput">keyFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference.property.keyPassKeyInput">keyPassKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference.property.serverNameInput">serverNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference.property.caFile">caFile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference.property.crtFile">crtFile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference.property.keyFile">keyFile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference.property.keyPassKey">keyPassKey</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference.property.serverName">serverName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTls">ObservabilityPipelineConfigDestinationCloudPremTls</a></code> | *No description.* |
 
 ---
@@ -43300,6 +43637,16 @@ public java.lang.String getKeyPassKeyInput();
 
 ---
 
+##### `serverNameInput`<sup>Optional</sup> <a name="serverNameInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference.property.serverNameInput"></a>
+
+```java
+public java.lang.String getServerNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `caFile`<sup>Required</sup> <a name="caFile" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference.property.caFile"></a>
 
 ```java
@@ -43334,6 +43681,16 @@ public java.lang.String getKeyFile();
 
 ```java
 public java.lang.String getKeyPassKey();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `serverName`<sup>Required</sup> <a name="serverName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference.property.serverName"></a>
+
+```java
+public java.lang.String getServerName();
 ```
 
 - *Type:* java.lang.String
@@ -68167,6 +68524,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference.resetCaFile">resetCaFile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference.resetKeyFile">resetKeyFile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference.resetKeyPassKey">resetKeyPassKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference.resetServerName">resetServerName</a></code> | *No description.* |
 
 ---
 
@@ -68338,6 +68696,12 @@ public void resetKeyFile()
 public void resetKeyPassKey()
 ```
 
+##### `resetServerName` <a name="resetServerName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference.resetServerName"></a>
+
+```java
+public void resetServerName()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -68349,10 +68713,12 @@ public void resetKeyPassKey()
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference.property.crtFileInput">crtFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference.property.keyFileInput">keyFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference.property.keyPassKeyInput">keyPassKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference.property.serverNameInput">serverNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference.property.caFile">caFile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference.property.crtFile">crtFile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference.property.keyFile">keyFile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference.property.keyPassKey">keyPassKey</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference.property.serverName">serverName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTls">ObservabilityPipelineConfigDestinationHttpClientTls</a></code> | *No description.* |
 
 ---
@@ -68421,6 +68787,16 @@ public java.lang.String getKeyPassKeyInput();
 
 ---
 
+##### `serverNameInput`<sup>Optional</sup> <a name="serverNameInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference.property.serverNameInput"></a>
+
+```java
+public java.lang.String getServerNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `caFile`<sup>Required</sup> <a name="caFile" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference.property.caFile"></a>
 
 ```java
@@ -68455,6 +68831,16 @@ public java.lang.String getKeyFile();
 
 ```java
 public java.lang.String getKeyPassKey();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `serverName`<sup>Required</sup> <a name="serverName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference.property.serverName"></a>
+
+```java
+public java.lang.String getServerName();
 ```
 
 - *Type:* java.lang.String
@@ -76711,6 +77097,513 @@ public IResolvable|ObservabilityPipelineConfigDestinationNewRelic getInternalVal
 ---
 
 
+### ObservabilityPipelineConfigDestinationOpensearchAuthList <a name="ObservabilityPipelineConfigDestinationOpensearchAuthList" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.observability_pipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList;
+
+new ObservabilityPipelineConfigDestinationOpensearchAuthList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.get"></a>
+
+```java
+public ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuth">ObservabilityPipelineConfigDestinationOpensearchAuth</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationOpensearchAuth> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuth">ObservabilityPipelineConfigDestinationOpensearchAuth</a>>
+
+---
+
+
+### ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference <a name="ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.observability_pipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference;
+
+new ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.resetPasswordKey">resetPasswordKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.resetUsernameKey">resetUsernameKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetPasswordKey` <a name="resetPasswordKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.resetPasswordKey"></a>
+
+```java
+public void resetPasswordKey()
+```
+
+##### `resetUsernameKey` <a name="resetUsernameKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.resetUsernameKey"></a>
+
+```java
+public void resetUsernameKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.property.passwordKeyInput">passwordKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.property.strategyInput">strategyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.property.usernameKeyInput">usernameKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.property.passwordKey">passwordKey</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.property.strategy">strategy</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.property.usernameKey">usernameKey</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuth">ObservabilityPipelineConfigDestinationOpensearchAuth</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `passwordKeyInput`<sup>Optional</sup> <a name="passwordKeyInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.property.passwordKeyInput"></a>
+
+```java
+public java.lang.String getPasswordKeyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `strategyInput`<sup>Optional</sup> <a name="strategyInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.property.strategyInput"></a>
+
+```java
+public java.lang.String getStrategyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `usernameKeyInput`<sup>Optional</sup> <a name="usernameKeyInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.property.usernameKeyInput"></a>
+
+```java
+public java.lang.String getUsernameKeyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `passwordKey`<sup>Required</sup> <a name="passwordKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.property.passwordKey"></a>
+
+```java
+public java.lang.String getPasswordKey();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `strategy`<sup>Required</sup> <a name="strategy" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.property.strategy"></a>
+
+```java
+public java.lang.String getStrategy();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `usernameKey`<sup>Required</sup> <a name="usernameKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.property.usernameKey"></a>
+
+```java
+public java.lang.String getUsernameKey();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|ObservabilityPipelineConfigDestinationOpensearchAuth getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuth">ObservabilityPipelineConfigDestinationOpensearchAuth</a>
+
+---
+
+
 ### ObservabilityPipelineConfigDestinationOpensearchBufferDiskList <a name="ObservabilityPipelineConfigDestinationOpensearchBufferDiskList" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchBufferDiskList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchBufferDiskList.Initializer"></a>
@@ -78963,11 +79856,14 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.putAuth">putAuth</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.putBuffer">putBuffer</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.putDataStream">putDataStream</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.resetAuth">resetAuth</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.resetBuffer">resetBuffer</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.resetBulkIndex">resetBulkIndex</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.resetDataStream">resetDataStream</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.resetEndpointUrlKey">resetEndpointUrlKey</a></code> | *No description.* |
 
 ---
 
@@ -79121,6 +80017,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putAuth` <a name="putAuth" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.putAuth"></a>
+
+```java
+public void putAuth(IResolvable|java.util.List<ObservabilityPipelineConfigDestinationOpensearchAuth> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.putAuth.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuth">ObservabilityPipelineConfigDestinationOpensearchAuth</a>>
+
+---
+
 ##### `putBuffer` <a name="putBuffer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.putBuffer"></a>
 
 ```java
@@ -79145,6 +80053,12 @@ public void putDataStream(IResolvable|java.util.List<ObservabilityPipelineConfig
 
 ---
 
+##### `resetAuth` <a name="resetAuth" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.resetAuth"></a>
+
+```java
+public void resetAuth()
+```
+
 ##### `resetBuffer` <a name="resetBuffer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.resetBuffer"></a>
 
 ```java
@@ -79163,6 +80077,12 @@ public void resetBulkIndex()
 public void resetDataStream()
 ```
 
+##### `resetEndpointUrlKey` <a name="resetEndpointUrlKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.resetEndpointUrlKey"></a>
+
+```java
+public void resetEndpointUrlKey()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -79170,12 +80090,16 @@ public void resetDataStream()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.property.auth">auth</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList">ObservabilityPipelineConfigDestinationOpensearchAuthList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.property.buffer">buffer</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchBufferList">ObservabilityPipelineConfigDestinationOpensearchBufferList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.property.dataStream">dataStream</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchDataStreamList">ObservabilityPipelineConfigDestinationOpensearchDataStreamList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.property.authInput">authInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuth">ObservabilityPipelineConfigDestinationOpensearchAuth</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.property.bufferInput">bufferInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchBuffer">ObservabilityPipelineConfigDestinationOpensearchBuffer</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.property.bulkIndexInput">bulkIndexInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.property.dataStreamInput">dataStreamInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchDataStream">ObservabilityPipelineConfigDestinationOpensearchDataStream</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.property.endpointUrlKeyInput">endpointUrlKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.property.bulkIndex">bulkIndex</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.property.endpointUrlKey">endpointUrlKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearch">ObservabilityPipelineConfigDestinationOpensearch</a></code> | *No description.* |
 
 ---
@@ -79204,6 +80128,16 @@ public java.lang.String getFqn();
 
 ---
 
+##### `auth`<sup>Required</sup> <a name="auth" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.property.auth"></a>
+
+```java
+public ObservabilityPipelineConfigDestinationOpensearchAuthList getAuth();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList">ObservabilityPipelineConfigDestinationOpensearchAuthList</a>
+
+---
+
 ##### `buffer`<sup>Required</sup> <a name="buffer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.property.buffer"></a>
 
 ```java
@@ -79221,6 +80155,16 @@ public ObservabilityPipelineConfigDestinationOpensearchDataStreamList getDataStr
 ```
 
 - *Type:* <a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchDataStreamList">ObservabilityPipelineConfigDestinationOpensearchDataStreamList</a>
+
+---
+
+##### `authInput`<sup>Optional</sup> <a name="authInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.property.authInput"></a>
+
+```java
+public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationOpensearchAuth> getAuthInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuth">ObservabilityPipelineConfigDestinationOpensearchAuth</a>>
 
 ---
 
@@ -79254,10 +80198,30 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigDestinationOpensear
 
 ---
 
+##### `endpointUrlKeyInput`<sup>Optional</sup> <a name="endpointUrlKeyInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.property.endpointUrlKeyInput"></a>
+
+```java
+public java.lang.String getEndpointUrlKeyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `bulkIndex`<sup>Required</sup> <a name="bulkIndex" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.property.bulkIndex"></a>
 
 ```java
 public java.lang.String getBulkIndex();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `endpointUrlKey`<sup>Required</sup> <a name="endpointUrlKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.property.endpointUrlKey"></a>
+
+```java
+public java.lang.String getEndpointUrlKey();
 ```
 
 - *Type:* java.lang.String
@@ -88672,6 +89636,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTlsOutputReference.resetCaFile">resetCaFile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTlsOutputReference.resetKeyFile">resetKeyFile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTlsOutputReference.resetKeyPassKey">resetKeyPassKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTlsOutputReference.resetServerName">resetServerName</a></code> | *No description.* |
 
 ---
 
@@ -88843,6 +89808,12 @@ public void resetKeyFile()
 public void resetKeyPassKey()
 ```
 
+##### `resetServerName` <a name="resetServerName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTlsOutputReference.resetServerName"></a>
+
+```java
+public void resetServerName()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -88854,10 +89825,12 @@ public void resetKeyPassKey()
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTlsOutputReference.property.crtFileInput">crtFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTlsOutputReference.property.keyFileInput">keyFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTlsOutputReference.property.keyPassKeyInput">keyPassKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTlsOutputReference.property.serverNameInput">serverNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTlsOutputReference.property.caFile">caFile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTlsOutputReference.property.crtFile">crtFile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTlsOutputReference.property.keyFile">keyFile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTlsOutputReference.property.keyPassKey">keyPassKey</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTlsOutputReference.property.serverName">serverName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTlsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTls">ObservabilityPipelineConfigDestinationSocketTls</a></code> | *No description.* |
 
 ---
@@ -88926,6 +89899,16 @@ public java.lang.String getKeyPassKeyInput();
 
 ---
 
+##### `serverNameInput`<sup>Optional</sup> <a name="serverNameInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTlsOutputReference.property.serverNameInput"></a>
+
+```java
+public java.lang.String getServerNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `caFile`<sup>Required</sup> <a name="caFile" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTlsOutputReference.property.caFile"></a>
 
 ```java
@@ -88960,6 +89943,16 @@ public java.lang.String getKeyFile();
 
 ```java
 public java.lang.String getKeyPassKey();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `serverName`<sup>Required</sup> <a name="serverName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTlsOutputReference.property.serverName"></a>
+
+```java
+public java.lang.String getServerName();
 ```
 
 - *Type:* java.lang.String
@@ -98902,6 +99895,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTlsOutputReference.resetCaFile">resetCaFile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTlsOutputReference.resetKeyFile">resetKeyFile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTlsOutputReference.resetKeyPassKey">resetKeyPassKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTlsOutputReference.resetServerName">resetServerName</a></code> | *No description.* |
 
 ---
 
@@ -99073,6 +100067,12 @@ public void resetKeyFile()
 public void resetKeyPassKey()
 ```
 
+##### `resetServerName` <a name="resetServerName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTlsOutputReference.resetServerName"></a>
+
+```java
+public void resetServerName()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -99084,10 +100084,12 @@ public void resetKeyPassKey()
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTlsOutputReference.property.crtFileInput">crtFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTlsOutputReference.property.keyFileInput">keyFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTlsOutputReference.property.keyPassKeyInput">keyPassKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTlsOutputReference.property.serverNameInput">serverNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTlsOutputReference.property.caFile">caFile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTlsOutputReference.property.crtFile">crtFile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTlsOutputReference.property.keyFile">keyFile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTlsOutputReference.property.keyPassKey">keyPassKey</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTlsOutputReference.property.serverName">serverName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTlsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTls">ObservabilityPipelineConfigDestinationSyslogNgTls</a></code> | *No description.* |
 
 ---
@@ -99156,6 +100158,16 @@ public java.lang.String getKeyPassKeyInput();
 
 ---
 
+##### `serverNameInput`<sup>Optional</sup> <a name="serverNameInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTlsOutputReference.property.serverNameInput"></a>
+
+```java
+public java.lang.String getServerNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `caFile`<sup>Required</sup> <a name="caFile" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTlsOutputReference.property.caFile"></a>
 
 ```java
@@ -99190,6 +100202,16 @@ public java.lang.String getKeyFile();
 
 ```java
 public java.lang.String getKeyPassKey();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `serverName`<sup>Required</sup> <a name="serverName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTlsOutputReference.property.serverName"></a>
+
+```java
+public java.lang.String getServerName();
 ```
 
 - *Type:* java.lang.String
@@ -137720,7 +138742,9 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference.putPerMetricLimit">putPerMetricLimit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference.putTrackingMode">putTrackingMode</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference.resetPerMetricLimit">resetPerMetricLimit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference.resetTrackingMode">resetTrackingMode</a></code> | *No description.* |
 
 ---
 
@@ -137886,10 +138910,28 @@ public void putPerMetricLimit(IResolvable|java.util.List<ObservabilityPipelineCo
 
 ---
 
+##### `putTrackingMode` <a name="putTrackingMode" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference.putTrackingMode"></a>
+
+```java
+public void putTrackingMode(IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference.putTrackingMode.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode">ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode</a>>
+
+---
+
 ##### `resetPerMetricLimit` <a name="resetPerMetricLimit" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference.resetPerMetricLimit"></a>
 
 ```java
 public void resetPerMetricLimit()
+```
+
+##### `resetTrackingMode` <a name="resetTrackingMode" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference.resetTrackingMode"></a>
+
+```java
+public void resetTrackingMode()
 ```
 
 
@@ -137900,8 +138942,10 @@ public void resetPerMetricLimit()
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference.property.perMetricLimit">perMetricLimit</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitList">ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference.property.trackingMode">trackingMode</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList">ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference.property.limitExceededActionInput">limitExceededActionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference.property.perMetricLimitInput">perMetricLimitInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimit">ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimit</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference.property.trackingModeInput">trackingModeInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode">ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference.property.valueLimitInput">valueLimitInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference.property.limitExceededAction">limitExceededAction</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference.property.valueLimit">valueLimit</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -137943,6 +138987,16 @@ public ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerM
 
 ---
 
+##### `trackingMode`<sup>Required</sup> <a name="trackingMode" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference.property.trackingMode"></a>
+
+```java
+public ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList getTrackingMode();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList">ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList</a>
+
+---
+
 ##### `limitExceededActionInput`<sup>Optional</sup> <a name="limitExceededActionInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference.property.limitExceededActionInput"></a>
 
 ```java
@@ -137960,6 +139014,16 @@ public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProce
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimit">ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimit</a>>
+
+---
+
+##### `trackingModeInput`<sup>Optional</sup> <a name="trackingModeInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference.property.trackingModeInput"></a>
+
+```java
+public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode> getTrackingModeInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode">ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode</a>>
 
 ---
 
@@ -138429,12 +139493,12 @@ public void resetValueLimit()
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitOutputReference.property.perTagLimit">perTagLimit</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitList">ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitOutputReference.property.limitExceededActionInput">limitExceededActionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitOutputReference.property.metricNameInput">metricNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitOutputReference.property.modeInput">modeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitOutputReference.property.overrideTypeInput">overrideTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitOutputReference.property.perTagLimitInput">perTagLimitInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimit">ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimit</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitOutputReference.property.valueLimitInput">valueLimitInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitOutputReference.property.limitExceededAction">limitExceededAction</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitOutputReference.property.metricName">metricName</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitOutputReference.property.mode">mode</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitOutputReference.property.overrideType">overrideType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitOutputReference.property.valueLimit">valueLimit</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimit">ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimit</a></code> | *No description.* |
 
@@ -138494,10 +139558,10 @@ public java.lang.String getMetricNameInput();
 
 ---
 
-##### `modeInput`<sup>Optional</sup> <a name="modeInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitOutputReference.property.modeInput"></a>
+##### `overrideTypeInput`<sup>Optional</sup> <a name="overrideTypeInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitOutputReference.property.overrideTypeInput"></a>
 
 ```java
-public java.lang.String getModeInput();
+public java.lang.String getOverrideTypeInput();
 ```
 
 - *Type:* java.lang.String
@@ -138544,10 +139608,10 @@ public java.lang.String getMetricName();
 
 ---
 
-##### `mode`<sup>Required</sup> <a name="mode" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitOutputReference.property.mode"></a>
+##### `overrideType`<sup>Required</sup> <a name="overrideType" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitOutputReference.property.overrideType"></a>
 
 ```java
-public java.lang.String getMode();
+public java.lang.String getOverrideType();
 ```
 
 - *Type:* java.lang.String
@@ -138970,10 +140034,10 @@ public void resetValueLimit()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitOutputReference.property.modeInput">modeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitOutputReference.property.overrideTypeInput">overrideTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitOutputReference.property.tagKeyInput">tagKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitOutputReference.property.valueLimitInput">valueLimitInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitOutputReference.property.mode">mode</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitOutputReference.property.overrideType">overrideType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitOutputReference.property.tagKey">tagKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitOutputReference.property.valueLimit">valueLimit</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimit">ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimit</a></code> | *No description.* |
@@ -139004,10 +140068,10 @@ public java.lang.String getFqn();
 
 ---
 
-##### `modeInput`<sup>Optional</sup> <a name="modeInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitOutputReference.property.modeInput"></a>
+##### `overrideTypeInput`<sup>Optional</sup> <a name="overrideTypeInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitOutputReference.property.overrideTypeInput"></a>
 
 ```java
-public java.lang.String getModeInput();
+public java.lang.String getOverrideTypeInput();
 ```
 
 - *Type:* java.lang.String
@@ -139034,10 +140098,10 @@ public java.lang.Number getValueLimitInput();
 
 ---
 
-##### `mode`<sup>Required</sup> <a name="mode" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitOutputReference.property.mode"></a>
+##### `overrideType`<sup>Required</sup> <a name="overrideType" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitOutputReference.property.overrideType"></a>
 
 ```java
-public java.lang.String getMode();
+public java.lang.String getOverrideType();
 ```
 
 - *Type:* java.lang.String
@@ -139071,6 +140135,455 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorTagCardinal
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimit">ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimit</a>
+
+---
+
+
+### ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList <a name="ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.observability_pipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList;
+
+new ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.get"></a>
+
+```java
+public ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode">ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode">ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode</a>>
+
+---
+
+
+### ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference <a name="ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.observability_pipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference;
+
+new ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.property.modeInput">modeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.property.mode">mode</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode">ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `modeInput`<sup>Optional</sup> <a name="modeInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.property.modeInput"></a>
+
+```java
+public java.lang.String getModeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `mode`<sup>Required</sup> <a name="mode" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.property.mode"></a>
+
+```java
+public java.lang.String getMode();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode">ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode</a>
 
 ---
 
@@ -148482,1518 +149995,5 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.resetCaFile">resetCaFile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.resetKeyFile">resetKeyFile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.resetKeyPassKey">resetKeyPassKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.resetServerName">resetServerName</a></code> | *No description.* |
 
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.computeFqn"></a>
-
-```java
-public java.lang.String computeFqn()
-```
-
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.getAnyMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.getBooleanAttribute"></a>
-
-```java
-public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.getBooleanMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.getListAttribute"></a>
-
-```java
-public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.getNumberAttribute"></a>
-
-```java
-public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.getNumberListAttribute"></a>
-
-```java
-public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.getNumberMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.getStringAttribute"></a>
-
-```java
-public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.getStringMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.interpolationForAttribute"></a>
-
-```java
-public IResolvable interpolationForAttribute(java.lang.String property)
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.resolve"></a>
-
-```java
-public java.lang.Object resolve(IResolveContext _context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.resolve.parameter._context"></a>
-
-- *Type:* io.cdktn.cdktn.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.toString"></a>
-
-```java
-public java.lang.String toString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `resetCaFile` <a name="resetCaFile" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.resetCaFile"></a>
-
-```java
-public void resetCaFile()
-```
-
-##### `resetKeyFile` <a name="resetKeyFile" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.resetKeyFile"></a>
-
-```java
-public void resetKeyFile()
-```
-
-##### `resetKeyPassKey` <a name="resetKeyPassKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.resetKeyPassKey"></a>
-
-```java
-public void resetKeyPassKey()
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.property.caFileInput">caFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.property.crtFileInput">crtFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.property.keyFileInput">keyFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.property.keyPassKeyInput">keyPassKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.property.caFile">caFile</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.property.crtFile">crtFile</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.property.keyFile">keyFile</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.property.keyPassKey">keyPassKey</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTls">ObservabilityPipelineConfigSourceHttpClientTls</a></code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.property.creationStack"></a>
-
-```java
-public java.util.List<java.lang.String> getCreationStack();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.property.fqn"></a>
-
-```java
-public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `caFileInput`<sup>Optional</sup> <a name="caFileInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.property.caFileInput"></a>
-
-```java
-public java.lang.String getCaFileInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `crtFileInput`<sup>Optional</sup> <a name="crtFileInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.property.crtFileInput"></a>
-
-```java
-public java.lang.String getCrtFileInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `keyFileInput`<sup>Optional</sup> <a name="keyFileInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.property.keyFileInput"></a>
-
-```java
-public java.lang.String getKeyFileInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `keyPassKeyInput`<sup>Optional</sup> <a name="keyPassKeyInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.property.keyPassKeyInput"></a>
-
-```java
-public java.lang.String getKeyPassKeyInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `caFile`<sup>Required</sup> <a name="caFile" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.property.caFile"></a>
-
-```java
-public java.lang.String getCaFile();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `crtFile`<sup>Required</sup> <a name="crtFile" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.property.crtFile"></a>
-
-```java
-public java.lang.String getCrtFile();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `keyFile`<sup>Required</sup> <a name="keyFile" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.property.keyFile"></a>
-
-```java
-public java.lang.String getKeyFile();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `keyPassKey`<sup>Required</sup> <a name="keyPassKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.property.keyPassKey"></a>
-
-```java
-public java.lang.String getKeyPassKey();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.property.internalValue"></a>
-
-```java
-public IResolvable|ObservabilityPipelineConfigSourceHttpClientTls getInternalValue();
-```
-
-- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTls">ObservabilityPipelineConfigSourceHttpClientTls</a>
-
----
-
-
-### ObservabilityPipelineConfigSourceHttpServerList <a name="ObservabilityPipelineConfigSourceHttpServerList" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList.Initializer"></a>
-
-```java
-import io.cdktn.providers.datadog.observability_pipeline.ObservabilityPipelineConfigSourceHttpServerList;
-
-new ObservabilityPipelineConfigSourceHttpServerList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* io.cdktn.cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* java.lang.Boolean
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList.get">get</a></code> | *No description.* |
-
----
-
-##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList.allWithMapKey"></a>
-
-```java
-public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
-```
-
-Creating an iterator for this complex list.
-
-The list will be converted into a map with the mapKeyAttributeName as the key.
-
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList.allWithMapKey.parameter.mapKeyAttributeName"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList.computeFqn"></a>
-
-```java
-public java.lang.String computeFqn()
-```
-
-##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList.resolve"></a>
-
-```java
-public java.lang.Object resolve(IResolveContext _context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList.resolve.parameter._context"></a>
-
-- *Type:* io.cdktn.cdktn.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList.toString"></a>
-
-```java
-public java.lang.String toString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `get` <a name="get" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList.get"></a>
-
-```java
-public ObservabilityPipelineConfigSourceHttpServerOutputReference get(java.lang.Number index)
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList.get.parameter.index"></a>
-
-- *Type:* java.lang.Number
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServer">ObservabilityPipelineConfigSourceHttpServer</a>></code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList.property.creationStack"></a>
-
-```java
-public java.util.List<java.lang.String> getCreationStack();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList.property.fqn"></a>
-
-```java
-public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerList.property.internalValue"></a>
-
-```java
-public IResolvable|java.util.List<ObservabilityPipelineConfigSourceHttpServer> getInternalValue();
-```
-
-- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServer">ObservabilityPipelineConfigSourceHttpServer</a>>
-
----
-
-
-### ObservabilityPipelineConfigSourceHttpServerOutputReference <a name="ObservabilityPipelineConfigSourceHttpServerOutputReference" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.Initializer"></a>
-
-```java
-import io.cdktn.providers.datadog.observability_pipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference;
-
-new ObservabilityPipelineConfigSourceHttpServerOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* io.cdktn.cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* java.lang.Number
-
-the index of this item in the list.
-
----
-
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* java.lang.Boolean
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.putTls">putTls</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.putValidToken">putValidToken</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.resetAddressKey">resetAddressKey</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.resetPasswordKey">resetPasswordKey</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.resetTls">resetTls</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.resetUsernameKey">resetUsernameKey</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.resetValidToken">resetValidToken</a></code> | *No description.* |
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.computeFqn"></a>
-
-```java
-public java.lang.String computeFqn()
-```
-
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getAnyMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getBooleanAttribute"></a>
-
-```java
-public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getBooleanMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getListAttribute"></a>
-
-```java
-public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getNumberAttribute"></a>
-
-```java
-public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getNumberListAttribute"></a>
-
-```java
-public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getNumberMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getStringAttribute"></a>
-
-```java
-public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getStringMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.interpolationForAttribute"></a>
-
-```java
-public IResolvable interpolationForAttribute(java.lang.String property)
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.resolve"></a>
-
-```java
-public java.lang.Object resolve(IResolveContext _context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.resolve.parameter._context"></a>
-
-- *Type:* io.cdktn.cdktn.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.toString"></a>
-
-```java
-public java.lang.String toString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `putTls` <a name="putTls" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.putTls"></a>
-
-```java
-public void putTls(IResolvable|java.util.List<ObservabilityPipelineConfigSourceHttpServerTls> value)
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.putTls.parameter.value"></a>
-
-- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTls">ObservabilityPipelineConfigSourceHttpServerTls</a>>
-
----
-
-##### `putValidToken` <a name="putValidToken" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.putValidToken"></a>
-
-```java
-public void putValidToken(IResolvable|java.util.List<ObservabilityPipelineConfigSourceHttpServerValidToken> value)
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.putValidToken.parameter.value"></a>
-
-- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerValidToken">ObservabilityPipelineConfigSourceHttpServerValidToken</a>>
-
----
-
-##### `resetAddressKey` <a name="resetAddressKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.resetAddressKey"></a>
-
-```java
-public void resetAddressKey()
-```
-
-##### `resetPasswordKey` <a name="resetPasswordKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.resetPasswordKey"></a>
-
-```java
-public void resetPasswordKey()
-```
-
-##### `resetTls` <a name="resetTls" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.resetTls"></a>
-
-```java
-public void resetTls()
-```
-
-##### `resetUsernameKey` <a name="resetUsernameKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.resetUsernameKey"></a>
-
-```java
-public void resetUsernameKey()
-```
-
-##### `resetValidToken` <a name="resetValidToken" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.resetValidToken"></a>
-
-```java
-public void resetValidToken()
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.tls">tls</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList">ObservabilityPipelineConfigSourceHttpServerTlsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.validToken">validToken</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerValidTokenList">ObservabilityPipelineConfigSourceHttpServerValidTokenList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.addressKeyInput">addressKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.authStrategyInput">authStrategyInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.decodingInput">decodingInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.passwordKeyInput">passwordKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.tlsInput">tlsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTls">ObservabilityPipelineConfigSourceHttpServerTls</a>></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.usernameKeyInput">usernameKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.validTokenInput">validTokenInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerValidToken">ObservabilityPipelineConfigSourceHttpServerValidToken</a>></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.addressKey">addressKey</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.authStrategy">authStrategy</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.decoding">decoding</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.passwordKey">passwordKey</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.usernameKey">usernameKey</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServer">ObservabilityPipelineConfigSourceHttpServer</a></code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.creationStack"></a>
-
-```java
-public java.util.List<java.lang.String> getCreationStack();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.fqn"></a>
-
-```java
-public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `tls`<sup>Required</sup> <a name="tls" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.tls"></a>
-
-```java
-public ObservabilityPipelineConfigSourceHttpServerTlsList getTls();
-```
-
-- *Type:* <a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList">ObservabilityPipelineConfigSourceHttpServerTlsList</a>
-
----
-
-##### `validToken`<sup>Required</sup> <a name="validToken" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.validToken"></a>
-
-```java
-public ObservabilityPipelineConfigSourceHttpServerValidTokenList getValidToken();
-```
-
-- *Type:* <a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerValidTokenList">ObservabilityPipelineConfigSourceHttpServerValidTokenList</a>
-
----
-
-##### `addressKeyInput`<sup>Optional</sup> <a name="addressKeyInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.addressKeyInput"></a>
-
-```java
-public java.lang.String getAddressKeyInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `authStrategyInput`<sup>Optional</sup> <a name="authStrategyInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.authStrategyInput"></a>
-
-```java
-public java.lang.String getAuthStrategyInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `decodingInput`<sup>Optional</sup> <a name="decodingInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.decodingInput"></a>
-
-```java
-public java.lang.String getDecodingInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `passwordKeyInput`<sup>Optional</sup> <a name="passwordKeyInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.passwordKeyInput"></a>
-
-```java
-public java.lang.String getPasswordKeyInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `tlsInput`<sup>Optional</sup> <a name="tlsInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.tlsInput"></a>
-
-```java
-public IResolvable|java.util.List<ObservabilityPipelineConfigSourceHttpServerTls> getTlsInput();
-```
-
-- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTls">ObservabilityPipelineConfigSourceHttpServerTls</a>>
-
----
-
-##### `usernameKeyInput`<sup>Optional</sup> <a name="usernameKeyInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.usernameKeyInput"></a>
-
-```java
-public java.lang.String getUsernameKeyInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `validTokenInput`<sup>Optional</sup> <a name="validTokenInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.validTokenInput"></a>
-
-```java
-public IResolvable|java.util.List<ObservabilityPipelineConfigSourceHttpServerValidToken> getValidTokenInput();
-```
-
-- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerValidToken">ObservabilityPipelineConfigSourceHttpServerValidToken</a>>
-
----
-
-##### `addressKey`<sup>Required</sup> <a name="addressKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.addressKey"></a>
-
-```java
-public java.lang.String getAddressKey();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `authStrategy`<sup>Required</sup> <a name="authStrategy" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.authStrategy"></a>
-
-```java
-public java.lang.String getAuthStrategy();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `decoding`<sup>Required</sup> <a name="decoding" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.decoding"></a>
-
-```java
-public java.lang.String getDecoding();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `passwordKey`<sup>Required</sup> <a name="passwordKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.passwordKey"></a>
-
-```java
-public java.lang.String getPasswordKey();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `usernameKey`<sup>Required</sup> <a name="usernameKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.usernameKey"></a>
-
-```java
-public java.lang.String getUsernameKey();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference.property.internalValue"></a>
-
-```java
-public IResolvable|ObservabilityPipelineConfigSourceHttpServer getInternalValue();
-```
-
-- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServer">ObservabilityPipelineConfigSourceHttpServer</a>
-
----
-
-
-### ObservabilityPipelineConfigSourceHttpServerTlsList <a name="ObservabilityPipelineConfigSourceHttpServerTlsList" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList.Initializer"></a>
-
-```java
-import io.cdktn.providers.datadog.observability_pipeline.ObservabilityPipelineConfigSourceHttpServerTlsList;
-
-new ObservabilityPipelineConfigSourceHttpServerTlsList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* io.cdktn.cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* java.lang.Boolean
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList.get">get</a></code> | *No description.* |
-
----
-
-##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList.allWithMapKey"></a>
-
-```java
-public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
-```
-
-Creating an iterator for this complex list.
-
-The list will be converted into a map with the mapKeyAttributeName as the key.
-
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList.computeFqn"></a>
-
-```java
-public java.lang.String computeFqn()
-```
-
-##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList.resolve"></a>
-
-```java
-public java.lang.Object resolve(IResolveContext _context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList.resolve.parameter._context"></a>
-
-- *Type:* io.cdktn.cdktn.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList.toString"></a>
-
-```java
-public java.lang.String toString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `get` <a name="get" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList.get"></a>
-
-```java
-public ObservabilityPipelineConfigSourceHttpServerTlsOutputReference get(java.lang.Number index)
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList.get.parameter.index"></a>
-
-- *Type:* java.lang.Number
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTls">ObservabilityPipelineConfigSourceHttpServerTls</a>></code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList.property.creationStack"></a>
-
-```java
-public java.util.List<java.lang.String> getCreationStack();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList.property.fqn"></a>
-
-```java
-public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsList.property.internalValue"></a>
-
-```java
-public IResolvable|java.util.List<ObservabilityPipelineConfigSourceHttpServerTls> getInternalValue();
-```
-
-- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTls">ObservabilityPipelineConfigSourceHttpServerTls</a>>
-
----
-
-
-### ObservabilityPipelineConfigSourceHttpServerTlsOutputReference <a name="ObservabilityPipelineConfigSourceHttpServerTlsOutputReference" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.Initializer"></a>
-
-```java
-import io.cdktn.providers.datadog.observability_pipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference;
-
-new ObservabilityPipelineConfigSourceHttpServerTlsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* io.cdktn.cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* java.lang.Number
-
-the index of this item in the list.
-
----
-
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* java.lang.Boolean
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.resetCaFile">resetCaFile</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.resetKeyFile">resetKeyFile</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.resetKeyPassKey">resetKeyPassKey</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.resetVerifyCertificate">resetVerifyCertificate</a></code> | *No description.* |
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.computeFqn"></a>
-
-```java
-public java.lang.String computeFqn()
-```
-
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getAnyMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getBooleanAttribute"></a>
-
-```java
-public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getBooleanMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getListAttribute"></a>
-
-```java
-public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getNumberAttribute"></a>
-
-```java
-public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getNumberListAttribute"></a>
-
-```java
-public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getNumberMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getStringAttribute"></a>
-
-```java
-public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getStringMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.interpolationForAttribute"></a>
-
-```java
-public IResolvable interpolationForAttribute(java.lang.String property)
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.resolve"></a>
-
-```java
-public java.lang.Object resolve(IResolveContext _context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.resolve.parameter._context"></a>
-
-- *Type:* io.cdktn.cdktn.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.toString"></a>
-
-```java
-public java.lang.String toString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `resetCaFile` <a name="resetCaFile" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.resetCaFile"></a>
-
-```java
-public void resetCaFile()
-```
-
-##### `resetKeyFile` <a name="resetKeyFile" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.resetKeyFile"></a>
-
-```java
-public void resetKeyFile()
-```
-
-##### `resetKeyPassKey` <a name="resetKeyPassKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.resetKeyPassKey"></a>
-
-```java
-public void resetKeyPassKey()
-```
-
-##### `resetVerifyCertificate` <a name="resetVerifyCertificate" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.resetVerifyCertificate"></a>
-
-```java
-public void resetVerifyCertificate()
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.property.caFileInput">caFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.property.crtFileInput">crtFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.property.keyFileInput">keyFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.property.keyPassKeyInput">keyPassKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.property.verifyCertificateInput">verifyCertificateInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.property.caFile">caFile</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.property.crtFile">crtFile</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.property.keyFile">keyFile</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.property.keyPassKey">keyPassKey</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.property.verifyCertificate">verifyCertificate</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTls">ObservabilityPipelineConfigSourceHttpServerTls</a></code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.property.creationStack"></a>
-
-```java
-public java.util.List<java.lang.String> getCreationStack();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.property.fqn"></a>
-
-```java
-public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `caFileInput`<sup>Optional</sup> <a name="caFileInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.property.caFileInput"></a>
-
-```java
-public java.lang.String getCaFileInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `crtFileInput`<sup>Optional</sup> <a name="crtFileInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.property.crtFileInput"></a>
-
-```java
-public java.lang.String getCrtFileInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `keyFileInput`<sup>Optional</sup> <a name="keyFileInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.property.keyFileInput"></a>
-
-```java
-public java.lang.String getKeyFileInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `keyPassKeyInput`<sup>Optional</sup> <a name="keyPassKeyInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.property.keyPassKeyInput"></a>
-
-```java
-public java.lang.String getKeyPassKeyInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `verifyCertificateInput`<sup>Optional</sup> <a name="verifyCertificateInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.property.verifyCertificateInput"></a>
-
-```java
-public java.lang.Boolean|IResolvable getVerifyCertificateInput();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `caFile`<sup>Required</sup> <a name="caFile" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.property.caFile"></a>
-
-```java
-public java.lang.String getCaFile();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `crtFile`<sup>Required</sup> <a name="crtFile" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.property.crtFile"></a>
-
-```java
-public java.lang.String getCrtFile();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `keyFile`<sup>Required</sup> <a name="keyFile" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.property.keyFile"></a>
-
-```java
-public java.lang.String getKeyFile();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `keyPassKey`<sup>Required</sup> <a name="keyPassKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.property.keyPassKey"></a>
-
-```java
-public java.lang.String getKeyPassKey();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `verifyCertificate`<sup>Required</sup> <a name="verifyCertificate" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.property.verifyCertificate"></a>
-
-```java
-public java.lang.Boolean|IResolvable getVerifyCertificate();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTlsOutputReference.property.internalValue"></a>
-
-```java
-public IResolvable|ObservabilityPipelineConfigSourceHttpServerTls getInternalValue();
-```
-
-- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTls">ObservabilityPipelineConfigSourceHttpServerTls</a>
-
----
-
-
-### ObservabilityPipelineConfigSourceHttpServerValidTokenFieldToAddList <a name="ObservabilityPipelineConfigSourceHttpServerValidTokenFieldToAddList" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerValidTokenFieldToAddList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerValidTokenFieldToAddList.Initializer"></a>

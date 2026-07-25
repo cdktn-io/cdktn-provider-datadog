@@ -4,7 +4,7 @@
 
 ### DataDatadogUser <a name="DataDatadogUser" id="@cdktn/provider-datadog.dataDatadogUser.DataDatadogUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/user datadog_user}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/user datadog_user}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogUser.DataDatadogUser.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataDatadogUser to import.
 
 The id of the existing DataDatadogUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -825,7 +825,7 @@ const dataDatadogUserConfig: dataDatadogUser.DataDatadogUserConfig = { ... }
 | <code><a href="#@cdktn/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.filter">filter</a></code> | <code>string</code> | Filter all users by the given string. |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.exactMatch">exactMatch</a></code> | <code>boolean \| cdktn.IResolvable</code> | When true, `filter` string is exact matched against the user's `email`, followed by `name` attribute. Defaults to `false`. |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.excludeServiceAccounts">excludeServiceAccounts</a></code> | <code>boolean \| cdktn.IResolvable</code> | When true, service accounts are excluded from the result. Defaults to `false`. |
-| <code><a href="#@cdktn/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/user#id DataDatadogUser#id}. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/user#id DataDatadogUser#id}. |
 
 ---
 
@@ -909,7 +909,7 @@ public readonly filter: string;
 
 Filter all users by the given string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/user#filter DataDatadogUser#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/user#filter DataDatadogUser#filter}
 
 ---
 
@@ -923,7 +923,7 @@ public readonly exactMatch: boolean | IResolvable;
 
 When true, `filter` string is exact matched against the user's `email`, followed by `name` attribute. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/user#exact_match DataDatadogUser#exact_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/user#exact_match DataDatadogUser#exact_match}
 
 ---
 
@@ -937,7 +937,7 @@ public readonly excludeServiceAccounts: boolean | IResolvable;
 
 When true, service accounts are excluded from the result. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/user#exclude_service_accounts DataDatadogUser#exclude_service_accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/user#exclude_service_accounts DataDatadogUser#exclude_service_accounts}
 
 ---
 
@@ -949,7 +949,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/user#id DataDatadogUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/user#id DataDatadogUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

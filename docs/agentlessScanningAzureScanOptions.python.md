@@ -4,7 +4,7 @@
 
 ### AgentlessScanningAzureScanOptions <a name="AgentlessScanningAzureScanOptions" id="@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/agentless_scanning_azure_scan_options datadog_agentless_scanning_azure_scan_options}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/agentless_scanning_azure_scan_options datadog_agentless_scanning_azure_scan_options}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.Initializer"></a>
 
@@ -22,6 +22,7 @@ agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   azure_subscription_id: str,
+  function: bool | IResolvable,
   vuln_containers_os: bool | IResolvable,
   vuln_host_os: bool | IResolvable,
   compliance_host: bool | IResolvable = None
@@ -40,6 +41,7 @@ agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions(
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.Initializer.parameter.azureSubscriptionId">azure_subscription_id</a></code> | <code>str</code> | The Azure subscription ID for which agentless scanning is configured. Must be a valid Azure subscription ID (UUID format). |
+| <code><a href="#@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.Initializer.parameter.function">function</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates if scanning of Azure Functions is enabled. |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.Initializer.parameter.vulnContainersOs">vuln_containers_os</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates if scanning for vulnerabilities in containers is enabled. |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.Initializer.parameter.vulnHostOs">vuln_host_os</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates if scanning for vulnerabilities in hosts is enabled. |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.Initializer.parameter.complianceHost">compliance_host</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether host compliance scanning is enabled. |
@@ -112,7 +114,17 @@ Must be unique amongst siblings in the same scope
 
 The Azure subscription ID for which agentless scanning is configured. Must be a valid Azure subscription ID (UUID format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/agentless_scanning_azure_scan_options#azure_subscription_id AgentlessScanningAzureScanOptions#azure_subscription_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/agentless_scanning_azure_scan_options#azure_subscription_id AgentlessScanningAzureScanOptions#azure_subscription_id}
+
+---
+
+##### `function`<sup>Required</sup> <a name="function" id="@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.Initializer.parameter.function"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Indicates if scanning of Azure Functions is enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/agentless_scanning_azure_scan_options#function AgentlessScanningAzureScanOptions#function}
 
 ---
 
@@ -122,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Indicates if scanning for vulnerabilities in containers is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/agentless_scanning_azure_scan_options#vuln_containers_os AgentlessScanningAzureScanOptions#vuln_containers_os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/agentless_scanning_azure_scan_options#vuln_containers_os AgentlessScanningAzureScanOptions#vuln_containers_os}
 
 ---
 
@@ -132,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Indicates if scanning for vulnerabilities in hosts is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/agentless_scanning_azure_scan_options#vuln_host_os AgentlessScanningAzureScanOptions#vuln_host_os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/agentless_scanning_azure_scan_options#vuln_host_os AgentlessScanningAzureScanOptions#vuln_host_os}
 
 ---
 
@@ -142,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Indicates whether host compliance scanning is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/agentless_scanning_azure_scan_options#compliance_host AgentlessScanningAzureScanOptions#compliance_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/agentless_scanning_azure_scan_options#compliance_host AgentlessScanningAzureScanOptions#compliance_host}
 
 ---
 
@@ -646,7 +658,7 @@ The construct id used in the generated config for the AgentlessScanningAzureScan
 
 The id of the existing AgentlessScanningAzureScanOptions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/agentless_scanning_azure_scan_options#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/agentless_scanning_azure_scan_options#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -679,10 +691,12 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.property.azureSubscriptionIdInput">azure_subscription_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.property.complianceHostInput">compliance_host_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.property.functionInput">function_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.property.vulnContainersOsInput">vuln_containers_os_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.property.vulnHostOsInput">vuln_host_os_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.property.azureSubscriptionId">azure_subscription_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.property.complianceHost">compliance_host</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.property.function">function</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.property.vulnContainersOs">vuln_containers_os</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.property.vulnHostOs">vuln_host_os</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 
@@ -860,6 +874,16 @@ compliance_host_input: bool | IResolvable
 
 ---
 
+##### `function_input`<sup>Optional</sup> <a name="function_input" id="@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.property.functionInput"></a>
+
+```python
+function_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `vuln_containers_os_input`<sup>Optional</sup> <a name="vuln_containers_os_input" id="@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.property.vulnContainersOsInput"></a>
 
 ```python
@@ -894,6 +918,16 @@ azure_subscription_id: str
 
 ```python
 compliance_host: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `function`<sup>Required</sup> <a name="function" id="@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.property.function"></a>
+
+```python
+function: bool | IResolvable
 ```
 
 - *Type:* bool | cdktn.IResolvable
@@ -956,6 +990,7 @@ agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptionsConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   azure_subscription_id: str,
+  function: bool | IResolvable,
   vuln_containers_os: bool | IResolvable,
   vuln_host_os: bool | IResolvable,
   compliance_host: bool | IResolvable = None
@@ -974,6 +1009,7 @@ agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptionsConfig(
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptionsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptionsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptionsConfig.property.azureSubscriptionId">azure_subscription_id</a></code> | <code>str</code> | The Azure subscription ID for which agentless scanning is configured. Must be a valid Azure subscription ID (UUID format). |
+| <code><a href="#@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptionsConfig.property.function">function</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates if scanning of Azure Functions is enabled. |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptionsConfig.property.vulnContainersOs">vuln_containers_os</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates if scanning for vulnerabilities in containers is enabled. |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptionsConfig.property.vulnHostOs">vuln_host_os</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates if scanning for vulnerabilities in hosts is enabled. |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptionsConfig.property.complianceHost">compliance_host</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether host compliance scanning is enabled. |
@@ -1060,7 +1096,21 @@ azure_subscription_id: str
 
 The Azure subscription ID for which agentless scanning is configured. Must be a valid Azure subscription ID (UUID format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/agentless_scanning_azure_scan_options#azure_subscription_id AgentlessScanningAzureScanOptions#azure_subscription_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/agentless_scanning_azure_scan_options#azure_subscription_id AgentlessScanningAzureScanOptions#azure_subscription_id}
+
+---
+
+##### `function`<sup>Required</sup> <a name="function" id="@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptionsConfig.property.function"></a>
+
+```python
+function: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Indicates if scanning of Azure Functions is enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/agentless_scanning_azure_scan_options#function AgentlessScanningAzureScanOptions#function}
 
 ---
 
@@ -1074,7 +1124,7 @@ vuln_containers_os: bool | IResolvable
 
 Indicates if scanning for vulnerabilities in containers is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/agentless_scanning_azure_scan_options#vuln_containers_os AgentlessScanningAzureScanOptions#vuln_containers_os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/agentless_scanning_azure_scan_options#vuln_containers_os AgentlessScanningAzureScanOptions#vuln_containers_os}
 
 ---
 
@@ -1088,7 +1138,7 @@ vuln_host_os: bool | IResolvable
 
 Indicates if scanning for vulnerabilities in hosts is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/agentless_scanning_azure_scan_options#vuln_host_os AgentlessScanningAzureScanOptions#vuln_host_os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/agentless_scanning_azure_scan_options#vuln_host_os AgentlessScanningAzureScanOptions#vuln_host_os}
 
 ---
 
@@ -1102,7 +1152,7 @@ compliance_host: bool | IResolvable
 
 Indicates whether host compliance scanning is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/agentless_scanning_azure_scan_options#compliance_host AgentlessScanningAzureScanOptions#compliance_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/agentless_scanning_azure_scan_options#compliance_host AgentlessScanningAzureScanOptions#compliance_host}
 
 ---
 

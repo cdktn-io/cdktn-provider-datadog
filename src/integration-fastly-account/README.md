@@ -1,3 +1,3 @@
 # `datadog_integration_fastly_account`
 
-Refer to the Terraform Registry for docs: [`datadog_integration_fastly_account`](https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/integration_fastly_account).
+Refer to the Terraform Registry for docs: [`datadog_integration_fastly_account`](https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/integration_fastly_account).

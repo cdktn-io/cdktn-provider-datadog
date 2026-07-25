@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/reference_table_rows
+// https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/reference_table_rows
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DataDatadogReferenceTableRowsConfig extends cdktn.TerraformMeta
   /**
   * List of primary key values (row IDs) to retrieve. These are the values of the table's primary key field(s). Maximum 250 IDs per request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/reference_table_rows#row_ids DataDatadogReferenceTableRows#row_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/reference_table_rows#row_ids DataDatadogReferenceTableRows#row_ids}
   */
   readonly rowIds: string[];
   /**
   * The UUID of the reference table to query rows from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/reference_table_rows#table_id DataDatadogReferenceTableRows#table_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/reference_table_rows#table_id DataDatadogReferenceTableRows#table_id}
   */
   readonly tableId: string;
   /**
   * rows block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/reference_table_rows#rows DataDatadogReferenceTableRows#rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/reference_table_rows#rows DataDatadogReferenceTableRows#rows}
   */
   readonly rows?: DataDatadogReferenceTableRowsRows[] | cdktn.IResolvable;
 }
@@ -125,7 +125,7 @@ export class DataDatadogReferenceTableRowsRowsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/reference_table_rows datadog_reference_table_rows}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/reference_table_rows datadog_reference_table_rows}
 */
 export class DataDatadogReferenceTableRows extends cdktn.TerraformDataSource {
 
@@ -141,7 +141,7 @@ export class DataDatadogReferenceTableRows extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatadogReferenceTableRows resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogReferenceTableRows to import
-  * @param importFromId The id of the existing DataDatadogReferenceTableRows that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/reference_table_rows#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogReferenceTableRows that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/reference_table_rows#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogReferenceTableRows to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -153,7 +153,7 @@ export class DataDatadogReferenceTableRows extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/reference_table_rows datadog_reference_table_rows} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/reference_table_rows datadog_reference_table_rows} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -164,7 +164,7 @@ export class DataDatadogReferenceTableRows extends cdktn.TerraformDataSource {
       terraformResourceType: 'datadog_reference_table_rows',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.15.0',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

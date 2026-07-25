@@ -4,7 +4,7 @@
 
 ### TagIndexingRuleOrder <a name="TagIndexingRuleOrder" id="@cdktn/provider-datadog.tagIndexingRuleOrder.TagIndexingRuleOrder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule_order datadog_tag_indexing_rule_order}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule_order datadog_tag_indexing_rule_order}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagIndexingRuleOrder.TagIndexingRuleOrder.Initializer"></a>
 
@@ -110,7 +110,7 @@ A unique name for the order resource.
 
 Recommended to match the resource name. No corresponding field exists in the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule_order#name TagIndexingRuleOrder#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule_order#name TagIndexingRuleOrder#name}
 
 ---
 
@@ -122,7 +122,7 @@ Ordered list of ALL tag indexing rule UUIDs.
 
 The server assigns each rule a rule_order value (1, 2, 3, ...) corresponding to its position in this list. This resource claims full ownership of evaluation order: rules created outside Terraform (e.g. via the UI) will appear as configuration drift on the next plan. All rules must be listed here; omitting a rule ID will result in a 404 error from the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule_order#rule_ids TagIndexingRuleOrder#rule_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule_order#rule_ids TagIndexingRuleOrder#rule_ids}
 
 ---
 
@@ -619,7 +619,7 @@ The construct id used in the generated config for the TagIndexingRuleOrder to im
 
 The id of the existing TagIndexingRuleOrder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule_order#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule_order#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -987,7 +987,7 @@ A unique name for the order resource.
 
 Recommended to match the resource name. No corresponding field exists in the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule_order#name TagIndexingRuleOrder#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule_order#name TagIndexingRuleOrder#name}
 
 ---
 
@@ -1003,7 +1003,7 @@ Ordered list of ALL tag indexing rule UUIDs.
 
 The server assigns each rule a rule_order value (1, 2, 3, ...) corresponding to its position in this list. This resource claims full ownership of evaluation order: rules created outside Terraform (e.g. via the UI) will appear as configuration drift on the next plan. All rules must be listed here; omitting a rule ID will result in a 404 error from the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule_order#rule_ids TagIndexingRuleOrder#rule_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule_order#rule_ids TagIndexingRuleOrder#rule_ids}
 
 ---
 

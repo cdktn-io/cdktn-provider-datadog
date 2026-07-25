@@ -4,7 +4,7 @@
 
 ### TagIndexingRuleExemption <a name="TagIndexingRuleExemption" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule_exemption datadog_tag_indexing_rule_exemption}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule_exemption datadog_tag_indexing_rule_exemption}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The metric name to exempt. Changing this value forces a new resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule_exemption#metric_name TagIndexingRuleExemption#metric_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule_exemption#metric_name TagIndexingRuleExemption#metric_name}
 
 ---
 
@@ -120,7 +120,7 @@ The reason the metric is exempt from tag indexing rules.
 
 Changing this value forces a new resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule_exemption#reason TagIndexingRuleExemption#reason}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule_exemption#reason TagIndexingRuleExemption#reason}
 
 ---
 
@@ -617,7 +617,7 @@ The construct id used in the generated config for the TagIndexingRuleExemption t
 
 The id of the existing TagIndexingRuleExemption that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule_exemption#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule_exemption#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1016,7 +1016,7 @@ metric_name: str
 
 The metric name to exempt. Changing this value forces a new resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule_exemption#metric_name TagIndexingRuleExemption#metric_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule_exemption#metric_name TagIndexingRuleExemption#metric_name}
 
 ---
 
@@ -1032,7 +1032,7 @@ The reason the metric is exempt from tag indexing rules.
 
 Changing this value forces a new resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule_exemption#reason TagIndexingRuleExemption#reason}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule_exemption#reason TagIndexingRuleExemption#reason}
 
 ---
 
