@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.complianceResourceEvaluationFilter.ComplianceResourceEvaluationFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/complianceresourceevaluationfilter"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/complianceresourceevaluationfilter"
 
 complianceresourceevaluationfilter.NewComplianceResourceEvaluationFilter(scope Construct, id *string, config ComplianceResourceEvaluationFilterConfig) ComplianceResourceEvaluationFilter
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.complianceResourceEvaluationFilter.ComplianceResourceEvaluationFilter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/complianceresourceevaluationfilter"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/complianceresourceevaluationfilter"
 
 complianceresourceevaluationfilter.ComplianceResourceEvaluationFilter_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.complianceResourceEvaluationFilter.ComplianceResourceEvaluationFilter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/complianceresourceevaluationfilter"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/complianceresourceevaluationfilter"
 
 complianceresourceevaluationfilter.ComplianceResourceEvaluationFilter_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ complianceresourceevaluationfilter.ComplianceResourceEvaluationFilter_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.complianceResourceEvaluationFilter.ComplianceResourceEvaluationFilter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/complianceresourceevaluationfilter"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/complianceresourceevaluationfilter"
 
 complianceresourceevaluationfilter.ComplianceResourceEvaluationFilter_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ complianceresourceevaluationfilter.ComplianceResourceEvaluationFilter_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.complianceResourceEvaluationFilter.ComplianceResourceEvaluationFilter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/complianceresourceevaluationfilter"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/complianceresourceevaluationfilter"
 
 complianceresourceevaluationfilter.ComplianceResourceEvaluationFilter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -766,7 +766,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.complianceResourceEvaluationFilter.ComplianceResourceEvaluationFilterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/complianceresourceevaluationfilter"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/complianceresourceevaluationfilter"
 
 &complianceresourceevaluationfilter.ComplianceResourceEvaluationFilterConfig {
 	Connection: interface{},

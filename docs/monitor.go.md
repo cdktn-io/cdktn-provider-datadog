@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.Monitor.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitor(scope Construct, id *string, config MonitorConfig) Monitor
 ```
@@ -696,7 +696,7 @@ func ResetVariables()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.monitor.Monitor.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.Monitor_IsConstruct(x interface{}) *bool
 ```
@@ -728,7 +728,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.monitor.Monitor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.Monitor_IsTerraformElement(x interface{}) *bool
 ```
@@ -742,7 +742,7 @@ monitor.Monitor_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.monitor.Monitor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.Monitor_IsTerraformResource(x interface{}) *bool
 ```
@@ -756,7 +756,7 @@ monitor.Monitor_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.monitor.Monitor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.Monitor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1799,7 +1799,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorAssets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorAssets {
 	Category: *string,
@@ -1897,7 +1897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorConfig {
 	Connection: interface{},
@@ -1923,8 +1923,8 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
 	Id: *string,
 	IgnoreTagKeys: *[]*string,
 	IncludeTags: interface{},
-	MonitorThresholds: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorMonitorThresholds,
-	MonitorThresholdWindows: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorMonitorThresholdWindows,
+	MonitorThresholds: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorMonitorThresholds,
+	MonitorThresholdWindows: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorMonitorThresholdWindows,
 	NewGroupDelay: *f64,
 	NewHostDelay: *f64,
 	NoDataTimeframe: *f64,
@@ -1939,11 +1939,11 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
 	RenotifyStatuses: *[]*string,
 	RequireFullWindow: interface{},
 	RestrictedRoles: *[]*string,
-	SchedulingOptions: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorSchedulingOptions,
+	SchedulingOptions: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorSchedulingOptions,
 	Tags: *[]*string,
 	TimeoutH: *f64,
 	Validate: interface{},
-	Variables: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorVariables,
+	Variables: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariables,
 }
 ```
 
@@ -2636,7 +2636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorMonitorThresholds {
 	Critical: *string,
@@ -2786,7 +2786,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindows.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorMonitorThresholdWindows {
 	RecoveryWindow: *string,
@@ -2836,11 +2836,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorSchedulingOptions {
-	CustomSchedule: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorSchedulingOptionsCustomSchedule,
-	EvaluationWindow: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorSchedulingOptionsEvaluationWindow,
+	CustomSchedule: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorSchedulingOptionsCustomSchedule,
+	EvaluationWindow: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorSchedulingOptionsEvaluationWindow,
 }
 ```
 
@@ -2886,10 +2886,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorSchedulingOptionsCustomSchedule {
-	Recurrence: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence,
+	Recurrence: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence,
 }
 ```
 
@@ -2920,7 +2920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorSchedulingOptionsCustomScheduleRecurrence {
 	Rrule: *string,
@@ -2986,7 +2986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorSchedulingOptionsEvaluationWindow {
 	DayStarts: *string,
@@ -3074,7 +3074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariables.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariables {
 	AggregateAugmentedQuery: interface{},
@@ -3188,17 +3188,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQuery {
 	Compute: interface{},
 	DataSource: *string,
 	GroupBy: interface{},
-	JoinCondition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorVariablesAggregateAugmentedQueryJoinCondition,
-	AugmentEventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQuery,
-	AugmentReferenceTable: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorVariablesAggregateAugmentedQueryAugmentReferenceTable,
-	BaseEventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQuery,
-	BaseMetricsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorVariablesAggregateAugmentedQueryBaseMetricsQuery,
+	JoinCondition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateAugmentedQueryJoinCondition,
+	AugmentEventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQuery,
+	AugmentReferenceTable: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateAugmentedQueryAugmentReferenceTable,
+	BaseEventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQuery,
+	BaseMetricsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateAugmentedQueryBaseMetricsQuery,
 	Name: *string,
 }
 ```
@@ -3350,13 +3350,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQuery {
 	Compute: interface{},
 	DataSource: *string,
 	Name: *string,
-	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQuerySearch,
+	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQuerySearch,
 	GroupBy: interface{},
 	Indexes: *[]*string,
 }
@@ -3466,7 +3466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryCompute {
 	Aggregation: *string,
@@ -3550,12 +3550,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBySort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBySort,
 	Source: *string,
 }
 ```
@@ -3632,7 +3632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBySort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBySort {
 	Aggregation: *string,
@@ -3700,7 +3700,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQuerySearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQuerySearch {
 	Query: *string,
@@ -3734,7 +3734,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentReferenceTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryAugmentReferenceTable {
 	DataSource: *string,
@@ -3832,7 +3832,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentReferenceTableColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryAugmentReferenceTableColumns {
 	Name: *string,
@@ -3882,13 +3882,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQuery {
 	Compute: interface{},
 	DataSource: *string,
 	Name: *string,
-	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQuerySearch,
+	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQuerySearch,
 	GroupBy: interface{},
 	Indexes: *[]*string,
 }
@@ -3998,7 +3998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryCompute {
 	Aggregation: *string,
@@ -4082,12 +4082,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBySort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBySort,
 	Source: *string,
 }
 ```
@@ -4164,7 +4164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBySort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBySort {
 	Aggregation: *string,
@@ -4232,7 +4232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQuerySearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQuerySearch {
 	Query: *string,
@@ -4266,7 +4266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseMetricsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryBaseMetricsQuery {
 	DataSource: *string,
@@ -4350,7 +4350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryCompute {
 	Aggregation: *string,
@@ -4434,12 +4434,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorVariablesAggregateAugmentedQueryGroupBySort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateAugmentedQueryGroupBySort,
 	Source: *string,
 }
 ```
@@ -4516,7 +4516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryGroupBySort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryGroupBySort {
 	Aggregation: *string,
@@ -4584,7 +4584,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryJoinCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryJoinCondition {
 	AugmentAttribute: *string,
@@ -4650,16 +4650,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQuery {
 	DataSource: *string,
 	Filters: interface{},
-	BaseEventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQuery,
-	BaseMetricsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorVariablesAggregateFilteredQueryBaseMetricsQuery,
+	BaseEventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQuery,
+	BaseMetricsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateFilteredQueryBaseMetricsQuery,
 	Compute: interface{},
-	FilterEventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQuery,
-	FilterReferenceTable: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorVariablesAggregateFilteredQueryFilterReferenceTable,
+	FilterEventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQuery,
+	FilterReferenceTable: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateFilteredQueryFilterReferenceTable,
 	GroupBy: interface{},
 	Name: *string,
 }
@@ -4812,13 +4812,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryBaseEventQuery {
 	Compute: interface{},
 	DataSource: *string,
 	Name: *string,
-	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQuerySearch,
+	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQuerySearch,
 	GroupBy: interface{},
 	Indexes: *[]*string,
 }
@@ -4928,7 +4928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryCompute {
 	Aggregation: *string,
@@ -5012,12 +5012,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBySort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBySort,
 	Source: *string,
 }
 ```
@@ -5094,7 +5094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBySort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBySort {
 	Aggregation: *string,
@@ -5162,7 +5162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQuerySearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryBaseEventQuerySearch {
 	Query: *string,
@@ -5196,7 +5196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseMetricsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryBaseMetricsQuery {
 	DataSource: *string,
@@ -5280,7 +5280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryCompute {
 	Aggregation: *string,
@@ -5364,13 +5364,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryFilterEventQuery {
 	Compute: interface{},
 	DataSource: *string,
 	Name: *string,
-	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQuerySearch,
+	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQuerySearch,
 	GroupBy: interface{},
 	Indexes: *[]*string,
 }
@@ -5480,7 +5480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryCompute {
 	Aggregation: *string,
@@ -5564,12 +5564,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBySort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBySort,
 	Source: *string,
 }
 ```
@@ -5646,7 +5646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBySort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBySort {
 	Aggregation: *string,
@@ -5714,7 +5714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQuerySearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryFilterEventQuerySearch {
 	Query: *string,
@@ -5748,7 +5748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterReferenceTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryFilterReferenceTable {
 	DataSource: *string,
@@ -5846,7 +5846,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterReferenceTableColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryFilterReferenceTableColumns {
 	Name: *string,
@@ -5896,7 +5896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryFilters {
 	BaseAttribute: *string,
@@ -5962,12 +5962,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorVariablesAggregateFilteredQueryGroupBySort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateFilteredQueryGroupBySort,
 	Source: *string,
 }
 ```
@@ -6044,7 +6044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryGroupBySort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryGroupBySort {
 	Aggregation: *string,
@@ -6112,7 +6112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesCloudCostQuery {
 	Aggregator: *string,
@@ -6196,7 +6196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataJobsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesDataJobsQuery {
 	JobsQuery: *string,
@@ -6280,7 +6280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesDataQualityQuery {
 	DataSource: *string,
@@ -6288,7 +6288,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
 	Measure: *string,
 	Name: *string,
 	GroupBy: *[]*string,
-	MonitorOptions: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorVariablesDataQualityQueryMonitorOptions,
+	MonitorOptions: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesDataQualityQueryMonitorOptions,
 	SchemaVersion: *string,
 	Scope: *string,
 }
@@ -6428,7 +6428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesDataQualityQueryMonitorOptions {
 	CrontabOverride: *string,
@@ -6526,13 +6526,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesEventQuery {
 	Compute: interface{},
 	DataSource: *string,
 	Name: *string,
-	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorVariablesEventQuerySearch,
+	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesEventQuerySearch,
 	GroupBy: interface{},
 	Indexes: *[]*string,
 }
@@ -6642,7 +6642,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesEventQueryCompute {
 	Aggregation: *string,
@@ -6726,12 +6726,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesEventQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitor.MonitorVariablesEventQueryGroupBySort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesEventQueryGroupBySort,
 	Source: *string,
 }
 ```
@@ -6808,7 +6808,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesEventQueryGroupBySort {
 	Aggregation: *string,
@@ -6876,7 +6876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 &monitor.MonitorVariablesEventQuerySearch {
 	Query: *string,
@@ -6912,7 +6912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorAssetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorAssetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorAssetsList
 ```
@@ -7072,7 +7072,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorAssetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorAssetsOutputReference
 ```
@@ -7463,7 +7463,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorMonitorThresholdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorMonitorThresholdsOutputReference
 ```
@@ -7944,7 +7944,7 @@ func InternalValue() MonitorMonitorThresholds
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorMonitorThresholdWindowsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorMonitorThresholdWindowsOutputReference
 ```
@@ -8251,7 +8251,7 @@ func InternalValue() MonitorMonitorThresholdWindows
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorSchedulingOptionsCustomScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorSchedulingOptionsCustomScheduleOutputReference
 ```
@@ -8535,7 +8535,7 @@ func InternalValue() MonitorSchedulingOptionsCustomSchedule
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference
 ```
@@ -8857,7 +8857,7 @@ func InternalValue() MonitorSchedulingOptionsCustomScheduleRecurrence
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorSchedulingOptionsEvaluationWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorSchedulingOptionsEvaluationWindowOutputReference
 ```
@@ -9222,7 +9222,7 @@ func InternalValue() MonitorSchedulingOptionsEvaluationWindow
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorSchedulingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorSchedulingOptionsOutputReference
 ```
@@ -9555,7 +9555,7 @@ func InternalValue() MonitorSchedulingOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryAugmentEventQueryComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateAugmentedQueryAugmentEventQueryComputeList
 ```
@@ -9715,7 +9715,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryAugmentEventQueryComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateAugmentedQueryAugmentEventQueryComputeOutputReference
 ```
@@ -10091,7 +10091,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupByList
 ```
@@ -10251,7 +10251,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupByOutputReference
 ```
@@ -10640,7 +10640,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBySortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBySortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBySortOutputReference
 ```
@@ -10969,7 +10969,7 @@ func InternalValue() MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGro
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryAugmentEventQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateAugmentedQueryAugmentEventQueryOutputReference
 ```
@@ -11403,7 +11403,7 @@ func InternalValue() MonitorVariablesAggregateAugmentedQueryAugmentEventQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQuerySearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryAugmentEventQuerySearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateAugmentedQueryAugmentEventQuerySearchOutputReference
 ```
@@ -11674,7 +11674,7 @@ func InternalValue() MonitorVariablesAggregateAugmentedQueryAugmentEventQuerySea
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentReferenceTableColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryAugmentReferenceTableColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateAugmentedQueryAugmentReferenceTableColumnsList
 ```
@@ -11834,7 +11834,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentReferenceTableColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryAugmentReferenceTableColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateAugmentedQueryAugmentReferenceTableColumnsOutputReference
 ```
@@ -12152,7 +12152,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentReferenceTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryAugmentReferenceTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateAugmentedQueryAugmentReferenceTableOutputReference
 ```
@@ -12545,7 +12545,7 @@ func InternalValue() MonitorVariablesAggregateAugmentedQueryAugmentReferenceTabl
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryBaseEventQueryComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateAugmentedQueryBaseEventQueryComputeList
 ```
@@ -12705,7 +12705,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryBaseEventQueryComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateAugmentedQueryBaseEventQueryComputeOutputReference
 ```
@@ -13081,7 +13081,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupByList
 ```
@@ -13241,7 +13241,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupByOutputReference
 ```
@@ -13630,7 +13630,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBySortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBySortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBySortOutputReference
 ```
@@ -13959,7 +13959,7 @@ func InternalValue() MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupB
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryBaseEventQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateAugmentedQueryBaseEventQueryOutputReference
 ```
@@ -14393,7 +14393,7 @@ func InternalValue() MonitorVariablesAggregateAugmentedQueryBaseEventQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQuerySearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryBaseEventQuerySearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateAugmentedQueryBaseEventQuerySearchOutputReference
 ```
@@ -14664,7 +14664,7 @@ func InternalValue() MonitorVariablesAggregateAugmentedQueryBaseEventQuerySearch
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseMetricsQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryBaseMetricsQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateAugmentedQueryBaseMetricsQueryOutputReference
 ```
@@ -15015,7 +15015,7 @@ func InternalValue() MonitorVariablesAggregateAugmentedQueryBaseMetricsQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateAugmentedQueryComputeList
 ```
@@ -15175,7 +15175,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateAugmentedQueryComputeOutputReference
 ```
@@ -15551,7 +15551,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateAugmentedQueryGroupByList
 ```
@@ -15711,7 +15711,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateAugmentedQueryGroupByOutputReference
 ```
@@ -16100,7 +16100,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryGroupBySortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryGroupBySortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateAugmentedQueryGroupBySortOutputReference
 ```
@@ -16429,7 +16429,7 @@ func InternalValue() MonitorVariablesAggregateAugmentedQueryGroupBySort
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryJoinConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryJoinConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateAugmentedQueryJoinConditionOutputReference
 ```
@@ -16744,7 +16744,7 @@ func InternalValue() MonitorVariablesAggregateAugmentedQueryJoinCondition
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateAugmentedQueryList
 ```
@@ -16904,7 +16904,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateAugmentedQueryOutputReference
 ```
@@ -17495,7 +17495,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryBaseEventQueryComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateFilteredQueryBaseEventQueryComputeList
 ```
@@ -17655,7 +17655,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryBaseEventQueryComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateFilteredQueryBaseEventQueryComputeOutputReference
 ```
@@ -18031,7 +18031,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryBaseEventQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupByList
 ```
@@ -18191,7 +18191,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryBaseEventQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupByOutputReference
 ```
@@ -18580,7 +18580,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBySortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBySortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBySortOutputReference
 ```
@@ -18909,7 +18909,7 @@ func InternalValue() MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBy
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryBaseEventQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateFilteredQueryBaseEventQueryOutputReference
 ```
@@ -19343,7 +19343,7 @@ func InternalValue() MonitorVariablesAggregateFilteredQueryBaseEventQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQuerySearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryBaseEventQuerySearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateFilteredQueryBaseEventQuerySearchOutputReference
 ```
@@ -19614,7 +19614,7 @@ func InternalValue() MonitorVariablesAggregateFilteredQueryBaseEventQuerySearch
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseMetricsQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryBaseMetricsQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateFilteredQueryBaseMetricsQueryOutputReference
 ```
@@ -19965,7 +19965,7 @@ func InternalValue() MonitorVariablesAggregateFilteredQueryBaseMetricsQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateFilteredQueryComputeList
 ```
@@ -20125,7 +20125,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateFilteredQueryComputeOutputReference
 ```
@@ -20501,7 +20501,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryFilterEventQueryComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateFilteredQueryFilterEventQueryComputeList
 ```
@@ -20661,7 +20661,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryFilterEventQueryComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateFilteredQueryFilterEventQueryComputeOutputReference
 ```
@@ -21037,7 +21037,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryFilterEventQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupByList
 ```
@@ -21197,7 +21197,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryFilterEventQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupByOutputReference
 ```
@@ -21586,7 +21586,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBySortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBySortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBySortOutputReference
 ```
@@ -21915,7 +21915,7 @@ func InternalValue() MonitorVariablesAggregateFilteredQueryFilterEventQueryGroup
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryFilterEventQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateFilteredQueryFilterEventQueryOutputReference
 ```
@@ -22349,7 +22349,7 @@ func InternalValue() MonitorVariablesAggregateFilteredQueryFilterEventQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQuerySearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryFilterEventQuerySearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateFilteredQueryFilterEventQuerySearchOutputReference
 ```
@@ -22620,7 +22620,7 @@ func InternalValue() MonitorVariablesAggregateFilteredQueryFilterEventQuerySearc
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterReferenceTableColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryFilterReferenceTableColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateFilteredQueryFilterReferenceTableColumnsList
 ```
@@ -22780,7 +22780,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterReferenceTableColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryFilterReferenceTableColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateFilteredQueryFilterReferenceTableColumnsOutputReference
 ```
@@ -23098,7 +23098,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterReferenceTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryFilterReferenceTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateFilteredQueryFilterReferenceTableOutputReference
 ```
@@ -23491,7 +23491,7 @@ func InternalValue() MonitorVariablesAggregateFilteredQueryFilterReferenceTable
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateFilteredQueryFiltersList
 ```
@@ -23651,7 +23651,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateFilteredQueryFiltersOutputReference
 ```
@@ -23991,7 +23991,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateFilteredQueryGroupByList
 ```
@@ -24151,7 +24151,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateFilteredQueryGroupByOutputReference
 ```
@@ -24540,7 +24540,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryGroupBySortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryGroupBySortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateFilteredQueryGroupBySortOutputReference
 ```
@@ -24869,7 +24869,7 @@ func InternalValue() MonitorVariablesAggregateFilteredQueryGroupBySort
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateFilteredQueryList
 ```
@@ -25029,7 +25029,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateFilteredQueryOutputReference
 ```
@@ -25634,7 +25634,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesCloudCostQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesCloudCostQueryList
 ```
@@ -25794,7 +25794,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesCloudCostQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesCloudCostQueryOutputReference
 ```
@@ -26149,7 +26149,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataJobsQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesDataJobsQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesDataJobsQueryList
 ```
@@ -26309,7 +26309,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataJobsQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesDataJobsQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesDataJobsQueryOutputReference
 ```
@@ -26664,7 +26664,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesDataQualityQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesDataQualityQueryList
 ```
@@ -26824,7 +26824,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesDataQualityQueryMonitorOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesDataQualityQueryMonitorOptionsOutputReference
 ```
@@ -27218,7 +27218,7 @@ func InternalValue() MonitorVariablesDataQualityQueryMonitorOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesDataQualityQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesDataQualityQueryOutputReference
 ```
@@ -27702,7 +27702,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesEventQueryComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesEventQueryComputeList
 ```
@@ -27862,7 +27862,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesEventQueryComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesEventQueryComputeOutputReference
 ```
@@ -28238,7 +28238,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesEventQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesEventQueryGroupByList
 ```
@@ -28398,7 +28398,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesEventQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesEventQueryGroupByOutputReference
 ```
@@ -28787,7 +28787,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesEventQueryGroupBySortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesEventQueryGroupBySortOutputReference
 ```
@@ -29116,7 +29116,7 @@ func InternalValue() MonitorVariablesEventQueryGroupBySort
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesEventQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesEventQueryList
 ```
@@ -29276,7 +29276,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesEventQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesEventQueryOutputReference
 ```
@@ -29728,7 +29728,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesEventQuerySearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesEventQuerySearchOutputReference
 ```
@@ -29999,7 +29999,7 @@ func InternalValue() MonitorVariablesEventQuerySearch
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 
 monitor.NewMonitorVariablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.spansMetric.SpansMetric.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/spansmetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/spansmetric"
 
 spansmetric.NewSpansMetric(scope Construct, id *string, config SpansMetricConfig) SpansMetric
 ```
@@ -460,7 +460,7 @@ func ResetGroupBy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.spansMetric.SpansMetric.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/spansmetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/spansmetric"
 
 spansmetric.SpansMetric_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.spansMetric.SpansMetric.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/spansmetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/spansmetric"
 
 spansmetric.SpansMetric_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ spansmetric.SpansMetric_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.spansMetric.SpansMetric.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/spansmetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/spansmetric"
 
 spansmetric.SpansMetric_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ spansmetric.SpansMetric_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.spansMetric.SpansMetric.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/spansmetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/spansmetric"
 
 spansmetric.SpansMetric_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -848,7 +848,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.spansMetric.SpansMetricCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/spansmetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/spansmetric"
 
 &spansmetric.SpansMetricCompute {
 	AggregationType: *string,
@@ -916,7 +916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.spansMetric.SpansMetricConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/spansmetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/spansmetric"
 
 &spansmetric.SpansMetricConfig {
 	Connection: interface{},
@@ -927,8 +927,8 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/spansmetric"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Compute: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.spansMetric.SpansMetricCompute,
-	Filter: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.spansMetric.SpansMetricFilter,
+	Compute: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.spansMetric.SpansMetricCompute,
+	Filter: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.spansMetric.SpansMetricFilter,
 	GroupBy: interface{},
 }
 ```
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.spansMetric.SpansMetricFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/spansmetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/spansmetric"
 
 &spansmetric.SpansMetricFilter {
 	Query: *string,
@@ -1116,7 +1116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.spansMetric.SpansMetricGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/spansmetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/spansmetric"
 
 &spansmetric.SpansMetricGroupBy {
 	Path: *string,
@@ -1168,7 +1168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.spansMetric.SpansMetricComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/spansmetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/spansmetric"
 
 spansmetric.NewSpansMetricComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpansMetricComputeOutputReference
 ```
@@ -1497,7 +1497,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.spansMetric.SpansMetricFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/spansmetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/spansmetric"
 
 spansmetric.NewSpansMetricFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpansMetricFilterOutputReference
 ```
@@ -1775,7 +1775,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.spansMetric.SpansMetricGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/spansmetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/spansmetric"
 
 spansmetric.NewSpansMetricGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SpansMetricGroupByList
 ```
@@ -1935,7 +1935,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.spansMetric.SpansMetricGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/spansmetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/spansmetric"
 
 spansmetric.NewSpansMetricGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SpansMetricGroupByOutputReference
 ```

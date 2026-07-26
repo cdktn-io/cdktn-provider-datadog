@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.incidentType.IncidentType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidenttype"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/incidenttype"
 
 incidenttype.NewIncidentType(scope Construct, id *string, config IncidentTypeConfig) IncidentType
 ```
@@ -434,7 +434,7 @@ func ResetIsDefault()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.incidentType.IncidentType.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidenttype"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/incidenttype"
 
 incidenttype.IncidentType_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.incidentType.IncidentType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidenttype"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/incidenttype"
 
 incidenttype.IncidentType_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ incidenttype.IncidentType_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.incidentType.IncidentType.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidenttype"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/incidenttype"
 
 incidenttype.IncidentType_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ incidenttype.IncidentType_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.incidentType.IncidentType.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidenttype"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/incidenttype"
 
 incidenttype.IncidentType_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -822,7 +822,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidenttype"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/incidenttype"
 
 &incidenttype.IncidentTypeConfig {
 	Connection: interface{},
@@ -833,7 +833,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidenttype"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Configuration: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.incidentType.IncidentTypeConfiguration,
+	Configuration: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.incidentType.IncidentTypeConfiguration,
 	Description: *string,
 	IsDefault: interface{},
 }
@@ -990,7 +990,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidenttype"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/incidenttype"
 
 &incidenttype.IncidentTypeConfiguration {
 	AllowIncidentDeletion: interface{},
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidenttype"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/incidenttype"
 
 incidenttype.NewIncidentTypeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IncidentTypeConfigurationOutputReference
 ```

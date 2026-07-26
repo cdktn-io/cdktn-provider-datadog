@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadoglogsarchivesorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadoglogsarchivesorder"
 
 datadatadoglogsarchivesorder.NewDataDatadogLogsArchivesOrder(scope Construct, id *string, config DataDatadogLogsArchivesOrderConfig) DataDatadogLogsArchivesOrder
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrder.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadoglogsarchivesorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadoglogsarchivesorder"
 
 datadatadoglogsarchivesorder.DataDatadogLogsArchivesOrder_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadoglogsarchivesorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadoglogsarchivesorder"
 
 datadatadoglogsarchivesorder.DataDatadogLogsArchivesOrder_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datadatadoglogsarchivesorder.DataDatadogLogsArchivesOrder_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrder.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadoglogsarchivesorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadoglogsarchivesorder"
 
 datadatadoglogsarchivesorder.DataDatadogLogsArchivesOrder_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datadatadoglogsarchivesorder.DataDatadogLogsArchivesOrder_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrder.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadoglogsarchivesorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadoglogsarchivesorder"
 
 datadatadoglogsarchivesorder.DataDatadogLogsArchivesOrder_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadoglogsarchivesorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadoglogsarchivesorder"
 
 &datadatadoglogsarchivesorder.DataDatadogLogsArchivesOrderConfig {
 	Connection: interface{},

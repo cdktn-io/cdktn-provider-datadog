@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagindexingrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule"
 
 tagindexingrule.NewTagIndexingRule(scope Construct, id *string, config TagIndexingRuleConfig) TagIndexingRule
 ```
@@ -441,7 +441,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagindexingrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule"
 
 tagindexingrule.TagIndexingRule_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagindexingrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule"
 
 tagindexingrule.TagIndexingRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ tagindexingrule.TagIndexingRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagindexingrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule"
 
 tagindexingrule.TagIndexingRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ tagindexingrule.TagIndexingRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagindexingrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule"
 
 tagindexingrule.TagIndexingRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -928,7 +928,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagindexingrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule"
 
 &tagindexingrule.TagIndexingRuleConfig {
 	Connection: interface{},
@@ -942,7 +942,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagindexingrul
 	Name: *string,
 	ExcludeTagsMode: interface{},
 	IgnoredMetricNameMatches: *[]*string,
-	Options: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.tagIndexingRule.TagIndexingRuleOptions,
+	Options: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.tagIndexingRule.TagIndexingRuleOptions,
 	Tags: *[]*string,
 }
 ```
@@ -1128,10 +1128,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagindexingrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule"
 
 &tagindexingrule.TagIndexingRuleOptions {
-	Data: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.tagIndexingRule.TagIndexingRuleOptionsData,
+	Data: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.tagIndexingRule.TagIndexingRuleOptionsData,
 	Version: *f64,
 }
 ```
@@ -1178,12 +1178,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsData.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagindexingrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule"
 
 &tagindexingrule.TagIndexingRuleOptionsData {
-	DynamicTags: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTags,
+	DynamicTags: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTags,
 	ManagePreexistingMetrics: interface{},
-	MetricMatch: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatch,
+	MetricMatch: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatch,
 	OverridePreviousRules: interface{},
 }
 ```
@@ -1260,7 +1260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagindexingrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule"
 
 &tagindexingrule.TagIndexingRuleOptionsDataDynamicTags {
 	QueriedTagsWindowSeconds: *f64,
@@ -1310,7 +1310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagindexingrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule"
 
 &tagindexingrule.TagIndexingRuleOptionsDataMetricMatch {
 	IsQueried: interface{},
@@ -1410,7 +1410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagindexingrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule"
 
 tagindexingrule.NewTagIndexingRuleOptionsDataDynamicTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TagIndexingRuleOptionsDataDynamicTagsOutputReference
 ```
@@ -1717,7 +1717,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagindexingrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule"
 
 tagindexingrule.NewTagIndexingRuleOptionsDataMetricMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TagIndexingRuleOptionsDataMetricMatchOutputReference
 ```
@@ -2111,7 +2111,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagindexingrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule"
 
 tagindexingrule.NewTagIndexingRuleOptionsDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TagIndexingRuleOptionsDataOutputReference
 ```
@@ -2502,7 +2502,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagindexingrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule"
 
 tagindexingrule.NewTagIndexingRuleOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TagIndexingRuleOptionsOutputReference
 ```

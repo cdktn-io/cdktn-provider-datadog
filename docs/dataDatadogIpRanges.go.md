@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogipranges"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogipranges"
 
 datadatadogipranges.NewDataDatadogIpRanges(scope Construct, id *string, config DataDatadogIpRangesConfig) DataDatadogIpRanges
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogipranges"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogipranges"
 
 datadatadogipranges.DataDatadogIpRanges_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogipranges"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogipranges"
 
 datadatadogipranges.DataDatadogIpRanges_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadogipranges.DataDatadogIpRanges_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogipranges"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogipranges"
 
 datadatadogipranges.DataDatadogIpRanges_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogipranges.DataDatadogIpRanges_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogipranges"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogipranges"
 
 datadatadogipranges.DataDatadogIpRanges_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -796,7 +796,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogIpRanges.DataDatadogIpRangesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogipranges"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogipranges"
 
 &datadatadogipranges.DataDatadogIpRangesConfig {
 	Connection: interface{},

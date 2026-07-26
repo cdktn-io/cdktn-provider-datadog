@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsIamPermissionsResourceCollection.DataDatadogIntegrationAwsIamPermissionsResourceCollection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogintegrationawsiampermissionsresourcecollection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogintegrationawsiampermissionsresourcecollection"
 
 datadatadogintegrationawsiampermissionsresourcecollection.NewDataDatadogIntegrationAwsIamPermissionsResourceCollection(scope Construct, id *string, config DataDatadogIntegrationAwsIamPermissionsResourceCollectionConfig) DataDatadogIntegrationAwsIamPermissionsResourceCollection
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsIamPermissionsResourceCollection.DataDatadogIntegrationAwsIamPermissionsResourceCollection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogintegrationawsiampermissionsresourcecollection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogintegrationawsiampermissionsresourcecollection"
 
 datadatadogintegrationawsiampermissionsresourcecollection.DataDatadogIntegrationAwsIamPermissionsResourceCollection_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsIamPermissionsResourceCollection.DataDatadogIntegrationAwsIamPermissionsResourceCollection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogintegrationawsiampermissionsresourcecollection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogintegrationawsiampermissionsresourcecollection"
 
 datadatadogintegrationawsiampermissionsresourcecollection.DataDatadogIntegrationAwsIamPermissionsResourceCollection_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadogintegrationawsiampermissionsresourcecollection.DataDatadogIntegration
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsIamPermissionsResourceCollection.DataDatadogIntegrationAwsIamPermissionsResourceCollection.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogintegrationawsiampermissionsresourcecollection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogintegrationawsiampermissionsresourcecollection"
 
 datadatadogintegrationawsiampermissionsresourcecollection.DataDatadogIntegrationAwsIamPermissionsResourceCollection_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogintegrationawsiampermissionsresourcecollection.DataDatadogIntegration
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsIamPermissionsResourceCollection.DataDatadogIntegrationAwsIamPermissionsResourceCollection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogintegrationawsiampermissionsresourcecollection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogintegrationawsiampermissionsresourcecollection"
 
 datadatadogintegrationawsiampermissionsresourcecollection.DataDatadogIntegrationAwsIamPermissionsResourceCollection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -587,7 +587,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsIamPermissionsResourceCollection.DataDatadogIntegrationAwsIamPermissionsResourceCollectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogintegrationawsiampermissionsresourcecollection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogintegrationawsiampermissionsresourcecollection"
 
 &datadatadogintegrationawsiampermissionsresourcecollection.DataDatadogIntegrationAwsIamPermissionsResourceCollectionConfig {
 	Connection: interface{},

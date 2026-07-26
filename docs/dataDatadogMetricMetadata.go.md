@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogMetricMetadata.DataDatadogMetricMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetricmetadata"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogmetricmetadata"
 
 datadatadogmetricmetadata.NewDataDatadogMetricMetadata(scope Construct, id *string, config DataDatadogMetricMetadataConfig) DataDatadogMetricMetadata
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogMetricMetadata.DataDatadogMetricMetadata.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetricmetadata"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogmetricmetadata"
 
 datadatadogmetricmetadata.DataDatadogMetricMetadata_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogMetricMetadata.DataDatadogMetricMetadata.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetricmetadata"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogmetricmetadata"
 
 datadatadogmetricmetadata.DataDatadogMetricMetadata_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadogmetricmetadata.DataDatadogMetricMetadata_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogMetricMetadata.DataDatadogMetricMetadata.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetricmetadata"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogmetricmetadata"
 
 datadatadogmetricmetadata.DataDatadogMetricMetadata_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogmetricmetadata.DataDatadogMetricMetadata_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogMetricMetadata.DataDatadogMetricMetadata.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetricmetadata"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogmetricmetadata"
 
 datadatadogmetricmetadata.DataDatadogMetricMetadata_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -675,7 +675,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogMetricMetadata.DataDatadogMetricMetadataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetricmetadata"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogmetricmetadata"
 
 &datadatadogmetricmetadata.DataDatadogMetricMetadataConfig {
 	Connection: interface{},

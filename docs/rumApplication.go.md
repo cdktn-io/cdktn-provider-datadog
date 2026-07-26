@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.rumApplication.RumApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/rumapplication"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/rumapplication"
 
 rumapplication.NewRumApplication(scope Construct, id *string, config RumApplicationConfig) RumApplication
 ```
@@ -421,7 +421,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.rumApplication.RumApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/rumapplication"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/rumapplication"
 
 rumapplication.RumApplication_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.rumApplication.RumApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/rumapplication"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/rumapplication"
 
 rumapplication.RumApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ rumapplication.RumApplication_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.rumApplication.RumApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/rumapplication"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/rumapplication"
 
 rumapplication.RumApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ rumapplication.RumApplication_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.rumApplication.RumApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/rumapplication"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/rumapplication"
 
 rumapplication.RumApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -831,7 +831,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.rumApplication.RumApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/rumapplication"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/rumapplication"
 
 &rumapplication.RumApplicationConfig {
 	Connection: interface{},

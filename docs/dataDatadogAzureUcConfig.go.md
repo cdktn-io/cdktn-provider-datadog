@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogAzureUcConfig.DataDatadogAzureUcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogazureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogazureucconfig"
 
 datadatadogazureucconfig.NewDataDatadogAzureUcConfig(scope Construct, id *string, config DataDatadogAzureUcConfigConfig) DataDatadogAzureUcConfig
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogAzureUcConfig.DataDatadogAzureUcConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogazureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogazureucconfig"
 
 datadatadogazureucconfig.DataDatadogAzureUcConfig_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogAzureUcConfig.DataDatadogAzureUcConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogazureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogazureucconfig"
 
 datadatadogazureucconfig.DataDatadogAzureUcConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadogazureucconfig.DataDatadogAzureUcConfig_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogAzureUcConfig.DataDatadogAzureUcConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogazureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogazureucconfig"
 
 datadatadogazureucconfig.DataDatadogAzureUcConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogazureucconfig.DataDatadogAzureUcConfig_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogAzureUcConfig.DataDatadogAzureUcConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogazureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogazureucconfig"
 
 datadatadogazureucconfig.DataDatadogAzureUcConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -708,7 +708,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogAzureUcConfig.DataDatadogAzureUcConfigActualBillConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogazureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogazureucconfig"
 
 &datadatadogazureucconfig.DataDatadogAzureUcConfigActualBillConfig {
 
@@ -721,7 +721,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogazu
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogAzureUcConfig.DataDatadogAzureUcConfigAmortizedBillConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogazureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogazureucconfig"
 
 &datadatadogazureucconfig.DataDatadogAzureUcConfigAmortizedBillConfig {
 
@@ -734,7 +734,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogazu
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogAzureUcConfig.DataDatadogAzureUcConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogazureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogazureucconfig"
 
 &datadatadogazureucconfig.DataDatadogAzureUcConfigConfig {
 	Connection: interface{},
@@ -854,7 +854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogAzureUcConfig.DataDatadogAzureUcConfigActualBillConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogazureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogazureucconfig"
 
 datadatadogazureucconfig.NewDataDatadogAzureUcConfigActualBillConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatadogAzureUcConfigActualBillConfigOutputReference
 ```
@@ -1147,7 +1147,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogAzureUcConfig.DataDatadogAzureUcConfigAmortizedBillConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogazureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogazureucconfig"
 
 datadatadogazureucconfig.NewDataDatadogAzureUcConfigAmortizedBillConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatadogAzureUcConfigAmortizedBillConfigOutputReference
 ```

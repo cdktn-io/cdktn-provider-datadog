@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appsecwafcustomrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appsecwafcustomrule"
 
 appsecwafcustomrule.NewAppsecWafCustomRule(scope Construct, id *string, config AppsecWafCustomRuleConfig) AppsecWafCustomRule
 ```
@@ -467,7 +467,7 @@ func ResetScope()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appsecwafcustomrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appsecwafcustomrule"
 
 appsecwafcustomrule.AppsecWafCustomRule_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appsecwafcustomrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appsecwafcustomrule"
 
 appsecwafcustomrule.AppsecWafCustomRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ appsecwafcustomrule.AppsecWafCustomRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appsecwafcustomrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appsecwafcustomrule"
 
 appsecwafcustomrule.AppsecWafCustomRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ appsecwafcustomrule.AppsecWafCustomRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appsecwafcustomrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appsecwafcustomrule"
 
 appsecwafcustomrule.AppsecWafCustomRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -943,11 +943,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appsecwafcustomrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appsecwafcustomrule"
 
 &appsecwafcustomrule.AppsecWafCustomRuleAction {
 	Action: *string,
-	Parameters: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.appsecWafCustomRule.AppsecWafCustomRuleActionParameters,
+	Parameters: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.appsecWafCustomRule.AppsecWafCustomRuleActionParameters,
 }
 ```
 
@@ -993,7 +993,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleActionParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appsecwafcustomrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appsecwafcustomrule"
 
 &appsecwafcustomrule.AppsecWafCustomRuleActionParameters {
 	Location: *string,
@@ -1043,11 +1043,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appsecwafcustomrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appsecwafcustomrule"
 
 &appsecwafcustomrule.AppsecWafCustomRuleCondition {
 	Operator: *string,
-	Parameters: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.appsecWafCustomRule.AppsecWafCustomRuleConditionParameters,
+	Parameters: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.appsecWafCustomRule.AppsecWafCustomRuleConditionParameters,
 }
 ```
 
@@ -1093,13 +1093,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appsecwafcustomrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appsecwafcustomrule"
 
 &appsecwafcustomrule.AppsecWafCustomRuleConditionParameters {
 	Data: *string,
 	Input: interface{},
 	List: *[]*string,
-	Options: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.appsecWafCustomRule.AppsecWafCustomRuleConditionParametersOptions,
+	Options: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.appsecWafCustomRule.AppsecWafCustomRuleConditionParametersOptions,
 	Regex: *string,
 	Value: *string,
 }
@@ -1207,7 +1207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionParametersInput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appsecwafcustomrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appsecwafcustomrule"
 
 &appsecwafcustomrule.AppsecWafCustomRuleConditionParametersInput {
 	Address: *string,
@@ -1257,7 +1257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionParametersOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appsecwafcustomrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appsecwafcustomrule"
 
 &appsecwafcustomrule.AppsecWafCustomRuleConditionParametersOptions {
 	CaseSensitive: interface{},
@@ -1307,7 +1307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appsecwafcustomrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appsecwafcustomrule"
 
 &appsecwafcustomrule.AppsecWafCustomRuleConfig {
 	Connection: interface{},
@@ -1321,7 +1321,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appsecwafcusto
 	Enabled: interface{},
 	Name: *string,
 	Tags: *map[string]*string,
-	Action: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.appsecWafCustomRule.AppsecWafCustomRuleAction,
+	Action: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.appsecWafCustomRule.AppsecWafCustomRuleAction,
 	Condition: interface{},
 	PathGlob: *string,
 	Scope: interface{},
@@ -1539,7 +1539,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appsecwafcustomrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appsecwafcustomrule"
 
 &appsecwafcustomrule.AppsecWafCustomRuleScope {
 	Env: *string,
@@ -1591,7 +1591,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appsecwafcustomrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appsecwafcustomrule"
 
 appsecwafcustomrule.NewAppsecWafCustomRuleActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsecWafCustomRuleActionOutputReference
 ```
@@ -1911,7 +1911,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleActionParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appsecwafcustomrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appsecwafcustomrule"
 
 appsecwafcustomrule.NewAppsecWafCustomRuleActionParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsecWafCustomRuleActionParametersOutputReference
 ```
@@ -2218,7 +2218,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appsecwafcustomrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appsecwafcustomrule"
 
 appsecwafcustomrule.NewAppsecWafCustomRuleConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppsecWafCustomRuleConditionList
 ```
@@ -2378,7 +2378,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appsecwafcustomrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appsecwafcustomrule"
 
 appsecwafcustomrule.NewAppsecWafCustomRuleConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppsecWafCustomRuleConditionOutputReference
 ```
@@ -2716,7 +2716,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionParametersInputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appsecwafcustomrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appsecwafcustomrule"
 
 appsecwafcustomrule.NewAppsecWafCustomRuleConditionParametersInputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppsecWafCustomRuleConditionParametersInputList
 ```
@@ -2876,7 +2876,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionParametersInputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appsecwafcustomrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appsecwafcustomrule"
 
 appsecwafcustomrule.NewAppsecWafCustomRuleConditionParametersInputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppsecWafCustomRuleConditionParametersInputOutputReference
 ```
@@ -3201,7 +3201,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionParametersOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appsecwafcustomrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appsecwafcustomrule"
 
 appsecwafcustomrule.NewAppsecWafCustomRuleConditionParametersOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsecWafCustomRuleConditionParametersOptionsOutputReference
 ```
@@ -3508,7 +3508,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appsecwafcustomrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appsecwafcustomrule"
 
 appsecwafcustomrule.NewAppsecWafCustomRuleConditionParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsecWafCustomRuleConditionParametersOutputReference
 ```
@@ -3957,7 +3957,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleScopeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appsecwafcustomrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appsecwafcustomrule"
 
 appsecwafcustomrule.NewAppsecWafCustomRuleScopeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppsecWafCustomRuleScopeList
 ```
@@ -4117,7 +4117,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appsecwafcustomrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appsecwafcustomrule"
 
 appsecwafcustomrule.NewAppsecWafCustomRuleScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppsecWafCustomRuleScopeOutputReference
 ```

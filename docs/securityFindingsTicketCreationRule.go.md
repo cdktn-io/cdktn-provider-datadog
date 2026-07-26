@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityFindingsTicketCreationRule.SecurityFindingsTicketCreationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/securityfindingsticketcreationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsticketcreationrule"
 
 securityfindingsticketcreationrule.NewSecurityFindingsTicketCreationRule(scope Construct, id *string, config SecurityFindingsTicketCreationRuleConfig) SecurityFindingsTicketCreationRule
 ```
@@ -433,7 +433,7 @@ func ResetEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.securityFindingsTicketCreationRule.SecurityFindingsTicketCreationRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/securityfindingsticketcreationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsticketcreationrule"
 
 securityfindingsticketcreationrule.SecurityFindingsTicketCreationRule_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.securityFindingsTicketCreationRule.SecurityFindingsTicketCreationRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/securityfindingsticketcreationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsticketcreationrule"
 
 securityfindingsticketcreationrule.SecurityFindingsTicketCreationRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ securityfindingsticketcreationrule.SecurityFindingsTicketCreationRule_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.securityFindingsTicketCreationRule.SecurityFindingsTicketCreationRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/securityfindingsticketcreationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsticketcreationrule"
 
 securityfindingsticketcreationrule.SecurityFindingsTicketCreationRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ securityfindingsticketcreationrule.SecurityFindingsTicketCreationRule_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.securityFindingsTicketCreationRule.SecurityFindingsTicketCreationRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/securityfindingsticketcreationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsticketcreationrule"
 
 securityfindingsticketcreationrule.SecurityFindingsTicketCreationRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -821,7 +821,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.securityFindingsTicketCreationRule.SecurityFindingsTicketCreationRuleAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/securityfindingsticketcreationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsticketcreationrule"
 
 &securityfindingsticketcreationrule.SecurityFindingsTicketCreationRuleAction {
 	MaxTicketsPerDay: *f64,
@@ -923,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.securityFindingsTicketCreationRule.SecurityFindingsTicketCreationRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/securityfindingsticketcreationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsticketcreationrule"
 
 &securityfindingsticketcreationrule.SecurityFindingsTicketCreationRuleConfig {
 	Connection: interface{},
@@ -933,9 +933,9 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/securityfindin
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Action: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.securityFindingsTicketCreationRule.SecurityFindingsTicketCreationRuleAction,
+	Action: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.securityFindingsTicketCreationRule.SecurityFindingsTicketCreationRuleAction,
 	Name: *string,
-	Rule: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.securityFindingsTicketCreationRule.SecurityFindingsTicketCreationRuleRule,
+	Rule: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.securityFindingsTicketCreationRule.SecurityFindingsTicketCreationRuleRule,
 	Enabled: interface{},
 }
 ```
@@ -1089,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.securityFindingsTicketCreationRule.SecurityFindingsTicketCreationRuleRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/securityfindingsticketcreationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsticketcreationrule"
 
 &securityfindingsticketcreationrule.SecurityFindingsTicketCreationRuleRule {
 	FindingTypes: *[]*string,
@@ -1145,7 +1145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityFindingsTicketCreationRule.SecurityFindingsTicketCreationRuleActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/securityfindingsticketcreationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsticketcreationrule"
 
 securityfindingsticketcreationrule.NewSecurityFindingsTicketCreationRuleActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityFindingsTicketCreationRuleActionOutputReference
 ```
@@ -1529,7 +1529,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityFindingsTicketCreationRule.SecurityFindingsTicketCreationRuleRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/securityfindingsticketcreationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsticketcreationrule"
 
 securityfindingsticketcreationrule.NewSecurityFindingsTicketCreationRuleRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityFindingsTicketCreationRuleRuleOutputReference
 ```

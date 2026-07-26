@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.appKeyRegistration.AppKeyRegistration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appkeyregistration"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appkeyregistration"
 
 appkeyregistration.NewAppKeyRegistration(scope Construct, id *string, config AppKeyRegistrationConfig) AppKeyRegistration
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.appKeyRegistration.AppKeyRegistration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appkeyregistration"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appkeyregistration"
 
 appkeyregistration.AppKeyRegistration_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.appKeyRegistration.AppKeyRegistration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appkeyregistration"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appkeyregistration"
 
 appkeyregistration.AppKeyRegistration_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ appkeyregistration.AppKeyRegistration_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.appKeyRegistration.AppKeyRegistration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appkeyregistration"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appkeyregistration"
 
 appkeyregistration.AppKeyRegistration_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ appkeyregistration.AppKeyRegistration_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.appKeyRegistration.AppKeyRegistration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appkeyregistration"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appkeyregistration"
 
 appkeyregistration.AppKeyRegistration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.appKeyRegistration.AppKeyRegistrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appkeyregistration"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/appkeyregistration"
 
 &appkeyregistration.AppKeyRegistrationConfig {
 	Connection: interface{},

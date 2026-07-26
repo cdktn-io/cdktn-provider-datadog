@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.incidentNotificationRule.IncidentNotificationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/incidentnotificationrule"
 
 incidentnotificationrule.NewIncidentNotificationRule(scope Construct, id *string, config IncidentNotificationRuleConfig) IncidentNotificationRule
 ```
@@ -448,7 +448,7 @@ func ResetVisibility()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.incidentNotificationRule.IncidentNotificationRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/incidentnotificationrule"
 
 incidentnotificationrule.IncidentNotificationRule_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.incidentNotificationRule.IncidentNotificationRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/incidentnotificationrule"
 
 incidentnotificationrule.IncidentNotificationRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ incidentnotificationrule.IncidentNotificationRule_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.incidentNotificationRule.IncidentNotificationRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/incidentnotificationrule"
 
 incidentnotificationrule.IncidentNotificationRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ incidentnotificationrule.IncidentNotificationRule_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.incidentNotificationRule.IncidentNotificationRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/incidentnotificationrule"
 
 incidentnotificationrule.IncidentNotificationRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -946,7 +946,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.incidentNotificationRule.IncidentNotificationRuleConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/incidentnotificationrule"
 
 &incidentnotificationrule.IncidentNotificationRuleConditions {
 	Field: *string,
@@ -996,7 +996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.incidentNotificationRule.IncidentNotificationRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/incidentnotificationrule"
 
 &incidentnotificationrule.IncidentNotificationRuleConfig {
 	Connection: interface{},
@@ -1230,7 +1230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.incidentNotificationRule.IncidentNotificationRuleConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/incidentnotificationrule"
 
 incidentnotificationrule.NewIncidentNotificationRuleConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IncidentNotificationRuleConditionsList
 ```
@@ -1390,7 +1390,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.incidentNotificationRule.IncidentNotificationRuleConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/incidentnotificationrule"
 
 incidentnotificationrule.NewIncidentNotificationRuleConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IncidentNotificationRuleConditionsOutputReference
 ```

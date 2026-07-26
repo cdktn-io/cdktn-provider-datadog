@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogSensitiveDataScannerGroupOrder.DataDatadogSensitiveDataScannerGroupOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsensitivedatascannergrouporder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsensitivedatascannergrouporder"
 
 datadatadogsensitivedatascannergrouporder.NewDataDatadogSensitiveDataScannerGroupOrder(scope Construct, id *string, config DataDatadogSensitiveDataScannerGroupOrderConfig) DataDatadogSensitiveDataScannerGroupOrder
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogSensitiveDataScannerGroupOrder.DataDatadogSensitiveDataScannerGroupOrder.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsensitivedatascannergrouporder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsensitivedatascannergrouporder"
 
 datadatadogsensitivedatascannergrouporder.DataDatadogSensitiveDataScannerGroupOrder_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogSensitiveDataScannerGroupOrder.DataDatadogSensitiveDataScannerGroupOrder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsensitivedatascannergrouporder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsensitivedatascannergrouporder"
 
 datadatadogsensitivedatascannergrouporder.DataDatadogSensitiveDataScannerGroupOrder_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadogsensitivedatascannergrouporder.DataDatadogSensitiveDataScannerGroupOr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogSensitiveDataScannerGroupOrder.DataDatadogSensitiveDataScannerGroupOrder.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsensitivedatascannergrouporder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsensitivedatascannergrouporder"
 
 datadatadogsensitivedatascannergrouporder.DataDatadogSensitiveDataScannerGroupOrder_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogsensitivedatascannergrouporder.DataDatadogSensitiveDataScannerGroupOr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogSensitiveDataScannerGroupOrder.DataDatadogSensitiveDataScannerGroupOrder.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsensitivedatascannergrouporder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsensitivedatascannergrouporder"
 
 datadatadogsensitivedatascannergrouporder.DataDatadogSensitiveDataScannerGroupOrder_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -587,7 +587,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogSensitiveDataScannerGroupOrder.DataDatadogSensitiveDataScannerGroupOrderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsensitivedatascannergrouporder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsensitivedatascannergrouporder"
 
 &datadatadogsensitivedatascannergrouporder.DataDatadogSensitiveDataScannerGroupOrderConfig {
 	Connection: interface{},

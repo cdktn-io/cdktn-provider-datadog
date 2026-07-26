@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamSync.TeamSync.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamsync"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamsync"
 
 teamsync.NewTeamSync(scope Construct, id *string, config TeamSyncConfig) TeamSync
 ```
@@ -434,7 +434,7 @@ func ResetSyncMembership()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.teamSync.TeamSync.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamsync"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamsync"
 
 teamsync.TeamSync_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.teamSync.TeamSync.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamsync"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamsync"
 
 teamsync.TeamSync_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ teamsync.TeamSync_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.teamSync.TeamSync.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamsync"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamsync"
 
 teamsync.TeamSync_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ teamsync.TeamSync_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.teamSync.TeamSync.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamsync"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamsync"
 
 teamsync.TeamSync_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.teamSync.TeamSyncConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamsync"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamsync"
 
 &teamsync.TeamSyncConfig {
 	Connection: interface{},
@@ -1028,10 +1028,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.teamSync.TeamSyncSelectionState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamsync"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamsync"
 
 &teamsync.TeamSyncSelectionState {
-	ExternalId: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.teamSync.TeamSyncSelectionStateExternalId,
+	ExternalId: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.teamSync.TeamSyncSelectionStateExternalId,
 	Operation: *string,
 	Scope: *string,
 }
@@ -1094,7 +1094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.teamSync.TeamSyncSelectionStateExternalId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamsync"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamsync"
 
 &teamsync.TeamSyncSelectionStateExternalId {
 	Type: *string,
@@ -1146,7 +1146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamSync.TeamSyncSelectionStateExternalIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamsync"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamsync"
 
 teamsync.NewTeamSyncSelectionStateExternalIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamSyncSelectionStateExternalIdOutputReference
 ```
@@ -1439,7 +1439,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamSync.TeamSyncSelectionStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamsync"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamsync"
 
 teamsync.NewTeamSyncSelectionStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TeamSyncSelectionStateList
 ```
@@ -1599,7 +1599,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamSync.TeamSyncSelectionStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamsync"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamsync"
 
 teamsync.NewTeamSyncSelectionStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TeamSyncSelectionStateOutputReference
 ```

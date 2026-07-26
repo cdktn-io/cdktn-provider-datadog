@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/sensitivedatascannerrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/sensitivedatascannerrule"
 
 sensitivedatascannerrule.NewSensitiveDataScannerRule(scope Construct, id *string, config SensitiveDataScannerRuleConfig) SensitiveDataScannerRule
 ```
@@ -530,7 +530,7 @@ func ResetTextReplacement()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/sensitivedatascannerrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/sensitivedatascannerrule"
 
 sensitivedatascannerrule.SensitiveDataScannerRule_IsConstruct(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/sensitivedatascannerrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/sensitivedatascannerrule"
 
 sensitivedatascannerrule.SensitiveDataScannerRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -576,7 +576,7 @@ sensitivedatascannerrule.SensitiveDataScannerRule_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/sensitivedatascannerrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/sensitivedatascannerrule"
 
 sensitivedatascannerrule.SensitiveDataScannerRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -590,7 +590,7 @@ sensitivedatascannerrule.SensitiveDataScannerRule_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/sensitivedatascannerrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/sensitivedatascannerrule"
 
 sensitivedatascannerrule.SensitiveDataScannerRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1127,7 +1127,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/sensitivedatascannerrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/sensitivedatascannerrule"
 
 &sensitivedatascannerrule.SensitiveDataScannerRuleConfig {
 	Connection: interface{},
@@ -1141,16 +1141,16 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/sensitivedatas
 	Description: *string,
 	ExcludedNamespaces: *[]*string,
 	Id: *string,
-	IncludedKeywordConfiguration: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.sensitiveDataScannerRule.SensitiveDataScannerRuleIncludedKeywordConfiguration,
+	IncludedKeywordConfiguration: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.sensitiveDataScannerRule.SensitiveDataScannerRuleIncludedKeywordConfiguration,
 	IsEnabled: interface{},
 	Name: *string,
 	Namespaces: *[]*string,
 	Pattern: *string,
 	Priority: *f64,
 	StandardPatternId: *string,
-	Suppressions: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.sensitiveDataScannerRule.SensitiveDataScannerRuleSuppressions,
+	Suppressions: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.sensitiveDataScannerRule.SensitiveDataScannerRuleSuppressions,
 	Tags: *[]*string,
-	TextReplacement: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.sensitiveDataScannerRule.SensitiveDataScannerRuleTextReplacement,
+	TextReplacement: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.sensitiveDataScannerRule.SensitiveDataScannerRuleTextReplacement,
 }
 ```
 
@@ -1458,7 +1458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRuleIncludedKeywordConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/sensitivedatascannerrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/sensitivedatascannerrule"
 
 &sensitivedatascannerrule.SensitiveDataScannerRuleIncludedKeywordConfiguration {
 	CharacterCount: *f64,
@@ -1512,7 +1512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRuleSuppressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/sensitivedatascannerrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/sensitivedatascannerrule"
 
 &sensitivedatascannerrule.SensitiveDataScannerRuleSuppressions {
 	EndsWith: *[]*string,
@@ -1578,7 +1578,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRuleTextReplacement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/sensitivedatascannerrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/sensitivedatascannerrule"
 
 &sensitivedatascannerrule.SensitiveDataScannerRuleTextReplacement {
 	Type: *string,
@@ -1666,7 +1666,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRuleIncludedKeywordConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/sensitivedatascannerrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/sensitivedatascannerrule"
 
 sensitivedatascannerrule.NewSensitiveDataScannerRuleIncludedKeywordConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SensitiveDataScannerRuleIncludedKeywordConfigurationOutputReference
 ```
@@ -1959,7 +1959,7 @@ func InternalValue() SensitiveDataScannerRuleIncludedKeywordConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRuleSuppressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/sensitivedatascannerrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/sensitivedatascannerrule"
 
 sensitivedatascannerrule.NewSensitiveDataScannerRuleSuppressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SensitiveDataScannerRuleSuppressionsOutputReference
 ```
@@ -2295,7 +2295,7 @@ func InternalValue() SensitiveDataScannerRuleSuppressions
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRuleTextReplacementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/sensitivedatascannerrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/sensitivedatascannerrule"
 
 sensitivedatascannerrule.NewSensitiveDataScannerRuleTextReplacementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SensitiveDataScannerRuleTextReplacementOutputReference
 ```

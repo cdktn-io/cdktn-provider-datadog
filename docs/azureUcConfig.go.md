@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.azureUcConfig.AzureUcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/azureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/azureucconfig"
 
 azureucconfig.NewAzureUcConfig(scope Construct, id *string, config AzureUcConfigConfig) AzureUcConfig
 ```
@@ -426,7 +426,7 @@ func PutAmortizedBillConfig(value AzureUcConfigAmortizedBillConfig)
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.azureUcConfig.AzureUcConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/azureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/azureucconfig"
 
 azureucconfig.AzureUcConfig_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.azureUcConfig.AzureUcConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/azureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/azureucconfig"
 
 azureucconfig.AzureUcConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ azureucconfig.AzureUcConfig_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.azureUcConfig.AzureUcConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/azureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/azureucconfig"
 
 azureucconfig.AzureUcConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ azureucconfig.AzureUcConfig_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.azureUcConfig.AzureUcConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/azureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/azureucconfig"
 
 azureucconfig.AzureUcConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -891,7 +891,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.azureUcConfig.AzureUcConfigActualBillConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/azureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/azureucconfig"
 
 &azureucconfig.AzureUcConfigActualBillConfig {
 	ExportName: *string,
@@ -973,7 +973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.azureUcConfig.AzureUcConfigAmortizedBillConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/azureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/azureucconfig"
 
 &azureucconfig.AzureUcConfigAmortizedBillConfig {
 	ExportName: *string,
@@ -1055,7 +1055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.azureUcConfig.AzureUcConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/azureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/azureucconfig"
 
 &azureucconfig.AzureUcConfigConfig {
 	Connection: interface{},
@@ -1066,8 +1066,8 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/azureucconfig"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccountId: *string,
-	ActualBillConfig: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.azureUcConfig.AzureUcConfigActualBillConfig,
-	AmortizedBillConfig: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.azureUcConfig.AzureUcConfigAmortizedBillConfig,
+	ActualBillConfig: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.azureUcConfig.AzureUcConfigActualBillConfig,
+	AmortizedBillConfig: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.azureUcConfig.AzureUcConfigAmortizedBillConfig,
 	ClientId: *string,
 	Scope: *string,
 }
@@ -1239,7 +1239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.azureUcConfig.AzureUcConfigActualBillConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/azureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/azureucconfig"
 
 azureucconfig.NewAzureUcConfigActualBillConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AzureUcConfigActualBillConfigOutputReference
 ```
@@ -1576,7 +1576,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.azureUcConfig.AzureUcConfigAmortizedBillConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/azureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/azureucconfig"
 
 azureucconfig.NewAzureUcConfigAmortizedBillConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AzureUcConfigAmortizedBillConfigOutputReference
 ```

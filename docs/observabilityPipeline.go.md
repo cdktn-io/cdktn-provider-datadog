@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipeline(scope Construct, id *string, config ObservabilityPipelineConfig) ObservabilityPipeline
 ```
@@ -420,7 +420,7 @@ func ResetConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipeline.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.ObservabilityPipeline_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipeline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.ObservabilityPipeline_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ observabilitypipeline.ObservabilityPipeline_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipeline.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.ObservabilityPipeline_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ observabilitypipeline.ObservabilityPipeline_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipeline.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.ObservabilityPipeline_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -764,7 +764,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfig {
 	Connection: interface{},
@@ -898,7 +898,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigA {
 	Destination: interface{},
@@ -998,7 +998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestination {
 	Id: *string,
@@ -1483,7 +1483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonOpensearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAmazonOpensearch {
 	Auth: interface{},
@@ -1549,7 +1549,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonOpensearchAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAmazonOpensearchAuth {
 	Strategy: *string,
@@ -1647,7 +1647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonOpensearchBuffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAmazonOpensearchBuffer {
 	Disk: interface{},
@@ -1697,7 +1697,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonOpensearchBufferDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAmazonOpensearchBufferDisk {
 	MaxSize: *f64,
@@ -1747,7 +1747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonOpensearchBufferMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAmazonOpensearchBufferMemory {
 	MaxEvents: *f64,
@@ -1813,7 +1813,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAmazonS3 {
 	Bucket: *string,
@@ -1927,7 +1927,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Auth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAmazonS3Auth {
 	AssumeRole: *string,
@@ -1993,7 +1993,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Buffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAmazonS3Buffer {
 	Disk: interface{},
@@ -2043,7 +2043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3BufferDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAmazonS3BufferDisk {
 	MaxSize: *f64,
@@ -2093,7 +2093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3BufferMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAmazonS3BufferMemory {
 	MaxEvents: *f64,
@@ -2159,7 +2159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic {
 	Bucket: *string,
@@ -2353,7 +2353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuth {
 	AssumeRole: *string,
@@ -2419,7 +2419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings {
 	BatchSize: *f64,
@@ -2469,7 +2469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBuffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBuffer {
 	Disk: interface{},
@@ -2519,7 +2519,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBufferDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBufferDisk {
 	MaxSize: *f64,
@@ -2569,7 +2569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBufferMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBufferMemory {
 	MaxEvents: *f64,
@@ -2635,7 +2635,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompression {
 	Algorithm: *string,
@@ -2685,7 +2685,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding {
 	Type: *string,
@@ -2719,7 +2719,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLake.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLake {
 	Bucket: *string,
@@ -2833,7 +2833,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLakeAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLakeAuth {
 	AssumeRole: *string,
@@ -2899,7 +2899,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLakeBuffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLakeBuffer {
 	Disk: interface{},
@@ -2949,7 +2949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferDisk {
 	MaxSize: *f64,
@@ -2999,7 +2999,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferMemory {
 	MaxEvents: *f64,
@@ -3065,7 +3065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLakeTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLakeTls {
 	CrtFile: *string,
@@ -3147,7 +3147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAzureStorage {
 	ContainerName: *string,
@@ -3229,7 +3229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageBuffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAzureStorageBuffer {
 	Disk: interface{},
@@ -3279,7 +3279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageBufferDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAzureStorageBufferDisk {
 	MaxSize: *f64,
@@ -3329,7 +3329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageBufferMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationAzureStorageBufferMemory {
 	MaxEvents: *f64,
@@ -3395,7 +3395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationClickhouse {
 	Table: *string,
@@ -3609,7 +3609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouseAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationClickhouseAuth {
 	Strategy: *string,
@@ -3675,7 +3675,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouseBatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationClickhouseBatch {
 	MaxEvents: *f64,
@@ -3725,7 +3725,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouseBatchEncoding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationClickhouseBatchEncoding {
 	Codec: *string,
@@ -3775,7 +3775,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouseBuffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationClickhouseBuffer {
 	Disk: interface{},
@@ -3825,7 +3825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouseBufferDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationClickhouseBufferDisk {
 	MaxSize: *f64,
@@ -3875,7 +3875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouseBufferMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationClickhouseBufferMemory {
 	MaxEvents: *f64,
@@ -3941,7 +3941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouseCompression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationClickhouseCompression {
 	Algorithm: *string,
@@ -3991,7 +3991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouseTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationClickhouseTls {
 	CrtFile: *string,
@@ -4073,7 +4073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPrem.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationCloudPrem {
 	Buffer: interface{},
@@ -4139,7 +4139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremBuffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationCloudPremBuffer {
 	Disk: interface{},
@@ -4189,7 +4189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremBufferDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationCloudPremBufferDisk {
 	MaxSize: *f64,
@@ -4239,7 +4239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremBufferMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationCloudPremBufferMemory {
 	MaxEvents: *f64,
@@ -4305,7 +4305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationCloudPremTls {
 	CrtFile: *string,
@@ -4405,7 +4405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiem.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiem {
 	Encoding: *string,
@@ -4519,7 +4519,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBuffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBuffer {
 	Disk: interface{},
@@ -4569,7 +4569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferDisk {
 	MaxSize: *f64,
@@ -4619,7 +4619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferMemory {
 	MaxEvents: *f64,
@@ -4685,7 +4685,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemCompression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemCompression {
 	Algorithm: *string,
@@ -4735,7 +4735,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemTls {
 	CrtFile: *string,
@@ -4817,7 +4817,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationDatabricksZerobus {
 	TableName: *string,
@@ -4899,7 +4899,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuth {
 	ClientId: *string,
@@ -4949,7 +4949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationDatadogLogs {
 	Buffer: interface{},
@@ -4999,7 +4999,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogsBuffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationDatadogLogsBuffer {
 	Disk: interface{},
@@ -5049,7 +5049,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogsBufferDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationDatadogLogsBufferDisk {
 	MaxSize: *f64,
@@ -5099,7 +5099,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogsBufferMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationDatadogLogsBufferMemory {
 	MaxEvents: *f64,
@@ -5165,7 +5165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogsRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationDatadogLogsRoutes {
 	ApiKeyKey: *string,
@@ -5263,7 +5263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogsRoutesBuffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationDatadogLogsRoutesBuffer {
 	Disk: interface{},
@@ -5313,7 +5313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferDisk {
 	MaxSize: *f64,
@@ -5363,7 +5363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferMemory {
 	MaxEvents: *f64,
@@ -5429,7 +5429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationDatadogMetrics {
 
@@ -5442,7 +5442,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilityp
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationElasticsearch {
 	ApiVersion: *string,
@@ -5636,7 +5636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationElasticsearchAuth {
 	Strategy: *string,
@@ -5702,7 +5702,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchBuffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationElasticsearchBuffer {
 	Disk: interface{},
@@ -5752,7 +5752,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchBufferDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationElasticsearchBufferDisk {
 	MaxSize: *f64,
@@ -5802,7 +5802,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchBufferMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationElasticsearchBufferMemory {
 	MaxEvents: *f64,
@@ -5868,7 +5868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationElasticsearchCompression {
 	Algorithm: *string,
@@ -5918,7 +5918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStream.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStream {
 	AutoRouting: interface{},
@@ -6016,7 +6016,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationElasticsearchTls {
 	CrtFile: *string,
@@ -6098,7 +6098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleCloudStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationGoogleCloudStorage {
 	Bucket: *string,
@@ -6228,7 +6228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleCloudStorageAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationGoogleCloudStorageAuth {
 	CredentialsFile: *string,
@@ -6262,7 +6262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleCloudStorageBuffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationGoogleCloudStorageBuffer {
 	Disk: interface{},
@@ -6312,7 +6312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleCloudStorageBufferDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationGoogleCloudStorageBufferDisk {
 	MaxSize: *f64,
@@ -6362,7 +6362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleCloudStorageBufferMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationGoogleCloudStorageBufferMemory {
 	MaxEvents: *f64,
@@ -6428,7 +6428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleCloudStorageMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationGoogleCloudStorageMetadata {
 	Name: *string,
@@ -6478,7 +6478,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGooglePubsub.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationGooglePubsub {
 	Encoding: *string,
@@ -6608,7 +6608,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGooglePubsubAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationGooglePubsubAuth {
 	CredentialsFile: *string,
@@ -6642,7 +6642,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGooglePubsubBuffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationGooglePubsubBuffer {
 	Disk: interface{},
@@ -6692,7 +6692,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGooglePubsubBufferDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationGooglePubsubBufferDisk {
 	MaxSize: *f64,
@@ -6742,7 +6742,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGooglePubsubBufferMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationGooglePubsubBufferMemory {
 	MaxEvents: *f64,
@@ -6808,7 +6808,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGooglePubsubTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationGooglePubsubTls {
 	CrtFile: *string,
@@ -6890,7 +6890,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleSecops.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationGoogleSecops {
 	CustomerId: *string,
@@ -7004,7 +7004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleSecopsAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationGoogleSecopsAuth {
 	CredentialsFile: *string,
@@ -7038,7 +7038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleSecopsBuffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationGoogleSecopsBuffer {
 	Disk: interface{},
@@ -7088,7 +7088,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleSecopsBufferDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationGoogleSecopsBufferDisk {
 	MaxSize: *f64,
@@ -7138,7 +7138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleSecopsBufferMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationGoogleSecopsBufferMemory {
 	MaxEvents: *f64,
@@ -7204,7 +7204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationHttpClient {
 	Encoding: *string,
@@ -7366,7 +7366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientBuffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationHttpClientBuffer {
 	Disk: interface{},
@@ -7416,7 +7416,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientBufferDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationHttpClientBufferDisk {
 	MaxSize: *f64,
@@ -7466,7 +7466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientBufferMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationHttpClientBufferMemory {
 	MaxEvents: *f64,
@@ -7532,7 +7532,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientCompression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationHttpClientCompression {
 	Algorithm: *string,
@@ -7566,7 +7566,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationHttpClientTls {
 	CrtFile: *string,
@@ -7666,7 +7666,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationKafka.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationKafka {
 	Encoding: *string,
@@ -7908,7 +7908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationKafkaBuffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationKafkaBuffer {
 	Disk: interface{},
@@ -7958,7 +7958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationKafkaBufferDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationKafkaBufferDisk {
 	MaxSize: *f64,
@@ -8008,7 +8008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationKafkaBufferMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationKafkaBufferMemory {
 	MaxEvents: *f64,
@@ -8074,7 +8074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationKafkaLibrdkafkaOption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationKafkaLibrdkafkaOption {
 	Name: *string,
@@ -8124,7 +8124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationKafkaSasl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationKafkaSasl {
 	Mechanism: *string,
@@ -8190,7 +8190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationKafkaTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationKafkaTls {
 	CrtFile: *string,
@@ -8272,7 +8272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationMicrosoftSentinel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationMicrosoftSentinel {
 	ClientId: *string,
@@ -8402,7 +8402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationMicrosoftSentinelBuffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationMicrosoftSentinelBuffer {
 	Disk: interface{},
@@ -8452,7 +8452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationMicrosoftSentinelBufferDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationMicrosoftSentinelBufferDisk {
 	MaxSize: *f64,
@@ -8502,7 +8502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationMicrosoftSentinelBufferMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationMicrosoftSentinelBufferMemory {
 	MaxEvents: *f64,
@@ -8568,7 +8568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationNewRelic.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationNewRelic {
 	Region: *string,
@@ -8650,7 +8650,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationNewRelicBuffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationNewRelicBuffer {
 	Disk: interface{},
@@ -8700,7 +8700,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationNewRelicBufferDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationNewRelicBufferDisk {
 	MaxSize: *f64,
@@ -8750,7 +8750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationNewRelicBufferMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationNewRelicBufferMemory {
 	MaxEvents: *f64,
@@ -8816,7 +8816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationOpensearch {
 	Auth: interface{},
@@ -8914,7 +8914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationOpensearchAuth {
 	Strategy: *string,
@@ -8980,7 +8980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchBuffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationOpensearchBuffer {
 	Disk: interface{},
@@ -9030,7 +9030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchBufferDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationOpensearchBufferDisk {
 	MaxSize: *f64,
@@ -9080,7 +9080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchBufferMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationOpensearchBufferMemory {
 	MaxEvents: *f64,
@@ -9146,7 +9146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchDataStream.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationOpensearchDataStream {
 	Dataset: *string,
@@ -9212,7 +9212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationRsyslog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationRsyslog {
 	Buffer: interface{},
@@ -9294,7 +9294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationRsyslogBuffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationRsyslogBuffer {
 	Disk: interface{},
@@ -9344,7 +9344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationRsyslogBufferDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationRsyslogBufferDisk {
 	MaxSize: *f64,
@@ -9394,7 +9394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationRsyslogBufferMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationRsyslogBufferMemory {
 	MaxEvents: *f64,
@@ -9460,7 +9460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationRsyslogTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationRsyslogTls {
 	CrtFile: *string,
@@ -9542,7 +9542,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSentinelOne.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSentinelOne {
 	Region: *string,
@@ -9608,7 +9608,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSentinelOneBuffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSentinelOneBuffer {
 	Disk: interface{},
@@ -9658,7 +9658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSentinelOneBufferDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSentinelOneBufferDisk {
 	MaxSize: *f64,
@@ -9708,7 +9708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSentinelOneBufferMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSentinelOneBufferMemory {
 	MaxEvents: *f64,
@@ -9774,7 +9774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSocket {
 	Encoding: *string,
@@ -9888,7 +9888,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketBuffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSocketBuffer {
 	Disk: interface{},
@@ -9938,7 +9938,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketBufferDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSocketBufferDisk {
 	MaxSize: *f64,
@@ -9988,7 +9988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketBufferMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSocketBufferMemory {
 	MaxEvents: *f64,
@@ -10054,7 +10054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketFraming.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSocketFraming {
 	Method: *string,
@@ -10104,7 +10104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketFramingCharacterDelimited.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSocketFramingCharacterDelimited {
 	Delimiter: *string,
@@ -10138,7 +10138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSocketTls {
 	CrtFile: *string,
@@ -10238,7 +10238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSplunkHec {
 	Encoding: *string,
@@ -10402,7 +10402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecBuffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSplunkHecBuffer {
 	Disk: interface{},
@@ -10452,7 +10452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecBufferDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSplunkHecBufferDisk {
 	MaxSize: *f64,
@@ -10502,7 +10502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecBufferMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSplunkHecBufferMemory {
 	MaxEvents: *f64,
@@ -10568,7 +10568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSplunkHecMetrics {
 	Buffer: interface{},
@@ -10730,7 +10730,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsBuffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsBuffer {
 	Disk: interface{},
@@ -10780,7 +10780,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferDisk {
 	MaxSize: *f64,
@@ -10830,7 +10830,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferMemory {
 	MaxEvents: *f64,
@@ -10896,7 +10896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsTls {
 	CrtFile: *string,
@@ -10978,7 +10978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSumoLogic.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSumoLogic {
 	Buffer: interface{},
@@ -11108,7 +11108,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSumoLogicBuffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSumoLogicBuffer {
 	Disk: interface{},
@@ -11158,7 +11158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSumoLogicBufferDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSumoLogicBufferDisk {
 	MaxSize: *f64,
@@ -11208,7 +11208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSumoLogicBufferMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSumoLogicBufferMemory {
 	MaxEvents: *f64,
@@ -11274,7 +11274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSumoLogicHeaderCustomField.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSumoLogicHeaderCustomField {
 	Name: *string,
@@ -11324,7 +11324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNg.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSyslogNg {
 	Buffer: interface{},
@@ -11406,7 +11406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgBuffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSyslogNgBuffer {
 	Disk: interface{},
@@ -11456,7 +11456,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgBufferDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSyslogNgBufferDisk {
 	MaxSize: *f64,
@@ -11506,7 +11506,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgBufferMemory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSyslogNgBufferMemory {
 	MaxEvents: *f64,
@@ -11572,7 +11572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigDestinationSyslogNgTls {
 	CrtFile: *string,
@@ -11672,7 +11672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroup {
 	Enabled: interface{},
@@ -11789,7 +11789,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessor.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessor {
 	Enabled: interface{},
@@ -12306,7 +12306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVars.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVars {
 	Variable: interface{},
@@ -12340,7 +12340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVarsVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVarsVariable {
 	Field: *string,
@@ -12390,7 +12390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddFields {
 	Field: interface{},
@@ -12424,7 +12424,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddFieldsField.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddFieldsField {
 	Name: *string,
@@ -12474,7 +12474,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddHostname.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddHostname {
 
@@ -12487,7 +12487,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilityp
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddMetricTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddMetricTags {
 	Tag: interface{},
@@ -12521,7 +12521,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddMetricTagsTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddMetricTagsTag {
 	Name: *string,
@@ -12571,7 +12571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorAggregate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorAggregate {
 	IntervalSecs: *f64,
@@ -12625,7 +12625,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorCustomProcessor.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorCustomProcessor {
 	Remap: interface{},
@@ -12659,7 +12659,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorCustomProcessorRemap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorCustomProcessorRemap {
 	DropOnError: interface{},
@@ -12757,7 +12757,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorDatadogTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorDatadogTags {
 	Action: *string,
@@ -12821,7 +12821,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorDedupe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorDedupe {
 	Fields: *[]*string,
@@ -12871,7 +12871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTable {
 	Target: *string,
@@ -12953,7 +12953,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFile {
 	Encoding: interface{},
@@ -13019,7 +13019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileEncoding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileEncoding {
 	Delimiter: *string,
@@ -13085,7 +13085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKey {
 	Column: *string,
@@ -13151,7 +13151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField {
 	Event: *string,
@@ -13233,7 +13233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableGeoip.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableGeoip {
 	KeyField: *string,
@@ -13299,7 +13299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceTable {
 	KeyField: *string,
@@ -13381,7 +13381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorFilter {
 
@@ -13394,7 +13394,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilityp
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetrics {
 	Metric: interface{},
@@ -13428,7 +13428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetric.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetric {
 	Include: *string,
@@ -13526,7 +13526,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetricValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetricValue {
 	Strategy: *string,
@@ -13576,7 +13576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetrics {
 	Metric: interface{},
@@ -13610,7 +13610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetric.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetric {
 	Include: *string,
@@ -13708,7 +13708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricValue {
 	Strategy: *string,
@@ -13758,7 +13758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorMetricTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorMetricTags {
 	Rule: interface{},
@@ -13792,7 +13792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorMetricTagsRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorMetricTagsRule {
 	Action: *string,
@@ -13874,7 +13874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapper.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapper {
 	KeepUnmatched: interface{},
@@ -13924,7 +13924,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMapping {
 	Include: *string,
@@ -13990,7 +13990,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMapping {
 	Version: *f64,
@@ -14056,7 +14056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMapping {
 	Dest: *string,
@@ -14170,7 +14170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookup {
 	Default: *string,
@@ -14220,7 +14220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookupTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookupTable {
 	Contains: *string,
@@ -14334,7 +14334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMetadata {
 	Class: *string,
@@ -14400,7 +14400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrok.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrok {
 	DisableLibraryRules: interface{},
@@ -14482,7 +14482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRule {
 	Include: *string,
@@ -14548,7 +14548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleMatchRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleMatchRule {
 	Name: *string,
@@ -14598,7 +14598,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleSupportRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleSupportRule {
 	Name: *string,
@@ -14648,7 +14648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRule {
 	Source: *string,
@@ -14714,7 +14714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleMatchRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleMatchRule {
 	Name: *string,
@@ -14764,7 +14764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleSupportRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleSupportRule {
 	Name: *string,
@@ -14814,7 +14814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseJson.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseJson {
 	Field: *string,
@@ -14848,7 +14848,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseXml.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseXml {
 	Field: *string,
@@ -14996,7 +14996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorQuota.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorQuota {
 	Name: *string,
@@ -15142,7 +15142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorQuotaLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorQuotaLimit {
 	Enforce: *string,
@@ -15192,7 +15192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverride {
 	Field: interface{},
@@ -15242,7 +15242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideField.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideField {
 	Name: *string,
@@ -15292,7 +15292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimit {
 	Enforce: *string,
@@ -15342,7 +15342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorReduce.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorReduce {
 	GroupBy: *[]*string,
@@ -15392,7 +15392,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategy {
 	Path: *string,
@@ -15442,7 +15442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorRemoveFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorRemoveFields {
 	Fields: *[]*string,
@@ -15476,7 +15476,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorRenameFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorRenameFields {
 	Field: interface{},
@@ -15510,7 +15510,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsField.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsField {
 	Destination: *string,
@@ -15576,7 +15576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorRenameMetricTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorRenameMetricTags {
 	Tag: interface{},
@@ -15610,7 +15610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorRenameMetricTagsTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorRenameMetricTagsTag {
 	RenameTo: *string,
@@ -15660,7 +15660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSample.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorSample {
 	Percentage: *f64,
@@ -15710,7 +15710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScanner.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScanner {
 	Rule: interface{},
@@ -15744,7 +15744,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRule {
 	Name: *string,
@@ -15858,7 +15858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleKeywordOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleKeywordOptions {
 	Keywords: *[]*string,
@@ -15908,7 +15908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatch {
 	Hash: interface{},
@@ -15974,7 +15974,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchHash.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchHash {
 
@@ -15987,7 +15987,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilityp
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchPartialRedact.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchPartialRedact {
 	Characters: *f64,
@@ -16037,7 +16037,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchRedact.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchRedact {
 	Replace: *string,
@@ -16071,7 +16071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePattern {
 	Custom: interface{},
@@ -16121,7 +16121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternCustom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternCustom {
 	Description: *string,
@@ -16171,7 +16171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternLibrary.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternLibrary {
 	Description: *string,
@@ -16240,7 +16240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScope {
 	All: interface{},
@@ -16306,7 +16306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeExclude.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeExclude {
 	Fields: *[]*string,
@@ -16340,7 +16340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeInclude.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeInclude {
 	Fields: *[]*string,
@@ -16374,7 +16374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSplitArray.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorSplitArray {
 	Array: interface{},
@@ -16408,7 +16408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSplitArrayArray.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorSplitArrayArray {
 	Field: *string,
@@ -16458,7 +16458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimit {
 	LimitExceededAction: *string,
@@ -16544,7 +16544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimit {
 	MetricName: *string,
@@ -16646,7 +16646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimit {
 	OverrideType: *string,
@@ -16714,7 +16714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode {
 	Mode: *string,
@@ -16748,7 +16748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorThrottle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigProcessorGroupProcessorThrottle {
 	Threshold: *f64,
@@ -16814,7 +16814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSource {
 	Id: *string,
@@ -17139,7 +17139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonDataFirehose.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceAmazonDataFirehose {
 	AddressKey: *string,
@@ -17205,7 +17205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonDataFirehoseAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceAmazonDataFirehoseAuth {
 	AssumeRole: *string,
@@ -17271,7 +17271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonDataFirehoseTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceAmazonDataFirehoseTls {
 	CrtFile: *string,
@@ -17353,7 +17353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceAmazonS3 {
 	Region: *string,
@@ -17453,7 +17453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3Auth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceAmazonS3Auth {
 	AssumeRole: *string,
@@ -17519,7 +17519,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3Tls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceAmazonS3Tls {
 	CrtFile: *string,
@@ -17601,7 +17601,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceDatadogAgent {
 	AddressKey: *string,
@@ -17651,7 +17651,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgentTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceDatadogAgentTls {
 	CrtFile: *string,
@@ -17733,7 +17733,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceFluentBit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceFluentBit {
 	AddressKey: *string,
@@ -17783,7 +17783,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceFluentBitTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceFluentBitTls {
 	CrtFile: *string,
@@ -17881,7 +17881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceFluentd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceFluentd {
 	AddressKey: *string,
@@ -17931,7 +17931,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceFluentdTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceFluentdTls {
 	CrtFile: *string,
@@ -18029,7 +18029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceGooglePubsub.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceGooglePubsub {
 	Decoding: *string,
@@ -18127,7 +18127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceGooglePubsubAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceGooglePubsubAuth {
 	CredentialsFile: *string,
@@ -18161,7 +18161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceGooglePubsubTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceGooglePubsubTls {
 	CrtFile: *string,
@@ -18243,7 +18243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceHttpClient {
 	Decoding: *string,
@@ -18421,7 +18421,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceHttpClientTls {
 	CrtFile: *string,
@@ -18521,7 +18521,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceHttpServer {
 	AuthStrategy: *string,
@@ -18651,7 +18651,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceHttpServerTls {
 	CrtFile: *string,
@@ -18749,7 +18749,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerValidToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceHttpServerValidToken {
 	TokenKey: *string,
@@ -18831,7 +18831,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerValidTokenFieldToAdd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceHttpServerValidTokenFieldToAdd {
 	Key: *string,
@@ -18881,7 +18881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerValidTokenPathToToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceHttpServerValidTokenPathToToken {
 	Header: *string,
@@ -18931,7 +18931,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceKafka.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceKafka {
 	GroupId: *string,
@@ -19045,7 +19045,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceKafkaLibrdkafkaOption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceKafkaLibrdkafkaOption {
 	Name: *string,
@@ -19095,7 +19095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceKafkaSasl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceKafkaSasl {
 	Mechanism: *string,
@@ -19161,7 +19161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceKafkaTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceKafkaTls {
 	CrtFile: *string,
@@ -19243,7 +19243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceLogstash.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceLogstash {
 	AddressKey: *string,
@@ -19293,7 +19293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceLogstashTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceLogstashTls {
 	CrtFile: *string,
@@ -19391,7 +19391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceOpentelemetry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceOpentelemetry {
 	GrpcAddressKey: *string,
@@ -19457,7 +19457,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceOpentelemetryTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceOpentelemetryTls {
 	CrtFile: *string,
@@ -19555,7 +19555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceRsyslog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceRsyslog {
 	AddressKey: *string,
@@ -19621,7 +19621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceRsyslogTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceRsyslogTls {
 	CrtFile: *string,
@@ -19719,7 +19719,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceSocket {
 	Mode: *string,
@@ -19801,7 +19801,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSocketFraming.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceSocketFraming {
 	Method: *string,
@@ -19851,7 +19851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSocketFramingCharacterDelimited.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceSocketFramingCharacterDelimited {
 	Delimiter: *string,
@@ -19885,7 +19885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSocketTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceSocketTls {
 	CrtFile: *string,
@@ -19983,7 +19983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceSplunkHec {
 	AddressKey: *string,
@@ -20065,7 +20065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHecTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceSplunkHecTls {
 	CrtFile: *string,
@@ -20163,7 +20163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHecValidToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceSplunkHecValidToken {
 	TokenKey: *string,
@@ -20229,7 +20229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHecValidTokenFieldToAdd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceSplunkHecValidTokenFieldToAdd {
 	Key: *string,
@@ -20279,7 +20279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkTcp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceSplunkTcp {
 	AddressKey: *string,
@@ -20329,7 +20329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkTcpTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceSplunkTcpTls {
 	CrtFile: *string,
@@ -20427,7 +20427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSumoLogic.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceSumoLogic {
 	AddressKey: *string,
@@ -20461,7 +20461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSyslogNg.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceSyslogNg {
 	AddressKey: *string,
@@ -20527,7 +20527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSyslogNgTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceSyslogNgTls {
 	CrtFile: *string,
@@ -20625,7 +20625,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceWebsocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceWebsocket {
 	AuthStrategy: *string,
@@ -20771,7 +20771,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceWebsocketTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 &observabilitypipeline.ObservabilityPipelineConfigSourceWebsocketTls {
 	Mode: *string,
@@ -20873,7 +20873,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigAList
 ```
@@ -21033,7 +21033,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigAOutputReference
 ```
@@ -21484,7 +21484,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonOpensearchAuthList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonOpensearchAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAmazonOpensearchAuthList
 ```
@@ -21644,7 +21644,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonOpensearchAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonOpensearchAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAmazonOpensearchAuthOutputReference
 ```
@@ -22049,7 +22049,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonOpensearchBufferDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonOpensearchBufferDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAmazonOpensearchBufferDiskList
 ```
@@ -22209,7 +22209,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonOpensearchBufferDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonOpensearchBufferDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAmazonOpensearchBufferDiskOutputReference
 ```
@@ -22534,7 +22534,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonOpensearchBufferList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonOpensearchBufferList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAmazonOpensearchBufferList
 ```
@@ -22694,7 +22694,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonOpensearchBufferMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonOpensearchBufferMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAmazonOpensearchBufferMemoryList
 ```
@@ -22854,7 +22854,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonOpensearchBufferMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonOpensearchBufferMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAmazonOpensearchBufferMemoryOutputReference
 ```
@@ -23208,7 +23208,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonOpensearchBufferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonOpensearchBufferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAmazonOpensearchBufferOutputReference
 ```
@@ -23559,7 +23559,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonOpensearchList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonOpensearchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAmazonOpensearchList
 ```
@@ -23719,7 +23719,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonOpensearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonOpensearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAmazonOpensearchOutputReference
 ```
@@ -24099,7 +24099,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3AuthList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonS3AuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAmazonS3AuthList
 ```
@@ -24259,7 +24259,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3AuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonS3AuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAmazonS3AuthOutputReference
 ```
@@ -24613,7 +24613,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3BufferDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonS3BufferDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAmazonS3BufferDiskList
 ```
@@ -24773,7 +24773,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3BufferDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonS3BufferDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAmazonS3BufferDiskOutputReference
 ```
@@ -25098,7 +25098,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3BufferList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonS3BufferList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAmazonS3BufferList
 ```
@@ -25258,7 +25258,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3BufferMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonS3BufferMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAmazonS3BufferMemoryList
 ```
@@ -25418,7 +25418,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3BufferMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonS3BufferMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAmazonS3BufferMemoryOutputReference
 ```
@@ -25772,7 +25772,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3BufferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonS3BufferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAmazonS3BufferOutputReference
 ```
@@ -26123,7 +26123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonS3GenericAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList
 ```
@@ -26283,7 +26283,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference
 ```
@@ -26637,7 +26637,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList
 ```
@@ -26797,7 +26797,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference
 ```
@@ -27122,7 +27122,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBufferDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonS3GenericBufferDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAmazonS3GenericBufferDiskList
 ```
@@ -27282,7 +27282,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBufferDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonS3GenericBufferDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAmazonS3GenericBufferDiskOutputReference
 ```
@@ -27607,7 +27607,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBufferList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonS3GenericBufferList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAmazonS3GenericBufferList
 ```
@@ -27767,7 +27767,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBufferMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonS3GenericBufferMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAmazonS3GenericBufferMemoryList
 ```
@@ -27927,7 +27927,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBufferMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonS3GenericBufferMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAmazonS3GenericBufferMemoryOutputReference
 ```
@@ -28281,7 +28281,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBufferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonS3GenericBufferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAmazonS3GenericBufferOutputReference
 ```
@@ -28632,7 +28632,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList
 ```
@@ -28792,7 +28792,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference
 ```
@@ -29110,7 +29110,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList
 ```
@@ -29270,7 +29270,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference
 ```
@@ -29559,7 +29559,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonS3GenericList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAmazonS3GenericList
 ```
@@ -29719,7 +29719,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference
 ```
@@ -30349,7 +30349,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3List.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonS3List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAmazonS3List
 ```
@@ -30509,7 +30509,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAmazonS3OutputReference
 ```
@@ -30948,7 +30948,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLakeAuthList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonSecurityLakeAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAmazonSecurityLakeAuthList
 ```
@@ -31108,7 +31108,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLakeAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonSecurityLakeAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAmazonSecurityLakeAuthOutputReference
 ```
@@ -31462,7 +31462,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferDiskList
 ```
@@ -31622,7 +31622,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferDiskOutputReference
 ```
@@ -31947,7 +31947,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferList
 ```
@@ -32107,7 +32107,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferMemoryList
 ```
@@ -32267,7 +32267,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferMemoryOutputReference
 ```
@@ -32621,7 +32621,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferOutputReference
 ```
@@ -32972,7 +32972,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLakeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonSecurityLakeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAmazonSecurityLakeList
 ```
@@ -33132,7 +33132,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLakeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonSecurityLakeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAmazonSecurityLakeOutputReference
 ```
@@ -33591,7 +33591,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLakeTlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonSecurityLakeTlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAmazonSecurityLakeTlsList
 ```
@@ -33751,7 +33751,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLakeTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAmazonSecurityLakeTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAmazonSecurityLakeTlsOutputReference
 ```
@@ -34127,7 +34127,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageBufferDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAzureStorageBufferDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAzureStorageBufferDiskList
 ```
@@ -34287,7 +34287,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageBufferDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAzureStorageBufferDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAzureStorageBufferDiskOutputReference
 ```
@@ -34612,7 +34612,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageBufferList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAzureStorageBufferList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAzureStorageBufferList
 ```
@@ -34772,7 +34772,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageBufferMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAzureStorageBufferMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAzureStorageBufferMemoryList
 ```
@@ -34932,7 +34932,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageBufferMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAzureStorageBufferMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAzureStorageBufferMemoryOutputReference
 ```
@@ -35286,7 +35286,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageBufferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAzureStorageBufferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAzureStorageBufferOutputReference
 ```
@@ -35637,7 +35637,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAzureStorageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationAzureStorageList
 ```
@@ -35797,7 +35797,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationAzureStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationAzureStorageOutputReference
 ```
@@ -36186,7 +36186,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouseAuthList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationClickhouseAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationClickhouseAuthList
 ```
@@ -36346,7 +36346,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouseAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationClickhouseAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationClickhouseAuthOutputReference
 ```
@@ -36693,7 +36693,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouseBatchEncodingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationClickhouseBatchEncodingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationClickhouseBatchEncodingList
 ```
@@ -36853,7 +36853,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouseBatchEncodingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationClickhouseBatchEncodingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationClickhouseBatchEncodingOutputReference
 ```
@@ -37171,7 +37171,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouseBatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationClickhouseBatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationClickhouseBatchList
 ```
@@ -37331,7 +37331,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouseBatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationClickhouseBatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationClickhouseBatchOutputReference
 ```
@@ -37656,7 +37656,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouseBufferDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationClickhouseBufferDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationClickhouseBufferDiskList
 ```
@@ -37816,7 +37816,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouseBufferDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationClickhouseBufferDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationClickhouseBufferDiskOutputReference
 ```
@@ -38141,7 +38141,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouseBufferList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationClickhouseBufferList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationClickhouseBufferList
 ```
@@ -38301,7 +38301,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouseBufferMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationClickhouseBufferMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationClickhouseBufferMemoryList
 ```
@@ -38461,7 +38461,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouseBufferMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationClickhouseBufferMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationClickhouseBufferMemoryOutputReference
 ```
@@ -38815,7 +38815,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouseBufferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationClickhouseBufferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationClickhouseBufferOutputReference
 ```
@@ -39166,7 +39166,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouseCompressionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationClickhouseCompressionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationClickhouseCompressionList
 ```
@@ -39326,7 +39326,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouseCompressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationClickhouseCompressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationClickhouseCompressionOutputReference
 ```
@@ -39644,7 +39644,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouseList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationClickhouseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationClickhouseList
 ```
@@ -39804,7 +39804,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationClickhouseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationClickhouseOutputReference
 ```
@@ -40490,7 +40490,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouseTlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationClickhouseTlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationClickhouseTlsList
 ```
@@ -40650,7 +40650,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationClickhouseTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationClickhouseTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationClickhouseTlsOutputReference
 ```
@@ -41026,7 +41026,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremBufferDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationCloudPremBufferDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationCloudPremBufferDiskList
 ```
@@ -41186,7 +41186,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremBufferDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationCloudPremBufferDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationCloudPremBufferDiskOutputReference
 ```
@@ -41511,7 +41511,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremBufferList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationCloudPremBufferList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationCloudPremBufferList
 ```
@@ -41671,7 +41671,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremBufferMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationCloudPremBufferMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationCloudPremBufferMemoryList
 ```
@@ -41831,7 +41831,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremBufferMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationCloudPremBufferMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationCloudPremBufferMemoryOutputReference
 ```
@@ -42185,7 +42185,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremBufferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationCloudPremBufferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationCloudPremBufferOutputReference
 ```
@@ -42536,7 +42536,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationCloudPremList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationCloudPremList
 ```
@@ -42696,7 +42696,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationCloudPremOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationCloudPremOutputReference
 ```
@@ -43076,7 +43076,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationCloudPremTlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationCloudPremTlsList
 ```
@@ -43236,7 +43236,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationCloudPremTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference
 ```
@@ -43641,7 +43641,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferDiskList
 ```
@@ -43801,7 +43801,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferDiskOutputReference
 ```
@@ -44126,7 +44126,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferList
 ```
@@ -44286,7 +44286,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferMemoryList
 ```
@@ -44446,7 +44446,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferMemoryOutputReference
 ```
@@ -44800,7 +44800,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferOutputReference
 ```
@@ -45151,7 +45151,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemCompressionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemCompressionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemCompressionList
 ```
@@ -45311,7 +45311,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemCompressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemCompressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemCompressionOutputReference
 ```
@@ -45629,7 +45629,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemList
 ```
@@ -45789,7 +45789,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference
 ```
@@ -46262,7 +46262,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemTlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemTlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemTlsList
 ```
@@ -46422,7 +46422,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemTlsOutputReference
 ```
@@ -46798,7 +46798,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationDatabricksZerobusAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList
 ```
@@ -46958,7 +46958,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference
 ```
@@ -47276,7 +47276,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationDatabricksZerobusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationDatabricksZerobusList
 ```
@@ -47436,7 +47436,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference
 ```
@@ -47825,7 +47825,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogsBufferDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationDatadogLogsBufferDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationDatadogLogsBufferDiskList
 ```
@@ -47985,7 +47985,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogsBufferDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationDatadogLogsBufferDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationDatadogLogsBufferDiskOutputReference
 ```
@@ -48310,7 +48310,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogsBufferList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationDatadogLogsBufferList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationDatadogLogsBufferList
 ```
@@ -48470,7 +48470,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogsBufferMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationDatadogLogsBufferMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationDatadogLogsBufferMemoryList
 ```
@@ -48630,7 +48630,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogsBufferMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationDatadogLogsBufferMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationDatadogLogsBufferMemoryOutputReference
 ```
@@ -48984,7 +48984,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogsBufferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationDatadogLogsBufferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationDatadogLogsBufferOutputReference
 ```
@@ -49335,7 +49335,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationDatadogLogsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationDatadogLogsList
 ```
@@ -49495,7 +49495,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationDatadogLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationDatadogLogsOutputReference
 ```
@@ -49846,7 +49846,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferDiskList
 ```
@@ -50006,7 +50006,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferDiskOutputReference
 ```
@@ -50331,7 +50331,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferList
 ```
@@ -50491,7 +50491,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferMemoryList
 ```
@@ -50651,7 +50651,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferMemoryOutputReference
 ```
@@ -51005,7 +51005,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferOutputReference
 ```
@@ -51356,7 +51356,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogsRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationDatadogLogsRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationDatadogLogsRoutesList
 ```
@@ -51516,7 +51516,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogsRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationDatadogLogsRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationDatadogLogsRoutesOutputReference
 ```
@@ -51913,7 +51913,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogMetricsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationDatadogMetricsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationDatadogMetricsList
 ```
@@ -52073,7 +52073,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationDatadogMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationDatadogMetricsOutputReference
 ```
@@ -52340,7 +52340,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchAuthList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationElasticsearchAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationElasticsearchAuthList
 ```
@@ -52500,7 +52500,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationElasticsearchAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationElasticsearchAuthOutputReference
 ```
@@ -52847,7 +52847,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchBufferDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationElasticsearchBufferDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationElasticsearchBufferDiskList
 ```
@@ -53007,7 +53007,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchBufferDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationElasticsearchBufferDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationElasticsearchBufferDiskOutputReference
 ```
@@ -53332,7 +53332,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchBufferList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationElasticsearchBufferList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationElasticsearchBufferList
 ```
@@ -53492,7 +53492,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchBufferMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationElasticsearchBufferMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationElasticsearchBufferMemoryList
 ```
@@ -53652,7 +53652,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchBufferMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationElasticsearchBufferMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationElasticsearchBufferMemoryOutputReference
 ```
@@ -54006,7 +54006,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchBufferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationElasticsearchBufferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationElasticsearchBufferOutputReference
 ```
@@ -54357,7 +54357,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationElasticsearchCompressionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationElasticsearchCompressionList
 ```
@@ -54517,7 +54517,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference
 ```
@@ -54835,7 +54835,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationElasticsearchDataStreamList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationElasticsearchDataStreamList
 ```
@@ -54995,7 +54995,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference
 ```
@@ -55407,7 +55407,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationElasticsearchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationElasticsearchList
 ```
@@ -55567,7 +55567,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationElasticsearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationElasticsearchOutputReference
 ```
@@ -56218,7 +56218,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationElasticsearchTlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationElasticsearchTlsList
 ```
@@ -56378,7 +56378,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference
 ```
@@ -56754,7 +56754,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleCloudStorageAuthList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGoogleCloudStorageAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationGoogleCloudStorageAuthList
 ```
@@ -56914,7 +56914,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleCloudStorageAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGoogleCloudStorageAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationGoogleCloudStorageAuthOutputReference
 ```
@@ -57203,7 +57203,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleCloudStorageBufferDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGoogleCloudStorageBufferDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationGoogleCloudStorageBufferDiskList
 ```
@@ -57363,7 +57363,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleCloudStorageBufferDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGoogleCloudStorageBufferDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationGoogleCloudStorageBufferDiskOutputReference
 ```
@@ -57688,7 +57688,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleCloudStorageBufferList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGoogleCloudStorageBufferList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationGoogleCloudStorageBufferList
 ```
@@ -57848,7 +57848,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleCloudStorageBufferMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGoogleCloudStorageBufferMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationGoogleCloudStorageBufferMemoryList
 ```
@@ -58008,7 +58008,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleCloudStorageBufferMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGoogleCloudStorageBufferMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationGoogleCloudStorageBufferMemoryOutputReference
 ```
@@ -58362,7 +58362,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleCloudStorageBufferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGoogleCloudStorageBufferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationGoogleCloudStorageBufferOutputReference
 ```
@@ -58713,7 +58713,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleCloudStorageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGoogleCloudStorageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationGoogleCloudStorageList
 ```
@@ -58873,7 +58873,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleCloudStorageMetadataList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGoogleCloudStorageMetadataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationGoogleCloudStorageMetadataList
 ```
@@ -59033,7 +59033,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleCloudStorageMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGoogleCloudStorageMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationGoogleCloudStorageMetadataOutputReference
 ```
@@ -59344,7 +59344,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleCloudStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGoogleCloudStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationGoogleCloudStorageOutputReference
 ```
@@ -59839,7 +59839,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGooglePubsubAuthList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGooglePubsubAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationGooglePubsubAuthList
 ```
@@ -59999,7 +59999,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGooglePubsubAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGooglePubsubAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationGooglePubsubAuthOutputReference
 ```
@@ -60288,7 +60288,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGooglePubsubBufferDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGooglePubsubBufferDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationGooglePubsubBufferDiskList
 ```
@@ -60448,7 +60448,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGooglePubsubBufferDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGooglePubsubBufferDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationGooglePubsubBufferDiskOutputReference
 ```
@@ -60773,7 +60773,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGooglePubsubBufferList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGooglePubsubBufferList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationGooglePubsubBufferList
 ```
@@ -60933,7 +60933,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGooglePubsubBufferMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGooglePubsubBufferMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationGooglePubsubBufferMemoryList
 ```
@@ -61093,7 +61093,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGooglePubsubBufferMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGooglePubsubBufferMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationGooglePubsubBufferMemoryOutputReference
 ```
@@ -61447,7 +61447,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGooglePubsubBufferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGooglePubsubBufferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationGooglePubsubBufferOutputReference
 ```
@@ -61798,7 +61798,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGooglePubsubList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGooglePubsubList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationGooglePubsubList
 ```
@@ -61958,7 +61958,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGooglePubsubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGooglePubsubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationGooglePubsubOutputReference
 ```
@@ -62446,7 +62446,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGooglePubsubTlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGooglePubsubTlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationGooglePubsubTlsList
 ```
@@ -62606,7 +62606,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGooglePubsubTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGooglePubsubTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationGooglePubsubTlsOutputReference
 ```
@@ -62982,7 +62982,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleSecopsAuthList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGoogleSecopsAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationGoogleSecopsAuthList
 ```
@@ -63142,7 +63142,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleSecopsAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGoogleSecopsAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationGoogleSecopsAuthOutputReference
 ```
@@ -63431,7 +63431,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleSecopsBufferDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGoogleSecopsBufferDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationGoogleSecopsBufferDiskList
 ```
@@ -63591,7 +63591,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleSecopsBufferDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGoogleSecopsBufferDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationGoogleSecopsBufferDiskOutputReference
 ```
@@ -63916,7 +63916,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleSecopsBufferList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGoogleSecopsBufferList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationGoogleSecopsBufferList
 ```
@@ -64076,7 +64076,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleSecopsBufferMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGoogleSecopsBufferMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationGoogleSecopsBufferMemoryList
 ```
@@ -64236,7 +64236,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleSecopsBufferMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGoogleSecopsBufferMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationGoogleSecopsBufferMemoryOutputReference
 ```
@@ -64590,7 +64590,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleSecopsBufferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGoogleSecopsBufferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationGoogleSecopsBufferOutputReference
 ```
@@ -64941,7 +64941,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleSecopsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGoogleSecopsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationGoogleSecopsList
 ```
@@ -65101,7 +65101,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationGoogleSecopsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationGoogleSecopsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationGoogleSecopsOutputReference
 ```
@@ -65547,7 +65547,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientBufferDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationHttpClientBufferDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationHttpClientBufferDiskList
 ```
@@ -65707,7 +65707,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientBufferDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationHttpClientBufferDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationHttpClientBufferDiskOutputReference
 ```
@@ -66032,7 +66032,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientBufferList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationHttpClientBufferList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationHttpClientBufferList
 ```
@@ -66192,7 +66192,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientBufferMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationHttpClientBufferMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationHttpClientBufferMemoryList
 ```
@@ -66352,7 +66352,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientBufferMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationHttpClientBufferMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationHttpClientBufferMemoryOutputReference
 ```
@@ -66706,7 +66706,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientBufferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationHttpClientBufferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationHttpClientBufferOutputReference
 ```
@@ -67057,7 +67057,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientCompressionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationHttpClientCompressionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationHttpClientCompressionList
 ```
@@ -67217,7 +67217,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientCompressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationHttpClientCompressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationHttpClientCompressionOutputReference
 ```
@@ -67506,7 +67506,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationHttpClientList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationHttpClientList
 ```
@@ -67666,7 +67666,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationHttpClientOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationHttpClientOutputReference
 ```
@@ -68226,7 +68226,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationHttpClientTlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationHttpClientTlsList
 ```
@@ -68386,7 +68386,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationHttpClientTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference
 ```
@@ -68791,7 +68791,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationKafkaBufferDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationKafkaBufferDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationKafkaBufferDiskList
 ```
@@ -68951,7 +68951,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationKafkaBufferDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationKafkaBufferDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationKafkaBufferDiskOutputReference
 ```
@@ -69276,7 +69276,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationKafkaBufferList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationKafkaBufferList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationKafkaBufferList
 ```
@@ -69436,7 +69436,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationKafkaBufferMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationKafkaBufferMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationKafkaBufferMemoryList
 ```
@@ -69596,7 +69596,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationKafkaBufferMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationKafkaBufferMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationKafkaBufferMemoryOutputReference
 ```
@@ -69950,7 +69950,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationKafkaBufferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationKafkaBufferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationKafkaBufferOutputReference
 ```
@@ -70301,7 +70301,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationKafkaLibrdkafkaOptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationKafkaLibrdkafkaOptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationKafkaLibrdkafkaOptionList
 ```
@@ -70461,7 +70461,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationKafkaLibrdkafkaOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationKafkaLibrdkafkaOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationKafkaLibrdkafkaOptionOutputReference
 ```
@@ -70772,7 +70772,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationKafkaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationKafkaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationKafkaList
 ```
@@ -70932,7 +70932,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationKafkaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationKafkaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationKafkaOutputReference
 ```
@@ -71643,7 +71643,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationKafkaSaslList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationKafkaSaslList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationKafkaSaslList
 ```
@@ -71803,7 +71803,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationKafkaSaslOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationKafkaSaslOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationKafkaSaslOutputReference
 ```
@@ -72150,7 +72150,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationKafkaTlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationKafkaTlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationKafkaTlsList
 ```
@@ -72310,7 +72310,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationKafkaTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationKafkaTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationKafkaTlsOutputReference
 ```
@@ -72686,7 +72686,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationList
 ```
@@ -72846,7 +72846,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationMicrosoftSentinelBufferDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationMicrosoftSentinelBufferDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationMicrosoftSentinelBufferDiskList
 ```
@@ -73006,7 +73006,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationMicrosoftSentinelBufferDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationMicrosoftSentinelBufferDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationMicrosoftSentinelBufferDiskOutputReference
 ```
@@ -73331,7 +73331,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationMicrosoftSentinelBufferList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationMicrosoftSentinelBufferList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationMicrosoftSentinelBufferList
 ```
@@ -73491,7 +73491,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationMicrosoftSentinelBufferMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationMicrosoftSentinelBufferMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationMicrosoftSentinelBufferMemoryList
 ```
@@ -73651,7 +73651,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationMicrosoftSentinelBufferMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationMicrosoftSentinelBufferMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationMicrosoftSentinelBufferMemoryOutputReference
 ```
@@ -74005,7 +74005,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationMicrosoftSentinelBufferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationMicrosoftSentinelBufferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationMicrosoftSentinelBufferOutputReference
 ```
@@ -74356,7 +74356,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationMicrosoftSentinelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationMicrosoftSentinelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationMicrosoftSentinelList
 ```
@@ -74516,7 +74516,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference
 ```
@@ -74971,7 +74971,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationNewRelicBufferDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationNewRelicBufferDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationNewRelicBufferDiskList
 ```
@@ -75131,7 +75131,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationNewRelicBufferDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationNewRelicBufferDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationNewRelicBufferDiskOutputReference
 ```
@@ -75456,7 +75456,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationNewRelicBufferList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationNewRelicBufferList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationNewRelicBufferList
 ```
@@ -75616,7 +75616,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationNewRelicBufferMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationNewRelicBufferMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationNewRelicBufferMemoryList
 ```
@@ -75776,7 +75776,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationNewRelicBufferMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationNewRelicBufferMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationNewRelicBufferMemoryOutputReference
 ```
@@ -76130,7 +76130,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationNewRelicBufferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationNewRelicBufferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationNewRelicBufferOutputReference
 ```
@@ -76481,7 +76481,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationNewRelicList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationNewRelicList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationNewRelicList
 ```
@@ -76641,7 +76641,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationNewRelicOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationNewRelicOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationNewRelicOutputReference
 ```
@@ -77030,7 +77030,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationOpensearchAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationOpensearchAuthList
 ```
@@ -77190,7 +77190,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationOpensearchAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationOpensearchAuthOutputReference
 ```
@@ -77537,7 +77537,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchBufferDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationOpensearchBufferDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationOpensearchBufferDiskList
 ```
@@ -77697,7 +77697,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchBufferDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationOpensearchBufferDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationOpensearchBufferDiskOutputReference
 ```
@@ -78022,7 +78022,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchBufferList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationOpensearchBufferList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationOpensearchBufferList
 ```
@@ -78182,7 +78182,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchBufferMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationOpensearchBufferMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationOpensearchBufferMemoryList
 ```
@@ -78342,7 +78342,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchBufferMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationOpensearchBufferMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationOpensearchBufferMemoryOutputReference
 ```
@@ -78696,7 +78696,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchBufferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationOpensearchBufferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationOpensearchBufferOutputReference
 ```
@@ -79047,7 +79047,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchDataStreamList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationOpensearchDataStreamList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationOpensearchDataStreamList
 ```
@@ -79207,7 +79207,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchDataStreamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationOpensearchDataStreamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationOpensearchDataStreamOutputReference
 ```
@@ -79561,7 +79561,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationOpensearchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationOpensearchList
 ```
@@ -79721,7 +79721,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOpensearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationOpensearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationOpensearchOutputReference
 ```
@@ -80172,7 +80172,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationOutputReference
 ```
@@ -81617,7 +81617,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationRsyslogBufferDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationRsyslogBufferDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationRsyslogBufferDiskList
 ```
@@ -81777,7 +81777,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationRsyslogBufferDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationRsyslogBufferDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationRsyslogBufferDiskOutputReference
 ```
@@ -82102,7 +82102,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationRsyslogBufferList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationRsyslogBufferList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationRsyslogBufferList
 ```
@@ -82262,7 +82262,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationRsyslogBufferMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationRsyslogBufferMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationRsyslogBufferMemoryList
 ```
@@ -82422,7 +82422,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationRsyslogBufferMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationRsyslogBufferMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationRsyslogBufferMemoryOutputReference
 ```
@@ -82776,7 +82776,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationRsyslogBufferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationRsyslogBufferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationRsyslogBufferOutputReference
 ```
@@ -83127,7 +83127,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationRsyslogList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationRsyslogList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationRsyslogList
 ```
@@ -83287,7 +83287,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationRsyslogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationRsyslogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationRsyslogOutputReference
 ```
@@ -83696,7 +83696,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationRsyslogTlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationRsyslogTlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationRsyslogTlsList
 ```
@@ -83856,7 +83856,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationRsyslogTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationRsyslogTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationRsyslogTlsOutputReference
 ```
@@ -84232,7 +84232,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSentinelOneBufferDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSentinelOneBufferDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSentinelOneBufferDiskList
 ```
@@ -84392,7 +84392,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSentinelOneBufferDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSentinelOneBufferDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSentinelOneBufferDiskOutputReference
 ```
@@ -84717,7 +84717,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSentinelOneBufferList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSentinelOneBufferList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSentinelOneBufferList
 ```
@@ -84877,7 +84877,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSentinelOneBufferMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSentinelOneBufferMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSentinelOneBufferMemoryList
 ```
@@ -85037,7 +85037,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSentinelOneBufferMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSentinelOneBufferMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSentinelOneBufferMemoryOutputReference
 ```
@@ -85391,7 +85391,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSentinelOneBufferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSentinelOneBufferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSentinelOneBufferOutputReference
 ```
@@ -85742,7 +85742,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSentinelOneList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSentinelOneList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSentinelOneList
 ```
@@ -85902,7 +85902,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSentinelOneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSentinelOneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSentinelOneOutputReference
 ```
@@ -86262,7 +86262,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketBufferDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSocketBufferDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSocketBufferDiskList
 ```
@@ -86422,7 +86422,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketBufferDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSocketBufferDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSocketBufferDiskOutputReference
 ```
@@ -86747,7 +86747,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketBufferList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSocketBufferList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSocketBufferList
 ```
@@ -86907,7 +86907,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketBufferMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSocketBufferMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSocketBufferMemoryList
 ```
@@ -87067,7 +87067,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketBufferMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSocketBufferMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSocketBufferMemoryOutputReference
 ```
@@ -87421,7 +87421,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketBufferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSocketBufferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSocketBufferOutputReference
 ```
@@ -87772,7 +87772,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketFramingCharacterDelimitedList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSocketFramingCharacterDelimitedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSocketFramingCharacterDelimitedList
 ```
@@ -87932,7 +87932,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketFramingCharacterDelimitedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSocketFramingCharacterDelimitedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSocketFramingCharacterDelimitedOutputReference
 ```
@@ -88221,7 +88221,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketFramingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSocketFramingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSocketFramingList
 ```
@@ -88381,7 +88381,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketFramingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSocketFramingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSocketFramingOutputReference
 ```
@@ -88712,7 +88712,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSocketList
 ```
@@ -88872,7 +88872,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSocketOutputReference
 ```
@@ -89338,7 +89338,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSocketTlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSocketTlsList
 ```
@@ -89498,7 +89498,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSocketTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSocketTlsOutputReference
 ```
@@ -89903,7 +89903,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecBufferDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSplunkHecBufferDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSplunkHecBufferDiskList
 ```
@@ -90063,7 +90063,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecBufferDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSplunkHecBufferDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSplunkHecBufferDiskOutputReference
 ```
@@ -90388,7 +90388,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecBufferList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSplunkHecBufferList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSplunkHecBufferList
 ```
@@ -90548,7 +90548,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecBufferMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSplunkHecBufferMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSplunkHecBufferMemoryList
 ```
@@ -90708,7 +90708,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecBufferMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSplunkHecBufferMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSplunkHecBufferMemoryOutputReference
 ```
@@ -91062,7 +91062,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecBufferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSplunkHecBufferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSplunkHecBufferOutputReference
 ```
@@ -91413,7 +91413,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSplunkHecList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSplunkHecList
 ```
@@ -91573,7 +91573,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSplunkHecMetricsBufferDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferDiskList
 ```
@@ -91733,7 +91733,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSplunkHecMetricsBufferDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferDiskOutputReference
 ```
@@ -92058,7 +92058,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSplunkHecMetricsBufferList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferList
 ```
@@ -92218,7 +92218,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSplunkHecMetricsBufferMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferMemoryList
 ```
@@ -92378,7 +92378,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSplunkHecMetricsBufferMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferMemoryOutputReference
 ```
@@ -92732,7 +92732,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSplunkHecMetricsBufferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferOutputReference
 ```
@@ -93083,7 +93083,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSplunkHecMetricsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSplunkHecMetricsList
 ```
@@ -93243,7 +93243,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSplunkHecMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSplunkHecMetricsOutputReference
 ```
@@ -93797,7 +93797,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsTlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSplunkHecMetricsTlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSplunkHecMetricsTlsList
 ```
@@ -93957,7 +93957,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSplunkHecMetricsTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSplunkHecMetricsTlsOutputReference
 ```
@@ -94333,7 +94333,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSplunkHecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSplunkHecOutputReference
 ```
@@ -94867,7 +94867,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSumoLogicBufferDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSumoLogicBufferDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSumoLogicBufferDiskList
 ```
@@ -95027,7 +95027,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSumoLogicBufferDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSumoLogicBufferDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSumoLogicBufferDiskOutputReference
 ```
@@ -95352,7 +95352,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSumoLogicBufferList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSumoLogicBufferList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSumoLogicBufferList
 ```
@@ -95512,7 +95512,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSumoLogicBufferMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSumoLogicBufferMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSumoLogicBufferMemoryList
 ```
@@ -95672,7 +95672,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSumoLogicBufferMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSumoLogicBufferMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSumoLogicBufferMemoryOutputReference
 ```
@@ -96026,7 +96026,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSumoLogicBufferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSumoLogicBufferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSumoLogicBufferOutputReference
 ```
@@ -96377,7 +96377,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSumoLogicHeaderCustomFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSumoLogicHeaderCustomFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSumoLogicHeaderCustomFieldList
 ```
@@ -96537,7 +96537,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSumoLogicHeaderCustomFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSumoLogicHeaderCustomFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSumoLogicHeaderCustomFieldOutputReference
 ```
@@ -96862,7 +96862,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSumoLogicList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSumoLogicList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSumoLogicList
 ```
@@ -97022,7 +97022,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSumoLogicOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSumoLogicOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSumoLogicOutputReference
 ```
@@ -97518,7 +97518,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgBufferDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSyslogNgBufferDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSyslogNgBufferDiskList
 ```
@@ -97678,7 +97678,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgBufferDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSyslogNgBufferDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSyslogNgBufferDiskOutputReference
 ```
@@ -98003,7 +98003,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgBufferList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSyslogNgBufferList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSyslogNgBufferList
 ```
@@ -98163,7 +98163,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgBufferMemoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSyslogNgBufferMemoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSyslogNgBufferMemoryList
 ```
@@ -98323,7 +98323,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgBufferMemoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSyslogNgBufferMemoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSyslogNgBufferMemoryOutputReference
 ```
@@ -98677,7 +98677,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgBufferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSyslogNgBufferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSyslogNgBufferOutputReference
 ```
@@ -99028,7 +99028,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSyslogNgList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSyslogNgList
 ```
@@ -99188,7 +99188,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSyslogNgOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSyslogNgOutputReference
 ```
@@ -99597,7 +99597,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSyslogNgTlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigDestinationSyslogNgTlsList
 ```
@@ -99757,7 +99757,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigDestinationSyslogNgTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSyslogNgTlsOutputReference
 ```
@@ -100162,7 +100162,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupList
 ```
@@ -100322,7 +100322,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupOutputReference
 ```
@@ -100748,7 +100748,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVarsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorAddEnvVarsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVarsList
 ```
@@ -100908,7 +100908,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVarsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorAddEnvVarsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVarsOutputReference
 ```
@@ -101217,7 +101217,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVarsVariableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorAddEnvVarsVariableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVarsVariableList
 ```
@@ -101377,7 +101377,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVarsVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorAddEnvVarsVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVarsVariableOutputReference
 ```
@@ -101688,7 +101688,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddFieldsFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorAddFieldsFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorAddFieldsFieldList
 ```
@@ -101848,7 +101848,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddFieldsFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorAddFieldsFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorAddFieldsFieldOutputReference
 ```
@@ -102159,7 +102159,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorAddFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorAddFieldsList
 ```
@@ -102319,7 +102319,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorAddFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorAddFieldsOutputReference
 ```
@@ -102628,7 +102628,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddHostnameList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorAddHostnameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorAddHostnameList
 ```
@@ -102788,7 +102788,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddHostnameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorAddHostnameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorAddHostnameOutputReference
 ```
@@ -103055,7 +103055,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddMetricTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorAddMetricTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorAddMetricTagsList
 ```
@@ -103215,7 +103215,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddMetricTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorAddMetricTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorAddMetricTagsOutputReference
 ```
@@ -103524,7 +103524,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddMetricTagsTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorAddMetricTagsTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorAddMetricTagsTagList
 ```
@@ -103684,7 +103684,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorAddMetricTagsTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorAddMetricTagsTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorAddMetricTagsTagOutputReference
 ```
@@ -103995,7 +103995,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorAggregateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorAggregateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorAggregateList
 ```
@@ -104155,7 +104155,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorAggregateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorAggregateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorAggregateOutputReference
 ```
@@ -104466,7 +104466,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorCustomProcessorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorCustomProcessorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorCustomProcessorList
 ```
@@ -104626,7 +104626,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorCustomProcessorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorCustomProcessorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorCustomProcessorOutputReference
 ```
@@ -104935,7 +104935,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorCustomProcessorRemapList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorCustomProcessorRemapList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorCustomProcessorRemapList
 ```
@@ -105095,7 +105095,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorCustomProcessorRemapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorCustomProcessorRemapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorCustomProcessorRemapOutputReference
 ```
@@ -105472,7 +105472,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorDatadogTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorDatadogTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorDatadogTagsList
 ```
@@ -105632,7 +105632,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorDatadogTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorDatadogTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorDatadogTagsOutputReference
 ```
@@ -105965,7 +105965,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorDedupeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorDedupeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorDedupeList
 ```
@@ -106125,7 +106125,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorDedupeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorDedupeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorDedupeOutputReference
 ```
@@ -106436,7 +106436,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileEncodingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileEncodingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileEncodingList
 ```
@@ -106596,7 +106596,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileEncodingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileEncodingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileEncodingOutputReference
 ```
@@ -106936,7 +106936,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList
 ```
@@ -107096,7 +107096,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference
 ```
@@ -107479,7 +107479,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyList
 ```
@@ -107639,7 +107639,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference
 ```
@@ -108006,7 +108006,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileList
 ```
@@ -108166,7 +108166,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileOutputReference
 ```
@@ -108546,7 +108546,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableGeoipList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableGeoipList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableGeoipList
 ```
@@ -108706,7 +108706,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableGeoipOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableGeoipOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableGeoipOutputReference
 ```
@@ -109060,7 +109060,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableList
 ```
@@ -109220,7 +109220,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableOutputReference
 ```
@@ -109635,7 +109635,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceTableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceTableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceTableList
 ```
@@ -109795,7 +109795,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceTableOutputReference
 ```
@@ -110164,7 +110164,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorFilterList
 ```
@@ -110324,7 +110324,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorFilterOutputReference
 ```
@@ -110591,7 +110591,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsList
 ```
@@ -110751,7 +110751,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetricList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetricList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetricList
 ```
@@ -110911,7 +110911,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetricOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetricOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetricOutputReference
 ```
@@ -111315,7 +111315,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetricValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetricValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetricValueList
 ```
@@ -111475,7 +111475,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetricValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetricValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetricValueOutputReference
 ```
@@ -111793,7 +111793,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsOutputReference
 ```
@@ -112102,7 +112102,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsList
 ```
@@ -112262,7 +112262,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricList
 ```
@@ -112422,7 +112422,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricOutputReference
 ```
@@ -112826,7 +112826,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricValueList
 ```
@@ -112986,7 +112986,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricValueOutputReference
 ```
@@ -113304,7 +113304,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsOutputReference
 ```
@@ -113613,7 +113613,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorList
 ```
@@ -113773,7 +113773,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorMetricTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorMetricTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorMetricTagsList
 ```
@@ -113933,7 +113933,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorMetricTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorMetricTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorMetricTagsOutputReference
 ```
@@ -114242,7 +114242,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorMetricTagsRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorMetricTagsRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorMetricTagsRuleList
 ```
@@ -114402,7 +114402,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorMetricTagsRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorMetricTagsRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorMetricTagsRuleOutputReference
 ```
@@ -114757,7 +114757,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperList
 ```
@@ -114917,7 +114917,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingList
 ```
@@ -115077,7 +115077,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingList
 ```
@@ -115237,7 +115237,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookupList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookupList
 ```
@@ -115397,7 +115397,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookupOutputReference
 ```
@@ -115735,7 +115735,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookupTableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookupTableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookupTableList
 ```
@@ -115895,7 +115895,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookupTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookupTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookupTableOutputReference
 ```
@@ -116336,7 +116336,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingOutputReference
 ```
@@ -116783,7 +116783,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMetadataList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMetadataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMetadataList
 ```
@@ -116943,7 +116943,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMetadataOutputReference
 ```
@@ -117283,7 +117283,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingOutputReference
 ```
@@ -117656,7 +117656,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingList
 ```
@@ -117816,7 +117816,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingOutputReference
 ```
@@ -118176,7 +118176,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference
 ```
@@ -118514,7 +118514,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorOutputReference
 ```
@@ -120010,7 +120010,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleList
 ```
@@ -120170,7 +120170,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleMatchRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleMatchRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleMatchRuleList
 ```
@@ -120330,7 +120330,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleMatchRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleMatchRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleMatchRuleOutputReference
 ```
@@ -120641,7 +120641,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleOutputReference
 ```
@@ -121014,7 +121014,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleSupportRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleSupportRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleSupportRuleList
 ```
@@ -121174,7 +121174,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleSupportRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleSupportRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleSupportRuleOutputReference
 ```
@@ -121485,7 +121485,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorParseGrokList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorParseGrokList
 ```
@@ -121645,7 +121645,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorParseGrokOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOutputReference
 ```
@@ -122054,7 +122054,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleList
 ```
@@ -122214,7 +122214,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleMatchRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleMatchRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleMatchRuleList
 ```
@@ -122374,7 +122374,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleMatchRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleMatchRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleMatchRuleOutputReference
 ```
@@ -122685,7 +122685,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleOutputReference
 ```
@@ -123058,7 +123058,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleSupportRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleSupportRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleSupportRuleList
 ```
@@ -123218,7 +123218,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleSupportRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleSupportRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleSupportRuleOutputReference
 ```
@@ -123529,7 +123529,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseJsonList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorParseJsonList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorParseJsonList
 ```
@@ -123689,7 +123689,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseJsonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorParseJsonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorParseJsonOutputReference
 ```
@@ -123978,7 +123978,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseXmlList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorParseXmlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorParseXmlList
 ```
@@ -124138,7 +124138,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseXmlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorParseXmlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorParseXmlOutputReference
 ```
@@ -124630,7 +124630,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorQuotaLimitList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorQuotaLimitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorQuotaLimitList
 ```
@@ -124790,7 +124790,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorQuotaLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorQuotaLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorQuotaLimitOutputReference
 ```
@@ -125101,7 +125101,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorQuotaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorQuotaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorQuotaList
 ```
@@ -125261,7 +125261,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorQuotaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorQuotaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorQuotaOutputReference
 ```
@@ -125779,7 +125779,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideFieldList
 ```
@@ -125939,7 +125939,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideFieldOutputReference
 ```
@@ -126250,7 +126250,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimitList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimitList
 ```
@@ -126410,7 +126410,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimitOutputReference
 ```
@@ -126721,7 +126721,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideList
 ```
@@ -126881,7 +126881,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideOutputReference
 ```
@@ -127232,7 +127232,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorReduceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorReduceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorReduceList
 ```
@@ -127392,7 +127392,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategyList
 ```
@@ -127552,7 +127552,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategyOutputReference
 ```
@@ -127863,7 +127863,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorReduceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorReduceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorReduceOutputReference
 ```
@@ -128194,7 +128194,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorRemoveFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorRemoveFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorRemoveFieldsList
 ```
@@ -128354,7 +128354,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorRemoveFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorRemoveFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorRemoveFieldsOutputReference
 ```
@@ -128643,7 +128643,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsFieldList
 ```
@@ -128803,7 +128803,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsFieldOutputReference
 ```
@@ -129136,7 +129136,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsList
 ```
@@ -129296,7 +129296,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsOutputReference
 ```
@@ -129605,7 +129605,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorRenameMetricTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorRenameMetricTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorRenameMetricTagsList
 ```
@@ -129765,7 +129765,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorRenameMetricTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorRenameMetricTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorRenameMetricTagsOutputReference
 ```
@@ -130074,7 +130074,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorRenameMetricTagsTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorRenameMetricTagsTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorRenameMetricTagsTagList
 ```
@@ -130234,7 +130234,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorRenameMetricTagsTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorRenameMetricTagsTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorRenameMetricTagsTagOutputReference
 ```
@@ -130545,7 +130545,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSampleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSampleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSampleList
 ```
@@ -130705,7 +130705,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSampleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSampleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSampleOutputReference
 ```
@@ -131023,7 +131023,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerList
 ```
@@ -131183,7 +131183,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerOutputReference
 ```
@@ -131492,7 +131492,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleKeywordOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleKeywordOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleKeywordOptionsList
 ```
@@ -131652,7 +131652,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleKeywordOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleKeywordOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleKeywordOptionsOutputReference
 ```
@@ -131977,7 +131977,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleList
 ```
@@ -132137,7 +132137,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchHashList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchHashList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchHashList
 ```
@@ -132297,7 +132297,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchHashOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchHashOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchHashOutputReference
 ```
@@ -132564,7 +132564,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchList
 ```
@@ -132724,7 +132724,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchOutputReference
 ```
@@ -133117,7 +133117,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchPartialRedactList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchPartialRedactList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchPartialRedactList
 ```
@@ -133277,7 +133277,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchPartialRedactOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchPartialRedactOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchPartialRedactOutputReference
 ```
@@ -133602,7 +133602,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchRedactList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchRedactList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchRedactList
 ```
@@ -133762,7 +133762,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchRedactOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchRedactOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchRedactOutputReference
 ```
@@ -134058,7 +134058,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOutputReference
 ```
@@ -134544,7 +134544,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternCustomList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternCustomList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternCustomList
 ```
@@ -134704,7 +134704,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternCustomOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternCustomOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternCustomOutputReference
 ```
@@ -135029,7 +135029,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternLibraryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternLibraryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternLibraryList
 ```
@@ -135189,7 +135189,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternLibraryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternLibraryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternLibraryOutputReference
 ```
@@ -135543,7 +135543,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternList
 ```
@@ -135703,7 +135703,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternOutputReference
 ```
@@ -136054,7 +136054,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeExcludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeExcludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeExcludeList
 ```
@@ -136214,7 +136214,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeExcludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeExcludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeExcludeOutputReference
 ```
@@ -136510,7 +136510,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeIncludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeIncludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeIncludeList
 ```
@@ -136670,7 +136670,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeIncludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeIncludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeIncludeOutputReference
 ```
@@ -136966,7 +136966,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeList
 ```
@@ -137126,7 +137126,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeOutputReference
 ```
@@ -137506,7 +137506,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSplitArrayArrayList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSplitArrayArrayList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSplitArrayArrayList
 ```
@@ -137666,7 +137666,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSplitArrayArrayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSplitArrayArrayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSplitArrayArrayOutputReference
 ```
@@ -137977,7 +137977,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSplitArrayList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSplitArrayList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSplitArrayList
 ```
@@ -138137,7 +138137,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSplitArrayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorSplitArrayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorSplitArrayOutputReference
 ```
@@ -138446,7 +138446,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitList
 ```
@@ -138606,7 +138606,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference
 ```
@@ -139001,7 +139001,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitList
 ```
@@ -139161,7 +139161,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitOutputReference
 ```
@@ -139572,7 +139572,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitList
 ```
@@ -139732,7 +139732,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitOutputReference
 ```
@@ -140072,7 +140072,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList
 ```
@@ -140232,7 +140232,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeOutputReference
 ```
@@ -140521,7 +140521,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorThrottleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorThrottleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorThrottleList
 ```
@@ -140681,7 +140681,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorThrottleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigProcessorGroupProcessorThrottleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigProcessorGroupProcessorThrottleOutputReference
 ```
@@ -141021,7 +141021,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonDataFirehoseAuthList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceAmazonDataFirehoseAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigSourceAmazonDataFirehoseAuthList
 ```
@@ -141181,7 +141181,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonDataFirehoseAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceAmazonDataFirehoseAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigSourceAmazonDataFirehoseAuthOutputReference
 ```
@@ -141535,7 +141535,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonDataFirehoseList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceAmazonDataFirehoseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigSourceAmazonDataFirehoseList
 ```
@@ -141695,7 +141695,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonDataFirehoseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceAmazonDataFirehoseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigSourceAmazonDataFirehoseOutputReference
 ```
@@ -142075,7 +142075,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonDataFirehoseTlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceAmazonDataFirehoseTlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigSourceAmazonDataFirehoseTlsList
 ```
@@ -142235,7 +142235,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonDataFirehoseTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceAmazonDataFirehoseTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigSourceAmazonDataFirehoseTlsOutputReference
 ```
@@ -142611,7 +142611,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3AuthList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceAmazonS3AuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigSourceAmazonS3AuthList
 ```
@@ -142771,7 +142771,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3AuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceAmazonS3AuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigSourceAmazonS3AuthOutputReference
 ```
@@ -143125,7 +143125,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3List.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceAmazonS3List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigSourceAmazonS3List
 ```
@@ -143285,7 +143285,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceAmazonS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigSourceAmazonS3OutputReference
 ```
@@ -143716,7 +143716,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3TlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceAmazonS3TlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigSourceAmazonS3TlsList
 ```
@@ -143876,7 +143876,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3TlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceAmazonS3TlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigSourceAmazonS3TlsOutputReference
 ```
@@ -144252,7 +144252,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceDatadogAgentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigSourceDatadogAgentList
 ```
@@ -144412,7 +144412,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceDatadogAgentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigSourceDatadogAgentOutputReference
 ```
@@ -144750,7 +144750,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgentTlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceDatadogAgentTlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigSourceDatadogAgentTlsList
 ```
@@ -144910,7 +144910,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgentTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceDatadogAgentTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigSourceDatadogAgentTlsOutputReference
 ```
@@ -145286,7 +145286,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceFluentBitList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceFluentBitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigSourceFluentBitList
 ```
@@ -145446,7 +145446,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceFluentBitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceFluentBitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigSourceFluentBitOutputReference
 ```
@@ -145784,7 +145784,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceFluentBitTlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceFluentBitTlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigSourceFluentBitTlsList
 ```
@@ -145944,7 +145944,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceFluentBitTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceFluentBitTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigSourceFluentBitTlsOutputReference
 ```
@@ -146349,7 +146349,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceFluentdList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceFluentdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigSourceFluentdList
 ```
@@ -146509,7 +146509,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceFluentdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceFluentdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigSourceFluentdOutputReference
 ```
@@ -146847,7 +146847,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceFluentdTlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceFluentdTlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigSourceFluentdTlsList
 ```
@@ -147007,7 +147007,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceFluentdTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceFluentdTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigSourceFluentdTlsOutputReference
 ```
@@ -147412,7 +147412,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceGooglePubsubAuthList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceGooglePubsubAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigSourceGooglePubsubAuthList
 ```
@@ -147572,7 +147572,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceGooglePubsubAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceGooglePubsubAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigSourceGooglePubsubAuthOutputReference
 ```
@@ -147861,7 +147861,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceGooglePubsubList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceGooglePubsubList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigSourceGooglePubsubList
 ```
@@ -148021,7 +148021,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceGooglePubsubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceGooglePubsubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigSourceGooglePubsubOutputReference
 ```
@@ -148438,7 +148438,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceGooglePubsubTlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceGooglePubsubTlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigSourceGooglePubsubTlsList
 ```
@@ -148598,7 +148598,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceGooglePubsubTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceGooglePubsubTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigSourceGooglePubsubTlsOutputReference
 ```
@@ -148974,7 +148974,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceHttpClientList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigSourceHttpClientList
 ```
@@ -149134,7 +149134,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceHttpClientOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigSourceHttpClientOutputReference
 ```
@@ -149697,7 +149697,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceHttpClientTlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityPipelineConfigSourceHttpClientTlsList
 ```
@@ -149857,7 +149857,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpClientTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/observabilitypipeline"
 
 observabilitypipeline.NewObservabilityPipelineConfigSourceHttpClientTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigSourceHttpClientTlsOutputReference
 ```

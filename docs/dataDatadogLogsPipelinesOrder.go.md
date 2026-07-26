@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogLogsPipelinesOrder.DataDatadogLogsPipelinesOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadoglogspipelinesorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadoglogspipelinesorder"
 
 datadatadoglogspipelinesorder.NewDataDatadogLogsPipelinesOrder(scope Construct, id *string, config DataDatadogLogsPipelinesOrderConfig) DataDatadogLogsPipelinesOrder
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogLogsPipelinesOrder.DataDatadogLogsPipelinesOrder.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadoglogspipelinesorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadoglogspipelinesorder"
 
 datadatadoglogspipelinesorder.DataDatadogLogsPipelinesOrder_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogLogsPipelinesOrder.DataDatadogLogsPipelinesOrder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadoglogspipelinesorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadoglogspipelinesorder"
 
 datadatadoglogspipelinesorder.DataDatadogLogsPipelinesOrder_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadoglogspipelinesorder.DataDatadogLogsPipelinesOrder_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogLogsPipelinesOrder.DataDatadogLogsPipelinesOrder.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadoglogspipelinesorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadoglogspipelinesorder"
 
 datadatadoglogspipelinesorder.DataDatadogLogsPipelinesOrder_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadoglogspipelinesorder.DataDatadogLogsPipelinesOrder_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogLogsPipelinesOrder.DataDatadogLogsPipelinesOrder.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadoglogspipelinesorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadoglogspipelinesorder"
 
 datadatadoglogspipelinesorder.DataDatadogLogsPipelinesOrder_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -587,7 +587,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogLogsPipelinesOrder.DataDatadogLogsPipelinesOrderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadoglogspipelinesorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadoglogspipelinesorder"
 
 &datadatadoglogspipelinesorder.DataDatadogLogsPipelinesOrderConfig {
 	Connection: interface{},
