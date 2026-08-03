@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/apm_retention_filters_order
+// https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/apm_retention_filters_order
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataDatadogApmRetentionFiltersOrderConfig extends cdktn.Terrafo
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/apm_retention_filters_order datadog_apm_retention_filters_order}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/apm_retention_filters_order datadog_apm_retention_filters_order}
 */
 export class DataDatadogApmRetentionFiltersOrder extends cdktn.TerraformDataSource {
 
@@ -31,7 +31,7 @@ export class DataDatadogApmRetentionFiltersOrder extends cdktn.TerraformDataSour
   * Generates CDKTN code for importing a DataDatadogApmRetentionFiltersOrder resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogApmRetentionFiltersOrder to import
-  * @param importFromId The id of the existing DataDatadogApmRetentionFiltersOrder that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/apm_retention_filters_order#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogApmRetentionFiltersOrder that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/apm_retention_filters_order#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogApmRetentionFiltersOrder to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -43,7 +43,7 @@ export class DataDatadogApmRetentionFiltersOrder extends cdktn.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/apm_retention_filters_order datadog_apm_retention_filters_order} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/apm_retention_filters_order datadog_apm_retention_filters_order} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +54,7 @@ export class DataDatadogApmRetentionFiltersOrder extends cdktn.TerraformDataSour
       terraformResourceType: 'datadog_apm_retention_filters_order',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.16.0',
+        providerVersion: '4.17.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

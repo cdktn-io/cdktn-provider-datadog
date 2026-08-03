@@ -45,6 +45,7 @@ Object.defineProperty(exports, 'downtimeSchedule', { get: function () { return r
 Object.defineProperty(exports, 'gcpUcConfig', { get: function () { return require('./gcp-uc-config'); } });
 Object.defineProperty(exports, 'incidentNotificationRule', { get: function () { return require('./incident-notification-rule'); } });
 Object.defineProperty(exports, 'incidentNotificationTemplate', { get: function () { return require('./incident-notification-template'); } });
+Object.defineProperty(exports, 'incidentPostmortemTemplate', { get: function () { return require('./incident-postmortem-template'); } });
 Object.defineProperty(exports, 'incidentType', { get: function () { return require('./incident-type'); } });
 Object.defineProperty(exports, 'incidentUserDefinedField', { get: function () { return require('./incident-user-defined-field'); } });
 Object.defineProperty(exports, 'incidentUserDefinedRole', { get: function () { return require('./incident-user-defined-role'); } });
@@ -206,6 +207,7 @@ Object.defineProperty(exports, 'dataDatadogPowerpack', { get: function () { retu
 Object.defineProperty(exports, 'dataDatadogReferenceTable', { get: function () { return require('./data-datadog-reference-table'); } });
 Object.defineProperty(exports, 'dataDatadogReferenceTableRows', { get: function () { return require('./data-datadog-reference-table-rows'); } });
 Object.defineProperty(exports, 'dataDatadogRole', { get: function () { return require('./data-datadog-role'); } });
+Object.defineProperty(exports, 'dataDatadogRolePermissions', { get: function () { return require('./data-datadog-role-permissions'); } });
 Object.defineProperty(exports, 'dataDatadogRoleUsers', { get: function () { return require('./data-datadog-role-users'); } });
 Object.defineProperty(exports, 'dataDatadogRoles', { get: function () { return require('./data-datadog-roles'); } });
 Object.defineProperty(exports, 'dataDatadogRumApplication', { get: function () { return require('./data-datadog-rum-application'); } });
