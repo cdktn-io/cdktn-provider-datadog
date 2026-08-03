@@ -4,7 +4,7 @@
 
 ### DataDatadogOrganizationSettings <a name="DataDatadogOrganizationSettings" id="@cdktn/provider-datadog.dataDatadogOrganizationSettings.DataDatadogOrganizationSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/organization_settings datadog_organization_settings}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/organization_settings datadog_organization_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogOrganizationSettings.DataDatadogOrganizationSettings.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/organization_settings#settings DataDatadogOrganizationSettings#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/organization_settings#settings DataDatadogOrganizationSettings#settings}
 
 ---
 
@@ -511,7 +511,7 @@ The construct id used in the generated config for the DataDatadogOrganizationSet
 
 The id of the existing DataDatadogOrganizationSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/organization_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/organization_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -864,7 +864,7 @@ settings: IResolvable | typing.List[DataDatadogOrganizationSettingsSettings]
 
 settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/organization_settings#settings DataDatadogOrganizationSettings#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/organization_settings#settings DataDatadogOrganizationSettings#settings}
 
 ---
 
@@ -904,7 +904,7 @@ saml: IResolvable | typing.List[DataDatadogOrganizationSettingsSettingsSaml]
 
 saml block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/organization_settings#saml DataDatadogOrganizationSettings#saml}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/organization_settings#saml DataDatadogOrganizationSettings#saml}
 
 ---
 
@@ -918,7 +918,7 @@ saml_autocreate_users_domains: IResolvable | typing.List[DataDatadogOrganization
 
 saml_autocreate_users_domains block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/organization_settings#saml_autocreate_users_domains DataDatadogOrganizationSettings#saml_autocreate_users_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/organization_settings#saml_autocreate_users_domains DataDatadogOrganizationSettings#saml_autocreate_users_domains}
 
 ---
 
@@ -932,7 +932,7 @@ saml_idp_initiated_login: IResolvable | typing.List[DataDatadogOrganizationSetti
 
 saml_idp_initiated_login block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/organization_settings#saml_idp_initiated_login DataDatadogOrganizationSettings#saml_idp_initiated_login}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/organization_settings#saml_idp_initiated_login DataDatadogOrganizationSettings#saml_idp_initiated_login}
 
 ---
 
@@ -946,7 +946,7 @@ saml_strict_mode: IResolvable | typing.List[DataDatadogOrganizationSettingsSetti
 
 saml_strict_mode block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/organization_settings#saml_strict_mode DataDatadogOrganizationSettings#saml_strict_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/organization_settings#saml_strict_mode DataDatadogOrganizationSettings#saml_strict_mode}
 
 ---
 

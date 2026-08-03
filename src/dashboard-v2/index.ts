@@ -28,23 +28,23 @@ export interface DashboardV2Config extends cdktn.TerraformMetaArguments {
   /**
   * A list of dashboard lists this dashboard belongs to. This attribute should not be set if managing the corresponding dashboard lists using Terraform as it causes inconsistent behavior.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#dashboard_lists DashboardV2#dashboard_lists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#dashboard_lists DashboardV2#dashboard_lists}
   */
   readonly dashboardLists?: number[];
   /**
   * A list of dashboard lists this dashboard should be removed from. Internal only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#dashboard_lists_removed DashboardV2#dashboard_lists_removed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#dashboard_lists_removed DashboardV2#dashboard_lists_removed}
   */
   readonly dashboardListsRemoved?: number[];
   /**
   * The description of the dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#description DashboardV2#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#description DashboardV2#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#id DashboardV2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#id DashboardV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -53,79 +53,79 @@ export interface DashboardV2Config extends cdktn.TerraformMetaArguments {
   /**
   * Whether this dashboard is read-only. **Deprecated.** This field is deprecated and non-functional. Use `restricted_roles` instead to define which roles are required to edit the dashboard. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#is_read_only DashboardV2#is_read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#is_read_only DashboardV2#is_read_only}
   */
   readonly isReadOnly?: boolean | cdktn.IResolvable;
   /**
   * The layout type of the dashboard. Valid values are `ordered`, `free`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#layout_type DashboardV2#layout_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#layout_type DashboardV2#layout_type}
   */
   readonly layoutType: string;
   /**
   * The list of handles for the users to notify when changes are made to this dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#notify_list DashboardV2#notify_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#notify_list DashboardV2#notify_list}
   */
   readonly notifyList?: string[];
   /**
   * The reflow type of a new dashboard layout. Set this only when layout type is `ordered`. If set to `fixed`, the dashboard expects all widgets to have a layout, and if it's set to `auto`, widgets should not have layouts. Valid values are `auto`, `fixed`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#reflow_type DashboardV2#reflow_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#reflow_type DashboardV2#reflow_type}
   */
   readonly reflowType?: string;
   /**
   * A list of role identifiers. Only the author and users associated with at least one of these roles can edit this dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#restricted_roles DashboardV2#restricted_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#restricted_roles DashboardV2#restricted_roles}
   */
   readonly restrictedRoles?: string[];
   /**
   * A list of tags assigned to the Dashboard. Only team names of the form `team:<name>` are supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#tags DashboardV2#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#tags DashboardV2#tags}
   */
   readonly tags?: string[];
   /**
   * The title of the dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#title DashboardV2#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#title DashboardV2#title}
   */
   readonly title: string;
   /**
   * The URL of the dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#url DashboardV2#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#url DashboardV2#url}
   */
   readonly url?: string;
   /**
   * tab block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#tab DashboardV2#tab}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#tab DashboardV2#tab}
   */
   readonly tab?: DashboardV2Tab[] | cdktn.IResolvable;
   /**
   * template_variable block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#template_variable DashboardV2#template_variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#template_variable DashboardV2#template_variable}
   */
   readonly templateVariable?: DashboardV2TemplateVariable[] | cdktn.IResolvable;
   /**
   * template_variable_preset block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#template_variable_preset DashboardV2#template_variable_preset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#template_variable_preset DashboardV2#template_variable_preset}
   */
   readonly templateVariablePreset?: DashboardV2TemplateVariablePreset[] | cdktn.IResolvable;
   /**
   * widget block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#widget DashboardV2#widget}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#widget DashboardV2#widget}
   */
   readonly widget?: DashboardV2Widget[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2 datadog_dashboard_v2}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2 datadog_dashboard_v2}
 */
 export class DashboardV2 extends cdktn.TerraformResource {
 
@@ -141,7 +141,7 @@ export class DashboardV2 extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DashboardV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DashboardV2 to import
-  * @param importFromId The id of the existing DashboardV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DashboardV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DashboardV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -153,7 +153,7 @@ export class DashboardV2 extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2 datadog_dashboard_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2 datadog_dashboard_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -164,7 +164,7 @@ export class DashboardV2 extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_dashboard_v2',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.16.0',
+        providerVersion: '4.17.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -24,11 +24,11 @@ export interface PowerpackV2Config extends cdktn.TerraformMetaArguments {
   /**
   * The description of the powerpack.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#description PowerpackV2#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#description PowerpackV2#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#id PowerpackV2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#id PowerpackV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -37,49 +37,49 @@ export interface PowerpackV2Config extends cdktn.TerraformMetaArguments {
   /**
   * The timeframe to use when displaying the powerpack.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#live_span PowerpackV2#live_span}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#live_span PowerpackV2#live_span}
   */
   readonly liveSpan?: string;
   /**
   * The name for the powerpack.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name?: string;
   /**
   * Whether or not title should be displayed in the powerpack.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#show_title PowerpackV2#show_title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#show_title PowerpackV2#show_title}
   */
   readonly showTitle?: boolean | cdktn.IResolvable;
   /**
   * List of tags to identify this powerpack.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#tags PowerpackV2#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#tags PowerpackV2#tags}
   */
   readonly tags?: string[];
   /**
   * layout block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#layout PowerpackV2#layout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#layout PowerpackV2#layout}
   */
   readonly layout?: PowerpackV2Layout;
   /**
   * template_variables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#template_variables PowerpackV2#template_variables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#template_variables PowerpackV2#template_variables}
   */
   readonly templateVariables?: PowerpackV2TemplateVariables[] | cdktn.IResolvable;
   /**
   * widget block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#widget PowerpackV2#widget}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#widget PowerpackV2#widget}
   */
   readonly widget?: PowerpackV2Widget[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2 datadog_powerpack_v2}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2 datadog_powerpack_v2}
 */
 export class PowerpackV2 extends cdktn.TerraformResource {
 
@@ -95,7 +95,7 @@ export class PowerpackV2 extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a PowerpackV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PowerpackV2 to import
-  * @param importFromId The id of the existing PowerpackV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PowerpackV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PowerpackV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -107,7 +107,7 @@ export class PowerpackV2 extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2 datadog_powerpack_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2 datadog_powerpack_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -118,7 +118,7 @@ export class PowerpackV2 extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_powerpack_v2',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.16.0',
+        providerVersion: '4.17.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

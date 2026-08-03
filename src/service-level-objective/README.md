@@ -1,3 +1,3 @@
 # `datadog_service_level_objective`
 
-Refer to the Terraform Registry for docs: [`datadog_service_level_objective`](https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/service_level_objective).
+Refer to the Terraform Registry for docs: [`datadog_service_level_objective`](https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/service_level_objective).

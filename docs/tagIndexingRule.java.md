@@ -4,7 +4,7 @@
 
 ### TagIndexingRule <a name="TagIndexingRule" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule datadog_tag_indexing_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule datadog_tag_indexing_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRule.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Metric name prefixes (glob patterns) this rule applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#metric_name_matches TagIndexingRule#metric_name_matches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule#metric_name_matches TagIndexingRule#metric_name_matches}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Human-readable name for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#name TagIndexingRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule#name TagIndexingRule#name}
 
 ---
 
@@ -136,7 +136,7 @@ When true, the rule excludes the listed tags and indexes all others.
 
 When false (default), the rule includes only the listed tags. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#exclude_tags_mode TagIndexingRule#exclude_tags_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule#exclude_tags_mode TagIndexingRule#exclude_tags_mode}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Metric name prefixes excluded from the rule's scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#ignored_metric_name_matches TagIndexingRule#ignored_metric_name_matches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule#ignored_metric_name_matches TagIndexingRule#ignored_metric_name_matches}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Versioned configuration options for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#options TagIndexingRule#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule#options TagIndexingRule#options}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Tag keys this rule includes or excludes, depending on exclude_tags_mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#tags TagIndexingRule#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule#tags TagIndexingRule#tags}
 
 ---
 
@@ -656,7 +656,7 @@ The construct id used in the generated config for the TagIndexingRule to import.
 
 The id of the existing TagIndexingRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1173,7 +1173,7 @@ public java.util.List<java.lang.String> getMetricNameMatches();
 
 Metric name prefixes (glob patterns) this rule applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#metric_name_matches TagIndexingRule#metric_name_matches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule#metric_name_matches TagIndexingRule#metric_name_matches}
 
 ---
 
@@ -1187,7 +1187,7 @@ public java.lang.String getName();
 
 Human-readable name for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#name TagIndexingRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule#name TagIndexingRule#name}
 
 ---
 
@@ -1203,7 +1203,7 @@ When true, the rule excludes the listed tags and indexes all others.
 
 When false (default), the rule includes only the listed tags. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#exclude_tags_mode TagIndexingRule#exclude_tags_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule#exclude_tags_mode TagIndexingRule#exclude_tags_mode}
 
 ---
 
@@ -1217,7 +1217,7 @@ public java.util.List<java.lang.String> getIgnoredMetricNameMatches();
 
 Metric name prefixes excluded from the rule's scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#ignored_metric_name_matches TagIndexingRule#ignored_metric_name_matches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule#ignored_metric_name_matches TagIndexingRule#ignored_metric_name_matches}
 
 ---
 
@@ -1231,7 +1231,7 @@ public TagIndexingRuleOptions getOptions();
 
 Versioned configuration options for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#options TagIndexingRule#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule#options TagIndexingRule#options}
 
 ---
 
@@ -1245,7 +1245,7 @@ public java.util.List<java.lang.String> getTags();
 
 Tag keys this rule includes or excludes, depending on exclude_tags_mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#tags TagIndexingRule#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule#tags TagIndexingRule#tags}
 
 ---
 
@@ -1281,7 +1281,7 @@ public TagIndexingRuleOptionsData getData();
 
 Behavioral options for how the rule applies to metrics, including backfill and override behavior.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#data TagIndexingRule#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule#data TagIndexingRule#data}
 
 ---
 
@@ -1295,7 +1295,7 @@ public java.lang.Number getVersion();
 
 Options schema version. Only `1` is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#version TagIndexingRule#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule#version TagIndexingRule#version}
 
 ---
 
@@ -1309,7 +1309,6 @@ import io.cdktn.providers.datadog.tag_indexing_rule.TagIndexingRuleOptionsData;
 TagIndexingRuleOptionsData.builder()
 //  .dynamicTags(TagIndexingRuleOptionsDataDynamicTags)
 //  .managePreexistingMetrics(java.lang.Boolean|IResolvable)
-//  .metricMatch(TagIndexingRuleOptionsDataMetricMatch)
 //  .overridePreviousRules(java.lang.Boolean|IResolvable)
     .build();
 ```
@@ -1318,9 +1317,8 @@ TagIndexingRuleOptionsData.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsData.property.dynamicTags">dynamicTags</a></code> | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTags">TagIndexingRuleOptionsDataDynamicTags</a></code> | Configuration for including dynamically queried tags. |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsData.property.dynamicTags">dynamicTags</a></code> | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTags">TagIndexingRuleOptionsDataDynamicTags</a></code> | Configuration for excluding tags based on dynamic usage signals. Only applies when `exclude_tags_mode` is `true`. |
 | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsData.property.managePreexistingMetrics">managePreexistingMetrics</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | When true, the rule applies to metrics ingested before the rule was created. Defaults to `true`. |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsData.property.metricMatch">metricMatch</a></code> | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatch">TagIndexingRuleOptionsDataMetricMatch</a></code> | Criteria for matching metrics based on query state. |
 | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsData.property.overridePreviousRules">overridePreviousRules</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | When true, this rule's tag list overrides tags configured by earlier rules for the same metric. Defaults to `false`. |
 
 ---
@@ -1333,9 +1331,9 @@ public TagIndexingRuleOptionsDataDynamicTags getDynamicTags();
 
 - *Type:* <a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTags">TagIndexingRuleOptionsDataDynamicTags</a>
 
-Configuration for including dynamically queried tags.
+Configuration for excluding tags based on dynamic usage signals. Only applies when `exclude_tags_mode` is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#dynamic_tags TagIndexingRule#dynamic_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule#dynamic_tags TagIndexingRule#dynamic_tags}
 
 ---
 
@@ -1349,21 +1347,7 @@ public java.lang.Boolean|IResolvable getManagePreexistingMetrics();
 
 When true, the rule applies to metrics ingested before the rule was created. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#manage_preexisting_metrics TagIndexingRule#manage_preexisting_metrics}
-
----
-
-##### `metricMatch`<sup>Optional</sup> <a name="metricMatch" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsData.property.metricMatch"></a>
-
-```java
-public TagIndexingRuleOptionsDataMetricMatch getMetricMatch();
-```
-
-- *Type:* <a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatch">TagIndexingRuleOptionsDataMetricMatch</a>
-
-Criteria for matching metrics based on query state.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#metric_match TagIndexingRule#metric_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule#manage_preexisting_metrics TagIndexingRule#manage_preexisting_metrics}
 
 ---
 
@@ -1377,7 +1361,7 @@ public java.lang.Boolean|IResolvable getOverridePreviousRules();
 
 When true, this rule's tag list overrides tags configured by earlier rules for the same metric. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#override_previous_rules TagIndexingRule#override_previous_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule#override_previous_rules TagIndexingRule#override_previous_rules}
 
 ---
 
@@ -1389,8 +1373,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 import io.cdktn.providers.datadog.tag_indexing_rule.TagIndexingRuleOptionsDataDynamicTags;
 
 TagIndexingRuleOptionsDataDynamicTags.builder()
-//  .queriedTagsWindowSeconds(java.lang.Number)
-//  .relatedAssetTags(java.lang.Boolean|IResolvable)
+//  .excludeNotQueriedWindowSeconds(java.lang.Number)
+//  .excludeNotUsedInAssets(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -1398,134 +1382,38 @@ TagIndexingRuleOptionsDataDynamicTags.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTags.property.queriedTagsWindowSeconds">queriedTagsWindowSeconds</a></code> | <code>java.lang.Number</code> | Lookback window for determining which tags were recently queried. |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTags.property.relatedAssetTags">relatedAssetTags</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | When true, tags from related assets are included. |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTags.property.excludeNotQueriedWindowSeconds">excludeNotQueriedWindowSeconds</a></code> | <code>java.lang.Number</code> | Lookback window, in seconds, for excluding tags that were not queried in that period. |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTags.property.excludeNotUsedInAssets">excludeNotUsedInAssets</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | When true, excludes tags not used in any dashboards or monitors. Requires `exclude_tags_mode` to be `true`. |
 
 ---
 
-##### `queriedTagsWindowSeconds`<sup>Optional</sup> <a name="queriedTagsWindowSeconds" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTags.property.queriedTagsWindowSeconds"></a>
+##### `excludeNotQueriedWindowSeconds`<sup>Optional</sup> <a name="excludeNotQueriedWindowSeconds" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTags.property.excludeNotQueriedWindowSeconds"></a>
 
 ```java
-public java.lang.Number getQueriedTagsWindowSeconds();
+public java.lang.Number getExcludeNotQueriedWindowSeconds();
 ```
 
 - *Type:* java.lang.Number
 
-Lookback window for determining which tags were recently queried.
+Lookback window, in seconds, for excluding tags that were not queried in that period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#queried_tags_window_seconds TagIndexingRule#queried_tags_window_seconds}
+Requires `exclude_tags_mode` to be `true`. Value must be between 1 and 7776000.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule#exclude_not_queried_window_seconds TagIndexingRule#exclude_not_queried_window_seconds}
 
 ---
 
-##### `relatedAssetTags`<sup>Optional</sup> <a name="relatedAssetTags" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTags.property.relatedAssetTags"></a>
+##### `excludeNotUsedInAssets`<sup>Optional</sup> <a name="excludeNotUsedInAssets" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTags.property.excludeNotUsedInAssets"></a>
 
 ```java
-public java.lang.Boolean|IResolvable getRelatedAssetTags();
+public java.lang.Boolean|IResolvable getExcludeNotUsedInAssets();
 ```
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-When true, tags from related assets are included.
+When true, excludes tags not used in any dashboards or monitors. Requires `exclude_tags_mode` to be `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#related_asset_tags TagIndexingRule#related_asset_tags}
-
----
-
-### TagIndexingRuleOptionsDataMetricMatch <a name="TagIndexingRuleOptionsDataMetricMatch" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatch"></a>
-
-#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatch.Initializer"></a>
-
-```java
-import io.cdktn.providers.datadog.tag_indexing_rule.TagIndexingRuleOptionsDataMetricMatch;
-
-TagIndexingRuleOptionsDataMetricMatch.builder()
-//  .isQueried(java.lang.Boolean|IResolvable)
-//  .notQueried(java.lang.Boolean|IResolvable)
-//  .notUsedInAssets(java.lang.Boolean|IResolvable)
-//  .queriedWindowSeconds(java.lang.Number)
-//  .usedInAssets(java.lang.Boolean|IResolvable)
-    .build();
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatch.property.isQueried">isQueried</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Match metrics that are being queried. |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatch.property.notQueried">notQueried</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Match metrics that are not being queried. |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatch.property.notUsedInAssets">notUsedInAssets</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Match metrics not used in any dashboards or monitors. |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatch.property.queriedWindowSeconds">queriedWindowSeconds</a></code> | <code>java.lang.Number</code> | Window in seconds for evaluating query state. |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatch.property.usedInAssets">usedInAssets</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Match metrics used in dashboards or monitors. |
-
----
-
-##### `isQueried`<sup>Optional</sup> <a name="isQueried" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatch.property.isQueried"></a>
-
-```java
-public java.lang.Boolean|IResolvable getIsQueried();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
-Match metrics that are being queried.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#is_queried TagIndexingRule#is_queried}
-
----
-
-##### `notQueried`<sup>Optional</sup> <a name="notQueried" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatch.property.notQueried"></a>
-
-```java
-public java.lang.Boolean|IResolvable getNotQueried();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
-Match metrics that are not being queried.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#not_queried TagIndexingRule#not_queried}
-
----
-
-##### `notUsedInAssets`<sup>Optional</sup> <a name="notUsedInAssets" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatch.property.notUsedInAssets"></a>
-
-```java
-public java.lang.Boolean|IResolvable getNotUsedInAssets();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
-Match metrics not used in any dashboards or monitors.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#not_used_in_assets TagIndexingRule#not_used_in_assets}
-
----
-
-##### `queriedWindowSeconds`<sup>Optional</sup> <a name="queriedWindowSeconds" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatch.property.queriedWindowSeconds"></a>
-
-```java
-public java.lang.Number getQueriedWindowSeconds();
-```
-
-- *Type:* java.lang.Number
-
-Window in seconds for evaluating query state.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#queried_window_seconds TagIndexingRule#queried_window_seconds}
-
----
-
-##### `usedInAssets`<sup>Optional</sup> <a name="usedInAssets" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatch.property.usedInAssets"></a>
-
-```java
-public java.lang.Boolean|IResolvable getUsedInAssets();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
-Match metrics used in dashboards or monitors.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#used_in_assets TagIndexingRule#used_in_assets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule#exclude_not_used_in_assets TagIndexingRule#exclude_not_used_in_assets}
 
 ---
 
@@ -1581,8 +1469,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.resetQueriedTagsWindowSeconds">resetQueriedTagsWindowSeconds</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.resetRelatedAssetTags">resetRelatedAssetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.resetExcludeNotQueriedWindowSeconds">resetExcludeNotQueriedWindowSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.resetExcludeNotUsedInAssets">resetExcludeNotUsedInAssets</a></code> | *No description.* |
 
 ---
 
@@ -1736,16 +1624,16 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetQueriedTagsWindowSeconds` <a name="resetQueriedTagsWindowSeconds" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.resetQueriedTagsWindowSeconds"></a>
+##### `resetExcludeNotQueriedWindowSeconds` <a name="resetExcludeNotQueriedWindowSeconds" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.resetExcludeNotQueriedWindowSeconds"></a>
 
 ```java
-public void resetQueriedTagsWindowSeconds()
+public void resetExcludeNotQueriedWindowSeconds()
 ```
 
-##### `resetRelatedAssetTags` <a name="resetRelatedAssetTags" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.resetRelatedAssetTags"></a>
+##### `resetExcludeNotUsedInAssets` <a name="resetExcludeNotUsedInAssets" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.resetExcludeNotUsedInAssets"></a>
 
 ```java
-public void resetRelatedAssetTags()
+public void resetExcludeNotUsedInAssets()
 ```
 
 
@@ -1755,10 +1643,10 @@ public void resetRelatedAssetTags()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.property.queriedTagsWindowSecondsInput">queriedTagsWindowSecondsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.property.relatedAssetTagsInput">relatedAssetTagsInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.property.queriedTagsWindowSeconds">queriedTagsWindowSeconds</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.property.relatedAssetTags">relatedAssetTags</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.property.excludeNotQueriedWindowSecondsInput">excludeNotQueriedWindowSecondsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.property.excludeNotUsedInAssetsInput">excludeNotUsedInAssetsInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.property.excludeNotQueriedWindowSeconds">excludeNotQueriedWindowSeconds</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.property.excludeNotUsedInAssets">excludeNotUsedInAssets</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTags">TagIndexingRuleOptionsDataDynamicTags</a></code> | *No description.* |
 
 ---
@@ -1787,40 +1675,40 @@ public java.lang.String getFqn();
 
 ---
 
-##### `queriedTagsWindowSecondsInput`<sup>Optional</sup> <a name="queriedTagsWindowSecondsInput" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.property.queriedTagsWindowSecondsInput"></a>
+##### `excludeNotQueriedWindowSecondsInput`<sup>Optional</sup> <a name="excludeNotQueriedWindowSecondsInput" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.property.excludeNotQueriedWindowSecondsInput"></a>
 
 ```java
-public java.lang.Number getQueriedTagsWindowSecondsInput();
+public java.lang.Number getExcludeNotQueriedWindowSecondsInput();
 ```
 
 - *Type:* java.lang.Number
 
 ---
 
-##### `relatedAssetTagsInput`<sup>Optional</sup> <a name="relatedAssetTagsInput" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.property.relatedAssetTagsInput"></a>
+##### `excludeNotUsedInAssetsInput`<sup>Optional</sup> <a name="excludeNotUsedInAssetsInput" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.property.excludeNotUsedInAssetsInput"></a>
 
 ```java
-public java.lang.Boolean|IResolvable getRelatedAssetTagsInput();
+public java.lang.Boolean|IResolvable getExcludeNotUsedInAssetsInput();
 ```
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
 ---
 
-##### `queriedTagsWindowSeconds`<sup>Required</sup> <a name="queriedTagsWindowSeconds" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.property.queriedTagsWindowSeconds"></a>
+##### `excludeNotQueriedWindowSeconds`<sup>Required</sup> <a name="excludeNotQueriedWindowSeconds" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.property.excludeNotQueriedWindowSeconds"></a>
 
 ```java
-public java.lang.Number getQueriedTagsWindowSeconds();
+public java.lang.Number getExcludeNotQueriedWindowSeconds();
 ```
 
 - *Type:* java.lang.Number
 
 ---
 
-##### `relatedAssetTags`<sup>Required</sup> <a name="relatedAssetTags" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.property.relatedAssetTags"></a>
+##### `excludeNotUsedInAssets`<sup>Required</sup> <a name="excludeNotUsedInAssets" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.property.excludeNotUsedInAssets"></a>
 
 ```java
-public java.lang.Boolean|IResolvable getRelatedAssetTags();
+public java.lang.Boolean|IResolvable getExcludeNotUsedInAssets();
 ```
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
@@ -1834,400 +1722,6 @@ public IResolvable|TagIndexingRuleOptionsDataDynamicTags getInternalValue();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTags">TagIndexingRuleOptionsDataDynamicTags</a>
-
----
-
-
-### TagIndexingRuleOptionsDataMetricMatchOutputReference <a name="TagIndexingRuleOptionsDataMetricMatchOutputReference" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.Initializer"></a>
-
-```java
-import io.cdktn.providers.datadog.tag_indexing_rule.TagIndexingRuleOptionsDataMetricMatchOutputReference;
-
-new TagIndexingRuleOptionsDataMetricMatchOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* io.cdktn.cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.resetIsQueried">resetIsQueried</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.resetNotQueried">resetNotQueried</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.resetNotUsedInAssets">resetNotUsedInAssets</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.resetQueriedWindowSeconds">resetQueriedWindowSeconds</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.resetUsedInAssets">resetUsedInAssets</a></code> | *No description.* |
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.computeFqn"></a>
-
-```java
-public java.lang.String computeFqn()
-```
-
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getAnyMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getBooleanAttribute"></a>
-
-```java
-public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getBooleanMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getListAttribute"></a>
-
-```java
-public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getNumberAttribute"></a>
-
-```java
-public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getNumberListAttribute"></a>
-
-```java
-public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getNumberMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getStringAttribute"></a>
-
-```java
-public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getStringMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.interpolationForAttribute"></a>
-
-```java
-public IResolvable interpolationForAttribute(java.lang.String property)
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.resolve"></a>
-
-```java
-public java.lang.Object resolve(IResolveContext _context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.resolve.parameter._context"></a>
-
-- *Type:* io.cdktn.cdktn.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.toString"></a>
-
-```java
-public java.lang.String toString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `resetIsQueried` <a name="resetIsQueried" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.resetIsQueried"></a>
-
-```java
-public void resetIsQueried()
-```
-
-##### `resetNotQueried` <a name="resetNotQueried" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.resetNotQueried"></a>
-
-```java
-public void resetNotQueried()
-```
-
-##### `resetNotUsedInAssets` <a name="resetNotUsedInAssets" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.resetNotUsedInAssets"></a>
-
-```java
-public void resetNotUsedInAssets()
-```
-
-##### `resetQueriedWindowSeconds` <a name="resetQueriedWindowSeconds" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.resetQueriedWindowSeconds"></a>
-
-```java
-public void resetQueriedWindowSeconds()
-```
-
-##### `resetUsedInAssets` <a name="resetUsedInAssets" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.resetUsedInAssets"></a>
-
-```java
-public void resetUsedInAssets()
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.property.isQueriedInput">isQueriedInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.property.notQueriedInput">notQueriedInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.property.notUsedInAssetsInput">notUsedInAssetsInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.property.queriedWindowSecondsInput">queriedWindowSecondsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.property.usedInAssetsInput">usedInAssetsInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.property.isQueried">isQueried</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.property.notQueried">notQueried</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.property.notUsedInAssets">notUsedInAssets</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.property.queriedWindowSeconds">queriedWindowSeconds</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.property.usedInAssets">usedInAssets</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatch">TagIndexingRuleOptionsDataMetricMatch</a></code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.property.creationStack"></a>
-
-```java
-public java.util.List<java.lang.String> getCreationStack();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.property.fqn"></a>
-
-```java
-public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `isQueriedInput`<sup>Optional</sup> <a name="isQueriedInput" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.property.isQueriedInput"></a>
-
-```java
-public java.lang.Boolean|IResolvable getIsQueriedInput();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `notQueriedInput`<sup>Optional</sup> <a name="notQueriedInput" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.property.notQueriedInput"></a>
-
-```java
-public java.lang.Boolean|IResolvable getNotQueriedInput();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `notUsedInAssetsInput`<sup>Optional</sup> <a name="notUsedInAssetsInput" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.property.notUsedInAssetsInput"></a>
-
-```java
-public java.lang.Boolean|IResolvable getNotUsedInAssetsInput();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `queriedWindowSecondsInput`<sup>Optional</sup> <a name="queriedWindowSecondsInput" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.property.queriedWindowSecondsInput"></a>
-
-```java
-public java.lang.Number getQueriedWindowSecondsInput();
-```
-
-- *Type:* java.lang.Number
-
----
-
-##### `usedInAssetsInput`<sup>Optional</sup> <a name="usedInAssetsInput" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.property.usedInAssetsInput"></a>
-
-```java
-public java.lang.Boolean|IResolvable getUsedInAssetsInput();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `isQueried`<sup>Required</sup> <a name="isQueried" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.property.isQueried"></a>
-
-```java
-public java.lang.Boolean|IResolvable getIsQueried();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `notQueried`<sup>Required</sup> <a name="notQueried" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.property.notQueried"></a>
-
-```java
-public java.lang.Boolean|IResolvable getNotQueried();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `notUsedInAssets`<sup>Required</sup> <a name="notUsedInAssets" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.property.notUsedInAssets"></a>
-
-```java
-public java.lang.Boolean|IResolvable getNotUsedInAssets();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `queriedWindowSeconds`<sup>Required</sup> <a name="queriedWindowSeconds" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.property.queriedWindowSeconds"></a>
-
-```java
-public java.lang.Number getQueriedWindowSeconds();
-```
-
-- *Type:* java.lang.Number
-
----
-
-##### `usedInAssets`<sup>Required</sup> <a name="usedInAssets" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.property.usedInAssets"></a>
-
-```java
-public java.lang.Boolean|IResolvable getUsedInAssets();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference.property.internalValue"></a>
-
-```java
-public IResolvable|TagIndexingRuleOptionsDataMetricMatch getInternalValue();
-```
-
-- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatch">TagIndexingRuleOptionsDataMetricMatch</a>
 
 ---
 
@@ -2283,10 +1777,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.putDynamicTags">putDynamicTags</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.putMetricMatch">putMetricMatch</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.resetDynamicTags">resetDynamicTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.resetManagePreexistingMetrics">resetManagePreexistingMetrics</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.resetMetricMatch">resetMetricMatch</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.resetOverridePreviousRules">resetOverridePreviousRules</a></code> | *No description.* |
 
 ---
@@ -2453,18 +1945,6 @@ public void putDynamicTags(TagIndexingRuleOptionsDataDynamicTags value)
 
 ---
 
-##### `putMetricMatch` <a name="putMetricMatch" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.putMetricMatch"></a>
-
-```java
-public void putMetricMatch(TagIndexingRuleOptionsDataMetricMatch value)
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.putMetricMatch.parameter.value"></a>
-
-- *Type:* <a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatch">TagIndexingRuleOptionsDataMetricMatch</a>
-
----
-
 ##### `resetDynamicTags` <a name="resetDynamicTags" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.resetDynamicTags"></a>
 
 ```java
@@ -2475,12 +1955,6 @@ public void resetDynamicTags()
 
 ```java
 public void resetManagePreexistingMetrics()
-```
-
-##### `resetMetricMatch` <a name="resetMetricMatch" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.resetMetricMatch"></a>
-
-```java
-public void resetMetricMatch()
 ```
 
 ##### `resetOverridePreviousRules` <a name="resetOverridePreviousRules" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.resetOverridePreviousRules"></a>
@@ -2497,10 +1971,8 @@ public void resetOverridePreviousRules()
 | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.property.dynamicTags">dynamicTags</a></code> | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference">TagIndexingRuleOptionsDataDynamicTagsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.property.metricMatch">metricMatch</a></code> | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference">TagIndexingRuleOptionsDataMetricMatchOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.property.dynamicTagsInput">dynamicTagsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTags">TagIndexingRuleOptionsDataDynamicTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.property.managePreexistingMetricsInput">managePreexistingMetricsInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.property.metricMatchInput">metricMatchInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatch">TagIndexingRuleOptionsDataMetricMatch</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.property.overridePreviousRulesInput">overridePreviousRulesInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.property.managePreexistingMetrics">managePreexistingMetrics</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.property.overridePreviousRules">overridePreviousRules</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
@@ -2542,16 +2014,6 @@ public TagIndexingRuleOptionsDataDynamicTagsOutputReference getDynamicTags();
 
 ---
 
-##### `metricMatch`<sup>Required</sup> <a name="metricMatch" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.property.metricMatch"></a>
-
-```java
-public TagIndexingRuleOptionsDataMetricMatchOutputReference getMetricMatch();
-```
-
-- *Type:* <a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatchOutputReference">TagIndexingRuleOptionsDataMetricMatchOutputReference</a>
-
----
-
 ##### `dynamicTagsInput`<sup>Optional</sup> <a name="dynamicTagsInput" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.property.dynamicTagsInput"></a>
 
 ```java
@@ -2569,16 +2031,6 @@ public java.lang.Boolean|IResolvable getManagePreexistingMetricsInput();
 ```
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `metricMatchInput`<sup>Optional</sup> <a name="metricMatchInput" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.property.metricMatchInput"></a>
-
-```java
-public IResolvable|TagIndexingRuleOptionsDataMetricMatch getMetricMatchInput();
-```
-
-- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataMetricMatch">TagIndexingRuleOptionsDataMetricMatch</a>
 
 ---
 

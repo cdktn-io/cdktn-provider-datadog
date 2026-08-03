@@ -4,7 +4,7 @@
 
 ### SecurityFindingsMuteRule <a name="SecurityFindingsMuteRule" id="@cdktn/provider-datadog.securityFindingsMuteRule.SecurityFindingsMuteRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rule datadog_security_findings_mute_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rule datadog_security_findings_mute_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityFindingsMuteRule.SecurityFindingsMuteRule.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The action to take when the mute rule matches a finding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rule#action SecurityFindingsMuteRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rule#action SecurityFindingsMuteRule#action}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The name of the mute rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rule#name SecurityFindingsMuteRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rule#name SecurityFindingsMuteRule#name}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Defines the scope of findings to which the automation rule applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rule#rule SecurityFindingsMuteRule#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rule#rule SecurityFindingsMuteRule#rule}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Whether the mute rule is enabled. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rule#enabled SecurityFindingsMuteRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rule#enabled SecurityFindingsMuteRule#enabled}
 
 ---
 
@@ -544,7 +544,7 @@ def put_action(
 
 The reason for muting a security finding. Valid values are `duplicate`, `false_positive`, `no_fix`, `other`, `pending_fix`, `risk_accepted`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rule#reason SecurityFindingsMuteRule#reason}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rule#reason SecurityFindingsMuteRule#reason}
 
 ---
 
@@ -554,7 +554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The Unix timestamp in milliseconds at which the mute expires. If omitted, the mute does not expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rule#expire_at SecurityFindingsMuteRule#expire_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rule#expire_at SecurityFindingsMuteRule#expire_at}
 
 ---
 
@@ -564,7 +564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 An optional description providing more context for the mute reason.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rule#reason_description SecurityFindingsMuteRule#reason_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rule#reason_description SecurityFindingsMuteRule#reason_description}
 
 ---
 
@@ -585,7 +585,7 @@ The list of security finding types that the automation rule applies to.
 
 Valid values are `api_security`, `attack_path`, `host_and_container_vulnerability`, `iac_misconfiguration`, `identity_risk`, `library_vulnerability`, `misconfiguration`, `runtime_code_vulnerability`, `secret`, `static_code_vulnerability`, `workload_activity`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rule#finding_types SecurityFindingsMuteRule#finding_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rule#finding_types SecurityFindingsMuteRule#finding_types}
 
 ---
 
@@ -597,7 +597,7 @@ A search query to further filter the findings matched by this rule.
 
 The `@workflow.*` namespace and `@status` fields are not permitted. For a reference of available fields, see the [Security Findings schema documentation](https://docs.datadoghq.com/security/guide/findings-schema/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rule#query SecurityFindingsMuteRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rule#query SecurityFindingsMuteRule#query}
 
 ---
 
@@ -721,7 +721,7 @@ The construct id used in the generated config for the SecurityFindingsMuteRule t
 
 The id of the existing SecurityFindingsMuteRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1049,7 +1049,7 @@ reason: str
 
 The reason for muting a security finding. Valid values are `duplicate`, `false_positive`, `no_fix`, `other`, `pending_fix`, `risk_accepted`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rule#reason SecurityFindingsMuteRule#reason}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rule#reason SecurityFindingsMuteRule#reason}
 
 ---
 
@@ -1063,7 +1063,7 @@ expire_at: typing.Union[int, float]
 
 The Unix timestamp in milliseconds at which the mute expires. If omitted, the mute does not expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rule#expire_at SecurityFindingsMuteRule#expire_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rule#expire_at SecurityFindingsMuteRule#expire_at}
 
 ---
 
@@ -1077,7 +1077,7 @@ reason_description: str
 
 An optional description providing more context for the mute reason.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rule#reason_description SecurityFindingsMuteRule#reason_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rule#reason_description SecurityFindingsMuteRule#reason_description}
 
 ---
 
@@ -1201,7 +1201,7 @@ action: SecurityFindingsMuteRuleAction
 
 The action to take when the mute rule matches a finding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rule#action SecurityFindingsMuteRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rule#action SecurityFindingsMuteRule#action}
 
 ---
 
@@ -1215,7 +1215,7 @@ name: str
 
 The name of the mute rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rule#name SecurityFindingsMuteRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rule#name SecurityFindingsMuteRule#name}
 
 ---
 
@@ -1229,7 +1229,7 @@ rule: SecurityFindingsMuteRuleRule
 
 Defines the scope of findings to which the automation rule applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rule#rule SecurityFindingsMuteRule#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rule#rule SecurityFindingsMuteRule#rule}
 
 ---
 
@@ -1243,7 +1243,7 @@ enabled: bool | IResolvable
 
 Whether the mute rule is enabled. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rule#enabled SecurityFindingsMuteRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rule#enabled SecurityFindingsMuteRule#enabled}
 
 ---
 
@@ -1281,7 +1281,7 @@ The list of security finding types that the automation rule applies to.
 
 Valid values are `api_security`, `attack_path`, `host_and_container_vulnerability`, `iac_misconfiguration`, `identity_risk`, `library_vulnerability`, `misconfiguration`, `runtime_code_vulnerability`, `secret`, `static_code_vulnerability`, `workload_activity`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rule#finding_types SecurityFindingsMuteRule#finding_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rule#finding_types SecurityFindingsMuteRule#finding_types}
 
 ---
 
@@ -1297,7 +1297,7 @@ A search query to further filter the findings matched by this rule.
 
 The `@workflow.*` namespace and `@status` fields are not permitted. For a reference of available fields, see the [Security Findings schema documentation](https://docs.datadoghq.com/security/guide/findings-schema/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rule#query SecurityFindingsMuteRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rule#query SecurityFindingsMuteRule#query}
 
 ---
 

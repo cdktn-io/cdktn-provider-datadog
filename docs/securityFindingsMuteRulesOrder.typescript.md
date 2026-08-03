@@ -4,7 +4,7 @@
 
 ### SecurityFindingsMuteRulesOrder <a name="SecurityFindingsMuteRulesOrder" id="@cdktn/provider-datadog.securityFindingsMuteRulesOrder.SecurityFindingsMuteRulesOrder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rules_order datadog_security_findings_mute_rules_order}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rules_order datadog_security_findings_mute_rules_order}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityFindingsMuteRulesOrder.SecurityFindingsMuteRulesOrder.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the SecurityFindingsMuteRulesO
 
 The id of the existing SecurityFindingsMuteRulesOrder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rules_order#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rules_order#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -845,7 +845,7 @@ public readonly name: string;
 
 A unique identifier for the order resource. This field has no server-side equivalent; Datadog recommends matching the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rules_order#name SecurityFindingsMuteRulesOrder#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rules_order#name SecurityFindingsMuteRulesOrder#name}
 
 ---
 
@@ -861,7 +861,7 @@ The ordered list of all mute rule IDs.
 
 The order of IDs in this attribute defines the evaluation order of the mute rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rules_order#rule_ids SecurityFindingsMuteRulesOrder#rule_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rules_order#rule_ids SecurityFindingsMuteRulesOrder#rule_ids}
 
 ---
 
