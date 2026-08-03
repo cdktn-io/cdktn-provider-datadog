@@ -4,7 +4,7 @@
 
 ### IncidentType <a name="IncidentType" id="@cdktn/provider-datadog.incidentType.IncidentType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type datadog_incident_type}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_type datadog_incident_type}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.incidentType.IncidentType.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the incident type. Must be between 1 and 50 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#name IncidentType#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_type#name IncidentType#name}
 
 ---
 
@@ -122,7 +122,7 @@ The incident type's behavior settings.
 
 Any field left unset takes its server-side default. This block is applied in a separate call after the incident type is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#configuration IncidentType#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_type#configuration IncidentType#configuration}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Description of the incident type. The description can have a maximum of 512 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#description IncidentType#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_type#description IncidentType#description}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Whether this incident type is the default type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#is_default IncidentType#is_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_type#is_default IncidentType#is_default}
 
 ---
 
@@ -625,7 +625,7 @@ The construct id used in the generated config for the IncidentType to import.
 
 The id of the existing IncidentType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1039,7 +1039,7 @@ public java.lang.String getName();
 
 Name of the incident type. Must be between 1 and 50 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#name IncidentType#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_type#name IncidentType#name}
 
 ---
 
@@ -1055,7 +1055,7 @@ The incident type's behavior settings.
 
 Any field left unset takes its server-side default. This block is applied in a separate call after the incident type is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#configuration IncidentType#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_type#configuration IncidentType#configuration}
 
 ---
 
@@ -1069,7 +1069,7 @@ public java.lang.String getDescription();
 
 Description of the incident type. The description can have a maximum of 512 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#description IncidentType#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_type#description IncidentType#description}
 
 ---
 
@@ -1083,7 +1083,7 @@ public java.lang.Boolean|IResolvable getIsDefault();
 
 Whether this incident type is the default type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#is_default IncidentType#is_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_type#is_default IncidentType#is_default}
 
 ---
 
@@ -1131,7 +1131,7 @@ public java.lang.Boolean|IResolvable getAllowIncidentDeletion();
 
 Whether incidents of this type can be deleted. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#allow_incident_deletion IncidentType#allow_incident_deletion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_type#allow_incident_deletion IncidentType#allow_incident_deletion}
 
 ---
 
@@ -1145,7 +1145,7 @@ public java.lang.Boolean|IResolvable getAllowWorkflows();
 
 Whether users can manually run a workflow from an incident of this type. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#allow_workflows IncidentType#allow_workflows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_type#allow_workflows IncidentType#allow_workflows}
 
 ---
 
@@ -1159,7 +1159,7 @@ public java.lang.String getCreateMessage();
 
 An optional message shown to users when they declare an incident of this type. Defaults to an empty string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#create_message IncidentType#create_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_type#create_message IncidentType#create_message}
 
 ---
 
@@ -1173,7 +1173,7 @@ public java.lang.Boolean|IResolvable getEditableTimestamps();
 
 Whether responders can edit incident timestamps for incidents of this type. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#editable_timestamps IncidentType#editable_timestamps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_type#editable_timestamps IncidentType#editable_timestamps}
 
 ---
 
@@ -1187,7 +1187,7 @@ public java.lang.Boolean|IResolvable getPrivateIncidents();
 
 Whether responders can create private incidents of this type. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#private_incidents IncidentType#private_incidents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_type#private_incidents IncidentType#private_incidents}
 
 ---
 
@@ -1201,7 +1201,7 @@ public java.lang.Boolean|IResolvable getPrivateIncidentsByDefault();
 
 Whether the private toggle is enabled by default in the incident creation modal for this type. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#private_incidents_by_default IncidentType#private_incidents_by_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_type#private_incidents_by_default IncidentType#private_incidents_by_default}
 
 ---
 
@@ -1217,7 +1217,7 @@ The source used to derive the incident slug.
 
 When set to `servicenow`, incidents display the ServiceNow record ID instead of the public ID. If no ServiceNow integration exists, the public ID is displayed. Defaults to `default`. Valid values are `default`, `servicenow`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#slug_source IncidentType#slug_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_type#slug_source IncidentType#slug_source}
 
 ---
 
@@ -1231,7 +1231,7 @@ public java.lang.Boolean|IResolvable getTestIncidents();
 
 Whether test incidents of this type can be created. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type#test_incidents IncidentType#test_incidents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_type#test_incidents IncidentType#test_incidents}
 
 ---
 

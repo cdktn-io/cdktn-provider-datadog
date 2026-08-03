@@ -4,7 +4,7 @@
 
 ### LogsIndex <a name="LogsIndex" id="@cdktn/provider-datadog.logsIndex.LogsIndex"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_index datadog_logs_index}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_index datadog_logs_index}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsIndex.LogsIndex.Initializer"></a>
 
@@ -591,7 +591,7 @@ The construct id used in the generated config for the LogsIndex to import.
 
 The id of the existing LogsIndex that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_index#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_index#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1057,7 +1057,7 @@ const logsIndexConfig: logsIndex.LogsIndexConfig = { ... }
 | <code><a href="#@cdktn/provider-datadog.logsIndex.LogsIndexConfig.property.disableDailyLimit">disableDailyLimit</a></code> | <code>boolean \| cdktn.IResolvable</code> | If true, disables the daily limit and sets `daily_limit` to null. |
 | <code><a href="#@cdktn/provider-datadog.logsIndex.LogsIndexConfig.property.exclusionFilter">exclusionFilter</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.logsIndex.LogsIndexExclusionFilter">LogsIndexExclusionFilter</a>[]</code> | exclusion_filter block. |
 | <code><a href="#@cdktn/provider-datadog.logsIndex.LogsIndexConfig.property.flexRetentionDays">flexRetentionDays</a></code> | <code>number</code> | The total number of days logs are stored in Standard and Flex Tier before being deleted from the index. |
-| <code><a href="#@cdktn/provider-datadog.logsIndex.LogsIndexConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_index#id LogsIndex#id}. |
+| <code><a href="#@cdktn/provider-datadog.logsIndex.LogsIndexConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_index#id LogsIndex#id}. |
 | <code><a href="#@cdktn/provider-datadog.logsIndex.LogsIndexConfig.property.retentionDays">retentionDays</a></code> | <code>number</code> | The number of days logs are stored in Standard Tier before aging into the Flex Tier or being deleted from the index. |
 | <code><a href="#@cdktn/provider-datadog.logsIndex.LogsIndexConfig.property.tags">tags</a></code> | <code>string[]</code> | A list of tags for this index. |
 
@@ -1143,7 +1143,7 @@ public readonly filter: LogsIndexFilter;
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_index#filter LogsIndex#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_index#filter LogsIndex#filter}
 
 ---
 
@@ -1159,7 +1159,7 @@ The name of the index.
 
 Index names cannot be modified after creation. If this value is changed, a new index will be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_index#name LogsIndex#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_index#name LogsIndex#name}
 
 ---
 
@@ -1173,7 +1173,7 @@ public readonly dailyLimit: number;
 
 The number of log events you can send in this index per day before you are rate-limited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_index#daily_limit LogsIndex#daily_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_index#daily_limit LogsIndex#daily_limit}
 
 ---
 
@@ -1187,7 +1187,7 @@ public readonly dailyLimitReset: LogsIndexDailyLimitReset;
 
 daily_limit_reset block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_index#daily_limit_reset LogsIndex#daily_limit_reset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_index#daily_limit_reset LogsIndex#daily_limit_reset}
 
 ---
 
@@ -1201,7 +1201,7 @@ public readonly dailyLimitWarningThresholdPercentage: number;
 
 A percentage threshold of the daily quota at which a Datadog warning event is generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_index#daily_limit_warning_threshold_percentage LogsIndex#daily_limit_warning_threshold_percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_index#daily_limit_warning_threshold_percentage LogsIndex#daily_limit_warning_threshold_percentage}
 
 ---
 
@@ -1217,7 +1217,7 @@ If true, disables the daily limit and sets `daily_limit` to null.
 
 If false, enables the daily limit. When creating an index, if this attribute is omitted, the daily limit is enabled by default. When updating an index, if this attribute is omitted, the existing value is preserved. Providing a `daily_limit` value does not re-enable the limit if it was previously disabled unless `disable_daily_limit` is explicitly set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_index#disable_daily_limit LogsIndex#disable_daily_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_index#disable_daily_limit LogsIndex#disable_daily_limit}
 
 ---
 
@@ -1231,7 +1231,7 @@ public readonly exclusionFilter: IResolvable | LogsIndexExclusionFilter[];
 
 exclusion_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_index#exclusion_filter LogsIndex#exclusion_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_index#exclusion_filter LogsIndex#exclusion_filter}
 
 ---
 
@@ -1245,7 +1245,7 @@ public readonly flexRetentionDays: number;
 
 The total number of days logs are stored in Standard and Flex Tier before being deleted from the index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_index#flex_retention_days LogsIndex#flex_retention_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_index#flex_retention_days LogsIndex#flex_retention_days}
 
 ---
 
@@ -1257,7 +1257,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_index#id LogsIndex#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_index#id LogsIndex#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1274,7 +1274,7 @@ public readonly retentionDays: number;
 
 The number of days logs are stored in Standard Tier before aging into the Flex Tier or being deleted from the index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_index#retention_days LogsIndex#retention_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_index#retention_days LogsIndex#retention_days}
 
 ---
 
@@ -1290,7 +1290,7 @@ A list of tags for this index.
 
 Tags must be in `key:value` format. If default tags are present at the provider level, they will be added to this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_index#tags LogsIndex#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_index#tags LogsIndex#tags}
 
 ---
 
@@ -1325,7 +1325,7 @@ String in `HH:00` format representing the time of day the daily limit should be 
 
 The hours must be between 00 and 23 (inclusive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_index#reset_time LogsIndex#reset_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_index#reset_time LogsIndex#reset_time}
 
 ---
 
@@ -1341,7 +1341,7 @@ String in `(-|+)HH:00` format representing the UTC offset to apply to the given 
 
 The hours must be between -12 and +14 (inclusive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_index#reset_utc_offset LogsIndex#reset_utc_offset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_index#reset_utc_offset LogsIndex#reset_utc_offset}
 
 ---
 
@@ -1375,7 +1375,7 @@ public readonly filter: IResolvable | LogsIndexExclusionFilterFilter[];
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_index#filter LogsIndex#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_index#filter LogsIndex#filter}
 
 ---
 
@@ -1389,7 +1389,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 A boolean stating if the exclusion is active or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_index#is_enabled LogsIndex#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_index#is_enabled LogsIndex#is_enabled}
 
 ---
 
@@ -1403,7 +1403,7 @@ public readonly name: string;
 
 The name of the exclusion filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_index#name LogsIndex#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_index#name LogsIndex#name}
 
 ---
 
@@ -1437,7 +1437,7 @@ public readonly query: string;
 
 Only logs matching the filter criteria and the query of the parent index will be considered for this exclusion filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_index#query LogsIndex#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_index#query LogsIndex#query}
 
 ---
 
@@ -1453,7 +1453,7 @@ The log attribute used as the sampling key.
 
 When present, logs sharing the same value are excluded or kept together at the configured sample rate (a single attribute path, e.g. `@lambda.request_id`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_index#sample_attribute LogsIndex#sample_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_index#sample_attribute LogsIndex#sample_attribute}
 
 ---
 
@@ -1467,7 +1467,7 @@ public readonly sampleRate: number;
 
 The fraction of logs excluded by the exclusion filter, when active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_index#sample_rate LogsIndex#sample_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_index#sample_rate LogsIndex#sample_rate}
 
 ---
 
@@ -1499,7 +1499,7 @@ public readonly query: string;
 
 Logs filter criteria. Only logs matching this filter criteria are considered for this index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_index#query LogsIndex#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_index#query LogsIndex#query}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### SecurityMonitoringCriticalAsset <a name="SecurityMonitoringCriticalAsset" id="@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_monitoring_critical_asset datadog_security_monitoring_critical_asset}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_monitoring_critical_asset datadog_security_monitoring_critical_asset}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityMonitoringCriticalAsset.SecurityMonitoringCriticalAsset.Initializer"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the SecurityMonitoringCritical
 
 The id of the existing SecurityMonitoringCriticalAsset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_monitoring_critical_asset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_monitoring_critical_asset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -974,7 +974,7 @@ The query used to match a critical asset and the associated signals.
 
 Uses the same syntax as the search bar in the Security Signals Explorer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_monitoring_critical_asset#query SecurityMonitoringCriticalAsset#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_monitoring_critical_asset#query SecurityMonitoringCriticalAsset#query}
 
 ---
 
@@ -990,7 +990,7 @@ The rule query to filter which detection rules this critical asset applies to.
 
 Uses the same syntax as the search bar for detection rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_monitoring_critical_asset#rule_query SecurityMonitoringCriticalAsset#rule_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_monitoring_critical_asset#rule_query SecurityMonitoringCriticalAsset#rule_query}
 
 ---
 
@@ -1006,7 +1006,7 @@ The severity change applied to signals matching this critical asset.
 
 Valid values are `critical`, `high`, `medium`, `low`, `info`, `no-op`, `increase`, `decrease`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_monitoring_critical_asset#severity SecurityMonitoringCriticalAsset#severity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_monitoring_critical_asset#severity SecurityMonitoringCriticalAsset#severity}
 
 ---
 
@@ -1020,7 +1020,7 @@ public string Description { get; set; }
 
 A description of the critical asset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_monitoring_critical_asset#description SecurityMonitoringCriticalAsset#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_monitoring_critical_asset#description SecurityMonitoringCriticalAsset#description}
 
 ---
 
@@ -1034,7 +1034,7 @@ public bool|IResolvable Enabled { get; set; }
 
 Whether the critical asset is enabled. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_monitoring_critical_asset#enabled SecurityMonitoringCriticalAsset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_monitoring_critical_asset#enabled SecurityMonitoringCriticalAsset#enabled}
 
 ---
 
@@ -1048,7 +1048,7 @@ public string[] Tags { get; set; }
 
 A list of tags associated with the critical asset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_monitoring_critical_asset#tags SecurityMonitoringCriticalAsset#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_monitoring_critical_asset#tags SecurityMonitoringCriticalAsset#tags}
 
 ---
 

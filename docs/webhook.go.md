@@ -4,7 +4,7 @@
 
 ### Webhook <a name="Webhook" id="@cdktn/provider-datadog.webhook.Webhook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/webhook datadog_webhook}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/webhook datadog_webhook}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.webhook.Webhook.Initializer"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the Webhook to import.
 
 The id of the existing Webhook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/webhook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/webhook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -948,7 +948,7 @@ Name *string
 
 The name of the webhook. It corresponds with `<WEBHOOK_NAME>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/webhook#name Webhook#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/webhook#name Webhook#name}
 
 ---
 
@@ -962,7 +962,7 @@ Url *string
 
 The URL of the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/webhook#url Webhook#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/webhook#url Webhook#url}
 
 ---
 
@@ -976,7 +976,7 @@ CustomHeaders *string
 
 The headers attached to the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/webhook#custom_headers Webhook#custom_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/webhook#custom_headers Webhook#custom_headers}
 
 ---
 
@@ -990,7 +990,7 @@ EncodeAs *string
 
 Encoding type. Valid values are `json`, `form`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/webhook#encode_as Webhook#encode_as}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/webhook#encode_as Webhook#encode_as}
 
 ---
 
@@ -1004,7 +1004,7 @@ Payload *string
 
 The payload of the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/webhook#payload Webhook#payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/webhook#payload Webhook#payload}
 
 ---
 

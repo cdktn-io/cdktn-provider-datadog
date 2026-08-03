@@ -4,7 +4,7 @@
 
 ### IncidentUserDefinedRole <a name="IncidentUserDefinedRole" id="@cdktn/provider-datadog.incidentUserDefinedRole.IncidentUserDefinedRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_user_defined_role datadog_incident_user_defined_role}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_user_defined_role datadog_incident_user_defined_role}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.incidentUserDefinedRole.IncidentUserDefinedRole.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the IncidentUserDefinedRole to
 
 The id of the existing IncidentUserDefinedRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_user_defined_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_user_defined_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -940,7 +940,7 @@ public readonly incidentType: string;
 
 The ID of the incident type this user-defined role is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_user_defined_role#incident_type IncidentUserDefinedRole#incident_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_user_defined_role#incident_type IncidentUserDefinedRole#incident_type}
 
 ---
 
@@ -956,7 +956,7 @@ The name of the user-defined role.
 
 Cannot be a reserved name ("Incident Commander" or "Responder") and must be at most 255 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_user_defined_role#name IncidentUserDefinedRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_user_defined_role#name IncidentUserDefinedRole#name}
 
 ---
 
@@ -970,7 +970,7 @@ public readonly description: string;
 
 A description of the user-defined role. At most 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_user_defined_role#description IncidentUserDefinedRole#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_user_defined_role#description IncidentUserDefinedRole#description}
 
 ---
 
@@ -984,7 +984,7 @@ public readonly policy: IncidentUserDefinedRolePolicy;
 
 Policy configuration for the user-defined role. Defaults to a multi-assignee policy when omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_user_defined_role#policy IncidentUserDefinedRole#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_user_defined_role#policy IncidentUserDefinedRole#policy}
 
 ---
 
@@ -1016,7 +1016,7 @@ public readonly isSingle: boolean | IResolvable;
 
 Whether this role can only be assigned to one responder at a time. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_user_defined_role#is_single IncidentUserDefinedRole#is_single}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_user_defined_role#is_single IncidentUserDefinedRole#is_single}
 
 ---
 
