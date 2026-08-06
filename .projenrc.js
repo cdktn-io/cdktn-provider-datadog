@@ -10,7 +10,7 @@ const project = new CdktnProviderProject({
   // Per-provider V8 heap ceiling from providersWithCustomRunners.json.
   // `undefined` means "take the default for the runner class" -- which is what
   // every provider should use unless it has demonstrably OOMed on the default.
-  nodeHeapSizeMb: 16384,
+  nodeHeapSizeMb: undefined,
   terraformProvider: "DataDog/datadog@~> 4.0",
   cdktnVersion: "^0.23.0",
   constructsVersion: "^10.6.0",
