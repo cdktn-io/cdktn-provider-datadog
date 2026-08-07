@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.deploymentGate.DeploymentGate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/deploymentgate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/deploymentgate"
 
 deploymentgate.NewDeploymentGate(scope Construct, id *string, config DeploymentGateConfig) DeploymentGate
 ```
@@ -340,7 +340,7 @@ func MoveFromId(id *string)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.deploymentGate.DeploymentGate.moveFromId.parameter.id"></a>
 
@@ -434,7 +434,7 @@ func ResetRule()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.deploymentGate.DeploymentGate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/deploymentgate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/deploymentgate"
 
 deploymentgate.DeploymentGate_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.deploymentGate.DeploymentGate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/deploymentgate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/deploymentgate"
 
 deploymentgate.DeploymentGate_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ deploymentgate.DeploymentGate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.deploymentGate.DeploymentGate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/deploymentgate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/deploymentgate"
 
 deploymentgate.DeploymentGate_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ deploymentgate.DeploymentGate_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.deploymentGate.DeploymentGate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/deploymentgate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/deploymentgate"
 
 deploymentgate.DeploymentGate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/deploymentgate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/deploymentgate"
 
 &deploymentgate.DeploymentGateConfig {
 	Connection: interface{},
@@ -1050,13 +1050,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/deploymentgate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/deploymentgate"
 
 &deploymentgate.DeploymentGateRule {
 	Name: *string,
 	Type: *string,
 	DryRun: interface{},
-	Options: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.deploymentGate.DeploymentGateRuleOptions,
+	Options: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.deploymentGate.DeploymentGateRuleOptions,
 }
 ```
 
@@ -1132,7 +1132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/deploymentgate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/deploymentgate"
 
 &deploymentgate.DeploymentGateRuleOptions {
 	Duration: *f64,
@@ -1200,7 +1200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/deploymentgate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/deploymentgate"
 
 deploymentgate.NewDeploymentGateRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentGateRuleList
 ```
@@ -1360,7 +1360,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/deploymentgate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/deploymentgate"
 
 deploymentgate.NewDeploymentGateRuleOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentGateRuleOptionsOutputReference
 ```
@@ -1696,7 +1696,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/deploymentgate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/deploymentgate"
 
 deploymentgate.NewDeploymentGateRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentGateRuleOutputReference
 ```

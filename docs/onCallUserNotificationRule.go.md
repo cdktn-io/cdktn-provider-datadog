@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallUserNotificationRule.OnCallUserNotificationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/oncallusernotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallusernotificationrule"
 
 oncallusernotificationrule.NewOnCallUserNotificationRule(scope Construct, id *string, config OnCallUserNotificationRuleConfig) OnCallUserNotificationRule
 ```
@@ -338,7 +338,7 @@ func MoveFromId(id *string)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.onCallUserNotificationRule.OnCallUserNotificationRule.moveFromId.parameter.id"></a>
 
@@ -420,7 +420,7 @@ func ResetPhone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.onCallUserNotificationRule.OnCallUserNotificationRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/oncallusernotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallusernotificationrule"
 
 oncallusernotificationrule.OnCallUserNotificationRule_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.onCallUserNotificationRule.OnCallUserNotificationRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/oncallusernotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallusernotificationrule"
 
 oncallusernotificationrule.OnCallUserNotificationRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ oncallusernotificationrule.OnCallUserNotificationRule_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.onCallUserNotificationRule.OnCallUserNotificationRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/oncallusernotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallusernotificationrule"
 
 oncallusernotificationrule.OnCallUserNotificationRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ oncallusernotificationrule.OnCallUserNotificationRule_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.onCallUserNotificationRule.OnCallUserNotificationRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/oncallusernotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallusernotificationrule"
 
 oncallusernotificationrule.OnCallUserNotificationRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -830,7 +830,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.onCallUserNotificationRule.OnCallUserNotificationRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/oncallusernotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallusernotificationrule"
 
 &oncallusernotificationrule.OnCallUserNotificationRuleConfig {
 	Connection: interface{},
@@ -844,7 +844,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/oncallusernoti
 	ChannelId: *string,
 	DelayMinutes: *f64,
 	UserId: *string,
-	Phone: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.onCallUserNotificationRule.OnCallUserNotificationRulePhone,
+	Phone: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.onCallUserNotificationRule.OnCallUserNotificationRulePhone,
 }
 ```
 
@@ -1012,7 +1012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.onCallUserNotificationRule.OnCallUserNotificationRulePhone.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/oncallusernotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallusernotificationrule"
 
 &oncallusernotificationrule.OnCallUserNotificationRulePhone {
 	Method: *string,
@@ -1048,7 +1048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallUserNotificationRule.OnCallUserNotificationRulePhoneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/oncallusernotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallusernotificationrule"
 
 oncallusernotificationrule.NewOnCallUserNotificationRulePhoneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OnCallUserNotificationRulePhoneOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsIndexOrder.LogsIndexOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsindexorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logsindexorder"
 
 logsindexorder.NewLogsIndexOrder(scope Construct, id *string, config LogsIndexOrderConfig) LogsIndexOrder
 ```
@@ -338,7 +338,7 @@ func MoveFromId(id *string)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.logsIndexOrder.LogsIndexOrder.moveFromId.parameter.id"></a>
 
@@ -414,7 +414,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.logsIndexOrder.LogsIndexOrder.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsindexorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logsindexorder"
 
 logsindexorder.LogsIndexOrder_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.logsIndexOrder.LogsIndexOrder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsindexorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logsindexorder"
 
 logsindexorder.LogsIndexOrder_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ logsindexorder.LogsIndexOrder_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.logsIndexOrder.LogsIndexOrder.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsindexorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logsindexorder"
 
 logsindexorder.LogsIndexOrder_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ logsindexorder.LogsIndexOrder_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.logsIndexOrder.LogsIndexOrder.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsindexorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logsindexorder"
 
 logsindexorder.LogsIndexOrder_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsindexorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logsindexorder"
 
 &logsindexorder.LogsIndexOrderConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsRestrictionQuery.LogsRestrictionQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsrestrictionquery"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logsrestrictionquery"
 
 logsrestrictionquery.NewLogsRestrictionQuery(scope Construct, id *string, config LogsRestrictionQueryConfig) LogsRestrictionQuery
 ```
@@ -337,7 +337,7 @@ func MoveFromId(id *string)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.logsRestrictionQuery.LogsRestrictionQuery.moveFromId.parameter.id"></a>
 
@@ -407,7 +407,7 @@ func ResetRoleIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.logsRestrictionQuery.LogsRestrictionQuery.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsrestrictionquery"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logsrestrictionquery"
 
 logsrestrictionquery.LogsRestrictionQuery_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.logsRestrictionQuery.LogsRestrictionQuery.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsrestrictionquery"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logsrestrictionquery"
 
 logsrestrictionquery.LogsRestrictionQuery_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ logsrestrictionquery.LogsRestrictionQuery_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.logsRestrictionQuery.LogsRestrictionQuery.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsrestrictionquery"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logsrestrictionquery"
 
 logsrestrictionquery.LogsRestrictionQuery_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ logsrestrictionquery.LogsRestrictionQuery_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.logsRestrictionQuery.LogsRestrictionQuery.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsrestrictionquery"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logsrestrictionquery"
 
 logsrestrictionquery.LogsRestrictionQuery_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsRestrictionQuery.LogsRestrictionQueryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsrestrictionquery"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logsrestrictionquery"
 
 &logsrestrictionquery.LogsRestrictionQueryConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsyntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsyntheticstest"
 
 datadatadogsyntheticstest.NewDataDatadogSyntheticsTest(scope Construct, id *string, config DataDatadogSyntheticsTestConfig) DataDatadogSyntheticsTest
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTest.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsyntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsyntheticstest"
 
 datadatadogsyntheticstest.DataDatadogSyntheticsTest_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTest.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsyntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsyntheticstest"
 
 datadatadogsyntheticstest.DataDatadogSyntheticsTest_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datadatadogsyntheticstest.DataDatadogSyntheticsTest_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTest.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsyntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsyntheticstest"
 
 datadatadogsyntheticstest.DataDatadogSyntheticsTest_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datadatadogsyntheticstest.DataDatadogSyntheticsTest_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTest.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsyntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsyntheticstest"
 
 datadatadogsyntheticstest.DataDatadogSyntheticsTest_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -649,7 +649,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsyntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsyntheticstest"
 
 &datadatadogsyntheticstest.DataDatadogSyntheticsTestConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticsglobalvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/syntheticsglobalvariable"
 
 syntheticsglobalvariable.NewSyntheticsGlobalVariable(scope Construct, id *string, config SyntheticsGlobalVariableConfig) SyntheticsGlobalVariable
 ```
@@ -350,7 +350,7 @@ func MoveFromId(id *string)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.moveFromId.parameter.id"></a>
 
@@ -510,7 +510,7 @@ func ResetValueWoVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticsglobalvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/syntheticsglobalvariable"
 
 syntheticsglobalvariable.SyntheticsGlobalVariable_IsConstruct(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticsglobalvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/syntheticsglobalvariable"
 
 syntheticsglobalvariable.SyntheticsGlobalVariable_IsTerraformElement(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ syntheticsglobalvariable.SyntheticsGlobalVariable_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticsglobalvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/syntheticsglobalvariable"
 
 syntheticsglobalvariable.SyntheticsGlobalVariable_IsTerraformResource(x interface{}) *bool
 ```
@@ -570,7 +570,7 @@ syntheticsglobalvariable.SyntheticsGlobalVariable_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticsglobalvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/syntheticsglobalvariable"
 
 syntheticsglobalvariable.SyntheticsGlobalVariable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1051,7 +1051,9 @@ func Value() *string
 
 ---
 
-##### `ValueWo`<sup>Required</sup> <a name="ValueWo" id="@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.property.valueWo"></a>
+##### ~~`ValueWo`~~<sup>Required</sup> <a name="ValueWo" id="@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.property.valueWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```go
 func ValueWo() *string
@@ -1096,7 +1098,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticsglobalvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/syntheticsglobalvariable"
 
 &syntheticsglobalvariable.SyntheticsGlobalVariableConfig {
 	Connection: interface{},
@@ -1412,7 +1414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticsglobalvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/syntheticsglobalvariable"
 
 &syntheticsglobalvariable.SyntheticsGlobalVariableOptions {
 	TotpParameters: interface{},
@@ -1446,7 +1448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsTotpParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticsglobalvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/syntheticsglobalvariable"
 
 &syntheticsglobalvariable.SyntheticsGlobalVariableOptionsTotpParameters {
 	Digits: *f64,
@@ -1496,7 +1498,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticsglobalvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/syntheticsglobalvariable"
 
 &syntheticsglobalvariable.SyntheticsGlobalVariableParseTestOptions {
 	Type: *string,
@@ -1578,7 +1580,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptionsParser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticsglobalvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/syntheticsglobalvariable"
 
 &syntheticsglobalvariable.SyntheticsGlobalVariableParseTestOptionsParser {
 	Type: *string,
@@ -1630,7 +1632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticsglobalvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/syntheticsglobalvariable"
 
 syntheticsglobalvariable.NewSyntheticsGlobalVariableOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsGlobalVariableOptionsList
 ```
@@ -1790,7 +1792,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticsglobalvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/syntheticsglobalvariable"
 
 syntheticsglobalvariable.NewSyntheticsGlobalVariableOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsGlobalVariableOptionsOutputReference
 ```
@@ -2099,7 +2101,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsTotpParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticsglobalvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/syntheticsglobalvariable"
 
 syntheticsglobalvariable.NewSyntheticsGlobalVariableOptionsTotpParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsGlobalVariableOptionsTotpParametersList
 ```
@@ -2259,7 +2261,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsTotpParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticsglobalvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/syntheticsglobalvariable"
 
 syntheticsglobalvariable.NewSyntheticsGlobalVariableOptionsTotpParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsGlobalVariableOptionsTotpParametersOutputReference
 ```
@@ -2570,7 +2572,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticsglobalvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/syntheticsglobalvariable"
 
 syntheticsglobalvariable.NewSyntheticsGlobalVariableParseTestOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsGlobalVariableParseTestOptionsList
 ```
@@ -2730,7 +2732,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticsglobalvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/syntheticsglobalvariable"
 
 syntheticsglobalvariable.NewSyntheticsGlobalVariableParseTestOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsGlobalVariableParseTestOptionsOutputReference
 ```
@@ -3119,7 +3121,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptionsParserList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticsglobalvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/syntheticsglobalvariable"
 
 syntheticsglobalvariable.NewSyntheticsGlobalVariableParseTestOptionsParserList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsGlobalVariableParseTestOptionsParserList
 ```
@@ -3279,7 +3281,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptionsParserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticsglobalvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/syntheticsglobalvariable"
 
 syntheticsglobalvariable.NewSyntheticsGlobalVariableParseTestOptionsParserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsGlobalVariableParseTestOptionsParserOutputReference
 ```

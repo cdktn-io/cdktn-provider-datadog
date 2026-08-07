@@ -339,7 +339,7 @@ private void MoveFromId(string Id)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.moveFromId.parameter.id"></a>
 
@@ -754,7 +754,9 @@ public string ApiKey { get; }
 
 ---
 
-##### `ApiKeyWo`<sup>Required</sup> <a name="ApiKeyWo" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.property.apiKeyWo"></a>
+##### ~~`ApiKeyWo`~~<sup>Required</sup> <a name="ApiKeyWo" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.property.apiKeyWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```csharp
 public string ApiKeyWo { get; }

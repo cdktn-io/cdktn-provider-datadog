@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationfastlyaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationfastlyaccount"
 
 integrationfastlyaccount.NewIntegrationFastlyAccount(scope Construct, id *string, config IntegrationFastlyAccountConfig) IntegrationFastlyAccount
 ```
@@ -339,7 +339,7 @@ func MoveFromId(id *string)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.moveFromId.parameter.id"></a>
 
@@ -421,7 +421,7 @@ func ResetApiKeyWoVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationfastlyaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationfastlyaccount"
 
 integrationfastlyaccount.IntegrationFastlyAccount_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationfastlyaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationfastlyaccount"
 
 integrationfastlyaccount.IntegrationFastlyAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ integrationfastlyaccount.IntegrationFastlyAccount_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationfastlyaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationfastlyaccount"
 
 integrationfastlyaccount.IntegrationFastlyAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ integrationfastlyaccount.IntegrationFastlyAccount_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationfastlyaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationfastlyaccount"
 
 integrationfastlyaccount.IntegrationFastlyAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -754,7 +754,9 @@ func ApiKey() *string
 
 ---
 
-##### `ApiKeyWo`<sup>Required</sup> <a name="ApiKeyWo" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.property.apiKeyWo"></a>
+##### ~~`ApiKeyWo`~~<sup>Required</sup> <a name="ApiKeyWo" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.property.apiKeyWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```go
 func ApiKeyWo() *string
@@ -809,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationfastlyaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationfastlyaccount"
 
 &integrationfastlyaccount.IntegrationFastlyAccountConfig {
 	Connection: interface{},

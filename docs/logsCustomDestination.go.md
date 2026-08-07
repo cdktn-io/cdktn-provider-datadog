@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestination(scope Construct, id *string, config LogsCustomDestinationConfig) LogsCustomDestination
 ```
@@ -349,7 +349,7 @@ func MoveFromId(id *string)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestination.moveFromId.parameter.id"></a>
 
@@ -515,7 +515,7 @@ func ResetSplunkDestination()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestination.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 logscustomdestination.LogsCustomDestination_IsConstruct(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestination.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 logscustomdestination.LogsCustomDestination_IsTerraformElement(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ logscustomdestination.LogsCustomDestination_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestination.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 logscustomdestination.LogsCustomDestination_IsTerraformResource(x interface{}) *bool
 ```
@@ -575,7 +575,7 @@ logscustomdestination.LogsCustomDestination_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestination.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 logscustomdestination.LogsCustomDestination_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1035,7 +1035,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 &logscustomdestination.LogsCustomDestinationConfig {
 	Connection: interface{},
@@ -1301,7 +1301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 &logscustomdestination.LogsCustomDestinationElasticsearchDestination {
 	Endpoint: *string,
@@ -1393,7 +1393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestinationBasicAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 &logscustomdestination.LogsCustomDestinationElasticsearchDestinationBasicAuth {
 	Password: *string,
@@ -1443,7 +1443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 &logscustomdestination.LogsCustomDestinationHttpDestination {
 	Endpoint: *string,
@@ -1511,7 +1511,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationBasicAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 &logscustomdestination.LogsCustomDestinationHttpDestinationBasicAuth {
 	Password: *string,
@@ -1561,7 +1561,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationCustomHeaderAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 &logscustomdestination.LogsCustomDestinationHttpDestinationCustomHeaderAuth {
 	HeaderName: *string,
@@ -1611,7 +1611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationMicrosoftSentinelDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 &logscustomdestination.LogsCustomDestinationMicrosoftSentinelDestination {
 	ClientId: *string,
@@ -1709,7 +1709,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 &logscustomdestination.LogsCustomDestinationSplunkDestination {
 	AccessToken: *string,
@@ -1777,7 +1777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetype.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 &logscustomdestination.LogsCustomDestinationSplunkDestinationSourcetype {
 	Value: *string,
@@ -1813,7 +1813,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestinationBasicAuthList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationElasticsearchDestinationBasicAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsCustomDestinationElasticsearchDestinationBasicAuthList
 ```
@@ -1973,7 +1973,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestinationBasicAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationElasticsearchDestinationBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LogsCustomDestinationElasticsearchDestinationBasicAuthOutputReference
 ```
@@ -2284,7 +2284,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationElasticsearchDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsCustomDestinationElasticsearchDestinationList
 ```
@@ -2444,7 +2444,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationElasticsearchDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LogsCustomDestinationElasticsearchDestinationOutputReference
 ```
@@ -2826,7 +2826,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationBasicAuthList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationHttpDestinationBasicAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsCustomDestinationHttpDestinationBasicAuthList
 ```
@@ -2986,7 +2986,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationBasicAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationHttpDestinationBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LogsCustomDestinationHttpDestinationBasicAuthOutputReference
 ```
@@ -3297,7 +3297,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationCustomHeaderAuthList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationHttpDestinationCustomHeaderAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsCustomDestinationHttpDestinationCustomHeaderAuthList
 ```
@@ -3457,7 +3457,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationCustomHeaderAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationHttpDestinationCustomHeaderAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LogsCustomDestinationHttpDestinationCustomHeaderAuthOutputReference
 ```
@@ -3768,7 +3768,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationHttpDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsCustomDestinationHttpDestinationList
 ```
@@ -3928,7 +3928,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationHttpDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LogsCustomDestinationHttpDestinationOutputReference
 ```
@@ -4301,7 +4301,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationMicrosoftSentinelDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationMicrosoftSentinelDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsCustomDestinationMicrosoftSentinelDestinationList
 ```
@@ -4461,7 +4461,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationMicrosoftSentinelDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationMicrosoftSentinelDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LogsCustomDestinationMicrosoftSentinelDestinationOutputReference
 ```
@@ -4838,7 +4838,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationSplunkDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsCustomDestinationSplunkDestinationList
 ```
@@ -4998,7 +4998,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationSplunkDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LogsCustomDestinationSplunkDestinationOutputReference
 ```
@@ -5351,7 +5351,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationSplunkDestinationSourcetypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsCustomDestinationSplunkDestinationSourcetypeList
 ```
@@ -5511,7 +5511,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logscustomdestination"
 
 logscustomdestination.NewLogsCustomDestinationSplunkDestinationSourcetypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LogsCustomDestinationSplunkDestinationSourcetypeOutputReference
 ```
