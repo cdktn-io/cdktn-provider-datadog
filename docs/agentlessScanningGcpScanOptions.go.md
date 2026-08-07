@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/agentlessscanninggcpscanoptions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/agentlessscanninggcpscanoptions"
 
 agentlessscanninggcpscanoptions.NewAgentlessScanningGcpScanOptions(scope Construct, id *string, config AgentlessScanningGcpScanOptionsConfig) AgentlessScanningGcpScanOptions
 ```
@@ -337,7 +337,7 @@ func MoveFromId(id *string)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.moveFromId.parameter.id"></a>
 
@@ -407,7 +407,7 @@ func ResetComplianceHost()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/agentlessscanninggcpscanoptions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/agentlessscanninggcpscanoptions"
 
 agentlessscanninggcpscanoptions.AgentlessScanningGcpScanOptions_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/agentlessscanninggcpscanoptions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/agentlessscanninggcpscanoptions"
 
 agentlessscanninggcpscanoptions.AgentlessScanningGcpScanOptions_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ agentlessscanninggcpscanoptions.AgentlessScanningGcpScanOptions_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/agentlessscanninggcpscanoptions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/agentlessscanninggcpscanoptions"
 
 agentlessscanninggcpscanoptions.AgentlessScanningGcpScanOptions_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ agentlessscanninggcpscanoptions.AgentlessScanningGcpScanOptions_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/agentlessscanninggcpscanoptions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/agentlessscanninggcpscanoptions"
 
 agentlessscanninggcpscanoptions.AgentlessScanningGcpScanOptions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -817,7 +817,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/agentlessscanninggcpscanoptions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/agentlessscanninggcpscanoptions"
 
 &agentlessscanninggcpscanoptions.AgentlessScanningGcpScanOptionsConfig {
 	Connection: interface{},

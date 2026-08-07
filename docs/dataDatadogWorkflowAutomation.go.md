@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogWorkflowAutomation.DataDatadogWorkflowAutomation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogworkflowautomation"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogworkflowautomation"
 
 datadatadogworkflowautomation.NewDataDatadogWorkflowAutomation(scope Construct, id *string, config DataDatadogWorkflowAutomationConfig) DataDatadogWorkflowAutomation
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogWorkflowAutomation.DataDatadogWorkflowAutomation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogworkflowautomation"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogworkflowautomation"
 
 datadatadogworkflowautomation.DataDatadogWorkflowAutomation_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogWorkflowAutomation.DataDatadogWorkflowAutomation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogworkflowautomation"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogworkflowautomation"
 
 datadatadogworkflowautomation.DataDatadogWorkflowAutomation_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadogworkflowautomation.DataDatadogWorkflowAutomation_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogWorkflowAutomation.DataDatadogWorkflowAutomation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogworkflowautomation"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogworkflowautomation"
 
 datadatadogworkflowautomation.DataDatadogWorkflowAutomation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogworkflowautomation.DataDatadogWorkflowAutomation_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogWorkflowAutomation.DataDatadogWorkflowAutomation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogworkflowautomation"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogworkflowautomation"
 
 datadatadogworkflowautomation.DataDatadogWorkflowAutomation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -642,7 +642,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogWorkflowAutomation.DataDatadogWorkflowAutomationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogworkflowautomation"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogworkflowautomation"
 
 &datadatadogworkflowautomation.DataDatadogWorkflowAutomationConfig {
 	Connection: interface{},

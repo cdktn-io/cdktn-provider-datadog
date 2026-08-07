@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.csmThreatsPolicy.CsmThreatsPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/csmthreatspolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/csmthreatspolicy"
 
 csmthreatspolicy.NewCsmThreatsPolicy(scope Construct, id *string, config CsmThreatsPolicyConfig) CsmThreatsPolicy
 ```
@@ -340,7 +340,7 @@ func MoveFromId(id *string)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.csmThreatsPolicy.CsmThreatsPolicy.moveFromId.parameter.id"></a>
 
@@ -428,7 +428,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.csmThreatsPolicy.CsmThreatsPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/csmthreatspolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/csmthreatspolicy"
 
 csmthreatspolicy.CsmThreatsPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.csmThreatsPolicy.CsmThreatsPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/csmthreatspolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/csmthreatspolicy"
 
 csmthreatspolicy.CsmThreatsPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ csmthreatspolicy.CsmThreatsPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.csmThreatsPolicy.CsmThreatsPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/csmthreatspolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/csmthreatspolicy"
 
 csmthreatspolicy.CsmThreatsPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ csmthreatspolicy.CsmThreatsPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.csmThreatsPolicy.CsmThreatsPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/csmthreatspolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/csmthreatspolicy"
 
 csmthreatspolicy.CsmThreatsPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -838,7 +838,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.csmThreatsPolicy.CsmThreatsPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/csmthreatspolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/csmthreatspolicy"
 
 &csmthreatspolicy.CsmThreatsPolicyConfig {
 	Connection: interface{},

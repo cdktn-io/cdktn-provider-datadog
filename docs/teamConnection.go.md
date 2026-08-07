@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamConnection.TeamConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamconnection"
 
 teamconnection.NewTeamConnection(scope Construct, id *string, config TeamConnectionConfig) TeamConnection
 ```
@@ -339,7 +339,7 @@ func MoveFromId(id *string)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.teamConnection.TeamConnection.moveFromId.parameter.id"></a>
 
@@ -433,7 +433,7 @@ func ResetSource()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.teamConnection.TeamConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamconnection"
 
 teamconnection.TeamConnection_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.teamConnection.TeamConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamconnection"
 
 teamconnection.TeamConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ teamconnection.TeamConnection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.teamConnection.TeamConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamconnection"
 
 teamconnection.TeamConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ teamconnection.TeamConnection_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.teamConnection.TeamConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamconnection"
 
 teamconnection.TeamConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -799,7 +799,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.teamConnection.TeamConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamconnection"
 
 &teamconnection.TeamConnectionConfig {
 	Connection: interface{},
@@ -809,8 +809,8 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamconnection
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	ConnectedTeam: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.teamConnection.TeamConnectionConnectedTeam,
-	Team: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.teamConnection.TeamConnectionTeam,
+	ConnectedTeam: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.teamConnection.TeamConnectionConnectedTeam,
+	Team: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.teamConnection.TeamConnectionTeam,
 	Source: *string,
 }
 ```
@@ -949,7 +949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.teamConnection.TeamConnectionConnectedTeam.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamconnection"
 
 &teamconnection.TeamConnectionConnectedTeam {
 	Id: *string,
@@ -1002,7 +1002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.teamConnection.TeamConnectionTeam.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamconnection"
 
 &teamconnection.TeamConnectionTeam {
 	Id: *string,
@@ -1057,7 +1057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamConnection.TeamConnectionConnectedTeamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamconnection"
 
 teamconnection.NewTeamConnectionConnectedTeamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamConnectionConnectedTeamOutputReference
 ```
@@ -1350,7 +1350,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamConnection.TeamConnectionTeamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamconnection"
 
 teamconnection.NewTeamConnectionTeamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamConnectionTeamOutputReference
 ```

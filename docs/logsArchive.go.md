@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsArchive.LogsArchive.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsarchive"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logsarchive"
 
 logsarchive.NewLogsArchive(scope Construct, id *string, config LogsArchiveConfig) LogsArchive
 ```
@@ -349,7 +349,7 @@ func MoveFromId(id *string)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.logsArchive.LogsArchive.moveFromId.parameter.id"></a>
 
@@ -509,7 +509,7 @@ func ResetS3Archive()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.logsArchive.LogsArchive.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsarchive"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logsarchive"
 
 logsarchive.LogsArchive_IsConstruct(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.logsArchive.LogsArchive.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsarchive"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logsarchive"
 
 logsarchive.LogsArchive_IsTerraformElement(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ logsarchive.LogsArchive_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.logsArchive.LogsArchive.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsarchive"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logsarchive"
 
 logsarchive.LogsArchive_IsTerraformResource(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ logsarchive.LogsArchive_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.logsArchive.LogsArchive.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsarchive"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logsarchive"
 
 logsarchive.LogsArchive_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1062,7 +1062,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsArchive.LogsArchiveAzureArchive.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsarchive"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logsarchive"
 
 &logsarchive.LogsArchiveAzureArchive {
 	ClientId: *string,
@@ -1160,7 +1160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsArchive.LogsArchiveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsarchive"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logsarchive"
 
 &logsarchive.LogsArchiveConfig {
 	Connection: interface{},
@@ -1172,16 +1172,16 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsarchive"
 	Provisioners: *[]interface{},
 	Name: *string,
 	Query: *string,
-	AzureArchive: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.logsArchive.LogsArchiveAzureArchive,
+	AzureArchive: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.logsArchive.LogsArchiveAzureArchive,
 	CompressionMethod: *string,
-	GcsArchive: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.logsArchive.LogsArchiveGcsArchive,
+	GcsArchive: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.logsArchive.LogsArchiveGcsArchive,
 	Id: *string,
 	IncludeTags: interface{},
 	LookupAttributes: *[]*string,
 	PartitioningAttributes: *[]*string,
 	RehydrationMaxScanSizeInGb: *f64,
 	RehydrationTags: *[]*string,
-	S3Archive: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.logsArchive.LogsArchiveS3Archive,
+	S3Archive: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.logsArchive.LogsArchiveS3Archive,
 }
 ```
 
@@ -1459,7 +1459,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsArchive.LogsArchiveGcsArchive.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsarchive"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logsarchive"
 
 &logsarchive.LogsArchiveGcsArchive {
 	Bucket: *string,
@@ -1541,7 +1541,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsarchive"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logsarchive"
 
 &logsarchive.LogsArchiveS3Archive {
 	Bucket: *string,
@@ -1691,7 +1691,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsArchive.LogsArchiveAzureArchiveOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsarchive"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logsarchive"
 
 logsarchive.NewLogsArchiveAzureArchiveOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsArchiveAzureArchiveOutputReference
 ```
@@ -2057,7 +2057,7 @@ func InternalValue() LogsArchiveAzureArchive
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsArchive.LogsArchiveGcsArchiveOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsarchive"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logsarchive"
 
 logsarchive.NewLogsArchiveGcsArchiveOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsArchiveGcsArchiveOutputReference
 ```
@@ -2408,7 +2408,7 @@ func InternalValue() LogsArchiveGcsArchive
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsarchive"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/logsarchive"
 
 logsarchive.NewLogsArchiveS3ArchiveOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsArchiveS3ArchiveOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitors"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogmonitors"
 
 datadatadogmonitors.NewDataDatadogMonitors(scope Construct, id *string, config DataDatadogMonitorsConfig) DataDatadogMonitors
 ```
@@ -326,7 +326,7 @@ func ResetTagsFilter()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitors.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitors"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogmonitors"
 
 datadatadogmonitors.DataDatadogMonitors_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitors.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitors"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogmonitors"
 
 datadatadogmonitors.DataDatadogMonitors_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datadatadogmonitors.DataDatadogMonitors_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitors.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitors"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogmonitors"
 
 datadatadogmonitors.DataDatadogMonitors_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ datadatadogmonitors.DataDatadogMonitors_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitors.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitors"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogmonitors"
 
 datadatadogmonitors.DataDatadogMonitors_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -692,7 +692,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitorsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitors"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogmonitors"
 
 &datadatadogmonitors.DataDatadogMonitorsConfig {
 	Connection: interface{},
@@ -859,7 +859,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitorsMonitors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitors"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogmonitors"
 
 &datadatadogmonitors.DataDatadogMonitorsMonitors {
 
@@ -874,7 +874,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmon
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitorsMonitorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitors"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogmonitors"
 
 datadatadogmonitors.NewDataDatadogMonitorsMonitorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogMonitorsMonitorsList
 ```
@@ -1023,7 +1023,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitorsMonitorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitors"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogmonitors"
 
 datadatadogmonitors.NewDataDatadogMonitorsMonitorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogMonitorsMonitorsOutputReference
 ```

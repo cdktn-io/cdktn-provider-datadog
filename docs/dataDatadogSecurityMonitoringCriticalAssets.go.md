@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAssets.DataDatadogSecurityMonitoringCriticalAssets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsecuritymonitoringcriticalassets"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsecuritymonitoringcriticalassets"
 
 datadatadogsecuritymonitoringcriticalassets.NewDataDatadogSecurityMonitoringCriticalAssets(scope Construct, id *string, config DataDatadogSecurityMonitoringCriticalAssetsConfig) DataDatadogSecurityMonitoringCriticalAssets
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAssets.DataDatadogSecurityMonitoringCriticalAssets.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsecuritymonitoringcriticalassets"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsecuritymonitoringcriticalassets"
 
 datadatadogsecuritymonitoringcriticalassets.DataDatadogSecurityMonitoringCriticalAssets_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAssets.DataDatadogSecurityMonitoringCriticalAssets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsecuritymonitoringcriticalassets"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsecuritymonitoringcriticalassets"
 
 datadatadogsecuritymonitoringcriticalassets.DataDatadogSecurityMonitoringCriticalAssets_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadogsecuritymonitoringcriticalassets.DataDatadogSecurityMonitoringCritica
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAssets.DataDatadogSecurityMonitoringCriticalAssets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsecuritymonitoringcriticalassets"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsecuritymonitoringcriticalassets"
 
 datadatadogsecuritymonitoringcriticalassets.DataDatadogSecurityMonitoringCriticalAssets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogsecuritymonitoringcriticalassets.DataDatadogSecurityMonitoringCritica
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAssets.DataDatadogSecurityMonitoringCriticalAssets.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsecuritymonitoringcriticalassets"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsecuritymonitoringcriticalassets"
 
 datadatadogsecuritymonitoringcriticalassets.DataDatadogSecurityMonitoringCriticalAssets_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -587,7 +587,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAssets.DataDatadogSecurityMonitoringCriticalAssetsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsecuritymonitoringcriticalassets"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsecuritymonitoringcriticalassets"
 
 &datadatadogsecuritymonitoringcriticalassets.DataDatadogSecurityMonitoringCriticalAssetsConfig {
 	Connection: interface{},
@@ -689,7 +689,7 @@ Provisioners *[]interface{}
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAssets.DataDatadogSecurityMonitoringCriticalAssetsCriticalAssets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsecuritymonitoringcriticalassets"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsecuritymonitoringcriticalassets"
 
 &datadatadogsecuritymonitoringcriticalassets.DataDatadogSecurityMonitoringCriticalAssetsCriticalAssets {
 
@@ -704,7 +704,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsec
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAssets.DataDatadogSecurityMonitoringCriticalAssetsCriticalAssetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsecuritymonitoringcriticalassets"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsecuritymonitoringcriticalassets"
 
 datadatadogsecuritymonitoringcriticalassets.NewDataDatadogSecurityMonitoringCriticalAssetsCriticalAssetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogSecurityMonitoringCriticalAssetsCriticalAssetsList
 ```
@@ -853,7 +853,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAssets.DataDatadogSecurityMonitoringCriticalAssetsCriticalAssetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsecuritymonitoringcriticalassets"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsecuritymonitoringcriticalassets"
 
 datadatadogsecuritymonitoringcriticalassets.NewDataDatadogSecurityMonitoringCriticalAssetsCriticalAssetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogSecurityMonitoringCriticalAssetsCriticalAssetsOutputReference
 ```

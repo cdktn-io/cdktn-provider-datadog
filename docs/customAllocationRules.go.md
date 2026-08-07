@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.customAllocationRules.CustomAllocationRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/customallocationrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/customallocationrules"
 
 customallocationrules.NewCustomAllocationRules(scope Construct, id *string, config CustomAllocationRulesConfig) CustomAllocationRules
 ```
@@ -337,7 +337,7 @@ func MoveFromId(id *string)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.customAllocationRules.CustomAllocationRules.moveFromId.parameter.id"></a>
 
@@ -407,7 +407,7 @@ func ResetOverrideUiDefinedResources()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.customAllocationRules.CustomAllocationRules.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/customallocationrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/customallocationrules"
 
 customallocationrules.CustomAllocationRules_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.customAllocationRules.CustomAllocationRules.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/customallocationrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/customallocationrules"
 
 customallocationrules.CustomAllocationRules_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ customallocationrules.CustomAllocationRules_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.customAllocationRules.CustomAllocationRules.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/customallocationrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/customallocationrules"
 
 customallocationrules.CustomAllocationRules_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ customallocationrules.CustomAllocationRules_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.customAllocationRules.CustomAllocationRules.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/customallocationrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/customallocationrules"
 
 customallocationrules.CustomAllocationRules_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.customAllocationRules.CustomAllocationRulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/customallocationrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/customallocationrules"
 
 &customallocationrules.CustomAllocationRulesConfig {
 	Connection: interface{},

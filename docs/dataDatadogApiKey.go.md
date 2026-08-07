@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogapikey"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogapikey"
 
 datadatadogapikey.NewDataDatadogApiKey(scope Construct, id *string, config DataDatadogApiKeyConfig) DataDatadogApiKey
 ```
@@ -319,7 +319,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogapikey"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogapikey"
 
 datadatadogapikey.DataDatadogApiKey_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogapikey"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogapikey"
 
 datadatadogapikey.DataDatadogApiKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datadatadogapikey.DataDatadogApiKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogapikey"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogapikey"
 
 datadatadogapikey.DataDatadogApiKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datadatadogapikey.DataDatadogApiKey_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogapikey"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogapikey"
 
 datadatadogapikey.DataDatadogApiKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -674,7 +674,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogApiKey.DataDatadogApiKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogapikey"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogapikey"
 
 &datadatadogapikey.DataDatadogApiKeyConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamLink.TeamLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamlink"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamlink"
 
 teamlink.NewTeamLink(scope Construct, id *string, config TeamLinkConfig) TeamLink
 ```
@@ -337,7 +337,7 @@ func MoveFromId(id *string)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.teamLink.TeamLink.moveFromId.parameter.id"></a>
 
@@ -407,7 +407,7 @@ func ResetPosition()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.teamLink.TeamLink.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamlink"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamlink"
 
 teamlink.TeamLink_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.teamLink.TeamLink.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamlink"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamlink"
 
 teamlink.TeamLink_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ teamlink.TeamLink_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.teamLink.TeamLink.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamlink"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamlink"
 
 teamlink.TeamLink_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ teamlink.TeamLink_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.teamLink.TeamLink.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamlink"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamlink"
 
 teamlink.TeamLink_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -795,7 +795,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.teamLink.TeamLinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamlink"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamlink"
 
 &teamlink.TeamLinkConfig {
 	Connection: interface{},

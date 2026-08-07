@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.Powerpack.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpack(scope Construct, id *string, config PowerpackConfig) Powerpack
 ```
@@ -348,7 +348,7 @@ func MoveFromId(id *string)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.powerpack.Powerpack.moveFromId.parameter.id"></a>
 
@@ -502,7 +502,7 @@ func ResetWidget()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.powerpack.Powerpack.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.Powerpack_IsConstruct(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.powerpack.Powerpack.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.Powerpack_IsTerraformElement(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ powerpack.Powerpack_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.powerpack.Powerpack.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.Powerpack_IsTerraformResource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ powerpack.Powerpack_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.powerpack.Powerpack.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.Powerpack_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -989,7 +989,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackConfig {
 	Connection: interface{},
@@ -1001,7 +1001,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
 	Provisioners: *[]interface{},
 	Description: *string,
 	Id: *string,
-	Layout: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackLayout,
+	Layout: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackLayout,
 	LiveSpan: *string,
 	Name: *string,
 	ShowTitle: interface{},
@@ -1238,7 +1238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackLayout.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackLayout {
 	Height: *f64,
@@ -1320,7 +1320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackTemplateVariables.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackTemplateVariables {
 	Name: *string,
@@ -1372,40 +1372,40 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidget {
-	AlertGraphDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetAlertGraphDefinition,
-	AlertValueDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetAlertValueDefinition,
-	ChangeDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinition,
-	CheckStatusDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetCheckStatusDefinition,
-	DistributionDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetDistributionDefinition,
-	EventStreamDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetEventStreamDefinition,
-	EventTimelineDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetEventTimelineDefinition,
-	FreeTextDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetFreeTextDefinition,
-	GeomapDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinition,
-	HeatmapDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinition,
-	HostmapDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinition,
-	IframeDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetIframeDefinition,
-	ImageDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetImageDefinition,
-	ListStreamDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetListStreamDefinition,
-	LogStreamDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetLogStreamDefinition,
-	ManageStatusDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetManageStatusDefinition,
-	NoteDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetNoteDefinition,
-	QueryTableDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinition,
-	QueryValueDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinition,
-	RunWorkflowDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetRunWorkflowDefinition,
-	ScatterplotDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinition,
-	ServiceLevelObjectiveDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetServiceLevelObjectiveDefinition,
-	ServicemapDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetServicemapDefinition,
-	SloListDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSloListDefinition,
-	SunburstDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinition,
-	TimeseriesDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinition,
-	ToplistDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinition,
-	TopologyMapDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTopologyMapDefinition,
-	TraceServiceDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTraceServiceDefinition,
-	TreemapDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTreemapDefinition,
-	WidgetLayout: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetWidgetLayout,
+	AlertGraphDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetAlertGraphDefinition,
+	AlertValueDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetAlertValueDefinition,
+	ChangeDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinition,
+	CheckStatusDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetCheckStatusDefinition,
+	DistributionDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetDistributionDefinition,
+	EventStreamDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetEventStreamDefinition,
+	EventTimelineDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetEventTimelineDefinition,
+	FreeTextDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetFreeTextDefinition,
+	GeomapDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinition,
+	HeatmapDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinition,
+	HostmapDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinition,
+	IframeDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetIframeDefinition,
+	ImageDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetImageDefinition,
+	ListStreamDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetListStreamDefinition,
+	LogStreamDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetLogStreamDefinition,
+	ManageStatusDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetManageStatusDefinition,
+	NoteDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetNoteDefinition,
+	QueryTableDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinition,
+	QueryValueDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinition,
+	RunWorkflowDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetRunWorkflowDefinition,
+	ScatterplotDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinition,
+	ServiceLevelObjectiveDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetServiceLevelObjectiveDefinition,
+	ServicemapDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetServicemapDefinition,
+	SloListDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSloListDefinition,
+	SunburstDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinition,
+	TimeseriesDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinition,
+	ToplistDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinition,
+	TopologyMapDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTopologyMapDefinition,
+	TraceServiceDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTraceServiceDefinition,
+	TreemapDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTreemapDefinition,
+	WidgetLayout: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetWidgetLayout,
 }
 ```
 
@@ -1886,7 +1886,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetAlertGraphDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetAlertGraphDefinition {
 	AlertId: *string,
@@ -2018,7 +2018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetAlertValueDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetAlertValueDefinition {
 	AlertId: *string,
@@ -2164,7 +2164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinition {
 	CustomLink: interface{},
@@ -2312,7 +2312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionCustomLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionCustomLink {
 	IsHidden: interface{},
@@ -2396,22 +2396,22 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequest {
-	ApmQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestApmQuery,
+	ApmQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestApmQuery,
 	ChangeType: *string,
 	CompareTo: *string,
 	Formula: interface{},
 	IncreaseGood: interface{},
-	LogQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestLogQuery,
+	LogQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestLogQuery,
 	OrderBy: *string,
 	OrderDir: *string,
-	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestProcessQuery,
+	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestProcessQuery,
 	Q: *string,
 	Query: interface{},
-	RumQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestRumQuery,
-	SecurityQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQuery,
+	RumQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestRumQuery,
+	SecurityQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQuery,
 	ShowPresent: interface{},
 }
 ```
@@ -2638,11 +2638,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestApmQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -2736,7 +2736,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryComputeQuery {
 	Aggregation: *string,
@@ -2802,12 +2802,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQuery,
 }
 ```
 
@@ -2868,7 +2868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -2934,7 +2934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryMultiCompute {
 	Aggregation: *string,
@@ -3000,16 +3000,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormula.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestFormula {
 	FormulaExpression: *string,
 	Alias: *string,
 	CellDisplayMode: *string,
 	ConditionalFormats: interface{},
-	Limit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaLimit,
-	NumberFormat: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormat,
-	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaStyle,
+	Limit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaLimit,
+	NumberFormat: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormat,
+	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaStyle,
 }
 ```
 
@@ -3130,7 +3130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormats.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormats {
 	Comparator: *string,
@@ -3294,7 +3294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestFormulaLimit {
 	Count: *f64,
@@ -3344,11 +3344,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormat {
-	Unit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnit,
-	UnitScale: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitScale,
+	Unit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnit,
+	UnitScale: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitScale,
 }
 ```
 
@@ -3394,11 +3394,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnit {
-	Canonical: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCanonical,
-	Custom: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCustom,
+	Canonical: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCanonical,
+	Custom: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCustom,
 }
 ```
 
@@ -3444,7 +3444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCanonical.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCanonical {
 	UnitName: *string,
@@ -3494,7 +3494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCustom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCustom {
 	Label: *string,
@@ -3528,7 +3528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitScale.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitScale {
 	UnitName: *string,
@@ -3560,7 +3560,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaStyle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestFormulaStyle {
 	Palette: *string,
@@ -3612,11 +3612,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestLogQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -3710,7 +3710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryComputeQuery {
 	Aggregation: *string,
@@ -3776,12 +3776,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryGroupBySortQuery,
 }
 ```
 
@@ -3842,7 +3842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -3908,7 +3908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryMultiCompute {
 	Aggregation: *string,
@@ -3974,7 +3974,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestProcessQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestProcessQuery {
 	Metric: *string,
@@ -4056,16 +4056,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestQuery {
-	ApmDependencyStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestQueryApmDependencyStatsQuery,
-	ApmResourceStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestQueryApmResourceStatsQuery,
-	CloudCostQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestQueryCloudCostQuery,
-	EventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQuery,
-	MetricQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestQueryMetricQuery,
-	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestQueryProcessQuery,
-	SloQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestQuerySloQuery,
+	ApmDependencyStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestQueryApmDependencyStatsQuery,
+	ApmResourceStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestQueryApmResourceStatsQuery,
+	CloudCostQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestQueryCloudCostQuery,
+	EventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQuery,
+	MetricQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestQueryMetricQuery,
+	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestQueryProcessQuery,
+	SloQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestQuerySloQuery,
 }
 ```
 
@@ -4186,7 +4186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryApmDependencyStatsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestQueryApmDependencyStatsQuery {
 	DataSource: *string,
@@ -4380,7 +4380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryApmResourceStatsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestQueryApmResourceStatsQuery {
 	DataSource: *string,
@@ -4574,7 +4574,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryCloudCostQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestQueryCloudCostQuery {
 	DataSource: *string,
@@ -4672,7 +4672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQuery {
 	Compute: interface{},
@@ -4680,9 +4680,9 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
 	Name: *string,
 	CrossOrgUuids: *[]*string,
 	GroupBy: interface{},
-	GroupByFields: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByFields,
+	GroupByFields: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByFields,
 	Indexes: *[]*string,
-	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQuerySearch,
+	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQuerySearch,
 	Storage: *string,
 }
 ```
@@ -4836,7 +4836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryCompute {
 	Aggregation: *string,
@@ -4904,12 +4904,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBySort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBySort,
 }
 ```
 
@@ -4970,12 +4970,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByFields {
 	Fields: *[]*string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByFieldsSort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByFieldsSort,
 }
 ```
 
@@ -5036,7 +5036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByFieldsSort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByFieldsSort {
 	Aggregation: *string,
@@ -5104,7 +5104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBySort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBySort {
 	Aggregation: *string,
@@ -5172,7 +5172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQuerySearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQuerySearch {
 	Query: *string,
@@ -5206,7 +5206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryMetricQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestQueryMetricQuery {
 	Name: *string,
@@ -5322,7 +5322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryProcessQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestQueryProcessQuery {
 	DataSource: *string,
@@ -5500,7 +5500,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQuerySloQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestQuerySloQuery {
 	DataSource: *string,
@@ -5646,11 +5646,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestRumQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -5744,7 +5744,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryComputeQuery {
 	Aggregation: *string,
@@ -5810,12 +5810,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryGroupBySortQuery,
 }
 ```
 
@@ -5876,7 +5876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -5942,7 +5942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryMultiCompute {
 	Aggregation: *string,
@@ -6008,11 +6008,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -6106,7 +6106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryComputeQuery {
 	Aggregation: *string,
@@ -6172,12 +6172,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupBySortQuery,
 }
 ```
 
@@ -6238,7 +6238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -6304,7 +6304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryMultiCompute {
 	Aggregation: *string,
@@ -6370,7 +6370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetCheckStatusDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetCheckStatusDefinition {
 	Check: *string,
@@ -6550,7 +6550,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinition {
 	Description: *string,
@@ -6562,8 +6562,8 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
 	Title: *string,
 	TitleAlign: *string,
 	TitleSize: *string,
-	Xaxis: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetDistributionDefinitionXaxis,
-	Yaxis: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetDistributionDefinitionYaxis,
+	Xaxis: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetDistributionDefinitionXaxis,
+	Yaxis: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetDistributionDefinitionYaxis,
 }
 ```
 
@@ -6746,17 +6746,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionRequest {
-	ApmQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQuery,
-	ApmStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetDistributionDefinitionRequestApmStatsQuery,
-	LogQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQuery,
-	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetDistributionDefinitionRequestProcessQuery,
+	ApmQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQuery,
+	ApmStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetDistributionDefinitionRequestApmStatsQuery,
+	LogQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQuery,
+	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetDistributionDefinitionRequestProcessQuery,
 	Q: *string,
-	RumQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQuery,
-	SecurityQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQuery,
-	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetDistributionDefinitionRequestStyle,
+	RumQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQuery,
+	SecurityQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQuery,
+	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetDistributionDefinitionRequestStyle,
 }
 ```
 
@@ -6892,11 +6892,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionRequestApmQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -6990,7 +6990,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryComputeQuery {
 	Aggregation: *string,
@@ -7056,12 +7056,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryGroupBySortQuery,
 }
 ```
 
@@ -7122,7 +7122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -7188,7 +7188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryMultiCompute {
 	Aggregation: *string,
@@ -7254,7 +7254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmStatsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionRequestApmStatsQuery {
 	Env: *string,
@@ -7384,7 +7384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmStatsQueryColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionRequestApmStatsQueryColumns {
 	Name: *string,
@@ -7466,11 +7466,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionRequestLogQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -7564,7 +7564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryComputeQuery {
 	Aggregation: *string,
@@ -7630,12 +7630,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryGroupBySortQuery,
 }
 ```
 
@@ -7696,7 +7696,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -7762,7 +7762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryMultiCompute {
 	Aggregation: *string,
@@ -7828,7 +7828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestProcessQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionRequestProcessQuery {
 	Metric: *string,
@@ -7910,11 +7910,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionRequestRumQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -8008,7 +8008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryComputeQuery {
 	Aggregation: *string,
@@ -8074,12 +8074,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryGroupBySortQuery,
 }
 ```
 
@@ -8140,7 +8140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -8206,7 +8206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryMultiCompute {
 	Aggregation: *string,
@@ -8272,11 +8272,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -8370,7 +8370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryComputeQuery {
 	Aggregation: *string,
@@ -8436,12 +8436,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQuery,
 }
 ```
 
@@ -8502,7 +8502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -8568,7 +8568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryMultiCompute {
 	Aggregation: *string,
@@ -8634,7 +8634,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestStyle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionRequestStyle {
 	Palette: *string,
@@ -8668,7 +8668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionXaxis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionXaxis {
 	IncludeZero: interface{},
@@ -8750,7 +8750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionYaxis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetDistributionDefinitionYaxis {
 	IncludeZero: interface{},
@@ -8848,7 +8848,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetEventStreamDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetEventStreamDefinition {
 	Query: *string,
@@ -9012,7 +9012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetEventTimelineDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetEventTimelineDefinition {
 	Query: *string,
@@ -9160,7 +9160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetFreeTextDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetFreeTextDefinition {
 	Text: *string,
@@ -9258,16 +9258,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinition {
-	View: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinitionView,
+	View: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinitionView,
 	CustomLink: interface{},
 	Description: *string,
 	HideIncompleteCostData: interface{},
 	LiveSpan: *string,
 	Request: interface{},
-	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinitionStyle,
+	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinitionStyle,
 	Title: *string,
 	TitleAlign: *string,
 	TitleSize: *string,
@@ -9438,7 +9438,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionCustomLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionCustomLink {
 	IsHidden: interface{},
@@ -9522,14 +9522,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequest {
 	Formula: interface{},
-	LogQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQuery,
+	LogQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQuery,
 	Q: *string,
 	Query: interface{},
-	RumQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQuery,
+	RumQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQuery,
 }
 ```
 
@@ -9620,16 +9620,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormula.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestFormula {
 	FormulaExpression: *string,
 	Alias: *string,
 	CellDisplayMode: *string,
 	ConditionalFormats: interface{},
-	Limit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaLimit,
-	NumberFormat: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormat,
-	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaStyle,
+	Limit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaLimit,
+	NumberFormat: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormat,
+	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaStyle,
 }
 ```
 
@@ -9750,7 +9750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaConditionalFormats.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaConditionalFormats {
 	Comparator: *string,
@@ -9914,7 +9914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaLimit {
 	Count: *f64,
@@ -9964,11 +9964,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormat {
-	Unit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnit,
-	UnitScale: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitScale,
+	Unit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnit,
+	UnitScale: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitScale,
 }
 ```
 
@@ -10014,11 +10014,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnit {
-	Canonical: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCanonical,
-	Custom: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCustom,
+	Canonical: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCanonical,
+	Custom: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCustom,
 }
 ```
 
@@ -10064,7 +10064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCanonical.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCanonical {
 	UnitName: *string,
@@ -10114,7 +10114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCustom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCustom {
 	Label: *string,
@@ -10148,7 +10148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitScale.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitScale {
 	UnitName: *string,
@@ -10180,7 +10180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaStyle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaStyle {
 	Palette: *string,
@@ -10232,11 +10232,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestLogQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -10330,7 +10330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryComputeQuery {
 	Aggregation: *string,
@@ -10396,12 +10396,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryGroupBySortQuery,
 }
 ```
 
@@ -10462,7 +10462,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -10528,7 +10528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryMultiCompute {
 	Aggregation: *string,
@@ -10594,16 +10594,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestQuery {
-	ApmDependencyStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryApmDependencyStatsQuery,
-	ApmResourceStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQuery,
-	CloudCostQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQuery,
-	EventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQuery,
-	MetricQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryMetricQuery,
-	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryProcessQuery,
-	SloQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinitionRequestQuerySloQuery,
+	ApmDependencyStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryApmDependencyStatsQuery,
+	ApmResourceStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQuery,
+	CloudCostQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQuery,
+	EventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQuery,
+	MetricQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryMetricQuery,
+	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryProcessQuery,
+	SloQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinitionRequestQuerySloQuery,
 }
 ```
 
@@ -10724,7 +10724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryApmDependencyStatsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestQueryApmDependencyStatsQuery {
 	DataSource: *string,
@@ -10918,7 +10918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQuery {
 	DataSource: *string,
@@ -11112,7 +11112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQuery {
 	DataSource: *string,
@@ -11210,7 +11210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQuery {
 	Compute: interface{},
@@ -11218,9 +11218,9 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
 	Name: *string,
 	CrossOrgUuids: *[]*string,
 	GroupBy: interface{},
-	GroupByFields: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByFields,
+	GroupByFields: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByFields,
 	Indexes: *[]*string,
-	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQuerySearch,
+	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQuerySearch,
 	Storage: *string,
 }
 ```
@@ -11374,7 +11374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryCompute {
 	Aggregation: *string,
@@ -11442,12 +11442,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBySort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBySort,
 }
 ```
 
@@ -11508,12 +11508,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByFields {
 	Fields: *[]*string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByFieldsSort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByFieldsSort,
 }
 ```
 
@@ -11574,7 +11574,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByFieldsSort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByFieldsSort {
 	Aggregation: *string,
@@ -11642,7 +11642,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBySort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBySort {
 	Aggregation: *string,
@@ -11710,7 +11710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQuerySearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQuerySearch {
 	Query: *string,
@@ -11744,7 +11744,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryMetricQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestQueryMetricQuery {
 	Name: *string,
@@ -11860,7 +11860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryProcessQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestQueryProcessQuery {
 	DataSource: *string,
@@ -12038,7 +12038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQuerySloQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestQuerySloQuery {
 	DataSource: *string,
@@ -12184,11 +12184,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestRumQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -12282,7 +12282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryComputeQuery {
 	Aggregation: *string,
@@ -12348,12 +12348,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryGroupBySortQuery,
 }
 ```
 
@@ -12414,7 +12414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -12480,7 +12480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryMultiCompute {
 	Aggregation: *string,
@@ -12546,7 +12546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionStyle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionStyle {
 	Palette: *string,
@@ -12596,7 +12596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionView.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetGeomapDefinitionView {
 	Focus: *string,
@@ -12630,7 +12630,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinition {
 	CustomLink: interface{},
@@ -12644,7 +12644,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
 	Title: *string,
 	TitleAlign: *string,
 	TitleSize: *string,
-	Yaxis: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionYaxis,
+	Yaxis: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionYaxis,
 }
 ```
 
@@ -12842,7 +12842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionCustomLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionCustomLink {
 	IsHidden: interface{},
@@ -12926,7 +12926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionEvent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionEvent {
 	Q: *string,
@@ -12976,18 +12976,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequest {
-	ApmQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQuery,
+	ApmQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQuery,
 	Formula: interface{},
-	LogQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQuery,
-	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestProcessQuery,
+	LogQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQuery,
+	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestProcessQuery,
 	Q: *string,
 	Query: interface{},
-	RumQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQuery,
-	SecurityQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQuery,
-	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestStyle,
+	RumQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQuery,
+	SecurityQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQuery,
+	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestStyle,
 }
 ```
 
@@ -13138,11 +13138,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -13236,7 +13236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryComputeQuery {
 	Aggregation: *string,
@@ -13302,12 +13302,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupBySortQuery,
 }
 ```
 
@@ -13368,7 +13368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -13434,7 +13434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryMultiCompute {
 	Aggregation: *string,
@@ -13500,16 +13500,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormula.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestFormula {
 	FormulaExpression: *string,
 	Alias: *string,
 	CellDisplayMode: *string,
 	ConditionalFormats: interface{},
-	Limit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaLimit,
-	NumberFormat: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormat,
-	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaStyle,
+	Limit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaLimit,
+	NumberFormat: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormat,
+	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaStyle,
 }
 ```
 
@@ -13630,7 +13630,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormats.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormats {
 	Comparator: *string,
@@ -13794,7 +13794,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaLimit {
 	Count: *f64,
@@ -13844,11 +13844,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormat {
-	Unit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnit,
-	UnitScale: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitScale,
+	Unit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnit,
+	UnitScale: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitScale,
 }
 ```
 
@@ -13894,11 +13894,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnit {
-	Canonical: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCanonical,
-	Custom: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCustom,
+	Canonical: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCanonical,
+	Custom: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCustom,
 }
 ```
 
@@ -13944,7 +13944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCanonical.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCanonical {
 	UnitName: *string,
@@ -13994,7 +13994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCustom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCustom {
 	Label: *string,
@@ -14028,7 +14028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitScale.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitScale {
 	UnitName: *string,
@@ -14060,7 +14060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaStyle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaStyle {
 	Palette: *string,
@@ -14112,11 +14112,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -14210,7 +14210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryComputeQuery {
 	Aggregation: *string,
@@ -14276,12 +14276,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupBySortQuery,
 }
 ```
 
@@ -14342,7 +14342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -14408,7 +14408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryMultiCompute {
 	Aggregation: *string,
@@ -14474,7 +14474,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestProcessQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestProcessQuery {
 	Metric: *string,
@@ -14556,16 +14556,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestQuery {
-	ApmDependencyStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQuery,
-	ApmResourceStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryApmResourceStatsQuery,
-	CloudCostQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryCloudCostQuery,
-	EventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQuery,
-	MetricQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryMetricQuery,
-	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryProcessQuery,
-	SloQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestQuerySloQuery,
+	ApmDependencyStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQuery,
+	ApmResourceStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryApmResourceStatsQuery,
+	CloudCostQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryCloudCostQuery,
+	EventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQuery,
+	MetricQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryMetricQuery,
+	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryProcessQuery,
+	SloQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestQuerySloQuery,
 }
 ```
 
@@ -14686,7 +14686,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQuery {
 	DataSource: *string,
@@ -14880,7 +14880,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryApmResourceStatsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryApmResourceStatsQuery {
 	DataSource: *string,
@@ -15074,7 +15074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryCloudCostQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryCloudCostQuery {
 	DataSource: *string,
@@ -15172,7 +15172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQuery {
 	Compute: interface{},
@@ -15180,9 +15180,9 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
 	Name: *string,
 	CrossOrgUuids: *[]*string,
 	GroupBy: interface{},
-	GroupByFields: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByFields,
+	GroupByFields: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByFields,
 	Indexes: *[]*string,
-	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQuerySearch,
+	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQuerySearch,
 	Storage: *string,
 }
 ```
@@ -15336,7 +15336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryCompute {
 	Aggregation: *string,
@@ -15404,12 +15404,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupBySort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupBySort,
 }
 ```
 
@@ -15470,12 +15470,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByFields {
 	Fields: *[]*string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByFieldsSort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByFieldsSort,
 }
 ```
 
@@ -15536,7 +15536,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByFieldsSort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByFieldsSort {
 	Aggregation: *string,
@@ -15604,7 +15604,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupBySort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupBySort {
 	Aggregation: *string,
@@ -15672,7 +15672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQuerySearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQuerySearch {
 	Query: *string,
@@ -15706,7 +15706,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryMetricQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryMetricQuery {
 	Name: *string,
@@ -15822,7 +15822,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryProcessQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryProcessQuery {
 	DataSource: *string,
@@ -16000,7 +16000,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQuerySloQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestQuerySloQuery {
 	DataSource: *string,
@@ -16146,11 +16146,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -16244,7 +16244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryComputeQuery {
 	Aggregation: *string,
@@ -16310,12 +16310,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupBySortQuery,
 }
 ```
 
@@ -16376,7 +16376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -16442,7 +16442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryMultiCompute {
 	Aggregation: *string,
@@ -16508,11 +16508,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -16606,7 +16606,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryComputeQuery {
 	Aggregation: *string,
@@ -16672,12 +16672,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQuery,
 }
 ```
 
@@ -16738,7 +16738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -16804,7 +16804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryMultiCompute {
 	Aggregation: *string,
@@ -16870,7 +16870,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestStyle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionRequestStyle {
 	Palette: *string,
@@ -16904,7 +16904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionYaxis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHeatmapDefinitionYaxis {
 	IncludeZero: interface{},
@@ -17002,7 +17002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinition {
 	CustomLink: interface{},
@@ -17011,9 +17011,9 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
 	NodeType: *string,
 	NoGroupHosts: interface{},
 	NoMetricHosts: interface{},
-	Request: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequest,
+	Request: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequest,
 	Scope: *[]*string,
-	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionStyle,
+	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionStyle,
 	Title: *string,
 	TitleAlign: *string,
 	TitleSize: *string,
@@ -17212,7 +17212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionCustomLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionCustomLink {
 	IsHidden: interface{},
@@ -17296,7 +17296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequest {
 	Fill: interface{},
@@ -17346,15 +17346,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFill.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestFill {
-	ApmQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQuery,
-	LogQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQuery,
-	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequestFillProcessQuery,
+	ApmQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQuery,
+	LogQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQuery,
+	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequestFillProcessQuery,
 	Q: *string,
-	RumQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQuery,
-	SecurityQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQuery,
+	RumQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQuery,
+	SecurityQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQuery,
 }
 ```
 
@@ -17460,11 +17460,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -17558,7 +17558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryComputeQuery {
 	Aggregation: *string,
@@ -17624,12 +17624,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQuery,
 }
 ```
 
@@ -17690,7 +17690,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -17756,7 +17756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryMultiCompute {
 	Aggregation: *string,
@@ -17822,11 +17822,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -17920,7 +17920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryComputeQuery {
 	Aggregation: *string,
@@ -17986,12 +17986,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery,
 }
 ```
 
@@ -18052,7 +18052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -18118,7 +18118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryMultiCompute {
 	Aggregation: *string,
@@ -18184,7 +18184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillProcessQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestFillProcessQuery {
 	Metric: *string,
@@ -18266,11 +18266,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -18364,7 +18364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryComputeQuery {
 	Aggregation: *string,
@@ -18430,12 +18430,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQuery,
 }
 ```
 
@@ -18496,7 +18496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -18562,7 +18562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryMultiCompute {
 	Aggregation: *string,
@@ -18628,11 +18628,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -18726,7 +18726,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryComputeQuery {
 	Aggregation: *string,
@@ -18792,12 +18792,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQuery,
 }
 ```
 
@@ -18858,7 +18858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -18924,7 +18924,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryMultiCompute {
 	Aggregation: *string,
@@ -18990,15 +18990,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSize.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestSize {
-	ApmQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQuery,
-	LogQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQuery,
-	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeProcessQuery,
+	ApmQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQuery,
+	LogQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQuery,
+	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeProcessQuery,
 	Q: *string,
-	RumQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQuery,
-	SecurityQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQuery,
+	RumQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQuery,
+	SecurityQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQuery,
 }
 ```
 
@@ -19104,11 +19104,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -19202,7 +19202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryComputeQuery {
 	Aggregation: *string,
@@ -19268,12 +19268,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQuery,
 }
 ```
 
@@ -19334,7 +19334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -19400,7 +19400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryMultiCompute {
 	Aggregation: *string,
@@ -19466,11 +19466,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -19564,7 +19564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryComputeQuery {
 	Aggregation: *string,
@@ -19630,12 +19630,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQuery,
 }
 ```
 
@@ -19696,7 +19696,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -19762,7 +19762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryMultiCompute {
 	Aggregation: *string,
@@ -19828,7 +19828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeProcessQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestSizeProcessQuery {
 	Metric: *string,
@@ -19910,11 +19910,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -20008,7 +20008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryComputeQuery {
 	Aggregation: *string,
@@ -20074,12 +20074,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQuery,
 }
 ```
 
@@ -20140,7 +20140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -20206,7 +20206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryMultiCompute {
 	Aggregation: *string,
@@ -20272,11 +20272,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -20370,7 +20370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuery {
 	Aggregation: *string,
@@ -20436,12 +20436,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQuery,
 }
 ```
 
@@ -20502,7 +20502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -20568,7 +20568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryMultiCompute {
 	Aggregation: *string,
@@ -20634,7 +20634,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionStyle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetHostmapDefinitionStyle {
 	FillMax: *string,
@@ -20716,7 +20716,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetIframeDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetIframeDefinition {
 	Url: *string,
@@ -20750,7 +20750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetImageDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetImageDefinition {
 	Url: *string,
@@ -20900,7 +20900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetListStreamDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetListStreamDefinition {
 	Request: interface{},
@@ -20982,11 +20982,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetListStreamDefinitionRequest {
 	Columns: interface{},
-	Query: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetListStreamDefinitionRequestQuery,
+	Query: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetListStreamDefinitionRequestQuery,
 	ResponseFormat: *string,
 	Description: *string,
 }
@@ -21064,7 +21064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetListStreamDefinitionRequestColumns {
 	Field: *string,
@@ -21114,7 +21114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetListStreamDefinitionRequestQuery {
 	DataSource: *string,
@@ -21123,7 +21123,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
 	GroupBy: interface{},
 	Indexes: *[]*string,
 	QueryString: *string,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetListStreamDefinitionRequestQuerySort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetListStreamDefinitionRequestQuerySort,
 	Storage: *string,
 }
 ```
@@ -21262,7 +21262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetListStreamDefinitionRequestQueryGroupBy {
 	Facet: *string,
@@ -21296,7 +21296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestQuerySort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetListStreamDefinitionRequestQuerySort {
 	Column: *string,
@@ -21362,7 +21362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetLogStreamDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetLogStreamDefinition {
 	Columns: *[]*string,
@@ -21373,7 +21373,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
 	Query: *string,
 	ShowDateColumn: interface{},
 	ShowMessageColumn: interface{},
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetLogStreamDefinitionSort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetLogStreamDefinitionSort,
 	Title: *string,
 	TitleAlign: *string,
 	TitleSize: *string,
@@ -21574,7 +21574,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetLogStreamDefinitionSort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetLogStreamDefinitionSort {
 	Column: *string,
@@ -21640,7 +21640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetManageStatusDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetManageStatusDefinition {
 	Query: *string,
@@ -21836,7 +21836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetNoteDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetNoteDefinition {
 	Content: *string,
@@ -22016,7 +22016,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinition {
 	CustomLink: interface{},
@@ -22180,7 +22180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionCustomLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionCustomLink {
 	IsHidden: interface{},
@@ -22264,24 +22264,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequest {
 	Aggregator: *string,
 	Alias: *string,
-	ApmQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQuery,
-	ApmStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmStatsQuery,
+	ApmQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQuery,
+	ApmStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmStatsQuery,
 	CellDisplayMode: *[]*string,
 	ConditionalFormats: interface{},
 	Formula: interface{},
 	Limit: *f64,
-	LogQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQuery,
+	LogQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQuery,
 	Order: *string,
-	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestProcessQuery,
+	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestProcessQuery,
 	Q: *string,
 	Query: interface{},
-	RumQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQuery,
-	SecurityQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQuery,
+	RumQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQuery,
+	SecurityQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQuery,
 	TextFormats: interface{},
 }
 ```
@@ -22538,11 +22538,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -22636,7 +22636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryComputeQuery {
 	Aggregation: *string,
@@ -22702,12 +22702,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryGroupBySortQuery,
 }
 ```
 
@@ -22768,7 +22768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -22834,7 +22834,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryMultiCompute {
 	Aggregation: *string,
@@ -22900,7 +22900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmStatsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestApmStatsQuery {
 	Env: *string,
@@ -23030,7 +23030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmStatsQueryColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestApmStatsQueryColumns {
 	Name: *string,
@@ -23112,7 +23112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestConditionalFormats.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestConditionalFormats {
 	Comparator: *string,
@@ -23276,17 +23276,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormula.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestFormula {
 	FormulaExpression: *string,
 	Alias: *string,
 	CellDisplayMode: *string,
-	CellDisplayModeOptions: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptions,
+	CellDisplayModeOptions: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptions,
 	ConditionalFormats: interface{},
-	Limit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaLimit,
-	NumberFormat: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormat,
-	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaStyle,
+	Limit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaLimit,
+	NumberFormat: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormat,
+	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaStyle,
 }
 ```
 
@@ -23422,7 +23422,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptions {
 	TrendType: *string,
@@ -23472,7 +23472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaConditionalFormats.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaConditionalFormats {
 	Comparator: *string,
@@ -23636,7 +23636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaLimit {
 	Count: *f64,
@@ -23686,11 +23686,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormat {
-	Unit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnit,
-	UnitScale: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitScale,
+	Unit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnit,
+	UnitScale: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitScale,
 }
 ```
 
@@ -23736,11 +23736,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnit {
-	Canonical: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitCanonical,
-	Custom: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitCustom,
+	Canonical: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitCanonical,
+	Custom: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitCustom,
 }
 ```
 
@@ -23786,7 +23786,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitCanonical.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitCanonical {
 	UnitName: *string,
@@ -23836,7 +23836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitCustom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitCustom {
 	Label: *string,
@@ -23870,7 +23870,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitScale.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitScale {
 	UnitName: *string,
@@ -23902,7 +23902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaStyle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaStyle {
 	Palette: *string,
@@ -23954,11 +23954,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -24052,7 +24052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryComputeQuery {
 	Aggregation: *string,
@@ -24118,12 +24118,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryGroupBySortQuery,
 }
 ```
 
@@ -24184,7 +24184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -24250,7 +24250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryMultiCompute {
 	Aggregation: *string,
@@ -24316,7 +24316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestProcessQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestProcessQuery {
 	Metric: *string,
@@ -24398,16 +24398,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestQuery {
-	ApmDependencyStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQuery,
-	ApmResourceStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryApmResourceStatsQuery,
-	CloudCostQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryCloudCostQuery,
-	EventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQuery,
-	MetricQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryMetricQuery,
-	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryProcessQuery,
-	SloQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestQuerySloQuery,
+	ApmDependencyStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQuery,
+	ApmResourceStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryApmResourceStatsQuery,
+	CloudCostQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryCloudCostQuery,
+	EventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQuery,
+	MetricQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryMetricQuery,
+	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryProcessQuery,
+	SloQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestQuerySloQuery,
 }
 ```
 
@@ -24528,7 +24528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQuery {
 	DataSource: *string,
@@ -24722,7 +24722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryApmResourceStatsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryApmResourceStatsQuery {
 	DataSource: *string,
@@ -24916,7 +24916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryCloudCostQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryCloudCostQuery {
 	DataSource: *string,
@@ -25014,7 +25014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQuery {
 	Compute: interface{},
@@ -25022,9 +25022,9 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
 	Name: *string,
 	CrossOrgUuids: *[]*string,
 	GroupBy: interface{},
-	GroupByFields: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupByFields,
+	GroupByFields: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupByFields,
 	Indexes: *[]*string,
-	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQuerySearch,
+	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQuerySearch,
 	Storage: *string,
 }
 ```
@@ -25178,7 +25178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryCompute {
 	Aggregation: *string,
@@ -25246,12 +25246,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySort,
 }
 ```
 
@@ -25312,12 +25312,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupByFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupByFields {
 	Fields: *[]*string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupByFieldsSort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupByFieldsSort,
 }
 ```
 
@@ -25378,7 +25378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupByFieldsSort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupByFieldsSort {
 	Aggregation: *string,
@@ -25446,7 +25446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySort {
 	Aggregation: *string,
@@ -25514,7 +25514,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQuerySearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQuerySearch {
 	Query: *string,
@@ -25548,7 +25548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryMetricQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryMetricQuery {
 	Name: *string,
@@ -25664,7 +25664,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryProcessQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryProcessQuery {
 	DataSource: *string,
@@ -25842,7 +25842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQuerySloQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestQuerySloQuery {
 	DataSource: *string,
@@ -25988,11 +25988,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -26086,7 +26086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryComputeQuery {
 	Aggregation: *string,
@@ -26152,12 +26152,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryGroupBySortQuery,
 }
 ```
 
@@ -26218,7 +26218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -26284,7 +26284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryMultiCompute {
 	Aggregation: *string,
@@ -26350,11 +26350,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -26448,7 +26448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryComputeQuery {
 	Aggregation: *string,
@@ -26514,12 +26514,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQuery,
 }
 ```
 
@@ -26580,7 +26580,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -26646,7 +26646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiCompute {
 	Aggregation: *string,
@@ -26712,7 +26712,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormats.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormats {
 	TextFormat: interface{},
@@ -26746,14 +26746,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormat {
-	Match: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatMatch,
+	Match: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatMatch,
 	CustomBgColor: *string,
 	CustomFgColor: *string,
 	Palette: *string,
-	Replace: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatReplace,
+	Replace: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatReplace,
 }
 ```
 
@@ -26844,7 +26844,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatMatch {
 	Type: *string,
@@ -26894,7 +26894,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatReplace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatReplace {
 	Type: *string,
@@ -26960,7 +26960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinition {
 	Autoscale: interface{},
@@ -26972,7 +26972,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
 	Precision: *f64,
 	Request: interface{},
 	TextAlign: *string,
-	TimeseriesBackground: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionTimeseriesBackground,
+	TimeseriesBackground: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionTimeseriesBackground,
 	Title: *string,
 	TitleAlign: *string,
 	TitleSize: *string,
@@ -27188,7 +27188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionCustomLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionCustomLink {
 	IsHidden: interface{},
@@ -27272,20 +27272,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequest {
 	Aggregator: *string,
-	ApmQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQuery,
-	AuditQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQuery,
+	ApmQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQuery,
+	AuditQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQuery,
 	ConditionalFormats: interface{},
 	Formula: interface{},
-	LogQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQuery,
-	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestProcessQuery,
+	LogQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQuery,
+	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestProcessQuery,
 	Q: *string,
 	Query: interface{},
-	RumQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQuery,
-	SecurityQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQuery,
+	RumQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQuery,
+	SecurityQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQuery,
 }
 ```
 
@@ -27466,11 +27466,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -27564,7 +27564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryComputeQuery {
 	Aggregation: *string,
@@ -27630,12 +27630,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryGroupBySortQuery,
 }
 ```
 
@@ -27696,7 +27696,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -27762,7 +27762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryMultiCompute {
 	Aggregation: *string,
@@ -27828,11 +27828,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -27926,7 +27926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryComputeQuery {
 	Aggregation: *string,
@@ -27992,12 +27992,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQuery,
 }
 ```
 
@@ -28058,7 +28058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -28124,7 +28124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryMultiCompute {
 	Aggregation: *string,
@@ -28190,7 +28190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestConditionalFormats.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestConditionalFormats {
 	Comparator: *string,
@@ -28354,16 +28354,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormula.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestFormula {
 	FormulaExpression: *string,
 	Alias: *string,
 	CellDisplayMode: *string,
 	ConditionalFormats: interface{},
-	Limit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaLimit,
-	NumberFormat: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormat,
-	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaStyle,
+	Limit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaLimit,
+	NumberFormat: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormat,
+	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaStyle,
 }
 ```
 
@@ -28484,7 +28484,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaConditionalFormats.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaConditionalFormats {
 	Comparator: *string,
@@ -28648,7 +28648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaLimit {
 	Count: *f64,
@@ -28698,11 +28698,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormat {
-	Unit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnit,
-	UnitScale: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitScale,
+	Unit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnit,
+	UnitScale: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitScale,
 }
 ```
 
@@ -28748,11 +28748,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnit {
-	Canonical: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitCanonical,
-	Custom: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitCustom,
+	Canonical: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitCanonical,
+	Custom: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitCustom,
 }
 ```
 
@@ -28798,7 +28798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitCanonical.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitCanonical {
 	UnitName: *string,
@@ -28848,7 +28848,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitCustom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitCustom {
 	Label: *string,
@@ -28882,7 +28882,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitScale.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitScale {
 	UnitName: *string,
@@ -28914,7 +28914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaStyle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaStyle {
 	Palette: *string,
@@ -28966,11 +28966,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -29064,7 +29064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryComputeQuery {
 	Aggregation: *string,
@@ -29130,12 +29130,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryGroupBySortQuery,
 }
 ```
 
@@ -29196,7 +29196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -29262,7 +29262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryMultiCompute {
 	Aggregation: *string,
@@ -29328,7 +29328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestProcessQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestProcessQuery {
 	Metric: *string,
@@ -29410,16 +29410,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestQuery {
-	ApmDependencyStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQuery,
-	ApmResourceStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryApmResourceStatsQuery,
-	CloudCostQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryCloudCostQuery,
-	EventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQuery,
-	MetricQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryMetricQuery,
-	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryProcessQuery,
-	SloQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestQuerySloQuery,
+	ApmDependencyStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQuery,
+	ApmResourceStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryApmResourceStatsQuery,
+	CloudCostQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryCloudCostQuery,
+	EventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQuery,
+	MetricQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryMetricQuery,
+	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryProcessQuery,
+	SloQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestQuerySloQuery,
 }
 ```
 
@@ -29540,7 +29540,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQuery {
 	DataSource: *string,
@@ -29734,7 +29734,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryApmResourceStatsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryApmResourceStatsQuery {
 	DataSource: *string,
@@ -29928,7 +29928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryCloudCostQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryCloudCostQuery {
 	DataSource: *string,
@@ -30026,7 +30026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQuery {
 	Compute: interface{},
@@ -30034,9 +30034,9 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
 	Name: *string,
 	CrossOrgUuids: *[]*string,
 	GroupBy: interface{},
-	GroupByFields: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupByFields,
+	GroupByFields: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupByFields,
 	Indexes: *[]*string,
-	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQuerySearch,
+	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQuerySearch,
 	Storage: *string,
 }
 ```
@@ -30190,7 +30190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryCompute {
 	Aggregation: *string,
@@ -30258,12 +30258,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySort,
 }
 ```
 
@@ -30324,12 +30324,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupByFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupByFields {
 	Fields: *[]*string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupByFieldsSort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupByFieldsSort,
 }
 ```
 
@@ -30390,7 +30390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupByFieldsSort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupByFieldsSort {
 	Aggregation: *string,
@@ -30458,7 +30458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySort {
 	Aggregation: *string,
@@ -30526,7 +30526,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQuerySearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQuerySearch {
 	Query: *string,
@@ -30560,7 +30560,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryMetricQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryMetricQuery {
 	Name: *string,
@@ -30676,7 +30676,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryProcessQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryProcessQuery {
 	DataSource: *string,
@@ -30854,7 +30854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQuerySloQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestQuerySloQuery {
 	DataSource: *string,
@@ -31000,11 +31000,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -31098,7 +31098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryComputeQuery {
 	Aggregation: *string,
@@ -31164,12 +31164,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryGroupBySortQuery,
 }
 ```
 
@@ -31230,7 +31230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -31296,7 +31296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryMultiCompute {
 	Aggregation: *string,
@@ -31362,11 +31362,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -31460,7 +31460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryComputeQuery {
 	Aggregation: *string,
@@ -31526,12 +31526,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQuery,
 }
 ```
 
@@ -31592,7 +31592,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -31658,7 +31658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryMultiCompute {
 	Aggregation: *string,
@@ -31724,11 +31724,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionTimeseriesBackground.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionTimeseriesBackground {
 	Type: *string,
-	Yaxis: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetQueryValueDefinitionTimeseriesBackgroundYaxis,
+	Yaxis: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetQueryValueDefinitionTimeseriesBackgroundYaxis,
 }
 ```
 
@@ -31774,7 +31774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionTimeseriesBackgroundYaxis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetQueryValueDefinitionTimeseriesBackgroundYaxis {
 	IncludeZero: interface{},
@@ -31872,7 +31872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetRunWorkflowDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetRunWorkflowDefinition {
 	WorkflowId: *string,
@@ -32036,7 +32036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetRunWorkflowDefinitionCustomLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetRunWorkflowDefinitionCustomLink {
 	IsHidden: interface{},
@@ -32120,7 +32120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetRunWorkflowDefinitionInput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetRunWorkflowDefinitionInput {
 	Name: *string,
@@ -32170,7 +32170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinition {
 	ColorByGroups: *[]*string,
@@ -32178,12 +32178,12 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
 	Description: *string,
 	HideIncompleteCostData: interface{},
 	LiveSpan: *string,
-	Request: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequest,
+	Request: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequest,
 	Title: *string,
 	TitleAlign: *string,
 	TitleSize: *string,
-	Xaxis: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionXaxis,
-	Yaxis: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionYaxis,
+	Xaxis: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionXaxis,
+	Yaxis: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionYaxis,
 }
 ```
 
@@ -32366,7 +32366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionCustomLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionCustomLink {
 	IsHidden: interface{},
@@ -32450,7 +32450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequest {
 	ScatterplotTable: interface{},
@@ -32516,7 +32516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTable {
 	Formula: interface{},
@@ -32566,7 +32566,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableFormula.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableFormula {
 	Dimension: *string,
@@ -32632,16 +32632,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQuery {
-	ApmDependencyStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQuery,
-	ApmResourceStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery,
-	CloudCostQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryCloudCostQuery,
-	EventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuery,
-	MetricQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQuery,
-	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQuery,
-	SloQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQuery,
+	ApmDependencyStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQuery,
+	ApmResourceStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery,
+	CloudCostQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryCloudCostQuery,
+	EventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuery,
+	MetricQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQuery,
+	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQuery,
+	SloQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQuery,
 }
 ```
 
@@ -32762,7 +32762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQuery {
 	DataSource: *string,
@@ -32956,7 +32956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery {
 	DataSource: *string,
@@ -33150,7 +33150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryCloudCostQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryCloudCostQuery {
 	DataSource: *string,
@@ -33248,7 +33248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuery {
 	Compute: interface{},
@@ -33256,9 +33256,9 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
 	Name: *string,
 	CrossOrgUuids: *[]*string,
 	GroupBy: interface{},
-	GroupByFields: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupByFields,
+	GroupByFields: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupByFields,
 	Indexes: *[]*string,
-	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch,
+	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch,
 	Storage: *string,
 }
 ```
@@ -33412,7 +33412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryCompute {
 	Aggregation: *string,
@@ -33480,12 +33480,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySort,
 }
 ```
 
@@ -33546,12 +33546,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupByFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupByFields {
 	Fields: *[]*string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupByFieldsSort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupByFieldsSort,
 }
 ```
 
@@ -33612,7 +33612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupByFieldsSort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupByFieldsSort {
 	Aggregation: *string,
@@ -33680,7 +33680,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySort {
 	Aggregation: *string,
@@ -33748,7 +33748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch {
 	Query: *string,
@@ -33782,7 +33782,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQuery {
 	Name: *string,
@@ -33898,7 +33898,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQuery {
 	DataSource: *string,
@@ -34076,7 +34076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQuery {
 	DataSource: *string,
@@ -34222,16 +34222,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestX.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestX {
 	Aggregator: *string,
-	ApmQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQuery,
-	LogQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQuery,
-	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestXProcessQuery,
+	ApmQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQuery,
+	LogQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQuery,
+	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestXProcessQuery,
 	Q: *string,
-	RumQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQuery,
-	SecurityQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQuery,
+	RumQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQuery,
+	SecurityQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQuery,
 }
 ```
 
@@ -34352,11 +34352,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -34450,7 +34450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryComputeQuery {
 	Aggregation: *string,
@@ -34516,12 +34516,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQuery,
 }
 ```
 
@@ -34582,7 +34582,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -34648,7 +34648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryMultiCompute {
 	Aggregation: *string,
@@ -34714,11 +34714,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -34812,7 +34812,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryComputeQuery {
 	Aggregation: *string,
@@ -34878,12 +34878,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQuery,
 }
 ```
 
@@ -34944,7 +34944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -35010,7 +35010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryMultiCompute {
 	Aggregation: *string,
@@ -35076,7 +35076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXProcessQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestXProcessQuery {
 	Metric: *string,
@@ -35158,11 +35158,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -35256,7 +35256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryComputeQuery {
 	Aggregation: *string,
@@ -35322,12 +35322,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQuery,
 }
 ```
 
@@ -35388,7 +35388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -35454,7 +35454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiCompute {
 	Aggregation: *string,
@@ -35520,11 +35520,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -35618,7 +35618,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryComputeQuery {
 	Aggregation: *string,
@@ -35684,12 +35684,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQuery,
 }
 ```
 
@@ -35750,7 +35750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -35816,7 +35816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute {
 	Aggregation: *string,
@@ -35882,16 +35882,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestY.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestY {
 	Aggregator: *string,
-	ApmQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQuery,
-	LogQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQuery,
-	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestYProcessQuery,
+	ApmQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQuery,
+	LogQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQuery,
+	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestYProcessQuery,
 	Q: *string,
-	RumQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQuery,
-	SecurityQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQuery,
+	RumQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQuery,
+	SecurityQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQuery,
 }
 ```
 
@@ -36012,11 +36012,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -36110,7 +36110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryComputeQuery {
 	Aggregation: *string,
@@ -36176,12 +36176,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQuery,
 }
 ```
 
@@ -36242,7 +36242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -36308,7 +36308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiCompute {
 	Aggregation: *string,
@@ -36374,11 +36374,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -36472,7 +36472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryComputeQuery {
 	Aggregation: *string,
@@ -36538,12 +36538,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQuery,
 }
 ```
 
@@ -36604,7 +36604,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -36670,7 +36670,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiCompute {
 	Aggregation: *string,
@@ -36736,7 +36736,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYProcessQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestYProcessQuery {
 	Metric: *string,
@@ -36818,11 +36818,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -36916,7 +36916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryComputeQuery {
 	Aggregation: *string,
@@ -36982,12 +36982,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQuery,
 }
 ```
 
@@ -37048,7 +37048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -37114,7 +37114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiCompute {
 	Aggregation: *string,
@@ -37180,11 +37180,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -37278,7 +37278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery {
 	Aggregation: *string,
@@ -37344,12 +37344,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQuery,
 }
 ```
 
@@ -37410,7 +37410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -37476,7 +37476,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute {
 	Aggregation: *string,
@@ -37542,7 +37542,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionXaxis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionXaxis {
 	IncludeZero: interface{},
@@ -37640,7 +37640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionYaxis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetScatterplotDefinitionYaxis {
 	IncludeZero: interface{},
@@ -37738,7 +37738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetServiceLevelObjectiveDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetServiceLevelObjectiveDefinition {
 	SloId: *string,
@@ -37934,7 +37934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetServicemapDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetServicemapDefinition {
 	Filters: *[]*string,
@@ -38064,7 +38064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetServicemapDefinitionCustomLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetServicemapDefinitionCustomLink {
 	IsHidden: interface{},
@@ -38148,10 +38148,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSloListDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSloListDefinition {
-	Request: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSloListDefinitionRequest,
+	Request: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSloListDefinitionRequest,
 	Title: *string,
 	TitleAlign: *string,
 	TitleSize: *string,
@@ -38230,10 +38230,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSloListDefinitionRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSloListDefinitionRequest {
-	Query: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSloListDefinitionRequestQuery,
+	Query: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSloListDefinitionRequestQuery,
 	RequestType: *string,
 	Description: *string,
 }
@@ -38296,12 +38296,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSloListDefinitionRequestQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSloListDefinitionRequestQuery {
 	QueryString: *string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSloListDefinitionRequestQuerySort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSloListDefinitionRequestQuerySort,
 }
 ```
 
@@ -38362,7 +38362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSloListDefinitionRequestQuerySort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSloListDefinitionRequestQuerySort {
 	Column: *string,
@@ -38428,15 +38428,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinition {
 	CustomLink: interface{},
 	Description: *string,
 	HideIncompleteCostData: interface{},
 	HideTotal: interface{},
-	LegendInline: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionLegendInline,
-	LegendTable: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionLegendTable,
+	LegendInline: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionLegendInline,
+	LegendTable: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionLegendTable,
 	LiveSpan: *string,
 	Request: interface{},
 	Title: *string,
@@ -38624,7 +38624,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionCustomLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionCustomLink {
 	IsHidden: interface{},
@@ -38708,7 +38708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionLegendInline.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionLegendInline {
 	Type: *string,
@@ -38774,7 +38774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionLegendTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionLegendTable {
 	Type: *string,
@@ -38808,20 +38808,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequest {
-	ApmQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQuery,
-	AuditQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQuery,
+	ApmQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQuery,
+	AuditQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQuery,
 	Formula: interface{},
-	LogQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQuery,
-	NetworkQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQuery,
-	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestProcessQuery,
+	LogQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQuery,
+	NetworkQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQuery,
+	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestProcessQuery,
 	Q: *string,
 	Query: interface{},
-	RumQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQuery,
-	SecurityQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQuery,
-	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestStyle,
+	RumQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQuery,
+	SecurityQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQuery,
+	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestStyle,
 }
 ```
 
@@ -39002,11 +39002,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestApmQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -39100,7 +39100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryComputeQuery {
 	Aggregation: *string,
@@ -39166,12 +39166,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQuery,
 }
 ```
 
@@ -39232,7 +39232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -39298,7 +39298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryMultiCompute {
 	Aggregation: *string,
@@ -39364,11 +39364,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -39462,7 +39462,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryComputeQuery {
 	Aggregation: *string,
@@ -39528,12 +39528,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBySortQuery,
 }
 ```
 
@@ -39594,7 +39594,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -39660,7 +39660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiCompute {
 	Aggregation: *string,
@@ -39726,16 +39726,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormula.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestFormula {
 	FormulaExpression: *string,
 	Alias: *string,
 	CellDisplayMode: *string,
 	ConditionalFormats: interface{},
-	Limit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaLimit,
-	NumberFormat: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormat,
-	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaStyle,
+	Limit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaLimit,
+	NumberFormat: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormat,
+	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaStyle,
 }
 ```
 
@@ -39856,7 +39856,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormats.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormats {
 	Comparator: *string,
@@ -40020,7 +40020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaLimit {
 	Count: *f64,
@@ -40070,11 +40070,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormat {
-	Unit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnit,
-	UnitScale: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScale,
+	Unit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnit,
+	UnitScale: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScale,
 }
 ```
 
@@ -40120,11 +40120,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnit {
-	Canonical: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCanonical,
-	Custom: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCustom,
+	Canonical: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCanonical,
+	Custom: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCustom,
 }
 ```
 
@@ -40170,7 +40170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCanonical.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCanonical {
 	UnitName: *string,
@@ -40220,7 +40220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCustom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCustom {
 	Label: *string,
@@ -40254,7 +40254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScale.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScale {
 	UnitName: *string,
@@ -40286,7 +40286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaStyle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaStyle {
 	Palette: *string,
@@ -40338,11 +40338,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestLogQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -40436,7 +40436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryComputeQuery {
 	Aggregation: *string,
@@ -40502,12 +40502,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBySortQuery,
 }
 ```
 
@@ -40568,7 +40568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -40634,7 +40634,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryMultiCompute {
 	Aggregation: *string,
@@ -40700,11 +40700,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -40798,7 +40798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryComputeQuery {
 	Aggregation: *string,
@@ -40864,12 +40864,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQuery,
 }
 ```
 
@@ -40930,7 +40930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -40996,7 +40996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiCompute {
 	Aggregation: *string,
@@ -41062,7 +41062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestProcessQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestProcessQuery {
 	Metric: *string,
@@ -41144,16 +41144,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestQuery {
-	ApmDependencyStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryApmDependencyStatsQuery,
-	ApmResourceStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryApmResourceStatsQuery,
-	CloudCostQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryCloudCostQuery,
-	EventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQuery,
-	MetricQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryMetricQuery,
-	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryProcessQuery,
-	SloQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestQuerySloQuery,
+	ApmDependencyStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryApmDependencyStatsQuery,
+	ApmResourceStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryApmResourceStatsQuery,
+	CloudCostQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryCloudCostQuery,
+	EventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQuery,
+	MetricQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryMetricQuery,
+	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryProcessQuery,
+	SloQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestQuerySloQuery,
 }
 ```
 
@@ -41274,7 +41274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryApmDependencyStatsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestQueryApmDependencyStatsQuery {
 	DataSource: *string,
@@ -41468,7 +41468,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryApmResourceStatsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestQueryApmResourceStatsQuery {
 	DataSource: *string,
@@ -41662,7 +41662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryCloudCostQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestQueryCloudCostQuery {
 	DataSource: *string,
@@ -41760,7 +41760,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQuery {
 	Compute: interface{},
@@ -41768,9 +41768,9 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
 	Name: *string,
 	CrossOrgUuids: *[]*string,
 	GroupBy: interface{},
-	GroupByFields: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByFields,
+	GroupByFields: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByFields,
 	Indexes: *[]*string,
-	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQuerySearch,
+	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQuerySearch,
 	Storage: *string,
 }
 ```
@@ -41924,7 +41924,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryCompute {
 	Aggregation: *string,
@@ -41992,12 +41992,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBySort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBySort,
 }
 ```
 
@@ -42058,12 +42058,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByFields {
 	Fields: *[]*string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByFieldsSort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByFieldsSort,
 }
 ```
 
@@ -42124,7 +42124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByFieldsSort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByFieldsSort {
 	Aggregation: *string,
@@ -42192,7 +42192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBySort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBySort {
 	Aggregation: *string,
@@ -42260,7 +42260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQuerySearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQuerySearch {
 	Query: *string,
@@ -42294,7 +42294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryMetricQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestQueryMetricQuery {
 	Name: *string,
@@ -42410,7 +42410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryProcessQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestQueryProcessQuery {
 	DataSource: *string,
@@ -42588,7 +42588,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQuerySloQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestQuerySloQuery {
 	DataSource: *string,
@@ -42734,11 +42734,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestRumQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -42832,7 +42832,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryComputeQuery {
 	Aggregation: *string,
@@ -42898,12 +42898,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBySortQuery,
 }
 ```
 
@@ -42964,7 +42964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -43030,7 +43030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryMultiCompute {
 	Aggregation: *string,
@@ -43096,11 +43096,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -43194,7 +43194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryComputeQuery {
 	Aggregation: *string,
@@ -43260,12 +43260,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQuery,
 }
 ```
 
@@ -43326,7 +43326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -43392,7 +43392,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiCompute {
 	Aggregation: *string,
@@ -43458,7 +43458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestStyle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetSunburstDefinitionRequestStyle {
 	Palette: *string,
@@ -43492,7 +43492,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinition {
 	CustomLink: interface{},
@@ -43505,12 +43505,12 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
 	LiveSpan: *string,
 	Marker: interface{},
 	Request: interface{},
-	RightYaxis: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRightYaxis,
+	RightYaxis: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRightYaxis,
 	ShowLegend: interface{},
 	Title: *string,
 	TitleAlign: *string,
 	TitleSize: *string,
-	Yaxis: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionYaxis,
+	Yaxis: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionYaxis,
 }
 ```
 
@@ -43768,7 +43768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionCustomLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionCustomLink {
 	IsHidden: interface{},
@@ -43852,7 +43852,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionEvent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionEvent {
 	Q: *string,
@@ -43902,7 +43902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionMarker.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionMarker {
 	Value: *string,
@@ -43970,23 +43970,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequest {
-	ApmQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQuery,
-	AuditQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQuery,
+	ApmQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQuery,
+	AuditQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQuery,
 	DisplayType: *string,
 	Formula: interface{},
-	LogQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQuery,
+	LogQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQuery,
 	Metadata: interface{},
-	NetworkQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQuery,
+	NetworkQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQuery,
 	OnRightYaxis: interface{},
-	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestProcessQuery,
+	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestProcessQuery,
 	Q: *string,
 	Query: interface{},
-	RumQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQuery,
-	SecurityQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQuery,
-	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestStyle,
+	RumQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQuery,
+	SecurityQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQuery,
+	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestStyle,
 }
 ```
 
@@ -44212,11 +44212,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -44310,7 +44310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQuery {
 	Aggregation: *string,
@@ -44376,12 +44376,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery,
 }
 ```
 
@@ -44442,7 +44442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -44508,7 +44508,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiCompute {
 	Aggregation: *string,
@@ -44574,11 +44574,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -44672,7 +44672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery {
 	Aggregation: *string,
@@ -44738,12 +44738,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery,
 }
 ```
 
@@ -44804,7 +44804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -44870,7 +44870,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute {
 	Aggregation: *string,
@@ -44936,16 +44936,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormula.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormula {
 	FormulaExpression: *string,
 	Alias: *string,
 	CellDisplayMode: *string,
 	ConditionalFormats: interface{},
-	Limit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaLimit,
-	NumberFormat: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormat,
-	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaStyle,
+	Limit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaLimit,
+	NumberFormat: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormat,
+	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaStyle,
 }
 ```
 
@@ -45066,7 +45066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormats.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormats {
 	Comparator: *string,
@@ -45230,7 +45230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaLimit {
 	Count: *f64,
@@ -45280,11 +45280,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormat {
-	Unit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnit,
-	UnitScale: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitScale,
+	Unit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnit,
+	UnitScale: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitScale,
 }
 ```
 
@@ -45330,11 +45330,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnit {
-	Canonical: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonical,
-	Custom: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCustom,
+	Canonical: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonical,
+	Custom: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCustom,
 }
 ```
 
@@ -45380,7 +45380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonical.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonical {
 	UnitName: *string,
@@ -45430,7 +45430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCustom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCustom {
 	Label: *string,
@@ -45464,7 +45464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitScale.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitScale {
 	UnitName: *string,
@@ -45496,7 +45496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaStyle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaStyle {
 	Palette: *string,
@@ -45548,11 +45548,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -45646,7 +45646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryComputeQuery {
 	Aggregation: *string,
@@ -45712,12 +45712,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQuery,
 }
 ```
 
@@ -45778,7 +45778,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -45844,7 +45844,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryMultiCompute {
 	Aggregation: *string,
@@ -45910,7 +45910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestMetadata {
 	Expression: *string,
@@ -45960,11 +45960,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -46058,7 +46058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery {
 	Aggregation: *string,
@@ -46124,12 +46124,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQuery,
 }
 ```
 
@@ -46190,7 +46190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -46256,7 +46256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute {
 	Aggregation: *string,
@@ -46322,7 +46322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestProcessQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestProcessQuery {
 	Metric: *string,
@@ -46404,16 +46404,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestQuery {
-	ApmDependencyStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery,
-	ApmResourceStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery,
-	CloudCostQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryCloudCostQuery,
-	EventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuery,
-	MetricQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryMetricQuery,
-	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryProcessQuery,
-	SloQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQuerySloQuery,
+	ApmDependencyStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery,
+	ApmResourceStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery,
+	CloudCostQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryCloudCostQuery,
+	EventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuery,
+	MetricQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryMetricQuery,
+	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryProcessQuery,
+	SloQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQuerySloQuery,
 }
 ```
 
@@ -46534,7 +46534,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery {
 	DataSource: *string,
@@ -46728,7 +46728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery {
 	DataSource: *string,
@@ -46922,7 +46922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryCloudCostQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryCloudCostQuery {
 	DataSource: *string,
@@ -47020,7 +47020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuery {
 	Compute: interface{},
@@ -47028,9 +47028,9 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
 	Name: *string,
 	CrossOrgUuids: *[]*string,
 	GroupBy: interface{},
-	GroupByFields: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFields,
+	GroupByFields: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFields,
 	Indexes: *[]*string,
-	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuerySearch,
+	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuerySearch,
 	Storage: *string,
 }
 ```
@@ -47184,7 +47184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryCompute {
 	Aggregation: *string,
@@ -47252,12 +47252,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort,
 }
 ```
 
@@ -47318,12 +47318,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFields {
 	Fields: *[]*string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsSort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsSort,
 }
 ```
 
@@ -47384,7 +47384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsSort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsSort {
 	Aggregation: *string,
@@ -47452,7 +47452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort {
 	Aggregation: *string,
@@ -47520,7 +47520,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuerySearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuerySearch {
 	Query: *string,
@@ -47554,7 +47554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryMetricQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryMetricQuery {
 	Name: *string,
@@ -47670,7 +47670,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryProcessQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryProcessQuery {
 	DataSource: *string,
@@ -47848,7 +47848,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQuerySloQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestQuerySloQuery {
 	DataSource: *string,
@@ -47994,11 +47994,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -48092,7 +48092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryComputeQuery {
 	Aggregation: *string,
@@ -48158,12 +48158,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQuery,
 }
 ```
 
@@ -48224,7 +48224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -48290,7 +48290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryMultiCompute {
 	Aggregation: *string,
@@ -48356,11 +48356,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -48454,7 +48454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery {
 	Aggregation: *string,
@@ -48520,12 +48520,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQuery,
 }
 ```
 
@@ -48586,7 +48586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -48652,7 +48652,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute {
 	Aggregation: *string,
@@ -48718,7 +48718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestStyle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRequestStyle {
 	HasValueLabels: interface{},
@@ -48816,7 +48816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRightYaxis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionRightYaxis {
 	IncludeZero: interface{},
@@ -48914,7 +48914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionYaxis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTimeseriesDefinitionYaxis {
 	IncludeZero: interface{},
@@ -49012,7 +49012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinition {
 	CustomLink: interface{},
@@ -49176,7 +49176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionCustomLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionCustomLink {
 	IsHidden: interface{},
@@ -49260,20 +49260,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequest {
-	ApmQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestApmQuery,
-	AuditQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQuery,
+	ApmQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestApmQuery,
+	AuditQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQuery,
 	ConditionalFormats: interface{},
 	Formula: interface{},
-	LogQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestLogQuery,
-	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestProcessQuery,
+	LogQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestLogQuery,
+	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestProcessQuery,
 	Q: *string,
 	Query: interface{},
-	RumQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestRumQuery,
-	SecurityQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQuery,
-	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestStyle,
+	RumQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestRumQuery,
+	SecurityQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQuery,
+	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestStyle,
 }
 ```
 
@@ -49454,11 +49454,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestApmQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -49552,7 +49552,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryComputeQuery {
 	Aggregation: *string,
@@ -49618,12 +49618,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryGroupBySortQuery,
 }
 ```
 
@@ -49684,7 +49684,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -49750,7 +49750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryMultiCompute {
 	Aggregation: *string,
@@ -49816,11 +49816,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestAuditQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -49914,7 +49914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryComputeQuery {
 	Aggregation: *string,
@@ -49980,12 +49980,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBySortQuery,
 }
 ```
 
@@ -50046,7 +50046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -50112,7 +50112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryMultiCompute {
 	Aggregation: *string,
@@ -50178,7 +50178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestConditionalFormats.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestConditionalFormats {
 	Comparator: *string,
@@ -50342,16 +50342,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormula.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestFormula {
 	FormulaExpression: *string,
 	Alias: *string,
 	CellDisplayMode: *string,
 	ConditionalFormats: interface{},
-	Limit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaLimit,
-	NumberFormat: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormat,
-	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaStyle,
+	Limit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaLimit,
+	NumberFormat: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormat,
+	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaStyle,
 }
 ```
 
@@ -50472,7 +50472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaConditionalFormats.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestFormulaConditionalFormats {
 	Comparator: *string,
@@ -50636,7 +50636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestFormulaLimit {
 	Count: *f64,
@@ -50686,11 +50686,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormat {
-	Unit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnit,
-	UnitScale: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitScale,
+	Unit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnit,
+	UnitScale: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitScale,
 }
 ```
 
@@ -50736,11 +50736,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnit {
-	Canonical: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonical,
-	Custom: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCustom,
+	Canonical: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonical,
+	Custom: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCustom,
 }
 ```
 
@@ -50786,7 +50786,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonical.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonical {
 	UnitName: *string,
@@ -50836,7 +50836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCustom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCustom {
 	Label: *string,
@@ -50870,7 +50870,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitScale.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitScale {
 	UnitName: *string,
@@ -50902,7 +50902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaStyle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestFormulaStyle {
 	Palette: *string,
@@ -50954,11 +50954,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestLogQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -51052,7 +51052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryComputeQuery {
 	Aggregation: *string,
@@ -51118,12 +51118,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryGroupBySortQuery,
 }
 ```
 
@@ -51184,7 +51184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -51250,7 +51250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryMultiCompute {
 	Aggregation: *string,
@@ -51316,7 +51316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestProcessQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestProcessQuery {
 	Metric: *string,
@@ -51398,16 +51398,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestQuery {
-	ApmDependencyStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestQueryApmDependencyStatsQuery,
-	ApmResourceStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestQueryApmResourceStatsQuery,
-	CloudCostQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestQueryCloudCostQuery,
-	EventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQuery,
-	MetricQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestQueryMetricQuery,
-	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestQueryProcessQuery,
-	SloQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestQuerySloQuery,
+	ApmDependencyStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestQueryApmDependencyStatsQuery,
+	ApmResourceStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestQueryApmResourceStatsQuery,
+	CloudCostQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestQueryCloudCostQuery,
+	EventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQuery,
+	MetricQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestQueryMetricQuery,
+	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestQueryProcessQuery,
+	SloQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestQuerySloQuery,
 }
 ```
 
@@ -51528,7 +51528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryApmDependencyStatsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestQueryApmDependencyStatsQuery {
 	DataSource: *string,
@@ -51722,7 +51722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryApmResourceStatsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestQueryApmResourceStatsQuery {
 	DataSource: *string,
@@ -51916,7 +51916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryCloudCostQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestQueryCloudCostQuery {
 	DataSource: *string,
@@ -52014,7 +52014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQuery {
 	Compute: interface{},
@@ -52022,9 +52022,9 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
 	Name: *string,
 	CrossOrgUuids: *[]*string,
 	GroupBy: interface{},
-	GroupByFields: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFields,
+	GroupByFields: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFields,
 	Indexes: *[]*string,
-	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQuerySearch,
+	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQuerySearch,
 	Storage: *string,
 }
 ```
@@ -52178,7 +52178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryCompute {
 	Aggregation: *string,
@@ -52246,12 +52246,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBySort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBySort,
 }
 ```
 
@@ -52312,12 +52312,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFields {
 	Fields: *[]*string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFieldsSort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFieldsSort,
 }
 ```
 
@@ -52378,7 +52378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFieldsSort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFieldsSort {
 	Aggregation: *string,
@@ -52446,7 +52446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBySort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBySort {
 	Aggregation: *string,
@@ -52514,7 +52514,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQuerySearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQuerySearch {
 	Query: *string,
@@ -52548,7 +52548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryMetricQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestQueryMetricQuery {
 	Name: *string,
@@ -52664,7 +52664,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryProcessQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestQueryProcessQuery {
 	DataSource: *string,
@@ -52842,7 +52842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQuerySloQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestQuerySloQuery {
 	DataSource: *string,
@@ -52988,11 +52988,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestRumQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -53086,7 +53086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryComputeQuery {
 	Aggregation: *string,
@@ -53152,12 +53152,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryGroupBySortQuery,
 }
 ```
 
@@ -53218,7 +53218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -53284,7 +53284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryMultiCompute {
 	Aggregation: *string,
@@ -53350,11 +53350,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQuery {
 	Index: *string,
-	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryComputeQuery,
+	ComputeQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryComputeQuery,
 	GroupBy: interface{},
 	MultiCompute: interface{},
 	SearchQuery: *string,
@@ -53448,7 +53448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryComputeQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryComputeQuery {
 	Aggregation: *string,
@@ -53514,12 +53514,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBySortQuery,
+	SortQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBySortQuery,
 }
 ```
 
@@ -53580,7 +53580,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBySortQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBySortQuery {
 	Aggregation: *string,
@@ -53646,7 +53646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryMultiCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryMultiCompute {
 	Aggregation: *string,
@@ -53712,7 +53712,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestStyle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionRequestStyle {
 	Palette: *string,
@@ -53746,7 +53746,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionStyle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionStyle {
 	Display: interface{},
@@ -53812,7 +53812,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionStyleDisplay.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetToplistDefinitionStyleDisplay {
 	Type: *string,
@@ -53846,7 +53846,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTopologyMapDefinition {
 	CustomLink: interface{},
@@ -53960,7 +53960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinitionCustomLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTopologyMapDefinitionCustomLink {
 	IsHidden: interface{},
@@ -54044,7 +54044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinitionRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTopologyMapDefinitionRequest {
 	Query: interface{},
@@ -54094,7 +54094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinitionRequestQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTopologyMapDefinitionRequestQuery {
 	DataSource: *string,
@@ -54160,7 +54160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTraceServiceDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTraceServiceDefinition {
 	Env: *string,
@@ -54436,7 +54436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTreemapDefinition {
 	CustomLinks: interface{},
@@ -54518,7 +54518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionCustomLinks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTreemapDefinitionCustomLinks {
 	IsHidden: interface{},
@@ -54602,7 +54602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTreemapDefinitionRequest {
 	Formula: interface{},
@@ -54652,16 +54652,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormula.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTreemapDefinitionRequestFormula {
 	FormulaExpression: *string,
 	Alias: *string,
 	CellDisplayMode: *string,
 	ConditionalFormats: interface{},
-	Limit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaLimit,
-	NumberFormat: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormat,
-	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaStyle,
+	Limit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaLimit,
+	NumberFormat: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormat,
+	Style: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaStyle,
 }
 ```
 
@@ -54782,7 +54782,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaConditionalFormats.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaConditionalFormats {
 	Comparator: *string,
@@ -54946,7 +54946,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaLimit {
 	Count: *f64,
@@ -54996,11 +54996,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormat {
-	Unit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnit,
-	UnitScale: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitScale,
+	Unit: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnit,
+	UnitScale: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitScale,
 }
 ```
 
@@ -55046,11 +55046,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnit {
-	Canonical: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitCanonical,
-	Custom: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitCustom,
+	Canonical: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitCanonical,
+	Custom: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitCustom,
 }
 ```
 
@@ -55096,7 +55096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitCanonical.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitCanonical {
 	UnitName: *string,
@@ -55146,7 +55146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitCustom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitCustom {
 	Label: *string,
@@ -55180,7 +55180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitScale.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitScale {
 	UnitName: *string,
@@ -55212,7 +55212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaStyle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaStyle {
 	Palette: *string,
@@ -55264,16 +55264,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTreemapDefinitionRequestQuery {
-	ApmDependencyStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryApmDependencyStatsQuery,
-	ApmResourceStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryApmResourceStatsQuery,
-	CloudCostQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryCloudCostQuery,
-	EventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQuery,
-	MetricQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryMetricQuery,
-	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryProcessQuery,
-	SloQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTreemapDefinitionRequestQuerySloQuery,
+	ApmDependencyStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryApmDependencyStatsQuery,
+	ApmResourceStatsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryApmResourceStatsQuery,
+	CloudCostQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryCloudCostQuery,
+	EventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQuery,
+	MetricQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryMetricQuery,
+	ProcessQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryProcessQuery,
+	SloQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTreemapDefinitionRequestQuerySloQuery,
 }
 ```
 
@@ -55394,7 +55394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryApmDependencyStatsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTreemapDefinitionRequestQueryApmDependencyStatsQuery {
 	DataSource: *string,
@@ -55588,7 +55588,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryApmResourceStatsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTreemapDefinitionRequestQueryApmResourceStatsQuery {
 	DataSource: *string,
@@ -55782,7 +55782,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryCloudCostQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTreemapDefinitionRequestQueryCloudCostQuery {
 	DataSource: *string,
@@ -55880,7 +55880,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQuery {
 	Compute: interface{},
@@ -55888,9 +55888,9 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
 	Name: *string,
 	CrossOrgUuids: *[]*string,
 	GroupBy: interface{},
-	GroupByFields: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupByFields,
+	GroupByFields: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupByFields,
 	Indexes: *[]*string,
-	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQuerySearch,
+	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQuerySearch,
 	Storage: *string,
 }
 ```
@@ -56044,7 +56044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryCompute {
 	Aggregation: *string,
@@ -56112,12 +56112,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupBySort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupBySort,
 }
 ```
 
@@ -56178,12 +56178,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupByFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupByFields {
 	Fields: *[]*string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupByFieldsSort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupByFieldsSort,
 }
 ```
 
@@ -56244,7 +56244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupByFieldsSort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupByFieldsSort {
 	Aggregation: *string,
@@ -56312,7 +56312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupBySort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupBySort {
 	Aggregation: *string,
@@ -56380,7 +56380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQuerySearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQuerySearch {
 	Query: *string,
@@ -56414,7 +56414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryMetricQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTreemapDefinitionRequestQueryMetricQuery {
 	Name: *string,
@@ -56530,7 +56530,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryProcessQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTreemapDefinitionRequestQueryProcessQuery {
 	DataSource: *string,
@@ -56708,7 +56708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQuerySloQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetTreemapDefinitionRequestQuerySloQuery {
 	DataSource: *string,
@@ -56854,7 +56854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetWidgetLayout.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 &powerpack.PowerpackWidgetWidgetLayout {
 	Height: *f64,
@@ -56956,7 +56956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackLayoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackLayoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackLayoutOutputReference
 ```
@@ -57321,7 +57321,7 @@ func InternalValue() PowerpackLayout
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackTemplateVariablesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackTemplateVariablesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackTemplateVariablesList
 ```
@@ -57481,7 +57481,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackTemplateVariablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackTemplateVariablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackTemplateVariablesOutputReference
 ```
@@ -57799,7 +57799,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetAlertGraphDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetAlertGraphDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetAlertGraphDefinitionOutputReference
 ```
@@ -58237,7 +58237,7 @@ func InternalValue() PowerpackWidgetAlertGraphDefinition
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetAlertValueDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetAlertValueDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetAlertValueDefinitionOutputReference
 ```
@@ -58711,7 +58711,7 @@ func InternalValue() PowerpackWidgetAlertValueDefinition
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionCustomLinkList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionCustomLinkList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetChangeDefinitionCustomLinkList
 ```
@@ -58871,7 +58871,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionCustomLinkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionCustomLinkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetChangeDefinitionCustomLinkOutputReference
 ```
@@ -59254,7 +59254,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionOutputReference
 ```
@@ -59761,7 +59761,7 @@ func InternalValue() PowerpackWidgetChangeDefinition
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryComputeQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestApmQueryComputeQueryOutputReference
 ```
@@ -60090,7 +60090,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestApmQueryComputeQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestApmQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetChangeDefinitionRequestApmQueryGroupByList
 ```
@@ -60250,7 +60250,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestApmQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetChangeDefinitionRequestApmQueryGroupByOutputReference
 ```
@@ -60617,7 +60617,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference
 ```
@@ -60939,7 +60939,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQu
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryMultiComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestApmQueryMultiComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetChangeDefinitionRequestApmQueryMultiComputeList
 ```
@@ -61099,7 +61099,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryMultiComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestApmQueryMultiComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetChangeDefinitionRequestApmQueryMultiComputeOutputReference
 ```
@@ -61446,7 +61446,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestApmQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestApmQueryOutputReference
 ```
@@ -61872,7 +61872,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestApmQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsList
 ```
@@ -62032,7 +62032,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference
 ```
@@ -62539,7 +62539,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestFormulaLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestFormulaLimitOutputReference
 ```
@@ -62846,7 +62846,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestFormulaLimit
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestFormulaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetChangeDefinitionRequestFormulaList
 ```
@@ -63006,7 +63006,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestFormulaNumberFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatOutputReference
 ```
@@ -63332,7 +63332,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestFormulaNumberFormat
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference
 ```
@@ -63632,7 +63632,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUn
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCustomOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCustomOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCustomOutputReference
 ```
@@ -63903,7 +63903,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUn
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitOutputReference
 ```
@@ -64236,7 +64236,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUn
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitScaleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitScaleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitScaleOutputReference
 ```
@@ -64507,7 +64507,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUn
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestFormulaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetChangeDefinitionRequestFormulaOutputReference
 ```
@@ -65022,7 +65022,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaStyleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestFormulaStyleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestFormulaStyleOutputReference
 ```
@@ -65329,7 +65329,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestFormulaStyle
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetChangeDefinitionRequestList
 ```
@@ -65489,7 +65489,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryComputeQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestLogQueryComputeQueryOutputReference
 ```
@@ -65818,7 +65818,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestLogQueryComputeQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestLogQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetChangeDefinitionRequestLogQueryGroupByList
 ```
@@ -65978,7 +65978,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestLogQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetChangeDefinitionRequestLogQueryGroupByOutputReference
 ```
@@ -66345,7 +66345,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryGroupBySortQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestLogQueryGroupBySortQueryOutputReference
 ```
@@ -66667,7 +66667,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestLogQueryGroupBySortQu
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryMultiComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestLogQueryMultiComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetChangeDefinitionRequestLogQueryMultiComputeList
 ```
@@ -66827,7 +66827,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryMultiComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestLogQueryMultiComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetChangeDefinitionRequestLogQueryMultiComputeOutputReference
 ```
@@ -67174,7 +67174,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestLogQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestLogQueryOutputReference
 ```
@@ -67600,7 +67600,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestLogQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetChangeDefinitionRequestOutputReference
 ```
@@ -68364,7 +68364,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestProcessQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestProcessQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestProcessQueryOutputReference
 ```
@@ -68722,7 +68722,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestProcessQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference
 ```
@@ -69241,7 +69241,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestQueryApmDependencySta
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryApmResourceStatsQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestQueryApmResourceStatsQueryOutputReference
 ```
@@ -69774,7 +69774,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestQueryApmResourceStats
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryCloudCostQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestQueryCloudCostQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestQueryCloudCostQueryOutputReference
 ```
@@ -70147,7 +70147,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestQueryCloudCostQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestQueryEventQueryComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetChangeDefinitionRequestQueryEventQueryComputeList
 ```
@@ -70307,7 +70307,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestQueryEventQueryComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetChangeDefinitionRequestQueryEventQueryComputeOutputReference
 ```
@@ -70654,7 +70654,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByFieldsOutputReference
 ```
@@ -70996,7 +70996,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupB
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByFieldsSortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByFieldsSortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByFieldsSortOutputReference
 ```
@@ -71325,7 +71325,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupB
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByList
 ```
@@ -71485,7 +71485,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByOutputReference
 ```
@@ -71845,7 +71845,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBySortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBySortOutputReference
 ```
@@ -72174,7 +72174,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupB
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestQueryEventQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestQueryEventQueryOutputReference
 ```
@@ -72715,7 +72715,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestQueryEventQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQuerySearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestQueryEventQuerySearchOutputReference
 ```
@@ -72986,7 +72986,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestQueryEventQuerySearch
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetChangeDefinitionRequestQueryList
 ```
@@ -73146,7 +73146,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryMetricQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestQueryMetricQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestQueryMetricQueryOutputReference
 ```
@@ -73555,7 +73555,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestQueryMetricQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetChangeDefinitionRequestQueryOutputReference
 ```
@@ -74116,7 +74116,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryProcessQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestQueryProcessQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestQueryProcessQueryOutputReference
 ```
@@ -74634,7 +74634,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestQueryProcessQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQuerySloQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestQuerySloQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestQuerySloQueryOutputReference
 ```
@@ -75094,7 +75094,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestQuerySloQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryComputeQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestRumQueryComputeQueryOutputReference
 ```
@@ -75423,7 +75423,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestRumQueryComputeQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestRumQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetChangeDefinitionRequestRumQueryGroupByList
 ```
@@ -75583,7 +75583,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestRumQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetChangeDefinitionRequestRumQueryGroupByOutputReference
 ```
@@ -75950,7 +75950,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryGroupBySortQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestRumQueryGroupBySortQueryOutputReference
 ```
@@ -76272,7 +76272,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestRumQueryGroupBySortQu
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryMultiComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestRumQueryMultiComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetChangeDefinitionRequestRumQueryMultiComputeList
 ```
@@ -76432,7 +76432,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryMultiComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestRumQueryMultiComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetChangeDefinitionRequestRumQueryMultiComputeOutputReference
 ```
@@ -76779,7 +76779,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestRumQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestRumQueryOutputReference
 ```
@@ -77205,7 +77205,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestRumQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryComputeQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestSecurityQueryComputeQueryOutputReference
 ```
@@ -77534,7 +77534,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestSecurityQueryComputeQ
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestSecurityQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupByList
 ```
@@ -77694,7 +77694,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestSecurityQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupByOutputReference
 ```
@@ -78061,7 +78061,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupBySortQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupBySortQueryOutputReference
 ```
@@ -78383,7 +78383,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupByS
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryMultiComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestSecurityQueryMultiComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetChangeDefinitionRequestSecurityQueryMultiComputeList
 ```
@@ -78543,7 +78543,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryMultiComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestSecurityQueryMultiComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetChangeDefinitionRequestSecurityQueryMultiComputeOutputReference
 ```
@@ -78890,7 +78890,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetChangeDefinitionRequestSecurityQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestSecurityQueryOutputReference
 ```
@@ -79316,7 +79316,7 @@ func InternalValue() PowerpackWidgetChangeDefinitionRequestSecurityQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetCheckStatusDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetCheckStatusDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetCheckStatusDefinitionOutputReference
 ```
@@ -79841,7 +79841,7 @@ func InternalValue() PowerpackWidgetCheckStatusDefinition
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetDistributionDefinitionOutputReference
 ```
@@ -80448,7 +80448,7 @@ func InternalValue() PowerpackWidgetDistributionDefinition
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryComputeQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetDistributionDefinitionRequestApmQueryComputeQueryOutputReference
 ```
@@ -80777,7 +80777,7 @@ func InternalValue() PowerpackWidgetDistributionDefinitionRequestApmQueryCompute
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestApmQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetDistributionDefinitionRequestApmQueryGroupByList
 ```
@@ -80937,7 +80937,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestApmQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetDistributionDefinitionRequestApmQueryGroupByOutputReference
 ```
@@ -81304,7 +81304,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryOutputReference
 ```
@@ -81626,7 +81626,7 @@ func InternalValue() PowerpackWidgetDistributionDefinitionRequestApmQueryGroupBy
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryMultiComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestApmQueryMultiComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetDistributionDefinitionRequestApmQueryMultiComputeList
 ```
@@ -81786,7 +81786,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryMultiComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestApmQueryMultiComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetDistributionDefinitionRequestApmQueryMultiComputeOutputReference
 ```
@@ -82133,7 +82133,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestApmQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetDistributionDefinitionRequestApmQueryOutputReference
 ```
@@ -82559,7 +82559,7 @@ func InternalValue() PowerpackWidgetDistributionDefinitionRequestApmQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmStatsQueryColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestApmStatsQueryColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetDistributionDefinitionRequestApmStatsQueryColumnsList
 ```
@@ -82719,7 +82719,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmStatsQueryColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestApmStatsQueryColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetDistributionDefinitionRequestApmStatsQueryColumnsOutputReference
 ```
@@ -83095,7 +83095,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmStatsQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestApmStatsQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetDistributionDefinitionRequestApmStatsQueryOutputReference
 ```
@@ -83525,7 +83525,7 @@ func InternalValue() PowerpackWidgetDistributionDefinitionRequestApmStatsQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetDistributionDefinitionRequestList
 ```
@@ -83685,7 +83685,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryComputeQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetDistributionDefinitionRequestLogQueryComputeQueryOutputReference
 ```
@@ -84014,7 +84014,7 @@ func InternalValue() PowerpackWidgetDistributionDefinitionRequestLogQueryCompute
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestLogQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetDistributionDefinitionRequestLogQueryGroupByList
 ```
@@ -84174,7 +84174,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference
 ```
@@ -84541,7 +84541,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryOutputReference
 ```
@@ -84863,7 +84863,7 @@ func InternalValue() PowerpackWidgetDistributionDefinitionRequestLogQueryGroupBy
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryMultiComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestLogQueryMultiComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetDistributionDefinitionRequestLogQueryMultiComputeList
 ```
@@ -85023,7 +85023,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryMultiComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestLogQueryMultiComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetDistributionDefinitionRequestLogQueryMultiComputeOutputReference
 ```
@@ -85370,7 +85370,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestLogQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetDistributionDefinitionRequestLogQueryOutputReference
 ```
@@ -85796,7 +85796,7 @@ func InternalValue() PowerpackWidgetDistributionDefinitionRequestLogQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetDistributionDefinitionRequestOutputReference
 ```
@@ -86386,7 +86386,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestProcessQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestProcessQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetDistributionDefinitionRequestProcessQueryOutputReference
 ```
@@ -86744,7 +86744,7 @@ func InternalValue() PowerpackWidgetDistributionDefinitionRequestProcessQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryComputeQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetDistributionDefinitionRequestRumQueryComputeQueryOutputReference
 ```
@@ -87073,7 +87073,7 @@ func InternalValue() PowerpackWidgetDistributionDefinitionRequestRumQueryCompute
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestRumQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetDistributionDefinitionRequestRumQueryGroupByList
 ```
@@ -87233,7 +87233,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestRumQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetDistributionDefinitionRequestRumQueryGroupByOutputReference
 ```
@@ -87600,7 +87600,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryGroupBySortQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetDistributionDefinitionRequestRumQueryGroupBySortQueryOutputReference
 ```
@@ -87922,7 +87922,7 @@ func InternalValue() PowerpackWidgetDistributionDefinitionRequestRumQueryGroupBy
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryMultiComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestRumQueryMultiComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetDistributionDefinitionRequestRumQueryMultiComputeList
 ```
@@ -88082,7 +88082,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryMultiComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestRumQueryMultiComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetDistributionDefinitionRequestRumQueryMultiComputeOutputReference
 ```
@@ -88429,7 +88429,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestRumQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetDistributionDefinitionRequestRumQueryOutputReference
 ```
@@ -88855,7 +88855,7 @@ func InternalValue() PowerpackWidgetDistributionDefinitionRequestRumQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryComputeQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetDistributionDefinitionRequestSecurityQueryComputeQueryOutputReference
 ```
@@ -89184,7 +89184,7 @@ func InternalValue() PowerpackWidgetDistributionDefinitionRequestSecurityQueryCo
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupByList
 ```
@@ -89344,7 +89344,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupByOutputReference
 ```
@@ -89711,7 +89711,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQueryOutputReference
 ```
@@ -90033,7 +90033,7 @@ func InternalValue() PowerpackWidgetDistributionDefinitionRequestSecurityQueryGr
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryMultiComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestSecurityQueryMultiComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetDistributionDefinitionRequestSecurityQueryMultiComputeList
 ```
@@ -90193,7 +90193,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryMultiComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestSecurityQueryMultiComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetDistributionDefinitionRequestSecurityQueryMultiComputeOutputReference
 ```
@@ -90540,7 +90540,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestSecurityQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetDistributionDefinitionRequestSecurityQueryOutputReference
 ```
@@ -90966,7 +90966,7 @@ func InternalValue() PowerpackWidgetDistributionDefinitionRequestSecurityQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestStyleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionRequestStyleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetDistributionDefinitionRequestStyleOutputReference
 ```
@@ -91244,7 +91244,7 @@ func InternalValue() PowerpackWidgetDistributionDefinitionRequestStyle
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionXaxisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionXaxisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetDistributionDefinitionXaxisOutputReference
 ```
@@ -91609,7 +91609,7 @@ func InternalValue() PowerpackWidgetDistributionDefinitionXaxis
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionYaxisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetDistributionDefinitionYaxisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetDistributionDefinitionYaxisOutputReference
 ```
@@ -92003,7 +92003,7 @@ func InternalValue() PowerpackWidgetDistributionDefinitionYaxis
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetEventStreamDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetEventStreamDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetEventStreamDefinitionOutputReference
 ```
@@ -92506,7 +92506,7 @@ func InternalValue() PowerpackWidgetEventStreamDefinition
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetEventTimelineDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetEventTimelineDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetEventTimelineDefinitionOutputReference
 ```
@@ -92980,7 +92980,7 @@ func InternalValue() PowerpackWidgetEventTimelineDefinition
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetFreeTextDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetFreeTextDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetFreeTextDefinitionOutputReference
 ```
@@ -93367,7 +93367,7 @@ func InternalValue() PowerpackWidgetFreeTextDefinition
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionCustomLinkList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionCustomLinkList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetGeomapDefinitionCustomLinkList
 ```
@@ -93527,7 +93527,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionCustomLinkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionCustomLinkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetGeomapDefinitionCustomLinkOutputReference
 ```
@@ -93910,7 +93910,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionOutputReference
 ```
@@ -94494,7 +94494,7 @@ func InternalValue() PowerpackWidgetGeomapDefinition
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaConditionalFormatsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestFormulaConditionalFormatsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetGeomapDefinitionRequestFormulaConditionalFormatsList
 ```
@@ -94654,7 +94654,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaConditionalFormatsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestFormulaConditionalFormatsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetGeomapDefinitionRequestFormulaConditionalFormatsOutputReference
 ```
@@ -95161,7 +95161,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestFormulaLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionRequestFormulaLimitOutputReference
 ```
@@ -95468,7 +95468,7 @@ func InternalValue() PowerpackWidgetGeomapDefinitionRequestFormulaLimit
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestFormulaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetGeomapDefinitionRequestFormulaList
 ```
@@ -95628,7 +95628,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatOutputReference
 ```
@@ -95954,7 +95954,7 @@ func InternalValue() PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormat
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference
 ```
@@ -96254,7 +96254,7 @@ func InternalValue() PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUn
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCustomOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCustomOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCustomOutputReference
 ```
@@ -96525,7 +96525,7 @@ func InternalValue() PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUn
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitOutputReference
 ```
@@ -96858,7 +96858,7 @@ func InternalValue() PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUn
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitScaleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitScaleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitScaleOutputReference
 ```
@@ -97129,7 +97129,7 @@ func InternalValue() PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUn
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestFormulaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetGeomapDefinitionRequestFormulaOutputReference
 ```
@@ -97644,7 +97644,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaStyleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestFormulaStyleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionRequestFormulaStyleOutputReference
 ```
@@ -97951,7 +97951,7 @@ func InternalValue() PowerpackWidgetGeomapDefinitionRequestFormulaStyle
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetGeomapDefinitionRequestList
 ```
@@ -98111,7 +98111,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryComputeQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionRequestLogQueryComputeQueryOutputReference
 ```
@@ -98440,7 +98440,7 @@ func InternalValue() PowerpackWidgetGeomapDefinitionRequestLogQueryComputeQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestLogQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetGeomapDefinitionRequestLogQueryGroupByList
 ```
@@ -98600,7 +98600,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestLogQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetGeomapDefinitionRequestLogQueryGroupByOutputReference
 ```
@@ -98967,7 +98967,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryOutputReference
 ```
@@ -99289,7 +99289,7 @@ func InternalValue() PowerpackWidgetGeomapDefinitionRequestLogQueryGroupBySortQu
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryMultiComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestLogQueryMultiComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetGeomapDefinitionRequestLogQueryMultiComputeList
 ```
@@ -99449,7 +99449,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryMultiComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestLogQueryMultiComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetGeomapDefinitionRequestLogQueryMultiComputeOutputReference
 ```
@@ -99796,7 +99796,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestLogQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionRequestLogQueryOutputReference
 ```
@@ -100222,7 +100222,7 @@ func InternalValue() PowerpackWidgetGeomapDefinitionRequestLogQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetGeomapDefinitionRequestOutputReference
 ```
@@ -100686,7 +100686,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryOutputReference
 ```
@@ -101205,7 +101205,7 @@ func InternalValue() PowerpackWidgetGeomapDefinitionRequestQueryApmDependencySta
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference
 ```
@@ -101738,7 +101738,7 @@ func InternalValue() PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStats
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestQueryCloudCostQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQueryOutputReference
 ```
@@ -102111,7 +102111,7 @@ func InternalValue() PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestQueryEventQueryComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetGeomapDefinitionRequestQueryEventQueryComputeList
 ```
@@ -102271,7 +102271,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestQueryEventQueryComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetGeomapDefinitionRequestQueryEventQueryComputeOutputReference
 ```
@@ -102618,7 +102618,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByFieldsOutputReference
 ```
@@ -102960,7 +102960,7 @@ func InternalValue() PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupB
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByFieldsSortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByFieldsSortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByFieldsSortOutputReference
 ```
@@ -103289,7 +103289,7 @@ func InternalValue() PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupB
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByList
 ```
@@ -103449,7 +103449,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByOutputReference
 ```
@@ -103809,7 +103809,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBySortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBySortOutputReference
 ```
@@ -104138,7 +104138,7 @@ func InternalValue() PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupB
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestQueryEventQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionRequestQueryEventQueryOutputReference
 ```
@@ -104679,7 +104679,7 @@ func InternalValue() PowerpackWidgetGeomapDefinitionRequestQueryEventQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQuerySearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionRequestQueryEventQuerySearchOutputReference
 ```
@@ -104950,7 +104950,7 @@ func InternalValue() PowerpackWidgetGeomapDefinitionRequestQueryEventQuerySearch
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetGeomapDefinitionRequestQueryList
 ```
@@ -105110,7 +105110,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference
 ```
@@ -105519,7 +105519,7 @@ func InternalValue() PowerpackWidgetGeomapDefinitionRequestQueryMetricQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetGeomapDefinitionRequestQueryOutputReference
 ```
@@ -106080,7 +106080,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryProcessQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestQueryProcessQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionRequestQueryProcessQueryOutputReference
 ```
@@ -106598,7 +106598,7 @@ func InternalValue() PowerpackWidgetGeomapDefinitionRequestQueryProcessQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQuerySloQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestQuerySloQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionRequestQuerySloQueryOutputReference
 ```
@@ -107058,7 +107058,7 @@ func InternalValue() PowerpackWidgetGeomapDefinitionRequestQuerySloQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryComputeQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionRequestRumQueryComputeQueryOutputReference
 ```
@@ -107387,7 +107387,7 @@ func InternalValue() PowerpackWidgetGeomapDefinitionRequestRumQueryComputeQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestRumQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetGeomapDefinitionRequestRumQueryGroupByList
 ```
@@ -107547,7 +107547,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestRumQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetGeomapDefinitionRequestRumQueryGroupByOutputReference
 ```
@@ -107914,7 +107914,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryOutputReference
 ```
@@ -108236,7 +108236,7 @@ func InternalValue() PowerpackWidgetGeomapDefinitionRequestRumQueryGroupBySortQu
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryMultiComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestRumQueryMultiComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetGeomapDefinitionRequestRumQueryMultiComputeList
 ```
@@ -108396,7 +108396,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryMultiComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestRumQueryMultiComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetGeomapDefinitionRequestRumQueryMultiComputeOutputReference
 ```
@@ -108743,7 +108743,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionRequestRumQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionRequestRumQueryOutputReference
 ```
@@ -109169,7 +109169,7 @@ func InternalValue() PowerpackWidgetGeomapDefinitionRequestRumQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionStyleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionStyleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionStyleOutputReference
 ```
@@ -109462,7 +109462,7 @@ func InternalValue() PowerpackWidgetGeomapDefinitionStyle
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionViewOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetGeomapDefinitionViewOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionViewOutputReference
 ```
@@ -109733,7 +109733,7 @@ func InternalValue() PowerpackWidgetGeomapDefinitionView
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionCustomLinkList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionCustomLinkList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHeatmapDefinitionCustomLinkList
 ```
@@ -109893,7 +109893,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionCustomLinkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionCustomLinkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHeatmapDefinitionCustomLinkOutputReference
 ```
@@ -110276,7 +110276,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionEventList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionEventList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHeatmapDefinitionEventList
 ```
@@ -110436,7 +110436,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionEventOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionEventOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHeatmapDefinitionEventOutputReference
 ```
@@ -110754,7 +110754,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionOutputReference
 ```
@@ -111403,7 +111403,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinition
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryComputeQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestApmQueryComputeQueryOutputReference
 ```
@@ -111732,7 +111732,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestApmQueryComputeQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestApmQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupByList
 ```
@@ -111892,7 +111892,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestApmQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupByOutputReference
 ```
@@ -112259,7 +112259,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupBySortQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupBySortQueryOutputReference
 ```
@@ -112581,7 +112581,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupBySortQ
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryMultiComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestApmQueryMultiComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHeatmapDefinitionRequestApmQueryMultiComputeList
 ```
@@ -112741,7 +112741,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryMultiComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestApmQueryMultiComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHeatmapDefinitionRequestApmQueryMultiComputeOutputReference
 ```
@@ -113088,7 +113088,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestApmQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestApmQueryOutputReference
 ```
@@ -113514,7 +113514,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestApmQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormatsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormatsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormatsList
 ```
@@ -113674,7 +113674,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormatsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormatsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormatsOutputReference
 ```
@@ -114181,7 +114181,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestFormulaLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestFormulaLimitOutputReference
 ```
@@ -114488,7 +114488,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestFormulaLimit
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestFormulaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHeatmapDefinitionRequestFormulaList
 ```
@@ -114648,7 +114648,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatOutputReference
 ```
@@ -114974,7 +114974,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormat
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference
 ```
@@ -115274,7 +115274,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatU
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCustomOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCustomOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCustomOutputReference
 ```
@@ -115545,7 +115545,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatU
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitOutputReference
 ```
@@ -115878,7 +115878,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatU
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitScaleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitScaleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitScaleOutputReference
 ```
@@ -116149,7 +116149,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatU
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestFormulaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHeatmapDefinitionRequestFormulaOutputReference
 ```
@@ -116664,7 +116664,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaStyleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestFormulaStyleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestFormulaStyleOutputReference
 ```
@@ -116971,7 +116971,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestFormulaStyle
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHeatmapDefinitionRequestList
 ```
@@ -117131,7 +117131,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference
 ```
@@ -117460,7 +117460,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestLogQueryComputeQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestLogQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupByList
 ```
@@ -117620,7 +117620,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestLogQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupByOutputReference
 ```
@@ -117987,7 +117987,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupBySortQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupBySortQueryOutputReference
 ```
@@ -118309,7 +118309,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupBySortQ
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryMultiComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestLogQueryMultiComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHeatmapDefinitionRequestLogQueryMultiComputeList
 ```
@@ -118469,7 +118469,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryMultiComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestLogQueryMultiComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHeatmapDefinitionRequestLogQueryMultiComputeOutputReference
 ```
@@ -118816,7 +118816,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestLogQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestLogQueryOutputReference
 ```
@@ -119242,7 +119242,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestLogQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHeatmapDefinitionRequestOutputReference
 ```
@@ -119874,7 +119874,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestProcessQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestProcessQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestProcessQueryOutputReference
 ```
@@ -120232,7 +120232,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestProcessQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQueryOutputReference
 ```
@@ -120751,7 +120751,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencySt
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryApmResourceStatsQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestQueryApmResourceStatsQueryOutputReference
 ```
@@ -121284,7 +121284,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestQueryApmResourceStat
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryCloudCostQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestQueryCloudCostQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestQueryCloudCostQueryOutputReference
 ```
@@ -121657,7 +121657,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestQueryCloudCostQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestQueryEventQueryComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryComputeList
 ```
@@ -121817,7 +121817,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestQueryEventQueryComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryComputeOutputReference
 ```
@@ -122164,7 +122164,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByFieldsOutputReference
 ```
@@ -122506,7 +122506,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroup
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByFieldsSortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByFieldsSortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByFieldsSortOutputReference
 ```
@@ -122835,7 +122835,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroup
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByList
 ```
@@ -122995,7 +122995,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByOutputReference
 ```
@@ -123355,7 +123355,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupBySortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupBySortOutputReference
 ```
@@ -123684,7 +123684,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroup
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestQueryEventQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryOutputReference
 ```
@@ -124225,7 +124225,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestQueryEventQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQuerySearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestQueryEventQuerySearchOutputReference
 ```
@@ -124496,7 +124496,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestQueryEventQuerySearc
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHeatmapDefinitionRequestQueryList
 ```
@@ -124656,7 +124656,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryMetricQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestQueryMetricQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestQueryMetricQueryOutputReference
 ```
@@ -125065,7 +125065,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestQueryMetricQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHeatmapDefinitionRequestQueryOutputReference
 ```
@@ -125626,7 +125626,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryProcessQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestQueryProcessQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestQueryProcessQueryOutputReference
 ```
@@ -126144,7 +126144,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestQueryProcessQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQuerySloQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestQuerySloQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestQuerySloQueryOutputReference
 ```
@@ -126604,7 +126604,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestQuerySloQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryComputeQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestRumQueryComputeQueryOutputReference
 ```
@@ -126933,7 +126933,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestRumQueryComputeQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestRumQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupByList
 ```
@@ -127093,7 +127093,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestRumQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupByOutputReference
 ```
@@ -127460,7 +127460,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupBySortQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupBySortQueryOutputReference
 ```
@@ -127782,7 +127782,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupBySortQ
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryMultiComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestRumQueryMultiComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHeatmapDefinitionRequestRumQueryMultiComputeList
 ```
@@ -127942,7 +127942,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryMultiComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestRumQueryMultiComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHeatmapDefinitionRequestRumQueryMultiComputeOutputReference
 ```
@@ -128289,7 +128289,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestRumQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestRumQueryOutputReference
 ```
@@ -128715,7 +128715,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestRumQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryComputeQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestSecurityQueryComputeQueryOutputReference
 ```
@@ -129044,7 +129044,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestSecurityQueryCompute
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupByList
 ```
@@ -129204,7 +129204,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupByOutputReference
 ```
@@ -129571,7 +129571,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQueryOutputReference
 ```
@@ -129893,7 +129893,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupBy
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryMultiComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestSecurityQueryMultiComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHeatmapDefinitionRequestSecurityQueryMultiComputeList
 ```
@@ -130053,7 +130053,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryMultiComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestSecurityQueryMultiComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHeatmapDefinitionRequestSecurityQueryMultiComputeOutputReference
 ```
@@ -130400,7 +130400,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestSecurityQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestSecurityQueryOutputReference
 ```
@@ -130826,7 +130826,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestSecurityQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestStyleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionRequestStyleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionRequestStyleOutputReference
 ```
@@ -131104,7 +131104,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionRequestStyle
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionYaxisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHeatmapDefinitionYaxisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHeatmapDefinitionYaxisOutputReference
 ```
@@ -131498,7 +131498,7 @@ func InternalValue() PowerpackWidgetHeatmapDefinitionYaxis
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionCustomLinkList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionCustomLinkList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHostmapDefinitionCustomLinkList
 ```
@@ -131658,7 +131658,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionCustomLinkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionCustomLinkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHostmapDefinitionCustomLinkOutputReference
 ```
@@ -132041,7 +132041,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionOutputReference
 ```
@@ -132677,7 +132677,7 @@ func InternalValue() PowerpackWidgetHostmapDefinition
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryComputeQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillApmQueryComputeQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestFillApmQueryComputeQueryOutputReference
 ```
@@ -133006,7 +133006,7 @@ func InternalValue() PowerpackWidgetHostmapDefinitionRequestFillApmQueryComputeQ
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupByList
 ```
@@ -133166,7 +133166,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupByOutputReference
 ```
@@ -133533,7 +133533,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQueryOutputReference
 ```
@@ -133855,7 +133855,7 @@ func InternalValue() PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupByS
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryMultiComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillApmQueryMultiComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHostmapDefinitionRequestFillApmQueryMultiComputeList
 ```
@@ -134015,7 +134015,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryMultiComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillApmQueryMultiComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHostmapDefinitionRequestFillApmQueryMultiComputeOutputReference
 ```
@@ -134362,7 +134362,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillApmQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestFillApmQueryOutputReference
 ```
@@ -134788,7 +134788,7 @@ func InternalValue() PowerpackWidgetHostmapDefinitionRequestFillApmQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHostmapDefinitionRequestFillList
 ```
@@ -134948,7 +134948,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutputReference
 ```
@@ -135277,7 +135277,7 @@ func InternalValue() PowerpackWidgetHostmapDefinitionRequestFillLogQueryComputeQ
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupByList
 ```
@@ -135437,7 +135437,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupByOutputReference
 ```
@@ -135804,7 +135804,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryOutputReference
 ```
@@ -136126,7 +136126,7 @@ func InternalValue() PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupByS
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryMultiComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillLogQueryMultiComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHostmapDefinitionRequestFillLogQueryMultiComputeList
 ```
@@ -136286,7 +136286,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryMultiComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillLogQueryMultiComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHostmapDefinitionRequestFillLogQueryMultiComputeOutputReference
 ```
@@ -136633,7 +136633,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillLogQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestFillLogQueryOutputReference
 ```
@@ -137059,7 +137059,7 @@ func InternalValue() PowerpackWidgetHostmapDefinitionRequestFillLogQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHostmapDefinitionRequestFillOutputReference
 ```
@@ -137565,7 +137565,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillProcessQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillProcessQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestFillProcessQueryOutputReference
 ```
@@ -137923,7 +137923,7 @@ func InternalValue() PowerpackWidgetHostmapDefinitionRequestFillProcessQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryComputeQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillRumQueryComputeQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestFillRumQueryComputeQueryOutputReference
 ```
@@ -138252,7 +138252,7 @@ func InternalValue() PowerpackWidgetHostmapDefinitionRequestFillRumQueryComputeQ
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupByList
 ```
@@ -138412,7 +138412,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupByOutputReference
 ```
@@ -138779,7 +138779,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference
 ```
@@ -139101,7 +139101,7 @@ func InternalValue() PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupByS
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryMultiComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillRumQueryMultiComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHostmapDefinitionRequestFillRumQueryMultiComputeList
 ```
@@ -139261,7 +139261,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryMultiComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillRumQueryMultiComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHostmapDefinitionRequestFillRumQueryMultiComputeOutputReference
 ```
@@ -139608,7 +139608,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference
 ```
@@ -140034,7 +140034,7 @@ func InternalValue() PowerpackWidgetHostmapDefinitionRequestFillRumQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryComputeQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillSecurityQueryComputeQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryComputeQueryOutputReference
 ```
@@ -140363,7 +140363,7 @@ func InternalValue() PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryCom
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupByList
 ```
@@ -140523,7 +140523,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupByOutputReference
 ```
@@ -140890,7 +140890,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQueryOutputReference
 ```
@@ -141212,7 +141212,7 @@ func InternalValue() PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGro
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryMultiComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillSecurityQueryMultiComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryMultiComputeList
 ```
@@ -141372,7 +141372,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryMultiComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillSecurityQueryMultiComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryMultiComputeOutputReference
 ```
@@ -141719,7 +141719,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestFillSecurityQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryOutputReference
 ```
@@ -142145,7 +142145,7 @@ func InternalValue() PowerpackWidgetHostmapDefinitionRequestFillSecurityQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestOutputReference
 ```
@@ -142478,7 +142478,7 @@ func InternalValue() PowerpackWidgetHostmapDefinitionRequest
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryComputeQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestSizeApmQueryComputeQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestSizeApmQueryComputeQueryOutputReference
 ```
@@ -142807,7 +142807,7 @@ func InternalValue() PowerpackWidgetHostmapDefinitionRequestSizeApmQueryComputeQ
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupByList
 ```
@@ -142967,7 +142967,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupByOutputReference
 ```
@@ -143334,7 +143334,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQueryOutputReference
 ```
@@ -143656,7 +143656,7 @@ func InternalValue() PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupByS
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryMultiComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestSizeApmQueryMultiComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHostmapDefinitionRequestSizeApmQueryMultiComputeList
 ```
@@ -143816,7 +143816,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryMultiComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestSizeApmQueryMultiComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHostmapDefinitionRequestSizeApmQueryMultiComputeOutputReference
 ```
@@ -144163,7 +144163,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestSizeApmQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestSizeApmQueryOutputReference
 ```
@@ -144589,7 +144589,7 @@ func InternalValue() PowerpackWidgetHostmapDefinitionRequestSizeApmQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestSizeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHostmapDefinitionRequestSizeList
 ```
@@ -144749,7 +144749,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryComputeQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestSizeLogQueryComputeQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestSizeLogQueryComputeQueryOutputReference
 ```
@@ -145078,7 +145078,7 @@ func InternalValue() PowerpackWidgetHostmapDefinitionRequestSizeLogQueryComputeQ
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupByList
 ```
@@ -145238,7 +145238,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupByOutputReference
 ```
@@ -145605,7 +145605,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQueryOutputReference
 ```
@@ -145927,7 +145927,7 @@ func InternalValue() PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupByS
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryMultiComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestSizeLogQueryMultiComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHostmapDefinitionRequestSizeLogQueryMultiComputeList
 ```
@@ -146087,7 +146087,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryMultiComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestSizeLogQueryMultiComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHostmapDefinitionRequestSizeLogQueryMultiComputeOutputReference
 ```
@@ -146434,7 +146434,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestSizeLogQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestSizeLogQueryOutputReference
 ```
@@ -146860,7 +146860,7 @@ func InternalValue() PowerpackWidgetHostmapDefinitionRequestSizeLogQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestSizeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHostmapDefinitionRequestSizeOutputReference
 ```
@@ -147366,7 +147366,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeProcessQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestSizeProcessQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestSizeProcessQueryOutputReference
 ```
@@ -147724,7 +147724,7 @@ func InternalValue() PowerpackWidgetHostmapDefinitionRequestSizeProcessQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference
 ```
@@ -148053,7 +148053,7 @@ func InternalValue() PowerpackWidgetHostmapDefinitionRequestSizeRumQueryComputeQ
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupByList
 ```
@@ -148213,7 +148213,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference
 ```
@@ -148580,7 +148580,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQueryOutputReference
 ```
@@ -148902,7 +148902,7 @@ func InternalValue() PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupByS
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryMultiComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestSizeRumQueryMultiComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetHostmapDefinitionRequestSizeRumQueryMultiComputeList
 ```
@@ -149062,7 +149062,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryMultiComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestSizeRumQueryMultiComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PowerpackWidgetHostmapDefinitionRequestSizeRumQueryMultiComputeOutputReference
 ```
@@ -149409,7 +149409,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestSizeRumQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestSizeRumQueryOutputReference
 ```
@@ -149835,7 +149835,7 @@ func InternalValue() PowerpackWidgetHostmapDefinitionRequestSizeRumQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/powerpack"
 
 powerpack.NewPowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQueryOutputReference
 ```
