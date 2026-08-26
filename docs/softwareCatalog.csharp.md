@@ -4,7 +4,7 @@
 
 ### SoftwareCatalog <a name="SoftwareCatalog" id="@cdktn/provider-datadog.softwareCatalog.SoftwareCatalog"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/software_catalog datadog_software_catalog}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/software_catalog datadog_software_catalog}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.softwareCatalog.SoftwareCatalog.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the SoftwareCatalog to import.
 
 The id of the existing SoftwareCatalog that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/software_catalog#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/software_catalog#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -831,7 +831,7 @@ public string Entity { get; set; }
 
 The catalog entity definition. Entity must be a valid entity YAML/JSON structure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/software_catalog#entity SoftwareCatalog#entity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/software_catalog#entity SoftwareCatalog#entity}
 
 ---
 

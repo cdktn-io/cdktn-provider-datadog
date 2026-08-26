@@ -125,6 +125,7 @@ The following submodules are available:
 - [downtime](./downtime.python.md)
 - [downtimeSchedule](./downtimeSchedule.python.md)
 - [gcpUcConfig](./gcpUcConfig.python.md)
+- [governanceControl](./governanceControl.python.md)
 - [incidentNotificationRule](./incidentNotificationRule.python.md)
 - [incidentNotificationTemplate](./incidentNotificationTemplate.python.md)
 - [incidentPostmortemTemplate](./incidentPostmortemTemplate.python.md)
@@ -236,6 +237,7 @@ The following submodules are available:
 - [userRole](./userRole.python.md)
 - [webhook](./webhook.python.md)
 - [webhookCustomVariable](./webhookCustomVariable.python.md)
+- [webhookOauth2ClientCredentials](./webhookOauth2ClientCredentials.python.md)
 - [workflowAutomation](./workflowAutomation.python.md)
 
 

@@ -4,7 +4,7 @@
 
 ### CustomAllocationRule <a name="CustomAllocationRule" id="@cdktn/provider-datadog.customAllocationRule.CustomAllocationRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule datadog_custom_allocation_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule datadog_custom_allocation_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.customAllocationRule.CustomAllocationRule.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Whether the custom allocation rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#enabled CustomAllocationRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#enabled CustomAllocationRule#enabled}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 List of cloud providers the rule applies to. Valid values include `aws`, `azure`, and `gcp`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#providernames CustomAllocationRule#providernames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#providernames CustomAllocationRule#providernames}
 
 ---
 
@@ -136,7 +136,7 @@ The name of the custom allocation rule.
 
 This field is immutable - changing it will force replacement of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#rule_name CustomAllocationRule#rule_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#rule_name CustomAllocationRule#rule_name}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 costs_to_allocate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#costs_to_allocate CustomAllocationRule#costs_to_allocate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#costs_to_allocate CustomAllocationRule#costs_to_allocate}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 strategy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#strategy CustomAllocationRule#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#strategy CustomAllocationRule#strategy}
 
 ---
 
@@ -579,7 +579,7 @@ def put_strategy(
 
 allocated_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#allocated_by CustomAllocationRule#allocated_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#allocated_by CustomAllocationRule#allocated_by}
 
 ---
 
@@ -589,7 +589,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 allocated_by_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#allocated_by_filters CustomAllocationRule#allocated_by_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#allocated_by_filters CustomAllocationRule#allocated_by_filters}
 
 ---
 
@@ -599,7 +599,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 List of tag keys used to allocate costs (e.g., `["team", "project"]`). Costs will be distributed across unique values of these tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#allocated_by_tag_keys CustomAllocationRule#allocated_by_tag_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#allocated_by_tag_keys CustomAllocationRule#allocated_by_tag_keys}
 
 ---
 
@@ -609,7 +609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 based_on_costs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#based_on_costs CustomAllocationRule#based_on_costs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#based_on_costs CustomAllocationRule#based_on_costs}
 
 ---
 
@@ -619,7 +619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 based_on_timeseries block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#based_on_timeseries CustomAllocationRule#based_on_timeseries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#based_on_timeseries CustomAllocationRule#based_on_timeseries}
 
 ---
 
@@ -629,7 +629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 evaluate_grouped_by_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#evaluate_grouped_by_filters CustomAllocationRule#evaluate_grouped_by_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#evaluate_grouped_by_filters CustomAllocationRule#evaluate_grouped_by_filters}
 
 ---
 
@@ -641,7 +641,7 @@ List of tag keys used to group costs before allocation.
 
 Costs are grouped by these tag values before applying the allocation strategy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#evaluate_grouped_by_tag_keys CustomAllocationRule#evaluate_grouped_by_tag_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#evaluate_grouped_by_tag_keys CustomAllocationRule#evaluate_grouped_by_tag_keys}
 
 ---
 
@@ -651,7 +651,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The granularity level for cost allocation. Valid values are `daily` or `monthly`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#granularity CustomAllocationRule#granularity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#granularity CustomAllocationRule#granularity}
 
 ---
 
@@ -659,9 +659,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-The allocation method. Valid values are `even`, `proportional`, `proportional_timeseries`, or `percent`.
+The allocation method. Valid values are `even`, `percent`, `proportional`, `proportional_timeseries`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#method CustomAllocationRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#method CustomAllocationRule#method}
 
 ---
 
@@ -791,7 +791,7 @@ The construct id used in the generated config for the CustomAllocationRule to im
 
 The id of the existing CustomAllocationRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1295,7 +1295,7 @@ enabled: bool | IResolvable
 
 Whether the custom allocation rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#enabled CustomAllocationRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#enabled CustomAllocationRule#enabled}
 
 ---
 
@@ -1309,7 +1309,7 @@ providernames: typing.List[str]
 
 List of cloud providers the rule applies to. Valid values include `aws`, `azure`, and `gcp`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#providernames CustomAllocationRule#providernames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#providernames CustomAllocationRule#providernames}
 
 ---
 
@@ -1325,7 +1325,7 @@ The name of the custom allocation rule.
 
 This field is immutable - changing it will force replacement of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#rule_name CustomAllocationRule#rule_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#rule_name CustomAllocationRule#rule_name}
 
 ---
 
@@ -1339,7 +1339,7 @@ costs_to_allocate: IResolvable | typing.List[CustomAllocationRuleCostsToAllocate
 
 costs_to_allocate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#costs_to_allocate CustomAllocationRule#costs_to_allocate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#costs_to_allocate CustomAllocationRule#costs_to_allocate}
 
 ---
 
@@ -1353,7 +1353,7 @@ strategy: CustomAllocationRuleStrategy
 
 strategy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#strategy CustomAllocationRule#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#strategy CustomAllocationRule#strategy}
 
 ---
 
@@ -1393,7 +1393,7 @@ condition: str
 
 The condition to match. Valid values are `=`, `!=`, `is`, `is not`, `like`, `in`, `not in`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#condition CustomAllocationRule#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#condition CustomAllocationRule#condition}
 
 ---
 
@@ -1407,7 +1407,7 @@ tag: str
 
 The tag key to filter on (e.g., `aws_product`, `team`, `environment`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#tag CustomAllocationRule#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#tag CustomAllocationRule#tag}
 
 ---
 
@@ -1423,7 +1423,7 @@ The single tag value to match.
 
 Use this field for conditions like `=`, `!=`, `is`, `is not`, `like`. Do not use with `in` or `not in` conditions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
 
 ---
 
@@ -1439,7 +1439,7 @@ A list of tag values to match.
 
 Use this field for `in` or `not in` conditions only. Do not use with single-value conditions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#values CustomAllocationRule#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#values CustomAllocationRule#values}
 
 ---
 
@@ -1475,7 +1475,7 @@ customAllocationRule.CustomAllocationRuleStrategy(
 | <code><a href="#@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategy.property.evaluateGroupedByFilters">evaluate_grouped_by_filters</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyEvaluateGroupedByFilters">CustomAllocationRuleStrategyEvaluateGroupedByFilters</a>]</code> | evaluate_grouped_by_filters block. |
 | <code><a href="#@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategy.property.evaluateGroupedByTagKeys">evaluate_grouped_by_tag_keys</a></code> | <code>typing.List[str]</code> | List of tag keys used to group costs before allocation. |
 | <code><a href="#@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategy.property.granularity">granularity</a></code> | <code>str</code> | The granularity level for cost allocation. Valid values are `daily` or `monthly`. |
-| <code><a href="#@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategy.property.method">method</a></code> | <code>str</code> | The allocation method. Valid values are `even`, `proportional`, `proportional_timeseries`, or `percent`. |
+| <code><a href="#@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategy.property.method">method</a></code> | <code>str</code> | The allocation method. Valid values are `even`, `percent`, `proportional`, `proportional_timeseries`. |
 
 ---
 
@@ -1489,7 +1489,7 @@ allocated_by: IResolvable | typing.List[CustomAllocationRuleStrategyAllocatedBy]
 
 allocated_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#allocated_by CustomAllocationRule#allocated_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#allocated_by CustomAllocationRule#allocated_by}
 
 ---
 
@@ -1503,7 +1503,7 @@ allocated_by_filters: IResolvable | typing.List[CustomAllocationRuleStrategyAllo
 
 allocated_by_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#allocated_by_filters CustomAllocationRule#allocated_by_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#allocated_by_filters CustomAllocationRule#allocated_by_filters}
 
 ---
 
@@ -1517,7 +1517,7 @@ allocated_by_tag_keys: typing.List[str]
 
 List of tag keys used to allocate costs (e.g., `["team", "project"]`). Costs will be distributed across unique values of these tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#allocated_by_tag_keys CustomAllocationRule#allocated_by_tag_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#allocated_by_tag_keys CustomAllocationRule#allocated_by_tag_keys}
 
 ---
 
@@ -1531,7 +1531,7 @@ based_on_costs: IResolvable | typing.List[CustomAllocationRuleStrategyBasedOnCos
 
 based_on_costs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#based_on_costs CustomAllocationRule#based_on_costs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#based_on_costs CustomAllocationRule#based_on_costs}
 
 ---
 
@@ -1545,7 +1545,7 @@ based_on_timeseries: CustomAllocationRuleStrategyBasedOnTimeseries
 
 based_on_timeseries block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#based_on_timeseries CustomAllocationRule#based_on_timeseries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#based_on_timeseries CustomAllocationRule#based_on_timeseries}
 
 ---
 
@@ -1559,7 +1559,7 @@ evaluate_grouped_by_filters: IResolvable | typing.List[CustomAllocationRuleStrat
 
 evaluate_grouped_by_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#evaluate_grouped_by_filters CustomAllocationRule#evaluate_grouped_by_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#evaluate_grouped_by_filters CustomAllocationRule#evaluate_grouped_by_filters}
 
 ---
 
@@ -1575,7 +1575,7 @@ List of tag keys used to group costs before allocation.
 
 Costs are grouped by these tag values before applying the allocation strategy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#evaluate_grouped_by_tag_keys CustomAllocationRule#evaluate_grouped_by_tag_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#evaluate_grouped_by_tag_keys CustomAllocationRule#evaluate_grouped_by_tag_keys}
 
 ---
 
@@ -1589,7 +1589,7 @@ granularity: str
 
 The granularity level for cost allocation. Valid values are `daily` or `monthly`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#granularity CustomAllocationRule#granularity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#granularity CustomAllocationRule#granularity}
 
 ---
 
@@ -1601,9 +1601,9 @@ method: str
 
 - *Type:* str
 
-The allocation method. Valid values are `even`, `proportional`, `proportional_timeseries`, or `percent`.
+The allocation method. Valid values are `even`, `percent`, `proportional`, `proportional_timeseries`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#method CustomAllocationRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#method CustomAllocationRule#method}
 
 ---
 
@@ -1639,7 +1639,7 @@ allocated_tags: IResolvable | typing.List[CustomAllocationRuleStrategyAllocatedB
 
 allocated_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#allocated_tags CustomAllocationRule#allocated_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#allocated_tags CustomAllocationRule#allocated_tags}
 
 ---
 
@@ -1653,7 +1653,7 @@ percentage: typing.Union[int, float]
 
 The percentage of costs to allocate to this target as a decimal (e.g., 0.33 for 33%). Used when `method` is `percent`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#percentage CustomAllocationRule#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#percentage CustomAllocationRule#percentage}
 
 ---
 
@@ -1689,7 +1689,7 @@ key: str
 
 The tag key to allocate costs to (e.g., `team`, `environment`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#key CustomAllocationRule#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#key CustomAllocationRule#key}
 
 ---
 
@@ -1703,7 +1703,7 @@ value: str
 
 The tag value to allocate costs to (e.g., `backend`, `production`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
 
 ---
 
@@ -1743,7 +1743,7 @@ condition: str
 
 The condition to match. Valid values are `=`, `!=`, `is`, `is not`, `like`, `in`, `not in`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#condition CustomAllocationRule#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#condition CustomAllocationRule#condition}
 
 ---
 
@@ -1757,7 +1757,7 @@ tag: str
 
 The tag key to filter on for allocation targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#tag CustomAllocationRule#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#tag CustomAllocationRule#tag}
 
 ---
 
@@ -1771,7 +1771,7 @@ value: str
 
 The single tag value to match for allocation. Use with conditions like `=`, `!=`, `is`, `is not`, `like`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
 
 ---
 
@@ -1785,7 +1785,7 @@ values: typing.List[str]
 
 A list of tag values to match for allocation. Use with `in` or `not in` conditions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#values CustomAllocationRule#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#values CustomAllocationRule#values}
 
 ---
 
@@ -1825,7 +1825,7 @@ condition: str
 
 The condition to match. Valid values are `=`, `!=`, `is`, `is not`, `like`, `in`, `not in`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#condition CustomAllocationRule#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#condition CustomAllocationRule#condition}
 
 ---
 
@@ -1839,7 +1839,7 @@ tag: str
 
 The tag key to use as the basis for cost allocation calculations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#tag CustomAllocationRule#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#tag CustomAllocationRule#tag}
 
 ---
 
@@ -1853,7 +1853,7 @@ value: str
 
 The single tag value to use for cost calculations. Use with conditions like `=`, `!=`, `is`, `is not`, `like`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
 
 ---
 
@@ -1867,7 +1867,7 @@ values: typing.List[str]
 
 A list of tag values to use for cost calculations. Use with `in` or `not in` conditions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#values CustomAllocationRule#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#values CustomAllocationRule#values}
 
 ---
 
@@ -1878,9 +1878,34 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ```python
 from cdktn_provider_datadog import custom_allocation_rule
 
-customAllocationRule.CustomAllocationRuleStrategyBasedOnTimeseries()
+customAllocationRule.CustomAllocationRuleStrategyBasedOnTimeseries(
+  json: str = None
+)
 ```
 
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnTimeseries.property.json">json</a></code> | <code>str</code> | The timeseries query that determines the allocation proportions, encoded as a JSON object. |
+
+---
+
+##### `json`<sup>Optional</sup> <a name="json" id="@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnTimeseries.property.json"></a>
+
+```python
+json: str
+```
+
+- *Type:* str
+
+The timeseries query that determines the allocation proportions, encoded as a JSON object.
+
+Required when `method` is `proportional_timeseries`. Uses Datadog's formulas-and-functions request format with `queries`, `formulas`, and `response_format` keys. Build it with `jsonencode()`. The set of supported `data_source` values is defined by the API, not by this provider.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#json CustomAllocationRule#json}
+
+---
 
 ### CustomAllocationRuleStrategyEvaluateGroupedByFilters <a name="CustomAllocationRuleStrategyEvaluateGroupedByFilters" id="@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyEvaluateGroupedByFilters"></a>
 
@@ -1918,7 +1943,7 @@ condition: str
 
 The condition to match. Valid values are `=`, `!=`, `is`, `is not`, `like`, `in`, `not in`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#condition CustomAllocationRule#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#condition CustomAllocationRule#condition}
 
 ---
 
@@ -1932,7 +1957,7 @@ tag: str
 
 The tag key to filter on when grouping costs for evaluation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#tag CustomAllocationRule#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#tag CustomAllocationRule#tag}
 
 ---
 
@@ -1946,7 +1971,7 @@ value: str
 
 The single tag value to match when grouping. Use with conditions like `=`, `!=`, `is`, `is not`, `like`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
 
 ---
 
@@ -1960,7 +1985,7 @@ values: typing.List[str]
 
 A list of tag values to match when grouping. Use with `in` or `not in` conditions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rule#values CustomAllocationRule#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#values CustomAllocationRule#values}
 
 ---
 
@@ -4818,6 +4843,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference.resetJson">reset_json</a></code> | *No description.* |
 
 ---
 
@@ -4993,6 +5019,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `reset_json` <a name="reset_json" id="@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference.resetJson"></a>
+
+```python
+def reset_json() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -5000,6 +5032,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference.property.jsonInput">json_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference.property.json">json</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnTimeseries">CustomAllocationRuleStrategyBasedOnTimeseries</a></code> | *No description.* |
 
 ---
@@ -5022,6 +5056,26 @@ If this returns an empty array the stack will not be attached.
 
 ```python
 fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `json_input`<sup>Optional</sup> <a name="json_input" id="@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference.property.jsonInput"></a>
+
+```python
+json_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `json`<sup>Required</sup> <a name="json" id="@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference.property.json"></a>
+
+```python
+json: str
 ```
 
 - *Type:* str
@@ -5681,6 +5735,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyOutputReference.resetAllocatedByFilters">reset_allocated_by_filters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyOutputReference.resetAllocatedByTagKeys">reset_allocated_by_tag_keys</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyOutputReference.resetBasedOnCosts">reset_based_on_costs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyOutputReference.resetBasedOnTimeseries">reset_based_on_timeseries</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyOutputReference.resetEvaluateGroupedByFilters">reset_evaluate_grouped_by_filters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyOutputReference.resetEvaluateGroupedByTagKeys">reset_evaluate_grouped_by_tag_keys</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyOutputReference.resetGranularity">reset_granularity</a></code> | *No description.* |
@@ -5905,8 +5960,22 @@ def put_based_on_costs(
 ##### `put_based_on_timeseries` <a name="put_based_on_timeseries" id="@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyOutputReference.putBasedOnTimeseries"></a>
 
 ```python
-def put_based_on_timeseries() -> None
+def put_based_on_timeseries(
+  json: str = None
+) -> None
 ```
+
+###### `json`<sup>Optional</sup> <a name="json" id="@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyOutputReference.putBasedOnTimeseries.parameter.json"></a>
+
+- *Type:* str
+
+The timeseries query that determines the allocation proportions, encoded as a JSON object.
+
+Required when `method` is `proportional_timeseries`. Uses Datadog's formulas-and-functions request format with `queries`, `formulas`, and `response_format` keys. Build it with `jsonencode()`. The set of supported `data_source` values is defined by the API, not by this provider.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rule#json CustomAllocationRule#json}
+
+---
 
 ##### `put_evaluate_grouped_by_filters` <a name="put_evaluate_grouped_by_filters" id="@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyOutputReference.putEvaluateGroupedByFilters"></a>
 
@@ -5944,6 +6013,12 @@ def reset_allocated_by_tag_keys() -> None
 
 ```python
 def reset_based_on_costs() -> None
+```
+
+##### `reset_based_on_timeseries` <a name="reset_based_on_timeseries" id="@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyOutputReference.resetBasedOnTimeseries"></a>
+
+```python
+def reset_based_on_timeseries() -> None
 ```
 
 ##### `reset_evaluate_grouped_by_filters` <a name="reset_evaluate_grouped_by_filters" id="@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyOutputReference.resetEvaluateGroupedByFilters"></a>
