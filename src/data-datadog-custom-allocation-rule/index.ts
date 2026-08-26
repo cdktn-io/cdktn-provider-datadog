@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/custom_allocation_rule
+// https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/custom_allocation_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DataDatadogCustomAllocationRuleConfig extends cdktn.TerraformMe
   /**
   * The ID of the custom allocation rule to retrieve.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/custom_allocation_rule#rule_id DataDatadogCustomAllocationRule#rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/custom_allocation_rule#rule_id DataDatadogCustomAllocationRule#rule_id}
   */
   readonly ruleId?: number;
   /**
   * costs_to_allocate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/custom_allocation_rule#costs_to_allocate DataDatadogCustomAllocationRule#costs_to_allocate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/custom_allocation_rule#costs_to_allocate DataDatadogCustomAllocationRule#costs_to_allocate}
   */
   readonly costsToAllocate?: DataDatadogCustomAllocationRuleCostsToAllocate[] | cdktn.IResolvable;
   /**
   * strategy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/custom_allocation_rule#strategy DataDatadogCustomAllocationRule#strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/custom_allocation_rule#strategy DataDatadogCustomAllocationRule#strategy}
   */
   readonly strategy?: DataDatadogCustomAllocationRuleStrategy;
 }
@@ -227,7 +227,7 @@ export interface DataDatadogCustomAllocationRuleStrategyAllocatedBy {
   /**
   * allocated_tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/custom_allocation_rule#allocated_tags DataDatadogCustomAllocationRule#allocated_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/custom_allocation_rule#allocated_tags DataDatadogCustomAllocationRule#allocated_tags}
   */
   readonly allocatedTags?: DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTags[] | cdktn.IResolvable;
 }
@@ -606,6 +606,11 @@ export class DataDatadogCustomAllocationRuleStrategyBasedOnTimeseriesOutputRefer
       this.resolvableValue = undefined;
     }
   }
+
+  // json - computed: true, optional: false, required: false
+  public get json() {
+    return this.getStringAttribute('json');
+  }
 }
 export interface DataDatadogCustomAllocationRuleStrategyEvaluateGroupedByFilters {
 }
@@ -712,31 +717,25 @@ export interface DataDatadogCustomAllocationRuleStrategy {
   /**
   * allocated_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/custom_allocation_rule#allocated_by DataDatadogCustomAllocationRule#allocated_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/custom_allocation_rule#allocated_by DataDatadogCustomAllocationRule#allocated_by}
   */
   readonly allocatedBy?: DataDatadogCustomAllocationRuleStrategyAllocatedBy[] | cdktn.IResolvable;
   /**
   * allocated_by_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/custom_allocation_rule#allocated_by_filters DataDatadogCustomAllocationRule#allocated_by_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/custom_allocation_rule#allocated_by_filters DataDatadogCustomAllocationRule#allocated_by_filters}
   */
   readonly allocatedByFilters?: DataDatadogCustomAllocationRuleStrategyAllocatedByFilters[] | cdktn.IResolvable;
   /**
   * based_on_costs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/custom_allocation_rule#based_on_costs DataDatadogCustomAllocationRule#based_on_costs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/custom_allocation_rule#based_on_costs DataDatadogCustomAllocationRule#based_on_costs}
   */
   readonly basedOnCosts?: DataDatadogCustomAllocationRuleStrategyBasedOnCosts[] | cdktn.IResolvable;
   /**
-  * based_on_timeseries block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/custom_allocation_rule#based_on_timeseries DataDatadogCustomAllocationRule#based_on_timeseries}
-  */
-  readonly basedOnTimeseries?: DataDatadogCustomAllocationRuleStrategyBasedOnTimeseries;
-  /**
   * evaluate_grouped_by_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/custom_allocation_rule#evaluate_grouped_by_filters DataDatadogCustomAllocationRule#evaluate_grouped_by_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/custom_allocation_rule#evaluate_grouped_by_filters DataDatadogCustomAllocationRule#evaluate_grouped_by_filters}
   */
   readonly evaluateGroupedByFilters?: DataDatadogCustomAllocationRuleStrategyEvaluateGroupedByFilters[] | cdktn.IResolvable;
 }
@@ -750,7 +749,6 @@ export function dataDatadogCustomAllocationRuleStrategyToTerraform(struct?: Data
     allocated_by: cdktn.listMapper(dataDatadogCustomAllocationRuleStrategyAllocatedByToTerraform, true)(struct!.allocatedBy),
     allocated_by_filters: cdktn.listMapper(dataDatadogCustomAllocationRuleStrategyAllocatedByFiltersToTerraform, true)(struct!.allocatedByFilters),
     based_on_costs: cdktn.listMapper(dataDatadogCustomAllocationRuleStrategyBasedOnCostsToTerraform, true)(struct!.basedOnCosts),
-    based_on_timeseries: dataDatadogCustomAllocationRuleStrategyBasedOnTimeseriesToTerraform(struct!.basedOnTimeseries),
     evaluate_grouped_by_filters: cdktn.listMapper(dataDatadogCustomAllocationRuleStrategyEvaluateGroupedByFiltersToTerraform, true)(struct!.evaluateGroupedByFilters),
   }
 }
@@ -779,12 +777,6 @@ export function dataDatadogCustomAllocationRuleStrategyToHclTerraform(struct?: D
       isBlock: true,
       type: "list",
       storageClassType: "DataDatadogCustomAllocationRuleStrategyBasedOnCostsList",
-    },
-    based_on_timeseries: {
-      value: dataDatadogCustomAllocationRuleStrategyBasedOnTimeseriesToHclTerraform(struct!.basedOnTimeseries),
-      isBlock: true,
-      type: "struct",
-      storageClassType: "DataDatadogCustomAllocationRuleStrategyBasedOnTimeseries",
     },
     evaluate_grouped_by_filters: {
       value: cdktn.listMapperHcl(dataDatadogCustomAllocationRuleStrategyEvaluateGroupedByFiltersToHclTerraform, true)(struct!.evaluateGroupedByFilters),
@@ -828,10 +820,6 @@ export class DataDatadogCustomAllocationRuleStrategyOutputReference extends cdkt
       hasAnyValues = true;
       internalValueResult.basedOnCosts = this._basedOnCosts?.internalValue;
     }
-    if (this._basedOnTimeseries?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.basedOnTimeseries = this._basedOnTimeseries?.internalValue;
-    }
     if (this._evaluateGroupedByFilters?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.evaluateGroupedByFilters = this._evaluateGroupedByFilters?.internalValue;
@@ -846,7 +834,6 @@ export class DataDatadogCustomAllocationRuleStrategyOutputReference extends cdkt
       this._allocatedBy.internalValue = undefined;
       this._allocatedByFilters.internalValue = undefined;
       this._basedOnCosts.internalValue = undefined;
-      this._basedOnTimeseries.internalValue = undefined;
       this._evaluateGroupedByFilters.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
@@ -859,7 +846,6 @@ export class DataDatadogCustomAllocationRuleStrategyOutputReference extends cdkt
       this._allocatedBy.internalValue = value.allocatedBy;
       this._allocatedByFilters.internalValue = value.allocatedByFilters;
       this._basedOnCosts.internalValue = value.basedOnCosts;
-      this._basedOnTimeseries.internalValue = value.basedOnTimeseries;
       this._evaluateGroupedByFilters.internalValue = value.evaluateGroupedByFilters;
     }
   }
@@ -932,17 +918,10 @@ export class DataDatadogCustomAllocationRuleStrategyOutputReference extends cdkt
     return this._basedOnCosts.internalValue;
   }
 
-  // based_on_timeseries - computed: false, optional: true, required: true
+  // based_on_timeseries - computed: false, optional: false, required: false
   private _basedOnTimeseries = new DataDatadogCustomAllocationRuleStrategyBasedOnTimeseriesOutputReference(this, "based_on_timeseries");
   public get basedOnTimeseries() {
     return this._basedOnTimeseries;
-  }
-  public putBasedOnTimeseries(value: DataDatadogCustomAllocationRuleStrategyBasedOnTimeseries) {
-    this._basedOnTimeseries.internalValue = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get basedOnTimeseriesInput() {
-    return this._basedOnTimeseries.internalValue;
   }
 
   // evaluate_grouped_by_filters - computed: false, optional: true, required: false
@@ -963,7 +942,7 @@ export class DataDatadogCustomAllocationRuleStrategyOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/custom_allocation_rule datadog_custom_allocation_rule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/custom_allocation_rule datadog_custom_allocation_rule}
 */
 export class DataDatadogCustomAllocationRule extends cdktn.TerraformDataSource {
 
@@ -979,7 +958,7 @@ export class DataDatadogCustomAllocationRule extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatadogCustomAllocationRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogCustomAllocationRule to import
-  * @param importFromId The id of the existing DataDatadogCustomAllocationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/custom_allocation_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogCustomAllocationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/custom_allocation_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogCustomAllocationRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -991,7 +970,7 @@ export class DataDatadogCustomAllocationRule extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/custom_allocation_rule datadog_custom_allocation_rule} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/custom_allocation_rule datadog_custom_allocation_rule} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1002,7 +981,7 @@ export class DataDatadogCustomAllocationRule extends cdktn.TerraformDataSource {
       terraformResourceType: 'datadog_custom_allocation_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.17.0',
+        providerVersion: '4.19.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

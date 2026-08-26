@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_postmortem_template
+// https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_postmortem_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,43 +15,43 @@ export interface IncidentPostmortemTemplateConfig extends cdktn.TerraformMetaArg
   /**
   * The templated content of the postmortem, supporting Markdown and incident template variables.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_postmortem_template#content IncidentPostmortemTemplate#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_postmortem_template#content IncidentPostmortemTemplate#content}
   */
   readonly content?: string;
   /**
   * The ID of the incident type this template is associated with. Immutable after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_postmortem_template#incident_type IncidentPostmortemTemplate#incident_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_postmortem_template#incident_type IncidentPostmortemTemplate#incident_type}
   */
   readonly incidentType: string;
   /**
   * Whether this template is a default for its incident type. The API stores a timestamp; the effective default for an incident type is the template with the most recent default timestamp.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_postmortem_template#is_default IncidentPostmortemTemplate#is_default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_postmortem_template#is_default IncidentPostmortemTemplate#is_default}
   */
   readonly isDefault?: boolean | cdktn.IResolvable;
   /**
   * The location where the postmortem is created and stored. Valid values are: datadog_notebooks, confluence, google_docs. Defaults to datadog_notebooks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_postmortem_template#location IncidentPostmortemTemplate#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_postmortem_template#location IncidentPostmortemTemplate#location}
   */
   readonly location?: string;
   /**
   * The name of the template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_postmortem_template#name IncidentPostmortemTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_postmortem_template#name IncidentPostmortemTemplate#name}
   */
   readonly name: string;
   /**
   * confluence_postmortem_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_postmortem_template#confluence_postmortem_settings IncidentPostmortemTemplate#confluence_postmortem_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_postmortem_template#confluence_postmortem_settings IncidentPostmortemTemplate#confluence_postmortem_settings}
   */
   readonly confluencePostmortemSettings?: IncidentPostmortemTemplateConfluencePostmortemSettings;
   /**
   * google_docs_postmortem_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_postmortem_template#google_docs_postmortem_settings IncidentPostmortemTemplate#google_docs_postmortem_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_postmortem_template#google_docs_postmortem_settings IncidentPostmortemTemplate#google_docs_postmortem_settings}
   */
   readonly googleDocsPostmortemSettings?: IncidentPostmortemTemplateGoogleDocsPostmortemSettings;
 }
@@ -59,19 +59,19 @@ export interface IncidentPostmortemTemplateConfluencePostmortemSettings {
   /**
   * The ID of the Confluence account, a Datadog connected-account UUID (e.g. `3f9b1c2a-8d4e-4a11-9c2f-0b7e5d6a1f23`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_postmortem_template#account_id IncidentPostmortemTemplate#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_postmortem_template#account_id IncidentPostmortemTemplate#account_id}
   */
   readonly accountId?: string;
   /**
   * The ID of the parent Confluence page under which postmortems are created: a numeric page ID (e.g. `393217`), not a page path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_postmortem_template#parent_id IncidentPostmortemTemplate#parent_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_postmortem_template#parent_id IncidentPostmortemTemplate#parent_id}
   */
   readonly parentId?: string;
   /**
   * The Confluence space key (e.g. `ENG`), not a numeric space ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_postmortem_template#space_id IncidentPostmortemTemplate#space_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_postmortem_template#space_id IncidentPostmortemTemplate#space_id}
   */
   readonly spaceId?: string;
 }
@@ -225,13 +225,13 @@ export interface IncidentPostmortemTemplateGoogleDocsPostmortemSettings {
   /**
   * The ID of the Google Drive account, a Datadog connected-account UUID (e.g. `a1b2c3d4-e5f6-4789-8abc-1234567890ab`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_postmortem_template#account_id IncidentPostmortemTemplate#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_postmortem_template#account_id IncidentPostmortemTemplate#account_id}
   */
   readonly accountId?: string;
   /**
   * The Google Drive folder ID where postmortems are created, taken from the folder URL (e.g. `1eCqLAKQqRHt49J2aqQLGUcnPMzGHkt2B`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_postmortem_template#parent_folder_id IncidentPostmortemTemplate#parent_folder_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_postmortem_template#parent_folder_id IncidentPostmortemTemplate#parent_folder_id}
   */
   readonly parentFolderId?: string;
 }
@@ -354,7 +354,7 @@ export class IncidentPostmortemTemplateGoogleDocsPostmortemSettingsOutputReferen
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_postmortem_template datadog_incident_postmortem_template}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_postmortem_template datadog_incident_postmortem_template}
 */
 export class IncidentPostmortemTemplate extends cdktn.TerraformResource {
 
@@ -370,7 +370,7 @@ export class IncidentPostmortemTemplate extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a IncidentPostmortemTemplate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IncidentPostmortemTemplate to import
-  * @param importFromId The id of the existing IncidentPostmortemTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_postmortem_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IncidentPostmortemTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_postmortem_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IncidentPostmortemTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -382,7 +382,7 @@ export class IncidentPostmortemTemplate extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_postmortem_template datadog_incident_postmortem_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_postmortem_template datadog_incident_postmortem_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -393,7 +393,7 @@ export class IncidentPostmortemTemplate extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_incident_postmortem_template',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.17.0',
+        providerVersion: '4.19.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
