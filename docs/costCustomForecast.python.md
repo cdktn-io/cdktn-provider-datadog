@@ -4,7 +4,7 @@
 
 ### CostCustomForecast <a name="CostCustomForecast" id="@cdktn/provider-datadog.costCustomForecast.CostCustomForecast"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/cost_custom_forecast datadog_cost_custom_forecast}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/cost_custom_forecast datadog_cost_custom_forecast}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.costCustomForecast.CostCustomForecast.Initializer"></a>
 
@@ -110,7 +110,7 @@ The UUID of the budget that this custom forecast belongs to.
 
 Changing this value forces a new resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/cost_custom_forecast#budget_uid CostCustomForecast#budget_uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/cost_custom_forecast#budget_uid CostCustomForecast#budget_uid}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 entries block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/cost_custom_forecast#entries CostCustomForecast#entries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/cost_custom_forecast#entries CostCustomForecast#entries}
 
 ---
 
@@ -639,7 +639,7 @@ The construct id used in the generated config for the CostCustomForecast to impo
 
 The id of the existing CostCustomForecast that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/cost_custom_forecast#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/cost_custom_forecast#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1051,7 +1051,7 @@ The UUID of the budget that this custom forecast belongs to.
 
 Changing this value forces a new resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/cost_custom_forecast#budget_uid CostCustomForecast#budget_uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/cost_custom_forecast#budget_uid CostCustomForecast#budget_uid}
 
 ---
 
@@ -1065,7 +1065,7 @@ entries: IResolvable | typing.List[CostCustomForecastEntries]
 
 entries block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/cost_custom_forecast#entries CostCustomForecast#entries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/cost_custom_forecast#entries CostCustomForecast#entries}
 
 ---
 
@@ -1103,7 +1103,7 @@ amount: typing.Union[int, float]
 
 The forecast override amount for the month. Value must be at least 0.000000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/cost_custom_forecast#amount CostCustomForecast#amount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/cost_custom_forecast#amount CostCustomForecast#amount}
 
 ---
 
@@ -1117,7 +1117,7 @@ month: typing.Union[int, float]
 
 The month the entry applies to, in `YYYYMM` format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/cost_custom_forecast#month CostCustomForecast#month}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/cost_custom_forecast#month CostCustomForecast#month}
 
 ---
 
@@ -1131,7 +1131,7 @@ tag_filters: IResolvable | typing.List[CostCustomForecastEntriesTagFilters]
 
 tag_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/cost_custom_forecast#tag_filters CostCustomForecast#tag_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/cost_custom_forecast#tag_filters CostCustomForecast#tag_filters}
 
 ---
 
@@ -1152,8 +1152,8 @@ costCustomForecast.CostCustomForecastEntriesTagFilters(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.costCustomForecast.CostCustomForecastEntriesTagFilters.property.tagKey">tag_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/cost_custom_forecast#tag_key CostCustomForecast#tag_key}. |
-| <code><a href="#@cdktn/provider-datadog.costCustomForecast.CostCustomForecastEntriesTagFilters.property.tagValue">tag_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/cost_custom_forecast#tag_value CostCustomForecast#tag_value}. |
+| <code><a href="#@cdktn/provider-datadog.costCustomForecast.CostCustomForecastEntriesTagFilters.property.tagKey">tag_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/cost_custom_forecast#tag_key CostCustomForecast#tag_key}. |
+| <code><a href="#@cdktn/provider-datadog.costCustomForecast.CostCustomForecastEntriesTagFilters.property.tagValue">tag_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/cost_custom_forecast#tag_value CostCustomForecast#tag_value}. |
 
 ---
 
@@ -1165,7 +1165,7 @@ tag_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/cost_custom_forecast#tag_key CostCustomForecast#tag_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/cost_custom_forecast#tag_key CostCustomForecast#tag_key}.
 
 ---
 
@@ -1177,7 +1177,7 @@ tag_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/cost_custom_forecast#tag_value CostCustomForecast#tag_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/cost_custom_forecast#tag_value CostCustomForecast#tag_value}.
 
 ---
 

@@ -125,6 +125,7 @@ The following submodules are available:
 - [downtime](./downtime.go.md)
 - [downtimeSchedule](./downtimeSchedule.go.md)
 - [gcpUcConfig](./gcpUcConfig.go.md)
+- [governanceControl](./governanceControl.go.md)
 - [incidentNotificationRule](./incidentNotificationRule.go.md)
 - [incidentNotificationTemplate](./incidentNotificationTemplate.go.md)
 - [incidentPostmortemTemplate](./incidentPostmortemTemplate.go.md)
@@ -236,6 +237,7 @@ The following submodules are available:
 - [userRole](./userRole.go.md)
 - [webhook](./webhook.go.md)
 - [webhookCustomVariable](./webhookCustomVariable.go.md)
+- [webhookOauth2ClientCredentials](./webhookOauth2ClientCredentials.go.md)
 - [workflowAutomation](./workflowAutomation.go.md)
 
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_pipeline_rulesets
+// https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/tag_pipeline_rulesets
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface TagPipelineRulesetsConfig extends cdktn.TerraformMetaArguments 
   /**
   * Whether to override UI-defined rulesets. When set to true, any rulesets created via the UI that are not defined in Terraform will be deleted and Terraform will be used as the source of truth for rules and their ordering. When set to false, any rulesets created via the UI that are at the end of order will be kept but will be warned, otherwise an error will be thrown in terraform plan phase. Default is false
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_pipeline_rulesets#override_ui_defined_resources TagPipelineRulesets#override_ui_defined_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/tag_pipeline_rulesets#override_ui_defined_resources TagPipelineRulesets#override_ui_defined_resources}
   */
   readonly overrideUiDefinedResources?: boolean | cdktn.IResolvable;
   /**
   * The list of Tag Pipeline Ruleset IDs, in order. Rulesets are executed in the order specified in this list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_pipeline_rulesets#ruleset_ids TagPipelineRulesets#ruleset_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/tag_pipeline_rulesets#ruleset_ids TagPipelineRulesets#ruleset_ids}
   */
   readonly rulesetIds: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_pipeline_rulesets datadog_tag_pipeline_rulesets}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/tag_pipeline_rulesets datadog_tag_pipeline_rulesets}
 */
 export class TagPipelineRulesets extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class TagPipelineRulesets extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a TagPipelineRulesets resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TagPipelineRulesets to import
-  * @param importFromId The id of the existing TagPipelineRulesets that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_pipeline_rulesets#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TagPipelineRulesets that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/tag_pipeline_rulesets#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TagPipelineRulesets to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class TagPipelineRulesets extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_pipeline_rulesets datadog_tag_pipeline_rulesets} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/tag_pipeline_rulesets datadog_tag_pipeline_rulesets} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class TagPipelineRulesets extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_tag_pipeline_rulesets',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.17.0',
+        providerVersion: '4.19.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -43,6 +43,7 @@ Object.defineProperty(exports, 'domainAllowlist', { get: function () { return re
 Object.defineProperty(exports, 'downtime', { get: function () { return require('./downtime'); } });
 Object.defineProperty(exports, 'downtimeSchedule', { get: function () { return require('./downtime-schedule'); } });
 Object.defineProperty(exports, 'gcpUcConfig', { get: function () { return require('./gcp-uc-config'); } });
+Object.defineProperty(exports, 'governanceControl', { get: function () { return require('./governance-control'); } });
 Object.defineProperty(exports, 'incidentNotificationRule', { get: function () { return require('./incident-notification-rule'); } });
 Object.defineProperty(exports, 'incidentNotificationTemplate', { get: function () { return require('./incident-notification-template'); } });
 Object.defineProperty(exports, 'incidentPostmortemTemplate', { get: function () { return require('./incident-postmortem-template'); } });
@@ -153,6 +154,7 @@ Object.defineProperty(exports, 'user', { get: function () { return require('./us
 Object.defineProperty(exports, 'userRole', { get: function () { return require('./user-role'); } });
 Object.defineProperty(exports, 'webhook', { get: function () { return require('./webhook'); } });
 Object.defineProperty(exports, 'webhookCustomVariable', { get: function () { return require('./webhook-custom-variable'); } });
+Object.defineProperty(exports, 'webhookOauth2ClientCredentials', { get: function () { return require('./webhook-oauth2-client-credentials'); } });
 Object.defineProperty(exports, 'workflowAutomation', { get: function () { return require('./workflow-automation'); } });
 Object.defineProperty(exports, 'dataDatadogActionConnection', { get: function () { return require('./data-datadog-action-connection'); } });
 Object.defineProperty(exports, 'dataDatadogApiKey', { get: function () { return require('./data-datadog-api-key'); } });
