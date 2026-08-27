@@ -4,7 +4,7 @@
 
 ### CustomAllocationRules <a name="CustomAllocationRules" id="@cdktn/provider-datadog.customAllocationRules.CustomAllocationRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rules datadog_custom_allocation_rules}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rules datadog_custom_allocation_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.customAllocationRules.CustomAllocationRules.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the CustomAllocationRules to i
 
 The id of the existing CustomAllocationRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -854,7 +854,7 @@ The list of Custom Allocation Rule IDs, in order.
 
 Rules are executed in the order specified in this list. Comes from the `id` field on a `datadog_custom_allocation_rule` resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rules#rule_ids CustomAllocationRules#rule_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rules#rule_ids CustomAllocationRules#rule_ids}
 
 ---
 
@@ -870,7 +870,7 @@ Whether to override UI-defined rules.
 
 When set to true, any rules created via the UI that are not defined in Terraform will be deleted and Terraform will be used as the source of truth for rules and their ordering. When set to false, any rules created via the UI that are at the end of order will be kept but will be warned, otherwise an error will be thrown in terraform plan phase. Default is false
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/custom_allocation_rules#override_ui_defined_resources CustomAllocationRules#override_ui_defined_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/custom_allocation_rules#override_ui_defined_resources CustomAllocationRules#override_ui_defined_resources}
 
 ---
 

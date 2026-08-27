@@ -4,7 +4,7 @@
 
 ### SecurityFindingsDueDateRulesOrder <a name="SecurityFindingsDueDateRulesOrder" id="@cdktn/provider-datadog.securityFindingsDueDateRulesOrder.SecurityFindingsDueDateRulesOrder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_due_date_rules_order datadog_security_findings_due_date_rules_order}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_due_date_rules_order datadog_security_findings_due_date_rules_order}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityFindingsDueDateRulesOrder.SecurityFindingsDueDateRulesOrder.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the SecurityFindingsDueDateRul
 
 The id of the existing SecurityFindingsDueDateRulesOrder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_due_date_rules_order#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_due_date_rules_order#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -845,7 +845,7 @@ public readonly name: string;
 
 A unique identifier for the order resource. This field has no server-side equivalent; Datadog recommends matching the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_due_date_rules_order#name SecurityFindingsDueDateRulesOrder#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_due_date_rules_order#name SecurityFindingsDueDateRulesOrder#name}
 
 ---
 
@@ -861,7 +861,7 @@ The ordered list of all due date rule IDs.
 
 The order of IDs in this attribute defines the evaluation order of the due date rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_due_date_rules_order#rule_ids SecurityFindingsDueDateRulesOrder#rule_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_due_date_rules_order#rule_ids SecurityFindingsDueDateRulesOrder#rule_ids}
 
 ---
 

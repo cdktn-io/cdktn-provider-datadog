@@ -4,7 +4,7 @@
 
 ### TeamNotificationRule <a name="TeamNotificationRule" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_notification_rule datadog_team_notification_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_notification_rule datadog_team_notification_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the team that this notification rule belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_notification_rule#team_id TeamNotificationRule#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_notification_rule#team_id TeamNotificationRule#team_id}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 email block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_notification_rule#email TeamNotificationRule#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_notification_rule#email TeamNotificationRule#email}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ms_teams block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_notification_rule#ms_teams TeamNotificationRule#ms_teams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_notification_rule#ms_teams TeamNotificationRule#ms_teams}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 pagerduty block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_notification_rule#pagerduty TeamNotificationRule#pagerduty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_notification_rule#pagerduty TeamNotificationRule#pagerduty}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 slack block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_notification_rule#slack TeamNotificationRule#slack}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_notification_rule#slack TeamNotificationRule#slack}
 
 ---
 
@@ -681,7 +681,7 @@ The construct id used in the generated config for the TeamNotificationRule to im
 
 The id of the existing TeamNotificationRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_notification_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_notification_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1119,7 +1119,7 @@ public java.lang.String getTeamId();
 
 The ID of the team that this notification rule belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_notification_rule#team_id TeamNotificationRule#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_notification_rule#team_id TeamNotificationRule#team_id}
 
 ---
 
@@ -1133,7 +1133,7 @@ public TeamNotificationRuleEmail getEmail();
 
 email block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_notification_rule#email TeamNotificationRule#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_notification_rule#email TeamNotificationRule#email}
 
 ---
 
@@ -1147,7 +1147,7 @@ public TeamNotificationRuleMsTeams getMsTeams();
 
 ms_teams block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_notification_rule#ms_teams TeamNotificationRule#ms_teams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_notification_rule#ms_teams TeamNotificationRule#ms_teams}
 
 ---
 
@@ -1161,7 +1161,7 @@ public TeamNotificationRulePagerduty getPagerduty();
 
 pagerduty block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_notification_rule#pagerduty TeamNotificationRule#pagerduty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_notification_rule#pagerduty TeamNotificationRule#pagerduty}
 
 ---
 
@@ -1175,7 +1175,7 @@ public TeamNotificationRuleSlack getSlack();
 
 slack block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_notification_rule#slack TeamNotificationRule#slack}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_notification_rule#slack TeamNotificationRule#slack}
 
 ---
 
@@ -1209,7 +1209,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether to send email notifications to team members when alerts are triggered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_notification_rule#enabled TeamNotificationRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_notification_rule#enabled TeamNotificationRule#enabled}
 
 ---
 
@@ -1243,7 +1243,7 @@ public java.lang.String getConnectorName();
 
 MS Teams connector name used to route notifications to the appropriate channel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_notification_rule#connector_name TeamNotificationRule#connector_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_notification_rule#connector_name TeamNotificationRule#connector_name}
 
 ---
 
@@ -1277,7 +1277,7 @@ public java.lang.String getServiceName();
 
 PagerDuty service name to send incident notifications to. The service name can be found in your PagerDuty service settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_notification_rule#service_name TeamNotificationRule#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_notification_rule#service_name TeamNotificationRule#service_name}
 
 ---
 
@@ -1313,7 +1313,7 @@ public java.lang.String getChannel();
 
 Slack channel name for notifications, without a leading '#'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_notification_rule#channel TeamNotificationRule#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_notification_rule#channel TeamNotificationRule#channel}
 
 ---
 
@@ -1327,7 +1327,7 @@ public java.lang.String getWorkspace();
 
 Slack workspace name where the channel is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_notification_rule#workspace TeamNotificationRule#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_notification_rule#workspace TeamNotificationRule#workspace}
 
 ---
 

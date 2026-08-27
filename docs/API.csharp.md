@@ -125,6 +125,7 @@ The following submodules are available:
 - [downtime](./downtime.csharp.md)
 - [downtimeSchedule](./downtimeSchedule.csharp.md)
 - [gcpUcConfig](./gcpUcConfig.csharp.md)
+- [governanceControl](./governanceControl.csharp.md)
 - [incidentNotificationRule](./incidentNotificationRule.csharp.md)
 - [incidentNotificationTemplate](./incidentNotificationTemplate.csharp.md)
 - [incidentPostmortemTemplate](./incidentPostmortemTemplate.csharp.md)
@@ -236,6 +237,7 @@ The following submodules are available:
 - [userRole](./userRole.csharp.md)
 - [webhook](./webhook.csharp.md)
 - [webhookCustomVariable](./webhookCustomVariable.csharp.md)
+- [webhookOauth2ClientCredentials](./webhookOauth2ClientCredentials.csharp.md)
 - [workflowAutomation](./workflowAutomation.csharp.md)
 
 

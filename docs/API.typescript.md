@@ -125,6 +125,7 @@ The following submodules are available:
 - [downtime](./downtime.typescript.md)
 - [downtimeSchedule](./downtimeSchedule.typescript.md)
 - [gcpUcConfig](./gcpUcConfig.typescript.md)
+- [governanceControl](./governanceControl.typescript.md)
 - [incidentNotificationRule](./incidentNotificationRule.typescript.md)
 - [incidentNotificationTemplate](./incidentNotificationTemplate.typescript.md)
 - [incidentPostmortemTemplate](./incidentPostmortemTemplate.typescript.md)
@@ -236,6 +237,7 @@ The following submodules are available:
 - [userRole](./userRole.typescript.md)
 - [webhook](./webhook.typescript.md)
 - [webhookCustomVariable](./webhookCustomVariable.typescript.md)
+- [webhookOauth2ClientCredentials](./webhookOauth2ClientCredentials.typescript.md)
 - [workflowAutomation](./workflowAutomation.typescript.md)
 
 

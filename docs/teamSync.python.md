@@ -4,7 +4,7 @@
 
 ### TeamSync <a name="TeamSync" id="@cdktn/provider-datadog.teamSync.TeamSync"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_sync datadog_team_sync}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_sync datadog_team_sync}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamSync.TeamSync.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The external source platform for team synchronization. Valid values are `github`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_sync#source TeamSync#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_sync#source TeamSync#source}
 
 ---
 
@@ -126,7 +126,7 @@ The type of synchronization operation.
 
 `link` connects teams by matching names. `provision` creates new teams when no match is found. Valid values are `link`, `provision`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_sync#type TeamSync#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_sync#type TeamSync#type}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 How often the sync process should run. Valid values are `once`, `continuously`, `paused`. Defaults to `"once"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_sync#frequency TeamSync#frequency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_sync#frequency TeamSync#frequency}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 selection_state block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_sync#selection_state TeamSync#selection_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_sync#selection_state TeamSync#selection_state}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Whether to sync members from the external team to the Datadog team. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_sync#sync_membership TeamSync#sync_membership}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_sync#sync_membership TeamSync#sync_membership}
 
 ---
 
@@ -689,7 +689,7 @@ The construct id used in the generated config for the TeamSync to import.
 
 The id of the existing TeamSync that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_sync#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_sync#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1127,7 +1127,7 @@ source: str
 
 The external source platform for team synchronization. Valid values are `github`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_sync#source TeamSync#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_sync#source TeamSync#source}
 
 ---
 
@@ -1143,7 +1143,7 @@ The type of synchronization operation.
 
 `link` connects teams by matching names. `provision` creates new teams when no match is found. Valid values are `link`, `provision`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_sync#type TeamSync#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_sync#type TeamSync#type}
 
 ---
 
@@ -1157,7 +1157,7 @@ frequency: str
 
 How often the sync process should run. Valid values are `once`, `continuously`, `paused`. Defaults to `"once"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_sync#frequency TeamSync#frequency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_sync#frequency TeamSync#frequency}
 
 ---
 
@@ -1171,7 +1171,7 @@ selection_state: IResolvable | typing.List[TeamSyncSelectionState]
 
 selection_state block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_sync#selection_state TeamSync#selection_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_sync#selection_state TeamSync#selection_state}
 
 ---
 
@@ -1185,7 +1185,7 @@ sync_membership: bool | IResolvable
 
 Whether to sync members from the external team to the Datadog team. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_sync#sync_membership TeamSync#sync_membership}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_sync#sync_membership TeamSync#sync_membership}
 
 ---
 
@@ -1223,7 +1223,7 @@ external_id: TeamSyncSelectionStateExternalId
 
 external_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_sync#external_id TeamSync#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_sync#external_id TeamSync#external_id}
 
 ---
 
@@ -1237,7 +1237,7 @@ operation: str
 
 The operation to perform on the selected hierarchy. Valid values are `include`. Defaults to `"include"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_sync#operation TeamSync#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_sync#operation TeamSync#operation}
 
 ---
 
@@ -1251,7 +1251,7 @@ scope: str
 
 The scope of the selection. Valid values are `subtree`. Defaults to `"subtree"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_sync#scope TeamSync#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_sync#scope TeamSync#scope}
 
 ---
 
@@ -1287,7 +1287,7 @@ type: str
 
 The type of external identifier. Valid values are `team`, `organization`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_sync#type TeamSync#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_sync#type TeamSync#type}
 
 ---
 
@@ -1301,7 +1301,7 @@ value: str
 
 The external identifier value from the source platform (e.g. a GitHub organization ID or team ID).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_sync#value TeamSync#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_sync#value TeamSync#value}
 
 ---
 
@@ -2061,7 +2061,7 @@ def put_external_id(
 
 The type of external identifier. Valid values are `team`, `organization`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_sync#type TeamSync#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_sync#type TeamSync#type}
 
 ---
 
@@ -2071,7 +2071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The external identifier value from the source platform (e.g. a GitHub organization ID or team ID).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_sync#value TeamSync#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_sync#value TeamSync#value}
 
 ---
 

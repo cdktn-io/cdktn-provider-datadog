@@ -4,7 +4,7 @@
 
 ### DataDatadogSyntheticsLocations <a name="DataDatadogSyntheticsLocations" id="@cdktn/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/synthetics_locations datadog_synthetics_locations}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/synthetics_locations datadog_synthetics_locations}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatadogSyntheticsLocat
 
 The id of the existing DataDatadogSyntheticsLocations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/synthetics_locations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/synthetics_locations#import import section} in the documentation of this resource for the id to use
 
 ---
 

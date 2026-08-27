@@ -125,6 +125,7 @@ The following submodules are available:
 - [downtime](./downtime.java.md)
 - [downtimeSchedule](./downtimeSchedule.java.md)
 - [gcpUcConfig](./gcpUcConfig.java.md)
+- [governanceControl](./governanceControl.java.md)
 - [incidentNotificationRule](./incidentNotificationRule.java.md)
 - [incidentNotificationTemplate](./incidentNotificationTemplate.java.md)
 - [incidentPostmortemTemplate](./incidentPostmortemTemplate.java.md)
@@ -236,6 +237,7 @@ The following submodules are available:
 - [userRole](./userRole.java.md)
 - [webhook](./webhook.java.md)
 - [webhookCustomVariable](./webhookCustomVariable.java.md)
+- [webhookOauth2ClientCredentials](./webhookOauth2ClientCredentials.java.md)
 - [workflowAutomation](./workflowAutomation.java.md)
 
 

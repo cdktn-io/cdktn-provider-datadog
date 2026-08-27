@@ -4,7 +4,7 @@
 
 ### AgentlessScanningGcpScanOptions <a name="AgentlessScanningGcpScanOptions" id="@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/agentless_scanning_gcp_scan_options datadog_agentless_scanning_gcp_scan_options}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/agentless_scanning_gcp_scan_options datadog_agentless_scanning_gcp_scan_options}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the AgentlessScanningGcpScanOp
 
 The id of the existing AgentlessScanningGcpScanOptions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/agentless_scanning_gcp_scan_options#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/agentless_scanning_gcp_scan_options#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -934,7 +934,7 @@ CloudFunction interface{}
 
 Indicates if scanning of Cloud Functions is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/agentless_scanning_gcp_scan_options#cloud_function AgentlessScanningGcpScanOptions#cloud_function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/agentless_scanning_gcp_scan_options#cloud_function AgentlessScanningGcpScanOptions#cloud_function}
 
 ---
 
@@ -950,7 +950,7 @@ The GCP project ID for which agentless scanning is configured.
 
 Must be a valid GCP project ID: 6–30 characters, start with a lowercase letter, and include only lowercase letters, digits, or hyphens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/agentless_scanning_gcp_scan_options#gcp_project_id AgentlessScanningGcpScanOptions#gcp_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/agentless_scanning_gcp_scan_options#gcp_project_id AgentlessScanningGcpScanOptions#gcp_project_id}
 
 ---
 
@@ -964,7 +964,7 @@ VulnContainersOs interface{}
 
 Indicates if scanning for vulnerabilities in containers is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/agentless_scanning_gcp_scan_options#vuln_containers_os AgentlessScanningGcpScanOptions#vuln_containers_os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/agentless_scanning_gcp_scan_options#vuln_containers_os AgentlessScanningGcpScanOptions#vuln_containers_os}
 
 ---
 
@@ -978,7 +978,7 @@ VulnHostOs interface{}
 
 Indicates if scanning for vulnerabilities in hosts is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/agentless_scanning_gcp_scan_options#vuln_host_os AgentlessScanningGcpScanOptions#vuln_host_os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/agentless_scanning_gcp_scan_options#vuln_host_os AgentlessScanningGcpScanOptions#vuln_host_os}
 
 ---
 
@@ -992,7 +992,7 @@ ComplianceHost interface{}
 
 Indicates if host compliance scanning is enabled. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/agentless_scanning_gcp_scan_options#compliance_host AgentlessScanningGcpScanOptions#compliance_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/agentless_scanning_gcp_scan_options#compliance_host AgentlessScanningGcpScanOptions#compliance_host}
 
 ---
 
