@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule_order
+// https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/tag_indexing_rule_order
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface TagIndexingRuleOrderConfig extends cdktn.TerraformMetaArguments
   /**
   * A unique name for the order resource. Recommended to match the resource name. No corresponding field exists in the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule_order#name TagIndexingRuleOrder#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/tag_indexing_rule_order#name TagIndexingRuleOrder#name}
   */
   readonly name: string;
   /**
   * Ordered list of EVERY active tag indexing rule UUID in the org. The server assigns each rule a rule_order (1, 2, 3, ...) by its position in this list. This resource claims full ownership of the org's evaluation order: rules created outside Terraform (e.g. via the UI) appear as drift on the next plan and must be added here. The list must be the COMPLETE set of active rules and contain each UUID exactly once — omitting an existing rule or repeating a UUID is rejected by the API with a 400; listing a UUID that does not exist returns 404.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule_order#rule_ids TagIndexingRuleOrder#rule_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/tag_indexing_rule_order#rule_ids TagIndexingRuleOrder#rule_ids}
   */
   readonly ruleIds: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule_order datadog_tag_indexing_rule_order}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/tag_indexing_rule_order datadog_tag_indexing_rule_order}
 */
 export class TagIndexingRuleOrder extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class TagIndexingRuleOrder extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a TagIndexingRuleOrder resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TagIndexingRuleOrder to import
-  * @param importFromId The id of the existing TagIndexingRuleOrder that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule_order#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TagIndexingRuleOrder that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/tag_indexing_rule_order#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TagIndexingRuleOrder to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class TagIndexingRuleOrder extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule_order datadog_tag_indexing_rule_order} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/tag_indexing_rule_order datadog_tag_indexing_rule_order} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class TagIndexingRuleOrder extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_tag_indexing_rule_order',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.17.0',
+        providerVersion: '4.19.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

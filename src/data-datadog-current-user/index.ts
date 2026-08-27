@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/current_user
+// https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/current_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataDatadogCurrentUserConfig extends cdktn.TerraformMetaArgumen
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/current_user datadog_current_user}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/current_user datadog_current_user}
 */
 export class DataDatadogCurrentUser extends cdktn.TerraformDataSource {
 
@@ -31,7 +31,7 @@ export class DataDatadogCurrentUser extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatadogCurrentUser resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogCurrentUser to import
-  * @param importFromId The id of the existing DataDatadogCurrentUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/current_user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogCurrentUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/current_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogCurrentUser to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -43,7 +43,7 @@ export class DataDatadogCurrentUser extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/current_user datadog_current_user} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/current_user datadog_current_user} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +54,7 @@ export class DataDatadogCurrentUser extends cdktn.TerraformDataSource {
       terraformResourceType: 'datadog_current_user',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.17.0',
+        providerVersion: '4.19.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

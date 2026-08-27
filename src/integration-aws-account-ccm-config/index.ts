@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/integration_aws_account_ccm_config
+// https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_aws_account_ccm_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface IntegrationAwsAccountCcmConfigConfig extends cdktn.TerraformMet
   /**
   * Unique Datadog ID of the AWS Account Integration Config.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/integration_aws_account_ccm_config#aws_account_config_id IntegrationAwsAccountCcmConfig#aws_account_config_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_aws_account_ccm_config#aws_account_config_id IntegrationAwsAccountCcmConfig#aws_account_config_id}
   */
   readonly awsAccountConfigId: string;
   /**
   * ccm_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/integration_aws_account_ccm_config#ccm_config IntegrationAwsAccountCcmConfig#ccm_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_aws_account_ccm_config#ccm_config IntegrationAwsAccountCcmConfig#ccm_config}
   */
   readonly ccmConfig?: IntegrationAwsAccountCcmConfigCcmConfig;
 }
@@ -29,31 +29,31 @@ export interface IntegrationAwsAccountCcmConfigCcmConfigDataExportConfigs {
   /**
   * Name of the S3 bucket where the Cost and Usage Report is stored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/integration_aws_account_ccm_config#bucket_name IntegrationAwsAccountCcmConfig#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_aws_account_ccm_config#bucket_name IntegrationAwsAccountCcmConfig#bucket_name}
   */
   readonly bucketName?: string;
   /**
   * AWS region of the S3 bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/integration_aws_account_ccm_config#bucket_region IntegrationAwsAccountCcmConfig#bucket_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_aws_account_ccm_config#bucket_region IntegrationAwsAccountCcmConfig#bucket_region}
   */
   readonly bucketRegion?: string;
   /**
   * Name of the Cost and Usage Report.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/integration_aws_account_ccm_config#report_name IntegrationAwsAccountCcmConfig#report_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_aws_account_ccm_config#report_name IntegrationAwsAccountCcmConfig#report_name}
   */
   readonly reportName?: string;
   /**
   * S3 prefix where the Cost and Usage Report is stored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/integration_aws_account_ccm_config#report_prefix IntegrationAwsAccountCcmConfig#report_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_aws_account_ccm_config#report_prefix IntegrationAwsAccountCcmConfig#report_prefix}
   */
   readonly reportPrefix?: string;
   /**
   * Type of the Cost and Usage Report.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/integration_aws_account_ccm_config#report_type IntegrationAwsAccountCcmConfig#report_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_aws_account_ccm_config#report_type IntegrationAwsAccountCcmConfig#report_type}
   */
   readonly reportType?: string;
 }
@@ -287,7 +287,7 @@ export interface IntegrationAwsAccountCcmConfigCcmConfig {
   /**
   * data_export_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/integration_aws_account_ccm_config#data_export_configs IntegrationAwsAccountCcmConfig#data_export_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_aws_account_ccm_config#data_export_configs IntegrationAwsAccountCcmConfig#data_export_configs}
   */
   readonly dataExportConfigs?: IntegrationAwsAccountCcmConfigCcmConfigDataExportConfigs[] | cdktn.IResolvable;
 }
@@ -381,7 +381,7 @@ export class IntegrationAwsAccountCcmConfigCcmConfigOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/integration_aws_account_ccm_config datadog_integration_aws_account_ccm_config}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_aws_account_ccm_config datadog_integration_aws_account_ccm_config}
 */
 export class IntegrationAwsAccountCcmConfig extends cdktn.TerraformResource {
 
@@ -397,7 +397,7 @@ export class IntegrationAwsAccountCcmConfig extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a IntegrationAwsAccountCcmConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationAwsAccountCcmConfig to import
-  * @param importFromId The id of the existing IntegrationAwsAccountCcmConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/integration_aws_account_ccm_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationAwsAccountCcmConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_aws_account_ccm_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationAwsAccountCcmConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -409,7 +409,7 @@ export class IntegrationAwsAccountCcmConfig extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/integration_aws_account_ccm_config datadog_integration_aws_account_ccm_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_aws_account_ccm_config datadog_integration_aws_account_ccm_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -420,7 +420,7 @@ export class IntegrationAwsAccountCcmConfig extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_integration_aws_account_ccm_config',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.17.0',
+        providerVersion: '4.19.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_restriction_query
+// https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/logs_restriction_query
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface LogsRestrictionQueryConfig extends cdktn.TerraformMetaArguments
   /**
   * The query that defines the restriction. Only the content matching the query can be returned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_restriction_query#restriction_query LogsRestrictionQuery#restriction_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/logs_restriction_query#restriction_query LogsRestrictionQuery#restriction_query}
   */
   readonly restrictionQuery: string;
   /**
   * An array of role IDs that have access to this restriction query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_restriction_query#role_ids LogsRestrictionQuery#role_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/logs_restriction_query#role_ids LogsRestrictionQuery#role_ids}
   */
   readonly roleIds?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_restriction_query datadog_logs_restriction_query}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/logs_restriction_query datadog_logs_restriction_query}
 */
 export class LogsRestrictionQuery extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class LogsRestrictionQuery extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a LogsRestrictionQuery resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogsRestrictionQuery to import
-  * @param importFromId The id of the existing LogsRestrictionQuery that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_restriction_query#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LogsRestrictionQuery that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/logs_restriction_query#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogsRestrictionQuery to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class LogsRestrictionQuery extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_restriction_query datadog_logs_restriction_query} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/logs_restriction_query datadog_logs_restriction_query} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class LogsRestrictionQuery extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_logs_restriction_query',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.17.0',
+        providerVersion: '4.19.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
