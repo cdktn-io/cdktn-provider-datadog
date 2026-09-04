@@ -76,13 +76,13 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * The name of the user subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name?: string;
   /**
   * The query string for the user subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#query PowerpackV2#query}
   */
   readonly query?: string;
 }
@@ -229,25 +229,25 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * An optional filter condition applied to the audience subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#filter_condition PowerpackV2#filter_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#filter_condition PowerpackV2#filter_condition}
   */
   readonly filterCondition?: string;
   /**
   * account block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#account PowerpackV2#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#account PowerpackV2#account}
   */
   readonly account?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersAccount[] | cdktn.IResolvable;
   /**
   * segment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#segment PowerpackV2#segment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#segment PowerpackV2#segment}
   */
   readonly segment?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersSegment[] | cdktn.IResolvable;
   /**
   * user block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#user PowerpackV2#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#user PowerpackV2#user}
   */
   readonly user?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersUser[] | cdktn.IResolvable;
 }
@@ -420,25 +420,25 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * Alignment of the calendar interval.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#alignment PowerpackV2#alignment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#alignment PowerpackV2#alignment}
   */
   readonly alignment?: string;
   /**
   * Quantity of the calendar interval.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#quantity PowerpackV2#quantity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#quantity PowerpackV2#quantity}
   */
   readonly quantity?: number;
   /**
   * Timezone for the calendar interval.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#timezone PowerpackV2#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#timezone PowerpackV2#timezone}
   */
   readonly timezone?: string;
   /**
   * Type of calendar interval. Valid values are `day`, `week`, `month`, `year`, `quarter`, `minute`, `hour`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#type PowerpackV2#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#type PowerpackV2#type}
   */
   readonly type: string;
 }
@@ -608,31 +608,31 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * Aggregation method for the Product Analytics Extended query. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * Fixed-width time bucket interval in milliseconds. Mutually exclusive with `rollup`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#interval PowerpackV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#interval PowerpackV2#interval}
   */
   readonly interval?: number;
   /**
   * Measurable attribute to compute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
   */
   readonly metric?: string;
   /**
   * Name of the compute for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name?: string;
   /**
   * rollup block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#rollup PowerpackV2#rollup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#rollup PowerpackV2#rollup}
   */
   readonly rollup?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryProductAnalyticsExtendedQueryComputeRollup;
 }
@@ -831,19 +831,19 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#order PowerpackV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#order PowerpackV2#order}
   */
   readonly order?: string;
 }
@@ -984,25 +984,25 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * Facet name to group by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
   */
   readonly facet: string;
   /**
   * Maximum number of groups to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
   */
   readonly limit?: number;
   /**
   * Whether to exclude events missing the group-by facet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#should_exclude_missing PowerpackV2#should_exclude_missing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#should_exclude_missing PowerpackV2#should_exclude_missing}
   */
   readonly shouldExcludeMissing?: boolean | cdktn.IResolvable;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#sort PowerpackV2#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#sort PowerpackV2#sort}
   */
   readonly sort?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryProductAnalyticsExtendedQueryGroupBySort;
 }
@@ -1204,7 +1204,7 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * Product Analytics event search query used to filter views or actions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#query PowerpackV2#query}
   */
   readonly query: string;
 }
@@ -1287,13 +1287,13 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * Data source for the Product Analytics event query. Valid values are `product_analytics`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
   */
   readonly dataSource: string;
   /**
   * search block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#search PowerpackV2#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#search PowerpackV2#search}
   */
   readonly search: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryProductAnalyticsExtendedQueryQuerySearch;
 }
@@ -1402,43 +1402,43 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * Data source for Product Analytics Extended queries. Valid values are `product_analytics_extended`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
   */
   readonly dataSource: string;
   /**
   * Event indexes to query. Use `*` to query all indexes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#indexes PowerpackV2#indexes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#indexes PowerpackV2#indexes}
   */
   readonly indexes?: string[];
   /**
   * Name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name: string;
   /**
   * audience_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#audience_filters PowerpackV2#audience_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#audience_filters PowerpackV2#audience_filters}
   */
   readonly audienceFilters?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFilters;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#compute PowerpackV2#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#compute PowerpackV2#compute}
   */
   readonly compute: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryProductAnalyticsExtendedQueryCompute;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#group_by PowerpackV2#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#group_by PowerpackV2#group_by}
   */
   readonly groupBy?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryProductAnalyticsExtendedQueryGroupBy[] | cdktn.IResolvable;
   /**
   * query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#query PowerpackV2#query}
   */
   readonly query: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryProductAnalyticsExtendedQueryQuery;
 }
@@ -1686,13 +1686,13 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * Aggregation for the retention query, including standard event aggregations and `pcNN` percentiles.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * Metric for the retention computation. Valid values are `__dd.retention`, `__dd.retention_rate`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
   */
   readonly metric: string;
 }
@@ -1801,7 +1801,7 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * Sort order for retention group by results. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#order PowerpackV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#order PowerpackV2#order}
   */
   readonly order?: string;
 }
@@ -1887,37 +1887,37 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * Facet to group by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
   */
   readonly facet: string;
   /**
   * Maximum number of groups.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
   */
   readonly limit?: number;
   /**
   * Whether to exclude missing values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#should_exclude_missing PowerpackV2#should_exclude_missing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#should_exclude_missing PowerpackV2#should_exclude_missing}
   */
   readonly shouldExcludeMissing?: boolean | cdktn.IResolvable;
   /**
   * Source field for the retention group by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#source PowerpackV2#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#source PowerpackV2#source}
   */
   readonly source?: string;
   /**
   * Target for the retention group by. Valid values are `cohort`, `return_period`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#target PowerpackV2#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#target PowerpackV2#target}
   */
   readonly target: string;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#sort PowerpackV2#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#sort PowerpackV2#sort}
   */
   readonly sort?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQueryGroupBySort;
 }
@@ -2174,7 +2174,7 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * Product Analytics event search query used to filter views or actions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#query PowerpackV2#query}
   */
   readonly query: string;
 }
@@ -2257,13 +2257,13 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * Data source for the Product Analytics event query. Valid values are `product_analytics`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
   */
   readonly dataSource: string;
   /**
   * search block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#search PowerpackV2#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#search PowerpackV2#search}
   */
   readonly search: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQuerySearchCohortCriteriaBaseQuerySearch;
 }
@@ -2372,25 +2372,25 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * Alignment of the calendar interval.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#alignment PowerpackV2#alignment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#alignment PowerpackV2#alignment}
   */
   readonly alignment?: string;
   /**
   * Quantity of the calendar interval.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#quantity PowerpackV2#quantity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#quantity PowerpackV2#quantity}
   */
   readonly quantity?: number;
   /**
   * Timezone for the calendar interval.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#timezone PowerpackV2#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#timezone PowerpackV2#timezone}
   */
   readonly timezone?: string;
   /**
   * Type of calendar interval. Valid values are `day`, `week`, `month`, `year`, `quarter`, `minute`, `hour`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#type PowerpackV2#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#type PowerpackV2#type}
   */
   readonly type: string;
 }
@@ -2560,13 +2560,13 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * Type of cohort time interval. Valid values are `calendar`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#type PowerpackV2#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#type PowerpackV2#type}
   */
   readonly type: string;
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#value PowerpackV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#value PowerpackV2#value}
   */
   readonly value: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalValue;
 }
@@ -2675,13 +2675,13 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * base_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#base_query PowerpackV2#base_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#base_query PowerpackV2#base_query}
   */
   readonly baseQuery: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQuerySearchCohortCriteriaBaseQuery;
   /**
   * time_interval block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#time_interval PowerpackV2#time_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#time_interval PowerpackV2#time_interval}
   */
   readonly timeInterval: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeInterval;
 }
@@ -2790,13 +2790,13 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * The name of the account subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name?: string;
   /**
   * The query string for the account subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#query PowerpackV2#query}
   */
   readonly query?: string;
 }
@@ -2943,13 +2943,13 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * The name of the segment subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name?: string;
   /**
   * The unique identifier of the segment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#segment_id PowerpackV2#segment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#segment_id PowerpackV2#segment_id}
   */
   readonly segmentId?: string;
 }
@@ -3096,13 +3096,13 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * The name of the user subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name?: string;
   /**
   * The query string for the user subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#query PowerpackV2#query}
   */
   readonly query?: string;
 }
@@ -3249,25 +3249,25 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * An optional filter condition applied to the audience subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#filter_condition PowerpackV2#filter_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#filter_condition PowerpackV2#filter_condition}
   */
   readonly filterCondition?: string;
   /**
   * account block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#account PowerpackV2#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#account PowerpackV2#account}
   */
   readonly account?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQuerySearchFiltersAudienceFiltersAccount[] | cdktn.IResolvable;
   /**
   * segment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#segment PowerpackV2#segment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#segment PowerpackV2#segment}
   */
   readonly segment?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQuerySearchFiltersAudienceFiltersSegment[] | cdktn.IResolvable;
   /**
   * user block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#user PowerpackV2#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#user PowerpackV2#user}
   */
   readonly user?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQuerySearchFiltersAudienceFiltersUser[] | cdktn.IResolvable;
 }
@@ -3440,13 +3440,13 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * String filter for the retention query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#string_filter PowerpackV2#string_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#string_filter PowerpackV2#string_filter}
   */
   readonly stringFilter?: string;
   /**
   * audience_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#audience_filters PowerpackV2#audience_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#audience_filters PowerpackV2#audience_filters}
   */
   readonly audienceFilters?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQuerySearchFiltersAudienceFilters;
 }
@@ -3561,7 +3561,7 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * Product Analytics event search query used to filter views or actions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#query PowerpackV2#query}
   */
   readonly query: string;
 }
@@ -3644,13 +3644,13 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * Data source for the Product Analytics event query. Valid values are `product_analytics`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
   */
   readonly dataSource: string;
   /**
   * search block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#search PowerpackV2#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#search PowerpackV2#search}
   */
   readonly search: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQuerySearchReturnCriteriaBaseQuerySearch;
 }
@@ -3759,19 +3759,19 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * Type of return interval. Valid values are `fixed`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#type PowerpackV2#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#type PowerpackV2#type}
   */
   readonly type: string;
   /**
   * Unit of the return interval. Valid values are `day`, `week`, `month`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#unit PowerpackV2#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#unit PowerpackV2#unit}
   */
   readonly unit: string;
   /**
   * Value of the return interval.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#value PowerpackV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#value PowerpackV2#value}
   */
   readonly value: number;
 }
@@ -3906,13 +3906,13 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * base_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#base_query PowerpackV2#base_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#base_query PowerpackV2#base_query}
   */
   readonly baseQuery: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQuerySearchReturnCriteriaBaseQuery;
   /**
   * time_interval block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#time_interval PowerpackV2#time_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#time_interval PowerpackV2#time_interval}
   */
   readonly timeInterval?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQuerySearchReturnCriteriaTimeInterval;
 }
@@ -4024,31 +4024,31 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * Entity tracked for retention. Valid values are `@usr.id`, `@account.id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#retention_entity PowerpackV2#retention_entity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#retention_entity PowerpackV2#retention_entity}
   */
   readonly retentionEntity: string;
   /**
   * Condition for counting an entity as returned. Valid values are `conversion_on`, `conversion_on_or_after`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#return_condition PowerpackV2#return_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#return_condition PowerpackV2#return_condition}
   */
   readonly returnCondition: string;
   /**
   * cohort_criteria block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#cohort_criteria PowerpackV2#cohort_criteria}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#cohort_criteria PowerpackV2#cohort_criteria}
   */
   readonly cohortCriteria: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQuerySearchCohortCriteria;
   /**
   * filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#filters PowerpackV2#filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#filters PowerpackV2#filters}
   */
   readonly filters?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQuerySearchFilters;
   /**
   * return_criteria block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#return_criteria PowerpackV2#return_criteria}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#return_criteria PowerpackV2#return_criteria}
   */
   readonly returnCriteria?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQuerySearchReturnCriteria;
 }
@@ -4241,31 +4241,31 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * Data source for retention queries. Valid values are `product_analytics_retention`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
   */
   readonly dataSource: string;
   /**
   * Name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name: string;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#compute PowerpackV2#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#compute PowerpackV2#compute}
   */
   readonly compute: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQueryCompute;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#group_by PowerpackV2#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#group_by PowerpackV2#group_by}
   */
   readonly groupBy?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQueryGroupBy[] | cdktn.IResolvable;
   /**
   * search block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#search PowerpackV2#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#search PowerpackV2#search}
   */
   readonly search: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQuerySearch;
 }
@@ -4455,49 +4455,49 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * Additional filters applied to the SLO query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#additional_query_filters PowerpackV2#additional_query_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#additional_query_filters PowerpackV2#additional_query_filters}
   */
   readonly additionalQueryFilters?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#cross_org_uuids PowerpackV2#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#cross_org_uuids PowerpackV2#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for SLO queries. Valid values are `slo`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
   */
   readonly dataSource: string;
   /**
   * Group mode to query measures. Valid values are `overall`, `components`. Defaults to `"overall"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#group_mode PowerpackV2#group_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#group_mode PowerpackV2#group_mode}
   */
   readonly groupMode?: string;
   /**
   * SLO measures queries. Valid values are `good_events`, `bad_events`, `good_minutes`, `bad_minutes`, `slo_status`, `error_budget_remaining`, `burn_rate`, `error_budget_burndown`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#measure PowerpackV2#measure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#measure PowerpackV2#measure}
   */
   readonly measure: string;
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name?: string;
   /**
   * ID of an SLO to query measures.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#slo_id PowerpackV2#slo_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#slo_id PowerpackV2#slo_id}
   */
   readonly sloId: string;
   /**
   * type of the SLO to query. Valid values are `metric`, `monitor`, `time_slice`. Defaults to `"metric"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#slo_query_type PowerpackV2#slo_query_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#slo_query_type PowerpackV2#slo_query_type}
   */
   readonly sloQueryType?: string;
 }
@@ -4777,25 +4777,25 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * End node of the target range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#end PowerpackV2#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#end PowerpackV2#end}
   */
   readonly end?: string;
   /**
   * Start node of the target range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#start PowerpackV2#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#start PowerpackV2#start}
   */
   readonly start?: string;
   /**
   * Target type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#type PowerpackV2#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#type PowerpackV2#type}
   */
   readonly type: string;
   /**
   * Target node value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#value PowerpackV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#value PowerpackV2#value}
   */
   readonly value?: string;
 }
@@ -4965,25 +4965,25 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * Aggregation method for the User Journey query. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * Time bucket interval in milliseconds for timeseries queries.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#interval PowerpackV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#interval PowerpackV2#interval}
   */
   readonly interval?: number;
   /**
   * Metric for the User Journey computation. Valid values are `__dd.conversion`, `__dd.conversion_rate`, `__dd.time_to_convert`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
   */
   readonly metric?: string;
   /**
   * target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#target PowerpackV2#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#target PowerpackV2#target}
   */
   readonly target?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryUserJourneyQueryComputeTarget;
 }
@@ -5153,19 +5153,19 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#order PowerpackV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#order PowerpackV2#order}
   */
   readonly order?: string;
 }
@@ -5306,25 +5306,25 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * End node of the target range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#end PowerpackV2#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#end PowerpackV2#end}
   */
   readonly end?: string;
   /**
   * Start node of the target range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#start PowerpackV2#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#start PowerpackV2#start}
   */
   readonly start?: string;
   /**
   * Target type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#type PowerpackV2#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#type PowerpackV2#type}
   */
   readonly type: string;
   /**
   * Target node value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#value PowerpackV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#value PowerpackV2#value}
   */
   readonly value?: string;
 }
@@ -5494,31 +5494,31 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * Facet name to group by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
   */
   readonly facet: string;
   /**
   * Maximum number of groups to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
   */
   readonly limit?: number;
   /**
   * Whether to exclude events missing the group-by facet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#should_exclude_missing PowerpackV2#should_exclude_missing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#should_exclude_missing PowerpackV2#should_exclude_missing}
   */
   readonly shouldExcludeMissing?: boolean | cdktn.IResolvable;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#sort PowerpackV2#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#sort PowerpackV2#sort}
   */
   readonly sort?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryUserJourneyQueryGroupBySort;
   /**
   * target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#target PowerpackV2#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#target PowerpackV2#target}
   */
   readonly target?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryUserJourneyQueryGroupByTarget;
 }
@@ -5749,13 +5749,13 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * The name of the account subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name?: string;
   /**
   * The query string for the account subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#query PowerpackV2#query}
   */
   readonly query?: string;
 }
@@ -5902,13 +5902,13 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * The name of the segment subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name?: string;
   /**
   * The unique identifier of the segment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#segment_id PowerpackV2#segment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#segment_id PowerpackV2#segment_id}
   */
   readonly segmentId?: string;
 }
@@ -6055,13 +6055,13 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * The name of the user subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name?: string;
   /**
   * The query string for the user subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#query PowerpackV2#query}
   */
   readonly query?: string;
 }
@@ -6208,25 +6208,25 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * An optional filter condition applied to the audience subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#filter_condition PowerpackV2#filter_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#filter_condition PowerpackV2#filter_condition}
   */
   readonly filterCondition?: string;
   /**
   * account block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#account PowerpackV2#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#account PowerpackV2#account}
   */
   readonly account?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryUserJourneyQuerySearchFiltersAudienceFiltersAccount[] | cdktn.IResolvable;
   /**
   * segment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#segment PowerpackV2#segment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#segment PowerpackV2#segment}
   */
   readonly segment?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryUserJourneyQuerySearchFiltersAudienceFiltersSegment[] | cdktn.IResolvable;
   /**
   * user block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#user PowerpackV2#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#user PowerpackV2#user}
   */
   readonly user?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryUserJourneyQuerySearchFiltersAudienceFiltersUser[] | cdktn.IResolvable;
 }
@@ -6399,25 +6399,25 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * End node of the target range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#end PowerpackV2#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#end PowerpackV2#end}
   */
   readonly end?: string;
   /**
   * Start node of the target range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#start PowerpackV2#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#start PowerpackV2#start}
   */
   readonly start?: string;
   /**
   * Target type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#type PowerpackV2#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#type PowerpackV2#type}
   */
   readonly type: string;
   /**
   * Target node value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#value PowerpackV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#value PowerpackV2#value}
   */
   readonly value?: string;
 }
@@ -6587,25 +6587,25 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * Graph filter name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name?: string;
   /**
   * Graph filter operator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#operator PowerpackV2#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#operator PowerpackV2#operator}
   */
   readonly operator?: string;
   /**
   * Graph filter value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#value PowerpackV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#value PowerpackV2#value}
   */
   readonly value?: number;
   /**
   * target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#target PowerpackV2#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#target PowerpackV2#target}
   */
   readonly target?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryUserJourneyQuerySearchFiltersGraphFilterTarget;
 }
@@ -6810,19 +6810,19 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * String filter for the user journey search.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#string_filter PowerpackV2#string_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#string_filter PowerpackV2#string_filter}
   */
   readonly stringFilter?: string;
   /**
   * audience_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#audience_filters PowerpackV2#audience_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#audience_filters PowerpackV2#audience_filters}
   */
   readonly audienceFilters?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryUserJourneyQuerySearchFiltersAudienceFilters;
   /**
   * graph_filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#graph_filter PowerpackV2#graph_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#graph_filter PowerpackV2#graph_filter}
   */
   readonly graphFilter?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryUserJourneyQuerySearchFiltersGraphFilter[] | cdktn.IResolvable;
 }
@@ -6966,13 +6966,13 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * Primary join key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#primary PowerpackV2#primary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#primary PowerpackV2#primary}
   */
   readonly primary: string;
   /**
   * Secondary join keys.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#secondary PowerpackV2#secondary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#secondary PowerpackV2#secondary}
   */
   readonly secondary?: string[];
 }
@@ -7084,31 +7084,31 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * Expression describing the journey between nodes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#expression PowerpackV2#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#expression PowerpackV2#expression}
   */
   readonly expression: string;
   /**
   * JSON object mapping journey node names to Product Analytics base queries.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#node_objects PowerpackV2#node_objects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#node_objects PowerpackV2#node_objects}
   */
   readonly nodeObjects: string;
   /**
   * JSON object mapping journey step names to display aliases.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#step_aliases PowerpackV2#step_aliases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#step_aliases PowerpackV2#step_aliases}
   */
   readonly stepAliases?: string;
   /**
   * filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#filters PowerpackV2#filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#filters PowerpackV2#filters}
   */
   readonly filters?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryUserJourneyQuerySearchFilters;
   /**
   * join_keys block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#join_keys PowerpackV2#join_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#join_keys PowerpackV2#join_keys}
   */
   readonly joinKeys?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryUserJourneyQuerySearchJoinKeys;
 }
@@ -7304,31 +7304,31 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * Data source for User Journey queries. Valid values are `product_analytics_journey`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
   */
   readonly dataSource: string;
   /**
   * Name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name: string;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#compute PowerpackV2#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#compute PowerpackV2#compute}
   */
   readonly compute: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryUserJourneyQueryCompute;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#group_by PowerpackV2#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#group_by PowerpackV2#group_by}
   */
   readonly groupBy?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryUserJourneyQueryGroupBy[] | cdktn.IResolvable;
   /**
   * search block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#search PowerpackV2#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#search PowerpackV2#search}
   */
   readonly search: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryUserJourneyQuerySearch;
 }
@@ -7518,67 +7518,67 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQ
   /**
   * apm_dependency_stats_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#apm_dependency_stats_query PowerpackV2#apm_dependency_stats_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#apm_dependency_stats_query PowerpackV2#apm_dependency_stats_query}
   */
   readonly apmDependencyStatsQuery?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQuery;
   /**
   * apm_metrics_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#apm_metrics_query PowerpackV2#apm_metrics_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#apm_metrics_query PowerpackV2#apm_metrics_query}
   */
   readonly apmMetricsQuery?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryApmMetricsQuery;
   /**
   * apm_resource_stats_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#apm_resource_stats_query PowerpackV2#apm_resource_stats_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#apm_resource_stats_query PowerpackV2#apm_resource_stats_query}
   */
   readonly apmResourceStatsQuery?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryApmResourceStatsQuery;
   /**
   * cloud_cost_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#cloud_cost_query PowerpackV2#cloud_cost_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#cloud_cost_query PowerpackV2#cloud_cost_query}
   */
   readonly cloudCostQuery?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryCloudCostQuery;
   /**
   * event_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#event_query PowerpackV2#event_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#event_query PowerpackV2#event_query}
   */
   readonly eventQuery?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryEventQuery;
   /**
   * metric_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#metric_query PowerpackV2#metric_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#metric_query PowerpackV2#metric_query}
   */
   readonly metricQuery?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryMetricQuery;
   /**
   * process_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#process_query PowerpackV2#process_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#process_query PowerpackV2#process_query}
   */
   readonly processQuery?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryProcessQuery;
   /**
   * product_analytics_extended_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#product_analytics_extended_query PowerpackV2#product_analytics_extended_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#product_analytics_extended_query PowerpackV2#product_analytics_extended_query}
   */
   readonly productAnalyticsExtendedQuery?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryProductAnalyticsExtendedQuery;
   /**
   * retention_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#retention_query PowerpackV2#retention_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#retention_query PowerpackV2#retention_query}
   */
   readonly retentionQuery?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQuery;
   /**
   * slo_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#slo_query PowerpackV2#slo_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#slo_query PowerpackV2#slo_query}
   */
   readonly sloQuery?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQuerySloQuery;
   /**
   * user_journey_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#user_journey_query PowerpackV2#user_journey_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#user_journey_query PowerpackV2#user_journey_query}
   */
   readonly userJourneyQuery?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryUserJourneyQuery;
 }
@@ -7986,19 +7986,19 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestR
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#interval PowerpackV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#interval PowerpackV2#interval}
   */
   readonly interval?: number;
 }
@@ -8139,19 +8139,19 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestR
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#order PowerpackV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#order PowerpackV2#order}
   */
   readonly order: string;
 }
@@ -8289,19 +8289,19 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestR
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#sort_query PowerpackV2#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#sort_query PowerpackV2#sort_query}
   */
   readonly sortQuery?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryGroupBySortQuery;
 }
@@ -8477,19 +8477,19 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestR
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#interval PowerpackV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#interval PowerpackV2#interval}
   */
   readonly interval?: number;
 }
@@ -8662,31 +8662,31 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestR
   /**
   * A comma separated-list of index names. Use `*` to query all indexes at once. [Multiple Indexes](https://docs.datadoghq.com/logs/indexes/#multiple-indexes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#index PowerpackV2#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#index PowerpackV2#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#search_query PowerpackV2#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#search_query PowerpackV2#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#compute_query PowerpackV2#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#compute_query PowerpackV2#compute_query}
   */
   readonly computeQuery?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#group_by PowerpackV2#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#group_by PowerpackV2#group_by}
   */
   readonly groupBy?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#multi_compute PowerpackV2#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#multi_compute PowerpackV2#multi_compute}
   */
   readonly multiCompute?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryMultiCompute[] | cdktn.IResolvable;
 }
@@ -8885,19 +8885,19 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestS
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#interval PowerpackV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#interval PowerpackV2#interval}
   */
   readonly interval?: number;
 }
@@ -9038,19 +9038,19 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestS
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#order PowerpackV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#order PowerpackV2#order}
   */
   readonly order: string;
 }
@@ -9188,19 +9188,19 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestS
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#sort_query PowerpackV2#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#sort_query PowerpackV2#sort_query}
   */
   readonly sortQuery?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQuery;
 }
@@ -9376,19 +9376,19 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestS
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#interval PowerpackV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#interval PowerpackV2#interval}
   */
   readonly interval?: number;
 }
@@ -9561,31 +9561,31 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestS
   /**
   * A comma separated-list of index names. Use `*` to query all indexes at once. [Multiple Indexes](https://docs.datadoghq.com/logs/indexes/#multiple-indexes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#index PowerpackV2#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#index PowerpackV2#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#search_query PowerpackV2#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#search_query PowerpackV2#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#compute_query PowerpackV2#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#compute_query PowerpackV2#compute_query}
   */
   readonly computeQuery?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#group_by PowerpackV2#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#group_by PowerpackV2#group_by}
   */
   readonly groupBy?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#multi_compute PowerpackV2#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#multi_compute PowerpackV2#multi_compute}
   */
   readonly multiCompute?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryMultiCompute[] | cdktn.IResolvable;
 }
@@ -9784,13 +9784,13 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestS
   /**
   * How to order series. Valid values are `tags`, `values`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#order_by PowerpackV2#order_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#order_by PowerpackV2#order_by}
   */
   readonly orderBy?: string;
   /**
   * A color palette to apply to the widget. The available options are available at: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#palette PowerpackV2#palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#palette PowerpackV2#palette}
   */
   readonly palette?: string;
 }
@@ -9905,61 +9905,61 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequest 
   /**
   * The metric query to use for this widget. **Deprecated.** Use queries and formulas instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#q PowerpackV2#q}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#q PowerpackV2#q}
   */
   readonly q?: string;
   /**
   * apm_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#apm_query PowerpackV2#apm_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#apm_query PowerpackV2#apm_query}
   */
   readonly apmQuery?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQuery;
   /**
   * formula block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#formula PowerpackV2#formula}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#formula PowerpackV2#formula}
   */
   readonly formula?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestFormula[] | cdktn.IResolvable;
   /**
   * histogram_request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#histogram_request PowerpackV2#histogram_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#histogram_request PowerpackV2#histogram_request}
   */
   readonly histogramRequest?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestHistogramRequest;
   /**
   * log_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#log_query PowerpackV2#log_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#log_query PowerpackV2#log_query}
   */
   readonly logQuery?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQuery;
   /**
   * process_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#process_query PowerpackV2#process_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#process_query PowerpackV2#process_query}
   */
   readonly processQuery?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestProcessQuery;
   /**
   * query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#query PowerpackV2#query}
   */
   readonly query?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQuery[] | cdktn.IResolvable;
   /**
   * rum_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#rum_query PowerpackV2#rum_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#rum_query PowerpackV2#rum_query}
   */
   readonly rumQuery?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQuery;
   /**
   * security_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#security_query PowerpackV2#security_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#security_query PowerpackV2#security_query}
   */
   readonly securityQuery?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQuery;
   /**
   * style block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#style PowerpackV2#style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#style PowerpackV2#style}
   */
   readonly style?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestStyle;
 }
@@ -10338,13 +10338,13 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionTimeFixe
   /**
   * Start time in seconds since epoch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#from PowerpackV2#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#from PowerpackV2#from}
   */
   readonly from: number;
   /**
   * End time in seconds since epoch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#to PowerpackV2#to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#to PowerpackV2#to}
   */
   readonly to: number;
 }
@@ -10453,13 +10453,13 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionTimeLive
   /**
   * Unit of the time span. Valid values are `minute`, `hour`, `day`, `week`, `month`, `year`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#unit PowerpackV2#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#unit PowerpackV2#unit}
   */
   readonly unit: string;
   /**
   * Value of the time span.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#value PowerpackV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#value PowerpackV2#value}
   */
   readonly value: number;
 }
@@ -10568,13 +10568,13 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionTime {
   /**
   * fixed block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#fixed PowerpackV2#fixed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#fixed PowerpackV2#fixed}
   */
   readonly fixed?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionTimeFixed;
   /**
   * live block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#live PowerpackV2#live}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#live PowerpackV2#live}
   */
   readonly live?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionTimeLive;
 }
@@ -10689,7 +10689,7 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionXaxis {
   /**
   * Number of time buckets to target, also known as the resolution of the time bins. This is only applicable for distribution of points (group distributions use the roll-up modifier).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#num_buckets PowerpackV2#num_buckets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#num_buckets PowerpackV2#num_buckets}
   */
   readonly numBuckets?: number;
 }
@@ -10775,31 +10775,31 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionYaxis {
   /**
   * Set to `true` to include zero.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#include_zero PowerpackV2#include_zero}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#include_zero PowerpackV2#include_zero}
   */
   readonly includeZero?: boolean | cdktn.IResolvable;
   /**
   * The label of the axis to display on the graph. Only usable on Scatterplot Widgets.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#label PowerpackV2#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#label PowerpackV2#label}
   */
   readonly label?: string;
   /**
   * Specifies the maximum numeric value to show on the axis. Defaults to `auto`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#max PowerpackV2#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#max PowerpackV2#max}
   */
   readonly max?: string;
   /**
   * Specifies the minimum numeric value to show on the axis. Defaults to `auto`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#min PowerpackV2#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#min PowerpackV2#min}
   */
   readonly min?: string;
   /**
   * Specifies the scale type. Possible values are `linear`, `log`, `sqrt`, and `pow##` (for example `pow2` or `pow0.5`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#scale PowerpackV2#scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#scale PowerpackV2#scale}
   */
   readonly scale?: string;
 }
@@ -11001,91 +11001,91 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinition {
   /**
   * The description of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#description PowerpackV2#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#description PowerpackV2#description}
   */
   readonly description?: string;
   /**
   * Hide any portion of the widget's timeframe that is incomplete due to cost data not being available.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#hide_incomplete_cost_data PowerpackV2#hide_incomplete_cost_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#hide_incomplete_cost_data PowerpackV2#hide_incomplete_cost_data}
   */
   readonly hideIncompleteCostData?: boolean | cdktn.IResolvable;
   /**
   * The size of the legend displayed in the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#legend_size PowerpackV2#legend_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#legend_size PowerpackV2#legend_size}
   */
   readonly legendSize?: string;
   /**
   * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `week_to_date`, `month_to_date`, `1y`, `alert`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#live_span PowerpackV2#live_span}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#live_span PowerpackV2#live_span}
   */
   readonly liveSpan?: string;
   /**
   * Whether or not to show the legend on this widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#show_legend PowerpackV2#show_legend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#show_legend PowerpackV2#show_legend}
   */
   readonly showLegend?: boolean | cdktn.IResolvable;
   /**
   * The title of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#title PowerpackV2#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#title PowerpackV2#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#title_align PowerpackV2#title_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#title_align PowerpackV2#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#title_size PowerpackV2#title_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#title_size PowerpackV2#title_size}
   */
   readonly titleSize?: string;
   /**
   * custom_link block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#custom_link PowerpackV2#custom_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#custom_link PowerpackV2#custom_link}
   */
   readonly customLink?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionCustomLink[] | cdktn.IResolvable;
   /**
   * event block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#event PowerpackV2#event}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#event PowerpackV2#event}
   */
   readonly event?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionEvent[] | cdktn.IResolvable;
   /**
   * marker block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#marker PowerpackV2#marker}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#marker PowerpackV2#marker}
   */
   readonly marker?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionMarker[] | cdktn.IResolvable;
   /**
   * request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#request PowerpackV2#request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#request PowerpackV2#request}
   */
   readonly request?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequest[] | cdktn.IResolvable;
   /**
   * time block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#time PowerpackV2#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#time PowerpackV2#time}
   */
   readonly time?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionTime;
   /**
   * xaxis block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#xaxis PowerpackV2#xaxis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#xaxis PowerpackV2#xaxis}
   */
   readonly xaxis?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionXaxis;
   /**
   * yaxis block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#yaxis PowerpackV2#yaxis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#yaxis PowerpackV2#yaxis}
   */
   readonly yaxis?: PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionYaxis;
 }
@@ -11577,25 +11577,25 @@ export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionCustomLi
   /**
   * The flag for toggling context menu link visibility.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#is_hidden PowerpackV2#is_hidden}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#is_hidden PowerpackV2#is_hidden}
   */
   readonly isHidden?: boolean | cdktn.IResolvable;
   /**
   * The label for the custom link URL. Keep the label short and descriptive. Use metrics and tags as variables.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#label PowerpackV2#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#label PowerpackV2#label}
   */
   readonly label?: string;
   /**
   * The URL of the custom link. URL must include `http` or `https`. A relative URL must start with `/`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#link PowerpackV2#link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#link PowerpackV2#link}
   */
   readonly link?: string;
   /**
   * The label ID that refers to a context menu link. Can be `logs`, `hosts`, `traces`, `profiles`, `processes`, `containers`, or `rum`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#override_label PowerpackV2#override_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#override_label PowerpackV2#override_label}
   */
   readonly overrideLabel?: string;
 }
@@ -11796,1084 +11796,64 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionCustomLinkLi
     return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionCustomLinkOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryComputeQuery {
-  /**
-  * The aggregation method.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
-  */
-  readonly aggregation: string;
-  /**
-  * The facet name.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
-  */
-  readonly facet?: string;
-  /**
-  * Define the time interval in seconds.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#interval PowerpackV2#interval}
-  */
-  readonly interval?: number;
-}
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryComputeQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryComputeQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryComputeQuery): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    aggregation: cdktn.stringToTerraform(struct!.aggregation),
-    facet: cdktn.stringToTerraform(struct!.facet),
-    interval: cdktn.numberToTerraform(struct!.interval),
-  }
-}
-
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryComputeQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryComputeQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryComputeQuery): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    aggregation: {
-      value: cdktn.stringToHclTerraform(struct!.aggregation),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    facet: {
-      value: cdktn.stringToHclTerraform(struct!.facet),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    interval: {
-      value: cdktn.numberToHclTerraform(struct!.interval),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryComputeQueryOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryComputeQuery | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._aggregation !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.aggregation = this._aggregation;
-    }
-    if (this._facet !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.facet = this._facet;
-    }
-    if (this._interval !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.interval = this._interval;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryComputeQuery | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._aggregation = undefined;
-      this._facet = undefined;
-      this._interval = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._aggregation = value.aggregation;
-      this._facet = value.facet;
-      this._interval = value.interval;
-    }
-  }
-
-  // aggregation - computed: false, optional: false, required: true
-  private _aggregation?: string; 
-  public get aggregation() {
-    return this.getStringAttribute('aggregation');
-  }
-  public set aggregation(value: string) {
-    this._aggregation = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get aggregationInput() {
-    return this._aggregation;
-  }
-
-  // facet - computed: false, optional: true, required: false
-  private _facet?: string; 
-  public get facet() {
-    return this.getStringAttribute('facet');
-  }
-  public set facet(value: string) {
-    this._facet = value;
-  }
-  public resetFacet() {
-    this._facet = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get facetInput() {
-    return this._facet;
-  }
-
-  // interval - computed: false, optional: true, required: false
-  private _interval?: number; 
-  public get interval() {
-    return this.getNumberAttribute('interval');
-  }
-  public set interval(value: number) {
-    this._interval = value;
-  }
-  public resetInterval() {
-    this._interval = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get intervalInput() {
-    return this._interval;
-  }
-}
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQuery {
-  /**
-  * The aggregation method.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
-  */
-  readonly aggregation: string;
-  /**
-  * The facet name.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
-  */
-  readonly facet?: string;
-  /**
-  * Widget sorting methods. Valid values are `asc`, `desc`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#order PowerpackV2#order}
-  */
-  readonly order: string;
-}
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQuery): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    aggregation: cdktn.stringToTerraform(struct!.aggregation),
-    facet: cdktn.stringToTerraform(struct!.facet),
-    order: cdktn.stringToTerraform(struct!.order),
-  }
-}
-
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQuery): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    aggregation: {
-      value: cdktn.stringToHclTerraform(struct!.aggregation),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    facet: {
-      value: cdktn.stringToHclTerraform(struct!.facet),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    order: {
-      value: cdktn.stringToHclTerraform(struct!.order),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQueryOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQuery | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._aggregation !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.aggregation = this._aggregation;
-    }
-    if (this._facet !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.facet = this._facet;
-    }
-    if (this._order !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.order = this._order;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQuery | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._aggregation = undefined;
-      this._facet = undefined;
-      this._order = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._aggregation = value.aggregation;
-      this._facet = value.facet;
-      this._order = value.order;
-    }
-  }
-
-  // aggregation - computed: false, optional: false, required: true
-  private _aggregation?: string; 
-  public get aggregation() {
-    return this.getStringAttribute('aggregation');
-  }
-  public set aggregation(value: string) {
-    this._aggregation = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get aggregationInput() {
-    return this._aggregation;
-  }
-
-  // facet - computed: false, optional: true, required: false
-  private _facet?: string; 
-  public get facet() {
-    return this.getStringAttribute('facet');
-  }
-  public set facet(value: string) {
-    this._facet = value;
-  }
-  public resetFacet() {
-    this._facet = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get facetInput() {
-    return this._facet;
-  }
-
-  // order - computed: false, optional: false, required: true
-  private _order?: string; 
-  public get order() {
-    return this.getStringAttribute('order');
-  }
-  public set order(value: string) {
-    this._order = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get orderInput() {
-    return this._order;
-  }
-}
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBy {
-  /**
-  * The facet name.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
-  */
-  readonly facet?: string;
-  /**
-  * The maximum number of items in the group.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
-  */
-  readonly limit?: number;
-  /**
-  * sort_query block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#sort_query PowerpackV2#sort_query}
-  */
-  readonly sortQuery?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQuery;
-}
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupByToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBy | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    facet: cdktn.stringToTerraform(struct!.facet),
-    limit: cdktn.numberToTerraform(struct!.limit),
-    sort_query: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQueryToTerraform(struct!.sortQuery),
-  }
-}
-
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupByToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBy | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    facet: {
-      value: cdktn.stringToHclTerraform(struct!.facet),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    limit: {
-      value: cdktn.numberToHclTerraform(struct!.limit),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    sort_query: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQueryToHclTerraform(struct!.sortQuery),
-      isBlock: true,
-      type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQueryList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupByOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBy | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._facet !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.facet = this._facet;
-    }
-    if (this._limit !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.limit = this._limit;
-    }
-    if (this._sortQuery?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.sortQuery = this._sortQuery?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBy | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._facet = undefined;
-      this._limit = undefined;
-      this._sortQuery.internalValue = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._facet = value.facet;
-      this._limit = value.limit;
-      this._sortQuery.internalValue = value.sortQuery;
-    }
-  }
-
-  // facet - computed: false, optional: true, required: false
-  private _facet?: string; 
-  public get facet() {
-    return this.getStringAttribute('facet');
-  }
-  public set facet(value: string) {
-    this._facet = value;
-  }
-  public resetFacet() {
-    this._facet = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get facetInput() {
-    return this._facet;
-  }
-
-  // limit - computed: false, optional: true, required: false
-  private _limit?: number; 
-  public get limit() {
-    return this.getNumberAttribute('limit');
-  }
-  public set limit(value: number) {
-    this._limit = value;
-  }
-  public resetLimit() {
-    this._limit = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get limitInput() {
-    return this._limit;
-  }
-
-  // sort_query - computed: false, optional: true, required: false
-  private _sortQuery = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQueryOutputReference(this, "sort_query");
-  public get sortQuery() {
-    return this._sortQuery;
-  }
-  public putSortQuery(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQuery) {
-    this._sortQuery.internalValue = value;
-  }
-  public resetSortQuery() {
-    this._sortQuery.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sortQueryInput() {
-    return this._sortQuery.internalValue;
-  }
-}
-
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupByList extends cdktn.ComplexList {
-  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBy[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupByOutputReference {
-    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupByOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryMultiCompute {
-  /**
-  * The aggregation method.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
-  */
-  readonly aggregation: string;
-  /**
-  * The facet name.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
-  */
-  readonly facet?: string;
-  /**
-  * Define the time interval in seconds.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#interval PowerpackV2#interval}
-  */
-  readonly interval?: number;
-}
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryMultiComputeToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryMultiCompute | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    aggregation: cdktn.stringToTerraform(struct!.aggregation),
-    facet: cdktn.stringToTerraform(struct!.facet),
-    interval: cdktn.numberToTerraform(struct!.interval),
-  }
-}
-
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryMultiComputeToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryMultiCompute | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    aggregation: {
-      value: cdktn.stringToHclTerraform(struct!.aggregation),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    facet: {
-      value: cdktn.stringToHclTerraform(struct!.facet),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    interval: {
-      value: cdktn.numberToHclTerraform(struct!.interval),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryMultiComputeOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryMultiCompute | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._aggregation !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.aggregation = this._aggregation;
-    }
-    if (this._facet !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.facet = this._facet;
-    }
-    if (this._interval !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.interval = this._interval;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryMultiCompute | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._aggregation = undefined;
-      this._facet = undefined;
-      this._interval = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._aggregation = value.aggregation;
-      this._facet = value.facet;
-      this._interval = value.interval;
-    }
-  }
-
-  // aggregation - computed: false, optional: false, required: true
-  private _aggregation?: string; 
-  public get aggregation() {
-    return this.getStringAttribute('aggregation');
-  }
-  public set aggregation(value: string) {
-    this._aggregation = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get aggregationInput() {
-    return this._aggregation;
-  }
-
-  // facet - computed: false, optional: true, required: false
-  private _facet?: string; 
-  public get facet() {
-    return this.getStringAttribute('facet');
-  }
-  public set facet(value: string) {
-    this._facet = value;
-  }
-  public resetFacet() {
-    this._facet = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get facetInput() {
-    return this._facet;
-  }
-
-  // interval - computed: false, optional: true, required: false
-  private _interval?: number; 
-  public get interval() {
-    return this.getNumberAttribute('interval');
-  }
-  public set interval(value: number) {
-    this._interval = value;
-  }
-  public resetInterval() {
-    this._interval = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get intervalInput() {
-    return this._interval;
-  }
-}
-
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryMultiComputeList extends cdktn.ComplexList {
-  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryMultiCompute[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryMultiComputeOutputReference {
-    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryMultiComputeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQuery {
-  /**
-  * A comma separated-list of index names. Use `*` to query all indexes at once. [Multiple Indexes](https://docs.datadoghq.com/logs/indexes/#multiple-indexes).
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#index PowerpackV2#index}
-  */
-  readonly index: string;
-  /**
-  * The search query to use.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#search_query PowerpackV2#search_query}
-  */
-  readonly searchQuery?: string;
-  /**
-  * compute_query block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#compute_query PowerpackV2#compute_query}
-  */
-  readonly computeQuery?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryComputeQuery;
-  /**
-  * group_by block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#group_by PowerpackV2#group_by}
-  */
-  readonly groupBy?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBy[] | cdktn.IResolvable;
-  /**
-  * multi_compute block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#multi_compute PowerpackV2#multi_compute}
-  */
-  readonly multiCompute?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryMultiCompute[] | cdktn.IResolvable;
-}
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQuery): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    index: cdktn.stringToTerraform(struct!.index),
-    search_query: cdktn.stringToTerraform(struct!.searchQuery),
-    compute_query: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktn.listMapper(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktn.listMapper(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryMultiComputeToTerraform, true)(struct!.multiCompute),
-  }
-}
-
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQuery): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    index: {
-      value: cdktn.stringToHclTerraform(struct!.index),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    search_query: {
-      value: cdktn.stringToHclTerraform(struct!.searchQuery),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    compute_query: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryComputeQueryToHclTerraform(struct!.computeQuery),
-      isBlock: true,
-      type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryComputeQueryList",
-    },
-    group_by: {
-      value: cdktn.listMapperHcl(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupByToHclTerraform, true)(struct!.groupBy),
-      isBlock: true,
-      type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupByList",
-    },
-    multi_compute: {
-      value: cdktn.listMapperHcl(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
-      isBlock: true,
-      type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryMultiComputeList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQuery | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._index !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.index = this._index;
-    }
-    if (this._searchQuery !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.searchQuery = this._searchQuery;
-    }
-    if (this._computeQuery?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.computeQuery = this._computeQuery?.internalValue;
-    }
-    if (this._groupBy?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.groupBy = this._groupBy?.internalValue;
-    }
-    if (this._multiCompute?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.multiCompute = this._multiCompute?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQuery | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._index = undefined;
-      this._searchQuery = undefined;
-      this._computeQuery.internalValue = undefined;
-      this._groupBy.internalValue = undefined;
-      this._multiCompute.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._index = value.index;
-      this._searchQuery = value.searchQuery;
-      this._computeQuery.internalValue = value.computeQuery;
-      this._groupBy.internalValue = value.groupBy;
-      this._multiCompute.internalValue = value.multiCompute;
-    }
-  }
-
-  // index - computed: false, optional: false, required: true
-  private _index?: string; 
-  public get index() {
-    return this.getStringAttribute('index');
-  }
-  public set index(value: string) {
-    this._index = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get indexInput() {
-    return this._index;
-  }
-
-  // search_query - computed: false, optional: true, required: false
-  private _searchQuery?: string; 
-  public get searchQuery() {
-    return this.getStringAttribute('search_query');
-  }
-  public set searchQuery(value: string) {
-    this._searchQuery = value;
-  }
-  public resetSearchQuery() {
-    this._searchQuery = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get searchQueryInput() {
-    return this._searchQuery;
-  }
-
-  // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryComputeQueryOutputReference(this, "compute_query");
-  public get computeQuery() {
-    return this._computeQuery;
-  }
-  public putComputeQuery(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryComputeQuery) {
-    this._computeQuery.internalValue = value;
-  }
-  public resetComputeQuery() {
-    this._computeQuery.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get computeQueryInput() {
-    return this._computeQuery.internalValue;
-  }
-
-  // group_by - computed: false, optional: true, required: false
-  private _groupBy = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupByList(this, "group_by", false);
-  public get groupBy() {
-    return this._groupBy;
-  }
-  public putGroupBy(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBy[] | cdktn.IResolvable) {
-    this._groupBy.internalValue = value;
-  }
-  public resetGroupBy() {
-    this._groupBy.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get groupByInput() {
-    return this._groupBy.internalValue;
-  }
-
-  // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryMultiComputeList(this, "multi_compute", false);
-  public get multiCompute() {
-    return this._multiCompute;
-  }
-  public putMultiCompute(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryMultiCompute[] | cdktn.IResolvable) {
-    this._multiCompute.internalValue = value;
-  }
-  public resetMultiCompute() {
-    this._multiCompute.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get multiComputeInput() {
-    return this._multiCompute.internalValue;
-  }
-}
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaCellDisplayModeOptions {
-  /**
-  * The type of trend line to display. Valid values are `area`, `line`, and `bars`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#trend_type PowerpackV2#trend_type}
-  */
-  readonly trendType?: string;
-  /**
-  * The scale of the y-axis. Valid values are `shared` and `independent`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#y_scale PowerpackV2#y_scale}
-  */
-  readonly yScale?: string;
-}
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaCellDisplayModeOptionsToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaCellDisplayModeOptionsOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaCellDisplayModeOptions): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    trend_type: cdktn.stringToTerraform(struct!.trendType),
-    y_scale: cdktn.stringToTerraform(struct!.yScale),
-  }
-}
-
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaCellDisplayModeOptionsToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaCellDisplayModeOptionsOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaCellDisplayModeOptions): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    trend_type: {
-      value: cdktn.stringToHclTerraform(struct!.trendType),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    y_scale: {
-      value: cdktn.stringToHclTerraform(struct!.yScale),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaCellDisplayModeOptionsOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaCellDisplayModeOptions | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._trendType !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.trendType = this._trendType;
-    }
-    if (this._yScale !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.yScale = this._yScale;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaCellDisplayModeOptions | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._trendType = undefined;
-      this._yScale = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._trendType = value.trendType;
-      this._yScale = value.yScale;
-    }
-  }
-
-  // trend_type - computed: false, optional: true, required: false
-  private _trendType?: string; 
-  public get trendType() {
-    return this.getStringAttribute('trend_type');
-  }
-  public set trendType(value: string) {
-    this._trendType = value;
-  }
-  public resetTrendType() {
-    this._trendType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get trendTypeInput() {
-    return this._trendType;
-  }
-
-  // y_scale - computed: false, optional: true, required: false
-  private _yScale?: string; 
-  public get yScale() {
-    return this.getStringAttribute('y_scale');
-  }
-  public set yScale(value: string) {
-    this._yScale = value;
-  }
-  public resetYScale() {
-    this._yScale = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get yScaleInput() {
-    return this._yScale;
-  }
-}
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaConditionalFormats {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildConditionalFormats {
   /**
   * The comparator to use. Valid values are `=`, `>`, `>=`, `<`, `<=`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#comparator PowerpackV2#comparator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#comparator PowerpackV2#comparator}
   */
   readonly comparator: string;
   /**
   * The color palette to apply to the background, same values available as palette.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#custom_bg_color PowerpackV2#custom_bg_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#custom_bg_color PowerpackV2#custom_bg_color}
   */
   readonly customBgColor?: string;
   /**
   * The color palette to apply to the foreground, same values available as palette.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#custom_fg_color PowerpackV2#custom_fg_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#custom_fg_color PowerpackV2#custom_fg_color}
   */
   readonly customFgColor?: string;
   /**
   * Setting this to True hides values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#hide_value PowerpackV2#hide_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#hide_value PowerpackV2#hide_value}
   */
   readonly hideValue?: boolean | cdktn.IResolvable;
   /**
   * Displays an image as the background.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#image_url PowerpackV2#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#image_url PowerpackV2#image_url}
   */
   readonly imageUrl?: string;
   /**
   * The metric from the request to correlate with this conditional format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
   */
   readonly metric?: string;
   /**
   * The color palette to apply. Valid values are `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green`, `black_on_light_red`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#palette PowerpackV2#palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#palette PowerpackV2#palette}
   */
   readonly palette: string;
   /**
   * Defines the displayed timeframe.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#timeframe PowerpackV2#timeframe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#timeframe PowerpackV2#timeframe}
   */
   readonly timeframe?: string;
   /**
   * A value for the comparator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#value PowerpackV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#value PowerpackV2#value}
   */
   readonly value: number;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaConditionalFormatsToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaConditionalFormats | cdktn.IResolvable): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildConditionalFormatsToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildConditionalFormats | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -12892,7 +11872,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaConditionalFormatsToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaConditionalFormats | cdktn.IResolvable): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildConditionalFormatsToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildConditionalFormats | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -12958,7 +11938,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaConditionalFormatsOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildConditionalFormatsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -12972,7 +11952,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaConditionalFormats | cdktn.IResolvable | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildConditionalFormats | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -13017,7 +11997,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaConditionalFormats | cdktn.IResolvable | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildConditionalFormats | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -13186,8 +12166,8 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
   }
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaConditionalFormatsList extends cdktn.ComplexList {
-  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaConditionalFormats[] | cdktn.IResolvable
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildConditionalFormatsList extends cdktn.ComplexList {
+  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildConditionalFormats[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -13201,147 +12181,26 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaConditionalFormatsOutputReference {
-    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaConditionalFormatsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildConditionalFormatsOutputReference {
+    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildConditionalFormatsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaLimit {
-  /**
-  * The number of results to return.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#count PowerpackV2#count}
-  */
-  readonly count?: number;
-  /**
-  * The direction of the sort. Valid values are `asc`, `desc`. Defaults to `"desc"`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#order PowerpackV2#order}
-  */
-  readonly order?: string;
-}
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaLimitToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaLimitOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaLimit): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    count: cdktn.numberToTerraform(struct!.count),
-    order: cdktn.stringToTerraform(struct!.order),
-  }
-}
-
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaLimitToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaLimitOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaLimit): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    count: {
-      value: cdktn.numberToHclTerraform(struct!.count),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    order: {
-      value: cdktn.stringToHclTerraform(struct!.order),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaLimitOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaLimit | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._count !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.count = this._count;
-    }
-    if (this._order !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.order = this._order;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaLimit | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._count = undefined;
-      this._order = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._count = value.count;
-      this._order = value.order;
-    }
-  }
-
-  // count - computed: false, optional: true, required: false
-  private _count?: number; 
-  public get count() {
-    return this.getNumberAttribute('count');
-  }
-  public set count(value: number) {
-    this._count = value;
-  }
-  public resetCount() {
-    this._count = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get countInput() {
-    return this._count;
-  }
-
-  // order - computed: false, optional: true, required: false
-  private _order?: string; 
-  public get order() {
-    return this.getStringAttribute('order');
-  }
-  public set order(value: string) {
-    this._order = value;
-  }
-  public resetOrder() {
-    this._order = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get orderInput() {
-    return this._order;
-  }
-}
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCanonical {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCanonical {
   /**
   * per unit name. If you want to represent megabytes/s, you set 'unit_name' = 'megabyte' and 'per_unit_name = 'second'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#per_unit_name PowerpackV2#per_unit_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#per_unit_name PowerpackV2#per_unit_name}
   */
   readonly perUnitName?: string;
   /**
   * Unit name. It should be in singular form ('megabyte' and not 'megabytes')
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#unit_name PowerpackV2#unit_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#unit_name PowerpackV2#unit_name}
   */
   readonly unitName?: string;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCanonicalToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCanonicalOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCanonical): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCanonicalToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCanonicalOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCanonical): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -13353,7 +12212,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCanonicalToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCanonicalOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCanonical): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCanonicalToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCanonicalOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCanonical): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -13377,7 +12236,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCanonicalOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCanonicalOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -13388,7 +12247,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCanonical | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCanonical | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._perUnitName !== undefined) {
@@ -13402,7 +12261,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCanonical | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCanonical | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._perUnitName = undefined;
@@ -13447,16 +12306,16 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
     return this._unitName;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCustom {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCustom {
   /**
   * Unit label
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#label PowerpackV2#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#label PowerpackV2#label}
   */
   readonly label: string;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCustomToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCustomOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCustom): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCustomToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCustomOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCustom): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -13467,7 +12326,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCustomToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCustomOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCustom): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCustomToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCustomOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCustom): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -13485,7 +12344,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCustomOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCustomOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -13496,7 +12355,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCustom | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCustom | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._label !== undefined) {
@@ -13506,7 +12365,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCustom | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCustom | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._label = undefined;
@@ -13530,50 +12389,50 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
     return this._label;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnit {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnit {
   /**
   * canonical block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#canonical PowerpackV2#canonical}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#canonical PowerpackV2#canonical}
   */
-  readonly canonical?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCanonical;
+  readonly canonical?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCanonical;
   /**
   * custom block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#custom PowerpackV2#custom}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#custom PowerpackV2#custom}
   */
-  readonly custom?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCustom;
+  readonly custom?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCustom;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnit): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    canonical: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCanonicalToTerraform(struct!.canonical),
-    custom: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCustomToTerraform(struct!.custom),
+    canonical: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCanonicalToTerraform(struct!.canonical),
+    custom: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCustomToTerraform(struct!.custom),
   }
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnit): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     canonical: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCanonicalToHclTerraform(struct!.canonical),
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCanonicalToHclTerraform(struct!.canonical),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCanonicalList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCanonicalList",
     },
     custom: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCustomToHclTerraform(struct!.custom),
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCustomToHclTerraform(struct!.custom),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCustomList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCustomList",
     },
   };
 
@@ -13581,7 +12440,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -13592,7 +12451,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnit | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnit | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._canonical?.internalValue !== undefined) {
@@ -13606,7 +12465,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnit | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnit | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._canonical.internalValue = undefined;
@@ -13620,11 +12479,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
   }
 
   // canonical - computed: false, optional: true, required: false
-  private _canonical = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCanonicalOutputReference(this, "canonical");
+  private _canonical = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCanonicalOutputReference(this, "canonical");
   public get canonical() {
     return this._canonical;
   }
-  public putCanonical(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCanonical) {
+  public putCanonical(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCanonical) {
     this._canonical.internalValue = value;
   }
   public resetCanonical() {
@@ -13636,11 +12495,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
   }
 
   // custom - computed: false, optional: true, required: false
-  private _custom = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCustomOutputReference(this, "custom");
+  private _custom = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCustomOutputReference(this, "custom");
   public get custom() {
     return this._custom;
   }
-  public putCustom(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitCustom) {
+  public putCustom(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitCustom) {
     this._custom.internalValue = value;
   }
   public resetCustom() {
@@ -13651,16 +12510,16 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
     return this._custom.internalValue;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitScale {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitScale {
   /**
   * The name of the unit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#unit_name PowerpackV2#unit_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#unit_name PowerpackV2#unit_name}
   */
   readonly unitName: string;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitScaleToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitScaleOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitScale): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitScaleToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitScaleOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitScale): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -13671,7 +12530,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitScaleToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitScaleOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitScale): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitScaleToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitScaleOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitScale): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -13689,7 +12548,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitScaleOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitScaleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -13700,7 +12559,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitScale | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitScale | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unitName !== undefined) {
@@ -13710,7 +12569,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitScale | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitScale | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._unitName = undefined;
@@ -13734,50 +12593,50 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
     return this._unitName;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormat {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormat {
   /**
   * unit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#unit PowerpackV2#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#unit PowerpackV2#unit}
   */
-  readonly unit: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnit;
+  readonly unit: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnit;
   /**
   * unit_scale block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#unit_scale PowerpackV2#unit_scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#unit_scale PowerpackV2#unit_scale}
   */
-  readonly unitScale?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitScale;
+  readonly unitScale?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitScale;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormat): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormat): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    unit: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitToTerraform(struct!.unit),
-    unit_scale: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitScaleToTerraform(struct!.unitScale),
+    unit: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitToTerraform(struct!.unit),
+    unit_scale: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitScaleToTerraform(struct!.unitScale),
   }
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormat): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormat): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitToHclTerraform(struct!.unit),
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitToHclTerraform(struct!.unit),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitList",
     },
     unit_scale: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitScaleToHclTerraform(struct!.unitScale),
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitScaleToHclTerraform(struct!.unitScale),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitScaleList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitScaleList",
     },
   };
 
@@ -13785,7 +12644,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -13796,7 +12655,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormat | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormat | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit?.internalValue !== undefined) {
@@ -13810,7 +12669,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormat | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormat | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._unit.internalValue = undefined;
@@ -13824,11 +12683,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
   }
 
   // unit - computed: false, optional: false, required: true
-  private _unit = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitOutputReference(this, "unit");
+  private _unit = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitOutputReference(this, "unit");
   public get unit() {
     return this._unit;
   }
-  public putUnit(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnit) {
+  public putUnit(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnit) {
     this._unit.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -13837,11 +12696,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
   }
 
   // unit_scale - computed: false, optional: true, required: false
-  private _unitScale = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitScaleOutputReference(this, "unit_scale");
+  private _unitScale = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitScaleOutputReference(this, "unit_scale");
   public get unitScale() {
     return this._unitScale;
   }
-  public putUnitScale(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatUnitScale) {
+  public putUnitScale(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatUnitScale) {
     this._unitScale.internalValue = value;
   }
   public resetUnitScale() {
@@ -13852,197 +12711,48 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
     return this._unitScale.internalValue;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaStyle {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormula {
   /**
-  * The color palette used to display the formula. A guide to the available color palettes can be found at https://docs.datadoghq.com/dashboards/guide/widget_colors.
+  * Expression alias.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#palette PowerpackV2#palette}
-  */
-  readonly palette?: string;
-  /**
-  * Index specifying which color to use within the palette.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#palette_index PowerpackV2#palette_index}
-  */
-  readonly paletteIndex?: number;
-}
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaStyleToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaStyleOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaStyle): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    palette: cdktn.stringToTerraform(struct!.palette),
-    palette_index: cdktn.numberToTerraform(struct!.paletteIndex),
-  }
-}
-
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaStyleToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaStyleOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaStyle): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    palette: {
-      value: cdktn.stringToHclTerraform(struct!.palette),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    palette_index: {
-      value: cdktn.numberToHclTerraform(struct!.paletteIndex),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaStyleOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaStyle | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._palette !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.palette = this._palette;
-    }
-    if (this._paletteIndex !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.paletteIndex = this._paletteIndex;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaStyle | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._palette = undefined;
-      this._paletteIndex = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._palette = value.palette;
-      this._paletteIndex = value.paletteIndex;
-    }
-  }
-
-  // palette - computed: false, optional: true, required: false
-  private _palette?: string; 
-  public get palette() {
-    return this.getStringAttribute('palette');
-  }
-  public set palette(value: string) {
-    this._palette = value;
-  }
-  public resetPalette() {
-    this._palette = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get paletteInput() {
-    return this._palette;
-  }
-
-  // palette_index - computed: false, optional: true, required: false
-  private _paletteIndex?: number; 
-  public get paletteIndex() {
-    return this.getNumberAttribute('palette_index');
-  }
-  public set paletteIndex(value: number) {
-    this._paletteIndex = value;
-  }
-  public resetPaletteIndex() {
-    this._paletteIndex = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get paletteIndexInput() {
-    return this._paletteIndex;
-  }
-}
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormula {
-  /**
-  * An expression alias.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#alias PowerpackV2#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#alias PowerpackV2#alias}
   */
   readonly alias?: string;
   /**
-  * A list of display modes for each table cell. Valid values are `number`, `bar`, and `trend`.
+  * Visual dimension driven by the formula. Valid values are `node`, `fill`, `size`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#cell_display_mode PowerpackV2#cell_display_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#dimension PowerpackV2#dimension}
   */
-  readonly cellDisplayMode?: string;
+  readonly dimension: string;
   /**
-  * A string expression built from queries, formulas, and functions.
+  * String expression built from queries, formulas, and functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#formula_expression PowerpackV2#formula_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#formula_expression PowerpackV2#formula_expression}
   */
   readonly formulaExpression: string;
   /**
-  * cell_display_mode_options block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#cell_display_mode_options PowerpackV2#cell_display_mode_options}
-  */
-  readonly cellDisplayModeOptions?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaCellDisplayModeOptions;
-  /**
-  * conditional_formats block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#conditional_formats PowerpackV2#conditional_formats}
-  */
-  readonly conditionalFormats?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaConditionalFormats[] | cdktn.IResolvable;
-  /**
-  * limit block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
-  */
-  readonly limit?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaLimit;
-  /**
   * number_format block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#number_format PowerpackV2#number_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#number_format PowerpackV2#number_format}
   */
-  readonly numberFormat?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormat;
-  /**
-  * style block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#style PowerpackV2#style}
-  */
-  readonly style?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaStyle;
+  readonly numberFormat?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormat;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormula | cdktn.IResolvable): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormula | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alias: cdktn.stringToTerraform(struct!.alias),
-    cell_display_mode: cdktn.stringToTerraform(struct!.cellDisplayMode),
+    dimension: cdktn.stringToTerraform(struct!.dimension),
     formula_expression: cdktn.stringToTerraform(struct!.formulaExpression),
-    cell_display_mode_options: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaCellDisplayModeOptionsToTerraform(struct!.cellDisplayModeOptions),
-    conditional_formats: cdktn.listMapper(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaConditionalFormatsToTerraform, true)(struct!.conditionalFormats),
-    limit: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaLimitToTerraform(struct!.limit),
-    number_format: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatToTerraform(struct!.numberFormat),
-    style: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaStyleToTerraform(struct!.style),
+    number_format: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatToTerraform(struct!.numberFormat),
   }
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormula | cdktn.IResolvable): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormula | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -14054,8 +12764,8 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
       type: "simple",
       storageClassType: "string",
     },
-    cell_display_mode: {
-      value: cdktn.stringToHclTerraform(struct!.cellDisplayMode),
+    dimension: {
+      value: cdktn.stringToHclTerraform(struct!.dimension),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14066,35 +12776,11 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
       type: "simple",
       storageClassType: "string",
     },
-    cell_display_mode_options: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaCellDisplayModeOptionsToHclTerraform(struct!.cellDisplayModeOptions),
-      isBlock: true,
-      type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaCellDisplayModeOptionsList",
-    },
-    conditional_formats: {
-      value: cdktn.listMapperHcl(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaConditionalFormatsToHclTerraform, true)(struct!.conditionalFormats),
-      isBlock: true,
-      type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaConditionalFormatsList",
-    },
-    limit: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaLimitToHclTerraform(struct!.limit),
-      isBlock: true,
-      type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaLimitList",
-    },
     number_format: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatToHclTerraform(struct!.numberFormat),
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatToHclTerraform(struct!.numberFormat),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatList",
-    },
-    style: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaStyleToHclTerraform(struct!.style),
-      isBlock: true,
-      type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaStyleList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatList",
     },
   };
 
@@ -14102,7 +12788,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -14116,7 +12802,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormula | cdktn.IResolvable | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormula | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -14126,49 +12812,29 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
       hasAnyValues = true;
       internalValueResult.alias = this._alias;
     }
-    if (this._cellDisplayMode !== undefined) {
+    if (this._dimension !== undefined) {
       hasAnyValues = true;
-      internalValueResult.cellDisplayMode = this._cellDisplayMode;
+      internalValueResult.dimension = this._dimension;
     }
     if (this._formulaExpression !== undefined) {
       hasAnyValues = true;
       internalValueResult.formulaExpression = this._formulaExpression;
     }
-    if (this._cellDisplayModeOptions?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.cellDisplayModeOptions = this._cellDisplayModeOptions?.internalValue;
-    }
-    if (this._conditionalFormats?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.conditionalFormats = this._conditionalFormats?.internalValue;
-    }
-    if (this._limit?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.limit = this._limit?.internalValue;
-    }
     if (this._numberFormat?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.numberFormat = this._numberFormat?.internalValue;
     }
-    if (this._style?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.style = this._style?.internalValue;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormula | cdktn.IResolvable | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormula | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._alias = undefined;
-      this._cellDisplayMode = undefined;
+      this._dimension = undefined;
       this._formulaExpression = undefined;
-      this._cellDisplayModeOptions.internalValue = undefined;
-      this._conditionalFormats.internalValue = undefined;
-      this._limit.internalValue = undefined;
       this._numberFormat.internalValue = undefined;
-      this._style.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -14178,13 +12844,9 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._alias = value.alias;
-      this._cellDisplayMode = value.cellDisplayMode;
+      this._dimension = value.dimension;
       this._formulaExpression = value.formulaExpression;
-      this._cellDisplayModeOptions.internalValue = value.cellDisplayModeOptions;
-      this._conditionalFormats.internalValue = value.conditionalFormats;
-      this._limit.internalValue = value.limit;
       this._numberFormat.internalValue = value.numberFormat;
-      this._style.internalValue = value.style;
     }
   }
 
@@ -14204,20 +12866,17 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
     return this._alias;
   }
 
-  // cell_display_mode - computed: false, optional: true, required: false
-  private _cellDisplayMode?: string; 
-  public get cellDisplayMode() {
-    return this.getStringAttribute('cell_display_mode');
+  // dimension - computed: false, optional: false, required: true
+  private _dimension?: string; 
+  public get dimension() {
+    return this.getStringAttribute('dimension');
   }
-  public set cellDisplayMode(value: string) {
-    this._cellDisplayMode = value;
-  }
-  public resetCellDisplayMode() {
-    this._cellDisplayMode = undefined;
+  public set dimension(value: string) {
+    this._dimension = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get cellDisplayModeInput() {
-    return this._cellDisplayMode;
+  public get dimensionInput() {
+    return this._dimension;
   }
 
   // formula_expression - computed: false, optional: false, required: true
@@ -14233,60 +12892,12 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
     return this._formulaExpression;
   }
 
-  // cell_display_mode_options - computed: false, optional: true, required: false
-  private _cellDisplayModeOptions = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaCellDisplayModeOptionsOutputReference(this, "cell_display_mode_options");
-  public get cellDisplayModeOptions() {
-    return this._cellDisplayModeOptions;
-  }
-  public putCellDisplayModeOptions(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaCellDisplayModeOptions) {
-    this._cellDisplayModeOptions.internalValue = value;
-  }
-  public resetCellDisplayModeOptions() {
-    this._cellDisplayModeOptions.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get cellDisplayModeOptionsInput() {
-    return this._cellDisplayModeOptions.internalValue;
-  }
-
-  // conditional_formats - computed: false, optional: true, required: false
-  private _conditionalFormats = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaConditionalFormatsList(this, "conditional_formats", false);
-  public get conditionalFormats() {
-    return this._conditionalFormats;
-  }
-  public putConditionalFormats(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaConditionalFormats[] | cdktn.IResolvable) {
-    this._conditionalFormats.internalValue = value;
-  }
-  public resetConditionalFormats() {
-    this._conditionalFormats.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get conditionalFormatsInput() {
-    return this._conditionalFormats.internalValue;
-  }
-
-  // limit - computed: false, optional: true, required: false
-  private _limit = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaLimitOutputReference(this, "limit");
-  public get limit() {
-    return this._limit;
-  }
-  public putLimit(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaLimit) {
-    this._limit.internalValue = value;
-  }
-  public resetLimit() {
-    this._limit.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get limitInput() {
-    return this._limit.internalValue;
-  }
-
   // number_format - computed: false, optional: true, required: false
-  private _numberFormat = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormatOutputReference(this, "number_format");
+  private _numberFormat = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormatOutputReference(this, "number_format");
   public get numberFormat() {
     return this._numberFormat;
   }
-  public putNumberFormat(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaNumberFormat) {
+  public putNumberFormat(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaNumberFormat) {
     this._numberFormat.internalValue = value;
   }
   public resetNumberFormat() {
@@ -14296,26 +12907,10 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
   public get numberFormatInput() {
     return this._numberFormat.internalValue;
   }
-
-  // style - computed: false, optional: true, required: false
-  private _style = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaStyleOutputReference(this, "style");
-  public get style() {
-    return this._style;
-  }
-  public putStyle(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaStyle) {
-    this._style.internalValue = value;
-  }
-  public resetStyle() {
-    this._style.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get styleInput() {
-    return this._style.internalValue;
-  }
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaList extends cdktn.ComplexList {
-  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormula[] | cdktn.IResolvable
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaList extends cdktn.ComplexList {
+  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormula[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -14329,1167 +12924,80 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillF
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaOutputReference {
-    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillFormulaOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaOutputReference {
+    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentFormulaOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQuery {
-  /**
-  * The aggregation method.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
-  */
-  readonly aggregation: string;
-  /**
-  * The facet name.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
-  */
-  readonly facet?: string;
-  /**
-  * Define the time interval in seconds.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#interval PowerpackV2#interval}
-  */
-  readonly interval?: number;
-}
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQuery): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    aggregation: cdktn.stringToTerraform(struct!.aggregation),
-    facet: cdktn.stringToTerraform(struct!.facet),
-    interval: cdktn.numberToTerraform(struct!.interval),
-  }
-}
-
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQuery): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    aggregation: {
-      value: cdktn.stringToHclTerraform(struct!.aggregation),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    facet: {
-      value: cdktn.stringToHclTerraform(struct!.facet),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    interval: {
-      value: cdktn.numberToHclTerraform(struct!.interval),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQuery | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._aggregation !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.aggregation = this._aggregation;
-    }
-    if (this._facet !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.facet = this._facet;
-    }
-    if (this._interval !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.interval = this._interval;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQuery | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._aggregation = undefined;
-      this._facet = undefined;
-      this._interval = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._aggregation = value.aggregation;
-      this._facet = value.facet;
-      this._interval = value.interval;
-    }
-  }
-
-  // aggregation - computed: false, optional: false, required: true
-  private _aggregation?: string; 
-  public get aggregation() {
-    return this.getStringAttribute('aggregation');
-  }
-  public set aggregation(value: string) {
-    this._aggregation = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get aggregationInput() {
-    return this._aggregation;
-  }
-
-  // facet - computed: false, optional: true, required: false
-  private _facet?: string; 
-  public get facet() {
-    return this.getStringAttribute('facet');
-  }
-  public set facet(value: string) {
-    this._facet = value;
-  }
-  public resetFacet() {
-    this._facet = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get facetInput() {
-    return this._facet;
-  }
-
-  // interval - computed: false, optional: true, required: false
-  private _interval?: number; 
-  public get interval() {
-    return this.getNumberAttribute('interval');
-  }
-  public set interval(value: number) {
-    this._interval = value;
-  }
-  public resetInterval() {
-    this._interval = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get intervalInput() {
-    return this._interval;
-  }
-}
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery {
-  /**
-  * The aggregation method.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
-  */
-  readonly aggregation: string;
-  /**
-  * The facet name.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
-  */
-  readonly facet?: string;
-  /**
-  * Widget sorting methods. Valid values are `asc`, `desc`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#order PowerpackV2#order}
-  */
-  readonly order: string;
-}
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    aggregation: cdktn.stringToTerraform(struct!.aggregation),
-    facet: cdktn.stringToTerraform(struct!.facet),
-    order: cdktn.stringToTerraform(struct!.order),
-  }
-}
-
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    aggregation: {
-      value: cdktn.stringToHclTerraform(struct!.aggregation),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    facet: {
-      value: cdktn.stringToHclTerraform(struct!.facet),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    order: {
-      value: cdktn.stringToHclTerraform(struct!.order),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._aggregation !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.aggregation = this._aggregation;
-    }
-    if (this._facet !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.facet = this._facet;
-    }
-    if (this._order !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.order = this._order;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._aggregation = undefined;
-      this._facet = undefined;
-      this._order = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._aggregation = value.aggregation;
-      this._facet = value.facet;
-      this._order = value.order;
-    }
-  }
-
-  // aggregation - computed: false, optional: false, required: true
-  private _aggregation?: string; 
-  public get aggregation() {
-    return this.getStringAttribute('aggregation');
-  }
-  public set aggregation(value: string) {
-    this._aggregation = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get aggregationInput() {
-    return this._aggregation;
-  }
-
-  // facet - computed: false, optional: true, required: false
-  private _facet?: string; 
-  public get facet() {
-    return this.getStringAttribute('facet');
-  }
-  public set facet(value: string) {
-    this._facet = value;
-  }
-  public resetFacet() {
-    this._facet = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get facetInput() {
-    return this._facet;
-  }
-
-  // order - computed: false, optional: false, required: true
-  private _order?: string; 
-  public get order() {
-    return this.getStringAttribute('order');
-  }
-  public set order(value: string) {
-    this._order = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get orderInput() {
-    return this._order;
-  }
-}
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBy {
-  /**
-  * The facet name.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
-  */
-  readonly facet?: string;
-  /**
-  * The maximum number of items in the group.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
-  */
-  readonly limit?: number;
-  /**
-  * sort_query block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#sort_query PowerpackV2#sort_query}
-  */
-  readonly sortQuery?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery;
-}
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupByToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBy | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    facet: cdktn.stringToTerraform(struct!.facet),
-    limit: cdktn.numberToTerraform(struct!.limit),
-    sort_query: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryToTerraform(struct!.sortQuery),
-  }
-}
-
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupByToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBy | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    facet: {
-      value: cdktn.stringToHclTerraform(struct!.facet),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    limit: {
-      value: cdktn.numberToHclTerraform(struct!.limit),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    sort_query: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryToHclTerraform(struct!.sortQuery),
-      isBlock: true,
-      type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupByOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBy | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._facet !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.facet = this._facet;
-    }
-    if (this._limit !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.limit = this._limit;
-    }
-    if (this._sortQuery?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.sortQuery = this._sortQuery?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBy | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._facet = undefined;
-      this._limit = undefined;
-      this._sortQuery.internalValue = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._facet = value.facet;
-      this._limit = value.limit;
-      this._sortQuery.internalValue = value.sortQuery;
-    }
-  }
-
-  // facet - computed: false, optional: true, required: false
-  private _facet?: string; 
-  public get facet() {
-    return this.getStringAttribute('facet');
-  }
-  public set facet(value: string) {
-    this._facet = value;
-  }
-  public resetFacet() {
-    this._facet = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get facetInput() {
-    return this._facet;
-  }
-
-  // limit - computed: false, optional: true, required: false
-  private _limit?: number; 
-  public get limit() {
-    return this.getNumberAttribute('limit');
-  }
-  public set limit(value: number) {
-    this._limit = value;
-  }
-  public resetLimit() {
-    this._limit = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get limitInput() {
-    return this._limit;
-  }
-
-  // sort_query - computed: false, optional: true, required: false
-  private _sortQuery = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryOutputReference(this, "sort_query");
-  public get sortQuery() {
-    return this._sortQuery;
-  }
-  public putSortQuery(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery) {
-    this._sortQuery.internalValue = value;
-  }
-  public resetSortQuery() {
-    this._sortQuery.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sortQueryInput() {
-    return this._sortQuery.internalValue;
-  }
-}
-
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupByList extends cdktn.ComplexList {
-  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBy[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupByOutputReference {
-    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupByOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiCompute {
-  /**
-  * The aggregation method.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
-  */
-  readonly aggregation: string;
-  /**
-  * The facet name.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
-  */
-  readonly facet?: string;
-  /**
-  * Define the time interval in seconds.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#interval PowerpackV2#interval}
-  */
-  readonly interval?: number;
-}
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiComputeToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiCompute | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    aggregation: cdktn.stringToTerraform(struct!.aggregation),
-    facet: cdktn.stringToTerraform(struct!.facet),
-    interval: cdktn.numberToTerraform(struct!.interval),
-  }
-}
-
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiComputeToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiCompute | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    aggregation: {
-      value: cdktn.stringToHclTerraform(struct!.aggregation),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    facet: {
-      value: cdktn.stringToHclTerraform(struct!.facet),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    interval: {
-      value: cdktn.numberToHclTerraform(struct!.interval),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiComputeOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiCompute | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._aggregation !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.aggregation = this._aggregation;
-    }
-    if (this._facet !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.facet = this._facet;
-    }
-    if (this._interval !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.interval = this._interval;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiCompute | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._aggregation = undefined;
-      this._facet = undefined;
-      this._interval = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._aggregation = value.aggregation;
-      this._facet = value.facet;
-      this._interval = value.interval;
-    }
-  }
-
-  // aggregation - computed: false, optional: false, required: true
-  private _aggregation?: string; 
-  public get aggregation() {
-    return this.getStringAttribute('aggregation');
-  }
-  public set aggregation(value: string) {
-    this._aggregation = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get aggregationInput() {
-    return this._aggregation;
-  }
-
-  // facet - computed: false, optional: true, required: false
-  private _facet?: string; 
-  public get facet() {
-    return this.getStringAttribute('facet');
-  }
-  public set facet(value: string) {
-    this._facet = value;
-  }
-  public resetFacet() {
-    this._facet = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get facetInput() {
-    return this._facet;
-  }
-
-  // interval - computed: false, optional: true, required: false
-  private _interval?: number; 
-  public get interval() {
-    return this.getNumberAttribute('interval');
-  }
-  public set interval(value: number) {
-    this._interval = value;
-  }
-  public resetInterval() {
-    this._interval = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get intervalInput() {
-    return this._interval;
-  }
-}
-
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiComputeList extends cdktn.ComplexList {
-  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiCompute[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiComputeOutputReference {
-    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiComputeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQuery {
-  /**
-  * A comma separated-list of index names. Use `*` to query all indexes at once. [Multiple Indexes](https://docs.datadoghq.com/logs/indexes/#multiple-indexes).
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#index PowerpackV2#index}
-  */
-  readonly index: string;
-  /**
-  * The search query to use.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#search_query PowerpackV2#search_query}
-  */
-  readonly searchQuery?: string;
-  /**
-  * compute_query block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#compute_query PowerpackV2#compute_query}
-  */
-  readonly computeQuery?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQuery;
-  /**
-  * group_by block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#group_by PowerpackV2#group_by}
-  */
-  readonly groupBy?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBy[] | cdktn.IResolvable;
-  /**
-  * multi_compute block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#multi_compute PowerpackV2#multi_compute}
-  */
-  readonly multiCompute?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiCompute[] | cdktn.IResolvable;
-}
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQuery): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    index: cdktn.stringToTerraform(struct!.index),
-    search_query: cdktn.stringToTerraform(struct!.searchQuery),
-    compute_query: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktn.listMapper(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktn.listMapper(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiComputeToTerraform, true)(struct!.multiCompute),
-  }
-}
-
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQuery): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    index: {
-      value: cdktn.stringToHclTerraform(struct!.index),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    search_query: {
-      value: cdktn.stringToHclTerraform(struct!.searchQuery),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    compute_query: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQueryToHclTerraform(struct!.computeQuery),
-      isBlock: true,
-      type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQueryList",
-    },
-    group_by: {
-      value: cdktn.listMapperHcl(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupByToHclTerraform, true)(struct!.groupBy),
-      isBlock: true,
-      type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupByList",
-    },
-    multi_compute: {
-      value: cdktn.listMapperHcl(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
-      isBlock: true,
-      type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiComputeList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQuery | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._index !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.index = this._index;
-    }
-    if (this._searchQuery !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.searchQuery = this._searchQuery;
-    }
-    if (this._computeQuery?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.computeQuery = this._computeQuery?.internalValue;
-    }
-    if (this._groupBy?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.groupBy = this._groupBy?.internalValue;
-    }
-    if (this._multiCompute?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.multiCompute = this._multiCompute?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQuery | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._index = undefined;
-      this._searchQuery = undefined;
-      this._computeQuery.internalValue = undefined;
-      this._groupBy.internalValue = undefined;
-      this._multiCompute.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._index = value.index;
-      this._searchQuery = value.searchQuery;
-      this._computeQuery.internalValue = value.computeQuery;
-      this._groupBy.internalValue = value.groupBy;
-      this._multiCompute.internalValue = value.multiCompute;
-    }
-  }
-
-  // index - computed: false, optional: false, required: true
-  private _index?: string; 
-  public get index() {
-    return this.getStringAttribute('index');
-  }
-  public set index(value: string) {
-    this._index = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get indexInput() {
-    return this._index;
-  }
-
-  // search_query - computed: false, optional: true, required: false
-  private _searchQuery?: string; 
-  public get searchQuery() {
-    return this.getStringAttribute('search_query');
-  }
-  public set searchQuery(value: string) {
-    this._searchQuery = value;
-  }
-  public resetSearchQuery() {
-    this._searchQuery = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get searchQueryInput() {
-    return this._searchQuery;
-  }
-
-  // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutputReference(this, "compute_query");
-  public get computeQuery() {
-    return this._computeQuery;
-  }
-  public putComputeQuery(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQuery) {
-    this._computeQuery.internalValue = value;
-  }
-  public resetComputeQuery() {
-    this._computeQuery.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get computeQueryInput() {
-    return this._computeQuery.internalValue;
-  }
-
-  // group_by - computed: false, optional: true, required: false
-  private _groupBy = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupByList(this, "group_by", false);
-  public get groupBy() {
-    return this._groupBy;
-  }
-  public putGroupBy(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBy[] | cdktn.IResolvable) {
-    this._groupBy.internalValue = value;
-  }
-  public resetGroupBy() {
-    this._groupBy.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get groupByInput() {
-    return this._groupBy.internalValue;
-  }
-
-  // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiComputeList(this, "multi_compute", false);
-  public get multiCompute() {
-    return this._multiCompute;
-  }
-  public putMultiCompute(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiCompute[] | cdktn.IResolvable) {
-    this._multiCompute.internalValue = value;
-  }
-  public resetMultiCompute() {
-    this._multiCompute.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get multiComputeInput() {
-    return this._multiCompute.internalValue;
-  }
-}
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillProcessQuery {
-  /**
-  * A list of processes.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#filter_by PowerpackV2#filter_by}
-  */
-  readonly filterBy?: string[];
-  /**
-  * The max number of items in the filter list.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
-  */
-  readonly limit?: number;
-  /**
-  * Your chosen metric.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
-  */
-  readonly metric: string;
-  /**
-  * Your chosen search term.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#search_by PowerpackV2#search_by}
-  */
-  readonly searchBy?: string;
-}
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillProcessQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillProcessQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillProcessQuery): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    filter_by: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.filterBy),
-    limit: cdktn.numberToTerraform(struct!.limit),
-    metric: cdktn.stringToTerraform(struct!.metric),
-    search_by: cdktn.stringToTerraform(struct!.searchBy),
-  }
-}
-
-
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillProcessQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillProcessQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillProcessQuery): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    filter_by: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.filterBy),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    limit: {
-      value: cdktn.numberToHclTerraform(struct!.limit),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    metric: {
-      value: cdktn.stringToHclTerraform(struct!.metric),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    search_by: {
-      value: cdktn.stringToHclTerraform(struct!.searchBy),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillProcessQueryOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillProcessQuery | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._filterBy !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.filterBy = this._filterBy;
-    }
-    if (this._limit !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.limit = this._limit;
-    }
-    if (this._metric !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.metric = this._metric;
-    }
-    if (this._searchBy !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.searchBy = this._searchBy;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillProcessQuery | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._filterBy = undefined;
-      this._limit = undefined;
-      this._metric = undefined;
-      this._searchBy = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._filterBy = value.filterBy;
-      this._limit = value.limit;
-      this._metric = value.metric;
-      this._searchBy = value.searchBy;
-    }
-  }
-
-  // filter_by - computed: false, optional: true, required: false
-  private _filterBy?: string[]; 
-  public get filterBy() {
-    return this.getListAttribute('filter_by');
-  }
-  public set filterBy(value: string[]) {
-    this._filterBy = value;
-  }
-  public resetFilterBy() {
-    this._filterBy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get filterByInput() {
-    return this._filterBy;
-  }
-
-  // limit - computed: false, optional: true, required: false
-  private _limit?: number; 
-  public get limit() {
-    return this.getNumberAttribute('limit');
-  }
-  public set limit(value: number) {
-    this._limit = value;
-  }
-  public resetLimit() {
-    this._limit = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get limitInput() {
-    return this._limit;
-  }
-
-  // metric - computed: false, optional: false, required: true
-  private _metric?: string; 
-  public get metric() {
-    return this.getStringAttribute('metric');
-  }
-  public set metric(value: string) {
-    this._metric = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get metricInput() {
-    return this._metric;
-  }
-
-  // search_by - computed: false, optional: true, required: false
-  private _searchBy?: string; 
-  public get searchBy() {
-    return this.getStringAttribute('search_by');
-  }
-  public set searchBy(value: string) {
-    this._searchBy = value;
-  }
-  public resetSearchBy() {
-    this._searchBy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get searchByInput() {
-    return this._searchBy;
-  }
-}
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmDependencyStatsQuery {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmDependencyStatsQuery {
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#cross_org_uuids PowerpackV2#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#cross_org_uuids PowerpackV2#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
   */
   readonly dataSource: string;
   /**
   * APM environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#env PowerpackV2#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#env PowerpackV2#env}
   */
   readonly env: string;
   /**
   * Determines whether stats for upstream or downstream dependencies should be queried.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#is_upstream PowerpackV2#is_upstream}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#is_upstream PowerpackV2#is_upstream}
   */
   readonly isUpstream?: boolean | cdktn.IResolvable;
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#operation_name PowerpackV2#operation_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#operation_name PowerpackV2#operation_name}
   */
   readonly operationName: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#primary_tag_name PowerpackV2#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#primary_tag_name PowerpackV2#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#primary_tag_value PowerpackV2#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#primary_tag_value PowerpackV2#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#resource_name PowerpackV2#resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#resource_name PowerpackV2#resource_name}
   */
   readonly resourceName: string;
   /**
   * APM service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#service PowerpackV2#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#service PowerpackV2#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#stat PowerpackV2#stat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#stat PowerpackV2#stat}
   */
   readonly stat: string;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmDependencyStatsQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmDependencyStatsQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmDependencyStatsQuery): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmDependencyStatsQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmDependencyStatsQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmDependencyStatsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -15510,7 +13018,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmDependencyStatsQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmDependencyStatsQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmDependencyStatsQuery): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmDependencyStatsQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmDependencyStatsQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmDependencyStatsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -15588,7 +13096,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmDependencyStatsQueryOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmDependencyStatsQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -15599,7 +13107,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmDependencyStatsQuery | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmDependencyStatsQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._crossOrgUuids !== undefined) {
@@ -15649,7 +13157,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmDependencyStatsQuery | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmDependencyStatsQuery | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._crossOrgUuids = undefined;
@@ -15835,82 +13343,82 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return this._stat;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmMetricsQuery {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmMetricsQuery {
   /**
   * The data source for APM metrics queries. Valid values are `apm_metrics`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
   */
   readonly dataSource: string;
   /**
   * Optional fields to group the query results by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#group_by PowerpackV2#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#group_by PowerpackV2#group_by}
   */
   readonly groupBy?: string[];
   /**
   * Name of this query to use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name: string;
   /**
   * Optional operation mode used to aggregate across operation names.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#operation_mode PowerpackV2#operation_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#operation_mode PowerpackV2#operation_mode}
   */
   readonly operationMode?: string;
   /**
   * Name of the operation on the service. If omitted, the primary operation name is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#operation_name PowerpackV2#operation_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#operation_name PowerpackV2#operation_name}
   */
   readonly operationName?: string;
   /**
   * Tags to query for a specific downstream entity, such as `peer.service` or `peer.db_instance`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#peer_tags PowerpackV2#peer_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#peer_tags PowerpackV2#peer_tags}
   */
   readonly peerTags?: string[];
   /**
   * Additional filters for the query using metrics query syntax.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#query_filter PowerpackV2#query_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#query_filter PowerpackV2#query_filter}
   */
   readonly queryFilter?: string;
   /**
   * The hash of a specific resource to filter by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#resource_hash PowerpackV2#resource_hash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#resource_hash PowerpackV2#resource_hash}
   */
   readonly resourceHash?: string;
   /**
   * The full name of a specific resource to filter by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#resource_name PowerpackV2#resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#resource_name PowerpackV2#resource_name}
   */
   readonly resourceName?: string;
   /**
   * APM service name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#service PowerpackV2#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#service PowerpackV2#service}
   */
   readonly service?: string;
   /**
   * The relationship between the span, its parents, and its children in a trace. Valid values are `consumer`, `server`, `client`, `producer`, `internal`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#span_kind PowerpackV2#span_kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#span_kind PowerpackV2#span_kind}
   */
   readonly spanKind?: string;
   /**
   * APM metric stat name. Valid values are `errors`, `error_rate`, `errors_per_second`, `latency_avg`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`, `latency_p999`, `latency_distribution`, `hits`, `hits_per_second`, `total_time`, `apdex`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#stat PowerpackV2#stat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#stat PowerpackV2#stat}
   */
   readonly stat: string;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmMetricsQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmMetricsQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmMetricsQuery): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmMetricsQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmMetricsQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmMetricsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -15932,7 +13440,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmMetricsQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmMetricsQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmMetricsQuery): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmMetricsQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmMetricsQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmMetricsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -16016,7 +13524,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmMetricsQueryOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmMetricsQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -16027,7 +13535,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmMetricsQuery | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmMetricsQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._dataSource !== undefined) {
@@ -16081,7 +13589,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmMetricsQuery | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmMetricsQuery | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._dataSource = undefined;
@@ -16297,76 +13805,76 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return this._stat;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmResourceStatsQuery {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmResourceStatsQuery {
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#cross_org_uuids PowerpackV2#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#cross_org_uuids PowerpackV2#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
   */
   readonly dataSource: string;
   /**
   * APM environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#env PowerpackV2#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#env PowerpackV2#env}
   */
   readonly env: string;
   /**
   * Array of fields to group results by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#group_by PowerpackV2#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#group_by PowerpackV2#group_by}
   */
   readonly groupBy?: string[];
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#operation_name PowerpackV2#operation_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#operation_name PowerpackV2#operation_name}
   */
   readonly operationName?: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#primary_tag_name PowerpackV2#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#primary_tag_name PowerpackV2#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#primary_tag_value PowerpackV2#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#primary_tag_value PowerpackV2#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#resource_name PowerpackV2#resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#resource_name PowerpackV2#resource_name}
   */
   readonly resourceName?: string;
   /**
   * APM service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#service PowerpackV2#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#service PowerpackV2#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_distribution`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#stat PowerpackV2#stat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#stat PowerpackV2#stat}
   */
   readonly stat: string;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmResourceStatsQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmResourceStatsQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmResourceStatsQuery): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmResourceStatsQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmResourceStatsQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmResourceStatsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -16387,7 +13895,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmResourceStatsQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmResourceStatsQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmResourceStatsQuery): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmResourceStatsQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmResourceStatsQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmResourceStatsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -16465,7 +13973,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmResourceStatsQueryOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmResourceStatsQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -16476,7 +13984,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmResourceStatsQuery | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmResourceStatsQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._crossOrgUuids !== undefined) {
@@ -16526,7 +14034,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmResourceStatsQuery | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryApmResourceStatsQuery | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._crossOrgUuids = undefined;
@@ -16718,40 +14226,40 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return this._stat;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryCloudCostQuery {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryCloudCostQuery {
   /**
   * The aggregation methods available for cloud cost queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#aggregator PowerpackV2#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#aggregator PowerpackV2#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#cross_org_uuids PowerpackV2#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#cross_org_uuids PowerpackV2#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for cloud cost queries. Valid values are `cloud_cost`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
   */
   readonly dataSource: string;
   /**
   * The name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name: string;
   /**
   * Query for Cloud Cost data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#query PowerpackV2#query}
   */
   readonly query: string;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryCloudCostQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryCloudCostQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryCloudCostQuery): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryCloudCostQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryCloudCostQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryCloudCostQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -16766,7 +14274,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryCloudCostQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryCloudCostQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryCloudCostQuery): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryCloudCostQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryCloudCostQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryCloudCostQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -16808,7 +14316,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryCloudCostQueryOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryCloudCostQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -16819,7 +14327,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryCloudCostQuery | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryCloudCostQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._aggregator !== undefined) {
@@ -16845,7 +14353,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryCloudCostQuery | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryCloudCostQuery | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._aggregator = undefined;
@@ -16935,28 +14443,28 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return this._query;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryCompute {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryCompute {
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * A time interval in milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#interval PowerpackV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#interval PowerpackV2#interval}
   */
   readonly interval?: number;
   /**
   * The measurable attribute to compute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
   */
   readonly metric?: string;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryComputeToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryCompute | cdktn.IResolvable): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryComputeToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -16969,7 +14477,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryComputeToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryCompute | cdktn.IResolvable): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryComputeToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -16999,7 +14507,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryComputeOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -17013,7 +14521,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryCompute | cdktn.IResolvable | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -17034,7 +14542,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryCompute | cdktn.IResolvable | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -17101,8 +14609,8 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryComputeList extends cdktn.ComplexList {
-  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryCompute[] | cdktn.IResolvable
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryComputeList extends cdktn.ComplexList {
+  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -17116,32 +14624,32 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryComputeOutputReference {
-    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryComputeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryComputeOutputReference {
+    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryComputeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupBySort {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupBySort {
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#order PowerpackV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#order PowerpackV2#order}
   */
   readonly order?: string;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupBySortToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupBySortOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupBySort): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupBySortToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupBySortOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -17154,7 +14662,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupBySortToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupBySortOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupBySort): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupBySortToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupBySortOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -17184,7 +14692,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupBySortOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupBySortOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -17195,7 +14703,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupBySort | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupBySort | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._aggregation !== undefined) {
@@ -17213,7 +14721,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupBySort | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupBySort | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._aggregation = undefined;
@@ -17273,28 +14781,28 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return this._order;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupBy {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupBy {
   /**
   * The event facet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
   */
   readonly facet: string;
   /**
   * The number of groups to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
   */
   readonly limit?: number;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#sort PowerpackV2#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#sort PowerpackV2#sort}
   */
-  readonly sort?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupBySort;
+  readonly sort?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupBySort;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupBy | cdktn.IResolvable): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -17302,12 +14810,12 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
     limit: cdktn.numberToTerraform(struct!.limit),
-    sort: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupBySortToTerraform(struct!.sort),
+    sort: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupBySortToTerraform(struct!.sort),
   }
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupBy | cdktn.IResolvable): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -17326,10 +14834,10 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
       storageClassType: "number",
     },
     sort: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupBySortToHclTerraform(struct!.sort),
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupBySortToHclTerraform(struct!.sort),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupBySortList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupBySortList",
     },
   };
 
@@ -17337,7 +14845,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -17351,7 +14859,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupBy | cdktn.IResolvable | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -17372,7 +14880,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupBy | cdktn.IResolvable | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -17423,11 +14931,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 
   // sort - computed: false, optional: true, required: false
-  private _sort = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupBySortOutputReference(this, "sort");
+  private _sort = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupBySortOutputReference(this, "sort");
   public get sort() {
     return this._sort;
   }
-  public putSort(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupBySort) {
+  public putSort(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupBySort) {
     this._sort.internalValue = value;
   }
   public resetSort() {
@@ -17439,8 +14947,8 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByList extends cdktn.ComplexList {
-  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupBy[] | cdktn.IResolvable
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -17454,32 +14962,32 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByOutputReference {
-    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByOutputReference {
+    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFieldsSort {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFieldsSort {
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#order PowerpackV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#order PowerpackV2#order}
   */
   readonly order?: string;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFieldsSortToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFieldsSortOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFieldsSort): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFieldsSortToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFieldsSortOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFieldsSort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -17492,7 +15000,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFieldsSortToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFieldsSortOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFieldsSort): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFieldsSortToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFieldsSortOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFieldsSort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -17522,7 +15030,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFieldsSortOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFieldsSortOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -17533,7 +15041,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFieldsSort | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFieldsSort | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._aggregation !== undefined) {
@@ -17551,7 +15059,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFieldsSort | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFieldsSort | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._aggregation = undefined;
@@ -17611,28 +15119,28 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return this._order;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFields {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFields {
   /**
   * List of event facets to group by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#fields PowerpackV2#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#fields PowerpackV2#fields}
   */
   readonly fields: string[];
   /**
   * The number of groups to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
   */
   readonly limit?: number;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#sort PowerpackV2#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#sort PowerpackV2#sort}
   */
-  readonly sort?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFieldsSort;
+  readonly sort?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFieldsSort;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFieldsToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFieldsOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFields): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFieldsToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFieldsOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFields): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -17640,12 +15148,12 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return {
     fields: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.fields),
     limit: cdktn.numberToTerraform(struct!.limit),
-    sort: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFieldsSortToTerraform(struct!.sort),
+    sort: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFieldsSortToTerraform(struct!.sort),
   }
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFieldsToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFieldsOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFields): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFieldsToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFieldsOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFields): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -17664,10 +15172,10 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
       storageClassType: "number",
     },
     sort: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFieldsSortToHclTerraform(struct!.sort),
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFieldsSortToHclTerraform(struct!.sort),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFieldsSortList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFieldsSortList",
     },
   };
 
@@ -17675,7 +15183,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFieldsOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFieldsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -17686,7 +15194,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFields | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFields | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fields !== undefined) {
@@ -17704,7 +15212,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFields | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFields | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._fields = undefined;
@@ -17749,11 +15257,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 
   // sort - computed: false, optional: true, required: false
-  private _sort = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFieldsSortOutputReference(this, "sort");
+  private _sort = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFieldsSortOutputReference(this, "sort");
   public get sort() {
     return this._sort;
   }
-  public putSort(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFieldsSort) {
+  public putSort(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFieldsSort) {
     this._sort.internalValue = value;
   }
   public resetSort() {
@@ -17764,16 +15272,16 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return this._sort.internalValue;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQuerySearch {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQuerySearch {
   /**
   * The events search string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#query PowerpackV2#query}
   */
   readonly query: string;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQuerySearchToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQuerySearchOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQuerySearch): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQuerySearchToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQuerySearchOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQuerySearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -17784,7 +15292,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQuerySearchToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQuerySearchOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQuerySearch): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQuerySearchToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQuerySearchOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQuerySearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -17802,7 +15310,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQuerySearchOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQuerySearchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -17813,7 +15321,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQuerySearch | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQuerySearch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._query !== undefined) {
@@ -17823,7 +15331,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQuerySearch | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQuerySearch | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._query = undefined;
@@ -17847,64 +15355,64 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return this._query;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQuery {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQuery {
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#cross_org_uuids PowerpackV2#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#cross_org_uuids PowerpackV2#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`, `ci_tests`, `ci_pipelines`, `incident_analytics`, `product_analytics`, `on_call_events`, `errors`, `llm_observability`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
   */
   readonly dataSource: string;
   /**
   * An array of index names to query in the stream. Omit or use `[]` to query all indexes at once.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#indexes PowerpackV2#indexes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#indexes PowerpackV2#indexes}
   */
   readonly indexes?: string[];
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name: string;
   /**
   * Option for storage location. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#storage PowerpackV2#storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#storage PowerpackV2#storage}
   */
   readonly storage?: string;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#compute PowerpackV2#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#compute PowerpackV2#compute}
   */
-  readonly compute: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryCompute[] | cdktn.IResolvable;
+  readonly compute: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryCompute[] | cdktn.IResolvable;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#group_by PowerpackV2#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#group_by PowerpackV2#group_by}
   */
-  readonly groupBy?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupBy[] | cdktn.IResolvable;
+  readonly groupBy?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupBy[] | cdktn.IResolvable;
   /**
   * group_by_fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#group_by_fields PowerpackV2#group_by_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#group_by_fields PowerpackV2#group_by_fields}
   */
-  readonly groupByFields?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFields;
+  readonly groupByFields?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFields;
   /**
   * search block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#search PowerpackV2#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#search PowerpackV2#search}
   */
-  readonly search?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQuerySearch;
+  readonly search?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQuerySearch;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQuery): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -17915,15 +15423,15 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
     indexes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.indexes),
     name: cdktn.stringToTerraform(struct!.name),
     storage: cdktn.stringToTerraform(struct!.storage),
-    compute: cdktn.listMapper(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryComputeToTerraform, true)(struct!.compute),
-    group_by: cdktn.listMapper(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByToTerraform, true)(struct!.groupBy),
-    group_by_fields: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFieldsToTerraform(struct!.groupByFields),
-    search: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQuerySearchToTerraform(struct!.search),
+    compute: cdktn.listMapper(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryComputeToTerraform, true)(struct!.compute),
+    group_by: cdktn.listMapper(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByToTerraform, true)(struct!.groupBy),
+    group_by_fields: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFieldsToTerraform(struct!.groupByFields),
+    search: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQuerySearchToTerraform(struct!.search),
   }
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQuery): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -17960,28 +15468,28 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
       storageClassType: "string",
     },
     compute: {
-      value: cdktn.listMapperHcl(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryComputeToHclTerraform, true)(struct!.compute),
+      value: cdktn.listMapperHcl(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryComputeToHclTerraform, true)(struct!.compute),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryComputeList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryComputeList",
     },
     group_by: {
-      value: cdktn.listMapperHcl(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByList",
     },
     group_by_fields: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFieldsToHclTerraform(struct!.groupByFields),
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFieldsToHclTerraform(struct!.groupByFields),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFieldsList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFieldsList",
     },
     search: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQuerySearchToHclTerraform(struct!.search),
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQuerySearchToHclTerraform(struct!.search),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQuerySearchList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQuerySearchList",
     },
   };
 
@@ -17989,7 +15497,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -18000,7 +15508,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQuery | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._crossOrgUuids !== undefined) {
@@ -18042,7 +15550,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQuery | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQuery | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._crossOrgUuids = undefined;
@@ -18144,11 +15652,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 
   // compute - computed: false, optional: false, required: true
-  private _compute = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryComputeList(this, "compute", false);
+  private _compute = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryComputeList(this, "compute", false);
   public get compute() {
     return this._compute;
   }
-  public putCompute(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryCompute[] | cdktn.IResolvable) {
+  public putCompute(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryCompute[] | cdktn.IResolvable) {
     this._compute.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -18157,11 +15665,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByList(this, "group_by", false);
+  private _groupBy = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByList(this, "group_by", false);
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupBy[] | cdktn.IResolvable) {
+  public putGroupBy(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -18173,11 +15681,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 
   // group_by_fields - computed: false, optional: true, required: false
-  private _groupByFields = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFieldsOutputReference(this, "group_by_fields");
+  private _groupByFields = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFieldsOutputReference(this, "group_by_fields");
   public get groupByFields() {
     return this._groupByFields;
   }
-  public putGroupByFields(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQueryGroupByFields) {
+  public putGroupByFields(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQueryGroupByFields) {
     this._groupByFields.internalValue = value;
   }
   public resetGroupByFields() {
@@ -18189,11 +15697,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 
   // search - computed: false, optional: true, required: false
-  private _search = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQuerySearchOutputReference(this, "search");
+  private _search = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQuerySearchOutputReference(this, "search");
   public get search() {
     return this._search;
   }
-  public putSearch(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQuerySearch) {
+  public putSearch(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryEventQuerySearch) {
     this._search.internalValue = value;
   }
   public resetSearch() {
@@ -18204,46 +15712,46 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return this._search.internalValue;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryMetricQuery {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryMetricQuery {
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#aggregator PowerpackV2#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#aggregator PowerpackV2#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#cross_org_uuids PowerpackV2#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#cross_org_uuids PowerpackV2#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for metrics queries. Defaults to `"metrics"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
   */
   readonly dataSource?: string;
   /**
   * The name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name: string;
   /**
   * The metrics query definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#query PowerpackV2#query}
   */
   readonly query: string;
   /**
   * Semantic mode for metrics queries. This determines how metrics from different sources are combined or displayed. Valid values are `combined`, `native`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#semantic_mode PowerpackV2#semantic_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#semantic_mode PowerpackV2#semantic_mode}
   */
   readonly semanticMode?: string;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryMetricQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryMetricQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryMetricQuery): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryMetricQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryMetricQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryMetricQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -18259,7 +15767,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryMetricQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryMetricQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryMetricQuery): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryMetricQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryMetricQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryMetricQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -18307,7 +15815,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryMetricQueryOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryMetricQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -18318,7 +15826,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryMetricQuery | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryMetricQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._aggregator !== undefined) {
@@ -18348,7 +15856,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryMetricQuery | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryMetricQuery | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._aggregator = undefined;
@@ -18459,70 +15967,70 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return this._semanticMode;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProcessQuery {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProcessQuery {
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#aggregator PowerpackV2#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#aggregator PowerpackV2#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#cross_org_uuids PowerpackV2#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#cross_org_uuids PowerpackV2#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for process queries. Valid values are `process`, `container`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
   */
   readonly dataSource: string;
   /**
   * Whether to normalize the CPU percentages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#is_normalized_cpu PowerpackV2#is_normalized_cpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#is_normalized_cpu PowerpackV2#is_normalized_cpu}
   */
   readonly isNormalizedCpu?: boolean | cdktn.IResolvable;
   /**
   * The number of hits to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
   */
   readonly limit?: number;
   /**
   * The process metric name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
   */
   readonly metric: string;
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name: string;
   /**
   * The direction of the sort. Valid values are `asc`, `desc`. Defaults to `"desc"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#sort PowerpackV2#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#sort PowerpackV2#sort}
   */
   readonly sort?: string;
   /**
   * An array of tags to filter by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#tag_filters PowerpackV2#tag_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#tag_filters PowerpackV2#tag_filters}
   */
   readonly tagFilters?: string[];
   /**
   * The text to use as a filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#text_filter PowerpackV2#text_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#text_filter PowerpackV2#text_filter}
   */
   readonly textFilter?: string;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProcessQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProcessQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProcessQuery): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProcessQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProcessQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProcessQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -18542,7 +16050,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProcessQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProcessQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProcessQuery): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProcessQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProcessQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProcessQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -18614,7 +16122,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProcessQueryOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProcessQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -18625,7 +16133,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProcessQuery | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProcessQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._aggregator !== undefined) {
@@ -18671,7 +16179,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProcessQuery | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProcessQuery | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._aggregator = undefined;
@@ -18851,22 +16359,22 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return this._textFilter;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersAccount {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersAccount {
   /**
   * The name of the account subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name?: string;
   /**
   * The query string for the account subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#query PowerpackV2#query}
   */
   readonly query?: string;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersAccountToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersAccount | cdktn.IResolvable): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersAccountToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersAccount | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -18878,7 +16386,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersAccountToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersAccount | cdktn.IResolvable): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersAccountToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersAccount | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -18902,7 +16410,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersAccountOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersAccountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -18916,7 +16424,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersAccount | cdktn.IResolvable | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersAccount | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -18933,7 +16441,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersAccount | cdktn.IResolvable | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersAccount | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -18985,8 +16493,8 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersAccountList extends cdktn.ComplexList {
-  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersAccount[] | cdktn.IResolvable
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersAccountList extends cdktn.ComplexList {
+  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersAccount[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -19000,26 +16508,26 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersAccountOutputReference {
-    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersAccountOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersAccountOutputReference {
+    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersAccountOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersSegment {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersSegment {
   /**
   * The name of the segment subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name?: string;
   /**
   * The unique identifier of the segment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#segment_id PowerpackV2#segment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#segment_id PowerpackV2#segment_id}
   */
   readonly segmentId?: string;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersSegment | cdktn.IResolvable): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersSegment | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -19031,7 +16539,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersSegment | cdktn.IResolvable): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersSegment | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -19055,7 +16563,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -19069,7 +16577,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersSegment | cdktn.IResolvable | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersSegment | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -19086,7 +16594,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersSegment | cdktn.IResolvable | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersSegment | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -19138,8 +16646,8 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentList extends cdktn.ComplexList {
-  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersSegment[] | cdktn.IResolvable
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentList extends cdktn.ComplexList {
+  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersSegment[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -19153,26 +16661,26 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentOutputReference {
-    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentOutputReference {
+    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersUser {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersUser {
   /**
   * The name of the user subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name?: string;
   /**
   * The query string for the user subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#query PowerpackV2#query}
   */
   readonly query?: string;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersUserToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersUser | cdktn.IResolvable): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersUserToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersUser | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -19184,7 +16692,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersUserToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersUser | cdktn.IResolvable): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersUserToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersUser | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -19208,7 +16716,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersUserOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersUserOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -19222,7 +16730,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersUser | cdktn.IResolvable | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersUser | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -19239,7 +16747,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersUser | cdktn.IResolvable | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersUser | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -19291,8 +16799,8 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersUserList extends cdktn.ComplexList {
-  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersUser[] | cdktn.IResolvable
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersUserList extends cdktn.ComplexList {
+  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersUser[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -19306,52 +16814,52 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersUserOutputReference {
-    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersUserOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersUserOutputReference {
+    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersUserOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFilters {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFilters {
   /**
   * An optional filter condition applied to the audience subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#filter_condition PowerpackV2#filter_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#filter_condition PowerpackV2#filter_condition}
   */
   readonly filterCondition?: string;
   /**
   * account block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#account PowerpackV2#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#account PowerpackV2#account}
   */
-  readonly account?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersAccount[] | cdktn.IResolvable;
+  readonly account?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersAccount[] | cdktn.IResolvable;
   /**
   * segment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#segment PowerpackV2#segment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#segment PowerpackV2#segment}
   */
-  readonly segment?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersSegment[] | cdktn.IResolvable;
+  readonly segment?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersSegment[] | cdktn.IResolvable;
   /**
   * user block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#user PowerpackV2#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#user PowerpackV2#user}
   */
-  readonly user?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersUser[] | cdktn.IResolvable;
+  readonly user?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersUser[] | cdktn.IResolvable;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFilters): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFilters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     filter_condition: cdktn.stringToTerraform(struct!.filterCondition),
-    account: cdktn.listMapper(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersAccountToTerraform, true)(struct!.account),
-    segment: cdktn.listMapper(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentToTerraform, true)(struct!.segment),
-    user: cdktn.listMapper(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersUserToTerraform, true)(struct!.user),
+    account: cdktn.listMapper(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersAccountToTerraform, true)(struct!.account),
+    segment: cdktn.listMapper(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentToTerraform, true)(struct!.segment),
+    user: cdktn.listMapper(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersUserToTerraform, true)(struct!.user),
   }
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFilters): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFilters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -19364,22 +16872,22 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
       storageClassType: "string",
     },
     account: {
-      value: cdktn.listMapperHcl(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersAccountToHclTerraform, true)(struct!.account),
+      value: cdktn.listMapperHcl(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersAccountToHclTerraform, true)(struct!.account),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersAccountList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersAccountList",
     },
     segment: {
-      value: cdktn.listMapperHcl(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentToHclTerraform, true)(struct!.segment),
+      value: cdktn.listMapperHcl(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentToHclTerraform, true)(struct!.segment),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentList",
     },
     user: {
-      value: cdktn.listMapperHcl(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersUserToHclTerraform, true)(struct!.user),
+      value: cdktn.listMapperHcl(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersUserToHclTerraform, true)(struct!.user),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersUserList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersUserList",
     },
   };
 
@@ -19387,7 +16895,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -19398,7 +16906,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFilters | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFilters | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._filterCondition !== undefined) {
@@ -19420,7 +16928,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFilters | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFilters | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._filterCondition = undefined;
@@ -19454,11 +16962,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 
   // account - computed: false, optional: true, required: false
-  private _account = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersAccountList(this, "account", false);
+  private _account = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersAccountList(this, "account", false);
   public get account() {
     return this._account;
   }
-  public putAccount(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersAccount[] | cdktn.IResolvable) {
+  public putAccount(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersAccount[] | cdktn.IResolvable) {
     this._account.internalValue = value;
   }
   public resetAccount() {
@@ -19470,11 +16978,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 
   // segment - computed: false, optional: true, required: false
-  private _segment = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentList(this, "segment", false);
+  private _segment = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentList(this, "segment", false);
   public get segment() {
     return this._segment;
   }
-  public putSegment(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersSegment[] | cdktn.IResolvable) {
+  public putSegment(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersSegment[] | cdktn.IResolvable) {
     this._segment.internalValue = value;
   }
   public resetSegment() {
@@ -19486,11 +16994,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 
   // user - computed: false, optional: true, required: false
-  private _user = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersUserList(this, "user", false);
+  private _user = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersUserList(this, "user", false);
   public get user() {
     return this._user;
   }
-  public putUser(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersUser[] | cdktn.IResolvable) {
+  public putUser(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersUser[] | cdktn.IResolvable) {
     this._user.internalValue = value;
   }
   public resetUser() {
@@ -19501,34 +17009,34 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return this._user.internalValue;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryComputeRollup {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryComputeRollup {
   /**
   * Alignment of the calendar interval.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#alignment PowerpackV2#alignment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#alignment PowerpackV2#alignment}
   */
   readonly alignment?: string;
   /**
   * Quantity of the calendar interval.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#quantity PowerpackV2#quantity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#quantity PowerpackV2#quantity}
   */
   readonly quantity?: number;
   /**
   * Timezone for the calendar interval.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#timezone PowerpackV2#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#timezone PowerpackV2#timezone}
   */
   readonly timezone?: string;
   /**
   * Type of calendar interval. Valid values are `day`, `week`, `month`, `year`, `quarter`, `minute`, `hour`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#type PowerpackV2#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#type PowerpackV2#type}
   */
   readonly type: string;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryComputeRollupToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryComputeRollupOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryComputeRollup): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryComputeRollupToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryComputeRollupOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryComputeRollup): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -19542,7 +17050,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryComputeRollupToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryComputeRollupOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryComputeRollup): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryComputeRollupToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryComputeRollupOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryComputeRollup): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -19578,7 +17086,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryComputeRollupOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryComputeRollupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -19589,7 +17097,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryComputeRollup | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryComputeRollup | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._alignment !== undefined) {
@@ -19611,7 +17119,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryComputeRollup | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryComputeRollup | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._alignment = undefined;
@@ -19689,40 +17197,40 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return this._type;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryCompute {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryCompute {
   /**
   * Aggregation method for the Product Analytics Extended query. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * Fixed-width time bucket interval in milliseconds. Mutually exclusive with `rollup`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#interval PowerpackV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#interval PowerpackV2#interval}
   */
   readonly interval?: number;
   /**
   * Measurable attribute to compute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
   */
   readonly metric?: string;
   /**
   * Name of the compute for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name?: string;
   /**
   * rollup block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#rollup PowerpackV2#rollup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#rollup PowerpackV2#rollup}
   */
-  readonly rollup?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryComputeRollup;
+  readonly rollup?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryComputeRollup;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryComputeToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryComputeOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryCompute): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryComputeToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryComputeOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryCompute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -19732,12 +17240,12 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
     interval: cdktn.numberToTerraform(struct!.interval),
     metric: cdktn.stringToTerraform(struct!.metric),
     name: cdktn.stringToTerraform(struct!.name),
-    rollup: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryComputeRollupToTerraform(struct!.rollup),
+    rollup: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryComputeRollupToTerraform(struct!.rollup),
   }
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryComputeToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryComputeOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryCompute): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryComputeToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryComputeOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryCompute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -19768,10 +17276,10 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
       storageClassType: "string",
     },
     rollup: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryComputeRollupToHclTerraform(struct!.rollup),
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryComputeRollupToHclTerraform(struct!.rollup),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryComputeRollupList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryComputeRollupList",
     },
   };
 
@@ -19779,7 +17287,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryComputeOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -19790,7 +17298,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryCompute | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryCompute | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._aggregation !== undefined) {
@@ -19816,7 +17324,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryCompute | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryCompute | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._aggregation = undefined;
@@ -19897,11 +17405,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 
   // rollup - computed: false, optional: true, required: false
-  private _rollup = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryComputeRollupOutputReference(this, "rollup");
+  private _rollup = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryComputeRollupOutputReference(this, "rollup");
   public get rollup() {
     return this._rollup;
   }
-  public putRollup(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryComputeRollup) {
+  public putRollup(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryComputeRollup) {
     this._rollup.internalValue = value;
   }
   public resetRollup() {
@@ -19912,28 +17420,28 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return this._rollup.internalValue;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupBySort {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupBySort {
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#order PowerpackV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#order PowerpackV2#order}
   */
   readonly order?: string;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupBySortToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupBySortOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupBySort): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupBySortToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupBySortOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -19946,7 +17454,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupBySortToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupBySortOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupBySort): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupBySortToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupBySortOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -19976,7 +17484,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupBySortOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupBySortOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -19987,7 +17495,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupBySort | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupBySort | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._aggregation !== undefined) {
@@ -20005,7 +17513,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupBySort | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupBySort | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._aggregation = undefined;
@@ -20065,34 +17573,34 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return this._order;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupBy {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupBy {
   /**
   * Facet name to group by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
   */
   readonly facet: string;
   /**
   * Maximum number of groups to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
   */
   readonly limit?: number;
   /**
   * Whether to exclude events missing the group-by facet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#should_exclude_missing PowerpackV2#should_exclude_missing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#should_exclude_missing PowerpackV2#should_exclude_missing}
   */
   readonly shouldExcludeMissing?: boolean | cdktn.IResolvable;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#sort PowerpackV2#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#sort PowerpackV2#sort}
   */
-  readonly sort?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupBySort;
+  readonly sort?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupBySort;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupByToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupBy | cdktn.IResolvable): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupByToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -20101,12 +17609,12 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
     facet: cdktn.stringToTerraform(struct!.facet),
     limit: cdktn.numberToTerraform(struct!.limit),
     should_exclude_missing: cdktn.booleanToTerraform(struct!.shouldExcludeMissing),
-    sort: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupBySortToTerraform(struct!.sort),
+    sort: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupBySortToTerraform(struct!.sort),
   }
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupByToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupBy | cdktn.IResolvable): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupByToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -20131,10 +17639,10 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
       storageClassType: "boolean",
     },
     sort: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupBySortToHclTerraform(struct!.sort),
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupBySortToHclTerraform(struct!.sort),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupBySortList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupBySortList",
     },
   };
 
@@ -20142,7 +17650,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupByOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -20156,7 +17664,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupBy | cdktn.IResolvable | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -20181,7 +17689,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupBy | cdktn.IResolvable | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -20250,11 +17758,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 
   // sort - computed: false, optional: true, required: false
-  private _sort = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupBySortOutputReference(this, "sort");
+  private _sort = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupBySortOutputReference(this, "sort");
   public get sort() {
     return this._sort;
   }
-  public putSort(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupBySort) {
+  public putSort(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupBySort) {
     this._sort.internalValue = value;
   }
   public resetSort() {
@@ -20266,8 +17774,8 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupByList extends cdktn.ComplexList {
-  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupBy[] | cdktn.IResolvable
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -20281,20 +17789,20 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupByOutputReference {
-    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupByOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupByOutputReference {
+    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupByOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQuerySearch {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQuerySearch {
   /**
   * Product Analytics event search query used to filter views or actions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#query PowerpackV2#query}
   */
   readonly query: string;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQuerySearchToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQuerySearchOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQuerySearch): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQuerySearchToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQuerySearchOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQuerySearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -20305,7 +17813,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQuerySearchToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQuerySearchOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQuerySearch): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQuerySearchToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQuerySearchOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQuerySearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -20323,7 +17831,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQuerySearchOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQuerySearchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -20334,7 +17842,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQuerySearch | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQuerySearch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._query !== undefined) {
@@ -20344,7 +17852,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQuerySearch | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQuerySearch | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._query = undefined;
@@ -20368,34 +17876,34 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return this._query;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQuery {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQuery {
   /**
   * Data source for the Product Analytics event query. Valid values are `product_analytics`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
   */
   readonly dataSource: string;
   /**
   * search block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#search PowerpackV2#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#search PowerpackV2#search}
   */
-  readonly search: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQuerySearch;
+  readonly search: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQuerySearch;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQuery): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     data_source: cdktn.stringToTerraform(struct!.dataSource),
-    search: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQuerySearchToTerraform(struct!.search),
+    search: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQuerySearchToTerraform(struct!.search),
   }
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQuery): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -20408,10 +17916,10 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
       storageClassType: "string",
     },
     search: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQuerySearchToHclTerraform(struct!.search),
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQuerySearchToHclTerraform(struct!.search),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQuerySearchList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQuerySearchList",
     },
   };
 
@@ -20419,7 +17927,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQueryOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -20430,7 +17938,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQuery | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._dataSource !== undefined) {
@@ -20444,7 +17952,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQuery | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQuery | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._dataSource = undefined;
@@ -20471,11 +17979,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 
   // search - computed: false, optional: false, required: true
-  private _search = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQuerySearchOutputReference(this, "search");
+  private _search = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQuerySearchOutputReference(this, "search");
   public get search() {
     return this._search;
   }
-  public putSearch(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQuerySearch) {
+  public putSearch(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQuerySearch) {
     this._search.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -20483,52 +17991,52 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return this._search.internalValue;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQuery {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQuery {
   /**
   * Data source for Product Analytics Extended queries. Valid values are `product_analytics_extended`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
   */
   readonly dataSource: string;
   /**
   * Event indexes to query. Use `*` to query all indexes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#indexes PowerpackV2#indexes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#indexes PowerpackV2#indexes}
   */
   readonly indexes?: string[];
   /**
   * Name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name: string;
   /**
   * audience_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#audience_filters PowerpackV2#audience_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#audience_filters PowerpackV2#audience_filters}
   */
-  readonly audienceFilters?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFilters;
+  readonly audienceFilters?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFilters;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#compute PowerpackV2#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#compute PowerpackV2#compute}
   */
-  readonly compute: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryCompute;
+  readonly compute: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryCompute;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#group_by PowerpackV2#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#group_by PowerpackV2#group_by}
   */
-  readonly groupBy?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupBy[] | cdktn.IResolvable;
+  readonly groupBy?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupBy[] | cdktn.IResolvable;
   /**
   * query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#query PowerpackV2#query}
   */
-  readonly query: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQuery;
+  readonly query: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQuery;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQuery): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -20537,15 +18045,15 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
     data_source: cdktn.stringToTerraform(struct!.dataSource),
     indexes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.indexes),
     name: cdktn.stringToTerraform(struct!.name),
-    audience_filters: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersToTerraform(struct!.audienceFilters),
-    compute: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryComputeToTerraform(struct!.compute),
-    group_by: cdktn.listMapper(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupByToTerraform, true)(struct!.groupBy),
-    query: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQueryToTerraform(struct!.query),
+    audience_filters: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersToTerraform(struct!.audienceFilters),
+    compute: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryComputeToTerraform(struct!.compute),
+    group_by: cdktn.listMapper(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupByToTerraform, true)(struct!.groupBy),
+    query: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQueryToTerraform(struct!.query),
   }
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQuery): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -20570,28 +18078,28 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
       storageClassType: "string",
     },
     audience_filters: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersToHclTerraform(struct!.audienceFilters),
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersToHclTerraform(struct!.audienceFilters),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersList",
     },
     compute: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryComputeToHclTerraform(struct!.compute),
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryComputeToHclTerraform(struct!.compute),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryComputeList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryComputeList",
     },
     group_by: {
-      value: cdktn.listMapperHcl(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupByList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupByList",
     },
     query: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQueryToHclTerraform(struct!.query),
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQueryToHclTerraform(struct!.query),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQueryList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQueryList",
     },
   };
 
@@ -20599,7 +18107,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -20610,7 +18118,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQuery | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._dataSource !== undefined) {
@@ -20644,7 +18152,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQuery | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQuery | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._dataSource = undefined;
@@ -20710,11 +18218,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 
   // audience_filters - computed: false, optional: true, required: false
-  private _audienceFilters = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference(this, "audience_filters");
+  private _audienceFilters = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference(this, "audience_filters");
   public get audienceFilters() {
     return this._audienceFilters;
   }
-  public putAudienceFilters(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryAudienceFilters) {
+  public putAudienceFilters(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryAudienceFilters) {
     this._audienceFilters.internalValue = value;
   }
   public resetAudienceFilters() {
@@ -20726,11 +18234,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 
   // compute - computed: false, optional: false, required: true
-  private _compute = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryComputeOutputReference(this, "compute");
+  private _compute = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryComputeOutputReference(this, "compute");
   public get compute() {
     return this._compute;
   }
-  public putCompute(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryCompute) {
+  public putCompute(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryCompute) {
     this._compute.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -20739,11 +18247,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupByList(this, "group_by", false);
+  private _groupBy = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupByList(this, "group_by", false);
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryGroupBy[] | cdktn.IResolvable) {
+  public putGroupBy(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -20755,11 +18263,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 
   // query - computed: false, optional: false, required: true
-  private _query = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQueryOutputReference(this, "query");
+  private _query = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQueryOutputReference(this, "query");
   public get query() {
     return this._query;
   }
-  public putQuery(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProductAnalyticsExtendedQueryQuery) {
+  public putQuery(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryProductAnalyticsExtendedQueryQuery) {
     this._query.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -20767,22 +18275,22 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return this._query.internalValue;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryCompute {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryCompute {
   /**
   * Aggregation for the retention query, including standard event aggregations and `pcNN` percentiles.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * Metric for the retention computation. Valid values are `__dd.retention`, `__dd.retention_rate`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
   */
   readonly metric: string;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryComputeToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryComputeOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryCompute): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryComputeToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryComputeOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryCompute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -20794,7 +18302,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryComputeToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryComputeOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryCompute): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryComputeToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryComputeOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryCompute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -20818,7 +18326,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryComputeOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -20829,7 +18337,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryCompute | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryCompute | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._aggregation !== undefined) {
@@ -20843,7 +18351,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryCompute | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryCompute | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._aggregation = undefined;
@@ -20882,16 +18390,16 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return this._metric;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupBySort {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupBySort {
   /**
   * Sort order for retention group by results. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#order PowerpackV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#order PowerpackV2#order}
   */
   readonly order?: string;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupBySortToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupBySortOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupBySort): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupBySortToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupBySortOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -20902,7 +18410,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupBySortToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupBySortOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupBySort): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupBySortToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupBySortOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -20920,7 +18428,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupBySortOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupBySortOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -20931,7 +18439,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupBySort | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupBySort | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._order !== undefined) {
@@ -20941,7 +18449,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupBySort | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupBySort | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._order = undefined;
@@ -20968,46 +18476,46 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return this._order;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupBy {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupBy {
   /**
   * Facet to group by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
   */
   readonly facet: string;
   /**
   * Maximum number of groups.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
   */
   readonly limit?: number;
   /**
   * Whether to exclude missing values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#should_exclude_missing PowerpackV2#should_exclude_missing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#should_exclude_missing PowerpackV2#should_exclude_missing}
   */
   readonly shouldExcludeMissing?: boolean | cdktn.IResolvable;
   /**
   * Source field for the retention group by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#source PowerpackV2#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#source PowerpackV2#source}
   */
   readonly source?: string;
   /**
   * Target for the retention group by. Valid values are `cohort`, `return_period`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#target PowerpackV2#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#target PowerpackV2#target}
   */
   readonly target: string;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#sort PowerpackV2#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#sort PowerpackV2#sort}
   */
-  readonly sort?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupBySort;
+  readonly sort?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupBySort;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupByToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupBy | cdktn.IResolvable): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupByToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -21018,12 +18526,12 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
     should_exclude_missing: cdktn.booleanToTerraform(struct!.shouldExcludeMissing),
     source: cdktn.stringToTerraform(struct!.source),
     target: cdktn.stringToTerraform(struct!.target),
-    sort: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupBySortToTerraform(struct!.sort),
+    sort: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupBySortToTerraform(struct!.sort),
   }
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupByToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupBy | cdktn.IResolvable): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupByToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -21060,10 +18568,10 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
       storageClassType: "string",
     },
     sort: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupBySortToHclTerraform(struct!.sort),
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupBySortToHclTerraform(struct!.sort),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupBySortList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupBySortList",
     },
   };
 
@@ -21071,7 +18579,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupByOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -21085,7 +18593,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupBy | cdktn.IResolvable | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -21118,7 +18626,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupBy | cdktn.IResolvable | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -21220,11 +18728,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 
   // sort - computed: false, optional: true, required: false
-  private _sort = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupBySortOutputReference(this, "sort");
+  private _sort = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupBySortOutputReference(this, "sort");
   public get sort() {
     return this._sort;
   }
-  public putSort(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupBySort) {
+  public putSort(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupBySort) {
     this._sort.internalValue = value;
   }
   public resetSort() {
@@ -21236,8 +18744,8 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupByList extends cdktn.ComplexList {
-  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupBy[] | cdktn.IResolvable
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -21251,20 +18759,20 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupByOutputReference {
-    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQueryGroupByOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupByOutputReference {
+    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupByOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQuerySearch {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQuerySearch {
   /**
   * Product Analytics event search query used to filter views or actions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#query PowerpackV2#query}
   */
   readonly query: string;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQuerySearchToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQuerySearchOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQuerySearch): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQuerySearchToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQuerySearchOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQuerySearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -21275,7 +18783,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQuerySearchToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQuerySearchOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQuerySearch): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQuerySearchToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQuerySearchOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQuerySearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -21293,7 +18801,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQuerySearchOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQuerySearchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -21304,7 +18812,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQuerySearch | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQuerySearch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._query !== undefined) {
@@ -21314,7 +18822,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQuerySearch | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQuerySearch | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._query = undefined;
@@ -21338,34 +18846,34 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return this._query;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQuery {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQuery {
   /**
   * Data source for the Product Analytics event query. Valid values are `product_analytics`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
   */
   readonly dataSource: string;
   /**
   * search block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#search PowerpackV2#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#search PowerpackV2#search}
   */
-  readonly search: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQuerySearch;
+  readonly search: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQuerySearch;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQuery): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     data_source: cdktn.stringToTerraform(struct!.dataSource),
-    search: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQuerySearchToTerraform(struct!.search),
+    search: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQuerySearchToTerraform(struct!.search),
   }
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQuery): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -21378,10 +18886,10 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
       storageClassType: "string",
     },
     search: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQuerySearchToHclTerraform(struct!.search),
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQuerySearchToHclTerraform(struct!.search),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQuerySearchList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQuerySearchList",
     },
   };
 
@@ -21389,7 +18897,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQueryOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -21400,7 +18908,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQuery | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._dataSource !== undefined) {
@@ -21414,7 +18922,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQuery | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQuery | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._dataSource = undefined;
@@ -21441,11 +18949,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 
   // search - computed: false, optional: false, required: true
-  private _search = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQuerySearchOutputReference(this, "search");
+  private _search = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQuerySearchOutputReference(this, "search");
   public get search() {
     return this._search;
   }
-  public putSearch(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQuerySearch) {
+  public putSearch(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQuerySearch) {
     this._search.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -21453,34 +18961,34 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return this._search.internalValue;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeIntervalValue {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeIntervalValue {
   /**
   * Alignment of the calendar interval.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#alignment PowerpackV2#alignment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#alignment PowerpackV2#alignment}
   */
   readonly alignment?: string;
   /**
   * Quantity of the calendar interval.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#quantity PowerpackV2#quantity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#quantity PowerpackV2#quantity}
   */
   readonly quantity?: number;
   /**
   * Timezone for the calendar interval.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#timezone PowerpackV2#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#timezone PowerpackV2#timezone}
   */
   readonly timezone?: string;
   /**
   * Type of calendar interval. Valid values are `day`, `week`, `month`, `year`, `quarter`, `minute`, `hour`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#type PowerpackV2#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#type PowerpackV2#type}
   */
   readonly type: string;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeIntervalValue): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeIntervalValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -21494,7 +19002,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeIntervalValue): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeIntervalValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -21530,7 +19038,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -21541,7 +19049,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeIntervalValue | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeIntervalValue | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._alignment !== undefined) {
@@ -21563,7 +19071,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeIntervalValue | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeIntervalValue | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._alignment = undefined;
@@ -21641,34 +19149,34 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return this._type;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeInterval {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeInterval {
   /**
   * Type of cohort time interval. Valid values are `calendar`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#type PowerpackV2#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#type PowerpackV2#type}
   */
   readonly type: string;
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#value PowerpackV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#value PowerpackV2#value}
   */
-  readonly value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeIntervalValue;
+  readonly value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeIntervalValue;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeIntervalToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeInterval): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeIntervalToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeInterval): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     type: cdktn.stringToTerraform(struct!.type),
-    value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueToTerraform(struct!.value),
+    value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueToTerraform(struct!.value),
   }
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeIntervalToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeInterval): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeIntervalToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeInterval): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -21681,10 +19189,10 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
       storageClassType: "string",
     },
     value: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueToHclTerraform(struct!.value),
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueToHclTerraform(struct!.value),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueList",
     },
   };
 
@@ -21692,7 +19200,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -21703,7 +19211,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeInterval | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeInterval | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._type !== undefined) {
@@ -21717,7 +19225,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeInterval | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeInterval | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._type = undefined;
@@ -21744,11 +19252,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 
   // value - computed: false, optional: false, required: true
-  private _value = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference(this, "value");
+  private _value = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference(this, "value");
   public get value() {
     return this._value;
   }
-  public putValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeIntervalValue) {
+  public putValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeIntervalValue) {
     this._value.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -21756,50 +19264,50 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return this._value.internalValue;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteria {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteria {
   /**
   * base_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#base_query PowerpackV2#base_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#base_query PowerpackV2#base_query}
   */
-  readonly baseQuery: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQuery;
+  readonly baseQuery: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQuery;
   /**
   * time_interval block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#time_interval PowerpackV2#time_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#time_interval PowerpackV2#time_interval}
   */
-  readonly timeInterval: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeInterval;
+  readonly timeInterval: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeInterval;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteria): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteria): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    base_query: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQueryToTerraform(struct!.baseQuery),
-    time_interval: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeIntervalToTerraform(struct!.timeInterval),
+    base_query: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQueryToTerraform(struct!.baseQuery),
+    time_interval: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeIntervalToTerraform(struct!.timeInterval),
   }
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteria): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteria): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     base_query: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQueryToHclTerraform(struct!.baseQuery),
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQueryToHclTerraform(struct!.baseQuery),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQueryList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQueryList",
     },
     time_interval: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeIntervalToHclTerraform(struct!.timeInterval),
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeIntervalToHclTerraform(struct!.timeInterval),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeIntervalList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeIntervalList",
     },
   };
 
@@ -21807,7 +19315,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -21818,7 +19326,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteria | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteria | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._baseQuery?.internalValue !== undefined) {
@@ -21832,7 +19340,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteria | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteria | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._baseQuery.internalValue = undefined;
@@ -21846,11 +19354,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 
   // base_query - computed: false, optional: false, required: true
-  private _baseQuery = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQueryOutputReference(this, "base_query");
+  private _baseQuery = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQueryOutputReference(this, "base_query");
   public get baseQuery() {
     return this._baseQuery;
   }
-  public putBaseQuery(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaBaseQuery) {
+  public putBaseQuery(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaBaseQuery) {
     this._baseQuery.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -21859,11 +19367,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 
   // time_interval - computed: false, optional: false, required: true
-  private _timeInterval = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference(this, "time_interval");
+  private _timeInterval = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference(this, "time_interval");
   public get timeInterval() {
     return this._timeInterval;
   }
-  public putTimeInterval(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchCohortCriteriaTimeInterval) {
+  public putTimeInterval(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaTimeInterval) {
     this._timeInterval.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -21871,22 +19379,22 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return this._timeInterval.internalValue;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersAccount {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersAccount {
   /**
   * The name of the account subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name?: string;
   /**
   * The query string for the account subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#query PowerpackV2#query}
   */
   readonly query?: string;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersAccountToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersAccount | cdktn.IResolvable): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersAccountToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersAccount | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -21898,7 +19406,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersAccountToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersAccount | cdktn.IResolvable): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersAccountToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersAccount | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -21922,7 +19430,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersAccountOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersAccountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -21936,7 +19444,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersAccount | cdktn.IResolvable | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersAccount | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -21953,7 +19461,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersAccount | cdktn.IResolvable | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersAccount | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -22005,8 +19513,8 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersAccountList extends cdktn.ComplexList {
-  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersAccount[] | cdktn.IResolvable
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersAccountList extends cdktn.ComplexList {
+  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersAccount[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -22020,26 +19528,26 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersAccountOutputReference {
-    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersAccountOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersAccountOutputReference {
+    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersAccountOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersSegment {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersSegment {
   /**
   * The name of the segment subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name?: string;
   /**
   * The unique identifier of the segment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#segment_id PowerpackV2#segment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#segment_id PowerpackV2#segment_id}
   */
   readonly segmentId?: string;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersSegmentToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersSegment | cdktn.IResolvable): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersSegmentToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersSegment | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -22051,7 +19559,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersSegmentToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersSegment | cdktn.IResolvable): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersSegmentToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersSegment | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -22075,7 +19583,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersSegmentOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersSegmentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -22089,7 +19597,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersSegment | cdktn.IResolvable | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersSegment | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -22106,7 +19614,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersSegment | cdktn.IResolvable | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersSegment | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -22158,8 +19666,8 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersSegmentList extends cdktn.ComplexList {
-  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersSegment[] | cdktn.IResolvable
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersSegmentList extends cdktn.ComplexList {
+  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersSegment[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -22173,26 +19681,26 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersSegmentOutputReference {
-    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersSegmentOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersSegmentOutputReference {
+    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersSegmentOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersUser {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersUser {
   /**
   * The name of the user subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
   */
   readonly name?: string;
   /**
   * The query string for the user subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#query PowerpackV2#query}
   */
   readonly query?: string;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersUserToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersUser | cdktn.IResolvable): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersUserToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersUser | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -22204,7 +19712,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersUserToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersUser | cdktn.IResolvable): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersUserToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersUser | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -22228,7 +19736,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersUserOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersUserOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -22242,7 +19750,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersUser | cdktn.IResolvable | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersUser | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -22259,7 +19767,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersUser | cdktn.IResolvable | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersUser | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -22311,8 +19819,8 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersUserList extends cdktn.ComplexList {
-  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersUser[] | cdktn.IResolvable
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersUserList extends cdktn.ComplexList {
+  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersUser[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -22326,52 +19834,52 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersUserOutputReference {
-    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersUserOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersUserOutputReference {
+    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersUserOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFilters {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFilters {
   /**
   * An optional filter condition applied to the audience subquery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#filter_condition PowerpackV2#filter_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#filter_condition PowerpackV2#filter_condition}
   */
   readonly filterCondition?: string;
   /**
   * account block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#account PowerpackV2#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#account PowerpackV2#account}
   */
-  readonly account?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersAccount[] | cdktn.IResolvable;
+  readonly account?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersAccount[] | cdktn.IResolvable;
   /**
   * segment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#segment PowerpackV2#segment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#segment PowerpackV2#segment}
   */
-  readonly segment?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersSegment[] | cdktn.IResolvable;
+  readonly segment?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersSegment[] | cdktn.IResolvable;
   /**
   * user block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#user PowerpackV2#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#user PowerpackV2#user}
   */
-  readonly user?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersUser[] | cdktn.IResolvable;
+  readonly user?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersUser[] | cdktn.IResolvable;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFilters): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFilters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     filter_condition: cdktn.stringToTerraform(struct!.filterCondition),
-    account: cdktn.listMapper(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersAccountToTerraform, true)(struct!.account),
-    segment: cdktn.listMapper(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersSegmentToTerraform, true)(struct!.segment),
-    user: cdktn.listMapper(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersUserToTerraform, true)(struct!.user),
+    account: cdktn.listMapper(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersAccountToTerraform, true)(struct!.account),
+    segment: cdktn.listMapper(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersSegmentToTerraform, true)(struct!.segment),
+    user: cdktn.listMapper(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersUserToTerraform, true)(struct!.user),
   }
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFilters): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFilters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -22384,22 +19892,22 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
       storageClassType: "string",
     },
     account: {
-      value: cdktn.listMapperHcl(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersAccountToHclTerraform, true)(struct!.account),
+      value: cdktn.listMapperHcl(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersAccountToHclTerraform, true)(struct!.account),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersAccountList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersAccountList",
     },
     segment: {
-      value: cdktn.listMapperHcl(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersSegmentToHclTerraform, true)(struct!.segment),
+      value: cdktn.listMapperHcl(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersSegmentToHclTerraform, true)(struct!.segment),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersSegmentList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersSegmentList",
     },
     user: {
-      value: cdktn.listMapperHcl(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersUserToHclTerraform, true)(struct!.user),
+      value: cdktn.listMapperHcl(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersUserToHclTerraform, true)(struct!.user),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersUserList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersUserList",
     },
   };
 
@@ -22407,7 +19915,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -22418,7 +19926,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFilters | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFilters | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._filterCondition !== undefined) {
@@ -22440,7 +19948,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFilters | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFilters | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._filterCondition = undefined;
@@ -22474,11 +19982,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 
   // account - computed: false, optional: true, required: false
-  private _account = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersAccountList(this, "account", false);
+  private _account = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersAccountList(this, "account", false);
   public get account() {
     return this._account;
   }
-  public putAccount(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersAccount[] | cdktn.IResolvable) {
+  public putAccount(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersAccount[] | cdktn.IResolvable) {
     this._account.internalValue = value;
   }
   public resetAccount() {
@@ -22490,11 +19998,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 
   // segment - computed: false, optional: true, required: false
-  private _segment = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersSegmentList(this, "segment", false);
+  private _segment = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersSegmentList(this, "segment", false);
   public get segment() {
     return this._segment;
   }
-  public putSegment(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersSegment[] | cdktn.IResolvable) {
+  public putSegment(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersSegment[] | cdktn.IResolvable) {
     this._segment.internalValue = value;
   }
   public resetSegment() {
@@ -22506,11 +20014,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 
   // user - computed: false, optional: true, required: false
-  private _user = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersUserList(this, "user", false);
+  private _user = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersUserList(this, "user", false);
   public get user() {
     return this._user;
   }
-  public putUser(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersUser[] | cdktn.IResolvable) {
+  public putUser(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersUser[] | cdktn.IResolvable) {
     this._user.internalValue = value;
   }
   public resetUser() {
@@ -22521,34 +20029,34 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return this._user.internalValue;
   }
 }
-export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFilters {
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFilters {
   /**
   * String filter for the retention query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#string_filter PowerpackV2#string_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#string_filter PowerpackV2#string_filter}
   */
   readonly stringFilter?: string;
   /**
   * audience_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#audience_filters PowerpackV2#audience_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#audience_filters PowerpackV2#audience_filters}
   */
-  readonly audienceFilters?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFilters;
+  readonly audienceFilters?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFilters;
 }
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFilters): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFilters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     string_filter: cdktn.stringToTerraform(struct!.stringFilter),
-    audience_filters: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersToTerraform(struct!.audienceFilters),
+    audience_filters: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersToTerraform(struct!.audienceFilters),
   }
 }
 
 
-export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFilters): any {
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFilters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -22561,10 +20069,10 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
       storageClassType: "string",
     },
     audience_filters: {
-      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersToHclTerraform(struct!.audienceFilters),
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersToHclTerraform(struct!.audienceFilters),
       isBlock: true,
       type: "list",
-      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersList",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersList",
     },
   };
 
@@ -22572,7 +20080,7 @@ export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersOutputReference extends cdktn.ComplexObject {
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -22583,7 +20091,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFilters | undefined {
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFilters | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._stringFilter !== undefined) {
@@ -22597,7 +20105,7 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFilters | undefined) {
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFilters | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._stringFilter = undefined;
@@ -22627,11 +20135,11 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   }
 
   // audience_filters - computed: false, optional: true, required: false
-  private _audienceFilters = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFiltersOutputReference(this, "audience_filters");
+  private _audienceFilters = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFiltersOutputReference(this, "audience_filters");
   public get audienceFilters() {
     return this._audienceFilters;
   }
-  public putAudienceFilters(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryRetentionQuerySearchFiltersAudienceFilters) {
+  public putAudienceFilters(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersAudienceFilters) {
     this._audienceFilters.internalValue = value;
   }
   public resetAudienceFilters() {
@@ -22640,5 +20148,2499 @@ export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQ
   // Temporarily expose input value. Use with caution.
   public get audienceFiltersInput() {
     return this._audienceFilters.internalValue;
+  }
+}
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQuerySearch {
+  /**
+  * Product Analytics event search query used to filter views or actions.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+  */
+  readonly query: string;
+}
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQuerySearch): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    query: cdktn.stringToTerraform(struct!.query),
+  }
+}
+
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQuerySearch): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    query: {
+      value: cdktn.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQuerySearch | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._query !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.query = this._query;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQuerySearch | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._query = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._query = value.query;
+    }
+  }
+
+  // query - computed: false, optional: false, required: true
+  private _query?: string; 
+  public get query() {
+    return this.getStringAttribute('query');
+  }
+  public set query(value: string) {
+    this._query = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryInput() {
+    return this._query;
+  }
+}
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQuery {
+  /**
+  * Data source for the Product Analytics event query. Valid values are `product_analytics`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
+  */
+  readonly dataSource: string;
+  /**
+  * search block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#search PowerpackV2#search}
+  */
+  readonly search: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQuerySearch;
+}
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQuery): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    search: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchToTerraform(struct!.search),
+  }
+}
+
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQuery): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    data_source: {
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    search: {
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchToHclTerraform(struct!.search),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQueryOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQuery | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dataSource !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dataSource = this._dataSource;
+    }
+    if (this._search?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.search = this._search?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQuery | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._dataSource = undefined;
+      this._search.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._dataSource = value.dataSource;
+      this._search.internalValue = value.search;
+    }
+  }
+
+  // data_source - computed: false, optional: false, required: true
+  private _dataSource?: string; 
+  public get dataSource() {
+    return this.getStringAttribute('data_source');
+  }
+  public set dataSource(value: string) {
+    this._dataSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource;
+  }
+
+  // search - computed: false, optional: false, required: true
+  private _search = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchOutputReference(this, "search");
+  public get search() {
+    return this._search;
+  }
+  public putSearch(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQuerySearch) {
+    this._search.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get searchInput() {
+    return this._search.internalValue;
+  }
+}
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaTimeInterval {
+  /**
+  * Type of return interval. Valid values are `fixed`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#type PowerpackV2#type}
+  */
+  readonly type: string;
+  /**
+  * Unit of the return interval. Valid values are `day`, `week`, `month`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#unit PowerpackV2#unit}
+  */
+  readonly unit: string;
+  /**
+  * Value of the return interval.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#value PowerpackV2#value}
+  */
+  readonly value: number;
+}
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaTimeIntervalToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaTimeIntervalOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaTimeInterval): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    type: cdktn.stringToTerraform(struct!.type),
+    unit: cdktn.stringToTerraform(struct!.unit),
+    value: cdktn.numberToTerraform(struct!.value),
+  }
+}
+
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaTimeIntervalToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaTimeIntervalOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaTimeInterval): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    type: {
+      value: cdktn.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    unit: {
+      value: cdktn.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktn.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaTimeIntervalOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaTimeInterval | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._unit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.unit = this._unit;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaTimeInterval | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._type = undefined;
+      this._unit = undefined;
+      this._value = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._type = value.type;
+      this._unit = value.unit;
+      this._value = value.value;
+    }
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // unit - computed: false, optional: false, required: true
+  private _unit?: string; 
+  public get unit() {
+    return this.getStringAttribute('unit');
+  }
+  public set unit(value: string) {
+    this._unit = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get unitInput() {
+    return this._unit;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: number; 
+  public get value() {
+    return this.getNumberAttribute('value');
+  }
+  public set value(value: number) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteria {
+  /**
+  * base_query block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#base_query PowerpackV2#base_query}
+  */
+  readonly baseQuery: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQuery;
+  /**
+  * time_interval block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#time_interval PowerpackV2#time_interval}
+  */
+  readonly timeInterval?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaTimeInterval;
+}
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteria): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    base_query: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQueryToTerraform(struct!.baseQuery),
+    time_interval: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaTimeIntervalToTerraform(struct!.timeInterval),
+  }
+}
+
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteria): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    base_query: {
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQueryToHclTerraform(struct!.baseQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQueryList",
+    },
+    time_interval: {
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaTimeIntervalToHclTerraform(struct!.timeInterval),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaTimeIntervalList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteria | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._baseQuery?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.baseQuery = this._baseQuery?.internalValue;
+    }
+    if (this._timeInterval?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeInterval = this._timeInterval?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteria | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._baseQuery.internalValue = undefined;
+      this._timeInterval.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._baseQuery.internalValue = value.baseQuery;
+      this._timeInterval.internalValue = value.timeInterval;
+    }
+  }
+
+  // base_query - computed: false, optional: false, required: true
+  private _baseQuery = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQueryOutputReference(this, "base_query");
+  public get baseQuery() {
+    return this._baseQuery;
+  }
+  public putBaseQuery(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaBaseQuery) {
+    this._baseQuery.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get baseQueryInput() {
+    return this._baseQuery.internalValue;
+  }
+
+  // time_interval - computed: false, optional: true, required: false
+  private _timeInterval = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaTimeIntervalOutputReference(this, "time_interval");
+  public get timeInterval() {
+    return this._timeInterval;
+  }
+  public putTimeInterval(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaTimeInterval) {
+    this._timeInterval.internalValue = value;
+  }
+  public resetTimeInterval() {
+    this._timeInterval.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeIntervalInput() {
+    return this._timeInterval.internalValue;
+  }
+}
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearch {
+  /**
+  * Entity tracked for retention. Valid values are `@usr.id`, `@account.id`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#retention_entity PowerpackV2#retention_entity}
+  */
+  readonly retentionEntity: string;
+  /**
+  * Condition for counting an entity as returned. Valid values are `conversion_on`, `conversion_on_or_after`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#return_condition PowerpackV2#return_condition}
+  */
+  readonly returnCondition: string;
+  /**
+  * cohort_criteria block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#cohort_criteria PowerpackV2#cohort_criteria}
+  */
+  readonly cohortCriteria: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteria;
+  /**
+  * filters block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#filters PowerpackV2#filters}
+  */
+  readonly filters?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFilters;
+  /**
+  * return_criteria block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#return_criteria PowerpackV2#return_criteria}
+  */
+  readonly returnCriteria?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteria;
+}
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearch): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    retention_entity: cdktn.stringToTerraform(struct!.retentionEntity),
+    return_condition: cdktn.stringToTerraform(struct!.returnCondition),
+    cohort_criteria: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaToTerraform(struct!.cohortCriteria),
+    filters: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersToTerraform(struct!.filters),
+    return_criteria: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaToTerraform(struct!.returnCriteria),
+  }
+}
+
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearch): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    retention_entity: {
+      value: cdktn.stringToHclTerraform(struct!.retentionEntity),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    return_condition: {
+      value: cdktn.stringToHclTerraform(struct!.returnCondition),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cohort_criteria: {
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaToHclTerraform(struct!.cohortCriteria),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaList",
+    },
+    filters: {
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersToHclTerraform(struct!.filters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersList",
+    },
+    return_criteria: {
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaToHclTerraform(struct!.returnCriteria),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearch | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._retentionEntity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.retentionEntity = this._retentionEntity;
+    }
+    if (this._returnCondition !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.returnCondition = this._returnCondition;
+    }
+    if (this._cohortCriteria?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cohortCriteria = this._cohortCriteria?.internalValue;
+    }
+    if (this._filters?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filters = this._filters?.internalValue;
+    }
+    if (this._returnCriteria?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.returnCriteria = this._returnCriteria?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearch | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._retentionEntity = undefined;
+      this._returnCondition = undefined;
+      this._cohortCriteria.internalValue = undefined;
+      this._filters.internalValue = undefined;
+      this._returnCriteria.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._retentionEntity = value.retentionEntity;
+      this._returnCondition = value.returnCondition;
+      this._cohortCriteria.internalValue = value.cohortCriteria;
+      this._filters.internalValue = value.filters;
+      this._returnCriteria.internalValue = value.returnCriteria;
+    }
+  }
+
+  // retention_entity - computed: false, optional: false, required: true
+  private _retentionEntity?: string; 
+  public get retentionEntity() {
+    return this.getStringAttribute('retention_entity');
+  }
+  public set retentionEntity(value: string) {
+    this._retentionEntity = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retentionEntityInput() {
+    return this._retentionEntity;
+  }
+
+  // return_condition - computed: false, optional: false, required: true
+  private _returnCondition?: string; 
+  public get returnCondition() {
+    return this.getStringAttribute('return_condition');
+  }
+  public set returnCondition(value: string) {
+    this._returnCondition = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get returnConditionInput() {
+    return this._returnCondition;
+  }
+
+  // cohort_criteria - computed: false, optional: false, required: true
+  private _cohortCriteria = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteriaOutputReference(this, "cohort_criteria");
+  public get cohortCriteria() {
+    return this._cohortCriteria;
+  }
+  public putCohortCriteria(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchCohortCriteria) {
+    this._cohortCriteria.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cohortCriteriaInput() {
+    return this._cohortCriteria.internalValue;
+  }
+
+  // filters - computed: false, optional: true, required: false
+  private _filters = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFiltersOutputReference(this, "filters");
+  public get filters() {
+    return this._filters;
+  }
+  public putFilters(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchFilters) {
+    this._filters.internalValue = value;
+  }
+  public resetFilters() {
+    this._filters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filtersInput() {
+    return this._filters.internalValue;
+  }
+
+  // return_criteria - computed: false, optional: true, required: false
+  private _returnCriteria = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteriaOutputReference(this, "return_criteria");
+  public get returnCriteria() {
+    return this._returnCriteria;
+  }
+  public putReturnCriteria(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchReturnCriteria) {
+    this._returnCriteria.internalValue = value;
+  }
+  public resetReturnCriteria() {
+    this._returnCriteria.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get returnCriteriaInput() {
+    return this._returnCriteria.internalValue;
+  }
+}
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuery {
+  /**
+  * Data source for retention queries. Valid values are `product_analytics_retention`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
+  */
+  readonly dataSource: string;
+  /**
+  * Name of the query for use in formulas.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  */
+  readonly name: string;
+  /**
+  * compute block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#compute PowerpackV2#compute}
+  */
+  readonly compute: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryCompute;
+  /**
+  * group_by block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#group_by PowerpackV2#group_by}
+  */
+  readonly groupBy?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupBy[] | cdktn.IResolvable;
+  /**
+  * search block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#search PowerpackV2#search}
+  */
+  readonly search: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearch;
+}
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuery): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    name: cdktn.stringToTerraform(struct!.name),
+    compute: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryComputeToTerraform(struct!.compute),
+    group_by: cdktn.listMapper(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupByToTerraform, true)(struct!.groupBy),
+    search: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchToTerraform(struct!.search),
+  }
+}
+
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuery): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    data_source: {
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute: {
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryComputeToHclTerraform(struct!.compute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryComputeList",
+    },
+    group_by: {
+      value: cdktn.listMapperHcl(powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupByList",
+    },
+    search: {
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchToHclTerraform(struct!.search),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuery | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dataSource !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dataSource = this._dataSource;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._compute?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.compute = this._compute?.internalValue;
+    }
+    if (this._groupBy?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupBy = this._groupBy?.internalValue;
+    }
+    if (this._search?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.search = this._search?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuery | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._dataSource = undefined;
+      this._name = undefined;
+      this._compute.internalValue = undefined;
+      this._groupBy.internalValue = undefined;
+      this._search.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._dataSource = value.dataSource;
+      this._name = value.name;
+      this._compute.internalValue = value.compute;
+      this._groupBy.internalValue = value.groupBy;
+      this._search.internalValue = value.search;
+    }
+  }
+
+  // data_source - computed: false, optional: false, required: true
+  private _dataSource?: string; 
+  public get dataSource() {
+    return this.getStringAttribute('data_source');
+  }
+  public set dataSource(value: string) {
+    this._dataSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // compute - computed: false, optional: false, required: true
+  private _compute = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryComputeOutputReference(this, "compute");
+  public get compute() {
+    return this._compute;
+  }
+  public putCompute(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryCompute) {
+    this._compute.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get computeInput() {
+    return this._compute.internalValue;
+  }
+
+  // group_by - computed: false, optional: true, required: false
+  private _groupBy = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupByList(this, "group_by", false);
+  public get groupBy() {
+    return this._groupBy;
+  }
+  public putGroupBy(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQueryGroupBy[] | cdktn.IResolvable) {
+    this._groupBy.internalValue = value;
+  }
+  public resetGroupBy() {
+    this._groupBy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupByInput() {
+    return this._groupBy.internalValue;
+  }
+
+  // search - computed: false, optional: false, required: true
+  private _search = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearchOutputReference(this, "search");
+  public get search() {
+    return this._search;
+  }
+  public putSearch(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryRetentionQuerySearch) {
+    this._search.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get searchInput() {
+    return this._search.internalValue;
+  }
+}
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQuerySloQuery {
+  /**
+  * Additional filters applied to the SLO query.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#additional_query_filters PowerpackV2#additional_query_filters}
+  */
+  readonly additionalQueryFilters?: string;
+  /**
+  * The source organization UUID for cross organization queries. Feature in Private Beta.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#cross_org_uuids PowerpackV2#cross_org_uuids}
+  */
+  readonly crossOrgUuids?: string[];
+  /**
+  * The data source for SLO queries. Valid values are `slo`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
+  */
+  readonly dataSource: string;
+  /**
+  * Group mode to query measures. Valid values are `overall`, `components`. Defaults to `"overall"`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#group_mode PowerpackV2#group_mode}
+  */
+  readonly groupMode?: string;
+  /**
+  * SLO measures queries. Valid values are `good_events`, `bad_events`, `good_minutes`, `bad_minutes`, `slo_status`, `error_budget_remaining`, `burn_rate`, `error_budget_burndown`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#measure PowerpackV2#measure}
+  */
+  readonly measure: string;
+  /**
+  * The name of query for use in formulas.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  */
+  readonly name?: string;
+  /**
+  * ID of an SLO to query measures.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#slo_id PowerpackV2#slo_id}
+  */
+  readonly sloId: string;
+  /**
+  * type of the SLO to query. Valid values are `metric`, `monitor`, `time_slice`. Defaults to `"metric"`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#slo_query_type PowerpackV2#slo_query_type}
+  */
+  readonly sloQueryType?: string;
+}
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQuerySloQueryToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQuerySloQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQuerySloQuery): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    additional_query_filters: cdktn.stringToTerraform(struct!.additionalQueryFilters),
+    cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    group_mode: cdktn.stringToTerraform(struct!.groupMode),
+    measure: cdktn.stringToTerraform(struct!.measure),
+    name: cdktn.stringToTerraform(struct!.name),
+    slo_id: cdktn.stringToTerraform(struct!.sloId),
+    slo_query_type: cdktn.stringToTerraform(struct!.sloQueryType),
+  }
+}
+
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQuerySloQueryToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQuerySloQueryOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQuerySloQuery): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    additional_query_filters: {
+      value: cdktn.stringToHclTerraform(struct!.additionalQueryFilters),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cross_org_uuids: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.crossOrgUuids),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    data_source: {
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group_mode: {
+      value: cdktn.stringToHclTerraform(struct!.groupMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    measure: {
+      value: cdktn.stringToHclTerraform(struct!.measure),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    slo_id: {
+      value: cdktn.stringToHclTerraform(struct!.sloId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    slo_query_type: {
+      value: cdktn.stringToHclTerraform(struct!.sloQueryType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQuerySloQueryOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQuerySloQuery | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._additionalQueryFilters !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.additionalQueryFilters = this._additionalQueryFilters;
+    }
+    if (this._crossOrgUuids !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.crossOrgUuids = this._crossOrgUuids;
+    }
+    if (this._dataSource !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dataSource = this._dataSource;
+    }
+    if (this._groupMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupMode = this._groupMode;
+    }
+    if (this._measure !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.measure = this._measure;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._sloId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sloId = this._sloId;
+    }
+    if (this._sloQueryType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sloQueryType = this._sloQueryType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQuerySloQuery | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._additionalQueryFilters = undefined;
+      this._crossOrgUuids = undefined;
+      this._dataSource = undefined;
+      this._groupMode = undefined;
+      this._measure = undefined;
+      this._name = undefined;
+      this._sloId = undefined;
+      this._sloQueryType = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._additionalQueryFilters = value.additionalQueryFilters;
+      this._crossOrgUuids = value.crossOrgUuids;
+      this._dataSource = value.dataSource;
+      this._groupMode = value.groupMode;
+      this._measure = value.measure;
+      this._name = value.name;
+      this._sloId = value.sloId;
+      this._sloQueryType = value.sloQueryType;
+    }
+  }
+
+  // additional_query_filters - computed: false, optional: true, required: false
+  private _additionalQueryFilters?: string; 
+  public get additionalQueryFilters() {
+    return this.getStringAttribute('additional_query_filters');
+  }
+  public set additionalQueryFilters(value: string) {
+    this._additionalQueryFilters = value;
+  }
+  public resetAdditionalQueryFilters() {
+    this._additionalQueryFilters = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get additionalQueryFiltersInput() {
+    return this._additionalQueryFilters;
+  }
+
+  // cross_org_uuids - computed: false, optional: true, required: false
+  private _crossOrgUuids?: string[]; 
+  public get crossOrgUuids() {
+    return this.getListAttribute('cross_org_uuids');
+  }
+  public set crossOrgUuids(value: string[]) {
+    this._crossOrgUuids = value;
+  }
+  public resetCrossOrgUuids() {
+    this._crossOrgUuids = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get crossOrgUuidsInput() {
+    return this._crossOrgUuids;
+  }
+
+  // data_source - computed: false, optional: false, required: true
+  private _dataSource?: string; 
+  public get dataSource() {
+    return this.getStringAttribute('data_source');
+  }
+  public set dataSource(value: string) {
+    this._dataSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource;
+  }
+
+  // group_mode - computed: false, optional: true, required: false
+  private _groupMode?: string; 
+  public get groupMode() {
+    return this.getStringAttribute('group_mode');
+  }
+  public set groupMode(value: string) {
+    this._groupMode = value;
+  }
+  public resetGroupMode() {
+    this._groupMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupModeInput() {
+    return this._groupMode;
+  }
+
+  // measure - computed: false, optional: false, required: true
+  private _measure?: string; 
+  public get measure() {
+    return this.getStringAttribute('measure');
+  }
+  public set measure(value: string) {
+    this._measure = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get measureInput() {
+    return this._measure;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // slo_id - computed: false, optional: false, required: true
+  private _sloId?: string; 
+  public get sloId() {
+    return this.getStringAttribute('slo_id');
+  }
+  public set sloId(value: string) {
+    this._sloId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sloIdInput() {
+    return this._sloId;
+  }
+
+  // slo_query_type - computed: false, optional: true, required: false
+  private _sloQueryType?: string; 
+  public get sloQueryType() {
+    return this.getStringAttribute('slo_query_type');
+  }
+  public set sloQueryType(value: string) {
+    this._sloQueryType = value;
+  }
+  public resetSloQueryType() {
+    this._sloQueryType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sloQueryTypeInput() {
+    return this._sloQueryType;
+  }
+}
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryComputeTarget {
+  /**
+  * End node of the target range.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#end PowerpackV2#end}
+  */
+  readonly end?: string;
+  /**
+  * Start node of the target range.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#start PowerpackV2#start}
+  */
+  readonly start?: string;
+  /**
+  * Target type.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#type PowerpackV2#type}
+  */
+  readonly type: string;
+  /**
+  * Target node value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#value PowerpackV2#value}
+  */
+  readonly value?: string;
+}
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryComputeTargetToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryComputeTargetOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryComputeTarget): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    end: cdktn.stringToTerraform(struct!.end),
+    start: cdktn.stringToTerraform(struct!.start),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
+  }
+}
+
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryComputeTargetToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryComputeTargetOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryComputeTarget): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    end: {
+      value: cdktn.stringToHclTerraform(struct!.end),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start: {
+      value: cdktn.stringToHclTerraform(struct!.start),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktn.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktn.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryComputeTargetOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryComputeTarget | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._end !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.end = this._end;
+    }
+    if (this._start !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.start = this._start;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryComputeTarget | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._end = undefined;
+      this._start = undefined;
+      this._type = undefined;
+      this._value = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._end = value.end;
+      this._start = value.start;
+      this._type = value.type;
+      this._value = value.value;
+    }
+  }
+
+  // end - computed: false, optional: true, required: false
+  private _end?: string; 
+  public get end() {
+    return this.getStringAttribute('end');
+  }
+  public set end(value: string) {
+    this._end = value;
+  }
+  public resetEnd() {
+    this._end = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endInput() {
+    return this._end;
+  }
+
+  // start - computed: false, optional: true, required: false
+  private _start?: string; 
+  public get start() {
+    return this.getStringAttribute('start');
+  }
+  public set start(value: string) {
+    this._start = value;
+  }
+  public resetStart() {
+    this._start = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startInput() {
+    return this._start;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryCompute {
+  /**
+  * Aggregation method for the User Journey query. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
+  */
+  readonly aggregation: string;
+  /**
+  * Time bucket interval in milliseconds for timeseries queries.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#interval PowerpackV2#interval}
+  */
+  readonly interval?: number;
+  /**
+  * Metric for the User Journey computation. Valid values are `__dd.conversion`, `__dd.conversion_rate`, `__dd.time_to_convert`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
+  */
+  readonly metric?: string;
+  /**
+  * target block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#target PowerpackV2#target}
+  */
+  readonly target?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryComputeTarget;
+}
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryComputeToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryComputeOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryCompute): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    interval: cdktn.numberToTerraform(struct!.interval),
+    metric: cdktn.stringToTerraform(struct!.metric),
+    target: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryComputeTargetToTerraform(struct!.target),
+  }
+}
+
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryComputeToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryComputeOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryCompute): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktn.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    metric: {
+      value: cdktn.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target: {
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryComputeTargetToHclTerraform(struct!.target),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryComputeTargetList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryComputeOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryCompute | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._aggregation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.aggregation = this._aggregation;
+    }
+    if (this._interval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.interval = this._interval;
+    }
+    if (this._metric !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metric = this._metric;
+    }
+    if (this._target?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryCompute | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._aggregation = undefined;
+      this._interval = undefined;
+      this._metric = undefined;
+      this._target.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._aggregation = value.aggregation;
+      this._interval = value.interval;
+      this._metric = value.metric;
+      this._target.internalValue = value.target;
+    }
+  }
+
+  // aggregation - computed: false, optional: false, required: true
+  private _aggregation?: string; 
+  public get aggregation() {
+    return this.getStringAttribute('aggregation');
+  }
+  public set aggregation(value: string) {
+    this._aggregation = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aggregationInput() {
+    return this._aggregation;
+  }
+
+  // interval - computed: false, optional: true, required: false
+  private _interval?: number; 
+  public get interval() {
+    return this.getNumberAttribute('interval');
+  }
+  public set interval(value: number) {
+    this._interval = value;
+  }
+  public resetInterval() {
+    this._interval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get intervalInput() {
+    return this._interval;
+  }
+
+  // metric - computed: false, optional: true, required: false
+  private _metric?: string; 
+  public get metric() {
+    return this.getStringAttribute('metric');
+  }
+  public set metric(value: string) {
+    this._metric = value;
+  }
+  public resetMetric() {
+    this._metric = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricInput() {
+    return this._metric;
+  }
+
+  // target - computed: false, optional: true, required: false
+  private _target = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryComputeTargetOutputReference(this, "target");
+  public get target() {
+    return this._target;
+  }
+  public putTarget(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryComputeTarget) {
+    this._target.internalValue = value;
+  }
+  public resetTarget() {
+    this._target.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetInput() {
+    return this._target.internalValue;
+  }
+}
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupBySort {
+  /**
+  * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
+  */
+  readonly aggregation: string;
+  /**
+  * The metric used for sorting group by results.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
+  */
+  readonly metric?: string;
+  /**
+  * Direction of sort. Valid values are `asc`, `desc`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#order PowerpackV2#order}
+  */
+  readonly order?: string;
+}
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupBySortToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupBySortOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupBySort): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    metric: cdktn.stringToTerraform(struct!.metric),
+    order: cdktn.stringToTerraform(struct!.order),
+  }
+}
+
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupBySortToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupBySortOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupBySort): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    metric: {
+      value: cdktn.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktn.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupBySortOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupBySort | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._aggregation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.aggregation = this._aggregation;
+    }
+    if (this._metric !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metric = this._metric;
+    }
+    if (this._order !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.order = this._order;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupBySort | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._aggregation = undefined;
+      this._metric = undefined;
+      this._order = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._aggregation = value.aggregation;
+      this._metric = value.metric;
+      this._order = value.order;
+    }
+  }
+
+  // aggregation - computed: false, optional: false, required: true
+  private _aggregation?: string; 
+  public get aggregation() {
+    return this.getStringAttribute('aggregation');
+  }
+  public set aggregation(value: string) {
+    this._aggregation = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aggregationInput() {
+    return this._aggregation;
+  }
+
+  // metric - computed: false, optional: true, required: false
+  private _metric?: string; 
+  public get metric() {
+    return this.getStringAttribute('metric');
+  }
+  public set metric(value: string) {
+    this._metric = value;
+  }
+  public resetMetric() {
+    this._metric = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricInput() {
+    return this._metric;
+  }
+
+  // order - computed: false, optional: true, required: false
+  private _order?: string; 
+  public get order() {
+    return this.getStringAttribute('order');
+  }
+  public set order(value: string) {
+    this._order = value;
+  }
+  public resetOrder() {
+    this._order = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get orderInput() {
+    return this._order;
+  }
+}
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupByTarget {
+  /**
+  * End node of the target range.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#end PowerpackV2#end}
+  */
+  readonly end?: string;
+  /**
+  * Start node of the target range.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#start PowerpackV2#start}
+  */
+  readonly start?: string;
+  /**
+  * Target type.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#type PowerpackV2#type}
+  */
+  readonly type: string;
+  /**
+  * Target node value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#value PowerpackV2#value}
+  */
+  readonly value?: string;
+}
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupByTargetToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupByTargetOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupByTarget): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    end: cdktn.stringToTerraform(struct!.end),
+    start: cdktn.stringToTerraform(struct!.start),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
+  }
+}
+
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupByTargetToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupByTargetOutputReference | PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupByTarget): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    end: {
+      value: cdktn.stringToHclTerraform(struct!.end),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start: {
+      value: cdktn.stringToHclTerraform(struct!.start),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktn.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktn.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupByTargetOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupByTarget | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._end !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.end = this._end;
+    }
+    if (this._start !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.start = this._start;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupByTarget | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._end = undefined;
+      this._start = undefined;
+      this._type = undefined;
+      this._value = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._end = value.end;
+      this._start = value.start;
+      this._type = value.type;
+      this._value = value.value;
+    }
+  }
+
+  // end - computed: false, optional: true, required: false
+  private _end?: string; 
+  public get end() {
+    return this.getStringAttribute('end');
+  }
+  public set end(value: string) {
+    this._end = value;
+  }
+  public resetEnd() {
+    this._end = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endInput() {
+    return this._end;
+  }
+
+  // start - computed: false, optional: true, required: false
+  private _start?: string; 
+  public get start() {
+    return this.getStringAttribute('start');
+  }
+  public set start(value: string) {
+    this._start = value;
+  }
+  public resetStart() {
+    this._start = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startInput() {
+    return this._start;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupBy {
+  /**
+  * Facet name to group by.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
+  */
+  readonly facet: string;
+  /**
+  * Maximum number of groups to return.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
+  */
+  readonly limit?: number;
+  /**
+  * Whether to exclude events missing the group-by facet.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#should_exclude_missing PowerpackV2#should_exclude_missing}
+  */
+  readonly shouldExcludeMissing?: boolean | cdktn.IResolvable;
+  /**
+  * sort block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#sort PowerpackV2#sort}
+  */
+  readonly sort?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupBySort;
+  /**
+  * target block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#target PowerpackV2#target}
+  */
+  readonly target?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupByTarget;
+}
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupByToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
+    should_exclude_missing: cdktn.booleanToTerraform(struct!.shouldExcludeMissing),
+    sort: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupBySortToTerraform(struct!.sort),
+    target: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupByTargetToTerraform(struct!.target),
+  }
+}
+
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupByToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    facet: {
+      value: cdktn.stringToHclTerraform(struct!.facet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktn.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    should_exclude_missing: {
+      value: cdktn.booleanToHclTerraform(struct!.shouldExcludeMissing),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    sort: {
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupBySortToHclTerraform(struct!.sort),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupBySortList",
+    },
+    target: {
+      value: powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupByTargetToHclTerraform(struct!.target),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupByTargetList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupByOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupBy | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._facet !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.facet = this._facet;
+    }
+    if (this._limit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.limit = this._limit;
+    }
+    if (this._shouldExcludeMissing !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.shouldExcludeMissing = this._shouldExcludeMissing;
+    }
+    if (this._sort?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sort = this._sort?.internalValue;
+    }
+    if (this._target?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupBy | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._facet = undefined;
+      this._limit = undefined;
+      this._shouldExcludeMissing = undefined;
+      this._sort.internalValue = undefined;
+      this._target.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._facet = value.facet;
+      this._limit = value.limit;
+      this._shouldExcludeMissing = value.shouldExcludeMissing;
+      this._sort.internalValue = value.sort;
+      this._target.internalValue = value.target;
+    }
+  }
+
+  // facet - computed: false, optional: false, required: true
+  private _facet?: string; 
+  public get facet() {
+    return this.getStringAttribute('facet');
+  }
+  public set facet(value: string) {
+    this._facet = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get facetInput() {
+    return this._facet;
+  }
+
+  // limit - computed: false, optional: true, required: false
+  private _limit?: number; 
+  public get limit() {
+    return this.getNumberAttribute('limit');
+  }
+  public set limit(value: number) {
+    this._limit = value;
+  }
+  public resetLimit() {
+    this._limit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get limitInput() {
+    return this._limit;
+  }
+
+  // should_exclude_missing - computed: false, optional: true, required: false
+  private _shouldExcludeMissing?: boolean | cdktn.IResolvable; 
+  public get shouldExcludeMissing() {
+    return this.getBooleanAttribute('should_exclude_missing');
+  }
+  public set shouldExcludeMissing(value: boolean | cdktn.IResolvable) {
+    this._shouldExcludeMissing = value;
+  }
+  public resetShouldExcludeMissing() {
+    this._shouldExcludeMissing = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shouldExcludeMissingInput() {
+    return this._shouldExcludeMissing;
+  }
+
+  // sort - computed: false, optional: true, required: false
+  private _sort = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupBySortOutputReference(this, "sort");
+  public get sort() {
+    return this._sort;
+  }
+  public putSort(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupBySort) {
+    this._sort.internalValue = value;
+  }
+  public resetSort() {
+    this._sort.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sortInput() {
+    return this._sort.internalValue;
+  }
+
+  // target - computed: false, optional: true, required: false
+  private _target = new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupByTargetOutputReference(this, "target");
+  public get target() {
+    return this._target;
+  }
+  public putTarget(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupByTarget) {
+    this._target.internalValue = value;
+  }
+  public resetTarget() {
+    this._target.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetInput() {
+    return this._target.internalValue;
+  }
+}
+
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupBy[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupByOutputReference {
+    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQueryGroupByOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQuerySearchFiltersAudienceFiltersAccount {
+  /**
+  * The name of the account subquery.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  */
+  readonly name?: string;
+  /**
+  * The query string for the account subquery.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+  */
+  readonly query?: string;
+}
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQuerySearchFiltersAudienceFiltersAccountToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQuerySearchFiltersAudienceFiltersAccount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    name: cdktn.stringToTerraform(struct!.name),
+    query: cdktn.stringToTerraform(struct!.query),
+  }
+}
+
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQuerySearchFiltersAudienceFiltersAccountToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQuerySearchFiltersAudienceFiltersAccount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    query: {
+      value: cdktn.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQuerySearchFiltersAudienceFiltersAccountOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQuerySearchFiltersAudienceFiltersAccount | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._query !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.query = this._query;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQuerySearchFiltersAudienceFiltersAccount | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._query = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._query = value.query;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // query - computed: false, optional: true, required: false
+  private _query?: string; 
+  public get query() {
+    return this.getStringAttribute('query');
+  }
+  public set query(value: string) {
+    this._query = value;
+  }
+  public resetQuery() {
+    this._query = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryInput() {
+    return this._query;
+  }
+}
+
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQuerySearchFiltersAudienceFiltersAccountList extends cdktn.ComplexList {
+  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQuerySearchFiltersAudienceFiltersAccount[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQuerySearchFiltersAudienceFiltersAccountOutputReference {
+    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQuerySearchFiltersAudienceFiltersAccountOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQuerySearchFiltersAudienceFiltersSegment {
+  /**
+  * The name of the segment subquery.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+  */
+  readonly name?: string;
+  /**
+  * The unique identifier of the segment.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/powerpack_v2#segment_id PowerpackV2#segment_id}
+  */
+  readonly segmentId?: string;
+}
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQuerySearchFiltersAudienceFiltersSegmentToTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQuerySearchFiltersAudienceFiltersSegment | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    name: cdktn.stringToTerraform(struct!.name),
+    segment_id: cdktn.stringToTerraform(struct!.segmentId),
+  }
+}
+
+
+export function powerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQuerySearchFiltersAudienceFiltersSegmentToHclTerraform(struct?: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQuerySearchFiltersAudienceFiltersSegment | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    segment_id: {
+      value: cdktn.stringToHclTerraform(struct!.segmentId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQuerySearchFiltersAudienceFiltersSegmentOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQuerySearchFiltersAudienceFiltersSegment | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._segmentId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.segmentId = this._segmentId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQuerySearchFiltersAudienceFiltersSegment | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._segmentId = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._segmentId = value.segmentId;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // segment_id - computed: false, optional: true, required: false
+  private _segmentId?: string; 
+  public get segmentId() {
+    return this.getStringAttribute('segment_id');
+  }
+  public set segmentId(value: string) {
+    this._segmentId = value;
+  }
+  public resetSegmentId() {
+    this._segmentId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get segmentIdInput() {
+    return this._segmentId;
+  }
+}
+
+export class PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQuerySearchFiltersAudienceFiltersSegmentList extends cdktn.ComplexList {
+  public internalValue? : PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQuerySearchFiltersAudienceFiltersSegment[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQuerySearchFiltersAudienceFiltersSegmentOutputReference {
+    return new PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestChildEnrichmentQueryUserJourneyQuerySearchFiltersAudienceFiltersSegmentOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }

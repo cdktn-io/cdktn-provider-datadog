@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_mute_rule
+// https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/security_findings_mute_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface SecurityFindingsMuteRuleConfig extends cdktn.TerraformMetaArgum
   /**
   * The action to take when the mute rule matches a finding.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_mute_rule#action SecurityFindingsMuteRule#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/security_findings_mute_rule#action SecurityFindingsMuteRule#action}
   */
   readonly action: SecurityFindingsMuteRuleAction;
   /**
   * Whether the mute rule is enabled. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_mute_rule#enabled SecurityFindingsMuteRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/security_findings_mute_rule#enabled SecurityFindingsMuteRule#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The name of the mute rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_mute_rule#name SecurityFindingsMuteRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/security_findings_mute_rule#name SecurityFindingsMuteRule#name}
   */
   readonly name: string;
   /**
   * Defines the scope of findings to which the automation rule applies.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_mute_rule#rule SecurityFindingsMuteRule#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/security_findings_mute_rule#rule SecurityFindingsMuteRule#rule}
   */
   readonly rule: SecurityFindingsMuteRuleRule;
 }
@@ -41,19 +41,19 @@ export interface SecurityFindingsMuteRuleAction {
   /**
   * The Unix timestamp in milliseconds at which the mute expires. If omitted, the mute does not expire.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_mute_rule#expire_at SecurityFindingsMuteRule#expire_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/security_findings_mute_rule#expire_at SecurityFindingsMuteRule#expire_at}
   */
   readonly expireAt?: number;
   /**
   * The reason for muting a security finding. Valid values are `duplicate`, `false_positive`, `no_fix`, `other`, `pending_fix`, `risk_accepted`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_mute_rule#reason SecurityFindingsMuteRule#reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/security_findings_mute_rule#reason SecurityFindingsMuteRule#reason}
   */
   readonly reason: string;
   /**
   * An optional description providing more context for the mute reason.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_mute_rule#reason_description SecurityFindingsMuteRule#reason_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/security_findings_mute_rule#reason_description SecurityFindingsMuteRule#reason_description}
   */
   readonly reasonDescription?: string;
 }
@@ -204,13 +204,13 @@ export interface SecurityFindingsMuteRuleRule {
   /**
   * The list of security finding types that the automation rule applies to. Valid values are `api_security`, `attack_path`, `host_and_container_vulnerability`, `iac_misconfiguration`, `identity_risk`, `library_vulnerability`, `misconfiguration`, `runtime_code_vulnerability`, `secret`, `static_code_vulnerability`, `workload_activity`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_mute_rule#finding_types SecurityFindingsMuteRule#finding_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/security_findings_mute_rule#finding_types SecurityFindingsMuteRule#finding_types}
   */
   readonly findingTypes: string[];
   /**
   * A search query to further filter the findings matched by this rule. The `@workflow.*` namespace and `@status` fields are not permitted. For a reference of available fields, see the [Security Findings schema documentation](https://docs.datadoghq.com/security/guide/findings-schema/).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_mute_rule#query SecurityFindingsMuteRule#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/security_findings_mute_rule#query SecurityFindingsMuteRule#query}
   */
   readonly query?: string;
 }
@@ -330,7 +330,7 @@ export class SecurityFindingsMuteRuleRuleOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_mute_rule datadog_security_findings_mute_rule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/security_findings_mute_rule datadog_security_findings_mute_rule}
 */
 export class SecurityFindingsMuteRule extends cdktn.TerraformResource {
 
@@ -346,7 +346,7 @@ export class SecurityFindingsMuteRule extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SecurityFindingsMuteRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecurityFindingsMuteRule to import
-  * @param importFromId The id of the existing SecurityFindingsMuteRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_mute_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecurityFindingsMuteRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/security_findings_mute_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecurityFindingsMuteRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -358,7 +358,7 @@ export class SecurityFindingsMuteRule extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_mute_rule datadog_security_findings_mute_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/security_findings_mute_rule datadog_security_findings_mute_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -369,7 +369,7 @@ export class SecurityFindingsMuteRule extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_security_findings_mute_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.19.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
