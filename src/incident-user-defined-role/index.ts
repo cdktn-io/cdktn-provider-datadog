@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_user_defined_role
+// https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/incident_user_defined_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface IncidentUserDefinedRoleConfig extends cdktn.TerraformMetaArgume
   /**
   * A description of the user-defined role. At most 1024 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_user_defined_role#description IncidentUserDefinedRole#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/incident_user_defined_role#description IncidentUserDefinedRole#description}
   */
   readonly description?: string;
   /**
   * The ID of the incident type this user-defined role is associated with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_user_defined_role#incident_type IncidentUserDefinedRole#incident_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/incident_user_defined_role#incident_type IncidentUserDefinedRole#incident_type}
   */
   readonly incidentType: string;
   /**
   * The name of the user-defined role. Cannot be a reserved name ("Incident Commander" or "Responder") and must be at most 255 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_user_defined_role#name IncidentUserDefinedRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/incident_user_defined_role#name IncidentUserDefinedRole#name}
   */
   readonly name: string;
   /**
   * Policy configuration for the user-defined role. Defaults to a multi-assignee policy when omitted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_user_defined_role#policy IncidentUserDefinedRole#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/incident_user_defined_role#policy IncidentUserDefinedRole#policy}
   */
   readonly policy?: IncidentUserDefinedRolePolicy;
 }
@@ -41,7 +41,7 @@ export interface IncidentUserDefinedRolePolicy {
   /**
   * Whether this role can only be assigned to one responder at a time. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_user_defined_role#is_single IncidentUserDefinedRole#is_single}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/incident_user_defined_role#is_single IncidentUserDefinedRole#is_single}
   */
   readonly isSingle?: boolean | cdktn.IResolvable;
 }
@@ -135,7 +135,7 @@ export class IncidentUserDefinedRolePolicyOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_user_defined_role datadog_incident_user_defined_role}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/incident_user_defined_role datadog_incident_user_defined_role}
 */
 export class IncidentUserDefinedRole extends cdktn.TerraformResource {
 
@@ -151,7 +151,7 @@ export class IncidentUserDefinedRole extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a IncidentUserDefinedRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IncidentUserDefinedRole to import
-  * @param importFromId The id of the existing IncidentUserDefinedRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_user_defined_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IncidentUserDefinedRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/incident_user_defined_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IncidentUserDefinedRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -163,7 +163,7 @@ export class IncidentUserDefinedRole extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_user_defined_role datadog_incident_user_defined_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/incident_user_defined_role datadog_incident_user_defined_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -174,7 +174,7 @@ export class IncidentUserDefinedRole extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_incident_user_defined_role',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.19.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
