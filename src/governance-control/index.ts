@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control
+// https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface GovernanceControlConfig extends cdktn.TerraformMetaArguments {
   /**
   * Detection parameters for the control, as a JSON-encoded map of parameter names to their configured values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#detection_parameters GovernanceControl#detection_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#detection_parameters GovernanceControl#detection_parameters}
   */
   readonly detectionParameters?: string;
   /**
   * The detection type that uniquely identifies the control, for example `unused_api_keys`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#detection_type GovernanceControl#detection_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#detection_type GovernanceControl#detection_type}
   */
   readonly detectionType: string;
   /**
   * Mitigation parameters for the control, as a JSON-encoded map of parameter names to their configured values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#mitigation_parameters GovernanceControl#mitigation_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#mitigation_parameters GovernanceControl#mitigation_parameters}
   */
   readonly mitigationParameters?: string;
   /**
   * The mitigation type configured for the control. Empty when not configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#mitigation_type GovernanceControl#mitigation_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#mitigation_type GovernanceControl#mitigation_type}
   */
   readonly mitigationType?: string;
   /**
   * The notification settings for the control, one entry per event type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#notification_settings GovernanceControl#notification_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#notification_settings GovernanceControl#notification_settings}
   */
   readonly notificationSettings?: GovernanceControlNotificationSettings[] | cdktn.IResolvable;
 }
@@ -47,13 +47,13 @@ export interface GovernanceControlNotificationSettingsTargets {
   /**
   * The handle of the notification target.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#handle GovernanceControl#handle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#handle GovernanceControl#handle}
   */
   readonly handle: string;
   /**
   * The type of notification target: `email`, `slack`, `at_mention`, or `case`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#type GovernanceControl#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#type GovernanceControl#type}
   */
   readonly type: string;
 }
@@ -184,19 +184,19 @@ export interface GovernanceControlNotificationSettings {
   /**
   * Whether notifications are enabled for this event type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#enabled GovernanceControl#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#enabled GovernanceControl#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The event type the notification settings apply to, such as `new_detection`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#event_type GovernanceControl#event_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#event_type GovernanceControl#event_type}
   */
   readonly eventType: string;
   /**
   * The destinations that receive notifications for this event type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#targets GovernanceControl#targets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#targets GovernanceControl#targets}
   */
   readonly targets: GovernanceControlNotificationSettingsTargets[] | cdktn.IResolvable;
 }
@@ -361,7 +361,7 @@ export class GovernanceControlNotificationSettingsList extends cdktn.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control datadog_governance_control}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control datadog_governance_control}
 */
 export class GovernanceControl extends cdktn.TerraformResource {
 
@@ -377,7 +377,7 @@ export class GovernanceControl extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a GovernanceControl resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GovernanceControl to import
-  * @param importFromId The id of the existing GovernanceControl that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GovernanceControl that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GovernanceControl to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -389,7 +389,7 @@ export class GovernanceControl extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control datadog_governance_control} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control datadog_governance_control} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -400,7 +400,7 @@ export class GovernanceControl extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_governance_control',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.19.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -37,3 +37,5 @@ export * from './structs12000';
 export * from './structs12400';
 export * from './structs12800';
 export * from './structs13200';
+export * from './structs13600';
+export * from './structs14000';

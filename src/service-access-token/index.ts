@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/service_access_token
+// https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/service_access_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface ServiceAccessTokenConfig extends cdktn.TerraformMetaArguments {
   /**
   * Expiration date of the service access token, in RFC3339 format. Omit for a non-expiring token. The Datadog API caps expirations to within 365 days from creation. This attribute is immutable: it cannot be added, changed, or removed after creation. To rotate the expiration, destroy and re-create the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/service_access_token#expires_at ServiceAccessToken#expires_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/service_access_token#expires_at ServiceAccessToken#expires_at}
   */
   readonly expiresAt?: string;
   /**
   * Name of the service access token. Must be non-empty. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/service_access_token#name ServiceAccessToken#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/service_access_token#name ServiceAccessToken#name}
   */
   readonly name: string;
   /**
   * Authorization scopes granted to the service access token. At least one scope is required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/service_access_token#scopes ServiceAccessToken#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/service_access_token#scopes ServiceAccessToken#scopes}
   */
   readonly scopes: string[];
   /**
   * ID of the service account that owns this access token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/service_access_token#service_account_id ServiceAccessToken#service_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/service_access_token#service_account_id ServiceAccessToken#service_account_id}
   */
   readonly serviceAccountId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/service_access_token datadog_service_access_token}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/service_access_token datadog_service_access_token}
 */
 export class ServiceAccessToken extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class ServiceAccessToken extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ServiceAccessToken resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServiceAccessToken to import
-  * @param importFromId The id of the existing ServiceAccessToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/service_access_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServiceAccessToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/service_access_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServiceAccessToken to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class ServiceAccessToken extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/service_access_token datadog_service_access_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/service_access_token datadog_service_access_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class ServiceAccessToken extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_service_access_token',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.19.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

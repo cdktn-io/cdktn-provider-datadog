@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/cost_custom_forecast
+// https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/data-sources/cost_custom_forecast
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataDatadogCostCustomForecastConfig extends cdktn.TerraformMeta
   /**
   * The UUID of the budget that this custom forecast belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/cost_custom_forecast#budget_uid DataDatadogCostCustomForecast#budget_uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/data-sources/cost_custom_forecast#budget_uid DataDatadogCostCustomForecast#budget_uid}
   */
   readonly budgetUid: string;
   /**
   * entries block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/cost_custom_forecast#entries DataDatadogCostCustomForecast#entries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/data-sources/cost_custom_forecast#entries DataDatadogCostCustomForecast#entries}
   */
   readonly entries?: DataDatadogCostCustomForecastEntries[] | cdktn.IResolvable;
 }
@@ -120,7 +120,7 @@ export interface DataDatadogCostCustomForecastEntries {
   /**
   * tag_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/cost_custom_forecast#tag_filters DataDatadogCostCustomForecast#tag_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/data-sources/cost_custom_forecast#tag_filters DataDatadogCostCustomForecast#tag_filters}
   */
   readonly tagFilters?: DataDatadogCostCustomForecastEntriesTagFilters[] | cdktn.IResolvable;
 }
@@ -246,7 +246,7 @@ export class DataDatadogCostCustomForecastEntriesList extends cdktn.ComplexList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/cost_custom_forecast datadog_cost_custom_forecast}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/data-sources/cost_custom_forecast datadog_cost_custom_forecast}
 */
 export class DataDatadogCostCustomForecast extends cdktn.TerraformDataSource {
 
@@ -262,7 +262,7 @@ export class DataDatadogCostCustomForecast extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatadogCostCustomForecast resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogCostCustomForecast to import
-  * @param importFromId The id of the existing DataDatadogCostCustomForecast that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/cost_custom_forecast#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogCostCustomForecast that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/data-sources/cost_custom_forecast#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogCostCustomForecast to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -274,7 +274,7 @@ export class DataDatadogCostCustomForecast extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/cost_custom_forecast datadog_cost_custom_forecast} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/data-sources/cost_custom_forecast datadog_cost_custom_forecast} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -285,7 +285,7 @@ export class DataDatadogCostCustomForecast extends cdktn.TerraformDataSource {
       terraformResourceType: 'datadog_cost_custom_forecast',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.19.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
