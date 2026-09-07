@@ -4,7 +4,7 @@
 
 ### GovernanceControl <a name="GovernanceControl" id="@cdktn/provider-datadog.governanceControl.GovernanceControl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control datadog_governance_control}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control datadog_governance_control}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.governanceControl.GovernanceControl.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The detection type that uniquely identifies the control, for example `unused_api_keys`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#detection_type GovernanceControl#detection_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#detection_type GovernanceControl#detection_type}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Detection parameters for the control, as a JSON-encoded map of parameter names to their configured values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#detection_parameters GovernanceControl#detection_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#detection_parameters GovernanceControl#detection_parameters}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Mitigation parameters for the control, as a JSON-encoded map of parameter names to their configured values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#mitigation_parameters GovernanceControl#mitigation_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#mitigation_parameters GovernanceControl#mitigation_parameters}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The mitigation type configured for the control. Empty when not configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#mitigation_type GovernanceControl#mitigation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#mitigation_type GovernanceControl#mitigation_type}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The notification settings for the control, one entry per event type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#notification_settings GovernanceControl#notification_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#notification_settings GovernanceControl#notification_settings}
 
 ---
 
@@ -642,7 +642,7 @@ The construct id used in the generated config for the GovernanceControl to impor
 
 The id of the existing GovernanceControl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1091,7 +1091,7 @@ public java.lang.String getDetectionType();
 
 The detection type that uniquely identifies the control, for example `unused_api_keys`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#detection_type GovernanceControl#detection_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#detection_type GovernanceControl#detection_type}
 
 ---
 
@@ -1105,7 +1105,7 @@ public java.lang.String getDetectionParameters();
 
 Detection parameters for the control, as a JSON-encoded map of parameter names to their configured values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#detection_parameters GovernanceControl#detection_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#detection_parameters GovernanceControl#detection_parameters}
 
 ---
 
@@ -1119,7 +1119,7 @@ public java.lang.String getMitigationParameters();
 
 Mitigation parameters for the control, as a JSON-encoded map of parameter names to their configured values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#mitigation_parameters GovernanceControl#mitigation_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#mitigation_parameters GovernanceControl#mitigation_parameters}
 
 ---
 
@@ -1133,7 +1133,7 @@ public java.lang.String getMitigationType();
 
 The mitigation type configured for the control. Empty when not configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#mitigation_type GovernanceControl#mitigation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#mitigation_type GovernanceControl#mitigation_type}
 
 ---
 
@@ -1147,7 +1147,7 @@ public IResolvable|java.util.List<GovernanceControlNotificationSettings> getNoti
 
 The notification settings for the control, one entry per event type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#notification_settings GovernanceControl#notification_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#notification_settings GovernanceControl#notification_settings}
 
 ---
 
@@ -1185,7 +1185,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether notifications are enabled for this event type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#enabled GovernanceControl#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#enabled GovernanceControl#enabled}
 
 ---
 
@@ -1199,7 +1199,7 @@ public java.lang.String getEventType();
 
 The event type the notification settings apply to, such as `new_detection`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#event_type GovernanceControl#event_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#event_type GovernanceControl#event_type}
 
 ---
 
@@ -1213,7 +1213,7 @@ public IResolvable|java.util.List<GovernanceControlNotificationSettingsTargets> 
 
 The destinations that receive notifications for this event type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#targets GovernanceControl#targets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#targets GovernanceControl#targets}
 
 ---
 
@@ -1249,7 +1249,7 @@ public java.lang.String getHandle();
 
 The handle of the notification target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#handle GovernanceControl#handle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#handle GovernanceControl#handle}
 
 ---
 
@@ -1263,7 +1263,7 @@ public java.lang.String getType();
 
 The type of notification target: `email`, `slack`, `at_mention`, or `case`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/governance_control#type GovernanceControl#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/resources/governance_control#type GovernanceControl#type}
 
 ---
 

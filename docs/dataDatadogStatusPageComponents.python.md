@@ -1,0 +1,1462 @@
+# `dataDatadogStatusPageComponents` Submodule <a name="`dataDatadogStatusPageComponents` Submodule" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents"></a>
+
+## Constructs <a name="Constructs" id="Constructs"></a>
+
+### DataDatadogStatusPageComponents <a name="DataDatadogStatusPageComponents" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents"></a>
+
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/data-sources/status_page_components datadog_status_page_components}.
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import data_datadog_status_page_components
+
+dataDatadogStatusPageComponents.DataDatadogStatusPageComponents(
+  scope: Construct,
+  id: str,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
+  depends_on: typing.List[ITerraformDependable] = None,
+  for_each: ITerraformIterator = None,
+  lifecycle: TerraformResourceLifecycle = None,
+  provider: TerraformProvider = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  page_id: str,
+  name: str = None,
+  type: str = None
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer.parameter.pageId">page_id</a></code> | <code>str</code> | The ID of the status page whose components to list. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer.parameter.name">name</a></code> | <code>str</code> | Filter the results to components with this exact name. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer.parameter.type">type</a></code> | <code>str</code> | Filter the results by type (`component` or `group`). |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer.parameter.id"></a>
+
+- *Type:* str
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer.parameter.connection"></a>
+
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer.parameter.count"></a>
+
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
+
+---
+
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer.parameter.dependsOn"></a>
+
+- *Type:* typing.List[cdktn.ITerraformDependable]
+
+---
+
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer.parameter.forEach"></a>
+
+- *Type:* cdktn.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer.parameter.lifecycle"></a>
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer.parameter.provisioners"></a>
+
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `page_id`<sup>Required</sup> <a name="page_id" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer.parameter.pageId"></a>
+
+- *Type:* str
+
+The ID of the status page whose components to list.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/data-sources/status_page_components#page_id DataDatadogStatusPageComponents#page_id}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer.parameter.name"></a>
+
+- *Type:* str
+
+Filter the results to components with this exact name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/data-sources/status_page_components#name DataDatadogStatusPageComponents#name}
+
+---
+
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer.parameter.type"></a>
+
+- *Type:* str
+
+Filter the results by type (`component` or `group`).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/data-sources/status_page_components#type DataDatadogStatusPageComponents#type}
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.with">with</a></code> | Applies one or more mixins to this construct. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.toHclTerraform">to_hcl_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.resetName">reset_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.resetType">reset_type</a></code> | *No description.* |
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Returns a string representation of this construct.
+
+##### `with` <a name="with" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.with"></a>
+
+```python
+def with(
+  mixins: *IMixin
+) -> IConstruct
+```
+
+Applies one or more mixins to this construct.
+
+Mixins are applied in order. The list of constructs is captured at the
+start of the call, so constructs added by a mixin will not be visited.
+Use multiple `with()` calls if subsequent mixins should apply to added
+constructs.
+
+###### `mixins`<sup>Required</sup> <a name="mixins" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.with.parameter.mixins"></a>
+
+- *Type:* *constructs.IMixin
+
+The mixins to apply.
+
+---
+
+##### `add_override` <a name="add_override" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.addOverride"></a>
+
+```python
+def add_override(
+  path: str,
+  value: typing.Any
+) -> None
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.addOverride.parameter.path"></a>
+
+- *Type:* str
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.addOverride.parameter.value"></a>
+
+- *Type:* typing.Any
+
+---
+
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.overrideLogicalId"></a>
+
+```python
+def override_logical_id(
+  new_logical_id: str
+) -> None
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* str
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.resetOverrideLogicalId"></a>
+
+```python
+def reset_override_logical_id() -> None
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.toHclTerraform"></a>
+
+```python
+def to_hcl_terraform() -> typing.Any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.toMetadata"></a>
+
+```python
+def to_metadata() -> typing.Any
+```
+
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.toTerraform"></a>
+
+```python
+def to_terraform() -> typing.Any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `reset_name` <a name="reset_name" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.resetName"></a>
+
+```python
+def reset_name() -> None
+```
+
+##### `reset_type` <a name="reset_type" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.resetType"></a>
+
+```python
+def reset_type() -> None
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.isTerraformDataSource">is_terraform_data_source</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a DataDatadogStatusPageComponents resource upon running "cdktn plan <stack-name>". |
+
+---
+
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.isConstruct"></a>
+
+```python
+from cdktn_provider_datadog import data_datadog_status_page_components
+
+dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.is_construct(
+  x: typing.Any
+)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.isConstruct.parameter.x"></a>
+
+- *Type:* typing.Any
+
+Any object.
+
+---
+
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.isTerraformElement"></a>
+
+```python
+from cdktn_provider_datadog import data_datadog_status_page_components
+
+dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.is_terraform_element(
+  x: typing.Any
+)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.isTerraformElement.parameter.x"></a>
+
+- *Type:* typing.Any
+
+---
+
+##### `is_terraform_data_source` <a name="is_terraform_data_source" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.isTerraformDataSource"></a>
+
+```python
+from cdktn_provider_datadog import data_datadog_status_page_components
+
+dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.is_terraform_data_source(
+  x: typing.Any
+)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* typing.Any
+
+---
+
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.generateConfigForImport"></a>
+
+```python
+from cdktn_provider_datadog import data_datadog_status_page_components
+
+dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.generate_config_for_import(
+  scope: Construct,
+  import_to_id: str,
+  import_from_id: str,
+  provider: TerraformProvider = None
+)
+```
+
+Generates CDKTN code for importing a DataDatadogStatusPageComponents resource upon running "cdktn plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* str
+
+The construct id used in the generated config for the DataDatadogStatusPageComponents to import.
+
+---
+
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* str
+
+The id of the existing DataDatadogStatusPageComponents that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/data-sources/status_page_components#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+? Optional instance of the provider where the DataDatadogStatusPageComponents to import is found.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.components">components</a></code> | <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList">DataDatadogStatusPageComponentsComponentsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.pageIdInput">page_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.pageId">page_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.type">type</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.node"></a>
+
+```python
+node: Node
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.cdktfStack"></a>
+
+```python
+cdktf_stack: TerraformStack
+```
+
+- *Type:* cdktn.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.friendlyUniqueId"></a>
+
+```python
+friendly_unique_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.terraformMetaArguments"></a>
+
+```python
+terraform_meta_arguments: typing.Mapping[typing.Any]
+```
+
+- *Type:* typing.Mapping[typing.Any]
+
+---
+
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.terraformResourceType"></a>
+
+```python
+terraform_resource_type: str
+```
+
+- *Type:* str
+
+---
+
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.terraformGeneratorMetadata"></a>
+
+```python
+terraform_generator_metadata: TerraformProviderGeneratorMetadata
+```
+
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.count"></a>
+
+```python
+count: typing.Union[int, float] | TerraformCount
+```
+
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
+
+---
+
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.dependsOn"></a>
+
+```python
+depends_on: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.forEach"></a>
+
+```python
+for_each: ITerraformIterator
+```
+
+- *Type:* cdktn.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.lifecycle"></a>
+
+```python
+lifecycle: TerraformResourceLifecycle
+```
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.provider"></a>
+
+```python
+provider: TerraformProvider
+```
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `components`<sup>Required</sup> <a name="components" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.components"></a>
+
+```python
+components: DataDatadogStatusPageComponentsComponentsList
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList">DataDatadogStatusPageComponentsComponentsList</a>
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `page_id_input`<sup>Optional</sup> <a name="page_id_input" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.pageIdInput"></a>
+
+```python
+page_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.typeInput"></a>
+
+```python
+type_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `page_id`<sup>Required</sup> <a name="page_id" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.pageId"></a>
+
+```python
+page_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.type"></a>
+
+```python
+type: str
+```
+
+- *Type:* str
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.property.tfResourceType"></a>
+
+```python
+tfResourceType: str
+```
+
+- *Type:* str
+
+---
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### DataDatadogStatusPageComponentsComponents <a name="DataDatadogStatusPageComponentsComponents" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponents"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponents.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import data_datadog_status_page_components
+
+dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponents()
+```
+
+
+### DataDatadogStatusPageComponentsConfig <a name="DataDatadogStatusPageComponentsConfig" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsConfig.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import data_datadog_status_page_components
+
+dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsConfig(
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
+  depends_on: typing.List[ITerraformDependable] = None,
+  for_each: ITerraformIterator = None,
+  lifecycle: TerraformResourceLifecycle = None,
+  provider: TerraformProvider = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  page_id: str,
+  name: str = None,
+  type: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsConfig.property.pageId">page_id</a></code> | <code>str</code> | The ID of the status page whose components to list. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsConfig.property.name">name</a></code> | <code>str</code> | Filter the results to components with this exact name. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsConfig.property.type">type</a></code> | <code>str</code> | Filter the results by type (`component` or `group`). |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsConfig.property.connection"></a>
+
+```python
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
+```
+
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsConfig.property.count"></a>
+
+```python
+count: typing.Union[int, float] | TerraformCount
+```
+
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
+
+---
+
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsConfig.property.dependsOn"></a>
+
+```python
+depends_on: typing.List[ITerraformDependable]
+```
+
+- *Type:* typing.List[cdktn.ITerraformDependable]
+
+---
+
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsConfig.property.forEach"></a>
+
+```python
+for_each: ITerraformIterator
+```
+
+- *Type:* cdktn.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsConfig.property.lifecycle"></a>
+
+```python
+lifecycle: TerraformResourceLifecycle
+```
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsConfig.property.provider"></a>
+
+```python
+provider: TerraformProvider
+```
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsConfig.property.provisioners"></a>
+
+```python
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
+```
+
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `page_id`<sup>Required</sup> <a name="page_id" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsConfig.property.pageId"></a>
+
+```python
+page_id: str
+```
+
+- *Type:* str
+
+The ID of the status page whose components to list.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/data-sources/status_page_components#page_id DataDatadogStatusPageComponents#page_id}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsConfig.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+Filter the results to components with this exact name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/data-sources/status_page_components#name DataDatadogStatusPageComponents#name}
+
+---
+
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsConfig.property.type"></a>
+
+```python
+type: str
+```
+
+- *Type:* str
+
+Filter the results by type (`component` or `group`).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.20.0/docs/data-sources/status_page_components#type DataDatadogStatusPageComponents#type}
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### DataDatadogStatusPageComponentsComponentsList <a name="DataDatadogStatusPageComponentsComponentsList" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import data_datadog_status_page_components
+
+dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> DataDatadogStatusPageComponentsComponentsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### DataDatadogStatusPageComponentsComponentsOutputReference <a name="DataDatadogStatusPageComponentsComponentsOutputReference" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import data_datadog_status_page_components
+
+dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.property.groupId">group_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.property.position">position</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponents">DataDatadogStatusPageComponentsComponents</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `group_id`<sup>Required</sup> <a name="group_id" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.property.groupId"></a>
+
+```python
+group_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `position`<sup>Required</sup> <a name="position" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.property.position"></a>
+
+```python
+position: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.property.type"></a>
+
+```python
+type: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: DataDatadogStatusPageComponentsComponents
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponents">DataDatadogStatusPageComponentsComponents</a>
+
+---
+
+
+
