@@ -46,3 +46,5 @@ export * from './structs15600';
 export * from './structs16000';
 export * from './structs16400';
 export * from './structs16800';
+export * from './structs17200';
+export * from './structs17600';
