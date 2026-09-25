@@ -4,10 +4,18 @@
  */
 
 import * as cdktn from 'cdktn';
-import { ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsField,
-observabilityPipelineConfigProcessorGroupProcessorRenameFieldsFieldToTerraform,
-observabilityPipelineConfigProcessorGroupProcessorRenameFieldsFieldToHclTerraform,
-ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsFieldList,
+import { ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleMatchRule,
+observabilityPipelineConfigProcessorGroupProcessorParseGrokRuleMatchRuleToTerraform,
+observabilityPipelineConfigProcessorGroupProcessorParseGrokRuleMatchRuleToHclTerraform,
+ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleMatchRuleList,
+ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleSupportRule,
+observabilityPipelineConfigProcessorGroupProcessorParseGrokRuleSupportRuleToTerraform,
+observabilityPipelineConfigProcessorGroupProcessorParseGrokRuleSupportRuleToHclTerraform,
+ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleSupportRuleList,
+ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRule,
+observabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleToTerraform,
+observabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleToHclTerraform,
+ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleList,
 ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVars,
 observabilityPipelineConfigProcessorGroupProcessorAddEnvVarsToTerraform,
 observabilityPipelineConfigProcessorGroupProcessorAddEnvVarsToHclTerraform,
@@ -64,39 +72,2443 @@ ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapper,
 observabilityPipelineConfigProcessorGroupProcessorOcsfMapperToTerraform,
 observabilityPipelineConfigProcessorGroupProcessorOcsfMapperToHclTerraform,
 ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperList,
-ObservabilityPipelineConfigProcessorGroupProcessorParseGrok,
-observabilityPipelineConfigProcessorGroupProcessorParseGrokToTerraform,
-observabilityPipelineConfigProcessorGroupProcessorParseGrokToHclTerraform,
-ObservabilityPipelineConfigProcessorGroupProcessorParseGrokList,
-ObservabilityPipelineConfigProcessorGroupProcessorParseJson,
-observabilityPipelineConfigProcessorGroupProcessorParseJsonToTerraform,
-observabilityPipelineConfigProcessorGroupProcessorParseJsonToHclTerraform,
-ObservabilityPipelineConfigProcessorGroupProcessorParseJsonList,
-ObservabilityPipelineConfigProcessorGroupProcessorParseXml,
-observabilityPipelineConfigProcessorGroupProcessorParseXmlToTerraform,
-observabilityPipelineConfigProcessorGroupProcessorParseXmlToHclTerraform,
-ObservabilityPipelineConfigProcessorGroupProcessorParseXmlList,
-ObservabilityPipelineConfigProcessorGroupProcessorQuota,
-observabilityPipelineConfigProcessorGroupProcessorQuotaToTerraform,
-observabilityPipelineConfigProcessorGroupProcessorQuotaToHclTerraform,
-ObservabilityPipelineConfigProcessorGroupProcessorQuotaList,
-ObservabilityPipelineConfigProcessorGroupProcessorReduce,
-observabilityPipelineConfigProcessorGroupProcessorReduceToTerraform,
-observabilityPipelineConfigProcessorGroupProcessorReduceToHclTerraform,
-ObservabilityPipelineConfigProcessorGroupProcessorReduceList,
-ObservabilityPipelineConfigProcessorGroupProcessorRemoveFields,
-observabilityPipelineConfigProcessorGroupProcessorRemoveFieldsToTerraform,
-observabilityPipelineConfigProcessorGroupProcessorRemoveFieldsToHclTerraform,
-ObservabilityPipelineConfigProcessorGroupProcessorRemoveFieldsList,
 ObservabilityPipelineConfigDestination,
 observabilityPipelineConfigDestinationToTerraform,
 observabilityPipelineConfigDestinationToHclTerraform,
 ObservabilityPipelineConfigDestinationList } from './structs400';
+export interface ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRule {
+  /**
+  * The value of the source field in log events which should be processed by the Grok rules.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+  */
+  readonly source: string;
+  /**
+  * match_rule block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#match_rule ObservabilityPipeline#match_rule}
+  */
+  readonly matchRule?: ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleMatchRule[] | cdktn.IResolvable;
+  /**
+  * support_rule block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#support_rule ObservabilityPipeline#support_rule}
+  */
+  readonly supportRule?: ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleSupportRule[] | cdktn.IResolvable;
+}
+
+export function observabilityPipelineConfigProcessorGroupProcessorParseGrokRuleToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    source: cdktn.stringToTerraform(struct!.source),
+    match_rule: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorParseGrokRuleMatchRuleToTerraform, true)(struct!.matchRule),
+    support_rule: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorParseGrokRuleSupportRuleToTerraform, true)(struct!.supportRule),
+  }
+}
+
+
+export function observabilityPipelineConfigProcessorGroupProcessorParseGrokRuleToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    source: {
+      value: cdktn.stringToHclTerraform(struct!.source),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_rule: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorParseGrokRuleMatchRuleToHclTerraform, true)(struct!.matchRule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleMatchRuleList",
+    },
+    support_rule: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorParseGrokRuleSupportRuleToHclTerraform, true)(struct!.supportRule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleSupportRuleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRule | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._source !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source;
+    }
+    if (this._matchRule?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchRule = this._matchRule?.internalValue;
+    }
+    if (this._supportRule?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.supportRule = this._supportRule?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRule | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._source = undefined;
+      this._matchRule.internalValue = undefined;
+      this._supportRule.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._source = value.source;
+      this._matchRule.internalValue = value.matchRule;
+      this._supportRule.internalValue = value.supportRule;
+    }
+  }
+
+  // source - computed: false, optional: false, required: true
+  private _source?: string; 
+  public get source() {
+    return this.getStringAttribute('source');
+  }
+  public set source(value: string) {
+    this._source = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source;
+  }
+
+  // match_rule - computed: false, optional: true, required: false
+  private _matchRule = new ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleMatchRuleList(this, "match_rule", false);
+  public get matchRule() {
+    return this._matchRule;
+  }
+  public putMatchRule(value: ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleMatchRule[] | cdktn.IResolvable) {
+    this._matchRule.internalValue = value;
+  }
+  public resetMatchRule() {
+    this._matchRule.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchRuleInput() {
+    return this._matchRule.internalValue;
+  }
+
+  // support_rule - computed: false, optional: true, required: false
+  private _supportRule = new ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleSupportRuleList(this, "support_rule", false);
+  public get supportRule() {
+    return this._supportRule;
+  }
+  public putSupportRule(value: ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleSupportRule[] | cdktn.IResolvable) {
+    this._supportRule.internalValue = value;
+  }
+  public resetSupportRule() {
+    this._supportRule.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get supportRuleInput() {
+    return this._supportRule.internalValue;
+  }
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRule[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleOutputReference {
+    return new ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigProcessorGroupProcessorParseGrok {
+  /**
+  * If set to `true`, disables the default Grok rules provided by Datadog. Defaults to `false`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#disable_library_rules ObservabilityPipeline#disable_library_rules}
+  */
+  readonly disableLibraryRules?: boolean | cdktn.IResolvable;
+  /**
+  * The log field to parse with the Grok rules. Defaults to `"message"`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+  */
+  readonly field?: string;
+  /**
+  * include_rule block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#include_rule ObservabilityPipeline#include_rule}
+  */
+  readonly includeRule?: ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRule[] | cdktn.IResolvable;
+  /**
+  * rule block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+  */
+  readonly rule?: ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRule[] | cdktn.IResolvable;
+}
+
+export function observabilityPipelineConfigProcessorGroupProcessorParseGrokToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorParseGrok | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    disable_library_rules: cdktn.booleanToTerraform(struct!.disableLibraryRules),
+    field: cdktn.stringToTerraform(struct!.field),
+    include_rule: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleToTerraform, true)(struct!.includeRule),
+    rule: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorParseGrokRuleToTerraform, true)(struct!.rule),
+  }
+}
+
+
+export function observabilityPipelineConfigProcessorGroupProcessorParseGrokToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorParseGrok | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    disable_library_rules: {
+      value: cdktn.booleanToHclTerraform(struct!.disableLibraryRules),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    field: {
+      value: cdktn.stringToHclTerraform(struct!.field),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    include_rule: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleToHclTerraform, true)(struct!.includeRule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleList",
+    },
+    rule: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorParseGrokRuleToHclTerraform, true)(struct!.rule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigProcessorGroupProcessorParseGrok | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._disableLibraryRules !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.disableLibraryRules = this._disableLibraryRules;
+    }
+    if (this._field !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.field = this._field;
+    }
+    if (this._includeRule?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.includeRule = this._includeRule?.internalValue;
+    }
+    if (this._rule?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rule = this._rule?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigProcessorGroupProcessorParseGrok | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._disableLibraryRules = undefined;
+      this._field = undefined;
+      this._includeRule.internalValue = undefined;
+      this._rule.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._disableLibraryRules = value.disableLibraryRules;
+      this._field = value.field;
+      this._includeRule.internalValue = value.includeRule;
+      this._rule.internalValue = value.rule;
+    }
+  }
+
+  // disable_library_rules - computed: true, optional: true, required: false
+  private _disableLibraryRules?: boolean | cdktn.IResolvable; 
+  public get disableLibraryRules() {
+    return this.getBooleanAttribute('disable_library_rules');
+  }
+  public set disableLibraryRules(value: boolean | cdktn.IResolvable) {
+    this._disableLibraryRules = value;
+  }
+  public resetDisableLibraryRules() {
+    this._disableLibraryRules = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableLibraryRulesInput() {
+    return this._disableLibraryRules;
+  }
+
+  // field - computed: true, optional: true, required: false
+  private _field?: string; 
+  public get field() {
+    return this.getStringAttribute('field');
+  }
+  public set field(value: string) {
+    this._field = value;
+  }
+  public resetField() {
+    this._field = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fieldInput() {
+    return this._field;
+  }
+
+  // include_rule - computed: false, optional: true, required: false
+  private _includeRule = new ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleList(this, "include_rule", false);
+  public get includeRule() {
+    return this._includeRule;
+  }
+  public putIncludeRule(value: ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRule[] | cdktn.IResolvable) {
+    this._includeRule.internalValue = value;
+  }
+  public resetIncludeRule() {
+    this._includeRule.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includeRuleInput() {
+    return this._includeRule.internalValue;
+  }
+
+  // rule - computed: false, optional: true, required: false
+  private _rule = new ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleList(this, "rule", false);
+  public get rule() {
+    return this._rule;
+  }
+  public putRule(value: ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRule[] | cdktn.IResolvable) {
+    this._rule.internalValue = value;
+  }
+  public resetRule() {
+    this._rule.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleInput() {
+    return this._rule.internalValue;
+  }
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorParseGrokList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigProcessorGroupProcessorParseGrok[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOutputReference {
+    return new ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigProcessorGroupProcessorParseJson {
+  /**
+  * The field to parse.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+  */
+  readonly field: string;
+}
+
+export function observabilityPipelineConfigProcessorGroupProcessorParseJsonToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorParseJson | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    field: cdktn.stringToTerraform(struct!.field),
+  }
+}
+
+
+export function observabilityPipelineConfigProcessorGroupProcessorParseJsonToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorParseJson | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    field: {
+      value: cdktn.stringToHclTerraform(struct!.field),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorParseJsonOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigProcessorGroupProcessorParseJson | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._field !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.field = this._field;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigProcessorGroupProcessorParseJson | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._field = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._field = value.field;
+    }
+  }
+
+  // field - computed: false, optional: false, required: true
+  private _field?: string; 
+  public get field() {
+    return this.getStringAttribute('field');
+  }
+  public set field(value: string) {
+    this._field = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fieldInput() {
+    return this._field;
+  }
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorParseJsonList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigProcessorGroupProcessorParseJson[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigProcessorGroupProcessorParseJsonOutputReference {
+    return new ObservabilityPipelineConfigProcessorGroupProcessorParseJsonOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigProcessorGroupProcessorParseXml {
+  /**
+  * Whether to always store text inside an object using the text key even when no attributes exist.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#always_use_text_key ObservabilityPipeline#always_use_text_key}
+  */
+  readonly alwaysUseTextKey?: boolean | cdktn.IResolvable;
+  /**
+  * The prefix to use for XML attributes in the parsed output. If the field is left empty, the original attribute key is used.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#attr_prefix ObservabilityPipeline#attr_prefix}
+  */
+  readonly attrPrefix?: string;
+  /**
+  * The path to the log field on which you want to parse XML.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+  */
+  readonly field: string;
+  /**
+  * Whether to include XML attributes in the parsed output.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#include_attr ObservabilityPipeline#include_attr}
+  */
+  readonly includeAttr?: boolean | cdktn.IResolvable;
+  /**
+  * Whether to parse boolean values from strings.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#parse_bool ObservabilityPipeline#parse_bool}
+  */
+  readonly parseBool?: boolean | cdktn.IResolvable;
+  /**
+  * Whether to parse null values.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#parse_null ObservabilityPipeline#parse_null}
+  */
+  readonly parseNull?: boolean | cdktn.IResolvable;
+  /**
+  * Whether to parse numeric values from strings.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#parse_number ObservabilityPipeline#parse_number}
+  */
+  readonly parseNumber?: boolean | cdktn.IResolvable;
+  /**
+  * The key name to use for the text node when XML attributes are appended.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#text_key ObservabilityPipeline#text_key}
+  */
+  readonly textKey?: string;
+}
+
+export function observabilityPipelineConfigProcessorGroupProcessorParseXmlToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorParseXml | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    always_use_text_key: cdktn.booleanToTerraform(struct!.alwaysUseTextKey),
+    attr_prefix: cdktn.stringToTerraform(struct!.attrPrefix),
+    field: cdktn.stringToTerraform(struct!.field),
+    include_attr: cdktn.booleanToTerraform(struct!.includeAttr),
+    parse_bool: cdktn.booleanToTerraform(struct!.parseBool),
+    parse_null: cdktn.booleanToTerraform(struct!.parseNull),
+    parse_number: cdktn.booleanToTerraform(struct!.parseNumber),
+    text_key: cdktn.stringToTerraform(struct!.textKey),
+  }
+}
+
+
+export function observabilityPipelineConfigProcessorGroupProcessorParseXmlToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorParseXml | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    always_use_text_key: {
+      value: cdktn.booleanToHclTerraform(struct!.alwaysUseTextKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    attr_prefix: {
+      value: cdktn.stringToHclTerraform(struct!.attrPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    field: {
+      value: cdktn.stringToHclTerraform(struct!.field),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    include_attr: {
+      value: cdktn.booleanToHclTerraform(struct!.includeAttr),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    parse_bool: {
+      value: cdktn.booleanToHclTerraform(struct!.parseBool),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    parse_null: {
+      value: cdktn.booleanToHclTerraform(struct!.parseNull),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    parse_number: {
+      value: cdktn.booleanToHclTerraform(struct!.parseNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    text_key: {
+      value: cdktn.stringToHclTerraform(struct!.textKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorParseXmlOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigProcessorGroupProcessorParseXml | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._alwaysUseTextKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alwaysUseTextKey = this._alwaysUseTextKey;
+    }
+    if (this._attrPrefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.attrPrefix = this._attrPrefix;
+    }
+    if (this._field !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.field = this._field;
+    }
+    if (this._includeAttr !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.includeAttr = this._includeAttr;
+    }
+    if (this._parseBool !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parseBool = this._parseBool;
+    }
+    if (this._parseNull !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parseNull = this._parseNull;
+    }
+    if (this._parseNumber !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parseNumber = this._parseNumber;
+    }
+    if (this._textKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.textKey = this._textKey;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigProcessorGroupProcessorParseXml | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._alwaysUseTextKey = undefined;
+      this._attrPrefix = undefined;
+      this._field = undefined;
+      this._includeAttr = undefined;
+      this._parseBool = undefined;
+      this._parseNull = undefined;
+      this._parseNumber = undefined;
+      this._textKey = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._alwaysUseTextKey = value.alwaysUseTextKey;
+      this._attrPrefix = value.attrPrefix;
+      this._field = value.field;
+      this._includeAttr = value.includeAttr;
+      this._parseBool = value.parseBool;
+      this._parseNull = value.parseNull;
+      this._parseNumber = value.parseNumber;
+      this._textKey = value.textKey;
+    }
+  }
+
+  // always_use_text_key - computed: false, optional: true, required: false
+  private _alwaysUseTextKey?: boolean | cdktn.IResolvable; 
+  public get alwaysUseTextKey() {
+    return this.getBooleanAttribute('always_use_text_key');
+  }
+  public set alwaysUseTextKey(value: boolean | cdktn.IResolvable) {
+    this._alwaysUseTextKey = value;
+  }
+  public resetAlwaysUseTextKey() {
+    this._alwaysUseTextKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alwaysUseTextKeyInput() {
+    return this._alwaysUseTextKey;
+  }
+
+  // attr_prefix - computed: false, optional: true, required: false
+  private _attrPrefix?: string; 
+  public get attrPrefix() {
+    return this.getStringAttribute('attr_prefix');
+  }
+  public set attrPrefix(value: string) {
+    this._attrPrefix = value;
+  }
+  public resetAttrPrefix() {
+    this._attrPrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attrPrefixInput() {
+    return this._attrPrefix;
+  }
+
+  // field - computed: false, optional: false, required: true
+  private _field?: string; 
+  public get field() {
+    return this.getStringAttribute('field');
+  }
+  public set field(value: string) {
+    this._field = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fieldInput() {
+    return this._field;
+  }
+
+  // include_attr - computed: false, optional: true, required: false
+  private _includeAttr?: boolean | cdktn.IResolvable; 
+  public get includeAttr() {
+    return this.getBooleanAttribute('include_attr');
+  }
+  public set includeAttr(value: boolean | cdktn.IResolvable) {
+    this._includeAttr = value;
+  }
+  public resetIncludeAttr() {
+    this._includeAttr = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includeAttrInput() {
+    return this._includeAttr;
+  }
+
+  // parse_bool - computed: false, optional: true, required: false
+  private _parseBool?: boolean | cdktn.IResolvable; 
+  public get parseBool() {
+    return this.getBooleanAttribute('parse_bool');
+  }
+  public set parseBool(value: boolean | cdktn.IResolvable) {
+    this._parseBool = value;
+  }
+  public resetParseBool() {
+    this._parseBool = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parseBoolInput() {
+    return this._parseBool;
+  }
+
+  // parse_null - computed: false, optional: true, required: false
+  private _parseNull?: boolean | cdktn.IResolvable; 
+  public get parseNull() {
+    return this.getBooleanAttribute('parse_null');
+  }
+  public set parseNull(value: boolean | cdktn.IResolvable) {
+    this._parseNull = value;
+  }
+  public resetParseNull() {
+    this._parseNull = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parseNullInput() {
+    return this._parseNull;
+  }
+
+  // parse_number - computed: false, optional: true, required: false
+  private _parseNumber?: boolean | cdktn.IResolvable; 
+  public get parseNumber() {
+    return this.getBooleanAttribute('parse_number');
+  }
+  public set parseNumber(value: boolean | cdktn.IResolvable) {
+    this._parseNumber = value;
+  }
+  public resetParseNumber() {
+    this._parseNumber = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parseNumberInput() {
+    return this._parseNumber;
+  }
+
+  // text_key - computed: false, optional: true, required: false
+  private _textKey?: string; 
+  public get textKey() {
+    return this.getStringAttribute('text_key');
+  }
+  public set textKey(value: string) {
+    this._textKey = value;
+  }
+  public resetTextKey() {
+    this._textKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get textKeyInput() {
+    return this._textKey;
+  }
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorParseXmlList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigProcessorGroupProcessorParseXml[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigProcessorGroupProcessorParseXmlOutputReference {
+    return new ObservabilityPipelineConfigProcessorGroupProcessorParseXmlOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigProcessorGroupProcessorQuotaLimit {
+  /**
+  * Whether to enforce by 'bytes' or 'events'. Valid values are `bytes`, `events`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
+  */
+  readonly enforce: string;
+  /**
+  * The daily quota limit.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+  */
+  readonly limit: number;
+}
+
+export function observabilityPipelineConfigProcessorGroupProcessorQuotaLimitToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorQuotaLimit | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    enforce: cdktn.stringToTerraform(struct!.enforce),
+    limit: cdktn.numberToTerraform(struct!.limit),
+  }
+}
+
+
+export function observabilityPipelineConfigProcessorGroupProcessorQuotaLimitToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorQuotaLimit | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    enforce: {
+      value: cdktn.stringToHclTerraform(struct!.enforce),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktn.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorQuotaLimitOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigProcessorGroupProcessorQuotaLimit | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enforce !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enforce = this._enforce;
+    }
+    if (this._limit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.limit = this._limit;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigProcessorGroupProcessorQuotaLimit | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._enforce = undefined;
+      this._limit = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._enforce = value.enforce;
+      this._limit = value.limit;
+    }
+  }
+
+  // enforce - computed: false, optional: false, required: true
+  private _enforce?: string; 
+  public get enforce() {
+    return this.getStringAttribute('enforce');
+  }
+  public set enforce(value: string) {
+    this._enforce = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enforceInput() {
+    return this._enforce;
+  }
+
+  // limit - computed: false, optional: false, required: true
+  private _limit?: number; 
+  public get limit() {
+    return this.getNumberAttribute('limit');
+  }
+  public set limit(value: number) {
+    this._limit = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get limitInput() {
+    return this._limit;
+  }
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorQuotaLimitList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigProcessorGroupProcessorQuotaLimit[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigProcessorGroupProcessorQuotaLimitOutputReference {
+    return new ObservabilityPipelineConfigProcessorGroupProcessorQuotaLimitOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideField {
+  /**
+  * The field name.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+  */
+  readonly name: string;
+  /**
+  * The field value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+  */
+  readonly value: string;
+}
+
+export function observabilityPipelineConfigProcessorGroupProcessorQuotaOverrideFieldToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideField | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
+  }
+}
+
+
+export function observabilityPipelineConfigProcessorGroupProcessorQuotaOverrideFieldToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideField | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktn.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideFieldOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideField | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideField | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._value = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._value = value.value;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideFieldList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideField[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideFieldOutputReference {
+    return new ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideFieldOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimit {
+  /**
+  * Whether to enforce by 'bytes' or 'events'. Valid values are `bytes`, `events`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
+  */
+  readonly enforce: string;
+  /**
+  * The daily quota limit.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+  */
+  readonly limit: number;
+}
+
+export function observabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimitToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimit | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    enforce: cdktn.stringToTerraform(struct!.enforce),
+    limit: cdktn.numberToTerraform(struct!.limit),
+  }
+}
+
+
+export function observabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimitToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimit | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    enforce: {
+      value: cdktn.stringToHclTerraform(struct!.enforce),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktn.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimitOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimit | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enforce !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enforce = this._enforce;
+    }
+    if (this._limit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.limit = this._limit;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimit | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._enforce = undefined;
+      this._limit = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._enforce = value.enforce;
+      this._limit = value.limit;
+    }
+  }
+
+  // enforce - computed: false, optional: false, required: true
+  private _enforce?: string; 
+  public get enforce() {
+    return this.getStringAttribute('enforce');
+  }
+  public set enforce(value: string) {
+    this._enforce = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enforceInput() {
+    return this._enforce;
+  }
+
+  // limit - computed: false, optional: false, required: true
+  private _limit?: number; 
+  public get limit() {
+    return this.getNumberAttribute('limit');
+  }
+  public set limit(value: number) {
+    this._limit = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get limitInput() {
+    return this._limit;
+  }
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimitList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimit[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimitOutputReference {
+    return new ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimitOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverride {
+  /**
+  * field block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+  */
+  readonly field?: ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideField[] | cdktn.IResolvable;
+  /**
+  * limit block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+  */
+  readonly limit?: ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimit[] | cdktn.IResolvable;
+}
+
+export function observabilityPipelineConfigProcessorGroupProcessorQuotaOverrideToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverride | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    field: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorQuotaOverrideFieldToTerraform, true)(struct!.field),
+    limit: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimitToTerraform, true)(struct!.limit),
+  }
+}
+
+
+export function observabilityPipelineConfigProcessorGroupProcessorQuotaOverrideToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverride | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    field: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorQuotaOverrideFieldToHclTerraform, true)(struct!.field),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideFieldList",
+    },
+    limit: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimitToHclTerraform, true)(struct!.limit),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimitList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverride | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._field?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.field = this._field?.internalValue;
+    }
+    if (this._limit?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.limit = this._limit?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverride | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._field.internalValue = undefined;
+      this._limit.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._field.internalValue = value.field;
+      this._limit.internalValue = value.limit;
+    }
+  }
+
+  // field - computed: false, optional: true, required: false
+  private _field = new ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideFieldList(this, "field", false);
+  public get field() {
+    return this._field;
+  }
+  public putField(value: ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideField[] | cdktn.IResolvable) {
+    this._field.internalValue = value;
+  }
+  public resetField() {
+    this._field.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fieldInput() {
+    return this._field.internalValue;
+  }
+
+  // limit - computed: false, optional: true, required: false
+  private _limit = new ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimitList(this, "limit", false);
+  public get limit() {
+    return this._limit;
+  }
+  public putLimit(value: ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimit[] | cdktn.IResolvable) {
+    this._limit.internalValue = value;
+  }
+  public resetLimit() {
+    this._limit.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get limitInput() {
+    return this._limit.internalValue;
+  }
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverride[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideOutputReference {
+    return new ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigProcessorGroupProcessorQuota {
+  /**
+  * Whether to drop events exceeding the limit.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#drop_events ObservabilityPipeline#drop_events}
+  */
+  readonly dropEvents?: boolean | cdktn.IResolvable;
+  /**
+  * Whether to ignore when partition fields are missing.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#ignore_when_missing_partitions ObservabilityPipeline#ignore_when_missing_partitions}
+  */
+  readonly ignoreWhenMissingPartitions?: boolean | cdktn.IResolvable;
+  /**
+  * The name of the quota.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+  */
+  readonly name: string;
+  /**
+  * The action to take when the quota is exceeded: `drop`, `no_action`, or `overflow_routing`. When `overflow_routing` is used, there must be a destination whose `inputs` reference this processor with the `<processor-id>.overflow_events` suffix to route the overflowing events. Only the following destination types support overflow inputs: `amazon_s3_generic`, `amazon_s3`, `google_cloud_storage`, and `azure_storage`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#overflow_action ObservabilityPipeline#overflow_action}
+  */
+  readonly overflowAction?: string;
+  /**
+  * List of partition fields.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#partition_fields ObservabilityPipeline#partition_fields}
+  */
+  readonly partitionFields?: string[];
+  /**
+  * The action to take when the max number of buckets is exceeded: `drop`, `no_action`, or `overflow_routing`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#too_many_buckets_action ObservabilityPipeline#too_many_buckets_action}
+  */
+  readonly tooManyBucketsAction?: string;
+  /**
+  * limit block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+  */
+  readonly limit?: ObservabilityPipelineConfigProcessorGroupProcessorQuotaLimit[] | cdktn.IResolvable;
+  /**
+  * override block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#override ObservabilityPipeline#override}
+  */
+  readonly override?: ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverride[] | cdktn.IResolvable;
+}
+
+export function observabilityPipelineConfigProcessorGroupProcessorQuotaToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorQuota | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    drop_events: cdktn.booleanToTerraform(struct!.dropEvents),
+    ignore_when_missing_partitions: cdktn.booleanToTerraform(struct!.ignoreWhenMissingPartitions),
+    name: cdktn.stringToTerraform(struct!.name),
+    overflow_action: cdktn.stringToTerraform(struct!.overflowAction),
+    partition_fields: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.partitionFields),
+    too_many_buckets_action: cdktn.stringToTerraform(struct!.tooManyBucketsAction),
+    limit: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorQuotaLimitToTerraform, true)(struct!.limit),
+    override: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorQuotaOverrideToTerraform, true)(struct!.override),
+  }
+}
+
+
+export function observabilityPipelineConfigProcessorGroupProcessorQuotaToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorQuota | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    drop_events: {
+      value: cdktn.booleanToHclTerraform(struct!.dropEvents),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    ignore_when_missing_partitions: {
+      value: cdktn.booleanToHclTerraform(struct!.ignoreWhenMissingPartitions),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    overflow_action: {
+      value: cdktn.stringToHclTerraform(struct!.overflowAction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    partition_fields: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.partitionFields),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    too_many_buckets_action: {
+      value: cdktn.stringToHclTerraform(struct!.tooManyBucketsAction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    limit: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorQuotaLimitToHclTerraform, true)(struct!.limit),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorQuotaLimitList",
+    },
+    override: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorQuotaOverrideToHclTerraform, true)(struct!.override),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorQuotaOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigProcessorGroupProcessorQuota | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dropEvents !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dropEvents = this._dropEvents;
+    }
+    if (this._ignoreWhenMissingPartitions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreWhenMissingPartitions = this._ignoreWhenMissingPartitions;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._overflowAction !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.overflowAction = this._overflowAction;
+    }
+    if (this._partitionFields !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.partitionFields = this._partitionFields;
+    }
+    if (this._tooManyBucketsAction !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tooManyBucketsAction = this._tooManyBucketsAction;
+    }
+    if (this._limit?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.limit = this._limit?.internalValue;
+    }
+    if (this._override?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.override = this._override?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigProcessorGroupProcessorQuota | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._dropEvents = undefined;
+      this._ignoreWhenMissingPartitions = undefined;
+      this._name = undefined;
+      this._overflowAction = undefined;
+      this._partitionFields = undefined;
+      this._tooManyBucketsAction = undefined;
+      this._limit.internalValue = undefined;
+      this._override.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._dropEvents = value.dropEvents;
+      this._ignoreWhenMissingPartitions = value.ignoreWhenMissingPartitions;
+      this._name = value.name;
+      this._overflowAction = value.overflowAction;
+      this._partitionFields = value.partitionFields;
+      this._tooManyBucketsAction = value.tooManyBucketsAction;
+      this._limit.internalValue = value.limit;
+      this._override.internalValue = value.override;
+    }
+  }
+
+  // drop_events - computed: false, optional: true, required: false
+  private _dropEvents?: boolean | cdktn.IResolvable; 
+  public get dropEvents() {
+    return this.getBooleanAttribute('drop_events');
+  }
+  public set dropEvents(value: boolean | cdktn.IResolvable) {
+    this._dropEvents = value;
+  }
+  public resetDropEvents() {
+    this._dropEvents = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dropEventsInput() {
+    return this._dropEvents;
+  }
+
+  // ignore_when_missing_partitions - computed: false, optional: true, required: false
+  private _ignoreWhenMissingPartitions?: boolean | cdktn.IResolvable; 
+  public get ignoreWhenMissingPartitions() {
+    return this.getBooleanAttribute('ignore_when_missing_partitions');
+  }
+  public set ignoreWhenMissingPartitions(value: boolean | cdktn.IResolvable) {
+    this._ignoreWhenMissingPartitions = value;
+  }
+  public resetIgnoreWhenMissingPartitions() {
+    this._ignoreWhenMissingPartitions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreWhenMissingPartitionsInput() {
+    return this._ignoreWhenMissingPartitions;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // overflow_action - computed: false, optional: true, required: false
+  private _overflowAction?: string; 
+  public get overflowAction() {
+    return this.getStringAttribute('overflow_action');
+  }
+  public set overflowAction(value: string) {
+    this._overflowAction = value;
+  }
+  public resetOverflowAction() {
+    this._overflowAction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get overflowActionInput() {
+    return this._overflowAction;
+  }
+
+  // partition_fields - computed: false, optional: true, required: false
+  private _partitionFields?: string[]; 
+  public get partitionFields() {
+    return this.getListAttribute('partition_fields');
+  }
+  public set partitionFields(value: string[]) {
+    this._partitionFields = value;
+  }
+  public resetPartitionFields() {
+    this._partitionFields = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get partitionFieldsInput() {
+    return this._partitionFields;
+  }
+
+  // too_many_buckets_action - computed: false, optional: true, required: false
+  private _tooManyBucketsAction?: string; 
+  public get tooManyBucketsAction() {
+    return this.getStringAttribute('too_many_buckets_action');
+  }
+  public set tooManyBucketsAction(value: string) {
+    this._tooManyBucketsAction = value;
+  }
+  public resetTooManyBucketsAction() {
+    this._tooManyBucketsAction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tooManyBucketsActionInput() {
+    return this._tooManyBucketsAction;
+  }
+
+  // limit - computed: false, optional: true, required: false
+  private _limit = new ObservabilityPipelineConfigProcessorGroupProcessorQuotaLimitList(this, "limit", false);
+  public get limit() {
+    return this._limit;
+  }
+  public putLimit(value: ObservabilityPipelineConfigProcessorGroupProcessorQuotaLimit[] | cdktn.IResolvable) {
+    this._limit.internalValue = value;
+  }
+  public resetLimit() {
+    this._limit.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get limitInput() {
+    return this._limit.internalValue;
+  }
+
+  // override - computed: false, optional: true, required: false
+  private _override = new ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideList(this, "override", false);
+  public get override() {
+    return this._override;
+  }
+  public putOverride(value: ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverride[] | cdktn.IResolvable) {
+    this._override.internalValue = value;
+  }
+  public resetOverride() {
+    this._override.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get overrideInput() {
+    return this._override.internalValue;
+  }
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorQuotaList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigProcessorGroupProcessorQuota[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigProcessorGroupProcessorQuotaOutputReference {
+    return new ObservabilityPipelineConfigProcessorGroupProcessorQuotaOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategy {
+  /**
+  * The field path in the log event.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
+  */
+  readonly path: string;
+  /**
+  * The merge strategy to apply.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
+  */
+  readonly strategy: string;
+}
+
+export function observabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategyToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    path: cdktn.stringToTerraform(struct!.path),
+    strategy: cdktn.stringToTerraform(struct!.strategy),
+  }
+}
+
+
+export function observabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategyToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    path: {
+      value: cdktn.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    strategy: {
+      value: cdktn.stringToHclTerraform(struct!.strategy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategyOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategy | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    if (this._strategy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.strategy = this._strategy;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategy | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._path = undefined;
+      this._strategy = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._path = value.path;
+      this._strategy = value.strategy;
+    }
+  }
+
+  // path - computed: false, optional: false, required: true
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+
+  // strategy - computed: false, optional: false, required: true
+  private _strategy?: string; 
+  public get strategy() {
+    return this.getStringAttribute('strategy');
+  }
+  public set strategy(value: string) {
+    this._strategy = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get strategyInput() {
+    return this._strategy;
+  }
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategyList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategy[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategyOutputReference {
+    return new ObservabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigProcessorGroupProcessorReduce {
+  /**
+  * A list of fields used to group log events for merging.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
+  */
+  readonly groupBy: string[];
+  /**
+  * merge_strategy block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#merge_strategy ObservabilityPipeline#merge_strategy}
+  */
+  readonly mergeStrategy?: ObservabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategy[] | cdktn.IResolvable;
+}
+
+export function observabilityPipelineConfigProcessorGroupProcessorReduceToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorReduce | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    group_by: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.groupBy),
+    merge_strategy: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategyToTerraform, true)(struct!.mergeStrategy),
+  }
+}
+
+
+export function observabilityPipelineConfigProcessorGroupProcessorReduceToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorReduce | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    group_by: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.groupBy),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    merge_strategy: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategyToHclTerraform, true)(struct!.mergeStrategy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategyList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorReduceOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigProcessorGroupProcessorReduce | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._groupBy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupBy = this._groupBy;
+    }
+    if (this._mergeStrategy?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mergeStrategy = this._mergeStrategy?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigProcessorGroupProcessorReduce | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._groupBy = undefined;
+      this._mergeStrategy.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._groupBy = value.groupBy;
+      this._mergeStrategy.internalValue = value.mergeStrategy;
+    }
+  }
+
+  // group_by - computed: false, optional: false, required: true
+  private _groupBy?: string[]; 
+  public get groupBy() {
+    return this.getListAttribute('group_by');
+  }
+  public set groupBy(value: string[]) {
+    this._groupBy = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupByInput() {
+    return this._groupBy;
+  }
+
+  // merge_strategy - computed: false, optional: true, required: false
+  private _mergeStrategy = new ObservabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategyList(this, "merge_strategy", false);
+  public get mergeStrategy() {
+    return this._mergeStrategy;
+  }
+  public putMergeStrategy(value: ObservabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategy[] | cdktn.IResolvable) {
+    this._mergeStrategy.internalValue = value;
+  }
+  public resetMergeStrategy() {
+    this._mergeStrategy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mergeStrategyInput() {
+    return this._mergeStrategy.internalValue;
+  }
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorReduceList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigProcessorGroupProcessorReduce[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigProcessorGroupProcessorReduceOutputReference {
+    return new ObservabilityPipelineConfigProcessorGroupProcessorReduceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigProcessorGroupProcessorRemoveFields {
+  /**
+  * List of fields to remove from the events.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+  */
+  readonly fields: string[];
+}
+
+export function observabilityPipelineConfigProcessorGroupProcessorRemoveFieldsToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorRemoveFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    fields: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.fields),
+  }
+}
+
+
+export function observabilityPipelineConfigProcessorGroupProcessorRemoveFieldsToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorRemoveFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    fields: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.fields),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorRemoveFieldsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigProcessorGroupProcessorRemoveFields | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._fields !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fields = this._fields;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigProcessorGroupProcessorRemoveFields | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._fields = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._fields = value.fields;
+    }
+  }
+
+  // fields - computed: false, optional: false, required: true
+  private _fields?: string[]; 
+  public get fields() {
+    return this.getListAttribute('fields');
+  }
+  public set fields(value: string[]) {
+    this._fields = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fieldsInput() {
+    return this._fields;
+  }
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorRemoveFieldsList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigProcessorGroupProcessorRemoveFields[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigProcessorGroupProcessorRemoveFieldsOutputReference {
+    return new ObservabilityPipelineConfigProcessorGroupProcessorRemoveFieldsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsField {
+  /**
+  * Destination field name.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#destination ObservabilityPipeline#destination}
+  */
+  readonly destination: string;
+  /**
+  * Whether to keep the original field.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#preserve_source ObservabilityPipeline#preserve_source}
+  */
+  readonly preserveSource: boolean | cdktn.IResolvable;
+  /**
+  * Source field to rename.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+  */
+  readonly source: string;
+}
+
+export function observabilityPipelineConfigProcessorGroupProcessorRenameFieldsFieldToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsField | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    destination: cdktn.stringToTerraform(struct!.destination),
+    preserve_source: cdktn.booleanToTerraform(struct!.preserveSource),
+    source: cdktn.stringToTerraform(struct!.source),
+  }
+}
+
+
+export function observabilityPipelineConfigProcessorGroupProcessorRenameFieldsFieldToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsField | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    destination: {
+      value: cdktn.stringToHclTerraform(struct!.destination),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    preserve_source: {
+      value: cdktn.booleanToHclTerraform(struct!.preserveSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    source: {
+      value: cdktn.stringToHclTerraform(struct!.source),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsFieldOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsField | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._destination !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destination = this._destination;
+    }
+    if (this._preserveSource !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.preserveSource = this._preserveSource;
+    }
+    if (this._source !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsField | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._destination = undefined;
+      this._preserveSource = undefined;
+      this._source = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._destination = value.destination;
+      this._preserveSource = value.preserveSource;
+      this._source = value.source;
+    }
+  }
+
+  // destination - computed: false, optional: false, required: true
+  private _destination?: string; 
+  public get destination() {
+    return this.getStringAttribute('destination');
+  }
+  public set destination(value: string) {
+    this._destination = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationInput() {
+    return this._destination;
+  }
+
+  // preserve_source - computed: false, optional: false, required: true
+  private _preserveSource?: boolean | cdktn.IResolvable; 
+  public get preserveSource() {
+    return this.getBooleanAttribute('preserve_source');
+  }
+  public set preserveSource(value: boolean | cdktn.IResolvable) {
+    this._preserveSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preserveSourceInput() {
+    return this._preserveSource;
+  }
+
+  // source - computed: false, optional: false, required: true
+  private _source?: string; 
+  public get source() {
+    return this.getStringAttribute('source');
+  }
+  public set source(value: string) {
+    this._source = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source;
+  }
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsFieldList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsField[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsFieldOutputReference {
+    return new ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsFieldOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ObservabilityPipelineConfigProcessorGroupProcessorRenameFields {
   /**
   * field block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
   */
   readonly field?: ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsField[] | cdktn.IResolvable;
 }
@@ -214,13 +2626,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorRenameMetricT
   /**
   * The new tag key to assign in place of the original.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#rename_to ObservabilityPipeline#rename_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#rename_to ObservabilityPipeline#rename_to}
   */
   readonly renameTo: string;
   /**
   * The original tag key on the metric event.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#tag ObservabilityPipeline#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#tag ObservabilityPipeline#tag}
   */
   readonly tag: string;
 }
@@ -361,7 +2773,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorRenameMetricT
   /**
   * tag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#tag ObservabilityPipeline#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#tag ObservabilityPipeline#tag}
   */
   readonly tag?: ObservabilityPipelineConfigProcessorGroupProcessorRenameMetricTagsTag[] | cdktn.IResolvable;
 }
@@ -479,13 +2891,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSample {
   /**
   * Optional list of fields to group events by. Each group is sampled independently.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
   */
   readonly groupBy?: string[];
   /**
   * The percentage of logs to sample.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#percentage ObservabilityPipeline#percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#percentage ObservabilityPipeline#percentage}
   */
   readonly percentage: number;
 }
@@ -629,13 +3041,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
   /**
   * A list of keywords to match near the sensitive pattern.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#keywords ObservabilityPipeline#keywords}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#keywords ObservabilityPipeline#keywords}
   */
   readonly keywords?: string[];
   /**
   * Maximum number of tokens between a keyword and a sensitive value match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#proximity ObservabilityPipeline#proximity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#proximity ObservabilityPipeline#proximity}
   */
   readonly proximity?: number;
 }
@@ -863,13 +3275,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
   /**
   * Number of characters to keep.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#characters ObservabilityPipeline#characters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#characters ObservabilityPipeline#characters}
   */
   readonly characters?: number;
   /**
   * Direction from which to keep characters: `first` or `last`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#direction ObservabilityPipeline#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#direction ObservabilityPipeline#direction}
   */
   readonly direction?: string;
 }
@@ -1016,7 +3428,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
   /**
   * Replacement string for redacted values (e.g., `***`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#replace ObservabilityPipeline#replace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#replace ObservabilityPipeline#replace}
   */
   readonly replace?: string;
 }
@@ -1134,19 +3546,19 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
   /**
   * hash block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#hash ObservabilityPipeline#hash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#hash ObservabilityPipeline#hash}
   */
   readonly hash?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchHash[] | cdktn.IResolvable;
   /**
   * partial_redact block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#partial_redact ObservabilityPipeline#partial_redact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#partial_redact ObservabilityPipeline#partial_redact}
   */
   readonly partialRedact?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchPartialRedact[] | cdktn.IResolvable;
   /**
   * redact block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#redact ObservabilityPipeline#redact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#redact ObservabilityPipeline#redact}
   */
   readonly redact?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchRedact[] | cdktn.IResolvable;
 }
@@ -1322,13 +3734,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
   /**
   * Human-readable description providing context about a sensitive data scanner rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#description ObservabilityPipeline#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#description ObservabilityPipeline#description}
   */
   readonly description?: string;
   /**
   * A regular expression used to detect sensitive values. Must be a valid regex.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
   */
   readonly rule?: string;
 }
@@ -1475,13 +3887,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
   /**
   * Human-readable description providing context about a sensitive data scanner rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#description ObservabilityPipeline#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#description ObservabilityPipeline#description}
   */
   readonly description?: string;
   /**
   * Identifier for a predefined pattern from the sensitive data scanner pattern library.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1490,7 +3902,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
   /**
   * Whether to augment the pattern with recommended keywords (optional).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#use_recommended_keywords ObservabilityPipeline#use_recommended_keywords}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#use_recommended_keywords ObservabilityPipeline#use_recommended_keywords}
   */
   readonly useRecommendedKeywords?: boolean | cdktn.IResolvable;
 }
@@ -1666,13 +4078,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
   /**
   * custom block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#custom ObservabilityPipeline#custom}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#custom ObservabilityPipeline#custom}
   */
   readonly custom?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternCustom[] | cdktn.IResolvable;
   /**
   * library block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#library ObservabilityPipeline#library}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#library ObservabilityPipeline#library}
   */
   readonly library?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternLibrary[] | cdktn.IResolvable;
 }
@@ -1819,7 +4231,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
   /**
   * The fields to exclude from scanning.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
   */
   readonly fields?: string[];
 }
@@ -1937,7 +4349,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
   /**
   * The fields to include in scanning.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
   */
   readonly fields?: string[];
 }
@@ -2055,19 +4467,19 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
   /**
   * Scan all fields.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#all ObservabilityPipeline#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#all ObservabilityPipeline#all}
   */
   readonly all?: boolean | cdktn.IResolvable;
   /**
   * exclude block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#exclude ObservabilityPipeline#exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#exclude ObservabilityPipeline#exclude}
   */
   readonly exclude?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeExclude[] | cdktn.IResolvable;
   /**
   * include block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
   */
   readonly include?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeInclude[] | cdktn.IResolvable;
 }
@@ -2243,37 +4655,37 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
   /**
   * A name identifying the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
   */
   readonly name: string;
   /**
   * Tags assigned to this rule for filtering and classification.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#tags ObservabilityPipeline#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#tags ObservabilityPipeline#tags}
   */
   readonly tags?: string[];
   /**
   * keyword_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#keyword_options ObservabilityPipeline#keyword_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#keyword_options ObservabilityPipeline#keyword_options}
   */
   readonly keywordOptions?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleKeywordOptions[] | cdktn.IResolvable;
   /**
   * on_match block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#on_match ObservabilityPipeline#on_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#on_match ObservabilityPipeline#on_match}
   */
   readonly onMatch?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatch[] | cdktn.IResolvable;
   /**
   * pattern block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#pattern ObservabilityPipeline#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#pattern ObservabilityPipeline#pattern}
   */
   readonly pattern?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePattern[] | cdktn.IResolvable;
   /**
   * scope block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#scope ObservabilityPipeline#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#scope ObservabilityPipeline#scope}
   */
   readonly scope?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScope[] | cdktn.IResolvable;
 }
@@ -2533,7 +4945,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
   */
   readonly rule?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRule[] | cdktn.IResolvable;
 }
@@ -2651,13 +5063,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSplitArrayArr
   /**
   * The path to the array field to split.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
   */
   readonly field: string;
   /**
   * A Datadog search query used to determine which logs this array split operation targets.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
   */
   readonly include: string;
 }
@@ -2798,7 +5210,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSplitArray {
   /**
   * array block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#array ObservabilityPipeline#array}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#array ObservabilityPipeline#array}
   */
   readonly array?: ObservabilityPipelineConfigProcessorGroupProcessorSplitArrayArray[] | cdktn.IResolvable;
 }
@@ -2916,19 +5328,19 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalit
   /**
   * How the per-tag override is applied. One of `limit_override`, `excluded`. Valid values are `limit_override`, `excluded`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#override_type ObservabilityPipeline#override_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#override_type ObservabilityPipeline#override_type}
   */
   readonly overrideType: string;
   /**
   * The tag key this override applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#tag_key ObservabilityPipeline#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#tag_key ObservabilityPipeline#tag_key}
   */
   readonly tagKey: string;
   /**
   * The cardinality cap for this tag. Required when `override_type` is `limit_override`; must be omitted when `override_type` is `excluded`. Value must be between 0 and 1000000.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#value_limit ObservabilityPipeline#value_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#value_limit ObservabilityPipeline#value_limit}
   */
   readonly valueLimit?: number;
 }
@@ -3098,31 +5510,31 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalit
   /**
   * The action to take on this metric when the limit is exceeded. Required when `override_type` is `limit_override`; must be omitted when `override_type` is `excluded`. Valid values are `drop_tag`, `drop_event`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#limit_exceeded_action ObservabilityPipeline#limit_exceeded_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#limit_exceeded_action ObservabilityPipeline#limit_exceeded_action}
   */
   readonly limitExceededAction?: string;
   /**
   * The metric name this override applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#metric_name ObservabilityPipeline#metric_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#metric_name ObservabilityPipeline#metric_name}
   */
   readonly metricName: string;
   /**
   * How the per-metric override is applied. One of `limit_override`, `excluded`. Valid values are `limit_override`, `excluded`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#override_type ObservabilityPipeline#override_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#override_type ObservabilityPipeline#override_type}
   */
   readonly overrideType: string;
   /**
   * The cardinality cap for this metric. Required when `override_type` is `limit_override`; must be omitted when `override_type` is `excluded`. Value must be between 0 and 1000000.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#value_limit ObservabilityPipeline#value_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#value_limit ObservabilityPipeline#value_limit}
   */
   readonly valueLimit?: number;
   /**
   * per_tag_limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#per_tag_limit ObservabilityPipeline#per_tag_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#per_tag_limit ObservabilityPipeline#per_tag_limit}
   */
   readonly perTagLimit?: ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimit[] | cdktn.IResolvable;
 }
@@ -3350,7 +5762,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalit
   /**
   * The cardinality tracking algorithm to use. One of `exact_fingerprint`, `probabilistic`. Valid values are `exact_fingerprint`, `probabilistic`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
   */
   readonly mode: string;
 }
@@ -3465,25 +5877,25 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalit
   /**
   * The default action to take when the cardinality limit is exceeded. One of `drop_tag`, `drop_event`. Valid values are `drop_tag`, `drop_event`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#limit_exceeded_action ObservabilityPipeline#limit_exceeded_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#limit_exceeded_action ObservabilityPipeline#limit_exceeded_action}
   */
   readonly limitExceededAction: string;
   /**
   * The default maximum number of distinct tag value combinations allowed per metric. Between 0 and 1000000. Value must be between 0 and 1000000.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#value_limit ObservabilityPipeline#value_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#value_limit ObservabilityPipeline#value_limit}
   */
   readonly valueLimit: number;
   /**
   * per_metric_limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#per_metric_limit ObservabilityPipeline#per_metric_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#per_metric_limit ObservabilityPipeline#per_metric_limit}
   */
   readonly perMetricLimit?: ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimit[] | cdktn.IResolvable;
   /**
   * tracking_mode block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#tracking_mode ObservabilityPipeline#tracking_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#tracking_mode ObservabilityPipeline#tracking_mode}
   */
   readonly trackingMode?: ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingMode[] | cdktn.IResolvable;
 }
@@ -3682,19 +6094,19 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorThrottle {
   /**
   * Optional list of fields used to group events before applying throttling.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
   */
   readonly groupBy?: string[];
   /**
   * The number of events to allow before throttling is applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#threshold ObservabilityPipeline#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#threshold ObservabilityPipeline#threshold}
   */
   readonly threshold: number;
   /**
   * The time window in seconds over which the threshold applies.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#window ObservabilityPipeline#window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#window ObservabilityPipeline#window}
   */
   readonly window: number;
 }
@@ -3864,19 +6276,19 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessor {
   /**
   * A human-friendly name for this processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#display_name ObservabilityPipeline#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#display_name ObservabilityPipeline#display_name}
   */
   readonly displayName?: string;
   /**
   * Whether this processor is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The unique identifier for this processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3885,169 +6297,169 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessor {
   /**
   * A Datadog search query used to determine which logs this processor targets.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
   */
   readonly include: string;
   /**
   * add_env_vars block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#add_env_vars ObservabilityPipeline#add_env_vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#add_env_vars ObservabilityPipeline#add_env_vars}
   */
   readonly addEnvVars?: ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVars[] | cdktn.IResolvable;
   /**
   * add_fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#add_fields ObservabilityPipeline#add_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#add_fields ObservabilityPipeline#add_fields}
   */
   readonly addFields?: ObservabilityPipelineConfigProcessorGroupProcessorAddFields[] | cdktn.IResolvable;
   /**
   * add_hostname block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#add_hostname ObservabilityPipeline#add_hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#add_hostname ObservabilityPipeline#add_hostname}
   */
   readonly addHostname?: ObservabilityPipelineConfigProcessorGroupProcessorAddHostname[] | cdktn.IResolvable;
   /**
   * add_metric_tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#add_metric_tags ObservabilityPipeline#add_metric_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#add_metric_tags ObservabilityPipeline#add_metric_tags}
   */
   readonly addMetricTags?: ObservabilityPipelineConfigProcessorGroupProcessorAddMetricTags[] | cdktn.IResolvable;
   /**
   * aggregate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#aggregate ObservabilityPipeline#aggregate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#aggregate ObservabilityPipeline#aggregate}
   */
   readonly aggregate?: ObservabilityPipelineConfigProcessorGroupProcessorAggregate[] | cdktn.IResolvable;
   /**
   * custom_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#custom_processor ObservabilityPipeline#custom_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#custom_processor ObservabilityPipeline#custom_processor}
   */
   readonly customProcessor?: ObservabilityPipelineConfigProcessorGroupProcessorCustomProcessor[] | cdktn.IResolvable;
   /**
   * datadog_tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#datadog_tags ObservabilityPipeline#datadog_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#datadog_tags ObservabilityPipeline#datadog_tags}
   */
   readonly datadogTags?: ObservabilityPipelineConfigProcessorGroupProcessorDatadogTags[] | cdktn.IResolvable;
   /**
   * dedupe block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#dedupe ObservabilityPipeline#dedupe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#dedupe ObservabilityPipeline#dedupe}
   */
   readonly dedupe?: ObservabilityPipelineConfigProcessorGroupProcessorDedupe[] | cdktn.IResolvable;
   /**
   * enrichment_table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#enrichment_table ObservabilityPipeline#enrichment_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#enrichment_table ObservabilityPipeline#enrichment_table}
   */
   readonly enrichmentTable?: ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTable[] | cdktn.IResolvable;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#filter ObservabilityPipeline#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#filter ObservabilityPipeline#filter}
   */
   readonly filter?: ObservabilityPipelineConfigProcessorGroupProcessorFilter[] | cdktn.IResolvable;
   /**
   * generate_datadog_metrics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#generate_datadog_metrics ObservabilityPipeline#generate_datadog_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#generate_datadog_metrics ObservabilityPipeline#generate_datadog_metrics}
   */
   readonly generateDatadogMetrics?: ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetrics[] | cdktn.IResolvable;
   /**
   * generate_metrics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#generate_metrics ObservabilityPipeline#generate_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#generate_metrics ObservabilityPipeline#generate_metrics}
   */
   readonly generateMetrics?: ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetrics[] | cdktn.IResolvable;
   /**
   * metric_tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#metric_tags ObservabilityPipeline#metric_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#metric_tags ObservabilityPipeline#metric_tags}
   */
   readonly metricTags?: ObservabilityPipelineConfigProcessorGroupProcessorMetricTags[] | cdktn.IResolvable;
   /**
   * ocsf_mapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#ocsf_mapper ObservabilityPipeline#ocsf_mapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#ocsf_mapper ObservabilityPipeline#ocsf_mapper}
   */
   readonly ocsfMapper?: ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapper[] | cdktn.IResolvable;
   /**
   * parse_grok block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#parse_grok ObservabilityPipeline#parse_grok}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#parse_grok ObservabilityPipeline#parse_grok}
   */
   readonly parseGrok?: ObservabilityPipelineConfigProcessorGroupProcessorParseGrok[] | cdktn.IResolvable;
   /**
   * parse_json block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#parse_json ObservabilityPipeline#parse_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#parse_json ObservabilityPipeline#parse_json}
   */
   readonly parseJson?: ObservabilityPipelineConfigProcessorGroupProcessorParseJson[] | cdktn.IResolvable;
   /**
   * parse_xml block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#parse_xml ObservabilityPipeline#parse_xml}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#parse_xml ObservabilityPipeline#parse_xml}
   */
   readonly parseXml?: ObservabilityPipelineConfigProcessorGroupProcessorParseXml[] | cdktn.IResolvable;
   /**
   * quota block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#quota ObservabilityPipeline#quota}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#quota ObservabilityPipeline#quota}
   */
   readonly quota?: ObservabilityPipelineConfigProcessorGroupProcessorQuota[] | cdktn.IResolvable;
   /**
   * reduce block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#reduce ObservabilityPipeline#reduce}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#reduce ObservabilityPipeline#reduce}
   */
   readonly reduce?: ObservabilityPipelineConfigProcessorGroupProcessorReduce[] | cdktn.IResolvable;
   /**
   * remove_fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#remove_fields ObservabilityPipeline#remove_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#remove_fields ObservabilityPipeline#remove_fields}
   */
   readonly removeFields?: ObservabilityPipelineConfigProcessorGroupProcessorRemoveFields[] | cdktn.IResolvable;
   /**
   * rename_fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#rename_fields ObservabilityPipeline#rename_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#rename_fields ObservabilityPipeline#rename_fields}
   */
   readonly renameFields?: ObservabilityPipelineConfigProcessorGroupProcessorRenameFields[] | cdktn.IResolvable;
   /**
   * rename_metric_tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#rename_metric_tags ObservabilityPipeline#rename_metric_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#rename_metric_tags ObservabilityPipeline#rename_metric_tags}
   */
   readonly renameMetricTags?: ObservabilityPipelineConfigProcessorGroupProcessorRenameMetricTags[] | cdktn.IResolvable;
   /**
   * sample block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#sample ObservabilityPipeline#sample}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#sample ObservabilityPipeline#sample}
   */
   readonly sample?: ObservabilityPipelineConfigProcessorGroupProcessorSample[] | cdktn.IResolvable;
   /**
   * sensitive_data_scanner block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#sensitive_data_scanner ObservabilityPipeline#sensitive_data_scanner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#sensitive_data_scanner ObservabilityPipeline#sensitive_data_scanner}
   */
   readonly sensitiveDataScanner?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScanner[] | cdktn.IResolvable;
   /**
   * split_array block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#split_array ObservabilityPipeline#split_array}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#split_array ObservabilityPipeline#split_array}
   */
   readonly splitArray?: ObservabilityPipelineConfigProcessorGroupProcessorSplitArray[] | cdktn.IResolvable;
   /**
   * tag_cardinality_limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#tag_cardinality_limit ObservabilityPipeline#tag_cardinality_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#tag_cardinality_limit ObservabilityPipeline#tag_cardinality_limit}
   */
   readonly tagCardinalityLimit?: ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimit[] | cdktn.IResolvable;
   /**
   * throttle block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#throttle ObservabilityPipeline#throttle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#throttle ObservabilityPipeline#throttle}
   */
   readonly throttle?: ObservabilityPipelineConfigProcessorGroupProcessorThrottle[] | cdktn.IResolvable;
 }
@@ -5026,19 +7438,19 @@ export interface ObservabilityPipelineConfigProcessorGroup {
   /**
   * A human-friendly name of the processor group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#display_name ObservabilityPipeline#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#display_name ObservabilityPipeline#display_name}
   */
   readonly displayName?: string;
   /**
   * Whether this processor group is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The unique ID of the processor group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5047,19 +7459,19 @@ export interface ObservabilityPipelineConfigProcessorGroup {
   /**
   * A Datadog search query used to determine which logs this processor group targets.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
   */
   readonly include: string;
   /**
   * A list of component IDs whose output is used as the input for this processor group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
   */
   readonly inputs: string[];
   /**
   * processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#processor ObservabilityPipeline#processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#processor ObservabilityPipeline#processor}
   */
   readonly processor?: ObservabilityPipelineConfigProcessorGroupProcessor[] | cdktn.IResolvable;
 }
@@ -5310,19 +7722,19 @@ export interface ObservabilityPipelineConfigSourceAmazonDataFirehoseAuth {
   /**
   * The Amazon Resource Name (ARN) of the role to assume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
   */
   readonly assumeRole?: string;
   /**
   * A unique identifier for cross-account role assumption.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
   */
   readonly externalId?: string;
   /**
   * A session identifier used for logging and tracing the assumed role session.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
   */
   readonly sessionName?: string;
 }
@@ -5498,25 +7910,25 @@ export interface ObservabilityPipelineConfigSourceAmazonDataFirehoseTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
 }
@@ -5718,19 +8130,19 @@ export interface ObservabilityPipelineConfigSourceAmazonDataFirehose {
   /**
   * Name of the environment variable or secret that holds the listen address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
   */
   readonly addressKey?: string;
   /**
   * auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
   */
   readonly auth?: ObservabilityPipelineConfigSourceAmazonDataFirehoseAuth[] | cdktn.IResolvable;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceAmazonDataFirehoseTls[] | cdktn.IResolvable;
 }
@@ -5906,19 +8318,19 @@ export interface ObservabilityPipelineConfigSourceAmazonS3Auth {
   /**
   * The Amazon Resource Name (ARN) of the role to assume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
   */
   readonly assumeRole?: string;
   /**
   * A unique identifier for cross-account role assumption.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
   */
   readonly externalId?: string;
   /**
   * A session identifier used for logging and tracing the assumed role session.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
   */
   readonly sessionName?: string;
 }
@@ -6094,25 +8506,25 @@ export interface ObservabilityPipelineConfigSourceAmazonS3Tls {
   /**
   * Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
 }
@@ -6314,31 +8726,31 @@ export interface ObservabilityPipelineConfigSourceAmazonS3 {
   /**
   * Compression format for objects retrieved from the S3 bucket. Use `auto` to detect compression from the object's Content-Encoding header or file extension. Valid values are `auto`, `none`, `gzip`, `zstd`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
   */
   readonly compression?: string;
   /**
   * AWS region where the S3 bucket resides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
   */
   readonly region: string;
   /**
   * Name of the environment variable or secret that holds the S3 bucket URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#url_key ObservabilityPipeline#url_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#url_key ObservabilityPipeline#url_key}
   */
   readonly urlKey?: string;
   /**
   * auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
   */
   readonly auth?: ObservabilityPipelineConfigSourceAmazonS3Auth[] | cdktn.IResolvable;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceAmazonS3Tls[] | cdktn.IResolvable;
 }
@@ -6569,25 +8981,25 @@ export interface ObservabilityPipelineConfigSourceDatadogAgentTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
 }
@@ -6789,13 +9201,13 @@ export interface ObservabilityPipelineConfigSourceDatadogAgent {
   /**
   * Name of the environment variable or secret that holds the listen address for the Datadog Agent source.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
   */
   readonly addressKey?: string;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceDatadogAgentTls[] | cdktn.IResolvable;
 }
@@ -6942,31 +9354,31 @@ export interface ObservabilityPipelineConfigSourceFluentBitTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS server certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
   /**
   * When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
   */
   readonly verifyCertificate?: boolean | cdktn.IResolvable;
 }
@@ -7197,13 +9609,13 @@ export interface ObservabilityPipelineConfigSourceFluentBit {
   /**
   * Name of the environment variable or secret that holds the listen address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
   */
   readonly addressKey?: string;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceFluentBitTls[] | cdktn.IResolvable;
 }
@@ -7350,31 +9762,31 @@ export interface ObservabilityPipelineConfigSourceFluentdTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS server certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
   /**
   * When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
   */
   readonly verifyCertificate?: boolean | cdktn.IResolvable;
 }
@@ -7605,13 +10017,13 @@ export interface ObservabilityPipelineConfigSourceFluentd {
   /**
   * Name of the environment variable or secret that holds the listen address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
   */
   readonly addressKey?: string;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceFluentdTls[] | cdktn.IResolvable;
 }
@@ -7758,7 +10170,7 @@ export interface ObservabilityPipelineConfigSourceGooglePubsubAuth {
   /**
   * Path to the Google Cloud service account key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
   */
   readonly credentialsFile: string;
 }
@@ -7873,25 +10285,25 @@ export interface ObservabilityPipelineConfigSourceGooglePubsubTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
 }
@@ -8093,31 +10505,31 @@ export interface ObservabilityPipelineConfigSourceGooglePubsub {
   /**
   * The decoding format used to interpret incoming logs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
   */
   readonly decoding: string;
   /**
   * The Google Cloud project ID that owns the Pub/Sub subscription.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#project ObservabilityPipeline#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#project ObservabilityPipeline#project}
   */
   readonly project: string;
   /**
   * The Pub/Sub subscription name from which messages are consumed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#subscription ObservabilityPipeline#subscription}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#subscription ObservabilityPipeline#subscription}
   */
   readonly subscription: string;
   /**
   * auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
   */
   readonly auth?: ObservabilityPipelineConfigSourceGooglePubsubAuth[] | cdktn.IResolvable;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceGooglePubsubTls[] | cdktn.IResolvable;
 }
@@ -8342,31 +10754,31 @@ export interface ObservabilityPipelineConfigSourceHttpClientTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
   /**
   * Server name to use for Server Name Indication (SNI) and to verify against the certificate presented by the remote host. Use this when the address you connect to doesn't match the certificate's Common Name or Subject Alternative Name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#server_name ObservabilityPipeline#server_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#server_name ObservabilityPipeline#server_name}
   */
   readonly serverName?: string;
 }
@@ -8597,61 +11009,61 @@ export interface ObservabilityPipelineConfigSourceHttpClient {
   /**
   * Optional authentication strategy for HTTP requests. Valid values are `none`, `basic`, `bearer`, `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
   */
   readonly authStrategy?: string;
   /**
   * Name of the environment variable or secret that holds a custom header value (used with custom auth strategies).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#custom_key ObservabilityPipeline#custom_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#custom_key ObservabilityPipeline#custom_key}
   */
   readonly customKey?: string;
   /**
   * The decoding format used to interpret incoming logs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
   */
   readonly decoding: string;
   /**
   * Name of the environment variable or secret that holds the HTTP endpoint URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
   */
   readonly endpointUrlKey?: string;
   /**
   * Name of the environment variable or secret that holds the password.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
   */
   readonly passwordKey?: string;
   /**
   * The interval (in seconds) between HTTP scrape requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#scrape_interval_secs ObservabilityPipeline#scrape_interval_secs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#scrape_interval_secs ObservabilityPipeline#scrape_interval_secs}
   */
   readonly scrapeIntervalSecs?: number;
   /**
   * The timeout (in seconds) for each scrape request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#scrape_timeout_secs ObservabilityPipeline#scrape_timeout_secs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#scrape_timeout_secs ObservabilityPipeline#scrape_timeout_secs}
   */
   readonly scrapeTimeoutSecs?: number;
   /**
   * Name of the environment variable or secret that holds the authentication token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
   */
   readonly tokenKey?: string;
   /**
   * Name of the environment variable or secret that holds the username.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
   */
   readonly usernameKey?: string;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceHttpClientTls[] | cdktn.IResolvable;
 }
@@ -9027,31 +11439,31 @@ export interface ObservabilityPipelineConfigSourceHttpServerTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS server certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
   /**
   * When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
   */
   readonly verifyCertificate?: boolean | cdktn.IResolvable;
 }
@@ -9282,13 +11694,13 @@ export interface ObservabilityPipelineConfigSourceHttpServerValidTokenFieldToAdd
   /**
   * The metadata field name to add to incoming events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key ObservabilityPipeline#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key ObservabilityPipeline#key}
   */
   readonly key: string;
   /**
   * The metadata field value to add to incoming events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
   */
   readonly value: string;
 }
@@ -9429,13 +11841,13 @@ export interface ObservabilityPipelineConfigSourceHttpServerValidTokenPathToToke
   /**
   * The name of the HTTP header that carries the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#header ObservabilityPipeline#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#header ObservabilityPipeline#header}
   */
   readonly header?: string;
   /**
   * Built-in token location on the incoming HTTP request. One of `path`, `address`. Valid values are `path`, `address`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#location ObservabilityPipeline#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#location ObservabilityPipeline#location}
   */
   readonly location?: string;
 }
@@ -9582,25 +11994,25 @@ export interface ObservabilityPipelineConfigSourceHttpServerValidToken {
   /**
   * Whether this token is currently accepted. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the environment variable or secret that holds the expected token value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
   */
   readonly tokenKey: string;
   /**
   * field_to_add block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#field_to_add ObservabilityPipeline#field_to_add}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#field_to_add ObservabilityPipeline#field_to_add}
   */
   readonly fieldToAdd?: ObservabilityPipelineConfigSourceHttpServerValidTokenFieldToAdd[] | cdktn.IResolvable;
   /**
   * path_to_token block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#path_to_token ObservabilityPipeline#path_to_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#path_to_token ObservabilityPipeline#path_to_token}
   */
   readonly pathToToken?: ObservabilityPipelineConfigSourceHttpServerValidTokenPathToToken[] | cdktn.IResolvable;
 }
@@ -9802,43 +12214,43 @@ export interface ObservabilityPipelineConfigSourceHttpServer {
   /**
   * Name of the environment variable or secret that holds the listen address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
   */
   readonly addressKey?: string;
   /**
   * HTTP authentication method. Valid values are `none`, `plain`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
   */
   readonly authStrategy: string;
   /**
   * The decoding format used to interpret incoming logs. Valid values are `json`, `gelf`, `syslog`, `bytes`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
   */
   readonly decoding: string;
   /**
   * Name of the environment variable or secret that holds the password.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
   */
   readonly passwordKey?: string;
   /**
   * Name of the environment variable or secret that holds the username.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
   */
   readonly usernameKey?: string;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceHttpServerTls[] | cdktn.IResolvable;
   /**
   * valid_token block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#valid_token ObservabilityPipeline#valid_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#valid_token ObservabilityPipeline#valid_token}
   */
   readonly validToken?: ObservabilityPipelineConfigSourceHttpServerValidToken[] | cdktn.IResolvable;
 }
@@ -10124,13 +12536,13 @@ export interface ObservabilityPipelineConfigSourceKafkaLibrdkafkaOption {
   /**
   * The name of the librdkafka option.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
   */
   readonly name: string;
   /**
   * The value of the librdkafka option.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
   */
   readonly value: string;
 }
@@ -10271,19 +12683,19 @@ export interface ObservabilityPipelineConfigSourceKafkaSasl {
   /**
   * SASL mechanism to use (e.g., PLAIN, SCRAM-SHA-256, SCRAM-SHA-512). Valid values are `PLAIN`, `SCRAM-SHA-256`, `SCRAM-SHA-512`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#mechanism ObservabilityPipeline#mechanism}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#mechanism ObservabilityPipeline#mechanism}
   */
   readonly mechanism: string;
   /**
   * Name of the environment variable or secret that holds the SASL password.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
   */
   readonly passwordKey?: string;
   /**
   * Name of the environment variable or secret that holds the SASL username.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
   */
   readonly usernameKey?: string;
 }
@@ -10456,25 +12868,25 @@ export interface ObservabilityPipelineConfigSourceKafkaTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
 }
@@ -10676,37 +13088,37 @@ export interface ObservabilityPipelineConfigSourceKafka {
   /**
   * Name of the environment variable or secret that holds the Kafka bootstrap servers connection string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#bootstrap_servers_key ObservabilityPipeline#bootstrap_servers_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#bootstrap_servers_key ObservabilityPipeline#bootstrap_servers_key}
   */
   readonly bootstrapServersKey?: string;
   /**
   * The Kafka consumer group ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#group_id ObservabilityPipeline#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#group_id ObservabilityPipeline#group_id}
   */
   readonly groupId: string;
   /**
   * A list of Kafka topic names to subscribe to. The source ingests messages from each topic specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#topics ObservabilityPipeline#topics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#topics ObservabilityPipeline#topics}
   */
   readonly topics: string[];
   /**
   * librdkafka_option block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#librdkafka_option ObservabilityPipeline#librdkafka_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#librdkafka_option ObservabilityPipeline#librdkafka_option}
   */
   readonly librdkafkaOption?: ObservabilityPipelineConfigSourceKafkaLibrdkafkaOption[] | cdktn.IResolvable;
   /**
   * sasl block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#sasl ObservabilityPipeline#sasl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#sasl ObservabilityPipeline#sasl}
   */
   readonly sasl?: ObservabilityPipelineConfigSourceKafkaSasl[] | cdktn.IResolvable;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceKafkaTls[] | cdktn.IResolvable;
 }
@@ -10963,31 +13375,31 @@ export interface ObservabilityPipelineConfigSourceLogstashTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS server certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
   /**
   * When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
   */
   readonly verifyCertificate?: boolean | cdktn.IResolvable;
 }
@@ -11218,13 +13630,13 @@ export interface ObservabilityPipelineConfigSourceLogstash {
   /**
   * Name of the environment variable or secret that holds the listen address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
   */
   readonly addressKey?: string;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceLogstashTls[] | cdktn.IResolvable;
 }
@@ -11371,31 +13783,31 @@ export interface ObservabilityPipelineConfigSourceOpentelemetryTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS server certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
   /**
   * When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
   */
   readonly verifyCertificate?: boolean | cdktn.IResolvable;
 }
@@ -11626,19 +14038,19 @@ export interface ObservabilityPipelineConfigSourceOpentelemetry {
   /**
   * Environment variable name containing the gRPC server address for receiving OTLP data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#grpc_address_key ObservabilityPipeline#grpc_address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#grpc_address_key ObservabilityPipeline#grpc_address_key}
   */
   readonly grpcAddressKey?: string;
   /**
   * Environment variable name containing the HTTP server address for receiving OTLP data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#http_address_key ObservabilityPipeline#http_address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#http_address_key ObservabilityPipeline#http_address_key}
   */
   readonly httpAddressKey?: string;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceOpentelemetryTls[] | cdktn.IResolvable;
 }
@@ -11810,35 +14222,950 @@ export class ObservabilityPipelineConfigSourceOpentelemetryList extends cdktn.Co
     return new ObservabilityPipelineConfigSourceOpentelemetryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface ObservabilityPipelineConfigSourceRsyslogTls {
+export interface ObservabilityPipelineConfigSourcePrometheusRemoteWriteTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS server certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
   /**
   * When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+  */
+  readonly verifyCertificate?: boolean | cdktn.IResolvable;
+}
+
+export function observabilityPipelineConfigSourcePrometheusRemoteWriteTlsToTerraform(struct?: ObservabilityPipelineConfigSourcePrometheusRemoteWriteTls | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    ca_file: cdktn.stringToTerraform(struct!.caFile),
+    crt_file: cdktn.stringToTerraform(struct!.crtFile),
+    key_file: cdktn.stringToTerraform(struct!.keyFile),
+    key_pass_key: cdktn.stringToTerraform(struct!.keyPassKey),
+    verify_certificate: cdktn.booleanToTerraform(struct!.verifyCertificate),
+  }
+}
+
+
+export function observabilityPipelineConfigSourcePrometheusRemoteWriteTlsToHclTerraform(struct?: ObservabilityPipelineConfigSourcePrometheusRemoteWriteTls | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    ca_file: {
+      value: cdktn.stringToHclTerraform(struct!.caFile),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    crt_file: {
+      value: cdktn.stringToHclTerraform(struct!.crtFile),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_file: {
+      value: cdktn.stringToHclTerraform(struct!.keyFile),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_pass_key: {
+      value: cdktn.stringToHclTerraform(struct!.keyPassKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    verify_certificate: {
+      value: cdktn.booleanToHclTerraform(struct!.verifyCertificate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigSourcePrometheusRemoteWriteTlsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigSourcePrometheusRemoteWriteTls | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._caFile !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.caFile = this._caFile;
+    }
+    if (this._crtFile !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.crtFile = this._crtFile;
+    }
+    if (this._keyFile !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.keyFile = this._keyFile;
+    }
+    if (this._keyPassKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.keyPassKey = this._keyPassKey;
+    }
+    if (this._verifyCertificate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.verifyCertificate = this._verifyCertificate;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigSourcePrometheusRemoteWriteTls | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._caFile = undefined;
+      this._crtFile = undefined;
+      this._keyFile = undefined;
+      this._keyPassKey = undefined;
+      this._verifyCertificate = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._caFile = value.caFile;
+      this._crtFile = value.crtFile;
+      this._keyFile = value.keyFile;
+      this._keyPassKey = value.keyPassKey;
+      this._verifyCertificate = value.verifyCertificate;
+    }
+  }
+
+  // ca_file - computed: false, optional: true, required: false
+  private _caFile?: string; 
+  public get caFile() {
+    return this.getStringAttribute('ca_file');
+  }
+  public set caFile(value: string) {
+    this._caFile = value;
+  }
+  public resetCaFile() {
+    this._caFile = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get caFileInput() {
+    return this._caFile;
+  }
+
+  // crt_file - computed: false, optional: false, required: true
+  private _crtFile?: string; 
+  public get crtFile() {
+    return this.getStringAttribute('crt_file');
+  }
+  public set crtFile(value: string) {
+    this._crtFile = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get crtFileInput() {
+    return this._crtFile;
+  }
+
+  // key_file - computed: false, optional: true, required: false
+  private _keyFile?: string; 
+  public get keyFile() {
+    return this.getStringAttribute('key_file');
+  }
+  public set keyFile(value: string) {
+    this._keyFile = value;
+  }
+  public resetKeyFile() {
+    this._keyFile = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyFileInput() {
+    return this._keyFile;
+  }
+
+  // key_pass_key - computed: false, optional: true, required: false
+  private _keyPassKey?: string; 
+  public get keyPassKey() {
+    return this.getStringAttribute('key_pass_key');
+  }
+  public set keyPassKey(value: string) {
+    this._keyPassKey = value;
+  }
+  public resetKeyPassKey() {
+    this._keyPassKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyPassKeyInput() {
+    return this._keyPassKey;
+  }
+
+  // verify_certificate - computed: false, optional: true, required: false
+  private _verifyCertificate?: boolean | cdktn.IResolvable; 
+  public get verifyCertificate() {
+    return this.getBooleanAttribute('verify_certificate');
+  }
+  public set verifyCertificate(value: boolean | cdktn.IResolvable) {
+    this._verifyCertificate = value;
+  }
+  public resetVerifyCertificate() {
+    this._verifyCertificate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get verifyCertificateInput() {
+    return this._verifyCertificate;
+  }
+}
+
+export class ObservabilityPipelineConfigSourcePrometheusRemoteWriteTlsList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigSourcePrometheusRemoteWriteTls[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigSourcePrometheusRemoteWriteTlsOutputReference {
+    return new ObservabilityPipelineConfigSourcePrometheusRemoteWriteTlsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenPathToToken {
+  /**
+  * The name of the HTTP header that carries the token. Exactly one of `location` or `header` must be set.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#header ObservabilityPipeline#header}
+  */
+  readonly header?: string;
+  /**
+  * Built-in token location on the incoming HTTP request. One of `path`, `address`. Exactly one of `location` or `header` must be set. Valid values are `path`, `address`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#location ObservabilityPipeline#location}
+  */
+  readonly location?: string;
+}
+
+export function observabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenPathToTokenToTerraform(struct?: ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenPathToToken | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    header: cdktn.stringToTerraform(struct!.header),
+    location: cdktn.stringToTerraform(struct!.location),
+  }
+}
+
+
+export function observabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenPathToTokenToHclTerraform(struct?: ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenPathToToken | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    header: {
+      value: cdktn.stringToHclTerraform(struct!.header),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    location: {
+      value: cdktn.stringToHclTerraform(struct!.location),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenPathToTokenOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenPathToToken | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._header !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.header = this._header;
+    }
+    if (this._location !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.location = this._location;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenPathToToken | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._header = undefined;
+      this._location = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._header = value.header;
+      this._location = value.location;
+    }
+  }
+
+  // header - computed: false, optional: true, required: false
+  private _header?: string; 
+  public get header() {
+    return this.getStringAttribute('header');
+  }
+  public set header(value: string) {
+    this._header = value;
+  }
+  public resetHeader() {
+    this._header = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerInput() {
+    return this._header;
+  }
+
+  // location - computed: false, optional: true, required: false
+  private _location?: string; 
+  public get location() {
+    return this.getStringAttribute('location');
+  }
+  public set location(value: string) {
+    this._location = value;
+  }
+  public resetLocation() {
+    this._location = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationInput() {
+    return this._location;
+  }
+}
+
+export class ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenPathToTokenList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenPathToToken[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenPathToTokenOutputReference {
+    return new ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenPathToTokenOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidToken {
+  /**
+  * Whether this token is currently accepted. Defaults to `true`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
+  */
+  readonly enabled?: boolean | cdktn.IResolvable;
+  /**
+  * Name of the environment variable or secret that holds the expected token value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+  */
+  readonly tokenKey: string;
+  /**
+  * path_to_token block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#path_to_token ObservabilityPipeline#path_to_token}
+  */
+  readonly pathToToken?: ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenPathToToken[] | cdktn.IResolvable;
+}
+
+export function observabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenToTerraform(struct?: ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidToken | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    token_key: cdktn.stringToTerraform(struct!.tokenKey),
+    path_to_token: cdktn.listMapper(observabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenPathToTokenToTerraform, true)(struct!.pathToToken),
+  }
+}
+
+
+export function observabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenToHclTerraform(struct?: ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidToken | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    token_key: {
+      value: cdktn.stringToHclTerraform(struct!.tokenKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path_to_token: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenPathToTokenToHclTerraform, true)(struct!.pathToToken),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenPathToTokenList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidToken | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._tokenKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tokenKey = this._tokenKey;
+    }
+    if (this._pathToToken?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pathToToken = this._pathToToken?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidToken | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._enabled = undefined;
+      this._tokenKey = undefined;
+      this._pathToToken.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._enabled = value.enabled;
+      this._tokenKey = value.tokenKey;
+      this._pathToToken.internalValue = value.pathToToken;
+    }
+  }
+
+  // enabled - computed: true, optional: true, required: false
+  private _enabled?: boolean | cdktn.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktn.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // token_key - computed: false, optional: false, required: true
+  private _tokenKey?: string; 
+  public get tokenKey() {
+    return this.getStringAttribute('token_key');
+  }
+  public set tokenKey(value: string) {
+    this._tokenKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenKeyInput() {
+    return this._tokenKey;
+  }
+
+  // path_to_token - computed: false, optional: true, required: false
+  private _pathToToken = new ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenPathToTokenList(this, "path_to_token", false);
+  public get pathToToken() {
+    return this._pathToToken;
+  }
+  public putPathToToken(value: ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenPathToToken[] | cdktn.IResolvable) {
+    this._pathToToken.internalValue = value;
+  }
+  public resetPathToToken() {
+    this._pathToToken.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathToTokenInput() {
+    return this._pathToToken.internalValue;
+  }
+}
+
+export class ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidToken[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenOutputReference {
+    return new ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigSourcePrometheusRemoteWrite {
+  /**
+  * Name of the environment variable or secret that holds the listen address for the Prometheus Remote Write endpoint.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+  */
+  readonly addressKey?: string;
+  /**
+  * HTTP authentication method. Valid values are `none`, `plain`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
+  */
+  readonly authStrategy: string;
+  /**
+  * Name of the environment variable or secret that holds the password. Used when `auth_strategy` is `plain`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
+  */
+  readonly passwordKey?: string;
+  /**
+  * The HTTP path on which the source listens for incoming Prometheus Remote Write requests.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
+  */
+  readonly path: string;
+  /**
+  * Name of the environment variable or secret that holds the username. Used when `auth_strategy` is `plain`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
+  */
+  readonly usernameKey?: string;
+  /**
+  * tls block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  */
+  readonly tls?: ObservabilityPipelineConfigSourcePrometheusRemoteWriteTls[] | cdktn.IResolvable;
+  /**
+  * valid_token block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#valid_token ObservabilityPipeline#valid_token}
+  */
+  readonly validToken?: ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidToken[] | cdktn.IResolvable;
+}
+
+export function observabilityPipelineConfigSourcePrometheusRemoteWriteToTerraform(struct?: ObservabilityPipelineConfigSourcePrometheusRemoteWrite | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    address_key: cdktn.stringToTerraform(struct!.addressKey),
+    auth_strategy: cdktn.stringToTerraform(struct!.authStrategy),
+    password_key: cdktn.stringToTerraform(struct!.passwordKey),
+    path: cdktn.stringToTerraform(struct!.path),
+    username_key: cdktn.stringToTerraform(struct!.usernameKey),
+    tls: cdktn.listMapper(observabilityPipelineConfigSourcePrometheusRemoteWriteTlsToTerraform, true)(struct!.tls),
+    valid_token: cdktn.listMapper(observabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenToTerraform, true)(struct!.validToken),
+  }
+}
+
+
+export function observabilityPipelineConfigSourcePrometheusRemoteWriteToHclTerraform(struct?: ObservabilityPipelineConfigSourcePrometheusRemoteWrite | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    address_key: {
+      value: cdktn.stringToHclTerraform(struct!.addressKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    auth_strategy: {
+      value: cdktn.stringToHclTerraform(struct!.authStrategy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    password_key: {
+      value: cdktn.stringToHclTerraform(struct!.passwordKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktn.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username_key: {
+      value: cdktn.stringToHclTerraform(struct!.usernameKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tls: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigSourcePrometheusRemoteWriteTlsToHclTerraform, true)(struct!.tls),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigSourcePrometheusRemoteWriteTlsList",
+    },
+    valid_token: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenToHclTerraform, true)(struct!.validToken),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigSourcePrometheusRemoteWriteOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigSourcePrometheusRemoteWrite | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._addressKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.addressKey = this._addressKey;
+    }
+    if (this._authStrategy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authStrategy = this._authStrategy;
+    }
+    if (this._passwordKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordKey = this._passwordKey;
+    }
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    if (this._usernameKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.usernameKey = this._usernameKey;
+    }
+    if (this._tls?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tls = this._tls?.internalValue;
+    }
+    if (this._validToken?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.validToken = this._validToken?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigSourcePrometheusRemoteWrite | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._addressKey = undefined;
+      this._authStrategy = undefined;
+      this._passwordKey = undefined;
+      this._path = undefined;
+      this._usernameKey = undefined;
+      this._tls.internalValue = undefined;
+      this._validToken.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._addressKey = value.addressKey;
+      this._authStrategy = value.authStrategy;
+      this._passwordKey = value.passwordKey;
+      this._path = value.path;
+      this._usernameKey = value.usernameKey;
+      this._tls.internalValue = value.tls;
+      this._validToken.internalValue = value.validToken;
+    }
+  }
+
+  // address_key - computed: false, optional: true, required: false
+  private _addressKey?: string; 
+  public get addressKey() {
+    return this.getStringAttribute('address_key');
+  }
+  public set addressKey(value: string) {
+    this._addressKey = value;
+  }
+  public resetAddressKey() {
+    this._addressKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get addressKeyInput() {
+    return this._addressKey;
+  }
+
+  // auth_strategy - computed: false, optional: false, required: true
+  private _authStrategy?: string; 
+  public get authStrategy() {
+    return this.getStringAttribute('auth_strategy');
+  }
+  public set authStrategy(value: string) {
+    this._authStrategy = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authStrategyInput() {
+    return this._authStrategy;
+  }
+
+  // password_key - computed: false, optional: true, required: false
+  private _passwordKey?: string; 
+  public get passwordKey() {
+    return this.getStringAttribute('password_key');
+  }
+  public set passwordKey(value: string) {
+    this._passwordKey = value;
+  }
+  public resetPasswordKey() {
+    this._passwordKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordKeyInput() {
+    return this._passwordKey;
+  }
+
+  // path - computed: false, optional: false, required: true
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+
+  // username_key - computed: false, optional: true, required: false
+  private _usernameKey?: string; 
+  public get usernameKey() {
+    return this.getStringAttribute('username_key');
+  }
+  public set usernameKey(value: string) {
+    this._usernameKey = value;
+  }
+  public resetUsernameKey() {
+    this._usernameKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameKeyInput() {
+    return this._usernameKey;
+  }
+
+  // tls - computed: false, optional: true, required: false
+  private _tls = new ObservabilityPipelineConfigSourcePrometheusRemoteWriteTlsList(this, "tls", false);
+  public get tls() {
+    return this._tls;
+  }
+  public putTls(value: ObservabilityPipelineConfigSourcePrometheusRemoteWriteTls[] | cdktn.IResolvable) {
+    this._tls.internalValue = value;
+  }
+  public resetTls() {
+    this._tls.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tlsInput() {
+    return this._tls.internalValue;
+  }
+
+  // valid_token - computed: false, optional: true, required: false
+  private _validToken = new ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidTokenList(this, "valid_token", false);
+  public get validToken() {
+    return this._validToken;
+  }
+  public putValidToken(value: ObservabilityPipelineConfigSourcePrometheusRemoteWriteValidToken[] | cdktn.IResolvable) {
+    this._validToken.internalValue = value;
+  }
+  public resetValidToken() {
+    this._validToken.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get validTokenInput() {
+    return this._validToken.internalValue;
+  }
+}
+
+export class ObservabilityPipelineConfigSourcePrometheusRemoteWriteList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigSourcePrometheusRemoteWrite[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigSourcePrometheusRemoteWriteOutputReference {
+    return new ObservabilityPipelineConfigSourcePrometheusRemoteWriteOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigSourceRsyslogTls {
+  /**
+  * Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  */
+  readonly caFile?: string;
+  /**
+  * Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  */
+  readonly crtFile: string;
+  /**
+  * Path to the private key file associated with the TLS server certificate.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  */
+  readonly keyFile?: string;
+  /**
+  * Name of the environment variable or secret that holds the passphrase for the private key file.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  */
+  readonly keyPassKey?: string;
+  /**
+  * When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
   */
   readonly verifyCertificate?: boolean | cdktn.IResolvable;
 }
@@ -12069,19 +15396,19 @@ export interface ObservabilityPipelineConfigSourceRsyslog {
   /**
   * Name of the environment variable or secret that holds the listen address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
   */
   readonly addressKey?: string;
   /**
   * Protocol used by the syslog source to receive messages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
   */
   readonly mode?: string;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceRsyslogTls[] | cdktn.IResolvable;
 }
@@ -12257,7 +15584,7 @@ export interface ObservabilityPipelineConfigSourceSocketFramingCharacterDelimite
   /**
   * A single ASCII character used as a delimiter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
   */
   readonly delimiter: string;
 }
@@ -12372,13 +15699,13 @@ export interface ObservabilityPipelineConfigSourceSocketFraming {
   /**
   * The framing method. Valid values are `newline_delimited`, `bytes`, `character_delimited`, `octet_counting`, `chunked_gelf`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#method ObservabilityPipeline#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#method ObservabilityPipeline#method}
   */
   readonly method: string;
   /**
   * character_delimited block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#character_delimited ObservabilityPipeline#character_delimited}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#character_delimited ObservabilityPipeline#character_delimited}
   */
   readonly characterDelimited?: ObservabilityPipelineConfigSourceSocketFramingCharacterDelimited[] | cdktn.IResolvable;
 }
@@ -12522,31 +15849,31 @@ export interface ObservabilityPipelineConfigSourceSocketTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS server certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
   /**
   * When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
   */
   readonly verifyCertificate?: boolean | cdktn.IResolvable;
 }
@@ -12777,25 +16104,25 @@ export interface ObservabilityPipelineConfigSourceSocket {
   /**
   * Name of the environment variable or secret that holds the listen address for the socket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
   */
   readonly addressKey?: string;
   /**
   * The protocol used to receive logs. Valid values are `tcp`, `udp`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
   */
   readonly mode: string;
   /**
   * framing block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#framing ObservabilityPipeline#framing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#framing ObservabilityPipeline#framing}
   */
   readonly framing?: ObservabilityPipelineConfigSourceSocketFraming[] | cdktn.IResolvable;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceSocketTls[] | cdktn.IResolvable;
 }
@@ -12997,31 +16324,31 @@ export interface ObservabilityPipelineConfigSourceSplunkHecTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS server certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
   /**
   * When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
   */
   readonly verifyCertificate?: boolean | cdktn.IResolvable;
 }
@@ -13252,13 +16579,13 @@ export interface ObservabilityPipelineConfigSourceSplunkHecValidTokenFieldToAdd 
   /**
   * The metadata field name to add to incoming events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key ObservabilityPipeline#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key ObservabilityPipeline#key}
   */
   readonly key: string;
   /**
   * The metadata field value to add to incoming events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
   */
   readonly value: string;
 }
@@ -13399,19 +16726,19 @@ export interface ObservabilityPipelineConfigSourceSplunkHecValidToken {
   /**
   * Whether this token is currently accepted. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the environment variable or secret that holds the expected HEC token value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
   */
   readonly tokenKey: string;
   /**
   * field_to_add block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#field_to_add ObservabilityPipeline#field_to_add}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#field_to_add ObservabilityPipeline#field_to_add}
   */
   readonly fieldToAdd?: ObservabilityPipelineConfigSourceSplunkHecValidTokenFieldToAdd[] | cdktn.IResolvable;
 }
@@ -13584,25 +16911,25 @@ export interface ObservabilityPipelineConfigSourceSplunkHec {
   /**
   * Name of the environment variable or secret that holds the listen address for the HEC API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
   */
   readonly addressKey?: string;
   /**
   * When `true`, the Splunk HEC token from the incoming request is stored in the event, allowing downstream components to forward it to other Splunk HEC destinations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#store_hec_token ObservabilityPipeline#store_hec_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#store_hec_token ObservabilityPipeline#store_hec_token}
   */
   readonly storeHecToken?: boolean | cdktn.IResolvable;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceSplunkHecTls[] | cdktn.IResolvable;
   /**
   * valid_token block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#valid_token ObservabilityPipeline#valid_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#valid_token ObservabilityPipeline#valid_token}
   */
   readonly validToken?: ObservabilityPipelineConfigSourceSplunkHecValidToken[] | cdktn.IResolvable;
 }
@@ -13807,31 +17134,31 @@ export interface ObservabilityPipelineConfigSourceSplunkTcpTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS server certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
   /**
   * When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
   */
   readonly verifyCertificate?: boolean | cdktn.IResolvable;
 }
@@ -14062,13 +17389,19 @@ export interface ObservabilityPipelineConfigSourceSplunkTcp {
   /**
   * Name of the environment variable or secret that holds the listen address for the Splunk TCP receiver.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
   */
   readonly addressKey?: string;
   /**
+  * Maximum duration, in seconds, that a connection can remain open before it is closed. When unset, connections can remain open indefinitely.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#max_connection_duration_secs ObservabilityPipeline#max_connection_duration_secs}
+  */
+  readonly maxConnectionDurationSecs?: number;
+  /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceSplunkTcpTls[] | cdktn.IResolvable;
 }
@@ -14080,6 +17413,7 @@ export function observabilityPipelineConfigSourceSplunkTcpToTerraform(struct?: O
   }
   return {
     address_key: cdktn.stringToTerraform(struct!.addressKey),
+    max_connection_duration_secs: cdktn.numberToTerraform(struct!.maxConnectionDurationSecs),
     tls: cdktn.listMapper(observabilityPipelineConfigSourceSplunkTcpTlsToTerraform, true)(struct!.tls),
   }
 }
@@ -14096,6 +17430,12 @@ export function observabilityPipelineConfigSourceSplunkTcpToHclTerraform(struct?
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    max_connection_duration_secs: {
+      value: cdktn.numberToHclTerraform(struct!.maxConnectionDurationSecs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
     },
     tls: {
       value: cdktn.listMapperHcl(observabilityPipelineConfigSourceSplunkTcpTlsToHclTerraform, true)(struct!.tls),
@@ -14133,6 +17473,10 @@ export class ObservabilityPipelineConfigSourceSplunkTcpOutputReference extends c
       hasAnyValues = true;
       internalValueResult.addressKey = this._addressKey;
     }
+    if (this._maxConnectionDurationSecs !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxConnectionDurationSecs = this._maxConnectionDurationSecs;
+    }
     if (this._tls?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.tls = this._tls?.internalValue;
@@ -14145,6 +17489,7 @@ export class ObservabilityPipelineConfigSourceSplunkTcpOutputReference extends c
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._addressKey = undefined;
+      this._maxConnectionDurationSecs = undefined;
       this._tls.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
@@ -14155,6 +17500,7 @@ export class ObservabilityPipelineConfigSourceSplunkTcpOutputReference extends c
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._addressKey = value.addressKey;
+      this._maxConnectionDurationSecs = value.maxConnectionDurationSecs;
       this._tls.internalValue = value.tls;
     }
   }
@@ -14173,6 +17519,22 @@ export class ObservabilityPipelineConfigSourceSplunkTcpOutputReference extends c
   // Temporarily expose input value. Use with caution.
   public get addressKeyInput() {
     return this._addressKey;
+  }
+
+  // max_connection_duration_secs - computed: false, optional: true, required: false
+  private _maxConnectionDurationSecs?: number; 
+  public get maxConnectionDurationSecs() {
+    return this.getNumberAttribute('max_connection_duration_secs');
+  }
+  public set maxConnectionDurationSecs(value: number) {
+    this._maxConnectionDurationSecs = value;
+  }
+  public resetMaxConnectionDurationSecs() {
+    this._maxConnectionDurationSecs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxConnectionDurationSecsInput() {
+    return this._maxConnectionDurationSecs;
   }
 
   // tls - computed: false, optional: true, required: false
@@ -14215,7 +17577,7 @@ export interface ObservabilityPipelineConfigSourceSumoLogic {
   /**
   * Name of the environment variable or secret that holds the listen address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
   */
   readonly addressKey?: string;
 }
@@ -14333,31 +17695,31 @@ export interface ObservabilityPipelineConfigSourceSyslogNgTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS server certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
   /**
   * When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
   */
   readonly verifyCertificate?: boolean | cdktn.IResolvable;
 }
@@ -14588,19 +17950,19 @@ export interface ObservabilityPipelineConfigSourceSyslogNg {
   /**
   * Name of the environment variable or secret that holds the listen address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
   */
   readonly addressKey?: string;
   /**
   * Protocol used by the syslog source to receive messages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
   */
   readonly mode?: string;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceSyslogNgTls[] | cdktn.IResolvable;
 }
@@ -14776,31 +18138,31 @@ export interface ObservabilityPipelineConfigSourceWebsocketTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the client certificate file. Required when `mode` is `with_client_cert`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile?: string;
   /**
   * Path to the private key file associated with the client certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
   /**
   * The TLS mode. Use `enabled` for server-only TLS, or `with_client_cert` for mutual TLS with a client certificate. Valid values are `enabled`, `with_client_cert`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
   */
   readonly mode: string;
 }
@@ -15031,49 +18393,49 @@ export interface ObservabilityPipelineConfigSourceWebsocket {
   /**
   * The authentication strategy used when connecting to the WebSocket server. Valid values are `none`, `basic`, `bearer`, `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
   */
   readonly authStrategy: string;
   /**
   * Name of the environment variable or secret that holds a custom header value. Used when `auth_strategy` is `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#custom_key ObservabilityPipeline#custom_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#custom_key ObservabilityPipeline#custom_key}
   */
   readonly customKey?: string;
   /**
   * The decoding format used to interpret incoming log events. Valid values are `bytes`, `gelf`, `json`, `syslog`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
   */
   readonly decoding: string;
   /**
   * Name of the environment variable or secret that holds the password. Used when `auth_strategy` is `basic`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
   */
   readonly passwordKey?: string;
   /**
   * Name of the environment variable or secret that holds the bearer token. Used when `auth_strategy` is `bearer`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
   */
   readonly tokenKey?: string;
   /**
   * Name of the environment variable or secret that holds the WebSocket URI to connect to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#uri_key ObservabilityPipeline#uri_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#uri_key ObservabilityPipeline#uri_key}
   */
   readonly uriKey?: string;
   /**
   * Name of the environment variable or secret that holds the username. Used when `auth_strategy` is `basic`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
   */
   readonly usernameKey?: string;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceWebsocketTls[] | cdktn.IResolvable;
 }
@@ -15388,7 +18750,7 @@ export interface ObservabilityPipelineConfigSource {
   /**
   * The unique identifier for this source.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -15397,109 +18759,115 @@ export interface ObservabilityPipelineConfigSource {
   /**
   * amazon_data_firehose block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#amazon_data_firehose ObservabilityPipeline#amazon_data_firehose}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#amazon_data_firehose ObservabilityPipeline#amazon_data_firehose}
   */
   readonly amazonDataFirehose?: ObservabilityPipelineConfigSourceAmazonDataFirehose[] | cdktn.IResolvable;
   /**
   * amazon_s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#amazon_s3 ObservabilityPipeline#amazon_s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#amazon_s3 ObservabilityPipeline#amazon_s3}
   */
   readonly amazonS3?: ObservabilityPipelineConfigSourceAmazonS3[] | cdktn.IResolvable;
   /**
   * datadog_agent block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#datadog_agent ObservabilityPipeline#datadog_agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#datadog_agent ObservabilityPipeline#datadog_agent}
   */
   readonly datadogAgent?: ObservabilityPipelineConfigSourceDatadogAgent[] | cdktn.IResolvable;
   /**
   * fluent_bit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#fluent_bit ObservabilityPipeline#fluent_bit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#fluent_bit ObservabilityPipeline#fluent_bit}
   */
   readonly fluentBit?: ObservabilityPipelineConfigSourceFluentBit[] | cdktn.IResolvable;
   /**
   * fluentd block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#fluentd ObservabilityPipeline#fluentd}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#fluentd ObservabilityPipeline#fluentd}
   */
   readonly fluentd?: ObservabilityPipelineConfigSourceFluentd[] | cdktn.IResolvable;
   /**
   * google_pubsub block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#google_pubsub ObservabilityPipeline#google_pubsub}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#google_pubsub ObservabilityPipeline#google_pubsub}
   */
   readonly googlePubsub?: ObservabilityPipelineConfigSourceGooglePubsub[] | cdktn.IResolvable;
   /**
   * http_client block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#http_client ObservabilityPipeline#http_client}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#http_client ObservabilityPipeline#http_client}
   */
   readonly httpClient?: ObservabilityPipelineConfigSourceHttpClient[] | cdktn.IResolvable;
   /**
   * http_server block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#http_server ObservabilityPipeline#http_server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#http_server ObservabilityPipeline#http_server}
   */
   readonly httpServer?: ObservabilityPipelineConfigSourceHttpServer[] | cdktn.IResolvable;
   /**
   * kafka block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#kafka ObservabilityPipeline#kafka}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#kafka ObservabilityPipeline#kafka}
   */
   readonly kafka?: ObservabilityPipelineConfigSourceKafka[] | cdktn.IResolvable;
   /**
   * logstash block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#logstash ObservabilityPipeline#logstash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#logstash ObservabilityPipeline#logstash}
   */
   readonly logstash?: ObservabilityPipelineConfigSourceLogstash[] | cdktn.IResolvable;
   /**
   * opentelemetry block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#opentelemetry ObservabilityPipeline#opentelemetry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#opentelemetry ObservabilityPipeline#opentelemetry}
   */
   readonly opentelemetry?: ObservabilityPipelineConfigSourceOpentelemetry[] | cdktn.IResolvable;
   /**
+  * prometheus_remote_write block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#prometheus_remote_write ObservabilityPipeline#prometheus_remote_write}
+  */
+  readonly prometheusRemoteWrite?: ObservabilityPipelineConfigSourcePrometheusRemoteWrite[] | cdktn.IResolvable;
+  /**
   * rsyslog block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#rsyslog ObservabilityPipeline#rsyslog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#rsyslog ObservabilityPipeline#rsyslog}
   */
   readonly rsyslog?: ObservabilityPipelineConfigSourceRsyslog[] | cdktn.IResolvable;
   /**
   * socket block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#socket ObservabilityPipeline#socket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#socket ObservabilityPipeline#socket}
   */
   readonly socket?: ObservabilityPipelineConfigSourceSocket[] | cdktn.IResolvable;
   /**
   * splunk_hec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#splunk_hec ObservabilityPipeline#splunk_hec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#splunk_hec ObservabilityPipeline#splunk_hec}
   */
   readonly splunkHec?: ObservabilityPipelineConfigSourceSplunkHec[] | cdktn.IResolvable;
   /**
   * splunk_tcp block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#splunk_tcp ObservabilityPipeline#splunk_tcp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#splunk_tcp ObservabilityPipeline#splunk_tcp}
   */
   readonly splunkTcp?: ObservabilityPipelineConfigSourceSplunkTcp[] | cdktn.IResolvable;
   /**
   * sumo_logic block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#sumo_logic ObservabilityPipeline#sumo_logic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#sumo_logic ObservabilityPipeline#sumo_logic}
   */
   readonly sumoLogic?: ObservabilityPipelineConfigSourceSumoLogic[] | cdktn.IResolvable;
   /**
   * syslog_ng block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#syslog_ng ObservabilityPipeline#syslog_ng}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#syslog_ng ObservabilityPipeline#syslog_ng}
   */
   readonly syslogNg?: ObservabilityPipelineConfigSourceSyslogNg[] | cdktn.IResolvable;
   /**
   * websocket block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#websocket ObservabilityPipeline#websocket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#websocket ObservabilityPipeline#websocket}
   */
   readonly websocket?: ObservabilityPipelineConfigSourceWebsocket[] | cdktn.IResolvable;
 }
@@ -15522,6 +18890,7 @@ export function observabilityPipelineConfigSourceToTerraform(struct?: Observabil
     kafka: cdktn.listMapper(observabilityPipelineConfigSourceKafkaToTerraform, true)(struct!.kafka),
     logstash: cdktn.listMapper(observabilityPipelineConfigSourceLogstashToTerraform, true)(struct!.logstash),
     opentelemetry: cdktn.listMapper(observabilityPipelineConfigSourceOpentelemetryToTerraform, true)(struct!.opentelemetry),
+    prometheus_remote_write: cdktn.listMapper(observabilityPipelineConfigSourcePrometheusRemoteWriteToTerraform, true)(struct!.prometheusRemoteWrite),
     rsyslog: cdktn.listMapper(observabilityPipelineConfigSourceRsyslogToTerraform, true)(struct!.rsyslog),
     socket: cdktn.listMapper(observabilityPipelineConfigSourceSocketToTerraform, true)(struct!.socket),
     splunk_hec: cdktn.listMapper(observabilityPipelineConfigSourceSplunkHecToTerraform, true)(struct!.splunkHec),
@@ -15610,6 +18979,12 @@ export function observabilityPipelineConfigSourceToHclTerraform(struct?: Observa
       isBlock: true,
       type: "list",
       storageClassType: "ObservabilityPipelineConfigSourceOpentelemetryList",
+    },
+    prometheus_remote_write: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigSourcePrometheusRemoteWriteToHclTerraform, true)(struct!.prometheusRemoteWrite),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigSourcePrometheusRemoteWriteList",
     },
     rsyslog: {
       value: cdktn.listMapperHcl(observabilityPipelineConfigSourceRsyslogToHclTerraform, true)(struct!.rsyslog),
@@ -15727,6 +19102,10 @@ export class ObservabilityPipelineConfigSourceOutputReference extends cdktn.Comp
       hasAnyValues = true;
       internalValueResult.opentelemetry = this._opentelemetry?.internalValue;
     }
+    if (this._prometheusRemoteWrite?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prometheusRemoteWrite = this._prometheusRemoteWrite?.internalValue;
+    }
     if (this._rsyslog?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.rsyslog = this._rsyslog?.internalValue;
@@ -15774,6 +19153,7 @@ export class ObservabilityPipelineConfigSourceOutputReference extends cdktn.Comp
       this._kafka.internalValue = undefined;
       this._logstash.internalValue = undefined;
       this._opentelemetry.internalValue = undefined;
+      this._prometheusRemoteWrite.internalValue = undefined;
       this._rsyslog.internalValue = undefined;
       this._socket.internalValue = undefined;
       this._splunkHec.internalValue = undefined;
@@ -15801,6 +19181,7 @@ export class ObservabilityPipelineConfigSourceOutputReference extends cdktn.Comp
       this._kafka.internalValue = value.kafka;
       this._logstash.internalValue = value.logstash;
       this._opentelemetry.internalValue = value.opentelemetry;
+      this._prometheusRemoteWrite.internalValue = value.prometheusRemoteWrite;
       this._rsyslog.internalValue = value.rsyslog;
       this._socket.internalValue = value.socket;
       this._splunkHec.internalValue = value.splunkHec;
@@ -16000,6 +19381,22 @@ export class ObservabilityPipelineConfigSourceOutputReference extends cdktn.Comp
     return this._opentelemetry.internalValue;
   }
 
+  // prometheus_remote_write - computed: false, optional: true, required: false
+  private _prometheusRemoteWrite = new ObservabilityPipelineConfigSourcePrometheusRemoteWriteList(this, "prometheus_remote_write", false);
+  public get prometheusRemoteWrite() {
+    return this._prometheusRemoteWrite;
+  }
+  public putPrometheusRemoteWrite(value: ObservabilityPipelineConfigSourcePrometheusRemoteWrite[] | cdktn.IResolvable) {
+    this._prometheusRemoteWrite.internalValue = value;
+  }
+  public resetPrometheusRemoteWrite() {
+    this._prometheusRemoteWrite.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prometheusRemoteWriteInput() {
+    return this._prometheusRemoteWrite.internalValue;
+  }
+
   // rsyslog - computed: false, optional: true, required: false
   private _rsyslog = new ObservabilityPipelineConfigSourceRsyslogList(this, "rsyslog", false);
   public get rsyslog() {
@@ -16136,31 +19533,31 @@ export interface ObservabilityPipelineConfigA {
   /**
   * The type of data being ingested. Defaults to `logs` if not specified. Valid values are `logs`, `metrics`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#pipeline_type ObservabilityPipeline#pipeline_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#pipeline_type ObservabilityPipeline#pipeline_type}
   */
   readonly pipelineType?: string;
   /**
   * Set to `true` to continue using the legacy search syntax while migrating filter queries. After migrating all queries to the new syntax, set to `false`. The legacy syntax is deprecated and will eventually be removed. Requires Observability Pipelines Worker 2.11 or later. Only applies to `logs` pipelines. This field is ignored for `metrics` pipelines. See https://docs.datadoghq.com/observability_pipelines/guide/upgrade_your_filter_queries_to_the_new_search_syntax/ for more information.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#use_legacy_search_syntax ObservabilityPipeline#use_legacy_search_syntax}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#use_legacy_search_syntax ObservabilityPipeline#use_legacy_search_syntax}
   */
   readonly useLegacySearchSyntax?: boolean | cdktn.IResolvable;
   /**
   * destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#destination ObservabilityPipeline#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#destination ObservabilityPipeline#destination}
   */
   readonly destination?: ObservabilityPipelineConfigDestination[] | cdktn.IResolvable;
   /**
   * processor_group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#processor_group ObservabilityPipeline#processor_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#processor_group ObservabilityPipeline#processor_group}
   */
   readonly processorGroup?: ObservabilityPipelineConfigProcessorGroup[] | cdktn.IResolvable;
   /**
   * source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
   */
   readonly source?: ObservabilityPipelineConfigSource[] | cdktn.IResolvable;
 }

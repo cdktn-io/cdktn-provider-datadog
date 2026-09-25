@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/workflow_automation
+// https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/data-sources/workflow_automation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,16 +15,75 @@ export interface DataDatadogWorkflowAutomationConfig extends cdktn.TerraformMeta
   /**
   * ID of the workflow.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/workflow_automation#id DataDatadogWorkflowAutomation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/data-sources/workflow_automation#id DataDatadogWorkflowAutomation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
 }
+export interface DataDatadogWorkflowAutomationRunAs {
+}
+
+export function dataDatadogWorkflowAutomationRunAsToTerraform(struct?: DataDatadogWorkflowAutomationRunAs): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogWorkflowAutomationRunAsToHclTerraform(struct?: DataDatadogWorkflowAutomationRunAs): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogWorkflowAutomationRunAsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogWorkflowAutomationRunAs | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogWorkflowAutomationRunAs | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/workflow_automation datadog_workflow_automation}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/data-sources/workflow_automation datadog_workflow_automation}
 */
 export class DataDatadogWorkflowAutomation extends cdktn.TerraformDataSource {
 
@@ -40,7 +99,7 @@ export class DataDatadogWorkflowAutomation extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatadogWorkflowAutomation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogWorkflowAutomation to import
-  * @param importFromId The id of the existing DataDatadogWorkflowAutomation that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/workflow_automation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogWorkflowAutomation that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/data-sources/workflow_automation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogWorkflowAutomation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -52,7 +111,7 @@ export class DataDatadogWorkflowAutomation extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/workflow_automation datadog_workflow_automation} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/data-sources/workflow_automation datadog_workflow_automation} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -63,7 +122,7 @@ export class DataDatadogWorkflowAutomation extends cdktn.TerraformDataSource {
       terraformResourceType: 'datadog_workflow_automation',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.19.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -107,6 +166,17 @@ export class DataDatadogWorkflowAutomation extends cdktn.TerraformDataSource {
   // published - computed: true, optional: false, required: false
   public get published() {
     return this.getBooleanAttribute('published');
+  }
+
+  // run_as - computed: true, optional: false, required: false
+  private _runAs = new DataDatadogWorkflowAutomationRunAsOutputReference(this, "run_as");
+  public get runAs() {
+    return this._runAs;
+  }
+
+  // sensitive_privileges - computed: true, optional: false, required: false
+  public get sensitivePrivileges() {
+    return this.getBooleanAttribute('sensitive_privileges');
   }
 
   // spec_json - computed: true, optional: false, required: false
