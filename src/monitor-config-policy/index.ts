@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor_config_policy
+// https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/monitor_config_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,42 +13,131 @@ import * as cdktn from 'cdktn';
 
 export interface MonitorConfigPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor_config_policy#id MonitorConfigPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/monitor_config_policy#id MonitorConfigPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * The monitor config policy type Valid values are `tag`.
+  * The monitor config policy type Valid values are `tag`, `downtime`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor_config_policy#policy_type MonitorConfigPolicy#policy_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/monitor_config_policy#policy_type MonitorConfigPolicy#policy_type}
   */
   readonly policyType: string;
   /**
+  * downtime_policy block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/monitor_config_policy#downtime_policy MonitorConfigPolicy#downtime_policy}
+  */
+  readonly downtimePolicy?: MonitorConfigPolicyDowntimePolicy;
+  /**
   * tag_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor_config_policy#tag_policy MonitorConfigPolicy#tag_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/monitor_config_policy#tag_policy MonitorConfigPolicy#tag_policy}
   */
   readonly tagPolicy?: MonitorConfigPolicyTagPolicy;
+}
+export interface MonitorConfigPolicyDowntimePolicy {
+  /**
+  * The maximum allowed downtime duration, in milliseconds
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/monitor_config_policy#max_duration_ms MonitorConfigPolicy#max_duration_ms}
+  */
+  readonly maxDurationMs: number;
+}
+
+export function monitorConfigPolicyDowntimePolicyToTerraform(struct?: MonitorConfigPolicyDowntimePolicyOutputReference | MonitorConfigPolicyDowntimePolicy): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    max_duration_ms: cdktn.numberToTerraform(struct!.maxDurationMs),
+  }
+}
+
+
+export function monitorConfigPolicyDowntimePolicyToHclTerraform(struct?: MonitorConfigPolicyDowntimePolicyOutputReference | MonitorConfigPolicyDowntimePolicy): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    max_duration_ms: {
+      value: cdktn.numberToHclTerraform(struct!.maxDurationMs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class MonitorConfigPolicyDowntimePolicyOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MonitorConfigPolicyDowntimePolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._maxDurationMs !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxDurationMs = this._maxDurationMs;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MonitorConfigPolicyDowntimePolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._maxDurationMs = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._maxDurationMs = value.maxDurationMs;
+    }
+  }
+
+  // max_duration_ms - computed: false, optional: false, required: true
+  private _maxDurationMs?: number; 
+  public get maxDurationMs() {
+    return this.getNumberAttribute('max_duration_ms');
+  }
+  public set maxDurationMs(value: number) {
+    this._maxDurationMs = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxDurationMsInput() {
+    return this._maxDurationMs;
+  }
 }
 export interface MonitorConfigPolicyTagPolicy {
   /**
   * The key of the tag
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor_config_policy#tag_key MonitorConfigPolicy#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/monitor_config_policy#tag_key MonitorConfigPolicy#tag_key}
   */
   readonly tagKey: string;
   /**
   * If a tag key is required for monitor creation
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor_config_policy#tag_key_required MonitorConfigPolicy#tag_key_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/monitor_config_policy#tag_key_required MonitorConfigPolicy#tag_key_required}
   */
   readonly tagKeyRequired: boolean | cdktn.IResolvable;
   /**
   * Valid values for the tag
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor_config_policy#valid_tag_values MonitorConfigPolicy#valid_tag_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/monitor_config_policy#valid_tag_values MonitorConfigPolicy#valid_tag_values}
   */
   readonly validTagValues: string[];
 }
@@ -181,7 +270,7 @@ export class MonitorConfigPolicyTagPolicyOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor_config_policy datadog_monitor_config_policy}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/monitor_config_policy datadog_monitor_config_policy}
 */
 export class MonitorConfigPolicy extends cdktn.TerraformResource {
 
@@ -197,7 +286,7 @@ export class MonitorConfigPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MonitorConfigPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MonitorConfigPolicy to import
-  * @param importFromId The id of the existing MonitorConfigPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor_config_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MonitorConfigPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/monitor_config_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MonitorConfigPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -209,7 +298,7 @@ export class MonitorConfigPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor_config_policy datadog_monitor_config_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.22.0/docs/resources/monitor_config_policy datadog_monitor_config_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -220,7 +309,7 @@ export class MonitorConfigPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_monitor_config_policy',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.19.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -233,6 +322,7 @@ export class MonitorConfigPolicy extends cdktn.TerraformResource {
     });
     this._id = config.id;
     this._policyType = config.policyType;
+    this._downtimePolicy.internalValue = config.downtimePolicy;
     this._tagPolicy.internalValue = config.tagPolicy;
   }
 
@@ -269,6 +359,22 @@ export class MonitorConfigPolicy extends cdktn.TerraformResource {
     return this._policyType;
   }
 
+  // downtime_policy - computed: false, optional: true, required: false
+  private _downtimePolicy = new MonitorConfigPolicyDowntimePolicyOutputReference(this, "downtime_policy");
+  public get downtimePolicy() {
+    return this._downtimePolicy;
+  }
+  public putDowntimePolicy(value: MonitorConfigPolicyDowntimePolicy) {
+    this._downtimePolicy.internalValue = value;
+  }
+  public resetDowntimePolicy() {
+    this._downtimePolicy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get downtimePolicyInput() {
+    return this._downtimePolicy.internalValue;
+  }
+
   // tag_policy - computed: false, optional: true, required: false
   private _tagPolicy = new MonitorConfigPolicyTagPolicyOutputReference(this, "tag_policy");
   public get tagPolicy() {
@@ -293,6 +399,7 @@ export class MonitorConfigPolicy extends cdktn.TerraformResource {
     return {
       id: cdktn.stringToTerraform(this._id),
       policy_type: cdktn.stringToTerraform(this._policyType),
+      downtime_policy: monitorConfigPolicyDowntimePolicyToTerraform(this._downtimePolicy.internalValue),
       tag_policy: monitorConfigPolicyTagPolicyToTerraform(this._tagPolicy.internalValue),
     };
   }
@@ -310,6 +417,12 @@ export class MonitorConfigPolicy extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      downtime_policy: {
+        value: monitorConfigPolicyDowntimePolicyToHclTerraform(this._downtimePolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MonitorConfigPolicyDowntimePolicyList",
       },
       tag_policy: {
         value: monitorConfigPolicyTagPolicyToHclTerraform(this._tagPolicy.internalValue),
