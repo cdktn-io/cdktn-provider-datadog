@@ -22,7 +22,7 @@ importers:
         version: 3.0.1
       '@cdktn/provider-project':
         specifier: ^0.9.0
-        version: 0.9.8(constructs@10.7.2)(projen@0.101.33(constructs@10.7.2))
+        version: 0.9.13(constructs@10.7.2)(projen@0.101.33(constructs@10.7.2))
       '@types/node':
         specifier: ^22
         version: 22.20.1
@@ -57,7 +57,7 @@ importers:
         specifier: ~5.9.0
         version: 5.9.62
       projen:
-        specifier: ^0.101.20
+        specifier: '>=0.101.0 <1.0.0'
         version: 0.101.33(constructs@10.7.2)
       semver:
         specifier: ^7.5.3
@@ -133,8 +133,8 @@ packages:
   '@cdktn/provider-generator@0.24.0':
     resolution: {integrity: sha512-QhvqdnoDvUtq0EgHkApZ1qkS3j0wR5FI0utCvvc84wHWdrXlQTYBwq6TKyHPWHCPbghNfcNV3jV6U8eDHmvl2A==}
 
-  '@cdktn/provider-project@0.9.8':
-    resolution: {integrity: sha512-6qRGHRdzj2MDa3TUFdpzY//R5HlZm0+1+VHslpn6lKjlT8Czs/vajhMUQLAtq+BFZtSW56yzshshHliN2/9HTQ==}
+  '@cdktn/provider-project@0.9.13':
+    resolution: {integrity: sha512-F+ANyv4k91JkwWiSSX0YzVXbNTsQTuFP96v1k0143pchDPMNLx7iQhu9x0794jor7BSZQnlgPG2LzwuzM/fvVQ==}
     engines: {node: '>= 22.11.0'}
     peerDependencies:
       constructs: ^10.5.0
@@ -365,10 +365,9 @@ packages:
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
 
-  '@xmldom/xmldom@0.9.11':
-    resolution: {integrity: sha512-tW8bcK3hsG0/uqSnNz6TK4BkcuZSezoU7DlnYssILmZDktPnSHHuDJJFM0AJv+13gz2r0iGdrj6qqKeUnxXEDg==}
+  '@xmldom/xmldom@0.9.12':
+    resolution: {integrity: sha512-5AXjrcMClTryPe9LgZrygpB1lj7s0S9E0+W+AHaVKAVyHanafK86iPSvG5xHVSp/jC+VH1UXu0TAEmY279xH7A==}
     engines: {node: '>=14.6'}
-    deprecated: this version has critical issues, please update to the latest version
 
   JSONStream@1.3.5:
     resolution: {integrity: sha512-E+iruNOY8VV9s4JEbe1aNEm6MiszPRr/UfcHMz0TQh1BXSxHK+ASV1R6W4HpjBhSeS+54PIsAMCBmwD06LLsqQ==}
@@ -418,11 +417,11 @@ packages:
     resolution: {integrity: sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==}
     engines: {node: 18 || 20 || >=22}
 
-  brace-expansion@1.1.18:
-    resolution: {integrity: sha512-Edep/X9fGqVNmzKBVsDYIOtD+z1tuezV70LBjdCst9Tqu76lsnvRiZ6oTic1n+/BIwX6QDGAO94PN4N2SADvtw==}
+  brace-expansion@1.1.21:
+    resolution: {integrity: sha512-9zeA+KLZNNzglF2TPKRQEDyx6Yby7daAkuy8MiPzpXPsYDWi/DRM8jmwUDxokQjYqBpv5DgPiwD4h4ZZSy1Ujw==}
 
-  brace-expansion@5.0.9:
-    resolution: {integrity: sha512-ScQ4IuvIEF1TMlP7Zt+vjJ//9zlPb2SDcxWxM3bk8s6t6GGdJ7KO1dCcTidOPJKePW30LE/2cT7wCyPho9/Wxg==}
+  brace-expansion@5.0.12:
+    resolution: {integrity: sha512-YovQ3rzhaLMIrDjNDMkNS01tea93qhEhG5xy8f6+R0l+dw3Ki+5sCoIoI942iuLZTHWogWktgwVDhU09iNEimQ==}
     engines: {node: 20 || >=22}
 
   braces@3.0.3:
@@ -1693,8 +1692,8 @@ packages:
   undici-types@6.21.0:
     resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
-  undici@6.28.0:
-    resolution: {integrity: sha512-LIY910g9TI13YS95lrMFrs8Rm/u/irgHeTWoKCoteeJ04CUJ92eEfj0rVn+7VKMPBpUPiUoBKfhNyLI23EE/KA==}
+  undici@6.29.0:
+    resolution: {integrity: sha512-R+RODBqp6i2pPflGdq+xIOUkl+RNfGgHwoinecKu/JCuf2uO06cOKoDbI2P7Dn6KcswdKwrczbU6IYJ6K8X+wg==}
     engines: {node: '>=18.17'}
 
   universalify@0.1.2:
@@ -1818,7 +1817,7 @@ snapshots:
   '@actions/http-client@4.0.1':
     dependencies:
       tunnel: 0.0.6
-      undici: 6.28.0
+      undici: 6.29.0
 
   '@actions/io@3.0.2': {}
 
@@ -1922,7 +1921,7 @@ snapshots:
       - jsii-rosetta
       - supports-color
 
-  '@cdktn/provider-project@0.9.8(constructs@10.7.2)(projen@0.101.33(constructs@10.7.2))':
+  '@cdktn/provider-project@0.9.13(constructs@10.7.2)(projen@0.101.33(constructs@10.7.2))':
     dependencies:
       constructs: 10.7.2
       projen: 0.101.33(constructs@10.7.2)
@@ -2151,7 +2150,7 @@ snapshots:
 
   '@types/normalize-package-data@2.4.4': {}
 
-  '@xmldom/xmldom@0.9.11': {}
+  '@xmldom/xmldom@0.9.12': {}
 
   JSONStream@1.3.5:
     dependencies:
@@ -2193,12 +2192,12 @@ snapshots:
 
   balanced-match@4.0.4: {}
 
-  brace-expansion@1.1.18:
+  brace-expansion@1.1.21:
     dependencies:
       balanced-match: 1.0.2
       concat-map: 0.0.1
 
-  brace-expansion@5.0.9:
+  brace-expansion@5.0.12:
     dependencies:
       balanced-match: 4.0.4
 
@@ -2973,7 +2972,7 @@ snapshots:
     dependencies:
       '@jsii/check-node': 1.139.0
       '@jsii/spec': 1.139.0
-      '@xmldom/xmldom': 0.9.11
+      '@xmldom/xmldom': 0.9.12
       chalk: 4.1.2
       commonmark: 0.31.2
       fast-glob: 3.3.3
@@ -3114,11 +3113,11 @@ snapshots:
 
   minimatch@10.2.6:
     dependencies:
-      brace-expansion: 5.0.9
+      brace-expansion: 5.0.12
 
   minimatch@3.1.5:
     dependencies:
-      brace-expansion: 1.1.18
+      brace-expansion: 1.1.21
 
   minimist-options@4.1.0:
     dependencies:
@@ -3540,7 +3539,7 @@ snapshots:
 
   undici-types@6.21.0: {}
 
-  undici@6.28.0: {}
+  undici@6.29.0: {}
 
   universalify@0.1.2: {}
 

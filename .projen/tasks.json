@@ -331,7 +331,12 @@
     },
     "post-upgrade": {
       "name": "post-upgrade",
-      "description": "Runs after upgrading dependencies"
+      "description": "Runs after upgrading dependencies",
+      "steps": [
+        {
+          "exec": "node ./scripts/upgrade-vulnerable-transitives.js"
+        }
+      ]
     },
     "pre-compile": {
       "name": "pre-compile",
@@ -469,7 +474,7 @@
             "--peer",
             "--no-deprecated",
             "--dep=dev,prod,peer,optional",
-            "--filter=@action-validator/cli,@action-validator/core,jsii-diff,jsii-pacmak,projen"
+            "--filter=@action-validator/cli,@action-validator/core,jsii-diff,jsii-pacmak"
           ]
         },
         {
