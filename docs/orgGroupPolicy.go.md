@@ -4,7 +4,7 @@
 
 ### OrgGroupPolicy <a name="OrgGroupPolicy" id="@cdktn/provider-datadog.orgGroupPolicy.OrgGroupPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/org_group_policy datadog_org_group_policy}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/org_group_policy datadog_org_group_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.orgGroupPolicy.OrgGroupPolicy.Initializer"></a>
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the OrgGroupPolicy to import.
 
 The id of the existing OrgGroupPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/org_group_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/org_group_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -857,7 +857,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/orggrouppolicy
 | <code><a href="#@cdktn/provider-datadog.orgGroupPolicy.OrgGroupPolicyConfig.property.orgGroupId">OrgGroupId</a></code> | <code>*string</code> | The UUID of the org group this policy belongs to. Must be a valid UUID. |
 | <code><a href="#@cdktn/provider-datadog.orgGroupPolicy.OrgGroupPolicyConfig.property.policyName">PolicyName</a></code> | <code>*string</code> | The name of the policy. String length must be at least 1. |
 | <code><a href="#@cdktn/provider-datadog.orgGroupPolicy.OrgGroupPolicyConfig.property.enforcementTier">EnforcementTier</a></code> | <code>*string</code> | The enforcement tier of the policy. |
-| <code><a href="#@cdktn/provider-datadog.orgGroupPolicy.OrgGroupPolicyConfig.property.policyType">PolicyType</a></code> | <code>*string</code> | The type of the policy. Valid values are `org_config`. |
+| <code><a href="#@cdktn/provider-datadog.orgGroupPolicy.OrgGroupPolicyConfig.property.policyType">PolicyType</a></code> | <code>*string</code> | The type of the policy. Valid values are `org_config`, `role`. |
 
 ---
 
@@ -941,7 +941,7 @@ Content *string
 
 The policy content as a JSON-encoded string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/org_group_policy#content OrgGroupPolicy#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/org_group_policy#content OrgGroupPolicy#content}
 
 ---
 
@@ -955,7 +955,7 @@ OrgGroupId *string
 
 The UUID of the org group this policy belongs to. Must be a valid UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/org_group_policy#org_group_id OrgGroupPolicy#org_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/org_group_policy#org_group_id OrgGroupPolicy#org_group_id}
 
 ---
 
@@ -969,7 +969,7 @@ PolicyName *string
 
 The name of the policy. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/org_group_policy#policy_name OrgGroupPolicy#policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/org_group_policy#policy_name OrgGroupPolicy#policy_name}
 
 ---
 
@@ -985,7 +985,7 @@ The enforcement tier of the policy.
 
 `OVERRIDE_ALLOWED` means the policy is set but member orgs may mutate it. `GROUP_MANAGED` means the policy is strictly controlled and mutations are blocked for affected orgs. `DELEGATE` means each member org controls its own value. Valid values are `OVERRIDE_ALLOWED`, `GROUP_MANAGED`, `DELEGATE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/org_group_policy#enforcement_tier OrgGroupPolicy#enforcement_tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/org_group_policy#enforcement_tier OrgGroupPolicy#enforcement_tier}
 
 ---
 
@@ -997,9 +997,9 @@ PolicyType *string
 
 - *Type:* *string
 
-The type of the policy. Valid values are `org_config`.
+The type of the policy. Valid values are `org_config`, `role`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/org_group_policy#policy_type OrgGroupPolicy#policy_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/org_group_policy#policy_type OrgGroupPolicy#policy_type}
 
 ---
 

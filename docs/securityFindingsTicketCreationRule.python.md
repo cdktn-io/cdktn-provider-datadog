@@ -4,7 +4,7 @@
 
 ### SecurityFindingsTicketCreationRule <a name="SecurityFindingsTicketCreationRule" id="@cdktn/provider-datadog.securityFindingsTicketCreationRule.SecurityFindingsTicketCreationRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule datadog_security_findings_ticket_creation_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rule datadog_security_findings_ticket_creation_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityFindingsTicketCreationRule.SecurityFindingsTicketCreationRule.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The action to take when the ticket creation rule matches a finding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule#action SecurityFindingsTicketCreationRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rule#action SecurityFindingsTicketCreationRule#action}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The name of the ticket creation rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule#name SecurityFindingsTicketCreationRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rule#name SecurityFindingsTicketCreationRule#name}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Defines the scope of findings to which the automation rule applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule#rule SecurityFindingsTicketCreationRule#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rule#rule SecurityFindingsTicketCreationRule#rule}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Whether the ticket creation rule is enabled. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule#enabled SecurityFindingsTicketCreationRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rule#enabled SecurityFindingsTicketCreationRule#enabled}
 
 ---
 
@@ -546,9 +546,9 @@ def put_action(
 
 The maximum number of tickets the rule may create per day.
 
-If exceeded, one final ticket will be created, explaining the limit was hit and linking back to the responsible rule. Value must be between 1 and 500.
+If exceeded, one final ticket will be created, explaining the limit was hit and link back to the responsible rule. Value must be between 1 and 500.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule#max_tickets_per_day SecurityFindingsTicketCreationRule#max_tickets_per_day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rule#max_tickets_per_day SecurityFindingsTicketCreationRule#max_tickets_per_day}
 
 ---
 
@@ -556,9 +556,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-The UUID of the Case Management project. Must be a valid UUID.
+The UUID of the case management project. Must be a valid UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule#project_id SecurityFindingsTicketCreationRule#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rule#project_id SecurityFindingsTicketCreationRule#project_id}
 
 ---
 
@@ -566,9 +566,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-The ticketing system to create tickets in. Valid values are `jira`, `case_management`.
+The ticketing system to create tickets in. Valid values are `jira`, `case_management`, `linear`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule#target SecurityFindingsTicketCreationRule#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rule#target SecurityFindingsTicketCreationRule#target}
 
 ---
 
@@ -578,7 +578,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The UUID of the default assignee for created tickets. Must be a valid UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule#assignee_id SecurityFindingsTicketCreationRule#assignee_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rule#assignee_id SecurityFindingsTicketCreationRule#assignee_id}
 
 ---
 
@@ -586,11 +586,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-A JSON-encoded object of custom fields of the Jira issue to create.
+A JSON-encoded object of target-specific fields for the ticket to create.
 
-For the list of available fields, see the [Jira documentation](https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-issues/#api-rest-api-2-issue-createmeta-projectidorkey-issuetypes-issuetypeid-get).
+For `target: jira`, the custom fields of the Jira issue. For the list of available fields, see the [Jira documentation](https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-issues/#api-rest-api-2-issue-createmeta-projectidorkey-issuetypes-issuetypeid-get). For `target: linear`, the optional keys `linear_project_id` (string, the identifier of the Linear project the issue is created in) and `linear_label_ids` (array of strings, the identifiers of the Linear labels applied to the issue).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule#fields SecurityFindingsTicketCreationRule#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rule#fields SecurityFindingsTicketCreationRule#fields}
 
 ---
 
@@ -611,7 +611,7 @@ The list of security finding types that the automation rule applies to.
 
 Valid values are `api_security`, `attack_path`, `host_and_container_vulnerability`, `iac_misconfiguration`, `identity_risk`, `library_vulnerability`, `misconfiguration`, `runtime_code_vulnerability`, `secret`, `static_code_vulnerability`, `workload_activity`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule#finding_types SecurityFindingsTicketCreationRule#finding_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rule#finding_types SecurityFindingsTicketCreationRule#finding_types}
 
 ---
 
@@ -623,7 +623,7 @@ A search query to further filter the findings matched by this rule.
 
 The `@workflow.*` namespace and `@status` fields are not permitted. For a reference of available fields, see the [Security Findings schema documentation](https://docs.datadoghq.com/security/guide/findings-schema/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule#query SecurityFindingsTicketCreationRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rule#query SecurityFindingsTicketCreationRule#query}
 
 ---
 
@@ -747,7 +747,7 @@ The construct id used in the generated config for the SecurityFindingsTicketCrea
 
 The id of the existing SecurityFindingsTicketCreationRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1062,10 +1062,10 @@ securityFindingsTicketCreationRule.SecurityFindingsTicketCreationRuleAction(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.securityFindingsTicketCreationRule.SecurityFindingsTicketCreationRuleAction.property.maxTicketsPerDay">max_tickets_per_day</a></code> | <code>typing.Union[int, float]</code> | The maximum number of tickets the rule may create per day. |
-| <code><a href="#@cdktn/provider-datadog.securityFindingsTicketCreationRule.SecurityFindingsTicketCreationRuleAction.property.projectId">project_id</a></code> | <code>str</code> | The UUID of the Case Management project. Must be a valid UUID. |
-| <code><a href="#@cdktn/provider-datadog.securityFindingsTicketCreationRule.SecurityFindingsTicketCreationRuleAction.property.target">target</a></code> | <code>str</code> | The ticketing system to create tickets in. Valid values are `jira`, `case_management`. |
+| <code><a href="#@cdktn/provider-datadog.securityFindingsTicketCreationRule.SecurityFindingsTicketCreationRuleAction.property.projectId">project_id</a></code> | <code>str</code> | The UUID of the case management project. Must be a valid UUID. |
+| <code><a href="#@cdktn/provider-datadog.securityFindingsTicketCreationRule.SecurityFindingsTicketCreationRuleAction.property.target">target</a></code> | <code>str</code> | The ticketing system to create tickets in. Valid values are `jira`, `case_management`, `linear`. |
 | <code><a href="#@cdktn/provider-datadog.securityFindingsTicketCreationRule.SecurityFindingsTicketCreationRuleAction.property.assigneeId">assignee_id</a></code> | <code>str</code> | The UUID of the default assignee for created tickets. Must be a valid UUID. |
-| <code><a href="#@cdktn/provider-datadog.securityFindingsTicketCreationRule.SecurityFindingsTicketCreationRuleAction.property.fields">fields</a></code> | <code>str</code> | A JSON-encoded object of custom fields of the Jira issue to create. |
+| <code><a href="#@cdktn/provider-datadog.securityFindingsTicketCreationRule.SecurityFindingsTicketCreationRuleAction.property.fields">fields</a></code> | <code>str</code> | A JSON-encoded object of target-specific fields for the ticket to create. |
 
 ---
 
@@ -1079,9 +1079,9 @@ max_tickets_per_day: typing.Union[int, float]
 
 The maximum number of tickets the rule may create per day.
 
-If exceeded, one final ticket will be created, explaining the limit was hit and linking back to the responsible rule. Value must be between 1 and 500.
+If exceeded, one final ticket will be created, explaining the limit was hit and link back to the responsible rule. Value must be between 1 and 500.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule#max_tickets_per_day SecurityFindingsTicketCreationRule#max_tickets_per_day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rule#max_tickets_per_day SecurityFindingsTicketCreationRule#max_tickets_per_day}
 
 ---
 
@@ -1093,9 +1093,9 @@ project_id: str
 
 - *Type:* str
 
-The UUID of the Case Management project. Must be a valid UUID.
+The UUID of the case management project. Must be a valid UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule#project_id SecurityFindingsTicketCreationRule#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rule#project_id SecurityFindingsTicketCreationRule#project_id}
 
 ---
 
@@ -1107,9 +1107,9 @@ target: str
 
 - *Type:* str
 
-The ticketing system to create tickets in. Valid values are `jira`, `case_management`.
+The ticketing system to create tickets in. Valid values are `jira`, `case_management`, `linear`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule#target SecurityFindingsTicketCreationRule#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rule#target SecurityFindingsTicketCreationRule#target}
 
 ---
 
@@ -1123,7 +1123,7 @@ assignee_id: str
 
 The UUID of the default assignee for created tickets. Must be a valid UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule#assignee_id SecurityFindingsTicketCreationRule#assignee_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rule#assignee_id SecurityFindingsTicketCreationRule#assignee_id}
 
 ---
 
@@ -1135,11 +1135,11 @@ fields: str
 
 - *Type:* str
 
-A JSON-encoded object of custom fields of the Jira issue to create.
+A JSON-encoded object of target-specific fields for the ticket to create.
 
-For the list of available fields, see the [Jira documentation](https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-issues/#api-rest-api-2-issue-createmeta-projectidorkey-issuetypes-issuetypeid-get).
+For `target: jira`, the custom fields of the Jira issue. For the list of available fields, see the [Jira documentation](https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-issues/#api-rest-api-2-issue-createmeta-projectidorkey-issuetypes-issuetypeid-get). For `target: linear`, the optional keys `linear_project_id` (string, the identifier of the Linear project the issue is created in) and `linear_label_ids` (array of strings, the identifiers of the Linear labels applied to the issue).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule#fields SecurityFindingsTicketCreationRule#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rule#fields SecurityFindingsTicketCreationRule#fields}
 
 ---
 
@@ -1263,7 +1263,7 @@ action: SecurityFindingsTicketCreationRuleAction
 
 The action to take when the ticket creation rule matches a finding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule#action SecurityFindingsTicketCreationRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rule#action SecurityFindingsTicketCreationRule#action}
 
 ---
 
@@ -1277,7 +1277,7 @@ name: str
 
 The name of the ticket creation rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule#name SecurityFindingsTicketCreationRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rule#name SecurityFindingsTicketCreationRule#name}
 
 ---
 
@@ -1291,7 +1291,7 @@ rule: SecurityFindingsTicketCreationRuleRule
 
 Defines the scope of findings to which the automation rule applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule#rule SecurityFindingsTicketCreationRule#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rule#rule SecurityFindingsTicketCreationRule#rule}
 
 ---
 
@@ -1305,7 +1305,7 @@ enabled: bool | IResolvable
 
 Whether the ticket creation rule is enabled. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule#enabled SecurityFindingsTicketCreationRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rule#enabled SecurityFindingsTicketCreationRule#enabled}
 
 ---
 
@@ -1343,7 +1343,7 @@ The list of security finding types that the automation rule applies to.
 
 Valid values are `api_security`, `attack_path`, `host_and_container_vulnerability`, `iac_misconfiguration`, `identity_risk`, `library_vulnerability`, `misconfiguration`, `runtime_code_vulnerability`, `secret`, `static_code_vulnerability`, `workload_activity`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule#finding_types SecurityFindingsTicketCreationRule#finding_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rule#finding_types SecurityFindingsTicketCreationRule#finding_types}
 
 ---
 
@@ -1359,7 +1359,7 @@ A search query to further filter the findings matched by this rule.
 
 The `@workflow.*` namespace and `@status` fields are not permitted. For a reference of available fields, see the [Security Findings schema documentation](https://docs.datadoghq.com/security/guide/findings-schema/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule#query SecurityFindingsTicketCreationRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rule#query SecurityFindingsTicketCreationRule#query}
 
 ---
 

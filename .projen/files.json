@@ -24,8 +24,10 @@
     "cdktf.json",
     "LICENSE",
     "README.md",
+    "scripts/apply-self-mutation-patch.js",
     "scripts/check-for-upgrades.js",
     "scripts/should-release.js",
+    "scripts/upgrade-vulnerable-transitives.js",
     "test/tsconfig.json",
     "tsconfig.json"
   ],
