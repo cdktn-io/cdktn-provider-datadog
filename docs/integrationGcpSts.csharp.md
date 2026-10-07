@@ -4,7 +4,7 @@
 
 ### IntegrationGcpSts <a name="IntegrationGcpSts" id="@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.Initializer"></a>
 
@@ -82,6 +82,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.resetHostFilters">ResetHostFilters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.resetIsCspmEnabled">ResetIsCspmEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.resetIsGlobalLocationEnabled">ResetIsGlobalLocationEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.resetIsOrgFolderResourceCollectionEnabled">ResetIsOrgFolderResourceCollectionEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.resetIsPerProjectQuotaEnabled">ResetIsPerProjectQuotaEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.resetIsResourceChangeCollectionEnabled">ResetIsResourceChangeCollectionEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.resetIsSecurityCommandCenterEnabled">ResetIsSecurityCommandCenterEnabled</a></code> | *No description.* |
@@ -461,6 +462,12 @@ private void ResetIsCspmEnabled()
 private void ResetIsGlobalLocationEnabled()
 ```
 
+##### `ResetIsOrgFolderResourceCollectionEnabled` <a name="ResetIsOrgFolderResourceCollectionEnabled" id="@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.resetIsOrgFolderResourceCollectionEnabled"></a>
+
+```csharp
+private void ResetIsOrgFolderResourceCollectionEnabled()
+```
+
 ##### `ResetIsPerProjectQuotaEnabled` <a name="ResetIsPerProjectQuotaEnabled" id="@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.resetIsPerProjectQuotaEnabled"></a>
 
 ```csharp
@@ -606,7 +613,7 @@ The construct id used in the generated config for the IntegrationGcpSts to impor
 
 The id of the existing IntegrationGcpSts that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_gcp_sts#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -647,6 +654,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.hostFiltersInput">HostFiltersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.isCspmEnabledInput">IsCspmEnabledInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.isGlobalLocationEnabledInput">IsGlobalLocationEnabledInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.isOrgFolderResourceCollectionEnabledInput">IsOrgFolderResourceCollectionEnabledInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.isPerProjectQuotaEnabledInput">IsPerProjectQuotaEnabledInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.isResourceChangeCollectionEnabledInput">IsResourceChangeCollectionEnabledInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.isSecurityCommandCenterEnabledInput">IsSecurityCommandCenterEnabledInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
@@ -661,6 +669,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.hostFilters">HostFilters</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.isCspmEnabled">IsCspmEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.isGlobalLocationEnabled">IsGlobalLocationEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.isOrgFolderResourceCollectionEnabled">IsOrgFolderResourceCollectionEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.isPerProjectQuotaEnabled">IsPerProjectQuotaEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.isResourceChangeCollectionEnabled">IsResourceChangeCollectionEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.isSecurityCommandCenterEnabled">IsSecurityCommandCenterEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
@@ -921,6 +930,16 @@ public bool|IResolvable IsGlobalLocationEnabledInput { get; }
 
 ---
 
+##### `IsOrgFolderResourceCollectionEnabledInput`<sup>Optional</sup> <a name="IsOrgFolderResourceCollectionEnabledInput" id="@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.isOrgFolderResourceCollectionEnabledInput"></a>
+
+```csharp
+public bool|IResolvable IsOrgFolderResourceCollectionEnabledInput { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
 ##### `IsPerProjectQuotaEnabledInput`<sup>Optional</sup> <a name="IsPerProjectQuotaEnabledInput" id="@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.isPerProjectQuotaEnabledInput"></a>
 
 ```csharp
@@ -1061,6 +1080,16 @@ public bool|IResolvable IsGlobalLocationEnabled { get; }
 
 ---
 
+##### `IsOrgFolderResourceCollectionEnabled`<sup>Required</sup> <a name="IsOrgFolderResourceCollectionEnabled" id="@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.isOrgFolderResourceCollectionEnabled"></a>
+
+```csharp
+public bool|IResolvable IsOrgFolderResourceCollectionEnabled { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
 ##### `IsPerProjectQuotaEnabled`<sup>Required</sup> <a name="IsPerProjectQuotaEnabled" id="@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts.property.isPerProjectQuotaEnabled"></a>
 
 ```csharp
@@ -1153,6 +1182,7 @@ new IntegrationGcpStsConfig {
     string[] HostFilters = null,
     bool|IResolvable IsCspmEnabled = null,
     bool|IResolvable IsGlobalLocationEnabled = null,
+    bool|IResolvable IsOrgFolderResourceCollectionEnabled = null,
     bool|IResolvable IsPerProjectQuotaEnabled = null,
     bool|IResolvable IsResourceChangeCollectionEnabled = null,
     bool|IResolvable IsSecurityCommandCenterEnabled = null,
@@ -1181,13 +1211,14 @@ new IntegrationGcpStsConfig {
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.hostFilters">HostFilters</a></code> | <code>string[]</code> | List of filters to limit the VM instances that are pulled into Datadog by using tags. |
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.isCspmEnabled">IsCspmEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Whether Datadog collects cloud security posture management resources from your GCP project. |
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.isGlobalLocationEnabled">IsGlobalLocationEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | When enabled, Datadog collects metrics where location is explicitly stated as 'global' or where location information cannot be deduced from GCP. |
+| <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.isOrgFolderResourceCollectionEnabled">IsOrgFolderResourceCollectionEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | When enabled, Datadog scans for organization and folder-level resources under the organization the Service Account lives in. |
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.isPerProjectQuotaEnabled">IsPerProjectQuotaEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | When enabled, Datadog includes the `X-Goog-User-Project` header to attribute Google Cloud billing and quota usage to the monitored project instead of the default service account project. |
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.isResourceChangeCollectionEnabled">IsResourceChangeCollectionEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | When enabled, Datadog scans for all resource change data in your Google Cloud environment. |
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.isSecurityCommandCenterEnabled">IsSecurityCommandCenterEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | When enabled, Datadog will attempt to collect Security Command Center Findings. |
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.metricNamespaceConfigs">MetricNamespaceConfigs</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsMetricNamespaceConfigs">IntegrationGcpStsMetricNamespaceConfigs</a>[]</code> | Configurations for GCP metric namespaces. |
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.monitoredResourceConfigs">MonitoredResourceConfigs</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigs">IntegrationGcpStsMonitoredResourceConfigs</a>[]</code> | Configurations for GCP monitored resources. Only monitored resources that apply to specified filters are imported into Datadog. |
 | <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.regionFilterConfigs">RegionFilterConfigs</a></code> | <code>string[]</code> | Configurations for GCP location filtering, such as region, multi-region, or zone. |
-| <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.resourceCollectionEnabled">ResourceCollectionEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | When enabled, Datadog scans for all resources in your GCP environment. |
+| <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.resourceCollectionEnabled">ResourceCollectionEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | When enabled, Datadog scans for all project-level resources in your GCP environment. |
 
 ---
 
@@ -1271,7 +1302,7 @@ public string ClientEmail { get; set; }
 
 Your service account email address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_gcp_sts#client_email IntegrationGcpSts#client_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts#client_email IntegrationGcpSts#client_email}
 
 ---
 
@@ -1285,7 +1316,7 @@ public string[] AccountTags { get; set; }
 
 Tags to be associated with GCP metrics and service checks from your account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_gcp_sts#account_tags IntegrationGcpSts#account_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts#account_tags IntegrationGcpSts#account_tags}
 
 ---
 
@@ -1299,7 +1330,7 @@ public bool|IResolvable Automute { get; set; }
 
 Silence monitors for expected GCE instance shutdowns.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_gcp_sts#automute IntegrationGcpSts#automute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts#automute IntegrationGcpSts#automute}
 
 ---
 
@@ -1315,7 +1346,7 @@ List of filters to limit the Cloud Run revisions that are pulled into Datadog by
 
 Only Cloud Run revision resources that apply to specified filters are imported into Datadog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_gcp_sts#cloud_run_revision_filters IntegrationGcpSts#cloud_run_revision_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts#cloud_run_revision_filters IntegrationGcpSts#cloud_run_revision_filters}
 
 ---
 
@@ -1331,7 +1362,7 @@ List of filters to limit the VM instances that are pulled into Datadog by using 
 
 Only VM instance resources that apply to specified filters are imported into Datadog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_gcp_sts#host_filters IntegrationGcpSts#host_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts#host_filters IntegrationGcpSts#host_filters}
 
 ---
 
@@ -1347,7 +1378,7 @@ Whether Datadog collects cloud security posture management resources from your G
 
 If enabled, requires `resource_collection_enabled` to also be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_gcp_sts#is_cspm_enabled IntegrationGcpSts#is_cspm_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts#is_cspm_enabled IntegrationGcpSts#is_cspm_enabled}
 
 ---
 
@@ -1361,7 +1392,21 @@ public bool|IResolvable IsGlobalLocationEnabled { get; set; }
 
 When enabled, Datadog collects metrics where location is explicitly stated as 'global' or where location information cannot be deduced from GCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_gcp_sts#is_global_location_enabled IntegrationGcpSts#is_global_location_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts#is_global_location_enabled IntegrationGcpSts#is_global_location_enabled}
+
+---
+
+##### `IsOrgFolderResourceCollectionEnabled`<sup>Optional</sup> <a name="IsOrgFolderResourceCollectionEnabled" id="@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.isOrgFolderResourceCollectionEnabled"></a>
+
+```csharp
+public bool|IResolvable IsOrgFolderResourceCollectionEnabled { get; set; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+When enabled, Datadog scans for organization and folder-level resources under the organization the Service Account lives in.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts#is_org_folder_resource_collection_enabled IntegrationGcpSts#is_org_folder_resource_collection_enabled}
 
 ---
 
@@ -1375,7 +1420,7 @@ public bool|IResolvable IsPerProjectQuotaEnabled { get; set; }
 
 When enabled, Datadog includes the `X-Goog-User-Project` header to attribute Google Cloud billing and quota usage to the monitored project instead of the default service account project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_gcp_sts#is_per_project_quota_enabled IntegrationGcpSts#is_per_project_quota_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts#is_per_project_quota_enabled IntegrationGcpSts#is_per_project_quota_enabled}
 
 ---
 
@@ -1389,7 +1434,7 @@ public bool|IResolvable IsResourceChangeCollectionEnabled { get; set; }
 
 When enabled, Datadog scans for all resource change data in your Google Cloud environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_gcp_sts#is_resource_change_collection_enabled IntegrationGcpSts#is_resource_change_collection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts#is_resource_change_collection_enabled IntegrationGcpSts#is_resource_change_collection_enabled}
 
 ---
 
@@ -1405,7 +1450,7 @@ When enabled, Datadog will attempt to collect Security Command Center Findings.
 
 Note: This requires additional permissions on the service account. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_gcp_sts#is_security_command_center_enabled IntegrationGcpSts#is_security_command_center_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts#is_security_command_center_enabled IntegrationGcpSts#is_security_command_center_enabled}
 
 ---
 
@@ -1419,7 +1464,7 @@ public IResolvable|IntegrationGcpStsMetricNamespaceConfigs[] MetricNamespaceConf
 
 Configurations for GCP metric namespaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_gcp_sts#metric_namespace_configs IntegrationGcpSts#metric_namespace_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts#metric_namespace_configs IntegrationGcpSts#metric_namespace_configs}
 
 ---
 
@@ -1433,7 +1478,7 @@ public IResolvable|IntegrationGcpStsMonitoredResourceConfigs[] MonitoredResource
 
 Configurations for GCP monitored resources. Only monitored resources that apply to specified filters are imported into Datadog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_gcp_sts#monitored_resource_configs IntegrationGcpSts#monitored_resource_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts#monitored_resource_configs IntegrationGcpSts#monitored_resource_configs}
 
 ---
 
@@ -1449,7 +1494,7 @@ Configurations for GCP location filtering, such as region, multi-region, or zone
 
 Only monitored resources that match the specified regions are imported into Datadog. By default, Datadog collects from all locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_gcp_sts#region_filter_configs IntegrationGcpSts#region_filter_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts#region_filter_configs IntegrationGcpSts#region_filter_configs}
 
 ---
 
@@ -1461,9 +1506,9 @@ public bool|IResolvable ResourceCollectionEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-When enabled, Datadog scans for all resources in your GCP environment.
+When enabled, Datadog scans for all project-level resources in your GCP environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_gcp_sts#resource_collection_enabled IntegrationGcpSts#resource_collection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts#resource_collection_enabled IntegrationGcpSts#resource_collection_enabled}
 
 ---
 
@@ -1485,9 +1530,9 @@ new IntegrationGcpStsMetricNamespaceConfigs {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsMetricNamespaceConfigs.property.disabled">Disabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_gcp_sts#disabled IntegrationGcpSts#disabled}. |
-| <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsMetricNamespaceConfigs.property.filters">Filters</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_gcp_sts#filters IntegrationGcpSts#filters}. |
-| <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsMetricNamespaceConfigs.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_gcp_sts#id IntegrationGcpSts#id}. |
+| <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsMetricNamespaceConfigs.property.disabled">Disabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts#disabled IntegrationGcpSts#disabled}. |
+| <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsMetricNamespaceConfigs.property.filters">Filters</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts#filters IntegrationGcpSts#filters}. |
+| <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsMetricNamespaceConfigs.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts#id IntegrationGcpSts#id}. |
 
 ---
 
@@ -1499,7 +1544,7 @@ public bool|IResolvable Disabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_gcp_sts#disabled IntegrationGcpSts#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts#disabled IntegrationGcpSts#disabled}.
 
 ---
 
@@ -1511,7 +1556,7 @@ public string[] Filters { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_gcp_sts#filters IntegrationGcpSts#filters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts#filters IntegrationGcpSts#filters}.
 
 ---
 
@@ -1523,7 +1568,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_gcp_sts#id IntegrationGcpSts#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts#id IntegrationGcpSts#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1547,8 +1592,8 @@ new IntegrationGcpStsMonitoredResourceConfigs {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigs.property.filters">Filters</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_gcp_sts#filters IntegrationGcpSts#filters}. |
-| <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigs.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_gcp_sts#type IntegrationGcpSts#type}. |
+| <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigs.property.filters">Filters</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts#filters IntegrationGcpSts#filters}. |
+| <code><a href="#@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigs.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts#type IntegrationGcpSts#type}. |
 
 ---
 
@@ -1560,7 +1605,7 @@ public string[] Filters { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_gcp_sts#filters IntegrationGcpSts#filters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts#filters IntegrationGcpSts#filters}.
 
 ---
 
@@ -1572,7 +1617,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_gcp_sts#type IntegrationGcpSts#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_gcp_sts#type IntegrationGcpSts#type}.
 
 ---
 

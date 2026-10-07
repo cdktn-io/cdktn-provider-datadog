@@ -4,7 +4,7 @@
 
 ### WorkflowAutomation <a name="WorkflowAutomation" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/workflow_automation datadog_workflow_automation}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/workflow_automation datadog_workflow_automation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.Initializer"></a>
 
@@ -24,6 +24,8 @@ WorkflowAutomation.Builder.create(Construct scope, java.lang.String id)
     .published(java.lang.Boolean|IResolvable)
     .specJson(java.lang.String)
     .tags(java.util.List<java.lang.String>)
+//  .runAs(WorkflowAutomationRunAs)
+//  .sensitivePrivileges(java.lang.Boolean|IResolvable)
 //  .webhookSecret(java.lang.String)
     .build();
 ```
@@ -44,6 +46,8 @@ WorkflowAutomation.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.Initializer.parameter.published">published</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Set the workflow to published or unpublished. |
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.Initializer.parameter.specJson">specJson</a></code> | <code>java.lang.String</code> | The spec defines what the workflow does. |
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.Initializer.parameter.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Tags of the workflow. |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.Initializer.parameter.runAs">runAs</a></code> | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAs">WorkflowAutomationRunAs</a></code> | Identity used to run the workflow. When omitted, the server-managed value is preserved. |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.Initializer.parameter.sensitivePrivileges">sensitivePrivileges</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether the workflow requires sensitive privileges to run. |
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.Initializer.parameter.webhookSecret">webhookSecret</a></code> | <code>java.lang.String</code> | If a webhook trigger is defined on this workflow, a webhookSecret is required and should be provided here. |
 
 ---
@@ -114,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 Description of the workflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/workflow_automation#description WorkflowAutomation#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/workflow_automation#description WorkflowAutomation#description}
 
 ---
 
@@ -124,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of the workflow. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/workflow_automation#name WorkflowAutomation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/workflow_automation#name WorkflowAutomation#name}
 
 ---
 
@@ -136,7 +140,7 @@ Set the workflow to published or unpublished.
 
 Workflows in an unpublished state are only executable through manual runs. Automatic triggers such as Schedule do not execute the workflow until it is published.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/workflow_automation#published WorkflowAutomation#published}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/workflow_automation#published WorkflowAutomation#published}
 
 ---
 
@@ -146,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The spec defines what the workflow does.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/workflow_automation#spec_json WorkflowAutomation#spec_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/workflow_automation#spec_json WorkflowAutomation#spec_json}
 
 ---
 
@@ -156,7 +160,29 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Tags of the workflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/workflow_automation#tags WorkflowAutomation#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/workflow_automation#tags WorkflowAutomation#tags}
+
+---
+
+##### `runAs`<sup>Optional</sup> <a name="runAs" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.Initializer.parameter.runAs"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAs">WorkflowAutomationRunAs</a>
+
+Identity used to run the workflow. When omitted, the server-managed value is preserved.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/workflow_automation#run_as WorkflowAutomation#run_as}
+
+---
+
+##### `sensitivePrivileges`<sup>Optional</sup> <a name="sensitivePrivileges" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.Initializer.parameter.sensitivePrivileges"></a>
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Whether the workflow requires sensitive privileges to run.
+
+When omitted, the server-managed value is preserved. Only the workflow owner can update this field. This allows it to run actions that use [Execution Policies](https://docs.datadoghq.com/actions/private_actions/execution_policies/).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/workflow_automation#sensitive_privileges WorkflowAutomation#sensitive_privileges}
 
 ---
 
@@ -168,7 +194,7 @@ If a webhook trigger is defined on this workflow, a webhookSecret is required an
 
 String length must be at least 16.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/workflow_automation#webhook_secret WorkflowAutomation#webhook_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/workflow_automation#webhook_secret WorkflowAutomation#webhook_secret}
 
 ---
 
@@ -200,6 +226,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.putRunAs">putRunAs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.resetRunAs">resetRunAs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.resetSensitivePrivileges">resetSensitivePrivileges</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.resetWebhookSecret">resetWebhookSecret</a></code> | *No description.* |
 
 ---
@@ -515,6 +544,30 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putRunAs` <a name="putRunAs" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.putRunAs"></a>
+
+```java
+public void putRunAs(WorkflowAutomationRunAs value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.putRunAs.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAs">WorkflowAutomationRunAs</a>
+
+---
+
+##### `resetRunAs` <a name="resetRunAs" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.resetRunAs"></a>
+
+```java
+public void resetRunAs()
+```
+
+##### `resetSensitivePrivileges` <a name="resetSensitivePrivileges" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.resetSensitivePrivileges"></a>
+
+```java
+public void resetSensitivePrivileges()
+```
+
 ##### `resetWebhookSecret` <a name="resetWebhookSecret" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.resetWebhookSecret"></a>
 
 ```java
@@ -624,7 +677,7 @@ The construct id used in the generated config for the WorkflowAutomation to impo
 
 The id of the existing WorkflowAutomation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/workflow_automation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/workflow_automation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -655,15 +708,19 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.property.runAs">runAs</a></code> | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference">WorkflowAutomationRunAsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.property.publishedInput">publishedInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.property.runAsInput">runAsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAs">WorkflowAutomationRunAs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.property.sensitivePrivilegesInput">sensitivePrivilegesInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.property.specJsonInput">specJsonInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.property.tagsInput">tagsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.property.webhookSecretInput">webhookSecretInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.property.published">published</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.property.sensitivePrivileges">sensitivePrivileges</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.property.specJson">specJson</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.property.webhookSecret">webhookSecret</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -822,6 +879,16 @@ public java.lang.String getId();
 
 ---
 
+##### `runAs`<sup>Required</sup> <a name="runAs" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.property.runAs"></a>
+
+```java
+public WorkflowAutomationRunAsOutputReference getRunAs();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference">WorkflowAutomationRunAsOutputReference</a>
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.property.descriptionInput"></a>
 
 ```java
@@ -846,6 +913,26 @@ public java.lang.String getNameInput();
 
 ```java
 public java.lang.Boolean|IResolvable getPublishedInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `runAsInput`<sup>Optional</sup> <a name="runAsInput" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.property.runAsInput"></a>
+
+```java
+public IResolvable|WorkflowAutomationRunAs getRunAsInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAs">WorkflowAutomationRunAs</a>
+
+---
+
+##### `sensitivePrivilegesInput`<sup>Optional</sup> <a name="sensitivePrivilegesInput" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.property.sensitivePrivilegesInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getSensitivePrivilegesInput();
 ```
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
@@ -906,6 +993,16 @@ public java.lang.String getName();
 
 ```java
 public java.lang.Boolean|IResolvable getPublished();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `sensitivePrivileges`<sup>Required</sup> <a name="sensitivePrivileges" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.property.sensitivePrivileges"></a>
+
+```java
+public java.lang.Boolean|IResolvable getSensitivePrivileges();
 ```
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
@@ -982,6 +1079,8 @@ WorkflowAutomationConfig.builder()
     .published(java.lang.Boolean|IResolvable)
     .specJson(java.lang.String)
     .tags(java.util.List<java.lang.String>)
+//  .runAs(WorkflowAutomationRunAs)
+//  .sensitivePrivileges(java.lang.Boolean|IResolvable)
 //  .webhookSecret(java.lang.String)
     .build();
 ```
@@ -1002,6 +1101,8 @@ WorkflowAutomationConfig.builder()
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationConfig.property.published">published</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Set the workflow to published or unpublished. |
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationConfig.property.specJson">specJson</a></code> | <code>java.lang.String</code> | The spec defines what the workflow does. |
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationConfig.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Tags of the workflow. |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationConfig.property.runAs">runAs</a></code> | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAs">WorkflowAutomationRunAs</a></code> | Identity used to run the workflow. When omitted, the server-managed value is preserved. |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationConfig.property.sensitivePrivileges">sensitivePrivileges</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether the workflow requires sensitive privileges to run. |
 | <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationConfig.property.webhookSecret">webhookSecret</a></code> | <code>java.lang.String</code> | If a webhook trigger is defined on this workflow, a webhookSecret is required and should be provided here. |
 
 ---
@@ -1086,7 +1187,7 @@ public java.lang.String getDescription();
 
 Description of the workflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/workflow_automation#description WorkflowAutomation#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/workflow_automation#description WorkflowAutomation#description}
 
 ---
 
@@ -1100,7 +1201,7 @@ public java.lang.String getName();
 
 Name of the workflow. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/workflow_automation#name WorkflowAutomation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/workflow_automation#name WorkflowAutomation#name}
 
 ---
 
@@ -1116,7 +1217,7 @@ Set the workflow to published or unpublished.
 
 Workflows in an unpublished state are only executable through manual runs. Automatic triggers such as Schedule do not execute the workflow until it is published.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/workflow_automation#published WorkflowAutomation#published}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/workflow_automation#published WorkflowAutomation#published}
 
 ---
 
@@ -1130,7 +1231,7 @@ public java.lang.String getSpecJson();
 
 The spec defines what the workflow does.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/workflow_automation#spec_json WorkflowAutomation#spec_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/workflow_automation#spec_json WorkflowAutomation#spec_json}
 
 ---
 
@@ -1144,7 +1245,37 @@ public java.util.List<java.lang.String> getTags();
 
 Tags of the workflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/workflow_automation#tags WorkflowAutomation#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/workflow_automation#tags WorkflowAutomation#tags}
+
+---
+
+##### `runAs`<sup>Optional</sup> <a name="runAs" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationConfig.property.runAs"></a>
+
+```java
+public WorkflowAutomationRunAs getRunAs();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAs">WorkflowAutomationRunAs</a>
+
+Identity used to run the workflow. When omitted, the server-managed value is preserved.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/workflow_automation#run_as WorkflowAutomation#run_as}
+
+---
+
+##### `sensitivePrivileges`<sup>Optional</sup> <a name="sensitivePrivileges" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationConfig.property.sensitivePrivileges"></a>
+
+```java
+public java.lang.Boolean|IResolvable getSensitivePrivileges();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Whether the workflow requires sensitive privileges to run.
+
+When omitted, the server-managed value is preserved. Only the workflow owner can update this field. This allows it to run actions that use [Execution Policies](https://docs.datadoghq.com/actions/private_actions/execution_policies/).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/workflow_automation#sensitive_privileges WorkflowAutomation#sensitive_privileges}
 
 ---
 
@@ -1160,7 +1291,370 @@ If a webhook trigger is defined on this workflow, a webhookSecret is required an
 
 String length must be at least 16.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/workflow_automation#webhook_secret WorkflowAutomation#webhook_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/workflow_automation#webhook_secret WorkflowAutomation#webhook_secret}
+
+---
+
+### WorkflowAutomationRunAs <a name="WorkflowAutomationRunAs" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAs"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAs.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.workflow_automation.WorkflowAutomationRunAs;
+
+WorkflowAutomationRunAs.builder()
+//  .id(java.lang.String)
+//  .type(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAs.property.id">id</a></code> | <code>java.lang.String</code> | Service account identifier. Required when `type` is `service_account` and omitted otherwise. |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAs.property.type">type</a></code> | <code>java.lang.String</code> | Type of identity used to run the workflow. |
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAs.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+Service account identifier. Required when `type` is `service_account` and omitted otherwise.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/workflow_automation#id WorkflowAutomation#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAs.property.type"></a>
+
+```java
+public java.lang.String getType();
+```
+
+- *Type:* java.lang.String
+
+Type of identity used to run the workflow.
+
+`owner` uses the workflow owner, `initiator` uses the user who starts the execution, and `service_account` uses the account specified by `id`. Required when `run_as` is configured. Valid values are `owner`, `service_account`, `initiator`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/workflow_automation#type WorkflowAutomation#type}
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### WorkflowAutomationRunAsOutputReference <a name="WorkflowAutomationRunAsOutputReference" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.workflow_automation.WorkflowAutomationRunAsOutputReference;
+
+new WorkflowAutomationRunAsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.resetType">resetType</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetId` <a name="resetId" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.resetId"></a>
+
+```java
+public void resetId()
+```
+
+##### `resetType` <a name="resetType" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.resetType"></a>
+
+```java
+public void resetType()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAs">WorkflowAutomationRunAs</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.property.idInput"></a>
+
+```java
+public java.lang.String getIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.property.typeInput"></a>
+
+```java
+public java.lang.String getTypeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.property.type"></a>
+
+```java
+public java.lang.String getType();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAsOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|WorkflowAutomationRunAs getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationRunAs">WorkflowAutomationRunAs</a>
 
 ---
 

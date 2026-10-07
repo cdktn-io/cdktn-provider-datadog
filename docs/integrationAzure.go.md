@@ -4,7 +4,7 @@
 
 ### IntegrationAzure <a name="IntegrationAzure" id="@cdktn/provider-datadog.integrationAzure.IntegrationAzure"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_azure datadog_integration_azure}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_azure datadog_integration_azure}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationAzure.IntegrationAzure.Initializer"></a>
 
@@ -593,7 +593,7 @@ The construct id used in the generated config for the IntegrationAzure to import
 
 The id of the existing IntegrationAzure that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_azure#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_azure#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1186,7 +1186,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationazu
 | <code><a href="#@cdktn/provider-datadog.integrationAzure.IntegrationAzureConfig.property.metricsEnabledDefault">MetricsEnabledDefault</a></code> | <code>interface{}</code> | Enable Azure metrics for your organization for resource providers where no resource provider config is specified. Defaults to `true`. |
 | <code><a href="#@cdktn/provider-datadog.integrationAzure.IntegrationAzureConfig.property.resourceCollectionEnabled">ResourceCollectionEnabled</a></code> | <code>interface{}</code> | When enabled, Datadog collects metadata and configuration info from cloud resources (such as compute instances, databases, and load balancers) monitored by this app registration. |
 | <code><a href="#@cdktn/provider-datadog.integrationAzure.IntegrationAzureConfig.property.resourceProviderConfigs">ResourceProviderConfigs</a></code> | <code>interface{}</code> | Configuration settings applied to resources from the specified Azure resource providers. |
-| <code><a href="#@cdktn/provider-datadog.integrationAzure.IntegrationAzureConfig.property.secretlessAuthEnabled">SecretlessAuthEnabled</a></code> | <code>interface{}</code> | (Preview) When enabled, Datadog authenticates to this app registration using federated workload identity credentials instead of a client secret. |
+| <code><a href="#@cdktn/provider-datadog.integrationAzure.IntegrationAzureConfig.property.secretlessAuthEnabled">SecretlessAuthEnabled</a></code> | <code>interface{}</code> | When enabled, Datadog authenticates to this app registration using federated workload identity credentials instead of a client secret. |
 | <code><a href="#@cdktn/provider-datadog.integrationAzure.IntegrationAzureConfig.property.usageMetricsEnabled">UsageMetricsEnabled</a></code> | <code>interface{}</code> | Enable azure.usage metrics for your organization. Defaults to `true`. |
 
 ---
@@ -1271,7 +1271,7 @@ ClientId *string
 
 Your Azure web application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_azure#client_id IntegrationAzure#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_azure#client_id IntegrationAzure#client_id}
 
 ---
 
@@ -1285,7 +1285,7 @@ TenantName *string
 
 Your Azure Active Directory ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_azure#tenant_name IntegrationAzure#tenant_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_azure#tenant_name IntegrationAzure#tenant_name}
 
 ---
 
@@ -1301,7 +1301,7 @@ This comma-separated list of tags (in the form `key:value,key:value`) defines a 
 
 Only App Service Plans that match one of the defined tags are imported into Datadog. The rest, including the apps and functions running on them, are ignored. This also filters the metrics for any App or Function running on the App Service Plan(s). Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_azure#app_service_plan_filters IntegrationAzure#app_service_plan_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_azure#app_service_plan_filters IntegrationAzure#app_service_plan_filters}
 
 ---
 
@@ -1315,7 +1315,7 @@ Automute interface{}
 
 Silence monitors for expected Azure VM shutdowns. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_azure#automute IntegrationAzure#automute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_azure#automute IntegrationAzure#automute}
 
 ---
 
@@ -1329,7 +1329,7 @@ ClientSecret *string
 
 Your Azure web application secret key. Required unless `secretless_auth_enabled` is set to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_azure#client_secret IntegrationAzure#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_azure#client_secret IntegrationAzure#client_secret}
 
 ---
 
@@ -1345,7 +1345,7 @@ This comma-separated list of tags (in the form `key:value,key:value`) defines a 
 
 Only Container Apps that match one of the defined tags are imported into Datadog. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_azure#container_app_filters IntegrationAzure#container_app_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_azure#container_app_filters IntegrationAzure#container_app_filters}
 
 ---
 
@@ -1361,7 +1361,7 @@ When enabled, Datadog’s Cloud Security Management product scans resource confi
 
 Note: This requires `resource_collection_enabled` to be set to true. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_azure#cspm_enabled IntegrationAzure#cspm_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_azure#cspm_enabled IntegrationAzure#cspm_enabled}
 
 ---
 
@@ -1375,7 +1375,7 @@ CustomMetricsEnabled interface{}
 
 Enable custom metrics for your organization. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_azure#custom_metrics_enabled IntegrationAzure#custom_metrics_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_azure#custom_metrics_enabled IntegrationAzure#custom_metrics_enabled}
 
 ---
 
@@ -1391,7 +1391,7 @@ String of host tag(s) (in the form `key:value,key:value`) defines a filter that 
 
 Limit the Azure instances that are pulled into Datadog by using tags. Only hosts that match one of the defined tags are imported into Datadog. e.x. `env:production,deploymentgroup:red` Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_azure#host_filters IntegrationAzure#host_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_azure#host_filters IntegrationAzure#host_filters}
 
 ---
 
@@ -1405,7 +1405,7 @@ MetricsEnabled interface{}
 
 Enable Azure metrics for your organization. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_azure#metrics_enabled IntegrationAzure#metrics_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_azure#metrics_enabled IntegrationAzure#metrics_enabled}
 
 ---
 
@@ -1419,7 +1419,7 @@ MetricsEnabledDefault interface{}
 
 Enable Azure metrics for your organization for resource providers where no resource provider config is specified. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_azure#metrics_enabled_default IntegrationAzure#metrics_enabled_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_azure#metrics_enabled_default IntegrationAzure#metrics_enabled_default}
 
 ---
 
@@ -1433,7 +1433,7 @@ ResourceCollectionEnabled interface{}
 
 When enabled, Datadog collects metadata and configuration info from cloud resources (such as compute instances, databases, and load balancers) monitored by this app registration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_azure#resource_collection_enabled IntegrationAzure#resource_collection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_azure#resource_collection_enabled IntegrationAzure#resource_collection_enabled}
 
 ---
 
@@ -1447,7 +1447,7 @@ ResourceProviderConfigs interface{}
 
 Configuration settings applied to resources from the specified Azure resource providers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_azure#resource_provider_configs IntegrationAzure#resource_provider_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_azure#resource_provider_configs IntegrationAzure#resource_provider_configs}
 
 ---
 
@@ -1459,11 +1459,11 @@ SecretlessAuthEnabled interface{}
 
 - *Type:* interface{}
 
-(Preview) When enabled, Datadog authenticates to this app registration using federated workload identity credentials instead of a client secret.
+When enabled, Datadog authenticates to this app registration using federated workload identity credentials instead of a client secret.
 
-The app registration must have a Datadog federated credential for this to work. When `true`, `client_secret` should be omitted. Defaults to `false`.
+You also need to set up a federated credential in your Azure App Registration with the proper External ID. Follow Terraform instructions in the Datadog UI to [onboard](https://app.datadoghq.com/integrations/azure/add) or [migrate](https://app.datadoghq.com/integrations/azure). Migration instructions can be found in the general tab by clicking 'Set Up Secretless Auth'. When `true`, `client_secret` should be omitted. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_azure#secretless_auth_enabled IntegrationAzure#secretless_auth_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_azure#secretless_auth_enabled IntegrationAzure#secretless_auth_enabled}
 
 ---
 
@@ -1477,7 +1477,7 @@ UsageMetricsEnabled interface{}
 
 Enable azure.usage metrics for your organization. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_azure#usage_metrics_enabled IntegrationAzure#usage_metrics_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_azure#usage_metrics_enabled IntegrationAzure#usage_metrics_enabled}
 
 ---
 
@@ -1498,8 +1498,8 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationazu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.integrationAzure.IntegrationAzureResourceProviderConfigs.property.metricsEnabled">MetricsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_azure#metrics_enabled IntegrationAzure#metrics_enabled}. |
-| <code><a href="#@cdktn/provider-datadog.integrationAzure.IntegrationAzureResourceProviderConfigs.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_azure#namespace IntegrationAzure#namespace}. |
+| <code><a href="#@cdktn/provider-datadog.integrationAzure.IntegrationAzureResourceProviderConfigs.property.metricsEnabled">MetricsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_azure#metrics_enabled IntegrationAzure#metrics_enabled}. |
+| <code><a href="#@cdktn/provider-datadog.integrationAzure.IntegrationAzureResourceProviderConfigs.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_azure#namespace IntegrationAzure#namespace}. |
 
 ---
 
@@ -1511,7 +1511,7 @@ MetricsEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_azure#metrics_enabled IntegrationAzure#metrics_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_azure#metrics_enabled IntegrationAzure#metrics_enabled}.
 
 ---
 
@@ -1523,7 +1523,7 @@ Namespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_azure#namespace IntegrationAzure#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/integration_azure#namespace IntegrationAzure#namespace}.
 
 ---
 

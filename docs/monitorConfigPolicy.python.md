@@ -4,7 +4,7 @@
 
 ### MonitorConfigPolicy <a name="MonitorConfigPolicy" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor_config_policy datadog_monitor_config_policy}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/monitor_config_policy datadog_monitor_config_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.Initializer"></a>
 
@@ -22,6 +22,7 @@ monitorConfigPolicy.MonitorConfigPolicy(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   policy_type: str,
+  downtime_policy: MonitorConfigPolicyDowntimePolicy = None,
   id: str = None,
   tag_policy: MonitorConfigPolicyTagPolicy = None
 )
@@ -38,8 +39,9 @@ monitorConfigPolicy.MonitorConfigPolicy(
 | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.Initializer.parameter.policyType">policy_type</a></code> | <code>str</code> | The monitor config policy type Valid values are `tag`. |
-| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor_config_policy#id MonitorConfigPolicy#id}. |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.Initializer.parameter.policyType">policy_type</a></code> | <code>str</code> | The monitor config policy type Valid values are `tag`, `downtime`. |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.Initializer.parameter.downtimePolicy">downtime_policy</a></code> | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicy">MonitorConfigPolicyDowntimePolicy</a></code> | downtime_policy block. |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/monitor_config_policy#id MonitorConfigPolicy#id}. |
 | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.Initializer.parameter.tagPolicy">tag_policy</a></code> | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyTagPolicy">MonitorConfigPolicyTagPolicy</a></code> | tag_policy block. |
 
 ---
@@ -108,9 +110,19 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-The monitor config policy type Valid values are `tag`.
+The monitor config policy type Valid values are `tag`, `downtime`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor_config_policy#policy_type MonitorConfigPolicy#policy_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/monitor_config_policy#policy_type MonitorConfigPolicy#policy_type}
+
+---
+
+##### `downtime_policy`<sup>Optional</sup> <a name="downtime_policy" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.Initializer.parameter.downtimePolicy"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicy">MonitorConfigPolicyDowntimePolicy</a>
+
+downtime_policy block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/monitor_config_policy#downtime_policy MonitorConfigPolicy#downtime_policy}
 
 ---
 
@@ -118,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor_config_policy#id MonitorConfigPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/monitor_config_policy#id MonitorConfigPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 tag_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor_config_policy#tag_policy MonitorConfigPolicy#tag_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/monitor_config_policy#tag_policy MonitorConfigPolicy#tag_policy}
 
 ---
 
@@ -163,7 +175,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.putDowntimePolicy">put_downtime_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.putTagPolicy">put_tag_policy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.resetDowntimePolicy">reset_downtime_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.resetTagPolicy">reset_tag_policy</a></code> | *No description.* |
 
@@ -517,6 +531,24 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_downtime_policy` <a name="put_downtime_policy" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.putDowntimePolicy"></a>
+
+```python
+def put_downtime_policy(
+  max_duration_ms: typing.Union[int, float]
+) -> None
+```
+
+###### `max_duration_ms`<sup>Required</sup> <a name="max_duration_ms" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.putDowntimePolicy.parameter.maxDurationMs"></a>
+
+- *Type:* typing.Union[int, float]
+
+The maximum allowed downtime duration, in milliseconds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/monitor_config_policy#max_duration_ms MonitorConfigPolicy#max_duration_ms}
+
+---
+
 ##### `put_tag_policy` <a name="put_tag_policy" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.putTagPolicy"></a>
 
 ```python
@@ -533,7 +565,7 @@ def put_tag_policy(
 
 The key of the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor_config_policy#tag_key MonitorConfigPolicy#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/monitor_config_policy#tag_key MonitorConfigPolicy#tag_key}
 
 ---
 
@@ -543,7 +575,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If a tag key is required for monitor creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor_config_policy#tag_key_required MonitorConfigPolicy#tag_key_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/monitor_config_policy#tag_key_required MonitorConfigPolicy#tag_key_required}
 
 ---
 
@@ -553,9 +585,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Valid values for the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor_config_policy#valid_tag_values MonitorConfigPolicy#valid_tag_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/monitor_config_policy#valid_tag_values MonitorConfigPolicy#valid_tag_values}
 
 ---
+
+##### `reset_downtime_policy` <a name="reset_downtime_policy" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.resetDowntimePolicy"></a>
+
+```python
+def reset_downtime_policy() -> None
+```
 
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.resetId"></a>
 
@@ -683,7 +721,7 @@ The construct id used in the generated config for the MonitorConfigPolicy to imp
 
 The id of the existing MonitorConfigPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor_config_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/monitor_config_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -713,7 +751,9 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19
 | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.property.downtimePolicy">downtime_policy</a></code> | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference">MonitorConfigPolicyDowntimePolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.property.tagPolicy">tag_policy</a></code> | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyTagPolicyOutputReference">MonitorConfigPolicyTagPolicyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.property.downtimePolicyInput">downtime_policy_input</a></code> | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicy">MonitorConfigPolicyDowntimePolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.property.policyTypeInput">policy_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.property.tagPolicyInput">tag_policy_input</a></code> | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyTagPolicy">MonitorConfigPolicyTagPolicy</a></code> | *No description.* |
@@ -864,6 +904,16 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `downtime_policy`<sup>Required</sup> <a name="downtime_policy" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.property.downtimePolicy"></a>
+
+```python
+downtime_policy: MonitorConfigPolicyDowntimePolicyOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference">MonitorConfigPolicyDowntimePolicyOutputReference</a>
+
+---
+
 ##### `tag_policy`<sup>Required</sup> <a name="tag_policy" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.property.tagPolicy"></a>
 
 ```python
@@ -871,6 +921,16 @@ tag_policy: MonitorConfigPolicyTagPolicyOutputReference
 ```
 
 - *Type:* <a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyTagPolicyOutputReference">MonitorConfigPolicyTagPolicyOutputReference</a>
+
+---
+
+##### `downtime_policy_input`<sup>Optional</sup> <a name="downtime_policy_input" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.property.downtimePolicyInput"></a>
+
+```python
+downtime_policy_input: MonitorConfigPolicyDowntimePolicy
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicy">MonitorConfigPolicyDowntimePolicy</a>
 
 ---
 
@@ -960,6 +1020,7 @@ monitorConfigPolicy.MonitorConfigPolicyConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   policy_type: str,
+  downtime_policy: MonitorConfigPolicyDowntimePolicy = None,
   id: str = None,
   tag_policy: MonitorConfigPolicyTagPolicy = None
 )
@@ -976,8 +1037,9 @@ monitorConfigPolicy.MonitorConfigPolicyConfig(
 | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.policyType">policy_type</a></code> | <code>str</code> | The monitor config policy type Valid values are `tag`. |
-| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor_config_policy#id MonitorConfigPolicy#id}. |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.policyType">policy_type</a></code> | <code>str</code> | The monitor config policy type Valid values are `tag`, `downtime`. |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.downtimePolicy">downtime_policy</a></code> | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicy">MonitorConfigPolicyDowntimePolicy</a></code> | downtime_policy block. |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/monitor_config_policy#id MonitorConfigPolicy#id}. |
 | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.tagPolicy">tag_policy</a></code> | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyTagPolicy">MonitorConfigPolicyTagPolicy</a></code> | tag_policy block. |
 
 ---
@@ -1060,9 +1122,23 @@ policy_type: str
 
 - *Type:* str
 
-The monitor config policy type Valid values are `tag`.
+The monitor config policy type Valid values are `tag`, `downtime`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor_config_policy#policy_type MonitorConfigPolicy#policy_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/monitor_config_policy#policy_type MonitorConfigPolicy#policy_type}
+
+---
+
+##### `downtime_policy`<sup>Optional</sup> <a name="downtime_policy" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.downtimePolicy"></a>
+
+```python
+downtime_policy: MonitorConfigPolicyDowntimePolicy
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicy">MonitorConfigPolicyDowntimePolicy</a>
+
+downtime_policy block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/monitor_config_policy#downtime_policy MonitorConfigPolicy#downtime_policy}
 
 ---
 
@@ -1074,7 +1150,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor_config_policy#id MonitorConfigPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/monitor_config_policy#id MonitorConfigPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1091,7 +1167,41 @@ tag_policy: MonitorConfigPolicyTagPolicy
 
 tag_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor_config_policy#tag_policy MonitorConfigPolicy#tag_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/monitor_config_policy#tag_policy MonitorConfigPolicy#tag_policy}
+
+---
+
+### MonitorConfigPolicyDowntimePolicy <a name="MonitorConfigPolicyDowntimePolicy" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicy"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicy.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import monitor_config_policy
+
+monitorConfigPolicy.MonitorConfigPolicyDowntimePolicy(
+  max_duration_ms: typing.Union[int, float]
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicy.property.maxDurationMs">max_duration_ms</a></code> | <code>typing.Union[int, float]</code> | The maximum allowed downtime duration, in milliseconds. |
+
+---
+
+##### `max_duration_ms`<sup>Required</sup> <a name="max_duration_ms" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicy.property.maxDurationMs"></a>
+
+```python
+max_duration_ms: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The maximum allowed downtime duration, in milliseconds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/monitor_config_policy#max_duration_ms MonitorConfigPolicy#max_duration_ms}
 
 ---
 
@@ -1129,7 +1239,7 @@ tag_key: str
 
 The key of the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor_config_policy#tag_key MonitorConfigPolicy#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/monitor_config_policy#tag_key MonitorConfigPolicy#tag_key}
 
 ---
 
@@ -1143,7 +1253,7 @@ tag_key_required: bool | IResolvable
 
 If a tag key is required for monitor creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor_config_policy#tag_key_required MonitorConfigPolicy#tag_key_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/monitor_config_policy#tag_key_required MonitorConfigPolicy#tag_key_required}
 
 ---
 
@@ -1157,11 +1267,307 @@ valid_tag_values: typing.List[str]
 
 Valid values for the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor_config_policy#valid_tag_values MonitorConfigPolicy#valid_tag_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.24.0/docs/resources/monitor_config_policy#valid_tag_values MonitorConfigPolicy#valid_tag_values}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### MonitorConfigPolicyDowntimePolicyOutputReference <a name="MonitorConfigPolicyDowntimePolicyOutputReference" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import monitor_config_policy
+
+monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.property.maxDurationMsInput">max_duration_ms_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.property.maxDurationMs">max_duration_ms</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicy">MonitorConfigPolicyDowntimePolicy</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `max_duration_ms_input`<sup>Optional</sup> <a name="max_duration_ms_input" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.property.maxDurationMsInput"></a>
+
+```python
+max_duration_ms_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `max_duration_ms`<sup>Required</sup> <a name="max_duration_ms" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.property.maxDurationMs"></a>
+
+```python
+max_duration_ms: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicyOutputReference.property.internalValue"></a>
+
+```python
+internal_value: MonitorConfigPolicyDowntimePolicy
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyDowntimePolicy">MonitorConfigPolicyDowntimePolicy</a>
+
+---
+
 
 ### MonitorConfigPolicyTagPolicyOutputReference <a name="MonitorConfigPolicyTagPolicyOutputReference" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyTagPolicyOutputReference"></a>
 
