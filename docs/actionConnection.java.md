@@ -4,7 +4,7 @@
 
 ### ActionConnection <a name="ActionConnection" id="@cdktn/provider-datadog.actionConnection.ActionConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection datadog_action_connection}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection datadog_action_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer"></a>
 
@@ -43,6 +43,7 @@ ActionConnection.Builder.create(Construct scope, java.lang.String id)
 //  .serviceNow(ActionConnectionServiceNow)
 //  .split(ActionConnectionSplit)
 //  .statsig(ActionConnectionStatsig)
+//  .tags(java.util.List<java.lang.String>)
 //  .virusTotal(ActionConnectionVirusTotal)
     .build();
 ```
@@ -82,6 +83,7 @@ ActionConnection.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.serviceNow">serviceNow</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow">ActionConnectionServiceNow</a></code> | service_now block. |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.split">split</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplit">ActionConnectionSplit</a></code> | split block. |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.statsig">statsig</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig">ActionConnectionStatsig</a></code> | statsig block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | User-defined tags associated with the connection. |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.virusTotal">virusTotal</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal">ActionConnectionVirusTotal</a></code> | virus_total block. |
 
 ---
@@ -152,7 +154,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#name ActionConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#name ActionConnection#name}
 
 ---
 
@@ -162,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 anthropic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#anthropic ActionConnection#anthropic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#anthropic ActionConnection#anthropic}
 
 ---
 
@@ -172,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 asana block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#asana ActionConnection#asana}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#asana ActionConnection#asana}
 
 ---
 
@@ -182,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 aws block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#aws ActionConnection#aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#aws ActionConnection#aws}
 
 ---
 
@@ -192,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 azure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#azure ActionConnection#azure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#azure ActionConnection#azure}
 
 ---
 
@@ -202,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 circle_ci block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#circle_ci ActionConnection#circle_ci}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#circle_ci ActionConnection#circle_ci}
 
 ---
 
@@ -212,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 clickup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#clickup ActionConnection#clickup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#clickup ActionConnection#clickup}
 
 ---
 
@@ -222,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 cloudflare block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#cloudflare ActionConnection#cloudflare}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#cloudflare ActionConnection#cloudflare}
 
 ---
 
@@ -232,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 config_cat block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#config_cat ActionConnection#config_cat}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#config_cat ActionConnection#config_cat}
 
 ---
 
@@ -242,7 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 datadog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#datadog ActionConnection#datadog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#datadog ActionConnection#datadog}
 
 ---
 
@@ -252,7 +254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 fastly block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#fastly ActionConnection#fastly}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#fastly ActionConnection#fastly}
 
 ---
 
@@ -262,7 +264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 freshservice block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#freshservice ActionConnection#freshservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#freshservice ActionConnection#freshservice}
 
 ---
 
@@ -272,7 +274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 gcp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#gcp ActionConnection#gcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#gcp ActionConnection#gcp}
 
 ---
 
@@ -282,7 +284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 gemini block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#gemini ActionConnection#gemini}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#gemini ActionConnection#gemini}
 
 ---
 
@@ -292,7 +294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#gitlab ActionConnection#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#gitlab ActionConnection#gitlab}
 
 ---
 
@@ -302,7 +304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 grey_noise block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#grey_noise ActionConnection#grey_noise}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#grey_noise ActionConnection#grey_noise}
 
 ---
 
@@ -312,7 +314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 http block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#http ActionConnection#http}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#http ActionConnection#http}
 
 ---
 
@@ -322,7 +324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 launch_darkly block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#launch_darkly ActionConnection#launch_darkly}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#launch_darkly ActionConnection#launch_darkly}
 
 ---
 
@@ -332,7 +334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 notion block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#notion ActionConnection#notion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#notion ActionConnection#notion}
 
 ---
 
@@ -342,7 +344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 okta block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#okta ActionConnection#okta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#okta ActionConnection#okta}
 
 ---
 
@@ -352,7 +354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 openai block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#openai ActionConnection#openai}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#openai ActionConnection#openai}
 
 ---
 
@@ -362,7 +364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 service_now block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#service_now ActionConnection#service_now}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#service_now ActionConnection#service_now}
 
 ---
 
@@ -372,7 +374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 split block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#split ActionConnection#split}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#split ActionConnection#split}
 
 ---
 
@@ -382,7 +384,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 statsig block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#statsig ActionConnection#statsig}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#statsig ActionConnection#statsig}
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer.parameter.tags"></a>
+
+- *Type:* java.util.List<java.lang.String>
+
+User-defined tags associated with the connection.
+
+Each tag must follow the `key:value` format. The `default` tag key is reserved. See also `effective_tags`, which includes provider-level `default_tags`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#tags ActionConnection#tags}
 
 ---
 
@@ -392,7 +406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 virus_total block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#virus_total ActionConnection#virus_total}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#virus_total ActionConnection#virus_total}
 
 ---
 
@@ -471,6 +485,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetServiceNow">resetServiceNow</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetSplit">resetSplit</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetStatsig">resetStatsig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetTags">resetTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.resetVirusTotal">resetVirusTotal</a></code> | *No description.* |
 
 ---
@@ -1212,6 +1227,12 @@ public void resetSplit()
 public void resetStatsig()
 ```
 
+##### `resetTags` <a name="resetTags" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetTags"></a>
+
+```java
+public void resetTags()
+```
+
 ##### `resetVirusTotal` <a name="resetVirusTotal" id="@cdktn/provider-datadog.actionConnection.ActionConnection.resetVirusTotal"></a>
 
 ```java
@@ -1321,7 +1342,7 @@ The construct id used in the generated config for the ActionConnection to import
 
 The id of the existing ActionConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1360,6 +1381,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.cloudflare">cloudflare</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionCloudflareOutputReference">ActionConnectionCloudflareOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.configCat">configCat</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfigCatOutputReference">ActionConnectionConfigCatOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.datadog">datadog</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference">ActionConnectionDatadogOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.effectiveTags">effectiveTags</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.fastly">fastly</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFastlyOutputReference">ActionConnectionFastlyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.freshservice">freshservice</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionFreshserviceOutputReference">ActionConnectionFreshserviceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.gcp">gcp</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionGcpOutputReference">ActionConnectionGcpOutputReference</a></code> | *No description.* |
@@ -1400,8 +1422,10 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.serviceNowInput">serviceNowInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow">ActionConnectionServiceNow</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.splitInput">splitInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplit">ActionConnectionSplit</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.statsigInput">statsigInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig">ActionConnectionStatsig</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.tagsInput">tagsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.virusTotalInput">virusTotalInput</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal">ActionConnectionVirusTotal</a>\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnection.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 
 ---
 
@@ -1634,6 +1658,16 @@ public ActionConnectionDatadogOutputReference getDatadog();
 ```
 
 - *Type:* <a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionDatadogOutputReference">ActionConnectionDatadogOutputReference</a>
+
+---
+
+##### `effectiveTags`<sup>Required</sup> <a name="effectiveTags" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.effectiveTags"></a>
+
+```java
+public java.util.List<java.lang.String> getEffectiveTags();
+```
+
+- *Type:* java.util.List<java.lang.String>
 
 ---
 
@@ -2037,6 +2071,16 @@ public ActionConnectionStatsig|IResolvable getStatsigInput();
 
 ---
 
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.tagsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getTagsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `virusTotalInput`<sup>Optional</sup> <a name="virusTotalInput" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.virusTotalInput"></a>
 
 ```java
@@ -2054,6 +2098,16 @@ public java.lang.String getName();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-datadog.actionConnection.ActionConnection.property.tags"></a>
+
+```java
+public java.util.List<java.lang.String> getTags();
+```
+
+- *Type:* java.util.List<java.lang.String>
 
 ---
 
@@ -2107,7 +2161,7 @@ public ActionConnectionAnthropicApiKey getApiKey();
 
 api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 
@@ -2141,7 +2195,7 @@ public java.lang.String getApiToken();
 
 Anthropic API token. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_token ActionConnection#api_token}
 
 ---
 
@@ -2175,7 +2229,7 @@ public ActionConnectionAsanaAccessToken getAccessToken();
 
 access_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#access_token ActionConnection#access_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#access_token ActionConnection#access_token}
 
 ---
 
@@ -2209,7 +2263,7 @@ public java.lang.String getAccessToken();
 
 Asana access token. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#access_token ActionConnection#access_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#access_token ActionConnection#access_token}
 
 ---
 
@@ -2243,7 +2297,7 @@ public ActionConnectionAwsAssumeRole getAssumeRole();
 
 assume_role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#assume_role ActionConnection#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#assume_role ActionConnection#assume_role}
 
 ---
 
@@ -2279,7 +2333,7 @@ public java.lang.String getAccountId();
 
 AWS account that the connection is created for. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#account_id ActionConnection#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#account_id ActionConnection#account_id}
 
 ---
 
@@ -2293,7 +2347,7 @@ public java.lang.String getRole();
 
 Role to assume. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#role ActionConnection#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#role ActionConnection#role}
 
 ---
 
@@ -2327,7 +2381,7 @@ public ActionConnectionAzureTenant getTenant();
 
 tenant block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#tenant ActionConnection#tenant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#tenant ActionConnection#tenant}
 
 ---
 
@@ -2367,7 +2421,7 @@ public java.lang.String getAppClientId();
 
 Azure application client ID. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#app_client_id ActionConnection#app_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#app_client_id ActionConnection#app_client_id}
 
 ---
 
@@ -2381,7 +2435,7 @@ public java.lang.String getClientSecret();
 
 Azure application client secret. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#client_secret ActionConnection#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#client_secret ActionConnection#client_secret}
 
 ---
 
@@ -2395,7 +2449,7 @@ public java.lang.String getCustomScopes();
 
 Custom scope requested when acquiring an OAuth 2 access token. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#custom_scopes ActionConnection#custom_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#custom_scopes ActionConnection#custom_scopes}
 
 ---
 
@@ -2409,7 +2463,7 @@ public java.lang.String getTenantId();
 
 Azure Active Directory tenant ID. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#tenant_id ActionConnection#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#tenant_id ActionConnection#tenant_id}
 
 ---
 
@@ -2443,7 +2497,7 @@ public ActionConnectionCircleCiApiKey getApiKey();
 
 api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 
@@ -2477,7 +2531,7 @@ public java.lang.String getApiToken();
 
 CircleCI API token. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_token ActionConnection#api_token}
 
 ---
 
@@ -2511,7 +2565,7 @@ public ActionConnectionClickupApiKey getApiKey();
 
 api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 
@@ -2545,7 +2599,7 @@ public java.lang.String getApiToken();
 
 ClickUp API token. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_token ActionConnection#api_token}
 
 ---
 
@@ -2581,7 +2635,7 @@ public ActionConnectionCloudflareApiToken getApiToken();
 
 api_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_token ActionConnection#api_token}
 
 ---
 
@@ -2595,7 +2649,7 @@ public ActionConnectionCloudflareGlobalApiToken getGlobalApiToken();
 
 global_api_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#global_api_token ActionConnection#global_api_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#global_api_token ActionConnection#global_api_token}
 
 ---
 
@@ -2629,7 +2683,7 @@ public java.lang.String getApiToken();
 
 Cloudflare API token. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_token ActionConnection#api_token}
 
 ---
 
@@ -2665,7 +2719,7 @@ public java.lang.String getAuthEmail();
 
 Email address associated with the Cloudflare account. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#auth_email ActionConnection#auth_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#auth_email ActionConnection#auth_email}
 
 ---
 
@@ -2679,7 +2733,7 @@ public java.lang.String getGlobalApiKey();
 
 Cloudflare global API key. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#global_api_key ActionConnection#global_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#global_api_key ActionConnection#global_api_key}
 
 ---
 
@@ -2722,6 +2776,7 @@ ActionConnectionConfig.builder()
 //  .serviceNow(ActionConnectionServiceNow)
 //  .split(ActionConnectionSplit)
 //  .statsig(ActionConnectionStatsig)
+//  .tags(java.util.List<java.lang.String>)
 //  .virusTotal(ActionConnectionVirusTotal)
     .build();
 ```
@@ -2761,6 +2816,7 @@ ActionConnectionConfig.builder()
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.serviceNow">serviceNow</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionServiceNow">ActionConnectionServiceNow</a></code> | service_now block. |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.split">split</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionSplit">ActionConnectionSplit</a></code> | split block. |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.statsig">statsig</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionStatsig">ActionConnectionStatsig</a></code> | statsig block. |
+| <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | User-defined tags associated with the connection. |
 | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.virusTotal">virusTotal</a></code> | <code><a href="#@cdktn/provider-datadog.actionConnection.ActionConnectionVirusTotal">ActionConnectionVirusTotal</a></code> | virus_total block. |
 
 ---
@@ -2845,7 +2901,7 @@ public java.lang.String getName();
 
 Name of the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#name ActionConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#name ActionConnection#name}
 
 ---
 
@@ -2859,7 +2915,7 @@ public ActionConnectionAnthropic getAnthropic();
 
 anthropic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#anthropic ActionConnection#anthropic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#anthropic ActionConnection#anthropic}
 
 ---
 
@@ -2873,7 +2929,7 @@ public ActionConnectionAsana getAsana();
 
 asana block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#asana ActionConnection#asana}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#asana ActionConnection#asana}
 
 ---
 
@@ -2887,7 +2943,7 @@ public ActionConnectionAws getAws();
 
 aws block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#aws ActionConnection#aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#aws ActionConnection#aws}
 
 ---
 
@@ -2901,7 +2957,7 @@ public ActionConnectionAzure getAzure();
 
 azure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#azure ActionConnection#azure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#azure ActionConnection#azure}
 
 ---
 
@@ -2915,7 +2971,7 @@ public ActionConnectionCircleCi getCircleCi();
 
 circle_ci block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#circle_ci ActionConnection#circle_ci}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#circle_ci ActionConnection#circle_ci}
 
 ---
 
@@ -2929,7 +2985,7 @@ public ActionConnectionClickup getClickup();
 
 clickup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#clickup ActionConnection#clickup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#clickup ActionConnection#clickup}
 
 ---
 
@@ -2943,7 +2999,7 @@ public ActionConnectionCloudflare getCloudflare();
 
 cloudflare block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#cloudflare ActionConnection#cloudflare}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#cloudflare ActionConnection#cloudflare}
 
 ---
 
@@ -2957,7 +3013,7 @@ public ActionConnectionConfigCat getConfigCat();
 
 config_cat block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#config_cat ActionConnection#config_cat}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#config_cat ActionConnection#config_cat}
 
 ---
 
@@ -2971,7 +3027,7 @@ public ActionConnectionDatadog getDatadog();
 
 datadog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#datadog ActionConnection#datadog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#datadog ActionConnection#datadog}
 
 ---
 
@@ -2985,7 +3041,7 @@ public ActionConnectionFastly getFastly();
 
 fastly block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#fastly ActionConnection#fastly}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#fastly ActionConnection#fastly}
 
 ---
 
@@ -2999,7 +3055,7 @@ public ActionConnectionFreshservice getFreshservice();
 
 freshservice block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#freshservice ActionConnection#freshservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#freshservice ActionConnection#freshservice}
 
 ---
 
@@ -3013,7 +3069,7 @@ public ActionConnectionGcp getGcp();
 
 gcp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#gcp ActionConnection#gcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#gcp ActionConnection#gcp}
 
 ---
 
@@ -3027,7 +3083,7 @@ public ActionConnectionGemini getGemini();
 
 gemini block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#gemini ActionConnection#gemini}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#gemini ActionConnection#gemini}
 
 ---
 
@@ -3041,7 +3097,7 @@ public ActionConnectionGitlab getGitlab();
 
 gitlab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#gitlab ActionConnection#gitlab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#gitlab ActionConnection#gitlab}
 
 ---
 
@@ -3055,7 +3111,7 @@ public ActionConnectionGreyNoise getGreyNoise();
 
 grey_noise block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#grey_noise ActionConnection#grey_noise}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#grey_noise ActionConnection#grey_noise}
 
 ---
 
@@ -3069,7 +3125,7 @@ public ActionConnectionHttp getHttp();
 
 http block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#http ActionConnection#http}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#http ActionConnection#http}
 
 ---
 
@@ -3083,7 +3139,7 @@ public ActionConnectionLaunchDarkly getLaunchDarkly();
 
 launch_darkly block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#launch_darkly ActionConnection#launch_darkly}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#launch_darkly ActionConnection#launch_darkly}
 
 ---
 
@@ -3097,7 +3153,7 @@ public ActionConnectionNotion getNotion();
 
 notion block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#notion ActionConnection#notion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#notion ActionConnection#notion}
 
 ---
 
@@ -3111,7 +3167,7 @@ public ActionConnectionOkta getOkta();
 
 okta block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#okta ActionConnection#okta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#okta ActionConnection#okta}
 
 ---
 
@@ -3125,7 +3181,7 @@ public ActionConnectionOpenai getOpenai();
 
 openai block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#openai ActionConnection#openai}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#openai ActionConnection#openai}
 
 ---
 
@@ -3139,7 +3195,7 @@ public ActionConnectionServiceNow getServiceNow();
 
 service_now block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#service_now ActionConnection#service_now}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#service_now ActionConnection#service_now}
 
 ---
 
@@ -3153,7 +3209,7 @@ public ActionConnectionSplit getSplit();
 
 split block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#split ActionConnection#split}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#split ActionConnection#split}
 
 ---
 
@@ -3167,7 +3223,23 @@ public ActionConnectionStatsig getStatsig();
 
 statsig block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#statsig ActionConnection#statsig}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#statsig ActionConnection#statsig}
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.property.tags"></a>
+
+```java
+public java.util.List<java.lang.String> getTags();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+User-defined tags associated with the connection.
+
+Each tag must follow the `key:value` format. The `default` tag key is reserved. See also `effective_tags`, which includes provider-level `default_tags`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#tags ActionConnection#tags}
 
 ---
 
@@ -3181,7 +3253,7 @@ public ActionConnectionVirusTotal getVirusTotal();
 
 virus_total block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#virus_total ActionConnection#virus_total}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#virus_total ActionConnection#virus_total}
 
 ---
 
@@ -3215,7 +3287,7 @@ public ActionConnectionConfigCatSdkKey getSdkKey();
 
 sdk_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#sdk_key ActionConnection#sdk_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#sdk_key ActionConnection#sdk_key}
 
 ---
 
@@ -3253,7 +3325,7 @@ public java.lang.String getApiPassword();
 
 ConfigCat Public Management API password. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_password ActionConnection#api_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_password ActionConnection#api_password}
 
 ---
 
@@ -3267,7 +3339,7 @@ public java.lang.String getApiUsername();
 
 ConfigCat Public Management API username. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_username ActionConnection#api_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_username ActionConnection#api_username}
 
 ---
 
@@ -3281,7 +3353,7 @@ public java.lang.String getSdkKey();
 
 ConfigCat SDK key. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#sdk_key ActionConnection#sdk_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#sdk_key ActionConnection#sdk_key}
 
 ---
 
@@ -3315,7 +3387,7 @@ public ActionConnectionDatadogApiKey getApiKey();
 
 api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 
@@ -3355,7 +3427,7 @@ public java.lang.String getApiKey();
 
 Datadog API key. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 
@@ -3369,7 +3441,7 @@ public java.lang.String getAppKey();
 
 Datadog application key. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#app_key ActionConnection#app_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#app_key ActionConnection#app_key}
 
 ---
 
@@ -3383,7 +3455,7 @@ public java.lang.String getDatacenter();
 
 Datadog site data center. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#datacenter ActionConnection#datacenter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#datacenter ActionConnection#datacenter}
 
 ---
 
@@ -3397,7 +3469,7 @@ public java.lang.String getSubdomain();
 
 Custom subdomain used for URLs generated with this connection. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#subdomain ActionConnection#subdomain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#subdomain ActionConnection#subdomain}
 
 ---
 
@@ -3431,7 +3503,7 @@ public ActionConnectionFastlyApiKey getApiKey();
 
 api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 
@@ -3465,7 +3537,7 @@ public java.lang.String getApiKey();
 
 Fastly API key. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 
@@ -3499,7 +3571,7 @@ public ActionConnectionFreshserviceApiKey getApiKey();
 
 api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 
@@ -3535,7 +3607,7 @@ public java.lang.String getApiKey();
 
 Freshservice API key. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 
@@ -3549,7 +3621,7 @@ public java.lang.String getDomain();
 
 Freshservice domain. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#domain ActionConnection#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#domain ActionConnection#domain}
 
 ---
 
@@ -3583,7 +3655,7 @@ public ActionConnectionGcpServiceAccount getServiceAccount();
 
 service_account block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#service_account ActionConnection#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#service_account ActionConnection#service_account}
 
 ---
 
@@ -3619,7 +3691,7 @@ public java.lang.String getPrivateKey();
 
 Google Cloud service account private key. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#private_key ActionConnection#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#private_key ActionConnection#private_key}
 
 ---
 
@@ -3633,7 +3705,7 @@ public java.lang.String getServiceAccountEmail();
 
 Google Cloud service account email. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#service_account_email ActionConnection#service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#service_account_email ActionConnection#service_account_email}
 
 ---
 
@@ -3667,7 +3739,7 @@ public ActionConnectionGeminiApiKey getApiKey();
 
 api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 
@@ -3701,7 +3773,7 @@ public java.lang.String getApiKey();
 
 Gemini API key. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 
@@ -3735,7 +3807,7 @@ public ActionConnectionGitlabApiKey getApiKey();
 
 api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 
@@ -3769,7 +3841,7 @@ public java.lang.String getApiToken();
 
 GitLab API token. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_token ActionConnection#api_token}
 
 ---
 
@@ -3803,7 +3875,7 @@ public ActionConnectionGreyNoiseApiKey getApiKey();
 
 api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 
@@ -3837,7 +3909,7 @@ public java.lang.String getApiKey();
 
 GreyNoise API key. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 
@@ -3873,7 +3945,7 @@ public java.lang.String getBaseUrl();
 
 Base HTTP url for the integration. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#base_url ActionConnection#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#base_url ActionConnection#base_url}
 
 ---
 
@@ -3887,7 +3959,7 @@ public ActionConnectionHttpTokenAuth getTokenAuth();
 
 token_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#token_auth ActionConnection#token_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#token_auth ActionConnection#token_auth}
 
 ---
 
@@ -3927,7 +3999,7 @@ public ActionConnectionHttpTokenAuthBody getBody();
 
 body block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#body ActionConnection#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#body ActionConnection#body}
 
 ---
 
@@ -3941,7 +4013,7 @@ public IResolvable|java.util.List<ActionConnectionHttpTokenAuthHeader> getHeader
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#header ActionConnection#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#header ActionConnection#header}
 
 ---
 
@@ -3955,7 +4027,7 @@ public IResolvable|java.util.List<ActionConnectionHttpTokenAuthToken> getToken()
 
 token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#token ActionConnection#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#token ActionConnection#token}
 
 ---
 
@@ -3969,7 +4041,7 @@ public IResolvable|java.util.List<ActionConnectionHttpTokenAuthUrlParameter> get
 
 url_parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#url_parameter ActionConnection#url_parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#url_parameter ActionConnection#url_parameter}
 
 ---
 
@@ -4005,7 +4077,7 @@ public java.lang.String getContent();
 
 Serialized body content. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#content ActionConnection#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#content ActionConnection#content}
 
 ---
 
@@ -4019,7 +4091,7 @@ public java.lang.String getContentType();
 
 Content type of the body. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#content_type ActionConnection#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#content_type ActionConnection#content_type}
 
 ---
 
@@ -4055,7 +4127,7 @@ public java.lang.String getName();
 
 Header name. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#name ActionConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#name ActionConnection#name}
 
 ---
 
@@ -4069,7 +4141,7 @@ public java.lang.String getValue();
 
 String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#value ActionConnection#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#value ActionConnection#value}
 
 ---
 
@@ -4107,7 +4179,7 @@ public java.lang.String getName();
 
 Token name. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#name ActionConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#name ActionConnection#name}
 
 ---
 
@@ -4121,7 +4193,7 @@ public java.lang.String getType();
 
 Token type Valid values are `SECRET`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#type ActionConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#type ActionConnection#type}
 
 ---
 
@@ -4135,7 +4207,7 @@ public java.lang.String getValue();
 
 Token value. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#value ActionConnection#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#value ActionConnection#value}
 
 ---
 
@@ -4171,7 +4243,7 @@ public java.lang.String getName();
 
 URL parameter name. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#name ActionConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#name ActionConnection#name}
 
 ---
 
@@ -4185,7 +4257,7 @@ public java.lang.String getValue();
 
 URL parameter value. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#value ActionConnection#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#value ActionConnection#value}
 
 ---
 
@@ -4219,7 +4291,7 @@ public ActionConnectionLaunchDarklyApiKey getApiKey();
 
 api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 
@@ -4253,7 +4325,7 @@ public java.lang.String getApiToken();
 
 LaunchDarkly API token. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_token ActionConnection#api_token}
 
 ---
 
@@ -4287,7 +4359,7 @@ public ActionConnectionNotionApiKey getApiKey();
 
 api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 
@@ -4321,7 +4393,7 @@ public java.lang.String getApiToken();
 
 Notion API token. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_token ActionConnection#api_token}
 
 ---
 
@@ -4355,7 +4427,7 @@ public ActionConnectionOktaApiToken getApiToken();
 
 api_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_token ActionConnection#api_token}
 
 ---
 
@@ -4391,7 +4463,7 @@ public java.lang.String getApiToken();
 
 Okta API token. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_token ActionConnection#api_token}
 
 ---
 
@@ -4405,7 +4477,7 @@ public java.lang.String getDomain();
 
 Okta domain. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#domain ActionConnection#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#domain ActionConnection#domain}
 
 ---
 
@@ -4439,7 +4511,7 @@ public ActionConnectionOpenaiApiKey getApiKey();
 
 api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 
@@ -4473,7 +4545,7 @@ public java.lang.String getApiToken();
 
 OpenAI API token. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_token ActionConnection#api_token}
 
 ---
 
@@ -4507,7 +4579,7 @@ public ActionConnectionServiceNowBasicAuth getBasicAuth();
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#basic_auth ActionConnection#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#basic_auth ActionConnection#basic_auth}
 
 ---
 
@@ -4545,7 +4617,7 @@ public java.lang.String getInstance();
 
 ServiceNow instance. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#instance ActionConnection#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#instance ActionConnection#instance}
 
 ---
 
@@ -4559,7 +4631,7 @@ public java.lang.String getPassword();
 
 ServiceNow password. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#password ActionConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#password ActionConnection#password}
 
 ---
 
@@ -4573,7 +4645,7 @@ public java.lang.String getUsername();
 
 ServiceNow username. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#username ActionConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#username ActionConnection#username}
 
 ---
 
@@ -4607,7 +4679,7 @@ public ActionConnectionSplitApiKey getApiKey();
 
 api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 
@@ -4641,7 +4713,7 @@ public java.lang.String getApiKey();
 
 Split API key. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 
@@ -4675,7 +4747,7 @@ public ActionConnectionStatsigApiKey getApiKey();
 
 api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 
@@ -4709,7 +4781,7 @@ public java.lang.String getApiKey();
 
 Statsig API key. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 
@@ -4743,7 +4815,7 @@ public ActionConnectionVirusTotalApiKey getApiKey();
 
 api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 
@@ -4777,7 +4849,7 @@ public java.lang.String getApiKey();
 
 VirusTotal API key. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 
 ---
 

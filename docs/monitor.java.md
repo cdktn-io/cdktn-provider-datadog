@@ -4,7 +4,7 @@
 
 ### Monitor <a name="Monitor" id="@cdktn/provider-datadog.monitor.Monitor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor datadog_monitor}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor datadog_monitor}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.Monitor.Initializer"></a>
 
@@ -83,7 +83,7 @@ Monitor.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.forceDelete">forceDelete</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor). |
 | <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.groupbySimpleMonitor">groupbySimpleMonitor</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether or not to trigger one alert if any source breaches a threshold. |
 | <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.groupRetentionDuration">groupRetentionDuration</a></code> | <code>java.lang.String</code> | The time span after which groups with missing data are dropped from the monitor state. |
-| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#id Monitor#id}. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#id Monitor#id}. |
 | <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.ignoreTagKeys">ignoreTagKeys</a></code> | <code>java.util.List<java.lang.String></code> | Tag keys whose drift Terraform should ignore. |
 | <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.includeTags">includeTags</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`. |
 | <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.monitorThresholds">monitorThresholds</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a></code> | monitor_thresholds block. |
@@ -178,7 +178,7 @@ A message to include with notifications for this monitor.
 
 Email notifications can be sent to specific users by using the same `@username` notation as events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#message Monitor#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#message Monitor#message}
 
 ---
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Name of Datadog monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -202,7 +202,7 @@ Note this is not the same query you see in the UI and the syntax is different de
 
 **Note:** APM latency data is now available as Distribution Metrics. Existing monitors have been migrated automatically but all terraformed monitors can still use the existing metrics. We strongly recommend updating monitor definitions to query the new metrics. To learn more, or to see examples of how to update your terraform definitions to utilize the new distribution metrics, see the [detailed doc](https://docs.datadoghq.com/tracing/guide/ddsketch_trace_metrics/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
@@ -214,7 +214,7 @@ The type of the monitor.
 
 The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API [documentation page](https://docs.datadoghq.com/api/v1/monitors/#create-a-monitor). Note: The monitor type cannot be changed after a monitor is created. Valid values are `composite`, `event alert`, `log alert`, `metric alert`, `process alert`, `query alert`, `rum alert`, `service check`, `synthetics alert`, `trace-analytics alert`, `slo alert`, `event-v2 alert`, `audit alert`, `ci-pipelines alert`, `ci-tests alert`, `error-tracking alert`, `database-monitoring alert`, `network-performance alert`, `cost alert`, `data-quality alert`, `network-path alert`, `data-jobs alert`, `llm-observability alert`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#type Monitor#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#type Monitor#type}
 
 ---
 
@@ -224,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 assets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#assets Monitor#assets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#assets Monitor#assets}
 
 ---
 
@@ -236,7 +236,7 @@ Indicates whether the monitor is in a draft or published state.
 
 When set to `draft`, the monitor appears as Draft and does not send notifications. When set to `published`, the monitor is active, and it evaluates conditions and sends notifications as configured. Valid values are `draft`, `published`. Defaults to `"published"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#draft_status Monitor#draft_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#draft_status Monitor#draft_status}
 
 ---
 
@@ -248,7 +248,7 @@ A boolean indicating whether or not to include a list of log values which trigge
 
 This is only used by log monitors. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#enable_logs_sample Monitor#enable_logs_sample}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#enable_logs_sample Monitor#enable_logs_sample}
 
 ---
 
@@ -260,7 +260,7 @@ Whether or not a list of samples which triggered the alert is included.
 
 This is only used by CI Test and Pipeline monitors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#enable_samples Monitor#enable_samples}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#enable_samples Monitor#enable_samples}
 
 ---
 
@@ -270,7 +270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A message to include with a re-notification. Supports the `@username` notification allowed elsewhere.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#escalation_message Monitor#escalation_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#escalation_message Monitor#escalation_message}
 
 ---
 
@@ -282,7 +282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 For example, if the value is set to `300` (5min), the `timeframe` is set to `last_5m` and the time is 7:00, the monitor will evaluate data from 6:50 to 6:55. This is useful for AWS CloudWatch and other backfilled metrics to ensure the monitor will always have data during evaluation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#evaluation_delay Monitor#evaluation_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#evaluation_delay Monitor#evaluation_delay}
 
 ---
 
@@ -292,7 +292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#force_delete Monitor#force_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#force_delete Monitor#force_delete}
 
 ---
 
@@ -304,7 +304,7 @@ Whether or not to trigger one alert if any source breaches a threshold.
 
 This is only used by log monitors. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#groupby_simple_monitor Monitor#groupby_simple_monitor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#groupby_simple_monitor Monitor#groupby_simple_monitor}
 
 ---
 
@@ -316,7 +316,7 @@ The time span after which groups with missing data are dropped from the monitor 
 
 The minimum value is one hour, and the maximum value is 72 hours. Example values are: 60m, 1h, and 2d. This option is only available for APM Trace Analytics, Audit Trail, CI, Error Tracking, Event, Logs, and RUM monitors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#group_retention_duration Monitor#group_retention_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#group_retention_duration Monitor#group_retention_duration}
 
 ---
 
@@ -324,7 +324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#id Monitor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#id Monitor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -339,7 +339,7 @@ Tag keys whose drift Terraform should ignore.
 
 Use this to keep specific tags managed outside Terraform (for example, by the Datadog UI or a tagging service) without `terraform plan` reporting drift on every run. Other tags are still managed normally. Any `:value` suffix is ignored. Merged with the provider's `ignore_tag_keys` for this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#ignore_tag_keys Monitor#ignore_tag_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#ignore_tag_keys Monitor#ignore_tag_keys}
 
 ---
 
@@ -349,7 +349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#include_tags Monitor#include_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#include_tags Monitor#include_tags}
 
 ---
 
@@ -359,7 +359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 monitor_thresholds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#monitor_thresholds Monitor#monitor_thresholds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#monitor_thresholds Monitor#monitor_thresholds}
 
 ---
 
@@ -369,7 +369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 monitor_threshold_windows block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#monitor_threshold_windows Monitor#monitor_threshold_windows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#monitor_threshold_windows Monitor#monitor_threshold_windows}
 
 ---
 
@@ -381,7 +381,7 @@ The time (in seconds) to skip evaluations for new groups.
 
 `new_group_delay` overrides `new_host_delay` if it is set to a nonzero value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#new_group_delay Monitor#new_group_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#new_group_delay Monitor#new_group_delay}
 
 ---
 
@@ -393,7 +393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 See `new_group_delay`. Time (in seconds) to allow a host to boot and applications to fully start before starting the evaluation of monitor results. Should be a non-negative integer. This value is ignored for simple monitors and monitors not grouped by host. The only case when this should be used is to override the default and set `new_host_delay` to zero for monitors grouped by host. **Deprecated.** Use `new_group_delay` except when setting `new_host_delay` to zero. Defaults to `300`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#new_host_delay Monitor#new_host_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#new_host_delay Monitor#new_host_delay}
 
 ---
 
@@ -405,7 +405,7 @@ The number of minutes before a monitor will notify when data stops reporting.
 
 We recommend at least 2x the monitor timeframe for metric alerts or 2 minutes for service checks. Defaults to `10`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#no_data_timeframe Monitor#no_data_timeframe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#no_data_timeframe Monitor#no_data_timeframe}
 
 ---
 
@@ -417,7 +417,7 @@ Toggles the display of additional content sent in the monitor notification.
 
 Valid values are `show_all`, `hide_query`, `hide_handles`, `hide_all`, `hide_query_and_handles`, `show_only_snapshot`, `hide_handles_and_footer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#notification_preset_name Monitor#notification_preset_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#notification_preset_name Monitor#notification_preset_name}
 
 ---
 
@@ -427,7 +427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#notify_audit Monitor#notify_audit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#notify_audit Monitor#notify_audit}
 
 ---
 
@@ -439,7 +439,7 @@ Controls what granularity a monitor alerts on.
 
 Only available for monitors with groupings. For instance, a monitor grouped by `cluster`, `namespace`, and `pod` can be configured to only notify on each new `cluster` violating the alert conditions by setting `notify_by` to `['cluster']`. Tags mentioned in `notify_by` must be a proper subset of the grouping tags in the query. For example, a query grouped by `cluster` and `namespace` cannot notify on `region` because `region` is not part of the grouping tags; furthermore, the same query cannot set `notify_by` to `['cluster', 'namespace']` because that is not a proper subset. Setting `notify_by` to `[*]` configures the monitor to notify as a simple-alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#notify_by Monitor#notify_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#notify_by Monitor#notify_by}
 
 ---
 
@@ -449,7 +449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#notify_no_data Monitor#notify_no_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#notify_no_data Monitor#notify_no_data}
 
 ---
 
@@ -461,7 +461,7 @@ Controls how groups or monitors are treated if an evaluation does not return any
 
 The default option results in different behavior depending on the monitor query type. For monitors using `Count` queries, an empty monitor evaluation is treated as 0 and is compared to the threshold conditions. For monitors using any query type other than `Count`, for example `Gauge`, `Measure`, or `Rate`, the monitor shows the last known status. This option is not available for Service Check, Composite, or SLO monitors. Valid values are: `show_no_data`, `show_and_notify_no_data`, `resolve`, and `default`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#on_missing_data Monitor#on_missing_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#on_missing_data Monitor#on_missing_data}
 
 ---
 
@@ -471,7 +471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Integer from 1 (high) to 5 (low) indicating alert severity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#priority Monitor#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#priority Monitor#priority}
 
 ---
 
@@ -483,7 +483,7 @@ The number of minutes after the last notification before a monitor will re-notif
 
 It will only re-notify if it's not resolved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#renotify_interval Monitor#renotify_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#renotify_interval Monitor#renotify_interval}
 
 ---
 
@@ -493,7 +493,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The number of re-notification messages that should be sent on the current status.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#renotify_occurrences Monitor#renotify_occurrences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#renotify_occurrences Monitor#renotify_occurrences}
 
 ---
 
@@ -503,7 +503,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The types of statuses for which re-notification messages should be sent. Valid values are `alert`, `warn`, `no data`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#renotify_statuses Monitor#renotify_statuses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#renotify_statuses Monitor#renotify_statuses}
 
 ---
 
@@ -515,7 +515,7 @@ A boolean indicating whether this monitor needs a full window of data before it'
 
 Datadog strongly recommends you set this to `false` for sparse metrics, otherwise some evaluations may be skipped. If there's a custom_schedule set, `require_full_window` must be false and will be ignored. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#require_full_window Monitor#require_full_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#require_full_window Monitor#require_full_window}
 
 ---
 
@@ -527,7 +527,7 @@ A list of unique role identifiers to define which roles are allowed to edit the 
 
 Editing a monitor includes any updates to the monitor configuration, monitor deletion, and muting of the monitor for any amount of time. Roles unique identifiers can be pulled from the [Roles API](https://docs.datadoghq.com/api/latest/roles/#list-roles) in the `data.id` field. **Deprecated.** Use `datadog_restriction_policy` resource to manage permission.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#restricted_roles Monitor#restricted_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#restricted_roles Monitor#restricted_roles}
 
 ---
 
@@ -537,7 +537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 scheduling_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#scheduling_options Monitor#scheduling_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#scheduling_options Monitor#scheduling_options}
 
 ---
 
@@ -549,7 +549,7 @@ A list of tags to associate with your monitor.
 
 This can help you categorize and filter monitors in the manage monitors page of the UI. Note: it's not currently possible to filter by these tags when querying via the API
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#tags Monitor#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#tags Monitor#tags}
 
 ---
 
@@ -561,7 +561,7 @@ The number of hours of the monitor not reporting data before it automatically re
 
 The minimum allowed value is 0 hours. The maximum allowed value is 24 hours.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#timeout_h Monitor#timeout_h}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#timeout_h Monitor#timeout_h}
 
 ---
 
@@ -571,7 +571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If set to `false`, skip the validation call done during plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#validate Monitor#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#validate Monitor#validate}
 
 ---
 
@@ -581,7 +581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 variables block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#variables Monitor#variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#variables Monitor#variables}
 
 ---
 
@@ -1326,7 +1326,7 @@ The construct id used in the generated config for the Monitor to import.
 
 The id of the existing Monitor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2373,7 +2373,7 @@ public java.lang.String getCategory();
 
 Type of asset the entity represents on a monitor. Valid values are `runbook`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#category Monitor#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#category Monitor#category}
 
 ---
 
@@ -2387,7 +2387,7 @@ public java.lang.String getName();
 
 Name for the monitor asset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -2401,7 +2401,7 @@ public java.lang.String getUrl();
 
 URL for the asset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#url Monitor#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#url Monitor#url}
 
 ---
 
@@ -2415,7 +2415,7 @@ public java.lang.String getResourceKey();
 
 Identifier of the internal Datadog resource that this asset represents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#resource_key Monitor#resource_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#resource_key Monitor#resource_key}
 
 ---
 
@@ -2429,7 +2429,7 @@ public java.lang.String getResourceType();
 
 Type of internal Datadog resource associated with a monitor asset. Valid values are `notebook`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#resource_type Monitor#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#resource_type Monitor#resource_type}
 
 ---
 
@@ -2512,7 +2512,7 @@ MonitorConfig.builder()
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.forceDelete">forceDelete</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor). |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.groupbySimpleMonitor">groupbySimpleMonitor</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether or not to trigger one alert if any source breaches a threshold. |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.groupRetentionDuration">groupRetentionDuration</a></code> | <code>java.lang.String</code> | The time span after which groups with missing data are dropped from the monitor state. |
-| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#id Monitor#id}. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#id Monitor#id}. |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.ignoreTagKeys">ignoreTagKeys</a></code> | <code>java.util.List<java.lang.String></code> | Tag keys whose drift Terraform should ignore. |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.includeTags">includeTags</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`. |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.monitorThresholds">monitorThresholds</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a></code> | monitor_thresholds block. |
@@ -2621,7 +2621,7 @@ A message to include with notifications for this monitor.
 
 Email notifications can be sent to specific users by using the same `@username` notation as events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#message Monitor#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#message Monitor#message}
 
 ---
 
@@ -2635,7 +2635,7 @@ public java.lang.String getName();
 
 Name of Datadog monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -2653,7 +2653,7 @@ Note this is not the same query you see in the UI and the syntax is different de
 
 **Note:** APM latency data is now available as Distribution Metrics. Existing monitors have been migrated automatically but all terraformed monitors can still use the existing metrics. We strongly recommend updating monitor definitions to query the new metrics. To learn more, or to see examples of how to update your terraform definitions to utilize the new distribution metrics, see the [detailed doc](https://docs.datadoghq.com/tracing/guide/ddsketch_trace_metrics/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
@@ -2669,7 +2669,7 @@ The type of the monitor.
 
 The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API [documentation page](https://docs.datadoghq.com/api/v1/monitors/#create-a-monitor). Note: The monitor type cannot be changed after a monitor is created. Valid values are `composite`, `event alert`, `log alert`, `metric alert`, `process alert`, `query alert`, `rum alert`, `service check`, `synthetics alert`, `trace-analytics alert`, `slo alert`, `event-v2 alert`, `audit alert`, `ci-pipelines alert`, `ci-tests alert`, `error-tracking alert`, `database-monitoring alert`, `network-performance alert`, `cost alert`, `data-quality alert`, `network-path alert`, `data-jobs alert`, `llm-observability alert`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#type Monitor#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#type Monitor#type}
 
 ---
 
@@ -2683,7 +2683,7 @@ public IResolvable|java.util.List<MonitorAssets> getAssets();
 
 assets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#assets Monitor#assets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#assets Monitor#assets}
 
 ---
 
@@ -2699,7 +2699,7 @@ Indicates whether the monitor is in a draft or published state.
 
 When set to `draft`, the monitor appears as Draft and does not send notifications. When set to `published`, the monitor is active, and it evaluates conditions and sends notifications as configured. Valid values are `draft`, `published`. Defaults to `"published"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#draft_status Monitor#draft_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#draft_status Monitor#draft_status}
 
 ---
 
@@ -2715,7 +2715,7 @@ A boolean indicating whether or not to include a list of log values which trigge
 
 This is only used by log monitors. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#enable_logs_sample Monitor#enable_logs_sample}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#enable_logs_sample Monitor#enable_logs_sample}
 
 ---
 
@@ -2731,7 +2731,7 @@ Whether or not a list of samples which triggered the alert is included.
 
 This is only used by CI Test and Pipeline monitors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#enable_samples Monitor#enable_samples}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#enable_samples Monitor#enable_samples}
 
 ---
 
@@ -2745,7 +2745,7 @@ public java.lang.String getEscalationMessage();
 
 A message to include with a re-notification. Supports the `@username` notification allowed elsewhere.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#escalation_message Monitor#escalation_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#escalation_message Monitor#escalation_message}
 
 ---
 
@@ -2761,7 +2761,7 @@ public java.lang.Number getEvaluationDelay();
 
 For example, if the value is set to `300` (5min), the `timeframe` is set to `last_5m` and the time is 7:00, the monitor will evaluate data from 6:50 to 6:55. This is useful for AWS CloudWatch and other backfilled metrics to ensure the monitor will always have data during evaluation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#evaluation_delay Monitor#evaluation_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#evaluation_delay Monitor#evaluation_delay}
 
 ---
 
@@ -2775,7 +2775,7 @@ public java.lang.Boolean|IResolvable getForceDelete();
 
 A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#force_delete Monitor#force_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#force_delete Monitor#force_delete}
 
 ---
 
@@ -2791,7 +2791,7 @@ Whether or not to trigger one alert if any source breaches a threshold.
 
 This is only used by log monitors. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#groupby_simple_monitor Monitor#groupby_simple_monitor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#groupby_simple_monitor Monitor#groupby_simple_monitor}
 
 ---
 
@@ -2807,7 +2807,7 @@ The time span after which groups with missing data are dropped from the monitor 
 
 The minimum value is one hour, and the maximum value is 72 hours. Example values are: 60m, 1h, and 2d. This option is only available for APM Trace Analytics, Audit Trail, CI, Error Tracking, Event, Logs, and RUM monitors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#group_retention_duration Monitor#group_retention_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#group_retention_duration Monitor#group_retention_duration}
 
 ---
 
@@ -2819,7 +2819,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#id Monitor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#id Monitor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2838,7 +2838,7 @@ Tag keys whose drift Terraform should ignore.
 
 Use this to keep specific tags managed outside Terraform (for example, by the Datadog UI or a tagging service) without `terraform plan` reporting drift on every run. Other tags are still managed normally. Any `:value` suffix is ignored. Merged with the provider's `ignore_tag_keys` for this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#ignore_tag_keys Monitor#ignore_tag_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#ignore_tag_keys Monitor#ignore_tag_keys}
 
 ---
 
@@ -2852,7 +2852,7 @@ public java.lang.Boolean|IResolvable getIncludeTags();
 
 A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#include_tags Monitor#include_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#include_tags Monitor#include_tags}
 
 ---
 
@@ -2866,7 +2866,7 @@ public MonitorMonitorThresholds getMonitorThresholds();
 
 monitor_thresholds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#monitor_thresholds Monitor#monitor_thresholds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#monitor_thresholds Monitor#monitor_thresholds}
 
 ---
 
@@ -2880,7 +2880,7 @@ public MonitorMonitorThresholdWindows getMonitorThresholdWindows();
 
 monitor_threshold_windows block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#monitor_threshold_windows Monitor#monitor_threshold_windows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#monitor_threshold_windows Monitor#monitor_threshold_windows}
 
 ---
 
@@ -2896,7 +2896,7 @@ The time (in seconds) to skip evaluations for new groups.
 
 `new_group_delay` overrides `new_host_delay` if it is set to a nonzero value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#new_group_delay Monitor#new_group_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#new_group_delay Monitor#new_group_delay}
 
 ---
 
@@ -2912,7 +2912,7 @@ public java.lang.Number getNewHostDelay();
 
 See `new_group_delay`. Time (in seconds) to allow a host to boot and applications to fully start before starting the evaluation of monitor results. Should be a non-negative integer. This value is ignored for simple monitors and monitors not grouped by host. The only case when this should be used is to override the default and set `new_host_delay` to zero for monitors grouped by host. **Deprecated.** Use `new_group_delay` except when setting `new_host_delay` to zero. Defaults to `300`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#new_host_delay Monitor#new_host_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#new_host_delay Monitor#new_host_delay}
 
 ---
 
@@ -2928,7 +2928,7 @@ The number of minutes before a monitor will notify when data stops reporting.
 
 We recommend at least 2x the monitor timeframe for metric alerts or 2 minutes for service checks. Defaults to `10`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#no_data_timeframe Monitor#no_data_timeframe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#no_data_timeframe Monitor#no_data_timeframe}
 
 ---
 
@@ -2944,7 +2944,7 @@ Toggles the display of additional content sent in the monitor notification.
 
 Valid values are `show_all`, `hide_query`, `hide_handles`, `hide_all`, `hide_query_and_handles`, `show_only_snapshot`, `hide_handles_and_footer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#notification_preset_name Monitor#notification_preset_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#notification_preset_name Monitor#notification_preset_name}
 
 ---
 
@@ -2958,7 +2958,7 @@ public java.lang.Boolean|IResolvable getNotifyAudit();
 
 A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#notify_audit Monitor#notify_audit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#notify_audit Monitor#notify_audit}
 
 ---
 
@@ -2974,7 +2974,7 @@ Controls what granularity a monitor alerts on.
 
 Only available for monitors with groupings. For instance, a monitor grouped by `cluster`, `namespace`, and `pod` can be configured to only notify on each new `cluster` violating the alert conditions by setting `notify_by` to `['cluster']`. Tags mentioned in `notify_by` must be a proper subset of the grouping tags in the query. For example, a query grouped by `cluster` and `namespace` cannot notify on `region` because `region` is not part of the grouping tags; furthermore, the same query cannot set `notify_by` to `['cluster', 'namespace']` because that is not a proper subset. Setting `notify_by` to `[*]` configures the monitor to notify as a simple-alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#notify_by Monitor#notify_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#notify_by Monitor#notify_by}
 
 ---
 
@@ -2988,7 +2988,7 @@ public java.lang.Boolean|IResolvable getNotifyNoData();
 
 A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#notify_no_data Monitor#notify_no_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#notify_no_data Monitor#notify_no_data}
 
 ---
 
@@ -3004,7 +3004,7 @@ Controls how groups or monitors are treated if an evaluation does not return any
 
 The default option results in different behavior depending on the monitor query type. For monitors using `Count` queries, an empty monitor evaluation is treated as 0 and is compared to the threshold conditions. For monitors using any query type other than `Count`, for example `Gauge`, `Measure`, or `Rate`, the monitor shows the last known status. This option is not available for Service Check, Composite, or SLO monitors. Valid values are: `show_no_data`, `show_and_notify_no_data`, `resolve`, and `default`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#on_missing_data Monitor#on_missing_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#on_missing_data Monitor#on_missing_data}
 
 ---
 
@@ -3018,7 +3018,7 @@ public java.lang.String getPriority();
 
 Integer from 1 (high) to 5 (low) indicating alert severity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#priority Monitor#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#priority Monitor#priority}
 
 ---
 
@@ -3034,7 +3034,7 @@ The number of minutes after the last notification before a monitor will re-notif
 
 It will only re-notify if it's not resolved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#renotify_interval Monitor#renotify_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#renotify_interval Monitor#renotify_interval}
 
 ---
 
@@ -3048,7 +3048,7 @@ public java.lang.Number getRenotifyOccurrences();
 
 The number of re-notification messages that should be sent on the current status.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#renotify_occurrences Monitor#renotify_occurrences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#renotify_occurrences Monitor#renotify_occurrences}
 
 ---
 
@@ -3062,7 +3062,7 @@ public java.util.List<java.lang.String> getRenotifyStatuses();
 
 The types of statuses for which re-notification messages should be sent. Valid values are `alert`, `warn`, `no data`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#renotify_statuses Monitor#renotify_statuses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#renotify_statuses Monitor#renotify_statuses}
 
 ---
 
@@ -3078,7 +3078,7 @@ A boolean indicating whether this monitor needs a full window of data before it'
 
 Datadog strongly recommends you set this to `false` for sparse metrics, otherwise some evaluations may be skipped. If there's a custom_schedule set, `require_full_window` must be false and will be ignored. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#require_full_window Monitor#require_full_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#require_full_window Monitor#require_full_window}
 
 ---
 
@@ -3094,7 +3094,7 @@ A list of unique role identifiers to define which roles are allowed to edit the 
 
 Editing a monitor includes any updates to the monitor configuration, monitor deletion, and muting of the monitor for any amount of time. Roles unique identifiers can be pulled from the [Roles API](https://docs.datadoghq.com/api/latest/roles/#list-roles) in the `data.id` field. **Deprecated.** Use `datadog_restriction_policy` resource to manage permission.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#restricted_roles Monitor#restricted_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#restricted_roles Monitor#restricted_roles}
 
 ---
 
@@ -3108,7 +3108,7 @@ public MonitorSchedulingOptions getSchedulingOptions();
 
 scheduling_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#scheduling_options Monitor#scheduling_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#scheduling_options Monitor#scheduling_options}
 
 ---
 
@@ -3124,7 +3124,7 @@ A list of tags to associate with your monitor.
 
 This can help you categorize and filter monitors in the manage monitors page of the UI. Note: it's not currently possible to filter by these tags when querying via the API
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#tags Monitor#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#tags Monitor#tags}
 
 ---
 
@@ -3140,7 +3140,7 @@ The number of hours of the monitor not reporting data before it automatically re
 
 The minimum allowed value is 0 hours. The maximum allowed value is 24 hours.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#timeout_h Monitor#timeout_h}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#timeout_h Monitor#timeout_h}
 
 ---
 
@@ -3154,7 +3154,7 @@ public java.lang.Boolean|IResolvable getValidate();
 
 If set to `false`, skip the validation call done during plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#validate Monitor#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#validate Monitor#validate}
 
 ---
 
@@ -3168,7 +3168,7 @@ public MonitorVariables getVariables();
 
 variables block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#variables Monitor#variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#variables Monitor#variables}
 
 ---
 
@@ -3216,7 +3216,7 @@ public java.lang.String getCritical();
 
 The monitor `CRITICAL` threshold. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#critical Monitor#critical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#critical Monitor#critical}
 
 ---
 
@@ -3232,7 +3232,7 @@ Query evaluated as a dynamic `CRITICAL` threshold.
 
 Only supported on metric monitors with a formula query and `options['variables']`. Cannot be combined with static thresholds. This field is in preview.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#critical_query Monitor#critical_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#critical_query Monitor#critical_query}
 
 ---
 
@@ -3246,7 +3246,7 @@ public java.lang.String getCriticalRecovery();
 
 The monitor `CRITICAL` recovery threshold. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#critical_recovery Monitor#critical_recovery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#critical_recovery Monitor#critical_recovery}
 
 ---
 
@@ -3262,7 +3262,7 @@ Query evaluated as a dynamic `CRITICAL` recovery threshold.
 
 Only supported on metric monitors with a formula query and `options['variables']`. Cannot be combined with static thresholds. This field is in preview.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#critical_recovery_query Monitor#critical_recovery_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#critical_recovery_query Monitor#critical_recovery_query}
 
 ---
 
@@ -3276,7 +3276,7 @@ public java.lang.String getOk();
 
 The monitor `OK` threshold. Only supported in monitor type `service check`. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#ok Monitor#ok}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#ok Monitor#ok}
 
 ---
 
@@ -3290,7 +3290,7 @@ public java.lang.String getUnknown();
 
 The monitor `UNKNOWN` threshold. Only supported in monitor type `service check`. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#unknown Monitor#unknown}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#unknown Monitor#unknown}
 
 ---
 
@@ -3304,7 +3304,7 @@ public java.lang.String getWarning();
 
 The monitor `WARNING` threshold. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#warning Monitor#warning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#warning Monitor#warning}
 
 ---
 
@@ -3318,7 +3318,7 @@ public java.lang.String getWarningRecovery();
 
 The monitor `WARNING` recovery threshold. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#warning_recovery Monitor#warning_recovery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#warning_recovery Monitor#warning_recovery}
 
 ---
 
@@ -3354,7 +3354,7 @@ public java.lang.String getRecoveryWindow();
 
 Describes how long an anomalous metric must be normal before the alert recovers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#recovery_window Monitor#recovery_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#recovery_window Monitor#recovery_window}
 
 ---
 
@@ -3368,7 +3368,7 @@ public java.lang.String getTriggerWindow();
 
 Describes how long a metric must be anomalous before an alert triggers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#trigger_window Monitor#trigger_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#trigger_window Monitor#trigger_window}
 
 ---
 
@@ -3404,7 +3404,7 @@ public MonitorSchedulingOptionsCustomSchedule getCustomSchedule();
 
 custom_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#custom_schedule Monitor#custom_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#custom_schedule Monitor#custom_schedule}
 
 ---
 
@@ -3418,7 +3418,7 @@ public MonitorSchedulingOptionsEvaluationWindow getEvaluationWindow();
 
 evaluation_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#evaluation_window Monitor#evaluation_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#evaluation_window Monitor#evaluation_window}
 
 ---
 
@@ -3452,7 +3452,7 @@ public MonitorSchedulingOptionsCustomScheduleRecurrence getRecurrence();
 
 recurrence block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#recurrence Monitor#recurrence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#recurrence Monitor#recurrence}
 
 ---
 
@@ -3490,7 +3490,7 @@ public java.lang.String getRrule();
 
 Must be a valid `rrule`. See API docs for supported fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#rrule Monitor#rrule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#rrule Monitor#rrule}
 
 ---
 
@@ -3504,7 +3504,7 @@ public java.lang.String getTimezone();
 
 'tz database' format. Example: `America/New_York` or `UTC`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#timezone Monitor#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#timezone Monitor#timezone}
 
 ---
 
@@ -3518,7 +3518,7 @@ public java.lang.String getStart();
 
 Time to start recurrence cycle. Similar to DTSTART. Expected format 'YYYY-MM-DDThh:mm:ss'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#start Monitor#start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#start Monitor#start}
 
 ---
 
@@ -3560,7 +3560,7 @@ The time of the day at which a one day cumulative evaluation window starts.
 
 Must be defined in UTC time in `HH:mm` format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#day_starts Monitor#day_starts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#day_starts Monitor#day_starts}
 
 ---
 
@@ -3576,7 +3576,7 @@ The minute of the hour at which a one hour cumulative evaluation window starts.
 
 Must be between 0 and 59.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#hour_starts Monitor#hour_starts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#hour_starts Monitor#hour_starts}
 
 ---
 
@@ -3592,7 +3592,7 @@ The day of the month at which a one month cumulative evaluation window starts.
 
 Must be a value of 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#month_starts Monitor#month_starts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#month_starts Monitor#month_starts}
 
 ---
 
@@ -3606,7 +3606,7 @@ public java.lang.String getTimezone();
 
 The timezone for the cumulative evaluation window start time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#timezone Monitor#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#timezone Monitor#timezone}
 
 ---
 
@@ -3650,7 +3650,7 @@ public IResolvable|java.util.List<MonitorVariablesAggregateAugmentedQuery> getAg
 
 aggregate_augmented_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#aggregate_augmented_query Monitor#aggregate_augmented_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregate_augmented_query Monitor#aggregate_augmented_query}
 
 ---
 
@@ -3664,7 +3664,7 @@ public IResolvable|java.util.List<MonitorVariablesAggregateFilteredQuery> getAgg
 
 aggregate_filtered_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#aggregate_filtered_query Monitor#aggregate_filtered_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregate_filtered_query Monitor#aggregate_filtered_query}
 
 ---
 
@@ -3678,7 +3678,7 @@ public IResolvable|java.util.List<MonitorVariablesCloudCostQuery> getCloudCostQu
 
 cloud_cost_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#cloud_cost_query Monitor#cloud_cost_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#cloud_cost_query Monitor#cloud_cost_query}
 
 ---
 
@@ -3692,7 +3692,7 @@ public IResolvable|java.util.List<MonitorVariablesDataJobsQuery> getDataJobsQuer
 
 data_jobs_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#data_jobs_query Monitor#data_jobs_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_jobs_query Monitor#data_jobs_query}
 
 ---
 
@@ -3706,7 +3706,7 @@ public IResolvable|java.util.List<MonitorVariablesDataQualityQuery> getDataQuali
 
 data_quality_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#data_quality_query Monitor#data_quality_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_quality_query Monitor#data_quality_query}
 
 ---
 
@@ -3720,7 +3720,7 @@ public IResolvable|java.util.List<MonitorVariablesEventQuery> getEventQuery();
 
 event_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#event_query Monitor#event_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#event_query Monitor#event_query}
 
 ---
 
@@ -3770,7 +3770,7 @@ public IResolvable|java.util.List<MonitorVariablesAggregateAugmentedQueryCompute
 
 compute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#compute Monitor#compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#compute Monitor#compute}
 
 ---
 
@@ -3784,7 +3784,7 @@ public java.lang.String getDataSource();
 
 The data source for aggregate-augmented composite queries. Must be `aggregate_augmented_query`. Valid values are `aggregate_augmented_query`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -3798,7 +3798,7 @@ public IResolvable|java.util.List<MonitorVariablesAggregateAugmentedQueryGroupBy
 
 group_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#group_by Monitor#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#group_by Monitor#group_by}
 
 ---
 
@@ -3812,7 +3812,7 @@ public MonitorVariablesAggregateAugmentedQueryJoinCondition getJoinCondition();
 
 join_condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#join_condition Monitor#join_condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#join_condition Monitor#join_condition}
 
 ---
 
@@ -3826,7 +3826,7 @@ public MonitorVariablesAggregateAugmentedQueryAugmentEventQuery getAugmentEventQ
 
 augment_event_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#augment_event_query Monitor#augment_event_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#augment_event_query Monitor#augment_event_query}
 
 ---
 
@@ -3840,7 +3840,7 @@ public MonitorVariablesAggregateAugmentedQueryAugmentReferenceTable getAugmentRe
 
 augment_reference_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#augment_reference_table Monitor#augment_reference_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#augment_reference_table Monitor#augment_reference_table}
 
 ---
 
@@ -3854,7 +3854,7 @@ public MonitorVariablesAggregateAugmentedQueryBaseEventQuery getBaseEventQuery()
 
 base_event_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#base_event_query Monitor#base_event_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#base_event_query Monitor#base_event_query}
 
 ---
 
@@ -3868,7 +3868,7 @@ public MonitorVariablesAggregateAugmentedQueryBaseMetricsQuery getBaseMetricsQue
 
 base_metrics_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#base_metrics_query Monitor#base_metrics_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#base_metrics_query Monitor#base_metrics_query}
 
 ---
 
@@ -3882,7 +3882,7 @@ public java.lang.String getName();
 
 Name of the query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -3926,7 +3926,7 @@ public IResolvable|java.util.List<MonitorVariablesAggregateAugmentedQueryAugment
 
 compute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#compute Monitor#compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#compute Monitor#compute}
 
 ---
 
@@ -3942,7 +3942,7 @@ The data source for event platform-based queries.
 
 Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`, `database_queries`, `network`, `network_path`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -3956,7 +3956,7 @@ public java.lang.String getName();
 
 The name of query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -3970,7 +3970,7 @@ public MonitorVariablesAggregateAugmentedQueryAugmentEventQuerySearch getSearch(
 
 search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#search Monitor#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#search Monitor#search}
 
 ---
 
@@ -3984,7 +3984,7 @@ public IResolvable|java.util.List<MonitorVariablesAggregateAugmentedQueryAugment
 
 group_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#group_by Monitor#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#group_by Monitor#group_by}
 
 ---
 
@@ -3998,7 +3998,7 @@ public java.util.List<java.lang.String> getIndexes();
 
 An array of index names to query in the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#indexes Monitor#indexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#indexes Monitor#indexes}
 
 ---
 
@@ -4040,7 +4040,7 @@ The aggregation methods for event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -4054,7 +4054,7 @@ public java.lang.Number getInterval();
 
 A time interval in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#interval Monitor#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#interval Monitor#interval}
 
 ---
 
@@ -4068,7 +4068,7 @@ public java.lang.String getMetric();
 
 The measurable attribute to compute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -4082,7 +4082,7 @@ public java.lang.String getName();
 
 The name assigned to this aggregation when multiple aggregations are defined for a query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -4122,7 +4122,7 @@ public java.lang.String getFacet();
 
 The event facet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#facet Monitor#facet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#facet Monitor#facet}
 
 ---
 
@@ -4136,7 +4136,7 @@ public java.lang.Number getLimit();
 
 The number of groups to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#limit Monitor#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#limit Monitor#limit}
 
 ---
 
@@ -4150,7 +4150,7 @@ public MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBySort getSo
 
 sort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#sort Monitor#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#sort Monitor#sort}
 
 ---
 
@@ -4164,7 +4164,7 @@ public java.lang.String getSource();
 
 For composite aggregate-augmented queries, identifies which sub-query this group-by facet refers to (for example `filter_query`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#source Monitor#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#source Monitor#source}
 
 ---
 
@@ -4204,7 +4204,7 @@ The aggregation methods for the event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -4218,7 +4218,7 @@ public java.lang.String getMetric();
 
 The metric used for sorting group by results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -4232,7 +4232,7 @@ public java.lang.String getOrder();
 
 Direction of sort. Valid values are `asc`, `desc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#order Monitor#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#order Monitor#order}
 
 ---
 
@@ -4266,7 +4266,7 @@ public java.lang.String getQuery();
 
 The events search string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
@@ -4308,7 +4308,7 @@ public java.lang.String getDataSource();
 
 Must be `reference_table`. Valid values are `reference_table`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -4322,7 +4322,7 @@ public java.lang.String getTableName();
 
 Name of the reference table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#table_name Monitor#table_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#table_name Monitor#table_name}
 
 ---
 
@@ -4336,7 +4336,7 @@ public IResolvable|java.util.List<MonitorVariablesAggregateAugmentedQueryAugment
 
 columns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#columns Monitor#columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#columns Monitor#columns}
 
 ---
 
@@ -4350,7 +4350,7 @@ public java.lang.String getName();
 
 Name of the augment sub-query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -4364,7 +4364,7 @@ public java.lang.String getQueryFilter();
 
 Optional filter expression for the reference table query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#query_filter Monitor#query_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#query_filter Monitor#query_filter}
 
 ---
 
@@ -4400,7 +4400,7 @@ public java.lang.String getName();
 
 Reference table column name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -4414,7 +4414,7 @@ public java.lang.String getAlias();
 
 Optional alias for the column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#alias Monitor#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#alias Monitor#alias}
 
 ---
 
@@ -4458,7 +4458,7 @@ public IResolvable|java.util.List<MonitorVariablesAggregateAugmentedQueryBaseEve
 
 compute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#compute Monitor#compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#compute Monitor#compute}
 
 ---
 
@@ -4474,7 +4474,7 @@ The data source for event platform-based queries.
 
 Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`, `database_queries`, `network`, `network_path`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -4488,7 +4488,7 @@ public java.lang.String getName();
 
 The name of query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -4502,7 +4502,7 @@ public MonitorVariablesAggregateAugmentedQueryBaseEventQuerySearch getSearch();
 
 search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#search Monitor#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#search Monitor#search}
 
 ---
 
@@ -4516,7 +4516,7 @@ public IResolvable|java.util.List<MonitorVariablesAggregateAugmentedQueryBaseEve
 
 group_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#group_by Monitor#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#group_by Monitor#group_by}
 
 ---
 
@@ -4530,7 +4530,7 @@ public java.util.List<java.lang.String> getIndexes();
 
 An array of index names to query in the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#indexes Monitor#indexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#indexes Monitor#indexes}
 
 ---
 
@@ -4572,7 +4572,7 @@ The aggregation methods for event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -4586,7 +4586,7 @@ public java.lang.Number getInterval();
 
 A time interval in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#interval Monitor#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#interval Monitor#interval}
 
 ---
 
@@ -4600,7 +4600,7 @@ public java.lang.String getMetric();
 
 The measurable attribute to compute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -4614,7 +4614,7 @@ public java.lang.String getName();
 
 The name assigned to this aggregation when multiple aggregations are defined for a query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -4654,7 +4654,7 @@ public java.lang.String getFacet();
 
 The event facet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#facet Monitor#facet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#facet Monitor#facet}
 
 ---
 
@@ -4668,7 +4668,7 @@ public java.lang.Number getLimit();
 
 The number of groups to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#limit Monitor#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#limit Monitor#limit}
 
 ---
 
@@ -4682,7 +4682,7 @@ public MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBySort getSort(
 
 sort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#sort Monitor#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#sort Monitor#sort}
 
 ---
 
@@ -4696,7 +4696,7 @@ public java.lang.String getSource();
 
 For composite aggregate-augmented queries, identifies which sub-query this group-by facet refers to (for example `filter_query`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#source Monitor#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#source Monitor#source}
 
 ---
 
@@ -4736,7 +4736,7 @@ The aggregation methods for the event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -4750,7 +4750,7 @@ public java.lang.String getMetric();
 
 The metric used for sorting group by results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -4764,7 +4764,7 @@ public java.lang.String getOrder();
 
 Direction of sort. Valid values are `asc`, `desc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#order Monitor#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#order Monitor#order}
 
 ---
 
@@ -4798,7 +4798,7 @@ public java.lang.String getQuery();
 
 The events search string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
@@ -4838,7 +4838,7 @@ public java.lang.String getDataSource();
 
 The data source for metrics queries. Valid values are `metrics`, `cloud_cost`, `datadog_usage`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -4852,7 +4852,7 @@ public java.lang.String getQuery();
 
 The metrics query definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
@@ -4868,7 +4868,7 @@ The aggregation method for metrics queries.
 
 Valid values are `avg`, `min`, `max`, `sum`, `last`, `mean`, `area`, `l2norm`, `percentile`, `stddev`, `count_unique`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#aggregator Monitor#aggregator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregator Monitor#aggregator}
 
 ---
 
@@ -4882,7 +4882,7 @@ public java.lang.String getName();
 
 The name of the query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -4924,7 +4924,7 @@ The aggregation methods for compute steps.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -4938,7 +4938,7 @@ public java.lang.Number getInterval();
 
 A time interval in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#interval Monitor#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#interval Monitor#interval}
 
 ---
 
@@ -4952,7 +4952,7 @@ public java.lang.String getMetric();
 
 The measurable attribute to compute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -4966,7 +4966,7 @@ public java.lang.String getName();
 
 The name assigned to this aggregation when multiple aggregations are defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -5006,7 +5006,7 @@ public java.lang.String getFacet();
 
 The facet to group by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#facet Monitor#facet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#facet Monitor#facet}
 
 ---
 
@@ -5020,7 +5020,7 @@ public java.lang.Number getLimit();
 
 The number of groups to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#limit Monitor#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#limit Monitor#limit}
 
 ---
 
@@ -5034,7 +5034,7 @@ public MonitorVariablesAggregateAugmentedQueryGroupBySort getSort();
 
 sort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#sort Monitor#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#sort Monitor#sort}
 
 ---
 
@@ -5048,7 +5048,7 @@ public java.lang.String getSource();
 
 Identifies which sub-query this facet refers to (for example `filter_query`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#source Monitor#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#source Monitor#source}
 
 ---
 
@@ -5088,7 +5088,7 @@ The aggregation methods for sorting.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -5102,7 +5102,7 @@ public java.lang.String getMetric();
 
 The metric used for sorting group by results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -5116,7 +5116,7 @@ public java.lang.String getOrder();
 
 Direction of sort. Valid values are `asc`, `desc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#order Monitor#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#order Monitor#order}
 
 ---
 
@@ -5154,7 +5154,7 @@ public java.lang.String getAugmentAttribute();
 
 Attribute from the augment query to join on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#augment_attribute Monitor#augment_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#augment_attribute Monitor#augment_attribute}
 
 ---
 
@@ -5168,7 +5168,7 @@ public java.lang.String getBaseAttribute();
 
 Attribute from the base query to join on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#base_attribute Monitor#base_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#base_attribute Monitor#base_attribute}
 
 ---
 
@@ -5182,7 +5182,7 @@ public java.lang.String getJoinType();
 
 Join type (for example `inner`). Valid values are `inner`, `left`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#join_type Monitor#join_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#join_type Monitor#join_type}
 
 ---
 
@@ -5232,7 +5232,7 @@ public java.lang.String getDataSource();
 
 The data source for aggregate-filtered composite queries. Must be `aggregate_filtered_query`. Valid values are `aggregate_filtered_query`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -5246,7 +5246,7 @@ public IResolvable|java.util.List<MonitorVariablesAggregateFilteredQueryFilters>
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#filters Monitor#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#filters Monitor#filters}
 
 ---
 
@@ -5260,7 +5260,7 @@ public MonitorVariablesAggregateFilteredQueryBaseEventQuery getBaseEventQuery();
 
 base_event_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#base_event_query Monitor#base_event_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#base_event_query Monitor#base_event_query}
 
 ---
 
@@ -5274,7 +5274,7 @@ public MonitorVariablesAggregateFilteredQueryBaseMetricsQuery getBaseMetricsQuer
 
 base_metrics_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#base_metrics_query Monitor#base_metrics_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#base_metrics_query Monitor#base_metrics_query}
 
 ---
 
@@ -5288,7 +5288,7 @@ public IResolvable|java.util.List<MonitorVariablesAggregateFilteredQueryCompute>
 
 compute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#compute Monitor#compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#compute Monitor#compute}
 
 ---
 
@@ -5302,7 +5302,7 @@ public MonitorVariablesAggregateFilteredQueryFilterEventQuery getFilterEventQuer
 
 filter_event_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#filter_event_query Monitor#filter_event_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#filter_event_query Monitor#filter_event_query}
 
 ---
 
@@ -5316,7 +5316,7 @@ public MonitorVariablesAggregateFilteredQueryFilterReferenceTable getFilterRefer
 
 filter_reference_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#filter_reference_table Monitor#filter_reference_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#filter_reference_table Monitor#filter_reference_table}
 
 ---
 
@@ -5330,7 +5330,7 @@ public IResolvable|java.util.List<MonitorVariablesAggregateFilteredQueryGroupBy>
 
 group_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#group_by Monitor#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#group_by Monitor#group_by}
 
 ---
 
@@ -5344,7 +5344,7 @@ public java.lang.String getName();
 
 Name of the query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -5388,7 +5388,7 @@ public IResolvable|java.util.List<MonitorVariablesAggregateFilteredQueryBaseEven
 
 compute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#compute Monitor#compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#compute Monitor#compute}
 
 ---
 
@@ -5404,7 +5404,7 @@ The data source for event platform-based queries.
 
 Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`, `database_queries`, `network`, `network_path`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -5418,7 +5418,7 @@ public java.lang.String getName();
 
 The name of query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -5432,7 +5432,7 @@ public MonitorVariablesAggregateFilteredQueryBaseEventQuerySearch getSearch();
 
 search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#search Monitor#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#search Monitor#search}
 
 ---
 
@@ -5446,7 +5446,7 @@ public IResolvable|java.util.List<MonitorVariablesAggregateFilteredQueryBaseEven
 
 group_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#group_by Monitor#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#group_by Monitor#group_by}
 
 ---
 
@@ -5460,7 +5460,7 @@ public java.util.List<java.lang.String> getIndexes();
 
 An array of index names to query in the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#indexes Monitor#indexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#indexes Monitor#indexes}
 
 ---
 
@@ -5502,7 +5502,7 @@ The aggregation methods for event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -5516,7 +5516,7 @@ public java.lang.Number getInterval();
 
 A time interval in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#interval Monitor#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#interval Monitor#interval}
 
 ---
 
@@ -5530,7 +5530,7 @@ public java.lang.String getMetric();
 
 The measurable attribute to compute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -5544,7 +5544,7 @@ public java.lang.String getName();
 
 The name assigned to this aggregation when multiple aggregations are defined for a query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -5584,7 +5584,7 @@ public java.lang.String getFacet();
 
 The event facet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#facet Monitor#facet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#facet Monitor#facet}
 
 ---
 
@@ -5598,7 +5598,7 @@ public java.lang.Number getLimit();
 
 The number of groups to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#limit Monitor#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#limit Monitor#limit}
 
 ---
 
@@ -5612,7 +5612,7 @@ public MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBySort getSort()
 
 sort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#sort Monitor#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#sort Monitor#sort}
 
 ---
 
@@ -5626,7 +5626,7 @@ public java.lang.String getSource();
 
 For composite aggregate-augmented queries, identifies which sub-query this group-by facet refers to (for example `filter_query`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#source Monitor#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#source Monitor#source}
 
 ---
 
@@ -5666,7 +5666,7 @@ The aggregation methods for the event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -5680,7 +5680,7 @@ public java.lang.String getMetric();
 
 The metric used for sorting group by results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -5694,7 +5694,7 @@ public java.lang.String getOrder();
 
 Direction of sort. Valid values are `asc`, `desc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#order Monitor#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#order Monitor#order}
 
 ---
 
@@ -5728,7 +5728,7 @@ public java.lang.String getQuery();
 
 The events search string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
@@ -5768,7 +5768,7 @@ public java.lang.String getDataSource();
 
 The data source for metrics queries. Valid values are `metrics`, `cloud_cost`, `datadog_usage`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -5782,7 +5782,7 @@ public java.lang.String getQuery();
 
 The metrics query definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
@@ -5798,7 +5798,7 @@ The aggregation method for metrics queries.
 
 Valid values are `avg`, `min`, `max`, `sum`, `last`, `mean`, `area`, `l2norm`, `percentile`, `stddev`, `count_unique`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#aggregator Monitor#aggregator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregator Monitor#aggregator}
 
 ---
 
@@ -5812,7 +5812,7 @@ public java.lang.String getName();
 
 The name of the query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -5854,7 +5854,7 @@ The aggregation methods for compute steps.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -5868,7 +5868,7 @@ public java.lang.Number getInterval();
 
 A time interval in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#interval Monitor#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#interval Monitor#interval}
 
 ---
 
@@ -5882,7 +5882,7 @@ public java.lang.String getMetric();
 
 The measurable attribute to compute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -5896,7 +5896,7 @@ public java.lang.String getName();
 
 The name assigned to this aggregation when multiple aggregations are defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -5940,7 +5940,7 @@ public IResolvable|java.util.List<MonitorVariablesAggregateFilteredQueryFilterEv
 
 compute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#compute Monitor#compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#compute Monitor#compute}
 
 ---
 
@@ -5956,7 +5956,7 @@ The data source for event platform-based queries.
 
 Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`, `database_queries`, `network`, `network_path`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -5970,7 +5970,7 @@ public java.lang.String getName();
 
 The name of query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -5984,7 +5984,7 @@ public MonitorVariablesAggregateFilteredQueryFilterEventQuerySearch getSearch();
 
 search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#search Monitor#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#search Monitor#search}
 
 ---
 
@@ -5998,7 +5998,7 @@ public IResolvable|java.util.List<MonitorVariablesAggregateFilteredQueryFilterEv
 
 group_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#group_by Monitor#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#group_by Monitor#group_by}
 
 ---
 
@@ -6012,7 +6012,7 @@ public java.util.List<java.lang.String> getIndexes();
 
 An array of index names to query in the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#indexes Monitor#indexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#indexes Monitor#indexes}
 
 ---
 
@@ -6054,7 +6054,7 @@ The aggregation methods for event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -6068,7 +6068,7 @@ public java.lang.Number getInterval();
 
 A time interval in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#interval Monitor#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#interval Monitor#interval}
 
 ---
 
@@ -6082,7 +6082,7 @@ public java.lang.String getMetric();
 
 The measurable attribute to compute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -6096,7 +6096,7 @@ public java.lang.String getName();
 
 The name assigned to this aggregation when multiple aggregations are defined for a query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -6136,7 +6136,7 @@ public java.lang.String getFacet();
 
 The event facet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#facet Monitor#facet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#facet Monitor#facet}
 
 ---
 
@@ -6150,7 +6150,7 @@ public java.lang.Number getLimit();
 
 The number of groups to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#limit Monitor#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#limit Monitor#limit}
 
 ---
 
@@ -6164,7 +6164,7 @@ public MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBySort getSort
 
 sort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#sort Monitor#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#sort Monitor#sort}
 
 ---
 
@@ -6178,7 +6178,7 @@ public java.lang.String getSource();
 
 For composite aggregate-augmented queries, identifies which sub-query this group-by facet refers to (for example `filter_query`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#source Monitor#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#source Monitor#source}
 
 ---
 
@@ -6218,7 +6218,7 @@ The aggregation methods for the event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -6232,7 +6232,7 @@ public java.lang.String getMetric();
 
 The metric used for sorting group by results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -6246,7 +6246,7 @@ public java.lang.String getOrder();
 
 Direction of sort. Valid values are `asc`, `desc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#order Monitor#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#order Monitor#order}
 
 ---
 
@@ -6280,7 +6280,7 @@ public java.lang.String getQuery();
 
 The events search string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
@@ -6322,7 +6322,7 @@ public java.lang.String getDataSource();
 
 Must be `reference_table`. Valid values are `reference_table`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -6336,7 +6336,7 @@ public java.lang.String getTableName();
 
 Name of the reference table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#table_name Monitor#table_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#table_name Monitor#table_name}
 
 ---
 
@@ -6350,7 +6350,7 @@ public IResolvable|java.util.List<MonitorVariablesAggregateFilteredQueryFilterRe
 
 columns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#columns Monitor#columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#columns Monitor#columns}
 
 ---
 
@@ -6364,7 +6364,7 @@ public java.lang.String getName();
 
 Name of the filter sub-query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -6378,7 +6378,7 @@ public java.lang.String getQueryFilter();
 
 Optional filter expression for the reference table query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#query_filter Monitor#query_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#query_filter Monitor#query_filter}
 
 ---
 
@@ -6414,7 +6414,7 @@ public java.lang.String getName();
 
 Reference table column name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -6428,7 +6428,7 @@ public java.lang.String getAlias();
 
 Optional alias for the column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#alias Monitor#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#alias Monitor#alias}
 
 ---
 
@@ -6466,7 +6466,7 @@ public java.lang.String getBaseAttribute();
 
 Attribute from the base query to filter on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#base_attribute Monitor#base_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#base_attribute Monitor#base_attribute}
 
 ---
 
@@ -6480,7 +6480,7 @@ public java.lang.String getFilterAttribute();
 
 Attribute from the filter query to match against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#filter_attribute Monitor#filter_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#filter_attribute Monitor#filter_attribute}
 
 ---
 
@@ -6494,7 +6494,7 @@ public java.lang.Boolean|IResolvable getExclude();
 
 When true, exclude matching records instead of including them.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#exclude Monitor#exclude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#exclude Monitor#exclude}
 
 ---
 
@@ -6534,7 +6534,7 @@ public java.lang.String getFacet();
 
 The facet to group by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#facet Monitor#facet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#facet Monitor#facet}
 
 ---
 
@@ -6548,7 +6548,7 @@ public java.lang.Number getLimit();
 
 The number of groups to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#limit Monitor#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#limit Monitor#limit}
 
 ---
 
@@ -6562,7 +6562,7 @@ public MonitorVariablesAggregateFilteredQueryGroupBySort getSort();
 
 sort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#sort Monitor#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#sort Monitor#sort}
 
 ---
 
@@ -6576,7 +6576,7 @@ public java.lang.String getSource();
 
 Identifies which sub-query this facet refers to (for example `filter_query`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#source Monitor#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#source Monitor#source}
 
 ---
 
@@ -6616,7 +6616,7 @@ The aggregation methods for sorting.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -6630,7 +6630,7 @@ public java.lang.String getMetric();
 
 The metric used for sorting group by results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -6644,7 +6644,7 @@ public java.lang.String getOrder();
 
 Direction of sort. Valid values are `asc`, `desc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#order Monitor#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#order Monitor#order}
 
 ---
 
@@ -6686,7 +6686,7 @@ The aggregation methods available for cloud cost queries.
 
 Valid values are `avg`, `sum`, `max`, `min`, `last`, `area`, `l2norm`, `percentile`, `stddev`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#aggregator Monitor#aggregator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregator Monitor#aggregator}
 
 ---
 
@@ -6700,7 +6700,7 @@ public java.lang.String getDataSource();
 
 The data source for cloud cost queries. Valid values are `metrics`, `cloud_cost`, `datadog_usage`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -6714,7 +6714,7 @@ public java.lang.String getName();
 
 The name of the query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -6728,7 +6728,7 @@ public java.lang.String getQuery();
 
 The cloud cost query definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
@@ -6768,7 +6768,7 @@ public java.lang.String getJobsQuery();
 
 Filter expression used to select the jobs to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#jobs_query Monitor#jobs_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#jobs_query Monitor#jobs_query}
 
 ---
 
@@ -6784,7 +6784,7 @@ The type of job being monitored.
 
 Valid values include `databricks.job`, `spark.application`, `airflow.dag`, `dbt.job`, `glue.job`. Custom job types are supported with the `custom.ol.` prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#job_type Monitor#job_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#job_type Monitor#job_type}
 
 ---
 
@@ -6798,7 +6798,7 @@ public java.lang.String getName();
 
 Name of the query for use in formulas. Must be `run_query`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -6812,7 +6812,7 @@ public java.lang.String getQueryDialect();
 
 Query dialect for data jobs queries. Currently only `metric` is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#query_dialect Monitor#query_dialect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#query_dialect Monitor#query_dialect}
 
 ---
 
@@ -6860,7 +6860,7 @@ public java.lang.String getDataSource();
 
 The data source for data quality queries. Valid value is `data_quality_metrics`. Valid values are `data_quality_metrics`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -6874,7 +6874,7 @@ public java.lang.String getFilter();
 
 Filter expression used to match on data entities. Uses AAstra query syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#filter Monitor#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#filter Monitor#filter}
 
 ---
 
@@ -6890,7 +6890,7 @@ The measure to query.
 
 Common values include `bytes`, `cardinality`, `custom`, `freshness`, `max`, `mean`, `min`, `nullness`, `percent_negative`, `percent_zero`, `row_count`, `stddev`, `sum`, `uniqueness`. Additional values may be supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#measure Monitor#measure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#measure Monitor#measure}
 
 ---
 
@@ -6904,7 +6904,7 @@ public java.lang.String getName();
 
 The name of the query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -6918,7 +6918,7 @@ public java.util.List<java.lang.String> getGroupBy();
 
 Optional grouping fields for aggregation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#group_by Monitor#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#group_by Monitor#group_by}
 
 ---
 
@@ -6932,7 +6932,7 @@ public MonitorVariablesDataQualityQueryMonitorOptions getMonitorOptions();
 
 monitor_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#monitor_options Monitor#monitor_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#monitor_options Monitor#monitor_options}
 
 ---
 
@@ -6946,7 +6946,7 @@ public java.lang.String getSchemaVersion();
 
 Schema version for the data quality query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#schema_version Monitor#schema_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#schema_version Monitor#schema_version}
 
 ---
 
@@ -6960,7 +6960,7 @@ public java.lang.String getScope();
 
 Optional scoping expression to further filter metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#scope Monitor#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#scope Monitor#scope}
 
 ---
 
@@ -6976,7 +6976,10 @@ MonitorVariablesDataQualityQueryMonitorOptions.builder()
 //  .customSql(java.lang.String)
 //  .customWhere(java.lang.String)
 //  .groupByColumns(java.util.List<java.lang.String>)
+//  .modelConfiguration(MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration)
 //  .modelTypeOverride(java.lang.String)
+//  .sensitivity(java.lang.Number)
+//  .sourceToTargetConfig(MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig)
     .build();
 ```
 
@@ -6988,7 +6991,10 @@ MonitorVariablesDataQualityQueryMonitorOptions.builder()
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions.property.customSql">customSql</a></code> | <code>java.lang.String</code> | Custom SQL query for the monitor. |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions.property.customWhere">customWhere</a></code> | <code>java.lang.String</code> | Custom WHERE clause for the query. |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions.property.groupByColumns">groupByColumns</a></code> | <code>java.util.List<java.lang.String></code> | Columns to group results by. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions.property.modelConfiguration">modelConfiguration</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration">MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration</a></code> | model_configuration block. |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions.property.modelTypeOverride">modelTypeOverride</a></code> | <code>java.lang.String</code> | Override for the model type. Valid values are `freshness`, `percentage`, `any`. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions.property.sensitivity">sensitivity</a></code> | <code>java.lang.Number</code> | Sensitivity of the anomaly detection model, expressed as a multiplier on the width of the predicted bounds. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions.property.sourceToTargetConfig">sourceToTargetConfig</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig</a></code> | source_to_target_config block. |
 
 ---
 
@@ -7002,7 +7008,7 @@ public java.lang.String getCrontabOverride();
 
 Crontab expression to override the default schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#crontab_override Monitor#crontab_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#crontab_override Monitor#crontab_override}
 
 ---
 
@@ -7016,7 +7022,7 @@ public java.lang.String getCustomSql();
 
 Custom SQL query for the monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#custom_sql Monitor#custom_sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#custom_sql Monitor#custom_sql}
 
 ---
 
@@ -7030,7 +7036,7 @@ public java.lang.String getCustomWhere();
 
 Custom WHERE clause for the query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#custom_where Monitor#custom_where}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#custom_where Monitor#custom_where}
 
 ---
 
@@ -7044,7 +7050,21 @@ public java.util.List<java.lang.String> getGroupByColumns();
 
 Columns to group results by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#group_by_columns Monitor#group_by_columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#group_by_columns Monitor#group_by_columns}
+
+---
+
+##### `modelConfiguration`<sup>Optional</sup> <a name="modelConfiguration" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions.property.modelConfiguration"></a>
+
+```java
+public MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration getModelConfiguration();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration">MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration</a>
+
+model_configuration block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#model_configuration Monitor#model_configuration}
 
 ---
 
@@ -7058,7 +7078,437 @@ public java.lang.String getModelTypeOverride();
 
 Override for the model type. Valid values are `freshness`, `percentage`, `any`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#model_type_override Monitor#model_type_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#model_type_override Monitor#model_type_override}
+
+---
+
+##### `sensitivity`<sup>Optional</sup> <a name="sensitivity" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions.property.sensitivity"></a>
+
+```java
+public java.lang.Number getSensitivity();
+```
+
+- *Type:* java.lang.Number
+
+Sensitivity of the anomaly detection model, expressed as a multiplier on the width of the predicted bounds.
+
+Higher values widen the bounds and produce fewer alerts; lower values tighten them and produce more alerts. Defaults to `3.0`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#sensitivity Monitor#sensitivity}
+
+---
+
+##### `sourceToTargetConfig`<sup>Optional</sup> <a name="sourceToTargetConfig" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions.property.sourceToTargetConfig"></a>
+
+```java
+public MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig getSourceToTargetConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig</a>
+
+source_to_target_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#source_to_target_config Monitor#source_to_target_config}
+
+---
+
+### MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration <a name="MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration;
+
+MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration.builder()
+//  .autoResolveDays(java.lang.Number)
+//  .enableFlatlineDetection(java.lang.Boolean|IResolvable)
+//  .function(java.lang.String)
+//  .minLowerBoundSize(java.lang.Number)
+//  .minUpperBoundSize(java.lang.Number)
+//  .modelBoundsOverride(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration.property.autoResolveDays">autoResolveDays</a></code> | <code>java.lang.Number</code> | Number of days after which an open alert is automatically resolved. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration.property.enableFlatlineDetection">enableFlatlineDetection</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether to alert when the measure stops changing entirely. Defaults to `true`. Defaults to `true`. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration.property.function">function</a></code> | <code>java.lang.String</code> | Function applied to the measure before it is compared against the predicted bounds. Valid values are `DIFF`, `DIFF_PERCENT`. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration.property.minLowerBoundSize">minLowerBoundSize</a></code> | <code>java.lang.Number</code> | Minimum distance between the predicted value and the lower bound. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration.property.minUpperBoundSize">minUpperBoundSize</a></code> | <code>java.lang.Number</code> | Minimum distance between the predicted value and the upper bound. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration.property.modelBoundsOverride">modelBoundsOverride</a></code> | <code>java.lang.String</code> | Restricts which predicted bound the monitor alerts on. |
+
+---
+
+##### `autoResolveDays`<sup>Optional</sup> <a name="autoResolveDays" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration.property.autoResolveDays"></a>
+
+```java
+public java.lang.Number getAutoResolveDays();
+```
+
+- *Type:* java.lang.Number
+
+Number of days after which an open alert is automatically resolved.
+
+When unset, alerts stay open until the measure returns within bounds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#auto_resolve_days Monitor#auto_resolve_days}
+
+---
+
+##### `enableFlatlineDetection`<sup>Optional</sup> <a name="enableFlatlineDetection" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration.property.enableFlatlineDetection"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnableFlatlineDetection();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Whether to alert when the measure stops changing entirely. Defaults to `true`. Defaults to `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#enable_flatline_detection Monitor#enable_flatline_detection}
+
+---
+
+##### `function`<sup>Optional</sup> <a name="function" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration.property.function"></a>
+
+```java
+public java.lang.String getFunction();
+```
+
+- *Type:* java.lang.String
+
+Function applied to the measure before it is compared against the predicted bounds. Valid values are `DIFF`, `DIFF_PERCENT`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#function Monitor#function}
+
+---
+
+##### `minLowerBoundSize`<sup>Optional</sup> <a name="minLowerBoundSize" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration.property.minLowerBoundSize"></a>
+
+```java
+public java.lang.Number getMinLowerBoundSize();
+```
+
+- *Type:* java.lang.Number
+
+Minimum distance between the predicted value and the lower bound.
+
+Widening the lower bound to at least this size suppresses alerts on small downward deviations. When unset, no minimum is enforced.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#min_lower_bound_size Monitor#min_lower_bound_size}
+
+---
+
+##### `minUpperBoundSize`<sup>Optional</sup> <a name="minUpperBoundSize" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration.property.minUpperBoundSize"></a>
+
+```java
+public java.lang.Number getMinUpperBoundSize();
+```
+
+- *Type:* java.lang.Number
+
+Minimum distance between the predicted value and the upper bound.
+
+Widening the upper bound to at least this size suppresses alerts on small upward deviations. When unset, no minimum is enforced.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#min_upper_bound_size Monitor#min_upper_bound_size}
+
+---
+
+##### `modelBoundsOverride`<sup>Optional</sup> <a name="modelBoundsOverride" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration.property.modelBoundsOverride"></a>
+
+```java
+public java.lang.String getModelBoundsOverride();
+```
+
+- *Type:* java.lang.String
+
+Restricts which predicted bound the monitor alerts on.
+
+When unset, the monitor alerts on both. Valid values are `UPPER_ONLY`, `LOWER_ONLY`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#model_bounds_override Monitor#model_bounds_override}
+
+---
+
+### MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig <a name="MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig;
+
+MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig.builder()
+    .diffType(java.lang.String)
+    .entityType(java.lang.String)
+    .source(MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource)
+    .target(MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig.property.diffType">diffType</a></code> | <code>java.lang.String</code> | How the difference between the source and target measures is computed. Valid values are `absolute`, `diff_percent`. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig.property.entityType">entityType</a></code> | <code>java.lang.String</code> | Type of the data entities being compared. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig.property.source">source</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource</a></code> | source block. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig.property.target">target</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget</a></code> | target block. |
+
+---
+
+##### `diffType`<sup>Required</sup> <a name="diffType" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig.property.diffType"></a>
+
+```java
+public java.lang.String getDiffType();
+```
+
+- *Type:* java.lang.String
+
+How the difference between the source and target measures is computed. Valid values are `absolute`, `diff_percent`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#diff_type Monitor#diff_type}
+
+---
+
+##### `entityType`<sup>Required</sup> <a name="entityType" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig.property.entityType"></a>
+
+```java
+public java.lang.String getEntityType();
+```
+
+- *Type:* java.lang.String
+
+Type of the data entities being compared.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#entity_type Monitor#entity_type}
+
+---
+
+##### `source`<sup>Required</sup> <a name="source" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig.property.source"></a>
+
+```java
+public MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource getSource();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource</a>
+
+source block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#source Monitor#source}
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig.property.target"></a>
+
+```java
+public MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget getTarget();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget</a>
+
+target block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#target Monitor#target}
+
+---
+
+### MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource <a name="MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource;
+
+MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource.builder()
+    .entityId(java.lang.String)
+    .entityType(java.lang.String)
+//  .customSql(java.lang.String)
+//  .customWhere(java.lang.String)
+//  .groupByColumns(java.util.List<java.lang.String>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource.property.entityId">entityId</a></code> | <code>java.lang.String</code> | Identifier of the data entity to measure. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource.property.entityType">entityType</a></code> | <code>java.lang.String</code> | Type of the data entity to measure. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource.property.customSql">customSql</a></code> | <code>java.lang.String</code> | Custom SQL query used to compute the measure for this entity. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource.property.customWhere">customWhere</a></code> | <code>java.lang.String</code> | Custom WHERE clause applied when computing the measure for this entity. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource.property.groupByColumns">groupByColumns</a></code> | <code>java.util.List<java.lang.String></code> | Columns to group results by when computing the measure for this entity. |
+
+---
+
+##### `entityId`<sup>Required</sup> <a name="entityId" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource.property.entityId"></a>
+
+```java
+public java.lang.String getEntityId();
+```
+
+- *Type:* java.lang.String
+
+Identifier of the data entity to measure.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#entity_id Monitor#entity_id}
+
+---
+
+##### `entityType`<sup>Required</sup> <a name="entityType" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource.property.entityType"></a>
+
+```java
+public java.lang.String getEntityType();
+```
+
+- *Type:* java.lang.String
+
+Type of the data entity to measure.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#entity_type Monitor#entity_type}
+
+---
+
+##### `customSql`<sup>Optional</sup> <a name="customSql" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource.property.customSql"></a>
+
+```java
+public java.lang.String getCustomSql();
+```
+
+- *Type:* java.lang.String
+
+Custom SQL query used to compute the measure for this entity.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#custom_sql Monitor#custom_sql}
+
+---
+
+##### `customWhere`<sup>Optional</sup> <a name="customWhere" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource.property.customWhere"></a>
+
+```java
+public java.lang.String getCustomWhere();
+```
+
+- *Type:* java.lang.String
+
+Custom WHERE clause applied when computing the measure for this entity.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#custom_where Monitor#custom_where}
+
+---
+
+##### `groupByColumns`<sup>Optional</sup> <a name="groupByColumns" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource.property.groupByColumns"></a>
+
+```java
+public java.util.List<java.lang.String> getGroupByColumns();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Columns to group results by when computing the measure for this entity.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#group_by_columns Monitor#group_by_columns}
+
+---
+
+### MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget <a name="MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget;
+
+MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget.builder()
+    .entityId(java.lang.String)
+    .entityType(java.lang.String)
+//  .customSql(java.lang.String)
+//  .customWhere(java.lang.String)
+//  .groupByColumns(java.util.List<java.lang.String>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget.property.entityId">entityId</a></code> | <code>java.lang.String</code> | Identifier of the data entity to measure. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget.property.entityType">entityType</a></code> | <code>java.lang.String</code> | Type of the data entity to measure. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget.property.customSql">customSql</a></code> | <code>java.lang.String</code> | Custom SQL query used to compute the measure for this entity. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget.property.customWhere">customWhere</a></code> | <code>java.lang.String</code> | Custom WHERE clause applied when computing the measure for this entity. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget.property.groupByColumns">groupByColumns</a></code> | <code>java.util.List<java.lang.String></code> | Columns to group results by when computing the measure for this entity. |
+
+---
+
+##### `entityId`<sup>Required</sup> <a name="entityId" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget.property.entityId"></a>
+
+```java
+public java.lang.String getEntityId();
+```
+
+- *Type:* java.lang.String
+
+Identifier of the data entity to measure.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#entity_id Monitor#entity_id}
+
+---
+
+##### `entityType`<sup>Required</sup> <a name="entityType" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget.property.entityType"></a>
+
+```java
+public java.lang.String getEntityType();
+```
+
+- *Type:* java.lang.String
+
+Type of the data entity to measure.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#entity_type Monitor#entity_type}
+
+---
+
+##### `customSql`<sup>Optional</sup> <a name="customSql" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget.property.customSql"></a>
+
+```java
+public java.lang.String getCustomSql();
+```
+
+- *Type:* java.lang.String
+
+Custom SQL query used to compute the measure for this entity.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#custom_sql Monitor#custom_sql}
+
+---
+
+##### `customWhere`<sup>Optional</sup> <a name="customWhere" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget.property.customWhere"></a>
+
+```java
+public java.lang.String getCustomWhere();
+```
+
+- *Type:* java.lang.String
+
+Custom WHERE clause applied when computing the measure for this entity.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#custom_where Monitor#custom_where}
+
+---
+
+##### `groupByColumns`<sup>Optional</sup> <a name="groupByColumns" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget.property.groupByColumns"></a>
+
+```java
+public java.util.List<java.lang.String> getGroupByColumns();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Columns to group results by when computing the measure for this entity.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#group_by_columns Monitor#group_by_columns}
 
 ---
 
@@ -7102,7 +7552,7 @@ public IResolvable|java.util.List<MonitorVariablesEventQueryCompute> getCompute(
 
 compute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#compute Monitor#compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#compute Monitor#compute}
 
 ---
 
@@ -7118,7 +7568,7 @@ The data source for event platform-based queries.
 
 Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`, `database_queries`, `network`, `network_path`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -7132,7 +7582,7 @@ public java.lang.String getName();
 
 The name of query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -7146,7 +7596,7 @@ public MonitorVariablesEventQuerySearch getSearch();
 
 search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#search Monitor#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#search Monitor#search}
 
 ---
 
@@ -7160,7 +7610,7 @@ public IResolvable|java.util.List<MonitorVariablesEventQueryGroupBy> getGroupBy(
 
 group_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#group_by Monitor#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#group_by Monitor#group_by}
 
 ---
 
@@ -7174,7 +7624,7 @@ public java.util.List<java.lang.String> getIndexes();
 
 An array of index names to query in the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#indexes Monitor#indexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#indexes Monitor#indexes}
 
 ---
 
@@ -7216,7 +7666,7 @@ The aggregation methods for event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -7230,7 +7680,7 @@ public java.lang.Number getInterval();
 
 A time interval in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#interval Monitor#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#interval Monitor#interval}
 
 ---
 
@@ -7244,7 +7694,7 @@ public java.lang.String getMetric();
 
 The measurable attribute to compute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -7258,7 +7708,7 @@ public java.lang.String getName();
 
 The name assigned to this aggregation when multiple aggregations are defined for a query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -7298,7 +7748,7 @@ public java.lang.String getFacet();
 
 The event facet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#facet Monitor#facet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#facet Monitor#facet}
 
 ---
 
@@ -7312,7 +7762,7 @@ public java.lang.Number getLimit();
 
 The number of groups to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#limit Monitor#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#limit Monitor#limit}
 
 ---
 
@@ -7326,7 +7776,7 @@ public MonitorVariablesEventQueryGroupBySort getSort();
 
 sort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#sort Monitor#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#sort Monitor#sort}
 
 ---
 
@@ -7340,7 +7790,7 @@ public java.lang.String getSource();
 
 For composite aggregate-augmented queries, identifies which sub-query this group-by facet refers to (for example `filter_query`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#source Monitor#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#source Monitor#source}
 
 ---
 
@@ -7380,7 +7830,7 @@ The aggregation methods for the event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -7394,7 +7844,7 @@ public java.lang.String getMetric();
 
 The metric used for sorting group by results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -7408,7 +7858,7 @@ public java.lang.String getOrder();
 
 Direction of sort. Valid values are `asc`, `desc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#order Monitor#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#order Monitor#order}
 
 ---
 
@@ -7442,7 +7892,7 @@ public java.lang.String getQuery();
 
 The events search string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
@@ -27360,6 +27810,429 @@ public IResolvable|java.util.List<MonitorVariablesDataQualityQuery> getInternalV
 ---
 
 
+### MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference <a name="MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference;
+
+new MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.resetAutoResolveDays">resetAutoResolveDays</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.resetEnableFlatlineDetection">resetEnableFlatlineDetection</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.resetFunction">resetFunction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.resetMinLowerBoundSize">resetMinLowerBoundSize</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.resetMinUpperBoundSize">resetMinUpperBoundSize</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.resetModelBoundsOverride">resetModelBoundsOverride</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetAutoResolveDays` <a name="resetAutoResolveDays" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.resetAutoResolveDays"></a>
+
+```java
+public void resetAutoResolveDays()
+```
+
+##### `resetEnableFlatlineDetection` <a name="resetEnableFlatlineDetection" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.resetEnableFlatlineDetection"></a>
+
+```java
+public void resetEnableFlatlineDetection()
+```
+
+##### `resetFunction` <a name="resetFunction" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.resetFunction"></a>
+
+```java
+public void resetFunction()
+```
+
+##### `resetMinLowerBoundSize` <a name="resetMinLowerBoundSize" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.resetMinLowerBoundSize"></a>
+
+```java
+public void resetMinLowerBoundSize()
+```
+
+##### `resetMinUpperBoundSize` <a name="resetMinUpperBoundSize" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.resetMinUpperBoundSize"></a>
+
+```java
+public void resetMinUpperBoundSize()
+```
+
+##### `resetModelBoundsOverride` <a name="resetModelBoundsOverride" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.resetModelBoundsOverride"></a>
+
+```java
+public void resetModelBoundsOverride()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.autoResolveDaysInput">autoResolveDaysInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.enableFlatlineDetectionInput">enableFlatlineDetectionInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.functionInput">functionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.minLowerBoundSizeInput">minLowerBoundSizeInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.minUpperBoundSizeInput">minUpperBoundSizeInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.modelBoundsOverrideInput">modelBoundsOverrideInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.autoResolveDays">autoResolveDays</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.enableFlatlineDetection">enableFlatlineDetection</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.function">function</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.minLowerBoundSize">minLowerBoundSize</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.minUpperBoundSize">minUpperBoundSize</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.modelBoundsOverride">modelBoundsOverride</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration">MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `autoResolveDaysInput`<sup>Optional</sup> <a name="autoResolveDaysInput" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.autoResolveDaysInput"></a>
+
+```java
+public java.lang.Number getAutoResolveDaysInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `enableFlatlineDetectionInput`<sup>Optional</sup> <a name="enableFlatlineDetectionInput" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.enableFlatlineDetectionInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnableFlatlineDetectionInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `functionInput`<sup>Optional</sup> <a name="functionInput" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.functionInput"></a>
+
+```java
+public java.lang.String getFunctionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `minLowerBoundSizeInput`<sup>Optional</sup> <a name="minLowerBoundSizeInput" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.minLowerBoundSizeInput"></a>
+
+```java
+public java.lang.Number getMinLowerBoundSizeInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `minUpperBoundSizeInput`<sup>Optional</sup> <a name="minUpperBoundSizeInput" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.minUpperBoundSizeInput"></a>
+
+```java
+public java.lang.Number getMinUpperBoundSizeInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `modelBoundsOverrideInput`<sup>Optional</sup> <a name="modelBoundsOverrideInput" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.modelBoundsOverrideInput"></a>
+
+```java
+public java.lang.String getModelBoundsOverrideInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `autoResolveDays`<sup>Required</sup> <a name="autoResolveDays" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.autoResolveDays"></a>
+
+```java
+public java.lang.Number getAutoResolveDays();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `enableFlatlineDetection`<sup>Required</sup> <a name="enableFlatlineDetection" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.enableFlatlineDetection"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnableFlatlineDetection();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `function`<sup>Required</sup> <a name="function" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.function"></a>
+
+```java
+public java.lang.String getFunction();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `minLowerBoundSize`<sup>Required</sup> <a name="minLowerBoundSize" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.minLowerBoundSize"></a>
+
+```java
+public java.lang.Number getMinLowerBoundSize();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `minUpperBoundSize`<sup>Required</sup> <a name="minUpperBoundSize" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.minUpperBoundSize"></a>
+
+```java
+public java.lang.Number getMinUpperBoundSize();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `modelBoundsOverride`<sup>Required</sup> <a name="modelBoundsOverride" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.modelBoundsOverride"></a>
+
+```java
+public java.lang.String getModelBoundsOverride();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.property.internalValue"></a>
+
+```java
+public MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration">MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration</a>
+
+---
+
+
 ### MonitorVariablesDataQualityQueryMonitorOptionsOutputReference <a name="MonitorVariablesDataQualityQueryMonitorOptionsOutputReference" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.Initializer"></a>
@@ -27410,11 +28283,16 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.putModelConfiguration">putModelConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.putSourceToTargetConfig">putSourceToTargetConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resetCrontabOverride">resetCrontabOverride</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resetCustomSql">resetCustomSql</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resetCustomWhere">resetCustomWhere</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resetGroupByColumns">resetGroupByColumns</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resetModelConfiguration">resetModelConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resetModelTypeOverride">resetModelTypeOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resetSensitivity">resetSensitivity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resetSourceToTargetConfig">resetSourceToTargetConfig</a></code> | *No description.* |
 
 ---
 
@@ -27568,6 +28446,30 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putModelConfiguration` <a name="putModelConfiguration" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.putModelConfiguration"></a>
+
+```java
+public void putModelConfiguration(MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.putModelConfiguration.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration">MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration</a>
+
+---
+
+##### `putSourceToTargetConfig` <a name="putSourceToTargetConfig" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.putSourceToTargetConfig"></a>
+
+```java
+public void putSourceToTargetConfig(MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.putSourceToTargetConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig</a>
+
+---
+
 ##### `resetCrontabOverride` <a name="resetCrontabOverride" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resetCrontabOverride"></a>
 
 ```java
@@ -27592,10 +28494,28 @@ public void resetCustomWhere()
 public void resetGroupByColumns()
 ```
 
+##### `resetModelConfiguration` <a name="resetModelConfiguration" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resetModelConfiguration"></a>
+
+```java
+public void resetModelConfiguration()
+```
+
 ##### `resetModelTypeOverride` <a name="resetModelTypeOverride" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resetModelTypeOverride"></a>
 
 ```java
 public void resetModelTypeOverride()
+```
+
+##### `resetSensitivity` <a name="resetSensitivity" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resetSensitivity"></a>
+
+```java
+public void resetSensitivity()
+```
+
+##### `resetSourceToTargetConfig` <a name="resetSourceToTargetConfig" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resetSourceToTargetConfig"></a>
+
+```java
+public void resetSourceToTargetConfig()
 ```
 
 
@@ -27605,16 +28525,22 @@ public void resetModelTypeOverride()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.modelConfiguration">modelConfiguration</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference">MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.sourceToTargetConfig">sourceToTargetConfig</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.crontabOverrideInput">crontabOverrideInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.customSqlInput">customSqlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.customWhereInput">customWhereInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.groupByColumnsInput">groupByColumnsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.modelConfigurationInput">modelConfigurationInput</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration">MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.modelTypeOverrideInput">modelTypeOverrideInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.sensitivityInput">sensitivityInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.sourceToTargetConfigInput">sourceToTargetConfigInput</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.crontabOverride">crontabOverride</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.customSql">customSql</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.customWhere">customWhere</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.groupByColumns">groupByColumns</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.modelTypeOverride">modelTypeOverride</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.sensitivity">sensitivity</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions">MonitorVariablesDataQualityQueryMonitorOptions</a></code> | *No description.* |
 
 ---
@@ -27640,6 +28566,26 @@ public java.lang.String getFqn();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `modelConfiguration`<sup>Required</sup> <a name="modelConfiguration" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.modelConfiguration"></a>
+
+```java
+public MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference getModelConfiguration();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference">MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference</a>
+
+---
+
+##### `sourceToTargetConfig`<sup>Required</sup> <a name="sourceToTargetConfig" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.sourceToTargetConfig"></a>
+
+```java
+public MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference getSourceToTargetConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference</a>
 
 ---
 
@@ -27683,6 +28629,16 @@ public java.util.List<java.lang.String> getGroupByColumnsInput();
 
 ---
 
+##### `modelConfigurationInput`<sup>Optional</sup> <a name="modelConfigurationInput" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.modelConfigurationInput"></a>
+
+```java
+public MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration getModelConfigurationInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration">MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration</a>
+
+---
+
 ##### `modelTypeOverrideInput`<sup>Optional</sup> <a name="modelTypeOverrideInput" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.modelTypeOverrideInput"></a>
 
 ```java
@@ -27690,6 +28646,26 @@ public java.lang.String getModelTypeOverrideInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `sensitivityInput`<sup>Optional</sup> <a name="sensitivityInput" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.sensitivityInput"></a>
+
+```java
+public java.lang.Number getSensitivityInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `sourceToTargetConfigInput`<sup>Optional</sup> <a name="sourceToTargetConfigInput" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.sourceToTargetConfigInput"></a>
+
+```java
+public MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig getSourceToTargetConfigInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig</a>
 
 ---
 
@@ -27743,6 +28719,16 @@ public java.lang.String getModelTypeOverride();
 
 ---
 
+##### `sensitivity`<sup>Required</sup> <a name="sensitivity" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.sensitivity"></a>
+
+```java
+public java.lang.Number getSensitivity();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.internalValue"></a>
 
 ```java
@@ -27750,6 +28736,1129 @@ public MonitorVariablesDataQualityQueryMonitorOptions getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions">MonitorVariablesDataQualityQueryMonitorOptions</a>
+
+---
+
+
+### MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference <a name="MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference;
+
+new MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.putSource">putSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.putTarget">putTarget</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putSource` <a name="putSource" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.putSource"></a>
+
+```java
+public void putSource(MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.putSource.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource</a>
+
+---
+
+##### `putTarget` <a name="putTarget" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.putTarget"></a>
+
+```java
+public void putTarget(MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.putTarget.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget</a>
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.property.source">source</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.property.target">target</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.property.diffTypeInput">diffTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.property.entityTypeInput">entityTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.property.sourceInput">sourceInput</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.property.targetInput">targetInput</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.property.diffType">diffType</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.property.entityType">entityType</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `source`<sup>Required</sup> <a name="source" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.property.source"></a>
+
+```java
+public MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference getSource();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference</a>
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.property.target"></a>
+
+```java
+public MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference getTarget();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference</a>
+
+---
+
+##### `diffTypeInput`<sup>Optional</sup> <a name="diffTypeInput" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.property.diffTypeInput"></a>
+
+```java
+public java.lang.String getDiffTypeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `entityTypeInput`<sup>Optional</sup> <a name="entityTypeInput" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.property.entityTypeInput"></a>
+
+```java
+public java.lang.String getEntityTypeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `sourceInput`<sup>Optional</sup> <a name="sourceInput" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.property.sourceInput"></a>
+
+```java
+public MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource getSourceInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource</a>
+
+---
+
+##### `targetInput`<sup>Optional</sup> <a name="targetInput" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.property.targetInput"></a>
+
+```java
+public MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget getTargetInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget</a>
+
+---
+
+##### `diffType`<sup>Required</sup> <a name="diffType" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.property.diffType"></a>
+
+```java
+public java.lang.String getDiffType();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `entityType`<sup>Required</sup> <a name="entityType" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.property.entityType"></a>
+
+```java
+public java.lang.String getEntityType();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.property.internalValue"></a>
+
+```java
+public MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig</a>
+
+---
+
+
+### MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference <a name="MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference;
+
+new MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.resetCustomSql">resetCustomSql</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.resetCustomWhere">resetCustomWhere</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.resetGroupByColumns">resetGroupByColumns</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetCustomSql` <a name="resetCustomSql" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.resetCustomSql"></a>
+
+```java
+public void resetCustomSql()
+```
+
+##### `resetCustomWhere` <a name="resetCustomWhere" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.resetCustomWhere"></a>
+
+```java
+public void resetCustomWhere()
+```
+
+##### `resetGroupByColumns` <a name="resetGroupByColumns" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.resetGroupByColumns"></a>
+
+```java
+public void resetGroupByColumns()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.property.customSqlInput">customSqlInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.property.customWhereInput">customWhereInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.property.entityIdInput">entityIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.property.entityTypeInput">entityTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.property.groupByColumnsInput">groupByColumnsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.property.customSql">customSql</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.property.customWhere">customWhere</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.property.entityId">entityId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.property.entityType">entityType</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.property.groupByColumns">groupByColumns</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `customSqlInput`<sup>Optional</sup> <a name="customSqlInput" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.property.customSqlInput"></a>
+
+```java
+public java.lang.String getCustomSqlInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `customWhereInput`<sup>Optional</sup> <a name="customWhereInput" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.property.customWhereInput"></a>
+
+```java
+public java.lang.String getCustomWhereInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `entityIdInput`<sup>Optional</sup> <a name="entityIdInput" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.property.entityIdInput"></a>
+
+```java
+public java.lang.String getEntityIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `entityTypeInput`<sup>Optional</sup> <a name="entityTypeInput" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.property.entityTypeInput"></a>
+
+```java
+public java.lang.String getEntityTypeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `groupByColumnsInput`<sup>Optional</sup> <a name="groupByColumnsInput" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.property.groupByColumnsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getGroupByColumnsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `customSql`<sup>Required</sup> <a name="customSql" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.property.customSql"></a>
+
+```java
+public java.lang.String getCustomSql();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `customWhere`<sup>Required</sup> <a name="customWhere" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.property.customWhere"></a>
+
+```java
+public java.lang.String getCustomWhere();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `entityId`<sup>Required</sup> <a name="entityId" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.property.entityId"></a>
+
+```java
+public java.lang.String getEntityId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `entityType`<sup>Required</sup> <a name="entityType" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.property.entityType"></a>
+
+```java
+public java.lang.String getEntityType();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `groupByColumns`<sup>Required</sup> <a name="groupByColumns" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.property.groupByColumns"></a>
+
+```java
+public java.util.List<java.lang.String> getGroupByColumns();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.property.internalValue"></a>
+
+```java
+public MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource</a>
+
+---
+
+
+### MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference <a name="MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference;
+
+new MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.resetCustomSql">resetCustomSql</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.resetCustomWhere">resetCustomWhere</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.resetGroupByColumns">resetGroupByColumns</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetCustomSql` <a name="resetCustomSql" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.resetCustomSql"></a>
+
+```java
+public void resetCustomSql()
+```
+
+##### `resetCustomWhere` <a name="resetCustomWhere" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.resetCustomWhere"></a>
+
+```java
+public void resetCustomWhere()
+```
+
+##### `resetGroupByColumns` <a name="resetGroupByColumns" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.resetGroupByColumns"></a>
+
+```java
+public void resetGroupByColumns()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.property.customSqlInput">customSqlInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.property.customWhereInput">customWhereInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.property.entityIdInput">entityIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.property.entityTypeInput">entityTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.property.groupByColumnsInput">groupByColumnsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.property.customSql">customSql</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.property.customWhere">customWhere</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.property.entityId">entityId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.property.entityType">entityType</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.property.groupByColumns">groupByColumns</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `customSqlInput`<sup>Optional</sup> <a name="customSqlInput" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.property.customSqlInput"></a>
+
+```java
+public java.lang.String getCustomSqlInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `customWhereInput`<sup>Optional</sup> <a name="customWhereInput" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.property.customWhereInput"></a>
+
+```java
+public java.lang.String getCustomWhereInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `entityIdInput`<sup>Optional</sup> <a name="entityIdInput" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.property.entityIdInput"></a>
+
+```java
+public java.lang.String getEntityIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `entityTypeInput`<sup>Optional</sup> <a name="entityTypeInput" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.property.entityTypeInput"></a>
+
+```java
+public java.lang.String getEntityTypeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `groupByColumnsInput`<sup>Optional</sup> <a name="groupByColumnsInput" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.property.groupByColumnsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getGroupByColumnsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `customSql`<sup>Required</sup> <a name="customSql" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.property.customSql"></a>
+
+```java
+public java.lang.String getCustomSql();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `customWhere`<sup>Required</sup> <a name="customWhere" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.property.customWhere"></a>
+
+```java
+public java.lang.String getCustomWhere();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `entityId`<sup>Required</sup> <a name="entityId" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.property.entityId"></a>
+
+```java
+public java.lang.String getEntityId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `entityType`<sup>Required</sup> <a name="entityType" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.property.entityType"></a>
+
+```java
+public java.lang.String getEntityType();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `groupByColumns`<sup>Required</sup> <a name="groupByColumns" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.property.groupByColumns"></a>
+
+```java
+public java.util.List<java.lang.String> getGroupByColumns();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.property.internalValue"></a>
+
+```java
+public MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget">MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget</a>
 
 ---
 
