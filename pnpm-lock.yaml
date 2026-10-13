@@ -22,7 +22,7 @@ importers:
         version: 3.0.1
       '@cdktn/provider-project':
         specifier: ^0.9.0
-        version: 0.9.13(constructs@10.7.2)(projen@0.101.33(constructs@10.7.2))
+        version: 0.9.14(constructs@10.7.2)(projen@0.101.33(constructs@10.7.2))
       '@types/node':
         specifier: ^22
         version: 22.20.1
@@ -133,8 +133,8 @@ packages:
   '@cdktn/provider-generator@0.24.0':
     resolution: {integrity: sha512-QhvqdnoDvUtq0EgHkApZ1qkS3j0wR5FI0utCvvc84wHWdrXlQTYBwq6TKyHPWHCPbghNfcNV3jV6U8eDHmvl2A==}
 
-  '@cdktn/provider-project@0.9.13':
-    resolution: {integrity: sha512-F+ANyv4k91JkwWiSSX0YzVXbNTsQTuFP96v1k0143pchDPMNLx7iQhu9x0794jor7BSZQnlgPG2LzwuzM/fvVQ==}
+  '@cdktn/provider-project@0.9.14':
+    resolution: {integrity: sha512-x6XvveN4H4YR4JZTQV9I6wwtN2VBdOQEw5E6UTe7kxaSUO7eY0pyNOIagtsd3TpmAP/j1w/kfr4UZu17GR7JZw==}
     engines: {node: '>= 22.11.0'}
     peerDependencies:
       constructs: ^10.5.0
@@ -909,8 +909,8 @@ packages:
     peerDependencies:
       graphology-types: '>=0.24.0'
 
-  handlebars@4.7.9:
-    resolution: {integrity: sha512-4E71E0rpOaQuJR2A3xDZ+GM1HyWYv1clR58tC8emQNeQe3RH7MAzSbat+V0wG78LQBo6m6bzSG/L4pBuCsgnUQ==}
+  handlebars@4.7.10:
+    resolution: {integrity: sha512-P5VJMVM7qgBn6vjXMw8WG9uVI+ncf2pi72j4de4yz5ZULLj2RGqLYaKOYGsgyrViQ0tePOVlN1tDCCXXtFqXKg==}
     engines: {node: '>=0.4.7'}
     hasBin: true
 
@@ -1921,7 +1921,7 @@ snapshots:
       - jsii-rosetta
       - supports-color
 
-  '@cdktn/provider-project@0.9.13(constructs@10.7.2)(projen@0.101.33(constructs@10.7.2))':
+  '@cdktn/provider-project@0.9.14(constructs@10.7.2)(projen@0.101.33(constructs@10.7.2))':
     dependencies:
       constructs: 10.7.2
       projen: 0.101.33(constructs@10.7.2)
@@ -2423,7 +2423,7 @@ snapshots:
     dependencies:
       conventional-commits-filter: 3.0.0
       dateformat: 3.0.3
-      handlebars: 4.7.9
+      handlebars: 4.7.10
       json-stringify-safe: 5.0.1
       meow: 8.1.2
       semver: 7.8.5
@@ -2744,7 +2744,7 @@ snapshots:
       events: 3.3.0
       graphology-types: 0.24.7
 
-  handlebars@4.7.9:
+  handlebars@4.7.10:
     dependencies:
       minimist: 1.2.8
       neo-async: 2.6.2
