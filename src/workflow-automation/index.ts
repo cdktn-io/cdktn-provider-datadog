@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/workflow_automation
+// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/workflow_automation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,49 +15,49 @@ export interface WorkflowAutomationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Description of the workflow.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/workflow_automation#description WorkflowAutomation#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/workflow_automation#description WorkflowAutomation#description}
   */
   readonly description: string;
   /**
   * Name of the workflow. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/workflow_automation#name WorkflowAutomation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/workflow_automation#name WorkflowAutomation#name}
   */
   readonly name: string;
   /**
   * Set the workflow to published or unpublished. Workflows in an unpublished state are only executable through manual runs. Automatic triggers such as Schedule do not execute the workflow until it is published.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/workflow_automation#published WorkflowAutomation#published}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/workflow_automation#published WorkflowAutomation#published}
   */
   readonly published: boolean | cdktn.IResolvable;
   /**
   * Identity used to run the workflow. When omitted, the server-managed value is preserved.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/workflow_automation#run_as WorkflowAutomation#run_as}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/workflow_automation#run_as WorkflowAutomation#run_as}
   */
   readonly runAs?: WorkflowAutomationRunAs;
   /**
   * Whether the workflow requires sensitive privileges to run. When omitted, the server-managed value is preserved. Only the workflow owner can update this field. This allows it to run actions that use [Execution Policies](https://docs.datadoghq.com/actions/private_actions/execution_policies/).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/workflow_automation#sensitive_privileges WorkflowAutomation#sensitive_privileges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/workflow_automation#sensitive_privileges WorkflowAutomation#sensitive_privileges}
   */
   readonly sensitivePrivileges?: boolean | cdktn.IResolvable;
   /**
   * The spec defines what the workflow does.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/workflow_automation#spec_json WorkflowAutomation#spec_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/workflow_automation#spec_json WorkflowAutomation#spec_json}
   */
   readonly specJson: string;
   /**
   * Tags of the workflow.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/workflow_automation#tags WorkflowAutomation#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/workflow_automation#tags WorkflowAutomation#tags}
   */
   readonly tags: string[];
   /**
   * If a webhook trigger is defined on this workflow, a webhookSecret is required and should be provided here. String length must be at least 16.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/workflow_automation#webhook_secret WorkflowAutomation#webhook_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/workflow_automation#webhook_secret WorkflowAutomation#webhook_secret}
   */
   readonly webhookSecret?: string;
 }
@@ -65,7 +65,7 @@ export interface WorkflowAutomationRunAs {
   /**
   * Service account identifier. Required when `type` is `service_account` and omitted otherwise.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/workflow_automation#id WorkflowAutomation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/workflow_automation#id WorkflowAutomation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -74,7 +74,7 @@ export interface WorkflowAutomationRunAs {
   /**
   * Type of identity used to run the workflow. `owner` uses the workflow owner, `initiator` uses the user who starts the execution, and `service_account` uses the account specified by `id`. Required when `run_as` is configured. Valid values are `owner`, `service_account`, `initiator`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/workflow_automation#type WorkflowAutomation#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/workflow_automation#type WorkflowAutomation#type}
   */
   readonly type?: string;
 }
@@ -197,7 +197,7 @@ export class WorkflowAutomationRunAsOutputReference extends cdktn.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/workflow_automation datadog_workflow_automation}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/workflow_automation datadog_workflow_automation}
 */
 export class WorkflowAutomation extends cdktn.TerraformResource {
 
@@ -213,7 +213,7 @@ export class WorkflowAutomation extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a WorkflowAutomation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkflowAutomation to import
-  * @param importFromId The id of the existing WorkflowAutomation that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/workflow_automation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkflowAutomation that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/workflow_automation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkflowAutomation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -225,7 +225,7 @@ export class WorkflowAutomation extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/workflow_automation datadog_workflow_automation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/workflow_automation datadog_workflow_automation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -236,7 +236,7 @@ export class WorkflowAutomation extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_workflow_automation',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.25.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

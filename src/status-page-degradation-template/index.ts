@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template
+// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface StatusPageDegradationTemplateConfig extends cdktn.TerraformMeta
   /**
   * The components affected by a degradation created from this template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#components_affected StatusPageDegradationTemplate#components_affected}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#components_affected StatusPageDegradationTemplate#components_affected}
   */
   readonly componentsAffected?: StatusPageDegradationTemplateComponentsAffected[] | cdktn.IResolvable;
   /**
   * The title used for a degradation created from this template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#degradation_title StatusPageDegradationTemplate#degradation_title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#degradation_title StatusPageDegradationTemplate#degradation_title}
   */
   readonly degradationTitle?: string;
   /**
   * The name of the degradation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#name StatusPageDegradationTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#name StatusPageDegradationTemplate#name}
   */
   readonly name: string;
   /**
   * The ID of the status page this degradation template belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#page_id StatusPageDegradationTemplate#page_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#page_id StatusPageDegradationTemplate#page_id}
   */
   readonly pageId: string;
   /**
   * The pre-filled updates for a degradation created from this template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#updates StatusPageDegradationTemplate#updates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#updates StatusPageDegradationTemplate#updates}
   */
   readonly updates?: StatusPageDegradationTemplateUpdates[] | cdktn.IResolvable;
 }
@@ -47,7 +47,7 @@ export interface StatusPageDegradationTemplateComponentsAffected {
   /**
   * The ID of the affected component.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#id StatusPageDegradationTemplate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#id StatusPageDegradationTemplate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -56,13 +56,13 @@ export interface StatusPageDegradationTemplateComponentsAffected {
   /**
   * The name of the affected component.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#name StatusPageDegradationTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#name StatusPageDegradationTemplate#name}
   */
   readonly name?: string;
   /**
   * The pre-filled status for this component. Valid values are: operational, degraded, partial_outage, major_outage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#status StatusPageDegradationTemplate#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#status StatusPageDegradationTemplate#status}
   */
   readonly status: string;
 }
@@ -232,13 +232,13 @@ export interface StatusPageDegradationTemplateUpdates {
   /**
   * The pre-filled message for this update.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#message StatusPageDegradationTemplate#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#message StatusPageDegradationTemplate#message}
   */
   readonly message?: string;
   /**
   * The pre-filled degradation status for this update. Valid values are: investigating, identified, monitoring, resolved.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#status StatusPageDegradationTemplate#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#status StatusPageDegradationTemplate#status}
   */
   readonly status: string;
 }
@@ -380,7 +380,7 @@ export class StatusPageDegradationTemplateUpdatesList extends cdktn.ComplexList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template datadog_status_page_degradation_template}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template datadog_status_page_degradation_template}
 */
 export class StatusPageDegradationTemplate extends cdktn.TerraformResource {
 
@@ -396,7 +396,7 @@ export class StatusPageDegradationTemplate extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a StatusPageDegradationTemplate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StatusPageDegradationTemplate to import
-  * @param importFromId The id of the existing StatusPageDegradationTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StatusPageDegradationTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StatusPageDegradationTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -408,7 +408,7 @@ export class StatusPageDegradationTemplate extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template datadog_status_page_degradation_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template datadog_status_page_degradation_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -419,7 +419,7 @@ export class StatusPageDegradationTemplate extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_status_page_degradation_template',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.25.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

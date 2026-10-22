@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account
+// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface IntegrationTwilioAccountConfig extends cdktn.TerraformMetaArgum
   /**
   * Authentication configured on the Twilio integration account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#authentication IntegrationTwilioAccount#authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#authentication IntegrationTwilioAccount#authentication}
   */
   readonly authentication: IntegrationTwilioAccountAuthentication;
   /**
   * Data Datadog collects from Twilio, keyed by dataflow id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#dataflows IntegrationTwilioAccount#dataflows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#dataflows IntegrationTwilioAccount#dataflows}
   */
   readonly dataflows?: IntegrationTwilioAccountDataflows;
   /**
   * Human-readable name of the Twilio integration account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#name IntegrationTwilioAccount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#name IntegrationTwilioAccount#name}
   */
   readonly name: string;
   /**
   * Settings configured on the Twilio integration account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#settings IntegrationTwilioAccount#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#settings IntegrationTwilioAccount#settings}
   */
   readonly settings: IntegrationTwilioAccountSettings;
 }
@@ -41,25 +41,25 @@ export interface IntegrationTwilioAccountAuthenticationTwilioIntegrationAccountB
   /**
   * The authentication method type. Valid values are `basic`. Defaults to `"basic"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#auth_type IntegrationTwilioAccount#auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#auth_type IntegrationTwilioAccount#auth_type}
   */
   readonly authType?: string;
   /**
   * Secret password or private key. This write-only value is not stored in Terraform state.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#password_wo IntegrationTwilioAccount#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#password_wo IntegrationTwilioAccount#password_wo}
   */
   readonly passwordWo: string;
   /**
   * Version trigger for password_wo rotation. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#password_wo_version IntegrationTwilioAccount#password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#password_wo_version IntegrationTwilioAccount#password_wo_version}
   */
   readonly passwordWoVersion: string;
   /**
   * Non-secret username or public identifier for the credential pair.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#username IntegrationTwilioAccount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#username IntegrationTwilioAccount#username}
   */
   readonly username: string;
 }
@@ -236,7 +236,7 @@ export interface IntegrationTwilioAccountAuthentication {
   /**
   * The basic authentication method and username configured on the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#twilio_integration_account_basic_auth IntegrationTwilioAccount#twilio_integration_account_basic_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#twilio_integration_account_basic_auth IntegrationTwilioAccount#twilio_integration_account_basic_auth}
   */
   readonly twilioIntegrationAccountBasicAuth?: IntegrationTwilioAccountAuthenticationTwilioIntegrationAccountBasicAuth;
 }
@@ -396,7 +396,7 @@ export interface IntegrationTwilioAccountDataflowsTwilioAlertsLogs {
   /**
   * Whether Datadog collects this data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -562,7 +562,7 @@ export interface IntegrationTwilioAccountDataflowsTwilioCallSummariesLogs {
   /**
   * Whether Datadog collects this data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -728,7 +728,7 @@ export interface IntegrationTwilioAccountDataflowsTwilioCloudCostMetrics {
   /**
   * Whether Datadog collects this data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -894,7 +894,7 @@ export interface IntegrationTwilioAccountDataflowsTwilioEventsLogs {
   /**
   * Whether Datadog collects this data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1060,7 +1060,7 @@ export interface IntegrationTwilioAccountDataflowsTwilioMessagesLogs {
   /**
   * Whether Datadog collects this data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1162,31 +1162,31 @@ export interface IntegrationTwilioAccountDataflows {
   /**
   * Twilio Alert resource logs, which detail the errors and warnings raised when Twilio makes a webhook request to your server or when your application calls the Twilio REST API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#twilio_alerts_logs IntegrationTwilioAccount#twilio_alerts_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#twilio_alerts_logs IntegrationTwilioAccount#twilio_alerts_logs}
   */
   readonly twilioAlertsLogs?: IntegrationTwilioAccountDataflowsTwilioAlertsLogs;
   /**
   * Twilio Call Summary resource logs, covering the metadata and performance of the calls made from your Twilio account. Requires Voice Insights Advanced Features to be enabled on the Twilio account; without it this dataflow collects no data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#twilio_call_summaries_logs IntegrationTwilioAccount#twilio_call_summaries_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#twilio_call_summaries_logs IntegrationTwilioAccount#twilio_call_summaries_logs}
   */
   readonly twilioCallSummariesLogs?: IntegrationTwilioAccountDataflowsTwilioCallSummariesLogs;
   /**
   * Your Twilio cost data, so that Twilio spend can be broken down and attributed in [Cloud Cost Management](https://docs.datadoghq.com/cloud_cost_management/).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#twilio_cloud_cost_metrics IntegrationTwilioAccount#twilio_cloud_cost_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#twilio_cloud_cost_metrics IntegrationTwilioAccount#twilio_cloud_cost_metrics}
   */
   readonly twilioCloudCostMetrics?: IntegrationTwilioAccountDataflowsTwilioCloudCostMetrics;
   /**
   * Twilio Event resource logs, which record virtually every action taken in your Twilio account, such as provisioning a phone number, changing account security settings, or deleting a recording. Actions are recorded whether they came from the REST API, a user in the Twilio Console, or Twilio itself. [Cloud SIEM](https://docs.datadoghq.com/security/cloud_siem/) analyzes and correlates these logs to detect threats in real time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#twilio_events_logs IntegrationTwilioAccount#twilio_events_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#twilio_events_logs IntegrationTwilioAccount#twilio_events_logs}
   */
   readonly twilioEventsLogs?: IntegrationTwilioAccountDataflowsTwilioEventsLogs;
   /**
   * Twilio Message resource logs for inbound and outbound messages, used to track delivery and troubleshoot message errors. A log is produced when you send a message through the REST API, when Twilio executes a TwiML instruction, and when someone messages one of your Twilio numbers or channel addresses. Message bodies are never collected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#twilio_messages_logs IntegrationTwilioAccount#twilio_messages_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#twilio_messages_logs IntegrationTwilioAccount#twilio_messages_logs}
   */
   readonly twilioMessagesLogs?: IntegrationTwilioAccountDataflowsTwilioMessagesLogs;
 }
@@ -1398,13 +1398,13 @@ export interface IntegrationTwilioAccountSettings {
   /**
   * Twilio Account SID that uniquely identifies your Twilio account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#account_sid IntegrationTwilioAccount#account_sid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#account_sid IntegrationTwilioAccount#account_sid}
   */
   readonly accountSid: string;
   /**
   * When enabled, Twilio phone numbers in the `to` field and SMS message bodies are censored for privacy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#censor_logs IntegrationTwilioAccount#censor_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#censor_logs IntegrationTwilioAccount#censor_logs}
   */
   readonly censorLogs?: boolean | cdktn.IResolvable;
 }
@@ -1524,7 +1524,7 @@ export class IntegrationTwilioAccountSettingsOutputReference extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account datadog_integration_twilio_account}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account datadog_integration_twilio_account}
 */
 export class IntegrationTwilioAccount extends cdktn.TerraformResource {
 
@@ -1540,7 +1540,7 @@ export class IntegrationTwilioAccount extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a IntegrationTwilioAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationTwilioAccount to import
-  * @param importFromId The id of the existing IntegrationTwilioAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationTwilioAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationTwilioAccount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1552,7 +1552,7 @@ export class IntegrationTwilioAccount extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account datadog_integration_twilio_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account datadog_integration_twilio_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1563,7 +1563,7 @@ export class IntegrationTwilioAccount extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_integration_twilio_account',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.25.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

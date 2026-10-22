@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_pages
+// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_pages
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataDatadogStatusPagesConfig extends cdktn.TerraformMetaArgumen
   /**
   * Filter the results to pages with this exact name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_pages#name DataDatadogStatusPages#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_pages#name DataDatadogStatusPages#name}
   */
   readonly name?: string;
 }
@@ -126,7 +126,7 @@ export class DataDatadogStatusPagesStatusPagesList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_pages datadog_status_pages}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_pages datadog_status_pages}
 */
 export class DataDatadogStatusPages extends cdktn.TerraformDataSource {
 
@@ -142,7 +142,7 @@ export class DataDatadogStatusPages extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatadogStatusPages resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogStatusPages to import
-  * @param importFromId The id of the existing DataDatadogStatusPages that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_pages#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogStatusPages that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_pages#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogStatusPages to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -154,7 +154,7 @@ export class DataDatadogStatusPages extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_pages datadog_status_pages} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_pages datadog_status_pages} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -165,7 +165,7 @@ export class DataDatadogStatusPages extends cdktn.TerraformDataSource {
       terraformResourceType: 'datadog_status_pages',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.25.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

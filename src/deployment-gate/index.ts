@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate
+// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,53 +15,233 @@ export interface DeploymentGateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Enable Dry Run to test gate behavior without impacting deployments. The evaluation of a dry run gate always responds with a pass status, but the in-app result is the real status based on rules evaluation. This is particularly useful when performing an initial evaluation of the gate behavior without impacting the deployment pipeline.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
   */
   readonly dryRun?: boolean | cdktn.IResolvable;
   /**
   * The target environment (example: dev).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#env DeploymentGate#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#env DeploymentGate#env}
   */
   readonly env: string;
   /**
   * Unique name for multiple gates on the same service/environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#identifier DeploymentGate#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#identifier DeploymentGate#identifier}
   */
   readonly identifier?: string;
   /**
   * The service name (example: transaction-backend).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#service DeploymentGate#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#service DeploymentGate#service}
   */
   readonly service: string;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#rule DeploymentGate#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#rule DeploymentGate#rule}
   */
   readonly rule?: DeploymentGateRule[] | cdktn.IResolvable;
 }
+export interface DeploymentGateRuleOptionsMonitorIds {
+  /**
+  * Exact group names to evaluate; an empty list evaluates all groups.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#groups DeploymentGate#groups}
+  */
+  readonly groups: string[];
+  /**
+  * The monitor's decimal ID.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#id DeploymentGate#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id: string;
+}
+
+export function deploymentGateRuleOptionsMonitorIdsToTerraform(struct?: DeploymentGateRuleOptionsMonitorIds | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    groups: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.groups),
+    id: cdktn.stringToTerraform(struct!.id),
+  }
+}
+
+
+export function deploymentGateRuleOptionsMonitorIdsToHclTerraform(struct?: DeploymentGateRuleOptionsMonitorIds | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    groups: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.groups),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    id: {
+      value: cdktn.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DeploymentGateRuleOptionsMonitorIdsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DeploymentGateRuleOptionsMonitorIds | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._groups !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groups = this._groups;
+    }
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DeploymentGateRuleOptionsMonitorIds | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._groups = undefined;
+      this._id = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._groups = value.groups;
+      this._id = value.id;
+    }
+  }
+
+  // groups - computed: false, optional: false, required: true
+  private _groups?: string[]; 
+  public get groups() {
+    return this.getListAttribute('groups');
+  }
+  public set groups(value: string[]) {
+    this._groups = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupsInput() {
+    return this._groups;
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+}
+
+export class DeploymentGateRuleOptionsMonitorIdsList extends cdktn.ComplexList {
+  public internalValue? : DeploymentGateRuleOptionsMonitorIds[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DeploymentGateRuleOptionsMonitorIdsOutputReference {
+    return new DeploymentGateRuleOptionsMonitorIdsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DeploymentGateRuleOptions {
+  /**
+  * Resources to include in faulty deployment detection. Mutually exclusive with excluded_resources.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#allowed_resources DeploymentGate#allowed_resources}
+  */
+  readonly allowedResources?: string[];
   /**
   * The duration for the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#duration DeploymentGate#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#duration DeploymentGate#duration}
   */
   readonly duration?: number;
   /**
-  * Resources to exclude from faulty deployment detection.
+  * Resources to exclude from faulty deployment detection. Mutually exclusive with allowed_resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#excluded_resources DeploymentGate#excluded_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#excluded_resources DeploymentGate#excluded_resources}
   */
   readonly excludedResources?: string[];
   /**
-  * The query for monitor rules.
+  * Fail if a matching monitor group is in NO DATA state (API default: true).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#query DeploymentGate#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#fail_on_no_data DeploymentGate#fail_on_no_data}
+  */
+  readonly failOnNoData?: boolean | cdktn.IResolvable;
+  /**
+  * Fail if no monitor groups are found (API default: false).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#fail_on_no_groups_found DeploymentGate#fail_on_no_groups_found}
+  */
+  readonly failOnNoGroupsFound?: boolean | cdktn.IResolvable;
+  /**
+  * Specific monitors to evaluate. Mutually exclusive with query.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#monitor_ids DeploymentGate#monitor_ids}
+  */
+  readonly monitorIds?: DeploymentGateRuleOptionsMonitorIds[] | cdktn.IResolvable;
+  /**
+  * A query that selects the monitors to evaluate. Mutually exclusive with monitor_ids.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#query DeploymentGate#query}
   */
   readonly query?: string;
+  /**
+  * Seconds to wait after deployment starts before evaluating monitors (API default: 0).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#warmup DeploymentGate#warmup}
+  */
+  readonly warmup?: number;
 }
 
 export function deploymentGateRuleOptionsToTerraform(struct?: DeploymentGateRuleOptions | cdktn.IResolvable): any {
@@ -70,9 +250,14 @@ export function deploymentGateRuleOptionsToTerraform(struct?: DeploymentGateRule
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
+    allowed_resources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedResources),
     duration: cdktn.numberToTerraform(struct!.duration),
     excluded_resources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedResources),
+    fail_on_no_data: cdktn.booleanToTerraform(struct!.failOnNoData),
+    fail_on_no_groups_found: cdktn.booleanToTerraform(struct!.failOnNoGroupsFound),
+    monitor_ids: cdktn.listMapper(deploymentGateRuleOptionsMonitorIdsToTerraform, false)(struct!.monitorIds),
     query: cdktn.stringToTerraform(struct!.query),
+    warmup: cdktn.numberToTerraform(struct!.warmup),
   }
 }
 
@@ -83,6 +268,12 @@ export function deploymentGateRuleOptionsToHclTerraform(struct?: DeploymentGateR
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
+    allowed_resources: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedResources),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
     duration: {
       value: cdktn.numberToHclTerraform(struct!.duration),
       isBlock: false,
@@ -95,11 +286,35 @@ export function deploymentGateRuleOptionsToHclTerraform(struct?: DeploymentGateR
       type: "list",
       storageClassType: "stringList",
     },
+    fail_on_no_data: {
+      value: cdktn.booleanToHclTerraform(struct!.failOnNoData),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    fail_on_no_groups_found: {
+      value: cdktn.booleanToHclTerraform(struct!.failOnNoGroupsFound),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    monitor_ids: {
+      value: cdktn.listMapperHcl(deploymentGateRuleOptionsMonitorIdsToHclTerraform, false)(struct!.monitorIds),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DeploymentGateRuleOptionsMonitorIdsList",
+    },
     query: {
       value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    warmup: {
+      value: cdktn.numberToHclTerraform(struct!.warmup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
     },
   };
 
@@ -125,6 +340,10 @@ export class DeploymentGateRuleOptionsOutputReference extends cdktn.ComplexObjec
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._allowedResources !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedResources = this._allowedResources;
+    }
     if (this._duration !== undefined) {
       hasAnyValues = true;
       internalValueResult.duration = this._duration;
@@ -133,9 +352,25 @@ export class DeploymentGateRuleOptionsOutputReference extends cdktn.ComplexObjec
       hasAnyValues = true;
       internalValueResult.excludedResources = this._excludedResources;
     }
+    if (this._failOnNoData !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.failOnNoData = this._failOnNoData;
+    }
+    if (this._failOnNoGroupsFound !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.failOnNoGroupsFound = this._failOnNoGroupsFound;
+    }
+    if (this._monitorIds?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.monitorIds = this._monitorIds?.internalValue;
+    }
     if (this._query !== undefined) {
       hasAnyValues = true;
       internalValueResult.query = this._query;
+    }
+    if (this._warmup !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.warmup = this._warmup;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -144,9 +379,14 @@ export class DeploymentGateRuleOptionsOutputReference extends cdktn.ComplexObjec
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._allowedResources = undefined;
       this._duration = undefined;
       this._excludedResources = undefined;
+      this._failOnNoData = undefined;
+      this._failOnNoGroupsFound = undefined;
+      this._monitorIds.internalValue = undefined;
       this._query = undefined;
+      this._warmup = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -155,10 +395,31 @@ export class DeploymentGateRuleOptionsOutputReference extends cdktn.ComplexObjec
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._allowedResources = value.allowedResources;
       this._duration = value.duration;
       this._excludedResources = value.excludedResources;
+      this._failOnNoData = value.failOnNoData;
+      this._failOnNoGroupsFound = value.failOnNoGroupsFound;
+      this._monitorIds.internalValue = value.monitorIds;
       this._query = value.query;
+      this._warmup = value.warmup;
     }
+  }
+
+  // allowed_resources - computed: false, optional: true, required: false
+  private _allowedResources?: string[]; 
+  public get allowedResources() {
+    return this.getListAttribute('allowed_resources');
+  }
+  public set allowedResources(value: string[]) {
+    this._allowedResources = value;
+  }
+  public resetAllowedResources() {
+    this._allowedResources = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedResourcesInput() {
+    return this._allowedResources;
   }
 
   // duration - computed: false, optional: true, required: false
@@ -193,6 +454,54 @@ export class DeploymentGateRuleOptionsOutputReference extends cdktn.ComplexObjec
     return this._excludedResources;
   }
 
+  // fail_on_no_data - computed: false, optional: true, required: false
+  private _failOnNoData?: boolean | cdktn.IResolvable; 
+  public get failOnNoData() {
+    return this.getBooleanAttribute('fail_on_no_data');
+  }
+  public set failOnNoData(value: boolean | cdktn.IResolvable) {
+    this._failOnNoData = value;
+  }
+  public resetFailOnNoData() {
+    this._failOnNoData = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get failOnNoDataInput() {
+    return this._failOnNoData;
+  }
+
+  // fail_on_no_groups_found - computed: false, optional: true, required: false
+  private _failOnNoGroupsFound?: boolean | cdktn.IResolvable; 
+  public get failOnNoGroupsFound() {
+    return this.getBooleanAttribute('fail_on_no_groups_found');
+  }
+  public set failOnNoGroupsFound(value: boolean | cdktn.IResolvable) {
+    this._failOnNoGroupsFound = value;
+  }
+  public resetFailOnNoGroupsFound() {
+    this._failOnNoGroupsFound = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get failOnNoGroupsFoundInput() {
+    return this._failOnNoGroupsFound;
+  }
+
+  // monitor_ids - computed: false, optional: true, required: false
+  private _monitorIds = new DeploymentGateRuleOptionsMonitorIdsList(this, "monitor_ids", false);
+  public get monitorIds() {
+    return this._monitorIds;
+  }
+  public putMonitorIds(value: DeploymentGateRuleOptionsMonitorIds[] | cdktn.IResolvable) {
+    this._monitorIds.internalValue = value;
+  }
+  public resetMonitorIds() {
+    this._monitorIds.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get monitorIdsInput() {
+    return this._monitorIds.internalValue;
+  }
+
   // query - computed: false, optional: true, required: false
   private _query?: string; 
   public get query() {
@@ -208,30 +517,46 @@ export class DeploymentGateRuleOptionsOutputReference extends cdktn.ComplexObjec
   public get queryInput() {
     return this._query;
   }
+
+  // warmup - computed: false, optional: true, required: false
+  private _warmup?: number; 
+  public get warmup() {
+    return this.getNumberAttribute('warmup');
+  }
+  public set warmup(value: number) {
+    this._warmup = value;
+  }
+  public resetWarmup() {
+    this._warmup = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get warmupInput() {
+    return this._warmup;
+  }
 }
 export interface DeploymentGateRule {
   /**
   * Whether the rule is in dry run mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
   */
   readonly dryRun?: boolean | cdktn.IResolvable;
   /**
   * The rule name. Must be unique within the deployment gate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#name DeploymentGate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#name DeploymentGate#name}
   */
   readonly name: string;
   /**
   * The rule type (e.g., 'faulty_deployment_detection', 'monitor').
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#type DeploymentGate#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#type DeploymentGate#type}
   */
   readonly type: string;
   /**
   * options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#options DeploymentGate#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#options DeploymentGate#options}
   */
   readonly options?: DeploymentGateRuleOptions;
 }
@@ -433,7 +758,7 @@ export class DeploymentGateRuleList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate datadog_deployment_gate}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate datadog_deployment_gate}
 */
 export class DeploymentGate extends cdktn.TerraformResource {
 
@@ -449,7 +774,7 @@ export class DeploymentGate extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DeploymentGate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DeploymentGate to import
-  * @param importFromId The id of the existing DeploymentGate that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DeploymentGate that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DeploymentGate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -461,7 +786,7 @@ export class DeploymentGate extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate datadog_deployment_gate} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate datadog_deployment_gate} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -472,7 +797,7 @@ export class DeploymentGate extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_deployment_gate',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.25.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

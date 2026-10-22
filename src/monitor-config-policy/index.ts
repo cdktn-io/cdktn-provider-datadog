@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor_config_policy
+// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_config_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface MonitorConfigPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor_config_policy#id MonitorConfigPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_config_policy#id MonitorConfigPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +22,19 @@ export interface MonitorConfigPolicyConfig extends cdktn.TerraformMetaArguments 
   /**
   * The monitor config policy type Valid values are `tag`, `downtime`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor_config_policy#policy_type MonitorConfigPolicy#policy_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_config_policy#policy_type MonitorConfigPolicy#policy_type}
   */
   readonly policyType: string;
   /**
   * downtime_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor_config_policy#downtime_policy MonitorConfigPolicy#downtime_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_config_policy#downtime_policy MonitorConfigPolicy#downtime_policy}
   */
   readonly downtimePolicy?: MonitorConfigPolicyDowntimePolicy;
   /**
   * tag_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor_config_policy#tag_policy MonitorConfigPolicy#tag_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_config_policy#tag_policy MonitorConfigPolicy#tag_policy}
   */
   readonly tagPolicy?: MonitorConfigPolicyTagPolicy;
 }
@@ -42,7 +42,7 @@ export interface MonitorConfigPolicyDowntimePolicy {
   /**
   * The maximum allowed downtime duration, in milliseconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor_config_policy#max_duration_ms MonitorConfigPolicy#max_duration_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_config_policy#max_duration_ms MonitorConfigPolicy#max_duration_ms}
   */
   readonly maxDurationMs: number;
 }
@@ -125,19 +125,19 @@ export interface MonitorConfigPolicyTagPolicy {
   /**
   * The key of the tag
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor_config_policy#tag_key MonitorConfigPolicy#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_config_policy#tag_key MonitorConfigPolicy#tag_key}
   */
   readonly tagKey: string;
   /**
   * If a tag key is required for monitor creation
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor_config_policy#tag_key_required MonitorConfigPolicy#tag_key_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_config_policy#tag_key_required MonitorConfigPolicy#tag_key_required}
   */
   readonly tagKeyRequired: boolean | cdktn.IResolvable;
   /**
   * Valid values for the tag
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor_config_policy#valid_tag_values MonitorConfigPolicy#valid_tag_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_config_policy#valid_tag_values MonitorConfigPolicy#valid_tag_values}
   */
   readonly validTagValues: string[];
 }
@@ -270,7 +270,7 @@ export class MonitorConfigPolicyTagPolicyOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor_config_policy datadog_monitor_config_policy}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_config_policy datadog_monitor_config_policy}
 */
 export class MonitorConfigPolicy extends cdktn.TerraformResource {
 
@@ -286,7 +286,7 @@ export class MonitorConfigPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MonitorConfigPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MonitorConfigPolicy to import
-  * @param importFromId The id of the existing MonitorConfigPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor_config_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MonitorConfigPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_config_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MonitorConfigPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -298,7 +298,7 @@ export class MonitorConfigPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor_config_policy datadog_monitor_config_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_config_policy datadog_monitor_config_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -309,7 +309,7 @@ export class MonitorConfigPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_monitor_config_policy',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.25.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

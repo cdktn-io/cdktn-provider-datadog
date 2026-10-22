@@ -8,31 +8,31 @@ export interface ObservabilityPipelineConfigDestinationAmazonOpensearchAuth {
   /**
   * ARN of the role to assume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
   */
   readonly assumeRole?: string;
   /**
   * AWS region override (if applicable).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#aws_region ObservabilityPipeline#aws_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#aws_region ObservabilityPipeline#aws_region}
   */
   readonly awsRegion?: string;
   /**
   * External ID for assumed role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
   */
   readonly externalId?: string;
   /**
   * Session name for assumed role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
   */
   readonly sessionName?: string;
   /**
   * The authentication strategy to use (e.g. aws or basic).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
   */
   readonly strategy: string;
 }
@@ -263,13 +263,13 @@ export interface ObservabilityPipelineConfigDestinationAmazonOpensearchBufferDis
   /**
   * Maximum size of the disk buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -416,19 +416,19 @@ export interface ObservabilityPipelineConfigDestinationAmazonOpensearchBufferMem
   /**
   * Maximum events for the memory buffer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
   */
   readonly maxEvents?: number;
   /**
   * Maximum size of the memory buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -604,13 +604,13 @@ export interface ObservabilityPipelineConfigDestinationAmazonOpensearchBuffer {
   /**
   * disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
   */
   readonly disk?: ObservabilityPipelineConfigDestinationAmazonOpensearchBufferDisk[] | cdktn.IResolvable;
   /**
   * memory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
   */
   readonly memory?: ObservabilityPipelineConfigDestinationAmazonOpensearchBufferMemory[] | cdktn.IResolvable;
 }
@@ -757,19 +757,19 @@ export interface ObservabilityPipelineConfigDestinationAmazonOpensearch {
   /**
   * The index or datastream to write logs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
   */
   readonly bulkIndex?: string;
   /**
   * auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
   */
   readonly auth?: ObservabilityPipelineConfigDestinationAmazonOpensearchAuth[] | cdktn.IResolvable;
   /**
   * buffer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
   */
   readonly buffer?: ObservabilityPipelineConfigDestinationAmazonOpensearchBuffer[] | cdktn.IResolvable;
 }
@@ -945,19 +945,19 @@ export interface ObservabilityPipelineConfigDestinationAmazonS3Auth {
   /**
   * The Amazon Resource Name (ARN) of the role to assume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
   */
   readonly assumeRole?: string;
   /**
   * A unique identifier for cross-account role assumption.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
   */
   readonly externalId?: string;
   /**
   * A session identifier used for logging and tracing the assumed role session.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
   */
   readonly sessionName?: string;
 }
@@ -1133,13 +1133,13 @@ export interface ObservabilityPipelineConfigDestinationAmazonS3BufferDisk {
   /**
   * Maximum size of the disk buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -1286,19 +1286,19 @@ export interface ObservabilityPipelineConfigDestinationAmazonS3BufferMemory {
   /**
   * Maximum events for the memory buffer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
   */
   readonly maxEvents?: number;
   /**
   * Maximum size of the memory buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -1474,13 +1474,13 @@ export interface ObservabilityPipelineConfigDestinationAmazonS3Buffer {
   /**
   * disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
   */
   readonly disk?: ObservabilityPipelineConfigDestinationAmazonS3BufferDisk[] | cdktn.IResolvable;
   /**
   * memory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
   */
   readonly memory?: ObservabilityPipelineConfigDestinationAmazonS3BufferMemory[] | cdktn.IResolvable;
 }
@@ -1627,13 +1627,13 @@ export interface ObservabilityPipelineConfigDestinationAmazonS3Compression {
   /**
   * Compression algorithm. One of `gzip` or `zstd`. Valid values are `gzip`, `zstd`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
   */
   readonly algorithm: string;
   /**
   * Compression level. Applies to `gzip` (1-9) and `zstd` (1-21).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
   */
   readonly level: number;
 }
@@ -1774,55 +1774,55 @@ export interface ObservabilityPipelineConfigDestinationAmazonS3 {
   /**
   * S3 bucket name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
   */
   readonly bucket: string;
   /**
   * Prefix for object keys.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#key_prefix ObservabilityPipeline#key_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#key_prefix ObservabilityPipeline#key_prefix}
   */
   readonly keyPrefix: string;
   /**
   * AWS region of the S3 bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
   */
   readonly region: string;
   /**
   * The server-side encryption algorithm used when storing objects in S3. Valid values: `aws:kms`, `AES256`. Valid values are `aws:kms`, `AES256`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#server_side_encryption ObservabilityPipeline#server_side_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#server_side_encryption ObservabilityPipeline#server_side_encryption}
   */
   readonly serverSideEncryption?: string;
   /**
   * ID of the AWS KMS key to use for SSE-KMS encryption. Only applies when `server_side_encryption` is `aws:kms`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#ssekms_key_id ObservabilityPipeline#ssekms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#ssekms_key_id ObservabilityPipeline#ssekms_key_id}
   */
   readonly ssekmsKeyId?: string;
   /**
   * S3 storage class. Valid values are `STANDARD`, `REDUCED_REDUNDANCY`, `INTELLIGENT_TIERING`, `STANDARD_IA`, `EXPRESS_ONEZONE`, `ONEZONE_IA`, `GLACIER`, `GLACIER_IR`, `DEEP_ARCHIVE`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#storage_class ObservabilityPipeline#storage_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#storage_class ObservabilityPipeline#storage_class}
   */
   readonly storageClass: string;
   /**
   * auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
   */
   readonly auth?: ObservabilityPipelineConfigDestinationAmazonS3Auth[] | cdktn.IResolvable;
   /**
   * buffer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
   */
   readonly buffer?: ObservabilityPipelineConfigDestinationAmazonS3Buffer[] | cdktn.IResolvable;
   /**
   * compression block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
   */
   readonly compression?: ObservabilityPipelineConfigDestinationAmazonS3Compression[] | cdktn.IResolvable;
 }
@@ -2160,19 +2160,19 @@ export interface ObservabilityPipelineConfigDestinationAmazonS3GenericAuth {
   /**
   * The Amazon Resource Name (ARN) of the role to assume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
   */
   readonly assumeRole?: string;
   /**
   * A unique identifier for cross-account role assumption.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
   */
   readonly externalId?: string;
   /**
   * A session identifier used for logging and tracing the assumed role session.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
   */
   readonly sessionName?: string;
 }
@@ -2348,13 +2348,13 @@ export interface ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSetti
   /**
   * Maximum batch size in bytes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#batch_size ObservabilityPipeline#batch_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#batch_size ObservabilityPipeline#batch_size}
   */
   readonly batchSize?: number;
   /**
   * Maximum number of seconds to wait before flushing the batch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#timeout_secs ObservabilityPipeline#timeout_secs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#timeout_secs ObservabilityPipeline#timeout_secs}
   */
   readonly timeoutSecs?: number;
 }
@@ -2501,13 +2501,13 @@ export interface ObservabilityPipelineConfigDestinationAmazonS3GenericBufferDisk
   /**
   * Maximum size of the disk buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -2654,19 +2654,19 @@ export interface ObservabilityPipelineConfigDestinationAmazonS3GenericBufferMemo
   /**
   * Maximum events for the memory buffer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
   */
   readonly maxEvents?: number;
   /**
   * Maximum size of the memory buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -2842,13 +2842,13 @@ export interface ObservabilityPipelineConfigDestinationAmazonS3GenericBuffer {
   /**
   * disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
   */
   readonly disk?: ObservabilityPipelineConfigDestinationAmazonS3GenericBufferDisk[] | cdktn.IResolvable;
   /**
   * memory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
   */
   readonly memory?: ObservabilityPipelineConfigDestinationAmazonS3GenericBufferMemory[] | cdktn.IResolvable;
 }
@@ -2995,13 +2995,13 @@ export interface ObservabilityPipelineConfigDestinationAmazonS3GenericCompressio
   /**
   * Compression algorithm. Valid values are `gzip`, `zstd`, `snappy`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
   */
   readonly algorithm: string;
   /**
   * Compression level.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
   */
   readonly level?: number;
 }
@@ -3145,7 +3145,7 @@ export interface ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding {
   /**
   * The encoding type. Valid values are `json`, `parquet`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#type ObservabilityPipeline#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#type ObservabilityPipeline#type}
   */
   readonly type: string;
 }
@@ -3260,67 +3260,67 @@ export interface ObservabilityPipelineConfigDestinationAmazonS3Generic {
   /**
   * S3 bucket name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
   */
   readonly bucket: string;
   /**
   * Optional prefix for object keys.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#key_prefix ObservabilityPipeline#key_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#key_prefix ObservabilityPipeline#key_prefix}
   */
   readonly keyPrefix?: string;
   /**
   * AWS region of the S3 bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
   */
   readonly region: string;
   /**
   * The server-side encryption algorithm used when storing objects in S3. Valid values: `aws:kms`, `AES256`. Valid values are `aws:kms`, `AES256`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#server_side_encryption ObservabilityPipeline#server_side_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#server_side_encryption ObservabilityPipeline#server_side_encryption}
   */
   readonly serverSideEncryption?: string;
   /**
   * ID of the AWS KMS key to use for SSE-KMS encryption. Only applies when `server_side_encryption` is `aws:kms`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#ssekms_key_id ObservabilityPipeline#ssekms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#ssekms_key_id ObservabilityPipeline#ssekms_key_id}
   */
   readonly ssekmsKeyId?: string;
   /**
   * S3 storage class. Valid values are `STANDARD`, `REDUCED_REDUNDANCY`, `INTELLIGENT_TIERING`, `STANDARD_IA`, `EXPRESS_ONEZONE`, `ONEZONE_IA`, `GLACIER`, `GLACIER_IR`, `DEEP_ARCHIVE`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#storage_class ObservabilityPipeline#storage_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#storage_class ObservabilityPipeline#storage_class}
   */
   readonly storageClass: string;
   /**
   * auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
   */
   readonly auth?: ObservabilityPipelineConfigDestinationAmazonS3GenericAuth[] | cdktn.IResolvable;
   /**
   * batch_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#batch_settings ObservabilityPipeline#batch_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#batch_settings ObservabilityPipeline#batch_settings}
   */
   readonly batchSettings?: ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings[] | cdktn.IResolvable;
   /**
   * buffer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
   */
   readonly buffer?: ObservabilityPipelineConfigDestinationAmazonS3GenericBuffer[] | cdktn.IResolvable;
   /**
   * compression block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
   */
   readonly compression?: ObservabilityPipelineConfigDestinationAmazonS3GenericCompression[] | cdktn.IResolvable;
   /**
   * encoding block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
   */
   readonly encoding?: ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding[] | cdktn.IResolvable;
 }
@@ -3719,19 +3719,19 @@ export interface ObservabilityPipelineConfigDestinationAmazonSecurityLakeAuth {
   /**
   * The Amazon Resource Name (ARN) of the role to assume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
   */
   readonly assumeRole?: string;
   /**
   * A unique identifier for cross-account role assumption.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
   */
   readonly externalId?: string;
   /**
   * A session identifier used for logging and tracing the assumed role session.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
   */
   readonly sessionName?: string;
 }
@@ -3907,13 +3907,13 @@ export interface ObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferD
   /**
   * Maximum size of the disk buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -4060,19 +4060,19 @@ export interface ObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferM
   /**
   * Maximum events for the memory buffer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
   */
   readonly maxEvents?: number;
   /**
   * Maximum size of the memory buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -4248,13 +4248,13 @@ export interface ObservabilityPipelineConfigDestinationAmazonSecurityLakeBuffer 
   /**
   * disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
   */
   readonly disk?: ObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferDisk[] | cdktn.IResolvable;
   /**
   * memory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
   */
   readonly memory?: ObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferMemory[] | cdktn.IResolvable;
 }
@@ -4401,25 +4401,25 @@ export interface ObservabilityPipelineConfigDestinationAmazonSecurityLakeTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
 }
@@ -4621,37 +4621,37 @@ export interface ObservabilityPipelineConfigDestinationAmazonSecurityLake {
   /**
   * Name of the Amazon S3 bucket in Security Lake (3-63 characters).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
   */
   readonly bucket: string;
   /**
   * Custom source name for the logs in Security Lake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#custom_source_name ObservabilityPipeline#custom_source_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#custom_source_name ObservabilityPipeline#custom_source_name}
   */
   readonly customSourceName: string;
   /**
   * AWS region of the Security Lake bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
   */
   readonly region: string;
   /**
   * auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
   */
   readonly auth?: ObservabilityPipelineConfigDestinationAmazonSecurityLakeAuth[] | cdktn.IResolvable;
   /**
   * buffer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
   */
   readonly buffer?: ObservabilityPipelineConfigDestinationAmazonSecurityLakeBuffer[] | cdktn.IResolvable;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigDestinationAmazonSecurityLakeTls[] | cdktn.IResolvable;
 }
@@ -4901,17 +4901,2563 @@ export class ObservabilityPipelineConfigDestinationAmazonSecurityLakeList extend
     return new ObservabilityPipelineConfigDestinationAmazonSecurityLakeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface ObservabilityPipelineConfigDestinationAzureStorageBufferDisk {
+export interface ObservabilityPipelineConfigDestinationAzureDataExplorerAuthAzureCli {
+}
+
+export function observabilityPipelineConfigDestinationAzureDataExplorerAuthAzureCliToTerraform(struct?: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthAzureCli | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function observabilityPipelineConfigDestinationAzureDataExplorerAuthAzureCliToHclTerraform(struct?: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthAzureCli | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ObservabilityPipelineConfigDestinationAzureDataExplorerAuthAzureCliOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigDestinationAzureDataExplorerAuthAzureCli | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthAzureCli | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+}
+
+export class ObservabilityPipelineConfigDestinationAzureDataExplorerAuthAzureCliList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigDestinationAzureDataExplorerAuthAzureCli[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigDestinationAzureDataExplorerAuthAzureCliOutputReference {
+    return new ObservabilityPipelineConfigDestinationAzureDataExplorerAuthAzureCliOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientCertificate {
+  /**
+  * The Microsoft Entra application (client) ID.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#azure_client_id ObservabilityPipeline#azure_client_id}
+  */
+  readonly azureClientId: string;
+  /**
+  * The Microsoft Entra tenant ID.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#azure_tenant_id ObservabilityPipeline#azure_tenant_id}
+  */
+  readonly azureTenantId: string;
+  /**
+  * Name of the environment variable or secret that holds the password for the client certificate.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#certificate_password_key ObservabilityPipeline#certificate_password_key}
+  */
+  readonly certificatePasswordKey?: string;
+  /**
+  * Path to the `.pfx` client certificate file on the Worker.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#certificate_path ObservabilityPipeline#certificate_path}
+  */
+  readonly certificatePath: string;
+}
+
+export function observabilityPipelineConfigDestinationAzureDataExplorerAuthClientCertificateToTerraform(struct?: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    azure_client_id: cdktn.stringToTerraform(struct!.azureClientId),
+    azure_tenant_id: cdktn.stringToTerraform(struct!.azureTenantId),
+    certificate_password_key: cdktn.stringToTerraform(struct!.certificatePasswordKey),
+    certificate_path: cdktn.stringToTerraform(struct!.certificatePath),
+  }
+}
+
+
+export function observabilityPipelineConfigDestinationAzureDataExplorerAuthClientCertificateToHclTerraform(struct?: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    azure_client_id: {
+      value: cdktn.stringToHclTerraform(struct!.azureClientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    azure_tenant_id: {
+      value: cdktn.stringToHclTerraform(struct!.azureTenantId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    certificate_password_key: {
+      value: cdktn.stringToHclTerraform(struct!.certificatePasswordKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    certificate_path: {
+      value: cdktn.stringToHclTerraform(struct!.certificatePath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientCertificateOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientCertificate | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._azureClientId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.azureClientId = this._azureClientId;
+    }
+    if (this._azureTenantId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.azureTenantId = this._azureTenantId;
+    }
+    if (this._certificatePasswordKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.certificatePasswordKey = this._certificatePasswordKey;
+    }
+    if (this._certificatePath !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.certificatePath = this._certificatePath;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientCertificate | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._azureClientId = undefined;
+      this._azureTenantId = undefined;
+      this._certificatePasswordKey = undefined;
+      this._certificatePath = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._azureClientId = value.azureClientId;
+      this._azureTenantId = value.azureTenantId;
+      this._certificatePasswordKey = value.certificatePasswordKey;
+      this._certificatePath = value.certificatePath;
+    }
+  }
+
+  // azure_client_id - computed: false, optional: false, required: true
+  private _azureClientId?: string; 
+  public get azureClientId() {
+    return this.getStringAttribute('azure_client_id');
+  }
+  public set azureClientId(value: string) {
+    this._azureClientId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get azureClientIdInput() {
+    return this._azureClientId;
+  }
+
+  // azure_tenant_id - computed: false, optional: false, required: true
+  private _azureTenantId?: string; 
+  public get azureTenantId() {
+    return this.getStringAttribute('azure_tenant_id');
+  }
+  public set azureTenantId(value: string) {
+    this._azureTenantId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get azureTenantIdInput() {
+    return this._azureTenantId;
+  }
+
+  // certificate_password_key - computed: false, optional: true, required: false
+  private _certificatePasswordKey?: string; 
+  public get certificatePasswordKey() {
+    return this.getStringAttribute('certificate_password_key');
+  }
+  public set certificatePasswordKey(value: string) {
+    this._certificatePasswordKey = value;
+  }
+  public resetCertificatePasswordKey() {
+    this._certificatePasswordKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificatePasswordKeyInput() {
+    return this._certificatePasswordKey;
+  }
+
+  // certificate_path - computed: false, optional: false, required: true
+  private _certificatePath?: string; 
+  public get certificatePath() {
+    return this.getStringAttribute('certificate_path');
+  }
+  public set certificatePath(value: string) {
+    this._certificatePath = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificatePathInput() {
+    return this._certificatePath;
+  }
+}
+
+export class ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientCertificateList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientCertificate[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientCertificateOutputReference {
+    return new ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientCertificateOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientSecret {
+  /**
+  * The Microsoft Entra application (client) ID.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#azure_client_id ObservabilityPipeline#azure_client_id}
+  */
+  readonly azureClientId: string;
+  /**
+  * Name of the environment variable or secret that holds the Microsoft Entra application client secret.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#azure_client_secret_key ObservabilityPipeline#azure_client_secret_key}
+  */
+  readonly azureClientSecretKey: string;
+  /**
+  * The Microsoft Entra tenant ID.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#azure_tenant_id ObservabilityPipeline#azure_tenant_id}
+  */
+  readonly azureTenantId: string;
+}
+
+export function observabilityPipelineConfigDestinationAzureDataExplorerAuthClientSecretToTerraform(struct?: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientSecret | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    azure_client_id: cdktn.stringToTerraform(struct!.azureClientId),
+    azure_client_secret_key: cdktn.stringToTerraform(struct!.azureClientSecretKey),
+    azure_tenant_id: cdktn.stringToTerraform(struct!.azureTenantId),
+  }
+}
+
+
+export function observabilityPipelineConfigDestinationAzureDataExplorerAuthClientSecretToHclTerraform(struct?: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientSecret | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    azure_client_id: {
+      value: cdktn.stringToHclTerraform(struct!.azureClientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    azure_client_secret_key: {
+      value: cdktn.stringToHclTerraform(struct!.azureClientSecretKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    azure_tenant_id: {
+      value: cdktn.stringToHclTerraform(struct!.azureTenantId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientSecretOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientSecret | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._azureClientId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.azureClientId = this._azureClientId;
+    }
+    if (this._azureClientSecretKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.azureClientSecretKey = this._azureClientSecretKey;
+    }
+    if (this._azureTenantId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.azureTenantId = this._azureTenantId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientSecret | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._azureClientId = undefined;
+      this._azureClientSecretKey = undefined;
+      this._azureTenantId = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._azureClientId = value.azureClientId;
+      this._azureClientSecretKey = value.azureClientSecretKey;
+      this._azureTenantId = value.azureTenantId;
+    }
+  }
+
+  // azure_client_id - computed: false, optional: false, required: true
+  private _azureClientId?: string; 
+  public get azureClientId() {
+    return this.getStringAttribute('azure_client_id');
+  }
+  public set azureClientId(value: string) {
+    this._azureClientId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get azureClientIdInput() {
+    return this._azureClientId;
+  }
+
+  // azure_client_secret_key - computed: false, optional: false, required: true
+  private _azureClientSecretKey?: string; 
+  public get azureClientSecretKey() {
+    return this.getStringAttribute('azure_client_secret_key');
+  }
+  public set azureClientSecretKey(value: string) {
+    this._azureClientSecretKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get azureClientSecretKeyInput() {
+    return this._azureClientSecretKey;
+  }
+
+  // azure_tenant_id - computed: false, optional: false, required: true
+  private _azureTenantId?: string; 
+  public get azureTenantId() {
+    return this.getStringAttribute('azure_tenant_id');
+  }
+  public set azureTenantId(value: string) {
+    this._azureTenantId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get azureTenantIdInput() {
+    return this._azureTenantId;
+  }
+}
+
+export class ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientSecretList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientSecret[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientSecretOutputReference {
+    return new ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientSecretOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentity {
+  /**
+  * The ID of the user-assigned managed identity. If omitted, the system-assigned managed identity is used.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#user_assigned_managed_identity_id ObservabilityPipeline#user_assigned_managed_identity_id}
+  */
+  readonly userAssignedManagedIdentityId?: string;
+  /**
+  * The type of the user-assigned managed identity ID. Valid values are `client_id`, `object_id`, and `resource_id`. Valid values are `client_id`, `object_id`, `resource_id`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#user_assigned_managed_identity_id_type ObservabilityPipeline#user_assigned_managed_identity_id_type}
+  */
+  readonly userAssignedManagedIdentityIdType?: string;
+}
+
+export function observabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityToTerraform(struct?: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentity | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    user_assigned_managed_identity_id: cdktn.stringToTerraform(struct!.userAssignedManagedIdentityId),
+    user_assigned_managed_identity_id_type: cdktn.stringToTerraform(struct!.userAssignedManagedIdentityIdType),
+  }
+}
+
+
+export function observabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityToHclTerraform(struct?: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentity | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    user_assigned_managed_identity_id: {
+      value: cdktn.stringToHclTerraform(struct!.userAssignedManagedIdentityId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_assigned_managed_identity_id_type: {
+      value: cdktn.stringToHclTerraform(struct!.userAssignedManagedIdentityIdType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentity | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._userAssignedManagedIdentityId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userAssignedManagedIdentityId = this._userAssignedManagedIdentityId;
+    }
+    if (this._userAssignedManagedIdentityIdType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userAssignedManagedIdentityIdType = this._userAssignedManagedIdentityIdType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentity | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._userAssignedManagedIdentityId = undefined;
+      this._userAssignedManagedIdentityIdType = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._userAssignedManagedIdentityId = value.userAssignedManagedIdentityId;
+      this._userAssignedManagedIdentityIdType = value.userAssignedManagedIdentityIdType;
+    }
+  }
+
+  // user_assigned_managed_identity_id - computed: false, optional: true, required: false
+  private _userAssignedManagedIdentityId?: string; 
+  public get userAssignedManagedIdentityId() {
+    return this.getStringAttribute('user_assigned_managed_identity_id');
+  }
+  public set userAssignedManagedIdentityId(value: string) {
+    this._userAssignedManagedIdentityId = value;
+  }
+  public resetUserAssignedManagedIdentityId() {
+    this._userAssignedManagedIdentityId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userAssignedManagedIdentityIdInput() {
+    return this._userAssignedManagedIdentityId;
+  }
+
+  // user_assigned_managed_identity_id_type - computed: false, optional: true, required: false
+  private _userAssignedManagedIdentityIdType?: string; 
+  public get userAssignedManagedIdentityIdType() {
+    return this.getStringAttribute('user_assigned_managed_identity_id_type');
+  }
+  public set userAssignedManagedIdentityIdType(value: string) {
+    this._userAssignedManagedIdentityIdType = value;
+  }
+  public resetUserAssignedManagedIdentityIdType() {
+    this._userAssignedManagedIdentityIdType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userAssignedManagedIdentityIdTypeInput() {
+    return this._userAssignedManagedIdentityIdType;
+  }
+}
+
+export class ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentity[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityOutputReference {
+    return new ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityClientAssertion {
+  /**
+  * The client ID of the Microsoft Entra application that trusts the managed identity.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#client_assertion_client_id ObservabilityPipeline#client_assertion_client_id}
+  */
+  readonly clientAssertionClientId: string;
+  /**
+  * The tenant ID of the Microsoft Entra application that trusts the managed identity.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#client_assertion_tenant_id ObservabilityPipeline#client_assertion_tenant_id}
+  */
+  readonly clientAssertionTenantId: string;
+  /**
+  * The ID of the user-assigned managed identity. If omitted, the system-assigned managed identity is used.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#user_assigned_managed_identity_id ObservabilityPipeline#user_assigned_managed_identity_id}
+  */
+  readonly userAssignedManagedIdentityId?: string;
+  /**
+  * The type of the user-assigned managed identity ID. Valid values are `client_id`, `object_id`, and `resource_id`. Valid values are `client_id`, `object_id`, `resource_id`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#user_assigned_managed_identity_id_type ObservabilityPipeline#user_assigned_managed_identity_id_type}
+  */
+  readonly userAssignedManagedIdentityIdType?: string;
+}
+
+export function observabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityClientAssertionToTerraform(struct?: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityClientAssertion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    client_assertion_client_id: cdktn.stringToTerraform(struct!.clientAssertionClientId),
+    client_assertion_tenant_id: cdktn.stringToTerraform(struct!.clientAssertionTenantId),
+    user_assigned_managed_identity_id: cdktn.stringToTerraform(struct!.userAssignedManagedIdentityId),
+    user_assigned_managed_identity_id_type: cdktn.stringToTerraform(struct!.userAssignedManagedIdentityIdType),
+  }
+}
+
+
+export function observabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityClientAssertionToHclTerraform(struct?: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityClientAssertion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    client_assertion_client_id: {
+      value: cdktn.stringToHclTerraform(struct!.clientAssertionClientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_assertion_tenant_id: {
+      value: cdktn.stringToHclTerraform(struct!.clientAssertionTenantId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_assigned_managed_identity_id: {
+      value: cdktn.stringToHclTerraform(struct!.userAssignedManagedIdentityId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_assigned_managed_identity_id_type: {
+      value: cdktn.stringToHclTerraform(struct!.userAssignedManagedIdentityIdType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityClientAssertionOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityClientAssertion | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._clientAssertionClientId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientAssertionClientId = this._clientAssertionClientId;
+    }
+    if (this._clientAssertionTenantId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientAssertionTenantId = this._clientAssertionTenantId;
+    }
+    if (this._userAssignedManagedIdentityId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userAssignedManagedIdentityId = this._userAssignedManagedIdentityId;
+    }
+    if (this._userAssignedManagedIdentityIdType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userAssignedManagedIdentityIdType = this._userAssignedManagedIdentityIdType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityClientAssertion | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._clientAssertionClientId = undefined;
+      this._clientAssertionTenantId = undefined;
+      this._userAssignedManagedIdentityId = undefined;
+      this._userAssignedManagedIdentityIdType = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._clientAssertionClientId = value.clientAssertionClientId;
+      this._clientAssertionTenantId = value.clientAssertionTenantId;
+      this._userAssignedManagedIdentityId = value.userAssignedManagedIdentityId;
+      this._userAssignedManagedIdentityIdType = value.userAssignedManagedIdentityIdType;
+    }
+  }
+
+  // client_assertion_client_id - computed: false, optional: false, required: true
+  private _clientAssertionClientId?: string; 
+  public get clientAssertionClientId() {
+    return this.getStringAttribute('client_assertion_client_id');
+  }
+  public set clientAssertionClientId(value: string) {
+    this._clientAssertionClientId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientAssertionClientIdInput() {
+    return this._clientAssertionClientId;
+  }
+
+  // client_assertion_tenant_id - computed: false, optional: false, required: true
+  private _clientAssertionTenantId?: string; 
+  public get clientAssertionTenantId() {
+    return this.getStringAttribute('client_assertion_tenant_id');
+  }
+  public set clientAssertionTenantId(value: string) {
+    this._clientAssertionTenantId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientAssertionTenantIdInput() {
+    return this._clientAssertionTenantId;
+  }
+
+  // user_assigned_managed_identity_id - computed: false, optional: true, required: false
+  private _userAssignedManagedIdentityId?: string; 
+  public get userAssignedManagedIdentityId() {
+    return this.getStringAttribute('user_assigned_managed_identity_id');
+  }
+  public set userAssignedManagedIdentityId(value: string) {
+    this._userAssignedManagedIdentityId = value;
+  }
+  public resetUserAssignedManagedIdentityId() {
+    this._userAssignedManagedIdentityId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userAssignedManagedIdentityIdInput() {
+    return this._userAssignedManagedIdentityId;
+  }
+
+  // user_assigned_managed_identity_id_type - computed: false, optional: true, required: false
+  private _userAssignedManagedIdentityIdType?: string; 
+  public get userAssignedManagedIdentityIdType() {
+    return this.getStringAttribute('user_assigned_managed_identity_id_type');
+  }
+  public set userAssignedManagedIdentityIdType(value: string) {
+    this._userAssignedManagedIdentityIdType = value;
+  }
+  public resetUserAssignedManagedIdentityIdType() {
+    this._userAssignedManagedIdentityIdType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userAssignedManagedIdentityIdTypeInput() {
+    return this._userAssignedManagedIdentityIdType;
+  }
+}
+
+export class ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityClientAssertionList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityClientAssertion[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityClientAssertionOutputReference {
+    return new ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityClientAssertionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigDestinationAzureDataExplorerAuthWorkloadIdentity {
+  /**
+  * The client ID of the Microsoft Entra application. If omitted, it is read from the environment.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#client_id ObservabilityPipeline#client_id}
+  */
+  readonly clientId?: string;
+  /**
+  * The Microsoft Entra tenant ID. If omitted, it is read from the environment.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#tenant_id ObservabilityPipeline#tenant_id}
+  */
+  readonly tenantId?: string;
+  /**
+  * Path to the federated token file. If omitted, it is read from the environment.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#token_file_path ObservabilityPipeline#token_file_path}
+  */
+  readonly tokenFilePath?: string;
+}
+
+export function observabilityPipelineConfigDestinationAzureDataExplorerAuthWorkloadIdentityToTerraform(struct?: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthWorkloadIdentity | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    tenant_id: cdktn.stringToTerraform(struct!.tenantId),
+    token_file_path: cdktn.stringToTerraform(struct!.tokenFilePath),
+  }
+}
+
+
+export function observabilityPipelineConfigDestinationAzureDataExplorerAuthWorkloadIdentityToHclTerraform(struct?: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthWorkloadIdentity | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    client_id: {
+      value: cdktn.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tenant_id: {
+      value: cdktn.stringToHclTerraform(struct!.tenantId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    token_file_path: {
+      value: cdktn.stringToHclTerraform(struct!.tokenFilePath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigDestinationAzureDataExplorerAuthWorkloadIdentityOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigDestinationAzureDataExplorerAuthWorkloadIdentity | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._clientId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientId = this._clientId;
+    }
+    if (this._tenantId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tenantId = this._tenantId;
+    }
+    if (this._tokenFilePath !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tokenFilePath = this._tokenFilePath;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthWorkloadIdentity | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._clientId = undefined;
+      this._tenantId = undefined;
+      this._tokenFilePath = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._clientId = value.clientId;
+      this._tenantId = value.tenantId;
+      this._tokenFilePath = value.tokenFilePath;
+    }
+  }
+
+  // client_id - computed: false, optional: true, required: false
+  private _clientId?: string; 
+  public get clientId() {
+    return this.getStringAttribute('client_id');
+  }
+  public set clientId(value: string) {
+    this._clientId = value;
+  }
+  public resetClientId() {
+    this._clientId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientIdInput() {
+    return this._clientId;
+  }
+
+  // tenant_id - computed: false, optional: true, required: false
+  private _tenantId?: string; 
+  public get tenantId() {
+    return this.getStringAttribute('tenant_id');
+  }
+  public set tenantId(value: string) {
+    this._tenantId = value;
+  }
+  public resetTenantId() {
+    this._tenantId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tenantIdInput() {
+    return this._tenantId;
+  }
+
+  // token_file_path - computed: false, optional: true, required: false
+  private _tokenFilePath?: string; 
+  public get tokenFilePath() {
+    return this.getStringAttribute('token_file_path');
+  }
+  public set tokenFilePath(value: string) {
+    this._tokenFilePath = value;
+  }
+  public resetTokenFilePath() {
+    this._tokenFilePath = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenFilePathInput() {
+    return this._tokenFilePath;
+  }
+}
+
+export class ObservabilityPipelineConfigDestinationAzureDataExplorerAuthWorkloadIdentityList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigDestinationAzureDataExplorerAuthWorkloadIdentity[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigDestinationAzureDataExplorerAuthWorkloadIdentityOutputReference {
+    return new ObservabilityPipelineConfigDestinationAzureDataExplorerAuthWorkloadIdentityOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigDestinationAzureDataExplorerAuth {
+  /**
+  * azure_cli block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#azure_cli ObservabilityPipeline#azure_cli}
+  */
+  readonly azureCli?: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthAzureCli[] | cdktn.IResolvable;
+  /**
+  * client_certificate block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#client_certificate ObservabilityPipeline#client_certificate}
+  */
+  readonly clientCertificate?: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientCertificate[] | cdktn.IResolvable;
+  /**
+  * client_secret block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#client_secret ObservabilityPipeline#client_secret}
+  */
+  readonly clientSecret?: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientSecret[] | cdktn.IResolvable;
+  /**
+  * managed_identity block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#managed_identity ObservabilityPipeline#managed_identity}
+  */
+  readonly managedIdentity?: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentity[] | cdktn.IResolvable;
+  /**
+  * managed_identity_client_assertion block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#managed_identity_client_assertion ObservabilityPipeline#managed_identity_client_assertion}
+  */
+  readonly managedIdentityClientAssertion?: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityClientAssertion[] | cdktn.IResolvable;
+  /**
+  * workload_identity block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#workload_identity ObservabilityPipeline#workload_identity}
+  */
+  readonly workloadIdentity?: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthWorkloadIdentity[] | cdktn.IResolvable;
+}
+
+export function observabilityPipelineConfigDestinationAzureDataExplorerAuthToTerraform(struct?: ObservabilityPipelineConfigDestinationAzureDataExplorerAuth | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    azure_cli: cdktn.listMapper(observabilityPipelineConfigDestinationAzureDataExplorerAuthAzureCliToTerraform, true)(struct!.azureCli),
+    client_certificate: cdktn.listMapper(observabilityPipelineConfigDestinationAzureDataExplorerAuthClientCertificateToTerraform, true)(struct!.clientCertificate),
+    client_secret: cdktn.listMapper(observabilityPipelineConfigDestinationAzureDataExplorerAuthClientSecretToTerraform, true)(struct!.clientSecret),
+    managed_identity: cdktn.listMapper(observabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityToTerraform, true)(struct!.managedIdentity),
+    managed_identity_client_assertion: cdktn.listMapper(observabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityClientAssertionToTerraform, true)(struct!.managedIdentityClientAssertion),
+    workload_identity: cdktn.listMapper(observabilityPipelineConfigDestinationAzureDataExplorerAuthWorkloadIdentityToTerraform, true)(struct!.workloadIdentity),
+  }
+}
+
+
+export function observabilityPipelineConfigDestinationAzureDataExplorerAuthToHclTerraform(struct?: ObservabilityPipelineConfigDestinationAzureDataExplorerAuth | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    azure_cli: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigDestinationAzureDataExplorerAuthAzureCliToHclTerraform, true)(struct!.azureCli),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigDestinationAzureDataExplorerAuthAzureCliList",
+    },
+    client_certificate: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigDestinationAzureDataExplorerAuthClientCertificateToHclTerraform, true)(struct!.clientCertificate),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientCertificateList",
+    },
+    client_secret: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigDestinationAzureDataExplorerAuthClientSecretToHclTerraform, true)(struct!.clientSecret),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientSecretList",
+    },
+    managed_identity: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityToHclTerraform, true)(struct!.managedIdentity),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityList",
+    },
+    managed_identity_client_assertion: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityClientAssertionToHclTerraform, true)(struct!.managedIdentityClientAssertion),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityClientAssertionList",
+    },
+    workload_identity: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigDestinationAzureDataExplorerAuthWorkloadIdentityToHclTerraform, true)(struct!.workloadIdentity),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigDestinationAzureDataExplorerAuthWorkloadIdentityList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigDestinationAzureDataExplorerAuthOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigDestinationAzureDataExplorerAuth | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._azureCli?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.azureCli = this._azureCli?.internalValue;
+    }
+    if (this._clientCertificate?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientCertificate = this._clientCertificate?.internalValue;
+    }
+    if (this._clientSecret?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientSecret = this._clientSecret?.internalValue;
+    }
+    if (this._managedIdentity?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.managedIdentity = this._managedIdentity?.internalValue;
+    }
+    if (this._managedIdentityClientAssertion?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.managedIdentityClientAssertion = this._managedIdentityClientAssertion?.internalValue;
+    }
+    if (this._workloadIdentity?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workloadIdentity = this._workloadIdentity?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigDestinationAzureDataExplorerAuth | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._azureCli.internalValue = undefined;
+      this._clientCertificate.internalValue = undefined;
+      this._clientSecret.internalValue = undefined;
+      this._managedIdentity.internalValue = undefined;
+      this._managedIdentityClientAssertion.internalValue = undefined;
+      this._workloadIdentity.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._azureCli.internalValue = value.azureCli;
+      this._clientCertificate.internalValue = value.clientCertificate;
+      this._clientSecret.internalValue = value.clientSecret;
+      this._managedIdentity.internalValue = value.managedIdentity;
+      this._managedIdentityClientAssertion.internalValue = value.managedIdentityClientAssertion;
+      this._workloadIdentity.internalValue = value.workloadIdentity;
+    }
+  }
+
+  // azure_cli - computed: false, optional: true, required: false
+  private _azureCli = new ObservabilityPipelineConfigDestinationAzureDataExplorerAuthAzureCliList(this, "azure_cli", false);
+  public get azureCli() {
+    return this._azureCli;
+  }
+  public putAzureCli(value: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthAzureCli[] | cdktn.IResolvable) {
+    this._azureCli.internalValue = value;
+  }
+  public resetAzureCli() {
+    this._azureCli.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get azureCliInput() {
+    return this._azureCli.internalValue;
+  }
+
+  // client_certificate - computed: false, optional: true, required: false
+  private _clientCertificate = new ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientCertificateList(this, "client_certificate", false);
+  public get clientCertificate() {
+    return this._clientCertificate;
+  }
+  public putClientCertificate(value: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientCertificate[] | cdktn.IResolvable) {
+    this._clientCertificate.internalValue = value;
+  }
+  public resetClientCertificate() {
+    this._clientCertificate.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientCertificateInput() {
+    return this._clientCertificate.internalValue;
+  }
+
+  // client_secret - computed: false, optional: true, required: false
+  private _clientSecret = new ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientSecretList(this, "client_secret", false);
+  public get clientSecret() {
+    return this._clientSecret;
+  }
+  public putClientSecret(value: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthClientSecret[] | cdktn.IResolvable) {
+    this._clientSecret.internalValue = value;
+  }
+  public resetClientSecret() {
+    this._clientSecret.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientSecretInput() {
+    return this._clientSecret.internalValue;
+  }
+
+  // managed_identity - computed: false, optional: true, required: false
+  private _managedIdentity = new ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityList(this, "managed_identity", false);
+  public get managedIdentity() {
+    return this._managedIdentity;
+  }
+  public putManagedIdentity(value: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentity[] | cdktn.IResolvable) {
+    this._managedIdentity.internalValue = value;
+  }
+  public resetManagedIdentity() {
+    this._managedIdentity.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managedIdentityInput() {
+    return this._managedIdentity.internalValue;
+  }
+
+  // managed_identity_client_assertion - computed: false, optional: true, required: false
+  private _managedIdentityClientAssertion = new ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityClientAssertionList(this, "managed_identity_client_assertion", false);
+  public get managedIdentityClientAssertion() {
+    return this._managedIdentityClientAssertion;
+  }
+  public putManagedIdentityClientAssertion(value: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthManagedIdentityClientAssertion[] | cdktn.IResolvable) {
+    this._managedIdentityClientAssertion.internalValue = value;
+  }
+  public resetManagedIdentityClientAssertion() {
+    this._managedIdentityClientAssertion.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managedIdentityClientAssertionInput() {
+    return this._managedIdentityClientAssertion.internalValue;
+  }
+
+  // workload_identity - computed: false, optional: true, required: false
+  private _workloadIdentity = new ObservabilityPipelineConfigDestinationAzureDataExplorerAuthWorkloadIdentityList(this, "workload_identity", false);
+  public get workloadIdentity() {
+    return this._workloadIdentity;
+  }
+  public putWorkloadIdentity(value: ObservabilityPipelineConfigDestinationAzureDataExplorerAuthWorkloadIdentity[] | cdktn.IResolvable) {
+    this._workloadIdentity.internalValue = value;
+  }
+  public resetWorkloadIdentity() {
+    this._workloadIdentity.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workloadIdentityInput() {
+    return this._workloadIdentity.internalValue;
+  }
+}
+
+export class ObservabilityPipelineConfigDestinationAzureDataExplorerAuthList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigDestinationAzureDataExplorerAuth[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigDestinationAzureDataExplorerAuthOutputReference {
+    return new ObservabilityPipelineConfigDestinationAzureDataExplorerAuthOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigDestinationAzureDataExplorerBatch {
+  /**
+  * Maximum batch size in bytes. Value must be between 1 and 4000000.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_bytes ObservabilityPipeline#max_bytes}
+  */
+  readonly maxBytes?: number;
+  /**
+  * Maximum number of events per batch before it is flushed. Value must be at least 1.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+  */
+  readonly maxEvents?: number;
+  /**
+  * Maximum number of seconds to wait before flushing a partial batch. Value must be at least 1.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#timeout_secs ObservabilityPipeline#timeout_secs}
+  */
+  readonly timeoutSecs?: number;
+}
+
+export function observabilityPipelineConfigDestinationAzureDataExplorerBatchToTerraform(struct?: ObservabilityPipelineConfigDestinationAzureDataExplorerBatch | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    max_bytes: cdktn.numberToTerraform(struct!.maxBytes),
+    max_events: cdktn.numberToTerraform(struct!.maxEvents),
+    timeout_secs: cdktn.numberToTerraform(struct!.timeoutSecs),
+  }
+}
+
+
+export function observabilityPipelineConfigDestinationAzureDataExplorerBatchToHclTerraform(struct?: ObservabilityPipelineConfigDestinationAzureDataExplorerBatch | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    max_bytes: {
+      value: cdktn.numberToHclTerraform(struct!.maxBytes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_events: {
+      value: cdktn.numberToHclTerraform(struct!.maxEvents),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    timeout_secs: {
+      value: cdktn.numberToHclTerraform(struct!.timeoutSecs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigDestinationAzureDataExplorerBatchOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigDestinationAzureDataExplorerBatch | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._maxBytes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxBytes = this._maxBytes;
+    }
+    if (this._maxEvents !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxEvents = this._maxEvents;
+    }
+    if (this._timeoutSecs !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeoutSecs = this._timeoutSecs;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigDestinationAzureDataExplorerBatch | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._maxBytes = undefined;
+      this._maxEvents = undefined;
+      this._timeoutSecs = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._maxBytes = value.maxBytes;
+      this._maxEvents = value.maxEvents;
+      this._timeoutSecs = value.timeoutSecs;
+    }
+  }
+
+  // max_bytes - computed: false, optional: true, required: false
+  private _maxBytes?: number; 
+  public get maxBytes() {
+    return this.getNumberAttribute('max_bytes');
+  }
+  public set maxBytes(value: number) {
+    this._maxBytes = value;
+  }
+  public resetMaxBytes() {
+    this._maxBytes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxBytesInput() {
+    return this._maxBytes;
+  }
+
+  // max_events - computed: false, optional: true, required: false
+  private _maxEvents?: number; 
+  public get maxEvents() {
+    return this.getNumberAttribute('max_events');
+  }
+  public set maxEvents(value: number) {
+    this._maxEvents = value;
+  }
+  public resetMaxEvents() {
+    this._maxEvents = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxEventsInput() {
+    return this._maxEvents;
+  }
+
+  // timeout_secs - computed: false, optional: true, required: false
+  private _timeoutSecs?: number; 
+  public get timeoutSecs() {
+    return this.getNumberAttribute('timeout_secs');
+  }
+  public set timeoutSecs(value: number) {
+    this._timeoutSecs = value;
+  }
+  public resetTimeoutSecs() {
+    this._timeoutSecs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutSecsInput() {
+    return this._timeoutSecs;
+  }
+}
+
+export class ObservabilityPipelineConfigDestinationAzureDataExplorerBatchList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigDestinationAzureDataExplorerBatch[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigDestinationAzureDataExplorerBatchOutputReference {
+    return new ObservabilityPipelineConfigDestinationAzureDataExplorerBatchOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigDestinationAzureDataExplorerBufferDisk {
   /**
   * Maximum size of the disk buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  */
+  readonly whenFull?: string;
+}
+
+export function observabilityPipelineConfigDestinationAzureDataExplorerBufferDiskToTerraform(struct?: ObservabilityPipelineConfigDestinationAzureDataExplorerBufferDisk | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    max_size: cdktn.numberToTerraform(struct!.maxSize),
+    when_full: cdktn.stringToTerraform(struct!.whenFull),
+  }
+}
+
+
+export function observabilityPipelineConfigDestinationAzureDataExplorerBufferDiskToHclTerraform(struct?: ObservabilityPipelineConfigDestinationAzureDataExplorerBufferDisk | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    max_size: {
+      value: cdktn.numberToHclTerraform(struct!.maxSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    when_full: {
+      value: cdktn.stringToHclTerraform(struct!.whenFull),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigDestinationAzureDataExplorerBufferDiskOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigDestinationAzureDataExplorerBufferDisk | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._maxSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxSize = this._maxSize;
+    }
+    if (this._whenFull !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.whenFull = this._whenFull;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigDestinationAzureDataExplorerBufferDisk | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._maxSize = undefined;
+      this._whenFull = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._maxSize = value.maxSize;
+      this._whenFull = value.whenFull;
+    }
+  }
+
+  // max_size - computed: false, optional: true, required: false
+  private _maxSize?: number; 
+  public get maxSize() {
+    return this.getNumberAttribute('max_size');
+  }
+  public set maxSize(value: number) {
+    this._maxSize = value;
+  }
+  public resetMaxSize() {
+    this._maxSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxSizeInput() {
+    return this._maxSize;
+  }
+
+  // when_full - computed: true, optional: true, required: false
+  private _whenFull?: string; 
+  public get whenFull() {
+    return this.getStringAttribute('when_full');
+  }
+  public set whenFull(value: string) {
+    this._whenFull = value;
+  }
+  public resetWhenFull() {
+    this._whenFull = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get whenFullInput() {
+    return this._whenFull;
+  }
+}
+
+export class ObservabilityPipelineConfigDestinationAzureDataExplorerBufferDiskList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigDestinationAzureDataExplorerBufferDisk[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigDestinationAzureDataExplorerBufferDiskOutputReference {
+    return new ObservabilityPipelineConfigDestinationAzureDataExplorerBufferDiskOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigDestinationAzureDataExplorerBufferMemory {
+  /**
+  * Maximum events for the memory buffer.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+  */
+  readonly maxEvents?: number;
+  /**
+  * Maximum size of the memory buffer (in bytes).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  */
+  readonly maxSize?: number;
+  /**
+  * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  */
+  readonly whenFull?: string;
+}
+
+export function observabilityPipelineConfigDestinationAzureDataExplorerBufferMemoryToTerraform(struct?: ObservabilityPipelineConfigDestinationAzureDataExplorerBufferMemory | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    max_events: cdktn.numberToTerraform(struct!.maxEvents),
+    max_size: cdktn.numberToTerraform(struct!.maxSize),
+    when_full: cdktn.stringToTerraform(struct!.whenFull),
+  }
+}
+
+
+export function observabilityPipelineConfigDestinationAzureDataExplorerBufferMemoryToHclTerraform(struct?: ObservabilityPipelineConfigDestinationAzureDataExplorerBufferMemory | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    max_events: {
+      value: cdktn.numberToHclTerraform(struct!.maxEvents),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_size: {
+      value: cdktn.numberToHclTerraform(struct!.maxSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    when_full: {
+      value: cdktn.stringToHclTerraform(struct!.whenFull),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigDestinationAzureDataExplorerBufferMemoryOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigDestinationAzureDataExplorerBufferMemory | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._maxEvents !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxEvents = this._maxEvents;
+    }
+    if (this._maxSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxSize = this._maxSize;
+    }
+    if (this._whenFull !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.whenFull = this._whenFull;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigDestinationAzureDataExplorerBufferMemory | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._maxEvents = undefined;
+      this._maxSize = undefined;
+      this._whenFull = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._maxEvents = value.maxEvents;
+      this._maxSize = value.maxSize;
+      this._whenFull = value.whenFull;
+    }
+  }
+
+  // max_events - computed: false, optional: true, required: false
+  private _maxEvents?: number; 
+  public get maxEvents() {
+    return this.getNumberAttribute('max_events');
+  }
+  public set maxEvents(value: number) {
+    this._maxEvents = value;
+  }
+  public resetMaxEvents() {
+    this._maxEvents = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxEventsInput() {
+    return this._maxEvents;
+  }
+
+  // max_size - computed: false, optional: true, required: false
+  private _maxSize?: number; 
+  public get maxSize() {
+    return this.getNumberAttribute('max_size');
+  }
+  public set maxSize(value: number) {
+    this._maxSize = value;
+  }
+  public resetMaxSize() {
+    this._maxSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxSizeInput() {
+    return this._maxSize;
+  }
+
+  // when_full - computed: true, optional: true, required: false
+  private _whenFull?: string; 
+  public get whenFull() {
+    return this.getStringAttribute('when_full');
+  }
+  public set whenFull(value: string) {
+    this._whenFull = value;
+  }
+  public resetWhenFull() {
+    this._whenFull = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get whenFullInput() {
+    return this._whenFull;
+  }
+}
+
+export class ObservabilityPipelineConfigDestinationAzureDataExplorerBufferMemoryList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigDestinationAzureDataExplorerBufferMemory[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigDestinationAzureDataExplorerBufferMemoryOutputReference {
+    return new ObservabilityPipelineConfigDestinationAzureDataExplorerBufferMemoryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigDestinationAzureDataExplorerBuffer {
+  /**
+  * disk block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+  */
+  readonly disk?: ObservabilityPipelineConfigDestinationAzureDataExplorerBufferDisk[] | cdktn.IResolvable;
+  /**
+  * memory block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+  */
+  readonly memory?: ObservabilityPipelineConfigDestinationAzureDataExplorerBufferMemory[] | cdktn.IResolvable;
+}
+
+export function observabilityPipelineConfigDestinationAzureDataExplorerBufferToTerraform(struct?: ObservabilityPipelineConfigDestinationAzureDataExplorerBuffer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    disk: cdktn.listMapper(observabilityPipelineConfigDestinationAzureDataExplorerBufferDiskToTerraform, true)(struct!.disk),
+    memory: cdktn.listMapper(observabilityPipelineConfigDestinationAzureDataExplorerBufferMemoryToTerraform, true)(struct!.memory),
+  }
+}
+
+
+export function observabilityPipelineConfigDestinationAzureDataExplorerBufferToHclTerraform(struct?: ObservabilityPipelineConfigDestinationAzureDataExplorerBuffer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    disk: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigDestinationAzureDataExplorerBufferDiskToHclTerraform, true)(struct!.disk),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigDestinationAzureDataExplorerBufferDiskList",
+    },
+    memory: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigDestinationAzureDataExplorerBufferMemoryToHclTerraform, true)(struct!.memory),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigDestinationAzureDataExplorerBufferMemoryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigDestinationAzureDataExplorerBufferOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigDestinationAzureDataExplorerBuffer | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._disk?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.disk = this._disk?.internalValue;
+    }
+    if (this._memory?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.memory = this._memory?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigDestinationAzureDataExplorerBuffer | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._disk.internalValue = undefined;
+      this._memory.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._disk.internalValue = value.disk;
+      this._memory.internalValue = value.memory;
+    }
+  }
+
+  // disk - computed: false, optional: true, required: false
+  private _disk = new ObservabilityPipelineConfigDestinationAzureDataExplorerBufferDiskList(this, "disk", false);
+  public get disk() {
+    return this._disk;
+  }
+  public putDisk(value: ObservabilityPipelineConfigDestinationAzureDataExplorerBufferDisk[] | cdktn.IResolvable) {
+    this._disk.internalValue = value;
+  }
+  public resetDisk() {
+    this._disk.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get diskInput() {
+    return this._disk.internalValue;
+  }
+
+  // memory - computed: false, optional: true, required: false
+  private _memory = new ObservabilityPipelineConfigDestinationAzureDataExplorerBufferMemoryList(this, "memory", false);
+  public get memory() {
+    return this._memory;
+  }
+  public putMemory(value: ObservabilityPipelineConfigDestinationAzureDataExplorerBufferMemory[] | cdktn.IResolvable) {
+    this._memory.internalValue = value;
+  }
+  public resetMemory() {
+    this._memory.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get memoryInput() {
+    return this._memory.internalValue;
+  }
+}
+
+export class ObservabilityPipelineConfigDestinationAzureDataExplorerBufferList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigDestinationAzureDataExplorerBuffer[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigDestinationAzureDataExplorerBufferOutputReference {
+    return new ObservabilityPipelineConfigDestinationAzureDataExplorerBufferOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigDestinationAzureDataExplorerCompression {
+  /**
+  * Compression algorithm. Must be `gzip`. Valid values are `gzip`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
+  */
+  readonly algorithm: string;
+  /**
+  * Gzip compression level (1-9). Value must be between 1 and 9.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
+  */
+  readonly level: number;
+}
+
+export function observabilityPipelineConfigDestinationAzureDataExplorerCompressionToTerraform(struct?: ObservabilityPipelineConfigDestinationAzureDataExplorerCompression | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    algorithm: cdktn.stringToTerraform(struct!.algorithm),
+    level: cdktn.numberToTerraform(struct!.level),
+  }
+}
+
+
+export function observabilityPipelineConfigDestinationAzureDataExplorerCompressionToHclTerraform(struct?: ObservabilityPipelineConfigDestinationAzureDataExplorerCompression | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    algorithm: {
+      value: cdktn.stringToHclTerraform(struct!.algorithm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    level: {
+      value: cdktn.numberToHclTerraform(struct!.level),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigDestinationAzureDataExplorerCompressionOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigDestinationAzureDataExplorerCompression | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._algorithm !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.algorithm = this._algorithm;
+    }
+    if (this._level !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.level = this._level;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigDestinationAzureDataExplorerCompression | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._algorithm = undefined;
+      this._level = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._algorithm = value.algorithm;
+      this._level = value.level;
+    }
+  }
+
+  // algorithm - computed: false, optional: false, required: true
+  private _algorithm?: string; 
+  public get algorithm() {
+    return this.getStringAttribute('algorithm');
+  }
+  public set algorithm(value: string) {
+    this._algorithm = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get algorithmInput() {
+    return this._algorithm;
+  }
+
+  // level - computed: false, optional: false, required: true
+  private _level?: number; 
+  public get level() {
+    return this.getNumberAttribute('level');
+  }
+  public set level(value: number) {
+    this._level = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get levelInput() {
+    return this._level;
+  }
+}
+
+export class ObservabilityPipelineConfigDestinationAzureDataExplorerCompressionList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigDestinationAzureDataExplorerCompression[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigDestinationAzureDataExplorerCompressionOutputReference {
+    return new ObservabilityPipelineConfigDestinationAzureDataExplorerCompressionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigDestinationAzureDataExplorer {
+  /**
+  * The name of the Azure Data Explorer database to ingest into. Supports template syntax.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#database ObservabilityPipeline#database}
+  */
+  readonly database: string;
+  /**
+  * Name of the environment variable or secret that holds the Azure Data Explorer ingestion endpoint URL. Defaults to `DESTINATION_AZURE_DATA_EXPLORER_INGESTION_ENDPOINT`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#ingestion_endpoint_key ObservabilityPipeline#ingestion_endpoint_key}
+  */
+  readonly ingestionEndpointKey?: string;
+  /**
+  * The name of a pre-created ingestion mapping on the table used to map incoming events to columns. Supports template syntax.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#mapping_reference ObservabilityPipeline#mapping_reference}
+  */
+  readonly mappingReference?: string;
+  /**
+  * The name of the Azure Data Explorer table to ingest into. Supports template syntax.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#table ObservabilityPipeline#table}
+  */
+  readonly table: string;
+  /**
+  * The OAuth scope requested when acquiring an access token for Azure Data Explorer. Defaults to `https://kusto.kusto.windows.net/.default`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#token_scope ObservabilityPipeline#token_scope}
+  */
+  readonly tokenScope?: string;
+  /**
+  * auth block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+  */
+  readonly auth?: ObservabilityPipelineConfigDestinationAzureDataExplorerAuth[] | cdktn.IResolvable;
+  /**
+  * batch block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#batch ObservabilityPipeline#batch}
+  */
+  readonly batch?: ObservabilityPipelineConfigDestinationAzureDataExplorerBatch[] | cdktn.IResolvable;
+  /**
+  * buffer block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+  */
+  readonly buffer?: ObservabilityPipelineConfigDestinationAzureDataExplorerBuffer[] | cdktn.IResolvable;
+  /**
+  * compression block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
+  */
+  readonly compression?: ObservabilityPipelineConfigDestinationAzureDataExplorerCompression[] | cdktn.IResolvable;
+}
+
+export function observabilityPipelineConfigDestinationAzureDataExplorerToTerraform(struct?: ObservabilityPipelineConfigDestinationAzureDataExplorer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    database: cdktn.stringToTerraform(struct!.database),
+    ingestion_endpoint_key: cdktn.stringToTerraform(struct!.ingestionEndpointKey),
+    mapping_reference: cdktn.stringToTerraform(struct!.mappingReference),
+    table: cdktn.stringToTerraform(struct!.table),
+    token_scope: cdktn.stringToTerraform(struct!.tokenScope),
+    auth: cdktn.listMapper(observabilityPipelineConfigDestinationAzureDataExplorerAuthToTerraform, true)(struct!.auth),
+    batch: cdktn.listMapper(observabilityPipelineConfigDestinationAzureDataExplorerBatchToTerraform, true)(struct!.batch),
+    buffer: cdktn.listMapper(observabilityPipelineConfigDestinationAzureDataExplorerBufferToTerraform, true)(struct!.buffer),
+    compression: cdktn.listMapper(observabilityPipelineConfigDestinationAzureDataExplorerCompressionToTerraform, true)(struct!.compression),
+  }
+}
+
+
+export function observabilityPipelineConfigDestinationAzureDataExplorerToHclTerraform(struct?: ObservabilityPipelineConfigDestinationAzureDataExplorer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    database: {
+      value: cdktn.stringToHclTerraform(struct!.database),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ingestion_endpoint_key: {
+      value: cdktn.stringToHclTerraform(struct!.ingestionEndpointKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mapping_reference: {
+      value: cdktn.stringToHclTerraform(struct!.mappingReference),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    table: {
+      value: cdktn.stringToHclTerraform(struct!.table),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    token_scope: {
+      value: cdktn.stringToHclTerraform(struct!.tokenScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    auth: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigDestinationAzureDataExplorerAuthToHclTerraform, true)(struct!.auth),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigDestinationAzureDataExplorerAuthList",
+    },
+    batch: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigDestinationAzureDataExplorerBatchToHclTerraform, true)(struct!.batch),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigDestinationAzureDataExplorerBatchList",
+    },
+    buffer: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigDestinationAzureDataExplorerBufferToHclTerraform, true)(struct!.buffer),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigDestinationAzureDataExplorerBufferList",
+    },
+    compression: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigDestinationAzureDataExplorerCompressionToHclTerraform, true)(struct!.compression),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigDestinationAzureDataExplorerCompressionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigDestinationAzureDataExplorerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigDestinationAzureDataExplorer | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._database !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.database = this._database;
+    }
+    if (this._ingestionEndpointKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ingestionEndpointKey = this._ingestionEndpointKey;
+    }
+    if (this._mappingReference !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mappingReference = this._mappingReference;
+    }
+    if (this._table !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.table = this._table;
+    }
+    if (this._tokenScope !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tokenScope = this._tokenScope;
+    }
+    if (this._auth?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.auth = this._auth?.internalValue;
+    }
+    if (this._batch?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.batch = this._batch?.internalValue;
+    }
+    if (this._buffer?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.buffer = this._buffer?.internalValue;
+    }
+    if (this._compression?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.compression = this._compression?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigDestinationAzureDataExplorer | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._database = undefined;
+      this._ingestionEndpointKey = undefined;
+      this._mappingReference = undefined;
+      this._table = undefined;
+      this._tokenScope = undefined;
+      this._auth.internalValue = undefined;
+      this._batch.internalValue = undefined;
+      this._buffer.internalValue = undefined;
+      this._compression.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._database = value.database;
+      this._ingestionEndpointKey = value.ingestionEndpointKey;
+      this._mappingReference = value.mappingReference;
+      this._table = value.table;
+      this._tokenScope = value.tokenScope;
+      this._auth.internalValue = value.auth;
+      this._batch.internalValue = value.batch;
+      this._buffer.internalValue = value.buffer;
+      this._compression.internalValue = value.compression;
+    }
+  }
+
+  // database - computed: false, optional: false, required: true
+  private _database?: string; 
+  public get database() {
+    return this.getStringAttribute('database');
+  }
+  public set database(value: string) {
+    this._database = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseInput() {
+    return this._database;
+  }
+
+  // ingestion_endpoint_key - computed: false, optional: true, required: false
+  private _ingestionEndpointKey?: string; 
+  public get ingestionEndpointKey() {
+    return this.getStringAttribute('ingestion_endpoint_key');
+  }
+  public set ingestionEndpointKey(value: string) {
+    this._ingestionEndpointKey = value;
+  }
+  public resetIngestionEndpointKey() {
+    this._ingestionEndpointKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ingestionEndpointKeyInput() {
+    return this._ingestionEndpointKey;
+  }
+
+  // mapping_reference - computed: false, optional: true, required: false
+  private _mappingReference?: string; 
+  public get mappingReference() {
+    return this.getStringAttribute('mapping_reference');
+  }
+  public set mappingReference(value: string) {
+    this._mappingReference = value;
+  }
+  public resetMappingReference() {
+    this._mappingReference = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mappingReferenceInput() {
+    return this._mappingReference;
+  }
+
+  // table - computed: false, optional: false, required: true
+  private _table?: string; 
+  public get table() {
+    return this.getStringAttribute('table');
+  }
+  public set table(value: string) {
+    this._table = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tableInput() {
+    return this._table;
+  }
+
+  // token_scope - computed: false, optional: true, required: false
+  private _tokenScope?: string; 
+  public get tokenScope() {
+    return this.getStringAttribute('token_scope');
+  }
+  public set tokenScope(value: string) {
+    this._tokenScope = value;
+  }
+  public resetTokenScope() {
+    this._tokenScope = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenScopeInput() {
+    return this._tokenScope;
+  }
+
+  // auth - computed: false, optional: true, required: false
+  private _auth = new ObservabilityPipelineConfigDestinationAzureDataExplorerAuthList(this, "auth", false);
+  public get auth() {
+    return this._auth;
+  }
+  public putAuth(value: ObservabilityPipelineConfigDestinationAzureDataExplorerAuth[] | cdktn.IResolvable) {
+    this._auth.internalValue = value;
+  }
+  public resetAuth() {
+    this._auth.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authInput() {
+    return this._auth.internalValue;
+  }
+
+  // batch - computed: false, optional: true, required: false
+  private _batch = new ObservabilityPipelineConfigDestinationAzureDataExplorerBatchList(this, "batch", false);
+  public get batch() {
+    return this._batch;
+  }
+  public putBatch(value: ObservabilityPipelineConfigDestinationAzureDataExplorerBatch[] | cdktn.IResolvable) {
+    this._batch.internalValue = value;
+  }
+  public resetBatch() {
+    this._batch.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get batchInput() {
+    return this._batch.internalValue;
+  }
+
+  // buffer - computed: false, optional: true, required: false
+  private _buffer = new ObservabilityPipelineConfigDestinationAzureDataExplorerBufferList(this, "buffer", false);
+  public get buffer() {
+    return this._buffer;
+  }
+  public putBuffer(value: ObservabilityPipelineConfigDestinationAzureDataExplorerBuffer[] | cdktn.IResolvable) {
+    this._buffer.internalValue = value;
+  }
+  public resetBuffer() {
+    this._buffer.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bufferInput() {
+    return this._buffer.internalValue;
+  }
+
+  // compression - computed: false, optional: true, required: false
+  private _compression = new ObservabilityPipelineConfigDestinationAzureDataExplorerCompressionList(this, "compression", false);
+  public get compression() {
+    return this._compression;
+  }
+  public putCompression(value: ObservabilityPipelineConfigDestinationAzureDataExplorerCompression[] | cdktn.IResolvable) {
+    this._compression.internalValue = value;
+  }
+  public resetCompression() {
+    this._compression.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get compressionInput() {
+    return this._compression.internalValue;
+  }
+}
+
+export class ObservabilityPipelineConfigDestinationAzureDataExplorerList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigDestinationAzureDataExplorer[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigDestinationAzureDataExplorerOutputReference {
+    return new ObservabilityPipelineConfigDestinationAzureDataExplorerOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigDestinationAzureStorageBufferDisk {
+  /**
+  * Maximum size of the disk buffer (in bytes).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  */
+  readonly maxSize?: number;
+  /**
+  * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -5058,19 +7604,19 @@ export interface ObservabilityPipelineConfigDestinationAzureStorageBufferMemory 
   /**
   * Maximum events for the memory buffer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
   */
   readonly maxEvents?: number;
   /**
   * Maximum size of the memory buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -5246,13 +7792,13 @@ export interface ObservabilityPipelineConfigDestinationAzureStorageBuffer {
   /**
   * disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
   */
   readonly disk?: ObservabilityPipelineConfigDestinationAzureStorageBufferDisk[] | cdktn.IResolvable;
   /**
   * memory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
   */
   readonly memory?: ObservabilityPipelineConfigDestinationAzureStorageBufferMemory[] | cdktn.IResolvable;
 }
@@ -5399,13 +7945,13 @@ export interface ObservabilityPipelineConfigDestinationAzureStorageCompression {
   /**
   * Compression algorithm. One of `gzip` or `zstd`. Valid values are `gzip`, `zstd`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
   */
   readonly algorithm: string;
   /**
   * Compression level. Applies to `gzip` (1-9) and `zstd` (1-21).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
   */
   readonly level: number;
 }
@@ -5546,31 +8092,31 @@ export interface ObservabilityPipelineConfigDestinationAzureStorage {
   /**
   * Optional prefix for blobs written to the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#blob_prefix ObservabilityPipeline#blob_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#blob_prefix ObservabilityPipeline#blob_prefix}
   */
   readonly blobPrefix?: string;
   /**
   * Name of the environment variable or secret that holds the Azure Storage connection string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#connection_string_key ObservabilityPipeline#connection_string_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#connection_string_key ObservabilityPipeline#connection_string_key}
   */
   readonly connectionStringKey?: string;
   /**
   * The name of the Azure Blob Storage container to store logs in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#container_name ObservabilityPipeline#container_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#container_name ObservabilityPipeline#container_name}
   */
   readonly containerName: string;
   /**
   * buffer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
   */
   readonly buffer?: ObservabilityPipelineConfigDestinationAzureStorageBuffer[] | cdktn.IResolvable;
   /**
   * compression block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
   */
   readonly compression?: ObservabilityPipelineConfigDestinationAzureStorageCompression[] | cdktn.IResolvable;
 }
@@ -5801,19 +8347,19 @@ export interface ObservabilityPipelineConfigDestinationClickhouseAuth {
   /**
   * Name of the environment variable or secret that holds the ClickHouse password. Defaults to `DESTINATION_CLICKHOUSE_PASSWORD`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
   */
   readonly passwordKey?: string;
   /**
   * Authentication strategy. Must be `basic`. Valid values are `basic`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
   */
   readonly strategy: string;
   /**
   * Name of the environment variable or secret that holds the ClickHouse username. Defaults to `DESTINATION_CLICKHOUSE_USERNAME`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
   */
   readonly usernameKey?: string;
 }
@@ -5986,13 +8532,13 @@ export interface ObservabilityPipelineConfigDestinationClickhouseBatch {
   /**
   * Maximum number of events per batch. Value must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
   */
   readonly maxEvents?: number;
   /**
   * Maximum time in seconds before a partial batch is flushed. Value must be between 1 and 65535.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#timeout_secs ObservabilityPipeline#timeout_secs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#timeout_secs ObservabilityPipeline#timeout_secs}
   */
   readonly timeoutSecs?: number;
 }
@@ -6139,13 +8685,13 @@ export interface ObservabilityPipelineConfigDestinationClickhouseBatchEncoding {
   /**
   * If `true`, allows null values for non-nullable fields in the ClickHouse schema. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#allow_nullable_fields ObservabilityPipeline#allow_nullable_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#allow_nullable_fields ObservabilityPipeline#allow_nullable_fields}
   */
   readonly allowNullableFields?: boolean | cdktn.IResolvable;
   /**
   * Batch encoding codec. Must be `arrow_stream`. Valid values are `arrow_stream`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#codec ObservabilityPipeline#codec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#codec ObservabilityPipeline#codec}
   */
   readonly codec: string;
 }
@@ -6289,13 +8835,13 @@ export interface ObservabilityPipelineConfigDestinationClickhouseBufferDisk {
   /**
   * Maximum size of the disk buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -6442,19 +8988,19 @@ export interface ObservabilityPipelineConfigDestinationClickhouseBufferMemory {
   /**
   * Maximum events for the memory buffer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
   */
   readonly maxEvents?: number;
   /**
   * Maximum size of the memory buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -6630,13 +9176,13 @@ export interface ObservabilityPipelineConfigDestinationClickhouseBuffer {
   /**
   * disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
   */
   readonly disk?: ObservabilityPipelineConfigDestinationClickhouseBufferDisk[] | cdktn.IResolvable;
   /**
   * memory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
   */
   readonly memory?: ObservabilityPipelineConfigDestinationClickhouseBufferMemory[] | cdktn.IResolvable;
 }
@@ -6783,13 +9329,13 @@ export interface ObservabilityPipelineConfigDestinationClickhouseCompression {
   /**
   * Compression algorithm. Valid values are `gzip` and `none`. Valid values are `gzip`, `none`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
   */
   readonly algorithm: string;
   /**
   * Compression level (1–9). Only valid when `algorithm` is `gzip`. Value must be between 1 and 9.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
   */
   readonly level?: number;
 }
@@ -6933,25 +9479,25 @@ export interface ObservabilityPipelineConfigDestinationClickhouseTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
 }
@@ -7153,73 +9699,73 @@ export interface ObservabilityPipelineConfigDestinationClickhouse {
   /**
   * Optional name of the ClickHouse database to write to. When omitted, the user's default database is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#database ObservabilityPipeline#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#database ObservabilityPipeline#database}
   */
   readonly database?: string;
   /**
   * If `true`, enables flexible DateTime parsing on the server side.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#date_time_best_effort ObservabilityPipeline#date_time_best_effort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#date_time_best_effort ObservabilityPipeline#date_time_best_effort}
   */
   readonly dateTimeBestEffort?: boolean | cdktn.IResolvable;
   /**
   * Name of the environment variable or secret that holds the ClickHouse HTTP endpoint URL. Defaults to `DESTINATION_CLICKHOUSE_ENDPOINT_URL`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
   */
   readonly endpointUrlKey?: string;
   /**
   * Insert format for events. `json_each_row` maps event fields to columns by name. `json_as_object` and `json_as_string` insert each event into a single JSON or String column. `arrow_stream` batches events with Apache Arrow IPC streaming and requires `batch_encoding`. Valid values are `json_each_row`, `json_as_object`, `json_as_string`, `arrow_stream`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#format ObservabilityPipeline#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#format ObservabilityPipeline#format}
   */
   readonly format?: string;
   /**
   * If `true`, fields not present in the target table schema are dropped instead of causing insert errors. When unset, the ClickHouse server's own `input_format_skip_unknown_fields` setting applies.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#skip_unknown_fields ObservabilityPipeline#skip_unknown_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#skip_unknown_fields ObservabilityPipeline#skip_unknown_fields}
   */
   readonly skipUnknownFields?: boolean | cdktn.IResolvable;
   /**
   * Target ClickHouse table name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#table ObservabilityPipeline#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#table ObservabilityPipeline#table}
   */
   readonly table: string;
   /**
   * auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
   */
   readonly auth?: ObservabilityPipelineConfigDestinationClickhouseAuth[] | cdktn.IResolvable;
   /**
   * batch block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#batch ObservabilityPipeline#batch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#batch ObservabilityPipeline#batch}
   */
   readonly batch?: ObservabilityPipelineConfigDestinationClickhouseBatch[] | cdktn.IResolvable;
   /**
   * batch_encoding block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#batch_encoding ObservabilityPipeline#batch_encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#batch_encoding ObservabilityPipeline#batch_encoding}
   */
   readonly batchEncoding?: ObservabilityPipelineConfigDestinationClickhouseBatchEncoding[] | cdktn.IResolvable;
   /**
   * buffer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
   */
   readonly buffer?: ObservabilityPipelineConfigDestinationClickhouseBuffer[] | cdktn.IResolvable;
   /**
   * compression block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
   */
   readonly compression?: ObservabilityPipelineConfigDestinationClickhouseCompression[] | cdktn.IResolvable;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigDestinationClickhouseTls[] | cdktn.IResolvable;
 }
@@ -7653,13 +10199,13 @@ export interface ObservabilityPipelineConfigDestinationCloudPremBufferDisk {
   /**
   * Maximum size of the disk buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -7806,19 +10352,19 @@ export interface ObservabilityPipelineConfigDestinationCloudPremBufferMemory {
   /**
   * Maximum events for the memory buffer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
   */
   readonly maxEvents?: number;
   /**
   * Maximum size of the memory buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -7994,13 +10540,13 @@ export interface ObservabilityPipelineConfigDestinationCloudPremBuffer {
   /**
   * disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
   */
   readonly disk?: ObservabilityPipelineConfigDestinationCloudPremBufferDisk[] | cdktn.IResolvable;
   /**
   * memory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
   */
   readonly memory?: ObservabilityPipelineConfigDestinationCloudPremBufferMemory[] | cdktn.IResolvable;
 }
@@ -8147,31 +10693,31 @@ export interface ObservabilityPipelineConfigDestinationCloudPremTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
   /**
   * Server name to use for Server Name Indication (SNI) and to verify against the certificate presented by the remote host. Use this when the address you connect to doesn't match the certificate's Common Name or Subject Alternative Name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#server_name ObservabilityPipeline#server_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#server_name ObservabilityPipeline#server_name}
   */
   readonly serverName?: string;
 }
@@ -8402,19 +10948,19 @@ export interface ObservabilityPipelineConfigDestinationCloudPrem {
   /**
   * Name of the environment variable or secret that holds the endpoint URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
   */
   readonly endpointUrlKey?: string;
   /**
   * buffer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
   */
   readonly buffer?: ObservabilityPipelineConfigDestinationCloudPremBuffer[] | cdktn.IResolvable;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigDestinationCloudPremTls[] | cdktn.IResolvable;
 }
@@ -8590,13 +11136,13 @@ export interface ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBuf
   /**
   * Maximum size of the disk buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -8743,19 +11289,19 @@ export interface ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBuf
   /**
   * Maximum events for the memory buffer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
   */
   readonly maxEvents?: number;
   /**
   * Maximum size of the memory buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -8931,13 +11477,13 @@ export interface ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBuf
   /**
   * disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
   */
   readonly disk?: ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferDisk[] | cdktn.IResolvable;
   /**
   * memory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
   */
   readonly memory?: ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferMemory[] | cdktn.IResolvable;
 }
@@ -9084,13 +11630,13 @@ export interface ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemCom
   /**
   * Compression algorithm for log events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
   */
   readonly algorithm: string;
   /**
   * Compression level.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
   */
   readonly level?: number;
 }
@@ -9234,25 +11780,25 @@ export interface ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemTls
   /**
   * Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
 }
@@ -9454,37 +12000,37 @@ export interface ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiem {
   /**
   * Encoding format for log events. Valid values are `json`, `raw_message`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
   */
   readonly encoding: string;
   /**
   * Name of the environment variable or secret that holds the endpoint URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
   */
   readonly endpointUrlKey?: string;
   /**
   * Name of the environment variable or secret that holds the authentication token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
   */
   readonly tokenKey?: string;
   /**
   * buffer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
   */
   readonly buffer?: ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBuffer[] | cdktn.IResolvable;
   /**
   * compression block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
   */
   readonly compression?: ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemCompression[] | cdktn.IResolvable;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemTls[] | cdktn.IResolvable;
 }
@@ -9744,13 +12290,13 @@ export interface ObservabilityPipelineConfigDestinationDatabricksZerobusAuth {
   /**
   * The OAuth client ID used to authenticate with Databricks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#client_id ObservabilityPipeline#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#client_id ObservabilityPipeline#client_id}
   */
   readonly clientId: string;
   /**
   * The name of the secret or environment variable holding the OAuth client secret. Defaults to `DESTINATION_DATABRICKS_ZEROBUS_OAUTH_CLIENT_SECRET`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#client_secret_key ObservabilityPipeline#client_secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#client_secret_key ObservabilityPipeline#client_secret_key}
   */
   readonly clientSecretKey?: string;
 }
@@ -9894,25 +12440,25 @@ export interface ObservabilityPipelineConfigDestinationDatabricksZerobus {
   /**
   * The name of the secret or environment variable holding the Databricks Zerobus ingestion endpoint URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#ingestion_endpoint_key ObservabilityPipeline#ingestion_endpoint_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#ingestion_endpoint_key ObservabilityPipeline#ingestion_endpoint_key}
   */
   readonly ingestionEndpointKey?: string;
   /**
   * The name of the Databricks table to ingest logs into.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#table_name ObservabilityPipeline#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#table_name ObservabilityPipeline#table_name}
   */
   readonly tableName: string;
   /**
   * The name of the secret or environment variable holding the Databricks Unity Catalog endpoint URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#unity_catalog_endpoint_key ObservabilityPipeline#unity_catalog_endpoint_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#unity_catalog_endpoint_key ObservabilityPipeline#unity_catalog_endpoint_key}
   */
   readonly unityCatalogEndpointKey?: string;
   /**
   * auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
   */
   readonly auth?: ObservabilityPipelineConfigDestinationDatabricksZerobusAuth[] | cdktn.IResolvable;
 }
@@ -10114,13 +12660,13 @@ export interface ObservabilityPipelineConfigDestinationDatadogLogsBufferDisk {
   /**
   * Maximum size of the disk buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -10267,19 +12813,19 @@ export interface ObservabilityPipelineConfigDestinationDatadogLogsBufferMemory {
   /**
   * Maximum events for the memory buffer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
   */
   readonly maxEvents?: number;
   /**
   * Maximum size of the memory buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -10455,13 +13001,13 @@ export interface ObservabilityPipelineConfigDestinationDatadogLogsBuffer {
   /**
   * disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
   */
   readonly disk?: ObservabilityPipelineConfigDestinationDatadogLogsBufferDisk[] | cdktn.IResolvable;
   /**
   * memory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
   */
   readonly memory?: ObservabilityPipelineConfigDestinationDatadogLogsBufferMemory[] | cdktn.IResolvable;
 }
@@ -10608,13 +13154,13 @@ export interface ObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferDi
   /**
   * Maximum size of the disk buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -10761,19 +13307,19 @@ export interface ObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferMe
   /**
   * Maximum events for the memory buffer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
   */
   readonly maxEvents?: number;
   /**
   * Maximum size of the memory buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -10949,13 +13495,13 @@ export interface ObservabilityPipelineConfigDestinationDatadogLogsRoutesBuffer {
   /**
   * disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
   */
   readonly disk?: ObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferDisk[] | cdktn.IResolvable;
   /**
   * memory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
   */
   readonly memory?: ObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferMemory[] | cdktn.IResolvable;
 }
@@ -11102,31 +13648,31 @@ export interface ObservabilityPipelineConfigDestinationDatadogLogsRoutes {
   /**
   * Name of the environment variable or secret that stores the Datadog API key used by this route.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#api_key_key ObservabilityPipeline#api_key_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#api_key_key ObservabilityPipeline#api_key_key}
   */
   readonly apiKeyKey: string;
   /**
   * A Datadog search query that determines which logs are forwarded using this route.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
   */
   readonly include: string;
   /**
   * Unique identifier for this route within the destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#route_id ObservabilityPipeline#route_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#route_id ObservabilityPipeline#route_id}
   */
   readonly routeId: string;
   /**
   * Datadog site where matching logs are sent (for example, `us1`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#site ObservabilityPipeline#site}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#site ObservabilityPipeline#site}
   */
   readonly site: string;
   /**
   * buffer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
   */
   readonly buffer?: ObservabilityPipelineConfigDestinationDatadogLogsRoutesBuffer[] | cdktn.IResolvable;
 }
@@ -11348,13 +13894,13 @@ export interface ObservabilityPipelineConfigDestinationDatadogLogs {
   /**
   * buffer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
   */
   readonly buffer?: ObservabilityPipelineConfigDestinationDatadogLogsBuffer[] | cdktn.IResolvable;
   /**
   * routes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#routes ObservabilityPipeline#routes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#routes ObservabilityPipeline#routes}
   */
   readonly routes?: ObservabilityPipelineConfigDestinationDatadogLogsRoutes[] | cdktn.IResolvable;
 }
@@ -11582,19 +14128,19 @@ export interface ObservabilityPipelineConfigDestinationElasticsearchAuth {
   /**
   * Name of the environment variable or secret that holds the Elasticsearch password (used when `strategy` is `basic`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
   */
   readonly passwordKey?: string;
   /**
   * The authentication strategy to use. Valid values are `basic`, `aws`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
   */
   readonly strategy: string;
   /**
   * Name of the environment variable or secret that holds the Elasticsearch username (used when `strategy` is `basic`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
   */
   readonly usernameKey?: string;
 }
@@ -11767,13 +14313,13 @@ export interface ObservabilityPipelineConfigDestinationElasticsearchBufferDisk {
   /**
   * Maximum size of the disk buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -11920,19 +14466,19 @@ export interface ObservabilityPipelineConfigDestinationElasticsearchBufferMemory
   /**
   * Maximum events for the memory buffer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
   */
   readonly maxEvents?: number;
   /**
   * Maximum size of the memory buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -12108,13 +14654,13 @@ export interface ObservabilityPipelineConfigDestinationElasticsearchBuffer {
   /**
   * disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
   */
   readonly disk?: ObservabilityPipelineConfigDestinationElasticsearchBufferDisk[] | cdktn.IResolvable;
   /**
   * memory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
   */
   readonly memory?: ObservabilityPipelineConfigDestinationElasticsearchBufferMemory[] | cdktn.IResolvable;
 }
@@ -12261,13 +14807,13 @@ export interface ObservabilityPipelineConfigDestinationElasticsearchCompression 
   /**
   * The compression algorithm applied when sending data to Elasticsearch. Valid values are `none`, `gzip`, `zlib`, `zstd`, `snappy`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
   */
   readonly algorithm: string;
   /**
   * The compression level. Only applicable for `gzip`, `zlib`, and `zstd` algorithms.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
   */
   readonly level?: number;
 }
@@ -12411,31 +14957,31 @@ export interface ObservabilityPipelineConfigDestinationElasticsearchDataStream {
   /**
   * When `true`, automatically routes events to the appropriate data stream based on the event content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#auto_routing ObservabilityPipeline#auto_routing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#auto_routing ObservabilityPipeline#auto_routing}
   */
   readonly autoRouting?: boolean | cdktn.IResolvable;
   /**
   * The data stream dataset. This groups events by their source or application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#dataset ObservabilityPipeline#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#dataset ObservabilityPipeline#dataset}
   */
   readonly dataset?: string;
   /**
   * The data stream type. This determines how events are categorized within the data stream.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#dtype ObservabilityPipeline#dtype}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#dtype ObservabilityPipeline#dtype}
   */
   readonly dtype?: string;
   /**
   * The data stream namespace. This separates events into different environments or domains.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#namespace ObservabilityPipeline#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#namespace ObservabilityPipeline#namespace}
   */
   readonly namespace?: string;
   /**
   * When `true`, synchronizes data stream fields with the Elasticsearch index mapping.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#sync_fields ObservabilityPipeline#sync_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#sync_fields ObservabilityPipeline#sync_fields}
   */
   readonly syncFields?: boolean | cdktn.IResolvable;
 }
@@ -12669,25 +15215,25 @@ export interface ObservabilityPipelineConfigDestinationElasticsearchTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
 }
@@ -12889,67 +15435,67 @@ export interface ObservabilityPipelineConfigDestinationElasticsearch {
   /**
   * The Elasticsearch API version to use. Set to `auto` to auto-detect. Valid values are `auto`, `v6`, `v7`, `v8`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#api_version ObservabilityPipeline#api_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#api_version ObservabilityPipeline#api_version}
   */
   readonly apiVersion?: string;
   /**
   * The name of the index to write events to in Elasticsearch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
   */
   readonly bulkIndex?: string;
   /**
   * Name of the environment variable or secret that holds the Elasticsearch endpoint URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
   */
   readonly endpointUrlKey?: string;
   /**
   * The name of the field used as the document ID in Elasticsearch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#id_key ObservabilityPipeline#id_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#id_key ObservabilityPipeline#id_key}
   */
   readonly idKey?: string;
   /**
   * The name of an Elasticsearch ingest pipeline to apply to events before indexing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#pipeline ObservabilityPipeline#pipeline}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#pipeline ObservabilityPipeline#pipeline}
   */
   readonly pipeline?: string;
   /**
   * When `true`, retries failed partial bulk requests when some events in a batch fail while others succeed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#request_retry_partial ObservabilityPipeline#request_retry_partial}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#request_retry_partial ObservabilityPipeline#request_retry_partial}
   */
   readonly requestRetryPartial?: boolean | cdktn.IResolvable;
   /**
   * auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
   */
   readonly auth?: ObservabilityPipelineConfigDestinationElasticsearchAuth[] | cdktn.IResolvable;
   /**
   * buffer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
   */
   readonly buffer?: ObservabilityPipelineConfigDestinationElasticsearchBuffer[] | cdktn.IResolvable;
   /**
   * compression block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
   */
   readonly compression?: ObservabilityPipelineConfigDestinationElasticsearchCompression[] | cdktn.IResolvable;
   /**
   * data_stream block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#data_stream ObservabilityPipeline#data_stream}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#data_stream ObservabilityPipeline#data_stream}
   */
   readonly dataStream?: ObservabilityPipelineConfigDestinationElasticsearchDataStream[] | cdktn.IResolvable;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigDestinationElasticsearchTls[] | cdktn.IResolvable;
 }
@@ -13357,7 +15903,7 @@ export interface ObservabilityPipelineConfigDestinationGoogleCloudStorageAuth {
   /**
   * Path to the Google Cloud service account key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
   */
   readonly credentialsFile: string;
 }
@@ -13472,13 +16018,13 @@ export interface ObservabilityPipelineConfigDestinationGoogleCloudStorageBufferD
   /**
   * Maximum size of the disk buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -13625,19 +16171,19 @@ export interface ObservabilityPipelineConfigDestinationGoogleCloudStorageBufferM
   /**
   * Maximum events for the memory buffer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
   */
   readonly maxEvents?: number;
   /**
   * Maximum size of the memory buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -13813,13 +16359,13 @@ export interface ObservabilityPipelineConfigDestinationGoogleCloudStorageBuffer 
   /**
   * disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
   */
   readonly disk?: ObservabilityPipelineConfigDestinationGoogleCloudStorageBufferDisk[] | cdktn.IResolvable;
   /**
   * memory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
   */
   readonly memory?: ObservabilityPipelineConfigDestinationGoogleCloudStorageBufferMemory[] | cdktn.IResolvable;
 }
@@ -13966,13 +16512,13 @@ export interface ObservabilityPipelineConfigDestinationGoogleCloudStorageCompres
   /**
   * Compression algorithm. One of `gzip` or `zstd`. Valid values are `gzip`, `zstd`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
   */
   readonly algorithm: string;
   /**
   * Compression level. Applies to `gzip` (1-9) and `zstd` (1-21).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
   */
   readonly level: number;
 }
@@ -14113,13 +16659,13 @@ export interface ObservabilityPipelineConfigDestinationGoogleCloudStorageMetadat
   /**
   * The metadata key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
   */
   readonly name: string;
   /**
   * The metadata value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
   */
   readonly value: string;
 }
@@ -14260,49 +16806,49 @@ export interface ObservabilityPipelineConfigDestinationGoogleCloudStorage {
   /**
   * Access control list setting for objects written to the bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#acl ObservabilityPipeline#acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#acl ObservabilityPipeline#acl}
   */
   readonly acl?: string;
   /**
   * Name of the GCS bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
   */
   readonly bucket: string;
   /**
   * Optional prefix for object keys within the GCS bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#key_prefix ObservabilityPipeline#key_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#key_prefix ObservabilityPipeline#key_prefix}
   */
   readonly keyPrefix?: string;
   /**
   * Storage class used for objects stored in GCS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#storage_class ObservabilityPipeline#storage_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#storage_class ObservabilityPipeline#storage_class}
   */
   readonly storageClass: string;
   /**
   * auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
   */
   readonly auth?: ObservabilityPipelineConfigDestinationGoogleCloudStorageAuth[] | cdktn.IResolvable;
   /**
   * buffer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
   */
   readonly buffer?: ObservabilityPipelineConfigDestinationGoogleCloudStorageBuffer[] | cdktn.IResolvable;
   /**
   * compression block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
   */
   readonly compression?: ObservabilityPipelineConfigDestinationGoogleCloudStorageCompression[] | cdktn.IResolvable;
   /**
   * metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#metadata ObservabilityPipeline#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#metadata ObservabilityPipeline#metadata}
   */
   readonly metadata?: ObservabilityPipelineConfigDestinationGoogleCloudStorageMetadata[] | cdktn.IResolvable;
 }
@@ -14617,7 +17163,7 @@ export interface ObservabilityPipelineConfigDestinationGooglePubsubAuth {
   /**
   * Path to the Google Cloud service account key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
   */
   readonly credentialsFile: string;
 }
@@ -14732,13 +17278,13 @@ export interface ObservabilityPipelineConfigDestinationGooglePubsubBufferDisk {
   /**
   * Maximum size of the disk buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -14885,19 +17431,19 @@ export interface ObservabilityPipelineConfigDestinationGooglePubsubBufferMemory 
   /**
   * Maximum events for the memory buffer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
   */
   readonly maxEvents?: number;
   /**
   * Maximum size of the memory buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -15073,13 +17619,13 @@ export interface ObservabilityPipelineConfigDestinationGooglePubsubBuffer {
   /**
   * disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
   */
   readonly disk?: ObservabilityPipelineConfigDestinationGooglePubsubBufferDisk[] | cdktn.IResolvable;
   /**
   * memory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
   */
   readonly memory?: ObservabilityPipelineConfigDestinationGooglePubsubBufferMemory[] | cdktn.IResolvable;
 }
@@ -15226,25 +17772,25 @@ export interface ObservabilityPipelineConfigDestinationGooglePubsubTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
 }
@@ -15446,43 +17992,43 @@ export interface ObservabilityPipelineConfigDestinationGooglePubsub {
   /**
   * Encoding format for log events. Valid values: `json`, `raw_message`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
   */
   readonly encoding: string;
   /**
   * Name of the environment variable or secret that holds the Google Cloud Pub/Sub endpoint URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
   */
   readonly endpointUrlKey?: string;
   /**
   * The Google Cloud project ID that owns the Pub/Sub topic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#project ObservabilityPipeline#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#project ObservabilityPipeline#project}
   */
   readonly project: string;
   /**
   * The Pub/Sub topic name to publish logs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#topic ObservabilityPipeline#topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#topic ObservabilityPipeline#topic}
   */
   readonly topic: string;
   /**
   * auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
   */
   readonly auth?: ObservabilityPipelineConfigDestinationGooglePubsubAuth[] | cdktn.IResolvable;
   /**
   * buffer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
   */
   readonly buffer?: ObservabilityPipelineConfigDestinationGooglePubsubBuffer[] | cdktn.IResolvable;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigDestinationGooglePubsubTls[] | cdktn.IResolvable;
 }
@@ -15765,7 +18311,7 @@ export interface ObservabilityPipelineConfigDestinationGoogleSecopsAuth {
   /**
   * Path to the Google Cloud service account key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
   */
   readonly credentialsFile: string;
 }
@@ -15880,13 +18426,13 @@ export interface ObservabilityPipelineConfigDestinationGoogleSecopsBufferDisk {
   /**
   * Maximum size of the disk buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -16033,19 +18579,19 @@ export interface ObservabilityPipelineConfigDestinationGoogleSecopsBufferMemory 
   /**
   * Maximum events for the memory buffer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
   */
   readonly maxEvents?: number;
   /**
   * Maximum size of the memory buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -16221,13 +18767,13 @@ export interface ObservabilityPipelineConfigDestinationGoogleSecopsBuffer {
   /**
   * disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
   */
   readonly disk?: ObservabilityPipelineConfigDestinationGoogleSecopsBufferDisk[] | cdktn.IResolvable;
   /**
   * memory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
   */
   readonly memory?: ObservabilityPipelineConfigDestinationGoogleSecopsBufferMemory[] | cdktn.IResolvable;
 }
@@ -16374,37 +18920,37 @@ export interface ObservabilityPipelineConfigDestinationGoogleSecops {
   /**
   * The Google SecOps customer ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#customer_id ObservabilityPipeline#customer_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#customer_id ObservabilityPipeline#customer_id}
   */
   readonly customerId: string;
   /**
   * The encoding format for the logs sent to Google SecOps. Valid values are `json`, `raw_message`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
   */
   readonly encoding: string;
   /**
   * Name of the environment variable or secret that holds the Google Chronicle endpoint URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
   */
   readonly endpointUrlKey?: string;
   /**
   * The log type metadata associated with the Google SecOps destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#log_type ObservabilityPipeline#log_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#log_type ObservabilityPipeline#log_type}
   */
   readonly logType: string;
   /**
   * auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
   */
   readonly auth?: ObservabilityPipelineConfigDestinationGoogleSecopsAuth[] | cdktn.IResolvable;
   /**
   * buffer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
   */
   readonly buffer?: ObservabilityPipelineConfigDestinationGoogleSecopsBuffer[] | cdktn.IResolvable;
 }
@@ -16652,2912 +19198,5 @@ export class ObservabilityPipelineConfigDestinationGoogleSecopsList extends cdkt
   */
   public get(index: number): ObservabilityPipelineConfigDestinationGoogleSecopsOutputReference {
     return new ObservabilityPipelineConfigDestinationGoogleSecopsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface ObservabilityPipelineConfigDestinationHttpClientBufferDisk {
-  /**
-  * Maximum size of the disk buffer (in bytes).
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
-  */
-  readonly maxSize?: number;
-  /**
-  * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
-  */
-  readonly whenFull?: string;
-}
-
-export function observabilityPipelineConfigDestinationHttpClientBufferDiskToTerraform(struct?: ObservabilityPipelineConfigDestinationHttpClientBufferDisk | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    max_size: cdktn.numberToTerraform(struct!.maxSize),
-    when_full: cdktn.stringToTerraform(struct!.whenFull),
-  }
-}
-
-
-export function observabilityPipelineConfigDestinationHttpClientBufferDiskToHclTerraform(struct?: ObservabilityPipelineConfigDestinationHttpClientBufferDisk | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    max_size: {
-      value: cdktn.numberToHclTerraform(struct!.maxSize),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    when_full: {
-      value: cdktn.stringToHclTerraform(struct!.whenFull),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class ObservabilityPipelineConfigDestinationHttpClientBufferDiskOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): ObservabilityPipelineConfigDestinationHttpClientBufferDisk | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._maxSize !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.maxSize = this._maxSize;
-    }
-    if (this._whenFull !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.whenFull = this._whenFull;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: ObservabilityPipelineConfigDestinationHttpClientBufferDisk | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._maxSize = undefined;
-      this._whenFull = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._maxSize = value.maxSize;
-      this._whenFull = value.whenFull;
-    }
-  }
-
-  // max_size - computed: false, optional: true, required: false
-  private _maxSize?: number; 
-  public get maxSize() {
-    return this.getNumberAttribute('max_size');
-  }
-  public set maxSize(value: number) {
-    this._maxSize = value;
-  }
-  public resetMaxSize() {
-    this._maxSize = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get maxSizeInput() {
-    return this._maxSize;
-  }
-
-  // when_full - computed: true, optional: true, required: false
-  private _whenFull?: string; 
-  public get whenFull() {
-    return this.getStringAttribute('when_full');
-  }
-  public set whenFull(value: string) {
-    this._whenFull = value;
-  }
-  public resetWhenFull() {
-    this._whenFull = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get whenFullInput() {
-    return this._whenFull;
-  }
-}
-
-export class ObservabilityPipelineConfigDestinationHttpClientBufferDiskList extends cdktn.ComplexList {
-  public internalValue? : ObservabilityPipelineConfigDestinationHttpClientBufferDisk[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ObservabilityPipelineConfigDestinationHttpClientBufferDiskOutputReference {
-    return new ObservabilityPipelineConfigDestinationHttpClientBufferDiskOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface ObservabilityPipelineConfigDestinationHttpClientBufferMemory {
-  /**
-  * Maximum events for the memory buffer.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
-  */
-  readonly maxEvents?: number;
-  /**
-  * Maximum size of the memory buffer (in bytes).
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
-  */
-  readonly maxSize?: number;
-  /**
-  * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
-  */
-  readonly whenFull?: string;
-}
-
-export function observabilityPipelineConfigDestinationHttpClientBufferMemoryToTerraform(struct?: ObservabilityPipelineConfigDestinationHttpClientBufferMemory | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    max_events: cdktn.numberToTerraform(struct!.maxEvents),
-    max_size: cdktn.numberToTerraform(struct!.maxSize),
-    when_full: cdktn.stringToTerraform(struct!.whenFull),
-  }
-}
-
-
-export function observabilityPipelineConfigDestinationHttpClientBufferMemoryToHclTerraform(struct?: ObservabilityPipelineConfigDestinationHttpClientBufferMemory | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    max_events: {
-      value: cdktn.numberToHclTerraform(struct!.maxEvents),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    max_size: {
-      value: cdktn.numberToHclTerraform(struct!.maxSize),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    when_full: {
-      value: cdktn.stringToHclTerraform(struct!.whenFull),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class ObservabilityPipelineConfigDestinationHttpClientBufferMemoryOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): ObservabilityPipelineConfigDestinationHttpClientBufferMemory | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._maxEvents !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.maxEvents = this._maxEvents;
-    }
-    if (this._maxSize !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.maxSize = this._maxSize;
-    }
-    if (this._whenFull !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.whenFull = this._whenFull;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: ObservabilityPipelineConfigDestinationHttpClientBufferMemory | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._maxEvents = undefined;
-      this._maxSize = undefined;
-      this._whenFull = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._maxEvents = value.maxEvents;
-      this._maxSize = value.maxSize;
-      this._whenFull = value.whenFull;
-    }
-  }
-
-  // max_events - computed: false, optional: true, required: false
-  private _maxEvents?: number; 
-  public get maxEvents() {
-    return this.getNumberAttribute('max_events');
-  }
-  public set maxEvents(value: number) {
-    this._maxEvents = value;
-  }
-  public resetMaxEvents() {
-    this._maxEvents = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get maxEventsInput() {
-    return this._maxEvents;
-  }
-
-  // max_size - computed: false, optional: true, required: false
-  private _maxSize?: number; 
-  public get maxSize() {
-    return this.getNumberAttribute('max_size');
-  }
-  public set maxSize(value: number) {
-    this._maxSize = value;
-  }
-  public resetMaxSize() {
-    this._maxSize = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get maxSizeInput() {
-    return this._maxSize;
-  }
-
-  // when_full - computed: true, optional: true, required: false
-  private _whenFull?: string; 
-  public get whenFull() {
-    return this.getStringAttribute('when_full');
-  }
-  public set whenFull(value: string) {
-    this._whenFull = value;
-  }
-  public resetWhenFull() {
-    this._whenFull = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get whenFullInput() {
-    return this._whenFull;
-  }
-}
-
-export class ObservabilityPipelineConfigDestinationHttpClientBufferMemoryList extends cdktn.ComplexList {
-  public internalValue? : ObservabilityPipelineConfigDestinationHttpClientBufferMemory[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ObservabilityPipelineConfigDestinationHttpClientBufferMemoryOutputReference {
-    return new ObservabilityPipelineConfigDestinationHttpClientBufferMemoryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface ObservabilityPipelineConfigDestinationHttpClientBuffer {
-  /**
-  * disk block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
-  */
-  readonly disk?: ObservabilityPipelineConfigDestinationHttpClientBufferDisk[] | cdktn.IResolvable;
-  /**
-  * memory block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
-  */
-  readonly memory?: ObservabilityPipelineConfigDestinationHttpClientBufferMemory[] | cdktn.IResolvable;
-}
-
-export function observabilityPipelineConfigDestinationHttpClientBufferToTerraform(struct?: ObservabilityPipelineConfigDestinationHttpClientBuffer | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    disk: cdktn.listMapper(observabilityPipelineConfigDestinationHttpClientBufferDiskToTerraform, true)(struct!.disk),
-    memory: cdktn.listMapper(observabilityPipelineConfigDestinationHttpClientBufferMemoryToTerraform, true)(struct!.memory),
-  }
-}
-
-
-export function observabilityPipelineConfigDestinationHttpClientBufferToHclTerraform(struct?: ObservabilityPipelineConfigDestinationHttpClientBuffer | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    disk: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigDestinationHttpClientBufferDiskToHclTerraform, true)(struct!.disk),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigDestinationHttpClientBufferDiskList",
-    },
-    memory: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigDestinationHttpClientBufferMemoryToHclTerraform, true)(struct!.memory),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigDestinationHttpClientBufferMemoryList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class ObservabilityPipelineConfigDestinationHttpClientBufferOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): ObservabilityPipelineConfigDestinationHttpClientBuffer | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._disk?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.disk = this._disk?.internalValue;
-    }
-    if (this._memory?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.memory = this._memory?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: ObservabilityPipelineConfigDestinationHttpClientBuffer | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._disk.internalValue = undefined;
-      this._memory.internalValue = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._disk.internalValue = value.disk;
-      this._memory.internalValue = value.memory;
-    }
-  }
-
-  // disk - computed: false, optional: true, required: false
-  private _disk = new ObservabilityPipelineConfigDestinationHttpClientBufferDiskList(this, "disk", false);
-  public get disk() {
-    return this._disk;
-  }
-  public putDisk(value: ObservabilityPipelineConfigDestinationHttpClientBufferDisk[] | cdktn.IResolvable) {
-    this._disk.internalValue = value;
-  }
-  public resetDisk() {
-    this._disk.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get diskInput() {
-    return this._disk.internalValue;
-  }
-
-  // memory - computed: false, optional: true, required: false
-  private _memory = new ObservabilityPipelineConfigDestinationHttpClientBufferMemoryList(this, "memory", false);
-  public get memory() {
-    return this._memory;
-  }
-  public putMemory(value: ObservabilityPipelineConfigDestinationHttpClientBufferMemory[] | cdktn.IResolvable) {
-    this._memory.internalValue = value;
-  }
-  public resetMemory() {
-    this._memory.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get memoryInput() {
-    return this._memory.internalValue;
-  }
-}
-
-export class ObservabilityPipelineConfigDestinationHttpClientBufferList extends cdktn.ComplexList {
-  public internalValue? : ObservabilityPipelineConfigDestinationHttpClientBuffer[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ObservabilityPipelineConfigDestinationHttpClientBufferOutputReference {
-    return new ObservabilityPipelineConfigDestinationHttpClientBufferOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface ObservabilityPipelineConfigDestinationHttpClientCompression {
-  /**
-  * Compression algorithm. Valid values are `gzip`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
-  */
-  readonly algorithm: string;
-}
-
-export function observabilityPipelineConfigDestinationHttpClientCompressionToTerraform(struct?: ObservabilityPipelineConfigDestinationHttpClientCompression | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    algorithm: cdktn.stringToTerraform(struct!.algorithm),
-  }
-}
-
-
-export function observabilityPipelineConfigDestinationHttpClientCompressionToHclTerraform(struct?: ObservabilityPipelineConfigDestinationHttpClientCompression | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    algorithm: {
-      value: cdktn.stringToHclTerraform(struct!.algorithm),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class ObservabilityPipelineConfigDestinationHttpClientCompressionOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): ObservabilityPipelineConfigDestinationHttpClientCompression | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._algorithm !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.algorithm = this._algorithm;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: ObservabilityPipelineConfigDestinationHttpClientCompression | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._algorithm = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._algorithm = value.algorithm;
-    }
-  }
-
-  // algorithm - computed: false, optional: false, required: true
-  private _algorithm?: string; 
-  public get algorithm() {
-    return this.getStringAttribute('algorithm');
-  }
-  public set algorithm(value: string) {
-    this._algorithm = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get algorithmInput() {
-    return this._algorithm;
-  }
-}
-
-export class ObservabilityPipelineConfigDestinationHttpClientCompressionList extends cdktn.ComplexList {
-  public internalValue? : ObservabilityPipelineConfigDestinationHttpClientCompression[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ObservabilityPipelineConfigDestinationHttpClientCompressionOutputReference {
-    return new ObservabilityPipelineConfigDestinationHttpClientCompressionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface ObservabilityPipelineConfigDestinationHttpClientTls {
-  /**
-  * Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
-  */
-  readonly caFile?: string;
-  /**
-  * Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
-  */
-  readonly crtFile: string;
-  /**
-  * Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
-  */
-  readonly keyFile?: string;
-  /**
-  * Name of the environment variable or secret that holds the passphrase for the private key file.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
-  */
-  readonly keyPassKey?: string;
-  /**
-  * Server name to use for Server Name Indication (SNI) and to verify against the certificate presented by the remote host. Use this when the address you connect to doesn't match the certificate's Common Name or Subject Alternative Name.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#server_name ObservabilityPipeline#server_name}
-  */
-  readonly serverName?: string;
-}
-
-export function observabilityPipelineConfigDestinationHttpClientTlsToTerraform(struct?: ObservabilityPipelineConfigDestinationHttpClientTls | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    ca_file: cdktn.stringToTerraform(struct!.caFile),
-    crt_file: cdktn.stringToTerraform(struct!.crtFile),
-    key_file: cdktn.stringToTerraform(struct!.keyFile),
-    key_pass_key: cdktn.stringToTerraform(struct!.keyPassKey),
-    server_name: cdktn.stringToTerraform(struct!.serverName),
-  }
-}
-
-
-export function observabilityPipelineConfigDestinationHttpClientTlsToHclTerraform(struct?: ObservabilityPipelineConfigDestinationHttpClientTls | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    ca_file: {
-      value: cdktn.stringToHclTerraform(struct!.caFile),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    crt_file: {
-      value: cdktn.stringToHclTerraform(struct!.crtFile),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    key_file: {
-      value: cdktn.stringToHclTerraform(struct!.keyFile),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    key_pass_key: {
-      value: cdktn.stringToHclTerraform(struct!.keyPassKey),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    server_name: {
-      value: cdktn.stringToHclTerraform(struct!.serverName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): ObservabilityPipelineConfigDestinationHttpClientTls | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._caFile !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.caFile = this._caFile;
-    }
-    if (this._crtFile !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.crtFile = this._crtFile;
-    }
-    if (this._keyFile !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.keyFile = this._keyFile;
-    }
-    if (this._keyPassKey !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.keyPassKey = this._keyPassKey;
-    }
-    if (this._serverName !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.serverName = this._serverName;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: ObservabilityPipelineConfigDestinationHttpClientTls | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._caFile = undefined;
-      this._crtFile = undefined;
-      this._keyFile = undefined;
-      this._keyPassKey = undefined;
-      this._serverName = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._caFile = value.caFile;
-      this._crtFile = value.crtFile;
-      this._keyFile = value.keyFile;
-      this._keyPassKey = value.keyPassKey;
-      this._serverName = value.serverName;
-    }
-  }
-
-  // ca_file - computed: false, optional: true, required: false
-  private _caFile?: string; 
-  public get caFile() {
-    return this.getStringAttribute('ca_file');
-  }
-  public set caFile(value: string) {
-    this._caFile = value;
-  }
-  public resetCaFile() {
-    this._caFile = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get caFileInput() {
-    return this._caFile;
-  }
-
-  // crt_file - computed: false, optional: false, required: true
-  private _crtFile?: string; 
-  public get crtFile() {
-    return this.getStringAttribute('crt_file');
-  }
-  public set crtFile(value: string) {
-    this._crtFile = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get crtFileInput() {
-    return this._crtFile;
-  }
-
-  // key_file - computed: false, optional: true, required: false
-  private _keyFile?: string; 
-  public get keyFile() {
-    return this.getStringAttribute('key_file');
-  }
-  public set keyFile(value: string) {
-    this._keyFile = value;
-  }
-  public resetKeyFile() {
-    this._keyFile = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get keyFileInput() {
-    return this._keyFile;
-  }
-
-  // key_pass_key - computed: false, optional: true, required: false
-  private _keyPassKey?: string; 
-  public get keyPassKey() {
-    return this.getStringAttribute('key_pass_key');
-  }
-  public set keyPassKey(value: string) {
-    this._keyPassKey = value;
-  }
-  public resetKeyPassKey() {
-    this._keyPassKey = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get keyPassKeyInput() {
-    return this._keyPassKey;
-  }
-
-  // server_name - computed: false, optional: true, required: false
-  private _serverName?: string; 
-  public get serverName() {
-    return this.getStringAttribute('server_name');
-  }
-  public set serverName(value: string) {
-    this._serverName = value;
-  }
-  public resetServerName() {
-    this._serverName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get serverNameInput() {
-    return this._serverName;
-  }
-}
-
-export class ObservabilityPipelineConfigDestinationHttpClientTlsList extends cdktn.ComplexList {
-  public internalValue? : ObservabilityPipelineConfigDestinationHttpClientTls[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference {
-    return new ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface ObservabilityPipelineConfigDestinationHttpClient {
-  /**
-  * HTTP authentication strategy. Valid values are `none`, `basic`, `bearer`, `custom`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
-  */
-  readonly authStrategy?: string;
-  /**
-  * Name of the environment variable or secret that holds the custom authentication header value. Used with the `custom` auth strategy.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#custom_key ObservabilityPipeline#custom_key}
-  */
-  readonly customKey?: string;
-  /**
-  * Encoding format for events. Valid values are `json`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
-  */
-  readonly encoding: string;
-  /**
-  * Name of the environment variable or secret that holds the password.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
-  */
-  readonly passwordKey?: string;
-  /**
-  * Name of the environment variable or secret that holds the authentication token.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
-  */
-  readonly tokenKey?: string;
-  /**
-  * Name of the environment variable or secret that holds the request URI.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#uri_key ObservabilityPipeline#uri_key}
-  */
-  readonly uriKey?: string;
-  /**
-  * Name of the environment variable or secret that holds the username.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
-  */
-  readonly usernameKey?: string;
-  /**
-  * buffer block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
-  */
-  readonly buffer?: ObservabilityPipelineConfigDestinationHttpClientBuffer[] | cdktn.IResolvable;
-  /**
-  * compression block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
-  */
-  readonly compression?: ObservabilityPipelineConfigDestinationHttpClientCompression[] | cdktn.IResolvable;
-  /**
-  * tls block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
-  */
-  readonly tls?: ObservabilityPipelineConfigDestinationHttpClientTls[] | cdktn.IResolvable;
-}
-
-export function observabilityPipelineConfigDestinationHttpClientToTerraform(struct?: ObservabilityPipelineConfigDestinationHttpClient | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    auth_strategy: cdktn.stringToTerraform(struct!.authStrategy),
-    custom_key: cdktn.stringToTerraform(struct!.customKey),
-    encoding: cdktn.stringToTerraform(struct!.encoding),
-    password_key: cdktn.stringToTerraform(struct!.passwordKey),
-    token_key: cdktn.stringToTerraform(struct!.tokenKey),
-    uri_key: cdktn.stringToTerraform(struct!.uriKey),
-    username_key: cdktn.stringToTerraform(struct!.usernameKey),
-    buffer: cdktn.listMapper(observabilityPipelineConfigDestinationHttpClientBufferToTerraform, true)(struct!.buffer),
-    compression: cdktn.listMapper(observabilityPipelineConfigDestinationHttpClientCompressionToTerraform, true)(struct!.compression),
-    tls: cdktn.listMapper(observabilityPipelineConfigDestinationHttpClientTlsToTerraform, true)(struct!.tls),
-  }
-}
-
-
-export function observabilityPipelineConfigDestinationHttpClientToHclTerraform(struct?: ObservabilityPipelineConfigDestinationHttpClient | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    auth_strategy: {
-      value: cdktn.stringToHclTerraform(struct!.authStrategy),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    custom_key: {
-      value: cdktn.stringToHclTerraform(struct!.customKey),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    encoding: {
-      value: cdktn.stringToHclTerraform(struct!.encoding),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    password_key: {
-      value: cdktn.stringToHclTerraform(struct!.passwordKey),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    token_key: {
-      value: cdktn.stringToHclTerraform(struct!.tokenKey),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    uri_key: {
-      value: cdktn.stringToHclTerraform(struct!.uriKey),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    username_key: {
-      value: cdktn.stringToHclTerraform(struct!.usernameKey),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    buffer: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigDestinationHttpClientBufferToHclTerraform, true)(struct!.buffer),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigDestinationHttpClientBufferList",
-    },
-    compression: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigDestinationHttpClientCompressionToHclTerraform, true)(struct!.compression),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigDestinationHttpClientCompressionList",
-    },
-    tls: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigDestinationHttpClientTlsToHclTerraform, true)(struct!.tls),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigDestinationHttpClientTlsList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class ObservabilityPipelineConfigDestinationHttpClientOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): ObservabilityPipelineConfigDestinationHttpClient | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._authStrategy !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.authStrategy = this._authStrategy;
-    }
-    if (this._customKey !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.customKey = this._customKey;
-    }
-    if (this._encoding !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.encoding = this._encoding;
-    }
-    if (this._passwordKey !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.passwordKey = this._passwordKey;
-    }
-    if (this._tokenKey !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.tokenKey = this._tokenKey;
-    }
-    if (this._uriKey !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.uriKey = this._uriKey;
-    }
-    if (this._usernameKey !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.usernameKey = this._usernameKey;
-    }
-    if (this._buffer?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.buffer = this._buffer?.internalValue;
-    }
-    if (this._compression?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.compression = this._compression?.internalValue;
-    }
-    if (this._tls?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.tls = this._tls?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: ObservabilityPipelineConfigDestinationHttpClient | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._authStrategy = undefined;
-      this._customKey = undefined;
-      this._encoding = undefined;
-      this._passwordKey = undefined;
-      this._tokenKey = undefined;
-      this._uriKey = undefined;
-      this._usernameKey = undefined;
-      this._buffer.internalValue = undefined;
-      this._compression.internalValue = undefined;
-      this._tls.internalValue = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._authStrategy = value.authStrategy;
-      this._customKey = value.customKey;
-      this._encoding = value.encoding;
-      this._passwordKey = value.passwordKey;
-      this._tokenKey = value.tokenKey;
-      this._uriKey = value.uriKey;
-      this._usernameKey = value.usernameKey;
-      this._buffer.internalValue = value.buffer;
-      this._compression.internalValue = value.compression;
-      this._tls.internalValue = value.tls;
-    }
-  }
-
-  // auth_strategy - computed: false, optional: true, required: false
-  private _authStrategy?: string; 
-  public get authStrategy() {
-    return this.getStringAttribute('auth_strategy');
-  }
-  public set authStrategy(value: string) {
-    this._authStrategy = value;
-  }
-  public resetAuthStrategy() {
-    this._authStrategy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get authStrategyInput() {
-    return this._authStrategy;
-  }
-
-  // custom_key - computed: false, optional: true, required: false
-  private _customKey?: string; 
-  public get customKey() {
-    return this.getStringAttribute('custom_key');
-  }
-  public set customKey(value: string) {
-    this._customKey = value;
-  }
-  public resetCustomKey() {
-    this._customKey = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get customKeyInput() {
-    return this._customKey;
-  }
-
-  // encoding - computed: false, optional: false, required: true
-  private _encoding?: string; 
-  public get encoding() {
-    return this.getStringAttribute('encoding');
-  }
-  public set encoding(value: string) {
-    this._encoding = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get encodingInput() {
-    return this._encoding;
-  }
-
-  // password_key - computed: false, optional: true, required: false
-  private _passwordKey?: string; 
-  public get passwordKey() {
-    return this.getStringAttribute('password_key');
-  }
-  public set passwordKey(value: string) {
-    this._passwordKey = value;
-  }
-  public resetPasswordKey() {
-    this._passwordKey = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get passwordKeyInput() {
-    return this._passwordKey;
-  }
-
-  // token_key - computed: false, optional: true, required: false
-  private _tokenKey?: string; 
-  public get tokenKey() {
-    return this.getStringAttribute('token_key');
-  }
-  public set tokenKey(value: string) {
-    this._tokenKey = value;
-  }
-  public resetTokenKey() {
-    this._tokenKey = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tokenKeyInput() {
-    return this._tokenKey;
-  }
-
-  // uri_key - computed: false, optional: true, required: false
-  private _uriKey?: string; 
-  public get uriKey() {
-    return this.getStringAttribute('uri_key');
-  }
-  public set uriKey(value: string) {
-    this._uriKey = value;
-  }
-  public resetUriKey() {
-    this._uriKey = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get uriKeyInput() {
-    return this._uriKey;
-  }
-
-  // username_key - computed: false, optional: true, required: false
-  private _usernameKey?: string; 
-  public get usernameKey() {
-    return this.getStringAttribute('username_key');
-  }
-  public set usernameKey(value: string) {
-    this._usernameKey = value;
-  }
-  public resetUsernameKey() {
-    this._usernameKey = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get usernameKeyInput() {
-    return this._usernameKey;
-  }
-
-  // buffer - computed: false, optional: true, required: false
-  private _buffer = new ObservabilityPipelineConfigDestinationHttpClientBufferList(this, "buffer", false);
-  public get buffer() {
-    return this._buffer;
-  }
-  public putBuffer(value: ObservabilityPipelineConfigDestinationHttpClientBuffer[] | cdktn.IResolvable) {
-    this._buffer.internalValue = value;
-  }
-  public resetBuffer() {
-    this._buffer.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get bufferInput() {
-    return this._buffer.internalValue;
-  }
-
-  // compression - computed: false, optional: true, required: false
-  private _compression = new ObservabilityPipelineConfigDestinationHttpClientCompressionList(this, "compression", false);
-  public get compression() {
-    return this._compression;
-  }
-  public putCompression(value: ObservabilityPipelineConfigDestinationHttpClientCompression[] | cdktn.IResolvable) {
-    this._compression.internalValue = value;
-  }
-  public resetCompression() {
-    this._compression.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get compressionInput() {
-    return this._compression.internalValue;
-  }
-
-  // tls - computed: false, optional: true, required: false
-  private _tls = new ObservabilityPipelineConfigDestinationHttpClientTlsList(this, "tls", false);
-  public get tls() {
-    return this._tls;
-  }
-  public putTls(value: ObservabilityPipelineConfigDestinationHttpClientTls[] | cdktn.IResolvable) {
-    this._tls.internalValue = value;
-  }
-  public resetTls() {
-    this._tls.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tlsInput() {
-    return this._tls.internalValue;
-  }
-}
-
-export class ObservabilityPipelineConfigDestinationHttpClientList extends cdktn.ComplexList {
-  public internalValue? : ObservabilityPipelineConfigDestinationHttpClient[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ObservabilityPipelineConfigDestinationHttpClientOutputReference {
-    return new ObservabilityPipelineConfigDestinationHttpClientOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface ObservabilityPipelineConfigDestinationKafkaBufferDisk {
-  /**
-  * Maximum size of the disk buffer (in bytes).
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
-  */
-  readonly maxSize?: number;
-  /**
-  * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
-  */
-  readonly whenFull?: string;
-}
-
-export function observabilityPipelineConfigDestinationKafkaBufferDiskToTerraform(struct?: ObservabilityPipelineConfigDestinationKafkaBufferDisk | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    max_size: cdktn.numberToTerraform(struct!.maxSize),
-    when_full: cdktn.stringToTerraform(struct!.whenFull),
-  }
-}
-
-
-export function observabilityPipelineConfigDestinationKafkaBufferDiskToHclTerraform(struct?: ObservabilityPipelineConfigDestinationKafkaBufferDisk | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    max_size: {
-      value: cdktn.numberToHclTerraform(struct!.maxSize),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    when_full: {
-      value: cdktn.stringToHclTerraform(struct!.whenFull),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class ObservabilityPipelineConfigDestinationKafkaBufferDiskOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): ObservabilityPipelineConfigDestinationKafkaBufferDisk | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._maxSize !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.maxSize = this._maxSize;
-    }
-    if (this._whenFull !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.whenFull = this._whenFull;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: ObservabilityPipelineConfigDestinationKafkaBufferDisk | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._maxSize = undefined;
-      this._whenFull = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._maxSize = value.maxSize;
-      this._whenFull = value.whenFull;
-    }
-  }
-
-  // max_size - computed: false, optional: true, required: false
-  private _maxSize?: number; 
-  public get maxSize() {
-    return this.getNumberAttribute('max_size');
-  }
-  public set maxSize(value: number) {
-    this._maxSize = value;
-  }
-  public resetMaxSize() {
-    this._maxSize = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get maxSizeInput() {
-    return this._maxSize;
-  }
-
-  // when_full - computed: true, optional: true, required: false
-  private _whenFull?: string; 
-  public get whenFull() {
-    return this.getStringAttribute('when_full');
-  }
-  public set whenFull(value: string) {
-    this._whenFull = value;
-  }
-  public resetWhenFull() {
-    this._whenFull = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get whenFullInput() {
-    return this._whenFull;
-  }
-}
-
-export class ObservabilityPipelineConfigDestinationKafkaBufferDiskList extends cdktn.ComplexList {
-  public internalValue? : ObservabilityPipelineConfigDestinationKafkaBufferDisk[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ObservabilityPipelineConfigDestinationKafkaBufferDiskOutputReference {
-    return new ObservabilityPipelineConfigDestinationKafkaBufferDiskOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface ObservabilityPipelineConfigDestinationKafkaBufferMemory {
-  /**
-  * Maximum events for the memory buffer.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
-  */
-  readonly maxEvents?: number;
-  /**
-  * Maximum size of the memory buffer (in bytes).
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
-  */
-  readonly maxSize?: number;
-  /**
-  * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
-  */
-  readonly whenFull?: string;
-}
-
-export function observabilityPipelineConfigDestinationKafkaBufferMemoryToTerraform(struct?: ObservabilityPipelineConfigDestinationKafkaBufferMemory | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    max_events: cdktn.numberToTerraform(struct!.maxEvents),
-    max_size: cdktn.numberToTerraform(struct!.maxSize),
-    when_full: cdktn.stringToTerraform(struct!.whenFull),
-  }
-}
-
-
-export function observabilityPipelineConfigDestinationKafkaBufferMemoryToHclTerraform(struct?: ObservabilityPipelineConfigDestinationKafkaBufferMemory | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    max_events: {
-      value: cdktn.numberToHclTerraform(struct!.maxEvents),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    max_size: {
-      value: cdktn.numberToHclTerraform(struct!.maxSize),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    when_full: {
-      value: cdktn.stringToHclTerraform(struct!.whenFull),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class ObservabilityPipelineConfigDestinationKafkaBufferMemoryOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): ObservabilityPipelineConfigDestinationKafkaBufferMemory | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._maxEvents !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.maxEvents = this._maxEvents;
-    }
-    if (this._maxSize !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.maxSize = this._maxSize;
-    }
-    if (this._whenFull !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.whenFull = this._whenFull;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: ObservabilityPipelineConfigDestinationKafkaBufferMemory | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._maxEvents = undefined;
-      this._maxSize = undefined;
-      this._whenFull = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._maxEvents = value.maxEvents;
-      this._maxSize = value.maxSize;
-      this._whenFull = value.whenFull;
-    }
-  }
-
-  // max_events - computed: false, optional: true, required: false
-  private _maxEvents?: number; 
-  public get maxEvents() {
-    return this.getNumberAttribute('max_events');
-  }
-  public set maxEvents(value: number) {
-    this._maxEvents = value;
-  }
-  public resetMaxEvents() {
-    this._maxEvents = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get maxEventsInput() {
-    return this._maxEvents;
-  }
-
-  // max_size - computed: false, optional: true, required: false
-  private _maxSize?: number; 
-  public get maxSize() {
-    return this.getNumberAttribute('max_size');
-  }
-  public set maxSize(value: number) {
-    this._maxSize = value;
-  }
-  public resetMaxSize() {
-    this._maxSize = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get maxSizeInput() {
-    return this._maxSize;
-  }
-
-  // when_full - computed: true, optional: true, required: false
-  private _whenFull?: string; 
-  public get whenFull() {
-    return this.getStringAttribute('when_full');
-  }
-  public set whenFull(value: string) {
-    this._whenFull = value;
-  }
-  public resetWhenFull() {
-    this._whenFull = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get whenFullInput() {
-    return this._whenFull;
-  }
-}
-
-export class ObservabilityPipelineConfigDestinationKafkaBufferMemoryList extends cdktn.ComplexList {
-  public internalValue? : ObservabilityPipelineConfigDestinationKafkaBufferMemory[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ObservabilityPipelineConfigDestinationKafkaBufferMemoryOutputReference {
-    return new ObservabilityPipelineConfigDestinationKafkaBufferMemoryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface ObservabilityPipelineConfigDestinationKafkaBuffer {
-  /**
-  * disk block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
-  */
-  readonly disk?: ObservabilityPipelineConfigDestinationKafkaBufferDisk[] | cdktn.IResolvable;
-  /**
-  * memory block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
-  */
-  readonly memory?: ObservabilityPipelineConfigDestinationKafkaBufferMemory[] | cdktn.IResolvable;
-}
-
-export function observabilityPipelineConfigDestinationKafkaBufferToTerraform(struct?: ObservabilityPipelineConfigDestinationKafkaBuffer | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    disk: cdktn.listMapper(observabilityPipelineConfigDestinationKafkaBufferDiskToTerraform, true)(struct!.disk),
-    memory: cdktn.listMapper(observabilityPipelineConfigDestinationKafkaBufferMemoryToTerraform, true)(struct!.memory),
-  }
-}
-
-
-export function observabilityPipelineConfigDestinationKafkaBufferToHclTerraform(struct?: ObservabilityPipelineConfigDestinationKafkaBuffer | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    disk: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigDestinationKafkaBufferDiskToHclTerraform, true)(struct!.disk),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigDestinationKafkaBufferDiskList",
-    },
-    memory: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigDestinationKafkaBufferMemoryToHclTerraform, true)(struct!.memory),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigDestinationKafkaBufferMemoryList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class ObservabilityPipelineConfigDestinationKafkaBufferOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): ObservabilityPipelineConfigDestinationKafkaBuffer | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._disk?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.disk = this._disk?.internalValue;
-    }
-    if (this._memory?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.memory = this._memory?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: ObservabilityPipelineConfigDestinationKafkaBuffer | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._disk.internalValue = undefined;
-      this._memory.internalValue = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._disk.internalValue = value.disk;
-      this._memory.internalValue = value.memory;
-    }
-  }
-
-  // disk - computed: false, optional: true, required: false
-  private _disk = new ObservabilityPipelineConfigDestinationKafkaBufferDiskList(this, "disk", false);
-  public get disk() {
-    return this._disk;
-  }
-  public putDisk(value: ObservabilityPipelineConfigDestinationKafkaBufferDisk[] | cdktn.IResolvable) {
-    this._disk.internalValue = value;
-  }
-  public resetDisk() {
-    this._disk.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get diskInput() {
-    return this._disk.internalValue;
-  }
-
-  // memory - computed: false, optional: true, required: false
-  private _memory = new ObservabilityPipelineConfigDestinationKafkaBufferMemoryList(this, "memory", false);
-  public get memory() {
-    return this._memory;
-  }
-  public putMemory(value: ObservabilityPipelineConfigDestinationKafkaBufferMemory[] | cdktn.IResolvable) {
-    this._memory.internalValue = value;
-  }
-  public resetMemory() {
-    this._memory.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get memoryInput() {
-    return this._memory.internalValue;
-  }
-}
-
-export class ObservabilityPipelineConfigDestinationKafkaBufferList extends cdktn.ComplexList {
-  public internalValue? : ObservabilityPipelineConfigDestinationKafkaBuffer[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ObservabilityPipelineConfigDestinationKafkaBufferOutputReference {
-    return new ObservabilityPipelineConfigDestinationKafkaBufferOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface ObservabilityPipelineConfigDestinationKafkaLibrdkafkaOption {
-  /**
-  * The name of the librdkafka configuration option.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
-  */
-  readonly name: string;
-  /**
-  * The value of the librdkafka configuration option.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
-  */
-  readonly value: string;
-}
-
-export function observabilityPipelineConfigDestinationKafkaLibrdkafkaOptionToTerraform(struct?: ObservabilityPipelineConfigDestinationKafkaLibrdkafkaOption | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    name: cdktn.stringToTerraform(struct!.name),
-    value: cdktn.stringToTerraform(struct!.value),
-  }
-}
-
-
-export function observabilityPipelineConfigDestinationKafkaLibrdkafkaOptionToHclTerraform(struct?: ObservabilityPipelineConfigDestinationKafkaLibrdkafkaOption | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    name: {
-      value: cdktn.stringToHclTerraform(struct!.name),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    value: {
-      value: cdktn.stringToHclTerraform(struct!.value),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class ObservabilityPipelineConfigDestinationKafkaLibrdkafkaOptionOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): ObservabilityPipelineConfigDestinationKafkaLibrdkafkaOption | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._name !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.name = this._name;
-    }
-    if (this._value !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.value = this._value;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: ObservabilityPipelineConfigDestinationKafkaLibrdkafkaOption | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._name = undefined;
-      this._value = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._name = value.name;
-      this._value = value.value;
-    }
-  }
-
-  // name - computed: false, optional: false, required: true
-  private _name?: string; 
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-  public set name(value: string) {
-    this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
-  }
-
-  // value - computed: false, optional: false, required: true
-  private _value?: string; 
-  public get value() {
-    return this.getStringAttribute('value');
-  }
-  public set value(value: string) {
-    this._value = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get valueInput() {
-    return this._value;
-  }
-}
-
-export class ObservabilityPipelineConfigDestinationKafkaLibrdkafkaOptionList extends cdktn.ComplexList {
-  public internalValue? : ObservabilityPipelineConfigDestinationKafkaLibrdkafkaOption[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ObservabilityPipelineConfigDestinationKafkaLibrdkafkaOptionOutputReference {
-    return new ObservabilityPipelineConfigDestinationKafkaLibrdkafkaOptionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface ObservabilityPipelineConfigDestinationKafkaSasl {
-  /**
-  * SASL authentication mechanism. Valid values are `PLAIN`, `SCRAM-SHA-256`, `SCRAM-SHA-512`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#mechanism ObservabilityPipeline#mechanism}
-  */
-  readonly mechanism: string;
-  /**
-  * Name of the environment variable or secret that holds the SASL password.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
-  */
-  readonly passwordKey?: string;
-  /**
-  * Name of the environment variable or secret that holds the SASL username.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
-  */
-  readonly usernameKey?: string;
-}
-
-export function observabilityPipelineConfigDestinationKafkaSaslToTerraform(struct?: ObservabilityPipelineConfigDestinationKafkaSasl | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    mechanism: cdktn.stringToTerraform(struct!.mechanism),
-    password_key: cdktn.stringToTerraform(struct!.passwordKey),
-    username_key: cdktn.stringToTerraform(struct!.usernameKey),
-  }
-}
-
-
-export function observabilityPipelineConfigDestinationKafkaSaslToHclTerraform(struct?: ObservabilityPipelineConfigDestinationKafkaSasl | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    mechanism: {
-      value: cdktn.stringToHclTerraform(struct!.mechanism),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    password_key: {
-      value: cdktn.stringToHclTerraform(struct!.passwordKey),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    username_key: {
-      value: cdktn.stringToHclTerraform(struct!.usernameKey),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class ObservabilityPipelineConfigDestinationKafkaSaslOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): ObservabilityPipelineConfigDestinationKafkaSasl | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._mechanism !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.mechanism = this._mechanism;
-    }
-    if (this._passwordKey !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.passwordKey = this._passwordKey;
-    }
-    if (this._usernameKey !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.usernameKey = this._usernameKey;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: ObservabilityPipelineConfigDestinationKafkaSasl | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._mechanism = undefined;
-      this._passwordKey = undefined;
-      this._usernameKey = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._mechanism = value.mechanism;
-      this._passwordKey = value.passwordKey;
-      this._usernameKey = value.usernameKey;
-    }
-  }
-
-  // mechanism - computed: false, optional: false, required: true
-  private _mechanism?: string; 
-  public get mechanism() {
-    return this.getStringAttribute('mechanism');
-  }
-  public set mechanism(value: string) {
-    this._mechanism = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get mechanismInput() {
-    return this._mechanism;
-  }
-
-  // password_key - computed: false, optional: true, required: false
-  private _passwordKey?: string; 
-  public get passwordKey() {
-    return this.getStringAttribute('password_key');
-  }
-  public set passwordKey(value: string) {
-    this._passwordKey = value;
-  }
-  public resetPasswordKey() {
-    this._passwordKey = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get passwordKeyInput() {
-    return this._passwordKey;
-  }
-
-  // username_key - computed: false, optional: true, required: false
-  private _usernameKey?: string; 
-  public get usernameKey() {
-    return this.getStringAttribute('username_key');
-  }
-  public set usernameKey(value: string) {
-    this._usernameKey = value;
-  }
-  public resetUsernameKey() {
-    this._usernameKey = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get usernameKeyInput() {
-    return this._usernameKey;
-  }
-}
-
-export class ObservabilityPipelineConfigDestinationKafkaSaslList extends cdktn.ComplexList {
-  public internalValue? : ObservabilityPipelineConfigDestinationKafkaSasl[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ObservabilityPipelineConfigDestinationKafkaSaslOutputReference {
-    return new ObservabilityPipelineConfigDestinationKafkaSaslOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface ObservabilityPipelineConfigDestinationKafkaTls {
-  /**
-  * Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
-  */
-  readonly caFile?: string;
-  /**
-  * Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
-  */
-  readonly crtFile: string;
-  /**
-  * Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
-  */
-  readonly keyFile?: string;
-  /**
-  * Name of the environment variable or secret that holds the passphrase for the private key file.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
-  */
-  readonly keyPassKey?: string;
-}
-
-export function observabilityPipelineConfigDestinationKafkaTlsToTerraform(struct?: ObservabilityPipelineConfigDestinationKafkaTls | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    ca_file: cdktn.stringToTerraform(struct!.caFile),
-    crt_file: cdktn.stringToTerraform(struct!.crtFile),
-    key_file: cdktn.stringToTerraform(struct!.keyFile),
-    key_pass_key: cdktn.stringToTerraform(struct!.keyPassKey),
-  }
-}
-
-
-export function observabilityPipelineConfigDestinationKafkaTlsToHclTerraform(struct?: ObservabilityPipelineConfigDestinationKafkaTls | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    ca_file: {
-      value: cdktn.stringToHclTerraform(struct!.caFile),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    crt_file: {
-      value: cdktn.stringToHclTerraform(struct!.crtFile),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    key_file: {
-      value: cdktn.stringToHclTerraform(struct!.keyFile),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    key_pass_key: {
-      value: cdktn.stringToHclTerraform(struct!.keyPassKey),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class ObservabilityPipelineConfigDestinationKafkaTlsOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): ObservabilityPipelineConfigDestinationKafkaTls | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._caFile !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.caFile = this._caFile;
-    }
-    if (this._crtFile !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.crtFile = this._crtFile;
-    }
-    if (this._keyFile !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.keyFile = this._keyFile;
-    }
-    if (this._keyPassKey !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.keyPassKey = this._keyPassKey;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: ObservabilityPipelineConfigDestinationKafkaTls | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._caFile = undefined;
-      this._crtFile = undefined;
-      this._keyFile = undefined;
-      this._keyPassKey = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._caFile = value.caFile;
-      this._crtFile = value.crtFile;
-      this._keyFile = value.keyFile;
-      this._keyPassKey = value.keyPassKey;
-    }
-  }
-
-  // ca_file - computed: false, optional: true, required: false
-  private _caFile?: string; 
-  public get caFile() {
-    return this.getStringAttribute('ca_file');
-  }
-  public set caFile(value: string) {
-    this._caFile = value;
-  }
-  public resetCaFile() {
-    this._caFile = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get caFileInput() {
-    return this._caFile;
-  }
-
-  // crt_file - computed: false, optional: false, required: true
-  private _crtFile?: string; 
-  public get crtFile() {
-    return this.getStringAttribute('crt_file');
-  }
-  public set crtFile(value: string) {
-    this._crtFile = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get crtFileInput() {
-    return this._crtFile;
-  }
-
-  // key_file - computed: false, optional: true, required: false
-  private _keyFile?: string; 
-  public get keyFile() {
-    return this.getStringAttribute('key_file');
-  }
-  public set keyFile(value: string) {
-    this._keyFile = value;
-  }
-  public resetKeyFile() {
-    this._keyFile = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get keyFileInput() {
-    return this._keyFile;
-  }
-
-  // key_pass_key - computed: false, optional: true, required: false
-  private _keyPassKey?: string; 
-  public get keyPassKey() {
-    return this.getStringAttribute('key_pass_key');
-  }
-  public set keyPassKey(value: string) {
-    this._keyPassKey = value;
-  }
-  public resetKeyPassKey() {
-    this._keyPassKey = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get keyPassKeyInput() {
-    return this._keyPassKey;
-  }
-}
-
-export class ObservabilityPipelineConfigDestinationKafkaTlsList extends cdktn.ComplexList {
-  public internalValue? : ObservabilityPipelineConfigDestinationKafkaTls[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ObservabilityPipelineConfigDestinationKafkaTlsOutputReference {
-    return new ObservabilityPipelineConfigDestinationKafkaTlsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface ObservabilityPipelineConfigDestinationKafka {
-  /**
-  * Name of the environment variable or secret that holds the Kafka bootstrap servers.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#bootstrap_servers_key ObservabilityPipeline#bootstrap_servers_key}
-  */
-  readonly bootstrapServersKey?: string;
-  /**
-  * Compression codec for Kafka messages. Valid values are `none`, `gzip`, `snappy`, `lz4`, `zstd`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
-  */
-  readonly compression?: string;
-  /**
-  * Encoding format for log events. Valid values are `json`, `raw_message`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
-  */
-  readonly encoding: string;
-  /**
-  * The field name to use for Kafka message headers.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#headers_key ObservabilityPipeline#headers_key}
-  */
-  readonly headersKey?: string;
-  /**
-  * The field name to use as the Kafka message key.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#key_field ObservabilityPipeline#key_field}
-  */
-  readonly keyField?: string;
-  /**
-  * Maximum time in milliseconds to wait for message delivery confirmation.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#message_timeout_ms ObservabilityPipeline#message_timeout_ms}
-  */
-  readonly messageTimeoutMs?: number;
-  /**
-  * Duration in seconds for the rate limit window.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#rate_limit_duration_secs ObservabilityPipeline#rate_limit_duration_secs}
-  */
-  readonly rateLimitDurationSecs?: number;
-  /**
-  * Maximum number of messages allowed per rate limit duration.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#rate_limit_num ObservabilityPipeline#rate_limit_num}
-  */
-  readonly rateLimitNum?: number;
-  /**
-  * Socket timeout in milliseconds for network requests.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#socket_timeout_ms ObservabilityPipeline#socket_timeout_ms}
-  */
-  readonly socketTimeoutMs?: number;
-  /**
-  * The Kafka topic name to publish logs to.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#topic ObservabilityPipeline#topic}
-  */
-  readonly topic: string;
-  /**
-  * buffer block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
-  */
-  readonly buffer?: ObservabilityPipelineConfigDestinationKafkaBuffer[] | cdktn.IResolvable;
-  /**
-  * librdkafka_option block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#librdkafka_option ObservabilityPipeline#librdkafka_option}
-  */
-  readonly librdkafkaOption?: ObservabilityPipelineConfigDestinationKafkaLibrdkafkaOption[] | cdktn.IResolvable;
-  /**
-  * sasl block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#sasl ObservabilityPipeline#sasl}
-  */
-  readonly sasl?: ObservabilityPipelineConfigDestinationKafkaSasl[] | cdktn.IResolvable;
-  /**
-  * tls block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
-  */
-  readonly tls?: ObservabilityPipelineConfigDestinationKafkaTls[] | cdktn.IResolvable;
-}
-
-export function observabilityPipelineConfigDestinationKafkaToTerraform(struct?: ObservabilityPipelineConfigDestinationKafka | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    bootstrap_servers_key: cdktn.stringToTerraform(struct!.bootstrapServersKey),
-    compression: cdktn.stringToTerraform(struct!.compression),
-    encoding: cdktn.stringToTerraform(struct!.encoding),
-    headers_key: cdktn.stringToTerraform(struct!.headersKey),
-    key_field: cdktn.stringToTerraform(struct!.keyField),
-    message_timeout_ms: cdktn.numberToTerraform(struct!.messageTimeoutMs),
-    rate_limit_duration_secs: cdktn.numberToTerraform(struct!.rateLimitDurationSecs),
-    rate_limit_num: cdktn.numberToTerraform(struct!.rateLimitNum),
-    socket_timeout_ms: cdktn.numberToTerraform(struct!.socketTimeoutMs),
-    topic: cdktn.stringToTerraform(struct!.topic),
-    buffer: cdktn.listMapper(observabilityPipelineConfigDestinationKafkaBufferToTerraform, true)(struct!.buffer),
-    librdkafka_option: cdktn.listMapper(observabilityPipelineConfigDestinationKafkaLibrdkafkaOptionToTerraform, true)(struct!.librdkafkaOption),
-    sasl: cdktn.listMapper(observabilityPipelineConfigDestinationKafkaSaslToTerraform, true)(struct!.sasl),
-    tls: cdktn.listMapper(observabilityPipelineConfigDestinationKafkaTlsToTerraform, true)(struct!.tls),
-  }
-}
-
-
-export function observabilityPipelineConfigDestinationKafkaToHclTerraform(struct?: ObservabilityPipelineConfigDestinationKafka | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    bootstrap_servers_key: {
-      value: cdktn.stringToHclTerraform(struct!.bootstrapServersKey),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    compression: {
-      value: cdktn.stringToHclTerraform(struct!.compression),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    encoding: {
-      value: cdktn.stringToHclTerraform(struct!.encoding),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    headers_key: {
-      value: cdktn.stringToHclTerraform(struct!.headersKey),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    key_field: {
-      value: cdktn.stringToHclTerraform(struct!.keyField),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    message_timeout_ms: {
-      value: cdktn.numberToHclTerraform(struct!.messageTimeoutMs),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    rate_limit_duration_secs: {
-      value: cdktn.numberToHclTerraform(struct!.rateLimitDurationSecs),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    rate_limit_num: {
-      value: cdktn.numberToHclTerraform(struct!.rateLimitNum),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    socket_timeout_ms: {
-      value: cdktn.numberToHclTerraform(struct!.socketTimeoutMs),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    topic: {
-      value: cdktn.stringToHclTerraform(struct!.topic),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    buffer: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigDestinationKafkaBufferToHclTerraform, true)(struct!.buffer),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigDestinationKafkaBufferList",
-    },
-    librdkafka_option: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigDestinationKafkaLibrdkafkaOptionToHclTerraform, true)(struct!.librdkafkaOption),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigDestinationKafkaLibrdkafkaOptionList",
-    },
-    sasl: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigDestinationKafkaSaslToHclTerraform, true)(struct!.sasl),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigDestinationKafkaSaslList",
-    },
-    tls: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigDestinationKafkaTlsToHclTerraform, true)(struct!.tls),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigDestinationKafkaTlsList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class ObservabilityPipelineConfigDestinationKafkaOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): ObservabilityPipelineConfigDestinationKafka | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._bootstrapServersKey !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.bootstrapServersKey = this._bootstrapServersKey;
-    }
-    if (this._compression !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.compression = this._compression;
-    }
-    if (this._encoding !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.encoding = this._encoding;
-    }
-    if (this._headersKey !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.headersKey = this._headersKey;
-    }
-    if (this._keyField !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.keyField = this._keyField;
-    }
-    if (this._messageTimeoutMs !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.messageTimeoutMs = this._messageTimeoutMs;
-    }
-    if (this._rateLimitDurationSecs !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.rateLimitDurationSecs = this._rateLimitDurationSecs;
-    }
-    if (this._rateLimitNum !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.rateLimitNum = this._rateLimitNum;
-    }
-    if (this._socketTimeoutMs !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.socketTimeoutMs = this._socketTimeoutMs;
-    }
-    if (this._topic !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.topic = this._topic;
-    }
-    if (this._buffer?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.buffer = this._buffer?.internalValue;
-    }
-    if (this._librdkafkaOption?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.librdkafkaOption = this._librdkafkaOption?.internalValue;
-    }
-    if (this._sasl?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.sasl = this._sasl?.internalValue;
-    }
-    if (this._tls?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.tls = this._tls?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: ObservabilityPipelineConfigDestinationKafka | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._bootstrapServersKey = undefined;
-      this._compression = undefined;
-      this._encoding = undefined;
-      this._headersKey = undefined;
-      this._keyField = undefined;
-      this._messageTimeoutMs = undefined;
-      this._rateLimitDurationSecs = undefined;
-      this._rateLimitNum = undefined;
-      this._socketTimeoutMs = undefined;
-      this._topic = undefined;
-      this._buffer.internalValue = undefined;
-      this._librdkafkaOption.internalValue = undefined;
-      this._sasl.internalValue = undefined;
-      this._tls.internalValue = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._bootstrapServersKey = value.bootstrapServersKey;
-      this._compression = value.compression;
-      this._encoding = value.encoding;
-      this._headersKey = value.headersKey;
-      this._keyField = value.keyField;
-      this._messageTimeoutMs = value.messageTimeoutMs;
-      this._rateLimitDurationSecs = value.rateLimitDurationSecs;
-      this._rateLimitNum = value.rateLimitNum;
-      this._socketTimeoutMs = value.socketTimeoutMs;
-      this._topic = value.topic;
-      this._buffer.internalValue = value.buffer;
-      this._librdkafkaOption.internalValue = value.librdkafkaOption;
-      this._sasl.internalValue = value.sasl;
-      this._tls.internalValue = value.tls;
-    }
-  }
-
-  // bootstrap_servers_key - computed: false, optional: true, required: false
-  private _bootstrapServersKey?: string; 
-  public get bootstrapServersKey() {
-    return this.getStringAttribute('bootstrap_servers_key');
-  }
-  public set bootstrapServersKey(value: string) {
-    this._bootstrapServersKey = value;
-  }
-  public resetBootstrapServersKey() {
-    this._bootstrapServersKey = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get bootstrapServersKeyInput() {
-    return this._bootstrapServersKey;
-  }
-
-  // compression - computed: false, optional: true, required: false
-  private _compression?: string; 
-  public get compression() {
-    return this.getStringAttribute('compression');
-  }
-  public set compression(value: string) {
-    this._compression = value;
-  }
-  public resetCompression() {
-    this._compression = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get compressionInput() {
-    return this._compression;
-  }
-
-  // encoding - computed: false, optional: false, required: true
-  private _encoding?: string; 
-  public get encoding() {
-    return this.getStringAttribute('encoding');
-  }
-  public set encoding(value: string) {
-    this._encoding = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get encodingInput() {
-    return this._encoding;
-  }
-
-  // headers_key - computed: false, optional: true, required: false
-  private _headersKey?: string; 
-  public get headersKey() {
-    return this.getStringAttribute('headers_key');
-  }
-  public set headersKey(value: string) {
-    this._headersKey = value;
-  }
-  public resetHeadersKey() {
-    this._headersKey = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get headersKeyInput() {
-    return this._headersKey;
-  }
-
-  // key_field - computed: false, optional: true, required: false
-  private _keyField?: string; 
-  public get keyField() {
-    return this.getStringAttribute('key_field');
-  }
-  public set keyField(value: string) {
-    this._keyField = value;
-  }
-  public resetKeyField() {
-    this._keyField = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get keyFieldInput() {
-    return this._keyField;
-  }
-
-  // message_timeout_ms - computed: false, optional: true, required: false
-  private _messageTimeoutMs?: number; 
-  public get messageTimeoutMs() {
-    return this.getNumberAttribute('message_timeout_ms');
-  }
-  public set messageTimeoutMs(value: number) {
-    this._messageTimeoutMs = value;
-  }
-  public resetMessageTimeoutMs() {
-    this._messageTimeoutMs = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get messageTimeoutMsInput() {
-    return this._messageTimeoutMs;
-  }
-
-  // rate_limit_duration_secs - computed: false, optional: true, required: false
-  private _rateLimitDurationSecs?: number; 
-  public get rateLimitDurationSecs() {
-    return this.getNumberAttribute('rate_limit_duration_secs');
-  }
-  public set rateLimitDurationSecs(value: number) {
-    this._rateLimitDurationSecs = value;
-  }
-  public resetRateLimitDurationSecs() {
-    this._rateLimitDurationSecs = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get rateLimitDurationSecsInput() {
-    return this._rateLimitDurationSecs;
-  }
-
-  // rate_limit_num - computed: false, optional: true, required: false
-  private _rateLimitNum?: number; 
-  public get rateLimitNum() {
-    return this.getNumberAttribute('rate_limit_num');
-  }
-  public set rateLimitNum(value: number) {
-    this._rateLimitNum = value;
-  }
-  public resetRateLimitNum() {
-    this._rateLimitNum = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get rateLimitNumInput() {
-    return this._rateLimitNum;
-  }
-
-  // socket_timeout_ms - computed: false, optional: true, required: false
-  private _socketTimeoutMs?: number; 
-  public get socketTimeoutMs() {
-    return this.getNumberAttribute('socket_timeout_ms');
-  }
-  public set socketTimeoutMs(value: number) {
-    this._socketTimeoutMs = value;
-  }
-  public resetSocketTimeoutMs() {
-    this._socketTimeoutMs = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get socketTimeoutMsInput() {
-    return this._socketTimeoutMs;
-  }
-
-  // topic - computed: false, optional: false, required: true
-  private _topic?: string; 
-  public get topic() {
-    return this.getStringAttribute('topic');
-  }
-  public set topic(value: string) {
-    this._topic = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get topicInput() {
-    return this._topic;
-  }
-
-  // buffer - computed: false, optional: true, required: false
-  private _buffer = new ObservabilityPipelineConfigDestinationKafkaBufferList(this, "buffer", false);
-  public get buffer() {
-    return this._buffer;
-  }
-  public putBuffer(value: ObservabilityPipelineConfigDestinationKafkaBuffer[] | cdktn.IResolvable) {
-    this._buffer.internalValue = value;
-  }
-  public resetBuffer() {
-    this._buffer.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get bufferInput() {
-    return this._buffer.internalValue;
-  }
-
-  // librdkafka_option - computed: false, optional: true, required: false
-  private _librdkafkaOption = new ObservabilityPipelineConfigDestinationKafkaLibrdkafkaOptionList(this, "librdkafka_option", false);
-  public get librdkafkaOption() {
-    return this._librdkafkaOption;
-  }
-  public putLibrdkafkaOption(value: ObservabilityPipelineConfigDestinationKafkaLibrdkafkaOption[] | cdktn.IResolvable) {
-    this._librdkafkaOption.internalValue = value;
-  }
-  public resetLibrdkafkaOption() {
-    this._librdkafkaOption.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get librdkafkaOptionInput() {
-    return this._librdkafkaOption.internalValue;
-  }
-
-  // sasl - computed: false, optional: true, required: false
-  private _sasl = new ObservabilityPipelineConfigDestinationKafkaSaslList(this, "sasl", false);
-  public get sasl() {
-    return this._sasl;
-  }
-  public putSasl(value: ObservabilityPipelineConfigDestinationKafkaSasl[] | cdktn.IResolvable) {
-    this._sasl.internalValue = value;
-  }
-  public resetSasl() {
-    this._sasl.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get saslInput() {
-    return this._sasl.internalValue;
-  }
-
-  // tls - computed: false, optional: true, required: false
-  private _tls = new ObservabilityPipelineConfigDestinationKafkaTlsList(this, "tls", false);
-  public get tls() {
-    return this._tls;
-  }
-  public putTls(value: ObservabilityPipelineConfigDestinationKafkaTls[] | cdktn.IResolvable) {
-    this._tls.internalValue = value;
-  }
-  public resetTls() {
-    this._tls.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tlsInput() {
-    return this._tls.internalValue;
-  }
-}
-
-export class ObservabilityPipelineConfigDestinationKafkaList extends cdktn.ComplexList {
-  public internalValue? : ObservabilityPipelineConfigDestinationKafka[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ObservabilityPipelineConfigDestinationKafkaOutputReference {
-    return new ObservabilityPipelineConfigDestinationKafkaOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }

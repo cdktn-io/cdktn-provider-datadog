@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/integration_aws_account
+// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/integration_aws_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataDatadogIntegrationAwsAccountConfig extends cdktn.TerraformM
   /**
   * The AWS Account ID of the integration config to look up. Must be a 12-digit AWS Account ID without dashes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/integration_aws_account#aws_account_id DataDatadogIntegrationAwsAccount#aws_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/integration_aws_account#aws_account_id DataDatadogIntegrationAwsAccount#aws_account_id}
   */
   readonly awsAccountId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/integration_aws_account datadog_integration_aws_account}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/integration_aws_account datadog_integration_aws_account}
 */
 export class DataDatadogIntegrationAwsAccount extends cdktn.TerraformDataSource {
 
@@ -37,7 +37,7 @@ export class DataDatadogIntegrationAwsAccount extends cdktn.TerraformDataSource 
   * Generates CDKTN code for importing a DataDatadogIntegrationAwsAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogIntegrationAwsAccount to import
-  * @param importFromId The id of the existing DataDatadogIntegrationAwsAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/integration_aws_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogIntegrationAwsAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/integration_aws_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogIntegrationAwsAccount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class DataDatadogIntegrationAwsAccount extends cdktn.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/integration_aws_account datadog_integration_aws_account} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/integration_aws_account datadog_integration_aws_account} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class DataDatadogIntegrationAwsAccount extends cdktn.TerraformDataSource 
       terraformResourceType: 'datadog_integration_aws_account',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.25.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
