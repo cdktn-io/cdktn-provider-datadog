@@ -1,3 +1,3 @@
 # `data_datadog_status_pages`
 
-Refer to the Terraform Registry for docs: [`data_datadog_status_pages`](https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_pages).
+Refer to the Terraform Registry for docs: [`data_datadog_status_pages`](https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_pages).

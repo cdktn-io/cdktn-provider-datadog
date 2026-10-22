@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rules_order
+// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rules_order
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface SecurityFindingsInboxRulesOrderConfig extends cdktn.TerraformMe
   /**
   * A unique identifier for the order resource. This field has no server-side equivalent; Datadog recommends matching the resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rules_order#name SecurityFindingsInboxRulesOrder#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rules_order#name SecurityFindingsInboxRulesOrder#name}
   */
   readonly name: string;
   /**
   * The ordered list of all inbox rule IDs. The order of IDs in this attribute defines the evaluation order of the inbox rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rules_order#rule_ids SecurityFindingsInboxRulesOrder#rule_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rules_order#rule_ids SecurityFindingsInboxRulesOrder#rule_ids}
   */
   readonly ruleIds: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rules_order datadog_security_findings_inbox_rules_order}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rules_order datadog_security_findings_inbox_rules_order}
 */
 export class SecurityFindingsInboxRulesOrder extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class SecurityFindingsInboxRulesOrder extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SecurityFindingsInboxRulesOrder resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecurityFindingsInboxRulesOrder to import
-  * @param importFromId The id of the existing SecurityFindingsInboxRulesOrder that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rules_order#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecurityFindingsInboxRulesOrder that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rules_order#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecurityFindingsInboxRulesOrder to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class SecurityFindingsInboxRulesOrder extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rules_order datadog_security_findings_inbox_rules_order} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rules_order datadog_security_findings_inbox_rules_order} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class SecurityFindingsInboxRulesOrder extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_security_findings_inbox_rules_order',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.25.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

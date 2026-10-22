@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_exclusion_filter
+// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_exclusion_filter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface RumExclusionFilterConfig extends cdktn.TerraformMetaArguments {
   /**
   * RUM application ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_exclusion_filter#application_id RumExclusionFilter#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_exclusion_filter#application_id RumExclusionFilter#application_id}
   */
   readonly applicationId: string;
   /**
   * Whether the exclusion filter is active. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_exclusion_filter#enabled RumExclusionFilter#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_exclusion_filter#enabled RumExclusionFilter#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The type of RUM events to filter on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_exclusion_filter#event_type RumExclusionFilter#event_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_exclusion_filter#event_type RumExclusionFilter#event_type}
   */
   readonly eventType: string;
   /**
   * The name of the exclusion filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_exclusion_filter#name RumExclusionFilter#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_exclusion_filter#name RumExclusionFilter#name}
   */
   readonly name: string;
   /**
   * Additional query used to further restrict which RUM events are excluded. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_exclusion_filter#query RumExclusionFilter#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_exclusion_filter#query RumExclusionFilter#query}
   */
   readonly query?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_exclusion_filter datadog_rum_exclusion_filter}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_exclusion_filter datadog_rum_exclusion_filter}
 */
 export class RumExclusionFilter extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class RumExclusionFilter extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a RumExclusionFilter resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RumExclusionFilter to import
-  * @param importFromId The id of the existing RumExclusionFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_exclusion_filter#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RumExclusionFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_exclusion_filter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RumExclusionFilter to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class RumExclusionFilter extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_exclusion_filter datadog_rum_exclusion_filter} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_exclusion_filter datadog_rum_exclusion_filter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class RumExclusionFilter extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_rum_exclusion_filter',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.25.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
