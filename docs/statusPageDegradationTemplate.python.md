@@ -4,7 +4,7 @@
 
 ### StatusPageDegradationTemplate <a name="StatusPageDegradationTemplate" id="@cdktn/provider-datadog.statusPageDegradationTemplate.StatusPageDegradationTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template datadog_status_page_degradation_template}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template datadog_status_page_degradation_template}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.statusPageDegradationTemplate.StatusPageDegradationTemplate.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the degradation template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#name StatusPageDegradationTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#name StatusPageDegradationTemplate#name}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The ID of the status page this degradation template belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#page_id StatusPageDegradationTemplate#page_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#page_id StatusPageDegradationTemplate#page_id}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The components affected by a degradation created from this template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#components_affected StatusPageDegradationTemplate#components_affected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#components_affected StatusPageDegradationTemplate#components_affected}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The title used for a degradation created from this template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#degradation_title StatusPageDegradationTemplate#degradation_title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#degradation_title StatusPageDegradationTemplate#degradation_title}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The pre-filled updates for a degradation created from this template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#updates StatusPageDegradationTemplate#updates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#updates StatusPageDegradationTemplate#updates}
 
 ---
 
@@ -702,7 +702,7 @@ The construct id used in the generated config for the StatusPageDegradationTempl
 
 The id of the existing StatusPageDegradationTemplate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1074,7 +1074,7 @@ id: str
 
 The ID of the affected component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#id StatusPageDegradationTemplate#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#id StatusPageDegradationTemplate#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1091,7 +1091,7 @@ status: str
 
 The pre-filled status for this component. Valid values are: operational, degraded, partial_outage, major_outage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#status StatusPageDegradationTemplate#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#status StatusPageDegradationTemplate#status}
 
 ---
 
@@ -1105,7 +1105,7 @@ name: str
 
 The name of the affected component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#name StatusPageDegradationTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#name StatusPageDegradationTemplate#name}
 
 ---
 
@@ -1231,7 +1231,7 @@ name: str
 
 The name of the degradation template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#name StatusPageDegradationTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#name StatusPageDegradationTemplate#name}
 
 ---
 
@@ -1245,7 +1245,7 @@ page_id: str
 
 The ID of the status page this degradation template belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#page_id StatusPageDegradationTemplate#page_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#page_id StatusPageDegradationTemplate#page_id}
 
 ---
 
@@ -1259,7 +1259,7 @@ components_affected: IResolvable | typing.List[StatusPageDegradationTemplateComp
 
 The components affected by a degradation created from this template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#components_affected StatusPageDegradationTemplate#components_affected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#components_affected StatusPageDegradationTemplate#components_affected}
 
 ---
 
@@ -1273,7 +1273,7 @@ degradation_title: str
 
 The title used for a degradation created from this template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#degradation_title StatusPageDegradationTemplate#degradation_title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#degradation_title StatusPageDegradationTemplate#degradation_title}
 
 ---
 
@@ -1287,7 +1287,7 @@ updates: IResolvable | typing.List[StatusPageDegradationTemplateUpdates]
 
 The pre-filled updates for a degradation created from this template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#updates StatusPageDegradationTemplate#updates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#updates StatusPageDegradationTemplate#updates}
 
 ---
 
@@ -1323,7 +1323,7 @@ status: str
 
 The pre-filled degradation status for this update. Valid values are: investigating, identified, monitoring, resolved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#status StatusPageDegradationTemplate#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#status StatusPageDegradationTemplate#status}
 
 ---
 
@@ -1337,7 +1337,7 @@ message: str
 
 The pre-filled message for this update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_degradation_template#message StatusPageDegradationTemplate#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_degradation_template#message StatusPageDegradationTemplate#message}
 
 ---
 

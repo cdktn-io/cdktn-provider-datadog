@@ -4,12 +4,12 @@
 
 ### DataDatadogStatusPageDegradationTemplate <a name="DataDatadogStatusPageDegradationTemplate" id="@cdktn/provider-datadog.dataDatadogStatusPageDegradationTemplate.DataDatadogStatusPageDegradationTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_degradation_template datadog_status_page_degradation_template}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_degradation_template datadog_status_page_degradation_template}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogStatusPageDegradationTemplate.DataDatadogStatusPageDegradationTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagedegradationtemplate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagedegradationtemplate"
 
 datadatadogstatuspagedegradationtemplate.NewDataDatadogStatusPageDegradationTemplate(scope Construct, id *string, config DataDatadogStatusPageDegradationTemplateConfig) DataDatadogStatusPageDegradationTemplate
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogStatusPageDegradationTemplate.DataDatadogStatusPageDegradationTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagedegradationtemplate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagedegradationtemplate"
 
 datadatadogstatuspagedegradationtemplate.DataDatadogStatusPageDegradationTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogStatusPageDegradationTemplate.DataDatadogStatusPageDegradationTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagedegradationtemplate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagedegradationtemplate"
 
 datadatadogstatuspagedegradationtemplate.DataDatadogStatusPageDegradationTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadogstatuspagedegradationtemplate.DataDatadogStatusPageDegradationTemplat
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogStatusPageDegradationTemplate.DataDatadogStatusPageDegradationTemplate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagedegradationtemplate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagedegradationtemplate"
 
 datadatadogstatuspagedegradationtemplate.DataDatadogStatusPageDegradationTemplate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogstatuspagedegradationtemplate.DataDatadogStatusPageDegradationTemplat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogStatusPageDegradationTemplate.DataDatadogStatusPageDegradationTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagedegradationtemplate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagedegradationtemplate"
 
 datadatadogstatuspagedegradationtemplate.DataDatadogStatusPageDegradationTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatadogStatusPageDegra
 
 The id of the existing DataDatadogStatusPageDegradationTemplate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_degradation_template#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_degradation_template#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -675,7 +675,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogStatusPageDegradationTemplate.DataDatadogStatusPageDegradationTemplateComponentsAffected.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagedegradationtemplate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagedegradationtemplate"
 
 &datadatadogstatuspagedegradationtemplate.DataDatadogStatusPageDegradationTemplateComponentsAffected {
 
@@ -688,7 +688,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsta
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogStatusPageDegradationTemplate.DataDatadogStatusPageDegradationTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagedegradationtemplate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagedegradationtemplate"
 
 &datadatadogstatuspagedegradationtemplate.DataDatadogStatusPageDegradationTemplateConfig {
 	Connection: interface{},
@@ -799,7 +799,7 @@ Id *string
 
 The ID of the degradation template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_degradation_template#id DataDatadogStatusPageDegradationTemplate#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_degradation_template#id DataDatadogStatusPageDegradationTemplate#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -816,7 +816,7 @@ PageId *string
 
 The ID of the status page this degradation template belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_degradation_template#page_id DataDatadogStatusPageDegradationTemplate#page_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_degradation_template#page_id DataDatadogStatusPageDegradationTemplate#page_id}
 
 ---
 
@@ -825,7 +825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogStatusPageDegradationTemplate.DataDatadogStatusPageDegradationTemplateUpdates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagedegradationtemplate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagedegradationtemplate"
 
 &datadatadogstatuspagedegradationtemplate.DataDatadogStatusPageDegradationTemplateUpdates {
 
@@ -840,7 +840,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsta
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogStatusPageDegradationTemplate.DataDatadogStatusPageDegradationTemplateComponentsAffectedList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagedegradationtemplate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagedegradationtemplate"
 
 datadatadogstatuspagedegradationtemplate.NewDataDatadogStatusPageDegradationTemplateComponentsAffectedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogStatusPageDegradationTemplateComponentsAffectedList
 ```
@@ -989,7 +989,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogStatusPageDegradationTemplate.DataDatadogStatusPageDegradationTemplateComponentsAffectedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagedegradationtemplate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagedegradationtemplate"
 
 datadatadogstatuspagedegradationtemplate.NewDataDatadogStatusPageDegradationTemplateComponentsAffectedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogStatusPageDegradationTemplateComponentsAffectedOutputReference
 ```
@@ -1289,7 +1289,7 @@ func InternalValue() DataDatadogStatusPageDegradationTemplateComponentsAffected
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogStatusPageDegradationTemplate.DataDatadogStatusPageDegradationTemplateUpdatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagedegradationtemplate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagedegradationtemplate"
 
 datadatadogstatuspagedegradationtemplate.NewDataDatadogStatusPageDegradationTemplateUpdatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogStatusPageDegradationTemplateUpdatesList
 ```
@@ -1438,7 +1438,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogStatusPageDegradationTemplate.DataDatadogStatusPageDegradationTemplateUpdatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagedegradationtemplate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagedegradationtemplate"
 
 datadatadogstatuspagedegradationtemplate.NewDataDatadogStatusPageDegradationTemplateUpdatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogStatusPageDegradationTemplateUpdatesOutputReference
 ```

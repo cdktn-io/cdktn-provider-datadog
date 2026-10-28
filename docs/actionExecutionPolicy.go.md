@@ -4,12 +4,12 @@
 
 ### ActionExecutionPolicy <a name="ActionExecutionPolicy" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy datadog_action_execution_policy}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy datadog_action_execution_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 actionexecutionpolicy.NewActionExecutionPolicy(scope Construct, id *string, config ActionExecutionPolicyConfig) ActionExecutionPolicy
 ```
@@ -453,7 +453,7 @@ func ResetTarget()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 actionexecutionpolicy.ActionExecutionPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 actionexecutionpolicy.ActionExecutionPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ actionexecutionpolicy.ActionExecutionPolicy_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 actionexecutionpolicy.ActionExecutionPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ actionexecutionpolicy.ActionExecutionPolicy_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 actionexecutionpolicy.ActionExecutionPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -542,7 +542,7 @@ The construct id used in the generated config for the ActionExecutionPolicy to i
 
 The id of the existing ActionExecutionPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -918,7 +918,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyActionPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 &actionexecutionpolicy.ActionExecutionPolicyActionPattern {
 	ActionFqns: *[]*string,
@@ -947,7 +947,7 @@ The fully qualified action names this policy matches.
 
 Use `*` to match all actions of the integration, or a fully qualified name prefixed with the integration's action namespace (for example `com.datadoghq.script.*` for the Script integration).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#action_fqns ActionExecutionPolicy#action_fqns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#action_fqns ActionExecutionPolicy#action_fqns}
 
 ---
 
@@ -961,7 +961,7 @@ Integration *string
 
 The integration the actions belong to. Valid values are `INTEGRATION_KUBERNETES`, `INTEGRATION_SCRIPT`, `INTEGRATION_REMOTE_ACTION`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#integration ActionExecutionPolicy#integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#integration ActionExecutionPolicy#integration}
 
 ---
 
@@ -970,7 +970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 &actionexecutionpolicy.ActionExecutionPolicyConfig {
 	Connection: interface{},
@@ -980,10 +980,10 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutio
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	ActionPattern: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.actionExecutionPolicy.ActionExecutionPolicyActionPattern,
+	ActionPattern: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.actionExecutionPolicy.ActionExecutionPolicyActionPattern,
 	Effect: *string,
 	Name: *string,
-	Scope: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.actionExecutionPolicy.ActionExecutionPolicyScope,
+	Scope: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.actionExecutionPolicy.ActionExecutionPolicyScope,
 	Target: interface{},
 }
 ```
@@ -1087,7 +1087,7 @@ ActionPattern ActionExecutionPolicyActionPattern
 
 action_pattern block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#action_pattern ActionExecutionPolicy#action_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#action_pattern ActionExecutionPolicy#action_pattern}
 
 ---
 
@@ -1101,7 +1101,7 @@ Effect *string
 
 Whether the policy allows or denies the matched actions. Valid values are `allow`, `deny`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#effect ActionExecutionPolicy#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#effect ActionExecutionPolicy#effect}
 
 ---
 
@@ -1115,7 +1115,7 @@ Name *string
 
 The name of the execution policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#name ActionExecutionPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#name ActionExecutionPolicy#name}
 
 ---
 
@@ -1129,7 +1129,7 @@ Scope ActionExecutionPolicyScope
 
 scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#scope ActionExecutionPolicy#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#scope ActionExecutionPolicy#scope}
 
 ---
 
@@ -1143,7 +1143,7 @@ Target interface{}
 
 target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#target ActionExecutionPolicy#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#target ActionExecutionPolicy#target}
 
 ---
 
@@ -1152,12 +1152,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 &actionexecutionpolicy.ActionExecutionPolicyScope {
-	Kubernetes: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.actionExecutionPolicy.ActionExecutionPolicyScopeKubernetes,
-	RemoteActionRshell: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.actionExecutionPolicy.ActionExecutionPolicyScopeRemoteActionRshell,
-	Scripts: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.actionExecutionPolicy.ActionExecutionPolicyScopeScripts,
+	Kubernetes: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.actionExecutionPolicy.ActionExecutionPolicyScopeKubernetes,
+	RemoteActionRshell: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.actionExecutionPolicy.ActionExecutionPolicyScopeRemoteActionRshell,
+	Scripts: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.actionExecutionPolicy.ActionExecutionPolicyScopeScripts,
 }
 ```
 
@@ -1181,7 +1181,7 @@ Kubernetes ActionExecutionPolicyScopeKubernetes
 
 kubernetes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#kubernetes ActionExecutionPolicy#kubernetes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#kubernetes ActionExecutionPolicy#kubernetes}
 
 ---
 
@@ -1195,7 +1195,7 @@ RemoteActionRshell ActionExecutionPolicyScopeRemoteActionRshell
 
 remote_action_rshell block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#remote_action_rshell ActionExecutionPolicy#remote_action_rshell}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#remote_action_rshell ActionExecutionPolicy#remote_action_rshell}
 
 ---
 
@@ -1209,7 +1209,7 @@ Scripts ActionExecutionPolicyScopeScripts
 
 scripts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#scripts ActionExecutionPolicy#scripts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#scripts ActionExecutionPolicy#scripts}
 
 ---
 
@@ -1218,7 +1218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeKubernetes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 &actionexecutionpolicy.ActionExecutionPolicyScopeKubernetes {
 	Rule: interface{},
@@ -1243,7 +1243,7 @@ Rule interface{}
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
 
 ---
 
@@ -1252,7 +1252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeKubernetesRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 &actionexecutionpolicy.ActionExecutionPolicyScopeKubernetesRule {
 	TargetNamespaces: *[]*string,
@@ -1277,7 +1277,7 @@ TargetNamespaces *[]*string
 
 The Kubernetes namespaces this rule applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#target_namespaces ActionExecutionPolicy#target_namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#target_namespaces ActionExecutionPolicy#target_namespaces}
 
 ---
 
@@ -1286,7 +1286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeRemoteActionRshell.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 &actionexecutionpolicy.ActionExecutionPolicyScopeRemoteActionRshell {
 	Rule: interface{},
@@ -1311,7 +1311,7 @@ Rule interface{}
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
 
 ---
 
@@ -1320,7 +1320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeRemoteActionRshellRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 &actionexecutionpolicy.ActionExecutionPolicyScopeRemoteActionRshellRule {
 	Access: *string,
@@ -1347,7 +1347,7 @@ Access *string
 
 The level of remote shell access granted for the target paths. Valid values are `read_only`, `read_write`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#access ActionExecutionPolicy#access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#access ActionExecutionPolicy#access}
 
 ---
 
@@ -1361,7 +1361,7 @@ TargetPaths *[]*string
 
 The filesystem paths this rule applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#target_paths ActionExecutionPolicy#target_paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#target_paths ActionExecutionPolicy#target_paths}
 
 ---
 
@@ -1370,7 +1370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeScripts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 &actionexecutionpolicy.ActionExecutionPolicyScopeScripts {
 	Rule: interface{},
@@ -1395,7 +1395,7 @@ Rule interface{}
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
 
 ---
 
@@ -1404,7 +1404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeScriptsRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 &actionexecutionpolicy.ActionExecutionPolicyScopeScriptsRule {
 	TargetScriptNames: *[]*string,
@@ -1429,7 +1429,7 @@ TargetScriptNames *[]*string
 
 The script names this rule applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#target_script_names ActionExecutionPolicy#target_script_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#target_script_names ActionExecutionPolicy#target_script_names}
 
 ---
 
@@ -1438,7 +1438,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 &actionexecutionpolicy.ActionExecutionPolicyTarget {
 	AgentTags: *[]*string,
@@ -1465,7 +1465,7 @@ AgentTags *[]*string
 
 The Agent tags identifying the target, for example `env:prod`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#agent_tags ActionExecutionPolicy#agent_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#agent_tags ActionExecutionPolicy#agent_tags}
 
 ---
 
@@ -1479,7 +1479,7 @@ Name *string
 
 A human-readable name for the target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#name ActionExecutionPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#name ActionExecutionPolicy#name}
 
 ---
 
@@ -1490,7 +1490,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyActionPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 actionexecutionpolicy.NewActionExecutionPolicyActionPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ActionExecutionPolicyActionPatternOutputReference
 ```
@@ -1783,7 +1783,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeKubernetesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 actionexecutionpolicy.NewActionExecutionPolicyScopeKubernetesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ActionExecutionPolicyScopeKubernetesOutputReference
 ```
@@ -2074,7 +2074,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeKubernetesRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 actionexecutionpolicy.NewActionExecutionPolicyScopeKubernetesRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ActionExecutionPolicyScopeKubernetesRuleList
 ```
@@ -2234,7 +2234,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeKubernetesRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 actionexecutionpolicy.NewActionExecutionPolicyScopeKubernetesRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ActionExecutionPolicyScopeKubernetesRuleOutputReference
 ```
@@ -2523,7 +2523,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 actionexecutionpolicy.NewActionExecutionPolicyScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ActionExecutionPolicyScopeOutputReference
 ```
@@ -2898,7 +2898,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeRemoteActionRshellOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 actionexecutionpolicy.NewActionExecutionPolicyScopeRemoteActionRshellOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ActionExecutionPolicyScopeRemoteActionRshellOutputReference
 ```
@@ -3189,7 +3189,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeRemoteActionRshellRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 actionexecutionpolicy.NewActionExecutionPolicyScopeRemoteActionRshellRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ActionExecutionPolicyScopeRemoteActionRshellRuleList
 ```
@@ -3349,7 +3349,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeRemoteActionRshellRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 actionexecutionpolicy.NewActionExecutionPolicyScopeRemoteActionRshellRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ActionExecutionPolicyScopeRemoteActionRshellRuleOutputReference
 ```
@@ -3660,7 +3660,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeScriptsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 actionexecutionpolicy.NewActionExecutionPolicyScopeScriptsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ActionExecutionPolicyScopeScriptsOutputReference
 ```
@@ -3951,7 +3951,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeScriptsRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 actionexecutionpolicy.NewActionExecutionPolicyScopeScriptsRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ActionExecutionPolicyScopeScriptsRuleList
 ```
@@ -4111,7 +4111,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeScriptsRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 actionexecutionpolicy.NewActionExecutionPolicyScopeScriptsRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ActionExecutionPolicyScopeScriptsRuleOutputReference
 ```
@@ -4400,7 +4400,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 actionexecutionpolicy.NewActionExecutionPolicyTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ActionExecutionPolicyTargetList
 ```
@@ -4560,7 +4560,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/actionexecutionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/actionexecutionpolicy"
 
 actionexecutionpolicy.NewActionExecutionPolicyTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ActionExecutionPolicyTargetOutputReference
 ```

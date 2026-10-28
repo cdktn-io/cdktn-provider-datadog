@@ -4,7 +4,7 @@
 
 ### IntegrationSnowflakeAccount <a name="IntegrationSnowflakeAccount" id="@cdktn/provider-datadog.integrationSnowflakeAccount.IntegrationSnowflakeAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account datadog_integration_snowflake_account}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account datadog_integration_snowflake_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationSnowflakeAccount.IntegrationSnowflakeAccount.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Authentication configured on the Snowflake integration account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#authentication IntegrationSnowflakeAccount#authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#authentication IntegrationSnowflakeAccount#authentication}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Human-readable name of the Snowflake integration account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#name IntegrationSnowflakeAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#name IntegrationSnowflakeAccount#name}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Settings configured on the Snowflake integration account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#settings IntegrationSnowflakeAccount#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#settings IntegrationSnowflakeAccount#settings}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Data Datadog collects from Snowflake, keyed by dataflow id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#dataflows IntegrationSnowflakeAccount#dataflows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#dataflows IntegrationSnowflakeAccount#dataflows}
 
 ---
 
@@ -635,7 +635,7 @@ The construct id used in the generated config for the IntegrationSnowflakeAccoun
 
 The id of the existing IntegrationSnowflakeAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -959,7 +959,7 @@ public IntegrationSnowflakeAccountAuthenticationSnowflakeIntegrationAccountPriva
 
 The RSA key pair authentication method configured on the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#snowflake_integration_account_private_key_auth IntegrationSnowflakeAccount#snowflake_integration_account_private_key_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#snowflake_integration_account_private_key_auth IntegrationSnowflakeAccount#snowflake_integration_account_private_key_auth}
 
 ---
 
@@ -1003,7 +1003,7 @@ public java.lang.String getPrivateKeyName();
 
 Name that distinguishes this private key from other keys in Datadog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#private_key_name IntegrationSnowflakeAccount#private_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#private_key_name IntegrationSnowflakeAccount#private_key_name}
 
 ---
 
@@ -1017,7 +1017,7 @@ public java.lang.String getPrivateKeyWo();
 
 The private key, in PEM format. This write-only value is not stored in Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#private_key_wo IntegrationSnowflakeAccount#private_key_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#private_key_wo IntegrationSnowflakeAccount#private_key_wo}
 
 ---
 
@@ -1031,7 +1031,7 @@ public java.lang.String getPrivateKeyWoVersion();
 
 Version trigger for private_key_wo rotation. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#private_key_wo_version IntegrationSnowflakeAccount#private_key_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#private_key_wo_version IntegrationSnowflakeAccount#private_key_wo_version}
 
 ---
 
@@ -1045,7 +1045,7 @@ public java.lang.String getAuthType();
 
 The authentication method type. Valid values are `snowflake_private_key`. Defaults to `"snowflake_private_key"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#auth_type IntegrationSnowflakeAccount#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#auth_type IntegrationSnowflakeAccount#auth_type}
 
 ---
 
@@ -1061,7 +1061,7 @@ Passphrase that decrypts the private key.
 
 Provide it only when the key is encrypted. This write-only value is not stored in Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#private_key_passphrase_wo IntegrationSnowflakeAccount#private_key_passphrase_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#private_key_passphrase_wo IntegrationSnowflakeAccount#private_key_passphrase_wo}
 
 ---
 
@@ -1075,7 +1075,7 @@ public java.lang.String getPrivateKeyPassphraseWoVersion();
 
 Version trigger for private_key_passphrase_wo rotation. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#private_key_passphrase_wo_version IntegrationSnowflakeAccount#private_key_passphrase_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#private_key_passphrase_wo_version IntegrationSnowflakeAccount#private_key_passphrase_wo_version}
 
 ---
 
@@ -1199,7 +1199,7 @@ public IntegrationSnowflakeAccountAuthentication getAuthentication();
 
 Authentication configured on the Snowflake integration account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#authentication IntegrationSnowflakeAccount#authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#authentication IntegrationSnowflakeAccount#authentication}
 
 ---
 
@@ -1213,7 +1213,7 @@ public java.lang.String getName();
 
 Human-readable name of the Snowflake integration account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#name IntegrationSnowflakeAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#name IntegrationSnowflakeAccount#name}
 
 ---
 
@@ -1227,7 +1227,7 @@ public IntegrationSnowflakeAccountSettings getSettings();
 
 Settings configured on the Snowflake integration account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#settings IntegrationSnowflakeAccount#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#settings IntegrationSnowflakeAccount#settings}
 
 ---
 
@@ -1241,7 +1241,7 @@ public IntegrationSnowflakeAccountDataflows getDataflows();
 
 Data Datadog collects from Snowflake, keyed by dataflow id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#dataflows IntegrationSnowflakeAccount#dataflows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#dataflows IntegrationSnowflakeAccount#dataflows}
 
 ---
 
@@ -1289,7 +1289,7 @@ public IntegrationSnowflakeAccountDataflowsSnowflakeAccountUsageMetrics getSnowf
 
 Account-level usage metrics read from the Snowflake `ACCOUNT_USAGE` schema, covering storage usage, credit consumption, and query activity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#snowflake_account_usage_metrics IntegrationSnowflakeAccount#snowflake_account_usage_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#snowflake_account_usage_metrics IntegrationSnowflakeAccount#snowflake_account_usage_metrics}
 
 ---
 
@@ -1305,7 +1305,7 @@ Cost data aggregated from the Snowflake `ORGANIZATION_USAGE` schema.
 
 Requires [Cloud Cost Management](https://docs.datadoghq.com/cloud_cost_management/) to be set up for your organization, and the ORGANIZATION_BILLING_VIEWER database role on the Snowflake role; without both this dataflow collects no data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#snowflake_cloud_cost_metrics IntegrationSnowflakeAccount#snowflake_cloud_cost_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#snowflake_cloud_cost_metrics IntegrationSnowflakeAccount#snowflake_cloud_cost_metrics}
 
 ---
 
@@ -1319,7 +1319,7 @@ public IntegrationSnowflakeAccountDataflowsSnowflakeDataObservabilityQualityMoni
 
 Data Observability, which collects lineage and data quality information from your Snowflake databases so you can explore how data flows and detect and resolve quality issues.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#snowflake_data_observability_quality_monitoring IntegrationSnowflakeAccount#snowflake_data_observability_quality_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#snowflake_data_observability_quality_monitoring IntegrationSnowflakeAccount#snowflake_data_observability_quality_monitoring}
 
 ---
 
@@ -1335,7 +1335,7 @@ Records from your Snowflake event tables, used to monitor application behavior a
 
 `enabled` turns the dataflow on and off as a whole, and the per-record-type toggles in `settings` select which kinds of record it collects while it is on. The Snowflake role needs usage granted on the database, the schema, and the event table itself; without those grants this dataflow collects no data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#snowflake_event_table_logs IntegrationSnowflakeAccount#snowflake_event_table_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#snowflake_event_table_logs IntegrationSnowflakeAccount#snowflake_event_table_logs}
 
 ---
 
@@ -1351,7 +1351,7 @@ Organization-level usage metrics read from the Snowflake `ORGANIZATION_USAGE` sc
 
 Reading that schema requires the ORGADMIN role; without it this dataflow collects no data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#snowflake_organization_usage_metrics IntegrationSnowflakeAccount#snowflake_organization_usage_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#snowflake_organization_usage_metrics IntegrationSnowflakeAccount#snowflake_organization_usage_metrics}
 
 ---
 
@@ -1365,7 +1365,7 @@ public IntegrationSnowflakeAccountDataflowsSnowflakeQueryHistoryLogs getSnowflak
 
 Per-query logs that let you identify long-running, poorly performing, and expensive queries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#snowflake_query_history_logs IntegrationSnowflakeAccount#snowflake_query_history_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#snowflake_query_history_logs IntegrationSnowflakeAccount#snowflake_query_history_logs}
 
 ---
 
@@ -1379,7 +1379,7 @@ public IntegrationSnowflakeAccountDataflowsSnowflakeSecurityLogs getSnowflakeSec
 
 Security logs from the Snowflake `ACCOUNT_USAGE` schema, for analyzing the security of your Snowflake account and running threat detection with [Cloud SIEM](https://docs.datadoghq.com/security/cloud_siem/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#snowflake_security_logs IntegrationSnowflakeAccount#snowflake_security_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#snowflake_security_logs IntegrationSnowflakeAccount#snowflake_security_logs}
 
 ---
 
@@ -1393,7 +1393,7 @@ public IntegrationSnowflakeAccountDataflowsSnowflakeTaskHistoryLogs getSnowflake
 
 Execution logs for your scheduled Snowflake tasks, covering start time, end time, status, and any error message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#snowflake_task_history_logs IntegrationSnowflakeAccount#snowflake_task_history_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#snowflake_task_history_logs IntegrationSnowflakeAccount#snowflake_task_history_logs}
 
 ---
 
@@ -1429,7 +1429,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#enabled IntegrationSnowflakeAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#enabled IntegrationSnowflakeAccount#enabled}
 
 ---
 
@@ -1443,7 +1443,7 @@ public IntegrationSnowflakeAccountDataflowsSnowflakeAccountUsageMetricsSettings 
 
 Settings of the account usage metrics dataflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#settings IntegrationSnowflakeAccount#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#settings IntegrationSnowflakeAccount#settings}
 
 ---
 
@@ -1479,7 +1479,7 @@ The period each metric aggregates over.
 
 When `true`, metrics aggregate the past 24 hours on a rolling basis; when `false`, they aggregate the current day so far.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#account_usage_metrics_aggregate_last_24h IntegrationSnowflakeAccount#account_usage_metrics_aggregate_last_24h}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#account_usage_metrics_aggregate_last_24h IntegrationSnowflakeAccount#account_usage_metrics_aggregate_last_24h}
 
 ---
 
@@ -1515,7 +1515,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#enabled IntegrationSnowflakeAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#enabled IntegrationSnowflakeAccount#enabled}
 
 ---
 
@@ -1529,7 +1529,7 @@ public IntegrationSnowflakeAccountDataflowsSnowflakeCloudCostMetricsSettings get
 
 Settings of the Cloud Cost Management dataflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#settings IntegrationSnowflakeAccount#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#settings IntegrationSnowflakeAccount#settings}
 
 ---
 
@@ -1563,7 +1563,7 @@ public java.lang.String getQueryTags();
 
 Snowflake query tags ingested as a comma-separated list of tag names, so that cost data can be broken down by them in Cloud Cost Management.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#query_tags IntegrationSnowflakeAccount#query_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#query_tags IntegrationSnowflakeAccount#query_tags}
 
 ---
 
@@ -1599,7 +1599,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#enabled IntegrationSnowflakeAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#enabled IntegrationSnowflakeAccount#enabled}
 
 ---
 
@@ -1613,7 +1613,7 @@ public IntegrationSnowflakeAccountDataflowsSnowflakeDataObservabilityQualityMoni
 
 Settings of the Data Observability dataflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#settings IntegrationSnowflakeAccount#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#settings IntegrationSnowflakeAccount#settings}
 
 ---
 
@@ -1649,7 +1649,7 @@ public java.lang.String getDoTableCrawlerCron();
 
 Cron expression setting how often Datadog crawls your Snowflake table metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#do_table_crawler_cron IntegrationSnowflakeAccount#do_table_crawler_cron}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#do_table_crawler_cron IntegrationSnowflakeAccount#do_table_crawler_cron}
 
 ---
 
@@ -1663,7 +1663,7 @@ public java.lang.Boolean|IResolvable getSyncSnowflakeSystemDatabase();
 
 Whether metadata from the Snowflake `SNOWFLAKE` system database is included in Data Observability alongside your own databases.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#sync_snowflake_system_database IntegrationSnowflakeAccount#sync_snowflake_system_database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#sync_snowflake_system_database IntegrationSnowflakeAccount#sync_snowflake_system_database}
 
 ---
 
@@ -1699,7 +1699,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#enabled IntegrationSnowflakeAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#enabled IntegrationSnowflakeAccount#enabled}
 
 ---
 
@@ -1715,7 +1715,7 @@ Settings of the event table dataflow.
 
 Each record type is collected independently so that you can control ingestion costs, and every record type is ingested into Datadog as logs tagged with its `record_type`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#settings IntegrationSnowflakeAccount#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#settings IntegrationSnowflakeAccount#settings}
 
 ---
 
@@ -1757,7 +1757,7 @@ public java.lang.Boolean|IResolvable getEventTableEventsEnabled();
 
 Whether records with a `record_type` of `event` are collected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#event_table_events_enabled IntegrationSnowflakeAccount#event_table_events_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#event_table_events_enabled IntegrationSnowflakeAccount#event_table_events_enabled}
 
 ---
 
@@ -1771,7 +1771,7 @@ public java.lang.Boolean|IResolvable getEventTableLogsEnabled();
 
 Whether records with a `record_type` of `log` are collected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#event_table_logs_enabled IntegrationSnowflakeAccount#event_table_logs_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#event_table_logs_enabled IntegrationSnowflakeAccount#event_table_logs_enabled}
 
 ---
 
@@ -1785,7 +1785,7 @@ public java.lang.Number getEventTableLogsIntervalMin();
 
 How often event table records are collected, in minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#event_table_logs_interval_min IntegrationSnowflakeAccount#event_table_logs_interval_min}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#event_table_logs_interval_min IntegrationSnowflakeAccount#event_table_logs_interval_min}
 
 ---
 
@@ -1799,7 +1799,7 @@ public java.lang.Boolean|IResolvable getEventTableSpanEventsEnabled();
 
 Whether records with a `record_type` of `span_event` are collected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#event_table_span_events_enabled IntegrationSnowflakeAccount#event_table_span_events_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#event_table_span_events_enabled IntegrationSnowflakeAccount#event_table_span_events_enabled}
 
 ---
 
@@ -1813,7 +1813,7 @@ public java.lang.Boolean|IResolvable getEventTableSpansEnabled();
 
 Whether records with a `record_type` of `span` are collected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#event_table_spans_enabled IntegrationSnowflakeAccount#event_table_spans_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#event_table_spans_enabled IntegrationSnowflakeAccount#event_table_spans_enabled}
 
 ---
 
@@ -1849,7 +1849,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#enabled IntegrationSnowflakeAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#enabled IntegrationSnowflakeAccount#enabled}
 
 ---
 
@@ -1863,7 +1863,7 @@ public IntegrationSnowflakeAccountDataflowsSnowflakeOrganizationUsageMetricsSett
 
 Settings of the organization usage metrics dataflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#settings IntegrationSnowflakeAccount#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#settings IntegrationSnowflakeAccount#settings}
 
 ---
 
@@ -1899,7 +1899,7 @@ The period each metric aggregates over.
 
 When `true`, metrics aggregate the past 24 hours on a rolling basis; when `false`, they aggregate the current day so far.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#organization_usage_metrics_aggregate_last_24h IntegrationSnowflakeAccount#organization_usage_metrics_aggregate_last_24h}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#organization_usage_metrics_aggregate_last_24h IntegrationSnowflakeAccount#organization_usage_metrics_aggregate_last_24h}
 
 ---
 
@@ -1935,7 +1935,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#enabled IntegrationSnowflakeAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#enabled IntegrationSnowflakeAccount#enabled}
 
 ---
 
@@ -1949,7 +1949,7 @@ public IntegrationSnowflakeAccountDataflowsSnowflakeQueryHistoryLogsSettings get
 
 Settings of the query history logs dataflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#settings IntegrationSnowflakeAccount#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#settings IntegrationSnowflakeAccount#settings}
 
 ---
 
@@ -1985,7 +1985,7 @@ public java.lang.Boolean|IResolvable getJoinQueryHistoryWithAccessHistoryEnabled
 
 Whether query logs are joined with Snowflake access history, which adds the objects each query read and wrote so you can follow how data is used and where it came from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#join_query_history_with_access_history_enabled IntegrationSnowflakeAccount#join_query_history_with_access_history_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#join_query_history_with_access_history_enabled IntegrationSnowflakeAccount#join_query_history_with_access_history_enabled}
 
 ---
 
@@ -1999,7 +1999,7 @@ public java.lang.Number getQueryHistoryLogsIntervalMin();
 
 How often query history logs are collected, in minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#query_history_logs_interval_min IntegrationSnowflakeAccount#query_history_logs_interval_min}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#query_history_logs_interval_min IntegrationSnowflakeAccount#query_history_logs_interval_min}
 
 ---
 
@@ -2035,7 +2035,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#enabled IntegrationSnowflakeAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#enabled IntegrationSnowflakeAccount#enabled}
 
 ---
 
@@ -2049,7 +2049,7 @@ public IntegrationSnowflakeAccountDataflowsSnowflakeSecurityLogsSettings getSett
 
 Settings of the security logs dataflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#settings IntegrationSnowflakeAccount#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#settings IntegrationSnowflakeAccount#settings}
 
 ---
 
@@ -2083,7 +2083,7 @@ public java.lang.Number getSecurityLogsIntervalMin();
 
 How often security logs are collected, in minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#security_logs_interval_min IntegrationSnowflakeAccount#security_logs_interval_min}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#security_logs_interval_min IntegrationSnowflakeAccount#security_logs_interval_min}
 
 ---
 
@@ -2119,7 +2119,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#enabled IntegrationSnowflakeAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#enabled IntegrationSnowflakeAccount#enabled}
 
 ---
 
@@ -2133,7 +2133,7 @@ public IntegrationSnowflakeAccountDataflowsSnowflakeTaskHistoryLogsSettings getS
 
 Settings of the task history logs dataflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#settings IntegrationSnowflakeAccount#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#settings IntegrationSnowflakeAccount#settings}
 
 ---
 
@@ -2167,7 +2167,7 @@ public java.lang.Number getTaskHistoryLogsIntervalMin();
 
 How often task history logs are collected, in minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#task_history_logs_interval_min IntegrationSnowflakeAccount#task_history_logs_interval_min}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#task_history_logs_interval_min IntegrationSnowflakeAccount#task_history_logs_interval_min}
 
 ---
 
@@ -2203,7 +2203,7 @@ public java.lang.String getSnowflakeAccountIdentifier();
 
 Identifier of the Snowflake account being monitored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#snowflake_account_identifier IntegrationSnowflakeAccount#snowflake_account_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#snowflake_account_identifier IntegrationSnowflakeAccount#snowflake_account_identifier}
 
 ---
 
@@ -2217,7 +2217,7 @@ public java.lang.String getUsername();
 
 Snowflake user Datadog authenticates as.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_snowflake_account#username IntegrationSnowflakeAccount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_snowflake_account#username IntegrationSnowflakeAccount#username}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### RumRetentionQuota <a name="RumRetentionQuota" id="@cdktn/provider-datadog.rumRetentionQuota.RumRetentionQuota"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota datadog_rum_retention_quota}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota datadog_rum_retention_quota}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.rumRetentionQuota.RumRetentionQuota.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/rumretentionquota"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/rumretentionquota"
 
 rumretentionquota.NewRumRetentionQuota(scope Construct, id *string, config RumRetentionQuotaConfig) RumRetentionQuota
 ```
@@ -413,7 +413,7 @@ func PutCustom(value RumRetentionQuotaCustom)
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.rumRetentionQuota.RumRetentionQuota.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/rumretentionquota"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/rumretentionquota"
 
 rumretentionquota.RumRetentionQuota_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.rumRetentionQuota.RumRetentionQuota.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/rumretentionquota"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/rumretentionquota"
 
 rumretentionquota.RumRetentionQuota_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ rumretentionquota.RumRetentionQuota_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.rumRetentionQuota.RumRetentionQuota.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/rumretentionquota"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/rumretentionquota"
 
 rumretentionquota.RumRetentionQuota_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ rumretentionquota.RumRetentionQuota_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.rumRetentionQuota.RumRetentionQuota.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/rumretentionquota"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/rumretentionquota"
 
 rumretentionquota.RumRetentionQuota_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -502,7 +502,7 @@ The construct id used in the generated config for the RumRetentionQuota to impor
 
 The id of the existing RumRetentionQuota that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -779,7 +779,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.rumRetentionQuota.RumRetentionQuotaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/rumretentionquota"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/rumretentionquota"
 
 &rumretentionquota.RumRetentionQuotaConfig {
 	Connection: interface{},
@@ -790,7 +790,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/rumretentionqu
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	ApplicationId: *string,
-	Custom: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.rumRetentionQuota.RumRetentionQuotaCustom,
+	Custom: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.rumRetentionQuota.RumRetentionQuotaCustom,
 	Mode: *string,
 }
 ```
@@ -892,7 +892,7 @@ ApplicationId *string
 
 RUM application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#application_id RumRetentionQuota#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#application_id RumRetentionQuota#application_id}
 
 ---
 
@@ -906,7 +906,7 @@ Custom RumRetentionQuotaCustom
 
 custom block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#custom RumRetentionQuota#custom}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#custom RumRetentionQuota#custom}
 
 ---
 
@@ -920,7 +920,7 @@ Mode *string
 
 The retention quota mode. Valid values are `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#mode RumRetentionQuota#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#mode RumRetentionQuota#mode}
 
 ---
 
@@ -929,7 +929,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.rumRetentionQuota.RumRetentionQuotaCustom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/rumretentionquota"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/rumretentionquota"
 
 &rumretentionquota.RumRetentionQuotaCustom {
 	DailyResetTime: *string,
@@ -962,7 +962,7 @@ DailyResetTime *string
 
 The time of day the quota resets, in `HH:MM` format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#daily_reset_time RumRetentionQuota#daily_reset_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#daily_reset_time RumRetentionQuota#daily_reset_time}
 
 ---
 
@@ -976,7 +976,7 @@ DailyResetTimezone *string
 
 The UTC offset for `daily_reset_time`, in `±HH:MM` format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#daily_reset_timezone RumRetentionQuota#daily_reset_timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#daily_reset_timezone RumRetentionQuota#daily_reset_timezone}
 
 ---
 
@@ -990,7 +990,7 @@ QuotaReachedAction *string
 
 The action taken after the quota is reached. Valid values are `stop`, `slowdown`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#quota_reached_action RumRetentionQuota#quota_reached_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#quota_reached_action RumRetentionQuota#quota_reached_action}
 
 ---
 
@@ -1004,7 +1004,7 @@ SessionLimit *f64
 
 The maximum number of sessions to retain within the window.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#session_limit RumRetentionQuota#session_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#session_limit RumRetentionQuota#session_limit}
 
 ---
 
@@ -1018,7 +1018,7 @@ WindowType *string
 
 The window over which the quota resets. Valid values are `daily`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#window_type RumRetentionQuota#window_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#window_type RumRetentionQuota#window_type}
 
 ---
 
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.rumRetentionQuota.RumRetentionQuotaCustomOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/rumretentionquota"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/rumretentionquota"
 
 rumretentionquota.NewRumRetentionQuotaCustomOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RumRetentionQuotaCustomOutputReference
 ```

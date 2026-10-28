@@ -4,7 +4,7 @@
 
 ### TeamNotificationRule <a name="TeamNotificationRule" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule datadog_team_notification_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule datadog_team_notification_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.Initializer"></a>
 
@@ -77,10 +77,12 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.putEmail">PutEmail</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.putMsTeams">PutMsTeams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.putPagerduty">PutPagerduty</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.putServicenow">PutServicenow</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.putSlack">PutSlack</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.resetEmail">ResetEmail</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.resetMsTeams">ResetMsTeams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.resetPagerduty">ResetPagerduty</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.resetServicenow">ResetServicenow</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.resetSlack">ResetSlack</a></code> | *No description.* |
 
 ---
@@ -430,6 +432,18 @@ private void PutPagerduty(TeamNotificationRulePagerduty Value)
 
 ---
 
+##### `PutServicenow` <a name="PutServicenow" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.putServicenow"></a>
+
+```csharp
+private void PutServicenow(TeamNotificationRuleServicenow Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.putServicenow.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenow">TeamNotificationRuleServicenow</a>
+
+---
+
 ##### `PutSlack` <a name="PutSlack" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.putSlack"></a>
 
 ```csharp
@@ -458,6 +472,12 @@ private void ResetMsTeams()
 
 ```csharp
 private void ResetPagerduty()
+```
+
+##### `ResetServicenow` <a name="ResetServicenow" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.resetServicenow"></a>
+
+```csharp
+private void ResetServicenow()
 ```
 
 ##### `ResetSlack` <a name="ResetSlack" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.resetSlack"></a>
@@ -569,7 +589,7 @@ The construct id used in the generated config for the TeamNotificationRule to im
 
 The id of the existing TeamNotificationRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -603,10 +623,12 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.msTeams">MsTeams</a></code> | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleMsTeamsOutputReference">TeamNotificationRuleMsTeamsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.pagerduty">Pagerduty</a></code> | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRulePagerdutyOutputReference">TeamNotificationRulePagerdutyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.servicenow">Servicenow</a></code> | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference">TeamNotificationRuleServicenowOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.slack">Slack</a></code> | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleSlackOutputReference">TeamNotificationRuleSlackOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.emailInput">EmailInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmail">TeamNotificationRuleEmail</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.msTeamsInput">MsTeamsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleMsTeams">TeamNotificationRuleMsTeams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.pagerdutyInput">PagerdutyInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRulePagerduty">TeamNotificationRulePagerduty</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.servicenowInput">ServicenowInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenow">TeamNotificationRuleServicenow</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.slackInput">SlackInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleSlack">TeamNotificationRuleSlack</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.teamIdInput">TeamIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.teamId">TeamId</a></code> | <code>string</code> | *No description.* |
@@ -795,6 +817,16 @@ public TeamNotificationRulePagerdutyOutputReference Pagerduty { get; }
 
 ---
 
+##### `Servicenow`<sup>Required</sup> <a name="Servicenow" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.servicenow"></a>
+
+```csharp
+public TeamNotificationRuleServicenowOutputReference Servicenow { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference">TeamNotificationRuleServicenowOutputReference</a>
+
+---
+
 ##### `Slack`<sup>Required</sup> <a name="Slack" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.slack"></a>
 
 ```csharp
@@ -832,6 +864,16 @@ public IResolvable|TeamNotificationRulePagerduty PagerdutyInput { get; }
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRulePagerduty">TeamNotificationRulePagerduty</a>
+
+---
+
+##### `ServicenowInput`<sup>Optional</sup> <a name="ServicenowInput" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.servicenowInput"></a>
+
+```csharp
+public IResolvable|TeamNotificationRuleServicenow ServicenowInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenow">TeamNotificationRuleServicenow</a>
 
 ---
 
@@ -904,6 +946,7 @@ new TeamNotificationRuleConfig {
     TeamNotificationRuleEmail Email = null,
     TeamNotificationRuleMsTeams MsTeams = null,
     TeamNotificationRulePagerduty Pagerduty = null,
+    TeamNotificationRuleServicenow Servicenow = null,
     TeamNotificationRuleSlack Slack = null
 };
 ```
@@ -923,6 +966,7 @@ new TeamNotificationRuleConfig {
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleConfig.property.email">Email</a></code> | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmail">TeamNotificationRuleEmail</a></code> | email block. |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleConfig.property.msTeams">MsTeams</a></code> | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleMsTeams">TeamNotificationRuleMsTeams</a></code> | ms_teams block. |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleConfig.property.pagerduty">Pagerduty</a></code> | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRulePagerduty">TeamNotificationRulePagerduty</a></code> | pagerduty block. |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleConfig.property.servicenow">Servicenow</a></code> | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenow">TeamNotificationRuleServicenow</a></code> | servicenow block. |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleConfig.property.slack">Slack</a></code> | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleSlack">TeamNotificationRuleSlack</a></code> | slack block. |
 
 ---
@@ -1007,7 +1051,7 @@ public string TeamId { get; set; }
 
 The ID of the team that this notification rule belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#team_id TeamNotificationRule#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#team_id TeamNotificationRule#team_id}
 
 ---
 
@@ -1021,7 +1065,7 @@ public TeamNotificationRuleEmail Email { get; set; }
 
 email block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#email TeamNotificationRule#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#email TeamNotificationRule#email}
 
 ---
 
@@ -1035,7 +1079,7 @@ public TeamNotificationRuleMsTeams MsTeams { get; set; }
 
 ms_teams block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#ms_teams TeamNotificationRule#ms_teams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#ms_teams TeamNotificationRule#ms_teams}
 
 ---
 
@@ -1049,7 +1093,21 @@ public TeamNotificationRulePagerduty Pagerduty { get; set; }
 
 pagerduty block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#pagerduty TeamNotificationRule#pagerduty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#pagerduty TeamNotificationRule#pagerduty}
+
+---
+
+##### `Servicenow`<sup>Optional</sup> <a name="Servicenow" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleConfig.property.servicenow"></a>
+
+```csharp
+public TeamNotificationRuleServicenow Servicenow { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenow">TeamNotificationRuleServicenow</a>
+
+servicenow block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#servicenow TeamNotificationRule#servicenow}
 
 ---
 
@@ -1063,7 +1121,7 @@ public TeamNotificationRuleSlack Slack { get; set; }
 
 slack block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#slack TeamNotificationRule#slack}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#slack TeamNotificationRule#slack}
 
 ---
 
@@ -1075,7 +1133,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 using Io.Cdktn.Providers.Datadog;
 
 new TeamNotificationRuleEmail {
-    bool|IResolvable Enabled = null
+    bool|IResolvable Enabled = null,
+    string RecipientEmail = null
 };
 ```
 
@@ -1084,6 +1143,7 @@ new TeamNotificationRuleEmail {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmail.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Whether to send email notifications to team members when alerts are triggered. |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmail.property.recipientEmail">RecipientEmail</a></code> | <code>string</code> | A single email address to send notifications to instead of all team members. |
 
 ---
 
@@ -1097,7 +1157,23 @@ public bool|IResolvable Enabled { get; set; }
 
 Whether to send email notifications to team members when alerts are triggered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#enabled TeamNotificationRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#enabled TeamNotificationRule#enabled}
+
+---
+
+##### `RecipientEmail`<sup>Optional</sup> <a name="RecipientEmail" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmail.property.recipientEmail"></a>
+
+```csharp
+public string RecipientEmail { get; set; }
+```
+
+- *Type:* string
+
+A single email address to send notifications to instead of all team members.
+
+Requires `enabled` to be `true`. When omitted, notifications are sent to all team members.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#recipient_email TeamNotificationRule#recipient_email}
 
 ---
 
@@ -1131,7 +1207,7 @@ public string ConnectorName { get; set; }
 
 MS Teams connector name used to route notifications to the appropriate channel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#connector_name TeamNotificationRule#connector_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#connector_name TeamNotificationRule#connector_name}
 
 ---
 
@@ -1165,7 +1241,41 @@ public string ServiceName { get; set; }
 
 PagerDuty service name to send incident notifications to. The service name can be found in your PagerDuty service settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#service_name TeamNotificationRule#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#service_name TeamNotificationRule#service_name}
+
+---
+
+### TeamNotificationRuleServicenow <a name="TeamNotificationRuleServicenow" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenow"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenow.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new TeamNotificationRuleServicenow {
+    string[] Templates = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenow.property.templates">Templates</a></code> | <code>string[]</code> | ServiceNow template handle names to use for notifications. |
+
+---
+
+##### `Templates`<sup>Optional</sup> <a name="Templates" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenow.property.templates"></a>
+
+```csharp
+public string[] Templates { get; set; }
+```
+
+- *Type:* string[]
+
+ServiceNow template handle names to use for notifications.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#templates TeamNotificationRule#templates}
 
 ---
 
@@ -1201,7 +1311,7 @@ public string Channel { get; set; }
 
 Slack channel name for notifications, without a leading '#'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#channel TeamNotificationRule#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#channel TeamNotificationRule#channel}
 
 ---
 
@@ -1215,7 +1325,7 @@ public string Workspace { get; set; }
 
 Slack workspace name where the channel is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#workspace TeamNotificationRule#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#workspace TeamNotificationRule#workspace}
 
 ---
 
@@ -1272,6 +1382,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.resetEnabled">ResetEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.resetRecipientEmail">ResetRecipientEmail</a></code> | *No description.* |
 
 ---
 
@@ -1431,6 +1542,12 @@ Returns a reversible string representation.
 private void ResetEnabled()
 ```
 
+##### `ResetRecipientEmail` <a name="ResetRecipientEmail" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.resetRecipientEmail"></a>
+
+```csharp
+private void ResetRecipientEmail()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1439,7 +1556,9 @@ private void ResetEnabled()
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.property.enabledInput">EnabledInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.property.recipientEmailInput">RecipientEmailInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.property.recipientEmail">RecipientEmail</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmail">TeamNotificationRuleEmail</a></code> | *No description.* |
 
 ---
@@ -1478,6 +1597,16 @@ public bool|IResolvable EnabledInput { get; }
 
 ---
 
+##### `RecipientEmailInput`<sup>Optional</sup> <a name="RecipientEmailInput" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.property.recipientEmailInput"></a>
+
+```csharp
+public string RecipientEmailInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.property.enabled"></a>
 
 ```csharp
@@ -1485,6 +1614,16 @@ public bool|IResolvable Enabled { get; }
 ```
 
 - *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
+##### `RecipientEmail`<sup>Required</sup> <a name="RecipientEmail" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.property.recipientEmail"></a>
+
+```csharp
+public string RecipientEmail { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -2051,6 +2190,284 @@ public IResolvable|TeamNotificationRulePagerduty InternalValue { get; }
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRulePagerduty">TeamNotificationRulePagerduty</a>
+
+---
+
+
+### TeamNotificationRuleServicenowOutputReference <a name="TeamNotificationRuleServicenowOutputReference" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new TeamNotificationRuleServicenowOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.resetTemplates">ResetTemplates</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetTemplates` <a name="ResetTemplates" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.resetTemplates"></a>
+
+```csharp
+private void ResetTemplates()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.property.templatesInput">TemplatesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.property.templates">Templates</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenow">TeamNotificationRuleServicenow</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TemplatesInput`<sup>Optional</sup> <a name="TemplatesInput" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.property.templatesInput"></a>
+
+```csharp
+public string[] TemplatesInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `Templates`<sup>Required</sup> <a name="Templates" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.property.templates"></a>
+
+```csharp
+public string[] Templates { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|TeamNotificationRuleServicenow InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenow">TeamNotificationRuleServicenow</a>
 
 ---
 

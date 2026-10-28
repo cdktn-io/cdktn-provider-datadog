@@ -4,12 +4,12 @@
 
 ### WebhookOauth2ClientCredentials <a name="WebhookOauth2ClientCredentials" id="@cdktn/provider-datadog.webhookOauth2ClientCredentials.WebhookOauth2ClientCredentials"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/webhook_oauth2_client_credentials datadog_webhook_oauth2_client_credentials}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/webhook_oauth2_client_credentials datadog_webhook_oauth2_client_credentials}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.webhookOauth2ClientCredentials.WebhookOauth2ClientCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/webhookoauth2clientcredentials"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/webhookoauth2clientcredentials"
 
 webhookoauth2clientcredentials.NewWebhookOauth2ClientCredentials(scope Construct, id *string, config WebhookOauth2ClientCredentialsConfig) WebhookOauth2ClientCredentials
 ```
@@ -414,7 +414,7 @@ func ResetScope()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.webhookOauth2ClientCredentials.WebhookOauth2ClientCredentials.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/webhookoauth2clientcredentials"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/webhookoauth2clientcredentials"
 
 webhookoauth2clientcredentials.WebhookOauth2ClientCredentials_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.webhookOauth2ClientCredentials.WebhookOauth2ClientCredentials.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/webhookoauth2clientcredentials"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/webhookoauth2clientcredentials"
 
 webhookoauth2clientcredentials.WebhookOauth2ClientCredentials_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ webhookoauth2clientcredentials.WebhookOauth2ClientCredentials_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.webhookOauth2ClientCredentials.WebhookOauth2ClientCredentials.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/webhookoauth2clientcredentials"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/webhookoauth2clientcredentials"
 
 webhookoauth2clientcredentials.WebhookOauth2ClientCredentials_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ webhookoauth2clientcredentials.WebhookOauth2ClientCredentials_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.webhookOauth2ClientCredentials.WebhookOauth2ClientCredentials.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/webhookoauth2clientcredentials"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/webhookoauth2clientcredentials"
 
 webhookoauth2clientcredentials.WebhookOauth2ClientCredentials_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the WebhookOauth2ClientCredent
 
 The id of the existing WebhookOauth2ClientCredentials that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/webhook_oauth2_client_credentials#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/webhook_oauth2_client_credentials#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -846,7 +846,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.webhookOauth2ClientCredentials.WebhookOauth2ClientCredentialsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/webhookoauth2clientcredentials"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/webhookoauth2clientcredentials"
 
 &webhookoauth2clientcredentials.WebhookOauth2ClientCredentialsConfig {
 	Connection: interface{},
@@ -965,7 +965,7 @@ AccessTokenUrl *string
 
 The URL used to fetch the access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/webhook_oauth2_client_credentials#access_token_url WebhookOauth2ClientCredentials#access_token_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/webhook_oauth2_client_credentials#access_token_url WebhookOauth2ClientCredentials#access_token_url}
 
 ---
 
@@ -979,7 +979,7 @@ ClientId *string
 
 The OAuth2 client ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/webhook_oauth2_client_credentials#client_id WebhookOauth2ClientCredentials#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/webhook_oauth2_client_credentials#client_id WebhookOauth2ClientCredentials#client_id}
 
 ---
 
@@ -995,7 +995,7 @@ The OAuth2 client secret.
 
 This value is not returned by the API, so it cannot be detected as drifted or filled in on import.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/webhook_oauth2_client_credentials#client_secret WebhookOauth2ClientCredentials#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/webhook_oauth2_client_credentials#client_secret WebhookOauth2ClientCredentials#client_secret}
 
 ---
 
@@ -1009,7 +1009,7 @@ Name *string
 
 The name of the auth method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/webhook_oauth2_client_credentials#name WebhookOauth2ClientCredentials#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/webhook_oauth2_client_credentials#name WebhookOauth2ClientCredentials#name}
 
 ---
 
@@ -1023,7 +1023,7 @@ Audience *string
 
 The audience requested when fetching the access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/webhook_oauth2_client_credentials#audience WebhookOauth2ClientCredentials#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/webhook_oauth2_client_credentials#audience WebhookOauth2ClientCredentials#audience}
 
 ---
 
@@ -1037,7 +1037,7 @@ Scope *string
 
 The scope requested when fetching the access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/webhook_oauth2_client_credentials#scope WebhookOauth2ClientCredentials#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/webhook_oauth2_client_credentials#scope WebhookOauth2ClientCredentials#scope}
 
 ---
 

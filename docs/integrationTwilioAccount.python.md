@@ -4,7 +4,7 @@
 
 ### IntegrationTwilioAccount <a name="IntegrationTwilioAccount" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account datadog_integration_twilio_account}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account datadog_integration_twilio_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccount.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Authentication configured on the Twilio integration account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#authentication IntegrationTwilioAccount#authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#authentication IntegrationTwilioAccount#authentication}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Human-readable name of the Twilio integration account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#name IntegrationTwilioAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#name IntegrationTwilioAccount#name}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Settings configured on the Twilio integration account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#settings IntegrationTwilioAccount#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#settings IntegrationTwilioAccount#settings}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Data Datadog collects from Twilio, keyed by dataflow id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#dataflows IntegrationTwilioAccount#dataflows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#dataflows IntegrationTwilioAccount#dataflows}
 
 ---
 
@@ -543,7 +543,7 @@ def put_authentication(
 
 The basic authentication method and username configured on the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#twilio_integration_account_basic_auth IntegrationTwilioAccount#twilio_integration_account_basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#twilio_integration_account_basic_auth IntegrationTwilioAccount#twilio_integration_account_basic_auth}
 
 ---
 
@@ -565,7 +565,7 @@ def put_dataflows(
 
 Twilio Alert resource logs, which detail the errors and warnings raised when Twilio makes a webhook request to your server or when your application calls the Twilio REST API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#twilio_alerts_logs IntegrationTwilioAccount#twilio_alerts_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#twilio_alerts_logs IntegrationTwilioAccount#twilio_alerts_logs}
 
 ---
 
@@ -577,7 +577,7 @@ Twilio Call Summary resource logs, covering the metadata and performance of the 
 
 Requires Voice Insights Advanced Features to be enabled on the Twilio account; without it this dataflow collects no data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#twilio_call_summaries_logs IntegrationTwilioAccount#twilio_call_summaries_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#twilio_call_summaries_logs IntegrationTwilioAccount#twilio_call_summaries_logs}
 
 ---
 
@@ -587,7 +587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Your Twilio cost data, so that Twilio spend can be broken down and attributed in [Cloud Cost Management](https://docs.datadoghq.com/cloud_cost_management/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#twilio_cloud_cost_metrics IntegrationTwilioAccount#twilio_cloud_cost_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#twilio_cloud_cost_metrics IntegrationTwilioAccount#twilio_cloud_cost_metrics}
 
 ---
 
@@ -599,7 +599,7 @@ Twilio Event resource logs, which record virtually every action taken in your Tw
 
 Actions are recorded whether they came from the REST API, a user in the Twilio Console, or Twilio itself. [Cloud SIEM](https://docs.datadoghq.com/security/cloud_siem/) analyzes and correlates these logs to detect threats in real time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#twilio_events_logs IntegrationTwilioAccount#twilio_events_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#twilio_events_logs IntegrationTwilioAccount#twilio_events_logs}
 
 ---
 
@@ -611,7 +611,7 @@ Twilio Message resource logs for inbound and outbound messages, used to track de
 
 A log is produced when you send a message through the REST API, when Twilio executes a TwiML instruction, and when someone messages one of your Twilio numbers or channel addresses. Message bodies are never collected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#twilio_messages_logs IntegrationTwilioAccount#twilio_messages_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#twilio_messages_logs IntegrationTwilioAccount#twilio_messages_logs}
 
 ---
 
@@ -630,7 +630,7 @@ def put_settings(
 
 Twilio Account SID that uniquely identifies your Twilio account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#account_sid IntegrationTwilioAccount#account_sid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#account_sid IntegrationTwilioAccount#account_sid}
 
 ---
 
@@ -640,7 +640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 When enabled, Twilio phone numbers in the `to` field and SMS message bodies are censored for privacy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#censor_logs IntegrationTwilioAccount#censor_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#censor_logs IntegrationTwilioAccount#censor_logs}
 
 ---
 
@@ -764,7 +764,7 @@ The construct id used in the generated config for the IntegrationTwilioAccount t
 
 The id of the existing IntegrationTwilioAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1088,7 +1088,7 @@ twilio_integration_account_basic_auth: IntegrationTwilioAccountAuthenticationTwi
 
 The basic authentication method and username configured on the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#twilio_integration_account_basic_auth IntegrationTwilioAccount#twilio_integration_account_basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#twilio_integration_account_basic_auth IntegrationTwilioAccount#twilio_integration_account_basic_auth}
 
 ---
 
@@ -1128,7 +1128,7 @@ password_wo: str
 
 Secret password or private key. This write-only value is not stored in Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#password_wo IntegrationTwilioAccount#password_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#password_wo IntegrationTwilioAccount#password_wo}
 
 ---
 
@@ -1142,7 +1142,7 @@ password_wo_version: str
 
 Version trigger for password_wo rotation. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#password_wo_version IntegrationTwilioAccount#password_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#password_wo_version IntegrationTwilioAccount#password_wo_version}
 
 ---
 
@@ -1156,7 +1156,7 @@ username: str
 
 Non-secret username or public identifier for the credential pair.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#username IntegrationTwilioAccount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#username IntegrationTwilioAccount#username}
 
 ---
 
@@ -1170,7 +1170,7 @@ auth_type: str
 
 The authentication method type. Valid values are `basic`. Defaults to `"basic"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#auth_type IntegrationTwilioAccount#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#auth_type IntegrationTwilioAccount#auth_type}
 
 ---
 
@@ -1294,7 +1294,7 @@ authentication: IntegrationTwilioAccountAuthentication
 
 Authentication configured on the Twilio integration account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#authentication IntegrationTwilioAccount#authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#authentication IntegrationTwilioAccount#authentication}
 
 ---
 
@@ -1308,7 +1308,7 @@ name: str
 
 Human-readable name of the Twilio integration account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#name IntegrationTwilioAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#name IntegrationTwilioAccount#name}
 
 ---
 
@@ -1322,7 +1322,7 @@ settings: IntegrationTwilioAccountSettings
 
 Settings configured on the Twilio integration account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#settings IntegrationTwilioAccount#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#settings IntegrationTwilioAccount#settings}
 
 ---
 
@@ -1336,7 +1336,7 @@ dataflows: IntegrationTwilioAccountDataflows
 
 Data Datadog collects from Twilio, keyed by dataflow id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#dataflows IntegrationTwilioAccount#dataflows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#dataflows IntegrationTwilioAccount#dataflows}
 
 ---
 
@@ -1378,7 +1378,7 @@ twilio_alerts_logs: IntegrationTwilioAccountDataflowsTwilioAlertsLogs
 
 Twilio Alert resource logs, which detail the errors and warnings raised when Twilio makes a webhook request to your server or when your application calls the Twilio REST API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#twilio_alerts_logs IntegrationTwilioAccount#twilio_alerts_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#twilio_alerts_logs IntegrationTwilioAccount#twilio_alerts_logs}
 
 ---
 
@@ -1394,7 +1394,7 @@ Twilio Call Summary resource logs, covering the metadata and performance of the 
 
 Requires Voice Insights Advanced Features to be enabled on the Twilio account; without it this dataflow collects no data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#twilio_call_summaries_logs IntegrationTwilioAccount#twilio_call_summaries_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#twilio_call_summaries_logs IntegrationTwilioAccount#twilio_call_summaries_logs}
 
 ---
 
@@ -1408,7 +1408,7 @@ twilio_cloud_cost_metrics: IntegrationTwilioAccountDataflowsTwilioCloudCostMetri
 
 Your Twilio cost data, so that Twilio spend can be broken down and attributed in [Cloud Cost Management](https://docs.datadoghq.com/cloud_cost_management/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#twilio_cloud_cost_metrics IntegrationTwilioAccount#twilio_cloud_cost_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#twilio_cloud_cost_metrics IntegrationTwilioAccount#twilio_cloud_cost_metrics}
 
 ---
 
@@ -1424,7 +1424,7 @@ Twilio Event resource logs, which record virtually every action taken in your Tw
 
 Actions are recorded whether they came from the REST API, a user in the Twilio Console, or Twilio itself. [Cloud SIEM](https://docs.datadoghq.com/security/cloud_siem/) analyzes and correlates these logs to detect threats in real time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#twilio_events_logs IntegrationTwilioAccount#twilio_events_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#twilio_events_logs IntegrationTwilioAccount#twilio_events_logs}
 
 ---
 
@@ -1440,7 +1440,7 @@ Twilio Message resource logs for inbound and outbound messages, used to track de
 
 A log is produced when you send a message through the REST API, when Twilio executes a TwiML instruction, and when someone messages one of your Twilio numbers or channel addresses. Message bodies are never collected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#twilio_messages_logs IntegrationTwilioAccount#twilio_messages_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#twilio_messages_logs IntegrationTwilioAccount#twilio_messages_logs}
 
 ---
 
@@ -1474,7 +1474,7 @@ enabled: bool | IResolvable
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
 
 ---
 
@@ -1519,7 +1519,7 @@ enabled: bool | IResolvable
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
 
 ---
 
@@ -1564,7 +1564,7 @@ enabled: bool | IResolvable
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
 
 ---
 
@@ -1609,7 +1609,7 @@ enabled: bool | IResolvable
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
 
 ---
 
@@ -1654,7 +1654,7 @@ enabled: bool | IResolvable
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
 
 ---
 
@@ -1701,7 +1701,7 @@ account_sid: str
 
 Twilio Account SID that uniquely identifies your Twilio account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#account_sid IntegrationTwilioAccount#account_sid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#account_sid IntegrationTwilioAccount#account_sid}
 
 ---
 
@@ -1715,7 +1715,7 @@ censor_logs: bool | IResolvable
 
 When enabled, Twilio phone numbers in the `to` field and SMS message bodies are censored for privacy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#censor_logs IntegrationTwilioAccount#censor_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#censor_logs IntegrationTwilioAccount#censor_logs}
 
 ---
 
@@ -1968,7 +1968,7 @@ def put_twilio_integration_account_basic_auth(
 
 Secret password or private key. This write-only value is not stored in Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#password_wo IntegrationTwilioAccount#password_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#password_wo IntegrationTwilioAccount#password_wo}
 
 ---
 
@@ -1978,7 +1978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Version trigger for password_wo rotation. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#password_wo_version IntegrationTwilioAccount#password_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#password_wo_version IntegrationTwilioAccount#password_wo_version}
 
 ---
 
@@ -1988,7 +1988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Non-secret username or public identifier for the credential pair.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#username IntegrationTwilioAccount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#username IntegrationTwilioAccount#username}
 
 ---
 
@@ -1998,7 +1998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The authentication method type. Valid values are `basic`. Defaults to `"basic"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#auth_type IntegrationTwilioAccount#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#auth_type IntegrationTwilioAccount#auth_type}
 
 ---
 
@@ -2699,7 +2699,7 @@ def put_twilio_alerts_logs(
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
 
 ---
 
@@ -2717,7 +2717,7 @@ def put_twilio_call_summaries_logs(
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
 
 ---
 
@@ -2735,7 +2735,7 @@ def put_twilio_cloud_cost_metrics(
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
 
 ---
 
@@ -2753,7 +2753,7 @@ def put_twilio_events_logs(
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
 
 ---
 
@@ -2771,7 +2771,7 @@ def put_twilio_messages_logs(
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
 
 ---
 

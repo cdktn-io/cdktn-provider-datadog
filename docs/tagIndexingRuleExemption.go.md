@@ -4,12 +4,12 @@
 
 ### TagIndexingRuleExemption <a name="TagIndexingRuleExemption" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_indexing_rule_exemption datadog_tag_indexing_rule_exemption}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_indexing_rule_exemption datadog_tag_indexing_rule_exemption}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingruleexemption"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/tagindexingruleexemption"
 
 tagindexingruleexemption.NewTagIndexingRuleExemption(scope Construct, id *string, config TagIndexingRuleExemptionConfig) TagIndexingRuleExemption
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingruleexemption"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/tagindexingruleexemption"
 
 tagindexingruleexemption.TagIndexingRuleExemption_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingruleexemption"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/tagindexingruleexemption"
 
 tagindexingruleexemption.TagIndexingRuleExemption_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ tagindexingruleexemption.TagIndexingRuleExemption_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingruleexemption"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/tagindexingruleexemption"
 
 tagindexingruleexemption.TagIndexingRuleExemption_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ tagindexingruleexemption.TagIndexingRuleExemption_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingruleexemption"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/tagindexingruleexemption"
 
 tagindexingruleexemption.TagIndexingRuleExemption_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the TagIndexingRuleExemption t
 
 The id of the existing TagIndexingRuleExemption that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_indexing_rule_exemption#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_indexing_rule_exemption#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -777,7 +777,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingruleexemption"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/tagindexingruleexemption"
 
 &tagindexingruleexemption.TagIndexingRuleExemptionConfig {
 	Connection: interface{},
@@ -888,7 +888,7 @@ MetricName *string
 
 The metric name to exempt. Changing this value forces a new resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_indexing_rule_exemption#metric_name TagIndexingRuleExemption#metric_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_indexing_rule_exemption#metric_name TagIndexingRuleExemption#metric_name}
 
 ---
 
@@ -904,7 +904,7 @@ The reason the metric is exempt from tag indexing rules.
 
 Changing this value forces a new resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_indexing_rule_exemption#reason TagIndexingRuleExemption#reason}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_indexing_rule_exemption#reason TagIndexingRuleExemption#reason}
 
 ---
 

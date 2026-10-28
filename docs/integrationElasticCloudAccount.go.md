@@ -4,12 +4,12 @@
 
 ### IntegrationElasticCloudAccount <a name="IntegrationElasticCloudAccount" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account datadog_integration_elastic_cloud_account}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account datadog_integration_elastic_cloud_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 integrationelasticcloudaccount.NewIntegrationElasticCloudAccount(scope Construct, id *string, config IntegrationElasticCloudAccountConfig) IntegrationElasticCloudAccount
 ```
@@ -446,7 +446,7 @@ func ResetDataflows()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 integrationelasticcloudaccount.IntegrationElasticCloudAccount_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 integrationelasticcloudaccount.IntegrationElasticCloudAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ integrationelasticcloudaccount.IntegrationElasticCloudAccount_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 integrationelasticcloudaccount.IntegrationElasticCloudAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ integrationelasticcloudaccount.IntegrationElasticCloudAccount_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 integrationelasticcloudaccount.IntegrationElasticCloudAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -535,7 +535,7 @@ The construct id used in the generated config for the IntegrationElasticCloudAcc
 
 The id of the existing IntegrationElasticCloudAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -834,10 +834,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 &integrationelasticcloudaccount.IntegrationElasticCloudAccountAuthentication {
-	ElasticCloudIntegrationAccountBasicAuth: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationElasticCloudAccount.IntegrationElasticCloudAccountAuthenticationElasticCloudIntegrationAccountBasicAuth,
+	ElasticCloudIntegrationAccountBasicAuth: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationElasticCloudAccount.IntegrationElasticCloudAccountAuthenticationElasticCloudIntegrationAccountBasicAuth,
 }
 ```
 
@@ -859,7 +859,7 @@ ElasticCloudIntegrationAccountBasicAuth IntegrationElasticCloudAccountAuthentica
 
 The basic authentication method and username configured on the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_integration_account_basic_auth IntegrationElasticCloudAccount#elastic_cloud_integration_account_basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_integration_account_basic_auth IntegrationElasticCloudAccount#elastic_cloud_integration_account_basic_auth}
 
 ---
 
@@ -868,7 +868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountAuthenticationElasticCloudIntegrationAccountBasicAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 &integrationelasticcloudaccount.IntegrationElasticCloudAccountAuthenticationElasticCloudIntegrationAccountBasicAuth {
 	PasswordWo: *string,
@@ -899,7 +899,7 @@ PasswordWo *string
 
 Secret password or private key. This write-only value is not stored in Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#password_wo IntegrationElasticCloudAccount#password_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#password_wo IntegrationElasticCloudAccount#password_wo}
 
 ---
 
@@ -913,7 +913,7 @@ PasswordWoVersion *string
 
 Version trigger for password_wo rotation. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#password_wo_version IntegrationElasticCloudAccount#password_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#password_wo_version IntegrationElasticCloudAccount#password_wo_version}
 
 ---
 
@@ -927,7 +927,7 @@ Username *string
 
 Non-secret username or public identifier for the credential pair.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#username IntegrationElasticCloudAccount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#username IntegrationElasticCloudAccount#username}
 
 ---
 
@@ -941,7 +941,7 @@ AuthType *string
 
 The authentication method type. Valid values are `basic`. Defaults to `"basic"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#auth_type IntegrationElasticCloudAccount#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#auth_type IntegrationElasticCloudAccount#auth_type}
 
 ---
 
@@ -950,7 +950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 &integrationelasticcloudaccount.IntegrationElasticCloudAccountConfig {
 	Connection: interface{},
@@ -960,10 +960,10 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationela
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Authentication: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationElasticCloudAccount.IntegrationElasticCloudAccountAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationElasticCloudAccount.IntegrationElasticCloudAccountAuthentication,
 	Name: *string,
-	Settings: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationElasticCloudAccount.IntegrationElasticCloudAccountSettings,
-	Dataflows: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflows,
+	Settings: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationElasticCloudAccount.IntegrationElasticCloudAccountSettings,
+	Dataflows: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflows,
 }
 ```
 
@@ -1065,7 +1065,7 @@ Authentication IntegrationElasticCloudAccountAuthentication
 
 Authentication configured on the Elastic Cloud integration account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#authentication IntegrationElasticCloudAccount#authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#authentication IntegrationElasticCloudAccount#authentication}
 
 ---
 
@@ -1079,7 +1079,7 @@ Name *string
 
 Human-readable name of the Elastic Cloud integration account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#name IntegrationElasticCloudAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#name IntegrationElasticCloudAccount#name}
 
 ---
 
@@ -1093,7 +1093,7 @@ Settings IntegrationElasticCloudAccountSettings
 
 Settings configured on the Elastic Cloud integration account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#settings IntegrationElasticCloudAccount#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#settings IntegrationElasticCloudAccount#settings}
 
 ---
 
@@ -1107,7 +1107,7 @@ Dataflows IntegrationElasticCloudAccountDataflows
 
 Data Datadog collects from Elastic Cloud, keyed by dataflow id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#dataflows IntegrationElasticCloudAccount#dataflows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#dataflows IntegrationElasticCloudAccount#dataflows}
 
 ---
 
@@ -1116,16 +1116,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflows.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 &integrationelasticcloudaccount.IntegrationElasticCloudAccountDataflows {
-	ElasticCloudDetailedIndexStats: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudDetailedIndexStats,
-	ElasticCloudIndexStats: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudIndexStats,
-	ElasticCloudPendingTaskStats: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudPendingTaskStats,
-	ElasticCloudPrimaryShardGracefulTimeout: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShardGracefulTimeout,
-	ElasticCloudPrimaryShardStats: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShardStats,
-	ElasticCloudShardAllocationStats: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudShardAllocationStats,
-	ElasticCloudSlmStats: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudSlmStats,
+	ElasticCloudDetailedIndexStats: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudDetailedIndexStats,
+	ElasticCloudIndexStats: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudIndexStats,
+	ElasticCloudPendingTaskStats: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudPendingTaskStats,
+	ElasticCloudPrimaryShardGracefulTimeout: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShardGracefulTimeout,
+	ElasticCloudPrimaryShardStats: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShardStats,
+	ElasticCloudShardAllocationStats: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudShardAllocationStats,
+	ElasticCloudSlmStats: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudSlmStats,
 }
 ```
 
@@ -1153,7 +1153,7 @@ ElasticCloudDetailedIndexStats IntegrationElasticCloudAccountDataflowsElasticClo
 
 Primary shard metrics broken down per index, rather than aggregated across the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_detailed_index_stats IntegrationElasticCloudAccount#elastic_cloud_detailed_index_stats}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_detailed_index_stats IntegrationElasticCloudAccount#elastic_cloud_detailed_index_stats}
 
 ---
 
@@ -1167,7 +1167,7 @@ ElasticCloudIndexStats IntegrationElasticCloudAccountDataflowsElasticCloudIndexS
 
 Metrics for individual indices. Only the indices granted to the role of the user in `authentication` are collected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_index_stats IntegrationElasticCloudAccount#elastic_cloud_index_stats}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_index_stats IntegrationElasticCloudAccount#elastic_cloud_index_stats}
 
 ---
 
@@ -1181,7 +1181,7 @@ ElasticCloudPendingTaskStats IntegrationElasticCloudAccountDataflowsElasticCloud
 
 Metrics for cluster-level changes that have been submitted but not yet executed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_pending_task_stats IntegrationElasticCloudAccount#elastic_cloud_pending_task_stats}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_pending_task_stats IntegrationElasticCloudAccount#elastic_cloud_pending_task_stats}
 
 ---
 
@@ -1197,7 +1197,7 @@ Tolerance for slow primary shard requests, keeping the rest of the collection ru
 
 Only has an effect alongside `elastic-cloud-primary-shard-stats`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_primary_shard_graceful_timeout IntegrationElasticCloudAccount#elastic_cloud_primary_shard_graceful_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_primary_shard_graceful_timeout IntegrationElasticCloudAccount#elastic_cloud_primary_shard_graceful_timeout}
 
 ---
 
@@ -1211,7 +1211,7 @@ ElasticCloudPrimaryShardStats IntegrationElasticCloudAccountDataflowsElasticClou
 
 Metrics covering only the cluster's primary shards.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_primary_shard_stats IntegrationElasticCloudAccount#elastic_cloud_primary_shard_stats}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_primary_shard_stats IntegrationElasticCloudAccount#elastic_cloud_primary_shard_stats}
 
 ---
 
@@ -1225,7 +1225,7 @@ ElasticCloudShardAllocationStats IntegrationElasticCloudAccountDataflowsElasticC
 
 Metrics for how many shards are allocated to each data node, and the disk space they use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_shard_allocation_stats IntegrationElasticCloudAccount#elastic_cloud_shard_allocation_stats}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_shard_allocation_stats IntegrationElasticCloudAccount#elastic_cloud_shard_allocation_stats}
 
 ---
 
@@ -1241,7 +1241,7 @@ Metrics about the actions taken by snapshot lifecycle management.
 
 Requires the `read_slm` Elasticsearch cluster privilege on the role of the user in `authentication`; without it this dataflow collects no data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_slm_stats IntegrationElasticCloudAccount#elastic_cloud_slm_stats}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_slm_stats IntegrationElasticCloudAccount#elastic_cloud_slm_stats}
 
 ---
 
@@ -1250,7 +1250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudDetailedIndexStats.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 &integrationelasticcloudaccount.IntegrationElasticCloudAccountDataflowsElasticCloudDetailedIndexStats {
 	Enabled: interface{},
@@ -1275,7 +1275,7 @@ Enabled interface{}
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
 
 ---
 
@@ -1284,7 +1284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudDetailedIndexStatsStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 &integrationelasticcloudaccount.IntegrationElasticCloudAccountDataflowsElasticCloudDetailedIndexStatsStatus {
 
@@ -1297,7 +1297,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationela
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudIndexStats.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 &integrationelasticcloudaccount.IntegrationElasticCloudAccountDataflowsElasticCloudIndexStats {
 	Enabled: interface{},
@@ -1322,7 +1322,7 @@ Enabled interface{}
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
 
 ---
 
@@ -1331,7 +1331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudIndexStatsStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 &integrationelasticcloudaccount.IntegrationElasticCloudAccountDataflowsElasticCloudIndexStatsStatus {
 
@@ -1344,7 +1344,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationela
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 &integrationelasticcloudaccount.IntegrationElasticCloudAccountDataflowsElasticCloudMetrics {
 
@@ -1357,7 +1357,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationela
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudMetricsStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 &integrationelasticcloudaccount.IntegrationElasticCloudAccountDataflowsElasticCloudMetricsStatus {
 
@@ -1370,7 +1370,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationela
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudPendingTaskStats.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 &integrationelasticcloudaccount.IntegrationElasticCloudAccountDataflowsElasticCloudPendingTaskStats {
 	Enabled: interface{},
@@ -1395,7 +1395,7 @@ Enabled interface{}
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
 
 ---
 
@@ -1404,7 +1404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudPendingTaskStatsStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 &integrationelasticcloudaccount.IntegrationElasticCloudAccountDataflowsElasticCloudPendingTaskStatsStatus {
 
@@ -1417,7 +1417,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationela
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShardGracefulTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 &integrationelasticcloudaccount.IntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShardGracefulTimeout {
 	Enabled: interface{},
@@ -1442,7 +1442,7 @@ Enabled interface{}
 
 Whether this tolerance is applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
 
 ---
 
@@ -1451,7 +1451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShardGracefulTimeoutStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 &integrationelasticcloudaccount.IntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShardGracefulTimeoutStatus {
 
@@ -1464,7 +1464,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationela
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShardStats.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 &integrationelasticcloudaccount.IntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShardStats {
 	Enabled: interface{},
@@ -1489,7 +1489,7 @@ Enabled interface{}
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
 
 ---
 
@@ -1498,7 +1498,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShardStatsStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 &integrationelasticcloudaccount.IntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShardStatsStatus {
 
@@ -1511,7 +1511,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationela
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudShardAllocationStats.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 &integrationelasticcloudaccount.IntegrationElasticCloudAccountDataflowsElasticCloudShardAllocationStats {
 	Enabled: interface{},
@@ -1536,7 +1536,7 @@ Enabled interface{}
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
 
 ---
 
@@ -1545,7 +1545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudShardAllocationStatsStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 &integrationelasticcloudaccount.IntegrationElasticCloudAccountDataflowsElasticCloudShardAllocationStatsStatus {
 
@@ -1558,7 +1558,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationela
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudSlmStats.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 &integrationelasticcloudaccount.IntegrationElasticCloudAccountDataflowsElasticCloudSlmStats {
 	Enabled: interface{},
@@ -1583,7 +1583,7 @@ Enabled interface{}
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
 
 ---
 
@@ -1592,7 +1592,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudSlmStatsStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 &integrationelasticcloudaccount.IntegrationElasticCloudAccountDataflowsElasticCloudSlmStatsStatus {
 
@@ -1605,7 +1605,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationela
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 &integrationelasticcloudaccount.IntegrationElasticCloudAccountSettings {
 	Url: *string,
@@ -1632,7 +1632,7 @@ Url *string
 
 Elastic Cloud deployment URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#url IntegrationElasticCloudAccount#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#url IntegrationElasticCloudAccount#url}
 
 ---
 
@@ -1646,7 +1646,7 @@ Tags *string
 
 Comma-separated list of custom tags for this Elastic Cloud deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#tags IntegrationElasticCloudAccount#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#tags IntegrationElasticCloudAccount#tags}
 
 ---
 
@@ -1657,7 +1657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountAuthenticationElasticCloudIntegrationAccountBasicAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 integrationelasticcloudaccount.NewIntegrationElasticCloudAccountAuthenticationElasticCloudIntegrationAccountBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationElasticCloudAccountAuthenticationElasticCloudIntegrationAccountBasicAuthOutputReference
 ```
@@ -2003,7 +2003,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 integrationelasticcloudaccount.NewIntegrationElasticCloudAccountAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationElasticCloudAccountAuthenticationOutputReference
 ```
@@ -2294,7 +2294,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudDetailedIndexStatsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 integrationelasticcloudaccount.NewIntegrationElasticCloudAccountDataflowsElasticCloudDetailedIndexStatsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationElasticCloudAccountDataflowsElasticCloudDetailedIndexStatsOutputReference
 ```
@@ -2583,7 +2583,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudDetailedIndexStatsStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 integrationelasticcloudaccount.NewIntegrationElasticCloudAccountDataflowsElasticCloudDetailedIndexStatsStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationElasticCloudAccountDataflowsElasticCloudDetailedIndexStatsStatusOutputReference
 ```
@@ -2865,7 +2865,7 @@ func InternalValue() IntegrationElasticCloudAccountDataflowsElasticCloudDetailed
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudIndexStatsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 integrationelasticcloudaccount.NewIntegrationElasticCloudAccountDataflowsElasticCloudIndexStatsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationElasticCloudAccountDataflowsElasticCloudIndexStatsOutputReference
 ```
@@ -3154,7 +3154,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudIndexStatsStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 integrationelasticcloudaccount.NewIntegrationElasticCloudAccountDataflowsElasticCloudIndexStatsStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationElasticCloudAccountDataflowsElasticCloudIndexStatsStatusOutputReference
 ```
@@ -3436,7 +3436,7 @@ func InternalValue() IntegrationElasticCloudAccountDataflowsElasticCloudIndexSta
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 integrationelasticcloudaccount.NewIntegrationElasticCloudAccountDataflowsElasticCloudMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationElasticCloudAccountDataflowsElasticCloudMetricsOutputReference
 ```
@@ -3707,7 +3707,7 @@ func InternalValue() IntegrationElasticCloudAccountDataflowsElasticCloudMetrics
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudMetricsStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 integrationelasticcloudaccount.NewIntegrationElasticCloudAccountDataflowsElasticCloudMetricsStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationElasticCloudAccountDataflowsElasticCloudMetricsStatusOutputReference
 ```
@@ -3989,7 +3989,7 @@ func InternalValue() IntegrationElasticCloudAccountDataflowsElasticCloudMetricsS
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudPendingTaskStatsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 integrationelasticcloudaccount.NewIntegrationElasticCloudAccountDataflowsElasticCloudPendingTaskStatsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationElasticCloudAccountDataflowsElasticCloudPendingTaskStatsOutputReference
 ```
@@ -4278,7 +4278,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudPendingTaskStatsStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 integrationelasticcloudaccount.NewIntegrationElasticCloudAccountDataflowsElasticCloudPendingTaskStatsStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationElasticCloudAccountDataflowsElasticCloudPendingTaskStatsStatusOutputReference
 ```
@@ -4560,7 +4560,7 @@ func InternalValue() IntegrationElasticCloudAccountDataflowsElasticCloudPendingT
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShardGracefulTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 integrationelasticcloudaccount.NewIntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShardGracefulTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShardGracefulTimeoutOutputReference
 ```
@@ -4849,7 +4849,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShardGracefulTimeoutStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 integrationelasticcloudaccount.NewIntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShardGracefulTimeoutStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShardGracefulTimeoutStatusOutputReference
 ```
@@ -5131,7 +5131,7 @@ func InternalValue() IntegrationElasticCloudAccountDataflowsElasticCloudPrimaryS
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShardStatsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 integrationelasticcloudaccount.NewIntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShardStatsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShardStatsOutputReference
 ```
@@ -5420,7 +5420,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShardStatsStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 integrationelasticcloudaccount.NewIntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShardStatsStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShardStatsStatusOutputReference
 ```
@@ -5702,7 +5702,7 @@ func InternalValue() IntegrationElasticCloudAccountDataflowsElasticCloudPrimaryS
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudShardAllocationStatsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 integrationelasticcloudaccount.NewIntegrationElasticCloudAccountDataflowsElasticCloudShardAllocationStatsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationElasticCloudAccountDataflowsElasticCloudShardAllocationStatsOutputReference
 ```
@@ -5991,7 +5991,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudShardAllocationStatsStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 integrationelasticcloudaccount.NewIntegrationElasticCloudAccountDataflowsElasticCloudShardAllocationStatsStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationElasticCloudAccountDataflowsElasticCloudShardAllocationStatsStatusOutputReference
 ```
@@ -6273,7 +6273,7 @@ func InternalValue() IntegrationElasticCloudAccountDataflowsElasticCloudShardAll
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudSlmStatsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 integrationelasticcloudaccount.NewIntegrationElasticCloudAccountDataflowsElasticCloudSlmStatsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationElasticCloudAccountDataflowsElasticCloudSlmStatsOutputReference
 ```
@@ -6562,7 +6562,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsElasticCloudSlmStatsStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 integrationelasticcloudaccount.NewIntegrationElasticCloudAccountDataflowsElasticCloudSlmStatsStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationElasticCloudAccountDataflowsElasticCloudSlmStatsStatusOutputReference
 ```
@@ -6844,7 +6844,7 @@ func InternalValue() IntegrationElasticCloudAccountDataflowsElasticCloudSlmStats
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountDataflowsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 integrationelasticcloudaccount.NewIntegrationElasticCloudAccountDataflowsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationElasticCloudAccountDataflowsOutputReference
 ```
@@ -7398,7 +7398,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationElasticCloudAccount.IntegrationElasticCloudAccountSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationelasticcloudaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationelasticcloudaccount"
 
 integrationelasticcloudaccount.NewIntegrationElasticCloudAccountSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationElasticCloudAccountSettingsOutputReference
 ```

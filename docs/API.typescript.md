@@ -207,6 +207,8 @@ The following submodules are available:
 - [rumApplication](./rumApplication.typescript.md)
 - [rumExclusionFilter](./rumExclusionFilter.typescript.md)
 - [rumMetric](./rumMetric.typescript.md)
+- [rumOperation](./rumOperation.typescript.md)
+- [rumOperationJourneyLink](./rumOperationJourneyLink.typescript.md)
 - [rumRetentionFilter](./rumRetentionFilter.typescript.md)
 - [rumRetentionFiltersOrder](./rumRetentionFiltersOrder.typescript.md)
 - [rumRetentionQuota](./rumRetentionQuota.typescript.md)

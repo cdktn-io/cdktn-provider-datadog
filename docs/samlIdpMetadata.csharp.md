@@ -4,7 +4,7 @@
 
 ### SamlIdpMetadata <a name="SamlIdpMetadata" id="@cdktn/provider-datadog.samlIdpMetadata.SamlIdpMetadata"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/saml_idp_metadata datadog_saml_idp_metadata}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/saml_idp_metadata datadog_saml_idp_metadata}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.samlIdpMetadata.SamlIdpMetadata.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the SamlIdpMetadata to import.
 
 The id of the existing SamlIdpMetadata that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/saml_idp_metadata#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/saml_idp_metadata#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -877,7 +877,7 @@ The content of the IdP metadata XML file, for example loaded with the `file()` f
 
 A leading UTF-8 byte order mark (BOM) is stripped automatically before upload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/saml_idp_metadata#idp_metadata SamlIdpMetadata#idp_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/saml_idp_metadata#idp_metadata SamlIdpMetadata#idp_metadata}
 
 ---
 

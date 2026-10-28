@@ -4,12 +4,12 @@
 
 ### Monitor <a name="Monitor" id="@cdktn/provider-datadog.monitor.Monitor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor datadog_monitor}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor datadog_monitor}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.Monitor.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitor(scope Construct, id *string, config MonitorConfig) Monitor
 ```
@@ -696,7 +696,7 @@ func ResetVariables()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.monitor.Monitor.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.Monitor_IsConstruct(x interface{}) *bool
 ```
@@ -728,7 +728,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.monitor.Monitor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.Monitor_IsTerraformElement(x interface{}) *bool
 ```
@@ -742,7 +742,7 @@ monitor.Monitor_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.monitor.Monitor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.Monitor_IsTerraformResource(x interface{}) *bool
 ```
@@ -756,7 +756,7 @@ monitor.Monitor_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.monitor.Monitor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.Monitor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -785,7 +785,7 @@ The construct id used in the generated config for the Monitor to import.
 
 The id of the existing Monitor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1799,7 +1799,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorAssets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorAssets {
 	Category: *string,
@@ -1832,7 +1832,7 @@ Category *string
 
 Type of asset the entity represents on a monitor. Valid values are `runbook`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#category Monitor#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#category Monitor#category}
 
 ---
 
@@ -1846,7 +1846,7 @@ Name *string
 
 Name for the monitor asset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -1860,7 +1860,7 @@ Url *string
 
 URL for the asset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#url Monitor#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#url Monitor#url}
 
 ---
 
@@ -1874,7 +1874,7 @@ ResourceKey *string
 
 Identifier of the internal Datadog resource that this asset represents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#resource_key Monitor#resource_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#resource_key Monitor#resource_key}
 
 ---
 
@@ -1888,7 +1888,7 @@ ResourceType *string
 
 Type of internal Datadog resource associated with a monitor asset. Valid values are `notebook`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#resource_type Monitor#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#resource_type Monitor#resource_type}
 
 ---
 
@@ -1897,7 +1897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorConfig {
 	Connection: interface{},
@@ -1923,8 +1923,8 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 	Id: *string,
 	IgnoreTagKeys: *[]*string,
 	IncludeTags: interface{},
-	MonitorThresholds: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorMonitorThresholds,
-	MonitorThresholdWindows: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorMonitorThresholdWindows,
+	MonitorThresholds: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorMonitorThresholds,
+	MonitorThresholdWindows: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorMonitorThresholdWindows,
 	NewGroupDelay: *f64,
 	NewHostDelay: *f64,
 	NoDataTimeframe: *f64,
@@ -1939,11 +1939,11 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 	RenotifyStatuses: *[]*string,
 	RequireFullWindow: interface{},
 	RestrictedRoles: *[]*string,
-	SchedulingOptions: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorSchedulingOptions,
+	SchedulingOptions: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorSchedulingOptions,
 	Tags: *[]*string,
 	TimeoutH: *f64,
 	Validate: interface{},
-	Variables: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariables,
+	Variables: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariables,
 }
 ```
 
@@ -1971,7 +1971,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.forceDelete">ForceDelete</a></code> | <code>interface{}</code> | A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor). |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.groupbySimpleMonitor">GroupbySimpleMonitor</a></code> | <code>interface{}</code> | Whether or not to trigger one alert if any source breaches a threshold. |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.groupRetentionDuration">GroupRetentionDuration</a></code> | <code>*string</code> | The time span after which groups with missing data are dropped from the monitor state. |
-| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#id Monitor#id}. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#id Monitor#id}. |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.ignoreTagKeys">IgnoreTagKeys</a></code> | <code>*[]*string</code> | Tag keys whose drift Terraform should ignore. |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.includeTags">IncludeTags</a></code> | <code>interface{}</code> | A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`. |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.monitorThresholds">MonitorThresholds</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a></code> | monitor_thresholds block. |
@@ -2080,7 +2080,7 @@ A message to include with notifications for this monitor.
 
 Email notifications can be sent to specific users by using the same `@username` notation as events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#message Monitor#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#message Monitor#message}
 
 ---
 
@@ -2094,7 +2094,7 @@ Name *string
 
 Name of Datadog monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -2112,7 +2112,7 @@ Note this is not the same query you see in the UI and the syntax is different de
 
 **Note:** APM latency data is now available as Distribution Metrics. Existing monitors have been migrated automatically but all terraformed monitors can still use the existing metrics. We strongly recommend updating monitor definitions to query the new metrics. To learn more, or to see examples of how to update your terraform definitions to utilize the new distribution metrics, see the [detailed doc](https://docs.datadoghq.com/tracing/guide/ddsketch_trace_metrics/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
@@ -2128,7 +2128,7 @@ The type of the monitor.
 
 The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API [documentation page](https://docs.datadoghq.com/api/v1/monitors/#create-a-monitor). Note: The monitor type cannot be changed after a monitor is created. Valid values are `composite`, `event alert`, `log alert`, `metric alert`, `process alert`, `query alert`, `rum alert`, `service check`, `synthetics alert`, `trace-analytics alert`, `slo alert`, `event-v2 alert`, `audit alert`, `ci-pipelines alert`, `ci-tests alert`, `error-tracking alert`, `database-monitoring alert`, `network-performance alert`, `cost alert`, `data-quality alert`, `network-path alert`, `data-jobs alert`, `llm-observability alert`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#type Monitor#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#type Monitor#type}
 
 ---
 
@@ -2142,7 +2142,7 @@ Assets interface{}
 
 assets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#assets Monitor#assets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#assets Monitor#assets}
 
 ---
 
@@ -2158,7 +2158,7 @@ Indicates whether the monitor is in a draft or published state.
 
 When set to `draft`, the monitor appears as Draft and does not send notifications. When set to `published`, the monitor is active, and it evaluates conditions and sends notifications as configured. Valid values are `draft`, `published`. Defaults to `"published"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#draft_status Monitor#draft_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#draft_status Monitor#draft_status}
 
 ---
 
@@ -2174,7 +2174,7 @@ A boolean indicating whether or not to include a list of log values which trigge
 
 This is only used by log monitors. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#enable_logs_sample Monitor#enable_logs_sample}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#enable_logs_sample Monitor#enable_logs_sample}
 
 ---
 
@@ -2190,7 +2190,7 @@ Whether or not a list of samples which triggered the alert is included.
 
 This is only used by CI Test and Pipeline monitors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#enable_samples Monitor#enable_samples}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#enable_samples Monitor#enable_samples}
 
 ---
 
@@ -2204,7 +2204,7 @@ EscalationMessage *string
 
 A message to include with a re-notification. Supports the `@username` notification allowed elsewhere.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#escalation_message Monitor#escalation_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#escalation_message Monitor#escalation_message}
 
 ---
 
@@ -2220,7 +2220,7 @@ EvaluationDelay *f64
 
 For example, if the value is set to `300` (5min), the `timeframe` is set to `last_5m` and the time is 7:00, the monitor will evaluate data from 6:50 to 6:55. This is useful for AWS CloudWatch and other backfilled metrics to ensure the monitor will always have data during evaluation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#evaluation_delay Monitor#evaluation_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#evaluation_delay Monitor#evaluation_delay}
 
 ---
 
@@ -2234,7 +2234,7 @@ ForceDelete interface{}
 
 A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#force_delete Monitor#force_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#force_delete Monitor#force_delete}
 
 ---
 
@@ -2250,7 +2250,7 @@ Whether or not to trigger one alert if any source breaches a threshold.
 
 This is only used by log monitors. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#groupby_simple_monitor Monitor#groupby_simple_monitor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#groupby_simple_monitor Monitor#groupby_simple_monitor}
 
 ---
 
@@ -2266,7 +2266,7 @@ The time span after which groups with missing data are dropped from the monitor 
 
 The minimum value is one hour, and the maximum value is 72 hours. Example values are: 60m, 1h, and 2d. This option is only available for APM Trace Analytics, Audit Trail, CI, Error Tracking, Event, Logs, and RUM monitors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#group_retention_duration Monitor#group_retention_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#group_retention_duration Monitor#group_retention_duration}
 
 ---
 
@@ -2278,7 +2278,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#id Monitor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#id Monitor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2297,7 +2297,7 @@ Tag keys whose drift Terraform should ignore.
 
 Use this to keep specific tags managed outside Terraform (for example, by the Datadog UI or a tagging service) without `terraform plan` reporting drift on every run. Other tags are still managed normally. Any `:value` suffix is ignored. Merged with the provider's `ignore_tag_keys` for this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#ignore_tag_keys Monitor#ignore_tag_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#ignore_tag_keys Monitor#ignore_tag_keys}
 
 ---
 
@@ -2311,7 +2311,7 @@ IncludeTags interface{}
 
 A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#include_tags Monitor#include_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#include_tags Monitor#include_tags}
 
 ---
 
@@ -2325,7 +2325,7 @@ MonitorThresholds MonitorMonitorThresholds
 
 monitor_thresholds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#monitor_thresholds Monitor#monitor_thresholds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#monitor_thresholds Monitor#monitor_thresholds}
 
 ---
 
@@ -2339,7 +2339,7 @@ MonitorThresholdWindows MonitorMonitorThresholdWindows
 
 monitor_threshold_windows block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#monitor_threshold_windows Monitor#monitor_threshold_windows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#monitor_threshold_windows Monitor#monitor_threshold_windows}
 
 ---
 
@@ -2355,7 +2355,7 @@ The time (in seconds) to skip evaluations for new groups.
 
 `new_group_delay` overrides `new_host_delay` if it is set to a nonzero value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#new_group_delay Monitor#new_group_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#new_group_delay Monitor#new_group_delay}
 
 ---
 
@@ -2371,7 +2371,7 @@ NewHostDelay *f64
 
 See `new_group_delay`. Time (in seconds) to allow a host to boot and applications to fully start before starting the evaluation of monitor results. Should be a non-negative integer. This value is ignored for simple monitors and monitors not grouped by host. The only case when this should be used is to override the default and set `new_host_delay` to zero for monitors grouped by host. **Deprecated.** Use `new_group_delay` except when setting `new_host_delay` to zero. Defaults to `300`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#new_host_delay Monitor#new_host_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#new_host_delay Monitor#new_host_delay}
 
 ---
 
@@ -2387,7 +2387,7 @@ The number of minutes before a monitor will notify when data stops reporting.
 
 We recommend at least 2x the monitor timeframe for metric alerts or 2 minutes for service checks. Defaults to `10`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#no_data_timeframe Monitor#no_data_timeframe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#no_data_timeframe Monitor#no_data_timeframe}
 
 ---
 
@@ -2403,7 +2403,7 @@ Toggles the display of additional content sent in the monitor notification.
 
 Valid values are `show_all`, `hide_query`, `hide_handles`, `hide_all`, `hide_query_and_handles`, `show_only_snapshot`, `hide_handles_and_footer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#notification_preset_name Monitor#notification_preset_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#notification_preset_name Monitor#notification_preset_name}
 
 ---
 
@@ -2417,7 +2417,7 @@ NotifyAudit interface{}
 
 A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#notify_audit Monitor#notify_audit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#notify_audit Monitor#notify_audit}
 
 ---
 
@@ -2433,7 +2433,7 @@ Controls what granularity a monitor alerts on.
 
 Only available for monitors with groupings. For instance, a monitor grouped by `cluster`, `namespace`, and `pod` can be configured to only notify on each new `cluster` violating the alert conditions by setting `notify_by` to `['cluster']`. Tags mentioned in `notify_by` must be a proper subset of the grouping tags in the query. For example, a query grouped by `cluster` and `namespace` cannot notify on `region` because `region` is not part of the grouping tags; furthermore, the same query cannot set `notify_by` to `['cluster', 'namespace']` because that is not a proper subset. Setting `notify_by` to `[*]` configures the monitor to notify as a simple-alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#notify_by Monitor#notify_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#notify_by Monitor#notify_by}
 
 ---
 
@@ -2447,7 +2447,7 @@ NotifyNoData interface{}
 
 A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#notify_no_data Monitor#notify_no_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#notify_no_data Monitor#notify_no_data}
 
 ---
 
@@ -2463,7 +2463,7 @@ Controls how groups or monitors are treated if an evaluation does not return any
 
 The default option results in different behavior depending on the monitor query type. For monitors using `Count` queries, an empty monitor evaluation is treated as 0 and is compared to the threshold conditions. For monitors using any query type other than `Count`, for example `Gauge`, `Measure`, or `Rate`, the monitor shows the last known status. This option is not available for Service Check, Composite, or SLO monitors. Valid values are: `show_no_data`, `show_and_notify_no_data`, `resolve`, and `default`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#on_missing_data Monitor#on_missing_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#on_missing_data Monitor#on_missing_data}
 
 ---
 
@@ -2477,7 +2477,7 @@ Priority *string
 
 Integer from 1 (high) to 5 (low) indicating alert severity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#priority Monitor#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#priority Monitor#priority}
 
 ---
 
@@ -2493,7 +2493,7 @@ The number of minutes after the last notification before a monitor will re-notif
 
 It will only re-notify if it's not resolved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#renotify_interval Monitor#renotify_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#renotify_interval Monitor#renotify_interval}
 
 ---
 
@@ -2507,7 +2507,7 @@ RenotifyOccurrences *f64
 
 The number of re-notification messages that should be sent on the current status.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#renotify_occurrences Monitor#renotify_occurrences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#renotify_occurrences Monitor#renotify_occurrences}
 
 ---
 
@@ -2521,7 +2521,7 @@ RenotifyStatuses *[]*string
 
 The types of statuses for which re-notification messages should be sent. Valid values are `alert`, `warn`, `no data`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#renotify_statuses Monitor#renotify_statuses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#renotify_statuses Monitor#renotify_statuses}
 
 ---
 
@@ -2537,7 +2537,7 @@ A boolean indicating whether this monitor needs a full window of data before it'
 
 Datadog strongly recommends you set this to `false` for sparse metrics, otherwise some evaluations may be skipped. If there's a custom_schedule set, `require_full_window` must be false and will be ignored. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#require_full_window Monitor#require_full_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#require_full_window Monitor#require_full_window}
 
 ---
 
@@ -2553,7 +2553,7 @@ A list of unique role identifiers to define which roles are allowed to edit the 
 
 Editing a monitor includes any updates to the monitor configuration, monitor deletion, and muting of the monitor for any amount of time. Roles unique identifiers can be pulled from the [Roles API](https://docs.datadoghq.com/api/latest/roles/#list-roles) in the `data.id` field. **Deprecated.** Use `datadog_restriction_policy` resource to manage permission.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#restricted_roles Monitor#restricted_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#restricted_roles Monitor#restricted_roles}
 
 ---
 
@@ -2567,7 +2567,7 @@ SchedulingOptions MonitorSchedulingOptions
 
 scheduling_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#scheduling_options Monitor#scheduling_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#scheduling_options Monitor#scheduling_options}
 
 ---
 
@@ -2583,7 +2583,7 @@ A list of tags to associate with your monitor.
 
 This can help you categorize and filter monitors in the manage monitors page of the UI. Note: it's not currently possible to filter by these tags when querying via the API
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#tags Monitor#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#tags Monitor#tags}
 
 ---
 
@@ -2599,7 +2599,7 @@ The number of hours of the monitor not reporting data before it automatically re
 
 The minimum allowed value is 0 hours. The maximum allowed value is 24 hours.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#timeout_h Monitor#timeout_h}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#timeout_h Monitor#timeout_h}
 
 ---
 
@@ -2613,7 +2613,7 @@ Validate interface{}
 
 If set to `false`, skip the validation call done during plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#validate Monitor#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#validate Monitor#validate}
 
 ---
 
@@ -2627,7 +2627,7 @@ Variables MonitorVariables
 
 variables block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#variables Monitor#variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#variables Monitor#variables}
 
 ---
 
@@ -2636,7 +2636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorMonitorThresholds {
 	Critical: *string,
@@ -2675,7 +2675,7 @@ Critical *string
 
 The monitor `CRITICAL` threshold. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#critical Monitor#critical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#critical Monitor#critical}
 
 ---
 
@@ -2691,7 +2691,7 @@ Query evaluated as a dynamic `CRITICAL` threshold.
 
 Only supported on metric monitors with a formula query and `options['variables']`. Cannot be combined with static thresholds. This field is in preview.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#critical_query Monitor#critical_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#critical_query Monitor#critical_query}
 
 ---
 
@@ -2705,7 +2705,7 @@ CriticalRecovery *string
 
 The monitor `CRITICAL` recovery threshold. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#critical_recovery Monitor#critical_recovery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#critical_recovery Monitor#critical_recovery}
 
 ---
 
@@ -2721,7 +2721,7 @@ Query evaluated as a dynamic `CRITICAL` recovery threshold.
 
 Only supported on metric monitors with a formula query and `options['variables']`. Cannot be combined with static thresholds. This field is in preview.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#critical_recovery_query Monitor#critical_recovery_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#critical_recovery_query Monitor#critical_recovery_query}
 
 ---
 
@@ -2735,7 +2735,7 @@ Ok *string
 
 The monitor `OK` threshold. Only supported in monitor type `service check`. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#ok Monitor#ok}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#ok Monitor#ok}
 
 ---
 
@@ -2749,7 +2749,7 @@ Unknown *string
 
 The monitor `UNKNOWN` threshold. Only supported in monitor type `service check`. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#unknown Monitor#unknown}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#unknown Monitor#unknown}
 
 ---
 
@@ -2763,7 +2763,7 @@ Warning *string
 
 The monitor `WARNING` threshold. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#warning Monitor#warning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#warning Monitor#warning}
 
 ---
 
@@ -2777,7 +2777,7 @@ WarningRecovery *string
 
 The monitor `WARNING` recovery threshold. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#warning_recovery Monitor#warning_recovery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#warning_recovery Monitor#warning_recovery}
 
 ---
 
@@ -2786,7 +2786,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindows.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorMonitorThresholdWindows {
 	RecoveryWindow: *string,
@@ -2813,7 +2813,7 @@ RecoveryWindow *string
 
 Describes how long an anomalous metric must be normal before the alert recovers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#recovery_window Monitor#recovery_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#recovery_window Monitor#recovery_window}
 
 ---
 
@@ -2827,7 +2827,7 @@ TriggerWindow *string
 
 Describes how long a metric must be anomalous before an alert triggers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#trigger_window Monitor#trigger_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#trigger_window Monitor#trigger_window}
 
 ---
 
@@ -2836,11 +2836,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorSchedulingOptions {
-	CustomSchedule: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorSchedulingOptionsCustomSchedule,
-	EvaluationWindow: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorSchedulingOptionsEvaluationWindow,
+	CustomSchedule: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorSchedulingOptionsCustomSchedule,
+	EvaluationWindow: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorSchedulingOptionsEvaluationWindow,
 }
 ```
 
@@ -2863,7 +2863,7 @@ CustomSchedule MonitorSchedulingOptionsCustomSchedule
 
 custom_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#custom_schedule Monitor#custom_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#custom_schedule Monitor#custom_schedule}
 
 ---
 
@@ -2877,7 +2877,7 @@ EvaluationWindow MonitorSchedulingOptionsEvaluationWindow
 
 evaluation_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#evaluation_window Monitor#evaluation_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#evaluation_window Monitor#evaluation_window}
 
 ---
 
@@ -2886,10 +2886,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorSchedulingOptionsCustomSchedule {
-	Recurrence: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence,
+	Recurrence: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence,
 }
 ```
 
@@ -2911,7 +2911,7 @@ Recurrence MonitorSchedulingOptionsCustomScheduleRecurrence
 
 recurrence block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#recurrence Monitor#recurrence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#recurrence Monitor#recurrence}
 
 ---
 
@@ -2920,7 +2920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorSchedulingOptionsCustomScheduleRecurrence {
 	Rrule: *string,
@@ -2949,7 +2949,7 @@ Rrule *string
 
 Must be a valid `rrule`. See API docs for supported fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#rrule Monitor#rrule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#rrule Monitor#rrule}
 
 ---
 
@@ -2963,7 +2963,7 @@ Timezone *string
 
 'tz database' format. Example: `America/New_York` or `UTC`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#timezone Monitor#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#timezone Monitor#timezone}
 
 ---
 
@@ -2977,7 +2977,7 @@ Start *string
 
 Time to start recurrence cycle. Similar to DTSTART. Expected format 'YYYY-MM-DDThh:mm:ss'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#start Monitor#start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#start Monitor#start}
 
 ---
 
@@ -2986,7 +2986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorSchedulingOptionsEvaluationWindow {
 	DayStarts: *string,
@@ -3019,7 +3019,7 @@ The time of the day at which a one day cumulative evaluation window starts.
 
 Must be defined in UTC time in `HH:mm` format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#day_starts Monitor#day_starts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#day_starts Monitor#day_starts}
 
 ---
 
@@ -3035,7 +3035,7 @@ The minute of the hour at which a one hour cumulative evaluation window starts.
 
 Must be between 0 and 59.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#hour_starts Monitor#hour_starts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#hour_starts Monitor#hour_starts}
 
 ---
 
@@ -3051,7 +3051,7 @@ The day of the month at which a one month cumulative evaluation window starts.
 
 Must be a value of 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#month_starts Monitor#month_starts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#month_starts Monitor#month_starts}
 
 ---
 
@@ -3065,7 +3065,7 @@ Timezone *string
 
 The timezone for the cumulative evaluation window start time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#timezone Monitor#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#timezone Monitor#timezone}
 
 ---
 
@@ -3074,7 +3074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariables.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariables {
 	AggregateAugmentedQuery: interface{},
@@ -3109,7 +3109,7 @@ AggregateAugmentedQuery interface{}
 
 aggregate_augmented_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregate_augmented_query Monitor#aggregate_augmented_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#aggregate_augmented_query Monitor#aggregate_augmented_query}
 
 ---
 
@@ -3123,7 +3123,7 @@ AggregateFilteredQuery interface{}
 
 aggregate_filtered_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregate_filtered_query Monitor#aggregate_filtered_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#aggregate_filtered_query Monitor#aggregate_filtered_query}
 
 ---
 
@@ -3137,7 +3137,7 @@ CloudCostQuery interface{}
 
 cloud_cost_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#cloud_cost_query Monitor#cloud_cost_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#cloud_cost_query Monitor#cloud_cost_query}
 
 ---
 
@@ -3151,7 +3151,7 @@ DataJobsQuery interface{}
 
 data_jobs_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_jobs_query Monitor#data_jobs_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#data_jobs_query Monitor#data_jobs_query}
 
 ---
 
@@ -3165,7 +3165,7 @@ DataQualityQuery interface{}
 
 data_quality_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_quality_query Monitor#data_quality_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#data_quality_query Monitor#data_quality_query}
 
 ---
 
@@ -3179,7 +3179,7 @@ EventQuery interface{}
 
 event_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#event_query Monitor#event_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#event_query Monitor#event_query}
 
 ---
 
@@ -3188,17 +3188,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQuery {
 	Compute: interface{},
 	DataSource: *string,
 	GroupBy: interface{},
-	JoinCondition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateAugmentedQueryJoinCondition,
-	AugmentEventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQuery,
-	AugmentReferenceTable: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateAugmentedQueryAugmentReferenceTable,
-	BaseEventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQuery,
-	BaseMetricsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateAugmentedQueryBaseMetricsQuery,
+	JoinCondition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariablesAggregateAugmentedQueryJoinCondition,
+	AugmentEventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQuery,
+	AugmentReferenceTable: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariablesAggregateAugmentedQueryAugmentReferenceTable,
+	BaseEventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQuery,
+	BaseMetricsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariablesAggregateAugmentedQueryBaseMetricsQuery,
 	Name: *string,
 }
 ```
@@ -3229,7 +3229,7 @@ Compute interface{}
 
 compute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#compute Monitor#compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#compute Monitor#compute}
 
 ---
 
@@ -3243,7 +3243,7 @@ DataSource *string
 
 The data source for aggregate-augmented composite queries. Must be `aggregate_augmented_query`. Valid values are `aggregate_augmented_query`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -3257,7 +3257,7 @@ GroupBy interface{}
 
 group_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#group_by Monitor#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#group_by Monitor#group_by}
 
 ---
 
@@ -3271,7 +3271,7 @@ JoinCondition MonitorVariablesAggregateAugmentedQueryJoinCondition
 
 join_condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#join_condition Monitor#join_condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#join_condition Monitor#join_condition}
 
 ---
 
@@ -3285,7 +3285,7 @@ AugmentEventQuery MonitorVariablesAggregateAugmentedQueryAugmentEventQuery
 
 augment_event_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#augment_event_query Monitor#augment_event_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#augment_event_query Monitor#augment_event_query}
 
 ---
 
@@ -3299,7 +3299,7 @@ AugmentReferenceTable MonitorVariablesAggregateAugmentedQueryAugmentReferenceTab
 
 augment_reference_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#augment_reference_table Monitor#augment_reference_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#augment_reference_table Monitor#augment_reference_table}
 
 ---
 
@@ -3313,7 +3313,7 @@ BaseEventQuery MonitorVariablesAggregateAugmentedQueryBaseEventQuery
 
 base_event_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#base_event_query Monitor#base_event_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#base_event_query Monitor#base_event_query}
 
 ---
 
@@ -3327,7 +3327,7 @@ BaseMetricsQuery MonitorVariablesAggregateAugmentedQueryBaseMetricsQuery
 
 base_metrics_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#base_metrics_query Monitor#base_metrics_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#base_metrics_query Monitor#base_metrics_query}
 
 ---
 
@@ -3341,7 +3341,7 @@ Name *string
 
 Name of the query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -3350,13 +3350,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQuery {
 	Compute: interface{},
 	DataSource: *string,
 	Name: *string,
-	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQuerySearch,
+	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQuerySearch,
 	GroupBy: interface{},
 	Indexes: *[]*string,
 }
@@ -3385,7 +3385,7 @@ Compute interface{}
 
 compute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#compute Monitor#compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#compute Monitor#compute}
 
 ---
 
@@ -3401,7 +3401,7 @@ The data source for event platform-based queries.
 
 Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`, `database_queries`, `network`, `network_path`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -3415,7 +3415,7 @@ Name *string
 
 The name of query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -3429,7 +3429,7 @@ Search MonitorVariablesAggregateAugmentedQueryAugmentEventQuerySearch
 
 search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#search Monitor#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#search Monitor#search}
 
 ---
 
@@ -3443,7 +3443,7 @@ GroupBy interface{}
 
 group_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#group_by Monitor#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#group_by Monitor#group_by}
 
 ---
 
@@ -3457,7 +3457,7 @@ Indexes *[]*string
 
 An array of index names to query in the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#indexes Monitor#indexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#indexes Monitor#indexes}
 
 ---
 
@@ -3466,7 +3466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryCompute {
 	Aggregation: *string,
@@ -3499,7 +3499,7 @@ The aggregation methods for event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -3513,7 +3513,7 @@ Interval *f64
 
 A time interval in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#interval Monitor#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#interval Monitor#interval}
 
 ---
 
@@ -3527,7 +3527,7 @@ Metric *string
 
 The measurable attribute to compute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -3541,7 +3541,7 @@ Name *string
 
 The name assigned to this aggregation when multiple aggregations are defined for a query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -3550,12 +3550,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBySort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBySort,
 	Source: *string,
 }
 ```
@@ -3581,7 +3581,7 @@ Facet *string
 
 The event facet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#facet Monitor#facet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#facet Monitor#facet}
 
 ---
 
@@ -3595,7 +3595,7 @@ Limit *f64
 
 The number of groups to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#limit Monitor#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#limit Monitor#limit}
 
 ---
 
@@ -3609,7 +3609,7 @@ Sort MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBySort
 
 sort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#sort Monitor#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#sort Monitor#sort}
 
 ---
 
@@ -3623,7 +3623,7 @@ Source *string
 
 For composite aggregate-augmented queries, identifies which sub-query this group-by facet refers to (for example `filter_query`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#source Monitor#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#source Monitor#source}
 
 ---
 
@@ -3632,7 +3632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBySort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBySort {
 	Aggregation: *string,
@@ -3663,7 +3663,7 @@ The aggregation methods for the event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -3677,7 +3677,7 @@ Metric *string
 
 The metric used for sorting group by results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -3691,7 +3691,7 @@ Order *string
 
 Direction of sort. Valid values are `asc`, `desc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#order Monitor#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#order Monitor#order}
 
 ---
 
@@ -3700,7 +3700,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQuerySearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQuerySearch {
 	Query: *string,
@@ -3725,7 +3725,7 @@ Query *string
 
 The events search string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
@@ -3734,7 +3734,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentReferenceTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryAugmentReferenceTable {
 	DataSource: *string,
@@ -3767,7 +3767,7 @@ DataSource *string
 
 Must be `reference_table`. Valid values are `reference_table`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -3781,7 +3781,7 @@ TableName *string
 
 Name of the reference table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#table_name Monitor#table_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#table_name Monitor#table_name}
 
 ---
 
@@ -3795,7 +3795,7 @@ Columns interface{}
 
 columns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#columns Monitor#columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#columns Monitor#columns}
 
 ---
 
@@ -3809,7 +3809,7 @@ Name *string
 
 Name of the augment sub-query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -3823,7 +3823,7 @@ QueryFilter *string
 
 Optional filter expression for the reference table query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#query_filter Monitor#query_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#query_filter Monitor#query_filter}
 
 ---
 
@@ -3832,7 +3832,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentReferenceTableColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryAugmentReferenceTableColumns {
 	Name: *string,
@@ -3859,7 +3859,7 @@ Name *string
 
 Reference table column name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -3873,7 +3873,7 @@ Alias *string
 
 Optional alias for the column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#alias Monitor#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#alias Monitor#alias}
 
 ---
 
@@ -3882,13 +3882,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQuery {
 	Compute: interface{},
 	DataSource: *string,
 	Name: *string,
-	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQuerySearch,
+	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQuerySearch,
 	GroupBy: interface{},
 	Indexes: *[]*string,
 }
@@ -3917,7 +3917,7 @@ Compute interface{}
 
 compute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#compute Monitor#compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#compute Monitor#compute}
 
 ---
 
@@ -3933,7 +3933,7 @@ The data source for event platform-based queries.
 
 Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`, `database_queries`, `network`, `network_path`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -3947,7 +3947,7 @@ Name *string
 
 The name of query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -3961,7 +3961,7 @@ Search MonitorVariablesAggregateAugmentedQueryBaseEventQuerySearch
 
 search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#search Monitor#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#search Monitor#search}
 
 ---
 
@@ -3975,7 +3975,7 @@ GroupBy interface{}
 
 group_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#group_by Monitor#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#group_by Monitor#group_by}
 
 ---
 
@@ -3989,7 +3989,7 @@ Indexes *[]*string
 
 An array of index names to query in the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#indexes Monitor#indexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#indexes Monitor#indexes}
 
 ---
 
@@ -3998,7 +3998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryCompute {
 	Aggregation: *string,
@@ -4031,7 +4031,7 @@ The aggregation methods for event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -4045,7 +4045,7 @@ Interval *f64
 
 A time interval in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#interval Monitor#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#interval Monitor#interval}
 
 ---
 
@@ -4059,7 +4059,7 @@ Metric *string
 
 The measurable attribute to compute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -4073,7 +4073,7 @@ Name *string
 
 The name assigned to this aggregation when multiple aggregations are defined for a query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -4082,12 +4082,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBySort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBySort,
 	Source: *string,
 }
 ```
@@ -4113,7 +4113,7 @@ Facet *string
 
 The event facet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#facet Monitor#facet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#facet Monitor#facet}
 
 ---
 
@@ -4127,7 +4127,7 @@ Limit *f64
 
 The number of groups to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#limit Monitor#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#limit Monitor#limit}
 
 ---
 
@@ -4141,7 +4141,7 @@ Sort MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBySort
 
 sort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#sort Monitor#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#sort Monitor#sort}
 
 ---
 
@@ -4155,7 +4155,7 @@ Source *string
 
 For composite aggregate-augmented queries, identifies which sub-query this group-by facet refers to (for example `filter_query`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#source Monitor#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#source Monitor#source}
 
 ---
 
@@ -4164,7 +4164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBySort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBySort {
 	Aggregation: *string,
@@ -4195,7 +4195,7 @@ The aggregation methods for the event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -4209,7 +4209,7 @@ Metric *string
 
 The metric used for sorting group by results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -4223,7 +4223,7 @@ Order *string
 
 Direction of sort. Valid values are `asc`, `desc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#order Monitor#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#order Monitor#order}
 
 ---
 
@@ -4232,7 +4232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQuerySearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQuerySearch {
 	Query: *string,
@@ -4257,7 +4257,7 @@ Query *string
 
 The events search string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
@@ -4266,7 +4266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseMetricsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryBaseMetricsQuery {
 	DataSource: *string,
@@ -4297,7 +4297,7 @@ DataSource *string
 
 The data source for metrics queries. Valid values are `metrics`, `cloud_cost`, `datadog_usage`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -4311,7 +4311,7 @@ Query *string
 
 The metrics query definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
@@ -4327,7 +4327,7 @@ The aggregation method for metrics queries.
 
 Valid values are `avg`, `min`, `max`, `sum`, `last`, `mean`, `area`, `l2norm`, `percentile`, `stddev`, `count_unique`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregator Monitor#aggregator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#aggregator Monitor#aggregator}
 
 ---
 
@@ -4341,7 +4341,7 @@ Name *string
 
 The name of the query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -4350,7 +4350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryCompute {
 	Aggregation: *string,
@@ -4383,7 +4383,7 @@ The aggregation methods for compute steps.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -4397,7 +4397,7 @@ Interval *f64
 
 A time interval in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#interval Monitor#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#interval Monitor#interval}
 
 ---
 
@@ -4411,7 +4411,7 @@ Metric *string
 
 The measurable attribute to compute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -4425,7 +4425,7 @@ Name *string
 
 The name assigned to this aggregation when multiple aggregations are defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -4434,12 +4434,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateAugmentedQueryGroupBySort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariablesAggregateAugmentedQueryGroupBySort,
 	Source: *string,
 }
 ```
@@ -4465,7 +4465,7 @@ Facet *string
 
 The facet to group by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#facet Monitor#facet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#facet Monitor#facet}
 
 ---
 
@@ -4479,7 +4479,7 @@ Limit *f64
 
 The number of groups to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#limit Monitor#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#limit Monitor#limit}
 
 ---
 
@@ -4493,7 +4493,7 @@ Sort MonitorVariablesAggregateAugmentedQueryGroupBySort
 
 sort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#sort Monitor#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#sort Monitor#sort}
 
 ---
 
@@ -4507,7 +4507,7 @@ Source *string
 
 Identifies which sub-query this facet refers to (for example `filter_query`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#source Monitor#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#source Monitor#source}
 
 ---
 
@@ -4516,7 +4516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryGroupBySort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryGroupBySort {
 	Aggregation: *string,
@@ -4547,7 +4547,7 @@ The aggregation methods for sorting.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -4561,7 +4561,7 @@ Metric *string
 
 The metric used for sorting group by results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -4575,7 +4575,7 @@ Order *string
 
 Direction of sort. Valid values are `asc`, `desc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#order Monitor#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#order Monitor#order}
 
 ---
 
@@ -4584,7 +4584,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryJoinCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateAugmentedQueryJoinCondition {
 	AugmentAttribute: *string,
@@ -4613,7 +4613,7 @@ AugmentAttribute *string
 
 Attribute from the augment query to join on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#augment_attribute Monitor#augment_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#augment_attribute Monitor#augment_attribute}
 
 ---
 
@@ -4627,7 +4627,7 @@ BaseAttribute *string
 
 Attribute from the base query to join on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#base_attribute Monitor#base_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#base_attribute Monitor#base_attribute}
 
 ---
 
@@ -4641,7 +4641,7 @@ JoinType *string
 
 Join type (for example `inner`). Valid values are `inner`, `left`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#join_type Monitor#join_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#join_type Monitor#join_type}
 
 ---
 
@@ -4650,16 +4650,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQuery {
 	DataSource: *string,
 	Filters: interface{},
-	BaseEventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQuery,
-	BaseMetricsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateFilteredQueryBaseMetricsQuery,
+	BaseEventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQuery,
+	BaseMetricsQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariablesAggregateFilteredQueryBaseMetricsQuery,
 	Compute: interface{},
-	FilterEventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQuery,
-	FilterReferenceTable: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateFilteredQueryFilterReferenceTable,
+	FilterEventQuery: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQuery,
+	FilterReferenceTable: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariablesAggregateFilteredQueryFilterReferenceTable,
 	GroupBy: interface{},
 	Name: *string,
 }
@@ -4691,7 +4691,7 @@ DataSource *string
 
 The data source for aggregate-filtered composite queries. Must be `aggregate_filtered_query`. Valid values are `aggregate_filtered_query`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -4705,7 +4705,7 @@ Filters interface{}
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#filters Monitor#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#filters Monitor#filters}
 
 ---
 
@@ -4719,7 +4719,7 @@ BaseEventQuery MonitorVariablesAggregateFilteredQueryBaseEventQuery
 
 base_event_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#base_event_query Monitor#base_event_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#base_event_query Monitor#base_event_query}
 
 ---
 
@@ -4733,7 +4733,7 @@ BaseMetricsQuery MonitorVariablesAggregateFilteredQueryBaseMetricsQuery
 
 base_metrics_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#base_metrics_query Monitor#base_metrics_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#base_metrics_query Monitor#base_metrics_query}
 
 ---
 
@@ -4747,7 +4747,7 @@ Compute interface{}
 
 compute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#compute Monitor#compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#compute Monitor#compute}
 
 ---
 
@@ -4761,7 +4761,7 @@ FilterEventQuery MonitorVariablesAggregateFilteredQueryFilterEventQuery
 
 filter_event_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#filter_event_query Monitor#filter_event_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#filter_event_query Monitor#filter_event_query}
 
 ---
 
@@ -4775,7 +4775,7 @@ FilterReferenceTable MonitorVariablesAggregateFilteredQueryFilterReferenceTable
 
 filter_reference_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#filter_reference_table Monitor#filter_reference_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#filter_reference_table Monitor#filter_reference_table}
 
 ---
 
@@ -4789,7 +4789,7 @@ GroupBy interface{}
 
 group_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#group_by Monitor#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#group_by Monitor#group_by}
 
 ---
 
@@ -4803,7 +4803,7 @@ Name *string
 
 Name of the query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -4812,13 +4812,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryBaseEventQuery {
 	Compute: interface{},
 	DataSource: *string,
 	Name: *string,
-	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQuerySearch,
+	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQuerySearch,
 	GroupBy: interface{},
 	Indexes: *[]*string,
 }
@@ -4847,7 +4847,7 @@ Compute interface{}
 
 compute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#compute Monitor#compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#compute Monitor#compute}
 
 ---
 
@@ -4863,7 +4863,7 @@ The data source for event platform-based queries.
 
 Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`, `database_queries`, `network`, `network_path`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -4877,7 +4877,7 @@ Name *string
 
 The name of query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -4891,7 +4891,7 @@ Search MonitorVariablesAggregateFilteredQueryBaseEventQuerySearch
 
 search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#search Monitor#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#search Monitor#search}
 
 ---
 
@@ -4905,7 +4905,7 @@ GroupBy interface{}
 
 group_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#group_by Monitor#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#group_by Monitor#group_by}
 
 ---
 
@@ -4919,7 +4919,7 @@ Indexes *[]*string
 
 An array of index names to query in the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#indexes Monitor#indexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#indexes Monitor#indexes}
 
 ---
 
@@ -4928,7 +4928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryCompute {
 	Aggregation: *string,
@@ -4961,7 +4961,7 @@ The aggregation methods for event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -4975,7 +4975,7 @@ Interval *f64
 
 A time interval in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#interval Monitor#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#interval Monitor#interval}
 
 ---
 
@@ -4989,7 +4989,7 @@ Metric *string
 
 The measurable attribute to compute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -5003,7 +5003,7 @@ Name *string
 
 The name assigned to this aggregation when multiple aggregations are defined for a query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -5012,12 +5012,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBySort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBySort,
 	Source: *string,
 }
 ```
@@ -5043,7 +5043,7 @@ Facet *string
 
 The event facet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#facet Monitor#facet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#facet Monitor#facet}
 
 ---
 
@@ -5057,7 +5057,7 @@ Limit *f64
 
 The number of groups to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#limit Monitor#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#limit Monitor#limit}
 
 ---
 
@@ -5071,7 +5071,7 @@ Sort MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBySort
 
 sort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#sort Monitor#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#sort Monitor#sort}
 
 ---
 
@@ -5085,7 +5085,7 @@ Source *string
 
 For composite aggregate-augmented queries, identifies which sub-query this group-by facet refers to (for example `filter_query`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#source Monitor#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#source Monitor#source}
 
 ---
 
@@ -5094,7 +5094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBySort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBySort {
 	Aggregation: *string,
@@ -5125,7 +5125,7 @@ The aggregation methods for the event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -5139,7 +5139,7 @@ Metric *string
 
 The metric used for sorting group by results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -5153,7 +5153,7 @@ Order *string
 
 Direction of sort. Valid values are `asc`, `desc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#order Monitor#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#order Monitor#order}
 
 ---
 
@@ -5162,7 +5162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQuerySearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryBaseEventQuerySearch {
 	Query: *string,
@@ -5187,7 +5187,7 @@ Query *string
 
 The events search string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
@@ -5196,7 +5196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseMetricsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryBaseMetricsQuery {
 	DataSource: *string,
@@ -5227,7 +5227,7 @@ DataSource *string
 
 The data source for metrics queries. Valid values are `metrics`, `cloud_cost`, `datadog_usage`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -5241,7 +5241,7 @@ Query *string
 
 The metrics query definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
@@ -5257,7 +5257,7 @@ The aggregation method for metrics queries.
 
 Valid values are `avg`, `min`, `max`, `sum`, `last`, `mean`, `area`, `l2norm`, `percentile`, `stddev`, `count_unique`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregator Monitor#aggregator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#aggregator Monitor#aggregator}
 
 ---
 
@@ -5271,7 +5271,7 @@ Name *string
 
 The name of the query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -5280,7 +5280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryCompute {
 	Aggregation: *string,
@@ -5313,7 +5313,7 @@ The aggregation methods for compute steps.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -5327,7 +5327,7 @@ Interval *f64
 
 A time interval in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#interval Monitor#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#interval Monitor#interval}
 
 ---
 
@@ -5341,7 +5341,7 @@ Metric *string
 
 The measurable attribute to compute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -5355,7 +5355,7 @@ Name *string
 
 The name assigned to this aggregation when multiple aggregations are defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -5364,13 +5364,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryFilterEventQuery {
 	Compute: interface{},
 	DataSource: *string,
 	Name: *string,
-	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQuerySearch,
+	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQuerySearch,
 	GroupBy: interface{},
 	Indexes: *[]*string,
 }
@@ -5399,7 +5399,7 @@ Compute interface{}
 
 compute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#compute Monitor#compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#compute Monitor#compute}
 
 ---
 
@@ -5415,7 +5415,7 @@ The data source for event platform-based queries.
 
 Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`, `database_queries`, `network`, `network_path`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -5429,7 +5429,7 @@ Name *string
 
 The name of query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -5443,7 +5443,7 @@ Search MonitorVariablesAggregateFilteredQueryFilterEventQuerySearch
 
 search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#search Monitor#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#search Monitor#search}
 
 ---
 
@@ -5457,7 +5457,7 @@ GroupBy interface{}
 
 group_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#group_by Monitor#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#group_by Monitor#group_by}
 
 ---
 
@@ -5471,7 +5471,7 @@ Indexes *[]*string
 
 An array of index names to query in the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#indexes Monitor#indexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#indexes Monitor#indexes}
 
 ---
 
@@ -5480,7 +5480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryCompute {
 	Aggregation: *string,
@@ -5513,7 +5513,7 @@ The aggregation methods for event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -5527,7 +5527,7 @@ Interval *f64
 
 A time interval in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#interval Monitor#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#interval Monitor#interval}
 
 ---
 
@@ -5541,7 +5541,7 @@ Metric *string
 
 The measurable attribute to compute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -5555,7 +5555,7 @@ Name *string
 
 The name assigned to this aggregation when multiple aggregations are defined for a query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -5564,12 +5564,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBySort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBySort,
 	Source: *string,
 }
 ```
@@ -5595,7 +5595,7 @@ Facet *string
 
 The event facet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#facet Monitor#facet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#facet Monitor#facet}
 
 ---
 
@@ -5609,7 +5609,7 @@ Limit *f64
 
 The number of groups to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#limit Monitor#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#limit Monitor#limit}
 
 ---
 
@@ -5623,7 +5623,7 @@ Sort MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBySort
 
 sort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#sort Monitor#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#sort Monitor#sort}
 
 ---
 
@@ -5637,7 +5637,7 @@ Source *string
 
 For composite aggregate-augmented queries, identifies which sub-query this group-by facet refers to (for example `filter_query`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#source Monitor#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#source Monitor#source}
 
 ---
 
@@ -5646,7 +5646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBySort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBySort {
 	Aggregation: *string,
@@ -5677,7 +5677,7 @@ The aggregation methods for the event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -5691,7 +5691,7 @@ Metric *string
 
 The metric used for sorting group by results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -5705,7 +5705,7 @@ Order *string
 
 Direction of sort. Valid values are `asc`, `desc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#order Monitor#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#order Monitor#order}
 
 ---
 
@@ -5714,7 +5714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQuerySearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryFilterEventQuerySearch {
 	Query: *string,
@@ -5739,7 +5739,7 @@ Query *string
 
 The events search string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
@@ -5748,7 +5748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterReferenceTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryFilterReferenceTable {
 	DataSource: *string,
@@ -5781,7 +5781,7 @@ DataSource *string
 
 Must be `reference_table`. Valid values are `reference_table`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -5795,7 +5795,7 @@ TableName *string
 
 Name of the reference table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#table_name Monitor#table_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#table_name Monitor#table_name}
 
 ---
 
@@ -5809,7 +5809,7 @@ Columns interface{}
 
 columns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#columns Monitor#columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#columns Monitor#columns}
 
 ---
 
@@ -5823,7 +5823,7 @@ Name *string
 
 Name of the filter sub-query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -5837,7 +5837,7 @@ QueryFilter *string
 
 Optional filter expression for the reference table query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#query_filter Monitor#query_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#query_filter Monitor#query_filter}
 
 ---
 
@@ -5846,7 +5846,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterReferenceTableColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryFilterReferenceTableColumns {
 	Name: *string,
@@ -5873,7 +5873,7 @@ Name *string
 
 Reference table column name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -5887,7 +5887,7 @@ Alias *string
 
 Optional alias for the column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#alias Monitor#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#alias Monitor#alias}
 
 ---
 
@@ -5896,7 +5896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryFilters {
 	BaseAttribute: *string,
@@ -5925,7 +5925,7 @@ BaseAttribute *string
 
 Attribute from the base query to filter on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#base_attribute Monitor#base_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#base_attribute Monitor#base_attribute}
 
 ---
 
@@ -5939,7 +5939,7 @@ FilterAttribute *string
 
 Attribute from the filter query to match against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#filter_attribute Monitor#filter_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#filter_attribute Monitor#filter_attribute}
 
 ---
 
@@ -5953,7 +5953,7 @@ Exclude interface{}
 
 When true, exclude matching records instead of including them.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#exclude Monitor#exclude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#exclude Monitor#exclude}
 
 ---
 
@@ -5962,12 +5962,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesAggregateFilteredQueryGroupBySort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariablesAggregateFilteredQueryGroupBySort,
 	Source: *string,
 }
 ```
@@ -5993,7 +5993,7 @@ Facet *string
 
 The facet to group by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#facet Monitor#facet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#facet Monitor#facet}
 
 ---
 
@@ -6007,7 +6007,7 @@ Limit *f64
 
 The number of groups to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#limit Monitor#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#limit Monitor#limit}
 
 ---
 
@@ -6021,7 +6021,7 @@ Sort MonitorVariablesAggregateFilteredQueryGroupBySort
 
 sort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#sort Monitor#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#sort Monitor#sort}
 
 ---
 
@@ -6035,7 +6035,7 @@ Source *string
 
 Identifies which sub-query this facet refers to (for example `filter_query`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#source Monitor#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#source Monitor#source}
 
 ---
 
@@ -6044,7 +6044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryGroupBySort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesAggregateFilteredQueryGroupBySort {
 	Aggregation: *string,
@@ -6075,7 +6075,7 @@ The aggregation methods for sorting.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -6089,7 +6089,7 @@ Metric *string
 
 The metric used for sorting group by results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -6103,7 +6103,7 @@ Order *string
 
 Direction of sort. Valid values are `asc`, `desc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#order Monitor#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#order Monitor#order}
 
 ---
 
@@ -6112,7 +6112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesCloudCostQuery {
 	Aggregator: *string,
@@ -6145,7 +6145,7 @@ The aggregation methods available for cloud cost queries.
 
 Valid values are `avg`, `sum`, `max`, `min`, `last`, `area`, `l2norm`, `percentile`, `stddev`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregator Monitor#aggregator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#aggregator Monitor#aggregator}
 
 ---
 
@@ -6159,7 +6159,7 @@ DataSource *string
 
 The data source for cloud cost queries. Valid values are `metrics`, `cloud_cost`, `datadog_usage`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -6173,7 +6173,7 @@ Name *string
 
 The name of the query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -6187,7 +6187,7 @@ Query *string
 
 The cloud cost query definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
@@ -6196,7 +6196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataJobsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesDataJobsQuery {
 	JobsQuery: *string,
@@ -6227,7 +6227,7 @@ JobsQuery *string
 
 Filter expression used to select the jobs to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#jobs_query Monitor#jobs_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#jobs_query Monitor#jobs_query}
 
 ---
 
@@ -6243,7 +6243,7 @@ The type of job being monitored.
 
 Valid values include `databricks.job`, `spark.application`, `airflow.dag`, `dbt.job`, `glue.job`. Custom job types are supported with the `custom.ol.` prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#job_type Monitor#job_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#job_type Monitor#job_type}
 
 ---
 
@@ -6257,7 +6257,7 @@ Name *string
 
 Name of the query for use in formulas. Must be `run_query`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -6271,7 +6271,7 @@ QueryDialect *string
 
 Query dialect for data jobs queries. Currently only `metric` is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#query_dialect Monitor#query_dialect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#query_dialect Monitor#query_dialect}
 
 ---
 
@@ -6280,7 +6280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesDataQualityQuery {
 	DataSource: *string,
@@ -6288,7 +6288,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
 	Measure: *string,
 	Name: *string,
 	GroupBy: *[]*string,
-	MonitorOptions: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesDataQualityQueryMonitorOptions,
+	MonitorOptions: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariablesDataQualityQueryMonitorOptions,
 	SchemaVersion: *string,
 	Scope: *string,
 }
@@ -6319,7 +6319,7 @@ DataSource *string
 
 The data source for data quality queries. Valid value is `data_quality_metrics`. Valid values are `data_quality_metrics`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -6333,7 +6333,7 @@ Filter *string
 
 Filter expression used to match on data entities. Uses AAstra query syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#filter Monitor#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#filter Monitor#filter}
 
 ---
 
@@ -6349,7 +6349,7 @@ The measure to query.
 
 Common values include `bytes`, `cardinality`, `custom`, `freshness`, `max`, `mean`, `min`, `nullness`, `percent_negative`, `percent_zero`, `row_count`, `stddev`, `sum`, `uniqueness`. Additional values may be supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#measure Monitor#measure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#measure Monitor#measure}
 
 ---
 
@@ -6363,7 +6363,7 @@ Name *string
 
 The name of the query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -6377,7 +6377,7 @@ GroupBy *[]*string
 
 Optional grouping fields for aggregation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#group_by Monitor#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#group_by Monitor#group_by}
 
 ---
 
@@ -6391,7 +6391,7 @@ MonitorOptions MonitorVariablesDataQualityQueryMonitorOptions
 
 monitor_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#monitor_options Monitor#monitor_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#monitor_options Monitor#monitor_options}
 
 ---
 
@@ -6405,7 +6405,7 @@ SchemaVersion *string
 
 Schema version for the data quality query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#schema_version Monitor#schema_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#schema_version Monitor#schema_version}
 
 ---
 
@@ -6419,7 +6419,7 @@ Scope *string
 
 Optional scoping expression to further filter metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#scope Monitor#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#scope Monitor#scope}
 
 ---
 
@@ -6428,17 +6428,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesDataQualityQueryMonitorOptions {
 	CrontabOverride: *string,
 	CustomSql: *string,
 	CustomWhere: *string,
 	GroupByColumns: *[]*string,
-	ModelConfiguration: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration,
+	ModelConfiguration: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration,
 	ModelTypeOverride: *string,
 	Sensitivity: *f64,
-	SourceToTargetConfig: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig,
+	SourceToTargetConfig: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig,
 }
 ```
 
@@ -6467,7 +6467,7 @@ CrontabOverride *string
 
 Crontab expression to override the default schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#crontab_override Monitor#crontab_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#crontab_override Monitor#crontab_override}
 
 ---
 
@@ -6481,7 +6481,7 @@ CustomSql *string
 
 Custom SQL query for the monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#custom_sql Monitor#custom_sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#custom_sql Monitor#custom_sql}
 
 ---
 
@@ -6495,7 +6495,7 @@ CustomWhere *string
 
 Custom WHERE clause for the query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#custom_where Monitor#custom_where}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#custom_where Monitor#custom_where}
 
 ---
 
@@ -6509,7 +6509,7 @@ GroupByColumns *[]*string
 
 Columns to group results by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#group_by_columns Monitor#group_by_columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#group_by_columns Monitor#group_by_columns}
 
 ---
 
@@ -6523,7 +6523,7 @@ ModelConfiguration MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurat
 
 model_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#model_configuration Monitor#model_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#model_configuration Monitor#model_configuration}
 
 ---
 
@@ -6537,7 +6537,7 @@ ModelTypeOverride *string
 
 Override for the model type. Valid values are `freshness`, `percentage`, `any`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#model_type_override Monitor#model_type_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#model_type_override Monitor#model_type_override}
 
 ---
 
@@ -6553,7 +6553,7 @@ Sensitivity of the anomaly detection model, expressed as a multiplier on the wid
 
 Higher values widen the bounds and produce fewer alerts; lower values tighten them and produce more alerts. Defaults to `3.0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#sensitivity Monitor#sensitivity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#sensitivity Monitor#sensitivity}
 
 ---
 
@@ -6567,7 +6567,7 @@ SourceToTargetConfig MonitorVariablesDataQualityQueryMonitorOptionsSourceToTarge
 
 source_to_target_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#source_to_target_config Monitor#source_to_target_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#source_to_target_config Monitor#source_to_target_config}
 
 ---
 
@@ -6576,7 +6576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfiguration {
 	AutoResolveDays: *f64,
@@ -6613,7 +6613,7 @@ Number of days after which an open alert is automatically resolved.
 
 When unset, alerts stay open until the measure returns within bounds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#auto_resolve_days Monitor#auto_resolve_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#auto_resolve_days Monitor#auto_resolve_days}
 
 ---
 
@@ -6627,7 +6627,7 @@ EnableFlatlineDetection interface{}
 
 Whether to alert when the measure stops changing entirely. Defaults to `true`. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#enable_flatline_detection Monitor#enable_flatline_detection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#enable_flatline_detection Monitor#enable_flatline_detection}
 
 ---
 
@@ -6641,7 +6641,7 @@ Function *string
 
 Function applied to the measure before it is compared against the predicted bounds. Valid values are `DIFF`, `DIFF_PERCENT`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#function Monitor#function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#function Monitor#function}
 
 ---
 
@@ -6657,7 +6657,7 @@ Minimum distance between the predicted value and the lower bound.
 
 Widening the lower bound to at least this size suppresses alerts on small downward deviations. When unset, no minimum is enforced.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#min_lower_bound_size Monitor#min_lower_bound_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#min_lower_bound_size Monitor#min_lower_bound_size}
 
 ---
 
@@ -6673,7 +6673,7 @@ Minimum distance between the predicted value and the upper bound.
 
 Widening the upper bound to at least this size suppresses alerts on small upward deviations. When unset, no minimum is enforced.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#min_upper_bound_size Monitor#min_upper_bound_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#min_upper_bound_size Monitor#min_upper_bound_size}
 
 ---
 
@@ -6689,7 +6689,7 @@ Restricts which predicted bound the monitor alerts on.
 
 When unset, the monitor alerts on both. Valid values are `UPPER_ONLY`, `LOWER_ONLY`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#model_bounds_override Monitor#model_bounds_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#model_bounds_override Monitor#model_bounds_override}
 
 ---
 
@@ -6698,13 +6698,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfig {
 	DiffType: *string,
 	EntityType: *string,
-	Source: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource,
-	Target: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget,
+	Source: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource,
+	Target: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget,
 }
 ```
 
@@ -6729,7 +6729,7 @@ DiffType *string
 
 How the difference between the source and target measures is computed. Valid values are `absolute`, `diff_percent`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#diff_type Monitor#diff_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#diff_type Monitor#diff_type}
 
 ---
 
@@ -6743,7 +6743,7 @@ EntityType *string
 
 Type of the data entities being compared.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#entity_type Monitor#entity_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#entity_type Monitor#entity_type}
 
 ---
 
@@ -6757,7 +6757,7 @@ Source MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#source Monitor#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#source Monitor#source}
 
 ---
 
@@ -6771,7 +6771,7 @@ Target MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget
 
 target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#target Monitor#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#target Monitor#target}
 
 ---
 
@@ -6780,7 +6780,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSource {
 	EntityId: *string,
@@ -6813,7 +6813,7 @@ EntityId *string
 
 Identifier of the data entity to measure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#entity_id Monitor#entity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#entity_id Monitor#entity_id}
 
 ---
 
@@ -6827,7 +6827,7 @@ EntityType *string
 
 Type of the data entity to measure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#entity_type Monitor#entity_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#entity_type Monitor#entity_type}
 
 ---
 
@@ -6841,7 +6841,7 @@ CustomSql *string
 
 Custom SQL query used to compute the measure for this entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#custom_sql Monitor#custom_sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#custom_sql Monitor#custom_sql}
 
 ---
 
@@ -6855,7 +6855,7 @@ CustomWhere *string
 
 Custom WHERE clause applied when computing the measure for this entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#custom_where Monitor#custom_where}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#custom_where Monitor#custom_where}
 
 ---
 
@@ -6869,7 +6869,7 @@ GroupByColumns *[]*string
 
 Columns to group results by when computing the measure for this entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#group_by_columns Monitor#group_by_columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#group_by_columns Monitor#group_by_columns}
 
 ---
 
@@ -6878,7 +6878,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTarget {
 	EntityId: *string,
@@ -6911,7 +6911,7 @@ EntityId *string
 
 Identifier of the data entity to measure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#entity_id Monitor#entity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#entity_id Monitor#entity_id}
 
 ---
 
@@ -6925,7 +6925,7 @@ EntityType *string
 
 Type of the data entity to measure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#entity_type Monitor#entity_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#entity_type Monitor#entity_type}
 
 ---
 
@@ -6939,7 +6939,7 @@ CustomSql *string
 
 Custom SQL query used to compute the measure for this entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#custom_sql Monitor#custom_sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#custom_sql Monitor#custom_sql}
 
 ---
 
@@ -6953,7 +6953,7 @@ CustomWhere *string
 
 Custom WHERE clause applied when computing the measure for this entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#custom_where Monitor#custom_where}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#custom_where Monitor#custom_where}
 
 ---
 
@@ -6967,7 +6967,7 @@ GroupByColumns *[]*string
 
 Columns to group results by when computing the measure for this entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#group_by_columns Monitor#group_by_columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#group_by_columns Monitor#group_by_columns}
 
 ---
 
@@ -6976,13 +6976,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesEventQuery {
 	Compute: interface{},
 	DataSource: *string,
 	Name: *string,
-	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesEventQuerySearch,
+	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariablesEventQuerySearch,
 	GroupBy: interface{},
 	Indexes: *[]*string,
 }
@@ -7011,7 +7011,7 @@ Compute interface{}
 
 compute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#compute Monitor#compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#compute Monitor#compute}
 
 ---
 
@@ -7027,7 +7027,7 @@ The data source for event platform-based queries.
 
 Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`, `database_queries`, `network`, `network_path`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -7041,7 +7041,7 @@ Name *string
 
 The name of query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -7055,7 +7055,7 @@ Search MonitorVariablesEventQuerySearch
 
 search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#search Monitor#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#search Monitor#search}
 
 ---
 
@@ -7069,7 +7069,7 @@ GroupBy interface{}
 
 group_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#group_by Monitor#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#group_by Monitor#group_by}
 
 ---
 
@@ -7083,7 +7083,7 @@ Indexes *[]*string
 
 An array of index names to query in the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#indexes Monitor#indexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#indexes Monitor#indexes}
 
 ---
 
@@ -7092,7 +7092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesEventQueryCompute {
 	Aggregation: *string,
@@ -7125,7 +7125,7 @@ The aggregation methods for event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -7139,7 +7139,7 @@ Interval *f64
 
 A time interval in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#interval Monitor#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#interval Monitor#interval}
 
 ---
 
@@ -7153,7 +7153,7 @@ Metric *string
 
 The measurable attribute to compute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -7167,7 +7167,7 @@ Name *string
 
 The name assigned to this aggregation when multiple aggregations are defined for a query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -7176,12 +7176,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesEventQueryGroupBy {
 	Facet: *string,
 	Limit: *f64,
-	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.monitor.MonitorVariablesEventQueryGroupBySort,
+	Sort: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.monitor.MonitorVariablesEventQueryGroupBySort,
 	Source: *string,
 }
 ```
@@ -7207,7 +7207,7 @@ Facet *string
 
 The event facet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#facet Monitor#facet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#facet Monitor#facet}
 
 ---
 
@@ -7221,7 +7221,7 @@ Limit *f64
 
 The number of groups to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#limit Monitor#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#limit Monitor#limit}
 
 ---
 
@@ -7235,7 +7235,7 @@ Sort MonitorVariablesEventQueryGroupBySort
 
 sort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#sort Monitor#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#sort Monitor#sort}
 
 ---
 
@@ -7249,7 +7249,7 @@ Source *string
 
 For composite aggregate-augmented queries, identifies which sub-query this group-by facet refers to (for example `filter_query`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#source Monitor#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#source Monitor#source}
 
 ---
 
@@ -7258,7 +7258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesEventQueryGroupBySort {
 	Aggregation: *string,
@@ -7289,7 +7289,7 @@ The aggregation methods for the event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -7303,7 +7303,7 @@ Metric *string
 
 The metric used for sorting group by results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -7317,7 +7317,7 @@ Order *string
 
 Direction of sort. Valid values are `asc`, `desc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#order Monitor#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#order Monitor#order}
 
 ---
 
@@ -7326,7 +7326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 &monitor.MonitorVariablesEventQuerySearch {
 	Query: *string,
@@ -7351,7 +7351,7 @@ Query *string
 
 The events search string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
@@ -7362,7 +7362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorAssetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorAssetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorAssetsList
 ```
@@ -7522,7 +7522,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorAssetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorAssetsOutputReference
 ```
@@ -7913,7 +7913,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorMonitorThresholdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorMonitorThresholdsOutputReference
 ```
@@ -8394,7 +8394,7 @@ func InternalValue() MonitorMonitorThresholds
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorMonitorThresholdWindowsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorMonitorThresholdWindowsOutputReference
 ```
@@ -8701,7 +8701,7 @@ func InternalValue() MonitorMonitorThresholdWindows
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorSchedulingOptionsCustomScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorSchedulingOptionsCustomScheduleOutputReference
 ```
@@ -8985,7 +8985,7 @@ func InternalValue() MonitorSchedulingOptionsCustomSchedule
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference
 ```
@@ -9307,7 +9307,7 @@ func InternalValue() MonitorSchedulingOptionsCustomScheduleRecurrence
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorSchedulingOptionsEvaluationWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorSchedulingOptionsEvaluationWindowOutputReference
 ```
@@ -9672,7 +9672,7 @@ func InternalValue() MonitorSchedulingOptionsEvaluationWindow
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorSchedulingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorSchedulingOptionsOutputReference
 ```
@@ -10005,7 +10005,7 @@ func InternalValue() MonitorSchedulingOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryAugmentEventQueryComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateAugmentedQueryAugmentEventQueryComputeList
 ```
@@ -10165,7 +10165,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryAugmentEventQueryComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateAugmentedQueryAugmentEventQueryComputeOutputReference
 ```
@@ -10541,7 +10541,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupByList
 ```
@@ -10701,7 +10701,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupByOutputReference
 ```
@@ -11090,7 +11090,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBySortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBySortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBySortOutputReference
 ```
@@ -11419,7 +11419,7 @@ func InternalValue() MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGro
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryAugmentEventQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateAugmentedQueryAugmentEventQueryOutputReference
 ```
@@ -11853,7 +11853,7 @@ func InternalValue() MonitorVariablesAggregateAugmentedQueryAugmentEventQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentEventQuerySearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryAugmentEventQuerySearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateAugmentedQueryAugmentEventQuerySearchOutputReference
 ```
@@ -12124,7 +12124,7 @@ func InternalValue() MonitorVariablesAggregateAugmentedQueryAugmentEventQuerySea
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentReferenceTableColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryAugmentReferenceTableColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateAugmentedQueryAugmentReferenceTableColumnsList
 ```
@@ -12284,7 +12284,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentReferenceTableColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryAugmentReferenceTableColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateAugmentedQueryAugmentReferenceTableColumnsOutputReference
 ```
@@ -12602,7 +12602,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryAugmentReferenceTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryAugmentReferenceTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateAugmentedQueryAugmentReferenceTableOutputReference
 ```
@@ -12995,7 +12995,7 @@ func InternalValue() MonitorVariablesAggregateAugmentedQueryAugmentReferenceTabl
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryBaseEventQueryComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateAugmentedQueryBaseEventQueryComputeList
 ```
@@ -13155,7 +13155,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryBaseEventQueryComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateAugmentedQueryBaseEventQueryComputeOutputReference
 ```
@@ -13531,7 +13531,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupByList
 ```
@@ -13691,7 +13691,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupByOutputReference
 ```
@@ -14080,7 +14080,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBySortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBySortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBySortOutputReference
 ```
@@ -14409,7 +14409,7 @@ func InternalValue() MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupB
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryBaseEventQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateAugmentedQueryBaseEventQueryOutputReference
 ```
@@ -14843,7 +14843,7 @@ func InternalValue() MonitorVariablesAggregateAugmentedQueryBaseEventQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseEventQuerySearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryBaseEventQuerySearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateAugmentedQueryBaseEventQuerySearchOutputReference
 ```
@@ -15114,7 +15114,7 @@ func InternalValue() MonitorVariablesAggregateAugmentedQueryBaseEventQuerySearch
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryBaseMetricsQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryBaseMetricsQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateAugmentedQueryBaseMetricsQueryOutputReference
 ```
@@ -15465,7 +15465,7 @@ func InternalValue() MonitorVariablesAggregateAugmentedQueryBaseMetricsQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateAugmentedQueryComputeList
 ```
@@ -15625,7 +15625,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateAugmentedQueryComputeOutputReference
 ```
@@ -16001,7 +16001,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateAugmentedQueryGroupByList
 ```
@@ -16161,7 +16161,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateAugmentedQueryGroupByOutputReference
 ```
@@ -16550,7 +16550,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryGroupBySortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryGroupBySortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateAugmentedQueryGroupBySortOutputReference
 ```
@@ -16879,7 +16879,7 @@ func InternalValue() MonitorVariablesAggregateAugmentedQueryGroupBySort
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryJoinConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryJoinConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateAugmentedQueryJoinConditionOutputReference
 ```
@@ -17194,7 +17194,7 @@ func InternalValue() MonitorVariablesAggregateAugmentedQueryJoinCondition
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateAugmentedQueryList
 ```
@@ -17354,7 +17354,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateAugmentedQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateAugmentedQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateAugmentedQueryOutputReference
 ```
@@ -17945,7 +17945,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryBaseEventQueryComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateFilteredQueryBaseEventQueryComputeList
 ```
@@ -18105,7 +18105,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryBaseEventQueryComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateFilteredQueryBaseEventQueryComputeOutputReference
 ```
@@ -18481,7 +18481,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryBaseEventQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupByList
 ```
@@ -18641,7 +18641,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryBaseEventQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupByOutputReference
 ```
@@ -19030,7 +19030,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBySortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBySortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBySortOutputReference
 ```
@@ -19359,7 +19359,7 @@ func InternalValue() MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBy
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryBaseEventQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateFilteredQueryBaseEventQueryOutputReference
 ```
@@ -19793,7 +19793,7 @@ func InternalValue() MonitorVariablesAggregateFilteredQueryBaseEventQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseEventQuerySearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryBaseEventQuerySearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateFilteredQueryBaseEventQuerySearchOutputReference
 ```
@@ -20064,7 +20064,7 @@ func InternalValue() MonitorVariablesAggregateFilteredQueryBaseEventQuerySearch
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryBaseMetricsQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryBaseMetricsQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateFilteredQueryBaseMetricsQueryOutputReference
 ```
@@ -20415,7 +20415,7 @@ func InternalValue() MonitorVariablesAggregateFilteredQueryBaseMetricsQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateFilteredQueryComputeList
 ```
@@ -20575,7 +20575,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateFilteredQueryComputeOutputReference
 ```
@@ -20951,7 +20951,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryFilterEventQueryComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateFilteredQueryFilterEventQueryComputeList
 ```
@@ -21111,7 +21111,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryFilterEventQueryComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateFilteredQueryFilterEventQueryComputeOutputReference
 ```
@@ -21487,7 +21487,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryFilterEventQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupByList
 ```
@@ -21647,7 +21647,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryFilterEventQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupByOutputReference
 ```
@@ -22036,7 +22036,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBySortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBySortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBySortOutputReference
 ```
@@ -22365,7 +22365,7 @@ func InternalValue() MonitorVariablesAggregateFilteredQueryFilterEventQueryGroup
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryFilterEventQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateFilteredQueryFilterEventQueryOutputReference
 ```
@@ -22799,7 +22799,7 @@ func InternalValue() MonitorVariablesAggregateFilteredQueryFilterEventQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterEventQuerySearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryFilterEventQuerySearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateFilteredQueryFilterEventQuerySearchOutputReference
 ```
@@ -23070,7 +23070,7 @@ func InternalValue() MonitorVariablesAggregateFilteredQueryFilterEventQuerySearc
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterReferenceTableColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryFilterReferenceTableColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateFilteredQueryFilterReferenceTableColumnsList
 ```
@@ -23230,7 +23230,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterReferenceTableColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryFilterReferenceTableColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateFilteredQueryFilterReferenceTableColumnsOutputReference
 ```
@@ -23548,7 +23548,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFilterReferenceTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryFilterReferenceTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateFilteredQueryFilterReferenceTableOutputReference
 ```
@@ -23941,7 +23941,7 @@ func InternalValue() MonitorVariablesAggregateFilteredQueryFilterReferenceTable
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateFilteredQueryFiltersList
 ```
@@ -24101,7 +24101,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateFilteredQueryFiltersOutputReference
 ```
@@ -24441,7 +24441,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateFilteredQueryGroupByList
 ```
@@ -24601,7 +24601,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateFilteredQueryGroupByOutputReference
 ```
@@ -24990,7 +24990,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryGroupBySortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryGroupBySortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesAggregateFilteredQueryGroupBySortOutputReference
 ```
@@ -25319,7 +25319,7 @@ func InternalValue() MonitorVariablesAggregateFilteredQueryGroupBySort
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesAggregateFilteredQueryList
 ```
@@ -25479,7 +25479,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesAggregateFilteredQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesAggregateFilteredQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesAggregateFilteredQueryOutputReference
 ```
@@ -26084,7 +26084,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesCloudCostQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesCloudCostQueryList
 ```
@@ -26244,7 +26244,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesCloudCostQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesCloudCostQueryOutputReference
 ```
@@ -26599,7 +26599,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataJobsQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesDataJobsQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesDataJobsQueryList
 ```
@@ -26759,7 +26759,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataJobsQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesDataJobsQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesDataJobsQueryOutputReference
 ```
@@ -27114,7 +27114,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesDataQualityQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesDataQualityQueryList
 ```
@@ -27274,7 +27274,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesDataQualityQueryMonitorOptionsModelConfigurationOutputReference
 ```
@@ -27697,7 +27697,7 @@ func InternalValue() MonitorVariablesDataQualityQueryMonitorOptionsModelConfigur
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesDataQualityQueryMonitorOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesDataQualityQueryMonitorOptionsOutputReference
 ```
@@ -28204,7 +28204,7 @@ func InternalValue() MonitorVariablesDataQualityQueryMonitorOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigOutputReference
 ```
@@ -28567,7 +28567,7 @@ func InternalValue() MonitorVariablesDataQualityQueryMonitorOptionsSourceToTarge
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigSourceOutputReference
 ```
@@ -28947,7 +28947,7 @@ func InternalValue() MonitorVariablesDataQualityQueryMonitorOptionsSourceToTarge
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesDataQualityQueryMonitorOptionsSourceToTargetConfigTargetOutputReference
 ```
@@ -29327,7 +29327,7 @@ func InternalValue() MonitorVariablesDataQualityQueryMonitorOptionsSourceToTarge
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesDataQualityQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesDataQualityQueryOutputReference
 ```
@@ -29811,7 +29811,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesEventQueryComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesEventQueryComputeList
 ```
@@ -29971,7 +29971,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesEventQueryComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesEventQueryComputeOutputReference
 ```
@@ -30347,7 +30347,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesEventQueryGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesEventQueryGroupByList
 ```
@@ -30507,7 +30507,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesEventQueryGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesEventQueryGroupByOutputReference
 ```
@@ -30896,7 +30896,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesEventQueryGroupBySortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesEventQueryGroupBySortOutputReference
 ```
@@ -31225,7 +31225,7 @@ func InternalValue() MonitorVariablesEventQueryGroupBySort
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesEventQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesEventQueryList
 ```
@@ -31385,7 +31385,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesEventQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorVariablesEventQueryOutputReference
 ```
@@ -31837,7 +31837,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesEventQuerySearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesEventQuerySearchOutputReference
 ```
@@ -32108,7 +32108,7 @@ func InternalValue() MonitorVariablesEventQuerySearch
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/monitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/monitor"
 
 monitor.NewMonitorVariablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorVariablesOutputReference
 ```

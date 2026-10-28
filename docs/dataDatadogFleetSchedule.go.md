@@ -4,12 +4,12 @@
 
 ### DataDatadogFleetSchedule <a name="DataDatadogFleetSchedule" id="@cdktn/provider-datadog.dataDatadogFleetSchedule.DataDatadogFleetSchedule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/fleet_schedule datadog_fleet_schedule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/fleet_schedule datadog_fleet_schedule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogFleetSchedule.DataDatadogFleetSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogfleetschedule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogfleetschedule"
 
 datadatadogfleetschedule.NewDataDatadogFleetSchedule(scope Construct, id *string, config DataDatadogFleetScheduleConfig) DataDatadogFleetSchedule
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogFleetSchedule.DataDatadogFleetSchedule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogfleetschedule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogfleetschedule"
 
 datadatadogfleetschedule.DataDatadogFleetSchedule_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogFleetSchedule.DataDatadogFleetSchedule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogfleetschedule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogfleetschedule"
 
 datadatadogfleetschedule.DataDatadogFleetSchedule_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadogfleetschedule.DataDatadogFleetSchedule_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogFleetSchedule.DataDatadogFleetSchedule.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogfleetschedule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogfleetschedule"
 
 datadatadogfleetschedule.DataDatadogFleetSchedule_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogfleetschedule.DataDatadogFleetSchedule_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogFleetSchedule.DataDatadogFleetSchedule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogfleetschedule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogfleetschedule"
 
 datadatadogfleetschedule.DataDatadogFleetSchedule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatadogFleetSchedule t
 
 The id of the existing DataDatadogFleetSchedule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/fleet_schedule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/fleet_schedule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -719,7 +719,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogFleetSchedule.DataDatadogFleetScheduleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogfleetschedule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogfleetschedule"
 
 &datadatadogfleetschedule.DataDatadogFleetScheduleConfig {
 	Connection: interface{},
@@ -828,7 +828,7 @@ Id *string
 
 Unique identifier of the Fleet Automation schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/fleet_schedule#id DataDatadogFleetSchedule#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/fleet_schedule#id DataDatadogFleetSchedule#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -840,7 +840,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogFleetSchedule.DataDatadogFleetScheduleNotificationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogfleetschedule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogfleetschedule"
 
 &datadatadogfleetschedule.DataDatadogFleetScheduleNotificationRule {
 
@@ -853,7 +853,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogfle
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogFleetSchedule.DataDatadogFleetScheduleRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogfleetschedule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogfleetschedule"
 
 &datadatadogfleetschedule.DataDatadogFleetScheduleRule {
 
@@ -868,7 +868,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogfle
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogFleetSchedule.DataDatadogFleetScheduleNotificationRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogfleetschedule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogfleetschedule"
 
 datadatadogfleetschedule.NewDataDatadogFleetScheduleNotificationRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatadogFleetScheduleNotificationRuleOutputReference
 ```
@@ -1139,7 +1139,7 @@ func InternalValue() DataDatadogFleetScheduleNotificationRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogFleetSchedule.DataDatadogFleetScheduleRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogfleetschedule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogfleetschedule"
 
 datadatadogfleetschedule.NewDataDatadogFleetScheduleRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatadogFleetScheduleRuleOutputReference
 ```

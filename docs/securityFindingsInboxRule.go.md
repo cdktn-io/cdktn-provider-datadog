@@ -4,12 +4,12 @@
 
 ### SecurityFindingsInboxRule <a name="SecurityFindingsInboxRule" id="@cdktn/provider-datadog.securityFindingsInboxRule.SecurityFindingsInboxRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rule datadog_security_findings_inbox_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rule datadog_security_findings_inbox_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityFindingsInboxRule.SecurityFindingsInboxRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsinboxrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsinboxrule"
 
 securityfindingsinboxrule.NewSecurityFindingsInboxRule(scope Construct, id *string, config SecurityFindingsInboxRuleConfig) SecurityFindingsInboxRule
 ```
@@ -433,7 +433,7 @@ func ResetEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.securityFindingsInboxRule.SecurityFindingsInboxRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsinboxrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsinboxrule"
 
 securityfindingsinboxrule.SecurityFindingsInboxRule_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.securityFindingsInboxRule.SecurityFindingsInboxRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsinboxrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsinboxrule"
 
 securityfindingsinboxrule.SecurityFindingsInboxRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ securityfindingsinboxrule.SecurityFindingsInboxRule_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.securityFindingsInboxRule.SecurityFindingsInboxRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsinboxrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsinboxrule"
 
 securityfindingsinboxrule.SecurityFindingsInboxRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ securityfindingsinboxrule.SecurityFindingsInboxRule_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.securityFindingsInboxRule.SecurityFindingsInboxRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsinboxrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsinboxrule"
 
 securityfindingsinboxrule.SecurityFindingsInboxRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -522,7 +522,7 @@ The construct id used in the generated config for the SecurityFindingsInboxRule 
 
 The id of the existing SecurityFindingsInboxRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -821,7 +821,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.securityFindingsInboxRule.SecurityFindingsInboxRuleAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsinboxrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsinboxrule"
 
 &securityfindingsinboxrule.SecurityFindingsInboxRuleAction {
 	Description: *string,
@@ -846,7 +846,7 @@ Description *string
 
 An optional description providing more context for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rule#description SecurityFindingsInboxRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rule#description SecurityFindingsInboxRule#description}
 
 ---
 
@@ -855,7 +855,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.securityFindingsInboxRule.SecurityFindingsInboxRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsinboxrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsinboxrule"
 
 &securityfindingsinboxrule.SecurityFindingsInboxRuleConfig {
 	Connection: interface{},
@@ -865,9 +865,9 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindin
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Action: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.securityFindingsInboxRule.SecurityFindingsInboxRuleAction,
+	Action: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.securityFindingsInboxRule.SecurityFindingsInboxRuleAction,
 	Name: *string,
-	Rule: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.securityFindingsInboxRule.SecurityFindingsInboxRuleRule,
+	Rule: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.securityFindingsInboxRule.SecurityFindingsInboxRuleRule,
 	Enabled: interface{},
 }
 ```
@@ -970,7 +970,7 @@ Action SecurityFindingsInboxRuleAction
 
 The action to take when the inbox rule matches a finding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rule#action SecurityFindingsInboxRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rule#action SecurityFindingsInboxRule#action}
 
 ---
 
@@ -984,7 +984,7 @@ Name *string
 
 The name of the inbox rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rule#name SecurityFindingsInboxRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rule#name SecurityFindingsInboxRule#name}
 
 ---
 
@@ -998,7 +998,7 @@ Rule SecurityFindingsInboxRuleRule
 
 Defines the scope of findings to which the automation rule applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rule#rule SecurityFindingsInboxRule#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rule#rule SecurityFindingsInboxRule#rule}
 
 ---
 
@@ -1012,7 +1012,7 @@ Enabled interface{}
 
 Whether the inbox rule is enabled. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rule#enabled SecurityFindingsInboxRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rule#enabled SecurityFindingsInboxRule#enabled}
 
 ---
 
@@ -1021,7 +1021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.securityFindingsInboxRule.SecurityFindingsInboxRuleRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsinboxrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsinboxrule"
 
 &securityfindingsinboxrule.SecurityFindingsInboxRuleRule {
 	FindingTypes: *[]*string,
@@ -1050,7 +1050,7 @@ The list of security finding types that the automation rule applies to.
 
 Valid values are `api_security`, `attack_path`, `host_and_container_vulnerability`, `iac_misconfiguration`, `identity_risk`, `library_vulnerability`, `misconfiguration`, `runtime_code_vulnerability`, `secret`, `static_code_vulnerability`, `workload_activity`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rule#finding_types SecurityFindingsInboxRule#finding_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rule#finding_types SecurityFindingsInboxRule#finding_types}
 
 ---
 
@@ -1066,7 +1066,7 @@ A search query to further filter the findings matched by this rule.
 
 The `@workflow.*` namespace and `@status` fields are not permitted. For a reference of available fields, see the [Security Findings schema documentation](https://docs.datadoghq.com/security/guide/findings-schema/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rule#query SecurityFindingsInboxRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rule#query SecurityFindingsInboxRule#query}
 
 ---
 
@@ -1077,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityFindingsInboxRule.SecurityFindingsInboxRuleActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsinboxrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsinboxrule"
 
 securityfindingsinboxrule.NewSecurityFindingsInboxRuleActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityFindingsInboxRuleActionOutputReference
 ```
@@ -1355,7 +1355,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityFindingsInboxRule.SecurityFindingsInboxRuleRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsinboxrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsinboxrule"
 
 securityfindingsinboxrule.NewSecurityFindingsInboxRuleRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityFindingsInboxRuleRuleOutputReference
 ```

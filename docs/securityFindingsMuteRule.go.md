@@ -4,12 +4,12 @@
 
 ### SecurityFindingsMuteRule <a name="SecurityFindingsMuteRule" id="@cdktn/provider-datadog.securityFindingsMuteRule.SecurityFindingsMuteRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_mute_rule datadog_security_findings_mute_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_mute_rule datadog_security_findings_mute_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityFindingsMuteRule.SecurityFindingsMuteRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsmuterule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsmuterule"
 
 securityfindingsmuterule.NewSecurityFindingsMuteRule(scope Construct, id *string, config SecurityFindingsMuteRuleConfig) SecurityFindingsMuteRule
 ```
@@ -433,7 +433,7 @@ func ResetEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.securityFindingsMuteRule.SecurityFindingsMuteRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsmuterule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsmuterule"
 
 securityfindingsmuterule.SecurityFindingsMuteRule_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.securityFindingsMuteRule.SecurityFindingsMuteRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsmuterule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsmuterule"
 
 securityfindingsmuterule.SecurityFindingsMuteRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ securityfindingsmuterule.SecurityFindingsMuteRule_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.securityFindingsMuteRule.SecurityFindingsMuteRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsmuterule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsmuterule"
 
 securityfindingsmuterule.SecurityFindingsMuteRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ securityfindingsmuterule.SecurityFindingsMuteRule_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.securityFindingsMuteRule.SecurityFindingsMuteRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsmuterule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsmuterule"
 
 securityfindingsmuterule.SecurityFindingsMuteRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -522,7 +522,7 @@ The construct id used in the generated config for the SecurityFindingsMuteRule t
 
 The id of the existing SecurityFindingsMuteRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_mute_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_mute_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -821,7 +821,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.securityFindingsMuteRule.SecurityFindingsMuteRuleAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsmuterule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsmuterule"
 
 &securityfindingsmuterule.SecurityFindingsMuteRuleAction {
 	Reason: *string,
@@ -850,7 +850,7 @@ Reason *string
 
 The reason for muting a security finding. Valid values are `duplicate`, `false_positive`, `no_fix`, `other`, `pending_fix`, `risk_accepted`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_mute_rule#reason SecurityFindingsMuteRule#reason}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_mute_rule#reason SecurityFindingsMuteRule#reason}
 
 ---
 
@@ -864,7 +864,7 @@ ExpireAt *f64
 
 The Unix timestamp in milliseconds at which the mute expires. If omitted, the mute does not expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_mute_rule#expire_at SecurityFindingsMuteRule#expire_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_mute_rule#expire_at SecurityFindingsMuteRule#expire_at}
 
 ---
 
@@ -878,7 +878,7 @@ ReasonDescription *string
 
 An optional description providing more context for the mute reason.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_mute_rule#reason_description SecurityFindingsMuteRule#reason_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_mute_rule#reason_description SecurityFindingsMuteRule#reason_description}
 
 ---
 
@@ -887,7 +887,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.securityFindingsMuteRule.SecurityFindingsMuteRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsmuterule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsmuterule"
 
 &securityfindingsmuterule.SecurityFindingsMuteRuleConfig {
 	Connection: interface{},
@@ -897,9 +897,9 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindin
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Action: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.securityFindingsMuteRule.SecurityFindingsMuteRuleAction,
+	Action: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.securityFindingsMuteRule.SecurityFindingsMuteRuleAction,
 	Name: *string,
-	Rule: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.securityFindingsMuteRule.SecurityFindingsMuteRuleRule,
+	Rule: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.securityFindingsMuteRule.SecurityFindingsMuteRuleRule,
 	Enabled: interface{},
 }
 ```
@@ -1002,7 +1002,7 @@ Action SecurityFindingsMuteRuleAction
 
 The action to take when the mute rule matches a finding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_mute_rule#action SecurityFindingsMuteRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_mute_rule#action SecurityFindingsMuteRule#action}
 
 ---
 
@@ -1016,7 +1016,7 @@ Name *string
 
 The name of the mute rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_mute_rule#name SecurityFindingsMuteRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_mute_rule#name SecurityFindingsMuteRule#name}
 
 ---
 
@@ -1030,7 +1030,7 @@ Rule SecurityFindingsMuteRuleRule
 
 Defines the scope of findings to which the automation rule applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_mute_rule#rule SecurityFindingsMuteRule#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_mute_rule#rule SecurityFindingsMuteRule#rule}
 
 ---
 
@@ -1044,7 +1044,7 @@ Enabled interface{}
 
 Whether the mute rule is enabled. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_mute_rule#enabled SecurityFindingsMuteRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_mute_rule#enabled SecurityFindingsMuteRule#enabled}
 
 ---
 
@@ -1053,7 +1053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.securityFindingsMuteRule.SecurityFindingsMuteRuleRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsmuterule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsmuterule"
 
 &securityfindingsmuterule.SecurityFindingsMuteRuleRule {
 	FindingTypes: *[]*string,
@@ -1082,7 +1082,7 @@ The list of security finding types that the automation rule applies to.
 
 Valid values are `api_security`, `attack_path`, `host_and_container_vulnerability`, `iac_misconfiguration`, `identity_risk`, `library_vulnerability`, `misconfiguration`, `runtime_code_vulnerability`, `secret`, `static_code_vulnerability`, `workload_activity`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_mute_rule#finding_types SecurityFindingsMuteRule#finding_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_mute_rule#finding_types SecurityFindingsMuteRule#finding_types}
 
 ---
 
@@ -1098,7 +1098,7 @@ A search query to further filter the findings matched by this rule.
 
 The `@workflow.*` namespace and `@status` fields are not permitted. For a reference of available fields, see the [Security Findings schema documentation](https://docs.datadoghq.com/security/guide/findings-schema/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_mute_rule#query SecurityFindingsMuteRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_mute_rule#query SecurityFindingsMuteRule#query}
 
 ---
 
@@ -1109,7 +1109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityFindingsMuteRule.SecurityFindingsMuteRuleActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsmuterule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsmuterule"
 
 securityfindingsmuterule.NewSecurityFindingsMuteRuleActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityFindingsMuteRuleActionOutputReference
 ```
@@ -1438,7 +1438,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityFindingsMuteRule.SecurityFindingsMuteRuleRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsmuterule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsmuterule"
 
 securityfindingsmuterule.NewSecurityFindingsMuteRuleRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityFindingsMuteRuleRuleOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### TagIndexingRuleOrder <a name="TagIndexingRuleOrder" id="@cdktn/provider-datadog.tagIndexingRuleOrder.TagIndexingRuleOrder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_indexing_rule_order datadog_tag_indexing_rule_order}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_indexing_rule_order datadog_tag_indexing_rule_order}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagIndexingRuleOrder.TagIndexingRuleOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingruleorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/tagindexingruleorder"
 
 tagindexingruleorder.NewTagIndexingRuleOrder(scope Construct, id *string, config TagIndexingRuleOrderConfig) TagIndexingRuleOrder
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.tagIndexingRuleOrder.TagIndexingRuleOrder.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingruleorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/tagindexingruleorder"
 
 tagindexingruleorder.TagIndexingRuleOrder_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.tagIndexingRuleOrder.TagIndexingRuleOrder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingruleorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/tagindexingruleorder"
 
 tagindexingruleorder.TagIndexingRuleOrder_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ tagindexingruleorder.TagIndexingRuleOrder_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.tagIndexingRuleOrder.TagIndexingRuleOrder.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingruleorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/tagindexingruleorder"
 
 tagindexingruleorder.TagIndexingRuleOrder_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ tagindexingruleorder.TagIndexingRuleOrder_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.tagIndexingRuleOrder.TagIndexingRuleOrder.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingruleorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/tagindexingruleorder"
 
 tagindexingruleorder.TagIndexingRuleOrder_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the TagIndexingRuleOrder to im
 
 The id of the existing TagIndexingRuleOrder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_indexing_rule_order#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_indexing_rule_order#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.tagIndexingRuleOrder.TagIndexingRuleOrderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingruleorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/tagindexingruleorder"
 
 &tagindexingruleorder.TagIndexingRuleOrderConfig {
 	Connection: interface{},
@@ -857,7 +857,7 @@ A unique name for the order resource.
 
 Recommended to match the resource name. No corresponding field exists in the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_indexing_rule_order#name TagIndexingRuleOrder#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_indexing_rule_order#name TagIndexingRuleOrder#name}
 
 ---
 
@@ -873,7 +873,7 @@ Ordered list of EVERY active tag indexing rule UUID in the org.
 
 The server assigns each rule a rule_order (1, 2, 3, ...) by its position in this list. This resource claims full ownership of the org's evaluation order: rules created outside Terraform (e.g. via the UI) appear as drift on the next plan and must be added here. The list must be the COMPLETE set of active rules and contain each UUID exactly once — omitting an existing rule or repeating a UUID is rejected by the API with a 400; listing a UUID that does not exist returns 404.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_indexing_rule_order#rule_ids TagIndexingRuleOrder#rule_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_indexing_rule_order#rule_ids TagIndexingRuleOrder#rule_ids}
 
 ---
 

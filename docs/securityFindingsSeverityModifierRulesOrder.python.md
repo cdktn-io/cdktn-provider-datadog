@@ -4,7 +4,7 @@
 
 ### SecurityFindingsSeverityModifierRulesOrder <a name="SecurityFindingsSeverityModifierRulesOrder" id="@cdktn/provider-datadog.securityFindingsSeverityModifierRulesOrder.SecurityFindingsSeverityModifierRulesOrder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_severity_modifier_rules_order datadog_security_findings_severity_modifier_rules_order}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_severity_modifier_rules_order datadog_security_findings_severity_modifier_rules_order}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityFindingsSeverityModifierRulesOrder.SecurityFindingsSeverityModifierRulesOrder.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 A unique identifier for the order resource. This field has no server-side equivalent; Datadog recommends matching the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_severity_modifier_rules_order#name SecurityFindingsSeverityModifierRulesOrder#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_severity_modifier_rules_order#name SecurityFindingsSeverityModifierRulesOrder#name}
 
 ---
 
@@ -120,7 +120,7 @@ The ordered list of all severity modifier rule IDs.
 
 The order of IDs in this attribute defines the evaluation order of the severity modifier rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_severity_modifier_rules_order#rule_ids SecurityFindingsSeverityModifierRulesOrder#rule_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_severity_modifier_rules_order#rule_ids SecurityFindingsSeverityModifierRulesOrder#rule_ids}
 
 ---
 
@@ -617,7 +617,7 @@ The construct id used in the generated config for the SecurityFindingsSeverityMo
 
 The id of the existing SecurityFindingsSeverityModifierRulesOrder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_severity_modifier_rules_order#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_severity_modifier_rules_order#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -983,7 +983,7 @@ name: str
 
 A unique identifier for the order resource. This field has no server-side equivalent; Datadog recommends matching the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_severity_modifier_rules_order#name SecurityFindingsSeverityModifierRulesOrder#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_severity_modifier_rules_order#name SecurityFindingsSeverityModifierRulesOrder#name}
 
 ---
 
@@ -999,7 +999,7 @@ The ordered list of all severity modifier rule IDs.
 
 The order of IDs in this attribute defines the evaluation order of the severity modifier rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_severity_modifier_rules_order#rule_ids SecurityFindingsSeverityModifierRulesOrder#rule_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_severity_modifier_rules_order#rule_ids SecurityFindingsSeverityModifierRulesOrder#rule_ids}
 
 ---
 

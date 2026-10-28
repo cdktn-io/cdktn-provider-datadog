@@ -4,12 +4,12 @@
 
 ### ServiceAccessToken <a name="ServiceAccessToken" id="@cdktn/provider-datadog.serviceAccessToken.ServiceAccessToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/service_access_token datadog_service_access_token}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/service_access_token datadog_service_access_token}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.serviceAccessToken.ServiceAccessToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/serviceaccesstoken"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/serviceaccesstoken"
 
 serviceaccesstoken.NewServiceAccessToken(scope Construct, id *string, config ServiceAccessTokenConfig) ServiceAccessToken
 ```
@@ -407,7 +407,7 @@ func ResetExpiresAt()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.serviceAccessToken.ServiceAccessToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/serviceaccesstoken"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/serviceaccesstoken"
 
 serviceaccesstoken.ServiceAccessToken_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.serviceAccessToken.ServiceAccessToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/serviceaccesstoken"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/serviceaccesstoken"
 
 serviceaccesstoken.ServiceAccessToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ serviceaccesstoken.ServiceAccessToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.serviceAccessToken.ServiceAccessToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/serviceaccesstoken"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/serviceaccesstoken"
 
 serviceaccesstoken.ServiceAccessToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ serviceaccesstoken.ServiceAccessToken_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.serviceAccessToken.ServiceAccessToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/serviceaccesstoken"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/serviceaccesstoken"
 
 serviceaccesstoken.ServiceAccessToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the ServiceAccessToken to impo
 
 The id of the existing ServiceAccessToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/service_access_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/service_access_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -839,7 +839,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.serviceAccessToken.ServiceAccessTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/serviceaccesstoken"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/serviceaccesstoken"
 
 &serviceaccesstoken.ServiceAccessTokenConfig {
 	Connection: interface{},
@@ -954,7 +954,7 @@ Name *string
 
 Name of the service access token. Must be non-empty. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/service_access_token#name ServiceAccessToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/service_access_token#name ServiceAccessToken#name}
 
 ---
 
@@ -968,7 +968,7 @@ Scopes *[]*string
 
 Authorization scopes granted to the service access token. At least one scope is required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/service_access_token#scopes ServiceAccessToken#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/service_access_token#scopes ServiceAccessToken#scopes}
 
 ---
 
@@ -982,7 +982,7 @@ ServiceAccountId *string
 
 ID of the service account that owns this access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/service_access_token#service_account_id ServiceAccessToken#service_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/service_access_token#service_account_id ServiceAccessToken#service_account_id}
 
 ---
 
@@ -998,7 +998,7 @@ Expiration date of the service access token, in RFC3339 format.
 
 Omit for a non-expiring token. The Datadog API caps expirations to within 365 days from creation. This attribute is immutable: it cannot be added, changed, or removed after creation. To rotate the expiration, destroy and re-create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/service_access_token#expires_at ServiceAccessToken#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/service_access_token#expires_at ServiceAccessToken#expires_at}
 
 ---
 

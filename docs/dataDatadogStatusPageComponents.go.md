@@ -4,12 +4,12 @@
 
 ### DataDatadogStatusPageComponents <a name="DataDatadogStatusPageComponents" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_components datadog_status_page_components}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_components datadog_status_page_components}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagecomponents"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagecomponents"
 
 datadatadogstatuspagecomponents.NewDataDatadogStatusPageComponents(scope Construct, id *string, config DataDatadogStatusPageComponentsConfig) DataDatadogStatusPageComponents
 ```
@@ -312,7 +312,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagecomponents"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagecomponents"
 
 datadatadogstatuspagecomponents.DataDatadogStatusPageComponents_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagecomponents"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagecomponents"
 
 datadatadogstatuspagecomponents.DataDatadogStatusPageComponents_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogstatuspagecomponents.DataDatadogStatusPageComponents_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagecomponents"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagecomponents"
 
 datadatadogstatuspagecomponents.DataDatadogStatusPageComponents_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datadatadogstatuspagecomponents.DataDatadogStatusPageComponents_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagecomponents"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagecomponents"
 
 datadatadogstatuspagecomponents.DataDatadogStatusPageComponents_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataDatadogStatusPageCompo
 
 The id of the existing DataDatadogStatusPageComponents that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_components#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_components#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -667,7 +667,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponents.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagecomponents"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagecomponents"
 
 &datadatadogstatuspagecomponents.DataDatadogStatusPageComponentsComponents {
 
@@ -680,7 +680,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsta
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagecomponents"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagecomponents"
 
 &datadatadogstatuspagecomponents.DataDatadogStatusPageComponentsConfig {
 	Connection: interface{},
@@ -793,7 +793,7 @@ PageId *string
 
 The ID of the status page whose components to list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_components#page_id DataDatadogStatusPageComponents#page_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_components#page_id DataDatadogStatusPageComponents#page_id}
 
 ---
 
@@ -807,7 +807,7 @@ Name *string
 
 Filter the results to components with this exact name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_components#name DataDatadogStatusPageComponents#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_components#name DataDatadogStatusPageComponents#name}
 
 ---
 
@@ -821,7 +821,7 @@ Type *string
 
 Filter the results by type (`component` or `group`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_components#type DataDatadogStatusPageComponents#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_components#type DataDatadogStatusPageComponents#type}
 
 ---
 
@@ -832,7 +832,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagecomponents"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagecomponents"
 
 datadatadogstatuspagecomponents.NewDataDatadogStatusPageComponentsComponentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogStatusPageComponentsComponentsList
 ```
@@ -981,7 +981,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponentsComponentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagecomponents"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagecomponents"
 
 datadatadogstatuspagecomponents.NewDataDatadogStatusPageComponentsComponentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogStatusPageComponentsComponentsOutputReference
 ```
