@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/fleet_schedules
+// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/fleet_schedules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -285,7 +285,7 @@ export class DataDatadogFleetSchedulesSchedulesList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/fleet_schedules datadog_fleet_schedules}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/fleet_schedules datadog_fleet_schedules}
 */
 export class DataDatadogFleetSchedules extends cdktn.TerraformDataSource {
 
@@ -301,7 +301,7 @@ export class DataDatadogFleetSchedules extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatadogFleetSchedules resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogFleetSchedules to import
-  * @param importFromId The id of the existing DataDatadogFleetSchedules that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/fleet_schedules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogFleetSchedules that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/fleet_schedules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogFleetSchedules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -313,7 +313,7 @@ export class DataDatadogFleetSchedules extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/fleet_schedules datadog_fleet_schedules} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/fleet_schedules datadog_fleet_schedules} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -324,7 +324,7 @@ export class DataDatadogFleetSchedules extends cdktn.TerraformDataSource {
       terraformResourceType: 'datadog_fleet_schedules',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.25.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

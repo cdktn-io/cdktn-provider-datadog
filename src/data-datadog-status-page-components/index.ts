@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_components
+// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_components
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DataDatadogStatusPageComponentsConfig extends cdktn.TerraformMe
   /**
   * Filter the results to components with this exact name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_components#name DataDatadogStatusPageComponents#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_components#name DataDatadogStatusPageComponents#name}
   */
   readonly name?: string;
   /**
   * The ID of the status page whose components to list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_components#page_id DataDatadogStatusPageComponents#page_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_components#page_id DataDatadogStatusPageComponents#page_id}
   */
   readonly pageId: string;
   /**
   * Filter the results by type (`component` or `group`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_components#type DataDatadogStatusPageComponents#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_components#type DataDatadogStatusPageComponents#type}
   */
   readonly type?: string;
 }
@@ -128,7 +128,7 @@ export class DataDatadogStatusPageComponentsComponentsList extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_components datadog_status_page_components}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_components datadog_status_page_components}
 */
 export class DataDatadogStatusPageComponents extends cdktn.TerraformDataSource {
 
@@ -144,7 +144,7 @@ export class DataDatadogStatusPageComponents extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatadogStatusPageComponents resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogStatusPageComponents to import
-  * @param importFromId The id of the existing DataDatadogStatusPageComponents that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_components#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogStatusPageComponents that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_components#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogStatusPageComponents to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -156,7 +156,7 @@ export class DataDatadogStatusPageComponents extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_components datadog_status_page_components} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_components datadog_status_page_components} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -167,7 +167,7 @@ export class DataDatadogStatusPageComponents extends cdktn.TerraformDataSource {
       terraformResourceType: 'datadog_status_page_components',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.25.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

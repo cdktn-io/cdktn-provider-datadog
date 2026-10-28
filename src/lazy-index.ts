@@ -113,6 +113,8 @@ Object.defineProperty(exports, 'role', { get: function () { return require('./ro
 Object.defineProperty(exports, 'rumApplication', { get: function () { return require('./rum-application'); } });
 Object.defineProperty(exports, 'rumExclusionFilter', { get: function () { return require('./rum-exclusion-filter'); } });
 Object.defineProperty(exports, 'rumMetric', { get: function () { return require('./rum-metric'); } });
+Object.defineProperty(exports, 'rumOperation', { get: function () { return require('./rum-operation'); } });
+Object.defineProperty(exports, 'rumOperationJourneyLink', { get: function () { return require('./rum-operation-journey-link'); } });
 Object.defineProperty(exports, 'rumRetentionFilter', { get: function () { return require('./rum-retention-filter'); } });
 Object.defineProperty(exports, 'rumRetentionFiltersOrder', { get: function () { return require('./rum-retention-filters-order'); } });
 Object.defineProperty(exports, 'rumRetentionQuota', { get: function () { return require('./rum-retention-quota'); } });

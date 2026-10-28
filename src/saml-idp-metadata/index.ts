@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/saml_idp_metadata
+// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/saml_idp_metadata
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface SamlIdpMetadataConfig extends cdktn.TerraformMetaArguments {
   /**
   * The content of the IdP metadata XML file, for example loaded with the `file()` function. A leading UTF-8 byte order mark (BOM) is stripped automatically before upload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/saml_idp_metadata#idp_metadata SamlIdpMetadata#idp_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/saml_idp_metadata#idp_metadata SamlIdpMetadata#idp_metadata}
   */
   readonly idpMetadata: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/saml_idp_metadata datadog_saml_idp_metadata}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/saml_idp_metadata datadog_saml_idp_metadata}
 */
 export class SamlIdpMetadata extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class SamlIdpMetadata extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SamlIdpMetadata resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SamlIdpMetadata to import
-  * @param importFromId The id of the existing SamlIdpMetadata that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/saml_idp_metadata#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SamlIdpMetadata that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/saml_idp_metadata#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SamlIdpMetadata to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class SamlIdpMetadata extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/saml_idp_metadata datadog_saml_idp_metadata} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/saml_idp_metadata datadog_saml_idp_metadata} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class SamlIdpMetadata extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_saml_idp_metadata',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.25.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

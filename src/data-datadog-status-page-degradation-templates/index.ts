@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_degradation_templates
+// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_degradation_templates
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataDatadogStatusPageDegradationTemplatesConfig extends cdktn.T
   /**
   * Filter the results to templates with this exact name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_degradation_templates#name DataDatadogStatusPageDegradationTemplates#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_degradation_templates#name DataDatadogStatusPageDegradationTemplates#name}
   */
   readonly name?: string;
   /**
   * The ID of the status page whose degradation templates to list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_degradation_templates#page_id DataDatadogStatusPageDegradationTemplates#page_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_degradation_templates#page_id DataDatadogStatusPageDegradationTemplates#page_id}
   */
   readonly pageId: string;
 }
@@ -112,7 +112,7 @@ export class DataDatadogStatusPageDegradationTemplatesDegradationTemplatesList e
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_degradation_templates datadog_status_page_degradation_templates}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_degradation_templates datadog_status_page_degradation_templates}
 */
 export class DataDatadogStatusPageDegradationTemplates extends cdktn.TerraformDataSource {
 
@@ -128,7 +128,7 @@ export class DataDatadogStatusPageDegradationTemplates extends cdktn.TerraformDa
   * Generates CDKTN code for importing a DataDatadogStatusPageDegradationTemplates resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogStatusPageDegradationTemplates to import
-  * @param importFromId The id of the existing DataDatadogStatusPageDegradationTemplates that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_degradation_templates#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogStatusPageDegradationTemplates that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_degradation_templates#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogStatusPageDegradationTemplates to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -140,7 +140,7 @@ export class DataDatadogStatusPageDegradationTemplates extends cdktn.TerraformDa
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_degradation_templates datadog_status_page_degradation_templates} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_degradation_templates datadog_status_page_degradation_templates} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -151,7 +151,7 @@ export class DataDatadogStatusPageDegradationTemplates extends cdktn.TerraformDa
       terraformResourceType: 'datadog_status_page_degradation_templates',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.25.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
