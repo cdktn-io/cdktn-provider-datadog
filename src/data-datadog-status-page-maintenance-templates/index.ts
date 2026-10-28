@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_maintenance_templates
+// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_maintenance_templates
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataDatadogStatusPageMaintenanceTemplatesConfig extends cdktn.T
   /**
   * Filter the results to templates with this exact name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_maintenance_templates#name DataDatadogStatusPageMaintenanceTemplates#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_maintenance_templates#name DataDatadogStatusPageMaintenanceTemplates#name}
   */
   readonly name?: string;
   /**
   * The ID of the status page whose maintenance templates to list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_maintenance_templates#page_id DataDatadogStatusPageMaintenanceTemplates#page_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_maintenance_templates#page_id DataDatadogStatusPageMaintenanceTemplates#page_id}
   */
   readonly pageId: string;
 }
@@ -112,7 +112,7 @@ export class DataDatadogStatusPageMaintenanceTemplatesMaintenanceTemplatesList e
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_maintenance_templates datadog_status_page_maintenance_templates}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_maintenance_templates datadog_status_page_maintenance_templates}
 */
 export class DataDatadogStatusPageMaintenanceTemplates extends cdktn.TerraformDataSource {
 
@@ -128,7 +128,7 @@ export class DataDatadogStatusPageMaintenanceTemplates extends cdktn.TerraformDa
   * Generates CDKTN code for importing a DataDatadogStatusPageMaintenanceTemplates resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogStatusPageMaintenanceTemplates to import
-  * @param importFromId The id of the existing DataDatadogStatusPageMaintenanceTemplates that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_maintenance_templates#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogStatusPageMaintenanceTemplates that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_maintenance_templates#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogStatusPageMaintenanceTemplates to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -140,7 +140,7 @@ export class DataDatadogStatusPageMaintenanceTemplates extends cdktn.TerraformDa
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_maintenance_templates datadog_status_page_maintenance_templates} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_maintenance_templates datadog_status_page_maintenance_templates} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -151,7 +151,7 @@ export class DataDatadogStatusPageMaintenanceTemplates extends cdktn.TerraformDa
       terraformResourceType: 'datadog_status_page_maintenance_templates',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.25.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

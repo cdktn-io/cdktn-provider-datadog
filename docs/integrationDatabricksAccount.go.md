@@ -4,12 +4,12 @@
 
 ### IntegrationDatabricksAccount <a name="IntegrationDatabricksAccount" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account datadog_integration_databricks_account}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account datadog_integration_databricks_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 integrationdatabricksaccount.NewIntegrationDatabricksAccount(scope Construct, id *string, config IntegrationDatabricksAccountConfig) IntegrationDatabricksAccount
 ```
@@ -446,7 +446,7 @@ func ResetDataflows()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 integrationdatabricksaccount.IntegrationDatabricksAccount_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 integrationdatabricksaccount.IntegrationDatabricksAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ integrationdatabricksaccount.IntegrationDatabricksAccount_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 integrationdatabricksaccount.IntegrationDatabricksAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ integrationdatabricksaccount.IntegrationDatabricksAccount_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 integrationdatabricksaccount.IntegrationDatabricksAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -535,7 +535,7 @@ The construct id used in the generated config for the IntegrationDatabricksAccou
 
 The id of the existing IntegrationDatabricksAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -834,12 +834,12 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 &integrationdatabricksaccount.IntegrationDatabricksAccountAuthentication {
-	DatabricksIntegrationAccountBearerTokenAuth: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuth,
-	DatabricksIntegrationAccountOAuthAuth: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuth,
-	DatabricksIntegrationAccountPrivateActionRunnerAuth: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountPrivateActionRunnerAuth,
+	DatabricksIntegrationAccountBearerTokenAuth: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuth,
+	DatabricksIntegrationAccountOAuthAuth: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuth,
+	DatabricksIntegrationAccountPrivateActionRunnerAuth: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountPrivateActionRunnerAuth,
 }
 ```
 
@@ -863,7 +863,7 @@ DatabricksIntegrationAccountBearerTokenAuth IntegrationDatabricksAccountAuthenti
 
 The bearer token authentication method configured on the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#databricks_integration_account_bearer_token_auth IntegrationDatabricksAccount#databricks_integration_account_bearer_token_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#databricks_integration_account_bearer_token_auth IntegrationDatabricksAccount#databricks_integration_account_bearer_token_auth}
 
 ---
 
@@ -877,7 +877,7 @@ DatabricksIntegrationAccountOAuthAuth IntegrationDatabricksAccountAuthentication
 
 The Databricks OAuth authentication method and service principal configured on the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#databricks_integration_account_o_auth_auth IntegrationDatabricksAccount#databricks_integration_account_o_auth_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#databricks_integration_account_o_auth_auth IntegrationDatabricksAccount#databricks_integration_account_o_auth_auth}
 
 ---
 
@@ -891,7 +891,7 @@ DatabricksIntegrationAccountPrivateActionRunnerAuth IntegrationDatabricksAccount
 
 The Private Action Runner authentication method configured on the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#databricks_integration_account_private_action_runner_auth IntegrationDatabricksAccount#databricks_integration_account_private_action_runner_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#databricks_integration_account_private_action_runner_auth IntegrationDatabricksAccount#databricks_integration_account_private_action_runner_auth}
 
 ---
 
@@ -900,7 +900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 &integrationdatabricksaccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuth {
 	AuthType: *string,
@@ -929,7 +929,7 @@ AuthType *string
 
 The authentication method type. Valid values are `bearer_token`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#auth_type IntegrationDatabricksAccount#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#auth_type IntegrationDatabricksAccount#auth_type}
 
 ---
 
@@ -943,7 +943,7 @@ TokenWo *string
 
 Secret token used to authenticate with Databricks. This write-only value is not stored in Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#token_wo IntegrationDatabricksAccount#token_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#token_wo IntegrationDatabricksAccount#token_wo}
 
 ---
 
@@ -957,7 +957,7 @@ TokenWoVersion *string
 
 Version trigger for token_wo rotation. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#token_wo_version IntegrationDatabricksAccount#token_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#token_wo_version IntegrationDatabricksAccount#token_wo_version}
 
 ---
 
@@ -966,7 +966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 &integrationdatabricksaccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuth {
 	ClientId: *string,
@@ -999,7 +999,7 @@ ClientId *string
 
 Client ID of the Databricks service principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#client_id IntegrationDatabricksAccount#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#client_id IntegrationDatabricksAccount#client_id}
 
 ---
 
@@ -1015,7 +1015,7 @@ Secret of the Databricks service principal.
 
 Generate it under User management > Service principals > Credentials & secrets in Databricks. This write-only value is not stored in Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#client_secret_wo IntegrationDatabricksAccount#client_secret_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#client_secret_wo IntegrationDatabricksAccount#client_secret_wo}
 
 ---
 
@@ -1029,7 +1029,7 @@ ClientSecretWoVersion *string
 
 Version trigger for client_secret_wo rotation. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#client_secret_wo_version IntegrationDatabricksAccount#client_secret_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#client_secret_wo_version IntegrationDatabricksAccount#client_secret_wo_version}
 
 ---
 
@@ -1043,7 +1043,7 @@ AuthType *string
 
 The authentication method type. Valid values are `databricks_oauth`. Defaults to `"databricks_oauth"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#auth_type IntegrationDatabricksAccount#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#auth_type IntegrationDatabricksAccount#auth_type}
 
 ---
 
@@ -1057,7 +1057,7 @@ AzureTenantId *string
 
 Microsoft Entra ID tenant of the service principal, for Azure Databricks workspaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#azure_tenant_id IntegrationDatabricksAccount#azure_tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#azure_tenant_id IntegrationDatabricksAccount#azure_tenant_id}
 
 ---
 
@@ -1066,7 +1066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountPrivateActionRunnerAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 &integrationdatabricksaccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountPrivateActionRunnerAuth {
 	ConnectionId: *string,
@@ -1097,7 +1097,7 @@ ConnectionId *string
 
 Unique identifier of the Private Action Runner connection holding the credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#connection_id IntegrationDatabricksAccount#connection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#connection_id IntegrationDatabricksAccount#connection_id}
 
 ---
 
@@ -1111,7 +1111,7 @@ UserUuid *string
 
 Unique identifier of the user the Private Action Runner connection belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#user_uuid IntegrationDatabricksAccount#user_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#user_uuid IntegrationDatabricksAccount#user_uuid}
 
 ---
 
@@ -1125,7 +1125,7 @@ AuthType *string
 
 The authentication method type. Valid values are `private_action_runner`. Defaults to `"private_action_runner"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#auth_type IntegrationDatabricksAccount#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#auth_type IntegrationDatabricksAccount#auth_type}
 
 ---
 
@@ -1139,7 +1139,7 @@ SecretPath *string
 
 Path of the credential inside the secret backend configured on the runner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#secret_path IntegrationDatabricksAccount#secret_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#secret_path IntegrationDatabricksAccount#secret_path}
 
 ---
 
@@ -1148,7 +1148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 &integrationdatabricksaccount.IntegrationDatabricksAccountConfig {
 	Connection: interface{},
@@ -1158,10 +1158,10 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdat
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Authentication: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationDatabricksAccount.IntegrationDatabricksAccountAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationDatabricksAccount.IntegrationDatabricksAccountAuthentication,
 	Name: *string,
-	Settings: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationDatabricksAccount.IntegrationDatabricksAccountSettings,
-	Dataflows: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationDatabricksAccount.IntegrationDatabricksAccountDataflows,
+	Settings: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationDatabricksAccount.IntegrationDatabricksAccountSettings,
+	Dataflows: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationDatabricksAccount.IntegrationDatabricksAccountDataflows,
 }
 ```
 
@@ -1265,7 +1265,7 @@ Authentication configured on the Databricks integration account.
 
 A `bearer_token` method indicates an account still on token authentication, which Databricks accepts only on accounts that already use it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#authentication IntegrationDatabricksAccount#authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#authentication IntegrationDatabricksAccount#authentication}
 
 ---
 
@@ -1279,7 +1279,7 @@ Name *string
 
 Human-readable name of the Databricks integration account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#name IntegrationDatabricksAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#name IntegrationDatabricksAccount#name}
 
 ---
 
@@ -1293,7 +1293,7 @@ Settings IntegrationDatabricksAccountSettings
 
 Settings configured on the Databricks integration account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#settings IntegrationDatabricksAccount#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#settings IntegrationDatabricksAccount#settings}
 
 ---
 
@@ -1307,7 +1307,7 @@ Dataflows IntegrationDatabricksAccountDataflows
 
 Data Datadog collects from Databricks, keyed by dataflow id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#dataflows IntegrationDatabricksAccount#dataflows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#dataflows IntegrationDatabricksAccount#dataflows}
 
 ---
 
@@ -1316,13 +1316,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflows.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 &integrationdatabricksaccount.IntegrationDatabricksAccountDataflows {
-	DatabricksCloudCostMetrics: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksCloudCostMetrics,
-	DatabricksDataObservabilityJobsMonitoring: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoring,
-	DatabricksDataObservabilityQualityMonitoring: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityQualityMonitoring,
-	DatabricksModelServingMetrics: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksModelServingMetrics,
+	DatabricksCloudCostMetrics: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksCloudCostMetrics,
+	DatabricksDataObservabilityJobsMonitoring: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoring,
+	DatabricksDataObservabilityQualityMonitoring: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityQualityMonitoring,
+	DatabricksModelServingMetrics: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksModelServingMetrics,
 }
 ```
 
@@ -1347,7 +1347,7 @@ DatabricksCloudCostMetrics IntegrationDatabricksAccountDataflowsDatabricksCloudC
 
 Cost data collected from your Databricks system tables. Requires [Cloud Cost Management](https://docs.datadoghq.com/cloud_cost_management/) to be set up for your organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#databricks_cloud_cost_metrics IntegrationDatabricksAccount#databricks_cloud_cost_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#databricks_cloud_cost_metrics IntegrationDatabricksAccount#databricks_cloud_cost_metrics}
 
 ---
 
@@ -1361,7 +1361,7 @@ DatabricksDataObservabilityJobsMonitoring IntegrationDatabricksAccountDataflowsD
 
 Data Jobs Monitoring, which collects performance, reliability, and cost data for your Databricks jobs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#databricks_data_observability_jobs_monitoring IntegrationDatabricksAccount#databricks_data_observability_jobs_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#databricks_data_observability_jobs_monitoring IntegrationDatabricksAccount#databricks_data_observability_jobs_monitoring}
 
 ---
 
@@ -1375,7 +1375,7 @@ DatabricksDataObservabilityQualityMonitoring IntegrationDatabricksAccountDataflo
 
 Data Observability, which collects lineage and data quality information from your Databricks catalogs so you can explore how data flows and detect, resolve, and prevent quality issues.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#databricks_data_observability_quality_monitoring IntegrationDatabricksAccount#databricks_data_observability_quality_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#databricks_data_observability_quality_monitoring IntegrationDatabricksAccount#databricks_data_observability_quality_monitoring}
 
 ---
 
@@ -1391,7 +1391,7 @@ Health and usage metrics for your Databricks model serving endpoints.
 
 Not supported on accounts that authenticate with `private_action_runner`; on those accounts this dataflow collects no data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#databricks_model_serving_metrics IntegrationDatabricksAccount#databricks_model_serving_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#databricks_model_serving_metrics IntegrationDatabricksAccount#databricks_model_serving_metrics}
 
 ---
 
@@ -1400,11 +1400,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksCloudCostMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 &integrationdatabricksaccount.IntegrationDatabricksAccountDataflowsDatabricksCloudCostMetrics {
 	Enabled: interface{},
-	Settings: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksCloudCostMetricsSettings,
+	Settings: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksCloudCostMetricsSettings,
 }
 ```
 
@@ -1427,7 +1427,7 @@ Enabled interface{}
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#enabled IntegrationDatabricksAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#enabled IntegrationDatabricksAccount#enabled}
 
 ---
 
@@ -1441,7 +1441,7 @@ Settings IntegrationDatabricksAccountDataflowsDatabricksCloudCostMetricsSettings
 
 Settings of the Cloud Cost Management dataflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#settings IntegrationDatabricksAccount#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#settings IntegrationDatabricksAccount#settings}
 
 ---
 
@@ -1450,7 +1450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksCloudCostMetricsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 &integrationdatabricksaccount.IntegrationDatabricksAccountDataflowsDatabricksCloudCostMetricsSettings {
 	CcmCollectAllWorkspaces: interface{},
@@ -1477,7 +1477,7 @@ Whether cost data is collected for every workspace in the Databricks account rat
 
 This takes effect across the Databricks account: if any one workspace enables it, Datadog collects cost data for all of them regardless of their individual settings, and every covered workspace incurs Cloud Cost Management charges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#ccm_collect_all_workspaces IntegrationDatabricksAccount#ccm_collect_all_workspaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#ccm_collect_all_workspaces IntegrationDatabricksAccount#ccm_collect_all_workspaces}
 
 ---
 
@@ -1486,11 +1486,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoring.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 &integrationdatabricksaccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoring {
 	Enabled: interface{},
-	Settings: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettings,
+	Settings: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettings,
 }
 ```
 
@@ -1513,7 +1513,7 @@ Enabled interface{}
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#enabled IntegrationDatabricksAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#enabled IntegrationDatabricksAccount#enabled}
 
 ---
 
@@ -1527,7 +1527,7 @@ Settings IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMon
 
 Settings of the Data Jobs Monitoring dataflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#settings IntegrationDatabricksAccount#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#settings IntegrationDatabricksAccount#settings}
 
 ---
 
@@ -1536,7 +1536,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 &integrationdatabricksaccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettings {
 	DdApiKeyId: *string,
@@ -1573,7 +1573,7 @@ DdApiKeyId *string
 
 ID of the Datadog API key the global init script uses to submit data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#dd_api_key_id IntegrationDatabricksAccount#dd_api_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#dd_api_key_id IntegrationDatabricksAccount#dd_api_key_id}
 
 ---
 
@@ -1587,7 +1587,7 @@ DdApiKeySecretWo *string
 
 Secret value of the Datadog API key identified by `dd_api_key_id`. This write-only value is not stored in Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#dd_api_key_secret_wo IntegrationDatabricksAccount#dd_api_key_secret_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#dd_api_key_secret_wo IntegrationDatabricksAccount#dd_api_key_secret_wo}
 
 ---
 
@@ -1601,7 +1601,7 @@ DdApiKeySecretWoVersion *string
 
 Version trigger for dd_api_key_secret_wo rotation. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#dd_api_key_secret_wo_version IntegrationDatabricksAccount#dd_api_key_secret_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#dd_api_key_secret_wo_version IntegrationDatabricksAccount#dd_api_key_secret_wo_version}
 
 ---
 
@@ -1617,7 +1617,7 @@ Whether Datadog installs and manages the Agent on your Databricks clusters throu
 
 The script does not apply to clusters in Standard access mode. When `false`, the Agent is installed manually.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#djm_global_init_script_enabled IntegrationDatabricksAccount#djm_global_init_script_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#djm_global_init_script_enabled IntegrationDatabricksAccount#djm_global_init_script_enabled}
 
 ---
 
@@ -1633,7 +1633,7 @@ Whether GPU metrics are collected from your Databricks clusters.
 
 The Agent installed by the global init script performs the collection, so this requires the dataflow to be enabled with `djm_global_init_script_enabled` set to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#script_gpum_enabled IntegrationDatabricksAccount#script_gpum_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#script_gpum_enabled IntegrationDatabricksAccount#script_gpum_enabled}
 
 ---
 
@@ -1649,7 +1649,7 @@ Whether driver and worker logs are collected from your Databricks clusters.
 
 The Agent installed by the global init script performs the collection, so this requires the dataflow to be enabled with `djm_global_init_script_enabled` set to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#script_logs_enabled IntegrationDatabricksAccount#script_logs_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#script_logs_enabled IntegrationDatabricksAccount#script_logs_enabled}
 
 ---
 
@@ -1665,7 +1665,7 @@ Whether health and cost data is collected for jobs running on Serverless or SQL 
 
 This compute has no clusters for the global init script to target, so collection reads the Databricks system tables and requires `system_tables_sql_warehouse_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#serverless_jobs_enabled IntegrationDatabricksAccount#serverless_jobs_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#serverless_jobs_enabled IntegrationDatabricksAccount#serverless_jobs_enabled}
 
 ---
 
@@ -1674,11 +1674,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityQualityMonitoring.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 &integrationdatabricksaccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityQualityMonitoring {
 	Enabled: interface{},
-	Settings: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityQualityMonitoringSettings,
+	Settings: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityQualityMonitoringSettings,
 }
 ```
 
@@ -1701,7 +1701,7 @@ Enabled interface{}
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#enabled IntegrationDatabricksAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#enabled IntegrationDatabricksAccount#enabled}
 
 ---
 
@@ -1715,7 +1715,7 @@ Settings IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityQuality
 
 Settings of the Data Observability dataflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#settings IntegrationDatabricksAccount#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#settings IntegrationDatabricksAccount#settings}
 
 ---
 
@@ -1724,7 +1724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityQualityMonitoringSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 &integrationdatabricksaccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityQualityMonitoringSettings {
 	DoCrawlersCron: *string,
@@ -1753,7 +1753,7 @@ Cron expression setting how often Datadog connects to your Databricks warehouse 
 
 Currently, only hourly (`0 * * * *`) and daily (`0 0 * * *`) are supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#do_crawlers_cron IntegrationDatabricksAccount#do_crawlers_cron}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#do_crawlers_cron IntegrationDatabricksAccount#do_crawlers_cron}
 
 ---
 
@@ -1767,7 +1767,7 @@ SyncSystemCatalog interface{}
 
 Whether metadata from the Databricks `system` catalog is included in Data Observability alongside your data catalogs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#sync_system_catalog IntegrationDatabricksAccount#sync_system_catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#sync_system_catalog IntegrationDatabricksAccount#sync_system_catalog}
 
 ---
 
@@ -1776,7 +1776,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksModelServingMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 &integrationdatabricksaccount.IntegrationDatabricksAccountDataflowsDatabricksModelServingMetrics {
 	Enabled: interface{},
@@ -1801,7 +1801,7 @@ Enabled interface{}
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#enabled IntegrationDatabricksAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#enabled IntegrationDatabricksAccount#enabled}
 
 ---
 
@@ -1810,7 +1810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 &integrationdatabricksaccount.IntegrationDatabricksAccountSettings {
 	WorkspaceUrl: *string,
@@ -1837,7 +1837,7 @@ WorkspaceUrl *string
 
 URL of the Databricks workspace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#workspace_url IntegrationDatabricksAccount#workspace_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#workspace_url IntegrationDatabricksAccount#workspace_url}
 
 ---
 
@@ -1851,7 +1851,7 @@ SystemTablesSqlWarehouseId *string
 
 ID of the SQL warehouse used to query the Databricks system tables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_databricks_account#system_tables_sql_warehouse_id IntegrationDatabricksAccount#system_tables_sql_warehouse_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#system_tables_sql_warehouse_id IntegrationDatabricksAccount#system_tables_sql_warehouse_id}
 
 ---
 
@@ -1862,7 +1862,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 integrationdatabricksaccount.NewIntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuthOutputReference
 ```
@@ -2200,7 +2200,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 integrationdatabricksaccount.NewIntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference
 ```
@@ -2575,7 +2575,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountPrivateActionRunnerAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 integrationdatabricksaccount.NewIntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountPrivateActionRunnerAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountPrivateActionRunnerAuthOutputReference
 ```
@@ -2926,7 +2926,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 integrationdatabricksaccount.NewIntegrationDatabricksAccountAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationDatabricksAccountAuthenticationOutputReference
 ```
@@ -3301,7 +3301,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksCloudCostMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 integrationdatabricksaccount.NewIntegrationDatabricksAccountDataflowsDatabricksCloudCostMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationDatabricksAccountDataflowsDatabricksCloudCostMetricsOutputReference
 ```
@@ -3621,7 +3621,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksCloudCostMetricsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 integrationdatabricksaccount.NewIntegrationDatabricksAccountDataflowsDatabricksCloudCostMetricsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationDatabricksAccountDataflowsDatabricksCloudCostMetricsSettingsOutputReference
 ```
@@ -3899,7 +3899,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 integrationdatabricksaccount.NewIntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringOutputReference
 ```
@@ -4219,7 +4219,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 integrationdatabricksaccount.NewIntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference
 ```
@@ -4673,7 +4673,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityQualityMonitoringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 integrationdatabricksaccount.NewIntegrationDatabricksAccountDataflowsDatabricksDataObservabilityQualityMonitoringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityQualityMonitoringOutputReference
 ```
@@ -4993,7 +4993,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityQualityMonitoringSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 integrationdatabricksaccount.NewIntegrationDatabricksAccountDataflowsDatabricksDataObservabilityQualityMonitoringSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityQualityMonitoringSettingsOutputReference
 ```
@@ -5300,7 +5300,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksModelServingMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 integrationdatabricksaccount.NewIntegrationDatabricksAccountDataflowsDatabricksModelServingMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationDatabricksAccountDataflowsDatabricksModelServingMetricsOutputReference
 ```
@@ -5578,7 +5578,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 integrationdatabricksaccount.NewIntegrationDatabricksAccountDataflowsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationDatabricksAccountDataflowsOutputReference
 ```
@@ -5995,7 +5995,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationdatabricksaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationdatabricksaccount"
 
 integrationdatabricksaccount.NewIntegrationDatabricksAccountSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationDatabricksAccountSettingsOutputReference
 ```

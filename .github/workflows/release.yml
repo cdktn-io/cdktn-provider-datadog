@@ -113,47 +113,6 @@ jobs:
           name: build-artifact
           path: dist
           overwrite: true
-  deprecate:
-    name: Deprecate the package in package managers if needed
-    needs:
-      - release
-      - release_npm
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-    if: github.event_name != 'workflow_dispatch'
-    steps:
-      - name: Checkout
-        id: checkout
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
-      - name: Setup pnpm
-        id: setup_pnpm
-        uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320
-        with:
-          version: 10.33.0
-      - name: Setup Node.js
-        id: setup_node_js
-        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
-        with:
-          node-version: 22.11.0
-      - name: Install
-        id: install
-        run: pnpm install --frozen-lockfile
-      - name: Check deprecation status
-        id: check_status
-        run: |-
-          IS_DEPRECATED=$(cat package.json | jq '(.cdktn // .cdktf).isDeprecated' -r)
-          echo "is_deprecated=$IS_DEPRECATED"
-          echo "is_deprecated=$IS_DEPRECATED" >> $GITHUB_OUTPUT
-      - name: Deprecate the package on NPM
-        id: deprecate_the_package_on_npm
-        if: steps.check_status.outputs.is_deprecated == 'true' || steps.check_status.outputs.is_deprecated == true
-        env:
-          NPM_REGISTRY: registry.npmjs.org
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |-
-          npm set "//$NPM_REGISTRY/:_authToken=$NPM_TOKEN"
-          npm deprecate @cdktn/provider-datadog "See https://cdktn.io/docs/concepts/providers#import-providers for details on how to continue to use the datadog provider in your CDK Terrain (cdktn) projects by generating the bindings locally."
   release_github:
     name: Publish to GitHub Releases
     needs: release
@@ -575,7 +534,7 @@ jobs:
         env:
           GIT_USER_NAME: team-cdk-terrain
           GIT_USER_EMAIL: github-team-cdk-terrain@cdktn.io
-          GITHUB_TOKEN: x-access-token:${{ steps.generate_token.outputs.token }}
+          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
           PUBLIB_DRYRUN: ${{ inputs.dry_run }}
         run: npx -p publib@latest publib-golang
       - name: Extract Version

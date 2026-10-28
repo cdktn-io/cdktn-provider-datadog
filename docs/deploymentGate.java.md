@@ -4,7 +4,7 @@
 
 ### DeploymentGate <a name="DeploymentGate" id="@cdktn/provider-datadog.deploymentGate.DeploymentGate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate datadog_deployment_gate}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate datadog_deployment_gate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.deploymentGate.DeploymentGate.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The target environment (example: dev).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#env DeploymentGate#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#env DeploymentGate#env}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The service name (example: transaction-backend).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#service DeploymentGate#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#service DeploymentGate#service}
 
 ---
 
@@ -134,7 +134,7 @@ Enable Dry Run to test gate behavior without impacting deployments.
 
 The evaluation of a dry run gate always responds with a pass status, but the in-app result is the real status based on rules evaluation. This is particularly useful when performing an initial evaluation of the gate behavior without impacting the deployment pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Unique name for multiple gates on the same service/environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#identifier DeploymentGate#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#identifier DeploymentGate#identifier}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#rule DeploymentGate#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#rule DeploymentGate#rule}
 
 ---
 
@@ -637,7 +637,7 @@ The construct id used in the generated config for the DeploymentGate to import.
 
 The id of the existing DeploymentGate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1097,7 +1097,7 @@ public java.lang.String getEnv();
 
 The target environment (example: dev).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#env DeploymentGate#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#env DeploymentGate#env}
 
 ---
 
@@ -1111,7 +1111,7 @@ public java.lang.String getService();
 
 The service name (example: transaction-backend).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#service DeploymentGate#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#service DeploymentGate#service}
 
 ---
 
@@ -1127,7 +1127,7 @@ Enable Dry Run to test gate behavior without impacting deployments.
 
 The evaluation of a dry run gate always responds with a pass status, but the in-app result is the real status based on rules evaluation. This is particularly useful when performing an initial evaluation of the gate behavior without impacting the deployment pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
 
 ---
 
@@ -1141,7 +1141,7 @@ public java.lang.String getIdentifier();
 
 Unique name for multiple gates on the same service/environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#identifier DeploymentGate#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#identifier DeploymentGate#identifier}
 
 ---
 
@@ -1155,7 +1155,7 @@ public IResolvable|java.util.List<DeploymentGateRule> getRule();
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#rule DeploymentGate#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#rule DeploymentGate#rule}
 
 ---
 
@@ -1195,7 +1195,7 @@ public java.lang.String getName();
 
 The rule name. Must be unique within the deployment gate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#name DeploymentGate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#name DeploymentGate#name}
 
 ---
 
@@ -1209,7 +1209,7 @@ public java.lang.String getType();
 
 The rule type (e.g., 'faulty_deployment_detection', 'monitor').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#type DeploymentGate#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#type DeploymentGate#type}
 
 ---
 
@@ -1223,7 +1223,7 @@ public java.lang.Boolean|IResolvable getDryRun();
 
 Whether the rule is in dry run mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
 
 ---
 
@@ -1237,7 +1237,7 @@ public DeploymentGateRuleOptions getOptions();
 
 options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#options DeploymentGate#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#options DeploymentGate#options}
 
 ---
 
@@ -1249,9 +1249,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 import io.cdktn.providers.datadog.deployment_gate.DeploymentGateRuleOptions;
 
 DeploymentGateRuleOptions.builder()
+//  .allowedResources(java.util.List<java.lang.String>)
 //  .duration(java.lang.Number)
 //  .excludedResources(java.util.List<java.lang.String>)
+//  .failOnNoData(java.lang.Boolean|IResolvable)
+//  .failOnNoGroupsFound(java.lang.Boolean|IResolvable)
+//  .monitorIds(IResolvable|java.util.List<DeploymentGateRuleOptionsMonitorIds>)
 //  .query(java.lang.String)
+//  .warmup(java.lang.Number)
     .build();
 ```
 
@@ -1259,9 +1264,28 @@ DeploymentGateRuleOptions.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.allowedResources">allowedResources</a></code> | <code>java.util.List<java.lang.String></code> | Resources to include in faulty deployment detection. Mutually exclusive with excluded_resources. |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.duration">duration</a></code> | <code>java.lang.Number</code> | The duration for the rule. |
-| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.excludedResources">excludedResources</a></code> | <code>java.util.List<java.lang.String></code> | Resources to exclude from faulty deployment detection. |
-| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.query">query</a></code> | <code>java.lang.String</code> | The query for monitor rules. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.excludedResources">excludedResources</a></code> | <code>java.util.List<java.lang.String></code> | Resources to exclude from faulty deployment detection. Mutually exclusive with allowed_resources. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.failOnNoData">failOnNoData</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Fail if a matching monitor group is in NO DATA state (API default: true). |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.failOnNoGroupsFound">failOnNoGroupsFound</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Fail if no monitor groups are found (API default: false). |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.monitorIds">monitorIds</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds">DeploymentGateRuleOptionsMonitorIds</a>></code> | Specific monitors to evaluate. Mutually exclusive with query. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.query">query</a></code> | <code>java.lang.String</code> | A query that selects the monitors to evaluate. Mutually exclusive with monitor_ids. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.warmup">warmup</a></code> | <code>java.lang.Number</code> | Seconds to wait after deployment starts before evaluating monitors (API default: 0). |
+
+---
+
+##### `allowedResources`<sup>Optional</sup> <a name="allowedResources" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.allowedResources"></a>
+
+```java
+public java.util.List<java.lang.String> getAllowedResources();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Resources to include in faulty deployment detection. Mutually exclusive with excluded_resources.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#allowed_resources DeploymentGate#allowed_resources}
 
 ---
 
@@ -1275,7 +1299,7 @@ public java.lang.Number getDuration();
 
 The duration for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#duration DeploymentGate#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#duration DeploymentGate#duration}
 
 ---
 
@@ -1287,9 +1311,51 @@ public java.util.List<java.lang.String> getExcludedResources();
 
 - *Type:* java.util.List<java.lang.String>
 
-Resources to exclude from faulty deployment detection.
+Resources to exclude from faulty deployment detection. Mutually exclusive with allowed_resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#excluded_resources DeploymentGate#excluded_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#excluded_resources DeploymentGate#excluded_resources}
+
+---
+
+##### `failOnNoData`<sup>Optional</sup> <a name="failOnNoData" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.failOnNoData"></a>
+
+```java
+public java.lang.Boolean|IResolvable getFailOnNoData();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Fail if a matching monitor group is in NO DATA state (API default: true).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#fail_on_no_data DeploymentGate#fail_on_no_data}
+
+---
+
+##### `failOnNoGroupsFound`<sup>Optional</sup> <a name="failOnNoGroupsFound" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.failOnNoGroupsFound"></a>
+
+```java
+public java.lang.Boolean|IResolvable getFailOnNoGroupsFound();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Fail if no monitor groups are found (API default: false).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#fail_on_no_groups_found DeploymentGate#fail_on_no_groups_found}
+
+---
+
+##### `monitorIds`<sup>Optional</sup> <a name="monitorIds" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.monitorIds"></a>
+
+```java
+public IResolvable|java.util.List<DeploymentGateRuleOptionsMonitorIds> getMonitorIds();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds">DeploymentGateRuleOptionsMonitorIds</a>>
+
+Specific monitors to evaluate. Mutually exclusive with query.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#monitor_ids DeploymentGate#monitor_ids}
 
 ---
 
@@ -1301,9 +1367,76 @@ public java.lang.String getQuery();
 
 - *Type:* java.lang.String
 
-The query for monitor rules.
+A query that selects the monitors to evaluate. Mutually exclusive with monitor_ids.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#query DeploymentGate#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#query DeploymentGate#query}
+
+---
+
+##### `warmup`<sup>Optional</sup> <a name="warmup" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.warmup"></a>
+
+```java
+public java.lang.Number getWarmup();
+```
+
+- *Type:* java.lang.Number
+
+Seconds to wait after deployment starts before evaluating monitors (API default: 0).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#warmup DeploymentGate#warmup}
+
+---
+
+### DeploymentGateRuleOptionsMonitorIds <a name="DeploymentGateRuleOptionsMonitorIds" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.deployment_gate.DeploymentGateRuleOptionsMonitorIds;
+
+DeploymentGateRuleOptionsMonitorIds.builder()
+    .groups(java.util.List<java.lang.String>)
+    .id(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds.property.groups">groups</a></code> | <code>java.util.List<java.lang.String></code> | Exact group names to evaluate; an empty list evaluates all groups. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds.property.id">id</a></code> | <code>java.lang.String</code> | The monitor's decimal ID. |
+
+---
+
+##### `groups`<sup>Required</sup> <a name="groups" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds.property.groups"></a>
+
+```java
+public java.util.List<java.lang.String> getGroups();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Exact group names to evaluate; an empty list evaluates all groups.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#groups DeploymentGate#groups}
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+The monitor's decimal ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#id DeploymentGate#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -1469,6 +1602,477 @@ public IResolvable|java.util.List<DeploymentGateRule> getInternalValue();
 ---
 
 
+### DeploymentGateRuleOptionsMonitorIdsList <a name="DeploymentGateRuleOptionsMonitorIdsList" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.deployment_gate.DeploymentGateRuleOptionsMonitorIdsList;
+
+new DeploymentGateRuleOptionsMonitorIdsList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.get"></a>
+
+```java
+public DeploymentGateRuleOptionsMonitorIdsOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds">DeploymentGateRuleOptionsMonitorIds</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<DeploymentGateRuleOptionsMonitorIds> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds">DeploymentGateRuleOptionsMonitorIds</a>>
+
+---
+
+
+### DeploymentGateRuleOptionsMonitorIdsOutputReference <a name="DeploymentGateRuleOptionsMonitorIdsOutputReference" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.deployment_gate.DeploymentGateRuleOptionsMonitorIdsOutputReference;
+
+new DeploymentGateRuleOptionsMonitorIdsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.groupsInput">groupsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.groups">groups</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds">DeploymentGateRuleOptionsMonitorIds</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `groupsInput`<sup>Optional</sup> <a name="groupsInput" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.groupsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getGroupsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.idInput"></a>
+
+```java
+public java.lang.String getIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `groups`<sup>Required</sup> <a name="groups" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.groups"></a>
+
+```java
+public java.util.List<java.lang.String> getGroups();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|DeploymentGateRuleOptionsMonitorIds getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds">DeploymentGateRuleOptionsMonitorIds</a>
+
+---
+
+
 ### DeploymentGateRuleOptionsOutputReference <a name="DeploymentGateRuleOptionsOutputReference" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.Initializer"></a>
@@ -1519,9 +2123,15 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.putMonitorIds">putMonitorIds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetAllowedResources">resetAllowedResources</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetDuration">resetDuration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetExcludedResources">resetExcludedResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetFailOnNoData">resetFailOnNoData</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetFailOnNoGroupsFound">resetFailOnNoGroupsFound</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetMonitorIds">resetMonitorIds</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetQuery">resetQuery</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetWarmup">resetWarmup</a></code> | *No description.* |
 
 ---
 
@@ -1675,6 +2285,24 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putMonitorIds` <a name="putMonitorIds" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.putMonitorIds"></a>
+
+```java
+public void putMonitorIds(IResolvable|java.util.List<DeploymentGateRuleOptionsMonitorIds> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.putMonitorIds.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds">DeploymentGateRuleOptionsMonitorIds</a>>
+
+---
+
+##### `resetAllowedResources` <a name="resetAllowedResources" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetAllowedResources"></a>
+
+```java
+public void resetAllowedResources()
+```
+
 ##### `resetDuration` <a name="resetDuration" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetDuration"></a>
 
 ```java
@@ -1687,10 +2315,34 @@ public void resetDuration()
 public void resetExcludedResources()
 ```
 
+##### `resetFailOnNoData` <a name="resetFailOnNoData" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetFailOnNoData"></a>
+
+```java
+public void resetFailOnNoData()
+```
+
+##### `resetFailOnNoGroupsFound` <a name="resetFailOnNoGroupsFound" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetFailOnNoGroupsFound"></a>
+
+```java
+public void resetFailOnNoGroupsFound()
+```
+
+##### `resetMonitorIds` <a name="resetMonitorIds" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetMonitorIds"></a>
+
+```java
+public void resetMonitorIds()
+```
+
 ##### `resetQuery` <a name="resetQuery" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetQuery"></a>
 
 ```java
 public void resetQuery()
+```
+
+##### `resetWarmup` <a name="resetWarmup" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetWarmup"></a>
+
+```java
+public void resetWarmup()
 ```
 
 
@@ -1700,12 +2352,22 @@ public void resetQuery()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.monitorIds">monitorIds</a></code> | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList">DeploymentGateRuleOptionsMonitorIdsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.allowedResourcesInput">allowedResourcesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.durationInput">durationInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.excludedResourcesInput">excludedResourcesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.failOnNoDataInput">failOnNoDataInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.failOnNoGroupsFoundInput">failOnNoGroupsFoundInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.monitorIdsInput">monitorIdsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds">DeploymentGateRuleOptionsMonitorIds</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.queryInput">queryInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.warmupInput">warmupInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.allowedResources">allowedResources</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.duration">duration</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.excludedResources">excludedResources</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.failOnNoData">failOnNoData</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.failOnNoGroupsFound">failOnNoGroupsFound</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.query">query</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.warmup">warmup</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions">DeploymentGateRuleOptions</a></code> | *No description.* |
 
 ---
@@ -1734,6 +2396,26 @@ public java.lang.String getFqn();
 
 ---
 
+##### `monitorIds`<sup>Required</sup> <a name="monitorIds" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.monitorIds"></a>
+
+```java
+public DeploymentGateRuleOptionsMonitorIdsList getMonitorIds();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList">DeploymentGateRuleOptionsMonitorIdsList</a>
+
+---
+
+##### `allowedResourcesInput`<sup>Optional</sup> <a name="allowedResourcesInput" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.allowedResourcesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getAllowedResourcesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `durationInput`<sup>Optional</sup> <a name="durationInput" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.durationInput"></a>
 
 ```java
@@ -1754,6 +2436,36 @@ public java.util.List<java.lang.String> getExcludedResourcesInput();
 
 ---
 
+##### `failOnNoDataInput`<sup>Optional</sup> <a name="failOnNoDataInput" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.failOnNoDataInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getFailOnNoDataInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `failOnNoGroupsFoundInput`<sup>Optional</sup> <a name="failOnNoGroupsFoundInput" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.failOnNoGroupsFoundInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getFailOnNoGroupsFoundInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `monitorIdsInput`<sup>Optional</sup> <a name="monitorIdsInput" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.monitorIdsInput"></a>
+
+```java
+public IResolvable|java.util.List<DeploymentGateRuleOptionsMonitorIds> getMonitorIdsInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds">DeploymentGateRuleOptionsMonitorIds</a>>
+
+---
+
 ##### `queryInput`<sup>Optional</sup> <a name="queryInput" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.queryInput"></a>
 
 ```java
@@ -1761,6 +2473,26 @@ public java.lang.String getQueryInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `warmupInput`<sup>Optional</sup> <a name="warmupInput" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.warmupInput"></a>
+
+```java
+public java.lang.Number getWarmupInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `allowedResources`<sup>Required</sup> <a name="allowedResources" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.allowedResources"></a>
+
+```java
+public java.util.List<java.lang.String> getAllowedResources();
+```
+
+- *Type:* java.util.List<java.lang.String>
 
 ---
 
@@ -1784,6 +2516,26 @@ public java.util.List<java.lang.String> getExcludedResources();
 
 ---
 
+##### `failOnNoData`<sup>Required</sup> <a name="failOnNoData" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.failOnNoData"></a>
+
+```java
+public java.lang.Boolean|IResolvable getFailOnNoData();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `failOnNoGroupsFound`<sup>Required</sup> <a name="failOnNoGroupsFound" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.failOnNoGroupsFound"></a>
+
+```java
+public java.lang.Boolean|IResolvable getFailOnNoGroupsFound();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `query`<sup>Required</sup> <a name="query" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.query"></a>
 
 ```java
@@ -1791,6 +2543,16 @@ public java.lang.String getQuery();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `warmup`<sup>Required</sup> <a name="warmup" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.warmup"></a>
+
+```java
+public java.lang.Number getWarmup();
+```
+
+- *Type:* java.lang.Number
 
 ---
 

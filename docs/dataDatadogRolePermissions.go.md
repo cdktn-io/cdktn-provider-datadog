@@ -4,12 +4,12 @@
 
 ### DataDatadogRolePermissions <a name="DataDatadogRolePermissions" id="@cdktn/provider-datadog.dataDatadogRolePermissions.DataDatadogRolePermissions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/role_permissions datadog_role_permissions}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/role_permissions datadog_role_permissions}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogRolePermissions.DataDatadogRolePermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogrolepermissions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogrolepermissions"
 
 datadatadogrolepermissions.NewDataDatadogRolePermissions(scope Construct, id *string, config DataDatadogRolePermissionsConfig) DataDatadogRolePermissions
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogRolePermissions.DataDatadogRolePermissions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogrolepermissions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogrolepermissions"
 
 datadatadogrolepermissions.DataDatadogRolePermissions_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogRolePermissions.DataDatadogRolePermissions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogrolepermissions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogrolepermissions"
 
 datadatadogrolepermissions.DataDatadogRolePermissions_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadogrolepermissions.DataDatadogRolePermissions_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogRolePermissions.DataDatadogRolePermissions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogrolepermissions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogrolepermissions"
 
 datadatadogrolepermissions.DataDatadogRolePermissions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogrolepermissions.DataDatadogRolePermissions_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogRolePermissions.DataDatadogRolePermissions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogrolepermissions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogrolepermissions"
 
 datadatadogrolepermissions.DataDatadogRolePermissions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatadogRolePermissions
 
 The id of the existing DataDatadogRolePermissions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/role_permissions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/role_permissions#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogRolePermissions.DataDatadogRolePermissionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogrolepermissions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogrolepermissions"
 
 &datadatadogrolepermissions.DataDatadogRolePermissionsConfig {
 	Connection: interface{},
@@ -718,7 +718,7 @@ RoleId *string
 
 The role's identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/role_permissions#role_id DataDatadogRolePermissions#role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/role_permissions#role_id DataDatadogRolePermissions#role_id}
 
 ---
 
@@ -727,7 +727,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogRolePermissions.DataDatadogRolePermissionsPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogrolepermissions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogrolepermissions"
 
 &datadatadogrolepermissions.DataDatadogRolePermissionsPermissions {
 
@@ -742,7 +742,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogrol
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogRolePermissions.DataDatadogRolePermissionsPermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogrolepermissions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogrolepermissions"
 
 datadatadogrolepermissions.NewDataDatadogRolePermissionsPermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogRolePermissionsPermissionsList
 ```
@@ -891,7 +891,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogRolePermissions.DataDatadogRolePermissionsPermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogrolepermissions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogrolepermissions"
 
 datadatadogrolepermissions.NewDataDatadogRolePermissionsPermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogRolePermissionsPermissionsOutputReference
 ```

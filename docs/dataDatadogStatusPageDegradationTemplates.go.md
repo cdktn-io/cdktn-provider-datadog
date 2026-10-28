@@ -4,12 +4,12 @@
 
 ### DataDatadogStatusPageDegradationTemplates <a name="DataDatadogStatusPageDegradationTemplates" id="@cdktn/provider-datadog.dataDatadogStatusPageDegradationTemplates.DataDatadogStatusPageDegradationTemplates"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_degradation_templates datadog_status_page_degradation_templates}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_degradation_templates datadog_status_page_degradation_templates}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogStatusPageDegradationTemplates.DataDatadogStatusPageDegradationTemplates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagedegradationtemplates"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagedegradationtemplates"
 
 datadatadogstatuspagedegradationtemplates.NewDataDatadogStatusPageDegradationTemplates(scope Construct, id *string, config DataDatadogStatusPageDegradationTemplatesConfig) DataDatadogStatusPageDegradationTemplates
 ```
@@ -305,7 +305,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogStatusPageDegradationTemplates.DataDatadogStatusPageDegradationTemplates.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagedegradationtemplates"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagedegradationtemplates"
 
 datadatadogstatuspagedegradationtemplates.DataDatadogStatusPageDegradationTemplates_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogStatusPageDegradationTemplates.DataDatadogStatusPageDegradationTemplates.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagedegradationtemplates"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagedegradationtemplates"
 
 datadatadogstatuspagedegradationtemplates.DataDatadogStatusPageDegradationTemplates_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datadatadogstatuspagedegradationtemplates.DataDatadogStatusPageDegradationTempla
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogStatusPageDegradationTemplates.DataDatadogStatusPageDegradationTemplates.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagedegradationtemplates"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagedegradationtemplates"
 
 datadatadogstatuspagedegradationtemplates.DataDatadogStatusPageDegradationTemplates_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datadatadogstatuspagedegradationtemplates.DataDatadogStatusPageDegradationTempla
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogStatusPageDegradationTemplates.DataDatadogStatusPageDegradationTemplates.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagedegradationtemplates"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagedegradationtemplates"
 
 datadatadogstatuspagedegradationtemplates.DataDatadogStatusPageDegradationTemplates_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataDatadogStatusPageDegra
 
 The id of the existing DataDatadogStatusPageDegradationTemplates that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_degradation_templates#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_degradation_templates#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogStatusPageDegradationTemplates.DataDatadogStatusPageDegradationTemplatesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagedegradationtemplates"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagedegradationtemplates"
 
 &datadatadogstatuspagedegradationtemplates.DataDatadogStatusPageDegradationTemplatesConfig {
 	Connection: interface{},
@@ -749,7 +749,7 @@ PageId *string
 
 The ID of the status page whose degradation templates to list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_degradation_templates#page_id DataDatadogStatusPageDegradationTemplates#page_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_degradation_templates#page_id DataDatadogStatusPageDegradationTemplates#page_id}
 
 ---
 
@@ -763,7 +763,7 @@ Name *string
 
 Filter the results to templates with this exact name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_degradation_templates#name DataDatadogStatusPageDegradationTemplates#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_degradation_templates#name DataDatadogStatusPageDegradationTemplates#name}
 
 ---
 
@@ -772,7 +772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogStatusPageDegradationTemplates.DataDatadogStatusPageDegradationTemplatesDegradationTemplates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagedegradationtemplates"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagedegradationtemplates"
 
 &datadatadogstatuspagedegradationtemplates.DataDatadogStatusPageDegradationTemplatesDegradationTemplates {
 
@@ -787,7 +787,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsta
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogStatusPageDegradationTemplates.DataDatadogStatusPageDegradationTemplatesDegradationTemplatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagedegradationtemplates"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagedegradationtemplates"
 
 datadatadogstatuspagedegradationtemplates.NewDataDatadogStatusPageDegradationTemplatesDegradationTemplatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogStatusPageDegradationTemplatesDegradationTemplatesList
 ```
@@ -936,7 +936,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogStatusPageDegradationTemplates.DataDatadogStatusPageDegradationTemplatesDegradationTemplatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagedegradationtemplates"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagedegradationtemplates"
 
 datadatadogstatuspagedegradationtemplates.NewDataDatadogStatusPageDegradationTemplatesDegradationTemplatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogStatusPageDegradationTemplatesDegradationTemplatesOutputReference
 ```

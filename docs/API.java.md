@@ -207,6 +207,8 @@ The following submodules are available:
 - [rumApplication](./rumApplication.java.md)
 - [rumExclusionFilter](./rumExclusionFilter.java.md)
 - [rumMetric](./rumMetric.java.md)
+- [rumOperation](./rumOperation.java.md)
+- [rumOperationJourneyLink](./rumOperationJourneyLink.java.md)
 - [rumRetentionFilter](./rumRetentionFilter.java.md)
 - [rumRetentionFiltersOrder](./rumRetentionFiltersOrder.java.md)
 - [rumRetentionQuota](./rumRetentionQuota.java.md)

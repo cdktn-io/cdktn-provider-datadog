@@ -4,12 +4,12 @@
 
 ### OrgGroupPolicyOverride <a name="OrgGroupPolicyOverride" id="@cdktn/provider-datadog.orgGroupPolicyOverride.OrgGroupPolicyOverride"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/org_group_policy_override datadog_org_group_policy_override}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/org_group_policy_override datadog_org_group_policy_override}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.orgGroupPolicyOverride.OrgGroupPolicyOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/orggrouppolicyoverride"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/orggrouppolicyoverride"
 
 orggrouppolicyoverride.NewOrgGroupPolicyOverride(scope Construct, id *string, config OrgGroupPolicyOverrideConfig) OrgGroupPolicyOverride
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.orgGroupPolicyOverride.OrgGroupPolicyOverride.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/orggrouppolicyoverride"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/orggrouppolicyoverride"
 
 orggrouppolicyoverride.OrgGroupPolicyOverride_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.orgGroupPolicyOverride.OrgGroupPolicyOverride.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/orggrouppolicyoverride"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/orggrouppolicyoverride"
 
 orggrouppolicyoverride.OrgGroupPolicyOverride_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ orggrouppolicyoverride.OrgGroupPolicyOverride_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.orgGroupPolicyOverride.OrgGroupPolicyOverride.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/orggrouppolicyoverride"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/orggrouppolicyoverride"
 
 orggrouppolicyoverride.OrgGroupPolicyOverride_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ orggrouppolicyoverride.OrgGroupPolicyOverride_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.orgGroupPolicyOverride.OrgGroupPolicyOverride.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/orggrouppolicyoverride"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/orggrouppolicyoverride"
 
 orggrouppolicyoverride.OrgGroupPolicyOverride_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the OrgGroupPolicyOverride to 
 
 The id of the existing OrgGroupPolicyOverride that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/org_group_policy_override#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/org_group_policy_override#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -799,7 +799,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.orgGroupPolicyOverride.OrgGroupPolicyOverrideConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/orggrouppolicyoverride"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/orggrouppolicyoverride"
 
 &orggrouppolicyoverride.OrgGroupPolicyOverrideConfig {
 	Connection: interface{},
@@ -914,7 +914,7 @@ OrgGroupId *string
 
 The UUID of the org group that owns the policy. Must be a valid UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/org_group_policy_override#org_group_id OrgGroupPolicyOverride#org_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/org_group_policy_override#org_group_id OrgGroupPolicyOverride#org_group_id}
 
 ---
 
@@ -928,7 +928,7 @@ OrgSite *string
 
 The short site name of the organization (e.g., `us1`, `eu1`, `us1-fed`). Part of the override's server-side identity; changing it replaces the resource. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/org_group_policy_override#org_site OrgGroupPolicyOverride#org_site}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/org_group_policy_override#org_site OrgGroupPolicyOverride#org_site}
 
 ---
 
@@ -942,7 +942,7 @@ OrgUuid *string
 
 The UUID of the organization being exempted from the policy. Must be a valid UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/org_group_policy_override#org_uuid OrgGroupPolicyOverride#org_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/org_group_policy_override#org_uuid OrgGroupPolicyOverride#org_uuid}
 
 ---
 
@@ -956,7 +956,7 @@ PolicyId *string
 
 The UUID of the org group policy the override applies to. Must be a valid UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/org_group_policy_override#policy_id OrgGroupPolicyOverride#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/org_group_policy_override#policy_id OrgGroupPolicyOverride#policy_id}
 
 ---
 

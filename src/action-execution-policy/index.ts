@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy
+// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface ActionExecutionPolicyConfig extends cdktn.TerraformMetaArgument
   /**
   * Whether the policy allows or denies the matched actions. Valid values are `allow`, `deny`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#effect ActionExecutionPolicy#effect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#effect ActionExecutionPolicy#effect}
   */
   readonly effect: string;
   /**
   * The name of the execution policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#name ActionExecutionPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#name ActionExecutionPolicy#name}
   */
   readonly name: string;
   /**
   * action_pattern block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#action_pattern ActionExecutionPolicy#action_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#action_pattern ActionExecutionPolicy#action_pattern}
   */
   readonly actionPattern: ActionExecutionPolicyActionPattern;
   /**
   * scope block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#scope ActionExecutionPolicy#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#scope ActionExecutionPolicy#scope}
   */
   readonly scope?: ActionExecutionPolicyScope;
   /**
   * target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#target ActionExecutionPolicy#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#target ActionExecutionPolicy#target}
   */
   readonly target?: ActionExecutionPolicyTarget[] | cdktn.IResolvable;
 }
@@ -47,13 +47,13 @@ export interface ActionExecutionPolicyActionPattern {
   /**
   * The fully qualified action names this policy matches. Use `*` to match all actions of the integration, or a fully qualified name prefixed with the integration's action namespace (for example `com.datadoghq.script.*` for the Script integration).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#action_fqns ActionExecutionPolicy#action_fqns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#action_fqns ActionExecutionPolicy#action_fqns}
   */
   readonly actionFqns: string[];
   /**
   * The integration the actions belong to. Valid values are `INTEGRATION_KUBERNETES`, `INTEGRATION_SCRIPT`, `INTEGRATION_REMOTE_ACTION`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#integration ActionExecutionPolicy#integration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#integration ActionExecutionPolicy#integration}
   */
   readonly integration: string;
 }
@@ -172,7 +172,7 @@ export interface ActionExecutionPolicyScopeKubernetesRule {
   /**
   * The Kubernetes namespaces this rule applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#target_namespaces ActionExecutionPolicy#target_namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#target_namespaces ActionExecutionPolicy#target_namespaces}
   */
   readonly targetNamespaces: string[];
 }
@@ -287,7 +287,7 @@ export interface ActionExecutionPolicyScopeKubernetes {
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
   */
   readonly rule?: ActionExecutionPolicyScopeKubernetesRule[] | cdktn.IResolvable;
 }
@@ -383,13 +383,13 @@ export interface ActionExecutionPolicyScopeRemoteActionRshellRule {
   /**
   * The level of remote shell access granted for the target paths. Valid values are `read_only`, `read_write`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#access ActionExecutionPolicy#access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#access ActionExecutionPolicy#access}
   */
   readonly access: string;
   /**
   * The filesystem paths this rule applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#target_paths ActionExecutionPolicy#target_paths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#target_paths ActionExecutionPolicy#target_paths}
   */
   readonly targetPaths: string[];
 }
@@ -530,7 +530,7 @@ export interface ActionExecutionPolicyScopeRemoteActionRshell {
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
   */
   readonly rule?: ActionExecutionPolicyScopeRemoteActionRshellRule[] | cdktn.IResolvable;
 }
@@ -626,7 +626,7 @@ export interface ActionExecutionPolicyScopeScriptsRule {
   /**
   * The script names this rule applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#target_script_names ActionExecutionPolicy#target_script_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#target_script_names ActionExecutionPolicy#target_script_names}
   */
   readonly targetScriptNames: string[];
 }
@@ -741,7 +741,7 @@ export interface ActionExecutionPolicyScopeScripts {
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
   */
   readonly rule?: ActionExecutionPolicyScopeScriptsRule[] | cdktn.IResolvable;
 }
@@ -837,19 +837,19 @@ export interface ActionExecutionPolicyScope {
   /**
   * kubernetes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#kubernetes ActionExecutionPolicy#kubernetes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#kubernetes ActionExecutionPolicy#kubernetes}
   */
   readonly kubernetes?: ActionExecutionPolicyScopeKubernetes;
   /**
   * remote_action_rshell block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#remote_action_rshell ActionExecutionPolicy#remote_action_rshell}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#remote_action_rshell ActionExecutionPolicy#remote_action_rshell}
   */
   readonly remoteActionRshell?: ActionExecutionPolicyScopeRemoteActionRshell;
   /**
   * scripts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#scripts ActionExecutionPolicy#scripts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#scripts ActionExecutionPolicy#scripts}
   */
   readonly scripts?: ActionExecutionPolicyScopeScripts;
 }
@@ -1003,13 +1003,13 @@ export interface ActionExecutionPolicyTarget {
   /**
   * The Agent tags identifying the target, for example `env:prod`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#agent_tags ActionExecutionPolicy#agent_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#agent_tags ActionExecutionPolicy#agent_tags}
   */
   readonly agentTags: string[];
   /**
   * A human-readable name for the target.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#name ActionExecutionPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#name ActionExecutionPolicy#name}
   */
   readonly name?: string;
 }
@@ -1151,7 +1151,7 @@ export class ActionExecutionPolicyTargetList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy datadog_action_execution_policy}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy datadog_action_execution_policy}
 */
 export class ActionExecutionPolicy extends cdktn.TerraformResource {
 
@@ -1167,7 +1167,7 @@ export class ActionExecutionPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ActionExecutionPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ActionExecutionPolicy to import
-  * @param importFromId The id of the existing ActionExecutionPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ActionExecutionPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ActionExecutionPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1179,7 +1179,7 @@ export class ActionExecutionPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy datadog_action_execution_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy datadog_action_execution_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1190,7 +1190,7 @@ export class ActionExecutionPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_action_execution_policy',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.25.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

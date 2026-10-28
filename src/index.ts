@@ -113,6 +113,8 @@ export * as role from './role/index';
 export * as rumApplication from './rum-application/index';
 export * as rumExclusionFilter from './rum-exclusion-filter/index';
 export * as rumMetric from './rum-metric/index';
+export * as rumOperation from './rum-operation/index';
+export * as rumOperationJourneyLink from './rum-operation-journey-link/index';
 export * as rumRetentionFilter from './rum-retention-filter/index';
 export * as rumRetentionFiltersOrder from './rum-retention-filters-order/index';
 export * as rumRetentionQuota from './rum-retention-quota/index';

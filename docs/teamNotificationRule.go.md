@@ -4,12 +4,12 @@
 
 ### TeamNotificationRule <a name="TeamNotificationRule" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule datadog_team_notification_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule datadog_team_notification_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/teamnotificationrule"
 
 teamnotificationrule.NewTeamNotificationRule(scope Construct, id *string, config TeamNotificationRuleConfig) TeamNotificationRule
 ```
@@ -77,10 +77,12 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.putEmail">PutEmail</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.putMsTeams">PutMsTeams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.putPagerduty">PutPagerduty</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.putServicenow">PutServicenow</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.putSlack">PutSlack</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.resetEmail">ResetEmail</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.resetMsTeams">ResetMsTeams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.resetPagerduty">ResetPagerduty</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.resetServicenow">ResetServicenow</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.resetSlack">ResetSlack</a></code> | *No description.* |
 
 ---
@@ -430,6 +432,18 @@ func PutPagerduty(value TeamNotificationRulePagerduty)
 
 ---
 
+##### `PutServicenow` <a name="PutServicenow" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.putServicenow"></a>
+
+```go
+func PutServicenow(value TeamNotificationRuleServicenow)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.putServicenow.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenow">TeamNotificationRuleServicenow</a>
+
+---
+
 ##### `PutSlack` <a name="PutSlack" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.putSlack"></a>
 
 ```go
@@ -460,6 +474,12 @@ func ResetMsTeams()
 func ResetPagerduty()
 ```
 
+##### `ResetServicenow` <a name="ResetServicenow" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.resetServicenow"></a>
+
+```go
+func ResetServicenow()
+```
+
 ##### `ResetSlack` <a name="ResetSlack" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.resetSlack"></a>
 
 ```go
@@ -480,7 +500,7 @@ func ResetSlack()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/teamnotificationrule"
 
 teamnotificationrule.TeamNotificationRule_IsConstruct(x interface{}) *bool
 ```
@@ -512,7 +532,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/teamnotificationrule"
 
 teamnotificationrule.TeamNotificationRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -526,7 +546,7 @@ teamnotificationrule.TeamNotificationRule_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/teamnotificationrule"
 
 teamnotificationrule.TeamNotificationRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -540,7 +560,7 @@ teamnotificationrule.TeamNotificationRule_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/teamnotificationrule"
 
 teamnotificationrule.TeamNotificationRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -569,7 +589,7 @@ The construct id used in the generated config for the TeamNotificationRule to im
 
 The id of the existing TeamNotificationRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -603,10 +623,12 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.msTeams">MsTeams</a></code> | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleMsTeamsOutputReference">TeamNotificationRuleMsTeamsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.pagerduty">Pagerduty</a></code> | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRulePagerdutyOutputReference">TeamNotificationRulePagerdutyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.servicenow">Servicenow</a></code> | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference">TeamNotificationRuleServicenowOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.slack">Slack</a></code> | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleSlackOutputReference">TeamNotificationRuleSlackOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.emailInput">EmailInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.msTeamsInput">MsTeamsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.pagerdutyInput">PagerdutyInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.servicenowInput">ServicenowInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.slackInput">SlackInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.teamIdInput">TeamIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.teamId">TeamId</a></code> | <code>*string</code> | *No description.* |
@@ -795,6 +817,16 @@ func Pagerduty() TeamNotificationRulePagerdutyOutputReference
 
 ---
 
+##### `Servicenow`<sup>Required</sup> <a name="Servicenow" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.servicenow"></a>
+
+```go
+func Servicenow() TeamNotificationRuleServicenowOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference">TeamNotificationRuleServicenowOutputReference</a>
+
+---
+
 ##### `Slack`<sup>Required</sup> <a name="Slack" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.slack"></a>
 
 ```go
@@ -829,6 +861,16 @@ func MsTeamsInput() interface{}
 
 ```go
 func PagerdutyInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `ServicenowInput`<sup>Optional</sup> <a name="ServicenowInput" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.property.servicenowInput"></a>
+
+```go
+func ServicenowInput() interface{}
 ```
 
 - *Type:* interface{}
@@ -890,7 +932,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/teamnotificationrule"
 
 &teamnotificationrule.TeamNotificationRuleConfig {
 	Connection: interface{},
@@ -901,10 +943,11 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamnotificati
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	TeamId: *string,
-	Email: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.teamNotificationRule.TeamNotificationRuleEmail,
-	MsTeams: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.teamNotificationRule.TeamNotificationRuleMsTeams,
-	Pagerduty: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.teamNotificationRule.TeamNotificationRulePagerduty,
-	Slack: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.teamNotificationRule.TeamNotificationRuleSlack,
+	Email: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.teamNotificationRule.TeamNotificationRuleEmail,
+	MsTeams: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.teamNotificationRule.TeamNotificationRuleMsTeams,
+	Pagerduty: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.teamNotificationRule.TeamNotificationRulePagerduty,
+	Servicenow: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.teamNotificationRule.TeamNotificationRuleServicenow,
+	Slack: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.teamNotificationRule.TeamNotificationRuleSlack,
 }
 ```
 
@@ -923,6 +966,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamnotificati
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleConfig.property.email">Email</a></code> | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmail">TeamNotificationRuleEmail</a></code> | email block. |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleConfig.property.msTeams">MsTeams</a></code> | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleMsTeams">TeamNotificationRuleMsTeams</a></code> | ms_teams block. |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleConfig.property.pagerduty">Pagerduty</a></code> | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRulePagerduty">TeamNotificationRulePagerduty</a></code> | pagerduty block. |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleConfig.property.servicenow">Servicenow</a></code> | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenow">TeamNotificationRuleServicenow</a></code> | servicenow block. |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleConfig.property.slack">Slack</a></code> | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleSlack">TeamNotificationRuleSlack</a></code> | slack block. |
 
 ---
@@ -1007,7 +1051,7 @@ TeamId *string
 
 The ID of the team that this notification rule belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#team_id TeamNotificationRule#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#team_id TeamNotificationRule#team_id}
 
 ---
 
@@ -1021,7 +1065,7 @@ Email TeamNotificationRuleEmail
 
 email block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#email TeamNotificationRule#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#email TeamNotificationRule#email}
 
 ---
 
@@ -1035,7 +1079,7 @@ MsTeams TeamNotificationRuleMsTeams
 
 ms_teams block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#ms_teams TeamNotificationRule#ms_teams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#ms_teams TeamNotificationRule#ms_teams}
 
 ---
 
@@ -1049,7 +1093,21 @@ Pagerduty TeamNotificationRulePagerduty
 
 pagerduty block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#pagerduty TeamNotificationRule#pagerduty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#pagerduty TeamNotificationRule#pagerduty}
+
+---
+
+##### `Servicenow`<sup>Optional</sup> <a name="Servicenow" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleConfig.property.servicenow"></a>
+
+```go
+Servicenow TeamNotificationRuleServicenow
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenow">TeamNotificationRuleServicenow</a>
+
+servicenow block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#servicenow TeamNotificationRule#servicenow}
 
 ---
 
@@ -1063,7 +1121,7 @@ Slack TeamNotificationRuleSlack
 
 slack block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#slack TeamNotificationRule#slack}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#slack TeamNotificationRule#slack}
 
 ---
 
@@ -1072,10 +1130,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/teamnotificationrule"
 
 &teamnotificationrule.TeamNotificationRuleEmail {
 	Enabled: interface{},
+	RecipientEmail: *string,
 }
 ```
 
@@ -1084,6 +1143,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamnotificati
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmail.property.enabled">Enabled</a></code> | <code>interface{}</code> | Whether to send email notifications to team members when alerts are triggered. |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmail.property.recipientEmail">RecipientEmail</a></code> | <code>*string</code> | A single email address to send notifications to instead of all team members. |
 
 ---
 
@@ -1097,7 +1157,23 @@ Enabled interface{}
 
 Whether to send email notifications to team members when alerts are triggered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#enabled TeamNotificationRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#enabled TeamNotificationRule#enabled}
+
+---
+
+##### `RecipientEmail`<sup>Optional</sup> <a name="RecipientEmail" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmail.property.recipientEmail"></a>
+
+```go
+RecipientEmail *string
+```
+
+- *Type:* *string
+
+A single email address to send notifications to instead of all team members.
+
+Requires `enabled` to be `true`. When omitted, notifications are sent to all team members.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#recipient_email TeamNotificationRule#recipient_email}
 
 ---
 
@@ -1106,7 +1182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleMsTeams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/teamnotificationrule"
 
 &teamnotificationrule.TeamNotificationRuleMsTeams {
 	ConnectorName: *string,
@@ -1131,7 +1207,7 @@ ConnectorName *string
 
 MS Teams connector name used to route notifications to the appropriate channel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#connector_name TeamNotificationRule#connector_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#connector_name TeamNotificationRule#connector_name}
 
 ---
 
@@ -1140,7 +1216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRulePagerduty.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/teamnotificationrule"
 
 &teamnotificationrule.TeamNotificationRulePagerduty {
 	ServiceName: *string,
@@ -1165,7 +1241,41 @@ ServiceName *string
 
 PagerDuty service name to send incident notifications to. The service name can be found in your PagerDuty service settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#service_name TeamNotificationRule#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#service_name TeamNotificationRule#service_name}
+
+---
+
+### TeamNotificationRuleServicenow <a name="TeamNotificationRuleServicenow" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenow"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenow.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/teamnotificationrule"
+
+&teamnotificationrule.TeamNotificationRuleServicenow {
+	Templates: *[]*string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenow.property.templates">Templates</a></code> | <code>*[]*string</code> | ServiceNow template handle names to use for notifications. |
+
+---
+
+##### `Templates`<sup>Optional</sup> <a name="Templates" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenow.property.templates"></a>
+
+```go
+Templates *[]*string
+```
+
+- *Type:* *[]*string
+
+ServiceNow template handle names to use for notifications.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#templates TeamNotificationRule#templates}
 
 ---
 
@@ -1174,7 +1284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleSlack.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/teamnotificationrule"
 
 &teamnotificationrule.TeamNotificationRuleSlack {
 	Channel: *string,
@@ -1201,7 +1311,7 @@ Channel *string
 
 Slack channel name for notifications, without a leading '#'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#channel TeamNotificationRule#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#channel TeamNotificationRule#channel}
 
 ---
 
@@ -1215,7 +1325,7 @@ Workspace *string
 
 Slack workspace name where the channel is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#workspace TeamNotificationRule#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#workspace TeamNotificationRule#workspace}
 
 ---
 
@@ -1226,7 +1336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/teamnotificationrule"
 
 teamnotificationrule.NewTeamNotificationRuleEmailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamNotificationRuleEmailOutputReference
 ```
@@ -1272,6 +1382,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.resetEnabled">ResetEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.resetRecipientEmail">ResetRecipientEmail</a></code> | *No description.* |
 
 ---
 
@@ -1431,6 +1542,12 @@ Returns a reversible string representation.
 func ResetEnabled()
 ```
 
+##### `ResetRecipientEmail` <a name="ResetRecipientEmail" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.resetRecipientEmail"></a>
+
+```go
+func ResetRecipientEmail()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1439,7 +1556,9 @@ func ResetEnabled()
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.property.recipientEmailInput">RecipientEmailInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.property.recipientEmail">RecipientEmail</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
@@ -1478,6 +1597,16 @@ func EnabledInput() interface{}
 
 ---
 
+##### `RecipientEmailInput`<sup>Optional</sup> <a name="RecipientEmailInput" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.property.recipientEmailInput"></a>
+
+```go
+func RecipientEmailInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.property.enabled"></a>
 
 ```go
@@ -1485,6 +1614,16 @@ func Enabled() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `RecipientEmail`<sup>Required</sup> <a name="RecipientEmail" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.property.recipientEmail"></a>
+
+```go
+func RecipientEmail() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -1504,7 +1643,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleMsTeamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/teamnotificationrule"
 
 teamnotificationrule.NewTeamNotificationRuleMsTeamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamNotificationRuleMsTeamsOutputReference
 ```
@@ -1782,7 +1921,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRulePagerdutyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/teamnotificationrule"
 
 teamnotificationrule.NewTeamNotificationRulePagerdutyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamNotificationRulePagerdutyOutputReference
 ```
@@ -2055,12 +2194,290 @@ func InternalValue() interface{}
 ---
 
 
+### TeamNotificationRuleServicenowOutputReference <a name="TeamNotificationRuleServicenowOutputReference" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/teamnotificationrule"
+
+teamnotificationrule.NewTeamNotificationRuleServicenowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamNotificationRuleServicenowOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.resetTemplates">ResetTemplates</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetTemplates` <a name="ResetTemplates" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.resetTemplates"></a>
+
+```go
+func ResetTemplates()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.property.templatesInput">TemplatesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.property.templates">Templates</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TemplatesInput`<sup>Optional</sup> <a name="TemplatesInput" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.property.templatesInput"></a>
+
+```go
+func TemplatesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Templates`<sup>Required</sup> <a name="Templates" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.property.templates"></a>
+
+```go
+func Templates() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleServicenowOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
 ### TeamNotificationRuleSlackOutputReference <a name="TeamNotificationRuleSlackOutputReference" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleSlackOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleSlackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/teamnotificationrule"
 
 teamnotificationrule.NewTeamNotificationRuleSlackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamNotificationRuleSlackOutputReference
 ```

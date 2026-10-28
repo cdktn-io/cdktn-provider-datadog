@@ -4,12 +4,12 @@
 
 ### AgentlessScanningAzureScanOptions <a name="AgentlessScanningAzureScanOptions" id="@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/agentless_scanning_azure_scan_options datadog_agentless_scanning_azure_scan_options}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/agentless_scanning_azure_scan_options datadog_agentless_scanning_azure_scan_options}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/agentlessscanningazurescanoptions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/agentlessscanningazurescanoptions"
 
 agentlessscanningazurescanoptions.NewAgentlessScanningAzureScanOptions(scope Construct, id *string, config AgentlessScanningAzureScanOptionsConfig) AgentlessScanningAzureScanOptions
 ```
@@ -407,7 +407,7 @@ func ResetComplianceHost()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/agentlessscanningazurescanoptions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/agentlessscanningazurescanoptions"
 
 agentlessscanningazurescanoptions.AgentlessScanningAzureScanOptions_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/agentlessscanningazurescanoptions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/agentlessscanningazurescanoptions"
 
 agentlessscanningazurescanoptions.AgentlessScanningAzureScanOptions_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ agentlessscanningazurescanoptions.AgentlessScanningAzureScanOptions_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/agentlessscanningazurescanoptions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/agentlessscanningazurescanoptions"
 
 agentlessscanningazurescanoptions.AgentlessScanningAzureScanOptions_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ agentlessscanningazurescanoptions.AgentlessScanningAzureScanOptions_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/agentlessscanningazurescanoptions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/agentlessscanningazurescanoptions"
 
 agentlessscanningazurescanoptions.AgentlessScanningAzureScanOptions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the AgentlessScanningAzureScan
 
 The id of the existing AgentlessScanningAzureScanOptions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/agentless_scanning_azure_scan_options#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/agentless_scanning_azure_scan_options#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -817,7 +817,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.agentlessScanningAzureScanOptions.AgentlessScanningAzureScanOptionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/agentlessscanningazurescanoptions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/agentlessscanningazurescanoptions"
 
 &agentlessscanningazurescanoptions.AgentlessScanningAzureScanOptionsConfig {
 	Connection: interface{},
@@ -934,7 +934,7 @@ AzureSubscriptionId *string
 
 The Azure subscription ID for which agentless scanning is configured. Must be a valid Azure subscription ID (UUID format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/agentless_scanning_azure_scan_options#azure_subscription_id AgentlessScanningAzureScanOptions#azure_subscription_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/agentless_scanning_azure_scan_options#azure_subscription_id AgentlessScanningAzureScanOptions#azure_subscription_id}
 
 ---
 
@@ -948,7 +948,7 @@ Function interface{}
 
 Indicates if scanning of Azure Functions is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/agentless_scanning_azure_scan_options#function AgentlessScanningAzureScanOptions#function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/agentless_scanning_azure_scan_options#function AgentlessScanningAzureScanOptions#function}
 
 ---
 
@@ -962,7 +962,7 @@ VulnContainersOs interface{}
 
 Indicates if scanning for vulnerabilities in containers is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/agentless_scanning_azure_scan_options#vuln_containers_os AgentlessScanningAzureScanOptions#vuln_containers_os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/agentless_scanning_azure_scan_options#vuln_containers_os AgentlessScanningAzureScanOptions#vuln_containers_os}
 
 ---
 
@@ -976,7 +976,7 @@ VulnHostOs interface{}
 
 Indicates if scanning for vulnerabilities in hosts is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/agentless_scanning_azure_scan_options#vuln_host_os AgentlessScanningAzureScanOptions#vuln_host_os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/agentless_scanning_azure_scan_options#vuln_host_os AgentlessScanningAzureScanOptions#vuln_host_os}
 
 ---
 
@@ -990,7 +990,7 @@ ComplianceHost interface{}
 
 Indicates whether host compliance scanning is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/agentless_scanning_azure_scan_options#compliance_host AgentlessScanningAzureScanOptions#compliance_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/agentless_scanning_azure_scan_options#compliance_host AgentlessScanningAzureScanOptions#compliance_host}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account
+// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface IntegrationElasticCloudAccountConfig extends cdktn.TerraformMet
   /**
   * Authentication configured on the Elastic Cloud integration account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#authentication IntegrationElasticCloudAccount#authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#authentication IntegrationElasticCloudAccount#authentication}
   */
   readonly authentication: IntegrationElasticCloudAccountAuthentication;
   /**
   * Data Datadog collects from Elastic Cloud, keyed by dataflow id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#dataflows IntegrationElasticCloudAccount#dataflows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#dataflows IntegrationElasticCloudAccount#dataflows}
   */
   readonly dataflows?: IntegrationElasticCloudAccountDataflows;
   /**
   * Human-readable name of the Elastic Cloud integration account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#name IntegrationElasticCloudAccount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#name IntegrationElasticCloudAccount#name}
   */
   readonly name: string;
   /**
   * Settings configured on the Elastic Cloud integration account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#settings IntegrationElasticCloudAccount#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#settings IntegrationElasticCloudAccount#settings}
   */
   readonly settings: IntegrationElasticCloudAccountSettings;
 }
@@ -41,25 +41,25 @@ export interface IntegrationElasticCloudAccountAuthenticationElasticCloudIntegra
   /**
   * The authentication method type. Valid values are `basic`. Defaults to `"basic"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#auth_type IntegrationElasticCloudAccount#auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#auth_type IntegrationElasticCloudAccount#auth_type}
   */
   readonly authType?: string;
   /**
   * Secret password or private key. This write-only value is not stored in Terraform state.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#password_wo IntegrationElasticCloudAccount#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#password_wo IntegrationElasticCloudAccount#password_wo}
   */
   readonly passwordWo: string;
   /**
   * Version trigger for password_wo rotation. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#password_wo_version IntegrationElasticCloudAccount#password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#password_wo_version IntegrationElasticCloudAccount#password_wo_version}
   */
   readonly passwordWoVersion: string;
   /**
   * Non-secret username or public identifier for the credential pair.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#username IntegrationElasticCloudAccount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#username IntegrationElasticCloudAccount#username}
   */
   readonly username: string;
 }
@@ -236,7 +236,7 @@ export interface IntegrationElasticCloudAccountAuthentication {
   /**
   * The basic authentication method and username configured on the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_integration_account_basic_auth IntegrationElasticCloudAccount#elastic_cloud_integration_account_basic_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_integration_account_basic_auth IntegrationElasticCloudAccount#elastic_cloud_integration_account_basic_auth}
   */
   readonly elasticCloudIntegrationAccountBasicAuth?: IntegrationElasticCloudAccountAuthenticationElasticCloudIntegrationAccountBasicAuth;
 }
@@ -396,7 +396,7 @@ export interface IntegrationElasticCloudAccountDataflowsElasticCloudDetailedInde
   /**
   * Whether Datadog collects this data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -562,7 +562,7 @@ export interface IntegrationElasticCloudAccountDataflowsElasticCloudIndexStats {
   /**
   * Whether Datadog collects this data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -852,7 +852,7 @@ export interface IntegrationElasticCloudAccountDataflowsElasticCloudPendingTaskS
   /**
   * Whether Datadog collects this data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1018,7 +1018,7 @@ export interface IntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShard
   /**
   * Whether this tolerance is applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1184,7 +1184,7 @@ export interface IntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShard
   /**
   * Whether Datadog collects this data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1350,7 +1350,7 @@ export interface IntegrationElasticCloudAccountDataflowsElasticCloudShardAllocat
   /**
   * Whether Datadog collects this data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1516,7 +1516,7 @@ export interface IntegrationElasticCloudAccountDataflowsElasticCloudSlmStats {
   /**
   * Whether Datadog collects this data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#enabled IntegrationElasticCloudAccount#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1618,43 +1618,43 @@ export interface IntegrationElasticCloudAccountDataflows {
   /**
   * Primary shard metrics broken down per index, rather than aggregated across the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_detailed_index_stats IntegrationElasticCloudAccount#elastic_cloud_detailed_index_stats}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_detailed_index_stats IntegrationElasticCloudAccount#elastic_cloud_detailed_index_stats}
   */
   readonly elasticCloudDetailedIndexStats?: IntegrationElasticCloudAccountDataflowsElasticCloudDetailedIndexStats;
   /**
   * Metrics for individual indices. Only the indices granted to the role of the user in `authentication` are collected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_index_stats IntegrationElasticCloudAccount#elastic_cloud_index_stats}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_index_stats IntegrationElasticCloudAccount#elastic_cloud_index_stats}
   */
   readonly elasticCloudIndexStats?: IntegrationElasticCloudAccountDataflowsElasticCloudIndexStats;
   /**
   * Metrics for cluster-level changes that have been submitted but not yet executed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_pending_task_stats IntegrationElasticCloudAccount#elastic_cloud_pending_task_stats}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_pending_task_stats IntegrationElasticCloudAccount#elastic_cloud_pending_task_stats}
   */
   readonly elasticCloudPendingTaskStats?: IntegrationElasticCloudAccountDataflowsElasticCloudPendingTaskStats;
   /**
   * Tolerance for slow primary shard requests, keeping the rest of the collection running when a primary shard request times out instead of failing the run. Only has an effect alongside `elastic-cloud-primary-shard-stats`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_primary_shard_graceful_timeout IntegrationElasticCloudAccount#elastic_cloud_primary_shard_graceful_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_primary_shard_graceful_timeout IntegrationElasticCloudAccount#elastic_cloud_primary_shard_graceful_timeout}
   */
   readonly elasticCloudPrimaryShardGracefulTimeout?: IntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShardGracefulTimeout;
   /**
   * Metrics covering only the cluster's primary shards.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_primary_shard_stats IntegrationElasticCloudAccount#elastic_cloud_primary_shard_stats}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_primary_shard_stats IntegrationElasticCloudAccount#elastic_cloud_primary_shard_stats}
   */
   readonly elasticCloudPrimaryShardStats?: IntegrationElasticCloudAccountDataflowsElasticCloudPrimaryShardStats;
   /**
   * Metrics for how many shards are allocated to each data node, and the disk space they use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_shard_allocation_stats IntegrationElasticCloudAccount#elastic_cloud_shard_allocation_stats}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_shard_allocation_stats IntegrationElasticCloudAccount#elastic_cloud_shard_allocation_stats}
   */
   readonly elasticCloudShardAllocationStats?: IntegrationElasticCloudAccountDataflowsElasticCloudShardAllocationStats;
   /**
   * Metrics about the actions taken by snapshot lifecycle management. Requires the `read_slm` Elasticsearch cluster privilege on the role of the user in `authentication`; without it this dataflow collects no data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_slm_stats IntegrationElasticCloudAccount#elastic_cloud_slm_stats}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#elastic_cloud_slm_stats IntegrationElasticCloudAccount#elastic_cloud_slm_stats}
   */
   readonly elasticCloudSlmStats?: IntegrationElasticCloudAccountDataflowsElasticCloudSlmStats;
 }
@@ -1930,13 +1930,13 @@ export interface IntegrationElasticCloudAccountSettings {
   /**
   * Comma-separated list of custom tags for this Elastic Cloud deployment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#tags IntegrationElasticCloudAccount#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#tags IntegrationElasticCloudAccount#tags}
   */
   readonly tags?: string;
   /**
   * Elastic Cloud deployment URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#url IntegrationElasticCloudAccount#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#url IntegrationElasticCloudAccount#url}
   */
   readonly url: string;
 }
@@ -2056,7 +2056,7 @@ export class IntegrationElasticCloudAccountSettingsOutputReference extends cdktn
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account datadog_integration_elastic_cloud_account}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account datadog_integration_elastic_cloud_account}
 */
 export class IntegrationElasticCloudAccount extends cdktn.TerraformResource {
 
@@ -2072,7 +2072,7 @@ export class IntegrationElasticCloudAccount extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a IntegrationElasticCloudAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationElasticCloudAccount to import
-  * @param importFromId The id of the existing IntegrationElasticCloudAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationElasticCloudAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationElasticCloudAccount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2084,7 +2084,7 @@ export class IntegrationElasticCloudAccount extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_elastic_cloud_account datadog_integration_elastic_cloud_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_elastic_cloud_account datadog_integration_elastic_cloud_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2095,7 +2095,7 @@ export class IntegrationElasticCloudAccount extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_integration_elastic_cloud_account',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.25.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

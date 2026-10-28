@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule
+// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface FleetScheduleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Human-readable name for the schedule. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#name FleetSchedule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#name FleetSchedule#name}
   */
   readonly name: string;
   /**
   * Datadog host query used to select the Agent upgrade targets. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#query FleetSchedule#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#query FleetSchedule#query}
   */
   readonly query: string;
   /**
   * Weekly recurrence and maintenance-window configuration for the schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#rule FleetSchedule#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#rule FleetSchedule#rule}
   */
   readonly rule: FleetScheduleRule;
   /**
   * Whether the schedule creates deployments. Valid values are `active` and `inactive`. The API default is used when omitted. Valid values are `active`, `inactive`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#status FleetSchedule#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#status FleetSchedule#status}
   */
   readonly status?: string;
   /**
   * Number of major Agent versions behind the latest version to target: `0`, `1`, or `2`. The API default is used when omitted. Value must be between 0 and 2.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#version_to_latest FleetSchedule#version_to_latest}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#version_to_latest FleetSchedule#version_to_latest}
   */
   readonly versionToLatest?: number;
 }
@@ -47,25 +47,25 @@ export interface FleetScheduleRule {
   /**
   * Days when the schedule may run. Valid values are `Mon`, `Tue`, `Wed`, `Thu`, `Fri`, `Sat`, and `Sun`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#days_of_week FleetSchedule#days_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#days_of_week FleetSchedule#days_of_week}
   */
   readonly daysOfWeek: string[];
   /**
   * Duration of the maintenance window in minutes. Value must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#maintenance_window_duration FleetSchedule#maintenance_window_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#maintenance_window_duration FleetSchedule#maintenance_window_duration}
   */
   readonly maintenanceWindowDuration: number;
   /**
   * Start of the maintenance window in 24-hour `HH:MM` format. Must use HH:MM format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#start_maintenance_window FleetSchedule#start_maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#start_maintenance_window FleetSchedule#start_maintenance_window}
   */
   readonly startMaintenanceWindow: string;
   /**
   * IANA time zone used to interpret the maintenance window, for example `America/New_York` or `UTC`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#timezone FleetSchedule#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#timezone FleetSchedule#timezone}
   */
   readonly timezone: string;
 }
@@ -234,7 +234,7 @@ export class FleetScheduleRuleOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule datadog_fleet_schedule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule datadog_fleet_schedule}
 */
 export class FleetSchedule extends cdktn.TerraformResource {
 
@@ -250,7 +250,7 @@ export class FleetSchedule extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a FleetSchedule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FleetSchedule to import
-  * @param importFromId The id of the existing FleetSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FleetSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FleetSchedule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -262,7 +262,7 @@ export class FleetSchedule extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule datadog_fleet_schedule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule datadog_fleet_schedule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -273,7 +273,7 @@ export class FleetSchedule extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_fleet_schedule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.25.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

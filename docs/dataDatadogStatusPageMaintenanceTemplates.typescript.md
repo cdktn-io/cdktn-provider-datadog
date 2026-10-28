@@ -4,7 +4,7 @@
 
 ### DataDatadogStatusPageMaintenanceTemplates <a name="DataDatadogStatusPageMaintenanceTemplates" id="@cdktn/provider-datadog.dataDatadogStatusPageMaintenanceTemplates.DataDatadogStatusPageMaintenanceTemplates"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_maintenance_templates datadog_status_page_maintenance_templates}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_maintenance_templates datadog_status_page_maintenance_templates}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogStatusPageMaintenanceTemplates.DataDatadogStatusPageMaintenanceTemplates.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataDatadogStatusPageMaint
 
 The id of the existing DataDatadogStatusPageMaintenanceTemplates that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_maintenance_templates#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_maintenance_templates#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -739,7 +739,7 @@ public readonly pageId: string;
 
 The ID of the status page whose maintenance templates to list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_maintenance_templates#page_id DataDatadogStatusPageMaintenanceTemplates#page_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_maintenance_templates#page_id DataDatadogStatusPageMaintenanceTemplates#page_id}
 
 ---
 
@@ -753,7 +753,7 @@ public readonly name: string;
 
 Filter the results to templates with this exact name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_maintenance_templates#name DataDatadogStatusPageMaintenanceTemplates#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_maintenance_templates#name DataDatadogStatusPageMaintenanceTemplates#name}
 
 ---
 

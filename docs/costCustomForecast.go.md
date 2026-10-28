@@ -4,12 +4,12 @@
 
 ### CostCustomForecast <a name="CostCustomForecast" id="@cdktn/provider-datadog.costCustomForecast.CostCustomForecast"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/cost_custom_forecast datadog_cost_custom_forecast}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/cost_custom_forecast datadog_cost_custom_forecast}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.costCustomForecast.CostCustomForecast.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/costcustomforecast"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/costcustomforecast"
 
 costcustomforecast.NewCostCustomForecast(scope Construct, id *string, config CostCustomForecastConfig) CostCustomForecast
 ```
@@ -420,7 +420,7 @@ func ResetEntries()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.costCustomForecast.CostCustomForecast.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/costcustomforecast"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/costcustomforecast"
 
 costcustomforecast.CostCustomForecast_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.costCustomForecast.CostCustomForecast.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/costcustomforecast"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/costcustomforecast"
 
 costcustomforecast.CostCustomForecast_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ costcustomforecast.CostCustomForecast_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.costCustomForecast.CostCustomForecast.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/costcustomforecast"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/costcustomforecast"
 
 costcustomforecast.CostCustomForecast_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ costcustomforecast.CostCustomForecast_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.costCustomForecast.CostCustomForecast.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/costcustomforecast"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/costcustomforecast"
 
 costcustomforecast.CostCustomForecast_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -509,7 +509,7 @@ The construct id used in the generated config for the CostCustomForecast to impo
 
 The id of the existing CostCustomForecast that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/cost_custom_forecast#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/cost_custom_forecast#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -808,7 +808,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.costCustomForecast.CostCustomForecastConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/costcustomforecast"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/costcustomforecast"
 
 &costcustomforecast.CostCustomForecastConfig {
 	Connection: interface{},
@@ -921,7 +921,7 @@ The UUID of the budget that this custom forecast belongs to.
 
 Changing this value forces a new resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/cost_custom_forecast#budget_uid CostCustomForecast#budget_uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/cost_custom_forecast#budget_uid CostCustomForecast#budget_uid}
 
 ---
 
@@ -935,7 +935,7 @@ Entries interface{}
 
 entries block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/cost_custom_forecast#entries CostCustomForecast#entries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/cost_custom_forecast#entries CostCustomForecast#entries}
 
 ---
 
@@ -944,7 +944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.costCustomForecast.CostCustomForecastEntries.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/costcustomforecast"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/costcustomforecast"
 
 &costcustomforecast.CostCustomForecastEntries {
 	Amount: *f64,
@@ -973,7 +973,7 @@ Amount *f64
 
 The forecast override amount for the month. Value must be at least 0.000000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/cost_custom_forecast#amount CostCustomForecast#amount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/cost_custom_forecast#amount CostCustomForecast#amount}
 
 ---
 
@@ -987,7 +987,7 @@ Month *f64
 
 The month the entry applies to, in `YYYYMM` format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/cost_custom_forecast#month CostCustomForecast#month}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/cost_custom_forecast#month CostCustomForecast#month}
 
 ---
 
@@ -1001,7 +1001,7 @@ TagFilters interface{}
 
 tag_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/cost_custom_forecast#tag_filters CostCustomForecast#tag_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/cost_custom_forecast#tag_filters CostCustomForecast#tag_filters}
 
 ---
 
@@ -1010,7 +1010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.costCustomForecast.CostCustomForecastEntriesTagFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/costcustomforecast"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/costcustomforecast"
 
 &costcustomforecast.CostCustomForecastEntriesTagFilters {
 	TagKey: *string,
@@ -1022,8 +1022,8 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/costcustomfore
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.costCustomForecast.CostCustomForecastEntriesTagFilters.property.tagKey">TagKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/cost_custom_forecast#tag_key CostCustomForecast#tag_key}. |
-| <code><a href="#@cdktn/provider-datadog.costCustomForecast.CostCustomForecastEntriesTagFilters.property.tagValue">TagValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/cost_custom_forecast#tag_value CostCustomForecast#tag_value}. |
+| <code><a href="#@cdktn/provider-datadog.costCustomForecast.CostCustomForecastEntriesTagFilters.property.tagKey">TagKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/cost_custom_forecast#tag_key CostCustomForecast#tag_key}. |
+| <code><a href="#@cdktn/provider-datadog.costCustomForecast.CostCustomForecastEntriesTagFilters.property.tagValue">TagValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/cost_custom_forecast#tag_value CostCustomForecast#tag_value}. |
 
 ---
 
@@ -1035,7 +1035,7 @@ TagKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/cost_custom_forecast#tag_key CostCustomForecast#tag_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/cost_custom_forecast#tag_key CostCustomForecast#tag_key}.
 
 ---
 
@@ -1047,7 +1047,7 @@ TagValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/cost_custom_forecast#tag_value CostCustomForecast#tag_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/cost_custom_forecast#tag_value CostCustomForecast#tag_value}.
 
 ---
 
@@ -1058,7 +1058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.costCustomForecast.CostCustomForecastEntriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/costcustomforecast"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/costcustomforecast"
 
 costcustomforecast.NewCostCustomForecastEntriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CostCustomForecastEntriesList
 ```
@@ -1218,7 +1218,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.costCustomForecast.CostCustomForecastEntriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/costcustomforecast"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/costcustomforecast"
 
 costcustomforecast.NewCostCustomForecastEntriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CostCustomForecastEntriesOutputReference
 ```
@@ -1571,7 +1571,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.costCustomForecast.CostCustomForecastEntriesTagFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/costcustomforecast"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/costcustomforecast"
 
 costcustomforecast.NewCostCustomForecastEntriesTagFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CostCustomForecastEntriesTagFiltersList
 ```
@@ -1731,7 +1731,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.costCustomForecast.CostCustomForecastEntriesTagFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/costcustomforecast"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/costcustomforecast"
 
 costcustomforecast.NewCostCustomForecastEntriesTagFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CostCustomForecastEntriesTagFiltersOutputReference
 ```

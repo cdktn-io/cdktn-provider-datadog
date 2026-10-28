@@ -4,7 +4,7 @@
 
 ### StatusPage <a name="StatusPage" id="@cdktn/provider-datadog.statusPage.StatusPage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page datadog_status_page}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page datadog_status_page}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.statusPage.StatusPage.Initializer"></a>
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 The subdomain prefix used to build the status page's URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#domain_prefix StatusPage#domain_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#domain_prefix StatusPage#domain_prefix}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The name of the status page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#name StatusPage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#name StatusPage#name}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The type of the status page. Valid values are: public, internal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#type StatusPage#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#type StatusPage#type}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 How component statuses are visualized on the page. Valid values are: bars_and_uptime_percentage, bars_only, component_name_only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#visualization_type StatusPage#visualization_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#visualization_type StatusPage#visualization_type}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The company logo displayed on the status page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#company_logo StatusPage#company_logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#company_logo StatusPage#company_logo}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The header image included in subscriber emails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#email_header_image StatusPage#email_header_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#email_header_image StatusPage#email_header_image}
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The favicon displayed for the status page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#favicon StatusPage#favicon}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#favicon StatusPage#favicon}
 
 ---
 
@@ -192,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The icon used for the status page's Slack app integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#slack_app_icon StatusPage#slack_app_icon}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#slack_app_icon StatusPage#slack_app_icon}
 
 ---
 
@@ -202,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Whether Slack subscriber notifications are enabled for the status page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#slack_subscriptions_enabled StatusPage#slack_subscriptions_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#slack_subscriptions_enabled StatusPage#slack_subscriptions_enabled}
 
 ---
 
@@ -212,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Whether subscriber notifications are enabled for the status page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#subscriptions_enabled StatusPage#subscriptions_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#subscriptions_enabled StatusPage#subscriptions_enabled}
 
 ---
 
@@ -703,7 +703,7 @@ The construct id used in the generated config for the StatusPage to import.
 
 The id of the existing StatusPage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1327,7 +1327,7 @@ public java.lang.String getDomainPrefix();
 
 The subdomain prefix used to build the status page's URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#domain_prefix StatusPage#domain_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#domain_prefix StatusPage#domain_prefix}
 
 ---
 
@@ -1341,7 +1341,7 @@ public java.lang.String getName();
 
 The name of the status page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#name StatusPage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#name StatusPage#name}
 
 ---
 
@@ -1355,7 +1355,7 @@ public java.lang.String getType();
 
 The type of the status page. Valid values are: public, internal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#type StatusPage#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#type StatusPage#type}
 
 ---
 
@@ -1369,7 +1369,7 @@ public java.lang.String getVisualizationType();
 
 How component statuses are visualized on the page. Valid values are: bars_and_uptime_percentage, bars_only, component_name_only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#visualization_type StatusPage#visualization_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#visualization_type StatusPage#visualization_type}
 
 ---
 
@@ -1383,7 +1383,7 @@ public java.lang.String getCompanyLogo();
 
 The company logo displayed on the status page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#company_logo StatusPage#company_logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#company_logo StatusPage#company_logo}
 
 ---
 
@@ -1397,7 +1397,7 @@ public java.lang.String getEmailHeaderImage();
 
 The header image included in subscriber emails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#email_header_image StatusPage#email_header_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#email_header_image StatusPage#email_header_image}
 
 ---
 
@@ -1411,7 +1411,7 @@ public java.lang.String getFavicon();
 
 The favicon displayed for the status page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#favicon StatusPage#favicon}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#favicon StatusPage#favicon}
 
 ---
 
@@ -1425,7 +1425,7 @@ public java.lang.String getSlackAppIcon();
 
 The icon used for the status page's Slack app integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#slack_app_icon StatusPage#slack_app_icon}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#slack_app_icon StatusPage#slack_app_icon}
 
 ---
 
@@ -1439,7 +1439,7 @@ public java.lang.Boolean|IResolvable getSlackSubscriptionsEnabled();
 
 Whether Slack subscriber notifications are enabled for the status page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#slack_subscriptions_enabled StatusPage#slack_subscriptions_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#slack_subscriptions_enabled StatusPage#slack_subscriptions_enabled}
 
 ---
 
@@ -1453,7 +1453,7 @@ public java.lang.Boolean|IResolvable getSubscriptionsEnabled();
 
 Whether subscriber notifications are enabled for the status page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#subscriptions_enabled StatusPage#subscriptions_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#subscriptions_enabled StatusPage#subscriptions_enabled}
 
 ---
 

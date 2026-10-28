@@ -4,12 +4,12 @@
 
 ### DataDatadogStatusPageMaintenanceTemplates <a name="DataDatadogStatusPageMaintenanceTemplates" id="@cdktn/provider-datadog.dataDatadogStatusPageMaintenanceTemplates.DataDatadogStatusPageMaintenanceTemplates"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_maintenance_templates datadog_status_page_maintenance_templates}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_maintenance_templates datadog_status_page_maintenance_templates}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogStatusPageMaintenanceTemplates.DataDatadogStatusPageMaintenanceTemplates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagemaintenancetemplates"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagemaintenancetemplates"
 
 datadatadogstatuspagemaintenancetemplates.NewDataDatadogStatusPageMaintenanceTemplates(scope Construct, id *string, config DataDatadogStatusPageMaintenanceTemplatesConfig) DataDatadogStatusPageMaintenanceTemplates
 ```
@@ -305,7 +305,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogStatusPageMaintenanceTemplates.DataDatadogStatusPageMaintenanceTemplates.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagemaintenancetemplates"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagemaintenancetemplates"
 
 datadatadogstatuspagemaintenancetemplates.DataDatadogStatusPageMaintenanceTemplates_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogStatusPageMaintenanceTemplates.DataDatadogStatusPageMaintenanceTemplates.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagemaintenancetemplates"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagemaintenancetemplates"
 
 datadatadogstatuspagemaintenancetemplates.DataDatadogStatusPageMaintenanceTemplates_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datadatadogstatuspagemaintenancetemplates.DataDatadogStatusPageMaintenanceTempla
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogStatusPageMaintenanceTemplates.DataDatadogStatusPageMaintenanceTemplates.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagemaintenancetemplates"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagemaintenancetemplates"
 
 datadatadogstatuspagemaintenancetemplates.DataDatadogStatusPageMaintenanceTemplates_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datadatadogstatuspagemaintenancetemplates.DataDatadogStatusPageMaintenanceTempla
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogStatusPageMaintenanceTemplates.DataDatadogStatusPageMaintenanceTemplates.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagemaintenancetemplates"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagemaintenancetemplates"
 
 datadatadogstatuspagemaintenancetemplates.DataDatadogStatusPageMaintenanceTemplates_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataDatadogStatusPageMaint
 
 The id of the existing DataDatadogStatusPageMaintenanceTemplates that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_maintenance_templates#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_maintenance_templates#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogStatusPageMaintenanceTemplates.DataDatadogStatusPageMaintenanceTemplatesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagemaintenancetemplates"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagemaintenancetemplates"
 
 &datadatadogstatuspagemaintenancetemplates.DataDatadogStatusPageMaintenanceTemplatesConfig {
 	Connection: interface{},
@@ -749,7 +749,7 @@ PageId *string
 
 The ID of the status page whose maintenance templates to list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_maintenance_templates#page_id DataDatadogStatusPageMaintenanceTemplates#page_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_maintenance_templates#page_id DataDatadogStatusPageMaintenanceTemplates#page_id}
 
 ---
 
@@ -763,7 +763,7 @@ Name *string
 
 Filter the results to templates with this exact name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_maintenance_templates#name DataDatadogStatusPageMaintenanceTemplates#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_maintenance_templates#name DataDatadogStatusPageMaintenanceTemplates#name}
 
 ---
 
@@ -772,7 +772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogStatusPageMaintenanceTemplates.DataDatadogStatusPageMaintenanceTemplatesMaintenanceTemplates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagemaintenancetemplates"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagemaintenancetemplates"
 
 &datadatadogstatuspagemaintenancetemplates.DataDatadogStatusPageMaintenanceTemplatesMaintenanceTemplates {
 
@@ -787,7 +787,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsta
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogStatusPageMaintenanceTemplates.DataDatadogStatusPageMaintenanceTemplatesMaintenanceTemplatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagemaintenancetemplates"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagemaintenancetemplates"
 
 datadatadogstatuspagemaintenancetemplates.NewDataDatadogStatusPageMaintenanceTemplatesMaintenanceTemplatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogStatusPageMaintenanceTemplatesMaintenanceTemplatesList
 ```
@@ -936,7 +936,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogStatusPageMaintenanceTemplates.DataDatadogStatusPageMaintenanceTemplatesMaintenanceTemplatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogstatuspagemaintenancetemplates"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogstatuspagemaintenancetemplates"
 
 datadatadogstatuspagemaintenancetemplates.NewDataDatadogStatusPageMaintenanceTemplatesMaintenanceTemplatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogStatusPageMaintenanceTemplatesMaintenanceTemplatesOutputReference
 ```

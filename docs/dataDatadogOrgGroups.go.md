@@ -4,12 +4,12 @@
 
 ### DataDatadogOrgGroups <a name="DataDatadogOrgGroups" id="@cdktn/provider-datadog.dataDatadogOrgGroups.DataDatadogOrgGroups"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/org_groups datadog_org_groups}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/org_groups datadog_org_groups}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogOrgGroups.DataDatadogOrgGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggroups"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggroups"
 
 datadatadogorggroups.NewDataDatadogOrgGroups(scope Construct, id *string, config DataDatadogOrgGroupsConfig) DataDatadogOrgGroups
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogOrgGroups.DataDatadogOrgGroups.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggroups"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggroups"
 
 datadatadogorggroups.DataDatadogOrgGroups_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogOrgGroups.DataDatadogOrgGroups.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggroups"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggroups"
 
 datadatadogorggroups.DataDatadogOrgGroups_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadogorggroups.DataDatadogOrgGroups_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogOrgGroups.DataDatadogOrgGroups.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggroups"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggroups"
 
 datadatadogorggroups.DataDatadogOrgGroups_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogorggroups.DataDatadogOrgGroups_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogOrgGroups.DataDatadogOrgGroups.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggroups"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggroups"
 
 datadatadogorggroups.DataDatadogOrgGroups_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatadogOrgGroups to im
 
 The id of the existing DataDatadogOrgGroups that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/org_groups#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/org_groups#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -587,7 +587,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogOrgGroups.DataDatadogOrgGroupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggroups"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggroups"
 
 &datadatadogorggroups.DataDatadogOrgGroupsConfig {
 	Connection: interface{},
@@ -689,7 +689,7 @@ Provisioners *[]interface{}
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogOrgGroups.DataDatadogOrgGroupsGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggroups"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggroups"
 
 &datadatadogorggroups.DataDatadogOrgGroupsGroups {
 
@@ -704,7 +704,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorg
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogOrgGroups.DataDatadogOrgGroupsGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggroups"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggroups"
 
 datadatadogorggroups.NewDataDatadogOrgGroupsGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogOrgGroupsGroupsList
 ```
@@ -853,7 +853,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogOrgGroups.DataDatadogOrgGroupsGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggroups"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggroups"
 
 datadatadogorggroups.NewDataDatadogOrgGroupsGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogOrgGroupsGroupsOutputReference
 ```

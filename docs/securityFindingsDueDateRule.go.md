@@ -4,12 +4,12 @@
 
 ### SecurityFindingsDueDateRule <a name="SecurityFindingsDueDateRule" id="@cdktn/provider-datadog.securityFindingsDueDateRule.SecurityFindingsDueDateRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_due_date_rule datadog_security_findings_due_date_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_due_date_rule datadog_security_findings_due_date_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityFindingsDueDateRule.SecurityFindingsDueDateRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsduedaterule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsduedaterule"
 
 securityfindingsduedaterule.NewSecurityFindingsDueDateRule(scope Construct, id *string, config SecurityFindingsDueDateRuleConfig) SecurityFindingsDueDateRule
 ```
@@ -433,7 +433,7 @@ func ResetEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.securityFindingsDueDateRule.SecurityFindingsDueDateRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsduedaterule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsduedaterule"
 
 securityfindingsduedaterule.SecurityFindingsDueDateRule_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.securityFindingsDueDateRule.SecurityFindingsDueDateRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsduedaterule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsduedaterule"
 
 securityfindingsduedaterule.SecurityFindingsDueDateRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ securityfindingsduedaterule.SecurityFindingsDueDateRule_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.securityFindingsDueDateRule.SecurityFindingsDueDateRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsduedaterule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsduedaterule"
 
 securityfindingsduedaterule.SecurityFindingsDueDateRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ securityfindingsduedaterule.SecurityFindingsDueDateRule_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.securityFindingsDueDateRule.SecurityFindingsDueDateRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsduedaterule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsduedaterule"
 
 securityfindingsduedaterule.SecurityFindingsDueDateRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -522,7 +522,7 @@ The construct id used in the generated config for the SecurityFindingsDueDateRul
 
 The id of the existing SecurityFindingsDueDateRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_due_date_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_due_date_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -821,7 +821,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.securityFindingsDueDateRule.SecurityFindingsDueDateRuleAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsduedaterule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsduedaterule"
 
 &securityfindingsduedaterule.SecurityFindingsDueDateRuleAction {
 	DueDaysPerSeverity: interface{},
@@ -850,7 +850,7 @@ DueDaysPerSeverity interface{}
 
 A list of severity-to-due-date mappings. Each severity may appear at most once.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_due_date_rule#due_days_per_severity SecurityFindingsDueDateRule#due_days_per_severity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_due_date_rule#due_days_per_severity SecurityFindingsDueDateRule#due_days_per_severity}
 
 ---
 
@@ -866,7 +866,7 @@ The reference point from which the due date is calculated.
 
 When `fix_available` is selected but not applicable to the finding type, `first_seen` is used instead. Valid values are `first_seen`, `fix_available`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_due_date_rule#due_from SecurityFindingsDueDateRule#due_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_due_date_rule#due_from SecurityFindingsDueDateRule#due_from}
 
 ---
 
@@ -880,7 +880,7 @@ ReasonDescription *string
 
 An optional description providing more context for the due date assignment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_due_date_rule#reason_description SecurityFindingsDueDateRule#reason_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_due_date_rule#reason_description SecurityFindingsDueDateRule#reason_description}
 
 ---
 
@@ -889,7 +889,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.securityFindingsDueDateRule.SecurityFindingsDueDateRuleActionDueDaysPerSeverity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsduedaterule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsduedaterule"
 
 &securityfindingsduedaterule.SecurityFindingsDueDateRuleActionDueDaysPerSeverity {
 	DueInDays: *f64,
@@ -916,7 +916,7 @@ DueInDays *f64
 
 The number of days from the reference point until the finding is due.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_due_date_rule#due_in_days SecurityFindingsDueDateRule#due_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_due_date_rule#due_in_days SecurityFindingsDueDateRule#due_in_days}
 
 ---
 
@@ -930,7 +930,7 @@ Severity *string
 
 A severity level used to configure due date thresholds. Valid values are `critical`, `high`, `medium`, `low`, `info`, `none`, `unknown`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_due_date_rule#severity SecurityFindingsDueDateRule#severity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_due_date_rule#severity SecurityFindingsDueDateRule#severity}
 
 ---
 
@@ -939,7 +939,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.securityFindingsDueDateRule.SecurityFindingsDueDateRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsduedaterule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsduedaterule"
 
 &securityfindingsduedaterule.SecurityFindingsDueDateRuleConfig {
 	Connection: interface{},
@@ -949,9 +949,9 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindin
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Action: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.securityFindingsDueDateRule.SecurityFindingsDueDateRuleAction,
+	Action: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.securityFindingsDueDateRule.SecurityFindingsDueDateRuleAction,
 	Name: *string,
-	Rule: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.securityFindingsDueDateRule.SecurityFindingsDueDateRuleRule,
+	Rule: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.securityFindingsDueDateRule.SecurityFindingsDueDateRuleRule,
 	Enabled: interface{},
 }
 ```
@@ -1054,7 +1054,7 @@ Action SecurityFindingsDueDateRuleAction
 
 The action to take when the due date rule matches a finding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_due_date_rule#action SecurityFindingsDueDateRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_due_date_rule#action SecurityFindingsDueDateRule#action}
 
 ---
 
@@ -1068,7 +1068,7 @@ Name *string
 
 The name of the due date rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_due_date_rule#name SecurityFindingsDueDateRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_due_date_rule#name SecurityFindingsDueDateRule#name}
 
 ---
 
@@ -1082,7 +1082,7 @@ Rule SecurityFindingsDueDateRuleRule
 
 Defines the scope of findings to which the automation rule applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_due_date_rule#rule SecurityFindingsDueDateRule#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_due_date_rule#rule SecurityFindingsDueDateRule#rule}
 
 ---
 
@@ -1096,7 +1096,7 @@ Enabled interface{}
 
 Whether the due date rule is enabled. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_due_date_rule#enabled SecurityFindingsDueDateRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_due_date_rule#enabled SecurityFindingsDueDateRule#enabled}
 
 ---
 
@@ -1105,7 +1105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.securityFindingsDueDateRule.SecurityFindingsDueDateRuleRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsduedaterule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsduedaterule"
 
 &securityfindingsduedaterule.SecurityFindingsDueDateRuleRule {
 	FindingTypes: *[]*string,
@@ -1134,7 +1134,7 @@ The list of security finding types that the automation rule applies to.
 
 Valid values are `api_security`, `attack_path`, `host_and_container_vulnerability`, `iac_misconfiguration`, `identity_risk`, `library_vulnerability`, `misconfiguration`, `runtime_code_vulnerability`, `secret`, `static_code_vulnerability`, `workload_activity`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_due_date_rule#finding_types SecurityFindingsDueDateRule#finding_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_due_date_rule#finding_types SecurityFindingsDueDateRule#finding_types}
 
 ---
 
@@ -1150,7 +1150,7 @@ A search query to further filter the findings matched by this rule.
 
 The `@workflow.*` namespace and `@status` fields are not permitted. For a reference of available fields, see the [Security Findings schema documentation](https://docs.datadoghq.com/security/guide/findings-schema/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_due_date_rule#query SecurityFindingsDueDateRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_due_date_rule#query SecurityFindingsDueDateRule#query}
 
 ---
 
@@ -1161,7 +1161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityFindingsDueDateRule.SecurityFindingsDueDateRuleActionDueDaysPerSeverityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsduedaterule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsduedaterule"
 
 securityfindingsduedaterule.NewSecurityFindingsDueDateRuleActionDueDaysPerSeverityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityFindingsDueDateRuleActionDueDaysPerSeverityList
 ```
@@ -1321,7 +1321,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityFindingsDueDateRule.SecurityFindingsDueDateRuleActionDueDaysPerSeverityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsduedaterule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsduedaterule"
 
 securityfindingsduedaterule.NewSecurityFindingsDueDateRuleActionDueDaysPerSeverityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityFindingsDueDateRuleActionDueDaysPerSeverityOutputReference
 ```
@@ -1632,7 +1632,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityFindingsDueDateRule.SecurityFindingsDueDateRuleActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsduedaterule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsduedaterule"
 
 securityfindingsduedaterule.NewSecurityFindingsDueDateRuleActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityFindingsDueDateRuleActionOutputReference
 ```
@@ -1967,7 +1967,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityFindingsDueDateRule.SecurityFindingsDueDateRuleRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsduedaterule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsduedaterule"
 
 securityfindingsduedaterule.NewSecurityFindingsDueDateRuleRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityFindingsDueDateRuleRuleOutputReference
 ```

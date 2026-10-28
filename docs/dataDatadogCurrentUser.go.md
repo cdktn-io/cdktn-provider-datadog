@@ -4,12 +4,12 @@
 
 ### DataDatadogCurrentUser <a name="DataDatadogCurrentUser" id="@cdktn/provider-datadog.dataDatadogCurrentUser.DataDatadogCurrentUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/current_user datadog_current_user}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/current_user datadog_current_user}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogCurrentUser.DataDatadogCurrentUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogcurrentuser"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogcurrentuser"
 
 datadatadogcurrentuser.NewDataDatadogCurrentUser(scope Construct, id *string, config DataDatadogCurrentUserConfig) DataDatadogCurrentUser
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogCurrentUser.DataDatadogCurrentUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogcurrentuser"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogcurrentuser"
 
 datadatadogcurrentuser.DataDatadogCurrentUser_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogCurrentUser.DataDatadogCurrentUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogcurrentuser"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogcurrentuser"
 
 datadatadogcurrentuser.DataDatadogCurrentUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadogcurrentuser.DataDatadogCurrentUser_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogCurrentUser.DataDatadogCurrentUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogcurrentuser"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogcurrentuser"
 
 datadatadogcurrentuser.DataDatadogCurrentUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogcurrentuser.DataDatadogCurrentUser_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogCurrentUser.DataDatadogCurrentUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogcurrentuser"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogcurrentuser"
 
 datadatadogcurrentuser.DataDatadogCurrentUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatadogCurrentUser to 
 
 The id of the existing DataDatadogCurrentUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/current_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/current_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogCurrentUser.DataDatadogCurrentUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogcurrentuser"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogcurrentuser"
 
 &datadatadogcurrentuser.DataDatadogCurrentUserConfig {
 	Connection: interface{},

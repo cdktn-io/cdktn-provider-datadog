@@ -4,12 +4,12 @@
 
 ### SecurityFindingsTicketCreationRulesOrder <a name="SecurityFindingsTicketCreationRulesOrder" id="@cdktn/provider-datadog.securityFindingsTicketCreationRulesOrder.SecurityFindingsTicketCreationRulesOrder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rules_order datadog_security_findings_ticket_creation_rules_order}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_ticket_creation_rules_order datadog_security_findings_ticket_creation_rules_order}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityFindingsTicketCreationRulesOrder.SecurityFindingsTicketCreationRulesOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsticketcreationrulesorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsticketcreationrulesorder"
 
 securityfindingsticketcreationrulesorder.NewSecurityFindingsTicketCreationRulesOrder(scope Construct, id *string, config SecurityFindingsTicketCreationRulesOrderConfig) SecurityFindingsTicketCreationRulesOrder
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.securityFindingsTicketCreationRulesOrder.SecurityFindingsTicketCreationRulesOrder.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsticketcreationrulesorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsticketcreationrulesorder"
 
 securityfindingsticketcreationrulesorder.SecurityFindingsTicketCreationRulesOrder_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.securityFindingsTicketCreationRulesOrder.SecurityFindingsTicketCreationRulesOrder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsticketcreationrulesorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsticketcreationrulesorder"
 
 securityfindingsticketcreationrulesorder.SecurityFindingsTicketCreationRulesOrder_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ securityfindingsticketcreationrulesorder.SecurityFindingsTicketCreationRulesOrde
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.securityFindingsTicketCreationRulesOrder.SecurityFindingsTicketCreationRulesOrder.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsticketcreationrulesorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsticketcreationrulesorder"
 
 securityfindingsticketcreationrulesorder.SecurityFindingsTicketCreationRulesOrder_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ securityfindingsticketcreationrulesorder.SecurityFindingsTicketCreationRulesOrde
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.securityFindingsTicketCreationRulesOrder.SecurityFindingsTicketCreationRulesOrder.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsticketcreationrulesorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsticketcreationrulesorder"
 
 securityfindingsticketcreationrulesorder.SecurityFindingsTicketCreationRulesOrder_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the SecurityFindingsTicketCrea
 
 The id of the existing SecurityFindingsTicketCreationRulesOrder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rules_order#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_ticket_creation_rules_order#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.securityFindingsTicketCreationRulesOrder.SecurityFindingsTicketCreationRulesOrderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsticketcreationrulesorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsticketcreationrulesorder"
 
 &securityfindingsticketcreationrulesorder.SecurityFindingsTicketCreationRulesOrderConfig {
 	Connection: interface{},
@@ -855,7 +855,7 @@ Name *string
 
 A unique identifier for the order resource. This field has no server-side equivalent; Datadog recommends matching the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rules_order#name SecurityFindingsTicketCreationRulesOrder#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_ticket_creation_rules_order#name SecurityFindingsTicketCreationRulesOrder#name}
 
 ---
 
@@ -871,7 +871,7 @@ The ordered list of all ticket creation rule IDs.
 
 The order of IDs in this attribute defines the evaluation order of the ticket creation rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_ticket_creation_rules_order#rule_ids SecurityFindingsTicketCreationRulesOrder#rule_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_ticket_creation_rules_order#rule_ids SecurityFindingsTicketCreationRulesOrder#rule_ids}
 
 ---
 

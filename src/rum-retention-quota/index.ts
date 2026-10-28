@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota
+// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface RumRetentionQuotaConfig extends cdktn.TerraformMetaArguments {
   /**
   * RUM application ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#application_id RumRetentionQuota#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#application_id RumRetentionQuota#application_id}
   */
   readonly applicationId: string;
   /**
   * The retention quota mode. Valid values are `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#mode RumRetentionQuota#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#mode RumRetentionQuota#mode}
   */
   readonly mode: string;
   /**
   * custom block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#custom RumRetentionQuota#custom}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#custom RumRetentionQuota#custom}
   */
   readonly custom: RumRetentionQuotaCustom;
 }
@@ -35,31 +35,31 @@ export interface RumRetentionQuotaCustom {
   /**
   * The time of day the quota resets, in `HH:MM` format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#daily_reset_time RumRetentionQuota#daily_reset_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#daily_reset_time RumRetentionQuota#daily_reset_time}
   */
   readonly dailyResetTime: string;
   /**
   * The UTC offset for `daily_reset_time`, in `±HH:MM` format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#daily_reset_timezone RumRetentionQuota#daily_reset_timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#daily_reset_timezone RumRetentionQuota#daily_reset_timezone}
   */
   readonly dailyResetTimezone: string;
   /**
   * The action taken after the quota is reached. Valid values are `stop`, `slowdown`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#quota_reached_action RumRetentionQuota#quota_reached_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#quota_reached_action RumRetentionQuota#quota_reached_action}
   */
   readonly quotaReachedAction: string;
   /**
   * The maximum number of sessions to retain within the window.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#session_limit RumRetentionQuota#session_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#session_limit RumRetentionQuota#session_limit}
   */
   readonly sessionLimit: number;
   /**
   * The window over which the quota resets. Valid values are `daily`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#window_type RumRetentionQuota#window_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#window_type RumRetentionQuota#window_type}
   */
   readonly windowType: string;
 }
@@ -254,7 +254,7 @@ export class RumRetentionQuotaCustomOutputReference extends cdktn.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota datadog_rum_retention_quota}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota datadog_rum_retention_quota}
 */
 export class RumRetentionQuota extends cdktn.TerraformResource {
 
@@ -270,7 +270,7 @@ export class RumRetentionQuota extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a RumRetentionQuota resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RumRetentionQuota to import
-  * @param importFromId The id of the existing RumRetentionQuota that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RumRetentionQuota that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RumRetentionQuota to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -282,7 +282,7 @@ export class RumRetentionQuota extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota datadog_rum_retention_quota} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota datadog_rum_retention_quota} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -293,7 +293,7 @@ export class RumRetentionQuota extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_rum_retention_quota',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.25.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
