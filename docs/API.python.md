@@ -207,6 +207,8 @@ The following submodules are available:
 - [rumApplication](./rumApplication.python.md)
 - [rumExclusionFilter](./rumExclusionFilter.python.md)
 - [rumMetric](./rumMetric.python.md)
+- [rumOperation](./rumOperation.python.md)
+- [rumOperationJourneyLink](./rumOperationJourneyLink.python.md)
 - [rumRetentionFilter](./rumRetentionFilter.python.md)
 - [rumRetentionFiltersOrder](./rumRetentionFiltersOrder.python.md)
 - [rumRetentionQuota](./rumRetentionQuota.python.md)

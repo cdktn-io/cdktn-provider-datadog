@@ -4,12 +4,12 @@
 
 ### IncidentUserDefinedRole <a name="IncidentUserDefinedRole" id="@cdktn/provider-datadog.incidentUserDefinedRole.IncidentUserDefinedRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/incident_user_defined_role datadog_incident_user_defined_role}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/incident_user_defined_role datadog_incident_user_defined_role}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.incidentUserDefinedRole.IncidentUserDefinedRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/incidentuserdefinedrole"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/incidentuserdefinedrole"
 
 incidentuserdefinedrole.NewIncidentUserDefinedRole(scope Construct, id *string, config IncidentUserDefinedRoleConfig) IncidentUserDefinedRole
 ```
@@ -427,7 +427,7 @@ func ResetPolicy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.incidentUserDefinedRole.IncidentUserDefinedRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/incidentuserdefinedrole"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/incidentuserdefinedrole"
 
 incidentuserdefinedrole.IncidentUserDefinedRole_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.incidentUserDefinedRole.IncidentUserDefinedRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/incidentuserdefinedrole"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/incidentuserdefinedrole"
 
 incidentuserdefinedrole.IncidentUserDefinedRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ incidentuserdefinedrole.IncidentUserDefinedRole_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.incidentUserDefinedRole.IncidentUserDefinedRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/incidentuserdefinedrole"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/incidentuserdefinedrole"
 
 incidentuserdefinedrole.IncidentUserDefinedRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ incidentuserdefinedrole.IncidentUserDefinedRole_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.incidentUserDefinedRole.IncidentUserDefinedRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/incidentuserdefinedrole"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/incidentuserdefinedrole"
 
 incidentuserdefinedrole.IncidentUserDefinedRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the IncidentUserDefinedRole to
 
 The id of the existing IncidentUserDefinedRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/incident_user_defined_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/incident_user_defined_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.incidentUserDefinedRole.IncidentUserDefinedRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/incidentuserdefinedrole"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/incidentuserdefinedrole"
 
 &incidentuserdefinedrole.IncidentUserDefinedRoleConfig {
 	Connection: interface{},
@@ -850,7 +850,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/incidentuserde
 	IncidentType: *string,
 	Name: *string,
 	Description: *string,
-	Policy: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.incidentUserDefinedRole.IncidentUserDefinedRolePolicy,
+	Policy: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.incidentUserDefinedRole.IncidentUserDefinedRolePolicy,
 }
 ```
 
@@ -952,7 +952,7 @@ IncidentType *string
 
 The ID of the incident type this user-defined role is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/incident_user_defined_role#incident_type IncidentUserDefinedRole#incident_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/incident_user_defined_role#incident_type IncidentUserDefinedRole#incident_type}
 
 ---
 
@@ -968,7 +968,7 @@ The name of the user-defined role.
 
 Cannot be a reserved name ("Incident Commander" or "Responder") and must be at most 255 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/incident_user_defined_role#name IncidentUserDefinedRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/incident_user_defined_role#name IncidentUserDefinedRole#name}
 
 ---
 
@@ -982,7 +982,7 @@ Description *string
 
 A description of the user-defined role. At most 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/incident_user_defined_role#description IncidentUserDefinedRole#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/incident_user_defined_role#description IncidentUserDefinedRole#description}
 
 ---
 
@@ -996,7 +996,7 @@ Policy IncidentUserDefinedRolePolicy
 
 Policy configuration for the user-defined role. Defaults to a multi-assignee policy when omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/incident_user_defined_role#policy IncidentUserDefinedRole#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/incident_user_defined_role#policy IncidentUserDefinedRole#policy}
 
 ---
 
@@ -1005,7 +1005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.incidentUserDefinedRole.IncidentUserDefinedRolePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/incidentuserdefinedrole"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/incidentuserdefinedrole"
 
 &incidentuserdefinedrole.IncidentUserDefinedRolePolicy {
 	IsSingle: interface{},
@@ -1030,7 +1030,7 @@ IsSingle interface{}
 
 Whether this role can only be assigned to one responder at a time. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/incident_user_defined_role#is_single IncidentUserDefinedRole#is_single}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/incident_user_defined_role#is_single IncidentUserDefinedRole#is_single}
 
 ---
 
@@ -1041,7 +1041,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.incidentUserDefinedRole.IncidentUserDefinedRolePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/incidentuserdefinedrole"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/incidentuserdefinedrole"
 
 incidentuserdefinedrole.NewIncidentUserDefinedRolePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IncidentUserDefinedRolePolicyOutputReference
 ```

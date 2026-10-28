@@ -4,7 +4,7 @@
 
 ### SloCorrection <a name="SloCorrection" id="@cdktn/provider-datadog.sloCorrection.SloCorrection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/slo_correction datadog_slo_correction}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/slo_correction datadog_slo_correction}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.sloCorrection.SloCorrection.Initializer"></a>
 
@@ -48,7 +48,7 @@ SloCorrection.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-datadog.sloCorrection.SloCorrection.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Description of the correction being made. |
 | <code><a href="#@cdktn/provider-datadog.sloCorrection.SloCorrection.Initializer.parameter.duration">duration</a></code> | <code>java.lang.Number</code> | Length of time in seconds for a specified `rrule` recurring SLO correction (required if specifying `rrule`). |
 | <code><a href="#@cdktn/provider-datadog.sloCorrection.SloCorrection.Initializer.parameter.end">end</a></code> | <code>java.lang.Number</code> | Ending time of the correction in epoch seconds. Required for one time corrections, but optional if `rrule` is specified. |
-| <code><a href="#@cdktn/provider-datadog.sloCorrection.SloCorrection.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/slo_correction#id SloCorrection#id}. |
+| <code><a href="#@cdktn/provider-datadog.sloCorrection.SloCorrection.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/slo_correction#id SloCorrection#id}. |
 | <code><a href="#@cdktn/provider-datadog.sloCorrection.SloCorrection.Initializer.parameter.rrule">rrule</a></code> | <code>java.lang.String</code> | Recurrence rules as defined in the iCalendar RFC 5545. |
 | <code><a href="#@cdktn/provider-datadog.sloCorrection.SloCorrection.Initializer.parameter.sloId">sloId</a></code> | <code>java.lang.String</code> | ID of the single SLO that this correction will be applied to. |
 | <code><a href="#@cdktn/provider-datadog.sloCorrection.SloCorrection.Initializer.parameter.sloQuery">sloQuery</a></code> | <code>java.lang.String</code> | Query that matches the SLOs this correction will be applied to. |
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 Category the SLO correction belongs to. Valid values are `Scheduled Maintenance`, `Outside Business Hours`, `Deployment`, `Other`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/slo_correction#category SloCorrection#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/slo_correction#category SloCorrection#category}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Starting time of the correction in epoch seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/slo_correction#start SloCorrection#start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/slo_correction#start SloCorrection#start}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Description of the correction being made.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/slo_correction#description SloCorrection#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/slo_correction#description SloCorrection#description}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Length of time in seconds for a specified `rrule` recurring SLO correction (required if specifying `rrule`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/slo_correction#duration SloCorrection#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/slo_correction#duration SloCorrection#duration}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Ending time of the correction in epoch seconds. Required for one time corrections, but optional if `rrule` is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/slo_correction#end SloCorrection#end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/slo_correction#end SloCorrection#end}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/slo_correction#id SloCorrection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/slo_correction#id SloCorrection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -185,7 +185,7 @@ Recurrence rules as defined in the iCalendar RFC 5545.
 
 Supported rules for SLO corrections are `FREQ`, `INTERVAL`, `COUNT` and `UNTIL`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/slo_correction#rrule SloCorrection#rrule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/slo_correction#rrule SloCorrection#rrule}
 
 ---
 
@@ -195,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ID of the single SLO that this correction will be applied to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/slo_correction#slo_id SloCorrection#slo_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/slo_correction#slo_id SloCorrection#slo_id}
 
 ---
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Query that matches the SLOs this correction will be applied to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/slo_correction#slo_query SloCorrection#slo_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/slo_correction#slo_query SloCorrection#slo_query}
 
 ---
 
@@ -217,7 +217,7 @@ The timezone to display in the UI for the correction times.
 
 Prefers IANA timezone name format (for example, 'America/Los_Angeles', 'Europe/Paris'), but some common standard abbreviations are supported. Defaults to 'UTC'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/slo_correction#timezone SloCorrection#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/slo_correction#timezone SloCorrection#timezone}
 
 ---
 
@@ -722,7 +722,7 @@ The construct id used in the generated config for the SloCorrection to import.
 
 The id of the existing SloCorrection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/slo_correction#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/slo_correction#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1181,7 +1181,7 @@ SloCorrectionConfig.builder()
 | <code><a href="#@cdktn/provider-datadog.sloCorrection.SloCorrectionConfig.property.description">description</a></code> | <code>java.lang.String</code> | Description of the correction being made. |
 | <code><a href="#@cdktn/provider-datadog.sloCorrection.SloCorrectionConfig.property.duration">duration</a></code> | <code>java.lang.Number</code> | Length of time in seconds for a specified `rrule` recurring SLO correction (required if specifying `rrule`). |
 | <code><a href="#@cdktn/provider-datadog.sloCorrection.SloCorrectionConfig.property.end">end</a></code> | <code>java.lang.Number</code> | Ending time of the correction in epoch seconds. Required for one time corrections, but optional if `rrule` is specified. |
-| <code><a href="#@cdktn/provider-datadog.sloCorrection.SloCorrectionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/slo_correction#id SloCorrection#id}. |
+| <code><a href="#@cdktn/provider-datadog.sloCorrection.SloCorrectionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/slo_correction#id SloCorrection#id}. |
 | <code><a href="#@cdktn/provider-datadog.sloCorrection.SloCorrectionConfig.property.rrule">rrule</a></code> | <code>java.lang.String</code> | Recurrence rules as defined in the iCalendar RFC 5545. |
 | <code><a href="#@cdktn/provider-datadog.sloCorrection.SloCorrectionConfig.property.sloId">sloId</a></code> | <code>java.lang.String</code> | ID of the single SLO that this correction will be applied to. |
 | <code><a href="#@cdktn/provider-datadog.sloCorrection.SloCorrectionConfig.property.sloQuery">sloQuery</a></code> | <code>java.lang.String</code> | Query that matches the SLOs this correction will be applied to. |
@@ -1269,7 +1269,7 @@ public java.lang.String getCategory();
 
 Category the SLO correction belongs to. Valid values are `Scheduled Maintenance`, `Outside Business Hours`, `Deployment`, `Other`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/slo_correction#category SloCorrection#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/slo_correction#category SloCorrection#category}
 
 ---
 
@@ -1283,7 +1283,7 @@ public java.lang.Number getStart();
 
 Starting time of the correction in epoch seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/slo_correction#start SloCorrection#start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/slo_correction#start SloCorrection#start}
 
 ---
 
@@ -1297,7 +1297,7 @@ public java.lang.String getDescription();
 
 Description of the correction being made.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/slo_correction#description SloCorrection#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/slo_correction#description SloCorrection#description}
 
 ---
 
@@ -1311,7 +1311,7 @@ public java.lang.Number getDuration();
 
 Length of time in seconds for a specified `rrule` recurring SLO correction (required if specifying `rrule`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/slo_correction#duration SloCorrection#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/slo_correction#duration SloCorrection#duration}
 
 ---
 
@@ -1325,7 +1325,7 @@ public java.lang.Number getEnd();
 
 Ending time of the correction in epoch seconds. Required for one time corrections, but optional if `rrule` is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/slo_correction#end SloCorrection#end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/slo_correction#end SloCorrection#end}
 
 ---
 
@@ -1337,7 +1337,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/slo_correction#id SloCorrection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/slo_correction#id SloCorrection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1356,7 +1356,7 @@ Recurrence rules as defined in the iCalendar RFC 5545.
 
 Supported rules for SLO corrections are `FREQ`, `INTERVAL`, `COUNT` and `UNTIL`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/slo_correction#rrule SloCorrection#rrule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/slo_correction#rrule SloCorrection#rrule}
 
 ---
 
@@ -1370,7 +1370,7 @@ public java.lang.String getSloId();
 
 ID of the single SLO that this correction will be applied to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/slo_correction#slo_id SloCorrection#slo_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/slo_correction#slo_id SloCorrection#slo_id}
 
 ---
 
@@ -1384,7 +1384,7 @@ public java.lang.String getSloQuery();
 
 Query that matches the SLOs this correction will be applied to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/slo_correction#slo_query SloCorrection#slo_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/slo_correction#slo_query SloCorrection#slo_query}
 
 ---
 
@@ -1400,7 +1400,7 @@ The timezone to display in the UI for the correction times.
 
 Prefers IANA timezone name format (for example, 'America/Los_Angeles', 'Europe/Paris'), but some common standard abbreviations are supported. Defaults to 'UTC'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/slo_correction#timezone SloCorrection#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/slo_correction#timezone SloCorrection#timezone}
 
 ---
 

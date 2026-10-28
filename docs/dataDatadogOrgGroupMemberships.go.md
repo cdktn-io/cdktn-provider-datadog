@@ -4,12 +4,12 @@
 
 ### DataDatadogOrgGroupMemberships <a name="DataDatadogOrgGroupMemberships" id="@cdktn/provider-datadog.dataDatadogOrgGroupMemberships.DataDatadogOrgGroupMemberships"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/org_group_memberships datadog_org_group_memberships}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/org_group_memberships datadog_org_group_memberships}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogOrgGroupMemberships.DataDatadogOrgGroupMemberships.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggroupmemberships"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggroupmemberships"
 
 datadatadogorggroupmemberships.NewDataDatadogOrgGroupMemberships(scope Construct, id *string, config DataDatadogOrgGroupMembershipsConfig) DataDatadogOrgGroupMemberships
 ```
@@ -312,7 +312,7 @@ func ResetOrgUuid()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogOrgGroupMemberships.DataDatadogOrgGroupMemberships.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggroupmemberships"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggroupmemberships"
 
 datadatadogorggroupmemberships.DataDatadogOrgGroupMemberships_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogOrgGroupMemberships.DataDatadogOrgGroupMemberships.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggroupmemberships"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggroupmemberships"
 
 datadatadogorggroupmemberships.DataDatadogOrgGroupMemberships_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogorggroupmemberships.DataDatadogOrgGroupMemberships_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogOrgGroupMemberships.DataDatadogOrgGroupMemberships.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggroupmemberships"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggroupmemberships"
 
 datadatadogorggroupmemberships.DataDatadogOrgGroupMemberships_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datadatadogorggroupmemberships.DataDatadogOrgGroupMemberships_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogOrgGroupMemberships.DataDatadogOrgGroupMemberships.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggroupmemberships"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggroupmemberships"
 
 datadatadogorggroupmemberships.DataDatadogOrgGroupMemberships_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataDatadogOrgGroupMembers
 
 The id of the existing DataDatadogOrgGroupMemberships that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/org_group_memberships#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/org_group_memberships#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -645,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogOrgGroupMemberships.DataDatadogOrgGroupMembershipsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggroupmemberships"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggroupmemberships"
 
 &datadatadogorggroupmemberships.DataDatadogOrgGroupMembershipsConfig {
 	Connection: interface{},
@@ -758,7 +758,7 @@ Filter memberships to those within the given org group.
 
 At least one filter (`org_group_id` or `org_uuid`) is required. Must be a valid UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/org_group_memberships#org_group_id DataDatadogOrgGroupMemberships#org_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/org_group_memberships#org_group_id DataDatadogOrgGroupMemberships#org_group_id}
 
 ---
 
@@ -774,7 +774,7 @@ Filter memberships to those for the given organization.
 
 At least one filter (`org_group_id` or `org_uuid`) is required. Must be a valid UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/org_group_memberships#org_uuid DataDatadogOrgGroupMemberships#org_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/org_group_memberships#org_uuid DataDatadogOrgGroupMemberships#org_uuid}
 
 ---
 
@@ -783,7 +783,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogOrgGroupMemberships.DataDatadogOrgGroupMembershipsMemberships.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggroupmemberships"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggroupmemberships"
 
 &datadatadogorggroupmemberships.DataDatadogOrgGroupMembershipsMemberships {
 
@@ -798,7 +798,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorg
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogOrgGroupMemberships.DataDatadogOrgGroupMembershipsMembershipsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggroupmemberships"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggroupmemberships"
 
 datadatadogorggroupmemberships.NewDataDatadogOrgGroupMembershipsMembershipsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogOrgGroupMembershipsMembershipsList
 ```
@@ -947,7 +947,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogOrgGroupMemberships.DataDatadogOrgGroupMembershipsMembershipsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggroupmemberships"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggroupmemberships"
 
 datadatadogorggroupmemberships.NewDataDatadogOrgGroupMembershipsMembershipsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogOrgGroupMembershipsMembershipsOutputReference
 ```

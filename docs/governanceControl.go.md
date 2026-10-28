@@ -4,12 +4,12 @@
 
 ### GovernanceControl <a name="GovernanceControl" id="@cdktn/provider-datadog.governanceControl.GovernanceControl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/governance_control datadog_governance_control}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/governance_control datadog_governance_control}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.governanceControl.GovernanceControl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/governancecontrol"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/governancecontrol"
 
 governancecontrol.NewGovernanceControl(scope Construct, id *string, config GovernanceControlConfig) GovernanceControl
 ```
@@ -441,7 +441,7 @@ func ResetNotificationSettings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.governanceControl.GovernanceControl.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/governancecontrol"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/governancecontrol"
 
 governancecontrol.GovernanceControl_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.governanceControl.GovernanceControl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/governancecontrol"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/governancecontrol"
 
 governancecontrol.GovernanceControl_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ governancecontrol.GovernanceControl_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.governanceControl.GovernanceControl.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/governancecontrol"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/governancecontrol"
 
 governancecontrol.GovernanceControl_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ governancecontrol.GovernanceControl_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.governanceControl.GovernanceControl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/governancecontrol"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/governancecontrol"
 
 governancecontrol.GovernanceControl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the GovernanceControl to impor
 
 The id of the existing GovernanceControl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/governance_control#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/governance_control#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -862,7 +862,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.governanceControl.GovernanceControlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/governancecontrol"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/governancecontrol"
 
 &governancecontrol.GovernanceControlConfig {
 	Connection: interface{},
@@ -979,7 +979,7 @@ DetectionType *string
 
 The detection type that uniquely identifies the control, for example `unused_api_keys`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/governance_control#detection_type GovernanceControl#detection_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/governance_control#detection_type GovernanceControl#detection_type}
 
 ---
 
@@ -993,7 +993,7 @@ DetectionParameters *string
 
 Detection parameters for the control, as a JSON-encoded map of parameter names to their configured values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/governance_control#detection_parameters GovernanceControl#detection_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/governance_control#detection_parameters GovernanceControl#detection_parameters}
 
 ---
 
@@ -1007,7 +1007,7 @@ MitigationParameters *string
 
 Mitigation parameters for the control, as a JSON-encoded map of parameter names to their configured values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/governance_control#mitigation_parameters GovernanceControl#mitigation_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/governance_control#mitigation_parameters GovernanceControl#mitigation_parameters}
 
 ---
 
@@ -1021,7 +1021,7 @@ MitigationType *string
 
 The mitigation type configured for the control. Empty when not configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/governance_control#mitigation_type GovernanceControl#mitigation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/governance_control#mitigation_type GovernanceControl#mitigation_type}
 
 ---
 
@@ -1035,7 +1035,7 @@ NotificationSettings interface{}
 
 The notification settings for the control, one entry per event type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/governance_control#notification_settings GovernanceControl#notification_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/governance_control#notification_settings GovernanceControl#notification_settings}
 
 ---
 
@@ -1044,7 +1044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.governanceControl.GovernanceControlNotificationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/governancecontrol"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/governancecontrol"
 
 &governancecontrol.GovernanceControlNotificationSettings {
 	Enabled: interface{},
@@ -1073,7 +1073,7 @@ Enabled interface{}
 
 Whether notifications are enabled for this event type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/governance_control#enabled GovernanceControl#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/governance_control#enabled GovernanceControl#enabled}
 
 ---
 
@@ -1087,7 +1087,7 @@ EventType *string
 
 The event type the notification settings apply to, such as `new_detection`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/governance_control#event_type GovernanceControl#event_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/governance_control#event_type GovernanceControl#event_type}
 
 ---
 
@@ -1101,7 +1101,7 @@ Targets interface{}
 
 The destinations that receive notifications for this event type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/governance_control#targets GovernanceControl#targets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/governance_control#targets GovernanceControl#targets}
 
 ---
 
@@ -1110,7 +1110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.governanceControl.GovernanceControlNotificationSettingsTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/governancecontrol"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/governancecontrol"
 
 &governancecontrol.GovernanceControlNotificationSettingsTargets {
 	Handle: *string,
@@ -1137,7 +1137,7 @@ Handle *string
 
 The handle of the notification target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/governance_control#handle GovernanceControl#handle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/governance_control#handle GovernanceControl#handle}
 
 ---
 
@@ -1151,7 +1151,7 @@ Type *string
 
 The type of notification target: `email`, `slack`, `at_mention`, or `case`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/governance_control#type GovernanceControl#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/governance_control#type GovernanceControl#type}
 
 ---
 
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.governanceControl.GovernanceControlNotificationSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/governancecontrol"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/governancecontrol"
 
 governancecontrol.NewGovernanceControlNotificationSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GovernanceControlNotificationSettingsList
 ```
@@ -1322,7 +1322,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.governanceControl.GovernanceControlNotificationSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/governancecontrol"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/governancecontrol"
 
 governancecontrol.NewGovernanceControlNotificationSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GovernanceControlNotificationSettingsOutputReference
 ```
@@ -1668,7 +1668,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.governanceControl.GovernanceControlNotificationSettingsTargetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/governancecontrol"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/governancecontrol"
 
 governancecontrol.NewGovernanceControlNotificationSettingsTargetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GovernanceControlNotificationSettingsTargetsList
 ```
@@ -1828,7 +1828,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.governanceControl.GovernanceControlNotificationSettingsTargetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/governancecontrol"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/governancecontrol"
 
 governancecontrol.NewGovernanceControlNotificationSettingsTargetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GovernanceControlNotificationSettingsTargetsOutputReference
 ```

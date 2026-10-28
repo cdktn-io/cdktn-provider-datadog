@@ -4,7 +4,7 @@
 
 ### RumExclusionFilter <a name="RumExclusionFilter" id="@cdktn/provider-datadog.rumExclusionFilter.RumExclusionFilter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_exclusion_filter datadog_rum_exclusion_filter}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_exclusion_filter datadog_rum_exclusion_filter}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.rumExclusionFilter.RumExclusionFilter.Initializer"></a>
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the RumExclusionFilter to impo
 
 The id of the existing RumExclusionFilter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_exclusion_filter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_exclusion_filter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -941,7 +941,7 @@ public string ApplicationId { get; set; }
 
 RUM application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_exclusion_filter#application_id RumExclusionFilter#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_exclusion_filter#application_id RumExclusionFilter#application_id}
 
 ---
 
@@ -955,7 +955,7 @@ public string EventType { get; set; }
 
 The type of RUM events to filter on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_exclusion_filter#event_type RumExclusionFilter#event_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_exclusion_filter#event_type RumExclusionFilter#event_type}
 
 ---
 
@@ -969,7 +969,7 @@ public string Name { get; set; }
 
 The name of the exclusion filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_exclusion_filter#name RumExclusionFilter#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_exclusion_filter#name RumExclusionFilter#name}
 
 ---
 
@@ -983,7 +983,7 @@ public bool|IResolvable Enabled { get; set; }
 
 Whether the exclusion filter is active. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_exclusion_filter#enabled RumExclusionFilter#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_exclusion_filter#enabled RumExclusionFilter#enabled}
 
 ---
 
@@ -997,7 +997,7 @@ public string Query { get; set; }
 
 Additional query used to further restrict which RUM events are excluded. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_exclusion_filter#query RumExclusionFilter#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_exclusion_filter#query RumExclusionFilter#query}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### IntegrationTwilioAccount <a name="IntegrationTwilioAccount" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account datadog_integration_twilio_account}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account datadog_integration_twilio_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 integrationtwilioaccount.NewIntegrationTwilioAccount(scope Construct, id *string, config IntegrationTwilioAccountConfig) IntegrationTwilioAccount
 ```
@@ -446,7 +446,7 @@ func ResetDataflows()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 integrationtwilioaccount.IntegrationTwilioAccount_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 integrationtwilioaccount.IntegrationTwilioAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ integrationtwilioaccount.IntegrationTwilioAccount_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 integrationtwilioaccount.IntegrationTwilioAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ integrationtwilioaccount.IntegrationTwilioAccount_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 integrationtwilioaccount.IntegrationTwilioAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -535,7 +535,7 @@ The construct id used in the generated config for the IntegrationTwilioAccount t
 
 The id of the existing IntegrationTwilioAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -834,10 +834,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 &integrationtwilioaccount.IntegrationTwilioAccountAuthentication {
-	TwilioIntegrationAccountBasicAuth: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationTwilioAccount.IntegrationTwilioAccountAuthenticationTwilioIntegrationAccountBasicAuth,
+	TwilioIntegrationAccountBasicAuth: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationTwilioAccount.IntegrationTwilioAccountAuthenticationTwilioIntegrationAccountBasicAuth,
 }
 ```
 
@@ -859,7 +859,7 @@ TwilioIntegrationAccountBasicAuth IntegrationTwilioAccountAuthenticationTwilioIn
 
 The basic authentication method and username configured on the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#twilio_integration_account_basic_auth IntegrationTwilioAccount#twilio_integration_account_basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#twilio_integration_account_basic_auth IntegrationTwilioAccount#twilio_integration_account_basic_auth}
 
 ---
 
@@ -868,7 +868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountAuthenticationTwilioIntegrationAccountBasicAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 &integrationtwilioaccount.IntegrationTwilioAccountAuthenticationTwilioIntegrationAccountBasicAuth {
 	PasswordWo: *string,
@@ -899,7 +899,7 @@ PasswordWo *string
 
 Secret password or private key. This write-only value is not stored in Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#password_wo IntegrationTwilioAccount#password_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#password_wo IntegrationTwilioAccount#password_wo}
 
 ---
 
@@ -913,7 +913,7 @@ PasswordWoVersion *string
 
 Version trigger for password_wo rotation. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#password_wo_version IntegrationTwilioAccount#password_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#password_wo_version IntegrationTwilioAccount#password_wo_version}
 
 ---
 
@@ -927,7 +927,7 @@ Username *string
 
 Non-secret username or public identifier for the credential pair.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#username IntegrationTwilioAccount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#username IntegrationTwilioAccount#username}
 
 ---
 
@@ -941,7 +941,7 @@ AuthType *string
 
 The authentication method type. Valid values are `basic`. Defaults to `"basic"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#auth_type IntegrationTwilioAccount#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#auth_type IntegrationTwilioAccount#auth_type}
 
 ---
 
@@ -950,7 +950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 &integrationtwilioaccount.IntegrationTwilioAccountConfig {
 	Connection: interface{},
@@ -960,10 +960,10 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwi
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Authentication: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationTwilioAccount.IntegrationTwilioAccountAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationTwilioAccount.IntegrationTwilioAccountAuthentication,
 	Name: *string,
-	Settings: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationTwilioAccount.IntegrationTwilioAccountSettings,
-	Dataflows: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationTwilioAccount.IntegrationTwilioAccountDataflows,
+	Settings: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationTwilioAccount.IntegrationTwilioAccountSettings,
+	Dataflows: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationTwilioAccount.IntegrationTwilioAccountDataflows,
 }
 ```
 
@@ -1065,7 +1065,7 @@ Authentication IntegrationTwilioAccountAuthentication
 
 Authentication configured on the Twilio integration account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#authentication IntegrationTwilioAccount#authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#authentication IntegrationTwilioAccount#authentication}
 
 ---
 
@@ -1079,7 +1079,7 @@ Name *string
 
 Human-readable name of the Twilio integration account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#name IntegrationTwilioAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#name IntegrationTwilioAccount#name}
 
 ---
 
@@ -1093,7 +1093,7 @@ Settings IntegrationTwilioAccountSettings
 
 Settings configured on the Twilio integration account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#settings IntegrationTwilioAccount#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#settings IntegrationTwilioAccount#settings}
 
 ---
 
@@ -1107,7 +1107,7 @@ Dataflows IntegrationTwilioAccountDataflows
 
 Data Datadog collects from Twilio, keyed by dataflow id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#dataflows IntegrationTwilioAccount#dataflows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#dataflows IntegrationTwilioAccount#dataflows}
 
 ---
 
@@ -1116,14 +1116,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountDataflows.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 &integrationtwilioaccount.IntegrationTwilioAccountDataflows {
-	TwilioAlertsLogs: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioAlertsLogs,
-	TwilioCallSummariesLogs: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioCallSummariesLogs,
-	TwilioCloudCostMetrics: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioCloudCostMetrics,
-	TwilioEventsLogs: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioEventsLogs,
-	TwilioMessagesLogs: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioMessagesLogs,
+	TwilioAlertsLogs: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioAlertsLogs,
+	TwilioCallSummariesLogs: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioCallSummariesLogs,
+	TwilioCloudCostMetrics: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioCloudCostMetrics,
+	TwilioEventsLogs: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioEventsLogs,
+	TwilioMessagesLogs: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioMessagesLogs,
 }
 ```
 
@@ -1149,7 +1149,7 @@ TwilioAlertsLogs IntegrationTwilioAccountDataflowsTwilioAlertsLogs
 
 Twilio Alert resource logs, which detail the errors and warnings raised when Twilio makes a webhook request to your server or when your application calls the Twilio REST API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#twilio_alerts_logs IntegrationTwilioAccount#twilio_alerts_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#twilio_alerts_logs IntegrationTwilioAccount#twilio_alerts_logs}
 
 ---
 
@@ -1165,7 +1165,7 @@ Twilio Call Summary resource logs, covering the metadata and performance of the 
 
 Requires Voice Insights Advanced Features to be enabled on the Twilio account; without it this dataflow collects no data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#twilio_call_summaries_logs IntegrationTwilioAccount#twilio_call_summaries_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#twilio_call_summaries_logs IntegrationTwilioAccount#twilio_call_summaries_logs}
 
 ---
 
@@ -1179,7 +1179,7 @@ TwilioCloudCostMetrics IntegrationTwilioAccountDataflowsTwilioCloudCostMetrics
 
 Your Twilio cost data, so that Twilio spend can be broken down and attributed in [Cloud Cost Management](https://docs.datadoghq.com/cloud_cost_management/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#twilio_cloud_cost_metrics IntegrationTwilioAccount#twilio_cloud_cost_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#twilio_cloud_cost_metrics IntegrationTwilioAccount#twilio_cloud_cost_metrics}
 
 ---
 
@@ -1195,7 +1195,7 @@ Twilio Event resource logs, which record virtually every action taken in your Tw
 
 Actions are recorded whether they came from the REST API, a user in the Twilio Console, or Twilio itself. [Cloud SIEM](https://docs.datadoghq.com/security/cloud_siem/) analyzes and correlates these logs to detect threats in real time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#twilio_events_logs IntegrationTwilioAccount#twilio_events_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#twilio_events_logs IntegrationTwilioAccount#twilio_events_logs}
 
 ---
 
@@ -1211,7 +1211,7 @@ Twilio Message resource logs for inbound and outbound messages, used to track de
 
 A log is produced when you send a message through the REST API, when Twilio executes a TwiML instruction, and when someone messages one of your Twilio numbers or channel addresses. Message bodies are never collected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#twilio_messages_logs IntegrationTwilioAccount#twilio_messages_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#twilio_messages_logs IntegrationTwilioAccount#twilio_messages_logs}
 
 ---
 
@@ -1220,7 +1220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioAlertsLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 &integrationtwilioaccount.IntegrationTwilioAccountDataflowsTwilioAlertsLogs {
 	Enabled: interface{},
@@ -1245,7 +1245,7 @@ Enabled interface{}
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
 
 ---
 
@@ -1254,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioAlertsLogsStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 &integrationtwilioaccount.IntegrationTwilioAccountDataflowsTwilioAlertsLogsStatus {
 
@@ -1267,7 +1267,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwi
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioCallSummariesLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 &integrationtwilioaccount.IntegrationTwilioAccountDataflowsTwilioCallSummariesLogs {
 	Enabled: interface{},
@@ -1292,7 +1292,7 @@ Enabled interface{}
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
 
 ---
 
@@ -1301,7 +1301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioCallSummariesLogsStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 &integrationtwilioaccount.IntegrationTwilioAccountDataflowsTwilioCallSummariesLogsStatus {
 
@@ -1314,7 +1314,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwi
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioCloudCostMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 &integrationtwilioaccount.IntegrationTwilioAccountDataflowsTwilioCloudCostMetrics {
 	Enabled: interface{},
@@ -1339,7 +1339,7 @@ Enabled interface{}
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
 
 ---
 
@@ -1348,7 +1348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioCloudCostMetricsStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 &integrationtwilioaccount.IntegrationTwilioAccountDataflowsTwilioCloudCostMetricsStatus {
 
@@ -1361,7 +1361,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwi
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioEventsLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 &integrationtwilioaccount.IntegrationTwilioAccountDataflowsTwilioEventsLogs {
 	Enabled: interface{},
@@ -1386,7 +1386,7 @@ Enabled interface{}
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
 
 ---
 
@@ -1395,7 +1395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioEventsLogsStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 &integrationtwilioaccount.IntegrationTwilioAccountDataflowsTwilioEventsLogsStatus {
 
@@ -1408,7 +1408,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwi
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioMessagesLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 &integrationtwilioaccount.IntegrationTwilioAccountDataflowsTwilioMessagesLogs {
 	Enabled: interface{},
@@ -1433,7 +1433,7 @@ Enabled interface{}
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#enabled IntegrationTwilioAccount#enabled}
 
 ---
 
@@ -1442,7 +1442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioMessagesLogsStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 &integrationtwilioaccount.IntegrationTwilioAccountDataflowsTwilioMessagesLogsStatus {
 
@@ -1455,7 +1455,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwi
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 &integrationtwilioaccount.IntegrationTwilioAccountSettings {
 	AccountSid: *string,
@@ -1482,7 +1482,7 @@ AccountSid *string
 
 Twilio Account SID that uniquely identifies your Twilio account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#account_sid IntegrationTwilioAccount#account_sid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#account_sid IntegrationTwilioAccount#account_sid}
 
 ---
 
@@ -1496,7 +1496,7 @@ CensorLogs interface{}
 
 When enabled, Twilio phone numbers in the `to` field and SMS message bodies are censored for privacy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_twilio_account#censor_logs IntegrationTwilioAccount#censor_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_twilio_account#censor_logs IntegrationTwilioAccount#censor_logs}
 
 ---
 
@@ -1507,7 +1507,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 integrationtwilioaccount.NewIntegrationTwilioAccountAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationTwilioAccountAuthenticationOutputReference
 ```
@@ -1798,7 +1798,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountAuthenticationTwilioIntegrationAccountBasicAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 integrationtwilioaccount.NewIntegrationTwilioAccountAuthenticationTwilioIntegrationAccountBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationTwilioAccountAuthenticationTwilioIntegrationAccountBasicAuthOutputReference
 ```
@@ -2144,7 +2144,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountDataflowsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 integrationtwilioaccount.NewIntegrationTwilioAccountDataflowsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationTwilioAccountDataflowsOutputReference
 ```
@@ -2603,7 +2603,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioAlertsLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 integrationtwilioaccount.NewIntegrationTwilioAccountDataflowsTwilioAlertsLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationTwilioAccountDataflowsTwilioAlertsLogsOutputReference
 ```
@@ -2892,7 +2892,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioAlertsLogsStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 integrationtwilioaccount.NewIntegrationTwilioAccountDataflowsTwilioAlertsLogsStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationTwilioAccountDataflowsTwilioAlertsLogsStatusOutputReference
 ```
@@ -3174,7 +3174,7 @@ func InternalValue() IntegrationTwilioAccountDataflowsTwilioAlertsLogsStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioCallSummariesLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 integrationtwilioaccount.NewIntegrationTwilioAccountDataflowsTwilioCallSummariesLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationTwilioAccountDataflowsTwilioCallSummariesLogsOutputReference
 ```
@@ -3463,7 +3463,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioCallSummariesLogsStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 integrationtwilioaccount.NewIntegrationTwilioAccountDataflowsTwilioCallSummariesLogsStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationTwilioAccountDataflowsTwilioCallSummariesLogsStatusOutputReference
 ```
@@ -3745,7 +3745,7 @@ func InternalValue() IntegrationTwilioAccountDataflowsTwilioCallSummariesLogsSta
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioCloudCostMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 integrationtwilioaccount.NewIntegrationTwilioAccountDataflowsTwilioCloudCostMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationTwilioAccountDataflowsTwilioCloudCostMetricsOutputReference
 ```
@@ -4034,7 +4034,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioCloudCostMetricsStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 integrationtwilioaccount.NewIntegrationTwilioAccountDataflowsTwilioCloudCostMetricsStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationTwilioAccountDataflowsTwilioCloudCostMetricsStatusOutputReference
 ```
@@ -4316,7 +4316,7 @@ func InternalValue() IntegrationTwilioAccountDataflowsTwilioCloudCostMetricsStat
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioEventsLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 integrationtwilioaccount.NewIntegrationTwilioAccountDataflowsTwilioEventsLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationTwilioAccountDataflowsTwilioEventsLogsOutputReference
 ```
@@ -4605,7 +4605,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioEventsLogsStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 integrationtwilioaccount.NewIntegrationTwilioAccountDataflowsTwilioEventsLogsStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationTwilioAccountDataflowsTwilioEventsLogsStatusOutputReference
 ```
@@ -4887,7 +4887,7 @@ func InternalValue() IntegrationTwilioAccountDataflowsTwilioEventsLogsStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioMessagesLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 integrationtwilioaccount.NewIntegrationTwilioAccountDataflowsTwilioMessagesLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationTwilioAccountDataflowsTwilioMessagesLogsOutputReference
 ```
@@ -5176,7 +5176,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountDataflowsTwilioMessagesLogsStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 integrationtwilioaccount.NewIntegrationTwilioAccountDataflowsTwilioMessagesLogsStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationTwilioAccountDataflowsTwilioMessagesLogsStatusOutputReference
 ```
@@ -5458,7 +5458,7 @@ func InternalValue() IntegrationTwilioAccountDataflowsTwilioMessagesLogsStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationTwilioAccount.IntegrationTwilioAccountSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationtwilioaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationtwilioaccount"
 
 integrationtwilioaccount.NewIntegrationTwilioAccountSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationTwilioAccountSettingsOutputReference
 ```

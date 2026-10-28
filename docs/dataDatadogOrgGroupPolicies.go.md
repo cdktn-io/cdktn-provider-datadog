@@ -4,12 +4,12 @@
 
 ### DataDatadogOrgGroupPolicies <a name="DataDatadogOrgGroupPolicies" id="@cdktn/provider-datadog.dataDatadogOrgGroupPolicies.DataDatadogOrgGroupPolicies"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/org_group_policies datadog_org_group_policies}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/org_group_policies datadog_org_group_policies}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogOrgGroupPolicies.DataDatadogOrgGroupPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggrouppolicies"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggrouppolicies"
 
 datadatadogorggrouppolicies.NewDataDatadogOrgGroupPolicies(scope Construct, id *string, config DataDatadogOrgGroupPoliciesConfig) DataDatadogOrgGroupPolicies
 ```
@@ -305,7 +305,7 @@ func ResetPolicyName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogOrgGroupPolicies.DataDatadogOrgGroupPolicies.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggrouppolicies"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggrouppolicies"
 
 datadatadogorggrouppolicies.DataDatadogOrgGroupPolicies_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogOrgGroupPolicies.DataDatadogOrgGroupPolicies.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggrouppolicies"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggrouppolicies"
 
 datadatadogorggrouppolicies.DataDatadogOrgGroupPolicies_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datadatadogorggrouppolicies.DataDatadogOrgGroupPolicies_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogOrgGroupPolicies.DataDatadogOrgGroupPolicies.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggrouppolicies"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggrouppolicies"
 
 datadatadogorggrouppolicies.DataDatadogOrgGroupPolicies_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datadatadogorggrouppolicies.DataDatadogOrgGroupPolicies_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogOrgGroupPolicies.DataDatadogOrgGroupPolicies.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggrouppolicies"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggrouppolicies"
 
 datadatadogorggrouppolicies.DataDatadogOrgGroupPolicies_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataDatadogOrgGroupPolicie
 
 The id of the existing DataDatadogOrgGroupPolicies that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/org_group_policies#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/org_group_policies#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogOrgGroupPolicies.DataDatadogOrgGroupPoliciesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggrouppolicies"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggrouppolicies"
 
 &datadatadogorggrouppolicies.DataDatadogOrgGroupPoliciesConfig {
 	Connection: interface{},
@@ -749,7 +749,7 @@ OrgGroupId *string
 
 The UUID of the org group whose policies to list. Must be a valid UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/org_group_policies#org_group_id DataDatadogOrgGroupPolicies#org_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/org_group_policies#org_group_id DataDatadogOrgGroupPolicies#org_group_id}
 
 ---
 
@@ -763,7 +763,7 @@ PolicyName *string
 
 Filter policies by name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/org_group_policies#policy_name DataDatadogOrgGroupPolicies#policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/org_group_policies#policy_name DataDatadogOrgGroupPolicies#policy_name}
 
 ---
 
@@ -772,7 +772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogOrgGroupPolicies.DataDatadogOrgGroupPoliciesPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggrouppolicies"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggrouppolicies"
 
 &datadatadogorggrouppolicies.DataDatadogOrgGroupPoliciesPolicies {
 
@@ -787,7 +787,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorg
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogOrgGroupPolicies.DataDatadogOrgGroupPoliciesPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggrouppolicies"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggrouppolicies"
 
 datadatadogorggrouppolicies.NewDataDatadogOrgGroupPoliciesPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogOrgGroupPoliciesPoliciesList
 ```
@@ -936,7 +936,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogOrgGroupPolicies.DataDatadogOrgGroupPoliciesPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorggrouppolicies"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogorggrouppolicies"
 
 datadatadogorggrouppolicies.NewDataDatadogOrgGroupPoliciesPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogOrgGroupPoliciesPoliciesOutputReference
 ```

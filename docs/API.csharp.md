@@ -207,6 +207,8 @@ The following submodules are available:
 - [rumApplication](./rumApplication.csharp.md)
 - [rumExclusionFilter](./rumExclusionFilter.csharp.md)
 - [rumMetric](./rumMetric.csharp.md)
+- [rumOperation](./rumOperation.csharp.md)
+- [rumOperationJourneyLink](./rumOperationJourneyLink.csharp.md)
 - [rumRetentionFilter](./rumRetentionFilter.csharp.md)
 - [rumRetentionFiltersOrder](./rumRetentionFiltersOrder.csharp.md)
 - [rumRetentionQuota](./rumRetentionQuota.csharp.md)

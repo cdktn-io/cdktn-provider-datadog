@@ -4,12 +4,12 @@
 
 ### StatusPageMaintenanceTemplate <a name="StatusPageMaintenanceTemplate" id="@cdktn/provider-datadog.statusPageMaintenanceTemplate.StatusPageMaintenanceTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_maintenance_template datadog_status_page_maintenance_template}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_maintenance_template datadog_status_page_maintenance_template}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.statusPageMaintenanceTemplate.StatusPageMaintenanceTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/statuspagemaintenancetemplate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/statuspagemaintenancetemplate"
 
 statuspagemaintenancetemplate.NewStatusPageMaintenanceTemplate(scope Construct, id *string, config StatusPageMaintenanceTemplateConfig) StatusPageMaintenanceTemplate
 ```
@@ -435,7 +435,7 @@ func ResetScheduledDescription()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.statusPageMaintenanceTemplate.StatusPageMaintenanceTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/statuspagemaintenancetemplate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/statuspagemaintenancetemplate"
 
 statuspagemaintenancetemplate.StatusPageMaintenanceTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.statusPageMaintenanceTemplate.StatusPageMaintenanceTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/statuspagemaintenancetemplate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/statuspagemaintenancetemplate"
 
 statuspagemaintenancetemplate.StatusPageMaintenanceTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ statuspagemaintenancetemplate.StatusPageMaintenanceTemplate_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.statusPageMaintenanceTemplate.StatusPageMaintenanceTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/statuspagemaintenancetemplate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/statuspagemaintenancetemplate"
 
 statuspagemaintenancetemplate.StatusPageMaintenanceTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ statuspagemaintenancetemplate.StatusPageMaintenanceTemplate_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.statusPageMaintenanceTemplate.StatusPageMaintenanceTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/statuspagemaintenancetemplate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/statuspagemaintenancetemplate"
 
 statuspagemaintenancetemplate.StatusPageMaintenanceTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -524,7 +524,7 @@ The construct id used in the generated config for the StatusPageMaintenanceTempl
 
 The id of the existing StatusPageMaintenanceTemplate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_maintenance_template#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_maintenance_template#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -911,7 +911,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.statusPageMaintenanceTemplate.StatusPageMaintenanceTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/statuspagemaintenancetemplate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/statuspagemaintenancetemplate"
 
 &statuspagemaintenancetemplate.StatusPageMaintenanceTemplateConfig {
 	Connection: interface{},
@@ -1032,7 +1032,7 @@ Name *string
 
 The name of the maintenance template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_maintenance_template#name StatusPageMaintenanceTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_maintenance_template#name StatusPageMaintenanceTemplate#name}
 
 ---
 
@@ -1046,7 +1046,7 @@ PageId *string
 
 The ID of the status page this maintenance template belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_maintenance_template#page_id StatusPageMaintenanceTemplate#page_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_maintenance_template#page_id StatusPageMaintenanceTemplate#page_id}
 
 ---
 
@@ -1060,7 +1060,7 @@ CompletedDescription *string
 
 The pre-filled description shown once the maintenance is completed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_maintenance_template#completed_description StatusPageMaintenanceTemplate#completed_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_maintenance_template#completed_description StatusPageMaintenanceTemplate#completed_description}
 
 ---
 
@@ -1074,7 +1074,7 @@ ComponentIds *[]*string
 
 The IDs of the components affected by a maintenance created from this template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_maintenance_template#component_ids StatusPageMaintenanceTemplate#component_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_maintenance_template#component_ids StatusPageMaintenanceTemplate#component_ids}
 
 ---
 
@@ -1088,7 +1088,7 @@ InProgressDescription *string
 
 The pre-filled description shown while the maintenance is in progress.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_maintenance_template#in_progress_description StatusPageMaintenanceTemplate#in_progress_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_maintenance_template#in_progress_description StatusPageMaintenanceTemplate#in_progress_description}
 
 ---
 
@@ -1102,7 +1102,7 @@ MaintenanceTitle *string
 
 The title used for a maintenance created from this template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_maintenance_template#maintenance_title StatusPageMaintenanceTemplate#maintenance_title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_maintenance_template#maintenance_title StatusPageMaintenanceTemplate#maintenance_title}
 
 ---
 
@@ -1116,7 +1116,7 @@ ScheduledDescription *string
 
 The pre-filled description shown while the maintenance is scheduled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_maintenance_template#scheduled_description StatusPageMaintenanceTemplate#scheduled_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_maintenance_template#scheduled_description StatusPageMaintenanceTemplate#scheduled_description}
 
 ---
 

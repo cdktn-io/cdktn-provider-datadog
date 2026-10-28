@@ -4,12 +4,12 @@
 
 ### FleetSchedule <a name="FleetSchedule" id="@cdktn/provider-datadog.fleetSchedule.FleetSchedule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule datadog_fleet_schedule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule datadog_fleet_schedule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.fleetSchedule.FleetSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/fleetschedule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/fleetschedule"
 
 fleetschedule.NewFleetSchedule(scope Construct, id *string, config FleetScheduleConfig) FleetSchedule
 ```
@@ -427,7 +427,7 @@ func ResetVersionToLatest()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.fleetSchedule.FleetSchedule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/fleetschedule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/fleetschedule"
 
 fleetschedule.FleetSchedule_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.fleetSchedule.FleetSchedule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/fleetschedule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/fleetschedule"
 
 fleetschedule.FleetSchedule_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ fleetschedule.FleetSchedule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.fleetSchedule.FleetSchedule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/fleetschedule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/fleetschedule"
 
 fleetschedule.FleetSchedule_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ fleetschedule.FleetSchedule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.fleetSchedule.FleetSchedule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/fleetschedule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/fleetschedule"
 
 fleetschedule.FleetSchedule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the FleetSchedule to import.
 
 The id of the existing FleetSchedule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.fleetSchedule.FleetScheduleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/fleetschedule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/fleetschedule"
 
 &fleetschedule.FleetScheduleConfig {
 	Connection: interface{},
@@ -849,7 +849,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/fleetschedule"
 	Provisioners: *[]interface{},
 	Name: *string,
 	Query: *string,
-	Rule: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.fleetSchedule.FleetScheduleRule,
+	Rule: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.fleetSchedule.FleetScheduleRule,
 	Status: *string,
 	VersionToLatest: *f64,
 }
@@ -954,7 +954,7 @@ Name *string
 
 Human-readable name for the schedule. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#name FleetSchedule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#name FleetSchedule#name}
 
 ---
 
@@ -968,7 +968,7 @@ Query *string
 
 Datadog host query used to select the Agent upgrade targets. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#query FleetSchedule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#query FleetSchedule#query}
 
 ---
 
@@ -982,7 +982,7 @@ Rule FleetScheduleRule
 
 Weekly recurrence and maintenance-window configuration for the schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#rule FleetSchedule#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#rule FleetSchedule#rule}
 
 ---
 
@@ -998,7 +998,7 @@ Whether the schedule creates deployments.
 
 Valid values are `active` and `inactive`. The API default is used when omitted. Valid values are `active`, `inactive`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#status FleetSchedule#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#status FleetSchedule#status}
 
 ---
 
@@ -1014,7 +1014,7 @@ Number of major Agent versions behind the latest version to target: `0`, `1`, or
 
 The API default is used when omitted. Value must be between 0 and 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#version_to_latest FleetSchedule#version_to_latest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#version_to_latest FleetSchedule#version_to_latest}
 
 ---
 
@@ -1023,7 +1023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.fleetSchedule.FleetScheduleRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/fleetschedule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/fleetschedule"
 
 &fleetschedule.FleetScheduleRule {
 	DaysOfWeek: *[]*string,
@@ -1054,7 +1054,7 @@ DaysOfWeek *[]*string
 
 Days when the schedule may run. Valid values are `Mon`, `Tue`, `Wed`, `Thu`, `Fri`, `Sat`, and `Sun`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#days_of_week FleetSchedule#days_of_week}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#days_of_week FleetSchedule#days_of_week}
 
 ---
 
@@ -1068,7 +1068,7 @@ MaintenanceWindowDuration *f64
 
 Duration of the maintenance window in minutes. Value must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#maintenance_window_duration FleetSchedule#maintenance_window_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#maintenance_window_duration FleetSchedule#maintenance_window_duration}
 
 ---
 
@@ -1082,7 +1082,7 @@ StartMaintenanceWindow *string
 
 Start of the maintenance window in 24-hour `HH:MM` format. Must use HH:MM format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#start_maintenance_window FleetSchedule#start_maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#start_maintenance_window FleetSchedule#start_maintenance_window}
 
 ---
 
@@ -1096,7 +1096,7 @@ Timezone *string
 
 IANA time zone used to interpret the maintenance window, for example `America/New_York` or `UTC`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#timezone FleetSchedule#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#timezone FleetSchedule#timezone}
 
 ---
 
@@ -1107,7 +1107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.fleetSchedule.FleetScheduleRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/fleetschedule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/fleetschedule"
 
 fleetschedule.NewFleetScheduleRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FleetScheduleRuleOutputReference
 ```

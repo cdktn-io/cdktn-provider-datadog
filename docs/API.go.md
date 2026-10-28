@@ -207,6 +207,8 @@ The following submodules are available:
 - [rumApplication](./rumApplication.go.md)
 - [rumExclusionFilter](./rumExclusionFilter.go.md)
 - [rumMetric](./rumMetric.go.md)
+- [rumOperation](./rumOperation.go.md)
+- [rumOperationJourneyLink](./rumOperationJourneyLink.go.md)
 - [rumRetentionFilter](./rumRetentionFilter.go.md)
 - [rumRetentionFiltersOrder](./rumRetentionFiltersOrder.go.md)
 - [rumRetentionQuota](./rumRetentionQuota.go.md)

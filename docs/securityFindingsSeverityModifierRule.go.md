@@ -4,12 +4,12 @@
 
 ### SecurityFindingsSeverityModifierRule <a name="SecurityFindingsSeverityModifierRule" id="@cdktn/provider-datadog.securityFindingsSeverityModifierRule.SecurityFindingsSeverityModifierRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_severity_modifier_rule datadog_security_findings_severity_modifier_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_severity_modifier_rule datadog_security_findings_severity_modifier_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityFindingsSeverityModifierRule.SecurityFindingsSeverityModifierRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsseveritymodifierrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsseveritymodifierrule"
 
 securityfindingsseveritymodifierrule.NewSecurityFindingsSeverityModifierRule(scope Construct, id *string, config SecurityFindingsSeverityModifierRuleConfig) SecurityFindingsSeverityModifierRule
 ```
@@ -433,7 +433,7 @@ func ResetEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.securityFindingsSeverityModifierRule.SecurityFindingsSeverityModifierRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsseveritymodifierrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsseveritymodifierrule"
 
 securityfindingsseveritymodifierrule.SecurityFindingsSeverityModifierRule_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.securityFindingsSeverityModifierRule.SecurityFindingsSeverityModifierRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsseveritymodifierrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsseveritymodifierrule"
 
 securityfindingsseveritymodifierrule.SecurityFindingsSeverityModifierRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ securityfindingsseveritymodifierrule.SecurityFindingsSeverityModifierRule_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.securityFindingsSeverityModifierRule.SecurityFindingsSeverityModifierRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsseveritymodifierrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsseveritymodifierrule"
 
 securityfindingsseveritymodifierrule.SecurityFindingsSeverityModifierRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ securityfindingsseveritymodifierrule.SecurityFindingsSeverityModifierRule_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.securityFindingsSeverityModifierRule.SecurityFindingsSeverityModifierRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsseveritymodifierrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsseveritymodifierrule"
 
 securityfindingsseveritymodifierrule.SecurityFindingsSeverityModifierRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -522,7 +522,7 @@ The construct id used in the generated config for the SecurityFindingsSeverityMo
 
 The id of the existing SecurityFindingsSeverityModifierRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_severity_modifier_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_severity_modifier_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -821,11 +821,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.securityFindingsSeverityModifierRule.SecurityFindingsSeverityModifierRuleAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsseveritymodifierrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsseveritymodifierrule"
 
 &securityfindingsseveritymodifierrule.SecurityFindingsSeverityModifierRuleAction {
-	Set: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.securityFindingsSeverityModifierRule.SecurityFindingsSeverityModifierRuleActionSet,
-	Shift: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.securityFindingsSeverityModifierRule.SecurityFindingsSeverityModifierRuleActionShift,
+	Set: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.securityFindingsSeverityModifierRule.SecurityFindingsSeverityModifierRuleActionSet,
+	Shift: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.securityFindingsSeverityModifierRule.SecurityFindingsSeverityModifierRuleActionShift,
 }
 ```
 
@@ -848,7 +848,7 @@ Set SecurityFindingsSeverityModifierRuleActionSet
 
 Sets matched findings to a fixed severity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_severity_modifier_rule#set SecurityFindingsSeverityModifierRule#set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_severity_modifier_rule#set SecurityFindingsSeverityModifierRule#set}
 
 ---
 
@@ -862,7 +862,7 @@ Shift SecurityFindingsSeverityModifierRuleActionShift
 
 Shifts matched findings up or down by one severity rank.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_severity_modifier_rule#shift SecurityFindingsSeverityModifierRule#shift}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_severity_modifier_rule#shift SecurityFindingsSeverityModifierRule#shift}
 
 ---
 
@@ -871,7 +871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.securityFindingsSeverityModifierRule.SecurityFindingsSeverityModifierRuleActionSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsseveritymodifierrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsseveritymodifierrule"
 
 &securityfindingsseveritymodifierrule.SecurityFindingsSeverityModifierRuleActionSet {
 	Severity: *string,
@@ -900,7 +900,7 @@ The severity to assign to matched findings.
 
 `info_none` is not supported for the `iac_misconfiguration`, `runtime_code_vulnerability`, `secret`, or `static_code_vulnerability` finding types. Valid values are `info_none`, `low`, `medium`, `high`, `critical`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_severity_modifier_rule#severity SecurityFindingsSeverityModifierRule#severity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_severity_modifier_rule#severity SecurityFindingsSeverityModifierRule#severity}
 
 ---
 
@@ -914,7 +914,7 @@ Description *string
 
 An optional free-form explanation for the severity change.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_severity_modifier_rule#description SecurityFindingsSeverityModifierRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_severity_modifier_rule#description SecurityFindingsSeverityModifierRule#description}
 
 ---
 
@@ -923,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.securityFindingsSeverityModifierRule.SecurityFindingsSeverityModifierRuleActionShift.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsseveritymodifierrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsseveritymodifierrule"
 
 &securityfindingsseveritymodifierrule.SecurityFindingsSeverityModifierRuleActionShift {
 	SeverityDelta: *string,
@@ -950,7 +950,7 @@ SeverityDelta *string
 
 The direction in which to shift the severity of matched findings by one rank. Valid values are `up_one`, `down_one`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_severity_modifier_rule#severity_delta SecurityFindingsSeverityModifierRule#severity_delta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_severity_modifier_rule#severity_delta SecurityFindingsSeverityModifierRule#severity_delta}
 
 ---
 
@@ -964,7 +964,7 @@ Description *string
 
 An optional free-form explanation for the severity change.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_severity_modifier_rule#description SecurityFindingsSeverityModifierRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_severity_modifier_rule#description SecurityFindingsSeverityModifierRule#description}
 
 ---
 
@@ -973,7 +973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.securityFindingsSeverityModifierRule.SecurityFindingsSeverityModifierRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsseveritymodifierrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsseveritymodifierrule"
 
 &securityfindingsseveritymodifierrule.SecurityFindingsSeverityModifierRuleConfig {
 	Connection: interface{},
@@ -983,9 +983,9 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindin
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Action: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.securityFindingsSeverityModifierRule.SecurityFindingsSeverityModifierRuleAction,
+	Action: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.securityFindingsSeverityModifierRule.SecurityFindingsSeverityModifierRuleAction,
 	Name: *string,
-	Rule: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.securityFindingsSeverityModifierRule.SecurityFindingsSeverityModifierRuleRule,
+	Rule: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.securityFindingsSeverityModifierRule.SecurityFindingsSeverityModifierRuleRule,
 	Enabled: interface{},
 }
 ```
@@ -1090,7 +1090,7 @@ The action to take when a severity modifier rule matches a finding.
 
 This is a discriminated union on `type`: `set` assigns a fixed severity, while `shift` moves the severity up or down by one severity rank. In this resource the union is expressed as the `set` and `shift` blocks; exactly one must be provided. A severity modifier rule's `rule.query` must not filter on `@severity` or on the `@severity_details.user_adjusted.*` namespace. Use `@severity_details.adjusted.value` instead, which reflects the severity before user-defined adjustments.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_severity_modifier_rule#action SecurityFindingsSeverityModifierRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_severity_modifier_rule#action SecurityFindingsSeverityModifierRule#action}
 
 ---
 
@@ -1104,7 +1104,7 @@ Name *string
 
 The name of the severity modifier rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_severity_modifier_rule#name SecurityFindingsSeverityModifierRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_severity_modifier_rule#name SecurityFindingsSeverityModifierRule#name}
 
 ---
 
@@ -1118,7 +1118,7 @@ Rule SecurityFindingsSeverityModifierRuleRule
 
 Defines the scope of findings to which the automation rule applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_severity_modifier_rule#rule SecurityFindingsSeverityModifierRule#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_severity_modifier_rule#rule SecurityFindingsSeverityModifierRule#rule}
 
 ---
 
@@ -1132,7 +1132,7 @@ Enabled interface{}
 
 Whether the severity modifier rule is enabled. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_severity_modifier_rule#enabled SecurityFindingsSeverityModifierRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_severity_modifier_rule#enabled SecurityFindingsSeverityModifierRule#enabled}
 
 ---
 
@@ -1141,7 +1141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.securityFindingsSeverityModifierRule.SecurityFindingsSeverityModifierRuleRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsseveritymodifierrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsseveritymodifierrule"
 
 &securityfindingsseveritymodifierrule.SecurityFindingsSeverityModifierRuleRule {
 	FindingTypes: *[]*string,
@@ -1170,7 +1170,7 @@ The list of security finding types that the automation rule applies to.
 
 Valid values are `api_security`, `attack_path`, `host_and_container_vulnerability`, `iac_misconfiguration`, `identity_risk`, `library_vulnerability`, `misconfiguration`, `runtime_code_vulnerability`, `secret`, `static_code_vulnerability`, `workload_activity`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_severity_modifier_rule#finding_types SecurityFindingsSeverityModifierRule#finding_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_severity_modifier_rule#finding_types SecurityFindingsSeverityModifierRule#finding_types}
 
 ---
 
@@ -1186,7 +1186,7 @@ A search query to further filter the findings matched by this rule.
 
 The `@workflow.*` namespace and `@status` fields are not permitted. For a reference of available fields, see the [Security Findings schema documentation](https://docs.datadoghq.com/security/guide/findings-schema/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_severity_modifier_rule#query SecurityFindingsSeverityModifierRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_severity_modifier_rule#query SecurityFindingsSeverityModifierRule#query}
 
 ---
 
@@ -1197,7 +1197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityFindingsSeverityModifierRule.SecurityFindingsSeverityModifierRuleActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsseveritymodifierrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsseveritymodifierrule"
 
 securityfindingsseveritymodifierrule.NewSecurityFindingsSeverityModifierRuleActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityFindingsSeverityModifierRuleActionOutputReference
 ```
@@ -1530,7 +1530,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityFindingsSeverityModifierRule.SecurityFindingsSeverityModifierRuleActionSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsseveritymodifierrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsseveritymodifierrule"
 
 securityfindingsseveritymodifierrule.NewSecurityFindingsSeverityModifierRuleActionSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityFindingsSeverityModifierRuleActionSetOutputReference
 ```
@@ -1830,7 +1830,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityFindingsSeverityModifierRule.SecurityFindingsSeverityModifierRuleActionShiftOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsseveritymodifierrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsseveritymodifierrule"
 
 securityfindingsseveritymodifierrule.NewSecurityFindingsSeverityModifierRuleActionShiftOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityFindingsSeverityModifierRuleActionShiftOutputReference
 ```
@@ -2130,7 +2130,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityFindingsSeverityModifierRule.SecurityFindingsSeverityModifierRuleRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/securityfindingsseveritymodifierrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/securityfindingsseveritymodifierrule"
 
 securityfindingsseveritymodifierrule.NewSecurityFindingsSeverityModifierRuleRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityFindingsSeverityModifierRuleRuleOutputReference
 ```

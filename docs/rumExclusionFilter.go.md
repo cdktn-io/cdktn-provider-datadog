@@ -4,12 +4,12 @@
 
 ### RumExclusionFilter <a name="RumExclusionFilter" id="@cdktn/provider-datadog.rumExclusionFilter.RumExclusionFilter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_exclusion_filter datadog_rum_exclusion_filter}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_exclusion_filter datadog_rum_exclusion_filter}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.rumExclusionFilter.RumExclusionFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/rumexclusionfilter"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/rumexclusionfilter"
 
 rumexclusionfilter.NewRumExclusionFilter(scope Construct, id *string, config RumExclusionFilterConfig) RumExclusionFilter
 ```
@@ -414,7 +414,7 @@ func ResetQuery()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.rumExclusionFilter.RumExclusionFilter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/rumexclusionfilter"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/rumexclusionfilter"
 
 rumexclusionfilter.RumExclusionFilter_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.rumExclusionFilter.RumExclusionFilter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/rumexclusionfilter"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/rumexclusionfilter"
 
 rumexclusionfilter.RumExclusionFilter_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ rumexclusionfilter.RumExclusionFilter_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.rumExclusionFilter.RumExclusionFilter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/rumexclusionfilter"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/rumexclusionfilter"
 
 rumexclusionfilter.RumExclusionFilter_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ rumexclusionfilter.RumExclusionFilter_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.rumExclusionFilter.RumExclusionFilter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/rumexclusionfilter"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/rumexclusionfilter"
 
 rumexclusionfilter.RumExclusionFilter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the RumExclusionFilter to impo
 
 The id of the existing RumExclusionFilter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_exclusion_filter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_exclusion_filter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -824,7 +824,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.rumExclusionFilter.RumExclusionFilterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/rumexclusionfilter"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/rumexclusionfilter"
 
 &rumexclusionfilter.RumExclusionFilterConfig {
 	Connection: interface{},
@@ -941,7 +941,7 @@ ApplicationId *string
 
 RUM application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_exclusion_filter#application_id RumExclusionFilter#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_exclusion_filter#application_id RumExclusionFilter#application_id}
 
 ---
 
@@ -955,7 +955,7 @@ EventType *string
 
 The type of RUM events to filter on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_exclusion_filter#event_type RumExclusionFilter#event_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_exclusion_filter#event_type RumExclusionFilter#event_type}
 
 ---
 
@@ -969,7 +969,7 @@ Name *string
 
 The name of the exclusion filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_exclusion_filter#name RumExclusionFilter#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_exclusion_filter#name RumExclusionFilter#name}
 
 ---
 
@@ -983,7 +983,7 @@ Enabled interface{}
 
 Whether the exclusion filter is active. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_exclusion_filter#enabled RumExclusionFilter#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_exclusion_filter#enabled RumExclusionFilter#enabled}
 
 ---
 
@@ -997,7 +997,7 @@ Query *string
 
 Additional query used to further restrict which RUM events are excluded. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_exclusion_filter#query RumExclusionFilter#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_exclusion_filter#query RumExclusionFilter#query}
 
 ---
 

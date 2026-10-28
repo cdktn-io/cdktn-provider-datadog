@@ -4,7 +4,7 @@
 
 ### DataDatadogStatusPageComponents <a name="DataDatadogStatusPageComponents" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_components datadog_status_page_components}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_components datadog_status_page_components}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogStatusPageComponents.DataDatadogStatusPageComponents.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the status page whose components to list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_components#page_id DataDatadogStatusPageComponents#page_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_components#page_id DataDatadogStatusPageComponents#page_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Filter the results to components with this exact name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_components#name DataDatadogStatusPageComponents#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_components#name DataDatadogStatusPageComponents#name}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Filter the results by type (`component` or `group`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_components#type DataDatadogStatusPageComponents#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_components#type DataDatadogStatusPageComponents#type}
 
 ---
 
@@ -487,7 +487,7 @@ The construct id used in the generated config for the DataDatadogStatusPageCompo
 
 The id of the existing DataDatadogStatusPageComponents that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_components#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_components#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -878,7 +878,7 @@ public java.lang.String getPageId();
 
 The ID of the status page whose components to list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_components#page_id DataDatadogStatusPageComponents#page_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_components#page_id DataDatadogStatusPageComponents#page_id}
 
 ---
 
@@ -892,7 +892,7 @@ public java.lang.String getName();
 
 Filter the results to components with this exact name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_components#name DataDatadogStatusPageComponents#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_components#name DataDatadogStatusPageComponents#name}
 
 ---
 
@@ -906,7 +906,7 @@ public java.lang.String getType();
 
 Filter the results by type (`component` or `group`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/status_page_components#type DataDatadogStatusPageComponents#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/status_page_components#type DataDatadogStatusPageComponents#type}
 
 ---
 

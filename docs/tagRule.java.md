@@ -4,7 +4,7 @@
 
 ### TagRule <a name="TagRule" id="@cdktn/provider-datadog.tagRule.TagRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_rule datadog_tag_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_rule datadog_tag_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagRule.TagRule.Initializer"></a>
 
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 Human-readable name for the tag rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_rule#name TagRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_rule#name TagRule#name}
 
 ---
 
@@ -136,7 +136,7 @@ How the rule is enforced.
 
 `surfacing` only highlights non-compliant telemetry, while `blocking` rejects telemetry that violates the rule. The API only accepts `surfacing` at creation time, so creating a rule directly as `blocking` requires `force_blocking_on_create` to be set to `true`. Using `blocking` at all requires blocking tag rules to be enabled for your organization; otherwise the API returns `403 permission denied`. Valid values are `blocking`, `surfacing`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_rule#rule_type TagRule#rule_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_rule#rule_type TagRule#rule_type}
 
 ---
 
@@ -148,7 +148,7 @@ The scope the rule applies within.
 
 Typically an environment, team, or organization-level identifier used to limit where the rule is enforced.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_rule#scope TagRule#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_rule#scope TagRule#scope}
 
 ---
 
@@ -160,7 +160,7 @@ The telemetry source that the tag rule applies to.
 
 This field cannot be updated after creation; changing it forces a new resource. Valid values are `logs`, `spans`, `metrics`, `rum`, `feed`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_rule#source TagRule#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_rule#source TagRule#source}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The tag key that the rule governs (for example, `service`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_rule#tag_key TagRule#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_rule#tag_key TagRule#tag_key}
 
 ---
 
@@ -182,7 +182,7 @@ One or more patterns that valid values for the tag key must match.
 
 At least one pattern is required. These are not regular expressions: the API restricts pattern characters to `A-Za-z0-9_:-.,/*`, with `*` acting as a wildcard. A pattern made up only of wildcards (for example a bare `*`) is rejected by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_rule#tag_value_patterns TagRule#tag_value_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_rule#tag_value_patterns TagRule#tag_value_patterns}
 
 ---
 
@@ -192,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Whether the rule is currently enforced. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_rule#enabled TagRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_rule#enabled TagRule#enabled}
 
 ---
 
@@ -204,7 +204,7 @@ Set to `true` to allow creating a rule with `rule_type` set to `blocking`.
 
 The Datadog API only accepts `surfacing` at creation time, so the provider creates the rule as `surfacing` and then immediately updates it to `blocking`, which makes the create non-atomic: if the update fails, a `surfacing` rule is left behind and the resource is marked tainted. This field is only read during creation and is not sent to the API; changing it afterwards produces a diff that has no effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_rule#force_blocking_on_create TagRule#force_blocking_on_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_rule#force_blocking_on_create TagRule#force_blocking_on_create}
 
 ---
 
@@ -216,7 +216,7 @@ Whether destroying this resource permanently deletes the tag rule.
 
 When set to `false` the rule is soft-deleted instead, which keeps it recoverable and preserves its historical compliance score data. This field is only read during deletion and is not sent to the API on create or update. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_rule#hard_delete TagRule#hard_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_rule#hard_delete TagRule#hard_delete}
 
 ---
 
@@ -226,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 When `true`, the rule matches tag values that do NOT match any of the supplied patterns. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_rule#negated TagRule#negated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_rule#negated TagRule#negated}
 
 ---
 
@@ -236,7 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 When `true`, telemetry without this tag is treated as a violation. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_rule#required TagRule#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_rule#required TagRule#required}
 
 ---
 
@@ -720,7 +720,7 @@ The construct id used in the generated config for the TagRule to import.
 
 The id of the existing TagRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1357,7 +1357,7 @@ public java.lang.String getName();
 
 Human-readable name for the tag rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_rule#name TagRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_rule#name TagRule#name}
 
 ---
 
@@ -1373,7 +1373,7 @@ How the rule is enforced.
 
 `surfacing` only highlights non-compliant telemetry, while `blocking` rejects telemetry that violates the rule. The API only accepts `surfacing` at creation time, so creating a rule directly as `blocking` requires `force_blocking_on_create` to be set to `true`. Using `blocking` at all requires blocking tag rules to be enabled for your organization; otherwise the API returns `403 permission denied`. Valid values are `blocking`, `surfacing`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_rule#rule_type TagRule#rule_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_rule#rule_type TagRule#rule_type}
 
 ---
 
@@ -1389,7 +1389,7 @@ The scope the rule applies within.
 
 Typically an environment, team, or organization-level identifier used to limit where the rule is enforced.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_rule#scope TagRule#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_rule#scope TagRule#scope}
 
 ---
 
@@ -1405,7 +1405,7 @@ The telemetry source that the tag rule applies to.
 
 This field cannot be updated after creation; changing it forces a new resource. Valid values are `logs`, `spans`, `metrics`, `rum`, `feed`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_rule#source TagRule#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_rule#source TagRule#source}
 
 ---
 
@@ -1419,7 +1419,7 @@ public java.lang.String getTagKey();
 
 The tag key that the rule governs (for example, `service`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_rule#tag_key TagRule#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_rule#tag_key TagRule#tag_key}
 
 ---
 
@@ -1435,7 +1435,7 @@ One or more patterns that valid values for the tag key must match.
 
 At least one pattern is required. These are not regular expressions: the API restricts pattern characters to `A-Za-z0-9_:-.,/*`, with `*` acting as a wildcard. A pattern made up only of wildcards (for example a bare `*`) is rejected by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_rule#tag_value_patterns TagRule#tag_value_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_rule#tag_value_patterns TagRule#tag_value_patterns}
 
 ---
 
@@ -1449,7 +1449,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether the rule is currently enforced. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_rule#enabled TagRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_rule#enabled TagRule#enabled}
 
 ---
 
@@ -1465,7 +1465,7 @@ Set to `true` to allow creating a rule with `rule_type` set to `blocking`.
 
 The Datadog API only accepts `surfacing` at creation time, so the provider creates the rule as `surfacing` and then immediately updates it to `blocking`, which makes the create non-atomic: if the update fails, a `surfacing` rule is left behind and the resource is marked tainted. This field is only read during creation and is not sent to the API; changing it afterwards produces a diff that has no effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_rule#force_blocking_on_create TagRule#force_blocking_on_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_rule#force_blocking_on_create TagRule#force_blocking_on_create}
 
 ---
 
@@ -1481,7 +1481,7 @@ Whether destroying this resource permanently deletes the tag rule.
 
 When set to `false` the rule is soft-deleted instead, which keeps it recoverable and preserves its historical compliance score data. This field is only read during deletion and is not sent to the API on create or update. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_rule#hard_delete TagRule#hard_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_rule#hard_delete TagRule#hard_delete}
 
 ---
 
@@ -1495,7 +1495,7 @@ public java.lang.Boolean|IResolvable getNegated();
 
 When `true`, the rule matches tag values that do NOT match any of the supplied patterns. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_rule#negated TagRule#negated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_rule#negated TagRule#negated}
 
 ---
 
@@ -1509,7 +1509,7 @@ public java.lang.Boolean|IResolvable getRequired();
 
 When `true`, telemetry without this tag is treated as a violation. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_rule#required TagRule#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_rule#required TagRule#required}
 
 ---
 

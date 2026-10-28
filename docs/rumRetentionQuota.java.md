@@ -4,7 +4,7 @@
 
 ### RumRetentionQuota <a name="RumRetentionQuota" id="@cdktn/provider-datadog.rumRetentionQuota.RumRetentionQuota"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota datadog_rum_retention_quota}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota datadog_rum_retention_quota}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.rumRetentionQuota.RumRetentionQuota.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 RUM application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#application_id RumRetentionQuota#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#application_id RumRetentionQuota#application_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 custom block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#custom RumRetentionQuota#custom}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#custom RumRetentionQuota#custom}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The retention quota mode. Valid values are `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#mode RumRetentionQuota#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#mode RumRetentionQuota#mode}
 
 ---
 
@@ -590,7 +590,7 @@ The construct id used in the generated config for the RumRetentionQuota to impor
 
 The id of the existing RumRetentionQuota that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -980,7 +980,7 @@ public java.lang.String getApplicationId();
 
 RUM application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#application_id RumRetentionQuota#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#application_id RumRetentionQuota#application_id}
 
 ---
 
@@ -994,7 +994,7 @@ public RumRetentionQuotaCustom getCustom();
 
 custom block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#custom RumRetentionQuota#custom}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#custom RumRetentionQuota#custom}
 
 ---
 
@@ -1008,7 +1008,7 @@ public java.lang.String getMode();
 
 The retention quota mode. Valid values are `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#mode RumRetentionQuota#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#mode RumRetentionQuota#mode}
 
 ---
 
@@ -1050,7 +1050,7 @@ public java.lang.String getDailyResetTime();
 
 The time of day the quota resets, in `HH:MM` format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#daily_reset_time RumRetentionQuota#daily_reset_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#daily_reset_time RumRetentionQuota#daily_reset_time}
 
 ---
 
@@ -1064,7 +1064,7 @@ public java.lang.String getDailyResetTimezone();
 
 The UTC offset for `daily_reset_time`, in `±HH:MM` format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#daily_reset_timezone RumRetentionQuota#daily_reset_timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#daily_reset_timezone RumRetentionQuota#daily_reset_timezone}
 
 ---
 
@@ -1078,7 +1078,7 @@ public java.lang.String getQuotaReachedAction();
 
 The action taken after the quota is reached. Valid values are `stop`, `slowdown`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#quota_reached_action RumRetentionQuota#quota_reached_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#quota_reached_action RumRetentionQuota#quota_reached_action}
 
 ---
 
@@ -1092,7 +1092,7 @@ public java.lang.Number getSessionLimit();
 
 The maximum number of sessions to retain within the window.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#session_limit RumRetentionQuota#session_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#session_limit RumRetentionQuota#session_limit}
 
 ---
 
@@ -1106,7 +1106,7 @@ public java.lang.String getWindowType();
 
 The window over which the quota resets. Valid values are `daily`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/rum_retention_quota#window_type RumRetentionQuota#window_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_retention_quota#window_type RumRetentionQuota#window_type}
 
 ---
 

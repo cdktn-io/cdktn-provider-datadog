@@ -4,12 +4,12 @@
 
 ### IntegrationAwsAccountCcmConfig <a name="IntegrationAwsAccountCcmConfig" id="@cdktn/provider-datadog.integrationAwsAccountCcmConfig.IntegrationAwsAccountCcmConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_aws_account_ccm_config datadog_integration_aws_account_ccm_config}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account_ccm_config datadog_integration_aws_account_ccm_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationAwsAccountCcmConfig.IntegrationAwsAccountCcmConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationawsaccountccmconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationawsaccountccmconfig"
 
 integrationawsaccountccmconfig.NewIntegrationAwsAccountCcmConfig(scope Construct, id *string, config IntegrationAwsAccountCcmConfigConfig) IntegrationAwsAccountCcmConfig
 ```
@@ -420,7 +420,7 @@ func ResetCcmConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.integrationAwsAccountCcmConfig.IntegrationAwsAccountCcmConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationawsaccountccmconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationawsaccountccmconfig"
 
 integrationawsaccountccmconfig.IntegrationAwsAccountCcmConfig_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.integrationAwsAccountCcmConfig.IntegrationAwsAccountCcmConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationawsaccountccmconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationawsaccountccmconfig"
 
 integrationawsaccountccmconfig.IntegrationAwsAccountCcmConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ integrationawsaccountccmconfig.IntegrationAwsAccountCcmConfig_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.integrationAwsAccountCcmConfig.IntegrationAwsAccountCcmConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationawsaccountccmconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationawsaccountccmconfig"
 
 integrationawsaccountccmconfig.IntegrationAwsAccountCcmConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ integrationawsaccountccmconfig.IntegrationAwsAccountCcmConfig_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.integrationAwsAccountCcmConfig.IntegrationAwsAccountCcmConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationawsaccountccmconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationawsaccountccmconfig"
 
 integrationawsaccountccmconfig.IntegrationAwsAccountCcmConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -509,7 +509,7 @@ The construct id used in the generated config for the IntegrationAwsAccountCcmCo
 
 The id of the existing IntegrationAwsAccountCcmConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_aws_account_ccm_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account_ccm_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -764,7 +764,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationAwsAccountCcmConfig.IntegrationAwsAccountCcmConfigCcmConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationawsaccountccmconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationawsaccountccmconfig"
 
 &integrationawsaccountccmconfig.IntegrationAwsAccountCcmConfigCcmConfig {
 	DataExportConfigs: interface{},
@@ -789,7 +789,7 @@ DataExportConfigs interface{}
 
 data_export_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_aws_account_ccm_config#data_export_configs IntegrationAwsAccountCcmConfig#data_export_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account_ccm_config#data_export_configs IntegrationAwsAccountCcmConfig#data_export_configs}
 
 ---
 
@@ -798,7 +798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationAwsAccountCcmConfig.IntegrationAwsAccountCcmConfigCcmConfigDataExportConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationawsaccountccmconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationawsaccountccmconfig"
 
 &integrationawsaccountccmconfig.IntegrationAwsAccountCcmConfigCcmConfigDataExportConfigs {
 	BucketName: *string,
@@ -831,7 +831,7 @@ BucketName *string
 
 Name of the S3 bucket where the Cost and Usage Report is stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_aws_account_ccm_config#bucket_name IntegrationAwsAccountCcmConfig#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account_ccm_config#bucket_name IntegrationAwsAccountCcmConfig#bucket_name}
 
 ---
 
@@ -845,7 +845,7 @@ BucketRegion *string
 
 AWS region of the S3 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_aws_account_ccm_config#bucket_region IntegrationAwsAccountCcmConfig#bucket_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account_ccm_config#bucket_region IntegrationAwsAccountCcmConfig#bucket_region}
 
 ---
 
@@ -859,7 +859,7 @@ ReportName *string
 
 Name of the Cost and Usage Report.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_aws_account_ccm_config#report_name IntegrationAwsAccountCcmConfig#report_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account_ccm_config#report_name IntegrationAwsAccountCcmConfig#report_name}
 
 ---
 
@@ -873,7 +873,7 @@ ReportPrefix *string
 
 S3 prefix where the Cost and Usage Report is stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_aws_account_ccm_config#report_prefix IntegrationAwsAccountCcmConfig#report_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account_ccm_config#report_prefix IntegrationAwsAccountCcmConfig#report_prefix}
 
 ---
 
@@ -887,7 +887,7 @@ ReportType *string
 
 Type of the Cost and Usage Report.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_aws_account_ccm_config#report_type IntegrationAwsAccountCcmConfig#report_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account_ccm_config#report_type IntegrationAwsAccountCcmConfig#report_type}
 
 ---
 
@@ -896,7 +896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationAwsAccountCcmConfig.IntegrationAwsAccountCcmConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationawsaccountccmconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationawsaccountccmconfig"
 
 &integrationawsaccountccmconfig.IntegrationAwsAccountCcmConfigConfig {
 	Connection: interface{},
@@ -907,7 +907,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationaws
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	AwsAccountConfigId: *string,
-	CcmConfig: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.integrationAwsAccountCcmConfig.IntegrationAwsAccountCcmConfigCcmConfig,
+	CcmConfig: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.integrationAwsAccountCcmConfig.IntegrationAwsAccountCcmConfigCcmConfig,
 }
 ```
 
@@ -1007,7 +1007,7 @@ AwsAccountConfigId *string
 
 Unique Datadog ID of the AWS Account Integration Config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_aws_account_ccm_config#aws_account_config_id IntegrationAwsAccountCcmConfig#aws_account_config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account_ccm_config#aws_account_config_id IntegrationAwsAccountCcmConfig#aws_account_config_id}
 
 ---
 
@@ -1021,7 +1021,7 @@ CcmConfig IntegrationAwsAccountCcmConfigCcmConfig
 
 ccm_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_aws_account_ccm_config#ccm_config IntegrationAwsAccountCcmConfig#ccm_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account_ccm_config#ccm_config IntegrationAwsAccountCcmConfig#ccm_config}
 
 ---
 
@@ -1032,7 +1032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationAwsAccountCcmConfig.IntegrationAwsAccountCcmConfigCcmConfigDataExportConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationawsaccountccmconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationawsaccountccmconfig"
 
 integrationawsaccountccmconfig.NewIntegrationAwsAccountCcmConfigCcmConfigDataExportConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IntegrationAwsAccountCcmConfigCcmConfigDataExportConfigsList
 ```
@@ -1192,7 +1192,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationAwsAccountCcmConfig.IntegrationAwsAccountCcmConfigCcmConfigDataExportConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationawsaccountccmconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationawsaccountccmconfig"
 
 integrationawsaccountccmconfig.NewIntegrationAwsAccountCcmConfigCcmConfigDataExportConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IntegrationAwsAccountCcmConfigCcmConfigDataExportConfigsOutputReference
 ```
@@ -1604,7 +1604,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationAwsAccountCcmConfig.IntegrationAwsAccountCcmConfigCcmConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/integrationawsaccountccmconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/integrationawsaccountccmconfig"
 
 integrationawsaccountccmconfig.NewIntegrationAwsAccountCcmConfigCcmConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationAwsAccountCcmConfigCcmConfigOutputReference
 ```

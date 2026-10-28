@@ -4,12 +4,12 @@
 
 ### DataDatadogSoftwareCatalog <a name="DataDatadogSoftwareCatalog" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/software_catalog datadog_software_catalog}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/software_catalog datadog_software_catalog}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsoftwarecatalog"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogsoftwarecatalog"
 
 datadatadogsoftwarecatalog.NewDataDatadogSoftwareCatalog(scope Construct, id *string, config DataDatadogSoftwareCatalogConfig) DataDatadogSoftwareCatalog
 ```
@@ -354,7 +354,7 @@ func ResetIncludeDiscovered()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsoftwarecatalog"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogsoftwarecatalog"
 
 datadatadogsoftwarecatalog.DataDatadogSoftwareCatalog_IsConstruct(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsoftwarecatalog"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogsoftwarecatalog"
 
 datadatadogsoftwarecatalog.DataDatadogSoftwareCatalog_IsTerraformElement(x interface{}) *bool
 ```
@@ -400,7 +400,7 @@ datadatadogsoftwarecatalog.DataDatadogSoftwareCatalog_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsoftwarecatalog"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogsoftwarecatalog"
 
 datadatadogsoftwarecatalog.DataDatadogSoftwareCatalog_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -414,7 +414,7 @@ datadatadogsoftwarecatalog.DataDatadogSoftwareCatalog_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsoftwarecatalog"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogsoftwarecatalog"
 
 datadatadogsoftwarecatalog.DataDatadogSoftwareCatalog_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -443,7 +443,7 @@ The construct id used in the generated config for the DataDatadogSoftwareCatalog
 
 The id of the existing DataDatadogSoftwareCatalog that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/software_catalog#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/software_catalog#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -819,7 +819,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsoftwarecatalog"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogsoftwarecatalog"
 
 &datadatadogsoftwarecatalog.DataDatadogSoftwareCatalogConfig {
 	Connection: interface{},
@@ -942,7 +942,7 @@ FilterExcludeSnapshot *string
 
 Filter entities by excluding snapshotted entities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/software_catalog#filter_exclude_snapshot DataDatadogSoftwareCatalog#filter_exclude_snapshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/software_catalog#filter_exclude_snapshot DataDatadogSoftwareCatalog#filter_exclude_snapshot}
 
 ---
 
@@ -956,7 +956,7 @@ FilterId *string
 
 Filter entities by UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/software_catalog#filter_id DataDatadogSoftwareCatalog#filter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/software_catalog#filter_id DataDatadogSoftwareCatalog#filter_id}
 
 ---
 
@@ -970,7 +970,7 @@ FilterKind *string
 
 Filter entities by kind.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/software_catalog#filter_kind DataDatadogSoftwareCatalog#filter_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/software_catalog#filter_kind DataDatadogSoftwareCatalog#filter_kind}
 
 ---
 
@@ -984,7 +984,7 @@ FilterName *string
 
 Filter entities by name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/software_catalog#filter_name DataDatadogSoftwareCatalog#filter_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/software_catalog#filter_name DataDatadogSoftwareCatalog#filter_name}
 
 ---
 
@@ -998,7 +998,7 @@ FilterOwner *string
 
 Filter entities by owner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/software_catalog#filter_owner DataDatadogSoftwareCatalog#filter_owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/software_catalog#filter_owner DataDatadogSoftwareCatalog#filter_owner}
 
 ---
 
@@ -1012,7 +1012,7 @@ FilterRef *string
 
 Filter entities by reference.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/software_catalog#filter_ref DataDatadogSoftwareCatalog#filter_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/software_catalog#filter_ref DataDatadogSoftwareCatalog#filter_ref}
 
 ---
 
@@ -1026,7 +1026,7 @@ FilterRelationType *string
 
 Filter entities by relation type. Valid values are `RelationTypeOwns`, `RelationTypeOwnedBy`, `RelationTypeDependsOn`, `RelationTypeDependencyOf`, `RelationTypePartsOf`, `RelationTypeHasPart`, `RelationTypeOtherOwns`, `RelationTypeOtherOwnedBy`, `RelationTypeImplementedBy`, `RelationTypeImplements`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/software_catalog#filter_relation_type DataDatadogSoftwareCatalog#filter_relation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/software_catalog#filter_relation_type DataDatadogSoftwareCatalog#filter_relation_type}
 
 ---
 
@@ -1040,7 +1040,7 @@ IncludeDiscovered interface{}
 
 Include entities that have been discovered but not yet enriched.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/software_catalog#include_discovered DataDatadogSoftwareCatalog#include_discovered}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/software_catalog#include_discovered DataDatadogSoftwareCatalog#include_discovered}
 
 ---
 
@@ -1049,7 +1049,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalogEntities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsoftwarecatalog"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogsoftwarecatalog"
 
 &datadatadogsoftwarecatalog.DataDatadogSoftwareCatalogEntities {
 
@@ -1064,7 +1064,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsof
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalogEntitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsoftwarecatalog"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogsoftwarecatalog"
 
 datadatadogsoftwarecatalog.NewDataDatadogSoftwareCatalogEntitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogSoftwareCatalogEntitiesList
 ```
@@ -1213,7 +1213,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalogEntitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsoftwarecatalog"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/datadatadogsoftwarecatalog"
 
 datadatadogsoftwarecatalog.NewDataDatadogSoftwareCatalogEntitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogSoftwareCatalogEntitiesOutputReference
 ```

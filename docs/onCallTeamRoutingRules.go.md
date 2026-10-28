@@ -4,12 +4,12 @@
 
 ### OnCallTeamRoutingRules <a name="OnCallTeamRoutingRules" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules datadog_on_call_team_routing_rules}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules datadog_on_call_team_routing_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 oncallteamroutingrules.NewOnCallTeamRoutingRules(scope Construct, id *string, config OnCallTeamRoutingRulesConfig) OnCallTeamRoutingRules
 ```
@@ -420,7 +420,7 @@ func ResetRule()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRules.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 oncallteamroutingrules.OnCallTeamRoutingRules_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRules.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 oncallteamroutingrules.OnCallTeamRoutingRules_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ oncallteamroutingrules.OnCallTeamRoutingRules_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRules.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 oncallteamroutingrules.OnCallTeamRoutingRules_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ oncallteamroutingrules.OnCallTeamRoutingRules_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRules.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 oncallteamroutingrules.OnCallTeamRoutingRules_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -509,7 +509,7 @@ The construct id used in the generated config for the OnCallTeamRoutingRules to 
 
 The id of the existing OnCallTeamRoutingRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -753,7 +753,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 &oncallteamroutingrules.OnCallTeamRoutingRulesConfig {
 	Connection: interface{},
@@ -864,7 +864,7 @@ Id *string
 
 ID of the team to associate the routing rules with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#id OnCallTeamRoutingRules#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#id OnCallTeamRoutingRules#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -881,7 +881,7 @@ Rule interface{}
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#rule OnCallTeamRoutingRules#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#rule OnCallTeamRoutingRules#rule}
 
 ---
 
@@ -890,13 +890,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 &oncallteamroutingrules.OnCallTeamRoutingRulesRule {
 	Action: interface{},
 	EscalationPolicy: *string,
 	Query: *string,
-	TimeRestrictions: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleTimeRestrictions,
+	TimeRestrictions: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleTimeRestrictions,
 	Urgency: *string,
 }
 ```
@@ -923,7 +923,7 @@ Action interface{}
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#action OnCallTeamRoutingRules#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#action OnCallTeamRoutingRules#action}
 
 ---
 
@@ -937,7 +937,7 @@ EscalationPolicy *string
 
 ID of the policy to be applied when this routing rule matches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#escalation_policy OnCallTeamRoutingRules#escalation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#escalation_policy OnCallTeamRoutingRules#escalation_policy}
 
 ---
 
@@ -953,7 +953,7 @@ Defines the query or condition that triggers this routing rule.
 
 Must not be set on the last rule, which acts as a catch-all rule. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#query OnCallTeamRoutingRules#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#query OnCallTeamRoutingRules#query}
 
 ---
 
@@ -967,7 +967,7 @@ TimeRestrictions OnCallTeamRoutingRulesRuleTimeRestrictions
 
 time_restrictions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#time_restrictions OnCallTeamRoutingRules#time_restrictions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#time_restrictions OnCallTeamRoutingRules#time_restrictions}
 
 ---
 
@@ -983,7 +983,7 @@ Defines the urgency for pages created via this rule.
 
 Only valid if `escalation_policy` is set. Valid values are `high`, `low`, `dynamic`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#urgency OnCallTeamRoutingRules#urgency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#urgency OnCallTeamRoutingRules#urgency}
 
 ---
 
@@ -992,13 +992,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 &oncallteamroutingrules.OnCallTeamRoutingRulesRuleAction {
-	EscalationPolicy: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionEscalationPolicy,
-	SendSlackMessage: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendSlackMessage,
-	SendTeamsMessage: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendTeamsMessage,
-	TriggerWorkflowAutomation: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation,
+	EscalationPolicy: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionEscalationPolicy,
+	RerouteToTeam: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeam,
+	SendSlackMessage: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendSlackMessage,
+	SendTeamsMessage: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendTeamsMessage,
+	TriggerWorkflowAutomation: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation,
 }
 ```
 
@@ -1007,6 +1008,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamrout
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleAction.property.escalationPolicy">EscalationPolicy</a></code> | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionEscalationPolicy">OnCallTeamRoutingRulesRuleActionEscalationPolicy</a></code> | escalation_policy block. |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleAction.property.rerouteToTeam">RerouteToTeam</a></code> | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeam">OnCallTeamRoutingRulesRuleActionRerouteToTeam</a></code> | reroute_to_team block. |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleAction.property.sendSlackMessage">SendSlackMessage</a></code> | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendSlackMessage">OnCallTeamRoutingRulesRuleActionSendSlackMessage</a></code> | send_slack_message block. |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleAction.property.sendTeamsMessage">SendTeamsMessage</a></code> | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendTeamsMessage">OnCallTeamRoutingRulesRuleActionSendTeamsMessage</a></code> | send_teams_message block. |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleAction.property.triggerWorkflowAutomation">TriggerWorkflowAutomation</a></code> | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation">OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation</a></code> | trigger_workflow_automation block. |
@@ -1023,7 +1025,21 @@ EscalationPolicy OnCallTeamRoutingRulesRuleActionEscalationPolicy
 
 escalation_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#escalation_policy OnCallTeamRoutingRules#escalation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#escalation_policy OnCallTeamRoutingRules#escalation_policy}
+
+---
+
+##### `RerouteToTeam`<sup>Optional</sup> <a name="RerouteToTeam" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleAction.property.rerouteToTeam"></a>
+
+```go
+RerouteToTeam OnCallTeamRoutingRulesRuleActionRerouteToTeam
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeam">OnCallTeamRoutingRulesRuleActionRerouteToTeam</a>
+
+reroute_to_team block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#reroute_to_team OnCallTeamRoutingRules#reroute_to_team}
 
 ---
 
@@ -1037,7 +1053,7 @@ SendSlackMessage OnCallTeamRoutingRulesRuleActionSendSlackMessage
 
 send_slack_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#send_slack_message OnCallTeamRoutingRules#send_slack_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#send_slack_message OnCallTeamRoutingRules#send_slack_message}
 
 ---
 
@@ -1051,7 +1067,7 @@ SendTeamsMessage OnCallTeamRoutingRulesRuleActionSendTeamsMessage
 
 send_teams_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#send_teams_message OnCallTeamRoutingRules#send_teams_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#send_teams_message OnCallTeamRoutingRules#send_teams_message}
 
 ---
 
@@ -1065,7 +1081,7 @@ TriggerWorkflowAutomation OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomat
 
 trigger_workflow_automation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#trigger_workflow_automation OnCallTeamRoutingRules#trigger_workflow_automation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#trigger_workflow_automation OnCallTeamRoutingRules#trigger_workflow_automation}
 
 ---
 
@@ -1074,12 +1090,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionEscalationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 &oncallteamroutingrules.OnCallTeamRoutingRulesRuleActionEscalationPolicy {
 	AckTimeoutMinutes: *f64,
 	PolicyId: *string,
-	SupportHours: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionEscalationPolicySupportHours,
+	SupportHours: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionEscalationPolicySupportHours,
 	Urgency: *string,
 }
 ```
@@ -1105,7 +1121,7 @@ AckTimeoutMinutes *f64
 
 Number of minutes before an acknowledged page is re-triggered. Value must be between 30 and 4320.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#ack_timeout_minutes OnCallTeamRoutingRules#ack_timeout_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#ack_timeout_minutes OnCallTeamRoutingRules#ack_timeout_minutes}
 
 ---
 
@@ -1119,7 +1135,7 @@ PolicyId *string
 
 Escalation policy ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#policy_id OnCallTeamRoutingRules#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#policy_id OnCallTeamRoutingRules#policy_id}
 
 ---
 
@@ -1133,7 +1149,7 @@ SupportHours OnCallTeamRoutingRulesRuleActionEscalationPolicySupportHours
 
 support_hours block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#support_hours OnCallTeamRoutingRules#support_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#support_hours OnCallTeamRoutingRules#support_hours}
 
 ---
 
@@ -1147,7 +1163,7 @@ Urgency *string
 
 Urgency for pages created via this action. Valid values are `high`, `low`, `dynamic`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#urgency OnCallTeamRoutingRules#urgency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#urgency OnCallTeamRoutingRules#urgency}
 
 ---
 
@@ -1156,7 +1172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionEscalationPolicySupportHours.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 &oncallteamroutingrules.OnCallTeamRoutingRulesRuleActionEscalationPolicySupportHours {
 	Restriction: interface{},
@@ -1183,7 +1199,7 @@ Restriction interface{}
 
 restriction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#restriction OnCallTeamRoutingRules#restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#restriction OnCallTeamRoutingRules#restriction}
 
 ---
 
@@ -1197,7 +1213,7 @@ TimeZone *string
 
 Specifies the time zone applicable to the restrictions, e.g. `America/New_York`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#time_zone OnCallTeamRoutingRules#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#time_zone OnCallTeamRoutingRules#time_zone}
 
 ---
 
@@ -1206,7 +1222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionEscalationPolicySupportHoursRestriction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 &oncallteamroutingrules.OnCallTeamRoutingRulesRuleActionEscalationPolicySupportHoursRestriction {
 	EndDay: *string,
@@ -1237,7 +1253,7 @@ EndDay *string
 
 The weekday when the restriction period ends. Valid values are `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#end_day OnCallTeamRoutingRules#end_day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#end_day OnCallTeamRoutingRules#end_day}
 
 ---
 
@@ -1251,7 +1267,7 @@ EndTime *string
 
 The time of day when the restriction ends (hh:mm:ss).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#end_time OnCallTeamRoutingRules#end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#end_time OnCallTeamRoutingRules#end_time}
 
 ---
 
@@ -1265,7 +1281,7 @@ StartDay *string
 
 The weekday when the restriction period starts. Valid values are `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#start_day OnCallTeamRoutingRules#start_day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#start_day OnCallTeamRoutingRules#start_day}
 
 ---
 
@@ -1279,7 +1295,41 @@ StartTime *string
 
 The time of day when the restriction begins (hh:mm:ss).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#start_time OnCallTeamRoutingRules#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#start_time OnCallTeamRoutingRules#start_time}
+
+---
+
+### OnCallTeamRoutingRulesRuleActionRerouteToTeam <a name="OnCallTeamRoutingRulesRuleActionRerouteToTeam" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeam"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeam.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
+
+&oncallteamroutingrules.OnCallTeamRoutingRulesRuleActionRerouteToTeam {
+	DestinationTeamId: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeam.property.destinationTeamId">DestinationTeamId</a></code> | <code>*string</code> | ID of the team to reroute the page to. Must be a valid UUID. |
+
+---
+
+##### `DestinationTeamId`<sup>Optional</sup> <a name="DestinationTeamId" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeam.property.destinationTeamId"></a>
+
+```go
+DestinationTeamId *string
+```
+
+- *Type:* *string
+
+ID of the team to reroute the page to. Must be a valid UUID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#destination_team_id OnCallTeamRoutingRules#destination_team_id}
 
 ---
 
@@ -1288,7 +1338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendSlackMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 &oncallteamroutingrules.OnCallTeamRoutingRulesRuleActionSendSlackMessage {
 	Channel: *string,
@@ -1315,7 +1365,7 @@ Channel *string
 
 Slack channel ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#channel OnCallTeamRoutingRules#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#channel OnCallTeamRoutingRules#channel}
 
 ---
 
@@ -1329,7 +1379,7 @@ Workspace *string
 
 Slack workspace ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#workspace OnCallTeamRoutingRules#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#workspace OnCallTeamRoutingRules#workspace}
 
 ---
 
@@ -1338,7 +1388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendTeamsMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 &oncallteamroutingrules.OnCallTeamRoutingRulesRuleActionSendTeamsMessage {
 	Channel: *string,
@@ -1367,7 +1417,7 @@ Channel *string
 
 Teams channel ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#channel OnCallTeamRoutingRules#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#channel OnCallTeamRoutingRules#channel}
 
 ---
 
@@ -1381,7 +1431,7 @@ Team *string
 
 Teams team ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#team OnCallTeamRoutingRules#team}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#team OnCallTeamRoutingRules#team}
 
 ---
 
@@ -1395,7 +1445,7 @@ Tenant *string
 
 Teams tenant ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#tenant OnCallTeamRoutingRules#tenant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#tenant OnCallTeamRoutingRules#tenant}
 
 ---
 
@@ -1404,7 +1454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 &oncallteamroutingrules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation {
 	Handle: *string,
@@ -1429,7 +1479,7 @@ Handle *string
 
 The handle of the Workflow Automation to trigger.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#handle OnCallTeamRoutingRules#handle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#handle OnCallTeamRoutingRules#handle}
 
 ---
 
@@ -1438,7 +1488,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleTimeRestrictions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 &oncallteamroutingrules.OnCallTeamRoutingRulesRuleTimeRestrictions {
 	Restriction: interface{},
@@ -1465,7 +1515,7 @@ Restriction interface{}
 
 restriction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#restriction OnCallTeamRoutingRules#restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#restriction OnCallTeamRoutingRules#restriction}
 
 ---
 
@@ -1479,7 +1529,7 @@ TimeZone *string
 
 Specifies the time zone applicable to the restrictions, e.g. `America/New_York`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#time_zone OnCallTeamRoutingRules#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#time_zone OnCallTeamRoutingRules#time_zone}
 
 ---
 
@@ -1488,7 +1538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleTimeRestrictionsRestriction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 &oncallteamroutingrules.OnCallTeamRoutingRulesRuleTimeRestrictionsRestriction {
 	EndDay: *string,
@@ -1519,7 +1569,7 @@ EndDay *string
 
 The weekday when the restriction period ends. Valid values are `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#end_day OnCallTeamRoutingRules#end_day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#end_day OnCallTeamRoutingRules#end_day}
 
 ---
 
@@ -1533,7 +1583,7 @@ EndTime *string
 
 The time of day when the restriction ends (hh:mm:ss).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#end_time OnCallTeamRoutingRules#end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#end_time OnCallTeamRoutingRules#end_time}
 
 ---
 
@@ -1547,7 +1597,7 @@ StartDay *string
 
 The weekday when the restriction period starts. Valid values are `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#start_day OnCallTeamRoutingRules#start_day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#start_day OnCallTeamRoutingRules#start_day}
 
 ---
 
@@ -1561,7 +1611,7 @@ StartTime *string
 
 The time of day when the restriction begins (hh:mm:ss).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/on_call_team_routing_rules#start_time OnCallTeamRoutingRules#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/on_call_team_routing_rules#start_time OnCallTeamRoutingRules#start_time}
 
 ---
 
@@ -1572,7 +1622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionEscalationPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 oncallteamroutingrules.NewOnCallTeamRoutingRulesRuleActionEscalationPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OnCallTeamRoutingRulesRuleActionEscalationPolicyOutputReference
 ```
@@ -1950,7 +2000,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionEscalationPolicySupportHoursOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 oncallteamroutingrules.NewOnCallTeamRoutingRulesRuleActionEscalationPolicySupportHoursOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OnCallTeamRoutingRulesRuleActionEscalationPolicySupportHoursOutputReference
 ```
@@ -2270,7 +2320,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionEscalationPolicySupportHoursRestrictionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 oncallteamroutingrules.NewOnCallTeamRoutingRulesRuleActionEscalationPolicySupportHoursRestrictionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OnCallTeamRoutingRulesRuleActionEscalationPolicySupportHoursRestrictionList
 ```
@@ -2430,7 +2480,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionEscalationPolicySupportHoursRestrictionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 oncallteamroutingrules.NewOnCallTeamRoutingRulesRuleActionEscalationPolicySupportHoursRestrictionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OnCallTeamRoutingRulesRuleActionEscalationPolicySupportHoursRestrictionOutputReference
 ```
@@ -2813,7 +2863,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 oncallteamroutingrules.NewOnCallTeamRoutingRulesRuleActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OnCallTeamRoutingRulesRuleActionList
 ```
@@ -2973,7 +3023,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 oncallteamroutingrules.NewOnCallTeamRoutingRulesRuleActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OnCallTeamRoutingRulesRuleActionOutputReference
 ```
@@ -3037,10 +3087,12 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.putEscalationPolicy">PutEscalationPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.putRerouteToTeam">PutRerouteToTeam</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.putSendSlackMessage">PutSendSlackMessage</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.putSendTeamsMessage">PutSendTeamsMessage</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.putTriggerWorkflowAutomation">PutTriggerWorkflowAutomation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.resetEscalationPolicy">ResetEscalationPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.resetRerouteToTeam">ResetRerouteToTeam</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.resetSendSlackMessage">ResetSendSlackMessage</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.resetSendTeamsMessage">ResetSendTeamsMessage</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.resetTriggerWorkflowAutomation">ResetTriggerWorkflowAutomation</a></code> | *No description.* |
@@ -3209,6 +3261,18 @@ func PutEscalationPolicy(value OnCallTeamRoutingRulesRuleActionEscalationPolicy)
 
 ---
 
+##### `PutRerouteToTeam` <a name="PutRerouteToTeam" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.putRerouteToTeam"></a>
+
+```go
+func PutRerouteToTeam(value OnCallTeamRoutingRulesRuleActionRerouteToTeam)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.putRerouteToTeam.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeam">OnCallTeamRoutingRulesRuleActionRerouteToTeam</a>
+
+---
+
 ##### `PutSendSlackMessage` <a name="PutSendSlackMessage" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.putSendSlackMessage"></a>
 
 ```go
@@ -3251,6 +3315,12 @@ func PutTriggerWorkflowAutomation(value OnCallTeamRoutingRulesRuleActionTriggerW
 func ResetEscalationPolicy()
 ```
 
+##### `ResetRerouteToTeam` <a name="ResetRerouteToTeam" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.resetRerouteToTeam"></a>
+
+```go
+func ResetRerouteToTeam()
+```
+
 ##### `ResetSendSlackMessage` <a name="ResetSendSlackMessage" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.resetSendSlackMessage"></a>
 
 ```go
@@ -3277,10 +3347,12 @@ func ResetTriggerWorkflowAutomation()
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.property.escalationPolicy">EscalationPolicy</a></code> | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionEscalationPolicyOutputReference">OnCallTeamRoutingRulesRuleActionEscalationPolicyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.property.rerouteToTeam">RerouteToTeam</a></code> | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference">OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.property.sendSlackMessage">SendSlackMessage</a></code> | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReference">OnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.property.sendTeamsMessage">SendTeamsMessage</a></code> | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendTeamsMessageOutputReference">OnCallTeamRoutingRulesRuleActionSendTeamsMessageOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.property.triggerWorkflowAutomation">TriggerWorkflowAutomation</a></code> | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference">OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.property.escalationPolicyInput">EscalationPolicyInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.property.rerouteToTeamInput">RerouteToTeamInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.property.sendSlackMessageInput">SendSlackMessageInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.property.sendTeamsMessageInput">SendTeamsMessageInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.property.triggerWorkflowAutomationInput">TriggerWorkflowAutomationInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -3322,6 +3394,16 @@ func EscalationPolicy() OnCallTeamRoutingRulesRuleActionEscalationPolicyOutputRe
 
 ---
 
+##### `RerouteToTeam`<sup>Required</sup> <a name="RerouteToTeam" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.property.rerouteToTeam"></a>
+
+```go
+func RerouteToTeam() OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference">OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference</a>
+
+---
+
 ##### `SendSlackMessage`<sup>Required</sup> <a name="SendSlackMessage" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.property.sendSlackMessage"></a>
 
 ```go
@@ -3356,6 +3438,16 @@ func TriggerWorkflowAutomation() OnCallTeamRoutingRulesRuleActionTriggerWorkflow
 
 ```go
 func EscalationPolicyInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `RerouteToTeamInput`<sup>Optional</sup> <a name="RerouteToTeamInput" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.property.rerouteToTeamInput"></a>
+
+```go
+func RerouteToTeamInput() interface{}
 ```
 
 - *Type:* interface{}
@@ -3403,12 +3495,290 @@ func InternalValue() interface{}
 ---
 
 
+### OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference <a name="OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
+
+oncallteamroutingrules.NewOnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.resetDestinationTeamId">ResetDestinationTeamId</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetDestinationTeamId` <a name="ResetDestinationTeamId" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.resetDestinationTeamId"></a>
+
+```go
+func ResetDestinationTeamId()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.property.destinationTeamIdInput">DestinationTeamIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.property.destinationTeamId">DestinationTeamId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DestinationTeamIdInput`<sup>Optional</sup> <a name="DestinationTeamIdInput" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.property.destinationTeamIdInput"></a>
+
+```go
+func DestinationTeamIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DestinationTeamId`<sup>Required</sup> <a name="DestinationTeamId" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.property.destinationTeamId"></a>
+
+```go
+func DestinationTeamId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionRerouteToTeamOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
 ### OnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReference <a name="OnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReference" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 oncallteamroutingrules.NewOnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReference
 ```
@@ -3715,7 +4085,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendTeamsMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 oncallteamroutingrules.NewOnCallTeamRoutingRulesRuleActionSendTeamsMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OnCallTeamRoutingRulesRuleActionSendTeamsMessageOutputReference
 ```
@@ -4051,7 +4421,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 oncallteamroutingrules.NewOnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference
 ```
@@ -4329,7 +4699,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 oncallteamroutingrules.NewOnCallTeamRoutingRulesRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OnCallTeamRoutingRulesRuleList
 ```
@@ -4489,7 +4859,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 oncallteamroutingrules.NewOnCallTeamRoutingRulesRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OnCallTeamRoutingRulesRuleOutputReference
 ```
@@ -4938,7 +5308,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleTimeRestrictionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 oncallteamroutingrules.NewOnCallTeamRoutingRulesRuleTimeRestrictionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OnCallTeamRoutingRulesRuleTimeRestrictionsOutputReference
 ```
@@ -5258,7 +5628,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 oncallteamroutingrules.NewOnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionList
 ```
@@ -5418,7 +5788,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/oncallteamroutingrules"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/oncallteamroutingrules"
 
 oncallteamroutingrules.NewOnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionOutputReference
 ```

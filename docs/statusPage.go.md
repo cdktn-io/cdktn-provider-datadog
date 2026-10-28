@@ -4,12 +4,12 @@
 
 ### StatusPage <a name="StatusPage" id="@cdktn/provider-datadog.statusPage.StatusPage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page datadog_status_page}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page datadog_status_page}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.statusPage.StatusPage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/statuspage"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/statuspage"
 
 statuspage.NewStatusPage(scope Construct, id *string, config StatusPageConfig) StatusPage
 ```
@@ -442,7 +442,7 @@ func ResetSubscriptionsEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.statusPage.StatusPage.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/statuspage"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/statuspage"
 
 statuspage.StatusPage_IsConstruct(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.statusPage.StatusPage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/statuspage"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/statuspage"
 
 statuspage.StatusPage_IsTerraformElement(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ statuspage.StatusPage_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.statusPage.StatusPage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/statuspage"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/statuspage"
 
 statuspage.StatusPage_IsTerraformResource(x interface{}) *bool
 ```
@@ -502,7 +502,7 @@ statuspage.StatusPage_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.statusPage.StatusPage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/statuspage"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/statuspage"
 
 statuspage.StatusPage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -531,7 +531,7 @@ The construct id used in the generated config for the StatusPage to import.
 
 The id of the existing StatusPage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1028,7 +1028,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.statusPage.StatusPageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/statuspage"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/statuspage"
 
 &statuspage.StatusPageConfig {
 	Connection: interface{},
@@ -1155,7 +1155,7 @@ DomainPrefix *string
 
 The subdomain prefix used to build the status page's URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#domain_prefix StatusPage#domain_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#domain_prefix StatusPage#domain_prefix}
 
 ---
 
@@ -1169,7 +1169,7 @@ Name *string
 
 The name of the status page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#name StatusPage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#name StatusPage#name}
 
 ---
 
@@ -1183,7 +1183,7 @@ Type *string
 
 The type of the status page. Valid values are: public, internal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#type StatusPage#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#type StatusPage#type}
 
 ---
 
@@ -1197,7 +1197,7 @@ VisualizationType *string
 
 How component statuses are visualized on the page. Valid values are: bars_and_uptime_percentage, bars_only, component_name_only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#visualization_type StatusPage#visualization_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#visualization_type StatusPage#visualization_type}
 
 ---
 
@@ -1211,7 +1211,7 @@ CompanyLogo *string
 
 The company logo displayed on the status page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#company_logo StatusPage#company_logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#company_logo StatusPage#company_logo}
 
 ---
 
@@ -1225,7 +1225,7 @@ EmailHeaderImage *string
 
 The header image included in subscriber emails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#email_header_image StatusPage#email_header_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#email_header_image StatusPage#email_header_image}
 
 ---
 
@@ -1239,7 +1239,7 @@ Favicon *string
 
 The favicon displayed for the status page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#favicon StatusPage#favicon}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#favicon StatusPage#favicon}
 
 ---
 
@@ -1253,7 +1253,7 @@ SlackAppIcon *string
 
 The icon used for the status page's Slack app integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#slack_app_icon StatusPage#slack_app_icon}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#slack_app_icon StatusPage#slack_app_icon}
 
 ---
 
@@ -1267,7 +1267,7 @@ SlackSubscriptionsEnabled interface{}
 
 Whether Slack subscriber notifications are enabled for the status page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#slack_subscriptions_enabled StatusPage#slack_subscriptions_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#slack_subscriptions_enabled StatusPage#slack_subscriptions_enabled}
 
 ---
 
@@ -1281,7 +1281,7 @@ SubscriptionsEnabled interface{}
 
 Whether subscriber notifications are enabled for the status page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#subscriptions_enabled StatusPage#subscriptions_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#subscriptions_enabled StatusPage#subscriptions_enabled}
 
 ---
 

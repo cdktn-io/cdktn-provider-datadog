@@ -4,12 +4,12 @@
 
 ### TagIndexingRule <a name="TagIndexingRule" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_indexing_rule datadog_tag_indexing_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_indexing_rule datadog_tag_indexing_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/tagindexingrule"
 
 tagindexingrule.NewTagIndexingRule(scope Construct, id *string, config TagIndexingRuleConfig) TagIndexingRule
 ```
@@ -441,7 +441,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/tagindexingrule"
 
 tagindexingrule.TagIndexingRule_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/tagindexingrule"
 
 tagindexingrule.TagIndexingRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ tagindexingrule.TagIndexingRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/tagindexingrule"
 
 tagindexingrule.TagIndexingRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ tagindexingrule.TagIndexingRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/tagindexingrule"
 
 tagindexingrule.TagIndexingRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the TagIndexingRule to import.
 
 The id of the existing TagIndexingRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_indexing_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_indexing_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -928,7 +928,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/tagindexingrule"
 
 &tagindexingrule.TagIndexingRuleConfig {
 	Connection: interface{},
@@ -942,7 +942,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrul
 	Name: *string,
 	ExcludeTagsMode: interface{},
 	IgnoredMetricNameMatches: *[]*string,
-	Options: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.tagIndexingRule.TagIndexingRuleOptions,
+	Options: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.tagIndexingRule.TagIndexingRuleOptions,
 	Tags: *[]*string,
 }
 ```
@@ -1047,7 +1047,7 @@ MetricNameMatches *[]*string
 
 Metric name prefixes (glob patterns) this rule applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_indexing_rule#metric_name_matches TagIndexingRule#metric_name_matches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_indexing_rule#metric_name_matches TagIndexingRule#metric_name_matches}
 
 ---
 
@@ -1061,7 +1061,7 @@ Name *string
 
 Human-readable name for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_indexing_rule#name TagIndexingRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_indexing_rule#name TagIndexingRule#name}
 
 ---
 
@@ -1077,7 +1077,7 @@ When true, the rule excludes the listed tags and indexes all others.
 
 When false (default), the rule includes only the listed tags. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_indexing_rule#exclude_tags_mode TagIndexingRule#exclude_tags_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_indexing_rule#exclude_tags_mode TagIndexingRule#exclude_tags_mode}
 
 ---
 
@@ -1091,7 +1091,7 @@ IgnoredMetricNameMatches *[]*string
 
 Metric name prefixes excluded from the rule's scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_indexing_rule#ignored_metric_name_matches TagIndexingRule#ignored_metric_name_matches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_indexing_rule#ignored_metric_name_matches TagIndexingRule#ignored_metric_name_matches}
 
 ---
 
@@ -1105,7 +1105,7 @@ Options TagIndexingRuleOptions
 
 Versioned configuration options for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_indexing_rule#options TagIndexingRule#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_indexing_rule#options TagIndexingRule#options}
 
 ---
 
@@ -1119,7 +1119,7 @@ Tags *[]*string
 
 Tag keys this rule includes or excludes, depending on exclude_tags_mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_indexing_rule#tags TagIndexingRule#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_indexing_rule#tags TagIndexingRule#tags}
 
 ---
 
@@ -1128,10 +1128,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/tagindexingrule"
 
 &tagindexingrule.TagIndexingRuleOptions {
-	Data: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.tagIndexingRule.TagIndexingRuleOptionsData,
+	Data: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.tagIndexingRule.TagIndexingRuleOptionsData,
 	Version: *f64,
 }
 ```
@@ -1155,7 +1155,7 @@ Data TagIndexingRuleOptionsData
 
 Behavioral options for how the rule applies to metrics, including backfill and override behavior.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_indexing_rule#data TagIndexingRule#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_indexing_rule#data TagIndexingRule#data}
 
 ---
 
@@ -1169,7 +1169,7 @@ Version *f64
 
 Options schema version. Only `1` is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_indexing_rule#version TagIndexingRule#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_indexing_rule#version TagIndexingRule#version}
 
 ---
 
@@ -1178,10 +1178,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsData.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/tagindexingrule"
 
 &tagindexingrule.TagIndexingRuleOptionsData {
-	DynamicTags: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTags,
+	DynamicTags: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTags,
 	ManagePreexistingMetrics: interface{},
 	OverridePreviousRules: interface{},
 }
@@ -1207,7 +1207,7 @@ DynamicTags TagIndexingRuleOptionsDataDynamicTags
 
 Configuration for excluding tags based on dynamic usage signals. Only applies when `exclude_tags_mode` is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_indexing_rule#dynamic_tags TagIndexingRule#dynamic_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_indexing_rule#dynamic_tags TagIndexingRule#dynamic_tags}
 
 ---
 
@@ -1221,7 +1221,7 @@ ManagePreexistingMetrics interface{}
 
 When true, the rule applies to metrics ingested before the rule was created. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_indexing_rule#manage_preexisting_metrics TagIndexingRule#manage_preexisting_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_indexing_rule#manage_preexisting_metrics TagIndexingRule#manage_preexisting_metrics}
 
 ---
 
@@ -1235,7 +1235,7 @@ OverridePreviousRules interface{}
 
 When true, this rule's tag list overrides tags configured by earlier rules for the same metric. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_indexing_rule#override_previous_rules TagIndexingRule#override_previous_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_indexing_rule#override_previous_rules TagIndexingRule#override_previous_rules}
 
 ---
 
@@ -1244,7 +1244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/tagindexingrule"
 
 &tagindexingrule.TagIndexingRuleOptionsDataDynamicTags {
 	ExcludeNotQueriedWindowSeconds: *f64,
@@ -1273,7 +1273,7 @@ Lookback window, in seconds, for excluding tags that were not queried in that pe
 
 Requires `exclude_tags_mode` to be `true`. Value must be between 1 and 7776000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_indexing_rule#exclude_not_queried_window_seconds TagIndexingRule#exclude_not_queried_window_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_indexing_rule#exclude_not_queried_window_seconds TagIndexingRule#exclude_not_queried_window_seconds}
 
 ---
 
@@ -1287,7 +1287,7 @@ ExcludeNotUsedInAssets interface{}
 
 When true, excludes tags not used in any dashboards or monitors. Requires `exclude_tags_mode` to be `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/tag_indexing_rule#exclude_not_used_in_assets TagIndexingRule#exclude_not_used_in_assets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/tag_indexing_rule#exclude_not_used_in_assets TagIndexingRule#exclude_not_used_in_assets}
 
 ---
 
@@ -1298,7 +1298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataDynamicTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/tagindexingrule"
 
 tagindexingrule.NewTagIndexingRuleOptionsDataDynamicTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TagIndexingRuleOptionsDataDynamicTagsOutputReference
 ```
@@ -1605,7 +1605,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/tagindexingrule"
 
 tagindexingrule.NewTagIndexingRuleOptionsDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TagIndexingRuleOptionsDataOutputReference
 ```
@@ -1954,7 +1954,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagIndexingRule.TagIndexingRuleOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/tagindexingrule"
 
 tagindexingrule.NewTagIndexingRuleOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TagIndexingRuleOptionsOutputReference
 ```

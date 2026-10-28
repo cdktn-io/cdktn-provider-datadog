@@ -4,7 +4,7 @@
 
 ### StatusPageComponent <a name="StatusPageComponent" id="@cdktn/provider-datadog.statusPageComponent.StatusPageComponent"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_component datadog_status_page_component}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_component datadog_status_page_component}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.statusPageComponent.StatusPageComponent.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_component#name StatusPageComponent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_component#name StatusPageComponent#name}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The ID of the status page this component belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_component#page_id StatusPageComponent#page_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_component#page_id StatusPageComponent#page_id}
 
 ---
 
@@ -134,7 +134,7 @@ The position of the component on the status page.
 
 Must be between `0` and the current number of existing components on the page, inclusive (that is, it can append one past the current highest position, but cannot skip ahead further or be negative). A `position` value that depends on a sibling component being created first requires an explicit `depends_on` on that sibling to guarantee creation order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_component#position StatusPageComponent#position}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_component#position StatusPageComponent#position}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The type of the component. Valid values are: component, group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_component#type StatusPageComponent#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_component#type StatusPageComponent#type}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The sub-components of a component of type `group`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_component#components StatusPageComponent#components}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_component#components StatusPageComponent#components}
 
 ---
 
@@ -623,7 +623,7 @@ The construct id used in the generated config for the StatusPageComponent to imp
 
 The id of the existing StatusPageComponent that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_component#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_component#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1006,7 +1006,7 @@ public java.lang.String getName();
 
 The name of the sub-component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_component#name StatusPageComponent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_component#name StatusPageComponent#name}
 
 ---
 
@@ -1020,7 +1020,7 @@ public java.lang.String getType();
 
 The type of the sub-component. Valid value is: component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_component#type StatusPageComponent#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_component#type StatusPageComponent#type}
 
 ---
 
@@ -1036,7 +1036,7 @@ The position of the sub-component within the group.
 
 Either every sub-component in the group must set this, or none of them should - if all are omitted, position is inferred from declaration order for a new group, or defaults to `0` (i.e. the front of the group, shifting existing siblings back) when adding a single new child to an existing group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_component#position StatusPageComponent#position}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_component#position StatusPageComponent#position}
 
 ---
 
@@ -1162,7 +1162,7 @@ public java.lang.String getName();
 
 The name of the component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_component#name StatusPageComponent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_component#name StatusPageComponent#name}
 
 ---
 
@@ -1176,7 +1176,7 @@ public java.lang.String getPageId();
 
 The ID of the status page this component belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_component#page_id StatusPageComponent#page_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_component#page_id StatusPageComponent#page_id}
 
 ---
 
@@ -1192,7 +1192,7 @@ The position of the component on the status page.
 
 Must be between `0` and the current number of existing components on the page, inclusive (that is, it can append one past the current highest position, but cannot skip ahead further or be negative). A `position` value that depends on a sibling component being created first requires an explicit `depends_on` on that sibling to guarantee creation order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_component#position StatusPageComponent#position}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_component#position StatusPageComponent#position}
 
 ---
 
@@ -1206,7 +1206,7 @@ public java.lang.String getType();
 
 The type of the component. Valid values are: component, group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_component#type StatusPageComponent#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_component#type StatusPageComponent#type}
 
 ---
 
@@ -1220,7 +1220,7 @@ public IResolvable|java.util.List<StatusPageComponentComponents> getComponents()
 
 The sub-components of a component of type `group`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_component#components StatusPageComponent#components}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_component#components StatusPageComponent#components}
 
 ---
 

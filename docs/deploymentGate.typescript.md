@@ -4,7 +4,7 @@
 
 ### DeploymentGate <a name="DeploymentGate" id="@cdktn/provider-datadog.deploymentGate.DeploymentGate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate datadog_deployment_gate}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate datadog_deployment_gate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.deploymentGate.DeploymentGate.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the DeploymentGate to import.
 
 The id of the existing DeploymentGate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -970,7 +970,7 @@ public readonly env: string;
 
 The target environment (example: dev).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#env DeploymentGate#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#env DeploymentGate#env}
 
 ---
 
@@ -984,7 +984,7 @@ public readonly service: string;
 
 The service name (example: transaction-backend).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#service DeploymentGate#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#service DeploymentGate#service}
 
 ---
 
@@ -1000,7 +1000,7 @@ Enable Dry Run to test gate behavior without impacting deployments.
 
 The evaluation of a dry run gate always responds with a pass status, but the in-app result is the real status based on rules evaluation. This is particularly useful when performing an initial evaluation of the gate behavior without impacting the deployment pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
 
 ---
 
@@ -1014,7 +1014,7 @@ public readonly identifier: string;
 
 Unique name for multiple gates on the same service/environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#identifier DeploymentGate#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#identifier DeploymentGate#identifier}
 
 ---
 
@@ -1028,7 +1028,7 @@ public readonly rule: IResolvable | DeploymentGateRule[];
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#rule DeploymentGate#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#rule DeploymentGate#rule}
 
 ---
 
@@ -1063,7 +1063,7 @@ public readonly name: string;
 
 The rule name. Must be unique within the deployment gate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#name DeploymentGate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#name DeploymentGate#name}
 
 ---
 
@@ -1077,7 +1077,7 @@ public readonly type: string;
 
 The rule type (e.g., 'faulty_deployment_detection', 'monitor').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#type DeploymentGate#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#type DeploymentGate#type}
 
 ---
 
@@ -1091,7 +1091,7 @@ public readonly dryRun: boolean | IResolvable;
 
 Whether the rule is in dry run mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
 
 ---
 
@@ -1105,7 +1105,7 @@ public readonly options: DeploymentGateRuleOptions;
 
 options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#options DeploymentGate#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#options DeploymentGate#options}
 
 ---
 
@@ -1123,9 +1123,28 @@ const deploymentGateRuleOptions: deploymentGate.DeploymentGateRuleOptions = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.allowedResources">allowedResources</a></code> | <code>string[]</code> | Resources to include in faulty deployment detection. Mutually exclusive with excluded_resources. |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.duration">duration</a></code> | <code>number</code> | The duration for the rule. |
-| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.excludedResources">excludedResources</a></code> | <code>string[]</code> | Resources to exclude from faulty deployment detection. |
-| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.query">query</a></code> | <code>string</code> | The query for monitor rules. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.excludedResources">excludedResources</a></code> | <code>string[]</code> | Resources to exclude from faulty deployment detection. Mutually exclusive with allowed_resources. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.failOnNoData">failOnNoData</a></code> | <code>boolean \| cdktn.IResolvable</code> | Fail if a matching monitor group is in NO DATA state (API default: true). |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.failOnNoGroupsFound">failOnNoGroupsFound</a></code> | <code>boolean \| cdktn.IResolvable</code> | Fail if no monitor groups are found (API default: false). |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.monitorIds">monitorIds</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds">DeploymentGateRuleOptionsMonitorIds</a>[]</code> | Specific monitors to evaluate. Mutually exclusive with query. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.query">query</a></code> | <code>string</code> | A query that selects the monitors to evaluate. Mutually exclusive with monitor_ids. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.warmup">warmup</a></code> | <code>number</code> | Seconds to wait after deployment starts before evaluating monitors (API default: 0). |
+
+---
+
+##### `allowedResources`<sup>Optional</sup> <a name="allowedResources" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.allowedResources"></a>
+
+```typescript
+public readonly allowedResources: string[];
+```
+
+- *Type:* string[]
+
+Resources to include in faulty deployment detection. Mutually exclusive with excluded_resources.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#allowed_resources DeploymentGate#allowed_resources}
 
 ---
 
@@ -1139,7 +1158,7 @@ public readonly duration: number;
 
 The duration for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#duration DeploymentGate#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#duration DeploymentGate#duration}
 
 ---
 
@@ -1151,9 +1170,51 @@ public readonly excludedResources: string[];
 
 - *Type:* string[]
 
-Resources to exclude from faulty deployment detection.
+Resources to exclude from faulty deployment detection. Mutually exclusive with allowed_resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#excluded_resources DeploymentGate#excluded_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#excluded_resources DeploymentGate#excluded_resources}
+
+---
+
+##### `failOnNoData`<sup>Optional</sup> <a name="failOnNoData" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.failOnNoData"></a>
+
+```typescript
+public readonly failOnNoData: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+Fail if a matching monitor group is in NO DATA state (API default: true).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#fail_on_no_data DeploymentGate#fail_on_no_data}
+
+---
+
+##### `failOnNoGroupsFound`<sup>Optional</sup> <a name="failOnNoGroupsFound" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.failOnNoGroupsFound"></a>
+
+```typescript
+public readonly failOnNoGroupsFound: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+Fail if no monitor groups are found (API default: false).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#fail_on_no_groups_found DeploymentGate#fail_on_no_groups_found}
+
+---
+
+##### `monitorIds`<sup>Optional</sup> <a name="monitorIds" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.monitorIds"></a>
+
+```typescript
+public readonly monitorIds: IResolvable | DeploymentGateRuleOptionsMonitorIds[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds">DeploymentGateRuleOptionsMonitorIds</a>[]
+
+Specific monitors to evaluate. Mutually exclusive with query.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#monitor_ids DeploymentGate#monitor_ids}
 
 ---
 
@@ -1165,9 +1226,73 @@ public readonly query: string;
 
 - *Type:* string
 
-The query for monitor rules.
+A query that selects the monitors to evaluate. Mutually exclusive with monitor_ids.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/deployment_gate#query DeploymentGate#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#query DeploymentGate#query}
+
+---
+
+##### `warmup`<sup>Optional</sup> <a name="warmup" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.property.warmup"></a>
+
+```typescript
+public readonly warmup: number;
+```
+
+- *Type:* number
+
+Seconds to wait after deployment starts before evaluating monitors (API default: 0).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#warmup DeploymentGate#warmup}
+
+---
+
+### DeploymentGateRuleOptionsMonitorIds <a name="DeploymentGateRuleOptionsMonitorIds" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds.Initializer"></a>
+
+```typescript
+import { deploymentGate } from '@cdktn/provider-datadog'
+
+const deploymentGateRuleOptionsMonitorIds: deploymentGate.DeploymentGateRuleOptionsMonitorIds = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds.property.groups">groups</a></code> | <code>string[]</code> | Exact group names to evaluate; an empty list evaluates all groups. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds.property.id">id</a></code> | <code>string</code> | The monitor's decimal ID. |
+
+---
+
+##### `groups`<sup>Required</sup> <a name="groups" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds.property.groups"></a>
+
+```typescript
+public readonly groups: string[];
+```
+
+- *Type:* string[]
+
+Exact group names to evaluate; an empty list evaluates all groups.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#groups DeploymentGate#groups}
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+The monitor's decimal ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#id DeploymentGate#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -1333,6 +1458,477 @@ public readonly internalValue: IResolvable | DeploymentGateRule[];
 ---
 
 
+### DeploymentGateRuleOptionsMonitorIdsList <a name="DeploymentGateRuleOptionsMonitorIdsList" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.Initializer"></a>
+
+```typescript
+import { deploymentGate } from '@cdktn/provider-datadog'
+
+new deploymentGate.DeploymentGateRuleOptionsMonitorIdsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.get"></a>
+
+```typescript
+public get(index: number): DeploymentGateRuleOptionsMonitorIdsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds">DeploymentGateRuleOptionsMonitorIds</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | DeploymentGateRuleOptionsMonitorIds[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds">DeploymentGateRuleOptionsMonitorIds</a>[]
+
+---
+
+
+### DeploymentGateRuleOptionsMonitorIdsOutputReference <a name="DeploymentGateRuleOptionsMonitorIdsOutputReference" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.Initializer"></a>
+
+```typescript
+import { deploymentGate } from '@cdktn/provider-datadog'
+
+new deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.groupsInput">groupsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.groups">groups</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds">DeploymentGateRuleOptionsMonitorIds</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `groupsInput`<sup>Optional</sup> <a name="groupsInput" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.groupsInput"></a>
+
+```typescript
+public readonly groupsInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `groups`<sup>Required</sup> <a name="groups" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.groups"></a>
+
+```typescript
+public readonly groups: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | DeploymentGateRuleOptionsMonitorIds;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds">DeploymentGateRuleOptionsMonitorIds</a>
+
+---
+
+
 ### DeploymentGateRuleOptionsOutputReference <a name="DeploymentGateRuleOptionsOutputReference" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.Initializer"></a>
@@ -1383,9 +1979,15 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.putMonitorIds">putMonitorIds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetAllowedResources">resetAllowedResources</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetDuration">resetDuration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetExcludedResources">resetExcludedResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetFailOnNoData">resetFailOnNoData</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetFailOnNoGroupsFound">resetFailOnNoGroupsFound</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetMonitorIds">resetMonitorIds</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetQuery">resetQuery</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetWarmup">resetWarmup</a></code> | *No description.* |
 
 ---
 
@@ -1539,6 +2141,24 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putMonitorIds` <a name="putMonitorIds" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.putMonitorIds"></a>
+
+```typescript
+public putMonitorIds(value: IResolvable | DeploymentGateRuleOptionsMonitorIds[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.putMonitorIds.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds">DeploymentGateRuleOptionsMonitorIds</a>[]
+
+---
+
+##### `resetAllowedResources` <a name="resetAllowedResources" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetAllowedResources"></a>
+
+```typescript
+public resetAllowedResources(): void
+```
+
 ##### `resetDuration` <a name="resetDuration" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetDuration"></a>
 
 ```typescript
@@ -1551,10 +2171,34 @@ public resetDuration(): void
 public resetExcludedResources(): void
 ```
 
+##### `resetFailOnNoData` <a name="resetFailOnNoData" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetFailOnNoData"></a>
+
+```typescript
+public resetFailOnNoData(): void
+```
+
+##### `resetFailOnNoGroupsFound` <a name="resetFailOnNoGroupsFound" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetFailOnNoGroupsFound"></a>
+
+```typescript
+public resetFailOnNoGroupsFound(): void
+```
+
+##### `resetMonitorIds` <a name="resetMonitorIds" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetMonitorIds"></a>
+
+```typescript
+public resetMonitorIds(): void
+```
+
 ##### `resetQuery` <a name="resetQuery" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetQuery"></a>
 
 ```typescript
 public resetQuery(): void
+```
+
+##### `resetWarmup` <a name="resetWarmup" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.resetWarmup"></a>
+
+```typescript
+public resetWarmup(): void
 ```
 
 
@@ -1564,12 +2208,22 @@ public resetQuery(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.monitorIds">monitorIds</a></code> | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList">DeploymentGateRuleOptionsMonitorIdsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.allowedResourcesInput">allowedResourcesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.durationInput">durationInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.excludedResourcesInput">excludedResourcesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.failOnNoDataInput">failOnNoDataInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.failOnNoGroupsFoundInput">failOnNoGroupsFoundInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.monitorIdsInput">monitorIdsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds">DeploymentGateRuleOptionsMonitorIds</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.queryInput">queryInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.warmupInput">warmupInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.allowedResources">allowedResources</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.duration">duration</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.excludedResources">excludedResources</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.failOnNoData">failOnNoData</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.failOnNoGroupsFound">failOnNoGroupsFound</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.query">query</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.warmup">warmup</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions">DeploymentGateRuleOptions</a></code> | *No description.* |
 
 ---
@@ -1598,6 +2252,26 @@ public readonly fqn: string;
 
 ---
 
+##### `monitorIds`<sup>Required</sup> <a name="monitorIds" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.monitorIds"></a>
+
+```typescript
+public readonly monitorIds: DeploymentGateRuleOptionsMonitorIdsList;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIdsList">DeploymentGateRuleOptionsMonitorIdsList</a>
+
+---
+
+##### `allowedResourcesInput`<sup>Optional</sup> <a name="allowedResourcesInput" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.allowedResourcesInput"></a>
+
+```typescript
+public readonly allowedResourcesInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `durationInput`<sup>Optional</sup> <a name="durationInput" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.durationInput"></a>
 
 ```typescript
@@ -1618,6 +2292,36 @@ public readonly excludedResourcesInput: string[];
 
 ---
 
+##### `failOnNoDataInput`<sup>Optional</sup> <a name="failOnNoDataInput" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.failOnNoDataInput"></a>
+
+```typescript
+public readonly failOnNoDataInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `failOnNoGroupsFoundInput`<sup>Optional</sup> <a name="failOnNoGroupsFoundInput" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.failOnNoGroupsFoundInput"></a>
+
+```typescript
+public readonly failOnNoGroupsFoundInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `monitorIdsInput`<sup>Optional</sup> <a name="monitorIdsInput" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.monitorIdsInput"></a>
+
+```typescript
+public readonly monitorIdsInput: IResolvable | DeploymentGateRuleOptionsMonitorIds[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsMonitorIds">DeploymentGateRuleOptionsMonitorIds</a>[]
+
+---
+
 ##### `queryInput`<sup>Optional</sup> <a name="queryInput" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.queryInput"></a>
 
 ```typescript
@@ -1625,6 +2329,26 @@ public readonly queryInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `warmupInput`<sup>Optional</sup> <a name="warmupInput" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.warmupInput"></a>
+
+```typescript
+public readonly warmupInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `allowedResources`<sup>Required</sup> <a name="allowedResources" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.allowedResources"></a>
+
+```typescript
+public readonly allowedResources: string[];
+```
+
+- *Type:* string[]
 
 ---
 
@@ -1648,6 +2372,26 @@ public readonly excludedResources: string[];
 
 ---
 
+##### `failOnNoData`<sup>Required</sup> <a name="failOnNoData" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.failOnNoData"></a>
+
+```typescript
+public readonly failOnNoData: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `failOnNoGroupsFound`<sup>Required</sup> <a name="failOnNoGroupsFound" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.failOnNoGroupsFound"></a>
+
+```typescript
+public readonly failOnNoGroupsFound: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
 ##### `query`<sup>Required</sup> <a name="query" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.query"></a>
 
 ```typescript
@@ -1655,6 +2399,16 @@ public readonly query: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `warmup`<sup>Required</sup> <a name="warmup" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.property.warmup"></a>
+
+```typescript
+public readonly warmup: number;
+```
+
+- *Type:* number
 
 ---
 

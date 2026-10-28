@@ -4,7 +4,7 @@
 
 ### DataDatadogFleetSchedules <a name="DataDatadogFleetSchedules" id="@cdktn/provider-datadog.dataDatadogFleetSchedules.DataDatadogFleetSchedules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/fleet_schedules datadog_fleet_schedules}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/fleet_schedules datadog_fleet_schedules}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogFleetSchedules.DataDatadogFleetSchedules.Initializer"></a>
 
@@ -477,7 +477,7 @@ The construct id used in the generated config for the DataDatadogFleetSchedules 
 
 The id of the existing DataDatadogFleetSchedules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/fleet_schedules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/fleet_schedules#import import section} in the documentation of this resource for the id to use
 
 ---
 

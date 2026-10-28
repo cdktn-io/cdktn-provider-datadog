@@ -4,7 +4,7 @@
 
 ### ActionExecutionPolicy <a name="ActionExecutionPolicy" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy datadog_action_execution_policy}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy datadog_action_execution_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicy.Initializer"></a>
 
@@ -542,7 +542,7 @@ The construct id used in the generated config for the ActionExecutionPolicy to i
 
 The id of the existing ActionExecutionPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -947,7 +947,7 @@ The fully qualified action names this policy matches.
 
 Use `*` to match all actions of the integration, or a fully qualified name prefixed with the integration's action namespace (for example `com.datadoghq.script.*` for the Script integration).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#action_fqns ActionExecutionPolicy#action_fqns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#action_fqns ActionExecutionPolicy#action_fqns}
 
 ---
 
@@ -961,7 +961,7 @@ public string Integration { get; set; }
 
 The integration the actions belong to. Valid values are `INTEGRATION_KUBERNETES`, `INTEGRATION_SCRIPT`, `INTEGRATION_REMOTE_ACTION`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#integration ActionExecutionPolicy#integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#integration ActionExecutionPolicy#integration}
 
 ---
 
@@ -1087,7 +1087,7 @@ public ActionExecutionPolicyActionPattern ActionPattern { get; set; }
 
 action_pattern block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#action_pattern ActionExecutionPolicy#action_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#action_pattern ActionExecutionPolicy#action_pattern}
 
 ---
 
@@ -1101,7 +1101,7 @@ public string Effect { get; set; }
 
 Whether the policy allows or denies the matched actions. Valid values are `allow`, `deny`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#effect ActionExecutionPolicy#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#effect ActionExecutionPolicy#effect}
 
 ---
 
@@ -1115,7 +1115,7 @@ public string Name { get; set; }
 
 The name of the execution policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#name ActionExecutionPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#name ActionExecutionPolicy#name}
 
 ---
 
@@ -1129,7 +1129,7 @@ public ActionExecutionPolicyScope Scope { get; set; }
 
 scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#scope ActionExecutionPolicy#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#scope ActionExecutionPolicy#scope}
 
 ---
 
@@ -1143,7 +1143,7 @@ public IResolvable|ActionExecutionPolicyTarget[] Target { get; set; }
 
 target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#target ActionExecutionPolicy#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#target ActionExecutionPolicy#target}
 
 ---
 
@@ -1181,7 +1181,7 @@ public ActionExecutionPolicyScopeKubernetes Kubernetes { get; set; }
 
 kubernetes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#kubernetes ActionExecutionPolicy#kubernetes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#kubernetes ActionExecutionPolicy#kubernetes}
 
 ---
 
@@ -1195,7 +1195,7 @@ public ActionExecutionPolicyScopeRemoteActionRshell RemoteActionRshell { get; se
 
 remote_action_rshell block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#remote_action_rshell ActionExecutionPolicy#remote_action_rshell}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#remote_action_rshell ActionExecutionPolicy#remote_action_rshell}
 
 ---
 
@@ -1209,7 +1209,7 @@ public ActionExecutionPolicyScopeScripts Scripts { get; set; }
 
 scripts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#scripts ActionExecutionPolicy#scripts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#scripts ActionExecutionPolicy#scripts}
 
 ---
 
@@ -1243,7 +1243,7 @@ public IResolvable|ActionExecutionPolicyScopeKubernetesRule[] Rule { get; set; }
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
 
 ---
 
@@ -1277,7 +1277,7 @@ public string[] TargetNamespaces { get; set; }
 
 The Kubernetes namespaces this rule applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#target_namespaces ActionExecutionPolicy#target_namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#target_namespaces ActionExecutionPolicy#target_namespaces}
 
 ---
 
@@ -1311,7 +1311,7 @@ public IResolvable|ActionExecutionPolicyScopeRemoteActionRshellRule[] Rule { get
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
 
 ---
 
@@ -1347,7 +1347,7 @@ public string Access { get; set; }
 
 The level of remote shell access granted for the target paths. Valid values are `read_only`, `read_write`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#access ActionExecutionPolicy#access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#access ActionExecutionPolicy#access}
 
 ---
 
@@ -1361,7 +1361,7 @@ public string[] TargetPaths { get; set; }
 
 The filesystem paths this rule applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#target_paths ActionExecutionPolicy#target_paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#target_paths ActionExecutionPolicy#target_paths}
 
 ---
 
@@ -1395,7 +1395,7 @@ public IResolvable|ActionExecutionPolicyScopeScriptsRule[] Rule { get; set; }
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
 
 ---
 
@@ -1429,7 +1429,7 @@ public string[] TargetScriptNames { get; set; }
 
 The script names this rule applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#target_script_names ActionExecutionPolicy#target_script_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#target_script_names ActionExecutionPolicy#target_script_names}
 
 ---
 
@@ -1465,7 +1465,7 @@ public string[] AgentTags { get; set; }
 
 The Agent tags identifying the target, for example `env:prod`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#agent_tags ActionExecutionPolicy#agent_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#agent_tags ActionExecutionPolicy#agent_tags}
 
 ---
 
@@ -1479,7 +1479,7 @@ public string Name { get; set; }
 
 A human-readable name for the target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/action_execution_policy#name ActionExecutionPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#name ActionExecutionPolicy#name}
 
 ---
 

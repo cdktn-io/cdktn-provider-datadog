@@ -4,7 +4,7 @@
 
 ### SecurityFindingsInboxRulesOrder <a name="SecurityFindingsInboxRulesOrder" id="@cdktn/provider-datadog.securityFindingsInboxRulesOrder.SecurityFindingsInboxRulesOrder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rules_order datadog_security_findings_inbox_rules_order}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rules_order datadog_security_findings_inbox_rules_order}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityFindingsInboxRulesOrder.SecurityFindingsInboxRulesOrder.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 A unique identifier for the order resource. This field has no server-side equivalent; Datadog recommends matching the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rules_order#name SecurityFindingsInboxRulesOrder#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rules_order#name SecurityFindingsInboxRulesOrder#name}
 
 ---
 
@@ -118,7 +118,7 @@ The ordered list of all inbox rule IDs.
 
 The order of IDs in this attribute defines the evaluation order of the inbox rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rules_order#rule_ids SecurityFindingsInboxRulesOrder#rule_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rules_order#rule_ids SecurityFindingsInboxRulesOrder#rule_ids}
 
 ---
 
@@ -567,7 +567,7 @@ The construct id used in the generated config for the SecurityFindingsInboxRules
 
 The id of the existing SecurityFindingsInboxRulesOrder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rules_order#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rules_order#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -933,7 +933,7 @@ public java.lang.String getName();
 
 A unique identifier for the order resource. This field has no server-side equivalent; Datadog recommends matching the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rules_order#name SecurityFindingsInboxRulesOrder#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rules_order#name SecurityFindingsInboxRulesOrder#name}
 
 ---
 
@@ -949,7 +949,7 @@ The ordered list of all inbox rule IDs.
 
 The order of IDs in this attribute defines the evaluation order of the inbox rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rules_order#rule_ids SecurityFindingsInboxRulesOrder#rule_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rules_order#rule_ids SecurityFindingsInboxRulesOrder#rule_ids}
 
 ---
 

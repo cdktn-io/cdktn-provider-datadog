@@ -4,12 +4,12 @@
 
 ### OrgGroupMembership <a name="OrgGroupMembership" id="@cdktn/provider-datadog.orgGroupMembership.OrgGroupMembership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/org_group_membership datadog_org_group_membership}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/org_group_membership datadog_org_group_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.orgGroupMembership.OrgGroupMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/orggroupmembership"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/orggroupmembership"
 
 orggroupmembership.NewOrgGroupMembership(scope Construct, id *string, config OrgGroupMembershipConfig) OrgGroupMembership
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.orgGroupMembership.OrgGroupMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/orggroupmembership"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/orggroupmembership"
 
 orggroupmembership.OrgGroupMembership_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.orgGroupMembership.OrgGroupMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/orggroupmembership"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/orggroupmembership"
 
 orggroupmembership.OrgGroupMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ orggroupmembership.OrgGroupMembership_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.orgGroupMembership.OrgGroupMembership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/orggroupmembership"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/orggroupmembership"
 
 orggroupmembership.OrgGroupMembership_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ orggroupmembership.OrgGroupMembership_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.orgGroupMembership.OrgGroupMembership.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/orggroupmembership"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/orggroupmembership"
 
 orggroupmembership.OrgGroupMembership_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the OrgGroupMembership to impo
 
 The id of the existing OrgGroupMembership that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/org_group_membership#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/org_group_membership#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -766,7 +766,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.orgGroupMembership.OrgGroupMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/orggroupmembership"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v17/orggroupmembership"
 
 &orggroupmembership.OrgGroupMembershipConfig {
 	Connection: interface{},
@@ -877,7 +877,7 @@ OrgGroupId *string
 
 The UUID of the org group to assign the organization to. Must be a valid UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/org_group_membership#org_group_id OrgGroupMembership#org_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/org_group_membership#org_group_id OrgGroupMembership#org_group_id}
 
 ---
 
@@ -891,7 +891,7 @@ OrgUuid *string
 
 The UUID of the organization. Must be a valid UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/org_group_membership#org_uuid OrgGroupMembership#org_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/org_group_membership#org_uuid OrgGroupMembership#org_uuid}
 
 ---
 

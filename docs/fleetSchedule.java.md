@@ -4,7 +4,7 @@
 
 ### FleetSchedule <a name="FleetSchedule" id="@cdktn/provider-datadog.fleetSchedule.FleetSchedule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule datadog_fleet_schedule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule datadog_fleet_schedule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.fleetSchedule.FleetSchedule.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Human-readable name for the schedule. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#name FleetSchedule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#name FleetSchedule#name}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Datadog host query used to select the Agent upgrade targets. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#query FleetSchedule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#query FleetSchedule#query}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Weekly recurrence and maintenance-window configuration for the schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#rule FleetSchedule#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#rule FleetSchedule#rule}
 
 ---
 
@@ -144,7 +144,7 @@ Whether the schedule creates deployments.
 
 Valid values are `active` and `inactive`. The API default is used when omitted. Valid values are `active`, `inactive`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#status FleetSchedule#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#status FleetSchedule#status}
 
 ---
 
@@ -156,7 +156,7 @@ Number of major Agent versions behind the latest version to target: `0`, `1`, or
 
 The API default is used when omitted. Value must be between 0 and 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#version_to_latest FleetSchedule#version_to_latest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#version_to_latest FleetSchedule#version_to_latest}
 
 ---
 
@@ -632,7 +632,7 @@ The construct id used in the generated config for the FleetSchedule to import.
 
 The id of the existing FleetSchedule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1070,7 +1070,7 @@ public java.lang.String getName();
 
 Human-readable name for the schedule. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#name FleetSchedule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#name FleetSchedule#name}
 
 ---
 
@@ -1084,7 +1084,7 @@ public java.lang.String getQuery();
 
 Datadog host query used to select the Agent upgrade targets. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#query FleetSchedule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#query FleetSchedule#query}
 
 ---
 
@@ -1098,7 +1098,7 @@ public FleetScheduleRule getRule();
 
 Weekly recurrence and maintenance-window configuration for the schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#rule FleetSchedule#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#rule FleetSchedule#rule}
 
 ---
 
@@ -1114,7 +1114,7 @@ Whether the schedule creates deployments.
 
 Valid values are `active` and `inactive`. The API default is used when omitted. Valid values are `active`, `inactive`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#status FleetSchedule#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#status FleetSchedule#status}
 
 ---
 
@@ -1130,7 +1130,7 @@ Number of major Agent versions behind the latest version to target: `0`, `1`, or
 
 The API default is used when omitted. Value must be between 0 and 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#version_to_latest FleetSchedule#version_to_latest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#version_to_latest FleetSchedule#version_to_latest}
 
 ---
 
@@ -1170,7 +1170,7 @@ public java.util.List<java.lang.String> getDaysOfWeek();
 
 Days when the schedule may run. Valid values are `Mon`, `Tue`, `Wed`, `Thu`, `Fri`, `Sat`, and `Sun`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#days_of_week FleetSchedule#days_of_week}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#days_of_week FleetSchedule#days_of_week}
 
 ---
 
@@ -1184,7 +1184,7 @@ public java.lang.Number getMaintenanceWindowDuration();
 
 Duration of the maintenance window in minutes. Value must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#maintenance_window_duration FleetSchedule#maintenance_window_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#maintenance_window_duration FleetSchedule#maintenance_window_duration}
 
 ---
 
@@ -1198,7 +1198,7 @@ public java.lang.String getStartMaintenanceWindow();
 
 Start of the maintenance window in 24-hour `HH:MM` format. Must use HH:MM format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#start_maintenance_window FleetSchedule#start_maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#start_maintenance_window FleetSchedule#start_maintenance_window}
 
 ---
 
@@ -1212,7 +1212,7 @@ public java.lang.String getTimezone();
 
 IANA time zone used to interpret the maintenance window, for example `America/New_York` or `UTC`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/fleet_schedule#timezone FleetSchedule#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/fleet_schedule#timezone FleetSchedule#timezone}
 
 ---
 
