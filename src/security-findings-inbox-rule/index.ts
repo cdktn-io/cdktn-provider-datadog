@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rule
+// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface SecurityFindingsInboxRuleConfig extends cdktn.TerraformMetaArgu
   /**
   * The action to take when the inbox rule matches a finding.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rule#action SecurityFindingsInboxRule#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rule#action SecurityFindingsInboxRule#action}
   */
   readonly action: SecurityFindingsInboxRuleAction;
   /**
   * Whether the inbox rule is enabled. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rule#enabled SecurityFindingsInboxRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rule#enabled SecurityFindingsInboxRule#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The name of the inbox rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rule#name SecurityFindingsInboxRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rule#name SecurityFindingsInboxRule#name}
   */
   readonly name: string;
   /**
   * Defines the scope of findings to which the automation rule applies.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rule#rule SecurityFindingsInboxRule#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rule#rule SecurityFindingsInboxRule#rule}
   */
   readonly rule: SecurityFindingsInboxRuleRule;
 }
@@ -41,7 +41,7 @@ export interface SecurityFindingsInboxRuleAction {
   /**
   * An optional description providing more context for the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rule#description SecurityFindingsInboxRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rule#description SecurityFindingsInboxRule#description}
   */
   readonly description?: string;
 }
@@ -137,13 +137,13 @@ export interface SecurityFindingsInboxRuleRule {
   /**
   * The list of security finding types that the automation rule applies to. Valid values are `api_security`, `attack_path`, `host_and_container_vulnerability`, `iac_misconfiguration`, `identity_risk`, `library_vulnerability`, `misconfiguration`, `runtime_code_vulnerability`, `secret`, `static_code_vulnerability`, `workload_activity`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rule#finding_types SecurityFindingsInboxRule#finding_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rule#finding_types SecurityFindingsInboxRule#finding_types}
   */
   readonly findingTypes: string[];
   /**
   * A search query to further filter the findings matched by this rule. The `@workflow.*` namespace and `@status` fields are not permitted. For a reference of available fields, see the [Security Findings schema documentation](https://docs.datadoghq.com/security/guide/findings-schema/).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rule#query SecurityFindingsInboxRule#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rule#query SecurityFindingsInboxRule#query}
   */
   readonly query?: string;
 }
@@ -263,7 +263,7 @@ export class SecurityFindingsInboxRuleRuleOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rule datadog_security_findings_inbox_rule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rule datadog_security_findings_inbox_rule}
 */
 export class SecurityFindingsInboxRule extends cdktn.TerraformResource {
 
@@ -279,7 +279,7 @@ export class SecurityFindingsInboxRule extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SecurityFindingsInboxRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecurityFindingsInboxRule to import
-  * @param importFromId The id of the existing SecurityFindingsInboxRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecurityFindingsInboxRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecurityFindingsInboxRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -291,7 +291,7 @@ export class SecurityFindingsInboxRule extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/security_findings_inbox_rule datadog_security_findings_inbox_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/security_findings_inbox_rule datadog_security_findings_inbox_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -302,7 +302,7 @@ export class SecurityFindingsInboxRule extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_security_findings_inbox_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.25.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page
+// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,67 +15,67 @@ export interface StatusPageConfig extends cdktn.TerraformMetaArguments {
   /**
   * The company logo displayed on the status page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#company_logo StatusPage#company_logo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#company_logo StatusPage#company_logo}
   */
   readonly companyLogo?: string;
   /**
   * The subdomain prefix used to build the status page's URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#domain_prefix StatusPage#domain_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#domain_prefix StatusPage#domain_prefix}
   */
   readonly domainPrefix: string;
   /**
   * The header image included in subscriber emails.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#email_header_image StatusPage#email_header_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#email_header_image StatusPage#email_header_image}
   */
   readonly emailHeaderImage?: string;
   /**
   * The favicon displayed for the status page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#favicon StatusPage#favicon}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#favicon StatusPage#favicon}
   */
   readonly favicon?: string;
   /**
   * The name of the status page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#name StatusPage#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#name StatusPage#name}
   */
   readonly name: string;
   /**
   * The icon used for the status page's Slack app integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#slack_app_icon StatusPage#slack_app_icon}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#slack_app_icon StatusPage#slack_app_icon}
   */
   readonly slackAppIcon?: string;
   /**
   * Whether Slack subscriber notifications are enabled for the status page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#slack_subscriptions_enabled StatusPage#slack_subscriptions_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#slack_subscriptions_enabled StatusPage#slack_subscriptions_enabled}
   */
   readonly slackSubscriptionsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Whether subscriber notifications are enabled for the status page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#subscriptions_enabled StatusPage#subscriptions_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#subscriptions_enabled StatusPage#subscriptions_enabled}
   */
   readonly subscriptionsEnabled?: boolean | cdktn.IResolvable;
   /**
   * The type of the status page. Valid values are: public, internal.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#type StatusPage#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#type StatusPage#type}
   */
   readonly type: string;
   /**
   * How component statuses are visualized on the page. Valid values are: bars_and_uptime_percentage, bars_only, component_name_only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#visualization_type StatusPage#visualization_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#visualization_type StatusPage#visualization_type}
   */
   readonly visualizationType: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page datadog_status_page}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page datadog_status_page}
 */
 export class StatusPage extends cdktn.TerraformResource {
 
@@ -91,7 +91,7 @@ export class StatusPage extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a StatusPage resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StatusPage to import
-  * @param importFromId The id of the existing StatusPage that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StatusPage that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StatusPage to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -103,7 +103,7 @@ export class StatusPage extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page datadog_status_page} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page datadog_status_page} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -114,7 +114,7 @@ export class StatusPage extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_status_page',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.25.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

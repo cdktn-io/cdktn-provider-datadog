@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_maintenance_template
+// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_maintenance_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,49 +15,49 @@ export interface StatusPageMaintenanceTemplateConfig extends cdktn.TerraformMeta
   /**
   * The pre-filled description shown once the maintenance is completed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_maintenance_template#completed_description StatusPageMaintenanceTemplate#completed_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_maintenance_template#completed_description StatusPageMaintenanceTemplate#completed_description}
   */
   readonly completedDescription?: string;
   /**
   * The IDs of the components affected by a maintenance created from this template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_maintenance_template#component_ids StatusPageMaintenanceTemplate#component_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_maintenance_template#component_ids StatusPageMaintenanceTemplate#component_ids}
   */
   readonly componentIds?: string[];
   /**
   * The pre-filled description shown while the maintenance is in progress.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_maintenance_template#in_progress_description StatusPageMaintenanceTemplate#in_progress_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_maintenance_template#in_progress_description StatusPageMaintenanceTemplate#in_progress_description}
   */
   readonly inProgressDescription?: string;
   /**
   * The title used for a maintenance created from this template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_maintenance_template#maintenance_title StatusPageMaintenanceTemplate#maintenance_title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_maintenance_template#maintenance_title StatusPageMaintenanceTemplate#maintenance_title}
   */
   readonly maintenanceTitle?: string;
   /**
   * The name of the maintenance template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_maintenance_template#name StatusPageMaintenanceTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_maintenance_template#name StatusPageMaintenanceTemplate#name}
   */
   readonly name: string;
   /**
   * The ID of the status page this maintenance template belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_maintenance_template#page_id StatusPageMaintenanceTemplate#page_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_maintenance_template#page_id StatusPageMaintenanceTemplate#page_id}
   */
   readonly pageId: string;
   /**
   * The pre-filled description shown while the maintenance is scheduled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_maintenance_template#scheduled_description StatusPageMaintenanceTemplate#scheduled_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_maintenance_template#scheduled_description StatusPageMaintenanceTemplate#scheduled_description}
   */
   readonly scheduledDescription?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_maintenance_template datadog_status_page_maintenance_template}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_maintenance_template datadog_status_page_maintenance_template}
 */
 export class StatusPageMaintenanceTemplate extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class StatusPageMaintenanceTemplate extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a StatusPageMaintenanceTemplate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StatusPageMaintenanceTemplate to import
-  * @param importFromId The id of the existing StatusPageMaintenanceTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_maintenance_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StatusPageMaintenanceTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_maintenance_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StatusPageMaintenanceTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class StatusPageMaintenanceTemplate extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/status_page_maintenance_template datadog_status_page_maintenance_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/status_page_maintenance_template datadog_status_page_maintenance_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class StatusPageMaintenanceTemplate extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_status_page_maintenance_template',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.25.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

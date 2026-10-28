@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule
+// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,37 @@ export interface TeamNotificationRuleConfig extends cdktn.TerraformMetaArguments
   /**
   * The ID of the team that this notification rule belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#team_id TeamNotificationRule#team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#team_id TeamNotificationRule#team_id}
   */
   readonly teamId: string;
   /**
   * email block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#email TeamNotificationRule#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#email TeamNotificationRule#email}
   */
   readonly email?: TeamNotificationRuleEmail;
   /**
   * ms_teams block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#ms_teams TeamNotificationRule#ms_teams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#ms_teams TeamNotificationRule#ms_teams}
   */
   readonly msTeams?: TeamNotificationRuleMsTeams;
   /**
   * pagerduty block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#pagerduty TeamNotificationRule#pagerduty}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#pagerduty TeamNotificationRule#pagerduty}
   */
   readonly pagerduty?: TeamNotificationRulePagerduty;
   /**
+  * servicenow block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#servicenow TeamNotificationRule#servicenow}
+  */
+  readonly servicenow?: TeamNotificationRuleServicenow;
+  /**
   * slack block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#slack TeamNotificationRule#slack}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#slack TeamNotificationRule#slack}
   */
   readonly slack?: TeamNotificationRuleSlack;
 }
@@ -47,9 +53,15 @@ export interface TeamNotificationRuleEmail {
   /**
   * Whether to send email notifications to team members when alerts are triggered.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#enabled TeamNotificationRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#enabled TeamNotificationRule#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
+  /**
+  * A single email address to send notifications to instead of all team members. Requires `enabled` to be `true`. When omitted, notifications are sent to all team members.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#recipient_email TeamNotificationRule#recipient_email}
+  */
+  readonly recipientEmail?: string;
 }
 
 export function teamNotificationRuleEmailToTerraform(struct?: TeamNotificationRuleEmail | cdktn.IResolvable): any {
@@ -59,6 +71,7 @@ export function teamNotificationRuleEmailToTerraform(struct?: TeamNotificationRu
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
+    recipient_email: cdktn.stringToTerraform(struct!.recipientEmail),
   }
 }
 
@@ -74,6 +87,12 @@ export function teamNotificationRuleEmailToHclTerraform(struct?: TeamNotificatio
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
+    },
+    recipient_email: {
+      value: cdktn.stringToHclTerraform(struct!.recipientEmail),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
     },
   };
 
@@ -103,6 +122,10 @@ export class TeamNotificationRuleEmailOutputReference extends cdktn.ComplexObjec
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
+    if (this._recipientEmail !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.recipientEmail = this._recipientEmail;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -111,6 +134,7 @@ export class TeamNotificationRuleEmailOutputReference extends cdktn.ComplexObjec
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._enabled = undefined;
+      this._recipientEmail = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -120,6 +144,7 @@ export class TeamNotificationRuleEmailOutputReference extends cdktn.ComplexObjec
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._enabled = value.enabled;
+      this._recipientEmail = value.recipientEmail;
     }
   }
 
@@ -138,12 +163,28 @@ export class TeamNotificationRuleEmailOutputReference extends cdktn.ComplexObjec
   public get enabledInput() {
     return this._enabled;
   }
+
+  // recipient_email - computed: false, optional: true, required: false
+  private _recipientEmail?: string; 
+  public get recipientEmail() {
+    return this.getStringAttribute('recipient_email');
+  }
+  public set recipientEmail(value: string) {
+    this._recipientEmail = value;
+  }
+  public resetRecipientEmail() {
+    this._recipientEmail = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get recipientEmailInput() {
+    return this._recipientEmail;
+  }
 }
 export interface TeamNotificationRuleMsTeams {
   /**
   * MS Teams connector name used to route notifications to the appropriate channel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#connector_name TeamNotificationRule#connector_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#connector_name TeamNotificationRule#connector_name}
   */
   readonly connectorName?: string;
 }
@@ -239,7 +280,7 @@ export interface TeamNotificationRulePagerduty {
   /**
   * PagerDuty service name to send incident notifications to. The service name can be found in your PagerDuty service settings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#service_name TeamNotificationRule#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#service_name TeamNotificationRule#service_name}
   */
   readonly serviceName?: string;
 }
@@ -331,17 +372,113 @@ export class TeamNotificationRulePagerdutyOutputReference extends cdktn.ComplexO
     return this._serviceName;
   }
 }
+export interface TeamNotificationRuleServicenow {
+  /**
+  * ServiceNow template handle names to use for notifications.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#templates TeamNotificationRule#templates}
+  */
+  readonly templates?: string[];
+}
+
+export function teamNotificationRuleServicenowToTerraform(struct?: TeamNotificationRuleServicenow | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    templates: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.templates),
+  }
+}
+
+
+export function teamNotificationRuleServicenowToHclTerraform(struct?: TeamNotificationRuleServicenow | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    templates: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.templates),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class TeamNotificationRuleServicenowOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): TeamNotificationRuleServicenow | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._templates !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.templates = this._templates;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TeamNotificationRuleServicenow | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._templates = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._templates = value.templates;
+    }
+  }
+
+  // templates - computed: false, optional: true, required: false
+  private _templates?: string[]; 
+  public get templates() {
+    return this.getListAttribute('templates');
+  }
+  public set templates(value: string[]) {
+    this._templates = value;
+  }
+  public resetTemplates() {
+    this._templates = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get templatesInput() {
+    return this._templates;
+  }
+}
 export interface TeamNotificationRuleSlack {
   /**
   * Slack channel name for notifications, without a leading '#'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#channel TeamNotificationRule#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#channel TeamNotificationRule#channel}
   */
   readonly channel?: string;
   /**
   * Slack workspace name where the channel is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#workspace TeamNotificationRule#workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#workspace TeamNotificationRule#workspace}
   */
   readonly workspace?: string;
 }
@@ -464,7 +601,7 @@ export class TeamNotificationRuleSlackOutputReference extends cdktn.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule datadog_team_notification_rule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule datadog_team_notification_rule}
 */
 export class TeamNotificationRule extends cdktn.TerraformResource {
 
@@ -480,7 +617,7 @@ export class TeamNotificationRule extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a TeamNotificationRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TeamNotificationRule to import
-  * @param importFromId The id of the existing TeamNotificationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TeamNotificationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TeamNotificationRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -492,7 +629,7 @@ export class TeamNotificationRule extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/team_notification_rule datadog_team_notification_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_notification_rule datadog_team_notification_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -503,7 +640,7 @@ export class TeamNotificationRule extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_team_notification_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.25.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -518,6 +655,7 @@ export class TeamNotificationRule extends cdktn.TerraformResource {
     this._email.internalValue = config.email;
     this._msTeams.internalValue = config.msTeams;
     this._pagerduty.internalValue = config.pagerduty;
+    this._servicenow.internalValue = config.servicenow;
     this._slack.internalValue = config.slack;
   }
 
@@ -591,6 +729,22 @@ export class TeamNotificationRule extends cdktn.TerraformResource {
     return this._pagerduty.internalValue;
   }
 
+  // servicenow - computed: false, optional: true, required: false
+  private _servicenow = new TeamNotificationRuleServicenowOutputReference(this, "servicenow");
+  public get servicenow() {
+    return this._servicenow;
+  }
+  public putServicenow(value: TeamNotificationRuleServicenow) {
+    this._servicenow.internalValue = value;
+  }
+  public resetServicenow() {
+    this._servicenow.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get servicenowInput() {
+    return this._servicenow.internalValue;
+  }
+
   // slack - computed: false, optional: true, required: false
   private _slack = new TeamNotificationRuleSlackOutputReference(this, "slack");
   public get slack() {
@@ -617,6 +771,7 @@ export class TeamNotificationRule extends cdktn.TerraformResource {
       email: teamNotificationRuleEmailToTerraform(this._email.internalValue),
       ms_teams: teamNotificationRuleMsTeamsToTerraform(this._msTeams.internalValue),
       pagerduty: teamNotificationRulePagerdutyToTerraform(this._pagerduty.internalValue),
+      servicenow: teamNotificationRuleServicenowToTerraform(this._servicenow.internalValue),
       slack: teamNotificationRuleSlackToTerraform(this._slack.internalValue),
     };
   }
@@ -646,6 +801,12 @@ export class TeamNotificationRule extends cdktn.TerraformResource {
         isBlock: true,
         type: "struct",
         storageClassType: "TeamNotificationRulePagerduty",
+      },
+      servicenow: {
+        value: teamNotificationRuleServicenowToHclTerraform(this._servicenow.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "TeamNotificationRuleServicenow",
       },
       slack: {
         value: teamNotificationRuleSlackToHclTerraform(this._slack.internalValue),

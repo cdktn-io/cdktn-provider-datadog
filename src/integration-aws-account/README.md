@@ -1,3 +1,3 @@
 # `datadog_integration_aws_account`
 
-Refer to the Terraform Registry for docs: [`datadog_integration_aws_account`](https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/resources/integration_aws_account).
+Refer to the Terraform Registry for docs: [`datadog_integration_aws_account`](https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account).

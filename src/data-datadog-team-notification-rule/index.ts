@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/team_notification_rule
+// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/team_notification_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataDatadogTeamNotificationRuleConfig extends cdktn.TerraformMe
   /**
   * The notification rule ID to fetch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/team_notification_rule#rule_id DataDatadogTeamNotificationRule#rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/team_notification_rule#rule_id DataDatadogTeamNotificationRule#rule_id}
   */
   readonly ruleId: string;
   /**
   * The team ID to fetch the notification rule for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/team_notification_rule#team_id DataDatadogTeamNotificationRule#team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/team_notification_rule#team_id DataDatadogTeamNotificationRule#team_id}
   */
   readonly teamId: string;
 }
@@ -87,6 +87,11 @@ export class DataDatadogTeamNotificationRuleEmailOutputReference extends cdktn.C
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
     return this.getBooleanAttribute('enabled');
+  }
+
+  // recipient_email - computed: true, optional: false, required: false
+  public get recipientEmail() {
+    return this.getStringAttribute('recipient_email');
   }
 }
 export interface DataDatadogTeamNotificationRuleMsTeams {
@@ -217,6 +222,70 @@ export class DataDatadogTeamNotificationRulePagerdutyOutputReference extends cdk
     return this.getStringAttribute('service_name');
   }
 }
+export interface DataDatadogTeamNotificationRuleServicenow {
+}
+
+export function dataDatadogTeamNotificationRuleServicenowToTerraform(struct?: DataDatadogTeamNotificationRuleServicenow | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogTeamNotificationRuleServicenowToHclTerraform(struct?: DataDatadogTeamNotificationRuleServicenow | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogTeamNotificationRuleServicenowOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogTeamNotificationRuleServicenow | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogTeamNotificationRuleServicenow | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // templates - computed: true, optional: false, required: false
+  public get templates() {
+    return this.getListAttribute('templates');
+  }
+}
 export interface DataDatadogTeamNotificationRuleSlack {
 }
 
@@ -288,7 +357,7 @@ export class DataDatadogTeamNotificationRuleSlackOutputReference extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/team_notification_rule datadog_team_notification_rule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/team_notification_rule datadog_team_notification_rule}
 */
 export class DataDatadogTeamNotificationRule extends cdktn.TerraformDataSource {
 
@@ -304,7 +373,7 @@ export class DataDatadogTeamNotificationRule extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatadogTeamNotificationRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogTeamNotificationRule to import
-  * @param importFromId The id of the existing DataDatadogTeamNotificationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/team_notification_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogTeamNotificationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/team_notification_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogTeamNotificationRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -316,7 +385,7 @@ export class DataDatadogTeamNotificationRule extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.25.0/docs/data-sources/team_notification_rule datadog_team_notification_rule} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/team_notification_rule datadog_team_notification_rule} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -327,7 +396,7 @@ export class DataDatadogTeamNotificationRule extends cdktn.TerraformDataSource {
       terraformResourceType: 'datadog_team_notification_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.25.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -393,6 +462,12 @@ export class DataDatadogTeamNotificationRule extends cdktn.TerraformDataSource {
   private _pagerduty = new DataDatadogTeamNotificationRulePagerdutyOutputReference(this, "pagerduty");
   public get pagerduty() {
     return this._pagerduty;
+  }
+
+  // servicenow - computed: false, optional: false, required: false
+  private _servicenow = new DataDatadogTeamNotificationRuleServicenowOutputReference(this, "servicenow");
+  public get servicenow() {
+    return this._servicenow;
   }
 
   // slack - computed: false, optional: false, required: false
