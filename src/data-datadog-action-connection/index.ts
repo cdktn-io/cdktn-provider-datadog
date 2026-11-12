@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/action_connection
+// https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/data-sources/action_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataDatadogActionConnectionConfig extends cdktn.TerraformMetaAr
   /**
   * ID for Connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/action_connection#id DataDatadogActionConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/data-sources/action_connection#id DataDatadogActionConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,9 +24,147 @@ export interface DataDatadogActionConnectionConfig extends cdktn.TerraformMetaAr
   /**
   * http block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/action_connection#http DataDatadogActionConnection#http}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/data-sources/action_connection#http DataDatadogActionConnection#http}
   */
   readonly http?: DataDatadogActionConnectionHttp;
+}
+export interface DataDatadogActionConnectionExternalSecretsManager {
+}
+
+export function dataDatadogActionConnectionExternalSecretsManagerToTerraform(struct?: DataDatadogActionConnectionExternalSecretsManager): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionExternalSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionExternalSecretsManager): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionExternalSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionExternalSecretsManager | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionExternalSecretsManager | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // connection_id - computed: true, optional: false, required: false
+  public get connectionId() {
+    return this.getStringAttribute('connection_id');
+  }
+
+  // region - computed: true, optional: false, required: false
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+}
+export interface DataDatadogActionConnectionAnthropicApiKeyApiTokenAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionAnthropicApiKeyApiTokenAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionAnthropicApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionAnthropicApiKeyApiTokenAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionAnthropicApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionAnthropicApiKeyApiTokenAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionAnthropicApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionAnthropicApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
 }
 export interface DataDatadogActionConnectionAnthropicApiKey {
 }
@@ -90,6 +228,12 @@ export class DataDatadogActionConnectionAnthropicApiKeyOutputReference extends c
   // api_token - computed: true, optional: false, required: false
   public get apiToken() {
     return this.getStringAttribute('api_token');
+  }
+
+  // api_token_aws_secrets_manager - computed: false, optional: false, required: false
+  private _apiTokenAwsSecretsManager = new DataDatadogActionConnectionAnthropicApiKeyApiTokenAwsSecretsManagerOutputReference(this, "api_token_aws_secrets_manager");
+  public get apiTokenAwsSecretsManager() {
+    return this._apiTokenAwsSecretsManager;
   }
 }
 export interface DataDatadogActionConnectionAnthropic {
@@ -157,6 +301,85 @@ export class DataDatadogActionConnectionAnthropicOutputReference extends cdktn.C
     return this._apiKey;
   }
 }
+export interface DataDatadogActionConnectionAsanaAccessTokenAccessTokenAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionAsanaAccessTokenAccessTokenAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionAsanaAccessTokenAccessTokenAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionAsanaAccessTokenAccessTokenAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionAsanaAccessTokenAccessTokenAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionAsanaAccessTokenAccessTokenAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionAsanaAccessTokenAccessTokenAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionAsanaAccessTokenAccessTokenAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
+}
 export interface DataDatadogActionConnectionAsanaAccessToken {
 }
 
@@ -219,6 +442,12 @@ export class DataDatadogActionConnectionAsanaAccessTokenOutputReference extends 
   // access_token - computed: true, optional: false, required: false
   public get accessToken() {
     return this.getStringAttribute('access_token');
+  }
+
+  // access_token_aws_secrets_manager - computed: false, optional: false, required: false
+  private _accessTokenAwsSecretsManager = new DataDatadogActionConnectionAsanaAccessTokenAccessTokenAwsSecretsManagerOutputReference(this, "access_token_aws_secrets_manager");
+  public get accessTokenAwsSecretsManager() {
+    return this._accessTokenAwsSecretsManager;
   }
 }
 export interface DataDatadogActionConnectionAsana {
@@ -574,6 +803,85 @@ export class DataDatadogActionConnectionAzureOutputReference extends cdktn.Compl
     return this._tenant;
   }
 }
+export interface DataDatadogActionConnectionCircleCiApiKeyApiTokenAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionCircleCiApiKeyApiTokenAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionCircleCiApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionCircleCiApiKeyApiTokenAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionCircleCiApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionCircleCiApiKeyApiTokenAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionCircleCiApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionCircleCiApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
+}
 export interface DataDatadogActionConnectionCircleCiApiKey {
 }
 
@@ -636,6 +944,12 @@ export class DataDatadogActionConnectionCircleCiApiKeyOutputReference extends cd
   // api_token - computed: true, optional: false, required: false
   public get apiToken() {
     return this.getStringAttribute('api_token');
+  }
+
+  // api_token_aws_secrets_manager - computed: false, optional: false, required: false
+  private _apiTokenAwsSecretsManager = new DataDatadogActionConnectionCircleCiApiKeyApiTokenAwsSecretsManagerOutputReference(this, "api_token_aws_secrets_manager");
+  public get apiTokenAwsSecretsManager() {
+    return this._apiTokenAwsSecretsManager;
   }
 }
 export interface DataDatadogActionConnectionCircleCi {
@@ -703,6 +1017,85 @@ export class DataDatadogActionConnectionCircleCiOutputReference extends cdktn.Co
     return this._apiKey;
   }
 }
+export interface DataDatadogActionConnectionClickupApiKeyApiTokenAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionClickupApiKeyApiTokenAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionClickupApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionClickupApiKeyApiTokenAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionClickupApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionClickupApiKeyApiTokenAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionClickupApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionClickupApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
+}
 export interface DataDatadogActionConnectionClickupApiKey {
 }
 
@@ -765,6 +1158,12 @@ export class DataDatadogActionConnectionClickupApiKeyOutputReference extends cdk
   // api_token - computed: true, optional: false, required: false
   public get apiToken() {
     return this.getStringAttribute('api_token');
+  }
+
+  // api_token_aws_secrets_manager - computed: false, optional: false, required: false
+  private _apiTokenAwsSecretsManager = new DataDatadogActionConnectionClickupApiKeyApiTokenAwsSecretsManagerOutputReference(this, "api_token_aws_secrets_manager");
+  public get apiTokenAwsSecretsManager() {
+    return this._apiTokenAwsSecretsManager;
   }
 }
 export interface DataDatadogActionConnectionClickup {
@@ -832,6 +1231,85 @@ export class DataDatadogActionConnectionClickupOutputReference extends cdktn.Com
     return this._apiKey;
   }
 }
+export interface DataDatadogActionConnectionCloudflareApiTokenApiTokenAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionCloudflareApiTokenApiTokenAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionCloudflareApiTokenApiTokenAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionCloudflareApiTokenApiTokenAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionCloudflareApiTokenApiTokenAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionCloudflareApiTokenApiTokenAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionCloudflareApiTokenApiTokenAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionCloudflareApiTokenApiTokenAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
+}
 export interface DataDatadogActionConnectionCloudflareApiToken {
 }
 
@@ -894,6 +1372,170 @@ export class DataDatadogActionConnectionCloudflareApiTokenOutputReference extend
   // api_token - computed: true, optional: false, required: false
   public get apiToken() {
     return this.getStringAttribute('api_token');
+  }
+
+  // api_token_aws_secrets_manager - computed: false, optional: false, required: false
+  private _apiTokenAwsSecretsManager = new DataDatadogActionConnectionCloudflareApiTokenApiTokenAwsSecretsManagerOutputReference(this, "api_token_aws_secrets_manager");
+  public get apiTokenAwsSecretsManager() {
+    return this._apiTokenAwsSecretsManager;
+  }
+}
+export interface DataDatadogActionConnectionCloudflareGlobalApiTokenAuthEmailAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionCloudflareGlobalApiTokenAuthEmailAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionCloudflareGlobalApiTokenAuthEmailAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionCloudflareGlobalApiTokenAuthEmailAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionCloudflareGlobalApiTokenAuthEmailAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionCloudflareGlobalApiTokenAuthEmailAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionCloudflareGlobalApiTokenAuthEmailAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionCloudflareGlobalApiTokenAuthEmailAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
+}
+export interface DataDatadogActionConnectionCloudflareGlobalApiTokenGlobalApiKeyAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionCloudflareGlobalApiTokenGlobalApiKeyAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionCloudflareGlobalApiTokenGlobalApiKeyAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionCloudflareGlobalApiTokenGlobalApiKeyAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionCloudflareGlobalApiTokenGlobalApiKeyAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionCloudflareGlobalApiTokenGlobalApiKeyAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionCloudflareGlobalApiTokenGlobalApiKeyAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionCloudflareGlobalApiTokenGlobalApiKeyAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
   }
 }
 export interface DataDatadogActionConnectionCloudflareGlobalApiToken {
@@ -963,6 +1605,18 @@ export class DataDatadogActionConnectionCloudflareGlobalApiTokenOutputReference 
   // global_api_key - computed: true, optional: false, required: false
   public get globalApiKey() {
     return this.getStringAttribute('global_api_key');
+  }
+
+  // auth_email_aws_secrets_manager - computed: false, optional: false, required: false
+  private _authEmailAwsSecretsManager = new DataDatadogActionConnectionCloudflareGlobalApiTokenAuthEmailAwsSecretsManagerOutputReference(this, "auth_email_aws_secrets_manager");
+  public get authEmailAwsSecretsManager() {
+    return this._authEmailAwsSecretsManager;
+  }
+
+  // global_api_key_aws_secrets_manager - computed: false, optional: false, required: false
+  private _globalApiKeyAwsSecretsManager = new DataDatadogActionConnectionCloudflareGlobalApiTokenGlobalApiKeyAwsSecretsManagerOutputReference(this, "global_api_key_aws_secrets_manager");
+  public get globalApiKeyAwsSecretsManager() {
+    return this._globalApiKeyAwsSecretsManager;
   }
 }
 export interface DataDatadogActionConnectionCloudflare {
@@ -1034,6 +1688,243 @@ export class DataDatadogActionConnectionCloudflareOutputReference extends cdktn.
   private _globalApiToken = new DataDatadogActionConnectionCloudflareGlobalApiTokenOutputReference(this, "global_api_token");
   public get globalApiToken() {
     return this._globalApiToken;
+  }
+}
+export interface DataDatadogActionConnectionConfigCatSdkKeyApiPasswordAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionConfigCatSdkKeyApiPasswordAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionConfigCatSdkKeyApiPasswordAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionConfigCatSdkKeyApiPasswordAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionConfigCatSdkKeyApiPasswordAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionConfigCatSdkKeyApiPasswordAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionConfigCatSdkKeyApiPasswordAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionConfigCatSdkKeyApiPasswordAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
+}
+export interface DataDatadogActionConnectionConfigCatSdkKeyApiUsernameAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionConfigCatSdkKeyApiUsernameAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionConfigCatSdkKeyApiUsernameAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionConfigCatSdkKeyApiUsernameAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionConfigCatSdkKeyApiUsernameAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionConfigCatSdkKeyApiUsernameAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionConfigCatSdkKeyApiUsernameAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionConfigCatSdkKeyApiUsernameAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
+}
+export interface DataDatadogActionConnectionConfigCatSdkKeySdkKeyAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionConfigCatSdkKeySdkKeyAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionConfigCatSdkKeySdkKeyAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionConfigCatSdkKeySdkKeyAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionConfigCatSdkKeySdkKeyAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionConfigCatSdkKeySdkKeyAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionConfigCatSdkKeySdkKeyAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionConfigCatSdkKeySdkKeyAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
   }
 }
 export interface DataDatadogActionConnectionConfigCatSdkKey {
@@ -1109,6 +2000,24 @@ export class DataDatadogActionConnectionConfigCatSdkKeyOutputReference extends c
   public get sdkKey() {
     return this.getStringAttribute('sdk_key');
   }
+
+  // api_password_aws_secrets_manager - computed: false, optional: false, required: false
+  private _apiPasswordAwsSecretsManager = new DataDatadogActionConnectionConfigCatSdkKeyApiPasswordAwsSecretsManagerOutputReference(this, "api_password_aws_secrets_manager");
+  public get apiPasswordAwsSecretsManager() {
+    return this._apiPasswordAwsSecretsManager;
+  }
+
+  // api_username_aws_secrets_manager - computed: false, optional: false, required: false
+  private _apiUsernameAwsSecretsManager = new DataDatadogActionConnectionConfigCatSdkKeyApiUsernameAwsSecretsManagerOutputReference(this, "api_username_aws_secrets_manager");
+  public get apiUsernameAwsSecretsManager() {
+    return this._apiUsernameAwsSecretsManager;
+  }
+
+  // sdk_key_aws_secrets_manager - computed: false, optional: false, required: false
+  private _sdkKeyAwsSecretsManager = new DataDatadogActionConnectionConfigCatSdkKeySdkKeyAwsSecretsManagerOutputReference(this, "sdk_key_aws_secrets_manager");
+  public get sdkKeyAwsSecretsManager() {
+    return this._sdkKeyAwsSecretsManager;
+  }
 }
 export interface DataDatadogActionConnectionConfigCat {
 }
@@ -1173,6 +2082,322 @@ export class DataDatadogActionConnectionConfigCatOutputReference extends cdktn.C
   private _sdkKey = new DataDatadogActionConnectionConfigCatSdkKeyOutputReference(this, "sdk_key");
   public get sdkKey() {
     return this._sdkKey;
+  }
+}
+export interface DataDatadogActionConnectionDatadogApiKeyApiKeyAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionDatadogApiKeyApiKeyAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionDatadogApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionDatadogApiKeyApiKeyAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionDatadogApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionDatadogApiKeyApiKeyAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionDatadogApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionDatadogApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
+}
+export interface DataDatadogActionConnectionDatadogApiKeyAppKeyAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionDatadogApiKeyAppKeyAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionDatadogApiKeyAppKeyAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionDatadogApiKeyAppKeyAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionDatadogApiKeyAppKeyAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionDatadogApiKeyAppKeyAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionDatadogApiKeyAppKeyAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionDatadogApiKeyAppKeyAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
+}
+export interface DataDatadogActionConnectionDatadogApiKeyDatacenterAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionDatadogApiKeyDatacenterAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionDatadogApiKeyDatacenterAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionDatadogApiKeyDatacenterAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionDatadogApiKeyDatacenterAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionDatadogApiKeyDatacenterAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionDatadogApiKeyDatacenterAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionDatadogApiKeyDatacenterAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
+}
+export interface DataDatadogActionConnectionDatadogApiKeySubdomainAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionDatadogApiKeySubdomainAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionDatadogApiKeySubdomainAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionDatadogApiKeySubdomainAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionDatadogApiKeySubdomainAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionDatadogApiKeySubdomainAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionDatadogApiKeySubdomainAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionDatadogApiKeySubdomainAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
   }
 }
 export interface DataDatadogActionConnectionDatadogApiKey {
@@ -1253,6 +2478,30 @@ export class DataDatadogActionConnectionDatadogApiKeyOutputReference extends cdk
   public get subdomain() {
     return this.getStringAttribute('subdomain');
   }
+
+  // api_key_aws_secrets_manager - computed: false, optional: false, required: false
+  private _apiKeyAwsSecretsManager = new DataDatadogActionConnectionDatadogApiKeyApiKeyAwsSecretsManagerOutputReference(this, "api_key_aws_secrets_manager");
+  public get apiKeyAwsSecretsManager() {
+    return this._apiKeyAwsSecretsManager;
+  }
+
+  // app_key_aws_secrets_manager - computed: false, optional: false, required: false
+  private _appKeyAwsSecretsManager = new DataDatadogActionConnectionDatadogApiKeyAppKeyAwsSecretsManagerOutputReference(this, "app_key_aws_secrets_manager");
+  public get appKeyAwsSecretsManager() {
+    return this._appKeyAwsSecretsManager;
+  }
+
+  // datacenter_aws_secrets_manager - computed: false, optional: false, required: false
+  private _datacenterAwsSecretsManager = new DataDatadogActionConnectionDatadogApiKeyDatacenterAwsSecretsManagerOutputReference(this, "datacenter_aws_secrets_manager");
+  public get datacenterAwsSecretsManager() {
+    return this._datacenterAwsSecretsManager;
+  }
+
+  // subdomain_aws_secrets_manager - computed: false, optional: false, required: false
+  private _subdomainAwsSecretsManager = new DataDatadogActionConnectionDatadogApiKeySubdomainAwsSecretsManagerOutputReference(this, "subdomain_aws_secrets_manager");
+  public get subdomainAwsSecretsManager() {
+    return this._subdomainAwsSecretsManager;
+  }
 }
 export interface DataDatadogActionConnectionDatadog {
 }
@@ -1319,6 +2568,85 @@ export class DataDatadogActionConnectionDatadogOutputReference extends cdktn.Com
     return this._apiKey;
   }
 }
+export interface DataDatadogActionConnectionFastlyApiKeyApiKeyAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionFastlyApiKeyApiKeyAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionFastlyApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionFastlyApiKeyApiKeyAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionFastlyApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionFastlyApiKeyApiKeyAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionFastlyApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionFastlyApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
+}
 export interface DataDatadogActionConnectionFastlyApiKey {
 }
 
@@ -1381,6 +2709,12 @@ export class DataDatadogActionConnectionFastlyApiKeyOutputReference extends cdkt
   // api_key - computed: true, optional: false, required: false
   public get apiKey() {
     return this.getStringAttribute('api_key');
+  }
+
+  // api_key_aws_secrets_manager - computed: false, optional: false, required: false
+  private _apiKeyAwsSecretsManager = new DataDatadogActionConnectionFastlyApiKeyApiKeyAwsSecretsManagerOutputReference(this, "api_key_aws_secrets_manager");
+  public get apiKeyAwsSecretsManager() {
+    return this._apiKeyAwsSecretsManager;
   }
 }
 export interface DataDatadogActionConnectionFastly {
@@ -1446,6 +2780,164 @@ export class DataDatadogActionConnectionFastlyOutputReference extends cdktn.Comp
   private _apiKey = new DataDatadogActionConnectionFastlyApiKeyOutputReference(this, "api_key");
   public get apiKey() {
     return this._apiKey;
+  }
+}
+export interface DataDatadogActionConnectionFreshserviceApiKeyApiKeyAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionFreshserviceApiKeyApiKeyAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionFreshserviceApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionFreshserviceApiKeyApiKeyAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionFreshserviceApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionFreshserviceApiKeyApiKeyAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionFreshserviceApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionFreshserviceApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
+}
+export interface DataDatadogActionConnectionFreshserviceApiKeyDomainAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionFreshserviceApiKeyDomainAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionFreshserviceApiKeyDomainAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionFreshserviceApiKeyDomainAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionFreshserviceApiKeyDomainAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionFreshserviceApiKeyDomainAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionFreshserviceApiKeyDomainAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionFreshserviceApiKeyDomainAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
   }
 }
 export interface DataDatadogActionConnectionFreshserviceApiKey {
@@ -1516,6 +3008,18 @@ export class DataDatadogActionConnectionFreshserviceApiKeyOutputReference extend
   public get domain() {
     return this.getStringAttribute('domain');
   }
+
+  // api_key_aws_secrets_manager - computed: false, optional: false, required: false
+  private _apiKeyAwsSecretsManager = new DataDatadogActionConnectionFreshserviceApiKeyApiKeyAwsSecretsManagerOutputReference(this, "api_key_aws_secrets_manager");
+  public get apiKeyAwsSecretsManager() {
+    return this._apiKeyAwsSecretsManager;
+  }
+
+  // domain_aws_secrets_manager - computed: false, optional: false, required: false
+  private _domainAwsSecretsManager = new DataDatadogActionConnectionFreshserviceApiKeyDomainAwsSecretsManagerOutputReference(this, "domain_aws_secrets_manager");
+  public get domainAwsSecretsManager() {
+    return this._domainAwsSecretsManager;
+  }
 }
 export interface DataDatadogActionConnectionFreshservice {
 }
@@ -1580,6 +3084,164 @@ export class DataDatadogActionConnectionFreshserviceOutputReference extends cdkt
   private _apiKey = new DataDatadogActionConnectionFreshserviceApiKeyOutputReference(this, "api_key");
   public get apiKey() {
     return this._apiKey;
+  }
+}
+export interface DataDatadogActionConnectionGcpServiceAccountPrivateKeyAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionGcpServiceAccountPrivateKeyAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionGcpServiceAccountPrivateKeyAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionGcpServiceAccountPrivateKeyAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionGcpServiceAccountPrivateKeyAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionGcpServiceAccountPrivateKeyAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionGcpServiceAccountPrivateKeyAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionGcpServiceAccountPrivateKeyAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
+}
+export interface DataDatadogActionConnectionGcpServiceAccountServiceAccountEmailAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionGcpServiceAccountServiceAccountEmailAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionGcpServiceAccountServiceAccountEmailAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionGcpServiceAccountServiceAccountEmailAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionGcpServiceAccountServiceAccountEmailAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionGcpServiceAccountServiceAccountEmailAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionGcpServiceAccountServiceAccountEmailAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionGcpServiceAccountServiceAccountEmailAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
   }
 }
 export interface DataDatadogActionConnectionGcpServiceAccount {
@@ -1650,6 +3312,18 @@ export class DataDatadogActionConnectionGcpServiceAccountOutputReference extends
   public get serviceAccountEmail() {
     return this.getStringAttribute('service_account_email');
   }
+
+  // private_key_aws_secrets_manager - computed: false, optional: false, required: false
+  private _privateKeyAwsSecretsManager = new DataDatadogActionConnectionGcpServiceAccountPrivateKeyAwsSecretsManagerOutputReference(this, "private_key_aws_secrets_manager");
+  public get privateKeyAwsSecretsManager() {
+    return this._privateKeyAwsSecretsManager;
+  }
+
+  // service_account_email_aws_secrets_manager - computed: false, optional: false, required: false
+  private _serviceAccountEmailAwsSecretsManager = new DataDatadogActionConnectionGcpServiceAccountServiceAccountEmailAwsSecretsManagerOutputReference(this, "service_account_email_aws_secrets_manager");
+  public get serviceAccountEmailAwsSecretsManager() {
+    return this._serviceAccountEmailAwsSecretsManager;
+  }
 }
 export interface DataDatadogActionConnectionGcp {
 }
@@ -1716,6 +3390,85 @@ export class DataDatadogActionConnectionGcpOutputReference extends cdktn.Complex
     return this._serviceAccount;
   }
 }
+export interface DataDatadogActionConnectionGeminiApiKeyApiKeyAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionGeminiApiKeyApiKeyAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionGeminiApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionGeminiApiKeyApiKeyAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionGeminiApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionGeminiApiKeyApiKeyAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionGeminiApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionGeminiApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
+}
 export interface DataDatadogActionConnectionGeminiApiKey {
 }
 
@@ -1778,6 +3531,12 @@ export class DataDatadogActionConnectionGeminiApiKeyOutputReference extends cdkt
   // api_key - computed: true, optional: false, required: false
   public get apiKey() {
     return this.getStringAttribute('api_key');
+  }
+
+  // api_key_aws_secrets_manager - computed: false, optional: false, required: false
+  private _apiKeyAwsSecretsManager = new DataDatadogActionConnectionGeminiApiKeyApiKeyAwsSecretsManagerOutputReference(this, "api_key_aws_secrets_manager");
+  public get apiKeyAwsSecretsManager() {
+    return this._apiKeyAwsSecretsManager;
   }
 }
 export interface DataDatadogActionConnectionGemini {
@@ -1845,6 +3604,85 @@ export class DataDatadogActionConnectionGeminiOutputReference extends cdktn.Comp
     return this._apiKey;
   }
 }
+export interface DataDatadogActionConnectionGitlabApiKeyApiTokenAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionGitlabApiKeyApiTokenAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionGitlabApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionGitlabApiKeyApiTokenAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionGitlabApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionGitlabApiKeyApiTokenAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionGitlabApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionGitlabApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
+}
 export interface DataDatadogActionConnectionGitlabApiKey {
 }
 
@@ -1907,6 +3745,12 @@ export class DataDatadogActionConnectionGitlabApiKeyOutputReference extends cdkt
   // api_token - computed: true, optional: false, required: false
   public get apiToken() {
     return this.getStringAttribute('api_token');
+  }
+
+  // api_token_aws_secrets_manager - computed: false, optional: false, required: false
+  private _apiTokenAwsSecretsManager = new DataDatadogActionConnectionGitlabApiKeyApiTokenAwsSecretsManagerOutputReference(this, "api_token_aws_secrets_manager");
+  public get apiTokenAwsSecretsManager() {
+    return this._apiTokenAwsSecretsManager;
   }
 }
 export interface DataDatadogActionConnectionGitlab {
@@ -1974,6 +3818,85 @@ export class DataDatadogActionConnectionGitlabOutputReference extends cdktn.Comp
     return this._apiKey;
   }
 }
+export interface DataDatadogActionConnectionGreyNoiseApiKeyApiKeyAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionGreyNoiseApiKeyApiKeyAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionGreyNoiseApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionGreyNoiseApiKeyApiKeyAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionGreyNoiseApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionGreyNoiseApiKeyApiKeyAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionGreyNoiseApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionGreyNoiseApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
+}
 export interface DataDatadogActionConnectionGreyNoiseApiKey {
 }
 
@@ -2036,6 +3959,12 @@ export class DataDatadogActionConnectionGreyNoiseApiKeyOutputReference extends c
   // api_key - computed: true, optional: false, required: false
   public get apiKey() {
     return this.getStringAttribute('api_key');
+  }
+
+  // api_key_aws_secrets_manager - computed: false, optional: false, required: false
+  private _apiKeyAwsSecretsManager = new DataDatadogActionConnectionGreyNoiseApiKeyApiKeyAwsSecretsManagerOutputReference(this, "api_key_aws_secrets_manager");
+  public get apiKeyAwsSecretsManager() {
+    return this._apiKeyAwsSecretsManager;
   }
 }
 export interface DataDatadogActionConnectionGreyNoise {
@@ -2263,6 +4192,85 @@ export class DataDatadogActionConnectionHttpTokenAuthHeaderList extends cdktn.Co
     return new DataDatadogActionConnectionHttpTokenAuthHeaderOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataDatadogActionConnectionHttpTokenAuthTokenValueAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionHttpTokenAuthTokenValueAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionHttpTokenAuthTokenValueAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionHttpTokenAuthTokenValueAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionHttpTokenAuthTokenValueAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionHttpTokenAuthTokenValueAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionHttpTokenAuthTokenValueAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionHttpTokenAuthTokenValueAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
+}
 export interface DataDatadogActionConnectionHttpTokenAuthToken {
 }
 
@@ -2337,6 +4345,12 @@ export class DataDatadogActionConnectionHttpTokenAuthTokenOutputReference extend
   // value - computed: true, optional: false, required: false
   public get value() {
     return this.getStringAttribute('value');
+  }
+
+  // value_aws_secrets_manager - computed: false, optional: false, required: false
+  private _valueAwsSecretsManager = new DataDatadogActionConnectionHttpTokenAuthTokenValueAwsSecretsManagerOutputReference(this, "value_aws_secrets_manager");
+  public get valueAwsSecretsManager() {
+    return this._valueAwsSecretsManager;
   }
 }
 
@@ -2454,19 +4468,19 @@ export interface DataDatadogActionConnectionHttpTokenAuth {
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/action_connection#header DataDatadogActionConnection#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/data-sources/action_connection#header DataDatadogActionConnection#header}
   */
   readonly header?: DataDatadogActionConnectionHttpTokenAuthHeader[] | cdktn.IResolvable;
   /**
   * token block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/action_connection#token DataDatadogActionConnection#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/data-sources/action_connection#token DataDatadogActionConnection#token}
   */
   readonly token?: DataDatadogActionConnectionHttpTokenAuthToken[] | cdktn.IResolvable;
   /**
   * url_parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/action_connection#url_parameter DataDatadogActionConnection#url_parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/data-sources/action_connection#url_parameter DataDatadogActionConnection#url_parameter}
   */
   readonly urlParameter?: DataDatadogActionConnectionHttpTokenAuthUrlParameter[] | cdktn.IResolvable;
 }
@@ -2626,7 +4640,7 @@ export interface DataDatadogActionConnectionHttp {
   /**
   * token_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/action_connection#token_auth DataDatadogActionConnection#token_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/data-sources/action_connection#token_auth DataDatadogActionConnection#token_auth}
   */
   readonly tokenAuth?: DataDatadogActionConnectionHttpTokenAuth;
 }
@@ -2723,6 +4737,85 @@ export class DataDatadogActionConnectionHttpOutputReference extends cdktn.Comple
     return this._tokenAuth.internalValue;
   }
 }
+export interface DataDatadogActionConnectionLaunchDarklyApiKeyApiTokenAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionLaunchDarklyApiKeyApiTokenAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionLaunchDarklyApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionLaunchDarklyApiKeyApiTokenAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionLaunchDarklyApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionLaunchDarklyApiKeyApiTokenAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionLaunchDarklyApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionLaunchDarklyApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
+}
 export interface DataDatadogActionConnectionLaunchDarklyApiKey {
 }
 
@@ -2785,6 +4878,12 @@ export class DataDatadogActionConnectionLaunchDarklyApiKeyOutputReference extend
   // api_token - computed: true, optional: false, required: false
   public get apiToken() {
     return this.getStringAttribute('api_token');
+  }
+
+  // api_token_aws_secrets_manager - computed: false, optional: false, required: false
+  private _apiTokenAwsSecretsManager = new DataDatadogActionConnectionLaunchDarklyApiKeyApiTokenAwsSecretsManagerOutputReference(this, "api_token_aws_secrets_manager");
+  public get apiTokenAwsSecretsManager() {
+    return this._apiTokenAwsSecretsManager;
   }
 }
 export interface DataDatadogActionConnectionLaunchDarkly {
@@ -2852,6 +4951,85 @@ export class DataDatadogActionConnectionLaunchDarklyOutputReference extends cdkt
     return this._apiKey;
   }
 }
+export interface DataDatadogActionConnectionNotionApiKeyApiTokenAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionNotionApiKeyApiTokenAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionNotionApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionNotionApiKeyApiTokenAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionNotionApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionNotionApiKeyApiTokenAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionNotionApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionNotionApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
+}
 export interface DataDatadogActionConnectionNotionApiKey {
 }
 
@@ -2914,6 +5092,12 @@ export class DataDatadogActionConnectionNotionApiKeyOutputReference extends cdkt
   // api_token - computed: true, optional: false, required: false
   public get apiToken() {
     return this.getStringAttribute('api_token');
+  }
+
+  // api_token_aws_secrets_manager - computed: false, optional: false, required: false
+  private _apiTokenAwsSecretsManager = new DataDatadogActionConnectionNotionApiKeyApiTokenAwsSecretsManagerOutputReference(this, "api_token_aws_secrets_manager");
+  public get apiTokenAwsSecretsManager() {
+    return this._apiTokenAwsSecretsManager;
   }
 }
 export interface DataDatadogActionConnectionNotion {
@@ -2979,6 +5163,164 @@ export class DataDatadogActionConnectionNotionOutputReference extends cdktn.Comp
   private _apiKey = new DataDatadogActionConnectionNotionApiKeyOutputReference(this, "api_key");
   public get apiKey() {
     return this._apiKey;
+  }
+}
+export interface DataDatadogActionConnectionOktaApiTokenApiTokenAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionOktaApiTokenApiTokenAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionOktaApiTokenApiTokenAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionOktaApiTokenApiTokenAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionOktaApiTokenApiTokenAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionOktaApiTokenApiTokenAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionOktaApiTokenApiTokenAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionOktaApiTokenApiTokenAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
+}
+export interface DataDatadogActionConnectionOktaApiTokenDomainAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionOktaApiTokenDomainAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionOktaApiTokenDomainAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionOktaApiTokenDomainAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionOktaApiTokenDomainAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionOktaApiTokenDomainAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionOktaApiTokenDomainAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionOktaApiTokenDomainAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
   }
 }
 export interface DataDatadogActionConnectionOktaApiToken {
@@ -3049,6 +5391,18 @@ export class DataDatadogActionConnectionOktaApiTokenOutputReference extends cdkt
   public get domain() {
     return this.getStringAttribute('domain');
   }
+
+  // api_token_aws_secrets_manager - computed: false, optional: false, required: false
+  private _apiTokenAwsSecretsManager = new DataDatadogActionConnectionOktaApiTokenApiTokenAwsSecretsManagerOutputReference(this, "api_token_aws_secrets_manager");
+  public get apiTokenAwsSecretsManager() {
+    return this._apiTokenAwsSecretsManager;
+  }
+
+  // domain_aws_secrets_manager - computed: false, optional: false, required: false
+  private _domainAwsSecretsManager = new DataDatadogActionConnectionOktaApiTokenDomainAwsSecretsManagerOutputReference(this, "domain_aws_secrets_manager");
+  public get domainAwsSecretsManager() {
+    return this._domainAwsSecretsManager;
+  }
 }
 export interface DataDatadogActionConnectionOkta {
 }
@@ -3115,6 +5469,85 @@ export class DataDatadogActionConnectionOktaOutputReference extends cdktn.Comple
     return this._apiToken;
   }
 }
+export interface DataDatadogActionConnectionOpenaiApiKeyApiTokenAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionOpenaiApiKeyApiTokenAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionOpenaiApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionOpenaiApiKeyApiTokenAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionOpenaiApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionOpenaiApiKeyApiTokenAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionOpenaiApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionOpenaiApiKeyApiTokenAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
+}
 export interface DataDatadogActionConnectionOpenaiApiKey {
 }
 
@@ -3177,6 +5610,12 @@ export class DataDatadogActionConnectionOpenaiApiKeyOutputReference extends cdkt
   // api_token - computed: true, optional: false, required: false
   public get apiToken() {
     return this.getStringAttribute('api_token');
+  }
+
+  // api_token_aws_secrets_manager - computed: false, optional: false, required: false
+  private _apiTokenAwsSecretsManager = new DataDatadogActionConnectionOpenaiApiKeyApiTokenAwsSecretsManagerOutputReference(this, "api_token_aws_secrets_manager");
+  public get apiTokenAwsSecretsManager() {
+    return this._apiTokenAwsSecretsManager;
   }
 }
 export interface DataDatadogActionConnectionOpenai {
@@ -3242,6 +5681,243 @@ export class DataDatadogActionConnectionOpenaiOutputReference extends cdktn.Comp
   private _apiKey = new DataDatadogActionConnectionOpenaiApiKeyOutputReference(this, "api_key");
   public get apiKey() {
     return this._apiKey;
+  }
+}
+export interface DataDatadogActionConnectionServiceNowBasicAuthInstanceAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionServiceNowBasicAuthInstanceAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionServiceNowBasicAuthInstanceAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionServiceNowBasicAuthInstanceAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionServiceNowBasicAuthInstanceAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionServiceNowBasicAuthInstanceAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionServiceNowBasicAuthInstanceAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionServiceNowBasicAuthInstanceAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
+}
+export interface DataDatadogActionConnectionServiceNowBasicAuthPasswordAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionServiceNowBasicAuthPasswordAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionServiceNowBasicAuthPasswordAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionServiceNowBasicAuthPasswordAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionServiceNowBasicAuthPasswordAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionServiceNowBasicAuthPasswordAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionServiceNowBasicAuthPasswordAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionServiceNowBasicAuthPasswordAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
+}
+export interface DataDatadogActionConnectionServiceNowBasicAuthUsernameAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionServiceNowBasicAuthUsernameAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionServiceNowBasicAuthUsernameAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionServiceNowBasicAuthUsernameAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionServiceNowBasicAuthUsernameAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionServiceNowBasicAuthUsernameAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionServiceNowBasicAuthUsernameAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionServiceNowBasicAuthUsernameAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
   }
 }
 export interface DataDatadogActionConnectionServiceNowBasicAuth {
@@ -3317,6 +5993,24 @@ export class DataDatadogActionConnectionServiceNowBasicAuthOutputReference exten
   public get username() {
     return this.getStringAttribute('username');
   }
+
+  // instance_aws_secrets_manager - computed: false, optional: false, required: false
+  private _instanceAwsSecretsManager = new DataDatadogActionConnectionServiceNowBasicAuthInstanceAwsSecretsManagerOutputReference(this, "instance_aws_secrets_manager");
+  public get instanceAwsSecretsManager() {
+    return this._instanceAwsSecretsManager;
+  }
+
+  // password_aws_secrets_manager - computed: false, optional: false, required: false
+  private _passwordAwsSecretsManager = new DataDatadogActionConnectionServiceNowBasicAuthPasswordAwsSecretsManagerOutputReference(this, "password_aws_secrets_manager");
+  public get passwordAwsSecretsManager() {
+    return this._passwordAwsSecretsManager;
+  }
+
+  // username_aws_secrets_manager - computed: false, optional: false, required: false
+  private _usernameAwsSecretsManager = new DataDatadogActionConnectionServiceNowBasicAuthUsernameAwsSecretsManagerOutputReference(this, "username_aws_secrets_manager");
+  public get usernameAwsSecretsManager() {
+    return this._usernameAwsSecretsManager;
+  }
 }
 export interface DataDatadogActionConnectionServiceNow {
 }
@@ -3383,6 +6077,85 @@ export class DataDatadogActionConnectionServiceNowOutputReference extends cdktn.
     return this._basicAuth;
   }
 }
+export interface DataDatadogActionConnectionSplitApiKeyApiKeyAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionSplitApiKeyApiKeyAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionSplitApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionSplitApiKeyApiKeyAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionSplitApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionSplitApiKeyApiKeyAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionSplitApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionSplitApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
+}
 export interface DataDatadogActionConnectionSplitApiKey {
 }
 
@@ -3445,6 +6218,12 @@ export class DataDatadogActionConnectionSplitApiKeyOutputReference extends cdktn
   // api_key - computed: true, optional: false, required: false
   public get apiKey() {
     return this.getStringAttribute('api_key');
+  }
+
+  // api_key_aws_secrets_manager - computed: false, optional: false, required: false
+  private _apiKeyAwsSecretsManager = new DataDatadogActionConnectionSplitApiKeyApiKeyAwsSecretsManagerOutputReference(this, "api_key_aws_secrets_manager");
+  public get apiKeyAwsSecretsManager() {
+    return this._apiKeyAwsSecretsManager;
   }
 }
 export interface DataDatadogActionConnectionSplit {
@@ -3512,6 +6291,85 @@ export class DataDatadogActionConnectionSplitOutputReference extends cdktn.Compl
     return this._apiKey;
   }
 }
+export interface DataDatadogActionConnectionStatsigApiKeyApiKeyAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionStatsigApiKeyApiKeyAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionStatsigApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionStatsigApiKeyApiKeyAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionStatsigApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionStatsigApiKeyApiKeyAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionStatsigApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionStatsigApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
+}
 export interface DataDatadogActionConnectionStatsigApiKey {
 }
 
@@ -3574,6 +6432,12 @@ export class DataDatadogActionConnectionStatsigApiKeyOutputReference extends cdk
   // api_key - computed: true, optional: false, required: false
   public get apiKey() {
     return this.getStringAttribute('api_key');
+  }
+
+  // api_key_aws_secrets_manager - computed: false, optional: false, required: false
+  private _apiKeyAwsSecretsManager = new DataDatadogActionConnectionStatsigApiKeyApiKeyAwsSecretsManagerOutputReference(this, "api_key_aws_secrets_manager");
+  public get apiKeyAwsSecretsManager() {
+    return this._apiKeyAwsSecretsManager;
   }
 }
 export interface DataDatadogActionConnectionStatsig {
@@ -3641,6 +6505,85 @@ export class DataDatadogActionConnectionStatsigOutputReference extends cdktn.Com
     return this._apiKey;
   }
 }
+export interface DataDatadogActionConnectionVirusTotalApiKeyApiKeyAwsSecretsManager {
+}
+
+export function dataDatadogActionConnectionVirusTotalApiKeyApiKeyAwsSecretsManagerToTerraform(struct?: DataDatadogActionConnectionVirusTotalApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataDatadogActionConnectionVirusTotalApiKeyApiKeyAwsSecretsManagerToHclTerraform(struct?: DataDatadogActionConnectionVirusTotalApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataDatadogActionConnectionVirusTotalApiKeyApiKeyAwsSecretsManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatadogActionConnectionVirusTotalApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogActionConnectionVirusTotalApiKeyApiKeyAwsSecretsManager | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // secret_id - computed: true, optional: false, required: false
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+
+  // version_id - computed: true, optional: false, required: false
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+
+  // version_stage - computed: true, optional: false, required: false
+  public get versionStage() {
+    return this.getStringAttribute('version_stage');
+  }
+}
 export interface DataDatadogActionConnectionVirusTotalApiKey {
 }
 
@@ -3703,6 +6646,12 @@ export class DataDatadogActionConnectionVirusTotalApiKeyOutputReference extends 
   // api_key - computed: true, optional: false, required: false
   public get apiKey() {
     return this.getStringAttribute('api_key');
+  }
+
+  // api_key_aws_secrets_manager - computed: false, optional: false, required: false
+  private _apiKeyAwsSecretsManager = new DataDatadogActionConnectionVirusTotalApiKeyApiKeyAwsSecretsManagerOutputReference(this, "api_key_aws_secrets_manager");
+  public get apiKeyAwsSecretsManager() {
+    return this._apiKeyAwsSecretsManager;
   }
 }
 export interface DataDatadogActionConnectionVirusTotal {
@@ -3772,7 +6721,7 @@ export class DataDatadogActionConnectionVirusTotalOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/action_connection datadog_action_connection}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/data-sources/action_connection datadog_action_connection}
 */
 export class DataDatadogActionConnection extends cdktn.TerraformDataSource {
 
@@ -3788,7 +6737,7 @@ export class DataDatadogActionConnection extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatadogActionConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogActionConnection to import
-  * @param importFromId The id of the existing DataDatadogActionConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/action_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogActionConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/data-sources/action_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogActionConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3800,7 +6749,7 @@ export class DataDatadogActionConnection extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/data-sources/action_connection datadog_action_connection} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/data-sources/action_connection datadog_action_connection} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3811,7 +6760,7 @@ export class DataDatadogActionConnection extends cdktn.TerraformDataSource {
       terraformResourceType: 'datadog_action_connection',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.27.0',
+        providerVersion: '4.30.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -3829,6 +6778,12 @@ export class DataDatadogActionConnection extends cdktn.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // external_secrets_manager - computed: true, optional: false, required: false
+  private _externalSecretsManager = new DataDatadogActionConnectionExternalSecretsManagerOutputReference(this, "external_secrets_manager");
+  public get externalSecretsManager() {
+    return this._externalSecretsManager;
+  }
 
   // id - computed: false, optional: false, required: true
   private _id?: string; 

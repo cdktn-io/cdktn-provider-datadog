@@ -10,7 +10,7 @@ const project = new CdktnProviderProject({
   // Per-provider V8 heap ceiling from providersWithCustomRunners.json.
   // `undefined` means "take the default for the runner class" -- which is what
   // every provider should use unless it has demonstrably OOMed on the default.
-  nodeHeapSizeMb: 16384,
+  nodeHeapSizeMb: undefined,
   terraformProvider: "DataDog/datadog@~> 4.0",
   cdktnVersion: "^0.25.0",
   // cdktn 0.24's constructs peer range verbatim -- NOT caret-style. cdk-terrain

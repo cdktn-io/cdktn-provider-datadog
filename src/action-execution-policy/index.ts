@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy
+// https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface ActionExecutionPolicyConfig extends cdktn.TerraformMetaArgument
   /**
   * Whether the policy allows or denies the matched actions. Valid values are `allow`, `deny`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#effect ActionExecutionPolicy#effect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#effect ActionExecutionPolicy#effect}
   */
   readonly effect: string;
   /**
   * The name of the execution policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#name ActionExecutionPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#name ActionExecutionPolicy#name}
   */
   readonly name: string;
   /**
   * action_pattern block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#action_pattern ActionExecutionPolicy#action_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#action_pattern ActionExecutionPolicy#action_pattern}
   */
   readonly actionPattern: ActionExecutionPolicyActionPattern;
   /**
   * scope block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#scope ActionExecutionPolicy#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#scope ActionExecutionPolicy#scope}
   */
   readonly scope?: ActionExecutionPolicyScope;
   /**
   * target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#target ActionExecutionPolicy#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#target ActionExecutionPolicy#target}
   */
   readonly target?: ActionExecutionPolicyTarget[] | cdktn.IResolvable;
 }
@@ -47,13 +47,13 @@ export interface ActionExecutionPolicyActionPattern {
   /**
   * The fully qualified action names this policy matches. Use `*` to match all actions of the integration, or a fully qualified name prefixed with the integration's action namespace (for example `com.datadoghq.script.*` for the Script integration).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#action_fqns ActionExecutionPolicy#action_fqns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#action_fqns ActionExecutionPolicy#action_fqns}
   */
   readonly actionFqns: string[];
   /**
-  * The integration the actions belong to. Valid values are `INTEGRATION_KUBERNETES`, `INTEGRATION_SCRIPT`, `INTEGRATION_REMOTE_ACTION`.
+  * The integration the actions belong to. Valid values are `INTEGRATION_KUBERNETES`, `INTEGRATION_SCRIPT`, `INTEGRATION_REMOTE_ACTION`, `INTEGRATION_SLACK`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#integration ActionExecutionPolicy#integration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#integration ActionExecutionPolicy#integration}
   */
   readonly integration: string;
 }
@@ -172,7 +172,7 @@ export interface ActionExecutionPolicyScopeKubernetesRule {
   /**
   * The Kubernetes namespaces this rule applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#target_namespaces ActionExecutionPolicy#target_namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#target_namespaces ActionExecutionPolicy#target_namespaces}
   */
   readonly targetNamespaces: string[];
 }
@@ -287,7 +287,7 @@ export interface ActionExecutionPolicyScopeKubernetes {
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
   */
   readonly rule?: ActionExecutionPolicyScopeKubernetesRule[] | cdktn.IResolvable;
 }
@@ -383,13 +383,13 @@ export interface ActionExecutionPolicyScopeRemoteActionRshellRule {
   /**
   * The level of remote shell access granted for the target paths. Valid values are `read_only`, `read_write`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#access ActionExecutionPolicy#access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#access ActionExecutionPolicy#access}
   */
   readonly access: string;
   /**
   * The filesystem paths this rule applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#target_paths ActionExecutionPolicy#target_paths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#target_paths ActionExecutionPolicy#target_paths}
   */
   readonly targetPaths: string[];
 }
@@ -530,7 +530,7 @@ export interface ActionExecutionPolicyScopeRemoteActionRshell {
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
   */
   readonly rule?: ActionExecutionPolicyScopeRemoteActionRshellRule[] | cdktn.IResolvable;
 }
@@ -626,7 +626,7 @@ export interface ActionExecutionPolicyScopeScriptsRule {
   /**
   * The script names this rule applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#target_script_names ActionExecutionPolicy#target_script_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#target_script_names ActionExecutionPolicy#target_script_names}
   */
   readonly targetScriptNames: string[];
 }
@@ -741,7 +741,7 @@ export interface ActionExecutionPolicyScopeScripts {
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
   */
   readonly rule?: ActionExecutionPolicyScopeScriptsRule[] | cdktn.IResolvable;
 }
@@ -833,25 +833,242 @@ export class ActionExecutionPolicyScopeScriptsOutputReference extends cdktn.Comp
     return this._rule.internalValue;
   }
 }
+export interface ActionExecutionPolicyScopeSlackRule {
+  /**
+  * The channel name selectors this rule applies to, for example `incident-*`. Use `*` to match any channel name.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#channel_name_selectors ActionExecutionPolicy#channel_name_selectors}
+  */
+  readonly channelNameSelectors: string[];
+}
+
+export function actionExecutionPolicyScopeSlackRuleToTerraform(struct?: ActionExecutionPolicyScopeSlackRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    channel_name_selectors: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.channelNameSelectors),
+  }
+}
+
+
+export function actionExecutionPolicyScopeSlackRuleToHclTerraform(struct?: ActionExecutionPolicyScopeSlackRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    channel_name_selectors: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.channelNameSelectors),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ActionExecutionPolicyScopeSlackRuleOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ActionExecutionPolicyScopeSlackRule | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._channelNameSelectors !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.channelNameSelectors = this._channelNameSelectors;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ActionExecutionPolicyScopeSlackRule | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._channelNameSelectors = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._channelNameSelectors = value.channelNameSelectors;
+    }
+  }
+
+  // channel_name_selectors - computed: false, optional: false, required: true
+  private _channelNameSelectors?: string[]; 
+  public get channelNameSelectors() {
+    return this.getListAttribute('channel_name_selectors');
+  }
+  public set channelNameSelectors(value: string[]) {
+    this._channelNameSelectors = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get channelNameSelectorsInput() {
+    return this._channelNameSelectors;
+  }
+}
+
+export class ActionExecutionPolicyScopeSlackRuleList extends cdktn.ComplexList {
+  public internalValue? : ActionExecutionPolicyScopeSlackRule[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ActionExecutionPolicyScopeSlackRuleOutputReference {
+    return new ActionExecutionPolicyScopeSlackRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ActionExecutionPolicyScopeSlack {
+  /**
+  * rule block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
+  */
+  readonly rule?: ActionExecutionPolicyScopeSlackRule[] | cdktn.IResolvable;
+}
+
+export function actionExecutionPolicyScopeSlackToTerraform(struct?: ActionExecutionPolicyScopeSlack | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    rule: cdktn.listMapper(actionExecutionPolicyScopeSlackRuleToTerraform, true)(struct!.rule),
+  }
+}
+
+
+export function actionExecutionPolicyScopeSlackToHclTerraform(struct?: ActionExecutionPolicyScopeSlack | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    rule: {
+      value: cdktn.listMapperHcl(actionExecutionPolicyScopeSlackRuleToHclTerraform, true)(struct!.rule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ActionExecutionPolicyScopeSlackRuleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ActionExecutionPolicyScopeSlackOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ActionExecutionPolicyScopeSlack | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._rule?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rule = this._rule?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ActionExecutionPolicyScopeSlack | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._rule.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._rule.internalValue = value.rule;
+    }
+  }
+
+  // rule - computed: false, optional: true, required: false
+  private _rule = new ActionExecutionPolicyScopeSlackRuleList(this, "rule", false);
+  public get rule() {
+    return this._rule;
+  }
+  public putRule(value: ActionExecutionPolicyScopeSlackRule[] | cdktn.IResolvable) {
+    this._rule.internalValue = value;
+  }
+  public resetRule() {
+    this._rule.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleInput() {
+    return this._rule.internalValue;
+  }
+}
 export interface ActionExecutionPolicyScope {
   /**
   * kubernetes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#kubernetes ActionExecutionPolicy#kubernetes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#kubernetes ActionExecutionPolicy#kubernetes}
   */
   readonly kubernetes?: ActionExecutionPolicyScopeKubernetes;
   /**
   * remote_action_rshell block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#remote_action_rshell ActionExecutionPolicy#remote_action_rshell}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#remote_action_rshell ActionExecutionPolicy#remote_action_rshell}
   */
   readonly remoteActionRshell?: ActionExecutionPolicyScopeRemoteActionRshell;
   /**
   * scripts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#scripts ActionExecutionPolicy#scripts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#scripts ActionExecutionPolicy#scripts}
   */
   readonly scripts?: ActionExecutionPolicyScopeScripts;
+  /**
+  * slack block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#slack ActionExecutionPolicy#slack}
+  */
+  readonly slack?: ActionExecutionPolicyScopeSlack;
 }
 
 export function actionExecutionPolicyScopeToTerraform(struct?: ActionExecutionPolicyScope | cdktn.IResolvable): any {
@@ -863,6 +1080,7 @@ export function actionExecutionPolicyScopeToTerraform(struct?: ActionExecutionPo
     kubernetes: actionExecutionPolicyScopeKubernetesToTerraform(struct!.kubernetes),
     remote_action_rshell: actionExecutionPolicyScopeRemoteActionRshellToTerraform(struct!.remoteActionRshell),
     scripts: actionExecutionPolicyScopeScriptsToTerraform(struct!.scripts),
+    slack: actionExecutionPolicyScopeSlackToTerraform(struct!.slack),
   }
 }
 
@@ -890,6 +1108,12 @@ export function actionExecutionPolicyScopeToHclTerraform(struct?: ActionExecutio
       isBlock: true,
       type: "struct",
       storageClassType: "ActionExecutionPolicyScopeScripts",
+    },
+    slack: {
+      value: actionExecutionPolicyScopeSlackToHclTerraform(struct!.slack),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ActionExecutionPolicyScopeSlack",
     },
   };
 
@@ -927,6 +1151,10 @@ export class ActionExecutionPolicyScopeOutputReference extends cdktn.ComplexObje
       hasAnyValues = true;
       internalValueResult.scripts = this._scripts?.internalValue;
     }
+    if (this._slack?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.slack = this._slack?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -937,6 +1165,7 @@ export class ActionExecutionPolicyScopeOutputReference extends cdktn.ComplexObje
       this._kubernetes.internalValue = undefined;
       this._remoteActionRshell.internalValue = undefined;
       this._scripts.internalValue = undefined;
+      this._slack.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -948,6 +1177,7 @@ export class ActionExecutionPolicyScopeOutputReference extends cdktn.ComplexObje
       this._kubernetes.internalValue = value.kubernetes;
       this._remoteActionRshell.internalValue = value.remoteActionRshell;
       this._scripts.internalValue = value.scripts;
+      this._slack.internalValue = value.slack;
     }
   }
 
@@ -998,18 +1228,34 @@ export class ActionExecutionPolicyScopeOutputReference extends cdktn.ComplexObje
   public get scriptsInput() {
     return this._scripts.internalValue;
   }
+
+  // slack - computed: false, optional: true, required: false
+  private _slack = new ActionExecutionPolicyScopeSlackOutputReference(this, "slack");
+  public get slack() {
+    return this._slack;
+  }
+  public putSlack(value: ActionExecutionPolicyScopeSlack) {
+    this._slack.internalValue = value;
+  }
+  public resetSlack() {
+    this._slack.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get slackInput() {
+    return this._slack.internalValue;
+  }
 }
 export interface ActionExecutionPolicyTarget {
   /**
-  * The Agent tags identifying the target, for example `env:prod`.
+  * The tags identifying the target, for example `env:prod` for Agents or `slack_workspace_id:T0123456789` for a Slack workspace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#agent_tags ActionExecutionPolicy#agent_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#agent_tags ActionExecutionPolicy#agent_tags}
   */
   readonly agentTags: string[];
   /**
   * A human-readable name for the target.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#name ActionExecutionPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#name ActionExecutionPolicy#name}
   */
   readonly name?: string;
 }
@@ -1151,7 +1397,7 @@ export class ActionExecutionPolicyTargetList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy datadog_action_execution_policy}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy datadog_action_execution_policy}
 */
 export class ActionExecutionPolicy extends cdktn.TerraformResource {
 
@@ -1167,7 +1413,7 @@ export class ActionExecutionPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ActionExecutionPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ActionExecutionPolicy to import
-  * @param importFromId The id of the existing ActionExecutionPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ActionExecutionPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ActionExecutionPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1179,7 +1425,7 @@ export class ActionExecutionPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy datadog_action_execution_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy datadog_action_execution_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1190,7 +1436,7 @@ export class ActionExecutionPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_action_execution_policy',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.27.0',
+        providerVersion: '4.30.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
