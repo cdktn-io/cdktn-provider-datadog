@@ -4,7 +4,7 @@
 
 ### DeploymentGate <a name="DeploymentGate" id="@cdktn/provider-datadog.deploymentGate.DeploymentGate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate datadog_deployment_gate}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate datadog_deployment_gate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.deploymentGate.DeploymentGate.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The target environment (example: dev).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#env DeploymentGate#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#env DeploymentGate#env}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The service name (example: transaction-backend).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#service DeploymentGate#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#service DeploymentGate#service}
 
 ---
 
@@ -136,7 +136,7 @@ Enable Dry Run to test gate behavior without impacting deployments.
 
 The evaluation of a dry run gate always responds with a pass status, but the in-app result is the real status based on rules evaluation. This is particularly useful when performing an initial evaluation of the gate behavior without impacting the deployment pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Unique name for multiple gates on the same service/environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#identifier DeploymentGate#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#identifier DeploymentGate#identifier}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#rule DeploymentGate#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#rule DeploymentGate#rule}
 
 ---
 
@@ -689,7 +689,7 @@ The construct id used in the generated config for the DeploymentGate to import.
 
 The id of the existing DeploymentGate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1149,7 +1149,7 @@ env: str
 
 The target environment (example: dev).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#env DeploymentGate#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#env DeploymentGate#env}
 
 ---
 
@@ -1163,7 +1163,7 @@ service: str
 
 The service name (example: transaction-backend).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#service DeploymentGate#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#service DeploymentGate#service}
 
 ---
 
@@ -1179,7 +1179,7 @@ Enable Dry Run to test gate behavior without impacting deployments.
 
 The evaluation of a dry run gate always responds with a pass status, but the in-app result is the real status based on rules evaluation. This is particularly useful when performing an initial evaluation of the gate behavior without impacting the deployment pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
 
 ---
 
@@ -1193,7 +1193,7 @@ identifier: str
 
 Unique name for multiple gates on the same service/environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#identifier DeploymentGate#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#identifier DeploymentGate#identifier}
 
 ---
 
@@ -1207,7 +1207,7 @@ rule: IResolvable | typing.List[DeploymentGateRule]
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#rule DeploymentGate#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#rule DeploymentGate#rule}
 
 ---
 
@@ -1247,7 +1247,7 @@ name: str
 
 The rule name. Must be unique within the deployment gate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#name DeploymentGate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#name DeploymentGate#name}
 
 ---
 
@@ -1261,7 +1261,7 @@ type: str
 
 The rule type (e.g., 'faulty_deployment_detection', 'monitor').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#type DeploymentGate#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#type DeploymentGate#type}
 
 ---
 
@@ -1275,7 +1275,7 @@ dry_run: bool | IResolvable
 
 Whether the rule is in dry run mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
 
 ---
 
@@ -1289,7 +1289,7 @@ options: DeploymentGateRuleOptions
 
 options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#options DeploymentGate#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#options DeploymentGate#options}
 
 ---
 
@@ -1337,7 +1337,7 @@ allowed_resources: typing.List[str]
 
 Resources to include in faulty deployment detection. Mutually exclusive with excluded_resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#allowed_resources DeploymentGate#allowed_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#allowed_resources DeploymentGate#allowed_resources}
 
 ---
 
@@ -1351,7 +1351,7 @@ duration: typing.Union[int, float]
 
 The duration for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#duration DeploymentGate#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#duration DeploymentGate#duration}
 
 ---
 
@@ -1365,7 +1365,7 @@ excluded_resources: typing.List[str]
 
 Resources to exclude from faulty deployment detection. Mutually exclusive with allowed_resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#excluded_resources DeploymentGate#excluded_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#excluded_resources DeploymentGate#excluded_resources}
 
 ---
 
@@ -1379,7 +1379,7 @@ fail_on_no_data: bool | IResolvable
 
 Fail if a matching monitor group is in NO DATA state (API default: true).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#fail_on_no_data DeploymentGate#fail_on_no_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#fail_on_no_data DeploymentGate#fail_on_no_data}
 
 ---
 
@@ -1393,7 +1393,7 @@ fail_on_no_groups_found: bool | IResolvable
 
 Fail if no monitor groups are found (API default: false).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#fail_on_no_groups_found DeploymentGate#fail_on_no_groups_found}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#fail_on_no_groups_found DeploymentGate#fail_on_no_groups_found}
 
 ---
 
@@ -1407,7 +1407,7 @@ monitor_ids: IResolvable | typing.List[DeploymentGateRuleOptionsMonitorIds]
 
 Specific monitors to evaluate. Mutually exclusive with query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#monitor_ids DeploymentGate#monitor_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#monitor_ids DeploymentGate#monitor_ids}
 
 ---
 
@@ -1421,7 +1421,7 @@ query: str
 
 A query that selects the monitors to evaluate. Mutually exclusive with monitor_ids.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#query DeploymentGate#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#query DeploymentGate#query}
 
 ---
 
@@ -1435,7 +1435,7 @@ warmup: typing.Union[int, float]
 
 Seconds to wait after deployment starts before evaluating monitors (API default: 0).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#warmup DeploymentGate#warmup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#warmup DeploymentGate#warmup}
 
 ---
 
@@ -1471,7 +1471,7 @@ groups: typing.List[str]
 
 Exact group names to evaluate; an empty list evaluates all groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#groups DeploymentGate#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#groups DeploymentGate#groups}
 
 ---
 
@@ -1485,7 +1485,7 @@ id: str
 
 The monitor's decimal ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#id DeploymentGate#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#id DeploymentGate#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2965,7 +2965,7 @@ def put_options(
 
 Resources to include in faulty deployment detection. Mutually exclusive with excluded_resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#allowed_resources DeploymentGate#allowed_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#allowed_resources DeploymentGate#allowed_resources}
 
 ---
 
@@ -2975,7 +2975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The duration for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#duration DeploymentGate#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#duration DeploymentGate#duration}
 
 ---
 
@@ -2985,7 +2985,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Resources to exclude from faulty deployment detection. Mutually exclusive with allowed_resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#excluded_resources DeploymentGate#excluded_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#excluded_resources DeploymentGate#excluded_resources}
 
 ---
 
@@ -2995,7 +2995,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Fail if a matching monitor group is in NO DATA state (API default: true).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#fail_on_no_data DeploymentGate#fail_on_no_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#fail_on_no_data DeploymentGate#fail_on_no_data}
 
 ---
 
@@ -3005,7 +3005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Fail if no monitor groups are found (API default: false).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#fail_on_no_groups_found DeploymentGate#fail_on_no_groups_found}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#fail_on_no_groups_found DeploymentGate#fail_on_no_groups_found}
 
 ---
 
@@ -3015,7 +3015,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Specific monitors to evaluate. Mutually exclusive with query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#monitor_ids DeploymentGate#monitor_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#monitor_ids DeploymentGate#monitor_ids}
 
 ---
 
@@ -3025,7 +3025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A query that selects the monitors to evaluate. Mutually exclusive with monitor_ids.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#query DeploymentGate#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#query DeploymentGate#query}
 
 ---
 
@@ -3035,7 +3035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Seconds to wait after deployment starts before evaluating monitors (API default: 0).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#warmup DeploymentGate#warmup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#warmup DeploymentGate#warmup}
 
 ---
 

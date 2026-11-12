@@ -4,7 +4,7 @@
 
 ### RumOperationJourneyLink <a name="RumOperationJourneyLink" id="@cdktn/provider-datadog.rumOperationJourneyLink.RumOperationJourneyLink"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation_journey_link datadog_rum_operation_journey_link}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation_journey_link datadog_rum_operation_journey_link}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.rumOperationJourneyLink.RumOperationJourneyLink.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the RumOperationJourneyLink to
 
 The id of the existing RumOperationJourneyLink that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation_journey_link#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation_journey_link#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -855,7 +855,7 @@ JourneyId *string
 
 ID of the journey.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation_journey_link#journey_id RumOperationJourneyLink#journey_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation_journey_link#journey_id RumOperationJourneyLink#journey_id}
 
 ---
 
@@ -869,7 +869,7 @@ OperationId *string
 
 ID of the RUM operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation_journey_link#operation_id RumOperationJourneyLink#operation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation_journey_link#operation_id RumOperationJourneyLink#operation_id}
 
 ---
 
